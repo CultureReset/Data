@@ -1,0 +1,2699 @@
+====================================================================================================
+SLUG: bay-side-boat-rental-llc
+NAME: Bay Side Boat Rental LLC
+INDUSTRY: rental
+SUBTYPE: boat_rental
+TABLES WITH DATA: 34
+TOTAL ROWS: 155
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (6 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_attributes  (7 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (3 rows)
+  entity_items_v  (3 rows)
+  entity_modules  (13 rows)
+  entity_nearby_landmark_types  (25 rows)
+  entity_nearby_landmarks  (5 rows)
+  entity_offer  (6 rows)
+  entity_photos  (17 rows)
+  entity_reviews  (5 rows)
+  entity_sections  (1 rows)
+  entity_seo_keywords  (6 rows)
+  entity_sources  (4 rows)
+  entity_tags  (10 rows)
+  entity_theme  (1 rows)
+  industry_rental  (1 rows)
+  legacy_photo_migration_queue  (3 rows)
+  offering_prices  (2 rows)
+  offerings  (2 rows)
+  search_index  (9 rows)
+  tourist_saves  (1 rows)
+  tourist_seen  (1 rows)
+  tourist_swipe_events  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: bay-side-boat-rental-llc
+name: Bay Side Boat Rental LLC
+planner_category: things_to_do
+data_quality_score: 90
+issues: missing_summary
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   6 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 6] ---
+id: 13944
+entity_slug: bay-side-boat-rental-llc
+intent_tag: best_for:water_activity
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 6] ---
+id: 13945
+entity_slug: bay-side-boat-rental-llc
+intent_tag: service:reservations
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 6] ---
+id: 13946
+entity_slug: bay-side-boat-rental-llc
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 6] ---
+id: 13947
+entity_slug: bay-side-boat-rental-llc
+intent_tag: service:water_activity
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 6] ---
+id: 13948
+entity_slug: bay-side-boat-rental-llc
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 6] ---
+id: 13949
+entity_slug: bay-side-boat-rental-llc
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: bay-side-boat-rental-llc
+name: Bay Side Boat Rental LLC
+is_active: t
+planner_category: things_to_do
+entity_type: service
+entity_subtype: service
+city: Orange Beach
+state: AL
+address_line_1: 25142 Canal Rd
+latitude: 30.289238500000003
+longitude: -87.59504559999999
+rating: 5
+review_count: 342
+website_url: https://www.baysideorangebeach.com/
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-side-boat-rental-llc/photo_01.jpg
+voice_summary: Bay Side Boat Rental LLC in Orange Beach is best for water activity.
+planner_summary: Bay Side Boat Rental LLC in Orange Beach is a things to do listing in Gulf Coast Radar.
+best_for: water activity
+not_best_for: nothing specific flagged
+service_tags: reservations|accessibility|water_activity
+search_keywords: establishment|point_of_interest|service|reservations|accessibility|water_activity
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 2
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 7
+faq_count: 0
+data_quality_score: 90
+data_gaps: missing_summary
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 20230
+entity_slug: bay-side-boat-rental-llc
+entity_name: Bay Side Boat Rental LLC
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-side-boat-rental-llc/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 20231
+entity_slug: bay-side-boat-rental-llc
+entity_name: Bay Side Boat Rental LLC
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-side-boat-rental-llc/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: be0f4036-4b80-4141-b029-a65039aa9d78
+resource_type: service
+slug: bay-side-boat-rental-llc
+name: Bay Side Boat Rental LLC
+entity_slug: bay-side-boat-rental-llc
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-side-boat-rental-llc/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-side-boat-rental-llc/photo_02.jpg"
+]
+amenities: []
+faqs: []
+address: 25142 Canal Rd
+city: Orange Beach
+state: AL
+latitude: 30.289238500000003
+longitude: -87.59504559999999
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 9dc46a8f25f45849d749b561eddfe162
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: be0f4036-4b80-4141-b029-a65039aa9d78
+entity_slug: bay-side-boat-rental-llc
+slug: bay-side-boat-rental-llc
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-side-boat-rental-llc/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-side-boat-rental-llc/photo_02.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 5f0b2b88-4079-4562-b9db-212e6ba581d8
+slug: bay-side-boat-rental-llc
+name: Bay Side Boat Rental LLC
+is_active: true
+featured: false
+entity_type: activity
+entity_subtype: boat_rental
+description: Located in the beautiful city of Orange Beach, Bay Side is the best place to rent luxury pontoons and floating...
+phone: (251) 979-0609
+website_url: https://www.baysideorangebeach.com/
+menu_pin: 4065
+booking_url: https://www.baysideorangebeach.com/
+address_line_1: 25142 Canal Rd
+city: Orange Beach
+state: AL
+zip: 36561
+latitude: 30.289238500000003
+longitude: -87.59504559999999
+rating: 5
+review_count: 342
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-side-boat-rental-llc/photo_01.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T03:47:53.181747+00:00
+updated_at: 2026-07-07T20:14:07.313706+00:00
+gallery_sections: []
+seo_keywords: [
+  "pontoon-rental",
+  "luxury-pontoon",
+  "floating-mat",
+  "boat-delivery",
+  "family-friendly",
+  "orange-beach"
+]
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJuXiVRt4HmogRwxO2qVnBdoE
+google_maps_uri: https://maps.google.com/?cid=9328856268988093379&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: service
+formatted_address: 25142 Canal Rd, Orange Beach, AL 36561, USA
+plus_code: 862J7CQ3+MX
+international_phone: +1 251-979-0609
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+wheelchair_accessible_restroom: true
+wheelchair_accessible_seating: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+accepts_cash_only: false
+google_places_data: {
+  "id": "ChIJuXiVRt4HmogRwxO2qVnBdoE",
+  "types": [
+    "service",
+    "point_of_interest",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3kGVwK5IzVIwFBuYTSyPJfaMDfSSBb0q8ZSRnGJBpaxnxx1CeLCtLyPPliSy8efYiavdbV9bMstMIbbbj21wUFbB8Kh1GQVZbhAH2BNRGloUPCQZFNZhKBq_N3i3yNLiEUd1li9bI6pBpL9QYryHcC38-rAqejNGlqSdVJtbA7BAFpaKoTwbddBkZw9dj-uqRbj055kpebWit136WkLoleHUIPHyKV84KrsHlZTrNCnXwaurYdgSSTCHIIONqMjlKDcrx56PiAZMhDKqa2jefPT9HtmnE7pnEcfjTCe24BKyM_8sGDgJbnt0DzwYOAx-DID5cCITxABFVbWcoTrCGcZdpauGAdNqkJTOr2sPf1_JFfkb5UyzJhrX3c-5MV1ELD5qgbJwJsbXEECuP5Fdz7mc8FQFkOaeDHwDTPJA_Aq97g",
+      "widthPx": 1125,
+      "heightPx": 634,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDWnNvj9wE!2e10!4m2!3m1!1s0x889a07de469578b9:0x8176c159a9b613c3",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDWnNvj9wE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/112109493932371540149",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUnC-5PiWkPSoXrnjwo3uwwRF4pUOXVG_tdddPOn7BECJVurYE=s100-p-k-no-mo",
+          "displayName": "Bay Side Boat Rental LLC"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3l774d1G1I_LPTkLYE0-wC8sIw7WSiVs6d6Rw3MABFvww9cbGs6VeZSbh-dZWlSyGrsymw9JG-ICXlMxS5AlPRmnD11Tp2RAoeq0PfWbUPtDXvMBf4fNbdDbOVAD_0-mVXS7EEwdfuwtl9BtM82JpE2H0_K14oS354gwFqgJD_ljyT1Z-suyIVkBAkL_FO_D72EM0VZY9MEG7j0lc29qGH9e27nhaF6aMzUfF_8PEk6mr54L7X69ES_V9E4Lvf_XP4ktUhlwwDT3RFSLspB443LwgKfrl5XGQXvfSE2WeWs7FvsUd3MazCoS8CJaCSJNTfC3G5vgnWN-kSB6g94iPkUs8UeTpZ9ZQw8Sr8qURGD7swsSGAa5rOpBpjhslKcrtB9v4zMxs60NPkXH_ZvEUn0Uq-Od-o3AIwsQ7BdWqoDDyZ5mhWqrMrCO-oPDU6n",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhA4SmixBI9CXB_2cyyVSLfa!2e10!4m2!3m1!1s0x889a07de469578b9:0x8176c159a9b613c3",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhA4SmixBI9CXB_2cyyVSLfa&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/116509629891542781016",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIg-4DmiqxcSoxCkEJRhIEYI6r9cSAgdPwBsugymok42TbFtA=s100-p-k-no-mo",
+          "displayName": "Christina Buckner"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3li8EOwd4VzlDW77HkNnhZVMElbvOHF-uoXuwLNQYRMLKdwItFBYT237YeHabeRakGroYuC67-NJh_OMpDperbqowP1JaqCuRvk4PuAcW2dsChveR1gfb4j0P-4I7hYql0VvNPonWdamcXFbDwxalN0lJXLfiOMFTxZEMJcXKYJ3eW1ZqPa3EeT-x4flqk2cfLfnRBng2GwI-WPuVFuZhTpLc54Iamhjh5RPQNyxwvm1mSaoBKuerA_GHXhgwBffuPFaLXou8d3al2V1OMJZp7Kop3T_8aWZWgdqBRt1cD994nplUpbBWqx5iHkfQTBU_OxWNtZKuR2tChQqZFe6zPsZddlM9JQg04dyS49LIWKQRhviJySRnXEMHwMDqBxT6Yb39rARm-FiRKDoKAFI5Rw5brBwfraKB2mcg7XxKxaRo-doAqFkaNaMBnsZmN2",
+      "widthPx": 1509,
+      "heightPx": 1318,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBhJQghPNrUnGbunTdVJ5NR!2e10!4m2!3m1!1s0x889a07de469578b9:0x8176c159a9b613c3",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhBhJQghPNrUnGbunTdVJ5NR&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/108148300004734176996",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXEt0GFzSXOjXXm6sW5osmvhRV4c34gq9bRgldxG2zXKT86pK8=s100-p-k-no-mo",
+          "displayName": "Stephanie Hauska"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3nFbp-W4BGds09cBXp1JxiL70Irf4r6iK8hCxwgWbpyretJpi4eRtXrHbUJKw0VJFlhW28YkPldkq448fGGBndGVNymZzxdsGvXXnWj0cviqxhgVVRtZPOeQ2hP0N69kZwveffpvjAuL9qQs15_uleUwyLIFgpmdzeqq6PW-3Szbx073jkiQTNjg6ENG_jPLGCSniONtBlHwObFN8aFC-2viDX_eWYyo5kmbZWlWyCc7I0SJ-Ikk7eb5i1Xkw8X_GsezhKCHhU7dqjXhj9B1gvHLf_1hMt6ArRl6x75lqe24Nbeoekh8YG79zPbynouc_3fIudvmmW_GXrb2bAw4nYDTAUP2_14akR3uu0El1kL4eQ46-XxAreQxIGbC1EFJ3M2PrO8rMUM3aZvXV6qNzw7nNbz5I8CIgSoyzQs9AZokzfEXcHoCYipWblxjA",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhA8JhOU5LJO4AdxUTX1Vg1y!2e10!4m2!3m1!1s0x889a07de469578b9:0x8176c159a9b613c3",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhA8JhOU5LJO4AdxUTX1Vg1y&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/116934406754137158710",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIm_BXGItJVcGOT_lagW_s_C1j2dlQYRl24kf_3ewkfAZzwxg=s100-p-k-no-mo",
+          "displayName": "Lindsey Havard"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3lHk31V0Q92IAMNH9pWrafnKQbeg5mNjPClEPgJ6qkfKPTS7qESH96UbuY1PSshI8FlVFi0WHp7exQXX4MeO0QPxT8uv6kace8gK4CWzy2BBzF73LrXGCRRHaIYeJGLPpurbE754npvgwwWoktwsKNAItmyLWQue0keVrjITBous2wT6vbwJR0CMngeSE_VyB6BbH6wG-2RqLDdRx6tLuoUpMhvi8XcvYhDF8ENicURvRGsdOqtEBKq1vFdT9hzO6E8uCmWdRddb3Ie-PvP5mdyPPXH773c4JYs_7wdch2gMkKFrCF5zrWUN2ykf-4eolMoanlSM3AXM0yZb3LwKCrP316_WZ-5i7kKsgOnpEJV_c8aiP8KKt5u69aKGhFKxwA8oLXldpqSdOzb-4IQMQ9gFfR3Zr_0NqUA_Q7ogt_9k_INr6RgA3ddnhgUp6xy",
+      "widthPx": 4032,
+      "heightPx": 2268,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCi2hgNi8-2v1EXuM4guBuQ!2e10!4m2!3m1!1s0x889a07de469578b9:0x8176c159a9b613c3",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCi2hgNi8-2v1EXuM4guBuQ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/113833424912983081555",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWnIYgVebcgkodrhmtUp6Donw8S6-6DCNdwahwD1--RxyfAkw4=s100-p-k-no-mo",
+          "displayName": "Mitch Kronowit"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3lHpZyRVZ3mSqi1GMLx_-oHYi48wl4Y5k6CFdv5LDEuyyQYdtSxfZJQqghhwkpb7hf9OMLukKevKnAUkLQBNq_IHXDQ62pUrHDNguSGf2hIa1jvF_x79Hbu0xTaxXQ9Tpa60ogI87rwKctDxIx8dFfIzcBy-UTqM9mVDw5u_VWVmPC4zEGAzxrBxX8A8PNePh9YGqqfrww2q7u69j3OrChHzDs2QumkJ6XThKh6Yk_AeSnw-Ke1IGwyT4uNQ5k6tdUwXeHqh_tTrSKfYgzhbjt59ZJshhAsQMl2T8VZMPkozgUYwrIrs0-gqveoVPvk8o5-95mKdQW3E5sXEWRR0ypu9Apm1WB4q8kE_HeM_dfVFFswEmBaTiTlE--vWIUckQLCqzXYM8kP_DHYInBtbzwdj8stulpiYPPfcAPTMTYC7g",
+      "widthPx": 1090,
+      "heightPx": 1083,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICuteauMQ!2e10!4m2!3m1!1s0x889a07de469578b9:0x8176c159a9b613c3",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICuteauMQ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/112109493932371540149",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUnC-5PiWkPSoXrnjwo3uwwRF4pUOXVG_tdddPOn7BECJVurYE=s100-p-k-no-mo",
+          "displayName": "Bay Side Boat Rental LLC"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3kMn2uCG1wxK5Jp2ptLhSnljzxb8TFWLrXf2gA59vfVsReC7yGvjD1Aehp-Mky-Zln6XatYu3Xjhgzd56f2_V293LjZFscCMd3GJ-h0LDcc3t-Zzp4H85MJnrTSQ6Aqf2rpdBLqwn2uesXpBrx-BvCEKs-0VC0uLz5wha20iyT6rDsBr_DwOk7BfEsyOE9J8RmMDrDuTM7u9I1tCbwrGmugyY53imSbmcTKQuaubgzPTyAx5D_yrYarLV3XW8vKClrGEglK9Udo7-wAQNnFxYKKFWupt5PtbvNLWqq52Yk7oqRi0u48y68A1-af4Xip5mjZlbxdeumK8Rb-fgPY9iWTcgY08If_iDAFpFRyCkaYH-BeWXN8GRwc9iHMQh_nQX9RFDrKOZYaDoVFWboumOf454c-8Hwc3wP-MrkBmjw",
+      "widthPx": 3840,
+      "heightPx": 2160,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDz6fTZTQ!2e10!4m2!3m1!1s0x889a07de469578b9:0x8176c159a9b613c3",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDz6fTZTQ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/112109493932371540149",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUnC-5PiWkPSoXrnjwo3uwwRF4pUOXVG_tdddPOn7BECJVurYE=s100-p-k-no-mo",
+          "displayName": "Bay Side Boat Rental LLC"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3nvLMllzVq0paD-2LUxhAZrcWyc28wGxgGapD4vSCPiLFQdvS6lyleN-ub-M054q4SiCalaKq_PpKPbEDKY2V29qqjgj1pESZswI_8Ml2qvjsZaUkg2YJZ1oqL8_uNPMLjCo81cHA2QJBeyIzOkayLihPOgIu2vtFPCbPYmX0sVBsDp0LsYPBzDoNf6LNwei6EO3Lx5KJvXhhitL6FSNi7Ofg9XDgetU0ZIPlfcF9gbyIeg0hBjuQ17LmPR2Vnv5W67Df_yaxgGAVj6QQJMZ8jBrsguwh20lCoSGGlALTlGpxFsFhCffUjA-DS33WkLixQh6nam3eZb9Y0Zjq5YdxtZlFzTVbNRMaTmF5qKB96NwhhBRgj3mypSCtEIR5nZZAb3yOBNWAFCdex7gPFZbX5ocyDGwqoXUXApGpitLzaYvB_2",
+      "widthPx": 3840,
+      "heightPx": 2160,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDz6fS2lQE!2e10!4m2!3m1!1s0x889a07de469578b9:0x8176c159a9b613c3",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDz6fS2lQE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/112109493932371540149",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUnC-5PiWkPSoXrnjwo3uwwRF4pUOXVG_tdddPOn7BECJVurYE=s100-p-k-no-mo",
+          "displayName": "Bay Side Boat Rental LLC"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3mwRBgSc4qqhusrxbIQlmQsjG9Kivzr24dxZKEGFRT27ykQCBcW88C0h3kB_FlJ0Vnif6JdDr-KrI6GRzacY6xB76kzFKq-jqAYQGOxUvxQG9LNvndcHBv98Aoq7YzgKwaKS8BfVyHOUCkYE2LCgOt-248ox8o4r5_yVLCrYICmW_70po5m6ggm1ac-Dz2qK6bq8PSNjQsVfioHeS9gZHRPX00ORFLLTDJRy464jsaQtDbtxrSU2zUhmQW-5vY2okNA0HIBnv1Xe-ilF0q-7VuMOZHq8XnxIrN9wQ0-KC5UM2bDX70SxqAtZ3O2hfrJGg2Rmz4EcpIzui_eeFD9A-m-T71BtroujyIB1DpqOooT6aDGxKiczcOGD-5JBi0YNSx-gWgfoqWzBu8OUleQSKyX_8Lox479xSRLult9PeD9nqj1",
+      "widthPx": 3025,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICKoKHTgQE!2e10!4m2!3m1!1s0x889a07de469578b9:0x8176c159a9b613c3",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICKoKHTgQE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/112109493932371540149",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUnC-5PiWkPSoXrnjwo3uwwRF4pUOXVG_tdddPOn7BECJVurYE=s100-p-k-no-mo",
+          "displayName": "Bay Side Boat Rental LLC"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3n_wE4w1BxufJyrZ8Cuv3ot6J2JZUtS7VhQKAsXt3Z4zFYgesI3WSIL1qfulNZ_XjKxWgvpBcwS8FG2NP2DrpPN5kvE2OMWX8KQfizzbvvmfny5LhNBCo9Ij3NHpjJOX-5TdGbZELbXimUozDOLUGSfK3v2b24Q8RJT44kU6SW4Zq96N7VJw5zGwP3gEcOqtNaZxWxJyGrs0HIEBi6bcT4JEMRbZg_JZoNreFO67uOlKpX0jhjalZJDfPwIqfSo1TQqVw8L0g1qUeigRXYxXU-nzpa5B7oSMLI3V-uhD9Gpj7-QQhXh6CKblDGGBqcVIwpDI5pRWdp7fFd-zbtWe5pGmg0m38QKAXPlwcT-7X9IM-CEVCg49DHJFbPcadYym2ESTZMmWLkYTUYO-1d2nJ5vzXIhT6x7JuVIDeGJ9xflqAsR",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICFvarOygE!2e10!4m2!3m1!1s0x889a07de469578b9:0x8176c159a9b613c3",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICFvarOygE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/115972362018783931961",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVzmZvxk5baiIfSuRzgQzdyE-B7UTSwmuWHAiXUjg865UbytYO30Q=s100-p-k-no-mo",
+          "displayName": "Shannon Grantham"
+        }
+      ]
+    }
+  ],
+  "rating": 5,
+  "reviews": [
+    {
+      "name": "places/ChIJuXiVRt4HmogRwxO2qVnBdoE/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pKVFpIWjFPV1pGZGxacFpuUkRiMVp0VkU1U1pHYxAB",
+      "text": {
+        "text": "Amazing Day on the Water!\nWe rented a pontoon for 8 hours with Bay Side Pontoon in Orange Beach, and it was the highlight of our trip. Jon and Kevin were fantastic to work with — friendly, helpful, and made the process super easy. They provided a map and encouraged us to explore, which was exactly what we did!\n\nDuring the day we cruised to Pirates Cove, Flora-Bama, Bird Island, and even stopped by the two State Parks. The boat ran perfectly, we were able to connect our own music via Bluetooth, and the Bimini provided plenty of shade while we enjoyed the sunshine. Timed the return for a sunset on the Bayou.\n\nIt was the perfect setup for a fun, relaxing day on the water. Highly recommend Bay Side Pontoon — we’ll definitely rent from them again!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-10-06T16:09:02.394806366Z",
+      "originalText": {
+        "text": "Amazing Day on the Water!\nWe rented a pontoon for 8 hours with Bay Side Pontoon in Orange Beach, and it was the highlight of our trip. Jon and Kevin were fantastic to work with — friendly, helpful, and made the process super easy. They provided a map and encouraged us to explore, which was exactly what we did!\n\nDuring the day we cruised to Pirates Cove, Flora-Bama, Bird Island, and even stopped by the two State Parks. The boat ran perfectly, we were able to connect our own music via Bluetooth, and the Bimini provided plenty of shade while we enjoyed the sunshine. Timed the return for a sunset on the Bayou.\n\nIt was the perfect setup for a fun, relaxing day on the water. Highly recommend Bay Side Pontoon — we’ll definitely rent from them again!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pKVFpIWjFPV1pGZGxacFpuUkRiMVp0VkU1U1pHYxAB!2m1!1s0x889a07de469578b9:0x8176c159a9b613c3",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2pKVFpIWjFPV1pGZGxacFpuUkRiMVp0VkU1U1pHYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/108148300004734176996/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXEt0GFzSXOjXXm6sW5osmvhRV4c34gq9bRgldxG2zXKT86pK8=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Stephanie Hauska"
+      },
+      "relativePublishTimeDescription": "8 months ago"
+    },
+    {
+      "name": "places/ChIJuXiVRt4HmogRwxO2qVnBdoE/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tkSVFUTk5NelZhWkdJd2RIazBVbGhxVm05aGNXYxAB",
+      "text": {
+        "text": "EXCEPTIONAL service!  We have rented many pontoons over the years and Bay Side is by far the very best. Boat was extremely clean and well maintained.  Jon was pleasant to deal with and gave us extraordinary service.  Private dock was such an ease for loading.  He was professional and gave us a map and tips in local spots to visit while on the bay.  Highly recommend this company and Jon. We will be back!!!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-09-29T22:15:26.297045678Z",
+      "originalText": {
+        "text": "EXCEPTIONAL service!  We have rented many pontoons over the years and Bay Side is by far the very best. Boat was extremely clean and well maintained.  Jon was pleasant to deal with and gave us extraordinary service.  Private dock was such an ease for loading.  He was professional and gave us a map and tips in local spots to visit while on the bay.  Highly recommend this company and Jon. We will be back!!!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tkSVFUTk5NelZhWkdJd2RIazBVbGhxVm05aGNXYxAB!2m1!1s0x889a07de469578b9:0x8176c159a9b613c3",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2tkSVFUTk5NelZhWkdJd2RIazBVbGhxVm05aGNXYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/109724996048646035389/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIWTNDFD8egYntYGRJ0h8IhvIpMowHhHnTjrPn2INK6r5fhaA=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Stacey Marchman"
+      },
+      "relativePublishTimeDescription": "8 months ago"
+    },
+    {
+      "name": "places/ChIJuXiVRt4HmogRwxO2qVnBdoE/reviews/Ci9DQUlRQUNvZENodHljRjlvT25CRVduVm1ObVExUkZjM1VrWTJSVlpoWjJVM1drRRAB",
+      "text": {
+        "text": "Great rental experience, we rented the pontoon and it was clean, drove and rode great. It was in the water waiting on us, Caleb was great. Great communication and we would definitely rent from here again. We have rented at others in the past but this was a great experience. Caleb really did a good job!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-06-26T22:57:17.198901219Z",
+      "originalText": {
+        "text": "Great rental experience, we rented the pontoon and it was clean, drove and rode great. It was in the water waiting on us, Caleb was great. Great communication and we would definitely rent from here again. We have rented at others in the past but this was a great experience. Caleb really did a good job!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25CRVduVm1ObVExUkZjM1VrWTJSVlpoWjJVM1drRRAB!2m1!1s0x889a07de469578b9:0x8176c159a9b613c3",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT25CRVduVm1ObVExUkZjM1VrWTJSVlpoWjJVM1drRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/103467852959829592185/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIxHOT-sQ4U0DbJrxfWpEsxvSWIbL5agYmHA4AdMSvuPKW1NQ=s128-c0x00000000-cc-rp-mo-ba4",
+        "displayName": "Chris Ingram"
+      },
+      "relativePublishTimeDescription": "11 months ago"
+    },
+    {
+      "name": "places/ChIJuXiVRt4HmogRwxO2qVnBdoE/reviews/Ci9DQUlRQUNvZENodHljRjlvT25ka1dHMHpOemx6WlRkM2JUUjRPVkYzWW1ScGIxRRAB",
+      "text": {
+        "text": "Somewhere between 4 and 5 stars so I rounded up because the staff here is so nice. We’ve rented pontoon boats from Bayside about 3 times over the last few years and have always had a great time with them and they are very responsive and accommodating. Ok, the boats aren’t in 5-Star condition, like you’d expect your own private boat to be, with a few accessories likely not working such as lights or instrument gauges (depending on what the vessel had installed at one time), but the stuff that counts works great, like the engine, steering, and STEREO!\n\nBoats come with plenty of life preservers, but we always bring a few of our own. There’s also an anchor provided and a couple fenders. You’ll receive at least two docks lines, in various states of repair, so I always bring a few nylon lines of my own so I’m prepared for any docking situation. Now just add friends, snacks, and drinks and you’re in for a great time on the beautiful waters of the Alabama/Panhandle Gulf Coast.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-08-15T12:41:47.832516873Z",
+      "originalText": {
+        "text": "Somewhere between 4 and 5 stars so I rounded up because the staff here is so nice. We’ve rented pontoon boats from Bayside about 3 times over the last few years and have always had a great time with them and they are very responsive and accommodating. Ok, the boats aren’t in 5-Star condition, like you’d expect your own private boat to be, with a few accessories likely not working such as lights or instrument gauges (depending on what the vessel had installed at one time), but the stuff that counts works great, like the engine, steering, and STEREO!\n\nBoats come with plenty of life preservers, but we always bring a few of our own. There’s also an anchor provided and a couple fenders. You’ll receive at least two docks lines, in various states of repair, so I always bring a few nylon lines of my own so I’m prepared for any docking situation. Now just add friends, snacks, and drinks and you’re in for a great time on the beautiful waters of the Alabama/Panhandle Gulf Coast.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25ka1dHMHpOemx6WlRkM2JUUjRPVkYzWW1ScGIxRRAB!2m1!1s0x889a07de469578b9:0x8176c159a9b613c3",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT25ka1dHMHpOemx6WlRkM2JUUjRPVkYzWW1ScGIxRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/113833424912983081555/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWnIYgVebcgkodrhmtUp6Donw8S6-6DCNdwahwD1--RxyfAkw4=s128-c0x00000000-cc-rp-mo-ba3",
+        "displayName": "Mitch Kronowit"
+      },
+      "relativePublishTimeDescription": "9 months ago"
+    },
+    {
+      "name": "places/ChIJuXiVRt4HmogRwxO2qVnBdoE/reviews/Ci9DQUlRQUNvZENodHljRjlvT25Sck9FRmZMVWc1TFdaS05HUmFSMGM1TmtsSkxYYxAB",
+      "text": {
+        "text": "⭐️⭐️⭐️⭐️⭐️\nWe had the BEST time with Bayside Boat Rentals in Orange Beach! The staff was so friendly and made the whole process easy from start to finish. The boat was spotless, comfortable, and had everything we needed. Bluetooth speakers, plenty of shade, and a smooth ride all day long.\n\nExploring the waterways, stopping at Robinson Island, and relaxing on the floating mat made for an unforgettable day on the water. If you’re looking for a fun, stress-free boat rental, Bayside is hands down the best choice in Orange Beach. We can’t wait to book again! 🚤🌊☀️",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-08-20T20:26:59.255345962Z",
+      "originalText": {
+        "text": "⭐️⭐️⭐️⭐️⭐️\nWe had the BEST time with Bayside Boat Rentals in Orange Beach! The staff was so friendly and made the whole process easy from start to finish. The boat was spotless, comfortable, and had everything we needed. Bluetooth speakers, plenty of shade, and a smooth ride all day long.\n\nExploring the waterways, stopping at Robinson Island, and relaxing on the floating mat made for an unforgettable day on the water. If you’re looking for a fun, stress-free boat rental, Bayside is hands down the best choice in Orange Beach. We can’t wait to book again! 🚤🌊☀️",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25Sck9FRmZMVWc1TFdaS05HUmFSMGM1TmtsSkxYYxAB!2m1!1s0x889a07de469578b9:0x8176c159a9b613c3",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT25Sck9FRmZMVWc1TFdaS05HUmFSMGM1TmtsSkxYYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/116509629891542781016/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIg-4DmiqxcSoxCkEJRhIEYI6r9cSAgdPwBsugymok42TbFtA=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Christina Buckner"
+      },
+      "relativePublishTimeDescription": "9 months ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.289238500000003,
+    "longitude": -87.59504559999999
+  },
+  "plusCode": {
+    "globalCode": "862J7CQ3+MX",
+    "compoundCode": "7CQ3+MX Orange Beach, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.287889519708504,
+      "longitude": -87.5963962802915
+    },
+    "high": {
+      "latitude": 30.290587480291503,
+      "longitude": -87.5936983197085
+    }
+  },
+  "websiteUri": "https://www.baysideorangebeach.com/",
+  "displayName": {
+    "text": "Bay Side Boat Rental LLC",
+    "languageCode": "en"
+  },
+  "primaryType": "service",
+  "googleMapsUri": "https://maps.google.com/?cid=9328856268988093379&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewSummary": {
+    "text": {
+      "text": "People say this boat rental service offers clean and comfortable pontoon boats, with friendly and helpful staff, especially the dock hands who provide excellent service. They also highlight the smooth rental process, flexible reservation times, and prompt van service to and from the dock.",
+      "languageCode": "en-US"
+    },
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a07de469578b9:0x8176c159a9b613c3!9m1!1b1",
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "flagContentUri": "https://www.google.com/local/content/rap/report?postId=5%401:CAIQACodChtyc19oOm1xRFpQRXNoVzdOQjB1TE8wSTNORkE%7CCAIQACorChtyc19oOm1xRFpQRXNoVzdOQjB1TE8wSTNORkESDAjLtd_BBhDqh7SUAw&d=17924085&t=8"
+  },
+  "businessStatus": "OPERATIONAL",
+  "paymentOptions": {
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=9328856268988093379&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07de469578b9:0x8176c159a9b613c3!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a07de469578b9:0x8176c159a9b613c3!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a07de469578b9:0x8176c159a9b613c3!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07de469578b9:0x8176c159a9b613c3!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "userRatingCount": 342,
+  "adrFormatAddress": "<span class=\"street-address\">25142 Canal Rd</span>, <span class=\"locality\">Orange Beach</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36561</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "25142 Canal Rd, Orange Beach, AL 36561, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "25142",
+      "shortText": "25142",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Canal Road",
+      "shortText": "Canal Rd",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Orange Beach",
+      "shortText": "Orange Beach",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36561",
+      "shortText": "36561",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "landmarks": [
+      {
+        "name": "places/ChIJx7kgZ5QHmogRGTfYKGEJL7I",
+        "types": [
+          "convenience_store",
+          "drugstore",
+          "establishment",
+          "food",
+          "grocery_or_supermarket",
+          "health",
+          "home_goods_store",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJx7kgZ5QHmogRGTfYKGEJL7I",
+        "displayName": {
+          "text": "DG Market",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 129.02382,
+        "straightLineDistanceMeters": 89.2327
+      },
+      {
+        "name": "places/ChIJB9_4DkMGmogRx1zw5UnQvzU",
+        "types": [
+          "establishment",
+          "furniture_store",
+          "home_goods_store",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJB9_4DkMGmogRx1zw5UnQvzU",
+        "displayName": {
+          "text": "Posh Interiors",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "DOWN_THE_ROAD",
+        "travelDistanceMeters": 148.76779,
+        "straightLineDistanceMeters": 82.2998
+      },
+      {
+        "name": "places/ChIJzVQbj0QGmogR8nYbzTbjpH0",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "storage",
+          "store"
+        ],
+        "placeId": "ChIJzVQbj0QGmogR8nYbzTbjpH0",
+        "displayName": {
+          "text": "Advanced Marine & Power Systems",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 335.88065,
+        "straightLineDistanceMeters": 197.68019
+      },
+      {
+        "name": "places/ChIJjfLui0MGmogRIy8u_MEsT8o",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJjfLui0MGmogRIy8u_MEsT8o",
+        "displayName": {
+          "text": "Island Thrift",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 248.84488,
+        "straightLineDistanceMeters": 182.65948
+      },
+      {
+        "name": "places/ChIJqT4ReCQEmogRMiuvnpkwSTA",
+        "types": [
+          "church",
+          "establishment",
+          "place_of_worship",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJqT4ReCQEmogRMiuvnpkwSTA",
+        "displayName": {
+          "text": "Canal Road Baptist Church",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 427.1521,
+        "straightLineDistanceMeters": 231.17067
+      }
+    ]
+  },
+  "currentOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 18,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T13:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 8:00 AM – 6:00 PM",
+      "Tuesday: 8:00 AM – 6:00 PM",
+      "Wednesday: 8:00 AM – 6:00 PM",
+      "Thursday: 8:00 AM – 6:00 PM",
+      "Friday: 8:00 AM – 6:00 PM",
+      "Saturday: 8:00 AM – 6:00 PM",
+      "Sunday: 8:00 AM – 6:00 PM"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Boat Rental Service",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "nationalPhoneNumber": "(251) 979-0609",
+  "regularOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 18,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T13:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 8:00 AM – 6:00 PM",
+      "Tuesday: 8:00 AM – 6:00 PM",
+      "Wednesday: 8:00 AM – 6:00 PM",
+      "Thursday: 8:00 AM – 6:00 PM",
+      "Friday: 8:00 AM – 6:00 PM",
+      "Saturday: 8:00 AM – 6:00 PM",
+      "Sunday: 8:00 AM – 6:00 PM"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleSeating": true,
+    "wheelchairAccessibleEntrance": true,
+    "wheelchairAccessibleRestroom": true
+  },
+  "shortFormattedAddress": "25142 Canal Rd, Orange Beach",
+  "primaryTypeDisplayName": {
+    "text": "Services",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-979-0609"
+}
+ai_review_summary: People say this boat rental service offers clean and comfortable pontoon boats, with friendly and helpful staff, especially the dock hands who provide excellent service. They also highlight the smooth rental process, flexible reservation times, and prompt van service to and from the dock.
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 25142 Canal Rd, Orange Beach
+national_phone: (251) 979-0609
+search_vector: 'also':32C 'bay':1A 'beach':52 'boat':3A,9C,17C 'clean':13C 'comfort':15C 'dock':25C,49C 'especi':23C 'excel':29C 'flexibl':38C 'friend':19C 'hand':26C 'help':21C 'highlight':33C 'llc':5A 'offer':12C 'orang':51 'peopl':6C 'pontoon':16C 'process':37C 'prompt':42C 'provid':28C 'rental':4A,10C,36C 'reserv':39C 'say':7C 'servic':11C,30C,44C,50 'side':2A 'smooth':35C 'staff':22C 'time':40C 'van':43C
+primary_type_display: Services
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=9328856268988093379&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07de469578b9:0x8176c159a9b613c3!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a07de469578b9:0x8176c159a9b613c3!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a07de469578b9:0x8176c159a9b613c3!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07de469578b9:0x8176c159a9b613c3!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "landmarks": [
+    {
+      "name": "places/ChIJx7kgZ5QHmogRGTfYKGEJL7I",
+      "types": [
+        "convenience_store",
+        "drugstore",
+        "establishment",
+        "food",
+        "grocery_or_supermarket",
+        "health",
+        "home_goods_store",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJx7kgZ5QHmogRGTfYKGEJL7I",
+      "displayName": {
+        "text": "DG Market",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 129.02382,
+      "straightLineDistanceMeters": 89.2327
+    },
+    {
+      "name": "places/ChIJB9_4DkMGmogRx1zw5UnQvzU",
+      "types": [
+        "establishment",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJB9_4DkMGmogRx1zw5UnQvzU",
+      "displayName": {
+        "text": "Posh Interiors",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "DOWN_THE_ROAD",
+      "travelDistanceMeters": 148.76779,
+      "straightLineDistanceMeters": 82.2998
+    },
+    {
+      "name": "places/ChIJzVQbj0QGmogR8nYbzTbjpH0",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "storage",
+        "store"
+      ],
+      "placeId": "ChIJzVQbj0QGmogR8nYbzTbjpH0",
+      "displayName": {
+        "text": "Advanced Marine & Power Systems",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 335.88065,
+      "straightLineDistanceMeters": 197.68019
+    },
+    {
+      "name": "places/ChIJjfLui0MGmogRIy8u_MEsT8o",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJjfLui0MGmogRIy8u_MEsT8o",
+      "displayName": {
+        "text": "Island Thrift",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 248.84488,
+      "straightLineDistanceMeters": 182.65948
+    },
+    {
+      "name": "places/ChIJqT4ReCQEmogRMiuvnpkwSTA",
+      "types": [
+        "church",
+        "establishment",
+        "place_of_worship",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJqT4ReCQEmogRMiuvnpkwSTA",
+      "displayName": {
+        "text": "Canal Road Baptist Church",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 427.1521,
+      "straightLineDistanceMeters": 231.17067
+    }
+  ]
+}
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: rental
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_attributes   -   7 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 7] ---
+id: 26265efb-2133-4923-a76c-374ff6fb3407
+entity_slug: bay-side-boat-rental-llc
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 2 of 7] ---
+id: bdbcbcc7-4c58-4234-8dde-ebdc9b04fe9f
+entity_slug: bay-side-boat-rental-llc
+category: accessibility
+key: access_wheelchairAccessibleSeating
+label: Wheelchair Accessible Seating
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 3 of 7] ---
+id: 881d7bb5-9e44-422c-a37b-89b6e0e83974
+entity_slug: bay-side-boat-rental-llc
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 4 of 7] ---
+id: 21096f6f-8427-4138-a218-20d95c64d0ff
+entity_slug: bay-side-boat-rental-llc
+category: accessibility
+key: access_wheelchairAccessibleRestroom
+label: Wheelchair Accessible Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 5 of 7] ---
+id: 457b1bdc-47f2-4678-bb68-52843558cca5
+entity_slug: bay-side-boat-rental-llc
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 6 of 7] ---
+id: 9d969ad2-e417-4ab5-9ef8-af7056843909
+entity_slug: bay-side-boat-rental-llc
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 7 of 7] ---
+id: 0d0369c8-353f-48e8-895a-b9b0012a4702
+entity_slug: bay-side-boat-rental-llc
+category: payment
+key: pay_acceptsCreditCards
+label: Accepts Credit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: bay-side-boat-rental-llc
+name: Bay Side Boat Rental LLC
+industry_code: rental
+is_parent: false
+score_of_7: 7
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 2e0ed98e-334e-4a90-ac6d-829fd3c3dbde
+entity_slug: bay-side-boat-rental-llc
+place_uri: https://maps.google.com/?cid=9328856268988093379&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07de469578b9:0x8176c159a9b613c3!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a07de469578b9:0x8176c159a9b613c3!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a07de469578b9:0x8176c159a9b613c3!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07de469578b9:0x8176c159a9b613c3!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 538
+entity_slug: bay-side-boat-rental-llc
+google_review_name: places/ChIJuXiVRt4HmogRwxO2qVnBdoE/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pKVFpIWjFPV1pGZGxacFpuUkRiMVp0VkU1U1pHYxAB
+rating: 5
+review_text: Amazing Day on the Water!
+We rented a pontoon for 8 hours with Bay Side Pontoon in Orange Beach, and it was the highlight of our trip. Jon and Kevin were fantastic to work with — friendly, helpful, and made the process super easy. They provided a map and encouraged us to explore, which was exactly what we did!
+
+During the day we cruised to Pirates Cove, Flora-Bama, Bird Island, and even stopped by the two State Parks. The boat ran perfectly, we were able to connect our own music via Bluetooth, and the Bimini provided plenty of shade while we enjoyed the sunshine. Timed the return for a sunset on the Bayou.
+
+It was the perfect setup for a fun, relaxing day on the water. Highly recommend Bay Side Pontoon — we’ll definitely rent from them again!
+language_code: en
+author_name: Stephanie Hauska
+author_profile_url: https://www.google.com/maps/contrib/108148300004734176996/reviews
+publish_time: 2025-10-06T16:09:02.394806+00:00
+relative_time: 8 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pKVFpIWjFPV1pGZGxacFpuUkRiMVp0VkU1U1pHYxAB!2m1!1s0x889a07de469578b9:0x8176c159a9b613c3
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 539
+entity_slug: bay-side-boat-rental-llc
+google_review_name: places/ChIJuXiVRt4HmogRwxO2qVnBdoE/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tkSVFUTk5NelZhWkdJd2RIazBVbGhxVm05aGNXYxAB
+rating: 5
+review_text: EXCEPTIONAL service!  We have rented many pontoons over the years and Bay Side is by far the very best. Boat was extremely clean and well maintained.  Jon was pleasant to deal with and gave us extraordinary service.  Private dock was such an ease for loading.  He was professional and gave us a map and tips in local spots to visit while on the bay.  Highly recommend this company and Jon. We will be back!!!
+language_code: en
+author_name: Stacey Marchman
+author_profile_url: https://www.google.com/maps/contrib/109724996048646035389/reviews
+publish_time: 2025-09-29T22:15:26.297046+00:00
+relative_time: 8 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tkSVFUTk5NelZhWkdJd2RIazBVbGhxVm05aGNXYxAB!2m1!1s0x889a07de469578b9:0x8176c159a9b613c3
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 540
+entity_slug: bay-side-boat-rental-llc
+google_review_name: places/ChIJuXiVRt4HmogRwxO2qVnBdoE/reviews/Ci9DQUlRQUNvZENodHljRjlvT25CRVduVm1ObVExUkZjM1VrWTJSVlpoWjJVM1drRRAB
+rating: 5
+review_text: Great rental experience, we rented the pontoon and it was clean, drove and rode great. It was in the water waiting on us, Caleb was great. Great communication and we would definitely rent from here again. We have rented at others in the past but this was a great experience. Caleb really did a good job!
+language_code: en
+author_name: Chris Ingram
+author_profile_url: https://www.google.com/maps/contrib/103467852959829592185/reviews
+publish_time: 2025-06-26T22:57:17.198901+00:00
+relative_time: 11 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25CRVduVm1ObVExUkZjM1VrWTJSVlpoWjJVM1drRRAB!2m1!1s0x889a07de469578b9:0x8176c159a9b613c3
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 541
+entity_slug: bay-side-boat-rental-llc
+google_review_name: places/ChIJuXiVRt4HmogRwxO2qVnBdoE/reviews/Ci9DQUlRQUNvZENodHljRjlvT25ka1dHMHpOemx6WlRkM2JUUjRPVkYzWW1ScGIxRRAB
+rating: 5
+review_text: Somewhere between 4 and 5 stars so I rounded up because the staff here is so nice. We’ve rented pontoon boats from Bayside about 3 times over the last few years and have always had a great time with them and they are very responsive and accommodating. Ok, the boats aren’t in 5-Star condition, like you’d expect your own private boat to be, with a few accessories likely not working such as lights or instrument gauges (depending on what the vessel had installed at one time), but the stuff that counts works great, like the engine, steering, and STEREO!
+
+Boats come with plenty of life preservers, but we always bring a few of our own. There’s also an anchor provided and a couple fenders. You’ll receive at least two docks lines, in various states of repair, so I always bring a few nylon lines of my own so I’m prepared for any docking situation. Now just add friends, snacks, and drinks and you’re in for a great time on the beautiful waters of the Alabama/Panhandle Gulf Coast.
+language_code: en
+author_name: Mitch Kronowit
+author_profile_url: https://www.google.com/maps/contrib/113833424912983081555/reviews
+publish_time: 2025-08-15T12:41:47.832517+00:00
+relative_time: 9 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25ka1dHMHpOemx6WlRkM2JUUjRPVkYzWW1ScGIxRRAB!2m1!1s0x889a07de469578b9:0x8176c159a9b613c3
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 542
+entity_slug: bay-side-boat-rental-llc
+google_review_name: places/ChIJuXiVRt4HmogRwxO2qVnBdoE/reviews/Ci9DQUlRQUNvZENodHljRjlvT25Sck9FRmZMVWc1TFdaS05HUmFSMGM1TmtsSkxYYxAB
+rating: 5
+review_text: ⭐️⭐️⭐️⭐️⭐️
+We had the BEST time with Bayside Boat Rentals in Orange Beach! The staff was so friendly and made the whole process easy from start to finish. The boat was spotless, comfortable, and had everything we needed. Bluetooth speakers, plenty of shade, and a smooth ride all day long.
+
+Exploring the waterways, stopping at Robinson Island, and relaxing on the floating mat made for an unforgettable day on the water. If you’re looking for a fun, stress-free boat rental, Bayside is hands down the best choice in Orange Beach. We can’t wait to book again! 🚤🌊☀️
+language_code: en
+author_name: Christina Buckner
+author_profile_url: https://www.google.com/maps/contrib/116509629891542781016/reviews
+publish_time: 2025-08-20T20:26:59.255346+00:00
+relative_time: 9 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25Sck9FRmZMVWc1TFdaS05HUmFSMGM1TmtsSkxYYxAB!2m1!1s0x889a07de469578b9:0x8176c159a9b613c3
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 4d9b0852-bd9e-4a1b-b397-cebecea6cb7f
+entity_slug: bay-side-boat-rental-llc
+day_of_week: 0
+opens_at: 08:00:00
+closes_at: 18:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: eb069a3f-706c-4f80-aba2-e7ee7febdade
+entity_slug: bay-side-boat-rental-llc
+day_of_week: 1
+opens_at: 08:00:00
+closes_at: 18:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: eb63dd56-882a-4967-91fe-533754bc6885
+entity_slug: bay-side-boat-rental-llc
+day_of_week: 2
+opens_at: 08:00:00
+closes_at: 18:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 58365e00-2b2a-487a-810d-98ea940c6b86
+entity_slug: bay-side-boat-rental-llc
+day_of_week: 3
+opens_at: 08:00:00
+closes_at: 18:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 156ebdad-2b9c-4cdf-95c8-b1d30f6f0304
+entity_slug: bay-side-boat-rental-llc
+day_of_week: 4
+opens_at: 08:00:00
+closes_at: 18:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 107f627e-c27d-4889-b2b8-b871f0d4df40
+entity_slug: bay-side-boat-rental-llc
+day_of_week: 5
+opens_at: 08:00:00
+closes_at: 18:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 071f5838-2bc9-43b0-ac7c-57f728b0e3d2
+entity_slug: bay-side-boat-rental-llc
+day_of_week: 6
+opens_at: 08:00:00
+closes_at: 18:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   3 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 3] ---
+entity_slug: bay-side-boat-rental-llc
+source_table: offerings
+item_type: rental
+section_name: Rental
+item_id: 713796f9-7081-47e9-bbfa-46f83dfad989
+name: Luxury pontoon half day
+description: Includes: luxury pontoon. Not included / possible extra: tax and fuel not included
+price_from: 350
+price_label: flat
+sort_order: 0
+active: true
+attributes: {
+  "unit": "flat",
+  "fee_note": "tax and fuel not included",
+  "item_type_raw": "rental",
+  "included_summary": "luxury pontoon"
+}
+
+--- entity_items_norm_v [row 2 of 3] ---
+entity_slug: bay-side-boat-rental-llc
+source_table: offerings
+item_type: deposit
+section_name: Deposit
+item_id: 37388ab0-9501-4410-ab66-0e8992a6673b
+name: Reservation deposit
+price_from: 100
+price_label: flat
+sort_order: 193
+active: true
+attributes: {
+  "unit": "flat",
+  "fee_note": "Deposit required; not refundable if canceled within 48 hours of pickup/delivery",
+  "item_type_raw": "Deposit"
+}
+
+--- entity_items_norm_v [row 3 of 3] ---
+entity_slug: bay-side-boat-rental-llc
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: be0f4036-4b80-4141-b029-a65039aa9d78
+name: Bay Side Boat Rental LLC
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-side-boat-rental-llc/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-side-boat-rental-llc/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   3 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 3] ---
+entity_slug: bay-side-boat-rental-llc
+source_table: offerings
+item_type: rental
+section_name: Rental
+item_id: 713796f9-7081-47e9-bbfa-46f83dfad989
+name: Luxury pontoon half day
+description: Includes: luxury pontoon. Not included / possible extra: tax and fuel not included
+price_from: 350
+price_label: flat
+sort_order: 0
+active: true
+attributes: {
+  "unit": "flat",
+  "fee_note": "tax and fuel not included",
+  "included_summary": "luxury pontoon"
+}
+
+--- entity_items_v [row 2 of 3] ---
+entity_slug: bay-side-boat-rental-llc
+source_table: offerings
+item_type: Deposit
+section_name: Deposit
+item_id: 37388ab0-9501-4410-ab66-0e8992a6673b
+name: Reservation deposit
+price_from: 100
+price_label: flat
+sort_order: 193
+active: true
+attributes: {
+  "unit": "flat",
+  "fee_note": "Deposit required; not refundable if canceled within 48 hours of pickup/delivery"
+}
+
+--- entity_items_v [row 3 of 3] ---
+entity_slug: bay-side-boat-rental-llc
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: be0f4036-4b80-4141-b029-a65039aa9d78
+name: Bay Side Boat Rental LLC
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-side-boat-rental-llc/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-side-boat-rental-llc/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: 0eaad024-94c8-42e7-9e6c-17e2fe52a656
+entity_slug: bay-side-boat-rental-llc
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 94cc8d75-7438-4408-bbf4-5ffec225234d
+entity_slug: bay-side-boat-rental-llc
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: bad2a998-4112-45b1-9b10-1b92aec44bdb
+entity_slug: bay-side-boat-rental-llc
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: ef880096-016e-4013-9726-a1d1ba260812
+entity_slug: bay-side-boat-rental-llc
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: 6e037e63-2aeb-4278-b7b2-701863457e7f
+entity_slug: bay-side-boat-rental-llc
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: 08ec5fe8-04e5-4598-9c02-929f35b32620
+entity_slug: bay-side-boat-rental-llc
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 5323d24b-7db5-4e2b-a18a-83e657fe9245
+entity_slug: bay-side-boat-rental-llc
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: f8f7b77f-d28d-4521-925c-fd2506cbaf67
+entity_slug: bay-side-boat-rental-llc
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: 45f8513e-7fac-4027-8dc9-262363e69eb9
+entity_slug: bay-side-boat-rental-llc
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: e1e8d712-34d1-409d-8314-aa80c3f71755
+entity_slug: bay-side-boat-rental-llc
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: c88065fa-4ef7-49cd-8e0c-b3e8b681befe
+entity_slug: bay-side-boat-rental-llc
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: d4958814-5108-40f8-828d-5a7110526396
+entity_slug: bay-side-boat-rental-llc
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: 8e33b613-24eb-4021-b77d-b31d8539ac75
+entity_slug: bay-side-boat-rental-llc
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   25 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 25] ---
+id: 401029a1-1bbc-4d49-b236-3dccf6a03c90
+landmark_id: d52bccf8-940e-4661-b97c-a7430bf6e742
+entity_slug: bay-side-boat-rental-llc
+landmark_type: convenience_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 25] ---
+id: 922362ee-6169-4a09-8b3d-4df3fb359929
+landmark_id: d52bccf8-940e-4661-b97c-a7430bf6e742
+entity_slug: bay-side-boat-rental-llc
+landmark_type: drugstore
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 25] ---
+id: 6a7d56e4-d7bb-488d-9b46-c1d56787eddb
+landmark_id: d52bccf8-940e-4661-b97c-a7430bf6e742
+entity_slug: bay-side-boat-rental-llc
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 25] ---
+id: 4666fe6c-d0ae-4cc9-a807-90ecb5f2c2ec
+landmark_id: d52bccf8-940e-4661-b97c-a7430bf6e742
+entity_slug: bay-side-boat-rental-llc
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 25] ---
+id: a5b9c71a-3318-4cc6-86cc-96d5d8b9986f
+landmark_id: d52bccf8-940e-4661-b97c-a7430bf6e742
+entity_slug: bay-side-boat-rental-llc
+landmark_type: grocery_or_supermarket
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 25] ---
+id: 442287d4-5690-42c6-a2ac-35bc0c21f8d4
+landmark_id: d52bccf8-940e-4661-b97c-a7430bf6e742
+entity_slug: bay-side-boat-rental-llc
+landmark_type: health
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 25] ---
+id: ce33a4a1-d204-4210-8cb4-7f3f0c336339
+landmark_id: d52bccf8-940e-4661-b97c-a7430bf6e742
+entity_slug: bay-side-boat-rental-llc
+landmark_type: home_goods_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 25] ---
+id: 66ed36d7-28c6-45f7-9705-a02ec0f9d459
+landmark_id: d52bccf8-940e-4661-b97c-a7430bf6e742
+entity_slug: bay-side-boat-rental-llc
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 25] ---
+id: db28fdbb-6b74-4a0c-b421-f96a70481e63
+landmark_id: d52bccf8-940e-4661-b97c-a7430bf6e742
+entity_slug: bay-side-boat-rental-llc
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 25] ---
+id: ec1216ad-0cb1-405f-aeb4-653ee7033be3
+landmark_id: 7020d151-da69-40d3-a7f5-db739ce7208f
+entity_slug: bay-side-boat-rental-llc
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 25] ---
+id: dbff6ef7-785b-48dc-86a5-ddf3b900c1e1
+landmark_id: 7020d151-da69-40d3-a7f5-db739ce7208f
+entity_slug: bay-side-boat-rental-llc
+landmark_type: furniture_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 25] ---
+id: 2c92e6d2-4ae9-4919-b6cc-a0e28ed1a88c
+landmark_id: 7020d151-da69-40d3-a7f5-db739ce7208f
+entity_slug: bay-side-boat-rental-llc
+landmark_type: home_goods_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 25] ---
+id: 6fcce2e4-c511-4ba0-b45c-d576bbced4d4
+landmark_id: 7020d151-da69-40d3-a7f5-db739ce7208f
+entity_slug: bay-side-boat-rental-llc
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 25] ---
+id: 9da06101-4faa-4884-b8b7-dd912020e540
+landmark_id: 7020d151-da69-40d3-a7f5-db739ce7208f
+entity_slug: bay-side-boat-rental-llc
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 25] ---
+id: 9355407b-62d2-4dba-836b-767c76bd78eb
+landmark_id: 4a3cb629-d41f-4077-b5b3-e08e682fbcc1
+entity_slug: bay-side-boat-rental-llc
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 25] ---
+id: 5a8b9309-0fcf-4ccf-88b4-a691dd9651e2
+landmark_id: 4a3cb629-d41f-4077-b5b3-e08e682fbcc1
+entity_slug: bay-side-boat-rental-llc
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 25] ---
+id: 4736d670-bb50-49bd-b6a3-c91855fba4e3
+landmark_id: 4a3cb629-d41f-4077-b5b3-e08e682fbcc1
+entity_slug: bay-side-boat-rental-llc
+landmark_type: storage
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 25] ---
+id: 652281b5-5c6a-427a-bf99-f42f68f1b83e
+landmark_id: 4a3cb629-d41f-4077-b5b3-e08e682fbcc1
+entity_slug: bay-side-boat-rental-llc
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 19 of 25] ---
+id: 41443cf4-fa2e-445f-b957-4eb03f837b74
+landmark_id: cf6604af-6b57-4ab5-8124-6eb1ba5c5b39
+entity_slug: bay-side-boat-rental-llc
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 20 of 25] ---
+id: bd40bcf3-2e24-4488-8ee0-fb7f2ab33ab5
+landmark_id: cf6604af-6b57-4ab5-8124-6eb1ba5c5b39
+entity_slug: bay-side-boat-rental-llc
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 21 of 25] ---
+id: fb7da7e4-3a2c-438a-9f21-8b991792e5f2
+landmark_id: cf6604af-6b57-4ab5-8124-6eb1ba5c5b39
+entity_slug: bay-side-boat-rental-llc
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 22 of 25] ---
+id: 8bbc4e19-d7cd-4b67-ae8d-feefa31140f8
+landmark_id: ab10fa64-a14f-4592-8ad6-bc63ec9a6c22
+entity_slug: bay-side-boat-rental-llc
+landmark_type: church
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 23 of 25] ---
+id: 8a3d7101-b1ce-4e8d-a19b-4009b5df1c1d
+landmark_id: ab10fa64-a14f-4592-8ad6-bc63ec9a6c22
+entity_slug: bay-side-boat-rental-llc
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 24 of 25] ---
+id: de422bba-2198-4154-91cb-69b62c77543b
+landmark_id: ab10fa64-a14f-4592-8ad6-bc63ec9a6c22
+entity_slug: bay-side-boat-rental-llc
+landmark_type: place_of_worship
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 25 of 25] ---
+id: e39fc7eb-cc41-4d95-bf32-e14807d3bbec
+landmark_id: ab10fa64-a14f-4592-8ad6-bc63ec9a6c22
+entity_slug: bay-side-boat-rental-llc
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   5 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 5] ---
+id: d52bccf8-940e-4661-b97c-a7430bf6e742
+entity_slug: bay-side-boat-rental-llc
+kind: landmark
+place_id: ChIJx7kgZ5QHmogRGTfYKGEJL7I
+name: DG Market
+types: [
+  "convenience_store",
+  "drugstore",
+  "establishment",
+  "food",
+  "grocery_or_supermarket",
+  "health",
+  "home_goods_store",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 129.02382
+straight_line_distance_meters: 89.2327
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 5] ---
+id: 7020d151-da69-40d3-a7f5-db739ce7208f
+entity_slug: bay-side-boat-rental-llc
+kind: landmark
+place_id: ChIJB9_4DkMGmogRx1zw5UnQvzU
+name: Posh Interiors
+types: [
+  "establishment",
+  "furniture_store",
+  "home_goods_store",
+  "point_of_interest",
+  "store"
+]
+spatial_relationship: DOWN_THE_ROAD
+travel_distance_meters: 148.76779
+straight_line_distance_meters: 82.2998
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 5] ---
+id: 4a3cb629-d41f-4077-b5b3-e08e682fbcc1
+entity_slug: bay-side-boat-rental-llc
+kind: landmark
+place_id: ChIJzVQbj0QGmogR8nYbzTbjpH0
+name: Advanced Marine & Power Systems
+types: [
+  "establishment",
+  "point_of_interest",
+  "storage",
+  "store"
+]
+travel_distance_meters: 335.88065
+straight_line_distance_meters: 197.68019
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 5] ---
+id: cf6604af-6b57-4ab5-8124-6eb1ba5c5b39
+entity_slug: bay-side-boat-rental-llc
+kind: landmark
+place_id: ChIJjfLui0MGmogRIy8u_MEsT8o
+name: Island Thrift
+types: [
+  "establishment",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 248.84488
+straight_line_distance_meters: 182.65948
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 5] ---
+id: ab10fa64-a14f-4592-8ad6-bc63ec9a6c22
+entity_slug: bay-side-boat-rental-llc
+kind: landmark
+place_id: ChIJqT4ReCQEmogRMiuvnpkwSTA
+name: Canal Road Baptist Church
+types: [
+  "church",
+  "establishment",
+  "place_of_worship",
+  "point_of_interest"
+]
+travel_distance_meters: 427.1521
+straight_line_distance_meters: 231.17067
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   6 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 6] ---
+offer_id: 12348
+entity_slug: bay-side-boat-rental-llc
+name: Luxury pontoon half day
+description: Includes: luxury pontoon. Not included / possible extra: tax and fuel not included
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: offerings
+legacy_id: 713796f9-7081-47e9-bbfa-46f83dfad989
+
+--- entity_offer [row 2 of 6] ---
+offer_id: 12907
+entity_slug: bay-side-boat-rental-llc
+name: Reservation deposit
+offer_type: deposit
+sort_order: 193
+is_available: true
+legacy_source: offerings
+legacy_id: 37388ab0-9501-4410-ab66-0e8992a6673b
+
+--- entity_offer [row 3 of 6] ---
+offer_id: 13293
+entity_slug: bay-side-boat-rental-llc
+name: Bay Side Boat Rental LLC
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: be0f4036-4b80-4141-b029-a65039aa9d78
+
+--- entity_offer [row 4 of 6] ---
+offer_id: 14470
+entity_slug: bay-side-boat-rental-llc
+name: Luxury Pontoon - Single Day
+offer_type: boat_rental
+sort_order: 0
+is_available: true
+party_max: 12
+
+--- entity_offer [row 5 of 6] ---
+offer_id: 14471
+entity_slug: bay-side-boat-rental-llc
+name: Luxury Pontoon - Multi-Day (2-6 days)
+offer_type: boat_rental
+sort_order: 0
+is_available: true
+party_max: 12
+
+--- entity_offer [row 6 of 6] ---
+offer_id: 14472
+entity_slug: bay-side-boat-rental-llc
+name: Premium Pontoon - Multi-Day (2-6 days)
+offer_type: boat_rental
+sort_order: 0
+is_available: true
+
+####################################################################################################
+# TABLE: entity_photos   -   17 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 17] ---
+id: 28dd2bbe-7414-42ec-8f8a-a49b2e244f8a
+entity_slug: bay-side-boat-rental-llc
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-side-boat-rental-llc/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 17] ---
+id: 6bbb6117-6d64-4845-a2e8-bb97e49cd8d6
+entity_slug: bay-side-boat-rental-llc
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-side-boat-rental-llc/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 17] ---
+id: e082a485-e505-4e79-a95e-7b71fa15860f
+entity_slug: bay-side-boat-rental-llc
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-side-boat-rental-llc/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: be0f4036-4b80-4141-b029-a65039aa9d78
+
+--- entity_photos [row 4 of 17] ---
+id: c69a129c-10ac-49c7-ac56-9dabc14b209c
+entity_slug: bay-side-boat-rental-llc
+url: https://places.googleapis.com/v1/places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3kGVwK5IzVIwFBuYTSyPJfaMDfSSBb0q8ZSRnGJBpaxnxx1CeLCtLyPPliSy8efYiavdbV9bMstMIbbbj21wUFbB8Kh1GQVZbhAH2BNRGloUPCQZFNZhKBq_N3i3yNLiEUd1li9bI6pBpL9QYryHcC38-rAqejNGlqSdVJtbA7BAFpaKoTwbddBkZw9dj-uqRbj055kpebWit136WkLoleHUIPHyKV84KrsHlZTrNCnXwaurYdgSSTCHIIONqMjlKDcrx56PiAZMhDKqa2jefPT9HtmnE7pnEcfjTCe24BKyM_8sGDgJbnt0DzwYOAx-DID5cCITxABFVbWcoTrCGcZdpauGAdNqkJTOr2sPf1_JFfkb5UyzJhrX3c-5MV1ELD5qgbJwJsbXEECuP5Fdz7mc8FQFkOaeDHwDTPJA_Aq97g/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3kGVwK5IzVIwFBuYTSyPJfaMDfSSBb0q8ZSRnGJBpaxnxx1CeLCtLyPPliSy8efYiavdbV9bMstMIbbbj21wUFbB8Kh1GQVZbhAH2BNRGloUPCQZFNZhKBq_N3i3yNLiEUd1li9bI6pBpL9QYryHcC38-rAqejNGlqSdVJtbA7BAFpaKoTwbddBkZw9dj-uqRbj055kpebWit136WkLoleHUIPHyKV84KrsHlZTrNCnXwaurYdgSSTCHIIONqMjlKDcrx56PiAZMhDKqa2jefPT9HtmnE7pnEcfjTCe24BKyM_8sGDgJbnt0DzwYOAx-DID5cCITxABFVbWcoTrCGcZdpauGAdNqkJTOr2sPf1_JFfkb5UyzJhrX3c-5MV1ELD5qgbJwJsbXEECuP5Fdz7mc8FQFkOaeDHwDTPJA_Aq97g
+is_cover: false
+sort_order: 0
+caption: Bay Side Boat Rental LLC
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDWnNvj9wE!2e10!4m2!3m1!1s0x889a07de469578b9:0x8176c159a9b613c3
+
+--- entity_photos [row 5 of 17] ---
+id: 38c32c9f-a71c-4e43-a4fc-c0b33cdf5032
+entity_slug: bay-side-boat-rental-llc
+url: https://places.googleapis.com/v1/places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3l774d1G1I_LPTkLYE0-wC8sIw7WSiVs6d6Rw3MABFvww9cbGs6VeZSbh-dZWlSyGrsymw9JG-ICXlMxS5AlPRmnD11Tp2RAoeq0PfWbUPtDXvMBf4fNbdDbOVAD_0-mVXS7EEwdfuwtl9BtM82JpE2H0_K14oS354gwFqgJD_ljyT1Z-suyIVkBAkL_FO_D72EM0VZY9MEG7j0lc29qGH9e27nhaF6aMzUfF_8PEk6mr54L7X69ES_V9E4Lvf_XP4ktUhlwwDT3RFSLspB443LwgKfrl5XGQXvfSE2WeWs7FvsUd3MazCoS8CJaCSJNTfC3G5vgnWN-kSB6g94iPkUs8UeTpZ9ZQw8Sr8qURGD7swsSGAa5rOpBpjhslKcrtB9v4zMxs60NPkXH_ZvEUn0Uq-Od-o3AIwsQ7BdWqoDDyZ5mhWqrMrCO-oPDU6n/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3l774d1G1I_LPTkLYE0-wC8sIw7WSiVs6d6Rw3MABFvww9cbGs6VeZSbh-dZWlSyGrsymw9JG-ICXlMxS5AlPRmnD11Tp2RAoeq0PfWbUPtDXvMBf4fNbdDbOVAD_0-mVXS7EEwdfuwtl9BtM82JpE2H0_K14oS354gwFqgJD_ljyT1Z-suyIVkBAkL_FO_D72EM0VZY9MEG7j0lc29qGH9e27nhaF6aMzUfF_8PEk6mr54L7X69ES_V9E4Lvf_XP4ktUhlwwDT3RFSLspB443LwgKfrl5XGQXvfSE2WeWs7FvsUd3MazCoS8CJaCSJNTfC3G5vgnWN-kSB6g94iPkUs8UeTpZ9ZQw8Sr8qURGD7swsSGAa5rOpBpjhslKcrtB9v4zMxs60NPkXH_ZvEUn0Uq-Od-o3AIwsQ7BdWqoDDyZ5mhWqrMrCO-oPDU6n
+is_cover: false
+sort_order: 1
+caption: Christina Buckner
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhA4SmixBI9CXB_2cyyVSLfa!2e10!4m2!3m1!1s0x889a07de469578b9:0x8176c159a9b613c3
+
+--- entity_photos [row 6 of 17] ---
+id: d6090537-3ba7-4859-baaf-d77ade6fb9f8
+entity_slug: bay-side-boat-rental-llc
+url: https://places.googleapis.com/v1/places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3li8EOwd4VzlDW77HkNnhZVMElbvOHF-uoXuwLNQYRMLKdwItFBYT237YeHabeRakGroYuC67-NJh_OMpDperbqowP1JaqCuRvk4PuAcW2dsChveR1gfb4j0P-4I7hYql0VvNPonWdamcXFbDwxalN0lJXLfiOMFTxZEMJcXKYJ3eW1ZqPa3EeT-x4flqk2cfLfnRBng2GwI-WPuVFuZhTpLc54Iamhjh5RPQNyxwvm1mSaoBKuerA_GHXhgwBffuPFaLXou8d3al2V1OMJZp7Kop3T_8aWZWgdqBRt1cD994nplUpbBWqx5iHkfQTBU_OxWNtZKuR2tChQqZFe6zPsZddlM9JQg04dyS49LIWKQRhviJySRnXEMHwMDqBxT6Yb39rARm-FiRKDoKAFI5Rw5brBwfraKB2mcg7XxKxaRo-doAqFkaNaMBnsZmN2/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3li8EOwd4VzlDW77HkNnhZVMElbvOHF-uoXuwLNQYRMLKdwItFBYT237YeHabeRakGroYuC67-NJh_OMpDperbqowP1JaqCuRvk4PuAcW2dsChveR1gfb4j0P-4I7hYql0VvNPonWdamcXFbDwxalN0lJXLfiOMFTxZEMJcXKYJ3eW1ZqPa3EeT-x4flqk2cfLfnRBng2GwI-WPuVFuZhTpLc54Iamhjh5RPQNyxwvm1mSaoBKuerA_GHXhgwBffuPFaLXou8d3al2V1OMJZp7Kop3T_8aWZWgdqBRt1cD994nplUpbBWqx5iHkfQTBU_OxWNtZKuR2tChQqZFe6zPsZddlM9JQg04dyS49LIWKQRhviJySRnXEMHwMDqBxT6Yb39rARm-FiRKDoKAFI5Rw5brBwfraKB2mcg7XxKxaRo-doAqFkaNaMBnsZmN2
+is_cover: false
+sort_order: 2
+caption: Stephanie Hauska
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBhJQghPNrUnGbunTdVJ5NR!2e10!4m2!3m1!1s0x889a07de469578b9:0x8176c159a9b613c3
+
+--- entity_photos [row 7 of 17] ---
+id: 8c7883bc-8363-423b-8d49-adc4599eaf83
+entity_slug: bay-side-boat-rental-llc
+url: https://places.googleapis.com/v1/places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3nFbp-W4BGds09cBXp1JxiL70Irf4r6iK8hCxwgWbpyretJpi4eRtXrHbUJKw0VJFlhW28YkPldkq448fGGBndGVNymZzxdsGvXXnWj0cviqxhgVVRtZPOeQ2hP0N69kZwveffpvjAuL9qQs15_uleUwyLIFgpmdzeqq6PW-3Szbx073jkiQTNjg6ENG_jPLGCSniONtBlHwObFN8aFC-2viDX_eWYyo5kmbZWlWyCc7I0SJ-Ikk7eb5i1Xkw8X_GsezhKCHhU7dqjXhj9B1gvHLf_1hMt6ArRl6x75lqe24Nbeoekh8YG79zPbynouc_3fIudvmmW_GXrb2bAw4nYDTAUP2_14akR3uu0El1kL4eQ46-XxAreQxIGbC1EFJ3M2PrO8rMUM3aZvXV6qNzw7nNbz5I8CIgSoyzQs9AZokzfEXcHoCYipWblxjA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3nFbp-W4BGds09cBXp1JxiL70Irf4r6iK8hCxwgWbpyretJpi4eRtXrHbUJKw0VJFlhW28YkPldkq448fGGBndGVNymZzxdsGvXXnWj0cviqxhgVVRtZPOeQ2hP0N69kZwveffpvjAuL9qQs15_uleUwyLIFgpmdzeqq6PW-3Szbx073jkiQTNjg6ENG_jPLGCSniONtBlHwObFN8aFC-2viDX_eWYyo5kmbZWlWyCc7I0SJ-Ikk7eb5i1Xkw8X_GsezhKCHhU7dqjXhj9B1gvHLf_1hMt6ArRl6x75lqe24Nbeoekh8YG79zPbynouc_3fIudvmmW_GXrb2bAw4nYDTAUP2_14akR3uu0El1kL4eQ46-XxAreQxIGbC1EFJ3M2PrO8rMUM3aZvXV6qNzw7nNbz5I8CIgSoyzQs9AZokzfEXcHoCYipWblxjA
+is_cover: false
+sort_order: 3
+caption: Lindsey Havard
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhA8JhOU5LJO4AdxUTX1Vg1y!2e10!4m2!3m1!1s0x889a07de469578b9:0x8176c159a9b613c3
+
+--- entity_photos [row 8 of 17] ---
+id: 97eff476-4360-4b47-b9ed-80248d99c5f4
+entity_slug: bay-side-boat-rental-llc
+url: https://places.googleapis.com/v1/places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3lHk31V0Q92IAMNH9pWrafnKQbeg5mNjPClEPgJ6qkfKPTS7qESH96UbuY1PSshI8FlVFi0WHp7exQXX4MeO0QPxT8uv6kace8gK4CWzy2BBzF73LrXGCRRHaIYeJGLPpurbE754npvgwwWoktwsKNAItmyLWQue0keVrjITBous2wT6vbwJR0CMngeSE_VyB6BbH6wG-2RqLDdRx6tLuoUpMhvi8XcvYhDF8ENicURvRGsdOqtEBKq1vFdT9hzO6E8uCmWdRddb3Ie-PvP5mdyPPXH773c4JYs_7wdch2gMkKFrCF5zrWUN2ykf-4eolMoanlSM3AXM0yZb3LwKCrP316_WZ-5i7kKsgOnpEJV_c8aiP8KKt5u69aKGhFKxwA8oLXldpqSdOzb-4IQMQ9gFfR3Zr_0NqUA_Q7ogt_9k_INr6RgA3ddnhgUp6xy/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3lHk31V0Q92IAMNH9pWrafnKQbeg5mNjPClEPgJ6qkfKPTS7qESH96UbuY1PSshI8FlVFi0WHp7exQXX4MeO0QPxT8uv6kace8gK4CWzy2BBzF73LrXGCRRHaIYeJGLPpurbE754npvgwwWoktwsKNAItmyLWQue0keVrjITBous2wT6vbwJR0CMngeSE_VyB6BbH6wG-2RqLDdRx6tLuoUpMhvi8XcvYhDF8ENicURvRGsdOqtEBKq1vFdT9hzO6E8uCmWdRddb3Ie-PvP5mdyPPXH773c4JYs_7wdch2gMkKFrCF5zrWUN2ykf-4eolMoanlSM3AXM0yZb3LwKCrP316_WZ-5i7kKsgOnpEJV_c8aiP8KKt5u69aKGhFKxwA8oLXldpqSdOzb-4IQMQ9gFfR3Zr_0NqUA_Q7ogt_9k_INr6RgA3ddnhgUp6xy
+is_cover: false
+sort_order: 4
+caption: Mitch Kronowit
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCi2hgNi8-2v1EXuM4guBuQ!2e10!4m2!3m1!1s0x889a07de469578b9:0x8176c159a9b613c3
+
+--- entity_photos [row 9 of 17] ---
+id: f469df73-155c-4783-8b25-64a9d004bb5e
+entity_slug: bay-side-boat-rental-llc
+url: https://places.googleapis.com/v1/places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3lHpZyRVZ3mSqi1GMLx_-oHYi48wl4Y5k6CFdv5LDEuyyQYdtSxfZJQqghhwkpb7hf9OMLukKevKnAUkLQBNq_IHXDQ62pUrHDNguSGf2hIa1jvF_x79Hbu0xTaxXQ9Tpa60ogI87rwKctDxIx8dFfIzcBy-UTqM9mVDw5u_VWVmPC4zEGAzxrBxX8A8PNePh9YGqqfrww2q7u69j3OrChHzDs2QumkJ6XThKh6Yk_AeSnw-Ke1IGwyT4uNQ5k6tdUwXeHqh_tTrSKfYgzhbjt59ZJshhAsQMl2T8VZMPkozgUYwrIrs0-gqveoVPvk8o5-95mKdQW3E5sXEWRR0ypu9Apm1WB4q8kE_HeM_dfVFFswEmBaTiTlE--vWIUckQLCqzXYM8kP_DHYInBtbzwdj8stulpiYPPfcAPTMTYC7g/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3lHpZyRVZ3mSqi1GMLx_-oHYi48wl4Y5k6CFdv5LDEuyyQYdtSxfZJQqghhwkpb7hf9OMLukKevKnAUkLQBNq_IHXDQ62pUrHDNguSGf2hIa1jvF_x79Hbu0xTaxXQ9Tpa60ogI87rwKctDxIx8dFfIzcBy-UTqM9mVDw5u_VWVmPC4zEGAzxrBxX8A8PNePh9YGqqfrww2q7u69j3OrChHzDs2QumkJ6XThKh6Yk_AeSnw-Ke1IGwyT4uNQ5k6tdUwXeHqh_tTrSKfYgzhbjt59ZJshhAsQMl2T8VZMPkozgUYwrIrs0-gqveoVPvk8o5-95mKdQW3E5sXEWRR0ypu9Apm1WB4q8kE_HeM_dfVFFswEmBaTiTlE--vWIUckQLCqzXYM8kP_DHYInBtbzwdj8stulpiYPPfcAPTMTYC7g
+is_cover: false
+sort_order: 5
+caption: Bay Side Boat Rental LLC
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICuteauMQ!2e10!4m2!3m1!1s0x889a07de469578b9:0x8176c159a9b613c3
+
+--- entity_photos [row 10 of 17] ---
+id: b37085c9-d59f-430a-b70a-9a4a47eb4fa4
+entity_slug: bay-side-boat-rental-llc
+url: https://places.googleapis.com/v1/places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3kMn2uCG1wxK5Jp2ptLhSnljzxb8TFWLrXf2gA59vfVsReC7yGvjD1Aehp-Mky-Zln6XatYu3Xjhgzd56f2_V293LjZFscCMd3GJ-h0LDcc3t-Zzp4H85MJnrTSQ6Aqf2rpdBLqwn2uesXpBrx-BvCEKs-0VC0uLz5wha20iyT6rDsBr_DwOk7BfEsyOE9J8RmMDrDuTM7u9I1tCbwrGmugyY53imSbmcTKQuaubgzPTyAx5D_yrYarLV3XW8vKClrGEglK9Udo7-wAQNnFxYKKFWupt5PtbvNLWqq52Yk7oqRi0u48y68A1-af4Xip5mjZlbxdeumK8Rb-fgPY9iWTcgY08If_iDAFpFRyCkaYH-BeWXN8GRwc9iHMQh_nQX9RFDrKOZYaDoVFWboumOf454c-8Hwc3wP-MrkBmjw/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3kMn2uCG1wxK5Jp2ptLhSnljzxb8TFWLrXf2gA59vfVsReC7yGvjD1Aehp-Mky-Zln6XatYu3Xjhgzd56f2_V293LjZFscCMd3GJ-h0LDcc3t-Zzp4H85MJnrTSQ6Aqf2rpdBLqwn2uesXpBrx-BvCEKs-0VC0uLz5wha20iyT6rDsBr_DwOk7BfEsyOE9J8RmMDrDuTM7u9I1tCbwrGmugyY53imSbmcTKQuaubgzPTyAx5D_yrYarLV3XW8vKClrGEglK9Udo7-wAQNnFxYKKFWupt5PtbvNLWqq52Yk7oqRi0u48y68A1-af4Xip5mjZlbxdeumK8Rb-fgPY9iWTcgY08If_iDAFpFRyCkaYH-BeWXN8GRwc9iHMQh_nQX9RFDrKOZYaDoVFWboumOf454c-8Hwc3wP-MrkBmjw
+is_cover: false
+sort_order: 6
+caption: Bay Side Boat Rental LLC
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDz6fTZTQ!2e10!4m2!3m1!1s0x889a07de469578b9:0x8176c159a9b613c3
+
+--- entity_photos [row 11 of 17] ---
+id: c13db684-ad18-4a40-bae8-11ee767590e3
+entity_slug: bay-side-boat-rental-llc
+url: https://places.googleapis.com/v1/places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3nvLMllzVq0paD-2LUxhAZrcWyc28wGxgGapD4vSCPiLFQdvS6lyleN-ub-M054q4SiCalaKq_PpKPbEDKY2V29qqjgj1pESZswI_8Ml2qvjsZaUkg2YJZ1oqL8_uNPMLjCo81cHA2QJBeyIzOkayLihPOgIu2vtFPCbPYmX0sVBsDp0LsYPBzDoNf6LNwei6EO3Lx5KJvXhhitL6FSNi7Ofg9XDgetU0ZIPlfcF9gbyIeg0hBjuQ17LmPR2Vnv5W67Df_yaxgGAVj6QQJMZ8jBrsguwh20lCoSGGlALTlGpxFsFhCffUjA-DS33WkLixQh6nam3eZb9Y0Zjq5YdxtZlFzTVbNRMaTmF5qKB96NwhhBRgj3mypSCtEIR5nZZAb3yOBNWAFCdex7gPFZbX5ocyDGwqoXUXApGpitLzaYvB_2/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3nvLMllzVq0paD-2LUxhAZrcWyc28wGxgGapD4vSCPiLFQdvS6lyleN-ub-M054q4SiCalaKq_PpKPbEDKY2V29qqjgj1pESZswI_8Ml2qvjsZaUkg2YJZ1oqL8_uNPMLjCo81cHA2QJBeyIzOkayLihPOgIu2vtFPCbPYmX0sVBsDp0LsYPBzDoNf6LNwei6EO3Lx5KJvXhhitL6FSNi7Ofg9XDgetU0ZIPlfcF9gbyIeg0hBjuQ17LmPR2Vnv5W67Df_yaxgGAVj6QQJMZ8jBrsguwh20lCoSGGlALTlGpxFsFhCffUjA-DS33WkLixQh6nam3eZb9Y0Zjq5YdxtZlFzTVbNRMaTmF5qKB96NwhhBRgj3mypSCtEIR5nZZAb3yOBNWAFCdex7gPFZbX5ocyDGwqoXUXApGpitLzaYvB_2
+is_cover: false
+sort_order: 7
+caption: Bay Side Boat Rental LLC
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDz6fS2lQE!2e10!4m2!3m1!1s0x889a07de469578b9:0x8176c159a9b613c3
+
+--- entity_photos [row 12 of 17] ---
+id: 8c24bd7a-283d-4b03-ba65-71a756337f6b
+entity_slug: bay-side-boat-rental-llc
+url: https://places.googleapis.com/v1/places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3mwRBgSc4qqhusrxbIQlmQsjG9Kivzr24dxZKEGFRT27ykQCBcW88C0h3kB_FlJ0Vnif6JdDr-KrI6GRzacY6xB76kzFKq-jqAYQGOxUvxQG9LNvndcHBv98Aoq7YzgKwaKS8BfVyHOUCkYE2LCgOt-248ox8o4r5_yVLCrYICmW_70po5m6ggm1ac-Dz2qK6bq8PSNjQsVfioHeS9gZHRPX00ORFLLTDJRy464jsaQtDbtxrSU2zUhmQW-5vY2okNA0HIBnv1Xe-ilF0q-7VuMOZHq8XnxIrN9wQ0-KC5UM2bDX70SxqAtZ3O2hfrJGg2Rmz4EcpIzui_eeFD9A-m-T71BtroujyIB1DpqOooT6aDGxKiczcOGD-5JBi0YNSx-gWgfoqWzBu8OUleQSKyX_8Lox479xSRLult9PeD9nqj1/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3mwRBgSc4qqhusrxbIQlmQsjG9Kivzr24dxZKEGFRT27ykQCBcW88C0h3kB_FlJ0Vnif6JdDr-KrI6GRzacY6xB76kzFKq-jqAYQGOxUvxQG9LNvndcHBv98Aoq7YzgKwaKS8BfVyHOUCkYE2LCgOt-248ox8o4r5_yVLCrYICmW_70po5m6ggm1ac-Dz2qK6bq8PSNjQsVfioHeS9gZHRPX00ORFLLTDJRy464jsaQtDbtxrSU2zUhmQW-5vY2okNA0HIBnv1Xe-ilF0q-7VuMOZHq8XnxIrN9wQ0-KC5UM2bDX70SxqAtZ3O2hfrJGg2Rmz4EcpIzui_eeFD9A-m-T71BtroujyIB1DpqOooT6aDGxKiczcOGD-5JBi0YNSx-gWgfoqWzBu8OUleQSKyX_8Lox479xSRLult9PeD9nqj1
+is_cover: false
+sort_order: 8
+caption: Bay Side Boat Rental LLC
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICKoKHTgQE!2e10!4m2!3m1!1s0x889a07de469578b9:0x8176c159a9b613c3
+
+--- entity_photos [row 13 of 17] ---
+id: d7adabad-04c8-4792-a621-a420fde6e29f
+entity_slug: bay-side-boat-rental-llc
+url: https://places.googleapis.com/v1/places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3n_wE4w1BxufJyrZ8Cuv3ot6J2JZUtS7VhQKAsXt3Z4zFYgesI3WSIL1qfulNZ_XjKxWgvpBcwS8FG2NP2DrpPN5kvE2OMWX8KQfizzbvvmfny5LhNBCo9Ij3NHpjJOX-5TdGbZELbXimUozDOLUGSfK3v2b24Q8RJT44kU6SW4Zq96N7VJw5zGwP3gEcOqtNaZxWxJyGrs0HIEBi6bcT4JEMRbZg_JZoNreFO67uOlKpX0jhjalZJDfPwIqfSo1TQqVw8L0g1qUeigRXYxXU-nzpa5B7oSMLI3V-uhD9Gpj7-QQhXh6CKblDGGBqcVIwpDI5pRWdp7fFd-zbtWe5pGmg0m38QKAXPlwcT-7X9IM-CEVCg49DHJFbPcadYym2ESTZMmWLkYTUYO-1d2nJ5vzXIhT6x7JuVIDeGJ9xflqAsR/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJuXiVRt4HmogRwxO2qVnBdoE/photos/AaVGc3n_wE4w1BxufJyrZ8Cuv3ot6J2JZUtS7VhQKAsXt3Z4zFYgesI3WSIL1qfulNZ_XjKxWgvpBcwS8FG2NP2DrpPN5kvE2OMWX8KQfizzbvvmfny5LhNBCo9Ij3NHpjJOX-5TdGbZELbXimUozDOLUGSfK3v2b24Q8RJT44kU6SW4Zq96N7VJw5zGwP3gEcOqtNaZxWxJyGrs0HIEBi6bcT4JEMRbZg_JZoNreFO67uOlKpX0jhjalZJDfPwIqfSo1TQqVw8L0g1qUeigRXYxXU-nzpa5B7oSMLI3V-uhD9Gpj7-QQhXh6CKblDGGBqcVIwpDI5pRWdp7fFd-zbtWe5pGmg0m38QKAXPlwcT-7X9IM-CEVCg49DHJFbPcadYym2ESTZMmWLkYTUYO-1d2nJ5vzXIhT6x7JuVIDeGJ9xflqAsR
+is_cover: false
+sort_order: 9
+caption: Shannon Grantham
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICFvarOygE!2e10!4m2!3m1!1s0x889a07de469578b9:0x8176c159a9b613c3
+
+--- entity_photos [row 14 of 17] ---
+id: 970f550e-1dce-4008-b432-4fd424e6cd16
+entity_slug: bay-side-boat-rental-llc
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-side-boat-rental-llc/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: be0f4036-4b80-4141-b029-a65039aa9d78
+
+--- entity_photos [row 15 of 17] ---
+id: bf40e3d2-1568-4795-a913-e69324456a88
+entity_slug: bay-side-boat-rental-llc
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/d2d87f30-3db8-42e4-8900-92eb11a5869a/image_3.jpg
+is_cover: false
+sort_order: 102
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 16 of 17] ---
+id: db2cd213-b00c-44d2-96b4-228eb3096d20
+entity_slug: bay-side-boat-rental-llc
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/d2d87f30-3db8-42e4-8900-92eb11a5869a/image_1.jpg
+is_cover: true
+sort_order: 100
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 17 of 17] ---
+id: afc217b2-0591-49dc-9f3f-9a6428204c7e
+entity_slug: bay-side-boat-rental-llc
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/d2d87f30-3db8-42e4-8900-92eb11a5869a/image_2.jpg
+is_cover: false
+sort_order: 101
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 680bf70f-7fd6-4b25-b92c-84fa99093bf8
+entity_slug: bay-side-boat-rental-llc
+reviewer_name: Stephanie Hauska
+rating: 5
+body: Amazing Day on the Water!
+We rented a pontoon for 8 hours with Bay Side Pontoon in Orange Beach, and it was the highlight of our trip. Jon and Kevin were fantastic to work with — friendly, helpful, and made the process super easy. They provided a map and encouraged us to explore, which was exactly what we did!
+
+During the day we cruised to Pirates Cove, Flora-Bama, Bird Island, and even stopped by the two State Parks. The boat ran perfectly, we were able to connect our own music via Bluetooth, and the Bimini provided plenty of shade while we enjoyed the sunshine. Timed the return for a sunset on the Bayou.
+
+It was the perfect setup for a fun, relaxing day on the water. Highly recommend Bay Side Pontoon — we’ll definitely rent from them again!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-10-06T16:09:02.394806+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: 4a461cc9-0243-46d1-9107-ea3db03b4e90
+entity_slug: bay-side-boat-rental-llc
+reviewer_name: Stacey Marchman
+rating: 5
+body: EXCEPTIONAL service!  We have rented many pontoons over the years and Bay Side is by far the very best. Boat was extremely clean and well maintained.  Jon was pleasant to deal with and gave us extraordinary service.  Private dock was such an ease for loading.  He was professional and gave us a map and tips in local spots to visit while on the bay.  Highly recommend this company and Jon. We will be back!!!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-09-29T22:15:26.297046+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: cd2cc0f3-2686-4bc6-907d-e13e3a7910d9
+entity_slug: bay-side-boat-rental-llc
+reviewer_name: Chris Ingram
+rating: 5
+body: Great rental experience, we rented the pontoon and it was clean, drove and rode great. It was in the water waiting on us, Caleb was great. Great communication and we would definitely rent from here again. We have rented at others in the past but this was a great experience. Caleb really did a good job!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-06-26T22:57:17.198901+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 29428ab0-8df3-4414-82a1-0658f17fe28b
+entity_slug: bay-side-boat-rental-llc
+reviewer_name: Mitch Kronowit
+rating: 5
+body: Somewhere between 4 and 5 stars so I rounded up because the staff here is so nice. We’ve rented pontoon boats from Bayside about 3 times over the last few years and have always had a great time with them and they are very responsive and accommodating. Ok, the boats aren’t in 5-Star condition, like you’d expect your own private boat to be, with a few accessories likely not working such as lights or instrument gauges (depending on what the vessel had installed at one time), but the stuff that counts works great, like the engine, steering, and STEREO!
+
+Boats come with plenty of life preservers, but we always bring a few of our own. There’s also an anchor provided and a couple fenders. You’ll receive at least two docks lines, in various states of repair, so I always bring a few nylon lines of my own so I’m prepared for any docking situation. Now just add friends, snacks, and drinks and you’re in for a great time on the beautiful waters of the Alabama/Panhandle Gulf Coast.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-08-15T12:41:47.832517+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 3d72bbc2-e860-4288-ae5e-78f14b7eeddd
+entity_slug: bay-side-boat-rental-llc
+reviewer_name: Christina Buckner
+rating: 5
+body: ⭐️⭐️⭐️⭐️⭐️
+We had the BEST time with Bayside Boat Rentals in Orange Beach! The staff was so friendly and made the whole process easy from start to finish. The boat was spotless, comfortable, and had everything we needed. Bluetooth speakers, plenty of shade, and a smooth ride all day long.
+
+Exploring the waterways, stopping at Robinson Island, and relaxing on the floating mat made for an unforgettable day on the water. If you’re looking for a fun, stress-free boat rental, Bayside is hands down the best choice in Orange Beach. We can’t wait to book again! 🚤🌊☀️
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-08-20T20:26:59.255346+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_sections   -   1 row(s)
+####################################################################################################
+
+--- entity_sections [row 1 of 1] ---
+id: 9c6c5890-8ead-4606-b68c-580f56696b7e
+entity_slug: bay-side-boat-rental-llc
+section_type: pricing
+section_name: Pricing & Details
+sort_order: 1
+is_active: true
+subtitle: Starts at $350 half day / 4 hours; tax and fuel not included.
+
+####################################################################################################
+# TABLE: entity_seo_keywords   -   6 row(s)
+####################################################################################################
+
+--- entity_seo_keywords [row 1 of 6] ---
+id: c21c9b43-2f39-4a04-ba25-5136d6cf58a3
+entity_slug: bay-side-boat-rental-llc
+keyword: pontoon-rental
+sort_order: 1
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_seo_keywords [row 2 of 6] ---
+id: 6b9cdc9e-26c5-4c05-988a-61cdf3cdc5bb
+entity_slug: bay-side-boat-rental-llc
+keyword: luxury-pontoon
+sort_order: 2
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_seo_keywords [row 3 of 6] ---
+id: 2ed1abc7-9cf6-412e-9ae1-0d3eba4e8c58
+entity_slug: bay-side-boat-rental-llc
+keyword: floating-mat
+sort_order: 3
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_seo_keywords [row 4 of 6] ---
+id: 60f7b02e-818f-4407-b06d-8b06edf19487
+entity_slug: bay-side-boat-rental-llc
+keyword: boat-delivery
+sort_order: 4
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_seo_keywords [row 5 of 6] ---
+id: 0de2e25c-fc16-4191-bf27-6ef8e2f03beb
+entity_slug: bay-side-boat-rental-llc
+keyword: family-friendly
+sort_order: 5
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_seo_keywords [row 6 of 6] ---
+id: 40af08e1-a7e7-4394-95ae-743a2688c354
+entity_slug: bay-side-boat-rental-llc
+keyword: orange-beach
+sort_order: 6
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+####################################################################################################
+# TABLE: entity_sources   -   4 row(s)
+####################################################################################################
+
+--- entity_sources [row 1 of 4] ---
+id: bd6a91d5-ae2c-422e-892e-6f04c5b8592a
+entity_slug: bay-side-boat-rental-llc
+source_system: gcr_things_to_do_enrichment_v2
+source_url: https://www.gulfshores.com/things-to-do/bay-side-boat-rental-llc/
+scope: official-enrichment
+observed_at: 2026-07-16T12:20:15.341146+00:00
+confidence: high
+note: things-to-do enrichment
+created_at: 2026-07-16T12:20:15.341146+00:00
+
+--- entity_sources [row 2 of 4] ---
+id: 0f0e08d5-0a59-4cbe-aa77-00f1a32ecdab
+entity_slug: bay-side-boat-rental-llc
+source_system: gcr_things_to_do_enrichment_v3
+source_url: https://www.baysideorangebeach.com/rentals
+scope: official-enrichment
+observed_at: 2026-07-16T12:20:15.341146+00:00
+confidence: high
+note: things-to-do enrichment
+created_at: 2026-07-16T12:20:15.341146+00:00
+
+--- entity_sources [row 3 of 4] ---
+id: 8084b508-d499-4340-b1ad-54415dc6e1fe
+entity_slug: bay-side-boat-rental-llc
+source_system: gcr_things_to_do_master
+scope: listing
+observed_at: 2026-07-16T13:27:57.036524+00:00
+confidence: medium
+note: Matched to GCR Things-To-Do master export by normalized business name
+created_at: 2026-07-16T13:27:57.036524+00:00
+
+--- entity_sources [row 4 of 4] ---
+id: 0af5f4f3-797c-4ae2-8b77-d264f52c01fa
+entity_slug: bay-side-boat-rental-llc
+source_system: gcr_things_to_do_official_v1
+source_url: https://www.gulfshores.com/things-to-do/bay-side-boat-rental-llc/
+scope: official_listing
+observed_at: 2026-07-16T13:39:24.887317+00:00
+confidence: high
+note: GulfShores.com official verified contact/features pull
+created_at: 2026-07-16T13:39:24.887317+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   10 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 10] ---
+id: 5856972e-a890-49d9-9ecb-e66160584299
+entity_slug: bay-side-boat-rental-llc
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 2 of 10] ---
+id: d6b1c44b-1a24-4bab-8318-a4139426ca89
+entity_slug: bay-side-boat-rental-llc
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 3 of 10] ---
+id: 464602e9-6668-4974-8df6-a9728172d6c0
+entity_slug: bay-side-boat-rental-llc
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 4 of 10] ---
+id: 7123710a-d712-4310-b228-ce45122527e5
+entity_slug: bay-side-boat-rental-llc
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 5 of 10] ---
+id: 51c8e70a-4f05-4ee5-8b87-815a8d05826f
+entity_slug: bay-side-boat-rental-llc
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 6 of 10] ---
+id: e6692158-05b4-4f45-b506-9dec22db684e
+entity_slug: bay-side-boat-rental-llc
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 7 of 10] ---
+id: 9c3b8752-2776-49b1-a805-a2d3c7761a6a
+entity_slug: bay-side-boat-rental-llc
+tag_name: Boat Rentals
+tag_category: feature
+
+--- entity_tags [row 8 of 10] ---
+id: 404f062c-2f7b-4f51-9fd3-8ec968f661c4
+entity_slug: bay-side-boat-rental-llc
+tag_name: service
+tag_category: google_primary_type
+
+--- entity_tags [row 9 of 10] ---
+id: 99edd1a0-ced8-4b39-b624-f3e214c0da1d
+entity_slug: bay-side-boat-rental-llc
+tag_name: Boating
+tag_category: category
+
+--- entity_tags [row 10 of 10] ---
+id: bb80c9e7-d593-4087-a1ba-72beae808fd2
+entity_slug: bay-side-boat-rental-llc
+tag_name: Orange Beach
+tag_category: category
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 0e71ab2d-4abc-4b9b-a95b-31c1efa4b0c2
+entity_slug: bay-side-boat-rental-llc
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_rental   -   1 row(s)
+####################################################################################################
+
+--- industry_rental [row 1 of 1] ---
+entity_slug: bay-side-boat-rental-llc
+rental_item_count: 2
+price_low: 100
+price_high: 350
+hourly_available: false
+half_day_available: true
+full_day_available: false
+weekly_available: false
+delivery_offered: true
+booking_url: https://www.baysideorangebeach.com/
+updated_at: 2026-07-20T03:16:04.409339+00:00
+
+####################################################################################################
+# TABLE: legacy_photo_migration_queue   -   3 row(s)
+####################################################################################################
+
+--- legacy_photo_migration_queue [row 1 of 3] ---
+id: 2682
+entity_slug: bay-side-boat-rental-llc
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/d2d87f30-3db8-42e4-8900-92eb11a5869a/image_3.jpg
+is_cover: false
+sort_order: 102
+status: linked_legacy
+created_at: 2026-07-26T00:36:20.285499+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 2 of 3] ---
+id: 2306
+entity_slug: bay-side-boat-rental-llc
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/d2d87f30-3db8-42e4-8900-92eb11a5869a/image_1.jpg
+is_cover: true
+sort_order: 100
+status: linked_legacy
+created_at: 2026-07-26T00:36:20.285499+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 3 of 3] ---
+id: 1820
+entity_slug: bay-side-boat-rental-llc
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/d2d87f30-3db8-42e4-8900-92eb11a5869a/image_2.jpg
+is_cover: false
+sort_order: 101
+status: linked_legacy
+created_at: 2026-07-26T00:36:20.285499+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: offering_prices   -   2 row(s)
+####################################################################################################
+
+--- offering_prices [row 1 of 2] ---
+id: 490e1c8c-872c-4998-8901-29133db1e194
+entity_slug: bay-side-boat-rental-llc
+offering_id: 37388ab0-9501-4410-ab66-0e8992a6673b
+label: deposit
+price: 100
+sort_order: 193
+created_at: 2026-07-16T12:23:20.60043+00:00
+
+--- offering_prices [row 2 of 2] ---
+id: b887ed29-f7d4-4506-a892-52f49e8e2876
+entity_slug: bay-side-boat-rental-llc
+offering_id: 713796f9-7081-47e9-bbfa-46f83dfad989
+label: 4 hours — Starts at $350
+price: 350
+sort_order: 0
+created_at: 2026-07-17T01:18:37.385552+00:00
+duration_label: 4 hours
+
+####################################################################################################
+# TABLE: offerings   -   2 row(s)
+####################################################################################################
+
+--- offerings [row 1 of 2] ---
+id: 713796f9-7081-47e9-bbfa-46f83dfad989
+entity_slug: bay-side-boat-rental-llc
+name: Luxury pontoon half day
+description: Includes: luxury pontoon. Not included / possible extra: tax and fuel not included
+unit: flat
+kind: rental
+price_from: 350
+details: {}
+active: true
+sort_order: 0
+created_at: 2026-07-17T01:17:20.578274+00:00
+updated_at: 2026-07-17T01:17:20.578274+00:00
+fee_note: tax and fuel not included
+included_summary: luxury pontoon
+source_url: https://www.baysideorangebeach.com/
+
+--- offerings [row 2 of 2] ---
+id: 37388ab0-9501-4410-ab66-0e8992a6673b
+entity_slug: bay-side-boat-rental-llc
+name: Reservation deposit
+unit: flat
+kind: Deposit
+price_from: 100
+details: {}
+active: true
+sort_order: 193
+created_at: 2026-07-16T12:22:37.735943+00:00
+updated_at: 2026-07-16T12:22:37.735943+00:00
+fee_note: Deposit required; not refundable if canceled within 48 hours of pickup/delivery
+
+####################################################################################################
+# TABLE: search_index   -   9 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 9] ---
+ref_type: activity
+ref_id: 713796f9-7081-47e9-bbfa-46f83dfad989
+entity_slug: bay-side-boat-rental-llc
+title: Luxury pontoon half day
+category: activity
+subtitle: Includes: luxury pontoon. Not included / possible extra: tax and fuel not included
+price: 350
+search_vector: 'day':4A 'extra':11C 'fuel':14C 'half':3A 'includ':5C,9C,16C 'luxuri':1A,6C 'pontoon':2A,7C 'possibl':10C 'tax':12C
+
+--- search_index [row 2 of 9] ---
+ref_type: activity
+ref_id: 37388ab0-9501-4410-ab66-0e8992a6673b
+entity_slug: bay-side-boat-rental-llc
+title: Reservation deposit
+category: activity
+price: 100
+search_vector: 'deposit':2A 'reserv':1A
+
+--- search_index [row 3 of 9] ---
+ref_type: business
+ref_id: bay-side-boat-rental-llc
+entity_slug: bay-side-boat-rental-llc
+title: Bay Side Boat Rental LLC
+category: boat_rental
+subtitle: Located in the beautiful city of Orange Beach, Bay Side is the best place to rent luxury pontoons and floating...
+search_vector: 'bay':1A,16C 'beach':15C 'beauti':11C 'best':20C 'boat':3A,6B 'citi':12C 'float':27C 'llc':5A 'locat':8C 'luxuri':24C 'orang':14C 'place':21C 'pontoon':25C 'rent':23C 'rental':4A,7B 'side':2A,17C
+
+--- search_index [row 4 of 9] ---
+ref_type: offer
+ref_id: 12348
+entity_slug: bay-side-boat-rental-llc
+title: Luxury pontoon half day
+category: rental
+subtitle: Includes: luxury pontoon. Not included / possible extra: tax and fuel not included
+search_vector: 'day':4A 'extra':11C 'fuel':14C 'half':3A 'includ':5C,9C,16C 'luxuri':1A,6C 'pontoon':2A,7C 'possibl':10C 'tax':12C
+
+--- search_index [row 5 of 9] ---
+ref_type: offer
+ref_id: 12907
+entity_slug: bay-side-boat-rental-llc
+title: Reservation deposit
+category: deposit
+search_vector: 'deposit':2A 'reserv':1A
+
+--- search_index [row 6 of 9] ---
+ref_type: offer
+ref_id: 13293
+entity_slug: bay-side-boat-rental-llc
+title: Bay Side Boat Rental LLC
+category: rental
+search_vector: 'bay':1A 'boat':3A 'llc':5A 'rental':4A 'side':2A
+
+--- search_index [row 7 of 9] ---
+ref_type: offer
+ref_id: 14470
+entity_slug: bay-side-boat-rental-llc
+title: Luxury Pontoon - Single Day
+category: boat_rental
+search_vector: 'day':4A 'luxuri':1A 'pontoon':2A 'singl':3A
+
+--- search_index [row 8 of 9] ---
+ref_type: offer
+ref_id: 14471
+entity_slug: bay-side-boat-rental-llc
+title: Luxury Pontoon - Multi-Day (2-6 days)
+category: boat_rental
+search_vector: '-6':7A '2':6A 'day':5A,8A 'luxuri':1A 'multi':4A 'multi-day':3A 'pontoon':2A
+
+--- search_index [row 9 of 9] ---
+ref_type: offer
+ref_id: 14472
+entity_slug: bay-side-boat-rental-llc
+title: Premium Pontoon - Multi-Day (2-6 days)
+category: boat_rental
+search_vector: '-6':7A '2':6A 'day':5A,8A 'multi':4A 'multi-day':3A 'pontoon':2A 'premium':1A
+
+####################################################################################################
+# TABLE: tourist_saves   -   1 row(s)
+####################################################################################################
+
+--- tourist_saves [row 1 of 1] ---
+id: ac318624-38f6-4287-93f4-4ec38c12f418
+user_id: 0eae72e6-2535-424e-bd65-024879c35e40
+entity_id: 5f0b2b88-4079-4562-b9db-212e6ba581d8
+entity_slug: bay-side-boat-rental-llc
+business_name: Bay Side Boat Rental LLC
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-side-boat-rental-llc/photo_01.jpg
+category: stay
+rating: 5
+saved_at: 2026-07-29T19:37:01.900248+00:00
+is_super_like: false
+
+####################################################################################################
+# TABLE: tourist_seen   -   1 row(s)
+####################################################################################################
+
+--- tourist_seen [row 1 of 1] ---
+id: 8c7ba670-f42d-4b58-88a1-50dae11b3934
+tourist_id: 73a5a5d3-25c2-42a3-be99-e4c916f56c72
+entity_slug: bay-side-boat-rental-llc
+created_at: 2026-07-27T23:30:00.895525+00:00
+
+####################################################################################################
+# TABLE: tourist_swipe_events   -   2 row(s)
+####################################################################################################
+
+--- tourist_swipe_events [row 1 of 2] ---
+id: b3ca95ae-bf91-4666-8c8b-9ce19c9ef37a
+tourist_id: 0eae72e6-2535-424e-bd65-024879c35e40
+entity_slug: bay-side-boat-rental-llc
+entity_name: Bay Side Boat Rental LLC
+category: stay
+direction: like
+created_at: 2026-07-27T23:30:00.947268+00:00
+
+--- tourist_swipe_events [row 2 of 2] ---
+id: 91aa20b2-2bf8-4d62-b0eb-939327b6fb35
+tourist_id: 0eae72e6-2535-424e-bd65-024879c35e40
+entity_slug: bay-side-boat-rental-llc
+entity_name: Bay Side Boat Rental LLC
+category: stay
+direction: nope
+created_at: 2026-07-27T23:31:04.290891+00:00
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: bay-side-boat-rental-llc

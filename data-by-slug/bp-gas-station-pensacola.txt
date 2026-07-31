@@ -1,0 +1,572 @@
+====================================================================================================
+SLUG: bp-gas-station-pensacola
+NAME: BP Gas Station
+INDUSTRY: trade_home_service
+SUBTYPE: gas_station
+TABLES WITH DATA: 17
+TOTAL ROWS: 49
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (3 rows)
+  ai_entity_profiles_full  (1 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_offer  (1 rows)
+  entity_tags  (12 rows)
+  entity_theme  (1 rows)
+  industry_trade_home_service  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: bp-gas-station-pensacola
+name: BP Gas Station
+planner_category: shopping
+data_quality_score: 80
+issues: missing_summary|missing_photos
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: true
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   3 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 3] ---
+id: 23016
+entity_slug: bp-gas-station-pensacola
+intent_tag: best_for:shopping
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 3] ---
+id: 23017
+entity_slug: bp-gas-station-pensacola
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 3] ---
+id: 23018
+entity_slug: bp-gas-station-pensacola
+intent_tag: missing:missing_photos
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: bp-gas-station-pensacola
+name: BP Gas Station
+is_active: t
+planner_category: shopping
+entity_type: service
+entity_subtype: gas-station
+city: Pensacola
+state: FL
+address_line_1: 17100 Perdido Key Dr
+latitude: 30.2833593003
+longitude: -87.5113571173
+review_count: 0
+website_url: https://bp.com/
+voice_summary: BP Gas Station in Pensacola is best for shopping.
+planner_summary: BP Gas Station in Pensacola is a shopping listing in Gulf Coast Radar.
+best_for: shopping
+not_best_for: nothing specific flagged
+search_keywords: gas station|fuel|convenience store|Pensacola|Perdido Key|24-hour|BP fuel|Gas Stations|Convenience Stores|fuel-and-convenience|gas-station
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: false
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 0
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 12
+faq_count: 0
+data_quality_score: 80
+data_gaps: missing_summary|missing_photos
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 07b098d3-04d6-4240-995a-7817f877c7f6
+resource_type: service
+slug: bp-gas-station-pensacola
+name: BP Gas Station
+entity_slug: bp-gas-station-pensacola
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: []
+amenities: []
+faqs: []
+address: 17100 Perdido Key Dr
+city: Pensacola
+state: FL
+latitude: 30.2833593003
+longitude: -87.5113571173
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: e0752827d384323a80db28f5c4cff64e
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 07b098d3-04d6-4240-995a-7817f877c7f6
+entity_slug: bp-gas-station-pensacola
+slug: bp-gas-station-pensacola
+photo_urls: []
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: f62aca1f-7b1c-4331-8fd1-fcd72de93ab6
+slug: bp-gas-station-pensacola
+name: BP Gas Station
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: gas_station
+subtitle: BP Gas Station - Fuel and Convenience
+phone: 850-497-6012
+website_url: https://bp.com/
+menu_pin: 5198
+address_line_1: 17100 Perdido Key Dr
+city: Pensacola
+state: FL
+zip: 32507
+latitude: 30.2833593003
+longitude: -87.5113571173
+review_count: 0
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T22:47:10.950117+00:00
+updated_at: 2026-06-03T22:47:10.950117+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+business_status: OPERATIONAL
+google_places_data: {}
+search_vector: 'bp':1A 'gas':2A 'pensacola':4 'station':3A
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: trade_home_service
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: bp-gas-station-pensacola
+name: BP Gas Station
+industry_code: trade_home_service
+is_parent: false
+score_of_7: 4
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 31176c3a-cabc-4498-84f8-d82e6698eab9
+entity_slug: bp-gas-station-pensacola
+day_of_week: 1
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 6699d4ea-6727-48ec-97a0-a56057ae594f
+entity_slug: bp-gas-station-pensacola
+day_of_week: 2
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 692b49a6-afcb-4355-9bfb-86adb63e14f3
+entity_slug: bp-gas-station-pensacola
+day_of_week: 3
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 1388f946-05f0-4455-b0f8-6286335ac096
+entity_slug: bp-gas-station-pensacola
+day_of_week: 4
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: f77dc969-bd00-43c2-bab2-bbbae556d390
+entity_slug: bp-gas-station-pensacola
+day_of_week: 5
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 5e46b252-9e1d-4fac-a9b4-cc51b7328126
+entity_slug: bp-gas-station-pensacola
+day_of_week: 6
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 6d0fe59c-0200-4060-8075-89d045e2bcd6
+entity_slug: bp-gas-station-pensacola
+day_of_week: 0
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: bp-gas-station-pensacola
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 07b098d3-04d6-4240-995a-7817f877c7f6
+name: BP Gas Station
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: bp-gas-station-pensacola
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 07b098d3-04d6-4240-995a-7817f877c7f6
+name: BP Gas Station
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: f4787faa-956b-4785-99a9-fbfba1fdb377
+entity_slug: bp-gas-station-pensacola
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: e87ec06c-8926-4946-a03a-394b3c3584f0
+entity_slug: bp-gas-station-pensacola
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: c22c2b3f-5c86-4b8a-9169-6977d0e7d460
+entity_slug: bp-gas-station-pensacola
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: 73f07f39-fed8-45c3-9659-4bcc4b8f3e4b
+entity_slug: bp-gas-station-pensacola
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: 1362bac2-4a22-45d9-9a1d-3d476b7f1d3c
+entity_slug: bp-gas-station-pensacola
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: f61d4ad2-d45e-47c1-959d-2b051f526ea4
+entity_slug: bp-gas-station-pensacola
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 384531ff-18a2-4e2d-98f3-4313e3cc4091
+entity_slug: bp-gas-station-pensacola
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 07b5370b-dc3b-4d4a-b6c3-c5061148e576
+entity_slug: bp-gas-station-pensacola
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: f4398c70-5158-41bb-bae2-5bf01d2de5a1
+entity_slug: bp-gas-station-pensacola
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: 98bd5d9e-3e9c-44a9-adb5-e9770d6dd394
+entity_slug: bp-gas-station-pensacola
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: 80ce8157-f3a6-4623-a57d-89c3938a20a0
+entity_slug: bp-gas-station-pensacola
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: 514eabf3-d868-46ee-8b3e-5a42596343f1
+entity_slug: bp-gas-station-pensacola
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: f4f96c16-9a5f-4e4d-9e51-5d5f328c4430
+entity_slug: bp-gas-station-pensacola
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13364
+entity_slug: bp-gas-station-pensacola
+name: BP Gas Station
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 07b098d3-04d6-4240-995a-7817f877c7f6
+
+####################################################################################################
+# TABLE: entity_tags   -   12 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 12] ---
+id: 39bf46fc-9e18-4eba-8bb9-83ac99cd9d8c
+entity_slug: bp-gas-station-pensacola
+tag_name: gas station
+
+--- entity_tags [row 2 of 12] ---
+id: 50ab8b82-2fff-42b1-9544-f489c9c8e907
+entity_slug: bp-gas-station-pensacola
+tag_name: fuel
+
+--- entity_tags [row 3 of 12] ---
+id: 403b6c0f-e51b-4985-b784-8ad1f1255686
+entity_slug: bp-gas-station-pensacola
+tag_name: convenience store
+
+--- entity_tags [row 4 of 12] ---
+id: 4efb7076-c13b-4a58-bf8e-c5ab51d16ab6
+entity_slug: bp-gas-station-pensacola
+tag_name: Pensacola
+
+--- entity_tags [row 5 of 12] ---
+id: 06a27b66-25fa-4833-bd4c-1a53b95653af
+entity_slug: bp-gas-station-pensacola
+tag_name: Perdido Key
+
+--- entity_tags [row 6 of 12] ---
+id: 5984a8d3-e082-4b68-bc0d-f5b0953dd820
+entity_slug: bp-gas-station-pensacola
+tag_name: 24-hour
+
+--- entity_tags [row 7 of 12] ---
+id: 3c38c35a-3ae5-4ecf-aca0-e328a66456f4
+entity_slug: bp-gas-station-pensacola
+tag_name: BP fuel
+
+--- entity_tags [row 8 of 12] ---
+id: 56a285d7-22fb-4ccc-a035-9a2a31da7719
+entity_slug: bp-gas-station-pensacola
+tag_name: Gas Stations
+tag_category: category
+
+--- entity_tags [row 9 of 12] ---
+id: 6bdd398b-8298-458d-9933-8eb1340a268f
+entity_slug: bp-gas-station-pensacola
+tag_name: Fuel
+tag_category: category
+
+--- entity_tags [row 10 of 12] ---
+id: 8b65230a-e811-4a68-87ac-11b469acef47
+entity_slug: bp-gas-station-pensacola
+tag_name: Convenience Stores
+tag_category: category
+
+--- entity_tags [row 11 of 12] ---
+id: 0dfbb8e7-cecc-4435-9e6c-08dc2ae16d1f
+entity_slug: bp-gas-station-pensacola
+tag_name: fuel-and-convenience
+tag_category: industry
+
+--- entity_tags [row 12 of 12] ---
+id: e5b50086-4753-45cd-ba9f-87ea2750f023
+entity_slug: bp-gas-station-pensacola
+tag_name: gas-station
+tag_category: type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 87468b47-ecf0-4f41-bbc0-506fcd2c4477
+entity_slug: bp-gas-station-pensacola
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_trade_home_service   -   1 row(s)
+####################################################################################################
+
+--- industry_trade_home_service [row 1 of 1] ---
+entity_slug: bp-gas-station-pensacola
+service_count: 0
+updated_at: 2026-07-21T16:19:28.491935+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: bp-gas-station-pensacola
+entity_slug: bp-gas-station-pensacola
+title: BP Gas Station
+category: gas_station
+search_vector: 'bp':1A 'gas':2A,4B 'station':3A,5B
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 13364
+entity_slug: bp-gas-station-pensacola
+title: BP Gas Station
+category: rental
+search_vector: 'bp':1A 'gas':2A 'station':3A
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: bp-gas-station-pensacola

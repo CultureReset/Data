@@ -1,0 +1,2594 @@
+====================================================================================================
+SLUG: tcby
+NAME: TCBY
+INDUSTRY: cafe_dessert
+SUBTYPE: dessert_shop
+TABLES WITH DATA: 24
+TOTAL ROWS: 152
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (10 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (20 rows)
+  entity  (1 rows)
+  entity_attributes  (12 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (7 rows)
+  entity_modules  (16 rows)
+  entity_nearby_landmark_types  (27 rows)
+  entity_nearby_landmarks  (5 rows)
+  entity_photos  (23 rows)
+  entity_reviews  (5 rows)
+  entity_tags  (8 rows)
+  entity_theme  (1 rows)
+  industry_cafe_dessert  (1 rows)
+  industry_food_beverage  (1 rows)
+  legacy_photo_migration_queue  (2 rows)
+  search_index  (1 rows)
+  tourist_seen  (1 rows)
+  tourist_swipe_events  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: tcby
+name: TCBY
+planner_category: food_drink
+data_quality_score: 85
+issues: missing_menu|missing_faqs
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: true
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: true
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   10 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 10] ---
+id: 11729
+entity_slug: tcby
+intent_tag: best_for:takeout
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 10] ---
+id: 11730
+entity_slug: tcby
+intent_tag: experience:outdoor
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 10] ---
+id: 11731
+entity_slug: tcby
+intent_tag: experience:rainy_day
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 10] ---
+id: 11732
+entity_slug: tcby
+intent_tag: cuisine:coffee_sweets
+intent_category: cuisine
+confidence: 0.82
+evidence: Derived from cuisine/menu/tags.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 10] ---
+id: 11733
+entity_slug: tcby
+intent_tag: service:takeout
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 10] ---
+id: 11734
+entity_slug: tcby
+intent_tag: service:delivery
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 10] ---
+id: 11735
+entity_slug: tcby
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 10] ---
+id: 11736
+entity_slug: tcby
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 9 of 10] ---
+id: 11737
+entity_slug: tcby
+intent_tag: missing:missing_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 10 of 10] ---
+id: 11738
+entity_slug: tcby
+intent_tag: missing:missing_faqs
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: tcby
+name: TCBY
+is_active: t
+planner_category: food_drink
+entity_type: coffee
+entity_subtype: dessert_shop
+city: Gulf Shores
+state: AL
+address_line_1: 1301 Gulf Shores Pkwy
+latitude: 30.262994799999998
+longitude: -87.6888728
+rating: 4.4
+review_count: 899
+website_url: https://store.tcby.com/menu/gulfshoresal
+hero_image_url: /photos/tcby/photo_01.jpg
+voice_summary: TCBY in Gulf Shores is best for takeout. It fits coffee/sweets. Experience tags: outdoor, rainy_day.
+planner_summary: Ice cream and yogurt joint offering a selection of mix-ins for frozen desserts.
+best_for: takeout
+not_best_for: nothing specific flagged
+cuisine_tags: coffee/sweets
+experience_tags: outdoor|rainy_day
+service_tags: takeout|delivery|accessibility
+search_keywords: dessert_shop|ice_cream_shop|confectionery|food_store|store|food|point_of_interest|establishment|coffee/sweets|outdoor|rainy_day|takeout|delivery|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 20
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 8
+faq_count: 0
+data_quality_score: 85
+data_gaps: missing_menu|missing_faqs
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   20 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 20] ---
+id: 6390
+entity_slug: tcby
+entity_name: TCBY
+city: Gulf Shores
+url: /photos/tcby/photo_10.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 20] ---
+id: 6381
+entity_slug: tcby
+entity_name: TCBY
+city: Gulf Shores
+url: /photos/tcby/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 20] ---
+id: 6382
+entity_slug: tcby
+entity_name: TCBY
+city: Gulf Shores
+url: /photos/tcby/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 20] ---
+id: 6383
+entity_slug: tcby
+entity_name: TCBY
+city: Gulf Shores
+url: /photos/tcby/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 20] ---
+id: 6384
+entity_slug: tcby
+entity_name: TCBY
+city: Gulf Shores
+url: /photos/tcby/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 20] ---
+id: 6385
+entity_slug: tcby
+entity_name: TCBY
+city: Gulf Shores
+url: /photos/tcby/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 20] ---
+id: 6386
+entity_slug: tcby
+entity_name: TCBY
+city: Gulf Shores
+url: /photos/tcby/photo_06.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 20] ---
+id: 6387
+entity_slug: tcby
+entity_name: TCBY
+city: Gulf Shores
+url: /photos/tcby/photo_07.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 20] ---
+id: 6388
+entity_slug: tcby
+entity_name: TCBY
+city: Gulf Shores
+url: /photos/tcby/photo_08.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 20] ---
+id: 6389
+entity_slug: tcby
+entity_name: TCBY
+city: Gulf Shores
+url: /photos/tcby/photo_09.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 11 of 20] ---
+id: 17759
+entity_slug: tcby
+entity_name: TCBY
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/tcby/photo_08.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 12 of 20] ---
+id: 18040
+entity_slug: tcby
+entity_name: TCBY
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/tcby/photo_09.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 13 of 20] ---
+id: 18025
+entity_slug: tcby
+entity_name: TCBY
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/tcby/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 14 of 20] ---
+id: 18026
+entity_slug: tcby
+entity_name: TCBY
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/tcby/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 15 of 20] ---
+id: 18027
+entity_slug: tcby
+entity_name: TCBY
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/tcby/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 16 of 20] ---
+id: 18028
+entity_slug: tcby
+entity_name: TCBY
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/tcby/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 17 of 20] ---
+id: 18031
+entity_slug: tcby
+entity_name: TCBY
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/tcby/photo_07.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 18 of 20] ---
+id: 18035
+entity_slug: tcby
+entity_name: TCBY
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/tcby/photo_10.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 19 of 20] ---
+id: 26884
+entity_slug: tcby
+entity_name: TCBY
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/tcby/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 20 of 20] ---
+id: 27201
+entity_slug: tcby
+entity_name: TCBY
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/tcby/photo_06.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 9479d3e3-c5f8-4e8c-9f4e-ff0dc2276441
+slug: tcby
+name: TCBY
+is_active: true
+featured: false
+entity_type: coffee
+entity_subtype: dessert_shop
+description: Bright chain yogurt shop serving up varied frozen treats & chilled coffee drinks.
+phone: (251) 968-8229
+website_url: https://store.tcby.com/menu/gulfshoresal
+menu_pin: 6939
+address_line_1: 1301 Gulf Shores Pkwy
+city: Gulf Shores
+state: AL
+zip: 36542
+latitude: 30.262994799999998
+longitude: -87.6888728
+rating: 4.4
+review_count: 899
+hero_image_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/11ce792d-ebd8-416b-926b-ea909ea47176/image_1.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: true
+delivery: true
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T04:02:31.17246+00:00
+updated_at: 2026-06-03T04:02:31.17246+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJfU0KHNAEmogRDymEaC3jLus
+google_maps_uri: https://maps.google.com/?cid=16946732232008280335&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: dessert_shop
+formatted_address: 1301 Gulf Shores Pkwy, Gulf Shores, AL 36542, USA
+plus_code: 862J7876+5F
+international_phone: +1 251-968-8229
+editorial_summary: Bright chain yogurt shop serving up varied frozen treats & chilled coffee drinks.
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+wheelchair_accessible_restroom: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+accepts_nfc: true
+accepts_cash_only: false
+google_places_data: {
+  "id": "ChIJfU0KHNAEmogRDymEaC3jLus",
+  "types": [
+    "ice_cream_shop",
+    "dessert_shop",
+    "confectionery",
+    "food_store",
+    "store",
+    "food",
+    "point_of_interest",
+    "establishment"
+  ],
+  "dineIn": true,
+  "photos": [
+    {
+      "name": "places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3nulOr9CEREn7RitLGaxoC1IAPH12TbyzIrlX1xPlbUYbfEtzXIfdbZJ9J8HukJWjYYLhve9m-VUcnRf1YEXQdm5cwGDbz5c-VpUcTSf8PA7mBoAKM2ju3XFiJiBMi2BCQ7Lg2Kw2Q1XuUvUEj8rf_Oim3WTioOdmvK5HNy_ZjcNJ22OxIj5wwUCofiia91qg_ZrEx5x5yeMMDmOgH6lWBXtPyKbiaUIsOfQgus3f9Xvo91mX0VI04iZ16esuXW3A7JDjbdij1kvyO4H3wuHwA10nhcH0EXat8ZYCeidZ73QEr4Z3M68zT_awRbErQ4pJ1e4C69sC_tE_UahSLcSzRt1chUmcMCvDF_lG8vC7owt0o3zYqdwdtbYb10BfpHOF6T1f_Al-_j3MvpwaaPteCu1KQxLtd5EHas7BbeB0HwLkcpqaBZ_rfSNXlBbnnD",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhASTqyL2lPl5k4GhcjfWmPv!2e10!4m2!3m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhASTqyL2lPl5k4GhcjfWmPv&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106364287770363085758",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUHv_K57UYg_IrFR59l8DpOgh8NVUIjRv0lq1C1VyN3EF17MQDJ=s100-p-k-no-mo",
+          "displayName": "Cary Reams"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3n2-bhbHxrCMVS2NCV_a-19Wr62SGKdRiWNDQM7VXsytp9kte-lxzz6xqU9Wegji7Wly5Nw3lYnCvxNkpHAQPAOc-ImZ4EaWOM7ON4BeomKnlZolB_0fF-7CETLbNE9oUav12oBQInFWGjnZ_HMj9y05EhkgSBYL_-qxb8BbuIXTs3di2JcNiFBZvqty4-L1_MIhPMUZYmLYBL0ZMPnqqKrVffmDfF3VfbWPMoqsWz5egSn1blPbMbT7uYOVQDKtmzluFwk0CGsH9pk_wjKKWYLfg8tXGZB9JWXllK5Nux0caOZesRVOAVtq5iWwCtFDidwklgPnkRwvjzatJdk4bDj2LlMnbbwtPKsFo5NrTz1qNxS-m1PPvMckMGxbwPuuOXksDf4Q7zQB340WcH1FLehJXTcHLebW0nI36FkslwPmLB6",
+      "widthPx": 4000,
+      "heightPx": 3000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICqmvPS1wE!2e10!4m2!3m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICqmvPS1wE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104022168280266659209",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocISBYdsWKgWB08EU72JiyyXF7aGXlNbtrJg_Xh5DKRmfxrdAg=s100-p-k-no-mo",
+          "displayName": "Mark Soublet"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3nXOvS5Wuh8tKvAt2mI4o3HhxBEGN5kyuOZIRxIUFuBi-XMjQC7bTJcO5cRusohu-v_nbaTPvAYsyPJgJL09e9KQN3_9sQJCd0QoO50vm-SwC_LvV75Q3Pe4hwzg8hSAHNpErKPzymKks6F45_A-XSRNCtexthm8RRjC3iYbnupMis3VM20wQwehZKX_mL0xs231P2yPhdho_bqqMeAY5GQ4bVNA5T4Tvd1ZfQzsum9S4eCWbpZ062zn5bRNTtltti1PFVMoVzoDFtcU6oUGXRkbqUPVVSR5jYT3rJxgNYPUsFmFT-PPFI945sAgYJqLyFsHiYaQ_7WuOWdC6iP6_IJ2zHsypAfjpG0dCKE7J_rBINlqwNoYIb_ttDqJNuV_qy_qoUVxdKwkpHhTnzrBNf5cKhNsAAP44zNQqxk_EVeQw",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEOH9zcOYrcLdCA!2e10!4m2!3m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEOH9zcOYrcLdCA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/118116830629255726772",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWnl1PJBGOOkkdqm7c1nktBY1aPpIRmfUqrC77U2u0uMnYLX5E=s100-p-k-no-mo",
+          "displayName": "Jetman"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3kNm1t01MI93lBV9tM1bsgicCBL3-5r5T2MtkkSuxRSC4EDoof5xBYiu5NEJ_sqJM-2Wuau0S1z124tRJsSdv-eI0KHjtsFm3dWo0v8EXg8Bsj_6fQVliQB89ieU9dPGk0OYuMY6RhTrWbbNJG3ZqX8wG-UW-GMMFDGg1jMDSRb9qxhOLd8i5AGGgEXZzIvs1ZN8nsDzhByyEBLcD7KQmwnpc4g5XGahhRXcEKm1sAjGC0w-FPw-vSR9m12Sih5d9fCz9T9I4YlgKdztDSmMH06C0Y6HWPSR5aQ-0XQdChiWp0M69u8tKPLNPKkEv-BsF7mKM2E-dXW550PZfKo8xVlxhQoQHaLddu1Mkj3ke9jZ2LGcu7PZiPSYFhTFOCH6IMEg7mSXp2gP2JprySS35UzQBnD6fv3J3fYt4_AcwBmE7Tz720Kl9c-phZpIA",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCAzlk9xqIKmISxVNxfStqh!2e10!4m2!3m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCAzlk9xqIKmISxVNxfStqh&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106364287770363085758",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUHv_K57UYg_IrFR59l8DpOgh8NVUIjRv0lq1C1VyN3EF17MQDJ=s100-p-k-no-mo",
+          "displayName": "Cary Reams"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3mlgZqdGLdDQZ2WiaADs22VJac8XAocVRxkX4yHZKr2IEKkh80xGpeDToRcD7MQ-w8OcVrJkM6ESSDTgwe6g0zkuNKXgKIP9l1r3FD7LdanEMWJrD4cGlpPKkjqQ9c2nQsrqPokCJ1VXvsKLC6_Xbz1UAbAPZ263_fhQMZJwhThTaelQK51Q5Pdqi9qUhkm9tcncPzVAlrrcJaL3OAqDedhe5y59WqOue9muEKaqxk9fgRtpLv9ulGGcYaLtC-ct7yM7h0BjCF9A-kEBxdFMkyNbiKNyzTwzbBgwjFM7cklIq6Es7NJFCFHKtgKaVDVZ9fwMGMTm74wcFdOECqzmqHrjSkMTLQQNrjMljdw523kKPMJ6UhW3TTC_Ub7JM5JN1hMwgDufQhb_w82hwMYm8T7H9STp81sqb2M9quF2BimGy7kV_fmrlDlfweWedKO",
+      "widthPx": 2700,
+      "heightPx": 4800,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCARKUCqLnqikH5YCBXoWIK!2e10!4m2!3m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCARKUCqLnqikH5YCBXoWIK&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/109765837768477380495",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX15VOHT38xGWDQIenSQJMr6VrAE-bJGmrZAkGxyQY80n-_dy4=s100-p-k-no-mo",
+          "displayName": "Jake Sperry"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3lK2ZLqpTcuQZ7ZaSYDmiLbCS6I3mn1FPuq6Vb_Y530jQACdHSdZD2hwSwXKmPksHgBbMGFU_o25Za210fPTUrRaGV5i3-_nMGqrybc9aLGI65QrteK6z6unF8Jv6pl3vueLNdHhcYBoYUl0QgIyp4Rn2b86bOgvCxroyuf30vPpydbYtFNHUCR8OKulkAN8PCFLGkBKKpLuR8rO-_dso_nAD2Fzc8qOwfGaA9yQWwVd7UvZAMneZgUZuug261vI6sfMBxBWdn24wjT7ikNqEjnADMi2XV0aS0H92wNTunN1t92oeAtets47_phILJiG_ZR6GTy-XX2pu3BQ2bDNVrpiucoVvzdfF1Dd7CPEzS-3jMMmV0j-qzF6jVxHsSfJelOqT2PEMcZwp5nXLc0nSS97YTeN_PwVxvmoFhCbI5SfQ",
+      "widthPx": 3000,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgMCYmOTPZg!2e10!4m2!3m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgMCYmOTPZg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/110440087793875224925",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXIcM1Wfs3oHv5mnU2ySk_LazCq6ldKWvC-AZLbudjrpPma_Th5YQ=s100-p-k-no-mo",
+          "displayName": "Courtney Ingerson"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3lzY9dll3XTwEpFmeME7Y3NWBD07WedLcMXuFLwWMRAw6sIwv0PZTRN2eLiqd-FBZWCbN6fnLkYANGwBVub98WhSrA8_Q6qj4otWHR9eHfgAhz3iekvGKr68A0_SmZd-XVGDPl0iJ5ReLnhNngILtOWXu3fbT8HkUvk84P_qJdIqdUZ8Wk3Jw8VV5wOtjXu6LUA8gDXLRPm2rRp9OBPIL5FSksqjEsv-TupTobYa0OCqvvLgzDTlyJbfB5nQMVAvuxmzMyE3F4Xn12Wx7YbOOkTJrew1Zo54itAoJrt-_O5pG4waXdH6bKjo0fs0ZEAoRhTLlkCDQwIrbd1JdCfs6a3EgPlqzo716r7yEL8lhUojpMe6X0DXr0QEEQ5WQ2yWMJJY7KCxEmtVD_KRoy3NJyPu1H2QszqzScoamq2RF8XOcGo4S3aElrgXrHiCI3J",
+      "widthPx": 2695,
+      "heightPx": 2513,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAnUlCAvpswavedagX20aUF!2e10!4m2!3m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAnUlCAvpswavedagX20aUF&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/118031644466256312231",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLs6Vkgc7yz-RW5-Ya_6YwS5RosX27d3Gmc7BI6TjazpPrjGA=s100-p-k-no-mo",
+          "displayName": "Justin Beck"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3nznR0NgjQuz8l28PtqrnFknnUYuXMK7AA_sn5Cji4EAc_SfZy29d5OJdUCgoeZrfVJd3p-xB6-mWHblMhkxfUwwyKiV9jdd4_ZwuLbRRLjEWJ5XxJ2b1y6nhMahmXZEN6ZRxLkOXQYjsdYXL-bNRK_jt8_TIVdue6Yo5beeF8gI18ecJEhlZJxEiiVZZ60KoKM_3n1oLrCSmc1AazF_6uMBTpSHThPLfEa-jnL-Sd3iFeKGrACoFYNKvt8MU2h0Fss1Z_xN3TmBxSogi1ql5A6US6isR1WCcxItGcdumpjlRHk1HTPIAcSMPx14KBqqcxvWE6K2SnoERdtf9y_zSEtxqTFdZxOVFQRRfHY4xqe-mKCEuYnCmWDx3qkzbIXnBZ7gs-CuWhsBDHm_1aHcQ3TUIjoIYkXULxwwmUSRm1m-8L4",
+      "widthPx": 3000,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID7hvvN2wE!2e10!4m2!3m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID7hvvN2wE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/110780452459269597491",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKHPskBJDUoOCgyqWp2ajrbstfJ6Frt3mmJHZeBWvksN72G6w=s100-p-k-no-mo",
+          "displayName": "rbhubbard12"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3nDeqGYBMkfmEOqs9IkHkG5ghLVabBjD0bJa3hzJPN_eai7xsL-YnzgMFt9kzQrK17d1mttaawRkRiRdQv-nrWQUvCND3gkhy5df3G2GFTOHdlDKyCyGIzxzmZUEyUtsJf54KMEd4UiuBXPHqp5e9tBKXH0t-Pf9HccXpwu5PWrt9YlAc-C2_uxB4qezzj-yWz9bMQIxvC8o-MHiVFKIB5CBv_NkHqm1UPiC2ZmW2R-5h5BZu58Sc8A-ynC3Oh-ZCwowfcD4s7t2k-rDGkZJNrqWd9YktSTxXQ1y30xaktGDYr77-uxi_HHh4B8Fk2ycio1R7Gj6nSwaOD-HJwfNimouNmEKYU_B2FSaiU0o95AtFXBa4B4fBDfXm5l0eqMPK11rrJc44TOEoGMFpxlCUKeRTFXTRlz-NWwnLm6_417yw",
+      "widthPx": 3000,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDjsdOPcA!2e10!4m2!3m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDjsdOPcA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/108568402170633130806",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWEgEgCJw2c7dLNjv7ZLO16xbSTAaPB35WaLtZ3dKBwiAC_EqwL=s100-p-k-no-mo",
+          "displayName": "Scott Burbank"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3mFsRnFRoyI8GuwGzRx3hSBWqVyX8YzHAl9QSK5HytTTLYRLN7N18T10vBlT5D7DE0anrUiUVlBFoE8eljUMQ7Zy9lpffzXT12FKkRMc_8NlI0SOHTulaV9Dghoeby4jIK0oq1h7AtFm-F_MmBjRkzS_IN2NuW3lwK06k8zudOFihBTxSkFY6sEws62tXQ0-c--gGV8sCaS7K27QI7j5jOdJB6lfDFZPEZP0EK_Z574fpoB9DLD3kZGdN285vn_uTmV2BsAxgIz4jTjat0it0DVZBLMz2GRh4N32FaeeStHw4WEvgeKHMiJ39M7sPW7K2CFF5xRRp1kTqe6M1cwDsokeTaCSRDIWtdWGwQC-9fE8Rj_buoqOFwpBctVYcJMCO32y0FOiYupDicudnmIpq3h5bg_6k_hHAUUWFbBqPNBbMg",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDZ1bfj9QE!2e10!4m2!3m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDZ1bfj9QE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/105379225006905271712",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX0PFNxFMCeIXDrBEAuy94FgEeHLyZEuRmQ8onw5EXBMx0HZfEC=s100-p-k-no-mo",
+          "displayName": "Nathan Wranovsky"
+        }
+      ]
+    }
+  ],
+  "rating": 4.4,
+  "reviews": [
+    {
+      "name": "places/ChIJfU0KHNAEmogRDymEaC3jLus/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KbE0zaFdZME53WkRaV1dWUkxXamQ0ZFU1NGRVRRAB",
+      "text": {
+        "text": "BEST ICE CREAM SHOP IN GULF SHORES. 2 nice ladies did a very fine job of keeping up with orders, customers, and keeping the place clean. This place had a wonderful atmosphere and decorations. And don’t even get me started on the bathrooms. CLEANEST BATHROOMS IN THE UNIVERSE. Very nice place with equally nice employees and ice cream.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-02-15T02:07:23.147191706Z",
+      "originalText": {
+        "text": "BEST ICE CREAM SHOP IN GULF SHORES. 2 nice ladies did a very fine job of keeping up with orders, customers, and keeping the place clean. This place had a wonderful atmosphere and decorations. And don’t even get me started on the bathrooms. CLEANEST BATHROOMS IN THE UNIVERSE. Very nice place with equally nice employees and ice cream.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21KbE0zaFdZME53WkRaV1dWUkxXamQ0ZFU1NGRVRRAB!2m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT21KbE0zaFdZME53WkRaV1dWUkxXamQ0ZFU1NGRVRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/114480871253654607079/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLp_56FFZeDWQj5GTwDPRhJs6FMMvEcsIOaybZOwhQXDaCbXQ=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Corey gatlin"
+      },
+      "relativePublishTimeDescription": "3 months ago"
+    },
+    {
+      "name": "places/ChIJfU0KHNAEmogRDymEaC3jLus/reviews/Ci9DQUlRQUNvZENodHljRjlvT21NMVFVSkNhM1J0WDNONlRIaGtSVU5KTlZoM1pHYxAB",
+      "text": {
+        "text": "Very good frozen yogurt. We hit the drive thru for an after-dinner treat and the staff was patient and friendly. Their Moose Tracks was some of the best I’ve ever had.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-09-14T18:43:52.160548455Z",
+      "originalText": {
+        "text": "Very good frozen yogurt. We hit the drive thru for an after-dinner treat and the staff was patient and friendly. Their Moose Tracks was some of the best I’ve ever had.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21NMVFVSkNhM1J0WDNONlRIaGtSVU5KTlZoM1pHYxAB!2m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT21NMVFVSkNhM1J0WDNONlRIaGtSVU5KTlZoM1pHYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/103332037843328456034/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWKm7IAWgRyHj1V3ZqV6keq3RvrVr0VRVdQyr2PIvIDlFWLcLHp=s128-c0x00000000-cc-rp-mo-ba4",
+        "displayName": "Alyssa Campbell"
+      },
+      "relativePublishTimeDescription": "8 months ago"
+    },
+    {
+      "name": "places/ChIJfU0KHNAEmogRDymEaC3jLus/reviews/Ci9DQUlRQUNvZENodHljRjlvT25GVk0wZG5NRzk2YjNCRUxYaGFSRVZ5TURGUVpFRRAB",
+      "text": {
+        "text": "Very selected options. $9+ for a bowl of frozen yogurt that comes with no toppings? On top of that asking for a tip? Very pricey for not even mid ice cream. For frozen yogurt I suggest going to Peachwave in Foley. Way more options on flavors and toppings as well you can put however much or many toppings you just pay the weight of it",
+        "languageCode": "en"
+      },
+      "rating": 2,
+      "publishTime": "2026-01-21T03:36:09.196176687Z",
+      "originalText": {
+        "text": "Very selected options. $9+ for a bowl of frozen yogurt that comes with no toppings? On top of that asking for a tip? Very pricey for not even mid ice cream. For frozen yogurt I suggest going to Peachwave in Foley. Way more options on flavors and toppings as well you can put however much or many toppings you just pay the weight of it",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25GVk0wZG5NRzk2YjNCRUxYaGFSRVZ5TURGUVpFRRAB!2m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT25GVk0wZG5NRzk2YjNCRUxYaGFSRVZ5TURGUVpFRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/113232348136091787876/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIOC-oNEcDEEbcX1J7qH8UaERN8JVoK_6FWO4cmXlO70U72vA=s128-c0x00000000-cc-rp-mo-ba3",
+        "displayName": "Katrina Shoemaker"
+      },
+      "relativePublishTimeDescription": "4 months ago"
+    },
+    {
+      "name": "places/ChIJfU0KHNAEmogRDymEaC3jLus/reviews/Ci9DQUlRQUNvZENodHljRjlvT21OV1VuSndaVWwxZEU1WFIwRjFhbVJsU2xaQlZrRRAB",
+      "text": {
+        "text": "Spent $35 before a tip on “milkshakes” that tasted like old milk. We threw them away and went across the street to Matt’s where we got good ice cream and only spent $25. WOULD NOT WASTE MY MONEY ON THIS PLACE EVER AGAIN. I left a tip for my trash ice cream before I knew it was trash but I also don’t like that they directly ask you to tip.",
+        "languageCode": "en"
+      },
+      "rating": 1,
+      "publishTime": "2025-12-23T23:14:26.660941471Z",
+      "originalText": {
+        "text": "Spent $35 before a tip on “milkshakes” that tasted like old milk. We threw them away and went across the street to Matt’s where we got good ice cream and only spent $25. WOULD NOT WASTE MY MONEY ON THIS PLACE EVER AGAIN. I left a tip for my trash ice cream before I knew it was trash but I also don’t like that they directly ask you to tip.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21OV1VuSndaVWwxZEU1WFIwRjFhbVJsU2xaQlZrRRAB!2m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT21OV1VuSndaVWwxZEU1WFIwRjFhbVJsU2xaQlZrRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/114610505854269923915/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKTYNZyWRfWwFVhdPkEg0f0Yjp7--AYz5oiSzMcoDrE77vGyw=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Chelsea Habern"
+      },
+      "relativePublishTimeDescription": "5 months ago"
+    },
+    {
+      "name": "places/ChIJfU0KHNAEmogRDymEaC3jLus/reviews/ChdDSUhNMG9nS0VJQ0FnSURYOWMtaG5nRRAB",
+      "text": {
+        "text": "I got a White Chocolate Mousse parfait with three layers: cookie dough on bottom, cheesecake bites in the middle, and gummy bears on top (couldn't resist, from my childhood). It was fun and tasty. Their White Chocolate Mousse frozen yogurt honestly remains their best flavor. I also got a scoop of mint chocolate chip ice cream, but I didn't care for the texture of the ice cream. My family and I are very pleased that there is a TCBY in our vicinity.",
+        "languageCode": "en"
+      },
+      "rating": 4,
+      "publishTime": "2024-10-30T00:55:50.456073Z",
+      "originalText": {
+        "text": "I got a White Chocolate Mousse parfait with three layers: cookie dough on bottom, cheesecake bites in the middle, and gummy bears on top (couldn't resist, from my childhood). It was fun and tasty. Their White Chocolate Mousse frozen yogurt honestly remains their best flavor. I also got a scoop of mint chocolate chip ice cream, but I didn't care for the texture of the ice cream. My family and I are very pleased that there is a TCBY in our vicinity.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURYOWMtaG5nRRAB!2m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURYOWMtaG5nRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/114322833762552045560/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUYXWfEJTWoIIKNB4KUBsuiEj7p00SYlZ37LTgPNWhcNAsTi9Bl=s128-c0x00000000-cc-rp-mo-ba5",
+        "displayName": "Cecelia Amos"
+      },
+      "relativePublishTimeDescription": "a year ago"
+    }
+  ],
+  "takeout": true,
+  "delivery": true,
+  "location": {
+    "latitude": 30.262994799999998,
+    "longitude": -87.6888728
+  },
+  "plusCode": {
+    "globalCode": "862J7876+5F",
+    "compoundCode": "7876+5F Gulf Shores, AL, USA"
+  },
+  "restroom": true,
+  "viewport": {
+    "low": {
+      "latitude": 30.261603269708502,
+      "longitude": -87.6901387802915
+    },
+    "high": {
+      "latitude": 30.2643012302915,
+      "longitude": -87.68744081970848
+    }
+  },
+  "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+  "websiteUri": "https://store.tcby.com/menu/gulfshoresal",
+  "displayName": {
+    "text": "TCBY",
+    "languageCode": "en"
+  },
+  "primaryType": "dessert_shop",
+  "googleMapsUri": "https://maps.google.com/?cid=16946732232008280335&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewSummary": {
+    "text": {
+      "text": "People say this frozen yogurt shop offers delicious ice cream, smoothies, and frozen yogurt with a wide variety of flavors, including dairy-free options. They also highlight the friendly and efficient service, and the clean and cute atmosphere with indoor and outdoor seating.\n\nOther reviews mention the prices can be high.",
+      "languageCode": "en-US"
+    },
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f!9m1!1b1",
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "flagContentUri": "https://www.google.com/local/content/rap/report?postId=5%401:CAIQACodChtyc19oOlNIbHpMREF2N3ZPc1VjeThjdWxENHc%7CCAIQACorChtyc19oOlNIbHpMREF2N3ZPc1VjeThjdWxENHcSDAi_2OfEBhD44ZHwAg&d=17924085&t=8"
+  },
+  "businessStatus": "OPERATIONAL",
+  "paymentOptions": {
+    "acceptsNfc": true,
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=16946732232008280335&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+  "userRatingCount": 899,
+  "adrFormatAddress": "<span class=\"street-address\">1301 Gulf Shores Pkwy</span>, <span class=\"locality\">Gulf Shores</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36542-5933</span>, <span class=\"country-name\">USA</span>",
+  "editorialSummary": {
+    "text": "Bright chain yogurt shop serving up varied frozen treats & chilled coffee drinks.",
+    "languageCode": "en"
+  },
+  "formattedAddress": "1301 Gulf Shores Pkwy, Gulf Shores, AL 36542, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "1301",
+      "shortText": "1301",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Gulf Shores Parkway",
+      "shortText": "Gulf Shores Pkwy",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Gulf Shores",
+      "shortText": "Gulf Shores",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36542",
+      "shortText": "36542",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "postal_code_suffix"
+      ],
+      "longText": "5933",
+      "shortText": "5933",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "landmarks": [
+      {
+        "name": "places/ChIJe7MNEdAEmogRMtkTHahF9L8",
+        "types": [
+          "atm",
+          "bank",
+          "establishment",
+          "finance",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJe7MNEdAEmogRMtkTHahF9L8",
+        "displayName": {
+          "text": "Regions Bank",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 128.53189,
+        "straightLineDistanceMeters": 152.8117
+      },
+      {
+        "name": "places/ChIJK6jzK9AEmogRkWGir7x5yUA",
+        "types": [
+          "establishment",
+          "food",
+          "grocery_or_supermarket",
+          "liquor_store",
+          "point_of_interest",
+          "store",
+          "supermarket"
+        ],
+        "placeId": "ChIJK6jzK9AEmogRkWGir7x5yUA",
+        "displayName": {
+          "text": "Rouses Market",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 388.39697,
+        "straightLineDistanceMeters": 366.28912
+      },
+      {
+        "name": "places/ChIJaRdoEdAEmogR8D7HixNEl2s",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "real_estate_agency",
+          "travel_agency"
+        ],
+        "placeId": "ChIJaRdoEdAEmogR8D7HixNEl2s",
+        "displayName": {
+          "text": "Gulf Shores Rentals",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 128.94048,
+        "straightLineDistanceMeters": 43.875732
+      },
+      {
+        "name": "places/ChIJXft5lM8EmogRhBbGPdpU5Mw",
+        "types": [
+          "clothing_store",
+          "convenience_store",
+          "drugstore",
+          "establishment",
+          "food",
+          "health",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJXft5lM8EmogRhBbGPdpU5Mw",
+        "displayName": {
+          "text": "Walgreens",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 183.08017,
+        "straightLineDistanceMeters": 105.1488
+      },
+      {
+        "name": "places/ChIJGb76Rc4EmogRb_3jYZMWRh8",
+        "types": [
+          "establishment",
+          "lodging",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJGb76Rc4EmogRb_3jYZMWRh8",
+        "displayName": {
+          "text": "Quality Inn Gulf Shores Airport",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 447.0435,
+        "straightLineDistanceMeters": 207.80586
+      }
+    ]
+  },
+  "generativeSummary": {
+    "overview": {
+      "text": "Ice cream and yogurt joint offering a selection of mix-ins for frozen desserts.",
+      "languageCode": "en-US"
+    },
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "overviewFlagContentUri": "https://www.google.com/local/content/rap/report?postId=CiUweDg4OWEwNGQwMWMwYTRkN2Q6MHhlYjJlZTMyZDY4ODQyOTBmMAI&d=17924085&t=12"
+  },
+  "currentOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T16:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 11:00 AM – 9:00 PM",
+      "Tuesday: 11:00 AM – 9:00 PM",
+      "Wednesday: 11:00 AM – 9:00 PM",
+      "Thursday: 11:00 AM – 9:00 PM",
+      "Friday: 11:00 AM – 9:00 PM",
+      "Saturday: 11:00 AM – 9:00 PM",
+      "Sunday: 11:00 AM – 9:00 PM"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Frozen Yogurt Shop",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#4B96F3",
+  "nationalPhoneNumber": "(251) 968-8229",
+  "regularOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 21,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T16:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 11:00 AM – 9:00 PM",
+      "Tuesday: 11:00 AM – 9:00 PM",
+      "Wednesday: 11:00 AM – 9:00 PM",
+      "Thursday: 11:00 AM – 9:00 PM",
+      "Friday: 11:00 AM – 9:00 PM",
+      "Saturday: 11:00 AM – 9:00 PM",
+      "Sunday: 11:00 AM – 9:00 PM"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true,
+    "wheelchairAccessibleRestroom": true
+  },
+  "servesVegetarianFood": false,
+  "shortFormattedAddress": "1301 Gulf Shores Pkwy, Gulf Shores",
+  "primaryTypeDisplayName": {
+    "text": "Dessert Shop",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-968-8229"
+}
+ai_overview: Ice cream and yogurt joint offering a selection of mix-ins for frozen desserts.
+ai_review_summary: People say this frozen yogurt shop offers delicious ice cream, smoothies, and frozen yogurt with a wide variety of flavors, including dairy-free options. They also highlight the friendly and efficient service, and the clean and cute atmosphere with indoor and outdoor seating.
+
+Other reviews mention the prices can be high.
+price_level: 1
+restroom: true
+serves_vegetarian: false
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #4B96F3
+short_formatted_address: 1301 Gulf Shores Pkwy, Gulf Shores
+national_phone: (251) 968-8229
+search_vector: 'also':55C 'atmospher':67C 'bright':17B 'chain':18B 'chill':26B 'clean':64C 'coffe':27B 'cream':3B,38C 'cute':66C 'dairi':51C 'dairy-fre':50C 'delici':36C 'dessert':16B,81 'drink':28B 'effici':60C 'flavor':48C 'free':52C 'friend':58C 'frozen':15B,24B,32C,41C 'gulf':83 'high':80C 'highlight':56C 'ice':2B,37C 'in':13B 'includ':49C 'indoor':69C 'joint':6B 'mention':75C 'mix':12B 'mix-in':11B 'offer':7B,35C 'option':53C 'outdoor':71C 'peopl':29C 'price':77C 'review':74C 'say':30C 'seat':72C 'select':9B 'serv':21B 'servic':61C 'shop':20B,34C,82 'shore':84 'smoothi':39C 'tcbi':1A 'treat':25B 'vari':23B 'varieti':46C 'wide':45C 'yogurt':5B,19B,33C,42C
+primary_type_display: Dessert Shop
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=16946732232008280335&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "landmarks": [
+    {
+      "name": "places/ChIJe7MNEdAEmogRMtkTHahF9L8",
+      "types": [
+        "atm",
+        "bank",
+        "establishment",
+        "finance",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJe7MNEdAEmogRMtkTHahF9L8",
+      "displayName": {
+        "text": "Regions Bank",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 128.53189,
+      "straightLineDistanceMeters": 152.8117
+    },
+    {
+      "name": "places/ChIJK6jzK9AEmogRkWGir7x5yUA",
+      "types": [
+        "establishment",
+        "food",
+        "grocery_or_supermarket",
+        "liquor_store",
+        "point_of_interest",
+        "store",
+        "supermarket"
+      ],
+      "placeId": "ChIJK6jzK9AEmogRkWGir7x5yUA",
+      "displayName": {
+        "text": "Rouses Market",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 388.39697,
+      "straightLineDistanceMeters": 366.28912
+    },
+    {
+      "name": "places/ChIJaRdoEdAEmogR8D7HixNEl2s",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "real_estate_agency",
+        "travel_agency"
+      ],
+      "placeId": "ChIJaRdoEdAEmogR8D7HixNEl2s",
+      "displayName": {
+        "text": "Gulf Shores Rentals",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 128.94048,
+      "straightLineDistanceMeters": 43.875732
+    },
+    {
+      "name": "places/ChIJXft5lM8EmogRhBbGPdpU5Mw",
+      "types": [
+        "clothing_store",
+        "convenience_store",
+        "drugstore",
+        "establishment",
+        "food",
+        "health",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJXft5lM8EmogRhBbGPdpU5Mw",
+      "displayName": {
+        "text": "Walgreens",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 183.08017,
+      "straightLineDistanceMeters": 105.1488
+    },
+    {
+      "name": "places/ChIJGb76Rc4EmogRb_3jYZMWRh8",
+      "types": [
+        "establishment",
+        "lodging",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJGb76Rc4EmogRb_3jYZMWRh8",
+      "displayName": {
+        "text": "Quality Inn Gulf Shores Airport",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 447.0435,
+      "straightLineDistanceMeters": 207.80586
+    }
+  ]
+}
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url | hero_image_url v2-fix 2026-07-21: repointed to a photo confirmed to actually exist
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: menu
+generative_summary: Ice cream and yogurt joint offering a selection of mix-ins for frozen desserts.
+industry_code: cafe_dessert
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_attributes   -   12 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 12] ---
+id: 92e799fb-5505-4ac3-ba7b-261ec41efe77
+entity_slug: tcby
+category: dining
+key: serves_vegetarian
+label: Serves Vegetarian Food
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 2 of 12] ---
+id: aa0c8f9c-c6ff-4e4e-9688-747415754955
+entity_slug: tcby
+category: service
+key: delivery
+label: Delivery
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 3 of 12] ---
+id: 3365b688-97d2-413d-9416-431b87844122
+entity_slug: tcby
+category: service
+key: takeout
+label: Takeout
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 4 of 12] ---
+id: ec5e87d3-98e7-445f-9dc6-345165bfd6a6
+entity_slug: tcby
+category: service
+key: dine_in
+label: Dine In
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 5 of 12] ---
+id: a782781c-82b1-484a-9eb7-4a66f99f0517
+entity_slug: tcby
+category: amenity
+key: restroom
+label: Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 6 of 12] ---
+id: a3aa1af9-3eeb-4ced-a3d2-3b6a9e466ec5
+entity_slug: tcby
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 7 of 12] ---
+id: e8a02e56-2474-4285-9c33-172da084cff1
+entity_slug: tcby
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 8 of 12] ---
+id: 89ddfdad-c860-401d-9ced-db9a4189f2da
+entity_slug: tcby
+category: accessibility
+key: access_wheelchairAccessibleRestroom
+label: Wheelchair Accessible Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 9 of 12] ---
+id: 8c411848-b956-45eb-8206-b090e1479655
+entity_slug: tcby
+category: payment
+key: pay_acceptsNfc
+label: Accepts Nfc
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 10 of 12] ---
+id: 357ec25e-441d-4949-a690-16c4433c3ba2
+entity_slug: tcby
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 11 of 12] ---
+id: 6a72cdd8-6654-4f83-bf25-7176f5a4699f
+entity_slug: tcby
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 12 of 12] ---
+id: 00300a26-7caa-481e-a6e8-9eeb6cdb570b
+entity_slug: tcby
+category: payment
+key: pay_acceptsCreditCards
+label: Accepts Credit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: tcby
+name: TCBY
+industry_code: cafe_dessert
+is_parent: false
+score_of_7: 5
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 268f0690-0235-478f-a38c-14c4cea1229a
+entity_slug: tcby
+place_uri: https://maps.google.com/?cid=16946732232008280335&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 1346
+entity_slug: tcby
+google_review_name: places/ChIJfU0KHNAEmogRDymEaC3jLus/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KbE0zaFdZME53WkRaV1dWUkxXamQ0ZFU1NGRVRRAB
+rating: 5
+review_text: BEST ICE CREAM SHOP IN GULF SHORES. 2 nice ladies did a very fine job of keeping up with orders, customers, and keeping the place clean. This place had a wonderful atmosphere and decorations. And don’t even get me started on the bathrooms. CLEANEST BATHROOMS IN THE UNIVERSE. Very nice place with equally nice employees and ice cream.
+language_code: en
+author_name: Corey gatlin
+author_profile_url: https://www.google.com/maps/contrib/114480871253654607079/reviews
+publish_time: 2026-02-15T02:07:23.147192+00:00
+relative_time: 3 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21KbE0zaFdZME53WkRaV1dWUkxXamQ0ZFU1NGRVRRAB!2m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 1347
+entity_slug: tcby
+google_review_name: places/ChIJfU0KHNAEmogRDymEaC3jLus/reviews/Ci9DQUlRQUNvZENodHljRjlvT21NMVFVSkNhM1J0WDNONlRIaGtSVU5KTlZoM1pHYxAB
+rating: 5
+review_text: Very good frozen yogurt. We hit the drive thru for an after-dinner treat and the staff was patient and friendly. Their Moose Tracks was some of the best I’ve ever had.
+language_code: en
+author_name: Alyssa Campbell
+author_profile_url: https://www.google.com/maps/contrib/103332037843328456034/reviews
+publish_time: 2025-09-14T18:43:52.160548+00:00
+relative_time: 8 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21NMVFVSkNhM1J0WDNONlRIaGtSVU5KTlZoM1pHYxAB!2m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 1348
+entity_slug: tcby
+google_review_name: places/ChIJfU0KHNAEmogRDymEaC3jLus/reviews/Ci9DQUlRQUNvZENodHljRjlvT25GVk0wZG5NRzk2YjNCRUxYaGFSRVZ5TURGUVpFRRAB
+rating: 2
+review_text: Very selected options. $9+ for a bowl of frozen yogurt that comes with no toppings? On top of that asking for a tip? Very pricey for not even mid ice cream. For frozen yogurt I suggest going to Peachwave in Foley. Way more options on flavors and toppings as well you can put however much or many toppings you just pay the weight of it
+language_code: en
+author_name: Katrina Shoemaker
+author_profile_url: https://www.google.com/maps/contrib/113232348136091787876/reviews
+publish_time: 2026-01-21T03:36:09.196177+00:00
+relative_time: 4 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25GVk0wZG5NRzk2YjNCRUxYaGFSRVZ5TURGUVpFRRAB!2m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 1349
+entity_slug: tcby
+google_review_name: places/ChIJfU0KHNAEmogRDymEaC3jLus/reviews/Ci9DQUlRQUNvZENodHljRjlvT21OV1VuSndaVWwxZEU1WFIwRjFhbVJsU2xaQlZrRRAB
+rating: 1
+review_text: Spent $35 before a tip on “milkshakes” that tasted like old milk. We threw them away and went across the street to Matt’s where we got good ice cream and only spent $25. WOULD NOT WASTE MY MONEY ON THIS PLACE EVER AGAIN. I left a tip for my trash ice cream before I knew it was trash but I also don’t like that they directly ask you to tip.
+language_code: en
+author_name: Chelsea Habern
+author_profile_url: https://www.google.com/maps/contrib/114610505854269923915/reviews
+publish_time: 2025-12-23T23:14:26.660941+00:00
+relative_time: 5 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21OV1VuSndaVWwxZEU1WFIwRjFhbVJsU2xaQlZrRRAB!2m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 1350
+entity_slug: tcby
+google_review_name: places/ChIJfU0KHNAEmogRDymEaC3jLus/reviews/ChdDSUhNMG9nS0VJQ0FnSURYOWMtaG5nRRAB
+rating: 4
+review_text: I got a White Chocolate Mousse parfait with three layers: cookie dough on bottom, cheesecake bites in the middle, and gummy bears on top (couldn't resist, from my childhood). It was fun and tasty. Their White Chocolate Mousse frozen yogurt honestly remains their best flavor. I also got a scoop of mint chocolate chip ice cream, but I didn't care for the texture of the ice cream. My family and I are very pleased that there is a TCBY in our vicinity.
+language_code: en
+author_name: Cecelia Amos
+author_profile_url: https://www.google.com/maps/contrib/114322833762552045560/reviews
+publish_time: 2024-10-30T00:55:50.456073+00:00
+relative_time: a year ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURYOWMtaG5nRRAB!2m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 79ce3f15-2d95-4ed8-9b88-ccb4814fb7a2
+entity_slug: tcby
+day_of_week: 0
+opens_at: 11:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: d549b9f8-a796-4291-87a6-7393f8db087e
+entity_slug: tcby
+day_of_week: 1
+opens_at: 11:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: e8a34492-8ecb-4c87-8628-c0c894896459
+entity_slug: tcby
+day_of_week: 2
+opens_at: 11:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: cdad135c-8bfe-4f3e-ab32-990d078f85b9
+entity_slug: tcby
+day_of_week: 3
+opens_at: 11:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 08be6256-0d1a-45c6-a7ef-12de98bfe3e2
+entity_slug: tcby
+day_of_week: 4
+opens_at: 11:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 6cc14d4f-3c5f-4780-9c6b-00994d65206a
+entity_slug: tcby
+day_of_week: 5
+opens_at: 11:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 32064645-a7c6-4a8b-b488-328b41eae825
+entity_slug: tcby
+day_of_week: 6
+opens_at: 11:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_modules   -   16 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 16] ---
+id: aadb3c4d-3f40-4b61-8efc-3e5fb147c81d
+entity_slug: tcby
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 16] ---
+id: c241dfd3-496d-4466-bc4f-72cadc3a66bb
+entity_slug: tcby
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 16] ---
+id: 994edfd0-efe1-4cb4-a3e7-fd6138b84901
+entity_slug: tcby
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 16] ---
+id: 7d0fad52-6836-4c16-8ccb-497926c7e2a1
+entity_slug: tcby
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 16] ---
+id: 95c94d57-bfab-4df8-b9a5-6dd3b4de86e8
+entity_slug: tcby
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 16] ---
+id: 82bb22d5-a94c-4b3b-acbc-419220e05368
+entity_slug: tcby
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 16] ---
+id: 6a6e91a9-badb-4d57-a09b-81dae13d8a0b
+entity_slug: tcby
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 16] ---
+id: eaef2a5c-07de-4242-831b-04eb2ad55bbb
+entity_slug: tcby
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 16] ---
+id: d3410c27-e81c-486d-8394-730d9180d729
+entity_slug: tcby
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 16] ---
+id: 4bc5ef29-01e6-41ff-9d12-cb37d2ef247d
+entity_slug: tcby
+module_key: menu
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 16] ---
+id: a3464911-fbdb-499d-a58c-b00ad118cc81
+entity_slug: tcby
+module_key: drinks
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 16] ---
+id: 68d85419-3cec-4ae7-bf50-d194c530bf1f
+entity_slug: tcby
+module_key: happy_hour
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 16] ---
+id: 13200292-8496-44aa-b9fd-2b9a4d68edbe
+entity_slug: tcby
+module_key: specials
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 14 of 16] ---
+id: c99fbbeb-a062-4175-85bd-475770435fa2
+entity_slug: tcby
+module_key: events
+enabled: true
+sort_order: 14
+
+--- entity_modules [row 15 of 16] ---
+id: 652db394-237c-451d-a2ae-77e4fc436d6f
+entity_slug: tcby
+module_key: loyalty
+enabled: true
+sort_order: 15
+
+--- entity_modules [row 16 of 16] ---
+id: c8f376c7-d494-4f8f-86c0-da99050bcaa4
+entity_slug: tcby
+module_key: booking
+enabled: true
+sort_order: 16
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   27 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 27] ---
+id: 0039c586-c457-40c2-9316-f8602143376f
+landmark_id: 8302f04b-f76a-4290-be87-697e3e107024
+entity_slug: tcby
+landmark_type: atm
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 27] ---
+id: 705917d3-beea-4d6d-9c9d-7ace17fa98ad
+landmark_id: 8302f04b-f76a-4290-be87-697e3e107024
+entity_slug: tcby
+landmark_type: bank
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 27] ---
+id: e8ac3622-9c0b-4e42-8f48-e011f456a860
+landmark_id: 8302f04b-f76a-4290-be87-697e3e107024
+entity_slug: tcby
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 27] ---
+id: b64eb9fb-0379-4d41-896b-9a061bc69dcf
+landmark_id: 8302f04b-f76a-4290-be87-697e3e107024
+entity_slug: tcby
+landmark_type: finance
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 27] ---
+id: 6a577d33-05f6-4fed-9972-c9c1a8245431
+landmark_id: 8302f04b-f76a-4290-be87-697e3e107024
+entity_slug: tcby
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 27] ---
+id: c2b339a5-2369-4288-8783-d27216f22ad1
+landmark_id: 439d5fdc-3bf8-4561-80d9-42ced1fb2b12
+entity_slug: tcby
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 27] ---
+id: bc6bc716-a67f-48be-b69a-82e4191df2a7
+landmark_id: 439d5fdc-3bf8-4561-80d9-42ced1fb2b12
+entity_slug: tcby
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 27] ---
+id: 82ac531f-042f-4dd0-bf3d-80a1095b4cb6
+landmark_id: 439d5fdc-3bf8-4561-80d9-42ced1fb2b12
+entity_slug: tcby
+landmark_type: grocery_or_supermarket
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 27] ---
+id: 57ab4f85-5c21-4a76-b74e-40dab0924dd4
+landmark_id: 439d5fdc-3bf8-4561-80d9-42ced1fb2b12
+entity_slug: tcby
+landmark_type: liquor_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 27] ---
+id: 13de8628-d9fc-43f1-97a3-a491cc5cc0bf
+landmark_id: 439d5fdc-3bf8-4561-80d9-42ced1fb2b12
+entity_slug: tcby
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 27] ---
+id: 8bd0024a-937d-4b5a-bb98-8b9008173d85
+landmark_id: 439d5fdc-3bf8-4561-80d9-42ced1fb2b12
+entity_slug: tcby
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 27] ---
+id: c3f120a4-8858-4ca5-a59c-2690fad77978
+landmark_id: 439d5fdc-3bf8-4561-80d9-42ced1fb2b12
+entity_slug: tcby
+landmark_type: supermarket
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 27] ---
+id: 12be5d47-a29e-499f-9d49-5d4abf8f0d4e
+landmark_id: 192a16fd-7e35-4fe1-a81e-81d6037306b3
+entity_slug: tcby
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 27] ---
+id: 32ef4cd0-51c7-4a97-a1a9-33a7078115ae
+landmark_id: 192a16fd-7e35-4fe1-a81e-81d6037306b3
+entity_slug: tcby
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 27] ---
+id: 7dd93209-77fc-45d2-8bdd-101da25a8b7b
+landmark_id: 192a16fd-7e35-4fe1-a81e-81d6037306b3
+entity_slug: tcby
+landmark_type: real_estate_agency
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 27] ---
+id: 58dba4b7-cff7-4c91-be7c-c1a4d7a80a8d
+landmark_id: 192a16fd-7e35-4fe1-a81e-81d6037306b3
+entity_slug: tcby
+landmark_type: travel_agency
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 27] ---
+id: aed25e34-d1df-445c-bd1a-9d79a316feac
+landmark_id: 722fccdc-7eda-4e1d-b757-28be83ba2f1f
+entity_slug: tcby
+landmark_type: clothing_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 27] ---
+id: feaa264f-8cb0-478c-b2cb-4a7301e3e376
+landmark_id: 722fccdc-7eda-4e1d-b757-28be83ba2f1f
+entity_slug: tcby
+landmark_type: convenience_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 19 of 27] ---
+id: 586f65f1-020b-41a1-9d12-fa3958de3c7c
+landmark_id: 722fccdc-7eda-4e1d-b757-28be83ba2f1f
+entity_slug: tcby
+landmark_type: drugstore
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 20 of 27] ---
+id: 8c250f34-af06-4c60-ad0a-5d7cdef32e7b
+landmark_id: 722fccdc-7eda-4e1d-b757-28be83ba2f1f
+entity_slug: tcby
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 21 of 27] ---
+id: de8a8c7a-ac25-42af-beb5-7f348add33f6
+landmark_id: 722fccdc-7eda-4e1d-b757-28be83ba2f1f
+entity_slug: tcby
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 22 of 27] ---
+id: ec52696a-81d2-422a-ab53-6de5723d3a29
+landmark_id: 722fccdc-7eda-4e1d-b757-28be83ba2f1f
+entity_slug: tcby
+landmark_type: health
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 23 of 27] ---
+id: a245ce45-e7bc-4847-bb11-393bb3520c2c
+landmark_id: 722fccdc-7eda-4e1d-b757-28be83ba2f1f
+entity_slug: tcby
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 24 of 27] ---
+id: bde9805f-7d2c-4129-9000-006a02fd6136
+landmark_id: 722fccdc-7eda-4e1d-b757-28be83ba2f1f
+entity_slug: tcby
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 25 of 27] ---
+id: da8d2ee9-615b-49ec-a3f5-915330eedb1d
+landmark_id: e92b2cb3-7ea0-408a-9269-9a4aa445746a
+entity_slug: tcby
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 26 of 27] ---
+id: 8f3ca21b-b960-48ee-8e55-5ba833ee0fbc
+landmark_id: e92b2cb3-7ea0-408a-9269-9a4aa445746a
+entity_slug: tcby
+landmark_type: lodging
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 27 of 27] ---
+id: 2e0b224a-a3ac-4e6a-9a05-5341ff17ac8a
+landmark_id: e92b2cb3-7ea0-408a-9269-9a4aa445746a
+entity_slug: tcby
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   5 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 5] ---
+id: 8302f04b-f76a-4290-be87-697e3e107024
+entity_slug: tcby
+kind: landmark
+place_id: ChIJe7MNEdAEmogRMtkTHahF9L8
+name: Regions Bank
+types: [
+  "atm",
+  "bank",
+  "establishment",
+  "finance",
+  "point_of_interest"
+]
+travel_distance_meters: 128.53189
+straight_line_distance_meters: 152.8117
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 5] ---
+id: 439d5fdc-3bf8-4561-80d9-42ced1fb2b12
+entity_slug: tcby
+kind: landmark
+place_id: ChIJK6jzK9AEmogRkWGir7x5yUA
+name: Rouses Market
+types: [
+  "establishment",
+  "food",
+  "grocery_or_supermarket",
+  "liquor_store",
+  "point_of_interest",
+  "store",
+  "supermarket"
+]
+travel_distance_meters: 388.39697
+straight_line_distance_meters: 366.28912
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 5] ---
+id: 192a16fd-7e35-4fe1-a81e-81d6037306b3
+entity_slug: tcby
+kind: landmark
+place_id: ChIJaRdoEdAEmogR8D7HixNEl2s
+name: Gulf Shores Rentals
+types: [
+  "establishment",
+  "point_of_interest",
+  "real_estate_agency",
+  "travel_agency"
+]
+travel_distance_meters: 128.94048
+straight_line_distance_meters: 43.875732
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 5] ---
+id: 722fccdc-7eda-4e1d-b757-28be83ba2f1f
+entity_slug: tcby
+kind: landmark
+place_id: ChIJXft5lM8EmogRhBbGPdpU5Mw
+name: Walgreens
+types: [
+  "clothing_store",
+  "convenience_store",
+  "drugstore",
+  "establishment",
+  "food",
+  "health",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 183.08017
+straight_line_distance_meters: 105.1488
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 5] ---
+id: e92b2cb3-7ea0-408a-9269-9a4aa445746a
+entity_slug: tcby
+kind: landmark
+place_id: ChIJGb76Rc4EmogRb_3jYZMWRh8
+name: Quality Inn Gulf Shores Airport
+types: [
+  "establishment",
+  "lodging",
+  "point_of_interest"
+]
+travel_distance_meters: 447.0435
+straight_line_distance_meters: 207.80586
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_photos   -   23 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 23] ---
+id: d5291b78-eada-4877-b437-fe0cded1275a
+entity_slug: tcby
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/tcby/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 23] ---
+id: 52bf8961-a5c8-412a-b34d-fc0aaf5dd60b
+entity_slug: tcby
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/tcby/photo_06.jpg
+is_cover: false
+sort_order: 5
+
+--- entity_photos [row 3 of 23] ---
+id: 820fe490-ce95-426d-8f25-de0699964c44
+entity_slug: tcby
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/tcby/photo_08.jpg
+is_cover: false
+sort_order: 7
+
+--- entity_photos [row 4 of 23] ---
+id: 9f3f527d-4979-4811-ae06-1b1e1f15aeb4
+entity_slug: tcby
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/tcby/photo_03.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 5 of 23] ---
+id: 82289275-700f-405d-b7d9-c4940d5a645f
+entity_slug: tcby
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/tcby/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 6 of 23] ---
+id: 50c9cb9a-887a-4683-9153-b37472670e35
+entity_slug: tcby
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/tcby/photo_05.jpg
+is_cover: false
+sort_order: 4
+
+--- entity_photos [row 7 of 23] ---
+id: 05ec9bb6-5dc2-49e4-8003-b12b20068c7c
+entity_slug: tcby
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/tcby/photo_04.jpg
+is_cover: false
+sort_order: 3
+
+--- entity_photos [row 8 of 23] ---
+id: 932352ba-0337-4972-9884-6b964b4456ff
+entity_slug: tcby
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/tcby/photo_07.jpg
+is_cover: false
+sort_order: 6
+
+--- entity_photos [row 9 of 23] ---
+id: 9d707e34-cc9a-46dc-bae7-4d85ac362ba1
+entity_slug: tcby
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/tcby/photo_10.jpg
+is_cover: false
+sort_order: 9
+
+--- entity_photos [row 10 of 23] ---
+id: 7028eb74-36c4-42d3-a938-0f62f5364d8b
+entity_slug: tcby
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/tcby/photo_09.jpg
+is_cover: false
+sort_order: 8
+
+--- entity_photos [row 11 of 23] ---
+id: c92f7077-ad94-44df-91e4-938545f712f2
+entity_slug: tcby
+url: https://places.googleapis.com/v1/places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3nulOr9CEREn7RitLGaxoC1IAPH12TbyzIrlX1xPlbUYbfEtzXIfdbZJ9J8HukJWjYYLhve9m-VUcnRf1YEXQdm5cwGDbz5c-VpUcTSf8PA7mBoAKM2ju3XFiJiBMi2BCQ7Lg2Kw2Q1XuUvUEj8rf_Oim3WTioOdmvK5HNy_ZjcNJ22OxIj5wwUCofiia91qg_ZrEx5x5yeMMDmOgH6lWBXtPyKbiaUIsOfQgus3f9Xvo91mX0VI04iZ16esuXW3A7JDjbdij1kvyO4H3wuHwA10nhcH0EXat8ZYCeidZ73QEr4Z3M68zT_awRbErQ4pJ1e4C69sC_tE_UahSLcSzRt1chUmcMCvDF_lG8vC7owt0o3zYqdwdtbYb10BfpHOF6T1f_Al-_j3MvpwaaPteCu1KQxLtd5EHas7BbeB0HwLkcpqaBZ_rfSNXlBbnnD/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3nulOr9CEREn7RitLGaxoC1IAPH12TbyzIrlX1xPlbUYbfEtzXIfdbZJ9J8HukJWjYYLhve9m-VUcnRf1YEXQdm5cwGDbz5c-VpUcTSf8PA7mBoAKM2ju3XFiJiBMi2BCQ7Lg2Kw2Q1XuUvUEj8rf_Oim3WTioOdmvK5HNy_ZjcNJ22OxIj5wwUCofiia91qg_ZrEx5x5yeMMDmOgH6lWBXtPyKbiaUIsOfQgus3f9Xvo91mX0VI04iZ16esuXW3A7JDjbdij1kvyO4H3wuHwA10nhcH0EXat8ZYCeidZ73QEr4Z3M68zT_awRbErQ4pJ1e4C69sC_tE_UahSLcSzRt1chUmcMCvDF_lG8vC7owt0o3zYqdwdtbYb10BfpHOF6T1f_Al-_j3MvpwaaPteCu1KQxLtd5EHas7BbeB0HwLkcpqaBZ_rfSNXlBbnnD
+is_cover: false
+sort_order: 0
+caption: Cary Reams
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhASTqyL2lPl5k4GhcjfWmPv!2e10!4m2!3m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f
+
+--- entity_photos [row 12 of 23] ---
+id: 2d618bbd-0745-4d52-aafc-ea92c65e6cdc
+entity_slug: tcby
+url: https://places.googleapis.com/v1/places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3n2-bhbHxrCMVS2NCV_a-19Wr62SGKdRiWNDQM7VXsytp9kte-lxzz6xqU9Wegji7Wly5Nw3lYnCvxNkpHAQPAOc-ImZ4EaWOM7ON4BeomKnlZolB_0fF-7CETLbNE9oUav12oBQInFWGjnZ_HMj9y05EhkgSBYL_-qxb8BbuIXTs3di2JcNiFBZvqty4-L1_MIhPMUZYmLYBL0ZMPnqqKrVffmDfF3VfbWPMoqsWz5egSn1blPbMbT7uYOVQDKtmzluFwk0CGsH9pk_wjKKWYLfg8tXGZB9JWXllK5Nux0caOZesRVOAVtq5iWwCtFDidwklgPnkRwvjzatJdk4bDj2LlMnbbwtPKsFo5NrTz1qNxS-m1PPvMckMGxbwPuuOXksDf4Q7zQB340WcH1FLehJXTcHLebW0nI36FkslwPmLB6/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3n2-bhbHxrCMVS2NCV_a-19Wr62SGKdRiWNDQM7VXsytp9kte-lxzz6xqU9Wegji7Wly5Nw3lYnCvxNkpHAQPAOc-ImZ4EaWOM7ON4BeomKnlZolB_0fF-7CETLbNE9oUav12oBQInFWGjnZ_HMj9y05EhkgSBYL_-qxb8BbuIXTs3di2JcNiFBZvqty4-L1_MIhPMUZYmLYBL0ZMPnqqKrVffmDfF3VfbWPMoqsWz5egSn1blPbMbT7uYOVQDKtmzluFwk0CGsH9pk_wjKKWYLfg8tXGZB9JWXllK5Nux0caOZesRVOAVtq5iWwCtFDidwklgPnkRwvjzatJdk4bDj2LlMnbbwtPKsFo5NrTz1qNxS-m1PPvMckMGxbwPuuOXksDf4Q7zQB340WcH1FLehJXTcHLebW0nI36FkslwPmLB6
+is_cover: false
+sort_order: 1
+caption: Mark Soublet
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICqmvPS1wE!2e10!4m2!3m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f
+
+--- entity_photos [row 13 of 23] ---
+id: b88b058e-0f10-42f4-bd0f-b3be10fe112d
+entity_slug: tcby
+url: https://places.googleapis.com/v1/places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3nXOvS5Wuh8tKvAt2mI4o3HhxBEGN5kyuOZIRxIUFuBi-XMjQC7bTJcO5cRusohu-v_nbaTPvAYsyPJgJL09e9KQN3_9sQJCd0QoO50vm-SwC_LvV75Q3Pe4hwzg8hSAHNpErKPzymKks6F45_A-XSRNCtexthm8RRjC3iYbnupMis3VM20wQwehZKX_mL0xs231P2yPhdho_bqqMeAY5GQ4bVNA5T4Tvd1ZfQzsum9S4eCWbpZ062zn5bRNTtltti1PFVMoVzoDFtcU6oUGXRkbqUPVVSR5jYT3rJxgNYPUsFmFT-PPFI945sAgYJqLyFsHiYaQ_7WuOWdC6iP6_IJ2zHsypAfjpG0dCKE7J_rBINlqwNoYIb_ttDqJNuV_qy_qoUVxdKwkpHhTnzrBNf5cKhNsAAP44zNQqxk_EVeQw/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3nXOvS5Wuh8tKvAt2mI4o3HhxBEGN5kyuOZIRxIUFuBi-XMjQC7bTJcO5cRusohu-v_nbaTPvAYsyPJgJL09e9KQN3_9sQJCd0QoO50vm-SwC_LvV75Q3Pe4hwzg8hSAHNpErKPzymKks6F45_A-XSRNCtexthm8RRjC3iYbnupMis3VM20wQwehZKX_mL0xs231P2yPhdho_bqqMeAY5GQ4bVNA5T4Tvd1ZfQzsum9S4eCWbpZ062zn5bRNTtltti1PFVMoVzoDFtcU6oUGXRkbqUPVVSR5jYT3rJxgNYPUsFmFT-PPFI945sAgYJqLyFsHiYaQ_7WuOWdC6iP6_IJ2zHsypAfjpG0dCKE7J_rBINlqwNoYIb_ttDqJNuV_qy_qoUVxdKwkpHhTnzrBNf5cKhNsAAP44zNQqxk_EVeQw
+is_cover: false
+sort_order: 2
+caption: Jetman
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEOH9zcOYrcLdCA!2e10!4m2!3m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f
+
+--- entity_photos [row 14 of 23] ---
+id: df85cc8f-be8c-419d-81a8-2c4cb15d3114
+entity_slug: tcby
+url: https://places.googleapis.com/v1/places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3kNm1t01MI93lBV9tM1bsgicCBL3-5r5T2MtkkSuxRSC4EDoof5xBYiu5NEJ_sqJM-2Wuau0S1z124tRJsSdv-eI0KHjtsFm3dWo0v8EXg8Bsj_6fQVliQB89ieU9dPGk0OYuMY6RhTrWbbNJG3ZqX8wG-UW-GMMFDGg1jMDSRb9qxhOLd8i5AGGgEXZzIvs1ZN8nsDzhByyEBLcD7KQmwnpc4g5XGahhRXcEKm1sAjGC0w-FPw-vSR9m12Sih5d9fCz9T9I4YlgKdztDSmMH06C0Y6HWPSR5aQ-0XQdChiWp0M69u8tKPLNPKkEv-BsF7mKM2E-dXW550PZfKo8xVlxhQoQHaLddu1Mkj3ke9jZ2LGcu7PZiPSYFhTFOCH6IMEg7mSXp2gP2JprySS35UzQBnD6fv3J3fYt4_AcwBmE7Tz720Kl9c-phZpIA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3kNm1t01MI93lBV9tM1bsgicCBL3-5r5T2MtkkSuxRSC4EDoof5xBYiu5NEJ_sqJM-2Wuau0S1z124tRJsSdv-eI0KHjtsFm3dWo0v8EXg8Bsj_6fQVliQB89ieU9dPGk0OYuMY6RhTrWbbNJG3ZqX8wG-UW-GMMFDGg1jMDSRb9qxhOLd8i5AGGgEXZzIvs1ZN8nsDzhByyEBLcD7KQmwnpc4g5XGahhRXcEKm1sAjGC0w-FPw-vSR9m12Sih5d9fCz9T9I4YlgKdztDSmMH06C0Y6HWPSR5aQ-0XQdChiWp0M69u8tKPLNPKkEv-BsF7mKM2E-dXW550PZfKo8xVlxhQoQHaLddu1Mkj3ke9jZ2LGcu7PZiPSYFhTFOCH6IMEg7mSXp2gP2JprySS35UzQBnD6fv3J3fYt4_AcwBmE7Tz720Kl9c-phZpIA
+is_cover: false
+sort_order: 3
+caption: Cary Reams
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCAzlk9xqIKmISxVNxfStqh!2e10!4m2!3m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f
+
+--- entity_photos [row 15 of 23] ---
+id: a9f16b1a-ae16-4a9d-9792-d6b0c2954bb1
+entity_slug: tcby
+url: https://places.googleapis.com/v1/places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3mlgZqdGLdDQZ2WiaADs22VJac8XAocVRxkX4yHZKr2IEKkh80xGpeDToRcD7MQ-w8OcVrJkM6ESSDTgwe6g0zkuNKXgKIP9l1r3FD7LdanEMWJrD4cGlpPKkjqQ9c2nQsrqPokCJ1VXvsKLC6_Xbz1UAbAPZ263_fhQMZJwhThTaelQK51Q5Pdqi9qUhkm9tcncPzVAlrrcJaL3OAqDedhe5y59WqOue9muEKaqxk9fgRtpLv9ulGGcYaLtC-ct7yM7h0BjCF9A-kEBxdFMkyNbiKNyzTwzbBgwjFM7cklIq6Es7NJFCFHKtgKaVDVZ9fwMGMTm74wcFdOECqzmqHrjSkMTLQQNrjMljdw523kKPMJ6UhW3TTC_Ub7JM5JN1hMwgDufQhb_w82hwMYm8T7H9STp81sqb2M9quF2BimGy7kV_fmrlDlfweWedKO/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3mlgZqdGLdDQZ2WiaADs22VJac8XAocVRxkX4yHZKr2IEKkh80xGpeDToRcD7MQ-w8OcVrJkM6ESSDTgwe6g0zkuNKXgKIP9l1r3FD7LdanEMWJrD4cGlpPKkjqQ9c2nQsrqPokCJ1VXvsKLC6_Xbz1UAbAPZ263_fhQMZJwhThTaelQK51Q5Pdqi9qUhkm9tcncPzVAlrrcJaL3OAqDedhe5y59WqOue9muEKaqxk9fgRtpLv9ulGGcYaLtC-ct7yM7h0BjCF9A-kEBxdFMkyNbiKNyzTwzbBgwjFM7cklIq6Es7NJFCFHKtgKaVDVZ9fwMGMTm74wcFdOECqzmqHrjSkMTLQQNrjMljdw523kKPMJ6UhW3TTC_Ub7JM5JN1hMwgDufQhb_w82hwMYm8T7H9STp81sqb2M9quF2BimGy7kV_fmrlDlfweWedKO
+is_cover: false
+sort_order: 4
+caption: Jake Sperry
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCARKUCqLnqikH5YCBXoWIK!2e10!4m2!3m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f
+
+--- entity_photos [row 16 of 23] ---
+id: 2a4c1b17-b449-4b70-86ed-ea3be1ae981d
+entity_slug: tcby
+url: https://places.googleapis.com/v1/places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3lK2ZLqpTcuQZ7ZaSYDmiLbCS6I3mn1FPuq6Vb_Y530jQACdHSdZD2hwSwXKmPksHgBbMGFU_o25Za210fPTUrRaGV5i3-_nMGqrybc9aLGI65QrteK6z6unF8Jv6pl3vueLNdHhcYBoYUl0QgIyp4Rn2b86bOgvCxroyuf30vPpydbYtFNHUCR8OKulkAN8PCFLGkBKKpLuR8rO-_dso_nAD2Fzc8qOwfGaA9yQWwVd7UvZAMneZgUZuug261vI6sfMBxBWdn24wjT7ikNqEjnADMi2XV0aS0H92wNTunN1t92oeAtets47_phILJiG_ZR6GTy-XX2pu3BQ2bDNVrpiucoVvzdfF1Dd7CPEzS-3jMMmV0j-qzF6jVxHsSfJelOqT2PEMcZwp5nXLc0nSS97YTeN_PwVxvmoFhCbI5SfQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3lK2ZLqpTcuQZ7ZaSYDmiLbCS6I3mn1FPuq6Vb_Y530jQACdHSdZD2hwSwXKmPksHgBbMGFU_o25Za210fPTUrRaGV5i3-_nMGqrybc9aLGI65QrteK6z6unF8Jv6pl3vueLNdHhcYBoYUl0QgIyp4Rn2b86bOgvCxroyuf30vPpydbYtFNHUCR8OKulkAN8PCFLGkBKKpLuR8rO-_dso_nAD2Fzc8qOwfGaA9yQWwVd7UvZAMneZgUZuug261vI6sfMBxBWdn24wjT7ikNqEjnADMi2XV0aS0H92wNTunN1t92oeAtets47_phILJiG_ZR6GTy-XX2pu3BQ2bDNVrpiucoVvzdfF1Dd7CPEzS-3jMMmV0j-qzF6jVxHsSfJelOqT2PEMcZwp5nXLc0nSS97YTeN_PwVxvmoFhCbI5SfQ
+is_cover: false
+sort_order: 5
+caption: Courtney Ingerson
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgMCYmOTPZg!2e10!4m2!3m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f
+
+--- entity_photos [row 17 of 23] ---
+id: 98aec0c2-66b0-48d0-84bd-32950380a15e
+entity_slug: tcby
+url: https://places.googleapis.com/v1/places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3lzY9dll3XTwEpFmeME7Y3NWBD07WedLcMXuFLwWMRAw6sIwv0PZTRN2eLiqd-FBZWCbN6fnLkYANGwBVub98WhSrA8_Q6qj4otWHR9eHfgAhz3iekvGKr68A0_SmZd-XVGDPl0iJ5ReLnhNngILtOWXu3fbT8HkUvk84P_qJdIqdUZ8Wk3Jw8VV5wOtjXu6LUA8gDXLRPm2rRp9OBPIL5FSksqjEsv-TupTobYa0OCqvvLgzDTlyJbfB5nQMVAvuxmzMyE3F4Xn12Wx7YbOOkTJrew1Zo54itAoJrt-_O5pG4waXdH6bKjo0fs0ZEAoRhTLlkCDQwIrbd1JdCfs6a3EgPlqzo716r7yEL8lhUojpMe6X0DXr0QEEQ5WQ2yWMJJY7KCxEmtVD_KRoy3NJyPu1H2QszqzScoamq2RF8XOcGo4S3aElrgXrHiCI3J/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3lzY9dll3XTwEpFmeME7Y3NWBD07WedLcMXuFLwWMRAw6sIwv0PZTRN2eLiqd-FBZWCbN6fnLkYANGwBVub98WhSrA8_Q6qj4otWHR9eHfgAhz3iekvGKr68A0_SmZd-XVGDPl0iJ5ReLnhNngILtOWXu3fbT8HkUvk84P_qJdIqdUZ8Wk3Jw8VV5wOtjXu6LUA8gDXLRPm2rRp9OBPIL5FSksqjEsv-TupTobYa0OCqvvLgzDTlyJbfB5nQMVAvuxmzMyE3F4Xn12Wx7YbOOkTJrew1Zo54itAoJrt-_O5pG4waXdH6bKjo0fs0ZEAoRhTLlkCDQwIrbd1JdCfs6a3EgPlqzo716r7yEL8lhUojpMe6X0DXr0QEEQ5WQ2yWMJJY7KCxEmtVD_KRoy3NJyPu1H2QszqzScoamq2RF8XOcGo4S3aElrgXrHiCI3J
+is_cover: false
+sort_order: 6
+caption: Justin Beck
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAnUlCAvpswavedagX20aUF!2e10!4m2!3m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f
+
+--- entity_photos [row 18 of 23] ---
+id: 254090fe-1268-403a-8df6-9b75aa9602d0
+entity_slug: tcby
+url: https://places.googleapis.com/v1/places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3nznR0NgjQuz8l28PtqrnFknnUYuXMK7AA_sn5Cji4EAc_SfZy29d5OJdUCgoeZrfVJd3p-xB6-mWHblMhkxfUwwyKiV9jdd4_ZwuLbRRLjEWJ5XxJ2b1y6nhMahmXZEN6ZRxLkOXQYjsdYXL-bNRK_jt8_TIVdue6Yo5beeF8gI18ecJEhlZJxEiiVZZ60KoKM_3n1oLrCSmc1AazF_6uMBTpSHThPLfEa-jnL-Sd3iFeKGrACoFYNKvt8MU2h0Fss1Z_xN3TmBxSogi1ql5A6US6isR1WCcxItGcdumpjlRHk1HTPIAcSMPx14KBqqcxvWE6K2SnoERdtf9y_zSEtxqTFdZxOVFQRRfHY4xqe-mKCEuYnCmWDx3qkzbIXnBZ7gs-CuWhsBDHm_1aHcQ3TUIjoIYkXULxwwmUSRm1m-8L4/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3nznR0NgjQuz8l28PtqrnFknnUYuXMK7AA_sn5Cji4EAc_SfZy29d5OJdUCgoeZrfVJd3p-xB6-mWHblMhkxfUwwyKiV9jdd4_ZwuLbRRLjEWJ5XxJ2b1y6nhMahmXZEN6ZRxLkOXQYjsdYXL-bNRK_jt8_TIVdue6Yo5beeF8gI18ecJEhlZJxEiiVZZ60KoKM_3n1oLrCSmc1AazF_6uMBTpSHThPLfEa-jnL-Sd3iFeKGrACoFYNKvt8MU2h0Fss1Z_xN3TmBxSogi1ql5A6US6isR1WCcxItGcdumpjlRHk1HTPIAcSMPx14KBqqcxvWE6K2SnoERdtf9y_zSEtxqTFdZxOVFQRRfHY4xqe-mKCEuYnCmWDx3qkzbIXnBZ7gs-CuWhsBDHm_1aHcQ3TUIjoIYkXULxwwmUSRm1m-8L4
+is_cover: false
+sort_order: 7
+caption: rbhubbard12
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID7hvvN2wE!2e10!4m2!3m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f
+
+--- entity_photos [row 19 of 23] ---
+id: 3b898fa2-ad97-460b-81f4-34da9b2500d6
+entity_slug: tcby
+url: https://places.googleapis.com/v1/places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3nDeqGYBMkfmEOqs9IkHkG5ghLVabBjD0bJa3hzJPN_eai7xsL-YnzgMFt9kzQrK17d1mttaawRkRiRdQv-nrWQUvCND3gkhy5df3G2GFTOHdlDKyCyGIzxzmZUEyUtsJf54KMEd4UiuBXPHqp5e9tBKXH0t-Pf9HccXpwu5PWrt9YlAc-C2_uxB4qezzj-yWz9bMQIxvC8o-MHiVFKIB5CBv_NkHqm1UPiC2ZmW2R-5h5BZu58Sc8A-ynC3Oh-ZCwowfcD4s7t2k-rDGkZJNrqWd9YktSTxXQ1y30xaktGDYr77-uxi_HHh4B8Fk2ycio1R7Gj6nSwaOD-HJwfNimouNmEKYU_B2FSaiU0o95AtFXBa4B4fBDfXm5l0eqMPK11rrJc44TOEoGMFpxlCUKeRTFXTRlz-NWwnLm6_417yw/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3nDeqGYBMkfmEOqs9IkHkG5ghLVabBjD0bJa3hzJPN_eai7xsL-YnzgMFt9kzQrK17d1mttaawRkRiRdQv-nrWQUvCND3gkhy5df3G2GFTOHdlDKyCyGIzxzmZUEyUtsJf54KMEd4UiuBXPHqp5e9tBKXH0t-Pf9HccXpwu5PWrt9YlAc-C2_uxB4qezzj-yWz9bMQIxvC8o-MHiVFKIB5CBv_NkHqm1UPiC2ZmW2R-5h5BZu58Sc8A-ynC3Oh-ZCwowfcD4s7t2k-rDGkZJNrqWd9YktSTxXQ1y30xaktGDYr77-uxi_HHh4B8Fk2ycio1R7Gj6nSwaOD-HJwfNimouNmEKYU_B2FSaiU0o95AtFXBa4B4fBDfXm5l0eqMPK11rrJc44TOEoGMFpxlCUKeRTFXTRlz-NWwnLm6_417yw
+is_cover: false
+sort_order: 8
+caption: Scott Burbank
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDjsdOPcA!2e10!4m2!3m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f
+
+--- entity_photos [row 20 of 23] ---
+id: e0c6d8f9-6490-4927-a723-3b266efd45c4
+entity_slug: tcby
+url: https://places.googleapis.com/v1/places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3mFsRnFRoyI8GuwGzRx3hSBWqVyX8YzHAl9QSK5HytTTLYRLN7N18T10vBlT5D7DE0anrUiUVlBFoE8eljUMQ7Zy9lpffzXT12FKkRMc_8NlI0SOHTulaV9Dghoeby4jIK0oq1h7AtFm-F_MmBjRkzS_IN2NuW3lwK06k8zudOFihBTxSkFY6sEws62tXQ0-c--gGV8sCaS7K27QI7j5jOdJB6lfDFZPEZP0EK_Z574fpoB9DLD3kZGdN285vn_uTmV2BsAxgIz4jTjat0it0DVZBLMz2GRh4N32FaeeStHw4WEvgeKHMiJ39M7sPW7K2CFF5xRRp1kTqe6M1cwDsokeTaCSRDIWtdWGwQC-9fE8Rj_buoqOFwpBctVYcJMCO32y0FOiYupDicudnmIpq3h5bg_6k_hHAUUWFbBqPNBbMg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJfU0KHNAEmogRDymEaC3jLus/photos/AaVGc3mFsRnFRoyI8GuwGzRx3hSBWqVyX8YzHAl9QSK5HytTTLYRLN7N18T10vBlT5D7DE0anrUiUVlBFoE8eljUMQ7Zy9lpffzXT12FKkRMc_8NlI0SOHTulaV9Dghoeby4jIK0oq1h7AtFm-F_MmBjRkzS_IN2NuW3lwK06k8zudOFihBTxSkFY6sEws62tXQ0-c--gGV8sCaS7K27QI7j5jOdJB6lfDFZPEZP0EK_Z574fpoB9DLD3kZGdN285vn_uTmV2BsAxgIz4jTjat0it0DVZBLMz2GRh4N32FaeeStHw4WEvgeKHMiJ39M7sPW7K2CFF5xRRp1kTqe6M1cwDsokeTaCSRDIWtdWGwQC-9fE8Rj_buoqOFwpBctVYcJMCO32y0FOiYupDicudnmIpq3h5bg_6k_hHAUUWFbBqPNBbMg
+is_cover: false
+sort_order: 9
+caption: Nathan Wranovsky
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDZ1bfj9QE!2e10!4m2!3m1!1s0x889a04d01c0a4d7d:0xeb2ee32d6884290f
+
+--- entity_photos [row 21 of 23] ---
+id: 64e0ece2-ff83-40e6-ae25-28c75789e03f
+entity_slug: tcby
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/11ce792d-ebd8-416b-926b-ea909ea47176/image_1.jpg
+is_cover: true
+sort_order: 0
+photo_type: hero
+source_name: legacy_businesses_table
+created_at: 2026-07-21T23:25:57.434852+00:00
+
+--- entity_photos [row 22 of 23] ---
+id: 1e387cde-9cb0-4693-a1eb-4d45da003952
+entity_slug: tcby
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/11ce792d-ebd8-416b-926b-ea909ea47176/image_2.jpg
+is_cover: false
+sort_order: 101
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 23 of 23] ---
+id: 7783a122-42aa-4103-a110-dcc5b606f178
+entity_slug: tcby
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/11ce792d-ebd8-416b-926b-ea909ea47176/image_3.jpg
+is_cover: false
+sort_order: 102
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 948fdd26-6ae6-41b4-95f3-ad36a69950b2
+entity_slug: tcby
+reviewer_name: Corey gatlin
+rating: 5
+body: BEST ICE CREAM SHOP IN GULF SHORES. 2 nice ladies did a very fine job of keeping up with orders, customers, and keeping the place clean. This place had a wonderful atmosphere and decorations. And don’t even get me started on the bathrooms. CLEANEST BATHROOMS IN THE UNIVERSE. Very nice place with equally nice employees and ice cream.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-02-15T02:07:23.147192+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: 2be2e10a-fafa-41b0-894d-d2158efdfb94
+entity_slug: tcby
+reviewer_name: Alyssa Campbell
+rating: 5
+body: Very good frozen yogurt. We hit the drive thru for an after-dinner treat and the staff was patient and friendly. Their Moose Tracks was some of the best I’ve ever had.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-09-14T18:43:52.160548+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: c65f798b-16bc-41d1-a623-103f150bb35a
+entity_slug: tcby
+reviewer_name: Katrina Shoemaker
+rating: 2
+body: Very selected options. $9+ for a bowl of frozen yogurt that comes with no toppings? On top of that asking for a tip? Very pricey for not even mid ice cream. For frozen yogurt I suggest going to Peachwave in Foley. Way more options on flavors and toppings as well you can put however much or many toppings you just pay the weight of it
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-01-21T03:36:09.196177+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 48a25fac-bac1-46fc-9e45-bd63523f70dd
+entity_slug: tcby
+reviewer_name: Chelsea Habern
+rating: 1
+body: Spent $35 before a tip on “milkshakes” that tasted like old milk. We threw them away and went across the street to Matt’s where we got good ice cream and only spent $25. WOULD NOT WASTE MY MONEY ON THIS PLACE EVER AGAIN. I left a tip for my trash ice cream before I knew it was trash but I also don’t like that they directly ask you to tip.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-12-23T23:14:26.660941+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: d6fefe84-3d9e-4c2d-aeb2-f992cbf6f5e9
+entity_slug: tcby
+reviewer_name: Cecelia Amos
+rating: 4
+body: I got a White Chocolate Mousse parfait with three layers: cookie dough on bottom, cheesecake bites in the middle, and gummy bears on top (couldn't resist, from my childhood). It was fun and tasty. Their White Chocolate Mousse frozen yogurt honestly remains their best flavor. I also got a scoop of mint chocolate chip ice cream, but I didn't care for the texture of the ice cream. My family and I are very pleased that there is a TCBY in our vicinity.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2024-10-30T00:55:50.456073+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   8 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 8] ---
+id: 61011fb4-e7dc-42b0-96b2-3af16147ef28
+entity_slug: tcby
+tag_name: dessert_shop
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 8] ---
+id: ef6a595b-126c-40fd-815f-e4ba41bd5fbd
+entity_slug: tcby
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 3 of 8] ---
+id: 187240fc-d7a3-4afe-9f68-afa8e4935364
+entity_slug: tcby
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 4 of 8] ---
+id: 928527e8-ba09-42b2-8b48-73d1016e3b65
+entity_slug: tcby
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 5 of 8] ---
+id: aaac1306-c3e1-4389-b692-d728a0876cdf
+entity_slug: tcby
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 6 of 8] ---
+id: 3ca7dfd5-eb50-4984-8778-f7d683f1e833
+entity_slug: tcby
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 7 of 8] ---
+id: 742f9480-0132-498e-b341-c21ace827ddf
+entity_slug: tcby
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 8 of 8] ---
+id: 29b56d00-c90d-4c15-ba85-1ab5e5da34e3
+entity_slug: tcby
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 6a91b01a-a8f2-4e44-997f-ac2d57c183f5
+entity_slug: tcby
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_cafe_dessert   -   1 row(s)
+####################################################################################################
+
+--- industry_cafe_dessert [row 1 of 1] ---
+entity_slug: tcby
+cafe_type: dessert_shop
+serves_breakfast: false
+has_seating: true
+good_for_kids: false
+takeout: true
+delivery: true
+updated_at: 2026-07-21T16:19:16.291607+00:00
+
+####################################################################################################
+# TABLE: industry_food_beverage   -   1 row(s)
+####################################################################################################
+
+--- industry_food_beverage [row 1 of 1] ---
+entity_slug: tcby
+menu_section_count: 0
+menu_item_count: 0
+price_level: 1
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+serves_vegetarian: false
+dine_in: true
+takeout: true
+delivery: true
+reservable: false
+outdoor_seating: false
+live_music: false
+good_for_kids: false
+good_for_groups: false
+has_happy_hour: false
+updated_at: 2026-07-20T03:16:49.206863+00:00
+
+####################################################################################################
+# TABLE: legacy_photo_migration_queue   -   2 row(s)
+####################################################################################################
+
+--- legacy_photo_migration_queue [row 1 of 2] ---
+id: 1394
+entity_slug: tcby
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/11ce792d-ebd8-416b-926b-ea909ea47176/image_2.jpg
+is_cover: false
+sort_order: 101
+status: linked_legacy
+created_at: 2026-07-26T00:31:07.222409+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 2 of 2] ---
+id: 1062
+entity_slug: tcby
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/11ce792d-ebd8-416b-926b-ea909ea47176/image_3.jpg
+is_cover: false
+sort_order: 102
+status: linked_legacy
+created_at: 2026-07-26T00:31:07.222409+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: search_index   -   1 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 1] ---
+ref_type: business
+ref_id: tcby
+entity_slug: tcby
+title: TCBY
+category: dessert_shop
+subtitle: Bright chain yogurt shop serving up varied frozen treats & chilled coffee drinks.
+search_vector: 'bright':4C 'chain':5C 'chill':13C 'coffe':14C 'dessert':2B 'drink':15C 'frozen':11C 'serv':8C 'shop':3B,7C 'tcbi':1A 'treat':12C 'vari':10C 'yogurt':6C
+
+####################################################################################################
+# TABLE: tourist_seen   -   1 row(s)
+####################################################################################################
+
+--- tourist_seen [row 1 of 1] ---
+id: f17e48aa-4340-4e11-a69e-12d205830d17
+tourist_id: 73a5a5d3-25c2-42a3-be99-e4c916f56c72
+entity_slug: tcby
+created_at: 2026-07-25T17:12:08.223183+00:00
+
+####################################################################################################
+# TABLE: tourist_swipe_events   -   1 row(s)
+####################################################################################################
+
+--- tourist_swipe_events [row 1 of 1] ---
+id: 8afa5a28-997e-4ab3-bad3-2c368b8909b1
+tourist_id: 0eae72e6-2535-424e-bd65-024879c35e40
+entity_slug: tcby
+entity_name: TCBY
+category: food
+direction: nope
+created_at: 2026-07-25T17:12:08.065734+00:00
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: tcby

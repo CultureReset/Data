@@ -1,0 +1,1808 @@
+====================================================================================================
+SLUG: the-beaver-hut
+NAME: The Beaver Hut
+INDUSTRY: bar_nightlife
+SUBTYPE: night_club
+TABLES WITH DATA: 21
+TOTAL ROWS: 109
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (8 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (10 rows)
+  entity  (1 rows)
+  entity_address_areas  (2 rows)
+  entity_attributes  (8 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (2 rows)
+  entity_hours  (7 rows)
+  entity_modules  (16 rows)
+  entity_nearby_landmark_types  (15 rows)
+  entity_nearby_landmarks  (7 rows)
+  entity_photos  (20 rows)
+  entity_reviews  (2 rows)
+  entity_tags  (3 rows)
+  entity_theme  (1 rows)
+  industry_bar_nightlife  (1 rows)
+  search_index  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: the-beaver-hut
+name: The Beaver Hut
+planner_category: food_drink
+data_quality_score: 60
+issues: missing_summary|missing_hours|missing_menu|missing_faqs|missing_contact_or_website
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: true
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: true
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   8 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 8] ---
+id: 6992
+entity_slug: the-beaver-hut
+intent_tag: best_for:casual_lunch_or_dinner
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 8] ---
+id: 6993
+entity_slug: the-beaver-hut
+intent_tag: service:parking
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 8] ---
+id: 6994
+entity_slug: the-beaver-hut
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 8] ---
+id: 6995
+entity_slug: the-beaver-hut
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 8] ---
+id: 6996
+entity_slug: the-beaver-hut
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 8] ---
+id: 6997
+entity_slug: the-beaver-hut
+intent_tag: missing:missing_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 8] ---
+id: 6998
+entity_slug: the-beaver-hut
+intent_tag: missing:missing_faqs
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 8] ---
+id: 6999
+entity_slug: the-beaver-hut
+intent_tag: missing:missing_contact_or_website
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: the-beaver-hut
+name: The Beaver Hut
+is_active: t
+planner_category: food_drink
+entity_type: restaurant
+entity_subtype: night_club
+city: Pensacola
+state: FL
+address_line_1: Pensacola, FL 32507, USA
+latitude: 30.2837618
+longitude: -87.5129626
+rating: 5
+review_count: 2
+hero_image_url: /photos/the-beaver-hut/photo_01.jpg
+voice_summary: The Beaver Hut in Pensacola is best for casual lunch or dinner.
+planner_summary: The Beaver Hut in Pensacola is a food drink listing in Gulf Coast Radar.
+best_for: casual lunch or dinner
+not_best_for: nothing specific flagged
+service_tags: parking
+search_keywords: night_club|point_of_interest|establishment|parking
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 10
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 3
+faq_count: 0
+data_quality_score: 60
+data_gaps: missing_summary|missing_hours|missing_menu|missing_faqs|missing_contact_or_website
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   10 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 10] ---
+id: 10355
+entity_slug: the-beaver-hut
+entity_name: The Beaver Hut
+city: Pensacola
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-beaver-hut/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 10] ---
+id: 10428
+entity_slug: the-beaver-hut
+entity_name: The Beaver Hut
+city: Pensacola
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-beaver-hut/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 10] ---
+id: 10542
+entity_slug: the-beaver-hut
+entity_name: The Beaver Hut
+city: Pensacola
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-beaver-hut/photo_09.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 10] ---
+id: 19167
+entity_slug: the-beaver-hut
+entity_name: The Beaver Hut
+city: Pensacola
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-beaver-hut/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 10] ---
+id: 19168
+entity_slug: the-beaver-hut
+entity_name: The Beaver Hut
+city: Pensacola
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-beaver-hut/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 10] ---
+id: 19171
+entity_slug: the-beaver-hut
+entity_name: The Beaver Hut
+city: Pensacola
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-beaver-hut/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 10] ---
+id: 19175
+entity_slug: the-beaver-hut
+entity_name: The Beaver Hut
+city: Pensacola
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-beaver-hut/photo_07.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 10] ---
+id: 19176
+entity_slug: the-beaver-hut
+entity_name: The Beaver Hut
+city: Pensacola
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-beaver-hut/photo_10.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 10] ---
+id: 19538
+entity_slug: the-beaver-hut
+entity_name: The Beaver Hut
+city: Pensacola
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-beaver-hut/photo_08.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 10] ---
+id: 24350
+entity_slug: the-beaver-hut
+entity_name: The Beaver Hut
+city: Pensacola
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-beaver-hut/photo_06.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 77f7fd80-e19b-4c7c-9659-a75e2fc96be5
+slug: the-beaver-hut
+name: The Beaver Hut
+is_active: true
+featured: false
+entity_type: restaurant
+entity_subtype: night_club
+menu_pin: 4691
+city: Pensacola
+state: FL
+zip: 32507
+latitude: 30.2837618
+longitude: -87.5129626
+rating: 5
+review_count: 2
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-beaver-hut/photo_01.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: true
+good_for_kids: false
+created_at: 2026-06-06T06:25:03.491705+00:00
+updated_at: 2026-07-02T04:37:35.222081+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJCVt0CY2pkIgRMoyjCYAjbZY
+google_maps_uri: https://maps.google.com/?cid=10839358910975151154&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: night_club
+formatted_address: Pensacola, FL 32507, USA
+plus_code: 862J7FMP+GR
+wheelchair_accessible_restroom: true
+accepts_cash_only: false
+parking_type: free
+google_places_data: {
+  "id": "ChIJCVt0CY2pkIgRMoyjCYAjbZY",
+  "types": [
+    "night_club",
+    "point_of_interest",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3m1PNpfbQB1cHvfM2h5FsMXCnHYxbxHCfHzLagQXCzMujNMgbvryJr7nUxR0kBjcrncW3h8-KaztkM-uzBqFXe0k2yF9n-8MsQCj_bCT1FTenhxJ9rJ1z7mFROirk-GsWbg4PJh_-lKQDdMzO5dqxZac65dnMLJZ5kYfYsQnzpKz7Ru_mQlTrQdPPRo-VbN8YZ5b8nIZSCZCGw8RGLBO-hmzxKTLR4SMPEiQQDKVQQkmEzfWAeNo8xxjPuCfY9QvtSkXjc1LUhNaUOmWLx_H3UZ9ShBkxDZCnzH916M4GZS77huzx-mP5lYgsv-pGj6N6vBa7WRw_ZLs6r74orw7dFwIUxAYsPfKlVPjfEjbquhyDX_4SIuSovS0Wu8rCYxN4Z-M4PitE5SSjMcHCoWpURlb5T_IJocEBaS7NF_Mujz9Q",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICy6cn7Rw!2e10!4m2!3m1!1s0x8890a98d09745b09:0x966d238009a38c32",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICy6cn7Rw&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106652067883097943378",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJpTO-RAr54Ap2g3ZyoS-g05-OZkCt4MhwdKPiFNgFdJ0ip3g=s100-p-k-no-mo",
+          "displayName": "Grady Copeland"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3kGZwGG_rTw_hlhLLV_cAtYTWcyJQopDXe2Z3f5gmhQaqz3ysZNglZCP99Zhj5wTkJjz3Zc1qRkgof64bl67LVY3OXFuw66GCPn4HX5Xi0YqjjWsWlcGSIYpdhtqdbeYCGaB-om2WDbCwuCNSJWE0yQMQGPlHCNA1kv16_U544As-1xf_un57vZLUT4Z6nVWi2fU8eeApt5bKQj-rdyF2JtyQb2T9PHCADZo-WyFabB1W5wWWD-4ZTw_slXQUkpQeBsjHJGLlquCNlvCNVjR3qIG2w6dBlxvDYbbEdW0o-tPHgxX8zzvHqFw0Iu08_41QxCY_U91V2KsjrpDenJbByCDa5ebRLTPR1lxUxPpKyNPS1pOXMjp5Q-kqv_SibdNF10BWu9YZ6iKzh04XtulXHR-lemc9QNvLJxnRDYMTPTTV46",
+      "widthPx": 4032,
+      "heightPx": 2268,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICD-4WW2QE!2e10!4m2!3m1!1s0x8890a98d09745b09:0x966d238009a38c32",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICD-4WW2QE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106652067883097943378",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJpTO-RAr54Ap2g3ZyoS-g05-OZkCt4MhwdKPiFNgFdJ0ip3g=s100-p-k-no-mo",
+          "displayName": "Grady Copeland"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3lxvHS9rTPhA1hN4mWguslokFV33LyoVO3us8VV4IgJQpQwEwSFY2n-Z7Wl9lwLZzYo71Qa1HqoWTuu437VDqMorpQqewUzi1qGZs1pzjooUfBlvMRaCOFySsivCtRS36zAonGe2lE0A51un9g_9oeApJNurXBOz2JhzKzMKXaGYlIRLEe5rwS0C3Urd20FgzzUIA00qOV--PVEutIK8t8TiQn6HmXH4omvjrNDTKWVP5JKtVCQLKQEsvmOirIOw0TbvN4esUWexxt0Ep36MCf3jLTbqTMBscr31p66P3VKBhkU3M2KOG3-d_oFmAiQFB6ajI5wTWuLo9w45t0cXkc0Kqr45jSxDbgPwflh5negDsvftjV2k8ri9qarhjR7Kr3e1WIvjBI0AMK_mH0LT8dZrzAFPYYdOtDhrjlZgs3B2A",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDaqLzWeA!2e10!4m2!3m1!1s0x8890a98d09745b09:0x966d238009a38c32",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDaqLzWeA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106652067883097943378",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJpTO-RAr54Ap2g3ZyoS-g05-OZkCt4MhwdKPiFNgFdJ0ip3g=s100-p-k-no-mo",
+          "displayName": "Grady Copeland"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3mZKpVjpKRPs4B_GoKmA0SXE7PN7-ZRIlQLrqp73JhEeiYQW2wrYChtsdcPuXHqmGIL_9pmF7l-BxYErl9elm3QoGrIF-B7wZBuOo5EUu3Xc3ApKJ8fBN_FMpvXAAeEbt1vqYaJx8dolyQuMx-Fb4D8AGmO2-1N_M6xyEFeJeanRTWqspVNIlMXxmGiLRMKSRwR3pq1qIjB6xQB0hOW05GpCnfEDtHapwHFgX4FLLvBJ7DNlGA9SdC3yNRb_N9lNUU6ANqde6PCZXuM-m_mYvL7EhzUQwuQvYm3c8FMNfX1_wgNAwy1Q29B2GOLwusTXmIlCHoWgEo_qypdW9LWt0mZ-NVms41lW65rIRtfLjd-Mx50AZfYY0mXSu15dsg-lW1j6puLPGsjWKrE7O7CfeW1-EBABkLqHHSsZpjOTBMsWw",
+      "widthPx": 4032,
+      "heightPx": 2268,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICD-4W8Ag!2e10!4m2!3m1!1s0x8890a98d09745b09:0x966d238009a38c32",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICD-4W8Ag&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106652067883097943378",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJpTO-RAr54Ap2g3ZyoS-g05-OZkCt4MhwdKPiFNgFdJ0ip3g=s100-p-k-no-mo",
+          "displayName": "Grady Copeland"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3mRlLgHJUF8Tyt2dQ2Y34oruhxUgwz9OvM1-Um5RbwWryUsUv9lZElr3mITrM29kn3qjwxcXoTc-VBxWWfQfp9Jt6X5ugNUHSnCzGzI0n2cd2iPdGEeLvdc6EREDuDSIa_De_R7KCw9YI14fedaJ2kh43m1INNETu4uvSpk5TjetDatO-dq5jUJQX8ecZFRQVg_DvkUTftVdfy-dAfS-YbgZOGx-dVrEDL-dIXyU-UYUDryJ23RhNQf31q3PNvTD-zNZYiPrjP_FQxTzxWJ0xLo3eLJT3XBGozrhuihsq2vKHrNdT_unQPqjpJiE3euafyYLmoExfLKURH6YHHJ-Ekq-M-Ba3pYb5D39wIBBp3werMNN5WoGL7xN8ToOj3zTIB4gF7UJNWyTK2RbmxEYbmbYCjz0XH0nNyXHBNm-rg",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDalNvJHg!2e10!4m2!3m1!1s0x8890a98d09745b09:0x966d238009a38c32",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDalNvJHg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106652067883097943378",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJpTO-RAr54Ap2g3ZyoS-g05-OZkCt4MhwdKPiFNgFdJ0ip3g=s100-p-k-no-mo",
+          "displayName": "Grady Copeland"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3k0xOyBKtWYSQxuK45eEc_-uznnUuavVVf2x0GRvBA5GFQkYUYai6WE8FNuW4RD5IBCs72wL0eYl_erP0L2WNviNyUJvUov_4LEF8jLq7qw0nVxZKU_n3Xn_RsjVOG2_HaAgoG2OecQtPAcul0bVU-LC70kDfD7TeS8WW1YPH-3S-91ad-QltK8ZTzpmAXHW26ESF2MtNzkyC15OVvjTbOT4UWBkCzCYAExaVUzMCUnkhGf1RoQkCtIRNcrzKAwXlJrS4pzqfeNlf3jYKSFHC5_oHmD9Db2usIkz8HQKGEgc1PRwkesRGMCxTnAYhT-ryESydC2ClqcMyqrFmncO5X5EbbClTZWG4E9QOFD5sKTEEsBKlrLh_G0AQQpceNGM2vq3D_yM-Qlv4SjdWcm5gp6LEsafAm0Y-8-RkSP4yiVLA",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICy6cnzew!2e10!4m2!3m1!1s0x8890a98d09745b09:0x966d238009a38c32",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICy6cnzew&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106652067883097943378",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJpTO-RAr54Ap2g3ZyoS-g05-OZkCt4MhwdKPiFNgFdJ0ip3g=s100-p-k-no-mo",
+          "displayName": "Grady Copeland"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3lzQjb_pIVCPbRXUr1DWC6RyKUG3x9Gxhs0fHZNKqoudttjd1OAyD7_CMhZYNsjccSCv6bv6cA9YRcwrPJkvr1raluVU9eLW-Dfm7UfuW9wtuTwRx5XH75IdxFo8MjFmV6kDMtKc76nPCGwqfO_t_hrpOqvzVlm5wmRFgNpTdHUkFXQ6SEqJ83lMg5Zu2d7vnb-Iy3CWIs_RkevTp3ZuhZGdCmfcek6KdcPNrDzOuI6xfGi9nSmH1Vm8YSpIyyIC0EF6jDMa7zTSFhjKBkbz85JMk5laV2mp0mtIXhZR3XBQSMLYgFmizyt0ApoELKY5nyJ8EqDxtatR2xmrAVPLxcCTgyI0VKnknvupR6-M17-e8yBnIDnE1iCawhDkc7bIW3adP9LmypxfZQkSD0ecJU5EIqVy-0d1ZwidXuRb8Yp3A",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDalNuxfQ!2e10!4m2!3m1!1s0x8890a98d09745b09:0x966d238009a38c32",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDalNuxfQ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106652067883097943378",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJpTO-RAr54Ap2g3ZyoS-g05-OZkCt4MhwdKPiFNgFdJ0ip3g=s100-p-k-no-mo",
+          "displayName": "Grady Copeland"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3m5KieCs8Jj4VwshAtq5BSzW5vS199iTYTaW3GZlYvDa1b7gslGSca_1iZLsKSbNDuKSBHjUDCzL4VL-r04HNBNIFHePBnhKQjnBfNSEMguGu5OZzk4cjFEwUYPlYh9MYaLKmYhp1PIg8_xFpG7wsQyAds_dzq_RLU6ozdGvO6cxvxyrzgl8W9g0GC0NYHxIHeonfitolvN8WIYYNShJrzNnILWQ-oic9DyOh2AuacumvDPBqQi0VJd-TQT3WFTcyg-1KGa0seNwG_GHfHaZ3KqbjJGhsUDRwwRKXCD0TIuCfp3XcQzcAYDYCe6ASSRQXl_DjuIzdFfHADJSahSD5lThT-OH8lhkZMYmyVnrmOm-rq_pLyM_xCg1qJlqE2h0aoShAYxcz3is5Cyag4IKpoInvCJKK3BTwqTZZeUhj0wfNc",
+      "widthPx": 4032,
+      "heightPx": 2268,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICD-4Wa6wE!2e10!4m2!3m1!1s0x8890a98d09745b09:0x966d238009a38c32",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICD-4Wa6wE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106652067883097943378",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJpTO-RAr54Ap2g3ZyoS-g05-OZkCt4MhwdKPiFNgFdJ0ip3g=s100-p-k-no-mo",
+          "displayName": "Grady Copeland"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3lG_Aq3U1bpDsQMoka2PROuhpDLJ8R6qPpJSOiE1sMqgvgiFmfoG8kZpV7TN0XAOiK0WNM9jBRL7vtnB0OTY9TsQQNC6pcKEYxti0uMEqcWSjxDijANwhSqd8ku14n7xQnSl9ePYVQPLi43ptw4hSDYUcO95hIbv_7wzWGFsGy_vLcYjO5Jm1oac0vvbGSN_BWeZy2lTU74HeZkx8o5rMn8LCN9oytcZfAfL-v-G2HR--_uPPbHBJNBSz_8ni1QP8x5xGX6QrYnJkZry_fkZdiTjM-O6x8LWXgJhGT1nvBVy33rUwh_pxRvNPDfN-TtS0sAzrnTd8yiEvVzflXklYPDY0Xn-LcqntnXhzxufwSc5uslCt1mGOYXTYz3OKKJHoOrIi6xlnoKAs7pUi_x-VllWP0LvbrwIKba0ynEmtDsSBmL",
+      "widthPx": 4032,
+      "heightPx": 2268,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID6koaFsgE!2e10!4m2!3m1!1s0x8890a98d09745b09:0x966d238009a38c32",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID6koaFsgE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106652067883097943378",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJpTO-RAr54Ap2g3ZyoS-g05-OZkCt4MhwdKPiFNgFdJ0ip3g=s100-p-k-no-mo",
+          "displayName": "Grady Copeland"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3m2RakIdJJ6S_fF2uKlqr2gZNQOXSMkOsJy3-B5upUYbJ0recuszT1v_ccIxxaRj63600AWP7TMeMQ95ioidVenYty4XBAJ2VywvMpOXoeL7l5lTUxfK27CQU_4F7bC0Lh23Dhm7p_q3U2CbqyGxAZprlr3GyFHFiiBPC4xrLalj_MWfUgUJ4ChDb9w8CPY50cHzOK_zaxaBkdKzn9T1QD46XJuak0hCU3uAMyRadO-t1HIW1VnnTul4mxmZBn15ZGu0s7Iy2T8F4EIz7PJKi8mabWyqckT8OZ4z_l3QxcYU6XvrYFR1-ZlEkSRUEGRNpJ7rraqtDSgrJaQ_9VWVMqWTWFzKoQaQxLQfE2VgpkFpYRiyWl2GHchZ8LGbzcwZuMMNmH87PjJBAV4AqJcU-UTp1lso54dSKd_Jvz33v0",
+      "widthPx": 4032,
+      "heightPx": 2268,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICD-4WKUA!2e10!4m2!3m1!1s0x8890a98d09745b09:0x966d238009a38c32",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICD-4WKUA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106652067883097943378",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJpTO-RAr54Ap2g3ZyoS-g05-OZkCt4MhwdKPiFNgFdJ0ip3g=s100-p-k-no-mo",
+          "displayName": "Grady Copeland"
+        }
+      ]
+    }
+  ],
+  "rating": 5,
+  "reviews": [
+    {
+      "name": "places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/reviews/ChZDSUhNMG9nS0VJQ0FnSUNla3J6eGF3EAE",
+      "text": {
+        "text": "Tons of beaver themed murals and decor inside, very chill beavercore lofi playing soft enough to have a conversation.  Try the \"water over the dam\" manager's special cocktail. All the waitresses wear fright wigs poking out of the front of their skirts, 10/10 wood chuck again.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2022-09-10T01:54:38.442456Z",
+      "originalText": {
+        "text": "Tons of beaver themed murals and decor inside, very chill beavercore lofi playing soft enough to have a conversation.  Try the \"water over the dam\" manager's special cocktail. All the waitresses wear fright wigs poking out of the front of their skirts, 10/10 wood chuck again.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNla3J6eGF3EAE!2m1!1s0x8890a98d09745b09:0x966d238009a38c32",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNla3J6eGF3EAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/102243906971078425607/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVsMBuqpM4uIxbWcl71fep67Iieub9lB0WcgC7w0Jawt_qy71fnQw=s128-c0x00000000-cc-rp-mo",
+        "displayName": "No Way (Man)"
+      },
+      "relativePublishTimeDescription": "3 years ago"
+    },
+    {
+      "name": "places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/reviews/ChdDSUhNMG9nS0VJQ0FnSUNELTZYOG1nRRAB",
+      "rating": 5,
+      "publishTime": "2024-04-02T10:20:31.690195Z",
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNELTZYOG1nRRAB!2m1!1s0x8890a98d09745b09:0x966d238009a38c32",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNELTZYOG1nRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/106652067883097943378/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJpTO-RAr54Ap2g3ZyoS-g05-OZkCt4MhwdKPiFNgFdJ0ip3g=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Grady Copeland"
+      },
+      "relativePublishTimeDescription": "2 years ago"
+    }
+  ],
+  "delivery": false,
+  "location": {
+    "latitude": 30.2837618,
+    "longitude": -87.5129626
+  },
+  "plusCode": {
+    "globalCode": "862J7FMP+GR",
+    "compoundCode": "7FMP+GR Pensacola, FL, USA"
+  },
+  "restroom": true,
+  "viewport": {
+    "low": {
+      "latitude": 30.2824194197085,
+      "longitude": -87.5144031302915
+    },
+    "high": {
+      "latitude": 30.285117380291496,
+      "longitude": -87.51170516970848
+    }
+  },
+  "displayName": {
+    "text": "The Beaver Hut",
+    "languageCode": "en"
+  },
+  "primaryType": "night_club",
+  "goodForGroups": true,
+  "googleMapsUri": "https://maps.google.com/?cid=10839358910975151154&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "parkingOptions": {
+    "freeParkingLot": true,
+    "freeStreetParking": true
+  },
+  "paymentOptions": {
+    "acceptsCashOnly": false
+  },
+  "goodForChildren": false,
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=10839358910975151154&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890a98d09745b09:0x966d238009a38c32!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x8890a98d09745b09:0x966d238009a38c32!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x8890a98d09745b09:0x966d238009a38c32!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890a98d09745b09:0x966d238009a38c32!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+  "userRatingCount": 2,
+  "adrFormatAddress": "<span class=\"locality\">Pensacola</span>, <span class=\"region\">FL</span> <span class=\"postal-code\">32507</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "Pensacola, FL 32507, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Pensacola",
+      "shortText": "Pensacola",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "neighborhood",
+        "political"
+      ],
+      "longText": "Perdido Key",
+      "shortText": "Perdido Key",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Escambia County",
+      "shortText": "Escambia County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Florida",
+      "shortText": "FL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "32507",
+      "shortText": "32507",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJy1n6EE-okIgRKZaOALRFVq4",
+        "placeId": "ChIJy1n6EE-okIgRKZaOALRFVq4",
+        "containment": "OUTSKIRTS",
+        "displayName": {
+          "text": "Old River RV Park",
+          "languageCode": "en"
+        }
+      },
+      {
+        "name": "places/ChIJ6dR1e5uvkIgR1hdtKbfW2X0",
+        "placeId": "ChIJ6dR1e5uvkIgR1hdtKbfW2X0",
+        "containment": "OUTSKIRTS",
+        "displayName": {
+          "text": "Perdido Key",
+          "languageCode": "en"
+        }
+      }
+    ],
+    "landmarks": [
+      {
+        "name": "places/ChIJIxzYFk-okIgRMdWJY6hABpU",
+        "types": [
+          "establishment",
+          "lodging",
+          "point_of_interest",
+          "rv_park"
+        ],
+        "placeId": "ChIJIxzYFk-okIgRMdWJY6hABpU",
+        "displayName": {
+          "text": "Old River RV Park",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "WITHIN",
+        "travelDistanceMeters": 144.42525,
+        "straightLineDistanceMeters": 26.239462
+      },
+      {
+        "name": "places/ChIJH6IlMkmokIgRO9zdOECepxQ",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJH6IlMkmokIgRO9zdOECepxQ",
+        "displayName": {
+          "text": "Spanish Key Beach Resort",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 361.82245,
+        "straightLineDistanceMeters": 311.0833
+      },
+      {
+        "name": "places/ChIJvRGqM0-okIgR4qJ1qjRFoTA",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJvRGqM0-okIgR4qJ1qjRFoTA",
+        "displayName": {
+          "text": "Pescador Landing",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 356.81393,
+        "straightLineDistanceMeters": 161.1346
+      },
+      {
+        "name": "places/ChIJS7Sxq0-okIgRKpwPfoLp8kM",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "real_estate_agency",
+          "travel_agency"
+        ],
+        "placeId": "ChIJS7Sxq0-okIgRKpwPfoLp8kM",
+        "displayName": {
+          "text": "Needle Rush Point",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 342.14273,
+        "straightLineDistanceMeters": 105.29902
+      },
+      {
+        "name": "places/ChIJMScaSKmpkIgRWpBxnngnsrA",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "tourist_attraction"
+        ],
+        "placeId": "ChIJMScaSKmpkIgRWpBxnngnsrA",
+        "displayName": {
+          "text": "Welcome to Florida Sign",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "AROUND_THE_CORNER",
+        "travelDistanceMeters": 186.50104,
+        "straightLineDistanceMeters": 158.1904
+      }
+    ]
+  },
+  "currentOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 0,
+          "minute": 0,
+          "truncated": true
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 59,
+          "truncated": true
+        }
+      }
+    ],
+    "weekdayDescriptions": [
+      "Monday: Open 24 hours",
+      "Tuesday: Open 24 hours",
+      "Wednesday: Open 24 hours",
+      "Thursday: Open 24 hours",
+      "Friday: Open 24 hours",
+      "Saturday: Open 24 hours",
+      "Sunday: Open 24 hours"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Night Club",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#FF9E67",
+  "regularOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 0,
+          "minute": 0
+        }
+      }
+    ],
+    "weekdayDescriptions": [
+      "Monday: Open 24 hours",
+      "Tuesday: Open 24 hours",
+      "Wednesday: Open 24 hours",
+      "Thursday: Open 24 hours",
+      "Friday: Open 24 hours",
+      "Saturday: Open 24 hours",
+      "Sunday: Open 24 hours"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleRestroom": true
+  },
+  "shortFormattedAddress": "Pensacola",
+  "primaryTypeDisplayName": {
+    "text": "Night Club",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false
+}
+restroom: true
+good_for_children: false
+free_parking_lot: true
+free_street_parking: true
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #FF9E67
+short_formatted_address: Pensacola
+search_vector: 'beaver':2A 'club':5 'hut':3A 'night':4 'pensacola':6
+primary_type_display: Night Club
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=10839358910975151154&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890a98d09745b09:0x966d238009a38c32!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x8890a98d09745b09:0x966d238009a38c32!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x8890a98d09745b09:0x966d238009a38c32!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890a98d09745b09:0x966d238009a38c32!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJy1n6EE-okIgRKZaOALRFVq4",
+      "placeId": "ChIJy1n6EE-okIgRKZaOALRFVq4",
+      "containment": "OUTSKIRTS",
+      "displayName": {
+        "text": "Old River RV Park",
+        "languageCode": "en"
+      }
+    },
+    {
+      "name": "places/ChIJ6dR1e5uvkIgR1hdtKbfW2X0",
+      "placeId": "ChIJ6dR1e5uvkIgR1hdtKbfW2X0",
+      "containment": "OUTSKIRTS",
+      "displayName": {
+        "text": "Perdido Key",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJIxzYFk-okIgRMdWJY6hABpU",
+      "types": [
+        "establishment",
+        "lodging",
+        "point_of_interest",
+        "rv_park"
+      ],
+      "placeId": "ChIJIxzYFk-okIgRMdWJY6hABpU",
+      "displayName": {
+        "text": "Old River RV Park",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "WITHIN",
+      "travelDistanceMeters": 144.42525,
+      "straightLineDistanceMeters": 26.239462
+    },
+    {
+      "name": "places/ChIJH6IlMkmokIgRO9zdOECepxQ",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJH6IlMkmokIgRO9zdOECepxQ",
+      "displayName": {
+        "text": "Spanish Key Beach Resort",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 361.82245,
+      "straightLineDistanceMeters": 311.0833
+    },
+    {
+      "name": "places/ChIJvRGqM0-okIgR4qJ1qjRFoTA",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJvRGqM0-okIgR4qJ1qjRFoTA",
+      "displayName": {
+        "text": "Pescador Landing",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 356.81393,
+      "straightLineDistanceMeters": 161.1346
+    },
+    {
+      "name": "places/ChIJS7Sxq0-okIgRKpwPfoLp8kM",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "real_estate_agency",
+        "travel_agency"
+      ],
+      "placeId": "ChIJS7Sxq0-okIgRKpwPfoLp8kM",
+      "displayName": {
+        "text": "Needle Rush Point",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 342.14273,
+      "straightLineDistanceMeters": 105.29902
+    },
+    {
+      "name": "places/ChIJMScaSKmpkIgRWpBxnngnsrA",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "tourist_attraction"
+      ],
+      "placeId": "ChIJMScaSKmpkIgRWpBxnngnsrA",
+      "displayName": {
+        "text": "Welcome to Florida Sign",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "AROUND_THE_CORNER",
+      "travelDistanceMeters": 186.50104,
+      "straightLineDistanceMeters": 158.1904
+    }
+  ]
+}
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: menu
+industry_code: bar_nightlife
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   2 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 2] ---
+id: dce20b48-14e3-4f30-9910-b80c7f12a169
+entity_slug: the-beaver-hut
+place_id: ChIJy1n6EE-okIgRKZaOALRFVq4
+containment: OUTSKIRTS
+display_name: Old River RV Park
+
+--- entity_address_areas [row 2 of 2] ---
+id: 2f33ec90-88d4-4d37-8220-d8e15a754459
+entity_slug: the-beaver-hut
+place_id: ChIJ6dR1e5uvkIgR1hdtKbfW2X0
+containment: OUTSKIRTS
+display_name: Perdido Key
+
+####################################################################################################
+# TABLE: entity_attributes   -   8 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 8] ---
+id: b99d97af-f524-41ff-b642-a9ee70efda3b
+entity_slug: the-beaver-hut
+category: service
+key: delivery
+label: Delivery
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 2 of 8] ---
+id: 6e1a4b17-2f29-46d8-ad6d-40cd8fc65763
+entity_slug: the-beaver-hut
+category: amenity
+key: restroom
+label: Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 3 of 8] ---
+id: 96f179c9-7f11-4478-ba29-3dd45aae6082
+entity_slug: the-beaver-hut
+category: suitability
+key: good_for_children
+label: Good for Children
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 4 of 8] ---
+id: bbf4382a-07a7-4861-9f8a-0c0ee4541747
+entity_slug: the-beaver-hut
+category: suitability
+key: good_for_groups
+label: Good for Groups
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 5 of 8] ---
+id: 12fa4e89-f5b6-4a18-bdda-d1f727a0d469
+entity_slug: the-beaver-hut
+category: accessibility
+key: access_wheelchairAccessibleRestroom
+label: Wheelchair Accessible Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 6 of 8] ---
+id: a56a9044-773e-4d62-8558-d1a70a894536
+entity_slug: the-beaver-hut
+category: parking
+key: parking_freeParkingLot
+label: Free Parking Lot
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 7 of 8] ---
+id: 8af174e2-e08a-4d40-b13a-33a591125a96
+entity_slug: the-beaver-hut
+category: parking
+key: parking_freeStreetParking
+label: Free Street Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 8 of 8] ---
+id: f5c93e99-a445-46fd-b149-9c80e424d6d2
+entity_slug: the-beaver-hut
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: the-beaver-hut
+name: The Beaver Hut
+industry_code: bar_nightlife
+is_parent: false
+score_of_7: 4
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: bec3b7ce-92b2-453e-a88d-15af1a708e8a
+entity_slug: the-beaver-hut
+place_uri: https://maps.google.com/?cid=10839358910975151154&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890a98d09745b09:0x966d238009a38c32!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x8890a98d09745b09:0x966d238009a38c32!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x8890a98d09745b09:0x966d238009a38c32!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890a98d09745b09:0x966d238009a38c32!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   2 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 2] ---
+review_id: 1659
+entity_slug: the-beaver-hut
+google_review_name: places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/reviews/ChZDSUhNMG9nS0VJQ0FnSUNla3J6eGF3EAE
+rating: 5
+review_text: Tons of beaver themed murals and decor inside, very chill beavercore lofi playing soft enough to have a conversation.  Try the "water over the dam" manager's special cocktail. All the waitresses wear fright wigs poking out of the front of their skirts, 10/10 wood chuck again.
+language_code: en
+author_name: No Way (Man)
+author_profile_url: https://www.google.com/maps/contrib/102243906971078425607/reviews
+publish_time: 2022-09-10T01:54:38.442456+00:00
+relative_time: 3 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNla3J6eGF3EAE!2m1!1s0x8890a98d09745b09:0x966d238009a38c32
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 2] ---
+review_id: 1660
+entity_slug: the-beaver-hut
+google_review_name: places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/reviews/ChdDSUhNMG9nS0VJQ0FnSUNELTZYOG1nRRAB
+rating: 5
+author_name: Grady Copeland
+author_profile_url: https://www.google.com/maps/contrib/106652067883097943378/reviews
+publish_time: 2024-04-02T10:20:31.690195+00:00
+relative_time: 2 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNELTZYOG1nRRAB!2m1!1s0x8890a98d09745b09:0x966d238009a38c32
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: b1f68689-901e-4312-965d-32435dee5768
+entity_slug: the-beaver-hut
+day_of_week: 0
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 542b6d8b-5963-40a4-9f48-49bd26318c79
+entity_slug: the-beaver-hut
+day_of_week: 1
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 5261ab31-6c0d-48a5-8cf6-04424c3a233f
+entity_slug: the-beaver-hut
+day_of_week: 2
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 25dbaecc-04b2-400a-9d6c-f2934c249fdf
+entity_slug: the-beaver-hut
+day_of_week: 3
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: f18b7e82-f9d3-427c-8729-d3e31c0bbcc3
+entity_slug: the-beaver-hut
+day_of_week: 4
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: b148817f-2f2b-4467-bba0-64d058ebb504
+entity_slug: the-beaver-hut
+day_of_week: 5
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 8c916c9f-fe35-4c18-a318-bdcbe8f03710
+entity_slug: the-beaver-hut
+day_of_week: 6
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_modules   -   16 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 16] ---
+id: f5a3db67-8d65-4e0b-a4d3-358d3bf02361
+entity_slug: the-beaver-hut
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 16] ---
+id: fdd2ee98-b6e8-458d-ab96-b4465166ed28
+entity_slug: the-beaver-hut
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 16] ---
+id: 0c6ec220-f887-4b35-a3bc-3721afb5c497
+entity_slug: the-beaver-hut
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 16] ---
+id: 63f97a16-9047-4084-916d-394a5effb4b4
+entity_slug: the-beaver-hut
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 16] ---
+id: f6920b34-f27e-43ad-951c-54bcb8401096
+entity_slug: the-beaver-hut
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 16] ---
+id: 044ed1d5-1e09-4bdb-8dc5-d1afac81f565
+entity_slug: the-beaver-hut
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 16] ---
+id: 962278c3-a756-4c74-a3be-0f224b20bea5
+entity_slug: the-beaver-hut
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 16] ---
+id: 1b3d9a3d-26bd-4c74-b638-cc22da2f1f77
+entity_slug: the-beaver-hut
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 16] ---
+id: 87ffa536-6a9c-4cfd-897c-5ee315a5e9d2
+entity_slug: the-beaver-hut
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 16] ---
+id: 5a17857e-5b5f-4fd1-8272-2b63c3906eed
+entity_slug: the-beaver-hut
+module_key: menu
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 16] ---
+id: afa0d009-0d6e-4cfc-a1fc-9d881347598d
+entity_slug: the-beaver-hut
+module_key: drinks
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 16] ---
+id: 2598ab5c-30e1-4a0a-a23a-ea35afe64ec8
+entity_slug: the-beaver-hut
+module_key: happy_hour
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 16] ---
+id: d1ffcaee-640d-4d44-ad10-f3e74d078c31
+entity_slug: the-beaver-hut
+module_key: specials
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 14 of 16] ---
+id: 7be47be4-3b7f-4ca1-87fe-22cab64a6de9
+entity_slug: the-beaver-hut
+module_key: events
+enabled: true
+sort_order: 14
+
+--- entity_modules [row 15 of 16] ---
+id: 854b8c0b-ce71-42ce-9538-784167f6ff51
+entity_slug: the-beaver-hut
+module_key: loyalty
+enabled: true
+sort_order: 15
+
+--- entity_modules [row 16 of 16] ---
+id: f0b9b03c-44c1-4d87-8d7d-cc24cbb4e1d4
+entity_slug: the-beaver-hut
+module_key: booking
+enabled: true
+sort_order: 16
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   15 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 15] ---
+id: 2531221e-93fe-4c0f-bd35-e25081c9deee
+landmark_id: c7ce7a1d-41f6-4909-bb1a-d5b4bba766c7
+entity_slug: the-beaver-hut
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 15] ---
+id: 35ad4fd9-b83e-4def-9728-73ab640c2005
+landmark_id: c7ce7a1d-41f6-4909-bb1a-d5b4bba766c7
+entity_slug: the-beaver-hut
+landmark_type: lodging
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 15] ---
+id: 1310196b-648a-4703-9cff-85ecb6eeb827
+landmark_id: c7ce7a1d-41f6-4909-bb1a-d5b4bba766c7
+entity_slug: the-beaver-hut
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 15] ---
+id: b19967f0-31ef-404a-aade-c947b73fe59d
+landmark_id: c7ce7a1d-41f6-4909-bb1a-d5b4bba766c7
+entity_slug: the-beaver-hut
+landmark_type: rv_park
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 15] ---
+id: e5ff3c50-e255-404a-be9d-e104b1a4f45c
+landmark_id: f83c6dfd-9577-4d2a-8058-900efc4e0441
+entity_slug: the-beaver-hut
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 15] ---
+id: 365c9b3c-c6d4-4f3d-8f7d-9f3a5d79b61e
+landmark_id: f83c6dfd-9577-4d2a-8058-900efc4e0441
+entity_slug: the-beaver-hut
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 15] ---
+id: 0022ba3e-20bb-40f3-9bf7-6c8934de249c
+landmark_id: 7a81b567-f710-4cfc-9499-2e802a6a9b30
+entity_slug: the-beaver-hut
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 15] ---
+id: c6556014-553c-4157-9848-f28ffd7a737b
+landmark_id: 7a81b567-f710-4cfc-9499-2e802a6a9b30
+entity_slug: the-beaver-hut
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 15] ---
+id: acec9433-3bf7-4fde-8c97-00f45e6bcbe3
+landmark_id: 1d4c6a6f-77b7-4a2c-9621-72806662c1f7
+entity_slug: the-beaver-hut
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 15] ---
+id: f8ef5b53-7c2b-4292-bbeb-9423f4ef6626
+landmark_id: 1d4c6a6f-77b7-4a2c-9621-72806662c1f7
+entity_slug: the-beaver-hut
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 15] ---
+id: 4c61a049-78dd-431f-ab55-f9b92fef40f3
+landmark_id: 1d4c6a6f-77b7-4a2c-9621-72806662c1f7
+entity_slug: the-beaver-hut
+landmark_type: real_estate_agency
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 15] ---
+id: 62cd553a-cc2b-4597-a47e-100cb6db2a52
+landmark_id: 1d4c6a6f-77b7-4a2c-9621-72806662c1f7
+entity_slug: the-beaver-hut
+landmark_type: travel_agency
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 15] ---
+id: 3ba819b5-4f05-4eef-a42f-ce3b213183c3
+landmark_id: c97d18f4-eba2-47c9-8405-ae7e6b454257
+entity_slug: the-beaver-hut
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 15] ---
+id: 511dc746-957b-4a6d-a3c7-53ac17c23aa4
+landmark_id: c97d18f4-eba2-47c9-8405-ae7e6b454257
+entity_slug: the-beaver-hut
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 15] ---
+id: ac96c66a-cfa1-407b-b4a4-829a05bab78b
+landmark_id: c97d18f4-eba2-47c9-8405-ae7e6b454257
+entity_slug: the-beaver-hut
+landmark_type: tourist_attraction
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   7 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 7] ---
+id: c7ce7a1d-41f6-4909-bb1a-d5b4bba766c7
+entity_slug: the-beaver-hut
+kind: landmark
+place_id: ChIJIxzYFk-okIgRMdWJY6hABpU
+name: Old River RV Park
+types: [
+  "establishment",
+  "lodging",
+  "point_of_interest",
+  "rv_park"
+]
+spatial_relationship: WITHIN
+travel_distance_meters: 144.42525
+straight_line_distance_meters: 26.239462
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 7] ---
+id: f83c6dfd-9577-4d2a-8058-900efc4e0441
+entity_slug: the-beaver-hut
+kind: landmark
+place_id: ChIJH6IlMkmokIgRO9zdOECepxQ
+name: Spanish Key Beach Resort
+types: [
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 361.82245
+straight_line_distance_meters: 311.0833
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 7] ---
+id: 7a81b567-f710-4cfc-9499-2e802a6a9b30
+entity_slug: the-beaver-hut
+kind: landmark
+place_id: ChIJvRGqM0-okIgR4qJ1qjRFoTA
+name: Pescador Landing
+types: [
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 356.81393
+straight_line_distance_meters: 161.1346
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 7] ---
+id: 1d4c6a6f-77b7-4a2c-9621-72806662c1f7
+entity_slug: the-beaver-hut
+kind: landmark
+place_id: ChIJS7Sxq0-okIgRKpwPfoLp8kM
+name: Needle Rush Point
+types: [
+  "establishment",
+  "point_of_interest",
+  "real_estate_agency",
+  "travel_agency"
+]
+travel_distance_meters: 342.14273
+straight_line_distance_meters: 105.29902
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 7] ---
+id: c97d18f4-eba2-47c9-8405-ae7e6b454257
+entity_slug: the-beaver-hut
+kind: landmark
+place_id: ChIJMScaSKmpkIgRWpBxnngnsrA
+name: Welcome to Florida Sign
+types: [
+  "establishment",
+  "point_of_interest",
+  "tourist_attraction"
+]
+spatial_relationship: AROUND_THE_CORNER
+travel_distance_meters: 186.50104
+straight_line_distance_meters: 158.1904
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 6 of 7] ---
+id: 0caa778b-3676-4575-b28d-fba16167baa1
+entity_slug: the-beaver-hut
+kind: area
+place_id: ChIJy1n6EE-okIgRKZaOALRFVq4
+name: Old River RV Park
+containment: OUTSKIRTS
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 7 of 7] ---
+id: 385e51da-cd1f-4899-a4d4-884fc8dfb05b
+entity_slug: the-beaver-hut
+kind: area
+place_id: ChIJ6dR1e5uvkIgR1hdtKbfW2X0
+name: Perdido Key
+containment: OUTSKIRTS
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_photos   -   20 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 20] ---
+id: 0436d026-e5d7-44b5-a7c6-5d59aa1177c7
+entity_slug: the-beaver-hut
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-beaver-hut/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 2 of 20] ---
+id: 1e60e5b1-836a-4435-b7d7-76c316180f25
+entity_slug: the-beaver-hut
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-beaver-hut/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 3 of 20] ---
+id: 287243c7-a4e5-4745-8cde-1268224caa34
+entity_slug: the-beaver-hut
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-beaver-hut/photo_05.jpg
+is_cover: false
+sort_order: 4
+
+--- entity_photos [row 4 of 20] ---
+id: 36de70e8-9a6f-427e-8ff7-a75a6c943430
+entity_slug: the-beaver-hut
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-beaver-hut/photo_07.jpg
+is_cover: false
+sort_order: 6
+
+--- entity_photos [row 5 of 20] ---
+id: fb044c6f-b6e3-4b2e-9a14-02323b5b41fa
+entity_slug: the-beaver-hut
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-beaver-hut/photo_10.jpg
+is_cover: false
+sort_order: 9
+
+--- entity_photos [row 6 of 20] ---
+id: 866a3f2c-39b6-43a2-85f0-f930a8dd1901
+entity_slug: the-beaver-hut
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-beaver-hut/photo_08.jpg
+is_cover: false
+sort_order: 7
+
+--- entity_photos [row 7 of 20] ---
+id: ab89c338-4f0f-4bd0-89e7-73cef385dde5
+entity_slug: the-beaver-hut
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-beaver-hut/photo_06.jpg
+is_cover: false
+sort_order: 5
+
+--- entity_photos [row 8 of 20] ---
+id: 620eebc7-e48c-4d16-9944-7f14853e8d33
+entity_slug: the-beaver-hut
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-beaver-hut/photo_04.jpg
+is_cover: false
+sort_order: 3
+
+--- entity_photos [row 9 of 20] ---
+id: 8e8f4d73-88a9-47af-8e28-a5fff3078015
+entity_slug: the-beaver-hut
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-beaver-hut/photo_03.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 10 of 20] ---
+id: e4f0293c-48c7-47dc-baa9-8d444d1a4448
+entity_slug: the-beaver-hut
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-beaver-hut/photo_09.jpg
+is_cover: false
+sort_order: 8
+
+--- entity_photos [row 11 of 20] ---
+id: 512f5a18-8ce7-4db7-b641-e6e69e2e05f1
+entity_slug: the-beaver-hut
+url: https://places.googleapis.com/v1/places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3m1PNpfbQB1cHvfM2h5FsMXCnHYxbxHCfHzLagQXCzMujNMgbvryJr7nUxR0kBjcrncW3h8-KaztkM-uzBqFXe0k2yF9n-8MsQCj_bCT1FTenhxJ9rJ1z7mFROirk-GsWbg4PJh_-lKQDdMzO5dqxZac65dnMLJZ5kYfYsQnzpKz7Ru_mQlTrQdPPRo-VbN8YZ5b8nIZSCZCGw8RGLBO-hmzxKTLR4SMPEiQQDKVQQkmEzfWAeNo8xxjPuCfY9QvtSkXjc1LUhNaUOmWLx_H3UZ9ShBkxDZCnzH916M4GZS77huzx-mP5lYgsv-pGj6N6vBa7WRw_ZLs6r74orw7dFwIUxAYsPfKlVPjfEjbquhyDX_4SIuSovS0Wu8rCYxN4Z-M4PitE5SSjMcHCoWpURlb5T_IJocEBaS7NF_Mujz9Q/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3m1PNpfbQB1cHvfM2h5FsMXCnHYxbxHCfHzLagQXCzMujNMgbvryJr7nUxR0kBjcrncW3h8-KaztkM-uzBqFXe0k2yF9n-8MsQCj_bCT1FTenhxJ9rJ1z7mFROirk-GsWbg4PJh_-lKQDdMzO5dqxZac65dnMLJZ5kYfYsQnzpKz7Ru_mQlTrQdPPRo-VbN8YZ5b8nIZSCZCGw8RGLBO-hmzxKTLR4SMPEiQQDKVQQkmEzfWAeNo8xxjPuCfY9QvtSkXjc1LUhNaUOmWLx_H3UZ9ShBkxDZCnzH916M4GZS77huzx-mP5lYgsv-pGj6N6vBa7WRw_ZLs6r74orw7dFwIUxAYsPfKlVPjfEjbquhyDX_4SIuSovS0Wu8rCYxN4Z-M4PitE5SSjMcHCoWpURlb5T_IJocEBaS7NF_Mujz9Q
+is_cover: false
+sort_order: 0
+caption: Grady Copeland
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICy6cn7Rw!2e10!4m2!3m1!1s0x8890a98d09745b09:0x966d238009a38c32
+
+--- entity_photos [row 12 of 20] ---
+id: f7575cee-589e-4ec4-990d-d03853470e93
+entity_slug: the-beaver-hut
+url: https://places.googleapis.com/v1/places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3kGZwGG_rTw_hlhLLV_cAtYTWcyJQopDXe2Z3f5gmhQaqz3ysZNglZCP99Zhj5wTkJjz3Zc1qRkgof64bl67LVY3OXFuw66GCPn4HX5Xi0YqjjWsWlcGSIYpdhtqdbeYCGaB-om2WDbCwuCNSJWE0yQMQGPlHCNA1kv16_U544As-1xf_un57vZLUT4Z6nVWi2fU8eeApt5bKQj-rdyF2JtyQb2T9PHCADZo-WyFabB1W5wWWD-4ZTw_slXQUkpQeBsjHJGLlquCNlvCNVjR3qIG2w6dBlxvDYbbEdW0o-tPHgxX8zzvHqFw0Iu08_41QxCY_U91V2KsjrpDenJbByCDa5ebRLTPR1lxUxPpKyNPS1pOXMjp5Q-kqv_SibdNF10BWu9YZ6iKzh04XtulXHR-lemc9QNvLJxnRDYMTPTTV46/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3kGZwGG_rTw_hlhLLV_cAtYTWcyJQopDXe2Z3f5gmhQaqz3ysZNglZCP99Zhj5wTkJjz3Zc1qRkgof64bl67LVY3OXFuw66GCPn4HX5Xi0YqjjWsWlcGSIYpdhtqdbeYCGaB-om2WDbCwuCNSJWE0yQMQGPlHCNA1kv16_U544As-1xf_un57vZLUT4Z6nVWi2fU8eeApt5bKQj-rdyF2JtyQb2T9PHCADZo-WyFabB1W5wWWD-4ZTw_slXQUkpQeBsjHJGLlquCNlvCNVjR3qIG2w6dBlxvDYbbEdW0o-tPHgxX8zzvHqFw0Iu08_41QxCY_U91V2KsjrpDenJbByCDa5ebRLTPR1lxUxPpKyNPS1pOXMjp5Q-kqv_SibdNF10BWu9YZ6iKzh04XtulXHR-lemc9QNvLJxnRDYMTPTTV46
+is_cover: false
+sort_order: 1
+caption: Grady Copeland
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICD-4WW2QE!2e10!4m2!3m1!1s0x8890a98d09745b09:0x966d238009a38c32
+
+--- entity_photos [row 13 of 20] ---
+id: 606f2b95-7a0a-4453-a53f-0fabd8b9d1b9
+entity_slug: the-beaver-hut
+url: https://places.googleapis.com/v1/places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3lxvHS9rTPhA1hN4mWguslokFV33LyoVO3us8VV4IgJQpQwEwSFY2n-Z7Wl9lwLZzYo71Qa1HqoWTuu437VDqMorpQqewUzi1qGZs1pzjooUfBlvMRaCOFySsivCtRS36zAonGe2lE0A51un9g_9oeApJNurXBOz2JhzKzMKXaGYlIRLEe5rwS0C3Urd20FgzzUIA00qOV--PVEutIK8t8TiQn6HmXH4omvjrNDTKWVP5JKtVCQLKQEsvmOirIOw0TbvN4esUWexxt0Ep36MCf3jLTbqTMBscr31p66P3VKBhkU3M2KOG3-d_oFmAiQFB6ajI5wTWuLo9w45t0cXkc0Kqr45jSxDbgPwflh5negDsvftjV2k8ri9qarhjR7Kr3e1WIvjBI0AMK_mH0LT8dZrzAFPYYdOtDhrjlZgs3B2A/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3lxvHS9rTPhA1hN4mWguslokFV33LyoVO3us8VV4IgJQpQwEwSFY2n-Z7Wl9lwLZzYo71Qa1HqoWTuu437VDqMorpQqewUzi1qGZs1pzjooUfBlvMRaCOFySsivCtRS36zAonGe2lE0A51un9g_9oeApJNurXBOz2JhzKzMKXaGYlIRLEe5rwS0C3Urd20FgzzUIA00qOV--PVEutIK8t8TiQn6HmXH4omvjrNDTKWVP5JKtVCQLKQEsvmOirIOw0TbvN4esUWexxt0Ep36MCf3jLTbqTMBscr31p66P3VKBhkU3M2KOG3-d_oFmAiQFB6ajI5wTWuLo9w45t0cXkc0Kqr45jSxDbgPwflh5negDsvftjV2k8ri9qarhjR7Kr3e1WIvjBI0AMK_mH0LT8dZrzAFPYYdOtDhrjlZgs3B2A
+is_cover: false
+sort_order: 2
+caption: Grady Copeland
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDaqLzWeA!2e10!4m2!3m1!1s0x8890a98d09745b09:0x966d238009a38c32
+
+--- entity_photos [row 14 of 20] ---
+id: 49b397e2-3722-428b-904f-b8f97ac5ae8b
+entity_slug: the-beaver-hut
+url: https://places.googleapis.com/v1/places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3mZKpVjpKRPs4B_GoKmA0SXE7PN7-ZRIlQLrqp73JhEeiYQW2wrYChtsdcPuXHqmGIL_9pmF7l-BxYErl9elm3QoGrIF-B7wZBuOo5EUu3Xc3ApKJ8fBN_FMpvXAAeEbt1vqYaJx8dolyQuMx-Fb4D8AGmO2-1N_M6xyEFeJeanRTWqspVNIlMXxmGiLRMKSRwR3pq1qIjB6xQB0hOW05GpCnfEDtHapwHFgX4FLLvBJ7DNlGA9SdC3yNRb_N9lNUU6ANqde6PCZXuM-m_mYvL7EhzUQwuQvYm3c8FMNfX1_wgNAwy1Q29B2GOLwusTXmIlCHoWgEo_qypdW9LWt0mZ-NVms41lW65rIRtfLjd-Mx50AZfYY0mXSu15dsg-lW1j6puLPGsjWKrE7O7CfeW1-EBABkLqHHSsZpjOTBMsWw/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3mZKpVjpKRPs4B_GoKmA0SXE7PN7-ZRIlQLrqp73JhEeiYQW2wrYChtsdcPuXHqmGIL_9pmF7l-BxYErl9elm3QoGrIF-B7wZBuOo5EUu3Xc3ApKJ8fBN_FMpvXAAeEbt1vqYaJx8dolyQuMx-Fb4D8AGmO2-1N_M6xyEFeJeanRTWqspVNIlMXxmGiLRMKSRwR3pq1qIjB6xQB0hOW05GpCnfEDtHapwHFgX4FLLvBJ7DNlGA9SdC3yNRb_N9lNUU6ANqde6PCZXuM-m_mYvL7EhzUQwuQvYm3c8FMNfX1_wgNAwy1Q29B2GOLwusTXmIlCHoWgEo_qypdW9LWt0mZ-NVms41lW65rIRtfLjd-Mx50AZfYY0mXSu15dsg-lW1j6puLPGsjWKrE7O7CfeW1-EBABkLqHHSsZpjOTBMsWw
+is_cover: false
+sort_order: 3
+caption: Grady Copeland
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICD-4W8Ag!2e10!4m2!3m1!1s0x8890a98d09745b09:0x966d238009a38c32
+
+--- entity_photos [row 15 of 20] ---
+id: 1b3b5c2c-dd24-4ec1-8064-1512f1cd729b
+entity_slug: the-beaver-hut
+url: https://places.googleapis.com/v1/places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3mRlLgHJUF8Tyt2dQ2Y34oruhxUgwz9OvM1-Um5RbwWryUsUv9lZElr3mITrM29kn3qjwxcXoTc-VBxWWfQfp9Jt6X5ugNUHSnCzGzI0n2cd2iPdGEeLvdc6EREDuDSIa_De_R7KCw9YI14fedaJ2kh43m1INNETu4uvSpk5TjetDatO-dq5jUJQX8ecZFRQVg_DvkUTftVdfy-dAfS-YbgZOGx-dVrEDL-dIXyU-UYUDryJ23RhNQf31q3PNvTD-zNZYiPrjP_FQxTzxWJ0xLo3eLJT3XBGozrhuihsq2vKHrNdT_unQPqjpJiE3euafyYLmoExfLKURH6YHHJ-Ekq-M-Ba3pYb5D39wIBBp3werMNN5WoGL7xN8ToOj3zTIB4gF7UJNWyTK2RbmxEYbmbYCjz0XH0nNyXHBNm-rg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3mRlLgHJUF8Tyt2dQ2Y34oruhxUgwz9OvM1-Um5RbwWryUsUv9lZElr3mITrM29kn3qjwxcXoTc-VBxWWfQfp9Jt6X5ugNUHSnCzGzI0n2cd2iPdGEeLvdc6EREDuDSIa_De_R7KCw9YI14fedaJ2kh43m1INNETu4uvSpk5TjetDatO-dq5jUJQX8ecZFRQVg_DvkUTftVdfy-dAfS-YbgZOGx-dVrEDL-dIXyU-UYUDryJ23RhNQf31q3PNvTD-zNZYiPrjP_FQxTzxWJ0xLo3eLJT3XBGozrhuihsq2vKHrNdT_unQPqjpJiE3euafyYLmoExfLKURH6YHHJ-Ekq-M-Ba3pYb5D39wIBBp3werMNN5WoGL7xN8ToOj3zTIB4gF7UJNWyTK2RbmxEYbmbYCjz0XH0nNyXHBNm-rg
+is_cover: false
+sort_order: 4
+caption: Grady Copeland
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDalNvJHg!2e10!4m2!3m1!1s0x8890a98d09745b09:0x966d238009a38c32
+
+--- entity_photos [row 16 of 20] ---
+id: a16b8629-ec60-41f4-9f8b-b120b07144c4
+entity_slug: the-beaver-hut
+url: https://places.googleapis.com/v1/places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3k0xOyBKtWYSQxuK45eEc_-uznnUuavVVf2x0GRvBA5GFQkYUYai6WE8FNuW4RD5IBCs72wL0eYl_erP0L2WNviNyUJvUov_4LEF8jLq7qw0nVxZKU_n3Xn_RsjVOG2_HaAgoG2OecQtPAcul0bVU-LC70kDfD7TeS8WW1YPH-3S-91ad-QltK8ZTzpmAXHW26ESF2MtNzkyC15OVvjTbOT4UWBkCzCYAExaVUzMCUnkhGf1RoQkCtIRNcrzKAwXlJrS4pzqfeNlf3jYKSFHC5_oHmD9Db2usIkz8HQKGEgc1PRwkesRGMCxTnAYhT-ryESydC2ClqcMyqrFmncO5X5EbbClTZWG4E9QOFD5sKTEEsBKlrLh_G0AQQpceNGM2vq3D_yM-Qlv4SjdWcm5gp6LEsafAm0Y-8-RkSP4yiVLA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3k0xOyBKtWYSQxuK45eEc_-uznnUuavVVf2x0GRvBA5GFQkYUYai6WE8FNuW4RD5IBCs72wL0eYl_erP0L2WNviNyUJvUov_4LEF8jLq7qw0nVxZKU_n3Xn_RsjVOG2_HaAgoG2OecQtPAcul0bVU-LC70kDfD7TeS8WW1YPH-3S-91ad-QltK8ZTzpmAXHW26ESF2MtNzkyC15OVvjTbOT4UWBkCzCYAExaVUzMCUnkhGf1RoQkCtIRNcrzKAwXlJrS4pzqfeNlf3jYKSFHC5_oHmD9Db2usIkz8HQKGEgc1PRwkesRGMCxTnAYhT-ryESydC2ClqcMyqrFmncO5X5EbbClTZWG4E9QOFD5sKTEEsBKlrLh_G0AQQpceNGM2vq3D_yM-Qlv4SjdWcm5gp6LEsafAm0Y-8-RkSP4yiVLA
+is_cover: false
+sort_order: 5
+caption: Grady Copeland
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICy6cnzew!2e10!4m2!3m1!1s0x8890a98d09745b09:0x966d238009a38c32
+
+--- entity_photos [row 17 of 20] ---
+id: 6bc9f528-d53d-4f93-901b-be72ab225e3c
+entity_slug: the-beaver-hut
+url: https://places.googleapis.com/v1/places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3lzQjb_pIVCPbRXUr1DWC6RyKUG3x9Gxhs0fHZNKqoudttjd1OAyD7_CMhZYNsjccSCv6bv6cA9YRcwrPJkvr1raluVU9eLW-Dfm7UfuW9wtuTwRx5XH75IdxFo8MjFmV6kDMtKc76nPCGwqfO_t_hrpOqvzVlm5wmRFgNpTdHUkFXQ6SEqJ83lMg5Zu2d7vnb-Iy3CWIs_RkevTp3ZuhZGdCmfcek6KdcPNrDzOuI6xfGi9nSmH1Vm8YSpIyyIC0EF6jDMa7zTSFhjKBkbz85JMk5laV2mp0mtIXhZR3XBQSMLYgFmizyt0ApoELKY5nyJ8EqDxtatR2xmrAVPLxcCTgyI0VKnknvupR6-M17-e8yBnIDnE1iCawhDkc7bIW3adP9LmypxfZQkSD0ecJU5EIqVy-0d1ZwidXuRb8Yp3A/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3lzQjb_pIVCPbRXUr1DWC6RyKUG3x9Gxhs0fHZNKqoudttjd1OAyD7_CMhZYNsjccSCv6bv6cA9YRcwrPJkvr1raluVU9eLW-Dfm7UfuW9wtuTwRx5XH75IdxFo8MjFmV6kDMtKc76nPCGwqfO_t_hrpOqvzVlm5wmRFgNpTdHUkFXQ6SEqJ83lMg5Zu2d7vnb-Iy3CWIs_RkevTp3ZuhZGdCmfcek6KdcPNrDzOuI6xfGi9nSmH1Vm8YSpIyyIC0EF6jDMa7zTSFhjKBkbz85JMk5laV2mp0mtIXhZR3XBQSMLYgFmizyt0ApoELKY5nyJ8EqDxtatR2xmrAVPLxcCTgyI0VKnknvupR6-M17-e8yBnIDnE1iCawhDkc7bIW3adP9LmypxfZQkSD0ecJU5EIqVy-0d1ZwidXuRb8Yp3A
+is_cover: false
+sort_order: 6
+caption: Grady Copeland
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDalNuxfQ!2e10!4m2!3m1!1s0x8890a98d09745b09:0x966d238009a38c32
+
+--- entity_photos [row 18 of 20] ---
+id: 10a2c17d-6cc9-46bd-8135-aba26964a5e8
+entity_slug: the-beaver-hut
+url: https://places.googleapis.com/v1/places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3m5KieCs8Jj4VwshAtq5BSzW5vS199iTYTaW3GZlYvDa1b7gslGSca_1iZLsKSbNDuKSBHjUDCzL4VL-r04HNBNIFHePBnhKQjnBfNSEMguGu5OZzk4cjFEwUYPlYh9MYaLKmYhp1PIg8_xFpG7wsQyAds_dzq_RLU6ozdGvO6cxvxyrzgl8W9g0GC0NYHxIHeonfitolvN8WIYYNShJrzNnILWQ-oic9DyOh2AuacumvDPBqQi0VJd-TQT3WFTcyg-1KGa0seNwG_GHfHaZ3KqbjJGhsUDRwwRKXCD0TIuCfp3XcQzcAYDYCe6ASSRQXl_DjuIzdFfHADJSahSD5lThT-OH8lhkZMYmyVnrmOm-rq_pLyM_xCg1qJlqE2h0aoShAYxcz3is5Cyag4IKpoInvCJKK3BTwqTZZeUhj0wfNc/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3m5KieCs8Jj4VwshAtq5BSzW5vS199iTYTaW3GZlYvDa1b7gslGSca_1iZLsKSbNDuKSBHjUDCzL4VL-r04HNBNIFHePBnhKQjnBfNSEMguGu5OZzk4cjFEwUYPlYh9MYaLKmYhp1PIg8_xFpG7wsQyAds_dzq_RLU6ozdGvO6cxvxyrzgl8W9g0GC0NYHxIHeonfitolvN8WIYYNShJrzNnILWQ-oic9DyOh2AuacumvDPBqQi0VJd-TQT3WFTcyg-1KGa0seNwG_GHfHaZ3KqbjJGhsUDRwwRKXCD0TIuCfp3XcQzcAYDYCe6ASSRQXl_DjuIzdFfHADJSahSD5lThT-OH8lhkZMYmyVnrmOm-rq_pLyM_xCg1qJlqE2h0aoShAYxcz3is5Cyag4IKpoInvCJKK3BTwqTZZeUhj0wfNc
+is_cover: false
+sort_order: 7
+caption: Grady Copeland
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICD-4Wa6wE!2e10!4m2!3m1!1s0x8890a98d09745b09:0x966d238009a38c32
+
+--- entity_photos [row 19 of 20] ---
+id: e8d929dd-316d-4f06-b423-afbd7df7cea7
+entity_slug: the-beaver-hut
+url: https://places.googleapis.com/v1/places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3lG_Aq3U1bpDsQMoka2PROuhpDLJ8R6qPpJSOiE1sMqgvgiFmfoG8kZpV7TN0XAOiK0WNM9jBRL7vtnB0OTY9TsQQNC6pcKEYxti0uMEqcWSjxDijANwhSqd8ku14n7xQnSl9ePYVQPLi43ptw4hSDYUcO95hIbv_7wzWGFsGy_vLcYjO5Jm1oac0vvbGSN_BWeZy2lTU74HeZkx8o5rMn8LCN9oytcZfAfL-v-G2HR--_uPPbHBJNBSz_8ni1QP8x5xGX6QrYnJkZry_fkZdiTjM-O6x8LWXgJhGT1nvBVy33rUwh_pxRvNPDfN-TtS0sAzrnTd8yiEvVzflXklYPDY0Xn-LcqntnXhzxufwSc5uslCt1mGOYXTYz3OKKJHoOrIi6xlnoKAs7pUi_x-VllWP0LvbrwIKba0ynEmtDsSBmL/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3lG_Aq3U1bpDsQMoka2PROuhpDLJ8R6qPpJSOiE1sMqgvgiFmfoG8kZpV7TN0XAOiK0WNM9jBRL7vtnB0OTY9TsQQNC6pcKEYxti0uMEqcWSjxDijANwhSqd8ku14n7xQnSl9ePYVQPLi43ptw4hSDYUcO95hIbv_7wzWGFsGy_vLcYjO5Jm1oac0vvbGSN_BWeZy2lTU74HeZkx8o5rMn8LCN9oytcZfAfL-v-G2HR--_uPPbHBJNBSz_8ni1QP8x5xGX6QrYnJkZry_fkZdiTjM-O6x8LWXgJhGT1nvBVy33rUwh_pxRvNPDfN-TtS0sAzrnTd8yiEvVzflXklYPDY0Xn-LcqntnXhzxufwSc5uslCt1mGOYXTYz3OKKJHoOrIi6xlnoKAs7pUi_x-VllWP0LvbrwIKba0ynEmtDsSBmL
+is_cover: false
+sort_order: 8
+caption: Grady Copeland
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID6koaFsgE!2e10!4m2!3m1!1s0x8890a98d09745b09:0x966d238009a38c32
+
+--- entity_photos [row 20 of 20] ---
+id: 85930b61-a10d-4758-97da-1d0f1dccd2cd
+entity_slug: the-beaver-hut
+url: https://places.googleapis.com/v1/places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3m2RakIdJJ6S_fF2uKlqr2gZNQOXSMkOsJy3-B5upUYbJ0recuszT1v_ccIxxaRj63600AWP7TMeMQ95ioidVenYty4XBAJ2VywvMpOXoeL7l5lTUxfK27CQU_4F7bC0Lh23Dhm7p_q3U2CbqyGxAZprlr3GyFHFiiBPC4xrLalj_MWfUgUJ4ChDb9w8CPY50cHzOK_zaxaBkdKzn9T1QD46XJuak0hCU3uAMyRadO-t1HIW1VnnTul4mxmZBn15ZGu0s7Iy2T8F4EIz7PJKi8mabWyqckT8OZ4z_l3QxcYU6XvrYFR1-ZlEkSRUEGRNpJ7rraqtDSgrJaQ_9VWVMqWTWFzKoQaQxLQfE2VgpkFpYRiyWl2GHchZ8LGbzcwZuMMNmH87PjJBAV4AqJcU-UTp1lso54dSKd_Jvz33v0/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJCVt0CY2pkIgRMoyjCYAjbZY/photos/AaVGc3m2RakIdJJ6S_fF2uKlqr2gZNQOXSMkOsJy3-B5upUYbJ0recuszT1v_ccIxxaRj63600AWP7TMeMQ95ioidVenYty4XBAJ2VywvMpOXoeL7l5lTUxfK27CQU_4F7bC0Lh23Dhm7p_q3U2CbqyGxAZprlr3GyFHFiiBPC4xrLalj_MWfUgUJ4ChDb9w8CPY50cHzOK_zaxaBkdKzn9T1QD46XJuak0hCU3uAMyRadO-t1HIW1VnnTul4mxmZBn15ZGu0s7Iy2T8F4EIz7PJKi8mabWyqckT8OZ4z_l3QxcYU6XvrYFR1-ZlEkSRUEGRNpJ7rraqtDSgrJaQ_9VWVMqWTWFzKoQaQxLQfE2VgpkFpYRiyWl2GHchZ8LGbzcwZuMMNmH87PjJBAV4AqJcU-UTp1lso54dSKd_Jvz33v0
+is_cover: false
+sort_order: 9
+caption: Grady Copeland
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICD-4WKUA!2e10!4m2!3m1!1s0x8890a98d09745b09:0x966d238009a38c32
+
+####################################################################################################
+# TABLE: entity_reviews   -   2 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 2] ---
+id: ad5d8eb3-a290-4ca2-ad1d-7015cc9effee
+entity_slug: the-beaver-hut
+reviewer_name: Grady Copeland
+rating: 5
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2024-04-02T10:20:31.690195+00:00
+updated_at: 2026-07-19T15:18:39.834104+00:00
+
+--- entity_reviews [row 2 of 2] ---
+id: 860347b4-71f9-4ba0-8843-412708f125e0
+entity_slug: the-beaver-hut
+reviewer_name: No Way (Man)
+rating: 5
+body: Tons of beaver themed murals and decor inside, very chill beavercore lofi playing soft enough to have a conversation.  Try the "water over the dam" manager's special cocktail. All the waitresses wear fright wigs poking out of the front of their skirts, 10/10 wood chuck again.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2022-09-10T01:54:38.442456+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   3 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 3] ---
+id: 2e5d5c28-81d4-437c-ae86-0fa3f56a40fd
+entity_slug: the-beaver-hut
+tag_name: night_club
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 3] ---
+id: 887201b4-fe7d-4aa5-8df0-c6e49dfdffb7
+entity_slug: the-beaver-hut
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 3 of 3] ---
+id: e7777cee-a25d-4269-a0fb-785e71ff5795
+entity_slug: the-beaver-hut
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 109ead3e-f055-41ad-8a69-28d20fcbe86b
+entity_slug: the-beaver-hut
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_bar_nightlife   -   1 row(s)
+####################################################################################################
+
+--- industry_bar_nightlife [row 1 of 1] ---
+entity_slug: the-beaver-hut
+bar_type: night_club
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+has_live_music: false
+has_outdoor_bar: false
+food_available: true
+updated_at: 2026-07-21T16:19:16.291607+00:00
+
+####################################################################################################
+# TABLE: search_index   -   1 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 1] ---
+ref_type: business
+ref_id: the-beaver-hut
+entity_slug: the-beaver-hut
+title: The Beaver Hut
+category: night_club
+search_vector: 'beaver':2A 'club':5B 'hut':3A 'night':4B
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: the-beaver-hut

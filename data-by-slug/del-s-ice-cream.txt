@@ -1,0 +1,4081 @@
+====================================================================================================
+SLUG: del-s-ice-cream
+NAME: Del's Ice Cream
+INDUSTRY: cafe_dessert
+SUBTYPE: ice_cream_shop
+TABLES WITH DATA: 28
+TOTAL ROWS: 360
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (13 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (20 rows)
+  entity  (1 rows)
+  entity_address_areas  (1 rows)
+  entity_attributes  (16 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (14 rows)
+  entity_modules  (16 rows)
+  entity_nearby_landmark_types  (27 rows)
+  entity_nearby_landmarks  (6 rows)
+  entity_photos  (29 rows)
+  entity_reviews  (5 rows)
+  entity_sources  (1 rows)
+  entity_tags  (167 rows)
+  entity_theme  (3 rows)
+  industry_cafe_dessert  (1 rows)
+  industry_food_beverage  (1 rows)
+  legacy_photo_migration_queue  (3 rows)
+  recovery_import_log  (22 rows)
+  search_index  (1 rows)
+  tourist_saves  (1 rows)
+  tourist_seen  (1 rows)
+  tourist_swipe_events  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: del-s-ice-cream
+name: Del's Ice Cream
+planner_category: food_drink
+data_quality_score: 85
+issues: missing_menu|missing_faqs
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: true
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: true
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   13 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 13] ---
+id: 21921
+entity_slug: del-s-ice-cream
+intent_tag: best_for:families_with_kids
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 13] ---
+id: 21922
+entity_slug: del-s-ice-cream
+intent_tag: best_for:takeout
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 13] ---
+id: 21923
+entity_slug: del-s-ice-cream
+intent_tag: experience:family_kids
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 13] ---
+id: 21924
+entity_slug: del-s-ice-cream
+intent_tag: experience:tourist_favorite
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 13] ---
+id: 21925
+entity_slug: del-s-ice-cream
+intent_tag: cuisine:coffee_sweets
+intent_category: cuisine
+confidence: 0.82
+evidence: Derived from cuisine/menu/tags.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 13] ---
+id: 21926
+entity_slug: del-s-ice-cream
+intent_tag: service:takeout
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 13] ---
+id: 21927
+entity_slug: del-s-ice-cream
+intent_tag: service:reservations
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 13] ---
+id: 21928
+entity_slug: del-s-ice-cream
+intent_tag: service:coffee
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 9 of 13] ---
+id: 21929
+entity_slug: del-s-ice-cream
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 10 of 13] ---
+id: 21930
+entity_slug: del-s-ice-cream
+intent_tag: service:parking
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 11 of 13] ---
+id: 21931
+entity_slug: del-s-ice-cream
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 12 of 13] ---
+id: 21932
+entity_slug: del-s-ice-cream
+intent_tag: missing:missing_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 13 of 13] ---
+id: 21933
+entity_slug: del-s-ice-cream
+intent_tag: missing:missing_faqs
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: del-s-ice-cream
+name: Del's Ice Cream
+is_active: t
+planner_category: food_drink
+entity_type: coffee
+entity_subtype: ice_cream_shop
+city: Orange Beach
+state: AL
+address_line_1: 25405 Perdido Beach Blvd
+latitude: 30.2701191
+longitude: -87.5928728
+rating: 4.8
+review_count: 966
+website_url: http://www.delsicecream.com/
+hero_image_url: /photos/del-s-ice-cream/photo_01.jpg
+voice_summary: Del's Ice Cream in Orange Beach is best for families with kids, takeout. It fits coffee/sweets. Experience tags: family_kids, tourist_favorite.
+planner_summary: {"description":"Del's Homemade Ice Cream serves Cammies Old Dutch, award winning ice cream. They offer 36 delicious, unique, homemade ice cream flavors in store and rotate through 80 different flavors daily. Del's offers Sundaes, Banana splits, milkshakes, and floats, as well as signature options. They also offer dairy free and sugar free options.","elevator_pitch":"Award-winning homemade ice cream shop with 80 rotating flavors, sundaes, shakes, and dairy-free options.","vibe":"Family-friendly ice cream destination on the beach","best_for":["families","tourists","ice cream lovers"],"establishe
+best_for: families with kids|takeout
+not_best_for: nothing specific flagged
+cuisine_tags: coffee/sweets
+experience_tags: family_kids|tourist_favorite
+service_tags: takeout|reservations|coffee|accessibility|parking
+search_keywords: ice_cream_shop|dessert_shop|confectionery|food_store|store|food|point_of_interest|establishment|acceptsNfc|acceptsDebitCards|acceptsCreditCards|wheelchairAccessibleParking|wheelchairAccessibleSeating|wheelchairAccessibleEntrance|wheelchairAccessibleRestroom|coffee/sweets|family_kids|tourist_favorite|takeout|reservations|coffee|accessibility|parking
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 20
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 166
+faq_count: 0
+data_quality_score: 85
+data_gaps: missing_menu|missing_faqs
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   20 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 20] ---
+id: 2480
+entity_slug: del-s-ice-cream
+entity_name: Del's Ice Cream
+city: Orange Beach
+url: /photos/del-s-ice-cream/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 20] ---
+id: 2481
+entity_slug: del-s-ice-cream
+entity_name: Del's Ice Cream
+city: Orange Beach
+url: /photos/del-s-ice-cream/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 20] ---
+id: 2482
+entity_slug: del-s-ice-cream
+entity_name: Del's Ice Cream
+city: Orange Beach
+url: /photos/del-s-ice-cream/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 20] ---
+id: 2483
+entity_slug: del-s-ice-cream
+entity_name: Del's Ice Cream
+city: Orange Beach
+url: /photos/del-s-ice-cream/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 20] ---
+id: 2484
+entity_slug: del-s-ice-cream
+entity_name: Del's Ice Cream
+city: Orange Beach
+url: /photos/del-s-ice-cream/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 20] ---
+id: 2485
+entity_slug: del-s-ice-cream
+entity_name: Del's Ice Cream
+city: Orange Beach
+url: /photos/del-s-ice-cream/photo_06.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 20] ---
+id: 2486
+entity_slug: del-s-ice-cream
+entity_name: Del's Ice Cream
+city: Orange Beach
+url: /photos/del-s-ice-cream/photo_07.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 20] ---
+id: 2487
+entity_slug: del-s-ice-cream
+entity_name: Del's Ice Cream
+city: Orange Beach
+url: /photos/del-s-ice-cream/photo_08.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 20] ---
+id: 2488
+entity_slug: del-s-ice-cream
+entity_name: Del's Ice Cream
+city: Orange Beach
+url: /photos/del-s-ice-cream/photo_09.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 20] ---
+id: 2489
+entity_slug: del-s-ice-cream
+entity_name: Del's Ice Cream
+city: Orange Beach
+url: /photos/del-s-ice-cream/photo_10.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 11 of 20] ---
+id: 25101
+entity_slug: del-s-ice-cream
+entity_name: Del's Ice Cream
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/del-s-ice-cream/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 12 of 20] ---
+id: 25189
+entity_slug: del-s-ice-cream
+entity_name: Del's Ice Cream
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/del-s-ice-cream/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 13 of 20] ---
+id: 25430
+entity_slug: del-s-ice-cream
+entity_name: Del's Ice Cream
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/del-s-ice-cream/photo_08.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 14 of 20] ---
+id: 25469
+entity_slug: del-s-ice-cream
+entity_name: Del's Ice Cream
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/del-s-ice-cream/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 15 of 20] ---
+id: 25636
+entity_slug: del-s-ice-cream
+entity_name: Del's Ice Cream
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/del-s-ice-cream/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 16 of 20] ---
+id: 26253
+entity_slug: del-s-ice-cream
+entity_name: Del's Ice Cream
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/del-s-ice-cream/photo_10.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 17 of 20] ---
+id: 26262
+entity_slug: del-s-ice-cream
+entity_name: Del's Ice Cream
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/del-s-ice-cream/photo_06.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 18 of 20] ---
+id: 26264
+entity_slug: del-s-ice-cream
+entity_name: Del's Ice Cream
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/del-s-ice-cream/photo_07.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 19 of 20] ---
+id: 26266
+entity_slug: del-s-ice-cream
+entity_name: Del's Ice Cream
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/del-s-ice-cream/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 20 of 20] ---
+id: 26275
+entity_slug: del-s-ice-cream
+entity_name: Del's Ice Cream
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/del-s-ice-cream/photo_09.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 208b814d-45a9-428d-8abd-d9170700c9c0
+slug: del-s-ice-cream
+name: Del's Ice Cream
+is_active: true
+featured: false
+entity_type: coffee
+entity_subtype: ice_cream_shop
+description: Del's Homemade Ice Cream serves Cammies Old Dutch, award winning ice cream. They offer 36 delicious, unique, homemade ice cream flavors in store and rotate through 80 different flavors daily. Del's offers Sundaes, Banana splits, milkshakes, and floats, as well as signature options. They also offer dairy free and sugar free options.
+phone: (251) 273-6553
+website_url: http://www.delsicecream.com/
+menu_pin: 9652
+address_line_1: 25405 Perdido Beach Blvd
+city: Orange Beach
+state: AL
+zip: 36561
+latitude: 30.2701191
+longitude: -87.5928728
+rating: 4.8
+review_count: 966
+hero_image_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/f3c475fc-6e0e-43f9-a8f1-00b5bc00b335/image_1.jpg
+dine_in: true
+takeout: true
+delivery: false
+good_for_groups: true
+good_for_kids: false
+created_at: 2026-06-03T03:59:26.70454+00:00
+updated_at: 2026-06-03T03:59:26.70454+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJnRPrKxoHmogRBhplZQsXq9w
+google_maps_uri: https://maps.google.com/?cid=15900828247074871814&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: ice_cream_shop
+formatted_address: 25405 Perdido Beach Blvd Ste 1, Orange Beach, AL 36561, USA
+plus_code: 862J7CC4+2V
+international_phone: +1 251-273-6553
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+accepts_nfc: true
+accepts_cash_only: false
+parking_type: free
+google_places_data: {
+  "id": "ChIJnRPrKxoHmogRBhplZQsXq9w",
+  "types": [
+    "ice_cream_shop",
+    "dessert_shop",
+    "confectionery",
+    "point_of_interest",
+    "food_store",
+    "store",
+    "food",
+    "establishment"
+  ],
+  "dineIn": true,
+  "photos": [
+    {
+      "name": "places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3meYkBOGzZcdiWyaQlTEve_RxPSjDQhAs24fd6ZSrEQ5hTbRq9m0e9mgr1dGNAxzSnA_2wtctEtYW22AXvAH0EArJWhYGbPc3iiV9CqypFP47tKvkeTGDakCpyx73Bn1IjIGHocp8KVhPNo7-XKLeDpK7lgvkeagoktOqj4P1JhR5Pj1bnZ4d7F_9xppAc1veTV87-00-OytUsFEtylQkSWO2J6SCH-NP9OHhdi1irkqWXg2qJnlWztWy7HKWLNJbJRKcz1MEb6LQylHvKfGzDL8vlsqaO7jJVIOV0SUUY1x2273gQQkq9vOHUDmWrSexECzgAlEAtfPpvpI_y-2-PUFdVhgSreu9MSjy3ahP2FP3m0070S2ZhjwQ_ti22m5H1VTzSEbhgIK_2tPYnGysY8x8Uhm1A_A0FunCqlRxK88zYX",
+      "widthPx": 960,
+      "heightPx": 1110,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDW7KKjoAE!2e10!4m2!3m1!1s0x889a071a2beb139d:0xdcab170b65651a06",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDW7KKjoAE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106886001531495839471",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUqjfzULehvV_IX53aQd3T-DeL_6jPOKk0yDEq94JULmwV-qQQ=s100-p-k-no-mo",
+          "displayName": "Del's Ice Cream"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3l3dXkHh4lYiV8wDdPAimi6Jx3DyYnUzf98pw1nhx1y0G9pArmihRvYS_6Ts7Wtm3cZwa-rPM2rgIGFx05DlhcHnEyRY5dOXDEaOOfr3HIwHvYSCH52tdNsQkNLORdbWnpgXnppf1XDU2kgxIUJff-dO33ERsfiukF92wOfZo0fhER6Tk8eq0n64mwMam0a5y5NN2ssdwNl8kNA7YeR_cVW7s0AEL1bp5f0D8ASUvuoQ8jNKHfCjyfGACm851H7GKIjtMvm9QdLtyu0QRXTGXG_0odje8SThh54FMyeoC2MK7AQ0CLD_yf0f7ONsMZKxZW-XVa-dDsa9hTSaF6c8rJal_JOpwxcDA7hbhF6bs3gMf1o59tqxTDUDzq-x28nk_oWGA7tipxnWG8phhoSPlRrdAnTQFpuHwpQXybHO-i61Fs",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDyrIORhwE!2e10!4m2!3m1!1s0x889a071a2beb139d:0xdcab170b65651a06",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDyrIORhwE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106886001531495839471",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUqjfzULehvV_IX53aQd3T-DeL_6jPOKk0yDEq94JULmwV-qQQ=s100-p-k-no-mo",
+          "displayName": "Del's Ice Cream"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3k8X7A-XEcC_sJKRJogcQ5vO4Z_QrUtyR8rdfwEReSqVbmpkgxji_z2iCeAqjyW1f633piMVi9jlEeWMW4hjUvhEWTq1tRzPi0x9qFTWhni0Gl4UZAPQrKjEsgekxNSchAW8I-MpQBVNw_8NBbNGV1yz6G43DB2MsQQgz2GxJBZ3VPAz7KsbGmaL1c3bWn4DlCyJcB7qHuYCEJKdiZYOhE_GFkbrAmKU0tVO2-bdrdsmQgasFJxQsb0kngCFOTLixehd3qkqVzWbUuaulT1GMfMoHYzFtyUbYRH66uiMVgtkzIIGrhkPIH8VIFVjrjSsJjemk-wAymPjLnMfzWK6MchC37_-Hna8XXSc59Nzhgy0yAPcRu604ZRlR55Y8HH0vK6DKmTGCgkcEELaaGwK5_u_NXv2z58qDYUihJ3fV5fxg4BNDPU0nFL2SAzhXme",
+      "widthPx": 3600,
+      "heightPx": 4800,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBpPoih2s9PmcCdQLr4tMqs!2e10!4m2!3m1!1s0x889a071a2beb139d:0xdcab170b65651a06",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhBpPoih2s9PmcCdQLr4tMqs&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/110641815582321356372",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWSZBTBhz3pWpGngiEQXNCd5sz2WlTdsozcXG5kzYip1ZXBrh4SRw=s100-p-k-no-mo",
+          "displayName": "STLA_1020"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3kwh-gqVC5GRnMFqoSeEiaWV4ZJGkOLUhcnVmXnWGNfFfWRvJ7iQW-8mV6trVMcFbE0qNQkJq1O--q0f5aJV2AdW9WzEs2_Sr14G0WLmyxwAGHGfP-esm7UKv-8DP0YU-CjR59VOtCHtlJWSx91wA9yo_X2T8ZF2XLAjupi6kk6vzBBt_8dzGqrYbmIfLJTnxOw8VrYsZqNYCvuADVemOnrzrd2lhbP6QbGAhpzKQ8CNIz1cXOyt44oBoaYECL9Zhd8Gfl31394vTYTcgk3aYrPyHaZl5vGBp1ZhAUHlQavFIEosljH_zOXIERDEYZlYHeK4JI9un7Vzljq0zdplGkcm6dzBxd6vSIMaipPqbB5upKrvk4pnm75BUON8CQZ1pg7-ZDhzfrsyKsj3RUCoel1MiP-4lszwZKsRKJlsovvtN_c",
+      "widthPx": 1920,
+      "heightPx": 1080,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDy3OP26gE!2e10!4m2!3m1!1s0x889a071a2beb139d:0xdcab170b65651a06",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDy3OP26gE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/107957877127424103290",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUTE0Qjvx-wnHRFLWpka-GzGbBYqIkDjA_XubUGR-BIbkAxQ5TLYQ=s100-p-k-no-mo",
+          "displayName": "James Austin Peavy"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3mGUL1Nbzunp1mIgw72fnqfVJvrMQEod8WeWGgqosPtAkHKq8Yj4t1qg76MYA7RO8tBxtST9r0MUMGoGvyGUWV42UxSh9RecqLvny2znxbxbzA12RE9JTzF5E7xHERfuFAbxCHn5vOT28q2bPDVJTK3UtaCwW5dlSbE7zxBAL0U6UOjARH2zoziWsWroN0PXM7w4zm4id_nkyKH8gEW-D06C_IWtavT88ncVYIwXWhx_w7FhkFMWml9U2qQ33O_CH7GQ3ZBuxAMdVjKUaXl04vMq2rcxXAoyL1i0vHXzcjM2Q7pj5y-o0xv9GqF2vg9owdx9mURz9ckzXwKi0BQhWzEWrs38qyfHVnskdleT3jprDBTC1GB_kOrRdYlGYQHqOETQfv39GKQulyG2d4OusGSSFM0hJTvwMuBRCo4xuV35IhZ-PzQZzdE8MFe3Mcr",
+      "widthPx": 4800,
+      "heightPx": 3600,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAPsDL8U3rq7KMev64QFEg2!2e10!4m2!3m1!1s0x889a071a2beb139d:0xdcab170b65651a06",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAPsDL8U3rq7KMev64QFEg2&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/107954043746479901373",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJCsqFYLPOaZm7HuRQGa8y9n4kZy5paPGNitDTPQdk3sAuhMfQ=s100-p-k-no-mo",
+          "displayName": "Bella Beeman"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3nskpyAC-E3pNc-xIZ-qnyGBSlXaf-f6EwEWvDOAUsJq70NmhB__gD7h1cZakde-yP8OwqCVMAV2sb4mXJxqaLMQmF1cdFq2wY1LQiaf-_MDR2n_LFC5lrNW26QlfPgB9wzirOI-0qTnlUFH1jBKE-eCEAc3IoWILnRlGQYIE64qWKCJLkMZwQumByiU81GWyohsUoPwvGEv2W-xTkO8wgqjKpr_s8xaamy_gp0xCiR7uiRaEeGA3BPXI1RrPKaKivs-V8SeDOKlejU95HNum--3810txQ7taJnBZ14SvK0jndGz3y1Q5LlQ_C-TItYit1wATOZ55sEX3Sex4l6rkRuYgBeOYcQMWQpbU2CujOZHCE7y6Y6LHX4aO2WWOBGWGG8pGfGIsTaSHo8NAqqbSJ5A0zU7FnSN3MsLE1nJIuxUeE9",
+      "widthPx": 478,
+      "heightPx": 598,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDW7KLD2gE!2e10!4m2!3m1!1s0x889a071a2beb139d:0xdcab170b65651a06",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDW7KLD2gE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106886001531495839471",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUqjfzULehvV_IX53aQd3T-DeL_6jPOKk0yDEq94JULmwV-qQQ=s100-p-k-no-mo",
+          "displayName": "Del's Ice Cream"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3mUyw8lv3FHB3fKYU-AeBan3NsFgsRCLFrIcN8hrw71AzQNVhQfEVyXqJelDsjErK4fbDE-FCXHk5iEQlMxD6LOceHPE3Mj9oXd_RlsRNiVYv22QHPGxw0xIqgIXa4hu5lZi25-tApPW3imNVnhYLoK_DrpiAD96Gr1sywRHGQzcaWm1FYKqPmUrSU4z77mtjKuhi5Y6D3HDe68AAQqLz9WlepNVCOWemxSX0eXeL_x32mG489u8TtN1P6nmI-PzmaLUDDE-MvzmCnelZpiZLT569Lr-aiGmBU4qq6ZpX0cQypRYOWM_uyFigwp8Qm-RpjJ50cJHWK4MjFqXU8GNrX3qur-L45Nfm-hQWWsRndmWv26e5fQNOiVnC97Bxjmj1kpBKjNLv0Uo7ezxyBt_2JUmsooXkdEDTeOdugJaUF2IM9sjbHB0dZq8Ir0AC9w",
+      "widthPx": 4000,
+      "heightPx": 3000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAes1VY9QavaN_ExofaZmrx!2e10!4m2!3m1!1s0x889a071a2beb139d:0xdcab170b65651a06",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAes1VY9QavaN_ExofaZmrx&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/110098242545184969229",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW39OLtuON0Yor0CRoigKZdZ62-j97HqcxkHSBDJixtvF-uu5KCsA=s100-p-k-no-mo",
+          "displayName": "R Farmland"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3n9VO4G2MvzophFZFX8DvbPezgWmmKnoMT-vibzlirxN4pTt0hFrBrz1KTZgkd3D7aQG7CJ_x-UCC_g4wkM-H32sE1FNjfo9YKUuj-5fiE1wy9j3xYHcfZ5TkYb7Ev5uItpXW8Afy6lNrMat3NNe7t_U3A2RsCT9r-24ztfgTFRiqfC-Mn2MH2TfwQLeRaIdCcYU5rPDfvg-IAUBU0ocxteqmcEOTNhjU3av2R8FDfngpFswS4NwvrMJnZkMOmxWWjprjBkRd8aWCDWhGVI4gwqO_NZ7Xe77Ijs3PTmy7FvuAudgXr88iWE5lx7UptcH1KaRKfS5jO_Jbkt4Gh_6YuiGaIUgJUnYSFOAw0l_cvfTjSfLx4Vpcnt-k3vhaaghydHlGC3amoPnsqda3Q0CWQi7zikJ_Kbd_KEZRu-HoxVU-rV",
+      "widthPx": 4800,
+      "heightPx": 3600,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEN7Dn9uKuvyLyAE!2e10!4m2!3m1!1s0x889a071a2beb139d:0xdcab170b65651a06",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEN7Dn9uKuvyLyAE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/118218743415460765331",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjViwn7iTxE31qFMnEgVdyMRsslDp0Zd34XX9_FZFd2gnjpJ1z_q=s100-p-k-no-mo",
+          "displayName": "Taylor Grayson 33"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3n8ul7JyXqHVMVU1cve5FZ0CouPt1JiC5Zed0lkVrGBCjT71ZGtJd36O394HYuLXQMRzoxS8tdY_eXkAGHHTq1EJlf9LduD-2TdO3Ny1MZfPFRQh1NQS8p91_nEHtdwysPDSAWy3eH1BqijZQ_xBg4ixa2jkjF8B_hPl4gFCqbxNR7sBgRgsO-UCl_09cki_PATESub4mJ68MqAJNojXmNDSm-TVNNu47GYBQg_4rMHlR5pSfoH5ePXqJ75RCKcVE_4VEX9CKAK_e5lbEaaMyE05TV8Zh4O8wIbS9zMPgoYls46msxfOWAeghQas1V9FaNkCaalmaktSH5zuFcma7cXoo10IBqTz_cSftVpgPqZq-CGed-IeR5z9NRm5nNo8ehTWKxsHR22W8xZ03rvugQ3QuOjtlh1qv3daqBIkfu7lA",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDytJqtfw!2e10!4m2!3m1!1s0x889a071a2beb139d:0xdcab170b65651a06",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDytJqtfw&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106886001531495839471",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUqjfzULehvV_IX53aQd3T-DeL_6jPOKk0yDEq94JULmwV-qQQ=s100-p-k-no-mo",
+          "displayName": "Del's Ice Cream"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3nKg_NKdFWYGcUgWl8oygVV0bDLZ53grkS3UTAKto198W6ZD7WdQXOU83LhkstKAlP1bbQDxs2rWLjg5TBFU85cQFxSt6XOMer4Nso8v84kzyu6ZkBeuKiBXxrLCjHUOPezax1J8r_OLH0W4LGPht5pRUg-9-GPv9QDF6hlKO5g6kCNs8VDnturXOXFYjJbTa_g2YQuQAfmlJCDGCht8ZP_xow18QRhzcq_ShjVQskJV5yOVoOq4YdDCdBhyJ42gSt0Mp1750r5h5L5g44VpZILrimdC6Km4qKZv-Hezu5fwDxKe_W2jgCebP1A7bPTy25kyDlcjJnr85D90VGMVLGPVsj0yNg06U8o22h2C-eyuFVKLCw22vc5OrW65WVFenri_JPqn2RurH-hEcDay6ICT5hvigXhntt99YObwqbn4D21Xb0f6U_UGEoAelql",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDKuyaCfLtAZBUhXWOxXpZj!2e10!4m2!3m1!1s0x889a071a2beb139d:0xdcab170b65651a06",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDKuyaCfLtAZBUhXWOxXpZj&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/110641815582321356372",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWSZBTBhz3pWpGngiEQXNCd5sz2WlTdsozcXG5kzYip1ZXBrh4SRw=s100-p-k-no-mo",
+          "displayName": "STLA_1020"
+        }
+      ]
+    }
+  ],
+  "rating": 4.8,
+  "reviews": [
+    {
+      "name": "places/ChIJnRPrKxoHmogRBhplZQsXq9w/reviews/Ci9DQUlRQUNvZENodHljRjlvT2s1SFpHNXhRVTVrYlVoUllsZE5hV1JhYjFSWVVIYxAB",
+      "text": {
+        "text": "Kendall was awesome and great at explaining every flavor. We were offered delicious samples.  However it was unbearably cold, 56 degrees, which detracted from my experience. This shop is more akin to ice cream in freezer roleplay than patron at a confectionery.",
+        "languageCode": "en"
+      },
+      "rating": 3,
+      "publishTime": "2026-02-01T19:04:11.065684240Z",
+      "originalText": {
+        "text": "Kendall was awesome and great at explaining every flavor. We were offered delicious samples.  However it was unbearably cold, 56 degrees, which detracted from my experience. This shop is more akin to ice cream in freezer roleplay than patron at a confectionery.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2s1SFpHNXhRVTVrYlVoUllsZE5hV1JhYjFSWVVIYxAB!2m1!1s0x889a071a2beb139d:0xdcab170b65651a06",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2s1SFpHNXhRVTVrYlVoUllsZE5hV1JhYjFSWVVIYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/103654413008826818656/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWVbdSZncwmsmwsYuFAc4aUB7ANpfmN7oQd_DR5KhH6Y8KRFj8=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Makenzie Daugherty"
+      },
+      "relativePublishTimeDescription": "4 months ago"
+    },
+    {
+      "name": "places/ChIJnRPrKxoHmogRBhplZQsXq9w/reviews/Ci9DQUlRQUNvZENodHljRjlvT213M1ZVTlZRak52Y0ZGb1QyUXdSV052ZUZOS1kxRRAB",
+      "text": {
+        "text": "Great ice cream! Great customer service! Lots of ice cream choices and some unique options. I tried the glazed doughnut ice cream and LOVED it. Very different and unique. Would definitely recommend checking this one out",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-09-17T00:09:56.548484949Z",
+      "originalText": {
+        "text": "Great ice cream! Great customer service! Lots of ice cream choices and some unique options. I tried the glazed doughnut ice cream and LOVED it. Very different and unique. Would definitely recommend checking this one out",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT213M1ZVTlZRak52Y0ZGb1QyUXdSV052ZUZOS1kxRRAB!2m1!1s0x889a071a2beb139d:0xdcab170b65651a06",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT213M1ZVTlZRak52Y0ZGb1QyUXdSV052ZUZOS1kxRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/110641815582321356372/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWSZBTBhz3pWpGngiEQXNCd5sz2WlTdsozcXG5kzYip1ZXBrh4SRw=s128-c0x00000000-cc-rp-mo-ba5",
+        "displayName": "STLA_1020"
+      },
+      "relativePublishTimeDescription": "8 months ago"
+    },
+    {
+      "name": "places/ChIJnRPrKxoHmogRBhplZQsXq9w/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xwdFZ6RkNPRFIwTkRKWmRHTjZjRk10VFdNNVgyYxAB",
+      "text": {
+        "text": "A young lady named MACY waited on us and about eight other customers that had shown up at the same time as us. She handled the customers fast, efficient and she served each order up to look like a piece of ice-cream art! Good job Macy. Thank you for our delicious ice-cream.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-09-16T23:08:59.065004395Z",
+      "originalText": {
+        "text": "A young lady named MACY waited on us and about eight other customers that had shown up at the same time as us. She handled the customers fast, efficient and she served each order up to look like a piece of ice-cream art! Good job Macy. Thank you for our delicious ice-cream.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xwdFZ6RkNPRFIwTkRKWmRHTjZjRk10VFdNNVgyYxAB!2m1!1s0x889a071a2beb139d:0xdcab170b65651a06",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2xwdFZ6RkNPRFIwTkRKWmRHTjZjRk10VFdNNVgyYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/100182094547159742489/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocK3_QnAaLYbAxxv5JobB1AH-eNFMft6eBDuKUC-gL7Ii3cxqQ=s128-c0x00000000-cc-rp-mo-ba3",
+        "displayName": "Jean Watkins"
+      },
+      "relativePublishTimeDescription": "8 months ago"
+    },
+    {
+      "name": "places/ChIJnRPrKxoHmogRBhplZQsXq9w/reviews/Ci9DQUlRQUNvZENodHljRjlvT25KaFpYSnlORUUxWlZONVFTMU9NVEJXT0RKR1oyYxAB",
+      "text": {
+        "text": "Nice clean establishment with very helpful and courteous service. And great ice cream.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-02-15T21:17:16.404202400Z",
+      "originalText": {
+        "text": "Nice clean establishment with very helpful and courteous service. And great ice cream.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25KaFpYSnlORUUxWlZONVFTMU9NVEJXT0RKR1oyYxAB!2m1!1s0x889a071a2beb139d:0xdcab170b65651a06",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT25KaFpYSnlORUUxWlZONVFTMU9NVEJXT0RKR1oyYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/110098242545184969229/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW39OLtuON0Yor0CRoigKZdZ62-j97HqcxkHSBDJixtvF-uu5KCsA=s128-c0x00000000-cc-rp-mo-ba6",
+        "displayName": "R Farmland"
+      },
+      "relativePublishTimeDescription": "3 months ago"
+    },
+    {
+      "name": "places/ChIJnRPrKxoHmogRBhplZQsXq9w/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOTlprcG9kalJQU2psV1pGWXpkVGRIZGs0eVduYxAB",
+      "text": {
+        "text": "Del’s Ice Cream has the best to offer when it comes to flavors of ice cream, shakes, sundaes and so much more!! The staff is the best and the atmosphere is the best for your perfect beach weekend getaway or a local night out on the town!! Highly recommend you try it out, you won’t regret it!!🤍🤍",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-03-07T16:28:56.275499431Z",
+      "originalText": {
+        "text": "Del’s Ice Cream has the best to offer when it comes to flavors of ice cream, shakes, sundaes and so much more!! The staff is the best and the atmosphere is the best for your perfect beach weekend getaway or a local night out on the town!! Highly recommend you try it out, you won’t regret it!!🤍🤍",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xOTlprcG9kalJQU2psV1pGWXpkVGRIZGs0eVduYxAB!2m1!1s0x889a071a2beb139d:0xdcab170b65651a06",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2xOTlprcG9kalJQU2psV1pGWXpkVGRIZGs0eVduYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/106331501525194039839/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocInjlgMQnosntGdTz82Wz4lC2_JXSj2v-8PVWpPVQByJKDI6Q=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Meg Collado"
+      },
+      "relativePublishTimeDescription": "3 months ago"
+    }
+  ],
+  "takeout": true,
+  "delivery": false,
+  "location": {
+    "latitude": 30.2701191,
+    "longitude": -87.5928728
+  },
+  "plusCode": {
+    "globalCode": "862J7CC4+2V",
+    "compoundCode": "7CC4+2V Orange Beach, AL, USA"
+  },
+  "restroom": true,
+  "viewport": {
+    "low": {
+      "latitude": 30.268746169708503,
+      "longitude": -87.5942343302915
+    },
+    "high": {
+      "latitude": 30.271444130291503,
+      "longitude": -87.59153636970849
+    }
+  },
+  "websiteUri": "http://www.delsicecream.com/",
+  "displayName": {
+    "text": "Del's Ice Cream",
+    "languageCode": "en"
+  },
+  "primaryType": "ice_cream_shop",
+  "servesCoffee": true,
+  "goodForGroups": true,
+  "googleMapsUri": "https://maps.google.com/?cid=15900828247074871814&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewSummary": {
+    "text": {
+      "text": "People say this ice cream shop offers delicious homemade ice cream with a wide variety of unique flavors, including popular options like Biscoff brownie and honey lavender. They also highlight the friendly, patient, and helpful staff who provide excellent service, even during busy times. Visitors appreciate the clean environment and reasonable prices.",
+      "languageCode": "en-US"
+    },
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a071a2beb139d:0xdcab170b65651a06!9m1!1b1",
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "flagContentUri": "https://www.google.com/local/content/rap/report?postId=5%401:CAIQACodChtyc19oOjJ0U3AweGZOQnhOY3V5TXZRRlpzWGc%7CCAIQACoqChtyc19oOjJ0U3AweGZOQnhOY3V5TXZRRlpzWGcSCwiW9LnQBhD42oM2&d=17924085&t=8"
+  },
+  "businessStatus": "OPERATIONAL",
+  "curbsidePickup": false,
+  "parkingOptions": {
+    "freeParkingLot": true
+  },
+  "paymentOptions": {
+    "acceptsNfc": true,
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "goodForChildren": true,
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=15900828247074871814&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a071a2beb139d:0xdcab170b65651a06!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a071a2beb139d:0xdcab170b65651a06!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a071a2beb139d:0xdcab170b65651a06!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a071a2beb139d:0xdcab170b65651a06!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+  "userRatingCount": 966,
+  "adrFormatAddress": "<span class=\"street-address\">25405 Perdido Beach Blvd Ste 1</span>, <span class=\"locality\">Orange Beach</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36561</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "25405 Perdido Beach Blvd Ste 1, Orange Beach, AL 36561, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "subpremise"
+      ],
+      "longText": "Suite 1",
+      "shortText": "Ste 1",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "25405",
+      "shortText": "25405",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Perdido Beach Boulevard",
+      "shortText": "Perdido Beach Blvd",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Orange Beach",
+      "shortText": "Orange Beach",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36561",
+      "shortText": "36561",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJcyWfLfEGmogRHioWRkBqdSA",
+        "placeId": "ChIJcyWfLfEGmogRHioWRkBqdSA",
+        "containment": "OUTSKIRTS",
+        "displayName": {
+          "text": "Rouses Market",
+          "languageCode": "en"
+        }
+      }
+    ],
+    "landmarks": [
+      {
+        "name": "places/ChIJUYCzGlUHmogRr9LrfFPhdoI",
+        "types": [
+          "establishment",
+          "food",
+          "grocery_or_supermarket",
+          "liquor_store",
+          "point_of_interest",
+          "store",
+          "supermarket"
+        ],
+        "placeId": "ChIJUYCzGlUHmogRr9LrfFPhdoI",
+        "displayName": {
+          "text": "Rouses Market",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "WITHIN",
+        "travelDistanceMeters": 103.17273,
+        "straightLineDistanceMeters": 106.39601
+      },
+      {
+        "name": "places/ChIJE7n6rvYGmogRLyI6Yc_STQw",
+        "types": [
+          "establishment",
+          "lodging",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJE7n6rvYGmogRLyI6Yc_STQw",
+        "displayName": {
+          "text": "Fairfield by Marriott Inn & Suites Orange Beach",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 73.734085,
+        "straightLineDistanceMeters": 94.41963
+      },
+      {
+        "name": "places/ChIJlWY0UPEGmogRgEGFBDqx8Bw",
+        "types": [
+          "bakery",
+          "department_store",
+          "establishment",
+          "food",
+          "grocery_or_supermarket",
+          "point_of_interest",
+          "store",
+          "supermarket"
+        ],
+        "placeId": "ChIJlWY0UPEGmogRgEGFBDqx8Bw",
+        "displayName": {
+          "text": "Walmart Neighborhood Market",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 223.00537,
+        "straightLineDistanceMeters": 176.09404
+      },
+      {
+        "name": "places/ChIJlWY0UPEGmogRbsIoPnyPXU0",
+        "types": [
+          "convenience_store",
+          "establishment",
+          "food",
+          "gas_station",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJlWY0UPEGmogRbsIoPnyPXU0",
+        "displayName": {
+          "text": "Murphy USA",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 363.93765,
+        "straightLineDistanceMeters": 281.70853
+      },
+      {
+        "name": "places/ChIJIZSx0vsGmogRxe9VR0IFbw8",
+        "types": [
+          "establishment",
+          "lodging",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJIZSx0vsGmogRxe9VR0IFbw8",
+        "displayName": {
+          "text": "SeaChase Condominiums",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 465.9153,
+        "straightLineDistanceMeters": 380.27087
+      }
+    ]
+  },
+  "generativeSummary": {
+    "overview": {
+      "text": "Beachy ice cream parlor specializing in sundaes, milkshakes and other treats.",
+      "languageCode": "en-US"
+    },
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "overviewFlagContentUri": "https://www.google.com/local/content/rap/report?postId=CiUweDg4OWEwNzFhMmJlYjEzOWQ6MHhkY2FiMTcwYjY1NjUxYTA2MAI&d=17924085&t=12"
+  },
+  "currentOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 0
+        }
+      }
+    ],
+    "nextCloseTime": "2026-06-11T04:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 11:00 AM – 11:00 PM",
+      "Tuesday: 11:00 AM – 11:00 PM",
+      "Wednesday: 11:00 AM – 11:00 PM",
+      "Thursday: 11:00 AM – 11:00 PM",
+      "Friday: 11:00 AM – 11:00 PM",
+      "Saturday: 11:00 AM – 11:00 PM",
+      "Sunday: 11:00 AM – 11:00 PM"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Ice Cream Shop",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#FF9E67",
+  "nationalPhoneNumber": "(251) 273-6553",
+  "regularOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 23,
+          "minute": 0
+        }
+      }
+    ],
+    "nextCloseTime": "2026-06-11T04:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 11:00 AM – 11:00 PM",
+      "Tuesday: 11:00 AM – 11:00 PM",
+      "Wednesday: 11:00 AM – 11:00 PM",
+      "Thursday: 11:00 AM – 11:00 PM",
+      "Friday: 11:00 AM – 11:00 PM",
+      "Saturday: 11:00 AM – 11:00 PM",
+      "Sunday: 11:00 AM – 11:00 PM"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true
+  },
+  "servesVegetarianFood": false,
+  "shortFormattedAddress": "25405 Perdido Beach Blvd Ste 1, Orange Beach",
+  "primaryTypeDisplayName": {
+    "text": "Ice Cream Shop",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-273-6553"
+}
+ai_overview: Beachy ice cream parlor specializing in sundaes, milkshakes and other treats.
+ai_review_summary: People say this ice cream shop offers delicious homemade ice cream with a wide variety of unique flavors, including popular options like Biscoff brownie and honey lavender. They also highlight the friendly, patient, and helpful staff who provide excellent service, even during busy times. Visitors appreciate the clean environment and reasonable prices.
+curbside_pickup: false
+restroom: true
+good_for_children: true
+serves_coffee: true
+serves_vegetarian: false
+free_parking_lot: true
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #FF9E67
+short_formatted_address: 25405 Perdido Beach Blvd Ste 1, Orange Beach
+national_phone: (251) 273-6553
+search_vector: 'also':44C 'appreci':61C 'beach':72 'beachi':5B 'biscoff':38C 'browni':39C 'busi':58C 'clean':63C 'cream':4A,7B,20C,26C,69 'del':1A 'delici':23C 'environ':64C 'even':56C 'excel':54C 'flavor':33C 'friend':47C 'help':50C 'highlight':45C 'homemad':24C 'honey':41C 'ice':3A,6B,19C,25C,68 'includ':34C 'lavend':42C 'like':37C 'milkshak':12B 'offer':22C 'option':36C 'orang':71 'parlor':8B 'patient':48C 'peopl':16C 'popular':35C 'price':67C 'provid':53C 'reason':66C 'say':17C 'servic':55C 'shop':21C,70 'special':9B 'staff':51C 'sunda':11B 'time':59C 'treat':15B 'uniqu':32C 'varieti':30C 'visitor':60C 'wide':29C
+primary_type_display: Ice Cream Shop
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=15900828247074871814&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a071a2beb139d:0xdcab170b65651a06!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a071a2beb139d:0xdcab170b65651a06!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a071a2beb139d:0xdcab170b65651a06!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a071a2beb139d:0xdcab170b65651a06!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJcyWfLfEGmogRHioWRkBqdSA",
+      "placeId": "ChIJcyWfLfEGmogRHioWRkBqdSA",
+      "containment": "OUTSKIRTS",
+      "displayName": {
+        "text": "Rouses Market",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJUYCzGlUHmogRr9LrfFPhdoI",
+      "types": [
+        "establishment",
+        "food",
+        "grocery_or_supermarket",
+        "liquor_store",
+        "point_of_interest",
+        "store",
+        "supermarket"
+      ],
+      "placeId": "ChIJUYCzGlUHmogRr9LrfFPhdoI",
+      "displayName": {
+        "text": "Rouses Market",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "WITHIN",
+      "travelDistanceMeters": 103.17273,
+      "straightLineDistanceMeters": 106.39601
+    },
+    {
+      "name": "places/ChIJE7n6rvYGmogRLyI6Yc_STQw",
+      "types": [
+        "establishment",
+        "lodging",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJE7n6rvYGmogRLyI6Yc_STQw",
+      "displayName": {
+        "text": "Fairfield by Marriott Inn & Suites Orange Beach",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 73.734085,
+      "straightLineDistanceMeters": 94.41963
+    },
+    {
+      "name": "places/ChIJlWY0UPEGmogRgEGFBDqx8Bw",
+      "types": [
+        "bakery",
+        "department_store",
+        "establishment",
+        "food",
+        "grocery_or_supermarket",
+        "point_of_interest",
+        "store",
+        "supermarket"
+      ],
+      "placeId": "ChIJlWY0UPEGmogRgEGFBDqx8Bw",
+      "displayName": {
+        "text": "Walmart Neighborhood Market",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 223.00537,
+      "straightLineDistanceMeters": 176.09404
+    },
+    {
+      "name": "places/ChIJlWY0UPEGmogRbsIoPnyPXU0",
+      "types": [
+        "convenience_store",
+        "establishment",
+        "food",
+        "gas_station",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJlWY0UPEGmogRbsIoPnyPXU0",
+      "displayName": {
+        "text": "Murphy USA",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 363.93765,
+      "straightLineDistanceMeters": 281.70853
+    },
+    {
+      "name": "places/ChIJIZSx0vsGmogRxe9VR0IFbw8",
+      "types": [
+        "establishment",
+        "lodging",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJIZSx0vsGmogRxe9VR0IFbw8",
+      "displayName": {
+        "text": "SeaChase Condominiums",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 465.9153,
+      "straightLineDistanceMeters": 380.27087
+    }
+  ]
+}
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url | hero_image_url v2-fix 2026-07-21: repointed to a photo confirmed to actually exist
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: menu
+generative_summary: Beachy ice cream parlor specializing in sundaes, milkshakes and other treats.
+industry_code: cafe_dessert
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   1 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 1] ---
+id: cf74dc38-a948-4cac-9f1c-eb9e438b482b
+entity_slug: del-s-ice-cream
+place_id: ChIJcyWfLfEGmogRHioWRkBqdSA
+containment: OUTSKIRTS
+display_name: Rouses Market
+
+####################################################################################################
+# TABLE: entity_attributes   -   16 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 16] ---
+id: 68c914ed-393a-44a4-a5a2-aa6ad81c714f
+entity_slug: del-s-ice-cream
+category: dining
+key: serves_coffee
+label: Serves Coffee
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 2 of 16] ---
+id: 1bb29139-a032-4c08-b3fa-14ff1096e04c
+entity_slug: del-s-ice-cream
+category: dining
+key: serves_vegetarian
+label: Serves Vegetarian Food
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 3 of 16] ---
+id: c50f2087-191a-4ea9-aa1e-87f7286cdd9a
+entity_slug: del-s-ice-cream
+category: service
+key: delivery
+label: Delivery
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 4 of 16] ---
+id: 3f9a1355-443b-4240-abba-a4bbf0868c37
+entity_slug: del-s-ice-cream
+category: service
+key: takeout
+label: Takeout
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 5 of 16] ---
+id: 03a5aa64-9e0d-4f26-b3ee-8702d56a7429
+entity_slug: del-s-ice-cream
+category: service
+key: dine_in
+label: Dine In
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 6 of 16] ---
+id: d8259a85-0cb3-4821-877d-242c6acb4b7c
+entity_slug: del-s-ice-cream
+category: service
+key: curbside_pickup
+label: Curbside Pickup
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 7 of 16] ---
+id: ee338131-f72c-43e5-86a3-4130a7e3d329
+entity_slug: del-s-ice-cream
+category: amenity
+key: restroom
+label: Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 8 of 16] ---
+id: ceb15286-e10f-4533-a70e-ab40fcf138ee
+entity_slug: del-s-ice-cream
+category: suitability
+key: good_for_children
+label: Good for Children
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 9 of 16] ---
+id: 24796bf2-1bff-4803-acdb-e1b9821c8584
+entity_slug: del-s-ice-cream
+category: suitability
+key: good_for_groups
+label: Good for Groups
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 10 of 16] ---
+id: 78f45db0-9080-4e8b-8454-fa557f4909ce
+entity_slug: del-s-ice-cream
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 11 of 16] ---
+id: 73bbe64b-eda0-41ba-a0be-1f7aeed91e10
+entity_slug: del-s-ice-cream
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 12 of 16] ---
+id: 464425fb-1002-469b-aa13-823fe1558e77
+entity_slug: del-s-ice-cream
+category: parking
+key: parking_freeParkingLot
+label: Free Parking Lot
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 13 of 16] ---
+id: 7d36009d-d34f-4a8c-b602-c82b81917a71
+entity_slug: del-s-ice-cream
+category: payment
+key: pay_acceptsNfc
+label: Accepts Nfc
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 14 of 16] ---
+id: 9f58c0cc-0dec-4607-a4f9-b6d54a52256c
+entity_slug: del-s-ice-cream
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 15 of 16] ---
+id: 89023478-8f96-4682-a29c-47c7b23b8a57
+entity_slug: del-s-ice-cream
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 16 of 16] ---
+id: fc1d3316-5013-48ec-9152-3fc2579d4757
+entity_slug: del-s-ice-cream
+category: payment
+key: pay_acceptsCreditCards
+label: Accepts Credit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: del-s-ice-cream
+name: Del's Ice Cream
+industry_code: cafe_dessert
+is_parent: false
+score_of_7: 5
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: a9f2d1d5-8ca7-46cc-bc3d-141a77115f22
+entity_slug: del-s-ice-cream
+place_uri: https://maps.google.com/?cid=15900828247074871814&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a071a2beb139d:0xdcab170b65651a06!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a071a2beb139d:0xdcab170b65651a06!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a071a2beb139d:0xdcab170b65651a06!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a071a2beb139d:0xdcab170b65651a06!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 1629
+entity_slug: del-s-ice-cream
+google_review_name: places/ChIJnRPrKxoHmogRBhplZQsXq9w/reviews/Ci9DQUlRQUNvZENodHljRjlvT2s1SFpHNXhRVTVrYlVoUllsZE5hV1JhYjFSWVVIYxAB
+rating: 3
+review_text: Kendall was awesome and great at explaining every flavor. We were offered delicious samples.  However it was unbearably cold, 56 degrees, which detracted from my experience. This shop is more akin to ice cream in freezer roleplay than patron at a confectionery.
+language_code: en
+author_name: Makenzie Daugherty
+author_profile_url: https://www.google.com/maps/contrib/103654413008826818656/reviews
+publish_time: 2026-02-01T19:04:11.065684+00:00
+relative_time: 4 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2s1SFpHNXhRVTVrYlVoUllsZE5hV1JhYjFSWVVIYxAB!2m1!1s0x889a071a2beb139d:0xdcab170b65651a06
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 1630
+entity_slug: del-s-ice-cream
+google_review_name: places/ChIJnRPrKxoHmogRBhplZQsXq9w/reviews/Ci9DQUlRQUNvZENodHljRjlvT213M1ZVTlZRak52Y0ZGb1QyUXdSV052ZUZOS1kxRRAB
+rating: 5
+review_text: Great ice cream! Great customer service! Lots of ice cream choices and some unique options. I tried the glazed doughnut ice cream and LOVED it. Very different and unique. Would definitely recommend checking this one out
+language_code: en
+author_name: STLA_1020
+author_profile_url: https://www.google.com/maps/contrib/110641815582321356372/reviews
+publish_time: 2025-09-17T00:09:56.548485+00:00
+relative_time: 8 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT213M1ZVTlZRak52Y0ZGb1QyUXdSV052ZUZOS1kxRRAB!2m1!1s0x889a071a2beb139d:0xdcab170b65651a06
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 1631
+entity_slug: del-s-ice-cream
+google_review_name: places/ChIJnRPrKxoHmogRBhplZQsXq9w/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xwdFZ6RkNPRFIwTkRKWmRHTjZjRk10VFdNNVgyYxAB
+rating: 5
+review_text: A young lady named MACY waited on us and about eight other customers that had shown up at the same time as us. She handled the customers fast, efficient and she served each order up to look like a piece of ice-cream art! Good job Macy. Thank you for our delicious ice-cream.
+language_code: en
+author_name: Jean Watkins
+author_profile_url: https://www.google.com/maps/contrib/100182094547159742489/reviews
+publish_time: 2025-09-16T23:08:59.065004+00:00
+relative_time: 8 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xwdFZ6RkNPRFIwTkRKWmRHTjZjRk10VFdNNVgyYxAB!2m1!1s0x889a071a2beb139d:0xdcab170b65651a06
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 1632
+entity_slug: del-s-ice-cream
+google_review_name: places/ChIJnRPrKxoHmogRBhplZQsXq9w/reviews/Ci9DQUlRQUNvZENodHljRjlvT25KaFpYSnlORUUxWlZONVFTMU9NVEJXT0RKR1oyYxAB
+rating: 5
+review_text: Nice clean establishment with very helpful and courteous service. And great ice cream.
+language_code: en
+author_name: R Farmland
+author_profile_url: https://www.google.com/maps/contrib/110098242545184969229/reviews
+publish_time: 2026-02-15T21:17:16.404202+00:00
+relative_time: 3 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25KaFpYSnlORUUxWlZONVFTMU9NVEJXT0RKR1oyYxAB!2m1!1s0x889a071a2beb139d:0xdcab170b65651a06
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 1633
+entity_slug: del-s-ice-cream
+google_review_name: places/ChIJnRPrKxoHmogRBhplZQsXq9w/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOTlprcG9kalJQU2psV1pGWXpkVGRIZGs0eVduYxAB
+rating: 5
+review_text: Del’s Ice Cream has the best to offer when it comes to flavors of ice cream, shakes, sundaes and so much more!! The staff is the best and the atmosphere is the best for your perfect beach weekend getaway or a local night out on the town!! Highly recommend you try it out, you won’t regret it!!🤍🤍
+language_code: en
+author_name: Meg Collado
+author_profile_url: https://www.google.com/maps/contrib/106331501525194039839/reviews
+publish_time: 2026-03-07T16:28:56.275499+00:00
+relative_time: 3 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xOTlprcG9kalJQU2psV1pGWXpkVGRIZGs0eVduYxAB!2m1!1s0x889a071a2beb139d:0xdcab170b65651a06
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   14 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 14] ---
+id: 2019672e-830e-4da0-8b42-73171cc03096
+entity_slug: del-s-ice-cream
+day_of_week: 0
+opens_at: 11:00:00
+closes_at: 23:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 14] ---
+id: b5639fee-5700-499e-91b1-c53e60805178
+entity_slug: del-s-ice-cream
+day_of_week: 1
+opens_at: 11:00:00
+closes_at: 23:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 14] ---
+id: 30573774-ad95-48ef-a407-dc3f23a78bbe
+entity_slug: del-s-ice-cream
+day_of_week: 2
+opens_at: 11:00:00
+closes_at: 23:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 14] ---
+id: fe4cf064-fef1-4c4a-8d0c-d7e58c0c6d23
+entity_slug: del-s-ice-cream
+day_of_week: 3
+opens_at: 11:00:00
+closes_at: 23:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 14] ---
+id: c43cf2e5-63c3-43a8-99e8-dab4059bd693
+entity_slug: del-s-ice-cream
+day_of_week: 4
+opens_at: 11:00:00
+closes_at: 23:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 14] ---
+id: d6cf7c80-e65b-4917-a995-65744c021b58
+entity_slug: del-s-ice-cream
+day_of_week: 5
+opens_at: 11:00:00
+closes_at: 23:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 14] ---
+id: 41ca7d4f-6375-41a2-9e84-502715d8348c
+entity_slug: del-s-ice-cream
+day_of_week: 6
+opens_at: 11:00:00
+closes_at: 23:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 8 of 14] ---
+id: 86ee2538-5df6-4188-ae30-1a4e945ababe
+entity_slug: del-s-ice-cream
+day_of_week: 0
+opens_at: 11:00:00
+closes_at: 22:00:00
+is_closed: false
+created_at: 2026-07-19T22:02:07.57557+00:00
+hours_type: regular
+
+--- entity_hours [row 9 of 14] ---
+id: 291f5836-1f69-44f8-abb7-455d629ecad8
+entity_slug: del-s-ice-cream
+day_of_week: 6
+opens_at: 11:00:00
+closes_at: 22:00:00
+is_closed: false
+created_at: 2026-07-19T22:02:07.57557+00:00
+hours_type: regular
+
+--- entity_hours [row 10 of 14] ---
+id: 0072286d-66e0-49e9-8265-466b5389ff74
+entity_slug: del-s-ice-cream
+day_of_week: 5
+opens_at: 11:00:00
+closes_at: 22:00:00
+is_closed: false
+created_at: 2026-07-19T22:02:07.57557+00:00
+hours_type: regular
+
+--- entity_hours [row 11 of 14] ---
+id: 9b61b298-366d-447d-bfd0-9fb4228ba76e
+entity_slug: del-s-ice-cream
+day_of_week: 3
+opens_at: 11:00:00
+closes_at: 22:00:00
+is_closed: false
+created_at: 2026-07-19T22:02:07.57557+00:00
+hours_type: regular
+
+--- entity_hours [row 12 of 14] ---
+id: 15db8e24-e25b-471a-aaad-97afddf25bf9
+entity_slug: del-s-ice-cream
+day_of_week: 1
+opens_at: 11:00:00
+closes_at: 22:00:00
+is_closed: false
+created_at: 2026-07-19T22:02:07.57557+00:00
+hours_type: regular
+
+--- entity_hours [row 13 of 14] ---
+id: a4fbcc2e-7135-4625-b192-2989d863dd2a
+entity_slug: del-s-ice-cream
+day_of_week: 4
+opens_at: 11:00:00
+closes_at: 22:00:00
+is_closed: false
+created_at: 2026-07-19T22:02:07.57557+00:00
+hours_type: regular
+
+--- entity_hours [row 14 of 14] ---
+id: ddf6c034-13a4-4e8c-ab79-fe024f2a46d7
+entity_slug: del-s-ice-cream
+day_of_week: 2
+opens_at: 11:00:00
+closes_at: 22:00:00
+is_closed: false
+created_at: 2026-07-19T22:02:07.57557+00:00
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_modules   -   16 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 16] ---
+id: 7a402acf-fe5e-4afb-8d14-9d615d0342d0
+entity_slug: del-s-ice-cream
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 16] ---
+id: 23960d68-41e8-4a7e-b6e8-ae259bf84b1e
+entity_slug: del-s-ice-cream
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 16] ---
+id: 67b007c1-958a-440b-b10c-332cebd64ac2
+entity_slug: del-s-ice-cream
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 16] ---
+id: 9b5577fb-8a8c-4898-aff6-873f958a2506
+entity_slug: del-s-ice-cream
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 16] ---
+id: 2297015e-9e93-42c9-88a8-f21a375eeee3
+entity_slug: del-s-ice-cream
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 16] ---
+id: e566c7b0-801e-4151-8207-c752941364b5
+entity_slug: del-s-ice-cream
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 16] ---
+id: 1e776106-8391-4a34-a405-cdbf10a0eb05
+entity_slug: del-s-ice-cream
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 16] ---
+id: 0be77626-9119-4136-8c2b-81d8a9555127
+entity_slug: del-s-ice-cream
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 16] ---
+id: ab8051f6-061a-47a1-973f-b634b8ef0061
+entity_slug: del-s-ice-cream
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 16] ---
+id: 5fa4553f-97b9-447c-8ea1-37d0f4e45783
+entity_slug: del-s-ice-cream
+module_key: menu
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 16] ---
+id: 606c9273-4ce1-4cfd-aced-c897cc0bc277
+entity_slug: del-s-ice-cream
+module_key: drinks
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 16] ---
+id: 4adad7b4-d923-4f18-9990-beb03d93d694
+entity_slug: del-s-ice-cream
+module_key: happy_hour
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 16] ---
+id: a4add5ac-ede8-4d87-9c9c-f3663592b20a
+entity_slug: del-s-ice-cream
+module_key: specials
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 14 of 16] ---
+id: 5c80d318-a3c3-4bb7-a8e3-aa9879f20136
+entity_slug: del-s-ice-cream
+module_key: events
+enabled: true
+sort_order: 14
+
+--- entity_modules [row 15 of 16] ---
+id: 628aeab2-ea2b-4414-be89-4bda424808bc
+entity_slug: del-s-ice-cream
+module_key: loyalty
+enabled: true
+sort_order: 15
+
+--- entity_modules [row 16 of 16] ---
+id: 4d1358e0-734f-4fdd-ba4b-bed92faa5b49
+entity_slug: del-s-ice-cream
+module_key: booking
+enabled: true
+sort_order: 16
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   27 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 27] ---
+id: 807bcc46-2ae2-485f-ab64-fa2420a77f1d
+landmark_id: b6c4b504-46f1-4552-b1ac-6eb82bbd1292
+entity_slug: del-s-ice-cream
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 27] ---
+id: 04a30357-c0c0-4564-b86a-476b478d98cb
+landmark_id: b6c4b504-46f1-4552-b1ac-6eb82bbd1292
+entity_slug: del-s-ice-cream
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 27] ---
+id: b6901d12-438a-437f-b7fd-be923acf9f40
+landmark_id: b6c4b504-46f1-4552-b1ac-6eb82bbd1292
+entity_slug: del-s-ice-cream
+landmark_type: grocery_or_supermarket
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 27] ---
+id: 87cb5475-410c-46bf-81bd-8d5d4cbd6e1f
+landmark_id: b6c4b504-46f1-4552-b1ac-6eb82bbd1292
+entity_slug: del-s-ice-cream
+landmark_type: liquor_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 27] ---
+id: 85a3df83-3162-4dc2-96a1-b8eb46513659
+landmark_id: b6c4b504-46f1-4552-b1ac-6eb82bbd1292
+entity_slug: del-s-ice-cream
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 27] ---
+id: cfed74fe-c545-4189-af9e-1cdf74fc0d9e
+landmark_id: b6c4b504-46f1-4552-b1ac-6eb82bbd1292
+entity_slug: del-s-ice-cream
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 27] ---
+id: da0e8cc1-6c55-45e3-b683-878d0c179efa
+landmark_id: b6c4b504-46f1-4552-b1ac-6eb82bbd1292
+entity_slug: del-s-ice-cream
+landmark_type: supermarket
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 27] ---
+id: 05f00fd8-0e8f-4f66-8612-64d1dee55697
+landmark_id: 18020ae4-9831-4de7-a7cb-5cda81e243b0
+entity_slug: del-s-ice-cream
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 27] ---
+id: 71df6783-5466-43a8-a318-31e1e7362cb8
+landmark_id: 18020ae4-9831-4de7-a7cb-5cda81e243b0
+entity_slug: del-s-ice-cream
+landmark_type: lodging
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 27] ---
+id: f8d9dc02-8d44-48d1-83c7-1937ee24ea69
+landmark_id: 18020ae4-9831-4de7-a7cb-5cda81e243b0
+entity_slug: del-s-ice-cream
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 27] ---
+id: 99ef52d1-2223-4423-911f-e6ab7218cf42
+landmark_id: 67dff6bc-1e50-402a-9b6e-f112ea1b5615
+entity_slug: del-s-ice-cream
+landmark_type: bakery
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 27] ---
+id: 2f36b650-da47-4fe8-b643-82d86624e552
+landmark_id: 67dff6bc-1e50-402a-9b6e-f112ea1b5615
+entity_slug: del-s-ice-cream
+landmark_type: department_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 27] ---
+id: e00809b5-ae3c-41bd-9262-fc85d2e0656a
+landmark_id: 67dff6bc-1e50-402a-9b6e-f112ea1b5615
+entity_slug: del-s-ice-cream
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 27] ---
+id: 2ab0a54b-c4b3-4531-bc31-fe41e9e624c5
+landmark_id: 67dff6bc-1e50-402a-9b6e-f112ea1b5615
+entity_slug: del-s-ice-cream
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 27] ---
+id: 94ffc1e6-0d44-4703-96d8-aa3d54b9792d
+landmark_id: 67dff6bc-1e50-402a-9b6e-f112ea1b5615
+entity_slug: del-s-ice-cream
+landmark_type: grocery_or_supermarket
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 27] ---
+id: c046d972-ddf6-4b97-b2ea-9d5b37e6e4da
+landmark_id: 67dff6bc-1e50-402a-9b6e-f112ea1b5615
+entity_slug: del-s-ice-cream
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 27] ---
+id: 90faba0d-9082-4565-8040-84c87d5ef82f
+landmark_id: 67dff6bc-1e50-402a-9b6e-f112ea1b5615
+entity_slug: del-s-ice-cream
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 27] ---
+id: c9d23202-6a73-4068-ac8c-5793e3dbaad1
+landmark_id: 67dff6bc-1e50-402a-9b6e-f112ea1b5615
+entity_slug: del-s-ice-cream
+landmark_type: supermarket
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 19 of 27] ---
+id: 7e790f31-be02-4b66-b819-5e698c0c34ec
+landmark_id: a20f9eea-472e-43e9-9b90-82a55ea0b2c2
+entity_slug: del-s-ice-cream
+landmark_type: convenience_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 20 of 27] ---
+id: 83c0a81a-9e25-4c8e-aafc-823580f9e80d
+landmark_id: a20f9eea-472e-43e9-9b90-82a55ea0b2c2
+entity_slug: del-s-ice-cream
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 21 of 27] ---
+id: 4b4215c3-2598-41bf-8cd4-ce1f56b7be24
+landmark_id: a20f9eea-472e-43e9-9b90-82a55ea0b2c2
+entity_slug: del-s-ice-cream
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 22 of 27] ---
+id: dd922e6b-9f82-4941-a73e-3ffd6d11e9dd
+landmark_id: a20f9eea-472e-43e9-9b90-82a55ea0b2c2
+entity_slug: del-s-ice-cream
+landmark_type: gas_station
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 23 of 27] ---
+id: 9f6b55d8-7f7d-41c9-9b05-e6665bf94e06
+landmark_id: a20f9eea-472e-43e9-9b90-82a55ea0b2c2
+entity_slug: del-s-ice-cream
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 24 of 27] ---
+id: 8f78f22a-0f4c-49c0-95ef-85e8e2fac2a6
+landmark_id: a20f9eea-472e-43e9-9b90-82a55ea0b2c2
+entity_slug: del-s-ice-cream
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 25 of 27] ---
+id: a8397b68-7680-40a0-ad7b-baf6188d9f36
+landmark_id: 4a44cd60-4a66-4d52-84c5-450063ad6dc4
+entity_slug: del-s-ice-cream
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 26 of 27] ---
+id: 8bf34314-6c92-45b7-aa8f-b2fe6e241391
+landmark_id: 4a44cd60-4a66-4d52-84c5-450063ad6dc4
+entity_slug: del-s-ice-cream
+landmark_type: lodging
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 27 of 27] ---
+id: f52b5b9c-f38d-41eb-9f01-59cfadc840a5
+landmark_id: 4a44cd60-4a66-4d52-84c5-450063ad6dc4
+entity_slug: del-s-ice-cream
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   6 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 6] ---
+id: b6c4b504-46f1-4552-b1ac-6eb82bbd1292
+entity_slug: del-s-ice-cream
+kind: landmark
+place_id: ChIJUYCzGlUHmogRr9LrfFPhdoI
+name: Rouses Market
+types: [
+  "establishment",
+  "food",
+  "grocery_or_supermarket",
+  "liquor_store",
+  "point_of_interest",
+  "store",
+  "supermarket"
+]
+spatial_relationship: WITHIN
+travel_distance_meters: 103.17273
+straight_line_distance_meters: 106.39601
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 6] ---
+id: 18020ae4-9831-4de7-a7cb-5cda81e243b0
+entity_slug: del-s-ice-cream
+kind: landmark
+place_id: ChIJE7n6rvYGmogRLyI6Yc_STQw
+name: Fairfield by Marriott Inn & Suites Orange Beach
+types: [
+  "establishment",
+  "lodging",
+  "point_of_interest"
+]
+travel_distance_meters: 73.734085
+straight_line_distance_meters: 94.41963
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 6] ---
+id: 67dff6bc-1e50-402a-9b6e-f112ea1b5615
+entity_slug: del-s-ice-cream
+kind: landmark
+place_id: ChIJlWY0UPEGmogRgEGFBDqx8Bw
+name: Walmart Neighborhood Market
+types: [
+  "bakery",
+  "department_store",
+  "establishment",
+  "food",
+  "grocery_or_supermarket",
+  "point_of_interest",
+  "store",
+  "supermarket"
+]
+travel_distance_meters: 223.00537
+straight_line_distance_meters: 176.09404
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 6] ---
+id: a20f9eea-472e-43e9-9b90-82a55ea0b2c2
+entity_slug: del-s-ice-cream
+kind: landmark
+place_id: ChIJlWY0UPEGmogRbsIoPnyPXU0
+name: Murphy USA
+types: [
+  "convenience_store",
+  "establishment",
+  "food",
+  "gas_station",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 363.93765
+straight_line_distance_meters: 281.70853
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 6] ---
+id: 4a44cd60-4a66-4d52-84c5-450063ad6dc4
+entity_slug: del-s-ice-cream
+kind: landmark
+place_id: ChIJIZSx0vsGmogRxe9VR0IFbw8
+name: SeaChase Condominiums
+types: [
+  "establishment",
+  "lodging",
+  "point_of_interest"
+]
+travel_distance_meters: 465.9153
+straight_line_distance_meters: 380.27087
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 6 of 6] ---
+id: 8c4a4678-561b-401f-9cc6-5ff262ee1e5f
+entity_slug: del-s-ice-cream
+kind: area
+place_id: ChIJcyWfLfEGmogRHioWRkBqdSA
+name: Rouses Market
+containment: OUTSKIRTS
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_photos   -   29 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 29] ---
+id: dd27f49f-5dc8-410e-8715-da8b2874ab37
+entity_slug: del-s-ice-cream
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/del-s-ice-cream/photo_10.jpg
+is_cover: false
+sort_order: 9
+
+--- entity_photos [row 2 of 29] ---
+id: fce7ffb9-e2be-411a-b8b3-999e1f4a9c69
+entity_slug: del-s-ice-cream
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/del-s-ice-cream/photo_06.jpg
+is_cover: false
+sort_order: 5
+
+--- entity_photos [row 3 of 29] ---
+id: 5b2dfb38-f62a-445e-aa07-be6f9255e576
+entity_slug: del-s-ice-cream
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/del-s-ice-cream/photo_07.jpg
+is_cover: false
+sort_order: 6
+
+--- entity_photos [row 4 of 29] ---
+id: 89035541-b0fc-4bbd-95ff-fe809a7dc8a9
+entity_slug: del-s-ice-cream
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/del-s-ice-cream/photo_03.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 5 of 29] ---
+id: ce347bdb-749c-4dfe-b44f-c595339f3726
+entity_slug: del-s-ice-cream
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/del-s-ice-cream/photo_09.jpg
+is_cover: false
+sort_order: 8
+
+--- entity_photos [row 6 of 29] ---
+id: a3cbfb6a-249f-4ad2-8663-78f9f8a8bdd2
+entity_slug: del-s-ice-cream
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/del-s-ice-cream/photo_04.jpg
+is_cover: false
+sort_order: 3
+
+--- entity_photos [row 7 of 29] ---
+id: cac5f929-77a2-48d9-b7f8-fd81afde874b
+entity_slug: del-s-ice-cream
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/del-s-ice-cream/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 8 of 29] ---
+id: 4b0a5bc5-4287-417f-8da3-c0027573c3cb
+entity_slug: del-s-ice-cream
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/del-s-ice-cream/photo_08.jpg
+is_cover: false
+sort_order: 7
+
+--- entity_photos [row 9 of 29] ---
+id: 5130e6c8-1a00-4668-b64a-dbc095735f59
+entity_slug: del-s-ice-cream
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/del-s-ice-cream/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 10 of 29] ---
+id: bf39ccee-d641-447f-b877-cb8cd05c3251
+entity_slug: del-s-ice-cream
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/del-s-ice-cream/photo_05.jpg
+is_cover: false
+sort_order: 4
+
+--- entity_photos [row 11 of 29] ---
+id: 4cf33a2c-c477-4a16-8e38-8ec37c2a3804
+entity_slug: del-s-ice-cream
+url: https://places.googleapis.com/v1/places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3meYkBOGzZcdiWyaQlTEve_RxPSjDQhAs24fd6ZSrEQ5hTbRq9m0e9mgr1dGNAxzSnA_2wtctEtYW22AXvAH0EArJWhYGbPc3iiV9CqypFP47tKvkeTGDakCpyx73Bn1IjIGHocp8KVhPNo7-XKLeDpK7lgvkeagoktOqj4P1JhR5Pj1bnZ4d7F_9xppAc1veTV87-00-OytUsFEtylQkSWO2J6SCH-NP9OHhdi1irkqWXg2qJnlWztWy7HKWLNJbJRKcz1MEb6LQylHvKfGzDL8vlsqaO7jJVIOV0SUUY1x2273gQQkq9vOHUDmWrSexECzgAlEAtfPpvpI_y-2-PUFdVhgSreu9MSjy3ahP2FP3m0070S2ZhjwQ_ti22m5H1VTzSEbhgIK_2tPYnGysY8x8Uhm1A_A0FunCqlRxK88zYX/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3meYkBOGzZcdiWyaQlTEve_RxPSjDQhAs24fd6ZSrEQ5hTbRq9m0e9mgr1dGNAxzSnA_2wtctEtYW22AXvAH0EArJWhYGbPc3iiV9CqypFP47tKvkeTGDakCpyx73Bn1IjIGHocp8KVhPNo7-XKLeDpK7lgvkeagoktOqj4P1JhR5Pj1bnZ4d7F_9xppAc1veTV87-00-OytUsFEtylQkSWO2J6SCH-NP9OHhdi1irkqWXg2qJnlWztWy7HKWLNJbJRKcz1MEb6LQylHvKfGzDL8vlsqaO7jJVIOV0SUUY1x2273gQQkq9vOHUDmWrSexECzgAlEAtfPpvpI_y-2-PUFdVhgSreu9MSjy3ahP2FP3m0070S2ZhjwQ_ti22m5H1VTzSEbhgIK_2tPYnGysY8x8Uhm1A_A0FunCqlRxK88zYX
+is_cover: false
+sort_order: 0
+caption: Del's Ice Cream
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDW7KKjoAE!2e10!4m2!3m1!1s0x889a071a2beb139d:0xdcab170b65651a06
+
+--- entity_photos [row 12 of 29] ---
+id: 128cc6a6-e781-4c0d-b320-bc20519d56f0
+entity_slug: del-s-ice-cream
+url: https://places.googleapis.com/v1/places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3l3dXkHh4lYiV8wDdPAimi6Jx3DyYnUzf98pw1nhx1y0G9pArmihRvYS_6Ts7Wtm3cZwa-rPM2rgIGFx05DlhcHnEyRY5dOXDEaOOfr3HIwHvYSCH52tdNsQkNLORdbWnpgXnppf1XDU2kgxIUJff-dO33ERsfiukF92wOfZo0fhER6Tk8eq0n64mwMam0a5y5NN2ssdwNl8kNA7YeR_cVW7s0AEL1bp5f0D8ASUvuoQ8jNKHfCjyfGACm851H7GKIjtMvm9QdLtyu0QRXTGXG_0odje8SThh54FMyeoC2MK7AQ0CLD_yf0f7ONsMZKxZW-XVa-dDsa9hTSaF6c8rJal_JOpwxcDA7hbhF6bs3gMf1o59tqxTDUDzq-x28nk_oWGA7tipxnWG8phhoSPlRrdAnTQFpuHwpQXybHO-i61Fs/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3l3dXkHh4lYiV8wDdPAimi6Jx3DyYnUzf98pw1nhx1y0G9pArmihRvYS_6Ts7Wtm3cZwa-rPM2rgIGFx05DlhcHnEyRY5dOXDEaOOfr3HIwHvYSCH52tdNsQkNLORdbWnpgXnppf1XDU2kgxIUJff-dO33ERsfiukF92wOfZo0fhER6Tk8eq0n64mwMam0a5y5NN2ssdwNl8kNA7YeR_cVW7s0AEL1bp5f0D8ASUvuoQ8jNKHfCjyfGACm851H7GKIjtMvm9QdLtyu0QRXTGXG_0odje8SThh54FMyeoC2MK7AQ0CLD_yf0f7ONsMZKxZW-XVa-dDsa9hTSaF6c8rJal_JOpwxcDA7hbhF6bs3gMf1o59tqxTDUDzq-x28nk_oWGA7tipxnWG8phhoSPlRrdAnTQFpuHwpQXybHO-i61Fs
+is_cover: false
+sort_order: 1
+caption: Del's Ice Cream
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDyrIORhwE!2e10!4m2!3m1!1s0x889a071a2beb139d:0xdcab170b65651a06
+
+--- entity_photos [row 13 of 29] ---
+id: 288f3ae8-b21c-4ae3-8653-8cb1077b4ab8
+entity_slug: del-s-ice-cream
+url: https://places.googleapis.com/v1/places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3k8X7A-XEcC_sJKRJogcQ5vO4Z_QrUtyR8rdfwEReSqVbmpkgxji_z2iCeAqjyW1f633piMVi9jlEeWMW4hjUvhEWTq1tRzPi0x9qFTWhni0Gl4UZAPQrKjEsgekxNSchAW8I-MpQBVNw_8NBbNGV1yz6G43DB2MsQQgz2GxJBZ3VPAz7KsbGmaL1c3bWn4DlCyJcB7qHuYCEJKdiZYOhE_GFkbrAmKU0tVO2-bdrdsmQgasFJxQsb0kngCFOTLixehd3qkqVzWbUuaulT1GMfMoHYzFtyUbYRH66uiMVgtkzIIGrhkPIH8VIFVjrjSsJjemk-wAymPjLnMfzWK6MchC37_-Hna8XXSc59Nzhgy0yAPcRu604ZRlR55Y8HH0vK6DKmTGCgkcEELaaGwK5_u_NXv2z58qDYUihJ3fV5fxg4BNDPU0nFL2SAzhXme/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3k8X7A-XEcC_sJKRJogcQ5vO4Z_QrUtyR8rdfwEReSqVbmpkgxji_z2iCeAqjyW1f633piMVi9jlEeWMW4hjUvhEWTq1tRzPi0x9qFTWhni0Gl4UZAPQrKjEsgekxNSchAW8I-MpQBVNw_8NBbNGV1yz6G43DB2MsQQgz2GxJBZ3VPAz7KsbGmaL1c3bWn4DlCyJcB7qHuYCEJKdiZYOhE_GFkbrAmKU0tVO2-bdrdsmQgasFJxQsb0kngCFOTLixehd3qkqVzWbUuaulT1GMfMoHYzFtyUbYRH66uiMVgtkzIIGrhkPIH8VIFVjrjSsJjemk-wAymPjLnMfzWK6MchC37_-Hna8XXSc59Nzhgy0yAPcRu604ZRlR55Y8HH0vK6DKmTGCgkcEELaaGwK5_u_NXv2z58qDYUihJ3fV5fxg4BNDPU0nFL2SAzhXme
+is_cover: false
+sort_order: 2
+caption: STLA_1020
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBpPoih2s9PmcCdQLr4tMqs!2e10!4m2!3m1!1s0x889a071a2beb139d:0xdcab170b65651a06
+
+--- entity_photos [row 14 of 29] ---
+id: 86c6903f-b4c3-4555-83ac-6f094547d9c9
+entity_slug: del-s-ice-cream
+url: https://places.googleapis.com/v1/places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3kwh-gqVC5GRnMFqoSeEiaWV4ZJGkOLUhcnVmXnWGNfFfWRvJ7iQW-8mV6trVMcFbE0qNQkJq1O--q0f5aJV2AdW9WzEs2_Sr14G0WLmyxwAGHGfP-esm7UKv-8DP0YU-CjR59VOtCHtlJWSx91wA9yo_X2T8ZF2XLAjupi6kk6vzBBt_8dzGqrYbmIfLJTnxOw8VrYsZqNYCvuADVemOnrzrd2lhbP6QbGAhpzKQ8CNIz1cXOyt44oBoaYECL9Zhd8Gfl31394vTYTcgk3aYrPyHaZl5vGBp1ZhAUHlQavFIEosljH_zOXIERDEYZlYHeK4JI9un7Vzljq0zdplGkcm6dzBxd6vSIMaipPqbB5upKrvk4pnm75BUON8CQZ1pg7-ZDhzfrsyKsj3RUCoel1MiP-4lszwZKsRKJlsovvtN_c/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3kwh-gqVC5GRnMFqoSeEiaWV4ZJGkOLUhcnVmXnWGNfFfWRvJ7iQW-8mV6trVMcFbE0qNQkJq1O--q0f5aJV2AdW9WzEs2_Sr14G0WLmyxwAGHGfP-esm7UKv-8DP0YU-CjR59VOtCHtlJWSx91wA9yo_X2T8ZF2XLAjupi6kk6vzBBt_8dzGqrYbmIfLJTnxOw8VrYsZqNYCvuADVemOnrzrd2lhbP6QbGAhpzKQ8CNIz1cXOyt44oBoaYECL9Zhd8Gfl31394vTYTcgk3aYrPyHaZl5vGBp1ZhAUHlQavFIEosljH_zOXIERDEYZlYHeK4JI9un7Vzljq0zdplGkcm6dzBxd6vSIMaipPqbB5upKrvk4pnm75BUON8CQZ1pg7-ZDhzfrsyKsj3RUCoel1MiP-4lszwZKsRKJlsovvtN_c
+is_cover: false
+sort_order: 3
+caption: James Austin Peavy
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDy3OP26gE!2e10!4m2!3m1!1s0x889a071a2beb139d:0xdcab170b65651a06
+
+--- entity_photos [row 15 of 29] ---
+id: 223c20eb-6311-4fef-adae-19346174c225
+entity_slug: del-s-ice-cream
+url: https://places.googleapis.com/v1/places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3mGUL1Nbzunp1mIgw72fnqfVJvrMQEod8WeWGgqosPtAkHKq8Yj4t1qg76MYA7RO8tBxtST9r0MUMGoGvyGUWV42UxSh9RecqLvny2znxbxbzA12RE9JTzF5E7xHERfuFAbxCHn5vOT28q2bPDVJTK3UtaCwW5dlSbE7zxBAL0U6UOjARH2zoziWsWroN0PXM7w4zm4id_nkyKH8gEW-D06C_IWtavT88ncVYIwXWhx_w7FhkFMWml9U2qQ33O_CH7GQ3ZBuxAMdVjKUaXl04vMq2rcxXAoyL1i0vHXzcjM2Q7pj5y-o0xv9GqF2vg9owdx9mURz9ckzXwKi0BQhWzEWrs38qyfHVnskdleT3jprDBTC1GB_kOrRdYlGYQHqOETQfv39GKQulyG2d4OusGSSFM0hJTvwMuBRCo4xuV35IhZ-PzQZzdE8MFe3Mcr/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3mGUL1Nbzunp1mIgw72fnqfVJvrMQEod8WeWGgqosPtAkHKq8Yj4t1qg76MYA7RO8tBxtST9r0MUMGoGvyGUWV42UxSh9RecqLvny2znxbxbzA12RE9JTzF5E7xHERfuFAbxCHn5vOT28q2bPDVJTK3UtaCwW5dlSbE7zxBAL0U6UOjARH2zoziWsWroN0PXM7w4zm4id_nkyKH8gEW-D06C_IWtavT88ncVYIwXWhx_w7FhkFMWml9U2qQ33O_CH7GQ3ZBuxAMdVjKUaXl04vMq2rcxXAoyL1i0vHXzcjM2Q7pj5y-o0xv9GqF2vg9owdx9mURz9ckzXwKi0BQhWzEWrs38qyfHVnskdleT3jprDBTC1GB_kOrRdYlGYQHqOETQfv39GKQulyG2d4OusGSSFM0hJTvwMuBRCo4xuV35IhZ-PzQZzdE8MFe3Mcr
+is_cover: false
+sort_order: 4
+caption: Bella Beeman
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAPsDL8U3rq7KMev64QFEg2!2e10!4m2!3m1!1s0x889a071a2beb139d:0xdcab170b65651a06
+
+--- entity_photos [row 16 of 29] ---
+id: 6cd72142-0d2d-4ef6-92e9-eb336f3cf462
+entity_slug: del-s-ice-cream
+url: https://places.googleapis.com/v1/places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3nskpyAC-E3pNc-xIZ-qnyGBSlXaf-f6EwEWvDOAUsJq70NmhB__gD7h1cZakde-yP8OwqCVMAV2sb4mXJxqaLMQmF1cdFq2wY1LQiaf-_MDR2n_LFC5lrNW26QlfPgB9wzirOI-0qTnlUFH1jBKE-eCEAc3IoWILnRlGQYIE64qWKCJLkMZwQumByiU81GWyohsUoPwvGEv2W-xTkO8wgqjKpr_s8xaamy_gp0xCiR7uiRaEeGA3BPXI1RrPKaKivs-V8SeDOKlejU95HNum--3810txQ7taJnBZ14SvK0jndGz3y1Q5LlQ_C-TItYit1wATOZ55sEX3Sex4l6rkRuYgBeOYcQMWQpbU2CujOZHCE7y6Y6LHX4aO2WWOBGWGG8pGfGIsTaSHo8NAqqbSJ5A0zU7FnSN3MsLE1nJIuxUeE9/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3nskpyAC-E3pNc-xIZ-qnyGBSlXaf-f6EwEWvDOAUsJq70NmhB__gD7h1cZakde-yP8OwqCVMAV2sb4mXJxqaLMQmF1cdFq2wY1LQiaf-_MDR2n_LFC5lrNW26QlfPgB9wzirOI-0qTnlUFH1jBKE-eCEAc3IoWILnRlGQYIE64qWKCJLkMZwQumByiU81GWyohsUoPwvGEv2W-xTkO8wgqjKpr_s8xaamy_gp0xCiR7uiRaEeGA3BPXI1RrPKaKivs-V8SeDOKlejU95HNum--3810txQ7taJnBZ14SvK0jndGz3y1Q5LlQ_C-TItYit1wATOZ55sEX3Sex4l6rkRuYgBeOYcQMWQpbU2CujOZHCE7y6Y6LHX4aO2WWOBGWGG8pGfGIsTaSHo8NAqqbSJ5A0zU7FnSN3MsLE1nJIuxUeE9
+is_cover: false
+sort_order: 5
+caption: Del's Ice Cream
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDW7KLD2gE!2e10!4m2!3m1!1s0x889a071a2beb139d:0xdcab170b65651a06
+
+--- entity_photos [row 17 of 29] ---
+id: 6d1b7344-72ac-4a6d-bab7-eec8afd31e53
+entity_slug: del-s-ice-cream
+url: https://places.googleapis.com/v1/places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3mUyw8lv3FHB3fKYU-AeBan3NsFgsRCLFrIcN8hrw71AzQNVhQfEVyXqJelDsjErK4fbDE-FCXHk5iEQlMxD6LOceHPE3Mj9oXd_RlsRNiVYv22QHPGxw0xIqgIXa4hu5lZi25-tApPW3imNVnhYLoK_DrpiAD96Gr1sywRHGQzcaWm1FYKqPmUrSU4z77mtjKuhi5Y6D3HDe68AAQqLz9WlepNVCOWemxSX0eXeL_x32mG489u8TtN1P6nmI-PzmaLUDDE-MvzmCnelZpiZLT569Lr-aiGmBU4qq6ZpX0cQypRYOWM_uyFigwp8Qm-RpjJ50cJHWK4MjFqXU8GNrX3qur-L45Nfm-hQWWsRndmWv26e5fQNOiVnC97Bxjmj1kpBKjNLv0Uo7ezxyBt_2JUmsooXkdEDTeOdugJaUF2IM9sjbHB0dZq8Ir0AC9w/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3mUyw8lv3FHB3fKYU-AeBan3NsFgsRCLFrIcN8hrw71AzQNVhQfEVyXqJelDsjErK4fbDE-FCXHk5iEQlMxD6LOceHPE3Mj9oXd_RlsRNiVYv22QHPGxw0xIqgIXa4hu5lZi25-tApPW3imNVnhYLoK_DrpiAD96Gr1sywRHGQzcaWm1FYKqPmUrSU4z77mtjKuhi5Y6D3HDe68AAQqLz9WlepNVCOWemxSX0eXeL_x32mG489u8TtN1P6nmI-PzmaLUDDE-MvzmCnelZpiZLT569Lr-aiGmBU4qq6ZpX0cQypRYOWM_uyFigwp8Qm-RpjJ50cJHWK4MjFqXU8GNrX3qur-L45Nfm-hQWWsRndmWv26e5fQNOiVnC97Bxjmj1kpBKjNLv0Uo7ezxyBt_2JUmsooXkdEDTeOdugJaUF2IM9sjbHB0dZq8Ir0AC9w
+is_cover: false
+sort_order: 6
+caption: R Farmland
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAes1VY9QavaN_ExofaZmrx!2e10!4m2!3m1!1s0x889a071a2beb139d:0xdcab170b65651a06
+
+--- entity_photos [row 18 of 29] ---
+id: 9f9f9f11-a25e-4e16-9fb5-19749265823f
+entity_slug: del-s-ice-cream
+url: https://places.googleapis.com/v1/places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3n9VO4G2MvzophFZFX8DvbPezgWmmKnoMT-vibzlirxN4pTt0hFrBrz1KTZgkd3D7aQG7CJ_x-UCC_g4wkM-H32sE1FNjfo9YKUuj-5fiE1wy9j3xYHcfZ5TkYb7Ev5uItpXW8Afy6lNrMat3NNe7t_U3A2RsCT9r-24ztfgTFRiqfC-Mn2MH2TfwQLeRaIdCcYU5rPDfvg-IAUBU0ocxteqmcEOTNhjU3av2R8FDfngpFswS4NwvrMJnZkMOmxWWjprjBkRd8aWCDWhGVI4gwqO_NZ7Xe77Ijs3PTmy7FvuAudgXr88iWE5lx7UptcH1KaRKfS5jO_Jbkt4Gh_6YuiGaIUgJUnYSFOAw0l_cvfTjSfLx4Vpcnt-k3vhaaghydHlGC3amoPnsqda3Q0CWQi7zikJ_Kbd_KEZRu-HoxVU-rV/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3n9VO4G2MvzophFZFX8DvbPezgWmmKnoMT-vibzlirxN4pTt0hFrBrz1KTZgkd3D7aQG7CJ_x-UCC_g4wkM-H32sE1FNjfo9YKUuj-5fiE1wy9j3xYHcfZ5TkYb7Ev5uItpXW8Afy6lNrMat3NNe7t_U3A2RsCT9r-24ztfgTFRiqfC-Mn2MH2TfwQLeRaIdCcYU5rPDfvg-IAUBU0ocxteqmcEOTNhjU3av2R8FDfngpFswS4NwvrMJnZkMOmxWWjprjBkRd8aWCDWhGVI4gwqO_NZ7Xe77Ijs3PTmy7FvuAudgXr88iWE5lx7UptcH1KaRKfS5jO_Jbkt4Gh_6YuiGaIUgJUnYSFOAw0l_cvfTjSfLx4Vpcnt-k3vhaaghydHlGC3amoPnsqda3Q0CWQi7zikJ_Kbd_KEZRu-HoxVU-rV
+is_cover: false
+sort_order: 7
+caption: Taylor Grayson 33
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEN7Dn9uKuvyLyAE!2e10!4m2!3m1!1s0x889a071a2beb139d:0xdcab170b65651a06
+
+--- entity_photos [row 19 of 29] ---
+id: a2546874-0ae5-403b-aaab-750fb291f570
+entity_slug: del-s-ice-cream
+url: https://places.googleapis.com/v1/places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3n8ul7JyXqHVMVU1cve5FZ0CouPt1JiC5Zed0lkVrGBCjT71ZGtJd36O394HYuLXQMRzoxS8tdY_eXkAGHHTq1EJlf9LduD-2TdO3Ny1MZfPFRQh1NQS8p91_nEHtdwysPDSAWy3eH1BqijZQ_xBg4ixa2jkjF8B_hPl4gFCqbxNR7sBgRgsO-UCl_09cki_PATESub4mJ68MqAJNojXmNDSm-TVNNu47GYBQg_4rMHlR5pSfoH5ePXqJ75RCKcVE_4VEX9CKAK_e5lbEaaMyE05TV8Zh4O8wIbS9zMPgoYls46msxfOWAeghQas1V9FaNkCaalmaktSH5zuFcma7cXoo10IBqTz_cSftVpgPqZq-CGed-IeR5z9NRm5nNo8ehTWKxsHR22W8xZ03rvugQ3QuOjtlh1qv3daqBIkfu7lA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3n8ul7JyXqHVMVU1cve5FZ0CouPt1JiC5Zed0lkVrGBCjT71ZGtJd36O394HYuLXQMRzoxS8tdY_eXkAGHHTq1EJlf9LduD-2TdO3Ny1MZfPFRQh1NQS8p91_nEHtdwysPDSAWy3eH1BqijZQ_xBg4ixa2jkjF8B_hPl4gFCqbxNR7sBgRgsO-UCl_09cki_PATESub4mJ68MqAJNojXmNDSm-TVNNu47GYBQg_4rMHlR5pSfoH5ePXqJ75RCKcVE_4VEX9CKAK_e5lbEaaMyE05TV8Zh4O8wIbS9zMPgoYls46msxfOWAeghQas1V9FaNkCaalmaktSH5zuFcma7cXoo10IBqTz_cSftVpgPqZq-CGed-IeR5z9NRm5nNo8ehTWKxsHR22W8xZ03rvugQ3QuOjtlh1qv3daqBIkfu7lA
+is_cover: false
+sort_order: 8
+caption: Del's Ice Cream
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDytJqtfw!2e10!4m2!3m1!1s0x889a071a2beb139d:0xdcab170b65651a06
+
+--- entity_photos [row 20 of 29] ---
+id: d137db6f-a1b4-4074-b540-d5a8de2aa48a
+entity_slug: del-s-ice-cream
+url: https://places.googleapis.com/v1/places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3nKg_NKdFWYGcUgWl8oygVV0bDLZ53grkS3UTAKto198W6ZD7WdQXOU83LhkstKAlP1bbQDxs2rWLjg5TBFU85cQFxSt6XOMer4Nso8v84kzyu6ZkBeuKiBXxrLCjHUOPezax1J8r_OLH0W4LGPht5pRUg-9-GPv9QDF6hlKO5g6kCNs8VDnturXOXFYjJbTa_g2YQuQAfmlJCDGCht8ZP_xow18QRhzcq_ShjVQskJV5yOVoOq4YdDCdBhyJ42gSt0Mp1750r5h5L5g44VpZILrimdC6Km4qKZv-Hezu5fwDxKe_W2jgCebP1A7bPTy25kyDlcjJnr85D90VGMVLGPVsj0yNg06U8o22h2C-eyuFVKLCw22vc5OrW65WVFenri_JPqn2RurH-hEcDay6ICT5hvigXhntt99YObwqbn4D21Xb0f6U_UGEoAelql/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJnRPrKxoHmogRBhplZQsXq9w/photos/AaVGc3nKg_NKdFWYGcUgWl8oygVV0bDLZ53grkS3UTAKto198W6ZD7WdQXOU83LhkstKAlP1bbQDxs2rWLjg5TBFU85cQFxSt6XOMer4Nso8v84kzyu6ZkBeuKiBXxrLCjHUOPezax1J8r_OLH0W4LGPht5pRUg-9-GPv9QDF6hlKO5g6kCNs8VDnturXOXFYjJbTa_g2YQuQAfmlJCDGCht8ZP_xow18QRhzcq_ShjVQskJV5yOVoOq4YdDCdBhyJ42gSt0Mp1750r5h5L5g44VpZILrimdC6Km4qKZv-Hezu5fwDxKe_W2jgCebP1A7bPTy25kyDlcjJnr85D90VGMVLGPVsj0yNg06U8o22h2C-eyuFVKLCw22vc5OrW65WVFenri_JPqn2RurH-hEcDay6ICT5hvigXhntt99YObwqbn4D21Xb0f6U_UGEoAelql
+is_cover: false
+sort_order: 9
+caption: STLA_1020
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDKuyaCfLtAZBUhXWOxXpZj!2e10!4m2!3m1!1s0x889a071a2beb139d:0xdcab170b65651a06
+
+--- entity_photos [row 21 of 29] ---
+id: d705298a-37e8-4fcb-9f68-4a3720cf40aa
+entity_slug: del-s-ice-cream
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/f3c475fc-6e0e-43f9-a8f1-00b5bc00b335/image_1.jpg
+is_cover: true
+sort_order: 0
+created_at: 2026-07-19T21:34:52.580929+00:00
+
+--- entity_photos [row 22 of 29] ---
+id: 2f339e92-150b-4cfb-9fbd-19e8e5727fd1
+entity_slug: del-s-ice-cream
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/f3c475fc-6e0e-43f9-a8f1-00b5bc00b335/image_2.jpg
+is_cover: false
+sort_order: 1
+created_at: 2026-07-19T21:34:52.580929+00:00
+
+--- entity_photos [row 23 of 29] ---
+id: b734d635-b80e-4afb-b137-8aa1810a1021
+entity_slug: del-s-ice-cream
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/f3c475fc-6e0e-43f9-a8f1-00b5bc00b335/image_3.jpg
+is_cover: false
+sort_order: 2
+created_at: 2026-07-19T21:34:52.580929+00:00
+
+--- entity_photos [row 24 of 29] ---
+id: 2042b8cd-ac79-4113-a37d-5c74ca99b45d
+entity_slug: del-s-ice-cream
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/b74c1e76-b7fa-4c73-9471-11aaac59417c/image_1.jpg
+is_cover: true
+sort_order: 0
+created_at: 2026-07-19T21:34:52.580929+00:00
+
+--- entity_photos [row 25 of 29] ---
+id: 0ba2e4f1-3cc4-4458-9195-96db47d5cbca
+entity_slug: del-s-ice-cream
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/b74c1e76-b7fa-4c73-9471-11aaac59417c/image_2.jpg
+is_cover: false
+sort_order: 1
+created_at: 2026-07-19T21:34:52.580929+00:00
+
+--- entity_photos [row 26 of 29] ---
+id: cd23dd85-bcd3-4e2f-8861-9b882f20dd10
+entity_slug: del-s-ice-cream
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/b74c1e76-b7fa-4c73-9471-11aaac59417c/image_3.jpg
+is_cover: false
+sort_order: 2
+created_at: 2026-07-19T21:34:52.580929+00:00
+
+--- entity_photos [row 27 of 29] ---
+id: 4b98c1ef-0aa5-4837-b5ed-3879b7f2a08b
+entity_slug: del-s-ice-cream
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/6cc9d574-c97c-448f-a345-60fe9ac7038a/image_2.jpg
+is_cover: false
+sort_order: 101
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 28 of 29] ---
+id: d9afefa1-3a18-4992-8542-7077643cb010
+entity_slug: del-s-ice-cream
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/6cc9d574-c97c-448f-a345-60fe9ac7038a/image_1.jpg
+is_cover: true
+sort_order: 100
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 29 of 29] ---
+id: 0af7b4a4-bd11-4221-89bb-ffe01c1e250f
+entity_slug: del-s-ice-cream
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/6cc9d574-c97c-448f-a345-60fe9ac7038a/image_3.jpg
+is_cover: false
+sort_order: 102
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 7ba2da45-4e4b-4389-90f3-9c1e4487fd6d
+entity_slug: del-s-ice-cream
+reviewer_name: Makenzie Daugherty
+rating: 3
+body: Kendall was awesome and great at explaining every flavor. We were offered delicious samples.  However it was unbearably cold, 56 degrees, which detracted from my experience. This shop is more akin to ice cream in freezer roleplay than patron at a confectionery.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-02-01T19:04:11.065684+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: 5c999483-a1d0-40bf-900d-74e6178c28af
+entity_slug: del-s-ice-cream
+reviewer_name: STLA_1020
+rating: 5
+body: Great ice cream! Great customer service! Lots of ice cream choices and some unique options. I tried the glazed doughnut ice cream and LOVED it. Very different and unique. Would definitely recommend checking this one out
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-09-17T00:09:56.548485+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: 643aa498-eb56-4f67-ae14-7846244b2793
+entity_slug: del-s-ice-cream
+reviewer_name: Jean Watkins
+rating: 5
+body: A young lady named MACY waited on us and about eight other customers that had shown up at the same time as us. She handled the customers fast, efficient and she served each order up to look like a piece of ice-cream art! Good job Macy. Thank you for our delicious ice-cream.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-09-16T23:08:59.065004+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 38f05cdc-5171-47f0-992d-9f8140c0378e
+entity_slug: del-s-ice-cream
+reviewer_name: R Farmland
+rating: 5
+body: Nice clean establishment with very helpful and courteous service. And great ice cream.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-02-15T21:17:16.404202+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 0615c74d-7552-46f9-a2a7-f4fd4f341f39
+entity_slug: del-s-ice-cream
+reviewer_name: Meg Collado
+rating: 5
+body: Del’s Ice Cream has the best to offer when it comes to flavors of ice cream, shakes, sundaes and so much more!! The staff is the best and the atmosphere is the best for your perfect beach weekend getaway or a local night out on the town!! Highly recommend you try it out, you won’t regret it!!🤍🤍
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-03-07T16:28:56.275499+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_sources   -   1 row(s)
+####################################################################################################
+
+--- entity_sources [row 1 of 1] ---
+id: 41bb6c7d-db63-4d5d-bd69-c4c1d225f575
+entity_slug: del-s-ice-cream
+source_system: gulfshores.com restaurant-dining directory
+source_url: https://www.gulfshores.com/restaurants/?page=3
+scope: directory-listing
+confidence: high
+note: All Restaurants
+created_at: 2026-07-16T12:32:02.549024+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   167 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 167] ---
+id: 95c1e4cc-c82b-4dbe-8f96-864d007eaf31
+entity_slug: del-s-ice-cream
+tag_name: ice_cream_shop
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 167] ---
+id: e3dfacf5-c21e-41d8-9fc7-bc31d50654bf
+entity_slug: del-s-ice-cream
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 3 of 167] ---
+id: bb56100f-e9e9-4ad3-aeb6-9c3aefae45d4
+entity_slug: del-s-ice-cream
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 4 of 167] ---
+id: c415376e-d087-4ccb-b7b3-6f074c5aa759
+entity_slug: del-s-ice-cream
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 5 of 167] ---
+id: 5b881523-a091-4da1-abe0-0792169ff6a1
+entity_slug: del-s-ice-cream
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 6 of 167] ---
+id: 00ecfd52-6263-4e5c-b793-bbb5350ca90b
+entity_slug: del-s-ice-cream
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 7 of 167] ---
+id: e59995d0-24f8-4ba9-9c7a-c8ae5ee4224e
+entity_slug: del-s-ice-cream
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 8 of 167] ---
+id: 9af3228d-1613-4274-90ec-42e7cb5c58ed
+entity_slug: del-s-ice-cream
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 9 of 167] ---
+id: 4328b8d5-3095-4c9b-8072-87da97400290
+entity_slug: del-s-ice-cream
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 10 of 167] ---
+id: 9cc51451-930f-44b0-952d-52778165e01f
+entity_slug: del-s-ice-cream
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 11 of 167] ---
+id: 3b14cb3a-f072-4771-afdd-eb780f243432
+entity_slug: del-s-ice-cream
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 12 of 167] ---
+id: 37b50a8e-6f9b-45bc-999a-dee6d57f4db5
+entity_slug: del-s-ice-cream
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 13 of 167] ---
+id: b98a7728-7144-4368-ba85-c6625fbbba3e
+entity_slug: del-s-ice-cream
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 14 of 167] ---
+id: 552ff2d4-2029-421f-abb3-79b79bfe1359
+entity_slug: del-s-ice-cream
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 15 of 167] ---
+id: 9a755a40-3ca2-494f-8e56-c146ef0d4ca6
+entity_slug: del-s-ice-cream
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 16 of 167] ---
+id: 431df55c-4cb4-4153-8a82-17e8cb20fd4e
+entity_slug: del-s-ice-cream
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 17 of 167] ---
+id: 67ee94c3-d8b8-4bf3-8020-ff4019faef90
+entity_slug: del-s-ice-cream
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 18 of 167] ---
+id: 72afeec4-fcd1-4195-b936-02a5db7f5054
+entity_slug: del-s-ice-cream
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 19 of 167] ---
+id: 95406d2f-4276-4817-805e-45c7ab652486
+entity_slug: del-s-ice-cream
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 20 of 167] ---
+id: 2bc7cc07-ec7d-4ff1-9406-169699322abb
+entity_slug: del-s-ice-cream
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 21 of 167] ---
+id: 6ba40041-2f00-492b-a075-90fe1037fe5f
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 22 of 167] ---
+id: 90112e02-68a1-4e53-a912-c5ab3da6c138
+entity_slug: del-s-ice-cream
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 23 of 167] ---
+id: b8b37f38-608c-49e0-acda-85de85c72707
+entity_slug: del-s-ice-cream
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 24 of 167] ---
+id: 9f1106e2-30d2-47ed-a964-5c3b50f02bc1
+entity_slug: del-s-ice-cream
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 25 of 167] ---
+id: 77b85932-c615-427a-bea7-f49322aa6d0b
+entity_slug: del-s-ice-cream
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 26 of 167] ---
+id: 9609a573-e34d-4ad9-a1e5-74cf92592d69
+entity_slug: del-s-ice-cream
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 27 of 167] ---
+id: 17e7499b-e114-41cf-83cc-e54c4be08cc7
+entity_slug: del-s-ice-cream
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 28 of 167] ---
+id: e649ee15-e889-4fe5-98dc-fb1350b540b1
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 29 of 167] ---
+id: a175dd17-8276-4ad7-aac2-d16d97773aa8
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleSeating
+tag_category: accessibility
+
+--- entity_tags [row 30 of 167] ---
+id: e0f1cba5-eaab-48dd-85f0-0b3e17740a07
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 31 of 167] ---
+id: c5e3329c-be0c-4ade-a93e-4391bc463592
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 32 of 167] ---
+id: 7b33ba2c-7941-4782-8044-7bf1fb2c7ddc
+entity_slug: del-s-ice-cream
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 33 of 167] ---
+id: 0f05d688-fc98-46fa-b857-72ac2b20bbbb
+entity_slug: del-s-ice-cream
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 34 of 167] ---
+id: 00beb060-95b2-478a-842a-0a5d62c68393
+entity_slug: del-s-ice-cream
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 35 of 167] ---
+id: 6cdaa465-c6f6-4403-8929-96e5259aa639
+entity_slug: del-s-ice-cream
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 36 of 167] ---
+id: 0218b2e8-6e50-43e1-a332-a2651c825942
+entity_slug: del-s-ice-cream
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 37 of 167] ---
+id: 0db0f81f-3bf2-44b0-91d5-080afc9a821a
+entity_slug: del-s-ice-cream
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 38 of 167] ---
+id: 80791f01-58c0-4dfc-9d2c-6daec4ad59e0
+entity_slug: del-s-ice-cream
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 39 of 167] ---
+id: 2cc6c46c-e953-47a6-ab87-3870bc828ddb
+entity_slug: del-s-ice-cream
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 40 of 167] ---
+id: 57e2637d-bb0b-41d8-9bcc-fbb82aa6cb45
+entity_slug: del-s-ice-cream
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 41 of 167] ---
+id: 1d7c3c7a-62ad-482c-b7df-43bf3136c075
+entity_slug: del-s-ice-cream
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 42 of 167] ---
+id: 444f5d6c-4bf7-49b4-b18e-c7147183729a
+entity_slug: del-s-ice-cream
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 43 of 167] ---
+id: ab447112-0985-455b-bcee-3e7e4b5ad35f
+entity_slug: del-s-ice-cream
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 44 of 167] ---
+id: 47c39384-7c71-4d33-accf-2fe0bbeaeacf
+entity_slug: del-s-ice-cream
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 45 of 167] ---
+id: d457d187-ca23-4da5-bc80-ccc7c6335c31
+entity_slug: del-s-ice-cream
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 46 of 167] ---
+id: 474176f1-f085-4385-b477-8cc07ad26bf7
+entity_slug: del-s-ice-cream
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 47 of 167] ---
+id: 8a558664-225f-487d-b312-57a3efbc28db
+entity_slug: del-s-ice-cream
+tag_name: ice_cream_shop
+tag_category: google_primary_type
+
+--- entity_tags [row 48 of 167] ---
+id: 00ab8214-40d0-4012-84dc-cd612ac8d175
+entity_slug: del-s-ice-cream
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 49 of 167] ---
+id: 99f1c174-abff-4cca-9da9-9a30ebf37055
+entity_slug: del-s-ice-cream
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 50 of 167] ---
+id: 0803b76c-6b63-474a-81cf-dc922df693b9
+entity_slug: del-s-ice-cream
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 51 of 167] ---
+id: 73190300-2ab6-493e-9a1a-74ece95b7ee8
+entity_slug: del-s-ice-cream
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 52 of 167] ---
+id: 67ec1954-d51a-4ede-8524-63a8f1659e8c
+entity_slug: del-s-ice-cream
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 53 of 167] ---
+id: 1e1a94c8-c5a4-48f2-b8d0-76cb3d70da09
+entity_slug: del-s-ice-cream
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 54 of 167] ---
+id: a5a39fb9-a4d8-4c90-b2ea-1b67f4f05796
+entity_slug: del-s-ice-cream
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 55 of 167] ---
+id: 7cd632a9-b045-4cfc-998c-60642c35726e
+entity_slug: del-s-ice-cream
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 56 of 167] ---
+id: 35612147-8136-48b2-9ecb-ab7f9d6ebecf
+entity_slug: del-s-ice-cream
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 57 of 167] ---
+id: 4aa96fbf-9ef0-4aeb-9a10-8620bf9cde53
+entity_slug: del-s-ice-cream
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 58 of 167] ---
+id: c0cc2868-7c14-4dc3-9624-4e1bd5008a31
+entity_slug: del-s-ice-cream
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 59 of 167] ---
+id: f48bcd3d-9f27-4152-bf03-64bc5e50365b
+entity_slug: del-s-ice-cream
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 60 of 167] ---
+id: 57da4c28-96a9-428f-b4a5-375f38d83aee
+entity_slug: del-s-ice-cream
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 61 of 167] ---
+id: 0a21e6d3-ee60-469b-8333-ac6467c84588
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 62 of 167] ---
+id: f5868a24-9ec1-457b-98e8-fecfe91c8173
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleSeating
+tag_category: accessibility
+
+--- entity_tags [row 63 of 167] ---
+id: 9c91a646-4bb6-4b66-bf64-c1ef55474801
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 64 of 167] ---
+id: 060130af-a424-4f75-844e-0d63f8af1471
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 65 of 167] ---
+id: 89f8af0e-f23e-4073-a011-ad3612fad15f
+entity_slug: del-s-ice-cream
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 66 of 167] ---
+id: 030c3755-881d-4b1a-841d-469bc25a5631
+entity_slug: del-s-ice-cream
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 67 of 167] ---
+id: 6ae5ca80-2d9a-4d50-85ad-d6d7bf28b765
+entity_slug: del-s-ice-cream
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 68 of 167] ---
+id: 9a5bde55-ad48-4bf6-9970-e9a5ec6a61c5
+entity_slug: del-s-ice-cream
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 69 of 167] ---
+id: 7c0d96c7-c24d-489c-8577-8485e51c5b53
+entity_slug: del-s-ice-cream
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 70 of 167] ---
+id: df82c506-eedf-432f-9d75-941d96d3daf4
+entity_slug: del-s-ice-cream
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 71 of 167] ---
+id: a8c9f7b1-aca8-484c-8379-e1bd7489711e
+entity_slug: del-s-ice-cream
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 72 of 167] ---
+id: 6795e994-c91f-4942-831b-a9c12f407065
+entity_slug: del-s-ice-cream
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 73 of 167] ---
+id: 72571e9b-15ba-479f-98a4-e830b29184bd
+entity_slug: del-s-ice-cream
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 74 of 167] ---
+id: daf2821f-19b9-4b50-9b05-8dcd7e483fdc
+entity_slug: del-s-ice-cream
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 75 of 167] ---
+id: 022c2c2b-3caa-4180-9112-7195afab9dcb
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 76 of 167] ---
+id: 1108161a-ae84-4a96-bcb8-2c39a687797a
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleSeating
+tag_category: accessibility
+
+--- entity_tags [row 77 of 167] ---
+id: 5bac8cf4-48e0-46a0-ad3d-632bd67ff47d
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 78 of 167] ---
+id: 8c64be3a-a6c3-43ca-87a9-2be3dd123a34
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 79 of 167] ---
+id: 59d4f57a-9704-4c88-a8f8-b20936ff87c7
+entity_slug: del-s-ice-cream
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 80 of 167] ---
+id: 10385904-b317-4df2-a998-474df1834c99
+entity_slug: del-s-ice-cream
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 81 of 167] ---
+id: cb5490e0-099c-4ba5-b5c4-2a34fb3a6f02
+entity_slug: del-s-ice-cream
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 82 of 167] ---
+id: 77b05660-e3ec-41f1-bc00-cc38e7dfbdb6
+entity_slug: del-s-ice-cream
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 83 of 167] ---
+id: 53ab3ce5-d306-4e2e-9dd9-e98a72d41de0
+entity_slug: del-s-ice-cream
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 84 of 167] ---
+id: c89b597d-b221-48af-8042-78609dd4e6a3
+entity_slug: del-s-ice-cream
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 85 of 167] ---
+id: 9a238343-ff9b-48fb-9c4c-d34bbfbace23
+entity_slug: del-s-ice-cream
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 86 of 167] ---
+id: e9c5a75b-6189-4a78-8a1e-3ba26a9e4090
+entity_slug: del-s-ice-cream
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 87 of 167] ---
+id: a1426de0-626a-4a14-b3fb-942f39a475fd
+entity_slug: del-s-ice-cream
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 88 of 167] ---
+id: c0f456f4-9720-4b16-ab79-bf372d7aeee6
+entity_slug: del-s-ice-cream
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 89 of 167] ---
+id: b12ac05e-e7ff-4dbf-9a0a-17a88980cefc
+entity_slug: del-s-ice-cream
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 90 of 167] ---
+id: 15042878-e2bb-4847-90f8-6bf0f946794a
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 91 of 167] ---
+id: c42bb18c-6398-4a17-8163-1cbfb62dfd10
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleSeating
+tag_category: accessibility
+
+--- entity_tags [row 92 of 167] ---
+id: 2f4ab576-f6e0-44e5-ba2e-74c40839bac1
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 93 of 167] ---
+id: d7baf595-3e50-4596-9fc5-7ba1a6336762
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 94 of 167] ---
+id: c3304466-baed-49ee-aab4-1b0788733d2f
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleSeating
+tag_category: accessibility
+
+--- entity_tags [row 95 of 167] ---
+id: 2a742b1d-31a4-4dd0-a5b0-1b7754bcee80
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 96 of 167] ---
+id: dd25acf3-bf5f-493a-865e-b17213024a53
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 97 of 167] ---
+id: 665f13bc-c305-4fb7-bc19-45c94ea54034
+entity_slug: del-s-ice-cream
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 98 of 167] ---
+id: e2732ab2-b303-4675-86ea-5dbb4dfb7de0
+entity_slug: del-s-ice-cream
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 99 of 167] ---
+id: f4cd1f8d-7090-45f3-bb3d-5a626f84b3e9
+entity_slug: del-s-ice-cream
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 100 of 167] ---
+id: b1da6bcd-5f67-434c-a015-f0d8249ece1b
+entity_slug: del-s-ice-cream
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 101 of 167] ---
+id: 7495603d-3d8d-4db6-8432-251fae199a15
+entity_slug: del-s-ice-cream
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 102 of 167] ---
+id: 7781c941-7454-4543-a8d0-2ff10bd9c8c1
+entity_slug: del-s-ice-cream
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 103 of 167] ---
+id: d8ad3e0f-af3f-4aa5-869b-5d8e177fc625
+entity_slug: del-s-ice-cream
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 104 of 167] ---
+id: 246d1a7b-24ec-4331-a3b4-4dac3e698d2a
+entity_slug: del-s-ice-cream
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 105 of 167] ---
+id: 669872fe-7fd1-4edf-9aee-2674c4ff0a68
+entity_slug: del-s-ice-cream
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 106 of 167] ---
+id: aa89ba8d-8604-4037-915f-40e35609d6a1
+entity_slug: del-s-ice-cream
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 107 of 167] ---
+id: 7db6dbeb-3227-473c-8b07-6c95b1e12bb2
+entity_slug: del-s-ice-cream
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 108 of 167] ---
+id: 1e7fd881-d2c8-43c8-95a0-18ada5c4df41
+entity_slug: del-s-ice-cream
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 109 of 167] ---
+id: f2f5d3ff-e2b7-4b2f-98df-d50523fe0ff2
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 110 of 167] ---
+id: e8a2772a-f485-4c3e-9ec6-b4a4267b4968
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleSeating
+tag_category: accessibility
+
+--- entity_tags [row 111 of 167] ---
+id: b7d5338a-d62a-424d-84bf-9befb5e481e2
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 112 of 167] ---
+id: 67ab50d8-e62c-4207-8aee-e084588e34e3
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 113 of 167] ---
+id: 8b41b16c-0111-42a6-833d-407d982f1cc0
+entity_slug: del-s-ice-cream
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 114 of 167] ---
+id: 84e8bfea-4f8c-403a-997c-45d906b3abc0
+entity_slug: del-s-ice-cream
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 115 of 167] ---
+id: 3fe8f5bb-1408-4c61-9910-39dcc901c32d
+entity_slug: del-s-ice-cream
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 116 of 167] ---
+id: 96deaada-3df0-47cc-8c62-79a50259d47d
+entity_slug: del-s-ice-cream
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 117 of 167] ---
+id: 5133a392-0b6a-43bd-8fc6-abca635cf828
+entity_slug: del-s-ice-cream
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 118 of 167] ---
+id: b2c705e4-f7a4-4141-928b-aac33210b105
+entity_slug: del-s-ice-cream
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 119 of 167] ---
+id: 8d8cb372-a3c2-49de-bdb9-02aa9b6e5858
+entity_slug: del-s-ice-cream
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 120 of 167] ---
+id: 35b406ac-0bc8-4029-89d3-e1bf379a80aa
+entity_slug: del-s-ice-cream
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 121 of 167] ---
+id: bbbdc0de-0a78-45a8-9dcd-3092b8cecb73
+entity_slug: del-s-ice-cream
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 122 of 167] ---
+id: 4ef90326-c50c-4772-b170-3235f14e0cf5
+entity_slug: del-s-ice-cream
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 123 of 167] ---
+id: c642d16d-3fe6-42ea-a0a8-fc2c76662cec
+entity_slug: del-s-ice-cream
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 124 of 167] ---
+id: af26cd4a-9c05-4c15-8bd2-e025dbb93dec
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 125 of 167] ---
+id: 0836cfae-6f71-4425-9f47-871fd07820f0
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleSeating
+tag_category: accessibility
+
+--- entity_tags [row 126 of 167] ---
+id: c841fc36-e7f0-43d3-b37d-01a4faeaceda
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 127 of 167] ---
+id: d239835f-3abe-40ab-b595-58cc79872e9b
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 128 of 167] ---
+id: 591dd6e0-c2c0-4b5e-8508-e27b3465728c
+entity_slug: del-s-ice-cream
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 129 of 167] ---
+id: 291361de-fa0d-4313-84a2-72fc003797cf
+entity_slug: del-s-ice-cream
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 130 of 167] ---
+id: ba87aeb9-151a-42b7-a39a-5cec05c9dd09
+entity_slug: del-s-ice-cream
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 131 of 167] ---
+id: 32207691-47f5-4164-b02e-e52e3c94d405
+entity_slug: del-s-ice-cream
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 132 of 167] ---
+id: 9bacbe23-6fce-4b9d-a2f9-75819232992d
+entity_slug: del-s-ice-cream
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 133 of 167] ---
+id: b6bd326f-14a8-42fe-af75-ee6591d207f0
+entity_slug: del-s-ice-cream
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 134 of 167] ---
+id: 3d727a87-bb6a-4691-9f83-091b0fed8bfe
+entity_slug: del-s-ice-cream
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 135 of 167] ---
+id: d97e654e-9683-4e97-8c12-8ed931cfe3e8
+entity_slug: del-s-ice-cream
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 136 of 167] ---
+id: 2c76482c-fc83-4821-bc46-e371d4259ccb
+entity_slug: del-s-ice-cream
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 137 of 167] ---
+id: 2b8bde96-caae-4afa-a515-ea367772914c
+entity_slug: del-s-ice-cream
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 138 of 167] ---
+id: 98eb120f-0192-4980-a5df-14adbe451a05
+entity_slug: del-s-ice-cream
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 139 of 167] ---
+id: a77d6016-31be-42e8-9eb8-79a0ffa5afa4
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 140 of 167] ---
+id: 7f18c654-c32b-42f2-a7ff-ffa88045ed21
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleSeating
+tag_category: accessibility
+
+--- entity_tags [row 141 of 167] ---
+id: 915362ad-1a53-4ab9-b4c7-0856de1211bf
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 142 of 167] ---
+id: 40d1f979-cb48-434a-8baf-a565520f275d
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 143 of 167] ---
+id: 718d8035-6112-43a0-a204-3af92dbac901
+entity_slug: del-s-ice-cream
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 144 of 167] ---
+id: 07e9d9f1-4b56-45af-9a52-90c3b8f4678a
+entity_slug: del-s-ice-cream
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 145 of 167] ---
+id: e5f40b2f-871d-4898-87e6-75a1a4665994
+entity_slug: del-s-ice-cream
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 146 of 167] ---
+id: c3e2c410-3a51-455b-b849-1a32b0d37c28
+entity_slug: del-s-ice-cream
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 147 of 167] ---
+id: c15fb9e6-78cd-426b-97ad-22dfd8c959a3
+entity_slug: del-s-ice-cream
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 148 of 167] ---
+id: 57804958-3eaf-4c10-bb7d-49be399e2d8c
+entity_slug: del-s-ice-cream
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 149 of 167] ---
+id: 6fbd9d8b-923f-4020-bc09-338d3e2447a0
+entity_slug: del-s-ice-cream
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 150 of 167] ---
+id: 97285969-871f-4dc5-9e84-67fee1ee4eff
+entity_slug: del-s-ice-cream
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 151 of 167] ---
+id: acddb524-d416-4224-90dd-cf7d9b037f35
+entity_slug: del-s-ice-cream
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 152 of 167] ---
+id: 4a90c1ac-973d-4542-a1a5-7ff323f73b1f
+entity_slug: del-s-ice-cream
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 153 of 167] ---
+id: 91acb40f-77a8-4f7a-bcaf-7a68a4cbc51c
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 154 of 167] ---
+id: 6cc471c3-bf59-40f0-b92b-ac91d20cc039
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleSeating
+tag_category: accessibility
+
+--- entity_tags [row 155 of 167] ---
+id: 51022952-65f1-4c41-a5fc-9cc4cea06682
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 156 of 167] ---
+id: a00d699e-e305-45f1-b807-ce3b35cce4f8
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 157 of 167] ---
+id: b3850da0-39d4-4ecf-9804-7a5134fdbe59
+entity_slug: del-s-ice-cream
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 158 of 167] ---
+id: 1f23d4a3-ff0a-447d-9ec0-17addc43dcd8
+entity_slug: del-s-ice-cream
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 159 of 167] ---
+id: 60816d16-5c9c-4062-9873-6df357e14518
+entity_slug: del-s-ice-cream
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 160 of 167] ---
+id: f7587e4e-e470-4404-97c3-e66ef5464139
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 161 of 167] ---
+id: 8940339b-3b0c-4166-ae06-3de2fb995f4f
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleSeating
+tag_category: accessibility
+
+--- entity_tags [row 162 of 167] ---
+id: 693c6264-1671-47d8-b4c2-81273cf5fdcc
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 163 of 167] ---
+id: 250c0135-f2f9-4c63-941e-fe53ce4cb603
+entity_slug: del-s-ice-cream
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 164 of 167] ---
+id: b45da762-3ca7-486c-b2da-c26bb5b7887c
+entity_slug: del-s-ice-cream
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 165 of 167] ---
+id: 160d4827-e03d-498b-a136-6e2a9d931254
+entity_slug: del-s-ice-cream
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 166 of 167] ---
+id: c9b7d462-e1e9-48ec-9c8d-686f6fe8a08c
+entity_slug: del-s-ice-cream
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 167 of 167] ---
+id: a6a00f68-2bed-4936-9f4d-7150a55fa425
+entity_slug: del-s-ice-cream
+tag_name: All Restaurants
+tag_category: dining
+
+####################################################################################################
+# TABLE: entity_theme   -   3 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 3] ---
+id: d90e4283-24d0-436b-b620-dee4fc2f2456
+entity_slug: del-s-ice-cream
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+--- entity_theme [row 2 of 3] ---
+id: 71e0c448-b115-44c0-9891-e648789d2583
+entity_slug: del-s-ice-cream
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+--- entity_theme [row 3 of 3] ---
+id: d8b45427-2441-4afc-94ab-58e316009d68
+entity_slug: del-s-ice-cream
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_cafe_dessert   -   1 row(s)
+####################################################################################################
+
+--- industry_cafe_dessert [row 1 of 1] ---
+entity_slug: del-s-ice-cream
+cafe_type: ice_cream_shop
+serves_coffee: true
+has_seating: true
+good_for_kids: true
+takeout: true
+delivery: false
+updated_at: 2026-07-21T16:19:16.291607+00:00
+
+####################################################################################################
+# TABLE: industry_food_beverage   -   1 row(s)
+####################################################################################################
+
+--- industry_food_beverage [row 1 of 1] ---
+entity_slug: del-s-ice-cream
+menu_section_count: 0
+menu_item_count: 0
+serves_coffee: true
+serves_vegetarian: false
+dine_in: true
+takeout: true
+delivery: false
+curbside_pickup: false
+good_for_kids: false
+good_for_groups: true
+has_happy_hour: false
+updated_at: 2026-07-20T03:16:49.206863+00:00
+
+####################################################################################################
+# TABLE: legacy_photo_migration_queue   -   3 row(s)
+####################################################################################################
+
+--- legacy_photo_migration_queue [row 1 of 3] ---
+id: 2182
+entity_slug: del-s-ice-cream
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/6cc9d574-c97c-448f-a345-60fe9ac7038a/image_2.jpg
+is_cover: false
+sort_order: 101
+status: linked_legacy
+created_at: 2026-07-26T00:36:20.285499+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 2 of 3] ---
+id: 2006
+entity_slug: del-s-ice-cream
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/6cc9d574-c97c-448f-a345-60fe9ac7038a/image_1.jpg
+is_cover: true
+sort_order: 100
+status: linked_legacy
+created_at: 2026-07-26T00:36:20.285499+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 3 of 3] ---
+id: 2748
+entity_slug: del-s-ice-cream
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/6cc9d574-c97c-448f-a345-60fe9ac7038a/image_3.jpg
+is_cover: false
+sort_order: 102
+status: linked_legacy
+created_at: 2026-07-26T00:36:20.285499+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: recovery_import_log   -   22 row(s)
+####################################################################################################
+
+--- recovery_import_log [row 1 of 22] ---
+id: 2e32b5f5-68f9-4675-9080-f93beeb89687
+batch_id: draft-businesses-netnew-2026-07-19
+target_table: entity
+target_row_id: d53e724d-b781-4179-8d74-38578f2ecbe4
+entity_slug: del-s-ice-cream
+source_db: march
+source_table: entity
+source_id: f3c475fc-6e0e-43f9-a8f1-00b5bc00b335
+action: insert
+imported_at: 2026-07-19T20:15:16.212088+00:00
+
+--- recovery_import_log [row 2 of 22] ---
+id: 75e04f09-56ff-4d2c-bb16-7d2d7ce441b0
+batch_id: draft-content-march-photos-2026-07-19
+target_table: entity_photos
+target_row_id: d705298a-37e8-4fcb-9f68-4a3720cf40aa
+entity_slug: del-s-ice-cream
+source_db: march
+source_table: entity_photos
+source_id: f3c475fc-6e0e-43f9-a8f1-00b5bc00b335
+action: insert
+imported_at: 2026-07-19T21:34:52.580929+00:00
+
+--- recovery_import_log [row 3 of 22] ---
+id: 87a8e86f-037c-4a15-bf2f-95de6f8a0d32
+batch_id: draft-content-march-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 2f339e92-150b-4cfb-9fbd-19e8e5727fd1
+entity_slug: del-s-ice-cream
+source_db: march
+source_table: entity_photos
+source_id: f3c475fc-6e0e-43f9-a8f1-00b5bc00b335
+action: insert
+imported_at: 2026-07-19T21:34:52.580929+00:00
+
+--- recovery_import_log [row 4 of 22] ---
+id: fe27ec02-a570-4570-8739-a19d3c44ac91
+batch_id: draft-content-march-photos-2026-07-19
+target_table: entity_photos
+target_row_id: b734d635-b80e-4afb-b137-8aa1810a1021
+entity_slug: del-s-ice-cream
+source_db: march
+source_table: entity_photos
+source_id: f3c475fc-6e0e-43f9-a8f1-00b5bc00b335
+action: insert
+imported_at: 2026-07-19T21:34:52.580929+00:00
+
+--- recovery_import_log [row 5 of 22] ---
+id: ad66c59b-5450-43f2-a737-440a98da0b35
+batch_id: draft-content-march-hours-2026-07-19
+target_table: entity_hours
+target_row_id: 86ee2538-5df6-4188-ae30-1a4e945ababe
+entity_slug: del-s-ice-cream
+source_db: march
+source_table: entity_hours
+action: insert
+imported_at: 2026-07-19T22:02:07.57557+00:00
+
+--- recovery_import_log [row 6 of 22] ---
+id: 49c55bb5-e1b7-4054-9640-0c84502041be
+batch_id: draft-content-march-hours-2026-07-19
+target_table: entity_hours
+target_row_id: 291f5836-1f69-44f8-abb7-455d629ecad8
+entity_slug: del-s-ice-cream
+source_db: march
+source_table: entity_hours
+action: insert
+imported_at: 2026-07-19T22:02:07.57557+00:00
+
+--- recovery_import_log [row 7 of 22] ---
+id: 48b4805b-02c7-4e6d-892c-ba2c16b3feee
+batch_id: draft-content-march-hours-2026-07-19
+target_table: entity_hours
+target_row_id: ef5d8208-5926-4d60-8ee8-0608a908b2eb
+entity_slug: del-s-ice-cream
+source_db: march
+source_table: entity_hours
+action: insert
+imported_at: 2026-07-19T22:02:07.57557+00:00
+
+--- recovery_import_log [row 8 of 22] ---
+id: 50b90e6f-7663-4433-a49d-3e0b02aa30d8
+batch_id: draft-content-march-hours-2026-07-19
+target_table: entity_hours
+target_row_id: eb8446a7-cd24-4a91-a794-755f4a5f4a43
+entity_slug: del-s-ice-cream
+source_db: march
+source_table: entity_hours
+action: insert
+imported_at: 2026-07-19T22:02:07.57557+00:00
+
+--- recovery_import_log [row 9 of 22] ---
+id: dd0563fb-6b85-4cd2-81b4-7790b0abe5a7
+batch_id: draft-content-march-hours-2026-07-19
+target_table: entity_hours
+target_row_id: 0072286d-66e0-49e9-8265-466b5389ff74
+entity_slug: del-s-ice-cream
+source_db: march
+source_table: entity_hours
+action: insert
+imported_at: 2026-07-19T22:02:07.57557+00:00
+
+--- recovery_import_log [row 10 of 22] ---
+id: 66455071-2967-4733-81e7-20bf14516d08
+batch_id: draft-content-march-hours-2026-07-19
+target_table: entity_hours
+target_row_id: 8afeeb04-4462-4c1e-bec3-313b12c6f370
+entity_slug: del-s-ice-cream
+source_db: march
+source_table: entity_hours
+action: insert
+imported_at: 2026-07-19T22:02:07.57557+00:00
+
+--- recovery_import_log [row 11 of 22] ---
+id: a6deadde-a150-43f3-88d2-7f56d44f122c
+batch_id: draft-content-march-hours-2026-07-19
+target_table: entity_hours
+target_row_id: 9b61b298-366d-447d-bfd0-9fb4228ba76e
+entity_slug: del-s-ice-cream
+source_db: march
+source_table: entity_hours
+action: insert
+imported_at: 2026-07-19T22:02:07.57557+00:00
+
+--- recovery_import_log [row 12 of 22] ---
+id: 89e04280-4392-4694-bc97-420ba6d35916
+batch_id: draft-businesses-netnew-2026-07-19
+target_table: entity
+target_row_id: 11807e9a-fa58-4d40-96f9-a2add69f89c1
+entity_slug: del-s-ice-cream
+source_db: march
+source_table: entity
+source_id: b74c1e76-b7fa-4c73-9471-11aaac59417c
+action: insert
+imported_at: 2026-07-19T20:15:16.212088+00:00
+
+--- recovery_import_log [row 13 of 22] ---
+id: 6cfb2c88-23e2-415a-a9b2-3364b3b621f5
+batch_id: draft-content-march-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 2042b8cd-ac79-4113-a37d-5c74ca99b45d
+entity_slug: del-s-ice-cream
+source_db: march
+source_table: entity_photos
+source_id: b74c1e76-b7fa-4c73-9471-11aaac59417c
+action: insert
+imported_at: 2026-07-19T21:34:52.580929+00:00
+
+--- recovery_import_log [row 14 of 22] ---
+id: 2f7fd054-1cd7-42df-b3c0-132afcdb944b
+batch_id: draft-content-march-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 0ba2e4f1-3cc4-4458-9195-96db47d5cbca
+entity_slug: del-s-ice-cream
+source_db: march
+source_table: entity_photos
+source_id: b74c1e76-b7fa-4c73-9471-11aaac59417c
+action: insert
+imported_at: 2026-07-19T21:34:52.580929+00:00
+
+--- recovery_import_log [row 15 of 22] ---
+id: a2f8d0cb-4d48-423b-96bb-e40ac0e34a55
+batch_id: draft-content-march-photos-2026-07-19
+target_table: entity_photos
+target_row_id: cd23dd85-bcd3-4e2f-8861-9b882f20dd10
+entity_slug: del-s-ice-cream
+source_db: march
+source_table: entity_photos
+source_id: b74c1e76-b7fa-4c73-9471-11aaac59417c
+action: insert
+imported_at: 2026-07-19T21:34:52.580929+00:00
+
+--- recovery_import_log [row 16 of 22] ---
+id: c9241913-d488-4b27-b099-bc3fd677b72c
+batch_id: draft-content-march-hours-2026-07-19
+target_table: entity_hours
+target_row_id: bfbd4a84-16fc-4c20-81e3-074fdb54d7da
+entity_slug: del-s-ice-cream
+source_db: march
+source_table: entity_hours
+action: insert
+imported_at: 2026-07-19T22:02:07.57557+00:00
+
+--- recovery_import_log [row 17 of 22] ---
+id: 102cb2b3-7d2f-48c3-a9f1-a5306cea02dc
+batch_id: draft-content-march-hours-2026-07-19
+target_table: entity_hours
+target_row_id: 15db8e24-e25b-471a-aaad-97afddf25bf9
+entity_slug: del-s-ice-cream
+source_db: march
+source_table: entity_hours
+action: insert
+imported_at: 2026-07-19T22:02:07.57557+00:00
+
+--- recovery_import_log [row 18 of 22] ---
+id: b803e020-c357-4244-b3dc-bf33f2376b3b
+batch_id: draft-content-march-hours-2026-07-19
+target_table: entity_hours
+target_row_id: 57d4a4fa-b817-4759-93e4-645281b42c05
+entity_slug: del-s-ice-cream
+source_db: march
+source_table: entity_hours
+action: insert
+imported_at: 2026-07-19T22:02:07.57557+00:00
+
+--- recovery_import_log [row 19 of 22] ---
+id: 458a96d8-0777-4ac9-8808-5e3dfa80ec31
+batch_id: draft-content-march-hours-2026-07-19
+target_table: entity_hours
+target_row_id: a4fbcc2e-7135-4625-b192-2989d863dd2a
+entity_slug: del-s-ice-cream
+source_db: march
+source_table: entity_hours
+action: insert
+imported_at: 2026-07-19T22:02:07.57557+00:00
+
+--- recovery_import_log [row 20 of 22] ---
+id: 74b358a0-0914-40fd-b79c-ec35bbff2224
+batch_id: draft-content-march-hours-2026-07-19
+target_table: entity_hours
+target_row_id: b3255777-30d1-4559-944a-56d0fc642360
+entity_slug: del-s-ice-cream
+source_db: march
+source_table: entity_hours
+action: insert
+imported_at: 2026-07-19T22:02:07.57557+00:00
+
+--- recovery_import_log [row 21 of 22] ---
+id: 9d66490f-0bc0-4d8e-9bbb-f2913a55f7bc
+batch_id: draft-content-march-hours-2026-07-19
+target_table: entity_hours
+target_row_id: ddf6c034-13a4-4e8c-ab79-fe024f2a46d7
+entity_slug: del-s-ice-cream
+source_db: march
+source_table: entity_hours
+action: insert
+imported_at: 2026-07-19T22:02:07.57557+00:00
+
+--- recovery_import_log [row 22 of 22] ---
+id: f38b5bb1-93ee-4a46-ac4a-52e6160541ca
+batch_id: draft-content-march-hours-2026-07-19
+target_table: entity_hours
+target_row_id: ef5d93ef-88ef-4f5f-a24a-443660bbe6d0
+entity_slug: del-s-ice-cream
+source_db: march
+source_table: entity_hours
+action: insert
+imported_at: 2026-07-19T22:02:07.57557+00:00
+
+####################################################################################################
+# TABLE: search_index   -   1 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 1] ---
+ref_type: business
+ref_id: del-s-ice-cream
+entity_slug: del-s-ice-cream
+title: Del's Ice Cream
+category: ice_cream_shop
+subtitle: Del's Homemade Ice Cream serves Cammies Old Dutch, award winning ice cream. They offer 36 delicious, unique, homemade ice cream flavors in store and rotate through 80 different flavors daily. Del's offers Sundaes, Banana splits, milkshakes, and floats, as well as signature options. They also offer dairy free and sugar free options.
+search_vector: '36':23C '80':35C 'also':54C 'award':17C 'banana':43C 'cammi':14C 'cream':4A,6B,12C,20C,28C 'daili':38C 'dairi':56C 'del':1A,8C,39C 'delici':24C 'differ':36C 'dutch':16C 'flavor':29C,37C 'float':47C 'free':57C,60C 'homemad':10C,26C 'ice':3A,5B,11C,19C,27C 'milkshak':45C 'offer':22C,41C,55C 'old':15C 'option':52C,61C 'rotat':33C 'serv':13C 'shop':7B 'signatur':51C 'split':44C 'store':31C 'sugar':59C 'sunda':42C 'uniqu':25C 'well':49C 'win':18C
+
+####################################################################################################
+# TABLE: tourist_saves   -   1 row(s)
+####################################################################################################
+
+--- tourist_saves [row 1 of 1] ---
+id: 9cc4442d-39b4-4e9e-b301-6078f46a9428
+user_id: 0eae72e6-2535-424e-bd65-024879c35e40
+entity_id: 208b814d-45a9-428d-8abd-d9170700c9c0
+entity_slug: del-s-ice-cream
+business_name: Del's Ice Cream
+hero_image_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/f3c475fc-6e0e-43f9-a8f1-00b5bc00b335/image_1.jpg
+category: food
+rating: 4.8
+saved_at: 2026-07-29T19:37:00.906521+00:00
+is_super_like: false
+
+####################################################################################################
+# TABLE: tourist_seen   -   1 row(s)
+####################################################################################################
+
+--- tourist_seen [row 1 of 1] ---
+id: 50e73108-2a83-4191-8c54-24237b3bfa11
+tourist_id: 73a5a5d3-25c2-42a3-be99-e4c916f56c72
+entity_slug: del-s-ice-cream
+created_at: 2026-07-25T17:12:08.223183+00:00
+
+####################################################################################################
+# TABLE: tourist_swipe_events   -   1 row(s)
+####################################################################################################
+
+--- tourist_swipe_events [row 1 of 1] ---
+id: 228e6225-1efc-4893-b17c-149de896c75c
+tourist_id: 0eae72e6-2535-424e-bd65-024879c35e40
+entity_slug: del-s-ice-cream
+entity_name: Del's Ice Cream
+category: food
+direction: like
+created_at: 2026-07-25T17:12:08.065734+00:00
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: del-s-ice-cream

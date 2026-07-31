@@ -1,0 +1,3458 @@
+====================================================================================================
+SLUG: phoenix-ii
+NAME: Phoenix II
+INDUSTRY: condo
+SUBTYPE: condominium_complex
+TABLES WITH DATA: 30
+TOTAL ROWS: 329
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (14 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (39 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_amenities  (12 rows)
+  entity_completeness_v  (1 rows)
+  entity_conflicts  (1 rows)
+  entity_faqs  (14 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (2 rows)
+  entity_items_v  (2 rows)
+  entity_modules  (14 rows)
+  entity_offer  (1 rows)
+  entity_photos  (144 rows)
+  entity_reviews  (5 rows)
+  entity_section_items  (1 rows)
+  entity_section_items_metadata_backup  (1 rows)
+  entity_sections  (1 rows)
+  entity_sources  (2 rows)
+  entity_tags  (41 rows)
+  entity_theme  (2 rows)
+  faqs  (14 rows)
+  industry_condo  (1 rows)
+  recovery_import_log  (1 rows)
+  rental_units  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: phoenix-ii
+name: Phoenix II
+planner_category: food_drink
+data_quality_score: 60
+issues: missing_hours|missing_menu|missing_drink_menu|missing_lat_lng
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: true
+missing_drink_menu: true
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   14 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 14] ---
+id: 19291
+entity_slug: phoenix-ii
+intent_tag: best_for:families_with_kids
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 14] ---
+id: 19292
+entity_slug: phoenix-ii
+intent_tag: best_for:waterfront_or_scenic_meal
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 14] ---
+id: 19293
+entity_slug: phoenix-ii
+intent_tag: best_for:drinks_or_cocktails
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 14] ---
+id: 19294
+entity_slug: phoenix-ii
+intent_tag: experience:outdoor
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 14] ---
+id: 19295
+entity_slug: phoenix-ii
+intent_tag: experience:family_kids
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 14] ---
+id: 19296
+entity_slug: phoenix-ii
+intent_tag: experience:waterfront_scenic
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 14] ---
+id: 19297
+entity_slug: phoenix-ii
+intent_tag: experience:rainy_day
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 14] ---
+id: 19298
+entity_slug: phoenix-ii
+intent_tag: meal:drinks
+intent_category: meal_period
+confidence: 0.82
+evidence: Derived from meal flags/menu content.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 9 of 14] ---
+id: 19299
+entity_slug: phoenix-ii
+intent_tag: service:pool
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 10 of 14] ---
+id: 19300
+entity_slug: phoenix-ii
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 11 of 14] ---
+id: 19301
+entity_slug: phoenix-ii
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 12 of 14] ---
+id: 19302
+entity_slug: phoenix-ii
+intent_tag: missing:missing_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 13 of 14] ---
+id: 19303
+entity_slug: phoenix-ii
+intent_tag: missing:missing_drink_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 14 of 14] ---
+id: 19304
+entity_slug: phoenix-ii
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: phoenix-ii
+name: Phoenix II
+is_active: t
+planner_category: food_drink
+entity_type: condo
+entity_subtype: condo
+city: Orange Beach
+state: AL
+review_count: 0
+website_url: https://viewer.threshold360.com/?thresholdId=8490895-1284701667&preset=share
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_00.jpg
+voice_summary: Phoenix II in Orange Beach is best for families with kids, waterfront or scenic meal, drinks or cocktails. Experience tags: outdoor, family_kids, waterfront_scenic, rainy_day.
+planner_summary: Phoenix II is a family-friendly beachfront condo in Orange Beach offering spacious 1-, 2-, and 3-bedroom vacation rentals that accommodate up to eight guests. Each condo features Gulf views from private balconies and floor-to-ceiling windows, along with direct access to the sugar-white sand and emerald waters of the Gulf. Guests staying at Phoenix II enjoy a range of on-site, family-oriented amenities and a beachfront location that makes it easy to spend full days on the sand or relaxing by the
+best_for: families with kids|waterfront or scenic meal|drinks or cocktails
+not_best_for: quiet low-energy meal
+meal_periods: drinks
+experience_tags: outdoor|family_kids|waterfront_scenic|rainy_day
+service_tags: pool
+search_keywords: condo|Condos & Stays|Pool|3 Bedrooms|Outdoor pool|Sauna|Hot tub|Fitness center|Tennis court|Racquetball|Barbeque|Grill|Arcade|Parking|Kiddie pool|Hot tubs|Racquetball court|Pickleball court|Basketball court|Barbeque grills.|Beach access|Restaurant|Beach chair|Elevator|Accessible|Washer and dryer|Wi-fi|drinks|outdoor|family_kids|waterfront_scenic|rainy_day
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: true
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 39
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 27
+faq_count: 13
+data_quality_score: 60
+data_gaps: missing_hours|missing_menu|missing_drink_menu|missing_lat_lng
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   39 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 39] ---
+id: 21643
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_00.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 39] ---
+id: 21644
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_01.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 39] ---
+id: 21645
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_02.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 39] ---
+id: 21646
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_03.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 39] ---
+id: 21647
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_04.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 39] ---
+id: 21648
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_05.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 39] ---
+id: 21649
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_06.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 39] ---
+id: 21650
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_07.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 39] ---
+id: 21651
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_08.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 39] ---
+id: 21652
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_09.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 11 of 39] ---
+id: 21653
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_10.jpg
+is_cover: f
+sort_order: 10
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 12 of 39] ---
+id: 21654
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_11.jpg
+is_cover: f
+sort_order: 11
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 13 of 39] ---
+id: 21655
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_12.jpg
+is_cover: f
+sort_order: 12
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 14 of 39] ---
+id: 21656
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_13.jpg
+is_cover: f
+sort_order: 13
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 15 of 39] ---
+id: 21657
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_14.jpg
+is_cover: f
+sort_order: 14
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 16 of 39] ---
+id: 21658
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_15.jpg
+is_cover: f
+sort_order: 15
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 17 of 39] ---
+id: 21659
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_16.jpg
+is_cover: f
+sort_order: 16
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 18 of 39] ---
+id: 21660
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_17.jpg
+is_cover: f
+sort_order: 17
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 19 of 39] ---
+id: 21661
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_18.jpg
+is_cover: f
+sort_order: 18
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 20 of 39] ---
+id: 21662
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_19.jpg
+is_cover: f
+sort_order: 19
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 21 of 39] ---
+id: 21663
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_20.jpg
+is_cover: f
+sort_order: 20
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 22 of 39] ---
+id: 21664
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_21.jpg
+is_cover: f
+sort_order: 21
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 23 of 39] ---
+id: 21665
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_22.jpg
+is_cover: f
+sort_order: 22
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 24 of 39] ---
+id: 21666
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_23.jpg
+is_cover: f
+sort_order: 23
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 25 of 39] ---
+id: 21667
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_24.jpg
+is_cover: f
+sort_order: 24
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 26 of 39] ---
+id: 21668
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_25.jpg
+is_cover: f
+sort_order: 25
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 27 of 39] ---
+id: 21669
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_26.jpg
+is_cover: f
+sort_order: 26
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 28 of 39] ---
+id: 21670
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_27.jpg
+is_cover: f
+sort_order: 27
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 29 of 39] ---
+id: 21671
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_28.jpg
+is_cover: f
+sort_order: 28
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 30 of 39] ---
+id: 21672
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_29.jpg
+is_cover: f
+sort_order: 29
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 31 of 39] ---
+id: 21673
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_30.jpg
+is_cover: f
+sort_order: 30
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 32 of 39] ---
+id: 21674
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_31.jpg
+is_cover: f
+sort_order: 31
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 33 of 39] ---
+id: 21675
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_32.jpg
+is_cover: f
+sort_order: 32
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 34 of 39] ---
+id: 21676
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_33.jpg
+is_cover: f
+sort_order: 33
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 35 of 39] ---
+id: 21677
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_34.jpg
+is_cover: f
+sort_order: 34
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 36 of 39] ---
+id: 21678
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_35.jpg
+is_cover: f
+sort_order: 35
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 37 of 39] ---
+id: 21679
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_36.jpg
+is_cover: f
+sort_order: 36
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 38 of 39] ---
+id: 21680
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_37.jpg
+is_cover: f
+sort_order: 37
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 39 of 39] ---
+id: 21681
+entity_slug: phoenix-ii
+entity_name: Phoenix II
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_38.png
+is_cover: f
+sort_order: 38
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+resource_type: condo
+slug: phoenix-ii
+name: Phoenix II
+description: Phoenix II is a family-friendly beachfront condo in Orange Beach offering spacious 1-, 2-, and 3-bedroom vacation rentals that accommodate up to eight guests. Each condo features Gulf views from private balconies and floor-to-ceiling windows, along with direct access to the sugar-white sand and emerald waters of the Gulf.
+
+Guests staying at Phoenix II enjoy a range of on-site, family-oriented amenities and a beachfront location that makes it easy to spend full days on the sand or relaxing by the
+entity_slug: phoenix-ii
+bedrooms: 3
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_00.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_04.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_06.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_07.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_08.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_09.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_10.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_11.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_12.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_13.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_14.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_15.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_16.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_17.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_18.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_19.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_20.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_21.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_22.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_23.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_24.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_25.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_26.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_27.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_28.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_29.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_30.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_31.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_32.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_33.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_34.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_35.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_36.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_37.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_38.png"
+]
+amenities: []
+faqs: []
+city: Orange Beach
+state: AL
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: c237db08ce3c45c86facb8c74e019c59
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+entity_slug: phoenix-ii
+slug: phoenix-ii
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_00.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_04.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_06.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_07.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_08.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_09.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_10.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_11.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_12.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_13.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_14.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_15.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_16.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_17.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_18.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_19.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_20.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_21.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_22.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_23.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_24.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_25.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_26.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_27.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_28.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_29.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_30.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_31.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_32.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_33.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_34.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_35.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_36.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_37.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_38.png"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 36c399e0-a42e-42d9-b917-ff45eba6a37f
+slug: phoenix-ii
+name: Phoenix II
+is_active: true
+featured: false
+entity_type: condo
+entity_subtype: condominium_complex
+description: Phoenix II is a family-friendly beachfront condo in Orange Beach offering spacious 1-, 2-, and 3-bedroom vacation rentals that accommodate up to eight guests. Each condo features Gulf views from private balconies and floor-to-ceiling windows, along with direct access to the sugar-white sand and emerald waters of the Gulf.
+
+Guests staying at Phoenix II enjoy a range of on-site, family-oriented amenities and a beachfront location that makes it easy to spend full days on the sand or relaxing by the
+phone: +18009326760
+website_url: https://viewer.threshold360.com/?thresholdId=8490895-1284701667&preset=share
+menu_pin: 1066
+address_line_1: 24160 Perdido Beach Blvd
+city: Orange Beach
+state: AL
+zip: 36561
+rating: 4.2
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_00.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-14T03:11:22.749376+00:00
+updated_at: 2026-07-16T10:58:02.607758+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+bedrooms_min: 3
+bedrooms_max: 3
+pet_friendly: false
+pool: true
+parking: false
+business_status: OPERATIONAL
+primary_type: condo
+formatted_address: 24160 Perdido Beach Blvd, Orange Beach, AL
+google_places_data: {}
+search_vector: 'beach':5 'condo':3 'ii':2A 'orang':4 'phoenix':1A
+bedrooms: 3
+source_url: https://www.liquidlifevacationrentals.com/resort/phoenix-ii
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: stay
+industry_code: condo
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_amenities   -   12 row(s)
+####################################################################################################
+
+--- entity_amenities [row 1 of 12] ---
+id: 87155e3c-d5de-421b-9ed2-efc573cde224
+entity_slug: phoenix-ii
+amenity: Kiddie Pool
+category: complex
+sort_order: 3
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 2 of 12] ---
+id: edb8bda5-a539-41a4-8ebd-6e5b92220db9
+entity_slug: phoenix-ii
+amenity: Beach Access
+category: complex
+sort_order: 0
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 3 of 12] ---
+id: 23ae399a-8ef2-4b18-a15a-23b6fae18d43
+entity_slug: phoenix-ii
+amenity: Hot Tub
+category: complex
+sort_order: 5
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 4 of 12] ---
+id: d7e37e9c-e42f-4c57-ae71-0b46ab0d96a6
+entity_slug: phoenix-ii
+amenity: Tennis Court
+category: complex
+sort_order: 6
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 5 of 12] ---
+id: 07781418-fc6f-4d35-8c90-aaffc730d5ed
+entity_slug: phoenix-ii
+amenity: Fitness Center
+category: complex
+sort_order: 8
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 6 of 12] ---
+id: eeece347-5ecb-4977-89ff-0d8f8d0bef13
+entity_slug: phoenix-ii
+amenity: Game Room
+category: complex
+sort_order: 10
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 7 of 12] ---
+id: 9608a3a3-a3ce-43dc-a65b-edd2ab903fed
+entity_slug: phoenix-ii
+amenity: Indoor Pool
+category: complex
+sort_order: 2
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 8 of 12] ---
+id: b4d05b0b-caa7-4986-b3c3-9b81ccf20f4d
+entity_slug: phoenix-ii
+amenity: Outdoor Pool
+category: complex
+sort_order: 1
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 9 of 12] ---
+id: aa013870-e707-447a-9c52-8604904aeb18
+entity_slug: phoenix-ii
+amenity: Splash Pad
+category: complex
+sort_order: 4
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 10 of 12] ---
+id: 709743ce-0dcd-46a2-813c-cb6f5a1b91a6
+entity_slug: phoenix-ii
+amenity: Pickleball Court
+category: complex
+sort_order: 7
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 11 of 12] ---
+id: 54dbb005-f194-4dd0-9110-2260116a6bd7
+entity_slug: phoenix-ii
+amenity: Grilling Area
+category: complex
+sort_order: 11
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 12 of 12] ---
+id: d4471b60-58a2-4620-97f9-0838199dabf5
+entity_slug: phoenix-ii
+amenity: Sauna
+category: complex
+sort_order: 9
+created_at: 2026-07-07T16:59:52.25115
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: phoenix-ii
+name: Phoenix II
+industry_code: condo
+is_parent: false
+score_of_7: 4
+
+####################################################################################################
+# TABLE: entity_conflicts   -   1 row(s)
+####################################################################################################
+
+--- entity_conflicts [row 1 of 1] ---
+id: dbdfa90f-9853-4f6b-bcf6-e307ed2b0d7f
+entity_slug: phoenix-ii
+conflict_type: duplicate_entity_cluster
+evidence: phoenix-ii,phoenix-orange-beach-ii
+recommended_handling: owner to choose canonical + merge children
+source_system: gcr_duplicate_audit
+status: open
+created_at: 2026-07-16T13:43:56.223546+00:00
+
+####################################################################################################
+# TABLE: entity_faqs   -   14 row(s)
+####################################################################################################
+
+--- entity_faqs [row 1 of 14] ---
+id: 0462a679-5400-41fe-a791-86cc3e83ee54
+entity_slug: phoenix-ii
+question: Where is Phoenix II located?
+answer: Phoenix II is located at 24160 Perdido Beach Blvd, Orange Beach, AL 36561 and is approximately 4.5 miles east of Hwy 59.
+category: general
+sort_order: 0
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 2 of 14] ---
+id: b22cbb6a-d968-41aa-9f97-da00436d4a27
+entity_slug: phoenix-ii
+question: What amenities are included in Phoenix 2 vacation rentals?
+answer: Phoenix 2 features several luxury amenities including: outdoor pool, kiddie pool, arcade, sauna, hot tubs, fitness center, tennis court, racquetball court, pickleball court, basketball court, parking, and barbeque grills.
+category: general
+sort_order: 1
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 3 of 14] ---
+id: 3ec2cd00-ea86-4fdf-b520-640635611975
+entity_slug: phoenix-ii
+question: What types of units are available for rent at Phoenix II?
+answer: Phoenix II offers spacious 1-, 2-, and 3-bedroom units.
+category: general
+sort_order: 2
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 4 of 14] ---
+id: 8f257e6c-5583-4e0a-91c4-24ceecd8a488
+entity_slug: phoenix-ii
+question: What popular attractions are close to Phoenix II?
+answer: At Phoenix II, you'll enjoy direct beach access. You'll also love being able to walk to several restaurants, mini-golf, and marinas right across the street, where you can enjoy fishing, kayaking, and parasailing in the Gulf. Also nearby is Adventure Island and Gulf State Park.
+category: general
+sort_order: 3
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 5 of 14] ---
+id: 3ba3f958-0021-46e2-aece-53c27c3c30ed
+entity_slug: phoenix-ii
+question: What are the check-in and check-out times at Phoenix 2?
+answer: Check-in and check-out times vary by season. Refer to your booking confirmation message for details.
+category: general
+sort_order: 4
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 6 of 14] ---
+id: a77544d2-b1a5-4783-9594-0ec93c912703
+entity_slug: phoenix-ii
+question: Do all Phoenix 2 condominiums have Gulf views?
+answer: Yes, all Phoenix 2 vacation rentals have expansive private balconies overlooking the Gulf of Mexico.
+category: general
+sort_order: 5
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 7 of 14] ---
+id: 74009908-bae1-4846-99f1-77ad7c7e7076
+entity_slug: phoenix-ii
+question: Is there beach access available at Phoenix II?
+answer: Yes, you'll enjoy direct beach access and beach chair rentals at Phoenix II.
+category: general
+sort_order: 6
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 8 of 14] ---
+id: ace3ced4-218b-4751-9d06-e2f9bdf14cee
+entity_slug: phoenix-ii
+question: Is there a grocery store nearby Phoenix 2?
+answer: Yes, there are several grocery stores located near Phoenix 2 in Orange Beach, including Publix, Walmart, and Winn-Dixie.
+category: general
+sort_order: 7
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 9 of 14] ---
+id: ebc0976f-489d-447e-84ec-0c46597975ba
+entity_slug: phoenix-ii
+question: Does Phoenix II have accessibility options?
+answer: Phoenix II is equipped with accessibility features including accessible entrances, public areas, ramps and elevators. Contact us at 1-800-211-7892 to discuss options.
+category: general
+sort_order: 8
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 10 of 14] ---
+id: 657cbab1-e1b8-4c59-99d5-bb53139f1f60
+entity_slug: phoenix-ii
+question: Is Phoenix 2 a good choice for family vacations?
+answer: Yes, Phoenix 2 Orange Beach condominiums are a great choice for families, with fully-furnished 1-, 2-, and 3-bedroom units and family-friendly amenities like an outdoor pool, kiddie pool, arcade, tennis courts, basketball, and more.
+category: general
+sort_order: 9
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 11 of 14] ---
+id: e38e606e-fde2-4d64-b6dd-1f0db81e2119
+entity_slug: phoenix-ii
+question: Is there a washer and dryer in each unit at Phoenix II?
+answer: Yes, each unit at Phoenix II is equipped with a washer and dryer.
+category: general
+sort_order: 10
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 12 of 14] ---
+id: be4f0bf0-e2df-43b0-931a-1efd18ebe804
+entity_slug: phoenix-ii
+question: Is there free Wi-Fi available at Phoenix 2?
+answer: Yes, Phoenix 2 offers complimentary Wi-Fi access for guests.
+category: general
+sort_order: 11
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 13 of 14] ---
+id: 227d5e96-68b3-4df8-95d7-bd990d456cf4
+entity_slug: phoenix-ii
+question: Is there a grocery store nearby Phoenix 2 where guests can purchase food, supplies, and necessities?
+answer: Yes, there are several grocery stores located near Phoenix 2 in Orange Beach, including Publix, Walmart, and Winn-Dixie. Grocery delivery is offered at participating stores with partnering apps.
+category: general
+sort_order: 8
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 14 of 14] ---
+id: bb4c80f9-c650-4997-8283-763f3375d97d
+entity_slug: phoenix-ii
+question: Why book a Phoenix II rental with Brett/Robinson?
+answer: By booking with Brett/Robinson Vacations you get the benefit of over 40 years of experience in the area. Brett/Robinson operates and maintains Phoenix II and we have an on-site staff available to ensure you have a superb stay at the beach. We focus on quality, cleanliness and functionality in all of our available units. Our dedicated on-site customer service staff is here to help with any needs you have during your stay. Also, our knowledgeable area specialists can assist you in planning your it
+category: general
+sort_order: 13
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: e5fdbb70-c639-42e4-9660-366a1f8fb5f4
+entity_slug: phoenix-ii
+day_of_week: 0
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 45adbe87-9597-4bcc-a705-702689c37f7d
+entity_slug: phoenix-ii
+day_of_week: 1
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 91e37b28-4b1b-43f0-be5b-394a07dcaaf1
+entity_slug: phoenix-ii
+day_of_week: 2
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 11ca97b2-fdcd-4bb6-b9ca-b983aa3b186d
+entity_slug: phoenix-ii
+day_of_week: 3
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 27d55cc4-1db4-4196-8d08-e0d5a3105dc1
+entity_slug: phoenix-ii
+day_of_week: 4
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: cd174919-5753-49cb-a542-b6f784777ca3
+entity_slug: phoenix-ii
+day_of_week: 5
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 12cc1cfa-6263-4521-b214-9be74d08efcd
+entity_slug: phoenix-ii
+day_of_week: 6
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 2] ---
+entity_slug: phoenix-ii
+source_table: bookable_resources
+item_type: condo
+section_name: Units
+item_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+name: Phoenix II
+description: Phoenix II is a family-friendly beachfront condo in Orange Beach offering spacious 1-, 2-, and 3-bedroom vacation rentals that accommodate up to eight guests. Each condo features Gulf views from private balconies and floor-to-ceiling windows, along with direct access to the sugar-white sand and emerald waters of the Gulf.
+
+Guests staying at Phoenix II enjoy a range of on-site, family-oriented amenities and a beachfront location that makes it easy to spend full days on the sand or relaxing by the
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "bedrooms": 3,
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_00.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_11.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_12.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_13.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_14.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_15.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_16.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_17.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_18.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_19.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_20.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_21.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_22.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_23.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_24.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_25.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_26.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_27.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_28.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_29.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_30.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_31.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_32.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_33.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_34.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_35.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_36.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_37.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_38.png"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "item_type_raw": "condo",
+  "resource_type": "condo",
+  "check_out_time": "11:00"
+}
+
+--- entity_items_norm_v [row 2 of 2] ---
+entity_slug: phoenix-ii
+source_table: entity_section_items
+item_type: rooms
+section_name: Units & Rates
+item_id: c6855880-b1bd-4e2a-a139-62c0b86327ff
+name: Phoenix II
+description: Phoenix II is a family-friendly beachfront condo in Orange Beach offering spacious 1-, 2-, and 3-bedroom vacation rentals that accommodate up to eight guests. Each condo features Gulf views from private balconies and floor-to-ceiling windows, along with direct access to the sugar-white sand and emerald waters of the Gulf.
+
+Guests staying at Phoenix II enjoy a range of on-site, family-oriented amenities and a beachfront location that makes it easy to spend full days on the sand or relaxing by the
+sort_order: 1
+active: true
+attributes: {
+  "icon": "🏠",
+  "bedrooms": 3,
+  "min_nights": 1,
+  "module_key": "rooms",
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "item_type_raw": "rooms",
+  "check_out_time": "11:00"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 2] ---
+entity_slug: phoenix-ii
+source_table: bookable_resources
+item_type: condo
+section_name: Units
+item_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+name: Phoenix II
+description: Phoenix II is a family-friendly beachfront condo in Orange Beach offering spacious 1-, 2-, and 3-bedroom vacation rentals that accommodate up to eight guests. Each condo features Gulf views from private balconies and floor-to-ceiling windows, along with direct access to the sugar-white sand and emerald waters of the Gulf.
+
+Guests staying at Phoenix II enjoy a range of on-site, family-oriented amenities and a beachfront location that makes it easy to spend full days on the sand or relaxing by the
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "bedrooms": 3,
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_00.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_11.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_12.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_13.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_14.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_15.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_16.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_17.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_18.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_19.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_20.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_21.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_22.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_23.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_24.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_25.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_26.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_27.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_28.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_29.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_30.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_31.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_32.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_33.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_34.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_35.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_36.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_37.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_38.png"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "resource_type": "condo",
+  "check_out_time": "11:00"
+}
+
+--- entity_items_v [row 2 of 2] ---
+entity_slug: phoenix-ii
+source_table: entity_section_items
+item_type: rooms
+section_name: Units & Rates
+item_id: c6855880-b1bd-4e2a-a139-62c0b86327ff
+name: Phoenix II
+description: Phoenix II is a family-friendly beachfront condo in Orange Beach offering spacious 1-, 2-, and 3-bedroom vacation rentals that accommodate up to eight guests. Each condo features Gulf views from private balconies and floor-to-ceiling windows, along with direct access to the sugar-white sand and emerald waters of the Gulf.
+
+Guests staying at Phoenix II enjoy a range of on-site, family-oriented amenities and a beachfront location that makes it easy to spend full days on the sand or relaxing by the
+sort_order: 1
+active: true
+attributes: {
+  "icon": "🏠",
+  "bedrooms": 3,
+  "min_nights": 1,
+  "module_key": "rooms",
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "check_out_time": "11:00"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   14 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 14] ---
+id: 39c438b0-8f2e-4bb2-b69e-cdfcd8e1b92f
+entity_slug: phoenix-ii
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 14] ---
+id: 50da87c4-d1f1-4c67-9cf0-e287670ae3c1
+entity_slug: phoenix-ii
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 14] ---
+id: 9b7b0367-821c-4904-b338-b0762f9e7266
+entity_slug: phoenix-ii
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 14] ---
+id: c6669479-5f52-4083-b5a1-29b499314e03
+entity_slug: phoenix-ii
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 14] ---
+id: 5a7e608b-4434-4e77-ac1b-18459f4fbfa3
+entity_slug: phoenix-ii
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 14] ---
+id: 5e1b1e24-a516-40a8-8f52-c85bc9b03315
+entity_slug: phoenix-ii
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 14] ---
+id: 37812d03-cd5b-4804-8533-8a7400748316
+entity_slug: phoenix-ii
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 14] ---
+id: 37a1bd50-9881-4158-8265-786afb8867e3
+entity_slug: phoenix-ii
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 14] ---
+id: 2cd54617-1f90-4508-9148-2126a4c96ca7
+entity_slug: phoenix-ii
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 14] ---
+id: 2a65bb70-0a87-41b8-87d4-8068e4e770b7
+entity_slug: phoenix-ii
+module_key: stay
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 14] ---
+id: cbf283a9-a65d-4edc-91d1-5e9aca7fecf8
+entity_slug: phoenix-ii
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 14] ---
+id: 96021b5f-f3c6-41c6-ad2d-846a0a3ef684
+entity_slug: phoenix-ii
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 14] ---
+id: 464e1016-9c12-4559-b523-c0c56ea99489
+entity_slug: phoenix-ii
+module_key: amenities
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 14 of 14] ---
+id: 86fe33d0-e3b0-4901-a3f0-1e480b4d9027
+entity_slug: phoenix-ii
+module_key: rooms
+enabled: true
+sort_order: 2
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13932
+entity_slug: phoenix-ii
+name: Phoenix II
+description: Phoenix II is a family-friendly beachfront condo in Orange Beach offering spacious 1-, 2-, and 3-bedroom vacation rentals that accommodate up to eight guests. Each condo features Gulf views from private balconies and floor-to-ceiling windows, along with direct access to the sugar-white sand and emerald waters of the Gulf.
+
+Guests staying at Phoenix II enjoy a range of on-site, family-oriented amenities and a beachfront location that makes it easy to spend full days on the sand or relaxing by the
+offer_type: room
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+####################################################################################################
+# TABLE: entity_photos   -   144 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 144] ---
+id: 8390751c-00da-4a96-8eca-88fb61b5e8d5
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1302.jpg
+is_cover: true
+sort_order: 0
+photo_type: gallery
+
+--- entity_photos [row 2 of 144] ---
+id: 19bee341-f743-49c9-bfa0-4e046208b6ac
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1299.jpg
+is_cover: false
+sort_order: 1
+photo_type: gallery
+
+--- entity_photos [row 3 of 144] ---
+id: c543daec-6674-44ee-839a-90a4a6228897
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1203.jpg
+is_cover: false
+sort_order: 2
+photo_type: gallery
+
+--- entity_photos [row 4 of 144] ---
+id: 55a14922-6ae9-497f-98f9-e509f52157ba
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1206.jpg
+is_cover: false
+sort_order: 3
+photo_type: gallery
+
+--- entity_photos [row 5 of 144] ---
+id: 0b833f50-73e5-471d-8db1-40e8352542c0
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1209.jpg
+is_cover: false
+sort_order: 4
+photo_type: gallery
+
+--- entity_photos [row 6 of 144] ---
+id: c7879d04-211f-4c65-8512-87882c487480
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1212.jpg
+is_cover: false
+sort_order: 5
+photo_type: gallery
+
+--- entity_photos [row 7 of 144] ---
+id: d6594653-2ecd-4f55-9548-4d109c9f8ccb
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1215.jpg
+is_cover: false
+sort_order: 6
+photo_type: gallery
+
+--- entity_photos [row 8 of 144] ---
+id: cb1b795a-9ca3-41cc-bfaa-26e2ab63e672
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1218.jpg
+is_cover: false
+sort_order: 7
+photo_type: gallery
+
+--- entity_photos [row 9 of 144] ---
+id: 6f24bfbd-3a54-447f-a545-585445a5e384
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1221.jpg
+is_cover: false
+sort_order: 8
+photo_type: gallery
+
+--- entity_photos [row 10 of 144] ---
+id: 342cac8e-3d69-4ae2-bce9-c4981136769d
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1224.jpg
+is_cover: false
+sort_order: 9
+photo_type: gallery
+
+--- entity_photos [row 11 of 144] ---
+id: ea3d32ae-159e-4bfe-8dca-32153c05c2d8
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1254.jpg
+is_cover: false
+sort_order: 10
+photo_type: gallery
+
+--- entity_photos [row 12 of 144] ---
+id: 57858855-9f63-4e0e-9e45-5c5e46ca9e67
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1257.jpg
+is_cover: false
+sort_order: 11
+photo_type: gallery
+
+--- entity_photos [row 13 of 144] ---
+id: eaeaa220-37fe-4231-b424-4ba1b14c9e00
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_32.jpg
+is_cover: false
+sort_order: 32
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 14 of 144] ---
+id: de712986-f254-4deb-89b4-d60112263ce2
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_27.jpg
+is_cover: false
+sort_order: 27
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 15 of 144] ---
+id: f4425bda-29bc-4c37-b96d-d80bef8bda47
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_29.jpg
+is_cover: false
+sort_order: 29
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 16 of 144] ---
+id: ef9a71f5-bdc8-437d-bb12-8206f1be9ea4
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_00.jpg
+is_cover: true
+sort_order: 0
+photo_type: complex
+
+--- entity_photos [row 17 of 144] ---
+id: 5a0c02e1-11cd-4b49-be64-4884ed1658b6
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_01.jpg
+is_cover: false
+sort_order: 1
+photo_type: complex
+
+--- entity_photos [row 18 of 144] ---
+id: 722c16d9-053a-4cda-85dc-513c559e6598
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_02.jpg
+is_cover: false
+sort_order: 2
+photo_type: complex
+
+--- entity_photos [row 19 of 144] ---
+id: 2f475971-ba67-4bbe-9de8-30b290b4b5aa
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_03.jpg
+is_cover: false
+sort_order: 3
+photo_type: complex
+
+--- entity_photos [row 20 of 144] ---
+id: c9ed2fbd-cc8a-407f-9fbc-05b8df570be4
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_04.jpg
+is_cover: false
+sort_order: 4
+photo_type: complex
+
+--- entity_photos [row 21 of 144] ---
+id: bc5c308f-5549-42e0-a243-3ad597c57562
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_05.jpg
+is_cover: false
+sort_order: 5
+photo_type: complex
+
+--- entity_photos [row 22 of 144] ---
+id: f848d583-3821-4689-b205-58f930493d3f
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_06.jpg
+is_cover: false
+sort_order: 6
+photo_type: complex
+
+--- entity_photos [row 23 of 144] ---
+id: 0de779ed-87c1-48cf-ab40-ceaa1b0637c5
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_07.jpg
+is_cover: false
+sort_order: 7
+photo_type: complex
+
+--- entity_photos [row 24 of 144] ---
+id: da199c39-5a84-40b9-8c37-6d0360314892
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_08.jpg
+is_cover: false
+sort_order: 8
+photo_type: complex
+
+--- entity_photos [row 25 of 144] ---
+id: 92654520-c02f-441a-bc30-5456dcb06890
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_09.jpg
+is_cover: false
+sort_order: 9
+photo_type: complex
+
+--- entity_photos [row 26 of 144] ---
+id: b6b6b77f-703d-4b59-a7de-266decbed41e
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_10.jpg
+is_cover: false
+sort_order: 10
+photo_type: complex
+
+--- entity_photos [row 27 of 144] ---
+id: 7038774e-82cf-4eea-91c7-e1c729e5637f
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_11.jpg
+is_cover: false
+sort_order: 11
+photo_type: complex
+
+--- entity_photos [row 28 of 144] ---
+id: e03c9673-a8f3-4001-bc17-4a60d05935c8
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_12.jpg
+is_cover: false
+sort_order: 12
+photo_type: complex
+
+--- entity_photos [row 29 of 144] ---
+id: aa51b8e3-234c-47b4-947d-4216e1a6df9a
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_13.jpg
+is_cover: false
+sort_order: 13
+photo_type: complex
+
+--- entity_photos [row 30 of 144] ---
+id: a9a002b4-d37b-4e97-95a6-2f4ba276d43b
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_14.jpg
+is_cover: false
+sort_order: 14
+photo_type: complex
+
+--- entity_photos [row 31 of 144] ---
+id: 8af17b80-07a0-4402-a0bf-e13ef5513f92
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_15.jpg
+is_cover: false
+sort_order: 15
+photo_type: complex
+
+--- entity_photos [row 32 of 144] ---
+id: 784347fc-27dc-4496-ba7d-ef38af54a8b8
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_16.jpg
+is_cover: false
+sort_order: 16
+photo_type: complex
+
+--- entity_photos [row 33 of 144] ---
+id: 499a7fb0-174a-472f-8d0d-60ba1fd91be7
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_17.jpg
+is_cover: false
+sort_order: 17
+photo_type: complex
+
+--- entity_photos [row 34 of 144] ---
+id: 8feda8dd-77b6-451a-bae7-7f95641a8435
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_18.jpg
+is_cover: false
+sort_order: 18
+photo_type: complex
+
+--- entity_photos [row 35 of 144] ---
+id: fa13a4d7-806c-4ef9-9f38-d8ef4599a376
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_19.jpg
+is_cover: false
+sort_order: 19
+photo_type: complex
+
+--- entity_photos [row 36 of 144] ---
+id: ef443a7c-4741-4a74-b2d9-a3b485002923
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_20.jpg
+is_cover: false
+sort_order: 20
+photo_type: complex
+
+--- entity_photos [row 37 of 144] ---
+id: 42f33209-afda-49cf-9727-3f2a8e9ec982
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_21.jpg
+is_cover: false
+sort_order: 21
+photo_type: complex
+
+--- entity_photos [row 38 of 144] ---
+id: 4931a871-de20-49f6-993a-3df30f153443
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_22.jpg
+is_cover: false
+sort_order: 22
+photo_type: complex
+
+--- entity_photos [row 39 of 144] ---
+id: 6d354238-0ba9-4ddf-9b2c-289388d0c30f
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_23.jpg
+is_cover: false
+sort_order: 23
+photo_type: complex
+
+--- entity_photos [row 40 of 144] ---
+id: f5312a3f-fe2a-4688-9e6e-5ac685d5cb5d
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_24.jpg
+is_cover: false
+sort_order: 24
+photo_type: complex
+
+--- entity_photos [row 41 of 144] ---
+id: ea713938-8e77-4ded-87c9-8ebba8603128
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_25.jpg
+is_cover: false
+sort_order: 25
+photo_type: complex
+
+--- entity_photos [row 42 of 144] ---
+id: 0f4a4d67-8f38-41b7-a2d6-1cc191087bc5
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_26.jpg
+is_cover: false
+sort_order: 26
+photo_type: complex
+
+--- entity_photos [row 43 of 144] ---
+id: 1194f801-5b9f-4b84-b776-8a74c7d6454c
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_27.jpg
+is_cover: false
+sort_order: 27
+photo_type: complex
+
+--- entity_photos [row 44 of 144] ---
+id: d25c7ac3-28f8-4f7b-9ded-fbe63753b02b
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_28.jpg
+is_cover: false
+sort_order: 28
+photo_type: complex
+
+--- entity_photos [row 45 of 144] ---
+id: 74a8ae3d-cf83-47f3-b905-f8920bffb175
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_29.jpg
+is_cover: false
+sort_order: 29
+photo_type: complex
+
+--- entity_photos [row 46 of 144] ---
+id: 2a12baee-1825-4bd9-a4da-68f302bbece1
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_30.jpg
+is_cover: false
+sort_order: 30
+photo_type: complex
+
+--- entity_photos [row 47 of 144] ---
+id: 17143f0b-836e-4534-bdc8-e68139f4f7c9
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_31.jpg
+is_cover: false
+sort_order: 31
+photo_type: complex
+
+--- entity_photos [row 48 of 144] ---
+id: 26e1c79a-bfde-4266-9497-c4a5a952a673
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_32.jpg
+is_cover: false
+sort_order: 32
+photo_type: complex
+
+--- entity_photos [row 49 of 144] ---
+id: d91a766b-8f34-4203-ac99-4255be5c0835
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_33.jpg
+is_cover: false
+sort_order: 33
+photo_type: complex
+
+--- entity_photos [row 50 of 144] ---
+id: d2a42ab1-657f-4fcb-a354-5276282ae8f5
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_34.jpg
+is_cover: false
+sort_order: 34
+photo_type: complex
+
+--- entity_photos [row 51 of 144] ---
+id: 5ee00f11-5b3e-4e3a-b637-8dbb266a529f
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_35.jpg
+is_cover: false
+sort_order: 35
+photo_type: complex
+
+--- entity_photos [row 52 of 144] ---
+id: d77d5700-53a7-4bee-9c4e-9bcad53d2087
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_36.jpg
+is_cover: false
+sort_order: 36
+photo_type: complex
+
+--- entity_photos [row 53 of 144] ---
+id: ee02705d-b7f1-48a3-82bc-e4cc610dac64
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_37.jpg
+is_cover: false
+sort_order: 37
+photo_type: complex
+
+--- entity_photos [row 54 of 144] ---
+id: 6fbd9a9f-dab6-4c31-8286-0dab3bfa6cbc
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_38.png
+is_cover: false
+sort_order: 38
+photo_type: complex
+
+--- entity_photos [row 55 of 144] ---
+id: c835afe1-6858-4688-933c-f4c2020d9c00
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_12.jpg
+is_cover: false
+sort_order: 12
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 56 of 144] ---
+id: c52fd096-48c6-4e19-a212-64b68cbf4df3
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-ii-vacation-rental-condominiums/photo_01.jpg
+is_cover: true
+sort_order: 0
+photo_type: complex
+
+--- entity_photos [row 57 of 144] ---
+id: effdc460-2765-4611-824b-2550fad234d8
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-ii-vacation-rental-condominiums/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: complex
+
+--- entity_photos [row 58 of 144] ---
+id: 32a6a617-387f-4519-adb9-4eb3bdb02957
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_15.jpg
+is_cover: false
+sort_order: 15
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 59 of 144] ---
+id: 89e9d0a9-5d7a-4b07-9898-0537ecc95797
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1263.jpg
+is_cover: false
+sort_order: 314
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 60 of 144] ---
+id: c58a387e-6f01-4270-870a-adee74a52752
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1275.jpg
+is_cover: false
+sort_order: 316
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 61 of 144] ---
+id: 92a39b8f-d41c-4515-94c5-bf025d399645
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_13.jpg
+is_cover: false
+sort_order: 13
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 62 of 144] ---
+id: 16d7e37d-46b3-48e7-9c16-38f1a369d881
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1236.jpg
+is_cover: false
+sort_order: 331
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 63 of 144] ---
+id: 2ef37a1d-3945-45ea-8469-9255d6ed21a4
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1269.jpg
+is_cover: false
+sort_order: 315
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 64 of 144] ---
+id: 60488e36-11c6-4e2d-b168-19716e24b255
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1278.jpg
+is_cover: false
+sort_order: 317
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 65 of 144] ---
+id: 12c7e89d-9aa1-4d4b-b86d-33ae4dbeda47
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_16.jpg
+is_cover: false
+sort_order: 16
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 66 of 144] ---
+id: 4c4138f2-5134-4bf5-8914-353f19aa9633
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1248.jpg
+is_cover: false
+sort_order: 327
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 67 of 144] ---
+id: 9c08ee2a-8265-407a-9b45-bf03e13c2b37
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_26.jpg
+is_cover: false
+sort_order: 26
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 68 of 144] ---
+id: 2fbd1319-4cfc-449a-947c-b97fcad17ab7
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_17.jpg
+is_cover: false
+sort_order: 17
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 69 of 144] ---
+id: 4f7c10a0-545f-4780-b0ee-31ae86b95322
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_11.jpg
+is_cover: false
+sort_order: 11
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 70 of 144] ---
+id: 25141a5c-b693-45dc-8a65-27c77f51ed0b
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_21.jpg
+is_cover: false
+sort_order: 21
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 71 of 144] ---
+id: d38f2831-611e-4470-b375-b6bb4fcd758e
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1290.jpg
+is_cover: false
+sort_order: 322
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 72 of 144] ---
+id: f9c41d46-0256-427c-9061-4a41f67face9
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_05.jpg
+is_cover: false
+sort_order: 5
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 73 of 144] ---
+id: 9e90f4cc-4b7c-4395-8f3b-8ca5c5d76394
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1227.jpg
+is_cover: false
+sort_order: 325
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 74 of 144] ---
+id: 834ef0c3-84c8-4353-b012-8a4e251b8e25
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1284.jpg
+is_cover: false
+sort_order: 320
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 75 of 144] ---
+id: 4092a5f7-96c4-4cde-9bcc-972365be8919
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1197.jpg
+is_cover: false
+sort_order: 319
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 76 of 144] ---
+id: cc89564b-9af6-4918-ba72-9443f8a2c39e
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_08.jpg
+is_cover: false
+sort_order: 8
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 77 of 144] ---
+id: d4869876-ad5b-4a17-af08-0d70fda504f9
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_38.png
+is_cover: false
+sort_order: 38
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 78 of 144] ---
+id: 10ea408d-bae1-4632-901e-8331c6dab50f
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_04.jpg
+is_cover: false
+sort_order: 4
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 79 of 144] ---
+id: f6912786-63b7-4737-abe2-dddb7308e5d9
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_23.jpg
+is_cover: false
+sort_order: 23
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 80 of 144] ---
+id: df75e8a2-6163-4b3c-9ca3-b63cf5207452
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_35.jpg
+is_cover: false
+sort_order: 35
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 81 of 144] ---
+id: 97ef133e-323a-40f3-ab6a-19c2eaecf5b1
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_34.jpg
+is_cover: false
+sort_order: 34
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 82 of 144] ---
+id: 7bb5850b-537d-4587-904f-d5353702c421
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_20.jpg
+is_cover: false
+sort_order: 20
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 83 of 144] ---
+id: b08398fc-a187-4480-b576-5e4d4d58b87e
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1296.jpg
+is_cover: false
+sort_order: 324
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 84 of 144] ---
+id: a0560120-9125-48de-a0c3-b4f79010c975
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_02.jpg
+is_cover: false
+sort_order: 2
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 85 of 144] ---
+id: ddaabeb4-25e3-46e4-bec2-b733f3e38f74
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A82AB0660B1A1251.jpg
+is_cover: false
+sort_order: 329
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 86 of 144] ---
+id: c72ccc63-83f9-41a1-8db2-6f136f891511
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1200.jpg
+is_cover: false
+sort_order: 318
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 87 of 144] ---
+id: 13f44ea2-be3b-4b08-8f9d-a5e8353cd5e2
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_14.jpg
+is_cover: false
+sort_order: 14
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 88 of 144] ---
+id: 65fcfea9-7826-44ae-ae09-04c095e43e2d
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1287.jpg
+is_cover: false
+sort_order: 321
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 89 of 144] ---
+id: a4b4a83f-a8d8-4dc7-8bef-cdeb0945e133
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1233.jpg
+is_cover: false
+sort_order: 326
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 90 of 144] ---
+id: 0da75fe8-c8a1-4860-8a92-bedd94d9dd3d
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_33.jpg
+is_cover: false
+sort_order: 33
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 91 of 144] ---
+id: 02f1c108-424e-4419-97cc-8b8c8b22dded
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_31.jpg
+is_cover: false
+sort_order: 31
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 92 of 144] ---
+id: 042cc315-3332-4816-bcc3-4bad1d662061
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1293.jpg
+is_cover: false
+sort_order: 323
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 93 of 144] ---
+id: 7b76b1ab-a315-4b95-8770-a76838446131
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_18.jpg
+is_cover: false
+sort_order: 18
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 94 of 144] ---
+id: b7e7642c-1535-451f-a436-9ede2aea06a4
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_09.jpg
+is_cover: false
+sort_order: 9
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 95 of 144] ---
+id: 66654daf-cc30-4af4-9000-c5039665369b
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_37.jpg
+is_cover: false
+sort_order: 37
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 96 of 144] ---
+id: bd47d3fc-fd36-4616-abb3-201c28459e37
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_25.jpg
+is_cover: false
+sort_order: 25
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 97 of 144] ---
+id: b52f1041-ad5a-453b-ba8a-39553473af36
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_01.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 98 of 144] ---
+id: 45e554d2-6251-47de-b426-ced84f59ae1c
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_30.jpg
+is_cover: false
+sort_order: 30
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 99 of 144] ---
+id: ff621e50-e0c4-4e9c-891c-3dca389d4879
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_28.jpg
+is_cover: false
+sort_order: 28
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 100 of 144] ---
+id: 6dfad544-0cf1-459f-aed6-4f25022ef3aa
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_03.jpg
+is_cover: false
+sort_order: 3
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 101 of 144] ---
+id: 74d5642c-a5d4-4fb6-8a8a-f1c7388ae726
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_06.jpg
+is_cover: false
+sort_order: 6
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 102 of 144] ---
+id: 746f3084-c137-46e1-8a5b-a8b762c7350c
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_00.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 103 of 144] ---
+id: 010a0729-2e00-468a-91d6-989315e4453b
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_22.jpg
+is_cover: false
+sort_order: 22
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 104 of 144] ---
+id: 8912871e-43a5-4fe6-a80d-d70e50ed36d7
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1239.jpg
+is_cover: false
+sort_order: 328
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 105 of 144] ---
+id: 74b2fa77-c96a-4f1c-9c26-26d1bdb813c6
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_07.jpg
+is_cover: false
+sort_order: 7
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 106 of 144] ---
+id: 6c9713fc-3b9b-4932-b03d-b5e5e6f5d163
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_10.jpg
+is_cover: false
+sort_order: 10
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 107 of 144] ---
+id: dcab708a-5c0f-48a1-8ade-944613c37622
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_24.jpg
+is_cover: false
+sort_order: 24
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 108 of 144] ---
+id: 1a032548-c6cf-411b-9876-ae49fcdd097f
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_19.jpg
+is_cover: false
+sort_order: 19
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 109 of 144] ---
+id: f061ab7d-536b-402c-94ce-44419a704819
+entity_slug: phoenix-ii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_36.jpg
+is_cover: false
+sort_order: 36
+photo_type: resource
+source_name: bookable_resource
+resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+
+--- entity_photos [row 110 of 144] ---
+id: 1ba3860e-f9f0-44e9-b269-69732a9a6c1b
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1260.jpg
+is_cover: false
+sort_order: 313
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 111 of 144] ---
+id: 1fb6e825-9520-4acb-9f03-b6ec636037e6
+entity_slug: phoenix-ii
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A1230.jpg
+is_cover: false
+sort_order: 330
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 112 of 144] ---
+id: 65ffab02-065b-48d8-a7c9-6cb04ede498e
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/6159eaff-1e0a-4775-8cd9-22281fd5feef
+is_cover: false
+sort_order: 400
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 113 of 144] ---
+id: e581aa49-3c81-40f1-820a-b98d44ad12de
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/02df3edc-d1f9-493b-b7c1-043debb9432e
+is_cover: false
+sort_order: 401
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 114 of 144] ---
+id: 0078f2cc-5a8f-4039-a5db-5218c21e521a
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/ccfaaf1f-d1cd-4301-8c4e-decf15f7f63f
+is_cover: false
+sort_order: 402
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 115 of 144] ---
+id: b3c01d20-2f96-40ba-9e56-f2883c5fdf78
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/9007742f-3129-4e14-8f72-779b3a8febb7
+is_cover: false
+sort_order: 403
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 116 of 144] ---
+id: 5e00f280-61db-4c0e-be0f-be3f2246ebbe
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/2445ad64-7b0f-4bd4-b817-465745519849
+is_cover: false
+sort_order: 404
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 117 of 144] ---
+id: 00f2f647-9002-487c-b1e1-e91f65783c6a
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/91891af3-1665-4f93-a590-e9076ba5b742
+is_cover: false
+sort_order: 405
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 118 of 144] ---
+id: d018d24a-fefa-43d6-a3e5-11a7de5226b8
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/e8919181-9922-4c3c-a65a-7721b6929519
+is_cover: false
+sort_order: 406
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 119 of 144] ---
+id: 04381a2d-eebf-405a-b45b-42e13aaf3684
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/5c1505fa-19e3-470c-ac3f-68e1c517bacf
+is_cover: false
+sort_order: 407
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 120 of 144] ---
+id: d555684c-096a-439d-8beb-7af5bbf97cad
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/5e92b1c6-e667-4a7c-8c15-20bf27b7434b
+is_cover: false
+sort_order: 408
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 121 of 144] ---
+id: d0c8e333-5a5d-4d2e-ab2b-1da98e8ed809
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/82304c04-62db-45b5-9568-c3b2ec53681c
+is_cover: false
+sort_order: 409
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 122 of 144] ---
+id: 5d16b849-92aa-4d58-a887-8771cc7101b7
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/2bb39227-5bf0-4d9f-8312-93555ce1240e
+is_cover: false
+sort_order: 410
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 123 of 144] ---
+id: 53618619-5eef-4216-b484-7d9a9b5a5740
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/662afcbc-f99e-4222-b354-b7005f36868d
+is_cover: false
+sort_order: 411
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 124 of 144] ---
+id: 2c8d3e9c-c41f-442f-93e1-4f332b88f6cd
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/6b242bab-f05e-4fa0-8bbd-5c6c6f5cefdc
+is_cover: false
+sort_order: 412
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 125 of 144] ---
+id: 42a32031-184d-44f3-8980-acb5e7b5d871
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/6a431020-908c-442e-a964-c32d3a98a560
+is_cover: false
+sort_order: 413
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 126 of 144] ---
+id: 089e58ba-35b9-4bfa-9275-6bc7ca791461
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/7006e893-d274-4efb-9b07-fa45dd0739c1
+is_cover: false
+sort_order: 414
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 127 of 144] ---
+id: a4947382-c537-40b6-8ee8-7e039d1e5518
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/c4bfe0aa-66cf-4e93-946b-9f0c06d11352
+is_cover: false
+sort_order: 415
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 128 of 144] ---
+id: 8c4e143a-21e9-4568-87f5-859e4e6f99ed
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/98d691dd-8a7a-4e08-b3f0-087570707f5a
+is_cover: false
+sort_order: 416
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 129 of 144] ---
+id: 98317196-b017-4d25-8ecf-ca285899a76a
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/2b392a3c-32f2-4ea8-8582-7ab71900e305
+is_cover: false
+sort_order: 417
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 130 of 144] ---
+id: e536eefd-83f7-4447-bb62-6b31de8dbbed
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/97455311-7993-438a-b849-19d71e9227af
+is_cover: false
+sort_order: 418
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 131 of 144] ---
+id: c0f5c1d2-8f0e-4c2f-95c7-0b2d2a522af0
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/70254e4d-acc4-4fb7-a439-578196da1081
+is_cover: false
+sort_order: 419
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 132 of 144] ---
+id: be73b0c0-a7e2-432c-8165-540f07f187d1
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/0e010d83-9843-42e9-8732-5cb0114883ca
+is_cover: false
+sort_order: 420
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 133 of 144] ---
+id: 37f82907-3d5d-4104-b96c-950d7bbcf896
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/6b497932-97ed-48ec-a1db-55b08ff6c6cc
+is_cover: false
+sort_order: 421
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 134 of 144] ---
+id: 2ac7ff8d-4615-4630-ba2f-f1593dd316c6
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/02dc433a-fc52-44a1-a6b4-60ed88825b93
+is_cover: false
+sort_order: 422
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 135 of 144] ---
+id: 6a22a23e-018d-4259-8927-74bab0ad74f2
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/a61e5c2e-46ec-4582-a4ce-dd09f52e4bd7
+is_cover: false
+sort_order: 423
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 136 of 144] ---
+id: fdc9347a-17ed-4b83-9fd2-0088f039ebf2
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/dc550be6-1d6d-4edc-a0f8-73ef3d70dd05
+is_cover: false
+sort_order: 424
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 137 of 144] ---
+id: a0edc235-a24f-4466-b1a3-3642010a1f59
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/3d9d9975-7c50-41ed-a45b-74934fa0d864
+is_cover: false
+sort_order: 425
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 138 of 144] ---
+id: fcc96491-4db3-4c86-9fd3-0a57358cdd3c
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/c6acaecb-8222-4939-ab29-8619ad87cd28
+is_cover: false
+sort_order: 426
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 139 of 144] ---
+id: 4db9457c-12c3-4193-9d25-e2cabcaecc42
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/e2740bad-ba3e-4add-87e0-a4cb3fe0e07b
+is_cover: false
+sort_order: 427
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 140 of 144] ---
+id: 8ef983a3-31af-492d-8e70-8f3d63492b0e
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/5c043947-0ced-4408-9af4-cd0eb33c5e79
+is_cover: false
+sort_order: 428
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 141 of 144] ---
+id: 3b8f8d4e-ddf3-4f48-a0a2-de30dbb4e949
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/055fc82e-f0ae-42ad-81c6-05e1526fbfc3
+is_cover: false
+sort_order: 429
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 142 of 144] ---
+id: 43ea06c7-ca06-4ede-b026-f9dfe3e55301
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/600x400/https://track-pm.s3.amazonaws.com/brett-robinson/image/bcce4aa7-95c6-414c-b084-459f85d9313d
+is_cover: false
+sort_order: 430
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 143 of 144] ---
+id: f78af1e3-f354-49b7-b081-f4010a8692d2
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/600x400/https://track-pm.s3.amazonaws.com/brett-robinson/image/897a20bc-c0b8-4145-b02f-be248d239729
+is_cover: false
+sort_order: 431
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 144 of 144] ---
+id: 6dc5f733-6182-4fe6-9f23-5de0de11c726
+entity_slug: phoenix-ii
+url: https://img.trackhs.com/600x400/https://track-pm.s3.amazonaws.com/brett-robinson/image/697425ac-575e-42a5-88e8-16607af0424f
+is_cover: false
+sort_order: 432
+photo_type: gallery
+source_name: extracted:condos_zip
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 542a5fe5-e617-4e7a-9878-c5a20d6cd1d8
+entity_slug: phoenix-ii
+reviewer_name: Krysten Brown
+rating: 5
+body: Great experience staying here! Highly recommend.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-01-12T02:30:32.622735+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: 19e0d935-a84d-4a58-a042-d9de7930e8f2
+entity_slug: phoenix-ii
+reviewer_name: Robin Brumfield
+rating: 4
+body: The unit itself is very nice and our host was great! It was very clean and well kept. The building is outdated. The exit sign by the units door is hanging on by a wire. The pools are nice and well kept and the view from our balcony was great. They do allow people to play loud music at the pools except during quiet hours which are from 10:00 pm-8:00 am so we didn't get to enjoy the view that much.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2024-10-26T17:35:53.107316+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: a166d2ef-f0fd-4178-a776-c27e1a22d786
+entity_slug: phoenix-ii
+reviewer_name: Steve Simpkins (Slider)
+rating: 4
+body: On our last trip to Orange Beach, we stayed at Phoenix II. It's a nice property with several amenities and direct access to the beach. The location is close to restaurants and shopping with most places within 1-3 miles. There's no covered parking and a parking pass is required for access to the property.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-08-18T15:39:25.344519+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: a252fcd5-8b99-4bba-8f5e-9b52f3672799
+entity_slug: phoenix-ii
+reviewer_name: Nathan Pierce
+rating: 5
+body: This place was great! Our condo was two bed two bath with a kitchenette. The rooms were good sized and there was an outdoor patio with a view of the beach. The kitchen was completely stocked. We had 4 adults and 2 small children and we had plenty of room. The couch was a pull out bed as well. The condo was conveniently located near restaurants and Walmart. It has a big pool and a kiddy pool as well as two hot tubs, arcade room, and a gym. The place had beach access and was very well kept. I would definitely recommend this place and will be going back again!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2017-07-19T00:51:05.923+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 052da59f-0c00-42f7-932d-b72b5cac77ee
+entity_slug: phoenix-ii
+reviewer_name: monica wilt
+rating: 4
+body: Awesome Place! Great views saw a lot of security around 2 pools had enough space for a good size crowds very kid friendly! Basic weight room no free weights 2 hot tubs and sauna I didn’t think it worked showers by gym. Great for bar b ques restaurants across street Walmart Publix down the road liquor stores and so much more! Ideal place would definitely come back… lots of people out at night crab hunting with flash light. Everyone was so nice, we saw lots of dolphins!! Thank you Alabama we had a great time! The Wilts from Texas!🌊🐬
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2023-06-15T01:08:05.012125+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_section_items   -   1 row(s)
+####################################################################################################
+
+--- entity_section_items [row 1 of 1] ---
+id: c6855880-b1bd-4e2a-a139-62c0b86327ff
+section_id: a9d74b49-242f-4d1e-9bdc-f3db08611663
+entity_slug: phoenix-ii
+item_name: Phoenix II
+description: Phoenix II is a family-friendly beachfront condo in Orange Beach offering spacious 1-, 2-, and 3-bedroom vacation rentals that accommodate up to eight guests. Each condo features Gulf views from private balconies and floor-to-ceiling windows, along with direct access to the sugar-white sand and emerald waters of the Gulf.
+
+Guests staying at Phoenix II enjoy a range of on-site, family-oriented amenities and a beachfront location that makes it easy to spend full days on the sand or relaxing by the
+icon: 🏠
+metadata: {}
+sort_order: 1
+check_in_time: 16:00
+check_out_time: 11:00
+min_nights: 1
+cleaning_fee: 0
+bedrooms: 3
+
+####################################################################################################
+# TABLE: entity_section_items_metadata_backup   -   1 row(s)
+####################################################################################################
+
+--- entity_section_items_metadata_backup [row 1 of 1] ---
+id: c6855880-b1bd-4e2a-a139-62c0b86327ff
+entity_slug: phoenix-ii
+item_name: Phoenix II
+metadata: {
+  "bedrooms": 3,
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_00.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_11.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_12.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_13.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_14.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_15.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_16.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_17.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_18.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_19.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_20.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_21.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_22.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_23.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_24.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_25.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_26.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_27.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_28.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_29.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_30.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_31.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_32.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_33.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_34.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_35.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_36.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_37.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ii/image_38.png"
+  ],
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "check_out_time": "11:00"
+}
+backed_up_at: 2026-07-16T09:49:37.166591+00:00
+
+####################################################################################################
+# TABLE: entity_sections   -   1 row(s)
+####################################################################################################
+
+--- entity_sections [row 1 of 1] ---
+id: a9d74b49-242f-4d1e-9bdc-f3db08611663
+entity_slug: phoenix-ii
+section_type: rooms
+section_name: Units & Rates
+sort_order: 2
+module_key: rooms
+is_active: true
+
+####################################################################################################
+# TABLE: entity_sources   -   2 row(s)
+####################################################################################################
+
+--- entity_sources [row 1 of 2] ---
+id: efe165af-9753-499a-86df-6571e5748c74
+entity_slug: phoenix-ii
+source_system: liquid_life
+source_url: https://www.liquidlifevacationrentals.com/resort/phoenix-ii
+scope: entity
+observed_at: 2026-07-16T00:00:00+00:00
+confidence: high
+created_at: 2026-07-16T10:58:22.481614+00:00
+
+--- entity_sources [row 2 of 2] ---
+id: 4c9294eb-00e5-45b3-b261-91540e9e8dd1
+entity_slug: phoenix-ii
+source_system: condos_zip_brett_robinson
+observed_at: 2026-07-16T00:00:00+00:00
+confidence: medium
+note: Structured scrape of Brett-Robinson property page (condos_data1_3.zip)
+created_at: 2026-07-16T10:59:56.848474+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   41 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 41] ---
+id: a0ecbb10-ee94-4386-8fd0-bd50f3dfd17f
+entity_slug: phoenix-ii
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 2 of 41] ---
+id: 6ccc0a8f-fb81-4154-825a-21e050e20fda
+entity_slug: phoenix-ii
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 3 of 41] ---
+id: 87b2f083-7987-49be-a69b-00b90d070864
+entity_slug: phoenix-ii
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 4 of 41] ---
+id: d8094fc4-4204-49a4-9d74-9e512ee28ba1
+entity_slug: phoenix-ii
+tag_name: real_estate_agency
+tag_category: google_type
+
+--- entity_tags [row 5 of 41] ---
+id: 1adfee66-0667-4463-8135-61e4c86e0973
+entity_slug: phoenix-ii
+tag_name: travel_agency
+tag_category: google_type
+
+--- entity_tags [row 6 of 41] ---
+id: 03c26bb0-3d19-4c32-8b85-2c94ce7ca625
+entity_slug: phoenix-ii
+tag_name: condominium_complex
+tag_category: google_type
+
+--- entity_tags [row 7 of 41] ---
+id: 048e6407-0f45-4dab-a000-3c28d57e358b
+entity_slug: phoenix-ii
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 8 of 41] ---
+id: 1ed47ffd-949e-43a3-8656-4181ef9e98a5
+entity_slug: phoenix-ii
+tag_name: condo
+tag_category: type
+
+--- entity_tags [row 9 of 41] ---
+id: 99bdd506-77d6-4da6-a9d3-67c6b6371f5e
+entity_slug: phoenix-ii
+tag_name: Condos & Stays
+tag_category: category
+
+--- entity_tags [row 10 of 41] ---
+id: 2a89fe76-3532-440f-b170-74ae3200c588
+entity_slug: phoenix-ii
+tag_name: Pool
+tag_category: amenity
+
+--- entity_tags [row 11 of 41] ---
+id: 20ba1ce9-c630-40f0-9e27-c92917fd1dcc
+entity_slug: phoenix-ii
+tag_name: 3 Bedrooms
+tag_category: amenity
+
+--- entity_tags [row 12 of 41] ---
+id: 53481b1f-c320-4c27-943a-ca97ab0f835e
+entity_slug: phoenix-ii
+tag_name: Outdoor pool
+tag_category: amenity
+
+--- entity_tags [row 13 of 41] ---
+id: ff96a6c4-0482-4b04-823c-26d5062b1a48
+entity_slug: phoenix-ii
+tag_name: Sauna
+tag_category: amenity
+
+--- entity_tags [row 14 of 41] ---
+id: 29331240-5a17-4a2e-bbed-f0d48020a959
+entity_slug: phoenix-ii
+tag_name: Hot tub
+tag_category: amenity
+
+--- entity_tags [row 15 of 41] ---
+id: 973b8aaf-a8a4-4d7b-b60f-008f682db18b
+entity_slug: phoenix-ii
+tag_name: Fitness center
+tag_category: amenity
+
+--- entity_tags [row 16 of 41] ---
+id: b4de81bb-d33c-4a48-96e7-6a70b808ab1e
+entity_slug: phoenix-ii
+tag_name: Tennis court
+tag_category: amenity
+
+--- entity_tags [row 17 of 41] ---
+id: b6c6c7d2-49b3-415e-91c8-88fad8922416
+entity_slug: phoenix-ii
+tag_name: Racquetball
+tag_category: amenity
+
+--- entity_tags [row 18 of 41] ---
+id: d44b55d7-2065-4b47-9853-1c71e03e54b8
+entity_slug: phoenix-ii
+tag_name: Barbeque
+tag_category: amenity
+
+--- entity_tags [row 19 of 41] ---
+id: 894abbbb-7be5-455d-a729-4b8051719f72
+entity_slug: phoenix-ii
+tag_name: Grill
+tag_category: amenity
+
+--- entity_tags [row 20 of 41] ---
+id: f290a556-1fad-45c0-a2e4-99b921f6966c
+entity_slug: phoenix-ii
+tag_name: Arcade
+tag_category: amenity
+
+--- entity_tags [row 21 of 41] ---
+id: 024afeef-9ea8-4a83-9cbf-82beeb95151f
+entity_slug: phoenix-ii
+tag_name: Parking
+tag_category: amenity
+
+--- entity_tags [row 22 of 41] ---
+id: 19423631-368f-40a7-9e6d-114776e57411
+entity_slug: phoenix-ii
+tag_name: Kiddie pool
+tag_category: amenity
+
+--- entity_tags [row 23 of 41] ---
+id: eec30316-7e89-41f6-a284-2664a6f5f98a
+entity_slug: phoenix-ii
+tag_name: Hot tubs
+tag_category: amenity
+
+--- entity_tags [row 24 of 41] ---
+id: fb90beca-78ce-46f8-a46f-26722851a361
+entity_slug: phoenix-ii
+tag_name: Racquetball court
+tag_category: amenity
+
+--- entity_tags [row 25 of 41] ---
+id: cb301360-34ad-4262-aa08-f540aa0285b2
+entity_slug: phoenix-ii
+tag_name: Pickleball court
+tag_category: amenity
+
+--- entity_tags [row 26 of 41] ---
+id: df60ea9d-c2dd-4904-88b3-1656bfcada45
+entity_slug: phoenix-ii
+tag_name: Basketball court
+tag_category: amenity
+
+--- entity_tags [row 27 of 41] ---
+id: a4c1e5dd-6bd4-41b0-8a25-c5dd1e76d9fc
+entity_slug: phoenix-ii
+tag_name: Barbeque grills.
+tag_category: amenity
+
+--- entity_tags [row 28 of 41] ---
+id: 39772eed-b2e8-457f-baa6-77bfeab09de8
+entity_slug: phoenix-ii
+tag_name: Beach access
+tag_category: amenity
+
+--- entity_tags [row 29 of 41] ---
+id: 1c926ef7-6482-47d9-9d3d-e2e35171c3d4
+entity_slug: phoenix-ii
+tag_name: Restaurant
+tag_category: amenity
+
+--- entity_tags [row 30 of 41] ---
+id: 68208ad1-5e55-4bd4-a9e5-5f3fc650390d
+entity_slug: phoenix-ii
+tag_name: Beach chair
+tag_category: amenity
+
+--- entity_tags [row 31 of 41] ---
+id: b7421a8e-e071-4b50-94ae-0d475314faef
+entity_slug: phoenix-ii
+tag_name: Elevator
+tag_category: amenity
+
+--- entity_tags [row 32 of 41] ---
+id: 28162f8e-42b1-402c-8ce5-a4a8e805f661
+entity_slug: phoenix-ii
+tag_name: Accessible
+tag_category: amenity
+
+--- entity_tags [row 33 of 41] ---
+id: 5650f19e-1f3b-4e18-944f-6d5cd9a5a56c
+entity_slug: phoenix-ii
+tag_name: Washer and dryer
+tag_category: amenity
+
+--- entity_tags [row 34 of 41] ---
+id: c452d4fe-a795-447f-b06c-f20f53c3d2b6
+entity_slug: phoenix-ii
+tag_name: Wi-fi
+tag_category: amenity
+
+--- entity_tags [row 35 of 41] ---
+id: 859d7b6e-4d2a-4a02-bf97-c3e0fd88c2ba
+entity_slug: phoenix-ii
+tag_name: Game Room
+tag_category: amenity
+
+--- entity_tags [row 36 of 41] ---
+id: e6d13a6a-ff69-42ca-97a2-6b287e6bc680
+entity_slug: phoenix-ii
+tag_name: Indoor Pool
+tag_category: amenity
+
+--- entity_tags [row 37 of 41] ---
+id: 42da3573-57fc-4973-a514-e305bcf54422
+entity_slug: phoenix-ii
+tag_name: Splash Pad
+tag_category: amenity
+
+--- entity_tags [row 38 of 41] ---
+id: 680fb243-803e-4699-b7e9-c2c5b439094a
+entity_slug: phoenix-ii
+tag_name: Grilling Area
+tag_category: amenity
+
+--- entity_tags [row 39 of 41] ---
+id: 66daa15b-b0b1-4b5d-8189-d06b1b77f380
+entity_slug: phoenix-ii
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 40 of 41] ---
+id: 5ceeaad2-226b-4ceb-b3ad-587883b427f3
+entity_slug: phoenix-ii
+tag_name: real_estate_agency
+tag_category: google_type
+
+--- entity_tags [row 41 of 41] ---
+id: 78c548b2-167c-4da7-a909-afaadf2365fe
+entity_slug: phoenix-ii
+tag_name: travel_agency
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   2 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 2] ---
+id: e3fa34d9-0d5d-4eb5-88d8-617c245d9990
+entity_slug: phoenix-ii
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+--- entity_theme [row 2 of 2] ---
+id: 03f7baee-0e97-45f4-9973-7779de7e739e
+entity_slug: phoenix-ii
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: faqs   -   14 row(s)
+####################################################################################################
+
+--- faqs [row 1 of 14] ---
+id: 198b24b5-dd6e-46c1-87e3-e826d821e5f3
+entity_id: 36c399e0-a42e-42d9-b917-ff45eba6a37f
+question: Is there a grocery store nearby Phoenix 2?
+answer: Yes, there are several grocery stores located near Phoenix 2 in Orange Beach, including Publix, Walmart, and Winn-Dixie.
+created_at: 2026-06-27T12:00:46.681541
+sort_order: 7
+entity_slug: phoenix-ii
+category: general
+
+--- faqs [row 2 of 14] ---
+id: 2c1f778f-73ad-42dd-901e-c5ffbc296f97
+entity_id: 36c399e0-a42e-42d9-b917-ff45eba6a37f
+question: Where is Phoenix II located?
+answer: Phoenix II is located at 24160 Perdido Beach Blvd, Orange Beach, AL 36561 and is approximately 4.5 miles east of Hwy 59.
+created_at: 2026-06-14T03:59:00.38747
+sort_order: 1
+entity_slug: phoenix-ii
+category: general
+
+--- faqs [row 3 of 14] ---
+id: eb647e54-a1b9-4e83-8acc-cf277a77aa03
+entity_id: 36c399e0-a42e-42d9-b917-ff45eba6a37f
+question: What amenities are included in Phoenix 2 vacation rentals?
+answer: Phoenix 2 features several luxury amenities including: outdoor pool, kiddie pool, arcade, sauna, hot tubs, fitness center, tennis court, racquetball court, pickleball court, basketball court, parking, and barbeque grills.
+created_at: 2026-06-14T03:59:00.38747
+sort_order: 2
+entity_slug: phoenix-ii
+category: general
+
+--- faqs [row 4 of 14] ---
+id: c4e9407a-075a-46b1-9055-7a7e077fff84
+entity_id: 36c399e0-a42e-42d9-b917-ff45eba6a37f
+question: What types of units are available for rent at Phoenix II?
+answer: Phoenix II offers spacious 1-, 2-, and 3-bedroom units
+created_at: 2026-06-14T03:59:00.38747
+sort_order: 3
+entity_slug: phoenix-ii
+category: general
+
+--- faqs [row 5 of 14] ---
+id: e23c61fb-fdef-4d12-aaef-0010da0344cf
+entity_id: 36c399e0-a42e-42d9-b917-ff45eba6a37f
+question: What popular attractions are close to Phoenix II?
+answer: We all know why you’re here – Orange Beach’s most popular attraction, the white-sand beach! At Phoenix II, you’ll enjoy direct beach access. You’ll also love being able to walk to several restaurants, mini-golf, and marinas right across the street, where you can enjoy fishing, kayaking, and parasailing in the Gulf. Also nearby is Adventure Island for go-karts, bumper boats, and rides, and  Gulf State Park for fishing, hiking, and bike trails. If you love history and culture, there are several mu
+created_at: 2026-06-14T03:59:00.38747
+sort_order: 4
+entity_slug: phoenix-ii
+category: general
+
+--- faqs [row 6 of 14] ---
+id: 8ec97d85-6e52-4ecf-8d7d-6d7c599e6cc2
+entity_id: 36c399e0-a42e-42d9-b917-ff45eba6a37f
+question: What are the check-in and check-out times at Phoenix 2?
+answer: Check-in and check-out times vary by season. For more information, refer to our Check In and Check Out Times Page and review your booking confirmation message.
+created_at: 2026-06-14T03:59:00.38747
+sort_order: 5
+entity_slug: phoenix-ii
+category: general
+
+--- faqs [row 7 of 14] ---
+id: 0078e0f8-be08-49c3-b5b2-e4bdd137e1c0
+entity_id: 36c399e0-a42e-42d9-b917-ff45eba6a37f
+question: Do all Phoenix 2 condominiums have Gulf views?
+answer: Yes, all Phoenix 2 vacation rentals have expansive private balconies overlooking the Gulf of Mexico.
+created_at: 2026-06-14T03:59:00.38747
+sort_order: 6
+entity_slug: phoenix-ii
+category: general
+
+--- faqs [row 8 of 14] ---
+id: 6be93860-36db-412f-b942-fc47a56bee30
+entity_id: 36c399e0-a42e-42d9-b917-ff45eba6a37f
+question: Is there beach access available at Phoenix II?
+answer: Yes, you’ll enjoy direct beach access and beach chair rentals at Phoenix II.
+created_at: 2026-06-14T03:59:00.38747
+sort_order: 7
+entity_slug: phoenix-ii
+category: general
+
+--- faqs [row 9 of 14] ---
+id: 028ee0ba-0f83-46d8-8a1b-fe2a933560ad
+entity_id: 36c399e0-a42e-42d9-b917-ff45eba6a37f
+question: Is there a grocery store nearby Phoenix 2 where guests can purchase food, supplies, and necessities?
+answer: Yes, there are several grocery stores located near Phoenix 2 in Orange Beach, including Publix, Walmart, and Winn-Dixie. Grocery delivery is offered at participating stores with partnering apps.
+created_at: 2026-06-14T03:59:00.38747
+sort_order: 8
+entity_slug: phoenix-ii
+category: general
+
+--- faqs [row 10 of 14] ---
+id: fb8f08c7-d73a-4e27-a2cb-2d27e00ad065
+entity_id: 36c399e0-a42e-42d9-b917-ff45eba6a37f
+question: Does Phoenix II have accessibility options?
+answer: Phoenix II Orange Beach is equipped with accessibility features to ensure that guests can enjoy their stay. The resort has accessible entrances and public areas, including ramps and elevators. The units were also originally designed with accessibility in mind. Contact us at 1-800-211-7892 to discuss accommodations and options.
+created_at: 2026-06-14T03:59:00.38747
+sort_order: 9
+entity_slug: phoenix-ii
+category: general
+
+--- faqs [row 11 of 14] ---
+id: b91bc28b-3a56-48ae-b2b6-5261f11f1847
+entity_id: 36c399e0-a42e-42d9-b917-ff45eba6a37f
+question: Is Phoenix 2 a good choice for family vacations?
+answer: Yes, Phoenix 2 Orange Beach condominiums are a great choice for families. Fully-furnished 1-, 2-, and 3-bedroom units just steps from the sand make the perfect place for families to stay and easily enjoy the beach. Phoenix 2 offers tons of family-friendly amenities, like direct beach access, an outdoor pool, a fun kiddie pool, an arcade, tennis courts, basketball, and more. The location of Phoenix 2 is also family-friendly, within walking distance of delicious restaurants and with endless nearby
+created_at: 2026-06-14T03:59:00.38747
+sort_order: 10
+entity_slug: phoenix-ii
+category: general
+
+--- faqs [row 12 of 14] ---
+id: af7df442-f3d7-41c5-a373-7a4a51faee27
+entity_id: 36c399e0-a42e-42d9-b917-ff45eba6a37f
+question: Is there a washer and dryer in each unit at Phoenix II?
+answer: Yes, each unit at Phoenix II is equipped with a washer and dryer.
+created_at: 2026-06-14T03:59:00.38747
+sort_order: 11
+entity_slug: phoenix-ii
+category: general
+
+--- faqs [row 13 of 14] ---
+id: ea308ae9-0793-450e-b21d-aada4ff1de05
+entity_id: 36c399e0-a42e-42d9-b917-ff45eba6a37f
+question: Is there free Wi-Fi available at Phoenix 2?
+answer: Yes, Phoenix 2 offers complimentary Wi-Fi access for guests.
+created_at: 2026-06-14T03:59:00.38747
+sort_order: 12
+entity_slug: phoenix-ii
+category: general
+
+--- faqs [row 14 of 14] ---
+id: d1266158-6f18-4808-8835-c91d2b851d03
+entity_id: 36c399e0-a42e-42d9-b917-ff45eba6a37f
+question: Why book a Phoenix II rental with Brett/Robinson?
+answer: By booking with Brett/Robinson Vacations you get the benefit of over 40 years of experience in the area. Brett/Robinson operates and maintains Phoenix II and we have an on-site staff available to ensure you have a superb stay at the beach. We focus on quality, cleanliness and functionality in all of our available units. Our dedicated on-site customer service staff is here to help with any needs you have during your stay. Also, our knowledgeable area specialists can assist you in planning your it
+created_at: 2026-06-14T03:59:00.38747
+sort_order: 13
+entity_slug: phoenix-ii
+category: general
+
+####################################################################################################
+# TABLE: industry_condo   -   1 row(s)
+####################################################################################################
+
+--- industry_condo [row 1 of 1] ---
+entity_slug: phoenix-ii
+listed_unit_count: 0
+bedrooms_min: 3
+bedrooms_max: 3
+has_pool: true
+pet_friendly: false
+updated_at: 2026-07-21T16:59:02.358415+00:00
+
+####################################################################################################
+# TABLE: recovery_import_log   -   1 row(s)
+####################################################################################################
+
+--- recovery_import_log [row 1 of 1] ---
+id: c05a07a4-48c3-4dae-b40e-338eeffbe61e
+batch_id: draft-businesses-netnew-2026-07-19
+target_table: entity
+target_row_id: 66d5977d-732b-4d4c-85a8-f0a4690511af
+entity_slug: phoenix-ii
+source_db: may
+source_table: entity
+source_id: d95f3f74-8915-4ea5-beb8-778cba8073e0
+action: insert
+imported_at: 2026-07-19T20:29:05.350225+00:00
+
+####################################################################################################
+# TABLE: rental_units   -   1 row(s)
+####################################################################################################
+
+--- rental_units [row 1 of 1] ---
+id: ea1e75f6-581a-4872-ba36-225d685845dd
+entity_slug: phoenix-ii
+slug: phoenix-ii
+name: Phoenix II
+bedrooms: 3
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+city: Orange Beach
+state: AL
+source_resource_id: 696d7990-e31a-421c-9fd7-7b8ea68a6809
+is_active: true
+created_at: 2026-07-23T00:06:23.937689+00:00
+updated_at: 2026-07-23T00:06:23.937689+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: phoenix-ii
+entity_slug: phoenix-ii
+title: Phoenix II
+category: condominium_complex
+subtitle: Phoenix II is a family-friendly beachfront condo in Orange Beach offering spacious 1-, 2-, and 3-bedroom vacation rentals that accommodate up to eight guests. Each condo features Gulf views from private balconies and floor-to-ceiling windows, along with direct access to the sugar-white sand and emerald waters of the Gulf.
+
+Guests staying at Phoenix II enjoy a range of on-site, family-oriented amenities and a beachfront location that makes it easy to spend full days on the sand or relaxing by the
+search_vector: '1':19C '2':20C '3':22C 'access':49C 'accommod':27C 'along':46C 'amen':77C 'balconi':39C 'beach':16C 'beachfront':12C,80C 'bedroom':23C 'ceil':44C 'complex':4B 'condo':13C,33C 'condominium':3B 'day':89C 'direct':48C 'easi':85C 'eight':30C 'emerald':57C 'enjoy':67C 'famili':10C,75C 'family-friend':9C 'family-ori':74C 'featur':34C 'floor':42C 'floor-to-ceil':41C 'friend':11C 'full':88C 'guest':31C,62C 'gulf':35C,61C 'ii':2A,6C,66C 'locat':81C 'make':83C 'offer':17C 'on-sit':71C 'orang':15C 'orient':76C 'phoenix':1A,5C,65C 'privat':38C 'rang':69C 'relax':94C 'rental':25C 'sand':55C,92C 'site':73C 'spacious':18C 'spend':87C 'stay':63C 'sugar':53C 'sugar-whit':52C 'vacat':24C 'view':36C 'water':58C 'white':54C 'window':45C
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 13932
+entity_slug: phoenix-ii
+title: Phoenix II
+category: room
+subtitle: Phoenix II is a family-friendly beachfront condo in Orange Beach offering spacious 1-, 2-, and 3-bedroom vacation rentals that accommodate up to eight guests. Each condo features Gulf views from private balconies and floor-to-ceiling windows, along with direct access to the sugar-white sand and emerald waters of the Gulf.
+
+Guests staying at Phoenix II enjoy a range of on-site, family-oriented amenities and a beachfront location that makes it easy to spend full days on the sand or relaxing by the
+search_vector: '1':17C '2':18C '3':20C 'access':47C 'accommod':25C 'along':44C 'amen':75C 'balconi':37C 'beach':14C 'beachfront':10C,78C 'bedroom':21C 'ceil':42C 'condo':11C,31C 'day':87C 'direct':46C 'easi':83C 'eight':28C 'emerald':55C 'enjoy':65C 'famili':8C,73C 'family-friend':7C 'family-ori':72C 'featur':32C 'floor':40C 'floor-to-ceil':39C 'friend':9C 'full':86C 'guest':29C,60C 'gulf':33C,59C 'ii':2A,4C,64C 'locat':79C 'make':81C 'offer':15C 'on-sit':69C 'orang':13C 'orient':74C 'phoenix':1A,3C,63C 'privat':36C 'rang':67C 'relax':92C 'rental':23C 'sand':53C,90C 'site':71C 'spacious':16C 'spend':85C 'stay':61C 'sugar':51C 'sugar-whit':50C 'vacat':22C 'view':34C 'water':56C 'white':52C 'window':43C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: phoenix-ii

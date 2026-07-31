@@ -1,0 +1,2179 @@
+====================================================================================================
+SLUG: dg-market
+NAME: DG Market
+INDUSTRY: retail
+SUBTYPE: grocery_store
+TABLES WITH DATA: 20
+TOTAL ROWS: 112
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (8 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (6 rows)
+  entity  (1 rows)
+  entity_attributes  (10 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (7 rows)
+  entity_modules  (10 rows)
+  entity_nearby_landmark_types  (20 rows)
+  entity_nearby_landmarks  (5 rows)
+  entity_photos  (13 rows)
+  entity_reviews  (5 rows)
+  entity_tags  (14 rows)
+  entity_theme  (1 rows)
+  industry_retail  (1 rows)
+  search_index  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: dg-market
+name: DG Market
+planner_category: food_drink
+data_quality_score: 85
+issues: missing_menu|missing_drink_menu|missing_faqs
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: true
+missing_drink_menu: true
+missing_hours: false
+missing_photos: false
+missing_faqs: true
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   8 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 8] ---
+id: 15334
+entity_slug: dg-market
+intent_tag: best_for:drinks_or_cocktails
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 8] ---
+id: 15335
+entity_slug: dg-market
+intent_tag: meal:drinks
+intent_category: meal_period
+confidence: 0.82
+evidence: Derived from meal flags/menu content.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 8] ---
+id: 15336
+entity_slug: dg-market
+intent_tag: service:delivery
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 8] ---
+id: 15337
+entity_slug: dg-market
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 8] ---
+id: 15338
+entity_slug: dg-market
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 8] ---
+id: 15339
+entity_slug: dg-market
+intent_tag: missing:missing_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 8] ---
+id: 15340
+entity_slug: dg-market
+intent_tag: missing:missing_drink_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 8] ---
+id: 15341
+entity_slug: dg-market
+intent_tag: missing:missing_faqs
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: dg-market
+name: DG Market
+is_active: t
+planner_category: food_drink
+entity_type: shopping
+entity_subtype: grocery_store
+city: Orange Beach
+state: AL
+address_line_1: 25130 Canal Rd
+latitude: 30.289752599999996
+longitude: -87.5957245
+rating: 4.3
+review_count: 305
+website_url: https://www.dollargeneral.com/store-directory/al/orange-beach/14166
+hero_image_url: /photos/dg-market/photo_01.jpg
+voice_summary: DG Market in Orange Beach is best for drinks or cocktails.
+planner_summary: Chain store providing a variety of products, including fresh meat and produce, at discount prices.
+best_for: drinks or cocktails
+not_best_for: quiet low-energy meal
+meal_periods: drinks
+service_tags: delivery|accessibility
+search_keywords: grocery_store|convenience_store|gift_shop|drugstore|discount_store|market|toy_store|home_goods_store|food_store|store|health|food|point_of_interest|establishment|drinks|delivery|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 6
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 14
+faq_count: 0
+data_quality_score: 85
+data_gaps: missing_menu|missing_drink_menu|missing_faqs
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   6 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 6] ---
+id: 2500
+entity_slug: dg-market
+entity_name: DG Market
+city: Orange Beach
+url: /photos/dg-market/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 6] ---
+id: 2501
+entity_slug: dg-market
+entity_name: DG Market
+city: Orange Beach
+url: /photos/dg-market/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 6] ---
+id: 2502
+entity_slug: dg-market
+entity_name: DG Market
+city: Orange Beach
+url: /photos/dg-market/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 6] ---
+id: 25347
+entity_slug: dg-market
+entity_name: DG Market
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dg-market/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 6] ---
+id: 25429
+entity_slug: dg-market
+entity_name: DG Market
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dg-market/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 6] ---
+id: 26273
+entity_slug: dg-market
+entity_name: DG Market
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dg-market/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 6925c629-4b62-475d-89b7-0520a4b7c1e6
+slug: dg-market
+name: DG Market
+is_active: true
+featured: false
+entity_type: shopping
+entity_subtype: grocery_store
+description: Chain store providing a variety of products, including fresh meat and produce, at discount prices.
+phone: (251) 314-0260
+website_url: https://www.dollargeneral.com/store-directory/al/orange-beach/14166
+menu_pin: 5538
+address_line_1: 25130 Canal Rd
+city: Orange Beach
+state: AL
+zip: 36561
+latitude: 30.289752599999996
+longitude: -87.5957245
+rating: 4.3
+review_count: 305
+hero_image_url: https://places.googleapis.com/v1/places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3kq7KRxHTzLG0WZDAXwP9_G7MjFZWdvGjY0IDKnHqJoH7-OJlegy9gNjGUw982_IO9vitKas1gvKeWS5HAZsrHMTQi2hx6qK4beX6Jef5J-O3Y5Zt492AZoeYvoPt6Y7GKysnRfybpLv7wn93--z4SlUmG2qCH0Gz7NY0uR8uJGzTJFvo1eMXkaEdjh-gibbJq5BI9_CHTPwasrpPFOCu8YqCrNXgzPm5t68CHVvB_vZ3JPY50zGBO3d0PJ5RNl-IKOBSph-GpgrJifCuWlUAztxnlYotBTVQ197QNih3wg83zaLeqzqTDROwn91KIu2Vmk6YWkvqCLHqCLvFj4IBjBCv3Tldc6cB444_SEXGiZRrNPQW8jmhuTr4gL4h84bHTr5mFTJr2-mJ0jYxYQG29oGL1Pkvg3RsTZQD5KM6N4dg/media?maxHeightPx=1600&maxWidthPx=1600
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: true
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T04:01:01.220638+00:00
+updated_at: 2026-06-03T04:01:01.220638+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJx7kgZ5QHmogRGTfYKGEJL7I
+google_maps_uri: https://maps.google.com/?cid=12839491375558309657&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: grocery_store
+formatted_address: 25130 Canal Rd, Orange Beach, AL 36561, USA
+plus_code: 862J7CQ3+WP
+international_phone: +1 251-314-0260
+editorial_summary: Bargain retail chain selling a range of household goods, groceries, beauty products & more.
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+wheelchair_accessible_restroom: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+accepts_nfc: true
+accepts_cash_only: false
+google_places_data: {
+  "id": "ChIJx7kgZ5QHmogRGTfYKGEJL7I",
+  "types": [
+    "grocery_store",
+    "convenience_store",
+    "toy_store",
+    "gift_shop",
+    "discount_store",
+    "market",
+    "drugstore",
+    "food_store",
+    "home_goods_store",
+    "store",
+    "health",
+    "food",
+    "point_of_interest",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3kq7KRxHTzLG0WZDAXwP9_G7MjFZWdvGjY0IDKnHqJoH7-OJlegy9gNjGUw982_IO9vitKas1gvKeWS5HAZsrHMTQi2hx6qK4beX6Jef5J-O3Y5Zt492AZoeYvoPt6Y7GKysnRfybpLv7wn93--z4SlUmG2qCH0Gz7NY0uR8uJGzTJFvo1eMXkaEdjh-gibbJq5BI9_CHTPwasrpPFOCu8YqCrNXgzPm5t68CHVvB_vZ3JPY50zGBO3d0PJ5RNl-IKOBSph-GpgrJifCuWlUAztxnlYotBTVQ197QNih3wg83zaLeqzqTDROwn91KIu2Vmk6YWkvqCLHqCLvFj4IBjBCv3Tldc6cB444_SEXGiZRrNPQW8jmhuTr4gL4h84bHTr5mFTJr2-mJ0jYxYQG29oGL1Pkvg3RsTZQD5KM6N4dg",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICEvtzwGg!2e10!4m2!3m1!1s0x889a07946720b9c7:0xb22f096128d83719",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICEvtzwGg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106411120027685241931",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX4zmTE-TSRhDEdkAQU5Z2Nxxnh9F7jSquvCd1jVahb2kFSHFLUlg=s100-p-k-no-mo",
+          "displayName": "Hope Farrow"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3lZDtBloJVq1FU3ilowrIYxP3gVzO5hUObh4rz2WZ1sXI9bfBmgRLgLBOboHuDjwteZBQmMtEXHULTkrdpTxevU3FjnLqvJwvPCPvSScICw4FYsp10iITNM3TFUafi4rsrI9kgFHaBqH0bzmb10GMTm35ykK1hDHwT5lDskgawTkfotycaw-y_605cRWwVOmDbUYItsLIiqXiOnFkPd3QG0cs277_hlhC55yzC1NZEjZzZMRiiywNCG993MaYwoPK95qR1nBCp97Qa64-HOmUr_0cW_NfJyDVpGPSvvPRHQYdKFXM8sPwNjjDp2KxbsNflM8KvHV2p_8kMobgK4TH3kLcbbitKD3lecQoMDDzwYdGIelvbYAJ7Yz6LUhoygvbfIT6hBXbriNGBcdzlYQ4zCbgxQ4JWVsI_nsdraJajDsVGg",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICE8ND53gE!2e10!4m2!3m1!1s0x889a07946720b9c7:0xb22f096128d83719",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICE8ND53gE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/111690137314734505430",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjV-WWwMUoERgzn4rFlu6iA5tk-G94Z2lg5_itHbVSyvGuxpEXxo4w=s100-p-k-no-mo",
+          "displayName": "Rusty Parker"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3k2RIoArPXpNv8V4qWNjVaR07cVruKPgBsUtHQFJB7Ud56ZGay6LAtYe035QvYx8R0nkU1OlGpi1ApvydKmTrCV4SPobYZO7Gw1Udt5G-JBohXRWSY7GcNRcXOtC-bk_46xCQvcAAW9JBZITpSPeB8WI-Yy3c_CLFQrXQBCSdvLDzkHF7KkqLGSTjRvy6j7w7ixj2LMNkjHo3McRF8gAcKKFhHuKR8wc7abnyq_NB63ohdz3lIP8N4Dfz_4c0tJ3KLvjOGLbFTNgb_nRn5JRL66i93ZSxpf9Eb7u8m9wm0RY3ltEhcw-nQuGkqHlyNAIQFJcy4zskn_I5Q0gA5oEE7wLykUt7kIJxe0NeODL4R5RMtIGKRmrK9tMKusKlAyHLuNOmk7rGkEheLQzcX_mxSeD7cj3HzNfNRsfGsu6-UiNQ",
+      "widthPx": 4000,
+      "heightPx": 1868,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICayNHXOg!2e10!4m2!3m1!1s0x889a07946720b9c7:0xb22f096128d83719",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICayNHXOg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/102973727291740259645",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUIWFYgxeDIKP14twmvFpqs_xwp3voOghYkxtB9825o5ze2ngg0Og=s100-p-k-no-mo",
+          "displayName": "Victor Jordan"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3l692POD4j5V0N284KWFbQINI0gmA0yKckYrVHSYHcvwFT1ZMM8IpRo17fqCUo3ZiPwULH2KiQiebNu7AKQble7zI16nCReXX0JjnklNBVWwpF3HAcqXzcFTqrRtZ37gY1qu4GzZHA9ok0sYgUqlY87A9DbO0vtRgz1PqmhyJGSyh0Pa78PhfY50TXP-F_8dbpysPcjO9R6jHbkyzcYa2CQAKHnUy-nCWflMJqupgCQK1dSJjNOGmiJNdBoYC8_QgOEcrqYDBareZUjoRmUH43pJZzXqs02RmnJ2NxdSTl8fwguSKCdhDONuPuqXWegcN3FhWufDrwVv8oskn6dlussa6wBPJclDqCeW8mOMfjWO8BZuAw_hrlyC5pHCOvvGrHKGay86X56llsa1CzhAbmcIGqnuZBYedNyvftC4tntc4mY",
+      "widthPx": 1868,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICayNHfqAE!2e10!4m2!3m1!1s0x889a07946720b9c7:0xb22f096128d83719",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICayNHfqAE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/102973727291740259645",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUIWFYgxeDIKP14twmvFpqs_xwp3voOghYkxtB9825o5ze2ngg0Og=s100-p-k-no-mo",
+          "displayName": "Victor Jordan"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3lxUHCK8I7q1Mlbc9WuC2xIkS95GypxmfbODDwMLanOMTpmy2-HkgvPMw1pBsgQFIgAmGRalUDuInkhWEvzVWAnMb2efv-XuslYJmJSWYTRliMAk9F9QD24jVGrV2QeHDDtmOY8DCEvyTUa4VlM4lKmJSfzplJjkuLRHd4CnHWfnY-1hrYMTFcxoewBU4jlvqINjnd8H1_9suWsEqNEGyskzL7wd-bUcYr8CTLcdVpI9qiazDBj4wmpg9lblT2WkdZlAhmtMwFhkK926J4IKyXeZLOnnC0aCaHM5YCH-47bawpRV8U9wJ_0jBfJLW-nMFYgXrbCvR0raMBxr_Xkz49I83YFpI4L1LOqxbjSbImJFWzg-w4NgFFpeXn88I67P9PymgYVo4OA3fZWL34hDYtjMkSmT1nheQqUmrpebKlIGg",
+      "widthPx": 720,
+      "heightPx": 620,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICH_5CyaA!2e10!4m2!3m1!1s0x889a07946720b9c7:0xb22f096128d83719",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICH_5CyaA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/109741685191829242603",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWta2IQ_e3k-xjstwXhY_ZFsmYJskEHPPw1NXCMOqEOUujw0C20=s100-p-k-no-mo",
+          "displayName": "DG Market"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3lVX5KsK_VVLVBbGITVARllLHnFQK2g7UXKp1DQefYtMk_LVF9GKGp9JgJi91OlvYsPKxDfVHqeTLJIMyhA60cWapWqxXXUCHTxQZ1rfovPfLBbxAaEMCf6ZydelUsYspvv-aNwxtizdh4WF-JczYV12OEG8YGXR6cN-QfNNn_L8FtjDoPUj_Nfs8NbPgzCGslwM-WynZEnYTDBt-QvWUlKQ8XsAYT5c8FWQoztxIuDZli8M6fSQtvz0BkRM0PXiq4159MPU1WAYYGrZR7ZALxhRC2--NtMYhMI2ClXMVuW1qwPNsDLqyhgslaqLKS93PxpK5ftr_yqMNgoEdsoTnIRj2hq_Z6uJf-qVz_vU88CKcMjq6Fvyif2fCVCbyBAZD8Z0AovByiDMuxBC8rQRPEduDfzYrC8pwUMl0qccyeevg",
+      "widthPx": 4624,
+      "heightPx": 3468,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDm7ZiaKQ!2e10!4m2!3m1!1s0x889a07946720b9c7:0xb22f096128d83719",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDm7ZiaKQ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/111477189340826106452",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW-LudHsm5I6MzCwnP6FjyekOgTGjEsSYnucAOepw8ANxroBJ4=s100-p-k-no-mo",
+          "displayName": "Zach R."
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3kYqYYh_A7ArAP0xzeeWtloYxWrVZZBSa1WOh4_oTnot4S93rD28SxmLTv6rELfKhpKet4_fb4fqTCpAgvdCoEckrKRAId2zHR-zKoij1Uyu3wg6uKh3uDDzrZ-Kj-YEvaMhEUSNZdSMEKKZSHv8veRQP-jESrRRyTgWccqhLeg4tEdbBTlKs6kqcQVCAOVU8tLkbU1eQECft3JunXQ0IoiqgwxenUQPosgVap-0suM0XYXdxXfeG6uw_3HQggyCXCZzRJLtmxrlDkYtLL_sFG5thiXIDiboj74a0-nLARwXuUb8870oFSvue1d-Rj6Bk4qR1BnN6HOSJMAmTscUNCVVgAzOWDdX8KEyjWcmWpxfAxZIpcnQLNAntDTRYbQAdsxi_0y-_7VQBoQ8PPqE_pAHYNK2EdchdsQdG0yd3rNILgl",
+      "widthPx": 2861,
+      "heightPx": 2860,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICR7KHs5wE!2e10!4m2!3m1!1s0x889a07946720b9c7:0xb22f096128d83719",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICR7KHs5wE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/111477189340826106452",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW-LudHsm5I6MzCwnP6FjyekOgTGjEsSYnucAOepw8ANxroBJ4=s100-p-k-no-mo",
+          "displayName": "Zach R."
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3mJ_iqpqtYha_IdrGLD4x-MyWt0yWt3jkR34tn4uyxfgTki6oQ4Ujtz8bxNnn21THwDL1cow59vexxfhP4YuawMaC9s_6AspLfMEYKH-iGd-inkEr13X8H8yJOAYOdNQ0KJhDggm6_Wih2UQerUSWLZFTL4HfNbe88oYbHTBddzQg2rK17qsZpO_Q5cyIFgZesJgiQcHPCwi-UBKe2Rp3X71okHFqpQ0RaYipSS3VB93lRh19g2ND0yPwQUQjlk2ImJaDMYxRSVr9bFdGFco3R_9_L2aEBSBx59wzJo5b_-oBcXoNcMI6YqKpNGUX0upjY0-dwgc7M9Ydt11_p8RghYmEJ77W_BLAlJj3TO5nO5cSXXbLbzUM6s5a-gNgR3O16GYjvfbMoHW1vLw7lQradSPnfwRkBht6-Mo65GdL8",
+      "widthPx": 4800,
+      "heightPx": 3614,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICli-25Rw!2e10!4m2!3m1!1s0x889a07946720b9c7:0xb22f096128d83719",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICli-25Rw&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/111477189340826106452",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW-LudHsm5I6MzCwnP6FjyekOgTGjEsSYnucAOepw8ANxroBJ4=s100-p-k-no-mo",
+          "displayName": "Zach R."
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3n8uglR4oSpvo6qYmHcWcUGrkEg3ko5ovnRuYvTRUpg_a8-Bv3ADH03FkIJBfvz8tuTVutky1mVSG1-XoD_1-PTxx1pHT9fxMuELQRYItHdSgcFoI4X_Mh0CYma7p3rbiYru7Y-eI0zNnuewQkgEL55CYgcHKjmiPamtqWcNpy0w9hTijrU9SHaPTLsUXbYotmpy9FdWczKcwz9baD0nc1KcIv8l5Q-HRHUyD5jqDo17sF9br4rbDwVq_eQXHlZmlMUU299354bg0zutHpvR49PzJg_60wFxHNCWYO0KXg5z7bMtkTs2a8hyyFxAii2nr3BlGN9PqglfE8siwkISX6S7DJP-IKQl2MDXZct8DWKmC4BDQp-wIWi3E6U3helRkC0ZVpmL5kBSLgzLr2zNE-ysVmPD8H43y5oNTsUp-p8taA",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDG4uXDvQE!2e10!4m2!3m1!1s0x889a07946720b9c7:0xb22f096128d83719",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDG4uXDvQE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/109741685191829242603",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWta2IQ_e3k-xjstwXhY_ZFsmYJskEHPPw1NXCMOqEOUujw0C20=s100-p-k-no-mo",
+          "displayName": "DG Market"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3mxWz3LVfwMdKWJyX5_wXRRvJsGJzOtLpBv5Mh-JkMP1WVpGaBzTqbp71bVgZ6qy2vMbIxKynn4Im2y2azhotQgoRfC_s_44e7fUbpzBmkmBWc_CYpgj1V7M566sY8DlnaF1zOu7CFBXcOTMkJgj1xDEN6sZFCQjSvTXVahdhQ7UtvEmhXgiOnfqwagyiUkd2GXptIsavpa0JDMZKn9sDOVD7sEGtmRwu9RvUwjLDIkxpsF5S9pnvLHa7-Wk7bMOHA2yHlWylQ0KmpzLGFX2t3tIgdNBTM3e0AszhN8CTHg3_2Rvf0YWs7TILiOlMtjBAE7nRE2L5ama3JfdMvt7k5p21cnlwjrrwnmGtcjOOg4VxBs0jtkp3EGdqx0P-ydyZFAT2AYd9uz0xAK4fF4ffIZJk8WWMLvtMK-sU4joMdbfVIr",
+      "widthPx": 3468,
+      "heightPx": 4624,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDm7ZiqiAE!2e10!4m2!3m1!1s0x889a07946720b9c7:0xb22f096128d83719",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDm7ZiqiAE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/111477189340826106452",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW-LudHsm5I6MzCwnP6FjyekOgTGjEsSYnucAOepw8ANxroBJ4=s100-p-k-no-mo",
+          "displayName": "Zach R."
+        }
+      ]
+    }
+  ],
+  "rating": 4.3,
+  "reviews": [
+    {
+      "name": "places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/reviews/ChdDSUhNMG9nS0VJQ0FnSURyNk5lVGh3RRAB",
+      "text": {
+        "text": "I am absolutely disgusted at the way a lady (if she even is that) was treating her coworker. I do not know her name, but she was screaming across the entire store at a sweet girl named Makayla. she was doing her job, cleaning the bathroom and screamed at her to get to the front. (the lady yelling was already at the front) she was also yelling at Jen because apparently she’s the one who told her to clean the bathrooms. this was about 7:15 PM on Saturday, July 13. Makayla is a better person than me because I would not have taken the disrespect. it’s hard to find good help nowadays, but I know Makayla is good help. the manager, or lady who thinks she’s the manager, should be put in her place.",
+        "languageCode": "en"
+      },
+      "rating": 2,
+      "publishTime": "2024-07-14T00:25:48.866231Z",
+      "originalText": {
+        "text": "I am absolutely disgusted at the way a lady (if she even is that) was treating her coworker. I do not know her name, but she was screaming across the entire store at a sweet girl named Makayla. she was doing her job, cleaning the bathroom and screamed at her to get to the front. (the lady yelling was already at the front) she was also yelling at Jen because apparently she’s the one who told her to clean the bathrooms. this was about 7:15 PM on Saturday, July 13. Makayla is a better person than me because I would not have taken the disrespect. it’s hard to find good help nowadays, but I know Makayla is good help. the manager, or lady who thinks she’s the manager, should be put in her place.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURyNk5lVGh3RRAB!2m1!1s0x889a07946720b9c7:0xb22f096128d83719",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURyNk5lVGh3RRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/112407124534100238453/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWshzEInGZPALee9FEtOIPxFmNZJ-XcskLb5JNNNLVeAB6sEjRu=s128-c0x00000000-cc-rp-mo-ba6",
+        "displayName": "Lexi Hodges"
+      },
+      "relativePublishTimeDescription": "a year ago"
+    },
+    {
+      "name": "places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/reviews/ChZDSUhNMG9nS0VJQ0FnTUR3azV6eklnEAE",
+      "text": {
+        "text": "My mom got trapped in the men’s bathroom here. It was probably the funniest thing I have heard in a while. 10/10 would recommend getting trapped here. The cutest firefighters show up to help.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-03-28T02:22:13.653554Z",
+      "originalText": {
+        "text": "My mom got trapped in the men’s bathroom here. It was probably the funniest thing I have heard in a while. 10/10 would recommend getting trapped here. The cutest firefighters show up to help.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnTUR3azV6eklnEAE!2m1!1s0x889a07946720b9c7:0xb22f096128d83719",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnTUR3azV6eklnEAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/117299079747771992095/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUc8e3CryEhtadmYQO1N4h2Ka2c8uBc-vghRHkkEJPgBqKu6NWd=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Devon Bezold"
+      },
+      "relativePublishTimeDescription": "a year ago"
+    },
+    {
+      "name": "places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOV1IxcExUV3gxU1hCRlJWQmFRMnRDU2xKd1NHYxAB",
+      "text": {
+        "text": "This store has to be one of the worst ones I have been to the manger is rude and likes to talk behind others backs and she likes to yell in the store like there is no one else there will not be back again. The District manger really needs to look into all of this 🥱",
+        "languageCode": "en"
+      },
+      "rating": 1,
+      "publishTime": "2025-07-15T21:32:57.579720962Z",
+      "originalText": {
+        "text": "This store has to be one of the worst ones I have been to the manger is rude and likes to talk behind others backs and she likes to yell in the store like there is no one else there will not be back again. The District manger really needs to look into all of this 🥱",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xOV1IxcExUV3gxU1hCRlJWQmFRMnRDU2xKd1NHYxAB!2m1!1s0x889a07946720b9c7:0xb22f096128d83719",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2xOV1IxcExUV3gxU1hCRlJWQmFRMnRDU2xKd1NHYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/101281236846765812843/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLkW1tsxN2k3ocmeoXgR0t2rVtdkzoMKGr7zBpXN0CLXL3rJA=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Cool Kid"
+      },
+      "relativePublishTimeDescription": "11 months ago"
+    },
+    {
+      "name": "places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/reviews/ChdDSUhNMG9nS0VJQ0FnSUNsdzZ2ZHRRRRAB",
+      "text": {
+        "text": "I shop here often and it’s the best kept DG in the area. Opens early 7:00 am and very clean and organized. Manager really manages her inventory. I shop several Dollar Generals abd this one is best.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2023-11-25T18:34:13.429941Z",
+      "originalText": {
+        "text": "I shop here often and it’s the best kept DG in the area. Opens early 7:00 am and very clean and organized. Manager really manages her inventory. I shop several Dollar Generals abd this one is best.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNsdzZ2ZHRRRRAB!2m1!1s0x889a07946720b9c7:0xb22f096128d83719",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNsdzZ2ZHRRRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/117529251981484671846/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXfMzj6eXZLArfd4zYGPcQBHqd9ATJ7NBbOCspsrh3IVJX20BeYbg=s128-c0x00000000-cc-rp-mo-ba3",
+        "displayName": "Tina D'Aversa"
+      },
+      "relativePublishTimeDescription": "2 years ago"
+    },
+    {
+      "name": "places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/reviews/ChZDSUhNMG9nS0VJQ0FnSUNDcWFtM093EAE",
+      "text": {
+        "text": "June 20, 2022  (two stars)\nStopped to pick up a few items.  The store is in a convenient location and well stocked with an extremely wide assortment of goods.  I can see why it is very popular. The aisles, however, are too narrow for two shopping cars to pass by each other.\n\nThe new self-checkout machines are annoying.  When I used a credit card to pay, a screen displayed \"Signature Required\".  I entered it on the touch pad signature block, pressed \"Accept\" and nothing happened.  So I hit \"Clear\", entered it again,  pressed \"Accept\".  Same result. Took me a minute to locate an employee to help with the checkout.  She said, \"Oh - you have to hit \"Decline\" for it to work.\"\nGood grief.\n\nFrom 2021 (one star)\nSHOP ELSEWHERE!\nDespite a state-wide order for face masks, and signs requiring masks posted on the doors to this store, there were several people in the narrow aisles who were NOT wearing masks.\n\nI was there this afternoon and saw perhaps nine other people - three customers and six or seven employees. The customers were all wearing masks, thank you. But among the employees, only one was wearing a mask; two had masks hanging around their necks (including the cashier!); and the rest had none at all.\n\nDO NOT patronize this hypocritical and narcissistic store.\nBE SAFE! STAY AWAY!\n\nWarning: Dollar General employees' same disregard for customers exists at the other Dollar General on Orange Beach Blvd.  See my separate review of that location.",
+        "languageCode": "en"
+      },
+      "rating": 2,
+      "publishTime": "2022-06-21T21:52:04.635348Z",
+      "originalText": {
+        "text": "June 20, 2022  (two stars)\nStopped to pick up a few items.  The store is in a convenient location and well stocked with an extremely wide assortment of goods.  I can see why it is very popular. The aisles, however, are too narrow for two shopping cars to pass by each other.\n\nThe new self-checkout machines are annoying.  When I used a credit card to pay, a screen displayed \"Signature Required\".  I entered it on the touch pad signature block, pressed \"Accept\" and nothing happened.  So I hit \"Clear\", entered it again,  pressed \"Accept\".  Same result. Took me a minute to locate an employee to help with the checkout.  She said, \"Oh - you have to hit \"Decline\" for it to work.\"\nGood grief.\n\nFrom 2021 (one star)\nSHOP ELSEWHERE!\nDespite a state-wide order for face masks, and signs requiring masks posted on the doors to this store, there were several people in the narrow aisles who were NOT wearing masks.\n\nI was there this afternoon and saw perhaps nine other people - three customers and six or seven employees. The customers were all wearing masks, thank you. But among the employees, only one was wearing a mask; two had masks hanging around their necks (including the cashier!); and the rest had none at all.\n\nDO NOT patronize this hypocritical and narcissistic store.\nBE SAFE! STAY AWAY!\n\nWarning: Dollar General employees' same disregard for customers exists at the other Dollar General on Orange Beach Blvd.  See my separate review of that location.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNDcWFtM093EAE!2m1!1s0x889a07946720b9c7:0xb22f096128d83719",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNDcWFtM093EAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/108368771310707701994/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW4U1jpCvjf0r-C1UhErozwk9ftfFgsc20S5yRErs_auuZex67N=s128-c0x00000000-cc-rp-mo-ba4",
+        "displayName": "Bruce Barrett"
+      },
+      "relativePublishTimeDescription": "3 years ago"
+    }
+  ],
+  "delivery": true,
+  "location": {
+    "latitude": 30.289752599999996,
+    "longitude": -87.5957245
+  },
+  "plusCode": {
+    "globalCode": "862J7CQ3+WP",
+    "compoundCode": "7CQ3+WP Orange Beach, AL, USA"
+  },
+  "restroom": true,
+  "viewport": {
+    "low": {
+      "latitude": 30.288482519708502,
+      "longitude": -87.5970522802915
+    },
+    "high": {
+      "latitude": 30.291180480291498,
+      "longitude": -87.59435431970849
+    }
+  },
+  "priceLevel": "PRICE_LEVEL_INEXPENSIVE",
+  "websiteUri": "https://www.dollargeneral.com/store-directory/al/orange-beach/14166",
+  "displayName": {
+    "text": "DG Market",
+    "languageCode": "en"
+  },
+  "primaryType": "grocery_store",
+  "googleMapsUri": "https://maps.google.com/?cid=12839491375558309657&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "curbsidePickup": false,
+  "paymentOptions": {
+    "acceptsNfc": true,
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=12839491375558309657&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07946720b9c7:0xb22f096128d83719!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a07946720b9c7:0xb22f096128d83719!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a07946720b9c7:0xb22f096128d83719!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07946720b9c7:0xb22f096128d83719!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shoppingcart_pinlet",
+  "userRatingCount": 305,
+  "adrFormatAddress": "<span class=\"street-address\">25130 Canal Rd</span>, <span class=\"locality\">Orange Beach</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36561-3892</span>, <span class=\"country-name\">USA</span>",
+  "editorialSummary": {
+    "text": "Bargain retail chain selling a range of household goods, groceries, beauty products & more.",
+    "languageCode": "en"
+  },
+  "formattedAddress": "25130 Canal Rd, Orange Beach, AL 36561, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "25130",
+      "shortText": "25130",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Canal Road",
+      "shortText": "Canal Rd",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Orange Beach",
+      "shortText": "Orange Beach",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36561",
+      "shortText": "36561",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "postal_code_suffix"
+      ],
+      "longText": "3892",
+      "shortText": "3892",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "landmarks": [
+      {
+        "name": "places/ChIJebtmxUMGmogRoYps9gI9GI0",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJebtmxUMGmogRoYps9gI9GI0",
+        "displayName": {
+          "text": "J & M Tackle",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 196.31801,
+        "straightLineDistanceMeters": 119.22904
+      },
+      {
+        "name": "places/ChIJB9_4DkMGmogRx1zw5UnQvzU",
+        "types": [
+          "establishment",
+          "furniture_store",
+          "home_goods_store",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJB9_4DkMGmogRx1zw5UnQvzU",
+        "displayName": {
+          "text": "Posh Interiors",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 133.7443,
+        "straightLineDistanceMeters": 103.75516
+      },
+      {
+        "name": "places/ChIJz4UsaEIGmogR50ckasCNrjE",
+        "types": [
+          "bar",
+          "establishment",
+          "food",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJz4UsaEIGmogR50ckasCNrjE",
+        "displayName": {
+          "text": "The Undertow",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 353.47913,
+        "straightLineDistanceMeters": 216.01204
+      },
+      {
+        "name": "places/ChIJjfLui0MGmogRIy8u_MEsT8o",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJjfLui0MGmogRIy8u_MEsT8o",
+        "displayName": {
+          "text": "Island Thrift",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 230.846,
+        "straightLineDistanceMeters": 173.37346
+      },
+      {
+        "name": "places/ChIJzVQbj0QGmogR8nYbzTbjpH0",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "storage",
+          "store"
+        ],
+        "placeId": "ChIJzVQbj0QGmogR8nYbzTbjpH0",
+        "displayName": {
+          "text": "Advanced Marine & Power Systems",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 317.88177,
+        "straightLineDistanceMeters": 247.22711
+      }
+    ]
+  },
+  "generativeSummary": {
+    "overview": {
+      "text": "Chain store providing a variety of products, including fresh meat and produce, at discount prices.",
+      "languageCode": "en-US"
+    },
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "overviewFlagContentUri": "https://www.google.com/local/content/rap/report?postId=CiUweDg4OWEwNzk0NjcyMGI5Yzc6MHhiMjJmMDk2MTI4ZDgzNzE5MAI&d=17924085&t=12"
+  },
+  "currentOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 22,
+          "minute": 0
+        }
+      }
+    ],
+    "nextCloseTime": "2026-06-11T03:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 7:00 AM – 10:00 PM",
+      "Tuesday: 7:00 AM – 10:00 PM",
+      "Wednesday: 7:00 AM – 10:00 PM",
+      "Thursday: 7:00 AM – 10:00 PM",
+      "Friday: 7:00 AM – 10:00 PM",
+      "Saturday: 7:00 AM – 10:00 PM",
+      "Sunday: 7:00 AM – 10:00 PM"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Grocery Store",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#4B96F3",
+  "nationalPhoneNumber": "(251) 314-0260",
+  "regularOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 22,
+          "minute": 0
+        }
+      }
+    ],
+    "nextCloseTime": "2026-06-11T03:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 7:00 AM – 10:00 PM",
+      "Tuesday: 7:00 AM – 10:00 PM",
+      "Wednesday: 7:00 AM – 10:00 PM",
+      "Thursday: 7:00 AM – 10:00 PM",
+      "Friday: 7:00 AM – 10:00 PM",
+      "Saturday: 7:00 AM – 10:00 PM",
+      "Sunday: 7:00 AM – 10:00 PM"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true,
+    "wheelchairAccessibleRestroom": true
+  },
+  "shortFormattedAddress": "25130 Canal Rd, Orange Beach",
+  "primaryTypeDisplayName": {
+    "text": "Grocery Store",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-314-0260"
+}
+ai_overview: Chain store providing a variety of products, including fresh meat and produce, at discount prices.
+price_level: 1
+curbside_pickup: false
+restroom: true
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #4B96F3
+short_formatted_address: 25130 Canal Rd, Orange Beach
+national_phone: (251) 314-0260
+search_vector: 'bargain':18B 'beach':33 'beauti':28B 'chain':3B,20B 'dg':1A 'discount':16B 'fresh':11B 'good':26B 'groceri':27B,30 'household':25B 'includ':10B 'market':2A 'meat':12B 'orang':32 'price':17B 'produc':14B 'product':9B,29B 'provid':5B 'rang':23B 'retail':19B 'sell':21B 'store':4B,31 'varieti':7B
+primary_type_display: Grocery Store
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=12839491375558309657&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07946720b9c7:0xb22f096128d83719!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a07946720b9c7:0xb22f096128d83719!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a07946720b9c7:0xb22f096128d83719!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07946720b9c7:0xb22f096128d83719!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "landmarks": [
+    {
+      "name": "places/ChIJebtmxUMGmogRoYps9gI9GI0",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJebtmxUMGmogRoYps9gI9GI0",
+      "displayName": {
+        "text": "J & M Tackle",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 196.31801,
+      "straightLineDistanceMeters": 119.22904
+    },
+    {
+      "name": "places/ChIJB9_4DkMGmogRx1zw5UnQvzU",
+      "types": [
+        "establishment",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJB9_4DkMGmogRx1zw5UnQvzU",
+      "displayName": {
+        "text": "Posh Interiors",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 133.7443,
+      "straightLineDistanceMeters": 103.75516
+    },
+    {
+      "name": "places/ChIJz4UsaEIGmogR50ckasCNrjE",
+      "types": [
+        "bar",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJz4UsaEIGmogR50ckasCNrjE",
+      "displayName": {
+        "text": "The Undertow",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 353.47913,
+      "straightLineDistanceMeters": 216.01204
+    },
+    {
+      "name": "places/ChIJjfLui0MGmogRIy8u_MEsT8o",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJjfLui0MGmogRIy8u_MEsT8o",
+      "displayName": {
+        "text": "Island Thrift",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 230.846,
+      "straightLineDistanceMeters": 173.37346
+    },
+    {
+      "name": "places/ChIJzVQbj0QGmogR8nYbzTbjpH0",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "storage",
+        "store"
+      ],
+      "placeId": "ChIJzVQbj0QGmogR8nYbzTbjpH0",
+      "displayName": {
+        "text": "Advanced Marine & Power Systems",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 317.88177,
+      "straightLineDistanceMeters": 247.22711
+    }
+  ]
+}
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url | hero_image_url v2-fix 2026-07-21: repointed to a photo confirmed to actually exist
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: generic
+generative_summary: Chain store providing a variety of products, including fresh meat and produce, at discount prices.
+industry_code: retail
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_attributes   -   10 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 10] ---
+id: afe55aa7-2162-4e53-9f4a-38751c7bb18f
+entity_slug: dg-market
+category: service
+key: delivery
+label: Delivery
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 2 of 10] ---
+id: c04503c6-7ec7-4e51-824f-7d4b5743d860
+entity_slug: dg-market
+category: service
+key: curbside_pickup
+label: Curbside Pickup
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 3 of 10] ---
+id: 367ed1cb-1ba5-4f5d-a018-7364e106e50a
+entity_slug: dg-market
+category: amenity
+key: restroom
+label: Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 4 of 10] ---
+id: e9db22b6-b388-4fd0-a157-bc63c3a43d58
+entity_slug: dg-market
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 5 of 10] ---
+id: ee37dca5-2c8a-4c4f-b28b-d4fcf094597f
+entity_slug: dg-market
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 6 of 10] ---
+id: 69aa6d23-9ec1-428f-b003-6e0a318c5657
+entity_slug: dg-market
+category: accessibility
+key: access_wheelchairAccessibleRestroom
+label: Wheelchair Accessible Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 7 of 10] ---
+id: f482485d-a8eb-478c-b8e7-04325bb90684
+entity_slug: dg-market
+category: payment
+key: pay_acceptsNfc
+label: Accepts Nfc
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 8 of 10] ---
+id: c582d477-02c3-47f5-9867-48daa0c5e304
+entity_slug: dg-market
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 9 of 10] ---
+id: 5bc4f1d0-18cc-4019-a617-341a798cbbd2
+entity_slug: dg-market
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 10 of 10] ---
+id: 0307c065-860a-45cd-af6c-d32a68b0a60e
+entity_slug: dg-market
+category: payment
+key: pay_acceptsCreditCards
+label: Accepts Credit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: dg-market
+name: DG Market
+industry_code: retail
+is_parent: false
+score_of_7: 5
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: f8d327d1-5ddd-44d3-be1c-bc060ebbdcb1
+entity_slug: dg-market
+place_uri: https://maps.google.com/?cid=12839491375558309657&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07946720b9c7:0xb22f096128d83719!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a07946720b9c7:0xb22f096128d83719!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a07946720b9c7:0xb22f096128d83719!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07946720b9c7:0xb22f096128d83719!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 3245
+entity_slug: dg-market
+google_review_name: places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/reviews/ChdDSUhNMG9nS0VJQ0FnSURyNk5lVGh3RRAB
+rating: 2
+review_text: I am absolutely disgusted at the way a lady (if she even is that) was treating her coworker. I do not know her name, but she was screaming across the entire store at a sweet girl named Makayla. she was doing her job, cleaning the bathroom and screamed at her to get to the front. (the lady yelling was already at the front) she was also yelling at Jen because apparently she’s the one who told her to clean the bathrooms. this was about 7:15 PM on Saturday, July 13. Makayla is a better person than me because I would not have taken the disrespect. it’s hard to find good help nowadays, but I know Makayla is good help. the manager, or lady who thinks she’s the manager, should be put in her place.
+language_code: en
+author_name: Lexi Hodges
+author_profile_url: https://www.google.com/maps/contrib/112407124534100238453/reviews
+publish_time: 2024-07-14T00:25:48.866231+00:00
+relative_time: a year ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURyNk5lVGh3RRAB!2m1!1s0x889a07946720b9c7:0xb22f096128d83719
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 3246
+entity_slug: dg-market
+google_review_name: places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/reviews/ChZDSUhNMG9nS0VJQ0FnTUR3azV6eklnEAE
+rating: 5
+review_text: My mom got trapped in the men’s bathroom here. It was probably the funniest thing I have heard in a while. 10/10 would recommend getting trapped here. The cutest firefighters show up to help.
+language_code: en
+author_name: Devon Bezold
+author_profile_url: https://www.google.com/maps/contrib/117299079747771992095/reviews
+publish_time: 2025-03-28T02:22:13.653554+00:00
+relative_time: a year ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnTUR3azV6eklnEAE!2m1!1s0x889a07946720b9c7:0xb22f096128d83719
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 3247
+entity_slug: dg-market
+google_review_name: places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOV1IxcExUV3gxU1hCRlJWQmFRMnRDU2xKd1NHYxAB
+rating: 1
+review_text: This store has to be one of the worst ones I have been to the manger is rude and likes to talk behind others backs and she likes to yell in the store like there is no one else there will not be back again. The District manger really needs to look into all of this 🥱
+language_code: en
+author_name: Cool Kid
+author_profile_url: https://www.google.com/maps/contrib/101281236846765812843/reviews
+publish_time: 2025-07-15T21:32:57.579721+00:00
+relative_time: 11 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xOV1IxcExUV3gxU1hCRlJWQmFRMnRDU2xKd1NHYxAB!2m1!1s0x889a07946720b9c7:0xb22f096128d83719
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 3248
+entity_slug: dg-market
+google_review_name: places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/reviews/ChdDSUhNMG9nS0VJQ0FnSUNsdzZ2ZHRRRRAB
+rating: 5
+review_text: I shop here often and it’s the best kept DG in the area. Opens early 7:00 am and very clean and organized. Manager really manages her inventory. I shop several Dollar Generals abd this one is best.
+language_code: en
+author_name: Tina D'Aversa
+author_profile_url: https://www.google.com/maps/contrib/117529251981484671846/reviews
+publish_time: 2023-11-25T18:34:13.429941+00:00
+relative_time: 2 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNsdzZ2ZHRRRRAB!2m1!1s0x889a07946720b9c7:0xb22f096128d83719
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 3249
+entity_slug: dg-market
+google_review_name: places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/reviews/ChZDSUhNMG9nS0VJQ0FnSUNDcWFtM093EAE
+rating: 2
+review_text: June 20, 2022  (two stars)
+Stopped to pick up a few items.  The store is in a convenient location and well stocked with an extremely wide assortment of goods.  I can see why it is very popular. The aisles, however, are too narrow for two shopping cars to pass by each other.
+
+The new self-checkout machines are annoying.  When I used a credit card to pay, a screen displayed "Signature Required".  I entered it on the touch pad signature block, pressed "Accept" and nothing happened.  So I hit "Clear", entered it again,  pressed "Accept".  Same result. Took me a minute to locate an employee to help with the checkout.  She said, "Oh - you have to hit "Decline" for it to work."
+Good grief.
+
+From 2021 (one star)
+SHOP ELSEWHERE!
+Despite a state-wide order for face masks, and signs requiring masks posted on the doors to this store, there were several people in the narrow aisles who were NOT wearing masks.
+
+I was there this afternoon and saw perhaps nine other people - three customers and six or seven employees. The customers were all wearing masks, thank you. But among the employees, only one was wearing a mask; two had masks hanging around their necks (including the cashier!); and the rest had none at all.
+
+DO NOT patronize this hypocritical and narcissistic store.
+BE SAFE! STAY AWAY!
+
+Warning: Dollar General employees' same disregard for customers exists at the other Dollar General on Orange Beach Blvd.  See my separate review of that location.
+language_code: en
+author_name: Bruce Barrett
+author_profile_url: https://www.google.com/maps/contrib/108368771310707701994/reviews
+publish_time: 2022-06-21T21:52:04.635348+00:00
+relative_time: 3 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNDcWFtM093EAE!2m1!1s0x889a07946720b9c7:0xb22f096128d83719
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 371eacec-e9f8-4df5-bb58-9c77ccd1f749
+entity_slug: dg-market
+day_of_week: 0
+opens_at: 07:00:00
+closes_at: 22:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 825b38cd-35f0-4160-a0fd-2dcd93d16893
+entity_slug: dg-market
+day_of_week: 1
+opens_at: 07:00:00
+closes_at: 22:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 7e8005df-46c8-4003-a5ee-2ac9b1c8424c
+entity_slug: dg-market
+day_of_week: 2
+opens_at: 07:00:00
+closes_at: 22:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: c76b5e59-2763-4722-ad44-6b6bfc65ede9
+entity_slug: dg-market
+day_of_week: 3
+opens_at: 07:00:00
+closes_at: 22:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 42b7276e-4ec8-4e5b-96b1-26fd3eaad598
+entity_slug: dg-market
+day_of_week: 4
+opens_at: 07:00:00
+closes_at: 22:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: df57e264-b2d2-4eaa-8395-fb29bf405096
+entity_slug: dg-market
+day_of_week: 5
+opens_at: 07:00:00
+closes_at: 22:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: c2a99762-f2e0-4891-bb00-a828d8a9bd23
+entity_slug: dg-market
+day_of_week: 6
+opens_at: 07:00:00
+closes_at: 22:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_modules   -   10 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 10] ---
+id: 5eb52783-c576-40a3-b87a-837cff31f29b
+entity_slug: dg-market
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 10] ---
+id: c000a7b3-71c8-49e7-a3d4-d19b697837a0
+entity_slug: dg-market
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 10] ---
+id: d19145e4-aed9-4bcd-bb0f-04e8927b257a
+entity_slug: dg-market
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 10] ---
+id: b36b22df-daca-48bc-8a08-7fc5d9655ae6
+entity_slug: dg-market
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 10] ---
+id: bc230826-62e7-4b08-b61a-6cc5d7fb819f
+entity_slug: dg-market
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 10] ---
+id: dc1b3b8f-92d4-4a2a-b0d7-c2916f19597c
+entity_slug: dg-market
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 10] ---
+id: b1644793-e4e7-4acd-86da-1cf6a22d34d1
+entity_slug: dg-market
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 10] ---
+id: 46270137-855e-41ac-abbf-d96c89fb4d4d
+entity_slug: dg-market
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 10] ---
+id: 6888f733-fc89-4f6e-b6a4-11eb2988a675
+entity_slug: dg-market
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 10] ---
+id: 276f6838-05f0-427a-bdd3-5f8c1761a1b1
+entity_slug: dg-market
+module_key: shop
+enabled: true
+sort_order: 10
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   20 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 20] ---
+id: d52bf346-1925-4d3b-ac2f-e37c6478d7d0
+landmark_id: 1418d287-9840-4c33-b6c0-f2ac8391530f
+entity_slug: dg-market
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 20] ---
+id: 4beba24e-0ea5-4c33-b600-8d92adf12691
+landmark_id: 1418d287-9840-4c33-b6c0-f2ac8391530f
+entity_slug: dg-market
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 20] ---
+id: b418bc36-6e6a-4364-a38b-cec1a06570b7
+landmark_id: 1418d287-9840-4c33-b6c0-f2ac8391530f
+entity_slug: dg-market
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 20] ---
+id: 4e7ca67e-53de-4e1b-8fd3-afca955379aa
+landmark_id: 09c904bf-f8d9-46bb-aa0c-a7a8aee0f970
+entity_slug: dg-market
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 20] ---
+id: d0261008-723d-4c3e-97de-a1987406b6fc
+landmark_id: 09c904bf-f8d9-46bb-aa0c-a7a8aee0f970
+entity_slug: dg-market
+landmark_type: furniture_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 20] ---
+id: c1073dbc-8efe-43e4-aa33-53358ec8d1f0
+landmark_id: 09c904bf-f8d9-46bb-aa0c-a7a8aee0f970
+entity_slug: dg-market
+landmark_type: home_goods_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 20] ---
+id: e2c865cd-d971-4a85-a89d-c5f670ad35a8
+landmark_id: 09c904bf-f8d9-46bb-aa0c-a7a8aee0f970
+entity_slug: dg-market
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 20] ---
+id: bf4b76ff-d96b-47a2-9b38-bd35c83cfd15
+landmark_id: 09c904bf-f8d9-46bb-aa0c-a7a8aee0f970
+entity_slug: dg-market
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 20] ---
+id: 9d9a9553-1b92-4dab-bacf-48961943c3e0
+landmark_id: 2c096c6f-4da9-4d14-8950-8abe13f3ffa3
+entity_slug: dg-market
+landmark_type: bar
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 20] ---
+id: 8d01e88c-2d1e-4d22-9676-53b0cb0d312e
+landmark_id: 2c096c6f-4da9-4d14-8950-8abe13f3ffa3
+entity_slug: dg-market
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 20] ---
+id: bbdfdd4c-fe5f-4654-a4f3-9d0de4b40aac
+landmark_id: 2c096c6f-4da9-4d14-8950-8abe13f3ffa3
+entity_slug: dg-market
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 20] ---
+id: 45332b93-1984-4247-abbe-03dfaa34522c
+landmark_id: 2c096c6f-4da9-4d14-8950-8abe13f3ffa3
+entity_slug: dg-market
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 20] ---
+id: 3b58862a-2695-497d-bad5-9ab9518b8597
+landmark_id: 2c096c6f-4da9-4d14-8950-8abe13f3ffa3
+entity_slug: dg-market
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 20] ---
+id: 6a8228c6-f065-44e8-b1c5-32017dcd7176
+landmark_id: dd9bc5c7-de3c-42c5-92f4-0e2ab42807b6
+entity_slug: dg-market
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 20] ---
+id: 75b9c684-4329-4184-b86c-04a1a295470c
+landmark_id: dd9bc5c7-de3c-42c5-92f4-0e2ab42807b6
+entity_slug: dg-market
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 20] ---
+id: 45e9f924-9c06-40c5-83fc-5002ed2f95bc
+landmark_id: dd9bc5c7-de3c-42c5-92f4-0e2ab42807b6
+entity_slug: dg-market
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 20] ---
+id: e40b178c-5ed1-4edc-88dd-d895b1fdb4ef
+landmark_id: 1b68e9dd-37da-4432-8d69-4e452db8baff
+entity_slug: dg-market
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 20] ---
+id: 53ca280b-efb8-4527-bf6d-e87455ef3476
+landmark_id: 1b68e9dd-37da-4432-8d69-4e452db8baff
+entity_slug: dg-market
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 19 of 20] ---
+id: 5eecc461-80d7-4be0-b9bb-8b3bf4daf52d
+landmark_id: 1b68e9dd-37da-4432-8d69-4e452db8baff
+entity_slug: dg-market
+landmark_type: storage
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 20 of 20] ---
+id: 7279129c-9eef-4284-aa75-f6c228227d9d
+landmark_id: 1b68e9dd-37da-4432-8d69-4e452db8baff
+entity_slug: dg-market
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   5 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 5] ---
+id: 1418d287-9840-4c33-b6c0-f2ac8391530f
+entity_slug: dg-market
+kind: landmark
+place_id: ChIJebtmxUMGmogRoYps9gI9GI0
+name: J & M Tackle
+types: [
+  "establishment",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 196.31801
+straight_line_distance_meters: 119.22904
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 5] ---
+id: 09c904bf-f8d9-46bb-aa0c-a7a8aee0f970
+entity_slug: dg-market
+kind: landmark
+place_id: ChIJB9_4DkMGmogRx1zw5UnQvzU
+name: Posh Interiors
+types: [
+  "establishment",
+  "furniture_store",
+  "home_goods_store",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 133.7443
+straight_line_distance_meters: 103.75516
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 5] ---
+id: 2c096c6f-4da9-4d14-8950-8abe13f3ffa3
+entity_slug: dg-market
+kind: landmark
+place_id: ChIJz4UsaEIGmogR50ckasCNrjE
+name: The Undertow
+types: [
+  "bar",
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant"
+]
+travel_distance_meters: 353.47913
+straight_line_distance_meters: 216.01204
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 5] ---
+id: dd9bc5c7-de3c-42c5-92f4-0e2ab42807b6
+entity_slug: dg-market
+kind: landmark
+place_id: ChIJjfLui0MGmogRIy8u_MEsT8o
+name: Island Thrift
+types: [
+  "establishment",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 230.846
+straight_line_distance_meters: 173.37346
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 5] ---
+id: 1b68e9dd-37da-4432-8d69-4e452db8baff
+entity_slug: dg-market
+kind: landmark
+place_id: ChIJzVQbj0QGmogR8nYbzTbjpH0
+name: Advanced Marine & Power Systems
+types: [
+  "establishment",
+  "point_of_interest",
+  "storage",
+  "store"
+]
+travel_distance_meters: 317.88177
+straight_line_distance_meters: 247.22711
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_photos   -   13 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 13] ---
+id: 6db868c5-5965-46ef-91b9-f72306f4b78b
+entity_slug: dg-market
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dg-market/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 2 of 13] ---
+id: bbc1970d-7ca6-411c-885a-0ca08b0cc50a
+entity_slug: dg-market
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dg-market/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 3 of 13] ---
+id: c1de2e94-8797-42ff-a249-2ed0d38b6ed0
+entity_slug: dg-market
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dg-market/photo_03.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 4 of 13] ---
+id: 0787b830-e1e1-4589-b7b6-34ba3da51f73
+entity_slug: dg-market
+url: https://places.googleapis.com/v1/places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3kq7KRxHTzLG0WZDAXwP9_G7MjFZWdvGjY0IDKnHqJoH7-OJlegy9gNjGUw982_IO9vitKas1gvKeWS5HAZsrHMTQi2hx6qK4beX6Jef5J-O3Y5Zt492AZoeYvoPt6Y7GKysnRfybpLv7wn93--z4SlUmG2qCH0Gz7NY0uR8uJGzTJFvo1eMXkaEdjh-gibbJq5BI9_CHTPwasrpPFOCu8YqCrNXgzPm5t68CHVvB_vZ3JPY50zGBO3d0PJ5RNl-IKOBSph-GpgrJifCuWlUAztxnlYotBTVQ197QNih3wg83zaLeqzqTDROwn91KIu2Vmk6YWkvqCLHqCLvFj4IBjBCv3Tldc6cB444_SEXGiZRrNPQW8jmhuTr4gL4h84bHTr5mFTJr2-mJ0jYxYQG29oGL1Pkvg3RsTZQD5KM6N4dg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3kq7KRxHTzLG0WZDAXwP9_G7MjFZWdvGjY0IDKnHqJoH7-OJlegy9gNjGUw982_IO9vitKas1gvKeWS5HAZsrHMTQi2hx6qK4beX6Jef5J-O3Y5Zt492AZoeYvoPt6Y7GKysnRfybpLv7wn93--z4SlUmG2qCH0Gz7NY0uR8uJGzTJFvo1eMXkaEdjh-gibbJq5BI9_CHTPwasrpPFOCu8YqCrNXgzPm5t68CHVvB_vZ3JPY50zGBO3d0PJ5RNl-IKOBSph-GpgrJifCuWlUAztxnlYotBTVQ197QNih3wg83zaLeqzqTDROwn91KIu2Vmk6YWkvqCLHqCLvFj4IBjBCv3Tldc6cB444_SEXGiZRrNPQW8jmhuTr4gL4h84bHTr5mFTJr2-mJ0jYxYQG29oGL1Pkvg3RsTZQD5KM6N4dg
+is_cover: false
+sort_order: 0
+caption: Hope Farrow
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICEvtzwGg!2e10!4m2!3m1!1s0x889a07946720b9c7:0xb22f096128d83719
+
+--- entity_photos [row 5 of 13] ---
+id: f12cc361-b4e7-440c-bf21-d4bd2e3372ec
+entity_slug: dg-market
+url: https://places.googleapis.com/v1/places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3lZDtBloJVq1FU3ilowrIYxP3gVzO5hUObh4rz2WZ1sXI9bfBmgRLgLBOboHuDjwteZBQmMtEXHULTkrdpTxevU3FjnLqvJwvPCPvSScICw4FYsp10iITNM3TFUafi4rsrI9kgFHaBqH0bzmb10GMTm35ykK1hDHwT5lDskgawTkfotycaw-y_605cRWwVOmDbUYItsLIiqXiOnFkPd3QG0cs277_hlhC55yzC1NZEjZzZMRiiywNCG993MaYwoPK95qR1nBCp97Qa64-HOmUr_0cW_NfJyDVpGPSvvPRHQYdKFXM8sPwNjjDp2KxbsNflM8KvHV2p_8kMobgK4TH3kLcbbitKD3lecQoMDDzwYdGIelvbYAJ7Yz6LUhoygvbfIT6hBXbriNGBcdzlYQ4zCbgxQ4JWVsI_nsdraJajDsVGg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3lZDtBloJVq1FU3ilowrIYxP3gVzO5hUObh4rz2WZ1sXI9bfBmgRLgLBOboHuDjwteZBQmMtEXHULTkrdpTxevU3FjnLqvJwvPCPvSScICw4FYsp10iITNM3TFUafi4rsrI9kgFHaBqH0bzmb10GMTm35ykK1hDHwT5lDskgawTkfotycaw-y_605cRWwVOmDbUYItsLIiqXiOnFkPd3QG0cs277_hlhC55yzC1NZEjZzZMRiiywNCG993MaYwoPK95qR1nBCp97Qa64-HOmUr_0cW_NfJyDVpGPSvvPRHQYdKFXM8sPwNjjDp2KxbsNflM8KvHV2p_8kMobgK4TH3kLcbbitKD3lecQoMDDzwYdGIelvbYAJ7Yz6LUhoygvbfIT6hBXbriNGBcdzlYQ4zCbgxQ4JWVsI_nsdraJajDsVGg
+is_cover: false
+sort_order: 1
+caption: Rusty Parker
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICE8ND53gE!2e10!4m2!3m1!1s0x889a07946720b9c7:0xb22f096128d83719
+
+--- entity_photos [row 6 of 13] ---
+id: ad233186-afda-4be7-ac1b-d79d471ffffa
+entity_slug: dg-market
+url: https://places.googleapis.com/v1/places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3k2RIoArPXpNv8V4qWNjVaR07cVruKPgBsUtHQFJB7Ud56ZGay6LAtYe035QvYx8R0nkU1OlGpi1ApvydKmTrCV4SPobYZO7Gw1Udt5G-JBohXRWSY7GcNRcXOtC-bk_46xCQvcAAW9JBZITpSPeB8WI-Yy3c_CLFQrXQBCSdvLDzkHF7KkqLGSTjRvy6j7w7ixj2LMNkjHo3McRF8gAcKKFhHuKR8wc7abnyq_NB63ohdz3lIP8N4Dfz_4c0tJ3KLvjOGLbFTNgb_nRn5JRL66i93ZSxpf9Eb7u8m9wm0RY3ltEhcw-nQuGkqHlyNAIQFJcy4zskn_I5Q0gA5oEE7wLykUt7kIJxe0NeODL4R5RMtIGKRmrK9tMKusKlAyHLuNOmk7rGkEheLQzcX_mxSeD7cj3HzNfNRsfGsu6-UiNQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3k2RIoArPXpNv8V4qWNjVaR07cVruKPgBsUtHQFJB7Ud56ZGay6LAtYe035QvYx8R0nkU1OlGpi1ApvydKmTrCV4SPobYZO7Gw1Udt5G-JBohXRWSY7GcNRcXOtC-bk_46xCQvcAAW9JBZITpSPeB8WI-Yy3c_CLFQrXQBCSdvLDzkHF7KkqLGSTjRvy6j7w7ixj2LMNkjHo3McRF8gAcKKFhHuKR8wc7abnyq_NB63ohdz3lIP8N4Dfz_4c0tJ3KLvjOGLbFTNgb_nRn5JRL66i93ZSxpf9Eb7u8m9wm0RY3ltEhcw-nQuGkqHlyNAIQFJcy4zskn_I5Q0gA5oEE7wLykUt7kIJxe0NeODL4R5RMtIGKRmrK9tMKusKlAyHLuNOmk7rGkEheLQzcX_mxSeD7cj3HzNfNRsfGsu6-UiNQ
+is_cover: false
+sort_order: 2
+caption: Victor Jordan
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICayNHXOg!2e10!4m2!3m1!1s0x889a07946720b9c7:0xb22f096128d83719
+
+--- entity_photos [row 7 of 13] ---
+id: 0ed89d9d-0b72-4100-b263-db21eb2f803d
+entity_slug: dg-market
+url: https://places.googleapis.com/v1/places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3l692POD4j5V0N284KWFbQINI0gmA0yKckYrVHSYHcvwFT1ZMM8IpRo17fqCUo3ZiPwULH2KiQiebNu7AKQble7zI16nCReXX0JjnklNBVWwpF3HAcqXzcFTqrRtZ37gY1qu4GzZHA9ok0sYgUqlY87A9DbO0vtRgz1PqmhyJGSyh0Pa78PhfY50TXP-F_8dbpysPcjO9R6jHbkyzcYa2CQAKHnUy-nCWflMJqupgCQK1dSJjNOGmiJNdBoYC8_QgOEcrqYDBareZUjoRmUH43pJZzXqs02RmnJ2NxdSTl8fwguSKCdhDONuPuqXWegcN3FhWufDrwVv8oskn6dlussa6wBPJclDqCeW8mOMfjWO8BZuAw_hrlyC5pHCOvvGrHKGay86X56llsa1CzhAbmcIGqnuZBYedNyvftC4tntc4mY/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3l692POD4j5V0N284KWFbQINI0gmA0yKckYrVHSYHcvwFT1ZMM8IpRo17fqCUo3ZiPwULH2KiQiebNu7AKQble7zI16nCReXX0JjnklNBVWwpF3HAcqXzcFTqrRtZ37gY1qu4GzZHA9ok0sYgUqlY87A9DbO0vtRgz1PqmhyJGSyh0Pa78PhfY50TXP-F_8dbpysPcjO9R6jHbkyzcYa2CQAKHnUy-nCWflMJqupgCQK1dSJjNOGmiJNdBoYC8_QgOEcrqYDBareZUjoRmUH43pJZzXqs02RmnJ2NxdSTl8fwguSKCdhDONuPuqXWegcN3FhWufDrwVv8oskn6dlussa6wBPJclDqCeW8mOMfjWO8BZuAw_hrlyC5pHCOvvGrHKGay86X56llsa1CzhAbmcIGqnuZBYedNyvftC4tntc4mY
+is_cover: false
+sort_order: 3
+caption: Victor Jordan
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICayNHfqAE!2e10!4m2!3m1!1s0x889a07946720b9c7:0xb22f096128d83719
+
+--- entity_photos [row 8 of 13] ---
+id: c0f3829b-69b0-46af-8428-11b48fc8a983
+entity_slug: dg-market
+url: https://places.googleapis.com/v1/places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3lxUHCK8I7q1Mlbc9WuC2xIkS95GypxmfbODDwMLanOMTpmy2-HkgvPMw1pBsgQFIgAmGRalUDuInkhWEvzVWAnMb2efv-XuslYJmJSWYTRliMAk9F9QD24jVGrV2QeHDDtmOY8DCEvyTUa4VlM4lKmJSfzplJjkuLRHd4CnHWfnY-1hrYMTFcxoewBU4jlvqINjnd8H1_9suWsEqNEGyskzL7wd-bUcYr8CTLcdVpI9qiazDBj4wmpg9lblT2WkdZlAhmtMwFhkK926J4IKyXeZLOnnC0aCaHM5YCH-47bawpRV8U9wJ_0jBfJLW-nMFYgXrbCvR0raMBxr_Xkz49I83YFpI4L1LOqxbjSbImJFWzg-w4NgFFpeXn88I67P9PymgYVo4OA3fZWL34hDYtjMkSmT1nheQqUmrpebKlIGg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3lxUHCK8I7q1Mlbc9WuC2xIkS95GypxmfbODDwMLanOMTpmy2-HkgvPMw1pBsgQFIgAmGRalUDuInkhWEvzVWAnMb2efv-XuslYJmJSWYTRliMAk9F9QD24jVGrV2QeHDDtmOY8DCEvyTUa4VlM4lKmJSfzplJjkuLRHd4CnHWfnY-1hrYMTFcxoewBU4jlvqINjnd8H1_9suWsEqNEGyskzL7wd-bUcYr8CTLcdVpI9qiazDBj4wmpg9lblT2WkdZlAhmtMwFhkK926J4IKyXeZLOnnC0aCaHM5YCH-47bawpRV8U9wJ_0jBfJLW-nMFYgXrbCvR0raMBxr_Xkz49I83YFpI4L1LOqxbjSbImJFWzg-w4NgFFpeXn88I67P9PymgYVo4OA3fZWL34hDYtjMkSmT1nheQqUmrpebKlIGg
+is_cover: false
+sort_order: 4
+caption: DG Market
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICH_5CyaA!2e10!4m2!3m1!1s0x889a07946720b9c7:0xb22f096128d83719
+
+--- entity_photos [row 9 of 13] ---
+id: f18654ba-9067-4ea5-8245-fd6a5522735e
+entity_slug: dg-market
+url: https://places.googleapis.com/v1/places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3lVX5KsK_VVLVBbGITVARllLHnFQK2g7UXKp1DQefYtMk_LVF9GKGp9JgJi91OlvYsPKxDfVHqeTLJIMyhA60cWapWqxXXUCHTxQZ1rfovPfLBbxAaEMCf6ZydelUsYspvv-aNwxtizdh4WF-JczYV12OEG8YGXR6cN-QfNNn_L8FtjDoPUj_Nfs8NbPgzCGslwM-WynZEnYTDBt-QvWUlKQ8XsAYT5c8FWQoztxIuDZli8M6fSQtvz0BkRM0PXiq4159MPU1WAYYGrZR7ZALxhRC2--NtMYhMI2ClXMVuW1qwPNsDLqyhgslaqLKS93PxpK5ftr_yqMNgoEdsoTnIRj2hq_Z6uJf-qVz_vU88CKcMjq6Fvyif2fCVCbyBAZD8Z0AovByiDMuxBC8rQRPEduDfzYrC8pwUMl0qccyeevg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3lVX5KsK_VVLVBbGITVARllLHnFQK2g7UXKp1DQefYtMk_LVF9GKGp9JgJi91OlvYsPKxDfVHqeTLJIMyhA60cWapWqxXXUCHTxQZ1rfovPfLBbxAaEMCf6ZydelUsYspvv-aNwxtizdh4WF-JczYV12OEG8YGXR6cN-QfNNn_L8FtjDoPUj_Nfs8NbPgzCGslwM-WynZEnYTDBt-QvWUlKQ8XsAYT5c8FWQoztxIuDZli8M6fSQtvz0BkRM0PXiq4159MPU1WAYYGrZR7ZALxhRC2--NtMYhMI2ClXMVuW1qwPNsDLqyhgslaqLKS93PxpK5ftr_yqMNgoEdsoTnIRj2hq_Z6uJf-qVz_vU88CKcMjq6Fvyif2fCVCbyBAZD8Z0AovByiDMuxBC8rQRPEduDfzYrC8pwUMl0qccyeevg
+is_cover: false
+sort_order: 5
+caption: Zach R.
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDm7ZiaKQ!2e10!4m2!3m1!1s0x889a07946720b9c7:0xb22f096128d83719
+
+--- entity_photos [row 10 of 13] ---
+id: 7a86e362-60f4-44c1-a7d0-2a152cb82bce
+entity_slug: dg-market
+url: https://places.googleapis.com/v1/places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3kYqYYh_A7ArAP0xzeeWtloYxWrVZZBSa1WOh4_oTnot4S93rD28SxmLTv6rELfKhpKet4_fb4fqTCpAgvdCoEckrKRAId2zHR-zKoij1Uyu3wg6uKh3uDDzrZ-Kj-YEvaMhEUSNZdSMEKKZSHv8veRQP-jESrRRyTgWccqhLeg4tEdbBTlKs6kqcQVCAOVU8tLkbU1eQECft3JunXQ0IoiqgwxenUQPosgVap-0suM0XYXdxXfeG6uw_3HQggyCXCZzRJLtmxrlDkYtLL_sFG5thiXIDiboj74a0-nLARwXuUb8870oFSvue1d-Rj6Bk4qR1BnN6HOSJMAmTscUNCVVgAzOWDdX8KEyjWcmWpxfAxZIpcnQLNAntDTRYbQAdsxi_0y-_7VQBoQ8PPqE_pAHYNK2EdchdsQdG0yd3rNILgl/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3kYqYYh_A7ArAP0xzeeWtloYxWrVZZBSa1WOh4_oTnot4S93rD28SxmLTv6rELfKhpKet4_fb4fqTCpAgvdCoEckrKRAId2zHR-zKoij1Uyu3wg6uKh3uDDzrZ-Kj-YEvaMhEUSNZdSMEKKZSHv8veRQP-jESrRRyTgWccqhLeg4tEdbBTlKs6kqcQVCAOVU8tLkbU1eQECft3JunXQ0IoiqgwxenUQPosgVap-0suM0XYXdxXfeG6uw_3HQggyCXCZzRJLtmxrlDkYtLL_sFG5thiXIDiboj74a0-nLARwXuUb8870oFSvue1d-Rj6Bk4qR1BnN6HOSJMAmTscUNCVVgAzOWDdX8KEyjWcmWpxfAxZIpcnQLNAntDTRYbQAdsxi_0y-_7VQBoQ8PPqE_pAHYNK2EdchdsQdG0yd3rNILgl
+is_cover: false
+sort_order: 6
+caption: Zach R.
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICR7KHs5wE!2e10!4m2!3m1!1s0x889a07946720b9c7:0xb22f096128d83719
+
+--- entity_photos [row 11 of 13] ---
+id: 80f53f72-b86a-4181-83fd-43a74565f7a1
+entity_slug: dg-market
+url: https://places.googleapis.com/v1/places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3mJ_iqpqtYha_IdrGLD4x-MyWt0yWt3jkR34tn4uyxfgTki6oQ4Ujtz8bxNnn21THwDL1cow59vexxfhP4YuawMaC9s_6AspLfMEYKH-iGd-inkEr13X8H8yJOAYOdNQ0KJhDggm6_Wih2UQerUSWLZFTL4HfNbe88oYbHTBddzQg2rK17qsZpO_Q5cyIFgZesJgiQcHPCwi-UBKe2Rp3X71okHFqpQ0RaYipSS3VB93lRh19g2ND0yPwQUQjlk2ImJaDMYxRSVr9bFdGFco3R_9_L2aEBSBx59wzJo5b_-oBcXoNcMI6YqKpNGUX0upjY0-dwgc7M9Ydt11_p8RghYmEJ77W_BLAlJj3TO5nO5cSXXbLbzUM6s5a-gNgR3O16GYjvfbMoHW1vLw7lQradSPnfwRkBht6-Mo65GdL8/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3mJ_iqpqtYha_IdrGLD4x-MyWt0yWt3jkR34tn4uyxfgTki6oQ4Ujtz8bxNnn21THwDL1cow59vexxfhP4YuawMaC9s_6AspLfMEYKH-iGd-inkEr13X8H8yJOAYOdNQ0KJhDggm6_Wih2UQerUSWLZFTL4HfNbe88oYbHTBddzQg2rK17qsZpO_Q5cyIFgZesJgiQcHPCwi-UBKe2Rp3X71okHFqpQ0RaYipSS3VB93lRh19g2ND0yPwQUQjlk2ImJaDMYxRSVr9bFdGFco3R_9_L2aEBSBx59wzJo5b_-oBcXoNcMI6YqKpNGUX0upjY0-dwgc7M9Ydt11_p8RghYmEJ77W_BLAlJj3TO5nO5cSXXbLbzUM6s5a-gNgR3O16GYjvfbMoHW1vLw7lQradSPnfwRkBht6-Mo65GdL8
+is_cover: false
+sort_order: 7
+caption: Zach R.
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICli-25Rw!2e10!4m2!3m1!1s0x889a07946720b9c7:0xb22f096128d83719
+
+--- entity_photos [row 12 of 13] ---
+id: 6b720ff7-6736-4fa8-bf82-242e499fd85a
+entity_slug: dg-market
+url: https://places.googleapis.com/v1/places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3n8uglR4oSpvo6qYmHcWcUGrkEg3ko5ovnRuYvTRUpg_a8-Bv3ADH03FkIJBfvz8tuTVutky1mVSG1-XoD_1-PTxx1pHT9fxMuELQRYItHdSgcFoI4X_Mh0CYma7p3rbiYru7Y-eI0zNnuewQkgEL55CYgcHKjmiPamtqWcNpy0w9hTijrU9SHaPTLsUXbYotmpy9FdWczKcwz9baD0nc1KcIv8l5Q-HRHUyD5jqDo17sF9br4rbDwVq_eQXHlZmlMUU299354bg0zutHpvR49PzJg_60wFxHNCWYO0KXg5z7bMtkTs2a8hyyFxAii2nr3BlGN9PqglfE8siwkISX6S7DJP-IKQl2MDXZct8DWKmC4BDQp-wIWi3E6U3helRkC0ZVpmL5kBSLgzLr2zNE-ysVmPD8H43y5oNTsUp-p8taA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3n8uglR4oSpvo6qYmHcWcUGrkEg3ko5ovnRuYvTRUpg_a8-Bv3ADH03FkIJBfvz8tuTVutky1mVSG1-XoD_1-PTxx1pHT9fxMuELQRYItHdSgcFoI4X_Mh0CYma7p3rbiYru7Y-eI0zNnuewQkgEL55CYgcHKjmiPamtqWcNpy0w9hTijrU9SHaPTLsUXbYotmpy9FdWczKcwz9baD0nc1KcIv8l5Q-HRHUyD5jqDo17sF9br4rbDwVq_eQXHlZmlMUU299354bg0zutHpvR49PzJg_60wFxHNCWYO0KXg5z7bMtkTs2a8hyyFxAii2nr3BlGN9PqglfE8siwkISX6S7DJP-IKQl2MDXZct8DWKmC4BDQp-wIWi3E6U3helRkC0ZVpmL5kBSLgzLr2zNE-ysVmPD8H43y5oNTsUp-p8taA
+is_cover: false
+sort_order: 8
+caption: DG Market
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDG4uXDvQE!2e10!4m2!3m1!1s0x889a07946720b9c7:0xb22f096128d83719
+
+--- entity_photos [row 13 of 13] ---
+id: 1bc5c182-c34d-41eb-8e21-77e962656137
+entity_slug: dg-market
+url: https://places.googleapis.com/v1/places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3mxWz3LVfwMdKWJyX5_wXRRvJsGJzOtLpBv5Mh-JkMP1WVpGaBzTqbp71bVgZ6qy2vMbIxKynn4Im2y2azhotQgoRfC_s_44e7fUbpzBmkmBWc_CYpgj1V7M566sY8DlnaF1zOu7CFBXcOTMkJgj1xDEN6sZFCQjSvTXVahdhQ7UtvEmhXgiOnfqwagyiUkd2GXptIsavpa0JDMZKn9sDOVD7sEGtmRwu9RvUwjLDIkxpsF5S9pnvLHa7-Wk7bMOHA2yHlWylQ0KmpzLGFX2t3tIgdNBTM3e0AszhN8CTHg3_2Rvf0YWs7TILiOlMtjBAE7nRE2L5ama3JfdMvt7k5p21cnlwjrrwnmGtcjOOg4VxBs0jtkp3EGdqx0P-ydyZFAT2AYd9uz0xAK4fF4ffIZJk8WWMLvtMK-sU4joMdbfVIr/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJx7kgZ5QHmogRGTfYKGEJL7I/photos/AaVGc3mxWz3LVfwMdKWJyX5_wXRRvJsGJzOtLpBv5Mh-JkMP1WVpGaBzTqbp71bVgZ6qy2vMbIxKynn4Im2y2azhotQgoRfC_s_44e7fUbpzBmkmBWc_CYpgj1V7M566sY8DlnaF1zOu7CFBXcOTMkJgj1xDEN6sZFCQjSvTXVahdhQ7UtvEmhXgiOnfqwagyiUkd2GXptIsavpa0JDMZKn9sDOVD7sEGtmRwu9RvUwjLDIkxpsF5S9pnvLHa7-Wk7bMOHA2yHlWylQ0KmpzLGFX2t3tIgdNBTM3e0AszhN8CTHg3_2Rvf0YWs7TILiOlMtjBAE7nRE2L5ama3JfdMvt7k5p21cnlwjrrwnmGtcjOOg4VxBs0jtkp3EGdqx0P-ydyZFAT2AYd9uz0xAK4fF4ffIZJk8WWMLvtMK-sU4joMdbfVIr
+is_cover: false
+sort_order: 9
+caption: Zach R.
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDm7ZiqiAE!2e10!4m2!3m1!1s0x889a07946720b9c7:0xb22f096128d83719
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: d15b4912-b410-4d5d-ae05-4820ff60c6c0
+entity_slug: dg-market
+reviewer_name: Lexi Hodges
+rating: 2
+body: I am absolutely disgusted at the way a lady (if she even is that) was treating her coworker. I do not know her name, but she was screaming across the entire store at a sweet girl named Makayla. she was doing her job, cleaning the bathroom and screamed at her to get to the front. (the lady yelling was already at the front) she was also yelling at Jen because apparently she’s the one who told her to clean the bathrooms. this was about 7:15 PM on Saturday, July 13. Makayla is a better person than me because I would not have taken the disrespect. it’s hard to find good help nowadays, but I know Makayla is good help. the manager, or lady who thinks she’s the manager, should be put in her place.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2024-07-14T00:25:48.866231+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: f7aa66fd-fc7e-410a-b013-c96a003beb62
+entity_slug: dg-market
+reviewer_name: Devon Bezold
+rating: 5
+body: My mom got trapped in the men’s bathroom here. It was probably the funniest thing I have heard in a while. 10/10 would recommend getting trapped here. The cutest firefighters show up to help.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-03-28T02:22:13.653554+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: 4ea2a102-0cdd-47bc-b4fe-24a7d66258af
+entity_slug: dg-market
+reviewer_name: Cool Kid
+rating: 1
+body: This store has to be one of the worst ones I have been to the manger is rude and likes to talk behind others backs and she likes to yell in the store like there is no one else there will not be back again. The District manger really needs to look into all of this 🥱
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-07-15T21:32:57.579721+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: a62b751d-365f-46fa-b43a-6853022dbf65
+entity_slug: dg-market
+reviewer_name: Tina D'Aversa
+rating: 5
+body: I shop here often and it’s the best kept DG in the area. Opens early 7:00 am and very clean and organized. Manager really manages her inventory. I shop several Dollar Generals abd this one is best.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2023-11-25T18:34:13.429941+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 20a16a22-27fe-4189-bd5b-3d9a649292d3
+entity_slug: dg-market
+reviewer_name: Bruce Barrett
+rating: 2
+body: June 20, 2022  (two stars)
+Stopped to pick up a few items.  The store is in a convenient location and well stocked with an extremely wide assortment of goods.  I can see why it is very popular. The aisles, however, are too narrow for two shopping cars to pass by each other.
+
+The new self-checkout machines are annoying.  When I used a credit card to pay, a screen displayed "Signature Required".  I entered it on the touch pad signature block, pressed "Accept" and nothing happened.  So I hit "Clear", entered it again,  pressed "Accept".  Same result. Took me a minute to locate an employee to help with the checkout.  She said, "Oh - you have to hit "Decline" for it to work."
+Good grief.
+
+From 2021 (one star)
+SHOP ELSEWHERE!
+Despite a state-wide order for face masks, and signs requiring masks posted on the doors to this store, there were several people in the narrow aisles who were NOT wearing masks.
+
+I was there this afternoon and saw perhaps nine other people - three customers and six or seven employees. The customers were all wearing masks, thank you. But among the employees, only one was wearing a mask; two had masks hanging around their necks (including the cashier!); and the rest had none at all.
+
+DO NOT patronize this hypocritical and narcissistic store.
+BE SAFE! STAY AWAY!
+
+Warning: Dollar General employees' same disregard for customers exists at the other Dollar General on Orange Beach Blvd.  See my separate review of that location.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2022-06-21T21:52:04.635348+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   14 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 14] ---
+id: 656bcde7-2d16-4ec2-9771-0ed235505d35
+entity_slug: dg-market
+tag_name: grocery_store
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 14] ---
+id: aa9d8102-8ad6-4613-b404-7de3f0e86bc4
+entity_slug: dg-market
+tag_name: convenience_store
+tag_category: google_type
+
+--- entity_tags [row 3 of 14] ---
+id: 6d03560b-d342-449a-ba55-e3bd16a1de69
+entity_slug: dg-market
+tag_name: gift_shop
+tag_category: google_type
+
+--- entity_tags [row 4 of 14] ---
+id: 7060a5ae-e480-4b39-937a-250b5f951751
+entity_slug: dg-market
+tag_name: drugstore
+tag_category: google_type
+
+--- entity_tags [row 5 of 14] ---
+id: 758855be-d6e9-40c2-afcb-0eb80bb1684f
+entity_slug: dg-market
+tag_name: discount_store
+tag_category: google_type
+
+--- entity_tags [row 6 of 14] ---
+id: 0aefc6e0-c201-4b48-bbc0-15ba4b51ca35
+entity_slug: dg-market
+tag_name: market
+tag_category: google_type
+
+--- entity_tags [row 7 of 14] ---
+id: 5baa1834-afc4-480e-af35-0817a37402bb
+entity_slug: dg-market
+tag_name: toy_store
+tag_category: google_type
+
+--- entity_tags [row 8 of 14] ---
+id: e88bc75f-d126-4149-ab64-a9282f0c2fe2
+entity_slug: dg-market
+tag_name: home_goods_store
+tag_category: google_type
+
+--- entity_tags [row 9 of 14] ---
+id: 0523219a-dd3e-4430-950c-d545e5cc1cb0
+entity_slug: dg-market
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 10 of 14] ---
+id: 31983404-f7d8-40d4-8f99-e63dd758666d
+entity_slug: dg-market
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 11 of 14] ---
+id: b4aebc8f-0f87-4405-a947-9288832082c7
+entity_slug: dg-market
+tag_name: health
+tag_category: google_type
+
+--- entity_tags [row 12 of 14] ---
+id: 9b8cd488-d7e3-4098-8a0c-13570ad9a3a9
+entity_slug: dg-market
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 13 of 14] ---
+id: 64d5849c-28d0-40ef-9044-380536559875
+entity_slug: dg-market
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 14 of 14] ---
+id: 60314c3c-936c-45a9-a127-5a27bafb7ca5
+entity_slug: dg-market
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: cde40b47-5b2e-48c0-9347-31f8fb63d25f
+entity_slug: dg-market
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_retail   -   1 row(s)
+####################################################################################################
+
+--- industry_retail [row 1 of 1] ---
+entity_slug: dg-market
+product_count: 0
+curbside_pickup: false
+delivery: true
+updated_at: 2026-07-20T03:17:43.35857+00:00
+
+####################################################################################################
+# TABLE: search_index   -   1 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 1] ---
+ref_type: business
+ref_id: dg-market
+entity_slug: dg-market
+title: DG Market
+category: grocery_store
+subtitle: Chain store providing a variety of products, including fresh meat and produce, at discount prices.
+search_vector: 'chain':5C 'dg':1A 'discount':18C 'fresh':13C 'groceri':3B 'includ':12C 'market':2A 'meat':14C 'price':19C 'produc':16C 'product':11C 'provid':7C 'store':4B,6C 'varieti':9C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: dg-market

@@ -1,0 +1,1002 @@
+====================================================================================================
+SLUG: sandshaker
+NAME: Sandshaker
+INDUSTRY: bar_nightlife
+SUBTYPE: bar
+TABLES WITH DATA: 28
+TOTAL ROWS: 91
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (9 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (3 rows)
+  ai_unified_search_items_full  (1 rows)
+  catalog_items  (1 rows)
+  catalog_section_days  (7 rows)
+  catalog_sections  (1 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (16 rows)
+  entity_offer  (1 rows)
+  entity_offer_section  (1 rows)
+  entity_photos  (3 rows)
+  entity_tags  (16 rows)
+  entity_theme  (2 rows)
+  industry_bar_nightlife  (1 rows)
+  industry_food_beverage  (1 rows)
+  menu_items  (1 rows)
+  menu_section_days  (7 rows)
+  menu_section_details  (1 rows)
+  menu_sections  (1 rows)
+  recovery_import_log  (1 rows)
+  search_index  (3 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: sandshaker
+name: Sandshaker
+planner_category: food_drink
+data_quality_score: 85
+issues: missing_drink_menu|missing_faqs|missing_lat_lng
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: true
+missing_hours: false
+missing_photos: false
+missing_faqs: true
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   9 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 9] ---
+id: 8823
+entity_slug: sandshaker
+intent_tag: best_for:live_music_or_entertainment
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 9] ---
+id: 8824
+entity_slug: sandshaker
+intent_tag: best_for:drinks_or_cocktails
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 9] ---
+id: 8825
+entity_slug: sandshaker
+intent_tag: experience:live_music
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 9] ---
+id: 8826
+entity_slug: sandshaker
+intent_tag: meal:drinks
+intent_category: meal_period
+confidence: 0.82
+evidence: Derived from meal flags/menu content.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 9] ---
+id: 8827
+entity_slug: sandshaker
+intent_tag: has:menu
+intent_category: data_available
+confidence: 0.95
+evidence: Menu items exist.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 9] ---
+id: 8828
+entity_slug: sandshaker
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 9] ---
+id: 8829
+entity_slug: sandshaker
+intent_tag: missing:missing_drink_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 9] ---
+id: 8830
+entity_slug: sandshaker
+intent_tag: missing:missing_faqs
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 9 of 9] ---
+id: 8831
+entity_slug: sandshaker
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: sandshaker
+name: Sandshaker
+is_active: t
+planner_category: food_drink
+entity_type: restaurant
+entity_subtype: bar
+city: Pensacola Beach
+state: FL
+address_line_1: 731 Pensacola Beach Blvd
+review_count: 0
+website_url: https://www.sandshaker.com
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sandshaker/photo_01.jpg
+voice_summary: Sandshaker in Pensacola Beach is best for live music or entertainment, drinks or cocktails. Experience tags: live_music.
+planner_summary: Home of the 'original' Bushwacker with 2 locations featuring live music every weekend with never a cover charge.
+best_for: live music or entertainment|drinks or cocktails
+not_best_for: quiet low-energy meal
+meal_periods: drinks
+experience_tags: live_music
+search_keywords: beach bar|live music|bushwacker|pensacola beach|orange beach|cocktails|nightlife|weekend entertainment|no cover charge|Bars|Beach Bars|Live Music Venues|Restaurants|food-and-drink|bar|drinks|live_music
+has_menu: true
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 3
+menu_item_count: 1
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 16
+faq_count: 0
+data_quality_score: 85
+data_gaps: missing_drink_menu|missing_faqs|missing_lat_lng
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   3 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 3] ---
+id: 17094
+entity_slug: sandshaker
+entity_name: Sandshaker
+city: Pensacola Beach
+url: https://images.squarespace-cdn.com/content/v1/699f6df25971a86d9b604a09/09bbc915-5811-4627-bd93-87aa8bd238fa/SS_Banner.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 3] ---
+id: 17095
+entity_slug: sandshaker
+entity_name: Sandshaker
+city: Pensacola Beach
+url: https://images.squarespace-cdn.com/content/v1/699f6df25971a86d9b604a09/506df0e2-f8ae-4a34-954b-7421a5bd7ad9/ss_bushwacker.png
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 3] ---
+id: 17096
+entity_slug: sandshaker
+entity_name: Sandshaker
+city: Pensacola Beach
+url: https://images.squarespace-cdn.com/content/v1/699f6df25971a86d9b604a09/6243b693-22a9-4bf9-9a81-1836d1caff3f/orangeSquare.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: ai_unified_search_items_full   -   1 row(s)
+####################################################################################################
+
+--- ai_unified_search_items_full [row 1 of 1] ---
+id: 5548
+entity_slug: sandshaker
+entity_name: Sandshaker
+city: Pensacola Beach
+row_type: menu_item
+item_name: Bushwacker
+description: The original Bushwacker
+item_type_tags: general
+planner_tags: alcohol
+meal_period_tags: all_day_or_unknown
+needs_price: true
+search_text: Sandshaker | Pensacola Beach | menu_item |  | Bushwacker | The original Bushwacker | general | alcohol | all_day_or_unknown
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: catalog_items   -   1 row(s)
+####################################################################################################
+
+--- catalog_items [row 1 of 1] ---
+id: 3f018523-3c92-4301-a9bf-ff328a54fe2d
+entity_slug: sandshaker
+section_id: bcfd59c8-172f-4f2d-8f9a-bb334b4be4ee
+item_name: Bushwacker
+description: The original Bushwacker
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: ee7af280-dd0d-4674-92e5-13a995df8638
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+####################################################################################################
+# TABLE: catalog_section_days   -   7 row(s)
+####################################################################################################
+
+--- catalog_section_days [row 1 of 7] ---
+id: 5f9e41d4-6dd9-4c29-9445-21377f15c2ff
+section_id: bcfd59c8-172f-4f2d-8f9a-bb334b4be4ee
+entity_slug: sandshaker
+day_of_week: Friday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 2 of 7] ---
+id: df49e51b-06b2-407c-a094-5dac74962d3e
+section_id: bcfd59c8-172f-4f2d-8f9a-bb334b4be4ee
+entity_slug: sandshaker
+day_of_week: Monday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 3 of 7] ---
+id: 44161a4e-dea9-45bf-95b2-fb4a1be87195
+section_id: bcfd59c8-172f-4f2d-8f9a-bb334b4be4ee
+entity_slug: sandshaker
+day_of_week: Saturday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 4 of 7] ---
+id: d7d2f2d3-505a-448b-bf1d-06d996140eec
+section_id: bcfd59c8-172f-4f2d-8f9a-bb334b4be4ee
+entity_slug: sandshaker
+day_of_week: Sunday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 5 of 7] ---
+id: 3bedb0f8-639b-4020-b251-d7bd70381f19
+section_id: bcfd59c8-172f-4f2d-8f9a-bb334b4be4ee
+entity_slug: sandshaker
+day_of_week: Thursday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 6 of 7] ---
+id: e0325703-df91-46d7-9eea-e8a5964c4387
+section_id: bcfd59c8-172f-4f2d-8f9a-bb334b4be4ee
+entity_slug: sandshaker
+day_of_week: Tuesday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 7 of 7] ---
+id: f1c71dc9-5f05-4600-bc78-7196175d3484
+section_id: bcfd59c8-172f-4f2d-8f9a-bb334b4be4ee
+entity_slug: sandshaker
+day_of_week: Wednesday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+####################################################################################################
+# TABLE: catalog_sections   -   1 row(s)
+####################################################################################################
+
+--- catalog_sections [row 1 of 1] ---
+id: bcfd59c8-172f-4f2d-8f9a-bb334b4be4ee
+entity_slug: sandshaker
+section_name: signatureCocktails
+section_category: food
+sort_order: 0
+is_active: true
+source_table: menu_sections
+source_id: 5c287bd7-473a-40c1-8cb0-8617fc417eb0
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: bc4f3ac4-b7d6-4915-acff-cef21b0f1674
+slug: sandshaker
+name: Sandshaker
+is_active: true
+featured: false
+entity_type: restaurant
+entity_subtype: bar
+description: Home of the 'original' Bushwacker with 2 locations featuring live music every weekend with never a cover charge.
+subtitle: Home of the 'original' Bushwacker
+phone: 850-932-2211
+website_url: https://www.sandshaker.com
+menu_pin: 2843
+address_line_1: 731 Pensacola Beach Blvd
+city: Pensacola Beach
+state: FL
+zip: 32561
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sandshaker/photo_01.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T22:59:51.699904+00:00
+updated_at: 2026-06-03T22:59:51.699904+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+business_status: OPERATIONAL
+google_places_data: {}
+search_vector: 'beach':3 'pensacola':2 'sandshak':1A
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: menu
+industry_code: bar_nightlife
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: sandshaker
+name: Sandshaker
+industry_code: bar_nightlife
+is_parent: false
+score_of_7: 4
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: ad2b88b2-90d1-49f0-8253-8b37126753a6
+entity_slug: sandshaker
+day_of_week: 1
+opens_at: 10:00:00
+closes_at: 03:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 08b95ec0-21d5-4336-ab50-71b7e2d91769
+entity_slug: sandshaker
+day_of_week: 2
+opens_at: 10:00:00
+closes_at: 03:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 2e51ceb9-3467-457a-8f85-f7f055e97c71
+entity_slug: sandshaker
+day_of_week: 3
+opens_at: 10:00:00
+closes_at: 03:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 986bb4fb-803c-49d1-8fba-1d2faafb326f
+entity_slug: sandshaker
+day_of_week: 4
+opens_at: 10:00:00
+closes_at: 03:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: b60e083c-e75e-4f08-a84b-fc86bfaa861a
+entity_slug: sandshaker
+day_of_week: 5
+opens_at: 10:00:00
+closes_at: 03:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 6eb83e17-975f-4c26-a32f-241a2ae8d6a8
+entity_slug: sandshaker
+day_of_week: 6
+opens_at: 10:00:00
+closes_at: 03:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 36ad9495-3fc4-44e6-abb6-227fd0a68a49
+entity_slug: sandshaker
+day_of_week: 0
+opens_at: 10:00:00
+closes_at: 03:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: sandshaker
+source_table: menu_items
+item_type: food
+section_name: signatureCocktails
+item_id: ee7af280-dd0d-4674-92e5-13a995df8638
+name: Bushwacker
+description: The original Bushwacker
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: sandshaker
+source_table: menu_items
+item_type: food
+section_name: signatureCocktails
+item_id: ee7af280-dd0d-4674-92e5-13a995df8638
+name: Bushwacker
+description: The original Bushwacker
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   16 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 16] ---
+id: 3f23969f-2dcb-4af9-83ef-68cedc425806
+entity_slug: sandshaker
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 2 of 16] ---
+id: 584a9f94-49f7-47b6-94cb-171a090498f4
+entity_slug: sandshaker
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 3 of 16] ---
+id: 342fb8f2-7dcd-45ca-8a87-0a47491d5cc2
+entity_slug: sandshaker
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 4 of 16] ---
+id: 9aa93d6f-39f5-4173-8698-0dbbc003ecbe
+entity_slug: sandshaker
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 5 of 16] ---
+id: dc5e77e7-e5a0-47fa-a65e-861c029eafb8
+entity_slug: sandshaker
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 6 of 16] ---
+id: 8979c481-7f9e-4ad4-835b-d3d3a1443c90
+entity_slug: sandshaker
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 7 of 16] ---
+id: 8e25b095-3964-416c-9adc-37815e099443
+entity_slug: sandshaker
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 16] ---
+id: e336d621-f7d7-4394-9e5c-ac985df64c7a
+entity_slug: sandshaker
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 16] ---
+id: e909a911-a3c0-4b53-895f-81d4c6901274
+entity_slug: sandshaker
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 16] ---
+id: 5489ed2f-ff1a-440b-bf92-8521bf4de19f
+entity_slug: sandshaker
+module_key: menu
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 16] ---
+id: 07b6533a-15e5-4340-a780-079603365fe7
+entity_slug: sandshaker
+module_key: drinks
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 16] ---
+id: 0ed92c8c-8f16-4048-8b62-37cb8b3e5968
+entity_slug: sandshaker
+module_key: happy_hour
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 16] ---
+id: eef4f92c-612d-483f-815b-5c54665f8e60
+entity_slug: sandshaker
+module_key: specials
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 14 of 16] ---
+id: 9bb62043-9ce8-4fb9-8bd8-a4a6c2699576
+entity_slug: sandshaker
+module_key: events
+enabled: true
+sort_order: 14
+
+--- entity_modules [row 15 of 16] ---
+id: fbfb69e3-0d0a-4b04-9e45-3a3179400564
+entity_slug: sandshaker
+module_key: loyalty
+enabled: true
+sort_order: 15
+
+--- entity_modules [row 16 of 16] ---
+id: cd91fd28-51e2-4807-9265-d4e919f785b0
+entity_slug: sandshaker
+module_key: booking
+enabled: true
+sort_order: 16
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 7519
+entity_slug: sandshaker
+section_id: 20
+name: Bushwacker
+description: The original Bushwacker
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: ee7af280-dd0d-4674-92e5-13a995df8638
+
+####################################################################################################
+# TABLE: entity_offer_section   -   1 row(s)
+####################################################################################################
+
+--- entity_offer_section [row 1 of 1] ---
+section_id: 20
+entity_slug: sandshaker
+name: signatureCocktails
+section_type: menu
+sort_order: 0
+
+####################################################################################################
+# TABLE: entity_photos   -   3 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 3] ---
+id: 3712fb9d-45b4-49a3-88be-1ac437c52264
+entity_slug: sandshaker
+url: https://images.squarespace-cdn.com/content/v1/699f6df25971a86d9b604a09/09bbc915-5811-4627-bd93-87aa8bd238fa/SS_Banner.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 3] ---
+id: 410e3dd9-af27-44f7-98cc-208a0dfcf012
+entity_slug: sandshaker
+url: https://images.squarespace-cdn.com/content/v1/699f6df25971a86d9b604a09/506df0e2-f8ae-4a34-954b-7421a5bd7ad9/ss_bushwacker.png
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 3] ---
+id: 4c1f4b70-65d1-4fdf-a9ca-80fb57fa4491
+entity_slug: sandshaker
+url: https://images.squarespace-cdn.com/content/v1/699f6df25971a86d9b604a09/6243b693-22a9-4bf9-9a81-1836d1caff3f/orangeSquare.jpg
+is_cover: false
+sort_order: 2
+
+####################################################################################################
+# TABLE: entity_tags   -   16 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 16] ---
+id: b8308899-b235-498b-9efc-a3cec0fe9909
+entity_slug: sandshaker
+tag_name: beach bar
+
+--- entity_tags [row 2 of 16] ---
+id: 23babbe3-0857-4ff5-bc8e-86fee9e14210
+entity_slug: sandshaker
+tag_name: live music
+
+--- entity_tags [row 3 of 16] ---
+id: 9ea7d28b-b904-47c6-9802-056d7a78cc83
+entity_slug: sandshaker
+tag_name: bushwacker
+
+--- entity_tags [row 4 of 16] ---
+id: 9c62247f-3e7c-43df-b654-5d999ce9630f
+entity_slug: sandshaker
+tag_name: pensacola beach
+
+--- entity_tags [row 5 of 16] ---
+id: 272b937f-0721-4dbf-a05b-a8c77f09ec7d
+entity_slug: sandshaker
+tag_name: orange beach
+
+--- entity_tags [row 6 of 16] ---
+id: 1835d5a1-824f-414a-9cca-bb269ccd72ec
+entity_slug: sandshaker
+tag_name: cocktails
+
+--- entity_tags [row 7 of 16] ---
+id: b7144742-a50a-4719-b935-2ef31ceb564d
+entity_slug: sandshaker
+tag_name: nightlife
+
+--- entity_tags [row 8 of 16] ---
+id: dec850e5-f6d8-4925-b702-97c55a0fa392
+entity_slug: sandshaker
+tag_name: weekend entertainment
+
+--- entity_tags [row 9 of 16] ---
+id: 9ebf635b-d8b8-49fd-96f0-f44685d58057
+entity_slug: sandshaker
+tag_name: no cover charge
+
+--- entity_tags [row 10 of 16] ---
+id: 2e4fde3c-2e3d-4fb2-b5e0-eeb3b4855062
+entity_slug: sandshaker
+tag_name: Bars
+tag_category: category
+
+--- entity_tags [row 11 of 16] ---
+id: 386e3397-a092-4aaa-a7aa-5fc45ad603f1
+entity_slug: sandshaker
+tag_name: Nightlife
+tag_category: category
+
+--- entity_tags [row 12 of 16] ---
+id: 5e25c239-e244-4f72-b33e-2e13025b7508
+entity_slug: sandshaker
+tag_name: Beach Bars
+tag_category: category
+
+--- entity_tags [row 13 of 16] ---
+id: bafd1631-f8ed-4f1f-8e16-1450e12cffd0
+entity_slug: sandshaker
+tag_name: Live Music Venues
+tag_category: category
+
+--- entity_tags [row 14 of 16] ---
+id: f3b777f9-e77c-453f-8849-41a69cdf1f14
+entity_slug: sandshaker
+tag_name: Restaurants
+tag_category: category
+
+--- entity_tags [row 15 of 16] ---
+id: 799f2829-fdf6-4b92-a29b-3d470b18316b
+entity_slug: sandshaker
+tag_name: food-and-drink
+tag_category: industry
+
+--- entity_tags [row 16 of 16] ---
+id: db351c13-c861-4469-9844-3e6ae87f79af
+entity_slug: sandshaker
+tag_name: bar
+tag_category: type
+
+####################################################################################################
+# TABLE: entity_theme   -   2 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 2] ---
+id: 23b6869d-1a1f-457f-84be-2a1b63695646
+entity_slug: sandshaker
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+--- entity_theme [row 2 of 2] ---
+id: e6a0e780-1816-4985-8459-5bef6b210d03
+entity_slug: sandshaker
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_bar_nightlife   -   1 row(s)
+####################################################################################################
+
+--- industry_bar_nightlife [row 1 of 1] ---
+entity_slug: sandshaker
+bar_type: bar
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+has_live_music: false
+has_outdoor_bar: false
+food_available: true
+updated_at: 2026-07-21T16:19:16.291607+00:00
+
+####################################################################################################
+# TABLE: industry_food_beverage   -   1 row(s)
+####################################################################################################
+
+--- industry_food_beverage [row 1 of 1] ---
+entity_slug: sandshaker
+menu_section_count: 1
+menu_item_count: 1
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+dine_in: true
+takeout: false
+delivery: false
+reservable: false
+outdoor_seating: false
+live_music: false
+good_for_kids: false
+good_for_groups: false
+has_happy_hour: false
+updated_at: 2026-07-20T03:16:49.206863+00:00
+
+####################################################################################################
+# TABLE: menu_items   -   1 row(s)
+####################################################################################################
+
+--- menu_items [row 1 of 1] ---
+id: ee7af280-dd0d-4674-92e5-13a995df8638
+section_id: 5c287bd7-473a-40c1-8cb0-8617fc417eb0
+entity_slug: sandshaker
+item_name: Bushwacker
+description: The original Bushwacker
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+####################################################################################################
+# TABLE: menu_section_days   -   7 row(s)
+####################################################################################################
+
+--- menu_section_days [row 1 of 7] ---
+id: ad00a1cf-a4c3-44b3-9750-be76b94638c9
+menu_section_id: 5c287bd7-473a-40c1-8cb0-8617fc417eb0
+entity_slug: sandshaker
+day_of_week: Monday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 2 of 7] ---
+id: e2602941-9b52-48dd-92ae-52e0f113f173
+menu_section_id: 5c287bd7-473a-40c1-8cb0-8617fc417eb0
+entity_slug: sandshaker
+day_of_week: Tuesday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 3 of 7] ---
+id: ac32e6f7-8925-4f46-bd8a-438f101cb5ef
+menu_section_id: 5c287bd7-473a-40c1-8cb0-8617fc417eb0
+entity_slug: sandshaker
+day_of_week: Wednesday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 4 of 7] ---
+id: f10a48b5-0f76-4b5c-bbfc-bf1f0598a173
+menu_section_id: 5c287bd7-473a-40c1-8cb0-8617fc417eb0
+entity_slug: sandshaker
+day_of_week: Thursday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 5 of 7] ---
+id: f7a8fc03-189d-4723-b532-128ec00f2c30
+menu_section_id: 5c287bd7-473a-40c1-8cb0-8617fc417eb0
+entity_slug: sandshaker
+day_of_week: Friday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 6 of 7] ---
+id: d1afab4a-2e37-4cf3-9a2f-754020be3aa1
+menu_section_id: 5c287bd7-473a-40c1-8cb0-8617fc417eb0
+entity_slug: sandshaker
+day_of_week: Saturday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 7 of 7] ---
+id: 2c3e7337-99a1-4ff8-9a10-edec9c7c98b1
+menu_section_id: 5c287bd7-473a-40c1-8cb0-8617fc417eb0
+entity_slug: sandshaker
+day_of_week: Sunday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+####################################################################################################
+# TABLE: menu_section_details   -   1 row(s)
+####################################################################################################
+
+--- menu_section_details [row 1 of 1] ---
+id: 9ed0d0fe-d41b-461d-b1a9-1a234fc94a98
+menu_section_id: 5c287bd7-473a-40c1-8cb0-8617fc417eb0
+entity_slug: sandshaker
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+####################################################################################################
+# TABLE: menu_sections   -   1 row(s)
+####################################################################################################
+
+--- menu_sections [row 1 of 1] ---
+id: 5c287bd7-473a-40c1-8cb0-8617fc417eb0
+entity_slug: sandshaker
+section_name: signatureCocktails
+sort_order: 0
+days_of_week: [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday"
+]
+is_active: true
+metadata: {}
+
+####################################################################################################
+# TABLE: recovery_import_log   -   1 row(s)
+####################################################################################################
+
+--- recovery_import_log [row 1 of 1] ---
+id: 7e69836a-aa84-48bb-b4d4-5453da8c35fc
+batch_id: draft-businesses-netnew-2026-07-19
+target_table: entity
+target_row_id: ae62470b-f64d-46b5-a856-f3a78112f5fb
+entity_slug: sandshaker
+source_db: may
+source_table: entity
+source_id: 60f2b147-8fa9-4844-acc2-d28127960936
+action: insert
+imported_at: 2026-07-19T20:33:24.034873+00:00
+
+####################################################################################################
+# TABLE: search_index   -   3 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 3] ---
+ref_type: offer
+ref_id: 7519
+entity_slug: sandshaker
+title: Bushwacker
+category: menu_item
+subtitle: The original Bushwacker
+search_vector: 'bushwack':1A,4C 'origin':3C
+
+--- search_index [row 2 of 3] ---
+ref_type: business
+ref_id: sandshaker
+entity_slug: sandshaker
+title: Sandshaker
+category: bar
+subtitle: Home of the 'original' Bushwacker with 2 locations featuring live music every weekend with never a cover charge.
+search_vector: '2':9C 'bar':2B 'bushwack':7C 'charg':20C 'cover':19C 'everi':14C 'featur':11C 'home':3C 'live':12C 'locat':10C 'music':13C 'never':17C 'origin':6C 'sandshak':1A 'weekend':15C
+
+--- search_index [row 3 of 3] ---
+ref_type: menu_item
+ref_id: ee7af280-dd0d-4674-92e5-13a995df8638
+entity_slug: sandshaker
+title: Bushwacker
+category: menu
+subtitle: The original Bushwacker
+search_vector: 'bushwack':1A,4C 'origin':3C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: sandshaker

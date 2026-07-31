@@ -1,0 +1,2663 @@
+====================================================================================================
+SLUG: bay-view
+NAME: Bay View
+INDUSTRY: condo
+SUBTYPE: apartment_complex
+TABLES WITH DATA: 31
+TOTAL ROWS: 186
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (7 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (10 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_address_areas  (1 rows)
+  entity_attributes  (2 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_items_norm_v  (2 rows)
+  entity_items_v  (2 rows)
+  entity_modules  (14 rows)
+  entity_nearby_landmark_types  (27 rows)
+  entity_nearby_landmarks  (6 rows)
+  entity_offer  (1 rows)
+  entity_photos  (67 rows)
+  entity_reviews  (5 rows)
+  entity_section_items  (1 rows)
+  entity_section_items_metadata_backup  (1 rows)
+  entity_sections  (1 rows)
+  entity_sources  (1 rows)
+  entity_tags  (18 rows)
+  entity_theme  (2 rows)
+  industry_condo  (1 rows)
+  industry_vacation_rental  (1 rows)
+  rental_units  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: bay-view
+name: Bay View
+planner_category: lodging
+data_quality_score: 75
+issues: missing_summary|missing_hours|missing_contact_or_website
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   7 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 7] ---
+id: 19888
+entity_slug: bay-view
+intent_tag: best_for:lodging_search
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 7] ---
+id: 19889
+entity_slug: bay-view
+intent_tag: experience:waterfront_scenic
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 7] ---
+id: 19890
+entity_slug: bay-view
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 7] ---
+id: 19891
+entity_slug: bay-view
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 7] ---
+id: 19892
+entity_slug: bay-view
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 7] ---
+id: 19893
+entity_slug: bay-view
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 7] ---
+id: 19894
+entity_slug: bay-view
+intent_tag: missing:missing_contact_or_website
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: bay-view
+name: Bay View
+is_active: t
+planner_category: lodging
+entity_type: condo
+entity_subtype: apartment_complex
+city: Orange Beach
+state: AL
+address_line_1: 25861 Canal Rd
+latitude: 30.2937411
+longitude: -87.5835679
+rating: 4
+review_count: 19
+hero_image_url: /photos/bay-view/photo_01.jpg
+voice_summary: Bay View in Orange Beach is best for lodging search. Experience tags: waterfront_scenic.
+planner_summary: Bay View in Orange Beach is a lodging listing in Gulf Coast Radar.
+best_for: lodging search
+not_best_for: nothing specific flagged
+experience_tags: waterfront_scenic
+service_tags: accessibility
+search_keywords: apartment_complex|point_of_interest|service|establishment|waterfront_scenic|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 10
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 4
+faq_count: 0
+data_quality_score: 75
+data_gaps: missing_summary|missing_hours|missing_contact_or_website
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   10 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 10] ---
+id: 5914
+entity_slug: bay-view
+entity_name: Bay View
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_07.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 10] ---
+id: 14325
+entity_slug: bay-view
+entity_name: Bay View
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_10.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 10] ---
+id: 18736
+entity_slug: bay-view
+entity_name: Bay View
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 10] ---
+id: 18726
+entity_slug: bay-view
+entity_name: Bay View
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_06.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 10] ---
+id: 19378
+entity_slug: bay-view
+entity_name: Bay View
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 10] ---
+id: 19433
+entity_slug: bay-view
+entity_name: Bay View
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 10] ---
+id: 19472
+entity_slug: bay-view
+entity_name: Bay View
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 10] ---
+id: 19514
+entity_slug: bay-view
+entity_name: Bay View
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_09.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 10] ---
+id: 19515
+entity_slug: bay-view
+entity_name: Bay View
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 10] ---
+id: 24086
+entity_slug: bay-view
+entity_name: Bay View
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_08.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 05e49a47-1ba7-45f2-a370-98335e26e3f4
+resource_type: condo
+slug: bay-view
+name: Bay View
+entity_slug: bay-view
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_10.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_06.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_04.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_09.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_08.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_07.jpg"
+]
+amenities: []
+faqs: []
+address: 25861 Canal Rd
+city: Orange Beach
+state: AL
+latitude: 30.2937411
+longitude: -87.5835679
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: f446b1759bdaa854d247348072804bb2
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 05e49a47-1ba7-45f2-a370-98335e26e3f4
+entity_slug: bay-view
+slug: bay-view
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_10.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_06.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_04.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_09.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_08.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_07.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 78959af8-74d2-43ef-ad70-0f2bf3e5fb3f
+slug: bay-view
+name: Bay View
+is_active: true
+featured: false
+entity_type: condo
+entity_subtype: apartment_complex
+description: Waterfront atmosphere with bay views, easy water access, outdoor pool, basketball court, pickleball court, private boat launch, dock and pier access, two fish-cleaning stations, and boat slips/trailer parking available first come, first served with proof of insurance required.
+menu_pin: 5899
+address_line_1: 25861 Canal Rd
+city: Orange Beach
+state: AL
+zip: 36561
+latitude: 30.2937411
+longitude: -87.5835679
+rating: 4
+review_count: 19
+hero_image_url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8340.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-06T06:21:46.801926+00:00
+updated_at: 2026-06-06T06:21:46.801926+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJp438U8YHmogRXlByjJ7aXrw
+google_maps_uri: https://maps.google.com/?cid=13573526701437243486&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: apartment_complex
+formatted_address: 25861 Canal Rd, Orange Beach, AL 36561, USA
+plus_code: 862J7CV8+FH
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+google_places_data: {
+  "id": "ChIJp438U8YHmogRXlByjJ7aXrw",
+  "types": [
+    "apartment_complex",
+    "point_of_interest",
+    "service",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3knLCA75U20wL_xX9fZOwO0kFVGDomaitgDsSlHN6aHtnoRpo2RALFh4W07n8pAmH7mcfGXU4JBfmh9_KNivO5mfhU9MueU1j2d8ULnpBacmOZXTT4bmHde1ROPngGJXiRP3WFzG3Zrlq_WUen2sFJUnErAbL7gaE9OxPwbJErziNHVf4NMuyQEYur6DSp8_idH03osXuwGya0XkU3u9P1cMbVPT_UfMZEiILWKWbfcV5PZSMjPso5Km6L09gB81cuS9-4wYQw-LiFYSUdEPITvCLrWZJFhBh5Pha6kvfetMSmfbwZ_-KcbAX4Uo-OPupS1b1-XfzkyIopDInSn8jQm_AYdkpH7scA7TQl7e06BKWXCbBcjt1nvqzU5Hl-6XPGxT0qp9XiFMo1kPo1MTkz_Gdqp9xy9WdMoAUEsSWxeV5Gs",
+      "widthPx": 3120,
+      "heightPx": 1541,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC2uPKNxQE!2e10!4m2!3m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIC2uPKNxQE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104938862103505995109",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIgQh0wx4nGp4jbL92Y58vDHtZHCrCApNnOR8VjhmpCSdQdFw=s100-p-k-no-mo",
+          "displayName": "Monica Romero"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3na23YQgP5ppH0N6KYxY2debk9e325rC2FSJMBxaec0xI9tAec3tu3QupFlTg1cQWHgWfn0bVNWSmvWF_DzReI-ngFb1ed5Il-N1WVqyCGSKqwT1AGY30E3AsK6fa6EBl0mB7IHj6bxmcQusFIPNRWqP_oCSvvtyVnj5J94XJQVlcVXGetK78dopzx0nf5glWJ6FVVil4yeZC7Y8qn2tTTDnc95hzglgTDr1rqR4DLAw0dPgX-MQWgjgl5bFfyZtty9Hn33ECVJPXNdhwuh-st2vW7tEOVCu0t4kokwR_Zr1lWccu2dJ2oNXnFfWUNs_MplTjk3asWA5V_Clq8UUASnxgjTSrIwNPCvMVtvwTDncFMeEmzFMSJQiFsoDCFBCp1ibQgtVKMV1AeAYjzreell0pjpnc7dFBP4DG6eg6Y1jHfGp1Z6ZBA7k39HBecb",
+      "widthPx": 2252,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDvmqWjussZW8KKWNiI40Nh!2e10!4m2!3m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDvmqWjussZW8KKWNiI40Nh&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/118330609690430672782",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVuGzw8mIdalRcrJgzOcGu0oocTs9gqZYqtfFeoEp4Wl8PLY9o=s100-p-k-no-mo",
+          "displayName": "Heather Wilson"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3kb1R4y07fO6zCa894kE5JvwEGfKfVudmq_6TcwmDNo_u5ORhF8emRdxEG5CochLT0pHkvlwJ289FIP1eg0LGwqktKCIHzQ_AE9mqjn7I7siutjgsZI4PJZz-PIZJy6Nxkkhj2ARkUNnG1TnAasVetivVKBc6lFDWBr84xvDJm9NYmNaUF0Zvh2AaWe_KtUc2DPfwK5Vf4z2_BA3IngolwoeoLx9byWs16mSfg3SX0ox4VNV1aqT8FQBaMCCu_8QY0xLokkHs_RDLVmT15RyJoDvU9jx9sgDkMFDWBqQAbJ-dt17mJpbkpl8_Sfl-ghgcmu-onvRekNkiHQd5FVgfZq2kTADtsjfEhqMisR10t9a_AVCDhilj_e945fOpiRcj44apGJpENXWz5nt_3bfFDIpX9le8vZwIVyLwwgeXvQjQ",
+      "widthPx": 3000,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDKuPjtSA!2e10!4m2!3m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDKuPjtSA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/113751702355076375055",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJFWjjnnJKH5hYonOpmS9fwj-FOpC9Nns68SL1Sd94BK6mN0Q=s100-p-k-no-mo",
+          "displayName": "Jessica Carter"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3kH65iew6mp-7Wt7MwHDHyYxFmYIe49F-fF5rfV08C4jVJr72KrHAEf-bi557KvRA_o6My51ktGR2RlkBME3EEgclsNJpo7AVDh93f-hHOwb5PZt73BNVIn-kOIAixBYSXfCpq8eT1jzwEswnsEewTJkFvplECrDzQl6Tfzw8TSWE5_0DCIARfl9Hai-pqiALOKPvtuofN_CmDu-gOcC3wRMOFWJThUaNkSny8CDOYXwLCGsobin5J8UlRATUWljmy1BoihCzzllXCciI_xg0-bcLwUcecomyT5GfFUiLUmb0KvyeKfHNTxjL8wbX0rWuyd_tgE8_ACd9p5Op6wClA9a2kCL7D6hh0j6gUXJ1Wsly6XeRGPolXUPMlSqVMAETz2F5cqJHwZhFD1ZajBCBlukqLTlROZPlCEh4C81OfHqA",
+      "widthPx": 4032,
+      "heightPx": 1908,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICOy_37Ng!2e10!4m2!3m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICOy_37Ng&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/109724629694242855590",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXjG_1sfIY18LlX5tnKOWt9uvRYUxPqfCefT-oWSvcE5FQg7-C_Ag=s100-p-k-no-mo",
+          "displayName": "Donna Reno"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3knBzBuYnasvcbnyf29t94MIfQLWat_GTrM6D587VXVqvw4UMnDvMIAeoQfs1xhsSFXkKi8lZfKGT5o7_1codAVF-HDNEuRieshhr7Tht6fDA-BU3liCptuuOz3P_vYYV74X9n_DTV52wVUOWbAhOJX-dvvonnrNFBMO-HviqlgsYCtx3FwXeHa5p6VvXUxrPPsaGbb9u8bNMTcARVQfl4NgA_C6JmznNEKo4m1q1x4g-uxh6CH727-PuTq1sxM63NP9GYepAJE9HtYPLr0XnLTFnqy2EGiPO7WO2LrRDP9MPAUErDC947rLTyZ2ukh6QzqpVVGQNKe_sIWMxsJxvolty71GD11SI86djHQSh6ZwwBnPmeebYJoDkGfd9pAJH9unyD7OS4ne-9uNDNhTOi5nXBKH7Tq2gfysCun45BqqA",
+      "widthPx": 4032,
+      "heightPx": 1908,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICOy_37Vg!2e10!4m2!3m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICOy_37Vg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/109724629694242855590",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXjG_1sfIY18LlX5tnKOWt9uvRYUxPqfCefT-oWSvcE5FQg7-C_Ag=s100-p-k-no-mo",
+          "displayName": "Donna Reno"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3mOP4hIbj4QmKiMJU-6yGooBwvrS4XKaAiR870Z2Q5RB4P5xxlJm06r46161R0WcZdTctmEuPLivp2deQB8h7oaJ-gLG5qVaBjescnwkPer7oOpf31rJawcSM1iSbTbWWobK3Q_3HlvqHSNq5zomVKGXcFf7RFGMrqJlksK0UZUxoyhz6_g_JJcGhYb9UXa_yyTMN_iC0QA4zi6XQOjekAcQbE7qZ6GOB40hcFYfkMYJKvLO4eAqeyElD6bDzvl4dVBTyIcuvf15BDixlLVX85NssrXf9WoYR_yxBn3G_Y3ribrKk-SrhcJF4Pqp3IL7wu8eNqK21yLiRcIja2sKl7OiVVKLZwKAdwrrpnT428nfhpy_VoHiCqA3TGH0wxndS1NfVCUrPv7ePBCVu8HQlmENlmELpFboudVkFNc5dxEcz6ND2WgVOlcQV0vlQ",
+      "widthPx": 1242,
+      "heightPx": 2208,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCI9mN4O8ufGjqu-eY7V7LH!2e10!4m2!3m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCI9mN4O8ufGjqu-eY7V7LH&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/114357704306602082346",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKOidqpF0uGeEMWBqa-yNqwQ0VXQRKAWYfHphOxknVYw2UPSA=s100-p-k-no-mo",
+          "displayName": "Stephanie Duckett"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3krpF7IC49tKDCXWlR4iKCJVMuE8U0YbUjqGMBj0SOl_OIG88hzESPMxvxDInSwBxUFyi9LEF2ad0Z63LVj1aWLOve021Gk46_YB1z0JUqwVp5q10-Y8ose8EOTzIx87REF3-1W6yoPMwWfOVhEWI3Q8-iFRgq7eEHFx12UCVKXKNrZMllc310KjyVqZHEwP5JEOa2CL5CyU8FuYvkSFAVdEnN3qMn8oHR0eQHZ2Hxo_HOtfxLV5XR5XrvT3wsJJ9ZIvARtwycMWs2vHYQ0vIiXlrGogzk3DCdUjOxJ8vzwFCVRa-7zK-11ltT9LoNX9VIs669TpLvLhFIHJpkGuEGtda4_1HN6THvOWf7aDdO6otxAHu4Zkpv63b25oXOFgrTovfrKPVsHUBtZiqSJ7kx_t8Q-7SXAQ_qcLFKIFaCr3ubL",
+      "widthPx": 2016,
+      "heightPx": 1134,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC0neSYpAE!2e10!4m2!3m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIC0neSYpAE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/118215162147510533080",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJ1bp5ECMK5MsWvVXu6I3AkHHSyvqPoV0r0-heGkfWaVCm5NA=s100-p-k-no-mo",
+          "displayName": "SparkyRN"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3nKkaaJGeeyJMOhl7TreRQdsE9iu72KVjl-FkvbvUMgQZR5iMQ2v8M6J8onWDCRdXugM0Si-9_DL-Fz4VrN0ohpmDOQnnduZFiDwjWriJKw0AHh5g5MLfTZaE1AhSaw53NI62Z2OHuVGeQzfDeWq2r6L6NhO8ABJpdgReNGUwAPBvUmVV4QiLkHB81FpFkCrtdOS_WNaTb6Z7oQ6FfCtFSdMak0A8Ik0_ILDGmV364vgcvronsHf3rkFyPC4gUWbx2-KvWiGIL9KBVu7qmzK0NoN5sveITAxQbIz3Oqgv9uEcDoZ5xi5VUZdaoC8wpdERhX31fgnGZ-cgiaTsZh-mBkMXfo6K0hwKoc5pSX9fI3n3sVU358AvnFS67dU5vs5-EavRES-e_k3gVt-hX3WVdEeC7w6QgXYgDEu7AGjMihrOq_",
+      "widthPx": 4000,
+      "heightPx": 3000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDK5MLIgAE!2e10!4m2!3m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDK5MLIgAE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/113751702355076375055",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJFWjjnnJKH5hYonOpmS9fwj-FOpC9Nns68SL1Sd94BK6mN0Q=s100-p-k-no-mo",
+          "displayName": "Jessica Carter"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3kTDxZ1D0GZaTzlQ3IF1ziXfshY0gQz2zQluBrmpv_KgK6Aj_i8Mspl9E6H6TXW3yzkLDk9aHMJACFDR-e0T_tka5CSoHH-jxkXcYlQ0OEvQgLJDGpa1z7L0Jsfl-a37OCduogLCFNuf0mPwrMHqQWhpajZHXj5XS_8Yo5CCN_GyGsRF2RhRpR_CWlcFQBOGE2iPLP30S-dTfUjdDhCzAI67xs6RZc_2Zc01w4ZKptlMHBEtWpKNIPZAV4wHN2YAAIN2EgkCXRJbD4Uxw7n7csAR5vTiUmAbEpteDlMt0oyDe8aTEnlSJVrQTZY2dXeHv3i9_K0LTQSZaIGQZglMhfDUw1hRhoYE6-pbkRo-w4U_1PQhfa-5cVjPUXHqHlcLTek0YZMzIXNlZB_snjgHWLMpvM5jkPrbEAwJ0ZezjxbLBeY",
+      "widthPx": 3000,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDKxN3_wgE!2e10!4m2!3m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDKxN3_wgE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/113751702355076375055",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJFWjjnnJKH5hYonOpmS9fwj-FOpC9Nns68SL1Sd94BK6mN0Q=s100-p-k-no-mo",
+          "displayName": "Jessica Carter"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3nEspgScTF9LddH0ogCj3p_erf08-bcgCDuyCNwZ7woEJKjKTcLz_dfifu4LDadxm7zodtpUHIAzBvVFnf-8FcIz30Wu_wgRu1smCjeFeupZnSw3ZqDaElJk5oKrsjXgrxd5iSMaqO40SDYbonwRfgLupN3OTNQuHUPUU0JbL8gWcJkxX2IsrWCzRuRMedpyvbljIiu4_LYnav01_9DupKvpBG3sTYm5ztY9Zyz4qK-4UYgENtpYhEJ4nykADek4YaURF3OhlLeXpYgIistq4x3rvfRNGtjC7Mg9t0CtUVA7FDhj-0L3VU-13lJvZMZ8tOSmo6Yu8qxfuAqWlL21jLOpDZJseh35h9VFJn50BZ0fU2DCcsjD6pqXLOm6q_f4gDz0Vee0b0Qg_tisNDY-FkwR-4K3tBfxHuyy_fEIfATY34",
+      "widthPx": 3000,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDP_pvLnAE!2e10!4m2!3m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDP_pvLnAE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/115468287071611830905",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUBA8kMd30Z33EWOqOu-psh7yJ1jmhk1M4WLdczMt6TjvLSavcX=s100-p-k-no-mo",
+          "displayName": "Cj Rice"
+        }
+      ]
+    }
+  ],
+  "rating": 4,
+  "reviews": [
+    {
+      "name": "places/ChIJp438U8YHmogRXlByjJ7aXrw/reviews/ChdDSUhNMG9nS0VJQ0FnSUMwN2RUV2xBRRAB",
+      "text": {
+        "text": "Love going to Bayview! It's quiet and peaceful. It's a nice getaway to relax that's not in the hustle and bustle of the main strip and beach front. It's right on the water but it's the bay. Beautiful view from the pier. Boat sleeves available with an area to flush the salt water out. It has a nice, clean pool. Location is great. Several really good places within a few minutes drive to go eat some great seafood. Just a short drive to beach front and having your toes in the sand.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2019-10-09T02:43:20.411277Z",
+      "originalText": {
+        "text": "Love going to Bayview! It's quiet and peaceful. It's a nice getaway to relax that's not in the hustle and bustle of the main strip and beach front. It's right on the water but it's the bay. Beautiful view from the pier. Boat sleeves available with an area to flush the salt water out. It has a nice, clean pool. Location is great. Several really good places within a few minutes drive to go eat some great seafood. Just a short drive to beach front and having your toes in the sand.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUMwN2RUV2xBRRAB!2m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUMwN2RUV2xBRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/118215162147510533080/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJ1bp5ECMK5MsWvVXu6I3AkHHSyvqPoV0r0-heGkfWaVCm5NA=s128-c0x00000000-cc-rp-mo-ba4",
+        "displayName": "SparkyRN"
+      },
+      "relativePublishTimeDescription": "6 years ago"
+    },
+    {
+      "name": "places/ChIJp438U8YHmogRXlByjJ7aXrw/reviews/Ci9DQUlRQUNvZENodHljRjlvT2s5ZllUTnpOVXBZTmpSYU1WTnJjMFpHWW5CR1JuYxAB",
+      "text": {
+        "text": "Very nice so far. Beautiful views of the bay. It had a clean, well kept, ocean side feel to it. Rustic chic is what I would categorize the look and feel of the place. They make you feel at home. The only reason I gave it 4 stars is because there isn’t a sign from the direction that you have to enter and it is nearly impossible to find. The directions that were given were very well explained but it is still an absolute nightmare getting in and out of this place because where it is situated. And there is no other exit.",
+        "languageCode": "en"
+      },
+      "rating": 4,
+      "publishTime": "2025-06-19T03:06:01.230384684Z",
+      "originalText": {
+        "text": "Very nice so far. Beautiful views of the bay. It had a clean, well kept, ocean side feel to it. Rustic chic is what I would categorize the look and feel of the place. They make you feel at home. The only reason I gave it 4 stars is because there isn’t a sign from the direction that you have to enter and it is nearly impossible to find. The directions that were given were very well explained but it is still an absolute nightmare getting in and out of this place because where it is situated. And there is no other exit.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2s5ZllUTnpOVXBZTmpSYU1WTnJjMFpHWW5CR1JuYxAB!2m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2s5ZllUTnpOVXBZTmpSYU1WTnJjMFpHWW5CR1JuYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/116737314115569216628/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWiuF-CJK-x8Jy-W3xDATKeDXw-Yq9GfkuKbrPmYDlTFODYkfc=s128-c0x00000000-cc-rp-mo-ba5",
+        "displayName": "Misty"
+      },
+      "relativePublishTimeDescription": "11 months ago"
+    },
+    {
+      "name": "places/ChIJp438U8YHmogRXlByjJ7aXrw/reviews/ChdDSUhNMG9nS0VJQ0FnSURfa2VUYnN3RRAB",
+      "text": {
+        "text": "Worst place I have stayed.  Board members are rude and belligerent when asked questions.  They definitely are against anyone renting here.",
+        "languageCode": "en"
+      },
+      "rating": 1,
+      "publishTime": "2025-01-24T22:16:38.609115Z",
+      "originalText": {
+        "text": "Worst place I have stayed.  Board members are rude and belligerent when asked questions.  They definitely are against anyone renting here.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURfa2VUYnN3RRAB!2m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURfa2VUYnN3RRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/106846758389786292933/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUKHzhyZJ62DXyk47gs6jDAUsX7Oa7UNrdwOfJrD_xZJZ5wxX0=s128-c0x00000000-cc-rp-mo",
+        "displayName": "regina lloyd"
+      },
+      "relativePublishTimeDescription": "a year ago"
+    },
+    {
+      "name": "places/ChIJp438U8YHmogRXlByjJ7aXrw/reviews/ChdDSUhNMG9nS0VJQ0FnSURKdjlpUTFRRRAB",
+      "text": {
+        "text": "🚨 DO NOT STAY HERE 🚨\n\n- Bait and Switch\n- FRAUD\n- Blatant false advertising\n- Extremely unhelpful when we called\n\nAll together it’s extremely shady and you should avoid this place at all costs. Save yourself the trouble and do NOT book here. If you do, beware their fraud!",
+        "languageCode": "en"
+      },
+      "rating": 1,
+      "publishTime": "2023-07-25T21:57:11.288960Z",
+      "originalText": {
+        "text": "🚨 DO NOT STAY HERE 🚨\n\n- Bait and Switch\n- FRAUD\n- Blatant false advertising\n- Extremely unhelpful when we called\n\nAll together it’s extremely shady and you should avoid this place at all costs. Save yourself the trouble and do NOT book here. If you do, beware their fraud!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURKdjlpUTFRRRAB!2m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURKdjlpUTFRRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/117510275422488567528/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKVkTTdD2ibEWQbCPY2uolNSRktGC86-eoaZ8onAYeNBss_UoU=s128-c0x00000000-cc-rp-mo",
+        "displayName": "James Tipton"
+      },
+      "relativePublishTimeDescription": "2 years ago"
+    },
+    {
+      "name": "places/ChIJp438U8YHmogRXlByjJ7aXrw/reviews/ChZDSUhNMG9nS0VJQ0FnSURKaHMzdlNREAE",
+      "text": {
+        "text": "Great place to stay. So convenient. If you have a boat you can launch it right there",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2023-07-15T19:27:21.315126Z",
+      "originalText": {
+        "text": "Great place to stay. So convenient. If you have a boat you can launch it right there",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURKaHMzdlNREAE!2m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURKaHMzdlNREAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/108008467676536460318/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocI9DQmBPoThCNIiFL9IW03_l1EqSzgRFtd4e3QuWVeM6c_dQA=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Tina Ormsby"
+      },
+      "relativePublishTimeDescription": "2 years ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.2937411,
+    "longitude": -87.5835679
+  },
+  "plusCode": {
+    "globalCode": "862J7CV8+FH",
+    "compoundCode": "7CV8+FH Orange Beach, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.2923947697085,
+      "longitude": -87.58487553029151
+    },
+    "high": {
+      "latitude": 30.295092730291497,
+      "longitude": -87.5821775697085
+    }
+  },
+  "displayName": {
+    "text": "Bay View",
+    "languageCode": "en"
+  },
+  "primaryType": "apartment_complex",
+  "googleMapsUri": "https://maps.google.com/?cid=13573526701437243486&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=13573526701437243486&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "userRatingCount": 19,
+  "adrFormatAddress": "<span class=\"street-address\">25861 Canal Rd</span>, <span class=\"locality\">Orange Beach</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36561</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "25861 Canal Rd, Orange Beach, AL 36561, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "25861",
+      "shortText": "25861",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Canal Road",
+      "shortText": "Canal Rd",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Orange Beach",
+      "shortText": "Orange Beach",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36561",
+      "shortText": "36561",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJc57j-EsGmogRPDT-S-v8RH4",
+        "placeId": "ChIJc57j-EsGmogRPDT-S-v8RH4",
+        "containment": "WITHIN",
+        "displayName": {
+          "text": "Bay View",
+          "languageCode": "en"
+        }
+      }
+    ],
+    "landmarks": [
+      {
+        "name": "places/ChIJA38YC0wGmogR9NkvvZdAt0I",
+        "types": [
+          "establishment",
+          "hardware_store",
+          "home_goods_store",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJA38YC0wGmogR9NkvvZdAt0I",
+        "displayName": {
+          "text": "Paris Ace Orange Beach",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 417.7681,
+        "straightLineDistanceMeters": 173.68596
+      },
+      {
+        "name": "places/ChIJk8-EcUwGmogRGM1tvaBVb3g",
+        "types": [
+          "establishment",
+          "food",
+          "meal_delivery",
+          "meal_takeaway",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJk8-EcUwGmogRGM1tvaBVb3g",
+        "displayName": {
+          "text": "Pizza Hut",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 451.9621,
+        "straightLineDistanceMeters": 347.64676
+      },
+      {
+        "name": "places/ChIJNYHyl04GmogR1w1iyM87r9A",
+        "types": [
+          "establishment",
+          "food",
+          "meal_takeaway",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJNYHyl04GmogR1w1iyM87r9A",
+        "displayName": {
+          "text": "Subway",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 450.98846,
+        "straightLineDistanceMeters": 378.87976
+      },
+      {
+        "name": "places/ChIJNYHyl04GmogRTNR5UExQ-rM",
+        "types": [
+          "establishment",
+          "food",
+          "meal_delivery",
+          "meal_takeaway",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJNYHyl04GmogRTNR5UExQ-rM",
+        "displayName": {
+          "text": "Domino's Pizza",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 471.08475,
+        "straightLineDistanceMeters": 373.15225
+      },
+      {
+        "name": "places/ChIJp0rKPUwGmogRMAA9nSaGQ7k",
+        "types": [
+          "bar",
+          "establishment",
+          "food",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJp0rKPUwGmogRMAA9nSaGQ7k",
+        "displayName": {
+          "text": "Cactus Cantina Canal Road",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 413.5517,
+        "straightLineDistanceMeters": 317.19583
+      }
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Apartment Complex",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true
+  },
+  "shortFormattedAddress": "25861 Canal Rd, Orange Beach",
+  "primaryTypeDisplayName": {
+    "text": "Apartment Complex",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false
+}
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 25861 Canal Rd, Orange Beach
+search_vector: 'apart':3 'bay':1A 'beach':6 'complex':4 'orang':5 'view':2A
+primary_type_display: Apartment Complex
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=13573526701437243486&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJc57j-EsGmogRPDT-S-v8RH4",
+      "placeId": "ChIJc57j-EsGmogRPDT-S-v8RH4",
+      "containment": "WITHIN",
+      "displayName": {
+        "text": "Bay View",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJA38YC0wGmogR9NkvvZdAt0I",
+      "types": [
+        "establishment",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJA38YC0wGmogR9NkvvZdAt0I",
+      "displayName": {
+        "text": "Paris Ace Orange Beach",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 417.7681,
+      "straightLineDistanceMeters": 173.68596
+    },
+    {
+      "name": "places/ChIJk8-EcUwGmogRGM1tvaBVb3g",
+      "types": [
+        "establishment",
+        "food",
+        "meal_delivery",
+        "meal_takeaway",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJk8-EcUwGmogRGM1tvaBVb3g",
+      "displayName": {
+        "text": "Pizza Hut",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 451.9621,
+      "straightLineDistanceMeters": 347.64676
+    },
+    {
+      "name": "places/ChIJNYHyl04GmogR1w1iyM87r9A",
+      "types": [
+        "establishment",
+        "food",
+        "meal_takeaway",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJNYHyl04GmogR1w1iyM87r9A",
+      "displayName": {
+        "text": "Subway",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 450.98846,
+      "straightLineDistanceMeters": 378.87976
+    },
+    {
+      "name": "places/ChIJNYHyl04GmogRTNR5UExQ-rM",
+      "types": [
+        "establishment",
+        "food",
+        "meal_delivery",
+        "meal_takeaway",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJNYHyl04GmogRTNR5UExQ-rM",
+      "displayName": {
+        "text": "Domino's Pizza",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 471.08475,
+      "straightLineDistanceMeters": 373.15225
+    },
+    {
+      "name": "places/ChIJp0rKPUwGmogRMAA9nSaGQ7k",
+      "types": [
+        "bar",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJp0rKPUwGmogRMAA9nSaGQ7k",
+      "displayName": {
+        "text": "Cactus Cantina Canal Road",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 413.5517,
+      "straightLineDistanceMeters": 317.19583
+    }
+  ]
+}
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: stay
+industry_code: condo
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   1 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 1] ---
+id: 7693ffda-3bac-449a-a7aa-3bda52f20514
+entity_slug: bay-view
+place_id: ChIJc57j-EsGmogRPDT-S-v8RH4
+containment: WITHIN
+display_name: Bay View
+
+####################################################################################################
+# TABLE: entity_attributes   -   2 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 2] ---
+id: 9347c536-24cb-4042-a425-c93dcb1de810
+entity_slug: bay-view
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 2 of 2] ---
+id: 6becc9e6-6158-4f92-ad6f-f50885ac73c1
+entity_slug: bay-view
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: bay-view
+name: Bay View
+industry_code: condo
+is_parent: false
+score_of_7: 4
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 3a07f908-6656-48e1-a750-a35551e25879
+entity_slug: bay-view
+place_uri: https://maps.google.com/?cid=13573526701437243486&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 2723
+entity_slug: bay-view
+google_review_name: places/ChIJp438U8YHmogRXlByjJ7aXrw/reviews/ChdDSUhNMG9nS0VJQ0FnSUMwN2RUV2xBRRAB
+rating: 5
+review_text: Love going to Bayview! It's quiet and peaceful. It's a nice getaway to relax that's not in the hustle and bustle of the main strip and beach front. It's right on the water but it's the bay. Beautiful view from the pier. Boat sleeves available with an area to flush the salt water out. It has a nice, clean pool. Location is great. Several really good places within a few minutes drive to go eat some great seafood. Just a short drive to beach front and having your toes in the sand.
+language_code: en
+author_name: SparkyRN
+author_profile_url: https://www.google.com/maps/contrib/118215162147510533080/reviews
+publish_time: 2019-10-09T02:43:20.411277+00:00
+relative_time: 6 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUMwN2RUV2xBRRAB!2m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 2724
+entity_slug: bay-view
+google_review_name: places/ChIJp438U8YHmogRXlByjJ7aXrw/reviews/Ci9DQUlRQUNvZENodHljRjlvT2s5ZllUTnpOVXBZTmpSYU1WTnJjMFpHWW5CR1JuYxAB
+rating: 4
+review_text: Very nice so far. Beautiful views of the bay. It had a clean, well kept, ocean side feel to it. Rustic chic is what I would categorize the look and feel of the place. They make you feel at home. The only reason I gave it 4 stars is because there isn’t a sign from the direction that you have to enter and it is nearly impossible to find. The directions that were given were very well explained but it is still an absolute nightmare getting in and out of this place because where it is situated. And there is no other exit.
+language_code: en
+author_name: Misty
+author_profile_url: https://www.google.com/maps/contrib/116737314115569216628/reviews
+publish_time: 2025-06-19T03:06:01.230385+00:00
+relative_time: 11 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2s5ZllUTnpOVXBZTmpSYU1WTnJjMFpHWW5CR1JuYxAB!2m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 2725
+entity_slug: bay-view
+google_review_name: places/ChIJp438U8YHmogRXlByjJ7aXrw/reviews/ChdDSUhNMG9nS0VJQ0FnSURfa2VUYnN3RRAB
+rating: 1
+review_text: Worst place I have stayed.  Board members are rude and belligerent when asked questions.  They definitely are against anyone renting here.
+language_code: en
+author_name: regina lloyd
+author_profile_url: https://www.google.com/maps/contrib/106846758389786292933/reviews
+publish_time: 2025-01-24T22:16:38.609115+00:00
+relative_time: a year ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURfa2VUYnN3RRAB!2m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 2726
+entity_slug: bay-view
+google_review_name: places/ChIJp438U8YHmogRXlByjJ7aXrw/reviews/ChdDSUhNMG9nS0VJQ0FnSURKdjlpUTFRRRAB
+rating: 1
+review_text: 🚨 DO NOT STAY HERE 🚨
+
+- Bait and Switch
+- FRAUD
+- Blatant false advertising
+- Extremely unhelpful when we called
+
+All together it’s extremely shady and you should avoid this place at all costs. Save yourself the trouble and do NOT book here. If you do, beware their fraud!
+language_code: en
+author_name: James Tipton
+author_profile_url: https://www.google.com/maps/contrib/117510275422488567528/reviews
+publish_time: 2023-07-25T21:57:11.28896+00:00
+relative_time: 2 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURKdjlpUTFRRRAB!2m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 2727
+entity_slug: bay-view
+google_review_name: places/ChIJp438U8YHmogRXlByjJ7aXrw/reviews/ChZDSUhNMG9nS0VJQ0FnSURKaHMzdlNREAE
+rating: 5
+review_text: Great place to stay. So convenient. If you have a boat you can launch it right there
+language_code: en
+author_name: Tina Ormsby
+author_profile_url: https://www.google.com/maps/contrib/108008467676536460318/reviews
+publish_time: 2023-07-15T19:27:21.315126+00:00
+relative_time: 2 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURKaHMzdlNREAE!2m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 2] ---
+entity_slug: bay-view
+source_table: bookable_resources
+item_type: condo
+section_name: Units
+item_id: 05e49a47-1ba7-45f2-a370-98335e26e3f4
+name: Bay View
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_07.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "item_type_raw": "condo",
+  "resource_type": "condo",
+  "check_out_time": "11:00"
+}
+
+--- entity_items_norm_v [row 2 of 2] ---
+entity_slug: bay-view
+source_table: entity_section_items
+item_type: rooms
+section_name: Units & Rates
+item_id: 56ff2486-730c-484a-8193-772d53304d02
+name: Bay View
+sort_order: 1
+active: true
+attributes: {
+  "icon": "🏠",
+  "min_nights": 1,
+  "module_key": "rooms",
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "item_type_raw": "rooms",
+  "check_out_time": "11:00"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 2] ---
+entity_slug: bay-view
+source_table: bookable_resources
+item_type: condo
+section_name: Units
+item_id: 05e49a47-1ba7-45f2-a370-98335e26e3f4
+name: Bay View
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_07.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "resource_type": "condo",
+  "check_out_time": "11:00"
+}
+
+--- entity_items_v [row 2 of 2] ---
+entity_slug: bay-view
+source_table: entity_section_items
+item_type: rooms
+section_name: Units & Rates
+item_id: 56ff2486-730c-484a-8193-772d53304d02
+name: Bay View
+sort_order: 1
+active: true
+attributes: {
+  "icon": "🏠",
+  "min_nights": 1,
+  "module_key": "rooms",
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "check_out_time": "11:00"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   14 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 14] ---
+id: 35050541-5900-4dab-a773-6c6415e6b57b
+entity_slug: bay-view
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 14] ---
+id: 49c83a21-e45a-4714-86fe-5257852331b3
+entity_slug: bay-view
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 14] ---
+id: 8310e030-19eb-41e1-8a67-84ff1f25ff04
+entity_slug: bay-view
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 14] ---
+id: 3ad0fdde-9806-41b1-ad53-950633b57693
+entity_slug: bay-view
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 14] ---
+id: f4027105-618e-433c-956b-8ee1fa8d528f
+entity_slug: bay-view
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 14] ---
+id: 5290e7d0-61d1-4545-a392-1778748dd493
+entity_slug: bay-view
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 14] ---
+id: 92e9dc8d-8cf5-4817-9f01-fb629bef0870
+entity_slug: bay-view
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 14] ---
+id: d9c5ac41-dc79-4185-9a56-c0a4a18d7a49
+entity_slug: bay-view
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 14] ---
+id: cc5c521a-3817-4aa3-9cd7-5cdf2581cde9
+entity_slug: bay-view
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 14] ---
+id: 97783bf8-8b65-4595-93a6-7179904f1fa9
+entity_slug: bay-view
+module_key: stay
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 14] ---
+id: acbb1404-015f-4333-a0c1-2ef5db442a08
+entity_slug: bay-view
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 14] ---
+id: 713dd25c-aa33-41e1-a34f-9d78beac0a5f
+entity_slug: bay-view
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 14] ---
+id: ffc71696-4a76-4093-98b3-e9cb92e9cbf5
+entity_slug: bay-view
+module_key: amenities
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 14 of 14] ---
+id: cb2a7053-05f3-46b4-86f1-c606c9eb1747
+entity_slug: bay-view
+module_key: rooms
+enabled: true
+sort_order: 2
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   27 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 27] ---
+id: e41c0cc7-f61c-4b25-abeb-9e896dfe0cc8
+landmark_id: c85eec8d-b594-45fc-961a-5dd143bc9f6b
+entity_slug: bay-view
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 27] ---
+id: 0dff1077-e0e4-4097-a64a-2670c4fef56d
+landmark_id: c85eec8d-b594-45fc-961a-5dd143bc9f6b
+entity_slug: bay-view
+landmark_type: hardware_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 27] ---
+id: 11e0b33e-0758-4601-96fe-e3a97f24e98d
+landmark_id: c85eec8d-b594-45fc-961a-5dd143bc9f6b
+entity_slug: bay-view
+landmark_type: home_goods_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 27] ---
+id: c3c36a25-d64c-41e9-ace3-5ac50838e557
+landmark_id: c85eec8d-b594-45fc-961a-5dd143bc9f6b
+entity_slug: bay-view
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 27] ---
+id: 98639632-443e-4307-8a16-5b87d25ddbd1
+landmark_id: c85eec8d-b594-45fc-961a-5dd143bc9f6b
+entity_slug: bay-view
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 27] ---
+id: 9ac3a217-4c5d-49e2-89de-dd127e3fc8f9
+landmark_id: 81473a27-560c-4878-9c35-6fcd20e0dcdb
+entity_slug: bay-view
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 27] ---
+id: 206579fd-91a2-476f-a1d3-bbf176101ada
+landmark_id: 81473a27-560c-4878-9c35-6fcd20e0dcdb
+entity_slug: bay-view
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 27] ---
+id: 2434e593-bef8-46cf-845b-73153ca231b7
+landmark_id: 81473a27-560c-4878-9c35-6fcd20e0dcdb
+entity_slug: bay-view
+landmark_type: meal_delivery
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 27] ---
+id: 83f07047-dd9b-4fce-b247-4f7cf38296c1
+landmark_id: 81473a27-560c-4878-9c35-6fcd20e0dcdb
+entity_slug: bay-view
+landmark_type: meal_takeaway
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 27] ---
+id: a7f94496-c4c2-4331-979a-b871c505da97
+landmark_id: 81473a27-560c-4878-9c35-6fcd20e0dcdb
+entity_slug: bay-view
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 27] ---
+id: 6bb26ed6-d6d4-4226-b6d7-97864946cb5e
+landmark_id: 81473a27-560c-4878-9c35-6fcd20e0dcdb
+entity_slug: bay-view
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 27] ---
+id: c57bdf63-324a-48c0-9a85-bb7ad1a22875
+landmark_id: a9a7a797-7324-4c47-9feb-91d0338da849
+entity_slug: bay-view
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 27] ---
+id: cc00e36a-a5d8-47d1-a1ec-06618eddb82e
+landmark_id: a9a7a797-7324-4c47-9feb-91d0338da849
+entity_slug: bay-view
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 27] ---
+id: f24efc5e-92da-4109-8c43-5f4ee9468a88
+landmark_id: a9a7a797-7324-4c47-9feb-91d0338da849
+entity_slug: bay-view
+landmark_type: meal_takeaway
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 27] ---
+id: 2fc46e94-9f0b-4ab9-8b59-5cbec28cf677
+landmark_id: a9a7a797-7324-4c47-9feb-91d0338da849
+entity_slug: bay-view
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 27] ---
+id: 641ed90d-bdd0-48d6-b9f8-4a09011a1dab
+landmark_id: a9a7a797-7324-4c47-9feb-91d0338da849
+entity_slug: bay-view
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 27] ---
+id: 9135c9ea-829b-4a42-99aa-91b6f00b567c
+landmark_id: faa4095b-e2e0-447d-9e76-9d9585e3506c
+entity_slug: bay-view
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 27] ---
+id: 8dd0aa81-78d7-4b56-a910-8007f8aa1bf7
+landmark_id: faa4095b-e2e0-447d-9e76-9d9585e3506c
+entity_slug: bay-view
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 19 of 27] ---
+id: 99d4b145-0350-480c-b0c5-6ac241e6cab9
+landmark_id: faa4095b-e2e0-447d-9e76-9d9585e3506c
+entity_slug: bay-view
+landmark_type: meal_delivery
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 20 of 27] ---
+id: ab1df7ad-e90b-4cac-9b9d-b38bea8b20ec
+landmark_id: faa4095b-e2e0-447d-9e76-9d9585e3506c
+entity_slug: bay-view
+landmark_type: meal_takeaway
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 21 of 27] ---
+id: 3caeeec1-4f43-460a-935d-195b73e77932
+landmark_id: faa4095b-e2e0-447d-9e76-9d9585e3506c
+entity_slug: bay-view
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 22 of 27] ---
+id: adf232b1-5329-401b-a380-7e7aefcf0182
+landmark_id: faa4095b-e2e0-447d-9e76-9d9585e3506c
+entity_slug: bay-view
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 23 of 27] ---
+id: 28f108ff-27d1-457c-aa8a-d41547fac7a7
+landmark_id: 6b74aa95-0c4a-4f91-b197-50150b8dec1e
+entity_slug: bay-view
+landmark_type: bar
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 24 of 27] ---
+id: ff5475af-8de5-4bb6-a3e5-87b014e8a961
+landmark_id: 6b74aa95-0c4a-4f91-b197-50150b8dec1e
+entity_slug: bay-view
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 25 of 27] ---
+id: 0e084588-f179-4db7-ac3c-5a760672355a
+landmark_id: 6b74aa95-0c4a-4f91-b197-50150b8dec1e
+entity_slug: bay-view
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 26 of 27] ---
+id: 7f1dea11-9115-4b39-86b3-3d8cb531b0f2
+landmark_id: 6b74aa95-0c4a-4f91-b197-50150b8dec1e
+entity_slug: bay-view
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 27 of 27] ---
+id: 01feb41a-0901-4dbf-912b-e0d68f5146ec
+landmark_id: 6b74aa95-0c4a-4f91-b197-50150b8dec1e
+entity_slug: bay-view
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   6 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 6] ---
+id: c85eec8d-b594-45fc-961a-5dd143bc9f6b
+entity_slug: bay-view
+kind: landmark
+place_id: ChIJA38YC0wGmogR9NkvvZdAt0I
+name: Paris Ace Orange Beach
+types: [
+  "establishment",
+  "hardware_store",
+  "home_goods_store",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 417.7681
+straight_line_distance_meters: 173.68596
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 6] ---
+id: 81473a27-560c-4878-9c35-6fcd20e0dcdb
+entity_slug: bay-view
+kind: landmark
+place_id: ChIJk8-EcUwGmogRGM1tvaBVb3g
+name: Pizza Hut
+types: [
+  "establishment",
+  "food",
+  "meal_delivery",
+  "meal_takeaway",
+  "point_of_interest",
+  "restaurant"
+]
+travel_distance_meters: 451.9621
+straight_line_distance_meters: 347.64676
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 6] ---
+id: a9a7a797-7324-4c47-9feb-91d0338da849
+entity_slug: bay-view
+kind: landmark
+place_id: ChIJNYHyl04GmogR1w1iyM87r9A
+name: Subway
+types: [
+  "establishment",
+  "food",
+  "meal_takeaway",
+  "point_of_interest",
+  "restaurant"
+]
+travel_distance_meters: 450.98846
+straight_line_distance_meters: 378.87976
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 6] ---
+id: faa4095b-e2e0-447d-9e76-9d9585e3506c
+entity_slug: bay-view
+kind: landmark
+place_id: ChIJNYHyl04GmogRTNR5UExQ-rM
+name: Domino's Pizza
+types: [
+  "establishment",
+  "food",
+  "meal_delivery",
+  "meal_takeaway",
+  "point_of_interest",
+  "restaurant"
+]
+travel_distance_meters: 471.08475
+straight_line_distance_meters: 373.15225
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 6] ---
+id: 6b74aa95-0c4a-4f91-b197-50150b8dec1e
+entity_slug: bay-view
+kind: landmark
+place_id: ChIJp0rKPUwGmogRMAA9nSaGQ7k
+name: Cactus Cantina Canal Road
+types: [
+  "bar",
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant"
+]
+travel_distance_meters: 413.5517
+straight_line_distance_meters: 317.19583
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 6 of 6] ---
+id: 20ebd6a8-4fd3-4cb1-916e-b4397f63a172
+entity_slug: bay-view
+kind: area
+place_id: ChIJc57j-EsGmogRPDT-S-v8RH4
+name: Bay View
+containment: WITHIN
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13294
+entity_slug: bay-view
+name: Bay View
+offer_type: room
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 05e49a47-1ba7-45f2-a370-98335e26e3f4
+
+####################################################################################################
+# TABLE: entity_photos   -   67 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 67] ---
+id: fb9b8abb-dd31-48d9-9946-a42a82d4623e
+entity_slug: bay-view
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_06.jpg
+is_cover: false
+sort_order: 2
+photo_type: resource
+source_name: bookable_resource
+resource_id: 05e49a47-1ba7-45f2-a370-98335e26e3f4
+
+--- entity_photos [row 2 of 67] ---
+id: 299240ff-b324-4a69-8de8-ff3315d6afb9
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8340.jpg
+is_cover: true
+sort_order: 0
+photo_type: gallery
+
+--- entity_photos [row 3 of 67] ---
+id: c7eced07-ad59-4e6d-be58-6ead979eed91
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8280.jpg
+is_cover: false
+sort_order: 1
+photo_type: gallery
+
+--- entity_photos [row 4 of 67] ---
+id: c905c118-df78-41d9-b9cf-04a79abbdebd
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8301.jpg
+is_cover: false
+sort_order: 2
+photo_type: gallery
+
+--- entity_photos [row 5 of 67] ---
+id: 9919ac80-025e-4ce6-9de4-7018c0c11bd3
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8343.jpg
+is_cover: false
+sort_order: 3
+photo_type: gallery
+
+--- entity_photos [row 6 of 67] ---
+id: 9b5001ab-7f24-4ad2-8c07-a2a232629b3a
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8283.jpg
+is_cover: false
+sort_order: 4
+photo_type: gallery
+
+--- entity_photos [row 7 of 67] ---
+id: fb8f27fc-88b0-4cbc-a34d-305e90ff4acd
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8286.jpg
+is_cover: false
+sort_order: 5
+photo_type: gallery
+
+--- entity_photos [row 8 of 67] ---
+id: d04aa57c-cf57-4e6d-8f57-e2a168a3f07b
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8289.jpg
+is_cover: false
+sort_order: 6
+photo_type: gallery
+
+--- entity_photos [row 9 of 67] ---
+id: 289fbeff-bdf9-486d-b053-f0586def29a0
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8292.jpg
+is_cover: false
+sort_order: 7
+photo_type: gallery
+
+--- entity_photos [row 10 of 67] ---
+id: 8666d319-184f-4b42-993a-426cefbc7e5d
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8295.jpg
+is_cover: false
+sort_order: 8
+photo_type: gallery
+
+--- entity_photos [row 11 of 67] ---
+id: ce3c593b-28bb-4eab-aed1-e8e1c8b5a93e
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8298.jpg
+is_cover: false
+sort_order: 9
+photo_type: gallery
+
+--- entity_photos [row 12 of 67] ---
+id: 990094ae-74b9-4138-b1a9-289931f12411
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8277.jpg
+is_cover: false
+sort_order: 10
+photo_type: gallery
+
+--- entity_photos [row 13 of 67] ---
+id: 4452542f-3cd8-4cb0-b8ef-29533e312cfa
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8274.jpg
+is_cover: false
+sort_order: 11
+photo_type: gallery
+
+--- entity_photos [row 14 of 67] ---
+id: 1a4b4cf0-4d4d-4538-ab16-464e443156d8
+entity_slug: bay-view
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_10.jpg
+is_cover: false
+sort_order: 9
+photo_type: complex
+
+--- entity_photos [row 15 of 67] ---
+id: aa40c7a4-59de-4761-9f8c-d6fb931d2026
+entity_slug: bay-view
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_06.jpg
+is_cover: false
+sort_order: 5
+photo_type: complex
+
+--- entity_photos [row 16 of 67] ---
+id: c7e61213-544f-4ad4-88e9-6277af5bf060
+entity_slug: bay-view
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_01.jpg
+is_cover: true
+sort_order: 0
+photo_type: complex
+
+--- entity_photos [row 17 of 67] ---
+id: 2f17b9cc-caec-4555-9b5f-e3f3e4c12619
+entity_slug: bay-view
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_03.jpg
+is_cover: false
+sort_order: 2
+photo_type: complex
+
+--- entity_photos [row 18 of 67] ---
+id: f29dd500-bc5f-4546-807e-364e55703be2
+entity_slug: bay-view
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: complex
+
+--- entity_photos [row 19 of 67] ---
+id: 663883eb-4b20-42db-9cc0-d442a7bb796d
+entity_slug: bay-view
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_04.jpg
+is_cover: false
+sort_order: 3
+photo_type: complex
+
+--- entity_photos [row 20 of 67] ---
+id: 83add0d5-bf2e-4e20-9fa1-15d109a3047e
+entity_slug: bay-view
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_09.jpg
+is_cover: false
+sort_order: 8
+photo_type: complex
+
+--- entity_photos [row 21 of 67] ---
+id: e7a73dc9-98e7-4964-84c4-aa79548a52cf
+entity_slug: bay-view
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_05.jpg
+is_cover: false
+sort_order: 4
+photo_type: complex
+
+--- entity_photos [row 22 of 67] ---
+id: 778ebb1f-6c6b-4601-8ebc-300756b5b6bf
+entity_slug: bay-view
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_08.jpg
+is_cover: false
+sort_order: 7
+photo_type: complex
+
+--- entity_photos [row 23 of 67] ---
+id: 36e23a3d-a97f-4f55-839f-4b02d3fcc6f1
+entity_slug: bay-view
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_07.jpg
+is_cover: false
+sort_order: 6
+photo_type: complex
+
+--- entity_photos [row 24 of 67] ---
+id: 34887404-54ab-42aa-988c-2cf7b993d0b6
+entity_slug: bay-view
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_09.jpg
+is_cover: false
+sort_order: 6
+photo_type: resource
+source_name: bookable_resource
+resource_id: 05e49a47-1ba7-45f2-a370-98335e26e3f4
+
+--- entity_photos [row 25 of 67] ---
+id: 57649999-cda8-43e0-bf7b-d7e193e688bb
+entity_slug: bay-view
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_08.jpg
+is_cover: false
+sort_order: 8
+photo_type: resource
+source_name: bookable_resource
+resource_id: 05e49a47-1ba7-45f2-a370-98335e26e3f4
+
+--- entity_photos [row 26 of 67] ---
+id: b5c2cf5c-d557-42ee-ab41-9971c90b4272
+entity_slug: bay-view
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_01.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: 05e49a47-1ba7-45f2-a370-98335e26e3f4
+
+--- entity_photos [row 27 of 67] ---
+id: 275298ff-a5f0-4a52-bdb2-1e88ec66aa9b
+entity_slug: bay-view
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_10.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 05e49a47-1ba7-45f2-a370-98335e26e3f4
+
+--- entity_photos [row 28 of 67] ---
+id: 1e21b5f8-e3f7-4c4d-862c-ab60c1e0b60c
+entity_slug: bay-view
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_05.jpg
+is_cover: false
+sort_order: 7
+photo_type: resource
+source_name: bookable_resource
+resource_id: 05e49a47-1ba7-45f2-a370-98335e26e3f4
+
+--- entity_photos [row 29 of 67] ---
+id: 60afa417-f9f4-4e5b-be20-f05b6e9a3df5
+entity_slug: bay-view
+url: https://places.googleapis.com/v1/places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3knLCA75U20wL_xX9fZOwO0kFVGDomaitgDsSlHN6aHtnoRpo2RALFh4W07n8pAmH7mcfGXU4JBfmh9_KNivO5mfhU9MueU1j2d8ULnpBacmOZXTT4bmHde1ROPngGJXiRP3WFzG3Zrlq_WUen2sFJUnErAbL7gaE9OxPwbJErziNHVf4NMuyQEYur6DSp8_idH03osXuwGya0XkU3u9P1cMbVPT_UfMZEiILWKWbfcV5PZSMjPso5Km6L09gB81cuS9-4wYQw-LiFYSUdEPITvCLrWZJFhBh5Pha6kvfetMSmfbwZ_-KcbAX4Uo-OPupS1b1-XfzkyIopDInSn8jQm_AYdkpH7scA7TQl7e06BKWXCbBcjt1nvqzU5Hl-6XPGxT0qp9XiFMo1kPo1MTkz_Gdqp9xy9WdMoAUEsSWxeV5Gs/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3knLCA75U20wL_xX9fZOwO0kFVGDomaitgDsSlHN6aHtnoRpo2RALFh4W07n8pAmH7mcfGXU4JBfmh9_KNivO5mfhU9MueU1j2d8ULnpBacmOZXTT4bmHde1ROPngGJXiRP3WFzG3Zrlq_WUen2sFJUnErAbL7gaE9OxPwbJErziNHVf4NMuyQEYur6DSp8_idH03osXuwGya0XkU3u9P1cMbVPT_UfMZEiILWKWbfcV5PZSMjPso5Km6L09gB81cuS9-4wYQw-LiFYSUdEPITvCLrWZJFhBh5Pha6kvfetMSmfbwZ_-KcbAX4Uo-OPupS1b1-XfzkyIopDInSn8jQm_AYdkpH7scA7TQl7e06BKWXCbBcjt1nvqzU5Hl-6XPGxT0qp9XiFMo1kPo1MTkz_Gdqp9xy9WdMoAUEsSWxeV5Gs
+is_cover: false
+sort_order: 0
+caption: Monica Romero
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC2uPKNxQE!2e10!4m2!3m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e
+
+--- entity_photos [row 30 of 67] ---
+id: 6bf22a76-ba57-44f6-abd9-fc1c1f0c0dbf
+entity_slug: bay-view
+url: https://places.googleapis.com/v1/places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3na23YQgP5ppH0N6KYxY2debk9e325rC2FSJMBxaec0xI9tAec3tu3QupFlTg1cQWHgWfn0bVNWSmvWF_DzReI-ngFb1ed5Il-N1WVqyCGSKqwT1AGY30E3AsK6fa6EBl0mB7IHj6bxmcQusFIPNRWqP_oCSvvtyVnj5J94XJQVlcVXGetK78dopzx0nf5glWJ6FVVil4yeZC7Y8qn2tTTDnc95hzglgTDr1rqR4DLAw0dPgX-MQWgjgl5bFfyZtty9Hn33ECVJPXNdhwuh-st2vW7tEOVCu0t4kokwR_Zr1lWccu2dJ2oNXnFfWUNs_MplTjk3asWA5V_Clq8UUASnxgjTSrIwNPCvMVtvwTDncFMeEmzFMSJQiFsoDCFBCp1ibQgtVKMV1AeAYjzreell0pjpnc7dFBP4DG6eg6Y1jHfGp1Z6ZBA7k39HBecb/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3na23YQgP5ppH0N6KYxY2debk9e325rC2FSJMBxaec0xI9tAec3tu3QupFlTg1cQWHgWfn0bVNWSmvWF_DzReI-ngFb1ed5Il-N1WVqyCGSKqwT1AGY30E3AsK6fa6EBl0mB7IHj6bxmcQusFIPNRWqP_oCSvvtyVnj5J94XJQVlcVXGetK78dopzx0nf5glWJ6FVVil4yeZC7Y8qn2tTTDnc95hzglgTDr1rqR4DLAw0dPgX-MQWgjgl5bFfyZtty9Hn33ECVJPXNdhwuh-st2vW7tEOVCu0t4kokwR_Zr1lWccu2dJ2oNXnFfWUNs_MplTjk3asWA5V_Clq8UUASnxgjTSrIwNPCvMVtvwTDncFMeEmzFMSJQiFsoDCFBCp1ibQgtVKMV1AeAYjzreell0pjpnc7dFBP4DG6eg6Y1jHfGp1Z6ZBA7k39HBecb
+is_cover: false
+sort_order: 1
+caption: Heather Wilson
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDvmqWjussZW8KKWNiI40Nh!2e10!4m2!3m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e
+
+--- entity_photos [row 31 of 67] ---
+id: a8d7ba75-1c9a-44a7-bea1-0dbf26160c1f
+entity_slug: bay-view
+url: https://places.googleapis.com/v1/places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3kb1R4y07fO6zCa894kE5JvwEGfKfVudmq_6TcwmDNo_u5ORhF8emRdxEG5CochLT0pHkvlwJ289FIP1eg0LGwqktKCIHzQ_AE9mqjn7I7siutjgsZI4PJZz-PIZJy6Nxkkhj2ARkUNnG1TnAasVetivVKBc6lFDWBr84xvDJm9NYmNaUF0Zvh2AaWe_KtUc2DPfwK5Vf4z2_BA3IngolwoeoLx9byWs16mSfg3SX0ox4VNV1aqT8FQBaMCCu_8QY0xLokkHs_RDLVmT15RyJoDvU9jx9sgDkMFDWBqQAbJ-dt17mJpbkpl8_Sfl-ghgcmu-onvRekNkiHQd5FVgfZq2kTADtsjfEhqMisR10t9a_AVCDhilj_e945fOpiRcj44apGJpENXWz5nt_3bfFDIpX9le8vZwIVyLwwgeXvQjQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3kb1R4y07fO6zCa894kE5JvwEGfKfVudmq_6TcwmDNo_u5ORhF8emRdxEG5CochLT0pHkvlwJ289FIP1eg0LGwqktKCIHzQ_AE9mqjn7I7siutjgsZI4PJZz-PIZJy6Nxkkhj2ARkUNnG1TnAasVetivVKBc6lFDWBr84xvDJm9NYmNaUF0Zvh2AaWe_KtUc2DPfwK5Vf4z2_BA3IngolwoeoLx9byWs16mSfg3SX0ox4VNV1aqT8FQBaMCCu_8QY0xLokkHs_RDLVmT15RyJoDvU9jx9sgDkMFDWBqQAbJ-dt17mJpbkpl8_Sfl-ghgcmu-onvRekNkiHQd5FVgfZq2kTADtsjfEhqMisR10t9a_AVCDhilj_e945fOpiRcj44apGJpENXWz5nt_3bfFDIpX9le8vZwIVyLwwgeXvQjQ
+is_cover: false
+sort_order: 2
+caption: Jessica Carter
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDKuPjtSA!2e10!4m2!3m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e
+
+--- entity_photos [row 32 of 67] ---
+id: 49efd40c-0897-431c-95e4-5b3a0e92925e
+entity_slug: bay-view
+url: https://places.googleapis.com/v1/places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3kH65iew6mp-7Wt7MwHDHyYxFmYIe49F-fF5rfV08C4jVJr72KrHAEf-bi557KvRA_o6My51ktGR2RlkBME3EEgclsNJpo7AVDh93f-hHOwb5PZt73BNVIn-kOIAixBYSXfCpq8eT1jzwEswnsEewTJkFvplECrDzQl6Tfzw8TSWE5_0DCIARfl9Hai-pqiALOKPvtuofN_CmDu-gOcC3wRMOFWJThUaNkSny8CDOYXwLCGsobin5J8UlRATUWljmy1BoihCzzllXCciI_xg0-bcLwUcecomyT5GfFUiLUmb0KvyeKfHNTxjL8wbX0rWuyd_tgE8_ACd9p5Op6wClA9a2kCL7D6hh0j6gUXJ1Wsly6XeRGPolXUPMlSqVMAETz2F5cqJHwZhFD1ZajBCBlukqLTlROZPlCEh4C81OfHqA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3kH65iew6mp-7Wt7MwHDHyYxFmYIe49F-fF5rfV08C4jVJr72KrHAEf-bi557KvRA_o6My51ktGR2RlkBME3EEgclsNJpo7AVDh93f-hHOwb5PZt73BNVIn-kOIAixBYSXfCpq8eT1jzwEswnsEewTJkFvplECrDzQl6Tfzw8TSWE5_0DCIARfl9Hai-pqiALOKPvtuofN_CmDu-gOcC3wRMOFWJThUaNkSny8CDOYXwLCGsobin5J8UlRATUWljmy1BoihCzzllXCciI_xg0-bcLwUcecomyT5GfFUiLUmb0KvyeKfHNTxjL8wbX0rWuyd_tgE8_ACd9p5Op6wClA9a2kCL7D6hh0j6gUXJ1Wsly6XeRGPolXUPMlSqVMAETz2F5cqJHwZhFD1ZajBCBlukqLTlROZPlCEh4C81OfHqA
+is_cover: false
+sort_order: 3
+caption: Donna Reno
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICOy_37Ng!2e10!4m2!3m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e
+
+--- entity_photos [row 33 of 67] ---
+id: 8fe8fdac-32fe-40b5-aa76-a02d2d34870c
+entity_slug: bay-view
+url: https://places.googleapis.com/v1/places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3knBzBuYnasvcbnyf29t94MIfQLWat_GTrM6D587VXVqvw4UMnDvMIAeoQfs1xhsSFXkKi8lZfKGT5o7_1codAVF-HDNEuRieshhr7Tht6fDA-BU3liCptuuOz3P_vYYV74X9n_DTV52wVUOWbAhOJX-dvvonnrNFBMO-HviqlgsYCtx3FwXeHa5p6VvXUxrPPsaGbb9u8bNMTcARVQfl4NgA_C6JmznNEKo4m1q1x4g-uxh6CH727-PuTq1sxM63NP9GYepAJE9HtYPLr0XnLTFnqy2EGiPO7WO2LrRDP9MPAUErDC947rLTyZ2ukh6QzqpVVGQNKe_sIWMxsJxvolty71GD11SI86djHQSh6ZwwBnPmeebYJoDkGfd9pAJH9unyD7OS4ne-9uNDNhTOi5nXBKH7Tq2gfysCun45BqqA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3knBzBuYnasvcbnyf29t94MIfQLWat_GTrM6D587VXVqvw4UMnDvMIAeoQfs1xhsSFXkKi8lZfKGT5o7_1codAVF-HDNEuRieshhr7Tht6fDA-BU3liCptuuOz3P_vYYV74X9n_DTV52wVUOWbAhOJX-dvvonnrNFBMO-HviqlgsYCtx3FwXeHa5p6VvXUxrPPsaGbb9u8bNMTcARVQfl4NgA_C6JmznNEKo4m1q1x4g-uxh6CH727-PuTq1sxM63NP9GYepAJE9HtYPLr0XnLTFnqy2EGiPO7WO2LrRDP9MPAUErDC947rLTyZ2ukh6QzqpVVGQNKe_sIWMxsJxvolty71GD11SI86djHQSh6ZwwBnPmeebYJoDkGfd9pAJH9unyD7OS4ne-9uNDNhTOi5nXBKH7Tq2gfysCun45BqqA
+is_cover: false
+sort_order: 4
+caption: Donna Reno
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICOy_37Vg!2e10!4m2!3m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e
+
+--- entity_photos [row 34 of 67] ---
+id: 2a8907a7-1a36-4602-8478-1fb55a804044
+entity_slug: bay-view
+url: https://places.googleapis.com/v1/places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3mOP4hIbj4QmKiMJU-6yGooBwvrS4XKaAiR870Z2Q5RB4P5xxlJm06r46161R0WcZdTctmEuPLivp2deQB8h7oaJ-gLG5qVaBjescnwkPer7oOpf31rJawcSM1iSbTbWWobK3Q_3HlvqHSNq5zomVKGXcFf7RFGMrqJlksK0UZUxoyhz6_g_JJcGhYb9UXa_yyTMN_iC0QA4zi6XQOjekAcQbE7qZ6GOB40hcFYfkMYJKvLO4eAqeyElD6bDzvl4dVBTyIcuvf15BDixlLVX85NssrXf9WoYR_yxBn3G_Y3ribrKk-SrhcJF4Pqp3IL7wu8eNqK21yLiRcIja2sKl7OiVVKLZwKAdwrrpnT428nfhpy_VoHiCqA3TGH0wxndS1NfVCUrPv7ePBCVu8HQlmENlmELpFboudVkFNc5dxEcz6ND2WgVOlcQV0vlQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3mOP4hIbj4QmKiMJU-6yGooBwvrS4XKaAiR870Z2Q5RB4P5xxlJm06r46161R0WcZdTctmEuPLivp2deQB8h7oaJ-gLG5qVaBjescnwkPer7oOpf31rJawcSM1iSbTbWWobK3Q_3HlvqHSNq5zomVKGXcFf7RFGMrqJlksK0UZUxoyhz6_g_JJcGhYb9UXa_yyTMN_iC0QA4zi6XQOjekAcQbE7qZ6GOB40hcFYfkMYJKvLO4eAqeyElD6bDzvl4dVBTyIcuvf15BDixlLVX85NssrXf9WoYR_yxBn3G_Y3ribrKk-SrhcJF4Pqp3IL7wu8eNqK21yLiRcIja2sKl7OiVVKLZwKAdwrrpnT428nfhpy_VoHiCqA3TGH0wxndS1NfVCUrPv7ePBCVu8HQlmENlmELpFboudVkFNc5dxEcz6ND2WgVOlcQV0vlQ
+is_cover: false
+sort_order: 5
+caption: Stephanie Duckett
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCI9mN4O8ufGjqu-eY7V7LH!2e10!4m2!3m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e
+
+--- entity_photos [row 35 of 67] ---
+id: a4edc307-a644-4be1-a160-28389e550cad
+entity_slug: bay-view
+url: https://places.googleapis.com/v1/places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3krpF7IC49tKDCXWlR4iKCJVMuE8U0YbUjqGMBj0SOl_OIG88hzESPMxvxDInSwBxUFyi9LEF2ad0Z63LVj1aWLOve021Gk46_YB1z0JUqwVp5q10-Y8ose8EOTzIx87REF3-1W6yoPMwWfOVhEWI3Q8-iFRgq7eEHFx12UCVKXKNrZMllc310KjyVqZHEwP5JEOa2CL5CyU8FuYvkSFAVdEnN3qMn8oHR0eQHZ2Hxo_HOtfxLV5XR5XrvT3wsJJ9ZIvARtwycMWs2vHYQ0vIiXlrGogzk3DCdUjOxJ8vzwFCVRa-7zK-11ltT9LoNX9VIs669TpLvLhFIHJpkGuEGtda4_1HN6THvOWf7aDdO6otxAHu4Zkpv63b25oXOFgrTovfrKPVsHUBtZiqSJ7kx_t8Q-7SXAQ_qcLFKIFaCr3ubL/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3krpF7IC49tKDCXWlR4iKCJVMuE8U0YbUjqGMBj0SOl_OIG88hzESPMxvxDInSwBxUFyi9LEF2ad0Z63LVj1aWLOve021Gk46_YB1z0JUqwVp5q10-Y8ose8EOTzIx87REF3-1W6yoPMwWfOVhEWI3Q8-iFRgq7eEHFx12UCVKXKNrZMllc310KjyVqZHEwP5JEOa2CL5CyU8FuYvkSFAVdEnN3qMn8oHR0eQHZ2Hxo_HOtfxLV5XR5XrvT3wsJJ9ZIvARtwycMWs2vHYQ0vIiXlrGogzk3DCdUjOxJ8vzwFCVRa-7zK-11ltT9LoNX9VIs669TpLvLhFIHJpkGuEGtda4_1HN6THvOWf7aDdO6otxAHu4Zkpv63b25oXOFgrTovfrKPVsHUBtZiqSJ7kx_t8Q-7SXAQ_qcLFKIFaCr3ubL
+is_cover: false
+sort_order: 6
+caption: SparkyRN
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC0neSYpAE!2e10!4m2!3m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e
+
+--- entity_photos [row 36 of 67] ---
+id: e0cd177d-f3ac-4c3c-9117-6b64d97f168f
+entity_slug: bay-view
+url: https://places.googleapis.com/v1/places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3nKkaaJGeeyJMOhl7TreRQdsE9iu72KVjl-FkvbvUMgQZR5iMQ2v8M6J8onWDCRdXugM0Si-9_DL-Fz4VrN0ohpmDOQnnduZFiDwjWriJKw0AHh5g5MLfTZaE1AhSaw53NI62Z2OHuVGeQzfDeWq2r6L6NhO8ABJpdgReNGUwAPBvUmVV4QiLkHB81FpFkCrtdOS_WNaTb6Z7oQ6FfCtFSdMak0A8Ik0_ILDGmV364vgcvronsHf3rkFyPC4gUWbx2-KvWiGIL9KBVu7qmzK0NoN5sveITAxQbIz3Oqgv9uEcDoZ5xi5VUZdaoC8wpdERhX31fgnGZ-cgiaTsZh-mBkMXfo6K0hwKoc5pSX9fI3n3sVU358AvnFS67dU5vs5-EavRES-e_k3gVt-hX3WVdEeC7w6QgXYgDEu7AGjMihrOq_/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3nKkaaJGeeyJMOhl7TreRQdsE9iu72KVjl-FkvbvUMgQZR5iMQ2v8M6J8onWDCRdXugM0Si-9_DL-Fz4VrN0ohpmDOQnnduZFiDwjWriJKw0AHh5g5MLfTZaE1AhSaw53NI62Z2OHuVGeQzfDeWq2r6L6NhO8ABJpdgReNGUwAPBvUmVV4QiLkHB81FpFkCrtdOS_WNaTb6Z7oQ6FfCtFSdMak0A8Ik0_ILDGmV364vgcvronsHf3rkFyPC4gUWbx2-KvWiGIL9KBVu7qmzK0NoN5sveITAxQbIz3Oqgv9uEcDoZ5xi5VUZdaoC8wpdERhX31fgnGZ-cgiaTsZh-mBkMXfo6K0hwKoc5pSX9fI3n3sVU358AvnFS67dU5vs5-EavRES-e_k3gVt-hX3WVdEeC7w6QgXYgDEu7AGjMihrOq_
+is_cover: false
+sort_order: 7
+caption: Jessica Carter
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDK5MLIgAE!2e10!4m2!3m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e
+
+--- entity_photos [row 37 of 67] ---
+id: 98e68140-3cd7-45c0-84ad-9f58ec74ec92
+entity_slug: bay-view
+url: https://places.googleapis.com/v1/places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3kTDxZ1D0GZaTzlQ3IF1ziXfshY0gQz2zQluBrmpv_KgK6Aj_i8Mspl9E6H6TXW3yzkLDk9aHMJACFDR-e0T_tka5CSoHH-jxkXcYlQ0OEvQgLJDGpa1z7L0Jsfl-a37OCduogLCFNuf0mPwrMHqQWhpajZHXj5XS_8Yo5CCN_GyGsRF2RhRpR_CWlcFQBOGE2iPLP30S-dTfUjdDhCzAI67xs6RZc_2Zc01w4ZKptlMHBEtWpKNIPZAV4wHN2YAAIN2EgkCXRJbD4Uxw7n7csAR5vTiUmAbEpteDlMt0oyDe8aTEnlSJVrQTZY2dXeHv3i9_K0LTQSZaIGQZglMhfDUw1hRhoYE6-pbkRo-w4U_1PQhfa-5cVjPUXHqHlcLTek0YZMzIXNlZB_snjgHWLMpvM5jkPrbEAwJ0ZezjxbLBeY/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3kTDxZ1D0GZaTzlQ3IF1ziXfshY0gQz2zQluBrmpv_KgK6Aj_i8Mspl9E6H6TXW3yzkLDk9aHMJACFDR-e0T_tka5CSoHH-jxkXcYlQ0OEvQgLJDGpa1z7L0Jsfl-a37OCduogLCFNuf0mPwrMHqQWhpajZHXj5XS_8Yo5CCN_GyGsRF2RhRpR_CWlcFQBOGE2iPLP30S-dTfUjdDhCzAI67xs6RZc_2Zc01w4ZKptlMHBEtWpKNIPZAV4wHN2YAAIN2EgkCXRJbD4Uxw7n7csAR5vTiUmAbEpteDlMt0oyDe8aTEnlSJVrQTZY2dXeHv3i9_K0LTQSZaIGQZglMhfDUw1hRhoYE6-pbkRo-w4U_1PQhfa-5cVjPUXHqHlcLTek0YZMzIXNlZB_snjgHWLMpvM5jkPrbEAwJ0ZezjxbLBeY
+is_cover: false
+sort_order: 8
+caption: Jessica Carter
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDKxN3_wgE!2e10!4m2!3m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e
+
+--- entity_photos [row 38 of 67] ---
+id: 3e787561-1f10-47cb-885f-e8d7467405a1
+entity_slug: bay-view
+url: https://places.googleapis.com/v1/places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3nEspgScTF9LddH0ogCj3p_erf08-bcgCDuyCNwZ7woEJKjKTcLz_dfifu4LDadxm7zodtpUHIAzBvVFnf-8FcIz30Wu_wgRu1smCjeFeupZnSw3ZqDaElJk5oKrsjXgrxd5iSMaqO40SDYbonwRfgLupN3OTNQuHUPUU0JbL8gWcJkxX2IsrWCzRuRMedpyvbljIiu4_LYnav01_9DupKvpBG3sTYm5ztY9Zyz4qK-4UYgENtpYhEJ4nykADek4YaURF3OhlLeXpYgIistq4x3rvfRNGtjC7Mg9t0CtUVA7FDhj-0L3VU-13lJvZMZ8tOSmo6Yu8qxfuAqWlL21jLOpDZJseh35h9VFJn50BZ0fU2DCcsjD6pqXLOm6q_f4gDz0Vee0b0Qg_tisNDY-FkwR-4K3tBfxHuyy_fEIfATY34/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJp438U8YHmogRXlByjJ7aXrw/photos/AaVGc3nEspgScTF9LddH0ogCj3p_erf08-bcgCDuyCNwZ7woEJKjKTcLz_dfifu4LDadxm7zodtpUHIAzBvVFnf-8FcIz30Wu_wgRu1smCjeFeupZnSw3ZqDaElJk5oKrsjXgrxd5iSMaqO40SDYbonwRfgLupN3OTNQuHUPUU0JbL8gWcJkxX2IsrWCzRuRMedpyvbljIiu4_LYnav01_9DupKvpBG3sTYm5ztY9Zyz4qK-4UYgENtpYhEJ4nykADek4YaURF3OhlLeXpYgIistq4x3rvfRNGtjC7Mg9t0CtUVA7FDhj-0L3VU-13lJvZMZ8tOSmo6Yu8qxfuAqWlL21jLOpDZJseh35h9VFJn50BZ0fU2DCcsjD6pqXLOm6q_f4gDz0Vee0b0Qg_tisNDY-FkwR-4K3tBfxHuyy_fEIfATY34
+is_cover: false
+sort_order: 9
+caption: Cj Rice
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDP_pvLnAE!2e10!4m2!3m1!1s0x889a07c653fc8da7:0xbc5eda9e8c72505e
+
+--- entity_photos [row 39 of 67] ---
+id: 3902d23d-0bbf-462a-b8ab-fe980f703385
+entity_slug: bay-view
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_02.jpg
+is_cover: false
+sort_order: 4
+photo_type: resource
+source_name: bookable_resource
+resource_id: 05e49a47-1ba7-45f2-a370-98335e26e3f4
+
+--- entity_photos [row 40 of 67] ---
+id: a2ca3f8f-c129-4845-88b5-6b2e1e7e2799
+entity_slug: bay-view
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_07.jpg
+is_cover: false
+sort_order: 9
+photo_type: resource
+source_name: bookable_resource
+resource_id: 05e49a47-1ba7-45f2-a370-98335e26e3f4
+
+--- entity_photos [row 41 of 67] ---
+id: 85085149-1393-4e02-ac7a-5cb558a4fde7
+entity_slug: bay-view
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_03.jpg
+is_cover: false
+sort_order: 3
+photo_type: resource
+source_name: bookable_resource
+resource_id: 05e49a47-1ba7-45f2-a370-98335e26e3f4
+
+--- entity_photos [row 42 of 67] ---
+id: 3f2cca10-1c9c-410a-a9a0-b8d36694db38
+entity_slug: bay-view
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_04.jpg
+is_cover: false
+sort_order: 5
+photo_type: resource
+source_name: bookable_resource
+resource_id: 05e49a47-1ba7-45f2-a370-98335e26e3f4
+
+--- entity_photos [row 43 of 67] ---
+id: 6c8223e5-20fb-4378-bfbd-5f9678dbc0ff
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8343.jpg
+is_cover: false
+sort_order: 304
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 44 of 67] ---
+id: 901833ca-3f7f-471b-8782-d7e16e6dc7f7
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8313.jpg
+is_cover: false
+sort_order: 317
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 45 of 67] ---
+id: 2be07e1b-3a8e-48ae-8b8b-aeb5aca6af8f
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8298.jpg
+is_cover: false
+sort_order: 310
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 46 of 67] ---
+id: e0f23827-3b95-4319-a0df-0b26ea4fb389
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8334.jpg
+is_cover: false
+sort_order: 324
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 47 of 67] ---
+id: 97dd74e9-dd9b-4fdc-a6d9-befbc596bedd
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8283.jpg
+is_cover: false
+sort_order: 305
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 48 of 67] ---
+id: 75c95036-3f1d-483d-ab82-61cde5d5ea77
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8304.jpg
+is_cover: false
+sort_order: 314
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 49 of 67] ---
+id: 7a38e5cc-774b-44ef-8efe-74135eb7f7c4
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8310.jpg
+is_cover: false
+sort_order: 316
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 50 of 67] ---
+id: 0100e181-bafa-456d-bcbe-de09abf076ab
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8328.jpg
+is_cover: false
+sort_order: 322
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 51 of 67] ---
+id: 01676df0-8c0b-43d3-9e60-1d15d9ac0bcd
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8292.jpg
+is_cover: false
+sort_order: 308
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 52 of 67] ---
+id: be503d87-7c91-47e1-b89a-07f8394ecf0d
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8340.jpg
+is_cover: false
+sort_order: 301
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 53 of 67] ---
+id: 02ab18c5-c5d1-42a6-8016-da53df33191b
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8277.jpg
+is_cover: false
+sort_order: 311
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 54 of 67] ---
+id: d5f7ba9c-57de-49c9-a8a4-ddf34665dff4
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8289.jpg
+is_cover: false
+sort_order: 307
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 55 of 67] ---
+id: 6403a2a0-a531-48a1-80ef-fd00bb154007
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8319.jpg
+is_cover: false
+sort_order: 319
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 56 of 67] ---
+id: 73430790-4731-46da-bd68-fae002bc16c8
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8280.jpg
+is_cover: false
+sort_order: 302
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 57 of 67] ---
+id: f783db1e-91d9-4e54-92bc-ac5ee62d726e
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8325.jpg
+is_cover: false
+sort_order: 321
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 58 of 67] ---
+id: f50f675d-1887-4b64-a62d-1c18ad3db75c
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8295.jpg
+is_cover: false
+sort_order: 309
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 59 of 67] ---
+id: 31ffb4fc-aa63-4fe5-807f-9b2fe25985aa
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8331.jpg
+is_cover: false
+sort_order: 323
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 60 of 67] ---
+id: 4ed02222-2086-4426-b994-6fc722e3a35c
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8301.jpg
+is_cover: false
+sort_order: 303
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 61 of 67] ---
+id: 693d7daf-9794-4d09-8683-b5cdf8ea5e25
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8307.jpg
+is_cover: false
+sort_order: 315
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 62 of 67] ---
+id: f9a57b44-84f0-40c6-bd6e-21ba31a72fc5
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8286.jpg
+is_cover: false
+sort_order: 306
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 63 of 67] ---
+id: 7651175f-9176-4a95-9ea1-c525d37530cd
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8337.jpg
+is_cover: false
+sort_order: 325
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 64 of 67] ---
+id: fc49ab24-29f1-4199-beb8-2f380eaa45f9
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8322.jpg
+is_cover: false
+sort_order: 320
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 65 of 67] ---
+id: 76a3a38c-b357-4824-8a42-cf9a024fe7a1
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8274.jpg
+is_cover: false
+sort_order: 312
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 66 of 67] ---
+id: f19cbb55-47f8-492a-800d-0f479c8749db
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8316.jpg
+is_cover: false
+sort_order: 318
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 67 of 67] ---
+id: 75ac861c-d3ae-45e1-8147-b1d237c90cd4
+entity_slug: bay-view
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8271.jpg
+is_cover: false
+sort_order: 313
+photo_type: gallery
+source_name: extracted:liquid_life
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 9a3bde3b-fcd4-433f-99b7-05c9355e8b75
+entity_slug: bay-view
+reviewer_name: James Tipton
+rating: 1
+body: 🚨 DO NOT STAY HERE 🚨
+
+- Bait and Switch
+- FRAUD
+- Blatant false advertising
+- Extremely unhelpful when we called
+
+All together it’s extremely shady and you should avoid this place at all costs. Save yourself the trouble and do NOT book here. If you do, beware their fraud!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2023-07-25T21:57:11.28896+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: 015315a8-9d0a-4b39-8137-02411bd67d62
+entity_slug: bay-view
+reviewer_name: Tina Ormsby
+rating: 5
+body: Great place to stay. So convenient. If you have a boat you can launch it right there
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2023-07-15T19:27:21.315126+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: 38cf0829-c206-4372-a810-5136602f55ac
+entity_slug: bay-view
+reviewer_name: SparkyRN
+rating: 5
+body: Love going to Bayview! It's quiet and peaceful. It's a nice getaway to relax that's not in the hustle and bustle of the main strip and beach front. It's right on the water but it's the bay. Beautiful view from the pier. Boat sleeves available with an area to flush the salt water out. It has a nice, clean pool. Location is great. Several really good places within a few minutes drive to go eat some great seafood. Just a short drive to beach front and having your toes in the sand.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2019-10-09T02:43:20.411277+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: b2d764f8-5527-4b48-be73-34686e861048
+entity_slug: bay-view
+reviewer_name: Misty
+rating: 4
+body: Very nice so far. Beautiful views of the bay. It had a clean, well kept, ocean side feel to it. Rustic chic is what I would categorize the look and feel of the place. They make you feel at home. The only reason I gave it 4 stars is because there isn’t a sign from the direction that you have to enter and it is nearly impossible to find. The directions that were given were very well explained but it is still an absolute nightmare getting in and out of this place because where it is situated. And there is no other exit.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-06-19T03:06:01.230385+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: a2695d73-cc02-4dec-be65-16e1418ce63e
+entity_slug: bay-view
+reviewer_name: regina lloyd
+rating: 1
+body: Worst place I have stayed.  Board members are rude and belligerent when asked questions.  They definitely are against anyone renting here.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-01-24T22:16:38.609115+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_section_items   -   1 row(s)
+####################################################################################################
+
+--- entity_section_items [row 1 of 1] ---
+id: 56ff2486-730c-484a-8193-772d53304d02
+section_id: ca9554fd-4e5d-476e-a726-2e2eb6d2d227
+entity_slug: bay-view
+item_name: Bay View
+icon: 🏠
+metadata: {}
+sort_order: 1
+check_in_time: 16:00
+check_out_time: 11:00
+min_nights: 1
+cleaning_fee: 0
+
+####################################################################################################
+# TABLE: entity_section_items_metadata_backup   -   1 row(s)
+####################################################################################################
+
+--- entity_section_items_metadata_backup [row 1 of 1] ---
+id: 56ff2486-730c-484a-8193-772d53304d02
+entity_slug: bay-view
+item_name: Bay View
+metadata: {
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bay-view/photo_07.jpg"
+  ],
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "check_out_time": "11:00"
+}
+backed_up_at: 2026-07-16T09:49:37.166591+00:00
+
+####################################################################################################
+# TABLE: entity_sections   -   1 row(s)
+####################################################################################################
+
+--- entity_sections [row 1 of 1] ---
+id: ca9554fd-4e5d-476e-a726-2e2eb6d2d227
+entity_slug: bay-view
+section_type: rooms
+section_name: Units & Rates
+sort_order: 2
+module_key: rooms
+is_active: true
+
+####################################################################################################
+# TABLE: entity_sources   -   1 row(s)
+####################################################################################################
+
+--- entity_sources [row 1 of 1] ---
+id: b1c886e1-24b3-4f2a-afb1-e16c8cbb2b82
+entity_slug: bay-view
+source_system: liquid_life
+source_url: https://www.liquidlifevacationrentals.com/resort/bayview
+scope: entity
+observed_at: 2026-07-16T00:00:00+00:00
+confidence: high
+created_at: 2026-07-16T10:58:22.481614+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   18 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 18] ---
+id: 00967245-f7ef-4b59-8d35-892759bec272
+entity_slug: bay-view
+tag_name: Bay Access
+tag_category: amenity
+
+--- entity_tags [row 2 of 18] ---
+id: 8396931d-f333-40a6-b027-62c018536bd3
+entity_slug: bay-view
+tag_name: Outdoor Pool
+tag_category: amenity
+
+--- entity_tags [row 3 of 18] ---
+id: 26ef270b-daa3-49e7-a1bb-94fcb80b9b84
+entity_slug: bay-view
+tag_name: Basketball Court
+tag_category: amenity
+
+--- entity_tags [row 4 of 18] ---
+id: cadaa581-1eda-444d-b4f8-772f15ed1fe7
+entity_slug: bay-view
+tag_name: Pickleball Court
+tag_category: amenity
+
+--- entity_tags [row 5 of 18] ---
+id: 636db5eb-cd64-4c25-bb5c-8a0899aa0b2d
+entity_slug: bay-view
+tag_name: Boat Dock & Launch
+tag_category: amenity
+
+--- entity_tags [row 6 of 18] ---
+id: bd80e9b9-e770-4468-8126-52a2a36908f3
+entity_slug: bay-view
+tag_name: Pier
+tag_category: amenity
+
+--- entity_tags [row 7 of 18] ---
+id: 090145c7-e33c-4e12-bb22-14ff29eb289d
+entity_slug: bay-view
+tag_name: Fish Cleaning Stations
+tag_category: amenity
+
+--- entity_tags [row 8 of 18] ---
+id: 6b7fbad9-a217-4349-961e-8cbfcaa0226d
+entity_slug: bay-view
+tag_name: apartment_complex
+tag_category: google_primary_type
+
+--- entity_tags [row 9 of 18] ---
+id: cfc8ff14-6eca-4080-a7d6-c6f0324bedb2
+entity_slug: bay-view
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 10 of 18] ---
+id: fad4077f-ecd3-4532-9001-d78ec2579b4a
+entity_slug: bay-view
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 11 of 18] ---
+id: 5643c14e-f52e-4cdb-a7cb-aaec1a40ad5e
+entity_slug: bay-view
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 12 of 18] ---
+id: 2677bc65-7278-41f2-96b9-6da716d15747
+entity_slug: bay-view
+tag_name: Fish Cleaning Stations
+tag_category: amenity
+
+--- entity_tags [row 13 of 18] ---
+id: aee95715-635f-4f40-80f3-af4ed2e7533b
+entity_slug: bay-view
+tag_name: Boat Dock & Launch
+tag_category: amenity
+
+--- entity_tags [row 14 of 18] ---
+id: 06e5e799-dc8d-4aad-b738-6debcc038aa6
+entity_slug: bay-view
+tag_name: Pier
+tag_category: amenity
+
+--- entity_tags [row 15 of 18] ---
+id: 53fe8c04-1273-433c-b573-f765fc5b7170
+entity_slug: bay-view
+tag_name: Bay Access
+tag_category: amenity
+
+--- entity_tags [row 16 of 18] ---
+id: 4aabc76b-7bd7-4bb0-a122-e157de2be2a1
+entity_slug: bay-view
+tag_name: Basketball Court
+tag_category: amenity
+
+--- entity_tags [row 17 of 18] ---
+id: d01c4b0e-a3b7-4e05-816c-b1fb48f24c5c
+entity_slug: bay-view
+tag_name: Pickleball Court
+tag_category: amenity
+
+--- entity_tags [row 18 of 18] ---
+id: bea18583-ee8b-4339-804c-5d5bc6ea3dfa
+entity_slug: bay-view
+tag_name: Outdoor Pool
+tag_category: amenity
+
+####################################################################################################
+# TABLE: entity_theme   -   2 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 2] ---
+id: fd139dda-3cb4-4bc4-a8cb-9d1d6f749195
+entity_slug: bay-view
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+--- entity_theme [row 2 of 2] ---
+id: c65f7742-4171-4272-96d8-7230880ad5e6
+entity_slug: bay-view
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_condo   -   1 row(s)
+####################################################################################################
+
+--- industry_condo [row 1 of 1] ---
+entity_slug: bay-view
+listed_unit_count: 0
+has_pool: false
+pet_friendly: false
+updated_at: 2026-07-21T16:59:02.358415+00:00
+
+####################################################################################################
+# TABLE: industry_vacation_rental   -   1 row(s)
+####################################################################################################
+
+--- industry_vacation_rental [row 1 of 1] ---
+entity_slug: bay-view
+unit_count: 0
+pet_friendly: false
+has_pool: false
+updated_at: 2026-07-21T16:59:02.358415+00:00
+
+####################################################################################################
+# TABLE: rental_units   -   1 row(s)
+####################################################################################################
+
+--- rental_units [row 1 of 1] ---
+id: 5ebd326c-4364-4111-a0c1-cf7db6748d41
+entity_slug: bay-view
+slug: bay-view
+name: Bay View
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+address: 25861 Canal Rd
+city: Orange Beach
+state: AL
+latitude: 30.2937411
+longitude: -87.5835679
+source_resource_id: 05e49a47-1ba7-45f2-a370-98335e26e3f4
+is_active: true
+created_at: 2026-07-23T00:06:23.937689+00:00
+updated_at: 2026-07-23T00:06:23.937689+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: bay-view
+entity_slug: bay-view
+title: Bay View
+category: apartment_complex
+subtitle: Waterfront atmosphere with bay views, easy water access, outdoor pool, basketball court, pickleball court, private boat launch, dock and pier access, two fish-cleaning stations, and boat slips/trailer parking available first come, first served with proof of insurance required.
+search_vector: 'access':12C,25C 'apart':3B 'atmospher':6C 'avail':35C 'basketbal':15C 'bay':1A,8C 'boat':20C,32C 'clean':29C 'come':37C 'complex':4B 'court':16C,18C 'dock':22C 'easi':10C 'first':36C,38C 'fish':28C 'fish-clean':27C 'insur':43C 'launch':21C 'outdoor':13C 'park':34C 'picklebal':17C 'pier':24C 'pool':14C 'privat':19C 'proof':41C 'requir':44C 'serv':39C 'slips/trailer':33C 'station':30C 'two':26C 'view':2A,9C 'water':11C 'waterfront':5C
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 13294
+entity_slug: bay-view
+title: Bay View
+category: room
+search_vector: 'bay':1A 'view':2A
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: bay-view

@@ -1,0 +1,1842 @@
+====================================================================================================
+SLUG: 20115-state-highway-135-parking
+NAME: 20115 State Highway 135 Parking
+INDUSTRY: parking
+SUBTYPE: parking_lot
+TABLES WITH DATA: 25
+TOTAL ROWS: 91
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (5 rows)
+  ai_entity_profiles_full  (1 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_address_areas  (2 rows)
+  entity_attributes  (4 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_nearby_landmark_types  (17 rows)
+  entity_nearby_landmarks  (7 rows)
+  entity_offer  (1 rows)
+  entity_photos  (9 rows)
+  entity_reviews  (5 rows)
+  entity_tags  (6 rows)
+  entity_theme  (1 rows)
+  industry_parking  (1 rows)
+  recovery_import_log  (9 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: 20115-state-highway-135-parking
+name: 20115 State Highway 135 Parking
+planner_category: things_to_do
+data_quality_score: 80
+issues: missing_summary|missing_photos
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: true
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   5 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 5] ---
+id: 1228
+entity_slug: 20115-state-highway-135-parking
+intent_tag: best_for:outdoor_activity
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 5] ---
+id: 1229
+entity_slug: 20115-state-highway-135-parking
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 5] ---
+id: 1230
+entity_slug: 20115-state-highway-135-parking
+intent_tag: service:parking
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 5] ---
+id: 1231
+entity_slug: 20115-state-highway-135-parking
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 5] ---
+id: 1232
+entity_slug: 20115-state-highway-135-parking
+intent_tag: missing:missing_photos
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: 20115-state-highway-135-parking
+name: 20115 State Highway 135 Parking
+is_active: t
+planner_category: things_to_do
+entity_type: service
+entity_subtype: parking_lot
+city: Gulf Shores
+state: AL
+address_line_1: 22698 Perdido Beach Blvd
+latitude: 30.2552034
+longitude: -87.6425283
+rating: 2.3
+review_count: 6
+voice_summary: 20115 State Highway 135 Parking in Gulf Shores is best for outdoor activity.
+planner_summary: 20115 State Highway 135 Parking in Gulf Shores is a things to do listing in Gulf Coast Radar.
+best_for: outdoor activity
+not_best_for: nothing specific flagged
+service_tags: accessibility|parking
+search_keywords: parking_lot|parking|transportation_service|point_of_interest|service|establishment|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: false
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 0
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 6
+faq_count: 0
+data_quality_score: 80
+data_gaps: missing_summary|missing_photos
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: cc38e96d-dde1-4aec-88c0-96ee959fe969
+resource_type: service
+slug: 20115-state-highway-135-parking
+name: 20115 State Highway 135 Parking
+entity_slug: 20115-state-highway-135-parking
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: []
+amenities: []
+faqs: []
+address: 22698 Perdido Beach Blvd
+city: Gulf Shores
+state: AL
+latitude: 30.2552034
+longitude: -87.6425283
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 562f1a9a9a64c6609ff98f5091314c5a
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: cc38e96d-dde1-4aec-88c0-96ee959fe969
+entity_slug: 20115-state-highway-135-parking
+slug: 20115-state-highway-135-parking
+photo_urls: []
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 97a3fe52-0209-4719-832e-b99d47a0e5e7
+slug: 20115-state-highway-135-parking
+name: 20115 State Highway 135 Parking
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: parking_lot
+phone: (251) 948-7275
+address_line_1: 22698 Perdido Beach Blvd
+city: Gulf Shores
+state: AL
+zip: 36542
+latitude: 30.2552034
+longitude: -87.6425283
+rating: 2.3
+review_count: 6
+good_for_kids: false
+created_at: 2026-06-03T04:00:43.815464+00:00
+updated_at: 2026-06-03T04:00:43.815464+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJj5gBkUEEmogREqkLgG2WH5o
+google_maps_uri: https://maps.google.com/?cid=11105760603162781970&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: parking_lot
+formatted_address: 22698 Perdido Beach Blvd, Gulf Shores, AL 36542, USA
+plus_code: 862J7944+3X
+international_phone: +1 251-948-7275
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+accepts_cash_only: false
+parking_type: paid
+google_places_data: {
+  "id": "ChIJj5gBkUEEmogREqkLgG2WH5o",
+  "types": [
+    "parking_lot",
+    "parking",
+    "transportation_service",
+    "service",
+    "point_of_interest",
+    "establishment"
+  ],
+  "rating": 2.3,
+  "reviews": [
+    {
+      "name": "places/ChIJj5gBkUEEmogREqkLgG2WH5o/reviews/ChZDSUhNMG9nS0VJQ0FnSURuc2IyS0V3EAE",
+      "text": {
+        "text": "To charge $10 to park all day is more than fair. Understandably, there is no parking anywhere on the road, meaning this is your only option. As a result, a family is forced to pay $10 for stopping a few minutes so their child can see and feel the ocean for a few minutes. That is ridiculous. With today's technology, it would seem that our state could utilize a machine that would be capable of charging by the hour.",
+        "languageCode": "en"
+      },
+      "rating": 1,
+      "publishTime": "2024-10-07T01:59:44.563870Z",
+      "originalText": {
+        "text": "To charge $10 to park all day is more than fair. Understandably, there is no parking anywhere on the road, meaning this is your only option. As a result, a family is forced to pay $10 for stopping a few minutes so their child can see and feel the ocean for a few minutes. That is ridiculous. With today's technology, it would seem that our state could utilize a machine that would be capable of charging by the hour.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURuc2IyS0V3EAE!2m1!1s0x889a04419101988f:0x9a1f966d800ba912",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURuc2IyS0V3EAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/117193429355453127053/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUqPVE25I4nVoDl4UrZfoBL8Y3U4OL1BN55QeS5aHL1mdE2wq0j=s128-c0x00000000-cc-rp-mo-ba6",
+        "displayName": "Bob Reed"
+      },
+      "relativePublishTimeDescription": "a year ago"
+    },
+    {
+      "name": "places/ChIJj5gBkUEEmogREqkLgG2WH5o/reviews/Ci9DQUlRQUNvZENodHljRjlvT21kaldGZExSbUpTY1cwd2IxbEtObXB3YkRrM2RIYxAB",
+      "text": {
+        "text": "The parking situation is an absolute rip off. $10 to park. Just to take some photos.",
+        "languageCode": "en"
+      },
+      "rating": 1,
+      "publishTime": "2025-08-29T17:58:36.540750093Z",
+      "originalText": {
+        "text": "The parking situation is an absolute rip off. $10 to park. Just to take some photos.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21kaldGZExSbUpTY1cwd2IxbEtObXB3YkRrM2RIYxAB!2m1!1s0x889a04419101988f:0x9a1f966d800ba912",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT21kaldGZExSbUpTY1cwd2IxbEtObXB3YkRrM2RIYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/111344147324983735637/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW5eCe_oL-ZBKAQ1cFBBOGHy7IsamJ10pCbp6bDehl4Jypq6nw=s128-c0x00000000-cc-rp-mo-ba4",
+        "displayName": "Matttdaddy"
+      },
+      "relativePublishTimeDescription": "9 months ago"
+    },
+    {
+      "name": "places/ChIJj5gBkUEEmogREqkLgG2WH5o/reviews/Ci9DQUlRQUNvZENodHljRjlvT201MVFuQm5hRmRZZW1weE1qbHdaakJ0ZDNwWGJHYxAB",
+      "text": {
+        "text": "Costs too much",
+        "languageCode": "en"
+      },
+      "rating": 1,
+      "publishTime": "2025-12-28T21:52:16.018011970Z",
+      "originalText": {
+        "text": "Costs too much",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT201MVFuQm5hRmRZZW1weE1qbHdaakJ0ZDNwWGJHYxAB!2m1!1s0x889a04419101988f:0x9a1f966d800ba912",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT201MVFuQm5hRmRZZW1weE1qbHdaakJ0ZDNwWGJHYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/100787065169656114274/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUmhy5oC_1QNA4WgnX4K2ZE0cZglHNCQf4w8Lb7rd44vQ5i-qjG=s128-c0x00000000-cc-rp-mo-ba3",
+        "displayName": "Tucker C"
+      },
+      "relativePublishTimeDescription": "5 months ago"
+    },
+    {
+      "name": "places/ChIJj5gBkUEEmogREqkLgG2WH5o/reviews/ChZDSUhNMG9nS0VJQ0FnSUM3bE12UU5BEAE",
+      "text": {
+        "text": "The parking lot is not free, and you have to pay a $10 daily fee no matter when you arrive. That's a rip-off; there should at least be a half-day rate for $5. We wanted to enjoy the evening at the beach but had to pay the full $10 for just 2.5 hours. And visitors leave their trash on the beach; we picked up quite a bit. That's a real shame.",
+        "languageCode": "en-US"
+      },
+      "rating": 1,
+      "publishTime": "2024-08-12T21:08:11.863750Z",
+      "originalText": {
+        "text": "Der Parkplatz ist kostenpflichtig, und man muss in jedem Fall 10$ Tages-Pauschale bezahlen, egal wann man kommt. Das ist Abzocke, es sollte wenigstens eine Halbtagespauschale für 5$ geben. Wir wollten den Abend am Strand genießen, mussten für 2.5 Stunden die vollen 10$ bezahlen. Und es lassen  Besucher ihren Müll am Strand zurück, wir haben einiges eingesammelt. Das ist sehr schade.",
+        "languageCode": "de"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUM3bE12UU5BEAE!2m1!1s0x889a04419101988f:0x9a1f966d800ba912",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUM3bE12UU5BEAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/108677938957601078763/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXdTWddQNHwd8ryzsORbVMlTCqge2-Seyfo9bfrXlIC2ZBgpt0z=s128-c0x00000000-cc-rp-mo-ba4",
+        "displayName": "Andreas Stadelmann"
+      },
+      "relativePublishTimeDescription": "a year ago"
+    },
+    {
+      "name": "places/ChIJj5gBkUEEmogREqkLgG2WH5o/reviews/ChdDSUhNMG9nS0VLcUNyNzZ0N2RybjVRRRAB",
+      "rating": 5,
+      "publishTime": "2025-06-01T22:31:15.534925Z",
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VLcUNyNzZ0N2RybjVRRRAB!2m1!1s0x889a04419101988f:0x9a1f966d800ba912",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VLcUNyNzZ0N2RybjVRRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/117830058690667108795/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWL5y_e38HHppTUrFawWXgw7tAJIyllpJ_OQl6G7OsM3Tx1diEb6g=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Ali Yasir"
+      },
+      "relativePublishTimeDescription": "a year ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.2552034,
+    "longitude": -87.6425283
+  },
+  "plusCode": {
+    "globalCode": "862J7944+3X",
+    "compoundCode": "7944+3X Gulf Shores, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.254184869708503,
+      "longitude": -87.64445540000001
+    },
+    "high": {
+      "latitude": 30.256882830291502,
+      "longitude": -87.6408811
+    }
+  },
+  "displayName": {
+    "text": "20115 State Highway 135 Parking",
+    "languageCode": "en"
+  },
+  "primaryType": "parking_lot",
+  "googleMapsUri": "https://maps.google.com/?cid=11105760603162781970&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "parkingOptions": {
+    "paidParkingLot": true
+  },
+  "paymentOptions": {
+    "acceptsCashOnly": false
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=11105760603162781970&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a04419101988f:0x9a1f966d800ba912!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a04419101988f:0x9a1f966d800ba912!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a04419101988f:0x9a1f966d800ba912!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a04419101988f:0x9a1f966d800ba912!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/parking_pinlet",
+  "userRatingCount": 6,
+  "adrFormatAddress": "<span class=\"street-address\">22698 Perdido Beach Blvd</span>, <span class=\"locality\">Gulf Shores</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36542</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "22698 Perdido Beach Blvd, Gulf Shores, AL 36542, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "22698",
+      "shortText": "22698",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Perdido Beach Boulevard",
+      "shortText": "Perdido Beach Blvd",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Gulf Shores",
+      "shortText": "Gulf Shores",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36542",
+      "shortText": "36542",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJYalPkEEEmogRaeKnwCvaw2c",
+        "placeId": "ChIJYalPkEEEmogRaeKnwCvaw2c",
+        "containment": "WITHIN",
+        "displayName": {
+          "text": "Gulf State Park Pavillion",
+          "languageCode": "en"
+        }
+      },
+      {
+        "name": "places/ChIJAf8qlDAEmogR21mSG_IXY-s",
+        "placeId": "ChIJAf8qlDAEmogR21mSG_IXY-s",
+        "containment": "OUTSKIRTS",
+        "displayName": {
+          "text": "Gulf State Park",
+          "languageCode": "en"
+        }
+      }
+    ],
+    "landmarks": [
+      {
+        "name": "places/ChIJ89D7sDUEmogRLPXai39ehSQ",
+        "types": [
+          "establishment",
+          "food",
+          "meal_takeaway",
+          "park",
+          "point_of_interest",
+          "restaurant",
+          "tourist_attraction"
+        ],
+        "placeId": "ChIJ89D7sDUEmogRLPXai39ehSQ",
+        "displayName": {
+          "text": "Gulf State Park Pavillion",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "WITHIN",
+        "travelDistanceMeters": 124.64445,
+        "straightLineDistanceMeters": 105.22221
+      },
+      {
+        "name": "places/ChIJY1ogNwQFmogRx5UkOt-UpRw",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJY1ogNwQFmogRx5UkOt-UpRw",
+        "displayName": {
+          "text": "Interpretive Center at Gulf State Park",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 247.34285,
+        "straightLineDistanceMeters": 231.26619
+      },
+      {
+        "name": "places/ChIJOx2ZEwAFmogR0PHtrhKCPvA",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "tourist_attraction"
+        ],
+        "placeId": "ChIJOx2ZEwAFmogR0PHtrhKCPvA",
+        "displayName": {
+          "text": "Gulf Shores, Alabama sign",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 383.15277,
+        "straightLineDistanceMeters": 337.1321
+      },
+      {
+        "name": "places/ChIJ5U9dCyEFmogRO__csYK9jm8",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJ5U9dCyEFmogRO__csYK9jm8",
+        "displayName": {
+          "text": "Pavilion Reef - Alabama Gulf Shores Snorkel Reef",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "AROUND_THE_CORNER",
+        "travelDistanceMeters": 77.31661,
+        "straightLineDistanceMeters": 355.03076
+      },
+      {
+        "name": "places/ChIJwwA7fD8EmogRaa92jh2GPMQ",
+        "types": [
+          "electrician",
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJwwA7fD8EmogRaa92jh2GPMQ",
+        "displayName": {
+          "text": "Saxon Electrical Services",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 491.77985,
+        "straightLineDistanceMeters": 440.438
+      }
+    ]
+  },
+  "currentOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 17,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T13:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 8:00 AM – 5:00 PM",
+      "Tuesday: 8:00 AM – 5:00 PM",
+      "Wednesday: 8:00 AM – 5:00 PM",
+      "Thursday: 8:00 AM – 5:00 PM",
+      "Friday: 8:00 AM – 5:00 PM",
+      "Saturday: 8:00 AM – 5:00 PM",
+      "Sunday: 8:00 AM – 5:00 PM"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Parking Lot",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "nationalPhoneNumber": "(251) 948-7275",
+  "regularOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 17,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T13:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 8:00 AM – 5:00 PM",
+      "Tuesday: 8:00 AM – 5:00 PM",
+      "Wednesday: 8:00 AM – 5:00 PM",
+      "Thursday: 8:00 AM – 5:00 PM",
+      "Friday: 8:00 AM – 5:00 PM",
+      "Saturday: 8:00 AM – 5:00 PM",
+      "Sunday: 8:00 AM – 5:00 PM"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true
+  },
+  "shortFormattedAddress": "22698 Perdido Beach Blvd, Gulf Shores",
+  "primaryTypeDisplayName": {
+    "text": "Parking Lot",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-948-7275"
+}
+paid_parking_lot: true
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 22698 Perdido Beach Blvd, Gulf Shores
+national_phone: (251) 948-7275
+search_vector: '135':4A '20115':1A 'gulf':8 'highway':3A 'lot':7 'park':5A,6 'shore':9 'state':2A
+primary_type_display: Parking Lot
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=11105760603162781970&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a04419101988f:0x9a1f966d800ba912!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a04419101988f:0x9a1f966d800ba912!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a04419101988f:0x9a1f966d800ba912!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a04419101988f:0x9a1f966d800ba912!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJYalPkEEEmogRaeKnwCvaw2c",
+      "placeId": "ChIJYalPkEEEmogRaeKnwCvaw2c",
+      "containment": "WITHIN",
+      "displayName": {
+        "text": "Gulf State Park Pavillion",
+        "languageCode": "en"
+      }
+    },
+    {
+      "name": "places/ChIJAf8qlDAEmogR21mSG_IXY-s",
+      "placeId": "ChIJAf8qlDAEmogR21mSG_IXY-s",
+      "containment": "OUTSKIRTS",
+      "displayName": {
+        "text": "Gulf State Park",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJ89D7sDUEmogRLPXai39ehSQ",
+      "types": [
+        "establishment",
+        "food",
+        "meal_takeaway",
+        "park",
+        "point_of_interest",
+        "restaurant",
+        "tourist_attraction"
+      ],
+      "placeId": "ChIJ89D7sDUEmogRLPXai39ehSQ",
+      "displayName": {
+        "text": "Gulf State Park Pavillion",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "WITHIN",
+      "travelDistanceMeters": 124.64445,
+      "straightLineDistanceMeters": 105.22221
+    },
+    {
+      "name": "places/ChIJY1ogNwQFmogRx5UkOt-UpRw",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJY1ogNwQFmogRx5UkOt-UpRw",
+      "displayName": {
+        "text": "Interpretive Center at Gulf State Park",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 247.34285,
+      "straightLineDistanceMeters": 231.26619
+    },
+    {
+      "name": "places/ChIJOx2ZEwAFmogR0PHtrhKCPvA",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "tourist_attraction"
+      ],
+      "placeId": "ChIJOx2ZEwAFmogR0PHtrhKCPvA",
+      "displayName": {
+        "text": "Gulf Shores, Alabama sign",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 383.15277,
+      "straightLineDistanceMeters": 337.1321
+    },
+    {
+      "name": "places/ChIJ5U9dCyEFmogRO__csYK9jm8",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJ5U9dCyEFmogRO__csYK9jm8",
+      "displayName": {
+        "text": "Pavilion Reef - Alabama Gulf Shores Snorkel Reef",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "AROUND_THE_CORNER",
+      "travelDistanceMeters": 77.31661,
+      "straightLineDistanceMeters": 355.03076
+    },
+    {
+      "name": "places/ChIJwwA7fD8EmogRaa92jh2GPMQ",
+      "types": [
+        "electrician",
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJwwA7fD8EmogRaa92jh2GPMQ",
+      "displayName": {
+        "text": "Saxon Electrical Services",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 491.77985,
+      "straightLineDistanceMeters": 440.438
+    }
+  ]
+}
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: parking
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   2 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 2] ---
+id: 4a4fc15a-fe18-411c-b40f-bababb2cfa2e
+entity_slug: 20115-state-highway-135-parking
+place_id: ChIJYalPkEEEmogRaeKnwCvaw2c
+containment: WITHIN
+display_name: Gulf State Park Pavillion
+
+--- entity_address_areas [row 2 of 2] ---
+id: 34bf69a2-b777-49e9-9169-a9390ee3e7a3
+entity_slug: 20115-state-highway-135-parking
+place_id: ChIJAf8qlDAEmogR21mSG_IXY-s
+containment: OUTSKIRTS
+display_name: Gulf State Park
+
+####################################################################################################
+# TABLE: entity_attributes   -   4 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 4] ---
+id: 0218d872-9dc5-4c1b-8427-2e6f06d6358f
+entity_slug: 20115-state-highway-135-parking
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 2 of 4] ---
+id: 337c932b-eaa0-4bdc-a337-67e5463334d2
+entity_slug: 20115-state-highway-135-parking
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 3 of 4] ---
+id: 66fb1c8e-ce5f-46fb-8850-507df1fb8b0f
+entity_slug: 20115-state-highway-135-parking
+category: parking
+key: parking_paidParkingLot
+label: Paid Parking Lot
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 4 of 4] ---
+id: bedb8073-c6f5-47f7-bf16-e9f1da7b0759
+entity_slug: 20115-state-highway-135-parking
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: 20115-state-highway-135-parking
+name: 20115 State Highway 135 Parking
+industry_code: parking
+is_parent: false
+score_of_7: 6
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: b7bc50c3-b54c-4c6f-a9b5-71db2fee48c1
+entity_slug: 20115-state-highway-135-parking
+place_uri: https://maps.google.com/?cid=11105760603162781970&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a04419101988f:0x9a1f966d800ba912!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a04419101988f:0x9a1f966d800ba912!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a04419101988f:0x9a1f966d800ba912!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a04419101988f:0x9a1f966d800ba912!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 1
+entity_slug: 20115-state-highway-135-parking
+google_review_name: places/ChIJj5gBkUEEmogREqkLgG2WH5o/reviews/ChZDSUhNMG9nS0VJQ0FnSURuc2IyS0V3EAE
+rating: 1
+review_text: To charge $10 to park all day is more than fair. Understandably, there is no parking anywhere on the road, meaning this is your only option. As a result, a family is forced to pay $10 for stopping a few minutes so their child can see and feel the ocean for a few minutes. That is ridiculous. With today's technology, it would seem that our state could utilize a machine that would be capable of charging by the hour.
+language_code: en
+author_name: Bob Reed
+author_profile_url: https://www.google.com/maps/contrib/117193429355453127053/reviews
+publish_time: 2024-10-07T01:59:44.56387+00:00
+relative_time: a year ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURuc2IyS0V3EAE!2m1!1s0x889a04419101988f:0x9a1f966d800ba912
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 2
+entity_slug: 20115-state-highway-135-parking
+google_review_name: places/ChIJj5gBkUEEmogREqkLgG2WH5o/reviews/Ci9DQUlRQUNvZENodHljRjlvT21kaldGZExSbUpTY1cwd2IxbEtObXB3YkRrM2RIYxAB
+rating: 1
+review_text: The parking situation is an absolute rip off. $10 to park. Just to take some photos.
+language_code: en
+author_name: Matttdaddy
+author_profile_url: https://www.google.com/maps/contrib/111344147324983735637/reviews
+publish_time: 2025-08-29T17:58:36.54075+00:00
+relative_time: 9 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21kaldGZExSbUpTY1cwd2IxbEtObXB3YkRrM2RIYxAB!2m1!1s0x889a04419101988f:0x9a1f966d800ba912
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 3
+entity_slug: 20115-state-highway-135-parking
+google_review_name: places/ChIJj5gBkUEEmogREqkLgG2WH5o/reviews/Ci9DQUlRQUNvZENodHljRjlvT201MVFuQm5hRmRZZW1weE1qbHdaakJ0ZDNwWGJHYxAB
+rating: 1
+review_text: Costs too much
+language_code: en
+author_name: Tucker C
+author_profile_url: https://www.google.com/maps/contrib/100787065169656114274/reviews
+publish_time: 2025-12-28T21:52:16.018012+00:00
+relative_time: 5 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT201MVFuQm5hRmRZZW1weE1qbHdaakJ0ZDNwWGJHYxAB!2m1!1s0x889a04419101988f:0x9a1f966d800ba912
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 4
+entity_slug: 20115-state-highway-135-parking
+google_review_name: places/ChIJj5gBkUEEmogREqkLgG2WH5o/reviews/ChZDSUhNMG9nS0VJQ0FnSUM3bE12UU5BEAE
+rating: 1
+review_text: The parking lot is not free, and you have to pay a $10 daily fee no matter when you arrive. That's a rip-off; there should at least be a half-day rate for $5. We wanted to enjoy the evening at the beach but had to pay the full $10 for just 2.5 hours. And visitors leave their trash on the beach; we picked up quite a bit. That's a real shame.
+language_code: en-US
+author_name: Andreas Stadelmann
+author_profile_url: https://www.google.com/maps/contrib/108677938957601078763/reviews
+publish_time: 2024-08-12T21:08:11.86375+00:00
+relative_time: a year ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUM3bE12UU5BEAE!2m1!1s0x889a04419101988f:0x9a1f966d800ba912
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 5
+entity_slug: 20115-state-highway-135-parking
+google_review_name: places/ChIJj5gBkUEEmogREqkLgG2WH5o/reviews/ChdDSUhNMG9nS0VLcUNyNzZ0N2RybjVRRRAB
+rating: 5
+author_name: Ali Yasir
+author_profile_url: https://www.google.com/maps/contrib/117830058690667108795/reviews
+publish_time: 2025-06-01T22:31:15.534925+00:00
+relative_time: a year ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VLcUNyNzZ0N2RybjVRRRAB!2m1!1s0x889a04419101988f:0x9a1f966d800ba912
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: e859fbb6-779f-4220-9f16-64ab9fb57e41
+entity_slug: 20115-state-highway-135-parking
+day_of_week: 0
+opens_at: 08:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: db1c58b1-b80c-40b4-8001-7987f9723351
+entity_slug: 20115-state-highway-135-parking
+day_of_week: 1
+opens_at: 08:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: a3f015c4-7f4a-4d4a-987f-9eddf52141b7
+entity_slug: 20115-state-highway-135-parking
+day_of_week: 2
+opens_at: 08:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: ab2d81d2-40db-4f14-bbeb-55b0489ea5bc
+entity_slug: 20115-state-highway-135-parking
+day_of_week: 3
+opens_at: 08:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 0c9dd56e-2eb5-447c-9efa-96c6a5655f73
+entity_slug: 20115-state-highway-135-parking
+day_of_week: 4
+opens_at: 08:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: e5815212-9370-458a-bd19-23acddf38fac
+entity_slug: 20115-state-highway-135-parking
+day_of_week: 5
+opens_at: 08:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: be4593af-9a53-4687-a761-119d5d8b482d
+entity_slug: 20115-state-highway-135-parking
+day_of_week: 6
+opens_at: 08:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: 20115-state-highway-135-parking
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: cc38e96d-dde1-4aec-88c0-96ee959fe969
+name: 20115 State Highway 135 Parking
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: 20115-state-highway-135-parking
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: cc38e96d-dde1-4aec-88c0-96ee959fe969
+name: 20115 State Highway 135 Parking
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   17 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 17] ---
+id: d6c0ee55-cd12-4900-bd84-7c495c732bcf
+landmark_id: fb48dcfd-aeda-44b2-a1d1-2f463d779356
+entity_slug: 20115-state-highway-135-parking
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 17] ---
+id: 79730888-06e5-4b18-b39f-a74e8cee91e5
+landmark_id: fb48dcfd-aeda-44b2-a1d1-2f463d779356
+entity_slug: 20115-state-highway-135-parking
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 17] ---
+id: 5e87147c-b108-4728-8882-64d147203713
+landmark_id: fb48dcfd-aeda-44b2-a1d1-2f463d779356
+entity_slug: 20115-state-highway-135-parking
+landmark_type: meal_takeaway
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 17] ---
+id: 0e6f0507-2fb8-453a-8fd1-79d20958f326
+landmark_id: fb48dcfd-aeda-44b2-a1d1-2f463d779356
+entity_slug: 20115-state-highway-135-parking
+landmark_type: park
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 17] ---
+id: 52cb3ba7-7dfc-42a2-9630-33ebe6913c07
+landmark_id: fb48dcfd-aeda-44b2-a1d1-2f463d779356
+entity_slug: 20115-state-highway-135-parking
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 17] ---
+id: 48675c96-16cb-40b7-bc18-d72520de3226
+landmark_id: fb48dcfd-aeda-44b2-a1d1-2f463d779356
+entity_slug: 20115-state-highway-135-parking
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 17] ---
+id: 38fc71d5-99c7-45fc-9683-2ade7fcca380
+landmark_id: fb48dcfd-aeda-44b2-a1d1-2f463d779356
+entity_slug: 20115-state-highway-135-parking
+landmark_type: tourist_attraction
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 17] ---
+id: 31adbd8a-8779-490f-b5fb-8d220f799cf9
+landmark_id: bcdf136c-2def-4a42-b9f7-07715605ed8d
+entity_slug: 20115-state-highway-135-parking
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 17] ---
+id: d554d1da-b735-41c6-924c-12e1f54dcd52
+landmark_id: bcdf136c-2def-4a42-b9f7-07715605ed8d
+entity_slug: 20115-state-highway-135-parking
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 17] ---
+id: 8c1632e7-93d5-4ba2-92d9-8910e92472c9
+landmark_id: 72ba2676-e877-4f0d-8e55-3284b7f307e8
+entity_slug: 20115-state-highway-135-parking
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 17] ---
+id: 948c13c8-17dd-4908-b31b-adc44c2d5cd9
+landmark_id: 72ba2676-e877-4f0d-8e55-3284b7f307e8
+entity_slug: 20115-state-highway-135-parking
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 17] ---
+id: 5ffb31b9-24e0-4b7e-92e8-47f3dcb9358d
+landmark_id: 72ba2676-e877-4f0d-8e55-3284b7f307e8
+entity_slug: 20115-state-highway-135-parking
+landmark_type: tourist_attraction
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 17] ---
+id: 6e22bceb-89a7-40c2-a537-0cfaa075b1c1
+landmark_id: 70474272-6c92-4f63-b6f0-7dd28d17d5cd
+entity_slug: 20115-state-highway-135-parking
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 17] ---
+id: 289314ae-d2dd-40d4-9a60-1c9db15bd703
+landmark_id: 70474272-6c92-4f63-b6f0-7dd28d17d5cd
+entity_slug: 20115-state-highway-135-parking
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 17] ---
+id: 3d61725e-f2f7-4488-82a6-c8598b94f624
+landmark_id: fe694862-bb8d-4559-8e8b-22aaf859ac9e
+entity_slug: 20115-state-highway-135-parking
+landmark_type: electrician
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 17] ---
+id: 1d5b7711-298c-477e-996f-c05f2d4b580b
+landmark_id: fe694862-bb8d-4559-8e8b-22aaf859ac9e
+entity_slug: 20115-state-highway-135-parking
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 17] ---
+id: 8617da7d-e72c-420c-ba50-418e643acf8e
+landmark_id: fe694862-bb8d-4559-8e8b-22aaf859ac9e
+entity_slug: 20115-state-highway-135-parking
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   7 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 7] ---
+id: fb48dcfd-aeda-44b2-a1d1-2f463d779356
+entity_slug: 20115-state-highway-135-parking
+kind: landmark
+place_id: ChIJ89D7sDUEmogRLPXai39ehSQ
+name: Gulf State Park Pavillion
+types: [
+  "establishment",
+  "food",
+  "meal_takeaway",
+  "park",
+  "point_of_interest",
+  "restaurant",
+  "tourist_attraction"
+]
+spatial_relationship: WITHIN
+travel_distance_meters: 124.64445
+straight_line_distance_meters: 105.22221
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 7] ---
+id: bcdf136c-2def-4a42-b9f7-07715605ed8d
+entity_slug: 20115-state-highway-135-parking
+kind: landmark
+place_id: ChIJY1ogNwQFmogRx5UkOt-UpRw
+name: Interpretive Center at Gulf State Park
+types: [
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 247.34285
+straight_line_distance_meters: 231.26619
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 7] ---
+id: 72ba2676-e877-4f0d-8e55-3284b7f307e8
+entity_slug: 20115-state-highway-135-parking
+kind: landmark
+place_id: ChIJOx2ZEwAFmogR0PHtrhKCPvA
+name: Gulf Shores, Alabama sign
+types: [
+  "establishment",
+  "point_of_interest",
+  "tourist_attraction"
+]
+travel_distance_meters: 383.15277
+straight_line_distance_meters: 337.1321
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 7] ---
+id: 70474272-6c92-4f63-b6f0-7dd28d17d5cd
+entity_slug: 20115-state-highway-135-parking
+kind: landmark
+place_id: ChIJ5U9dCyEFmogRO__csYK9jm8
+name: Pavilion Reef - Alabama Gulf Shores Snorkel Reef
+types: [
+  "establishment",
+  "point_of_interest"
+]
+spatial_relationship: AROUND_THE_CORNER
+travel_distance_meters: 77.31661
+straight_line_distance_meters: 355.03076
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 7] ---
+id: fe694862-bb8d-4559-8e8b-22aaf859ac9e
+entity_slug: 20115-state-highway-135-parking
+kind: landmark
+place_id: ChIJwwA7fD8EmogRaa92jh2GPMQ
+name: Saxon Electrical Services
+types: [
+  "electrician",
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 491.77985
+straight_line_distance_meters: 440.438
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 6 of 7] ---
+id: 8342ec0b-2e4c-470d-950a-9c9db21c19df
+entity_slug: 20115-state-highway-135-parking
+kind: area
+place_id: ChIJYalPkEEEmogRaeKnwCvaw2c
+name: Gulf State Park Pavillion
+containment: WITHIN
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 7 of 7] ---
+id: 1376b695-c9f7-4eaa-b080-e603b28055d5
+entity_slug: 20115-state-highway-135-parking
+kind: area
+place_id: ChIJAf8qlDAEmogR21mSG_IXY-s
+name: Gulf State Park
+containment: OUTSKIRTS
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13214
+entity_slug: 20115-state-highway-135-parking
+name: 20115 State Highway 135 Parking
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: cc38e96d-dde1-4aec-88c0-96ee959fe969
+
+####################################################################################################
+# TABLE: entity_photos   -   9 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 9] ---
+id: 5b560170-4243-4c0e-a679-2f5f4ffe5d0d
+entity_slug: 20115-state-highway-135-parking
+url: https://www.alapark.com/sites/default/files/styles/default/public/2019-03/pier_view.jpg?itok=EkNZI0U9
+is_cover: true
+sort_order: 0
+created_at: 2026-07-19T19:58:10.610113+00:00
+
+--- entity_photos [row 2 of 9] ---
+id: acf016f8-6cbe-4844-97dc-de6d23d5d878
+entity_slug: 20115-state-highway-135-parking
+url: https://www.alapark.com/sites/default/files/styles/default/public/2020-03/beach_warning_flags_description.png?itok=fgNO_ZpY
+is_cover: false
+sort_order: 1
+created_at: 2026-07-19T19:58:10.610113+00:00
+
+--- entity_photos [row 3 of 9] ---
+id: f375f5ff-84b5-403b-8317-b01e70318783
+entity_slug: 20115-state-highway-135-parking
+url: https://www.alapark.com/sites/default/files/styles/default/public/2020-03/rip_currents_warning.png?itok=k62-NmiG
+is_cover: false
+sort_order: 2
+created_at: 2026-07-19T19:58:10.610113+00:00
+
+--- entity_photos [row 4 of 9] ---
+id: 2024b58d-08dd-4cee-958b-026beee9c043
+entity_slug: 20115-state-highway-135-parking
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/df2a226a-3b7a-43af-8ef0-0eb9620748f6/image_3.jpg
+is_cover: false
+sort_order: 3
+created_at: 2026-07-19T19:58:10.610113+00:00
+
+--- entity_photos [row 5 of 9] ---
+id: 1bcbbcff-edb1-44da-a423-1bf0cff176b6
+entity_slug: 20115-state-highway-135-parking
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/df2a226a-3b7a-43af-8ef0-0eb9620748f6/image_2.jpg
+is_cover: false
+sort_order: 4
+created_at: 2026-07-19T19:58:10.610113+00:00
+
+--- entity_photos [row 6 of 9] ---
+id: dcdd7829-c961-4360-becf-bd38cec43afd
+entity_slug: 20115-state-highway-135-parking
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/df2a226a-3b7a-43af-8ef0-0eb9620748f6/image_1.jpg
+is_cover: false
+sort_order: 5
+created_at: 2026-07-19T19:58:10.610113+00:00
+
+--- entity_photos [row 7 of 9] ---
+id: 182cf826-902d-40ce-b79c-8ee276aa9b2e
+entity_slug: 20115-state-highway-135-parking
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/5132f129-4b4e-4782-9a90-61f51af6a402/image_2.jpg
+is_cover: false
+sort_order: 6
+created_at: 2026-07-19T19:58:10.610113+00:00
+
+--- entity_photos [row 8 of 9] ---
+id: a755a062-aedb-4f90-87f3-215d650684a8
+entity_slug: 20115-state-highway-135-parking
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/5132f129-4b4e-4782-9a90-61f51af6a402/image_3.jpg
+is_cover: false
+sort_order: 7
+created_at: 2026-07-19T19:58:10.610113+00:00
+
+--- entity_photos [row 9 of 9] ---
+id: 4ed96540-7db5-4ab9-a3c1-2362d64d4998
+entity_slug: 20115-state-highway-135-parking
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/5132f129-4b4e-4782-9a90-61f51af6a402/image_1.jpg
+is_cover: false
+sort_order: 8
+created_at: 2026-07-19T19:58:10.610113+00:00
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: b6c532ee-4d29-460d-845c-b7f2ae546772
+entity_slug: 20115-state-highway-135-parking
+reviewer_name: Bob Reed
+rating: 1
+body: To charge $10 to park all day is more than fair. Understandably, there is no parking anywhere on the road, meaning this is your only option. As a result, a family is forced to pay $10 for stopping a few minutes so their child can see and feel the ocean for a few minutes. That is ridiculous. With today's technology, it would seem that our state could utilize a machine that would be capable of charging by the hour.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2024-10-07T01:59:44.56387+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: f4c375c1-b0e8-4f78-9437-6e75b23c7795
+entity_slug: 20115-state-highway-135-parking
+reviewer_name: Matttdaddy
+rating: 1
+body: The parking situation is an absolute rip off. $10 to park. Just to take some photos.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-08-29T17:58:36.54075+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: afa94184-e6af-4b0f-bff6-74a0828036ac
+entity_slug: 20115-state-highway-135-parking
+reviewer_name: Tucker C
+rating: 1
+body: Costs too much
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-12-28T21:52:16.018012+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 6315dc40-25a3-49ec-8edf-b96ffd3b503e
+entity_slug: 20115-state-highway-135-parking
+reviewer_name: Andreas Stadelmann
+rating: 1
+body: The parking lot is not free, and you have to pay a $10 daily fee no matter when you arrive. That's a rip-off; there should at least be a half-day rate for $5. We wanted to enjoy the evening at the beach but had to pay the full $10 for just 2.5 hours. And visitors leave their trash on the beach; we picked up quite a bit. That's a real shame.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2024-08-12T21:08:11.86375+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: b55d8f3a-55ab-421d-b942-5ff37efdeb47
+entity_slug: 20115-state-highway-135-parking
+reviewer_name: Ali Yasir
+rating: 5
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-06-01T22:31:15.534925+00:00
+updated_at: 2026-07-19T15:18:39.834104+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   6 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 6] ---
+id: c230a95e-ce59-4b77-a489-5648b34e000f
+entity_slug: 20115-state-highway-135-parking
+tag_name: parking_lot
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 6] ---
+id: a231f2ca-dfe0-439f-b909-fa09526c1f8c
+entity_slug: 20115-state-highway-135-parking
+tag_name: parking
+tag_category: google_type
+
+--- entity_tags [row 3 of 6] ---
+id: 9ead03bc-accc-4781-bf92-b90a6da66b77
+entity_slug: 20115-state-highway-135-parking
+tag_name: transportation_service
+tag_category: google_type
+
+--- entity_tags [row 4 of 6] ---
+id: 24bb03ee-ffd6-4749-af7b-56c459f3b162
+entity_slug: 20115-state-highway-135-parking
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 5 of 6] ---
+id: 8288dc85-f0ca-4c77-8024-3551730fef05
+entity_slug: 20115-state-highway-135-parking
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 6 of 6] ---
+id: 48f88791-990d-4727-a373-b7dce544c287
+entity_slug: 20115-state-highway-135-parking
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 151ac45d-9b84-4d76-b6b0-6b4b954a1843
+entity_slug: 20115-state-highway-135-parking
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_parking   -   1 row(s)
+####################################################################################################
+
+--- industry_parking [row 1 of 1] ---
+entity_slug: 20115-state-highway-135-parking
+updated_at: 2026-07-21T16:19:28.491935+00:00
+
+####################################################################################################
+# TABLE: recovery_import_log   -   9 row(s)
+####################################################################################################
+
+--- recovery_import_log [row 1 of 9] ---
+id: 69873eda-7f31-4083-82ae-7f05bb660534
+batch_id: photos-march-netnew-2026-07-19
+target_table: entity_photos
+target_row_id: 5b560170-4243-4c0e-a679-2f5f4ffe5d0d
+entity_slug: 20115-state-highway-135-parking
+source_db: march
+source_table: entity_photos
+source_id: a7eb1692-6f7b-496b-a5e7-57dba0e1eec0
+action: insert
+imported_at: 2026-07-19T19:58:10.610113+00:00
+
+--- recovery_import_log [row 2 of 9] ---
+id: 42d1a8b0-316f-4a6e-86c1-71de49d8528e
+batch_id: photos-march-netnew-2026-07-19
+target_table: entity_photos
+target_row_id: acf016f8-6cbe-4844-97dc-de6d23d5d878
+entity_slug: 20115-state-highway-135-parking
+source_db: march
+source_table: entity_photos
+source_id: a7eb1692-6f7b-496b-a5e7-57dba0e1eec0
+action: insert
+imported_at: 2026-07-19T19:58:10.610113+00:00
+
+--- recovery_import_log [row 3 of 9] ---
+id: fc9893dd-64ad-44d5-af1c-0de711633ebf
+batch_id: photos-march-netnew-2026-07-19
+target_table: entity_photos
+target_row_id: f375f5ff-84b5-403b-8317-b01e70318783
+entity_slug: 20115-state-highway-135-parking
+source_db: march
+source_table: entity_photos
+source_id: a7eb1692-6f7b-496b-a5e7-57dba0e1eec0
+action: insert
+imported_at: 2026-07-19T19:58:10.610113+00:00
+
+--- recovery_import_log [row 4 of 9] ---
+id: 72867e3f-7e63-43f3-a6a5-aacfc999590e
+batch_id: photos-march-netnew-2026-07-19
+target_table: entity_photos
+target_row_id: 2024b58d-08dd-4cee-958b-026beee9c043
+entity_slug: 20115-state-highway-135-parking
+source_db: march
+source_table: entity_photos
+source_id: a7eb1692-6f7b-496b-a5e7-57dba0e1eec0
+action: insert
+imported_at: 2026-07-19T19:58:10.610113+00:00
+
+--- recovery_import_log [row 5 of 9] ---
+id: 8ae97863-a543-42ac-aa80-ef1b8d7704aa
+batch_id: photos-march-netnew-2026-07-19
+target_table: entity_photos
+target_row_id: 1bcbbcff-edb1-44da-a423-1bf0cff176b6
+entity_slug: 20115-state-highway-135-parking
+source_db: march
+source_table: entity_photos
+source_id: a7eb1692-6f7b-496b-a5e7-57dba0e1eec0
+action: insert
+imported_at: 2026-07-19T19:58:10.610113+00:00
+
+--- recovery_import_log [row 6 of 9] ---
+id: e22ea42a-0ad7-4d94-922e-3d3a65a68bf9
+batch_id: photos-march-netnew-2026-07-19
+target_table: entity_photos
+target_row_id: dcdd7829-c961-4360-becf-bd38cec43afd
+entity_slug: 20115-state-highway-135-parking
+source_db: march
+source_table: entity_photos
+source_id: a7eb1692-6f7b-496b-a5e7-57dba0e1eec0
+action: insert
+imported_at: 2026-07-19T19:58:10.610113+00:00
+
+--- recovery_import_log [row 7 of 9] ---
+id: cb792c99-6c91-41a4-aef1-d6aa39354858
+batch_id: photos-march-netnew-2026-07-19
+target_table: entity_photos
+target_row_id: 182cf826-902d-40ce-b79c-8ee276aa9b2e
+entity_slug: 20115-state-highway-135-parking
+source_db: march
+source_table: entity_photos
+source_id: a7eb1692-6f7b-496b-a5e7-57dba0e1eec0
+action: insert
+imported_at: 2026-07-19T19:58:10.610113+00:00
+
+--- recovery_import_log [row 8 of 9] ---
+id: b558c992-db1e-4216-bb5b-2a03d89b3c89
+batch_id: photos-march-netnew-2026-07-19
+target_table: entity_photos
+target_row_id: a755a062-aedb-4f90-87f3-215d650684a8
+entity_slug: 20115-state-highway-135-parking
+source_db: march
+source_table: entity_photos
+source_id: a7eb1692-6f7b-496b-a5e7-57dba0e1eec0
+action: insert
+imported_at: 2026-07-19T19:58:10.610113+00:00
+
+--- recovery_import_log [row 9 of 9] ---
+id: ac7746e9-33e7-4831-bfd4-2699f21a4fe9
+batch_id: photos-march-netnew-2026-07-19
+target_table: entity_photos
+target_row_id: 4ed96540-7db5-4ab9-a3c1-2362d64d4998
+entity_slug: 20115-state-highway-135-parking
+source_db: march
+source_table: entity_photos
+source_id: a7eb1692-6f7b-496b-a5e7-57dba0e1eec0
+action: insert
+imported_at: 2026-07-19T19:58:10.610113+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: 20115-state-highway-135-parking
+entity_slug: 20115-state-highway-135-parking
+title: 20115 State Highway 135 Parking
+category: parking_lot
+search_vector: '135':4A '20115':1A 'highway':3A 'lot':7B 'park':5A,6B 'state':2A
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 13214
+entity_slug: 20115-state-highway-135-parking
+title: 20115 State Highway 135 Parking
+category: rental
+search_vector: '135':4A '20115':1A 'highway':3A 'park':5A 'state':2A
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: 20115-state-highway-135-parking

@@ -1,0 +1,2171 @@
+====================================================================================================
+SLUG: cordova-mall
+NAME: Cordova Mall
+INDUSTRY: retail
+SUBTYPE: shopping_mall
+TABLES WITH DATA: 21
+TOTAL ROWS: 106
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (8 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  entity  (1 rows)
+  entity_address_areas  (2 rows)
+  entity_attributes  (9 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (7 rows)
+  entity_modules  (10 rows)
+  entity_nearby_landmark_types  (27 rows)
+  entity_nearby_landmarks  (7 rows)
+  entity_photos  (12 rows)
+  entity_reviews  (5 rows)
+  entity_tags  (3 rows)
+  entity_theme  (1 rows)
+  industry_retail  (1 rows)
+  search_index  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: cordova-mall
+name: Cordova Mall
+planner_category: food_drink
+data_quality_score: 85
+issues: missing_menu|missing_faqs
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: true
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: true
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   8 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 8] ---
+id: 5085
+entity_slug: cordova-mall
+intent_tag: best_for:families_with_kids
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 8] ---
+id: 5086
+entity_slug: cordova-mall
+intent_tag: experience:family_kids
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 8] ---
+id: 5087
+entity_slug: cordova-mall
+intent_tag: experience:rainy_day
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 8] ---
+id: 5088
+entity_slug: cordova-mall
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 8] ---
+id: 5089
+entity_slug: cordova-mall
+intent_tag: service:parking
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 8] ---
+id: 5090
+entity_slug: cordova-mall
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 8] ---
+id: 5091
+entity_slug: cordova-mall
+intent_tag: missing:missing_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 8] ---
+id: 5092
+entity_slug: cordova-mall
+intent_tag: missing:missing_faqs
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: cordova-mall
+name: Cordova Mall
+is_active: t
+planner_category: food_drink
+entity_type: shopping
+entity_subtype: shopping_mall
+city: Pensacola
+state: FL
+address_line_1: 5100 N 9th Ave
+latitude: 30.475113799999995
+longitude: -87.2072414
+rating: 4.4
+review_count: 11398
+website_url: https://www.simon.com/mall/cordova-mall
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/cordova-mall/photo_01.jpg
+voice_summary: Cordova Mall in Pensacola is best for families with kids. Experience tags: family_kids, rainy_day.
+planner_summary: Typical indoor shopping center with a familiar mix of retail stores & a large food court.
+best_for: families with kids
+not_best_for: nothing specific flagged
+experience_tags: family_kids|rainy_day
+service_tags: accessibility|parking
+search_keywords: shopping_mall|point_of_interest|establishment|family_kids|rainy_day|accessibility|parking
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 2
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 3
+faq_count: 0
+data_quality_score: 85
+data_gaps: missing_menu|missing_faqs
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 19992
+entity_slug: cordova-mall
+entity_name: Cordova Mall
+city: Pensacola
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/cordova-mall/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 19993
+entity_slug: cordova-mall
+entity_name: Cordova Mall
+city: Pensacola
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/cordova-mall/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: cf22a29b-4127-46fd-9306-a0a87fa4fa72
+slug: cordova-mall
+name: Cordova Mall
+is_active: true
+featured: false
+entity_type: shopping
+entity_subtype: shopping_mall
+description: Typical indoor shopping center with a familiar mix of retail stores & a large food court.
+phone: (850) 477-5355
+website_url: https://www.simon.com/mall/cordova-mall
+menu_pin: 2244
+address_line_1: 5100 N 9th Ave
+city: Pensacola
+state: FL
+zip: 32504
+latitude: 30.475113799999995
+longitude: -87.2072414
+rating: 4.4
+review_count: 11398
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/cordova-mall/photo_01.jpg
+good_for_kids: false
+created_at: 2026-06-03T03:59:19.709963+00:00
+updated_at: 2026-06-03T03:59:19.709963+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJXzrPTRPAkIgRitGCsHfp3tw
+google_maps_uri: https://maps.google.com/?cid=15915414833445654922&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: shopping_mall
+formatted_address: 5100 N 9th Ave, Pensacola, FL 32504, USA
+plus_code: 862JFQGV+24
+international_phone: +1 850-477-5355
+editorial_summary: Typical indoor shopping center with a familiar mix of retail stores & a large food court.
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+wheelchair_accessible_restroom: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+accepts_nfc: true
+parking_type: free
+google_places_data: {
+  "id": "ChIJXzrPTRPAkIgRitGCsHfp3tw",
+  "types": [
+    "shopping_mall",
+    "point_of_interest",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3loS0EpzCVRYua93qb4hyQmafUwbRMJ5NsjJlUH_hF2p0vSVoKmJ9uZCtDydjt4Blzcul00iQYINQWRT2ujCmMMfyWWz6ZIBo5YjcTKRHSTiMEQZ_2Psp4mOTAQkSQHVwMSLIIHIvqtf-tx8CQ-XlKCvDuvhPWXr8FU1GC9BEZZDy_OGgnOHqntEYiYpMtoFHGwdg2sMP5c9Nm2bf5rg0fHGemmZ4qcbQ02psYUKdhmVaC7FJUb4ubESw_dFUE2dVAC5eyJHC-lWmK9iUWl4TxZVCKpqxo3SNCrXj8ISNBViKEr9DAYdFr1GKOawUZReBCjBE5rw1kvvJYEeiGhtwBqhN0irVdEFQCmwVdqq9ufv4bMEfwBxZambB6YEqGgWWowNBhvGA3d-ZCRvwJ1An_x7Xi8ZPt8oEWziE95QY3ncQ",
+      "widthPx": 1200,
+      "heightPx": 800,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC875HPMw!2e10!4m2!3m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIC875HPMw&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/111926335118803010182",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVDvRnAmMqlS9goPg6aMak7lUxWQP_DBKoDxQ-szA8Tz1o5L4dz=s100-p-k-no-mo",
+          "displayName": "Cordova Mall"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3nh-2dqeDmL0ApcXoTJjg1EiiTc3wbxOyJRNdzsoVTqR2I1FamhqGZgZSiCFwzBvW6mUF7U73F7-W86JXLd7_a2oSijSGd9JsesH8V-iA13_Jzek7K7r4AK7CjqEKz-8yzMpxd5t5Jp4-9EDD7VawxHSwNyTS9-xf5LURFy8PWkjmKdC88nr3iaihw-a3WrrGpmcLj6j-9Qtlv2CI0STrXsEVFIvZxD-f-t4PQwYgUEGCMnlifH-LJxM_smfe0F0unuL0E_5ddDobZ4XYAcJuk3UnxffNQpRgZgjia71OQ8-2nSm4eFf6emjam28yhrAU7qgnvmIx03phxEZyeaX_0stB8a7j1A5E-uQ77UMOOeu8jgrhqp2j60Xt61LcE5u2m3cLPeP7Sw1QhlKQmXTRjyIcBgsMhVKPl4pGGuU3mqBlZi",
+      "widthPx": 1116,
+      "heightPx": 628,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC6_eDqhgE!2e10!4m2!3m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIC6_eDqhgE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/111926335118803010182",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVDvRnAmMqlS9goPg6aMak7lUxWQP_DBKoDxQ-szA8Tz1o5L4dz=s100-p-k-no-mo",
+          "displayName": "Cordova Mall"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3kUFvWSvY8ncN5PC_SzKowTV8EdT_a5obCeK7c-Jc2iyVhi_-6j5nQAb9NEn17E2pB9oLnNFQZ9lRtLa7ORp1E-NO6n0Ga0EY62VOoW00azXJbUvL6OjfzjWUWAS3YVFgbBWTpkM3q8D7SFfFVGzLB22_hmhChcgXbUiACgYyQ48iiPJzX0I0s2Byr0UDv4C0KsKY6VpWTsZ8XWUBoVSp6xoIuyPDTk3otGIv1lwUZE5zffbH7mrFBgrZy3mXfI3igATrcomWbgTmkKWR-EMHMBqAegwhixcF_LO5ohPlkaExO9DgELJHOaJQOV9bJgDWWIZUJQ7xJhxwXy9dQh5SId5poSQXbghAQkeNRtXfr51-dPUnHsrQ6C92NyELGWhrYAv8GqvwhTdmMkxUrOHvBeY71UhwtPNVHAPYoLldQrIWruJ8V-jbRaRaB5cJu9",
+      "widthPx": 3060,
+      "heightPx": 4080,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAHPYrPqWeypXWKAZ6mUmy8!2e10!4m2!3m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAHPYrPqWeypXWKAZ6mUmy8&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/109421872398893694151",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUmBeXwOP7GJajcgcdlUrIpvzmfG-Ys5wiSO2Pz6bX2zeWBto6u=s100-p-k-no-mo",
+          "displayName": "Al Peters"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3k-zj050wdQKPT9HbyiMQD4IDmemFiyslK8Z_9TpHK12E2WrUnQ2QlX13GrsO6a4MITMYJIRmc9cPi7a9zYg9t3-kkd1fIE2VRYfXqaHYD_NiiU5dY1jxQOlfnZGDhvKotU-TtBcuqMv4vLS2TEO7XZGUTape_NEQaKW4E3u33SqrGsZuMEWkbiS-45MoBxDIypGOXDMPfHRbDX1iGfGejhE788AuevsXSf6k6AMoRyDOofwF6DddbaQDjIPN6QKWAumIVZzACeqjf-jB3Y7VPFVmLeG69B0rl-Rqm-wuN731537OqAE6c_K7phLpj_Oamj3t12ATfZA2F_t5VwSTbZV4EAvJjhSRQd14d35DyjIMZa9QWS5_JBNK9jl_2mEND6x3-NEIb2ih2P2tK61jbvCwuuYyDyIjEW_jUOeK90KA",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID--OCuVA!2e10!4m2!3m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID--OCuVA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/105865556190289032763",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWTME7bmJfEAYqLSQQf0xr7rFeCTupKLryNlz-v54mygmRHCEoW=s100-p-k-no-mo",
+          "displayName": "Daisy Allen"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3kepH_AAodA1eQI5cMoUEF-Cm8QG0lw5OqTgqwazZ0gIzNCVmOLzuBXFuEFk0_a-uq7_Tar6OzTpFNv8cOS1MF3PLGoI0FUWLwUTdmoiAgk5Gsl_nr9jPXCvVSw-6thX6qKh2ADgvDM3OJl_JuiKKMeLdwKmR5WUm7frybq70A_I2odbwJSuSHjgVunGYisu-deXH2eSzWnC_UDvES8GGFKbilMTceQN6UvVuESO7U6jUcNp-X77IDW6TQ0AzleDSK1GNmi9xkSoc3JLbkS8JwqGlNhEAB0oJHlrkvX2RLoYyPjWqCDkp0uAwwrdqSjLkAgAoZ5X6ztoMtCDPzGTmX8NGfBFjP2MPzViFcWG7fFNUL-Mad9wBV2Qrq55t_ty4C2PqGMIYJPMS48OhuN21jki-IaFso4ZkYgUB-DIoKEyg",
+      "widthPx": 1920,
+      "heightPx": 1080,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID46c23ag!2e10!4m2!3m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID46c23ag&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/113674023367875776008",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjU9Caik7WwXQBmAVDLwTj1DkEQzeVgczi4s1Ok_LqbMbh8bWWQAOA=s100-p-k-no-mo",
+          "displayName": "Joe Finch"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3lI2sOrf9-TSKjTfrOfRliOTaHP9pw_Yzaszp6x26AgLJPnR8Ee1wxsq9GiCekO5WPUoq2JnuHRb_AMasdn8NbLShmW0DqoLUE7x6s062W6LKxKXfPh1dIOp1qP0viKTjpd0IHdDkx0ZwaIC9r0OB5joYD486RDFCqa-gNS_BEj_MjtU98Zh6xiBt7fU-uOSV_ri0VqNwztzZ_JoWh5v_GDt-fmuLus7hXgmL0K_xU5IcwPCvWD1rLCkMeIL2L-Xro4cy3IHwiM9w0HKtSpS9JWIobclCMns9DFHKgiLdkXw4voSpkTQJIpGdrlGiBQjo0TbcHR6CgqQrar04SyulgnFsLqEIHdLwXY9KGwYX9AWxSBlS_cnLoTM-2GsdimVxyi2KRvKWNKWXfnkYSgkgM21kFSc-0t-m42qYK2ZUBfs9U",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID-xdmKtAE!2e10!4m2!3m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID-xdmKtAE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/102416782833080652225",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVPLH1UinI1yI_sHbbGvJ1dKdaAKO0tCwyLSQ-8OEvUtKkx-bz6=s100-p-k-no-mo",
+          "displayName": "Clementine"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3kPZtYaj4Gxu9lW_fhUg-wz9ECc_iVV06E5Duuw9QXFbM9TBvUc3VXO1FxuivdGzRaZpPTMirsz5JDcw82jcTFxz52blbK6uVJsXyur545tswfa_hxhlhx6sRF6Q192LufqlcrNEYSRckCSoE4AT0gm4ktFL9oNm3-ZoRr-ZXLfGSK34FhbxEcSJ2k4zmZFFr9I1kDPL_FS9px1mfnmXYySTIiBRtmdYAQtO-52epyy4Pd-vsifxYC_ao_Ecx9-0ttdoZpWrADScfRgf16yOFwpyrN95rncmJBsUJLjlD7UO860KwkL3zWT9IVPMkpnMJaDySip5244Zmv70WIhDAOT5jo9uV8SkjPchQolAoyxCcaJ3ca-jl72-ruZQfjfikx3wicFRT1cV9eDoP62TiobgG-G9Sz0zpf6jphUX-C88M8",
+      "widthPx": 4800,
+      "heightPx": 2167,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICchPKW0AE!2e10!4m2!3m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICchPKW0AE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/112130189243598981157",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjU1_eSYfsJ5bE4dq431AMLWjPC8_LWp4Q15u_n0aoaJhHWIwgmw=s100-p-k-no-mo",
+          "displayName": "Chad Raffield"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3kqoqueFNYvgZ6UZCGjNeYGAuMMeicxyKDp3sMZYDf31ACV0qZ2gsGbyxs3UqRupTT0w-ZPmJ44Q1UGzK4gIQJMAB7ga3sD0cM_xkr_BWhgnivfXSF42QIqcYMrG3bbGS80vUe8nOu0bCIv_igP46gw4yrhoMhifffdyoZhVIDwgRNd8rz5_hX6XWboXdBrlovnJ0d0tNcXmsBFZPhDtgJvbLE-X7rAoAuizqtGNxta1teqOnf_iuvkIQBD38OuOKE8tqCCjWH0xic-tEW93I41-4eEjI-hOAH_zb7apI0mwz1YI8hxqcIRpVmfJRXhqdWajOTGmgDDG-T7ezke28U-YKMQ6euCGto6DTxJvjfIjthy2pLssIymw7FCdpR1AEv5UzQJ2hAamLm48e9W2o_PoBPa5Pxf9W2l2gb4uc3ZNw",
+      "widthPx": 3072,
+      "heightPx": 4080,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICRobySOg!2e10!4m2!3m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICRobySOg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/100048807576939887072",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJuCC_Wp9b2Wh1nWXh6459gHY_pJpDGu9rxs2oFlKG5ibIE-Q=s100-p-k-no-mo",
+          "displayName": "Dustin Wright"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3nvGggVoNCyLkuYEHsU7jMdFDBj5QMR7MB1Z2VYlbkZ4clbwb01nyiD_14SzpDMWf9zODo7461RFcRawbnzSeWW03amYxr3gFiLXCuJvcj1cQRAHJcqlMrIupnNjdcX6DfttM9iPERTLQOv5yYahmUwAqoEY42rEXd4bANy2_wRjkob5BoZzBS79OJIIPtBR_7GRIwjIoXe9kjd59s7s6ApuX5ckslBKx-XmT0yYJOybGeS1mOzxf91ie6kLKhoBqlVPzmqN-Hq-dLTVBzCnZ1F7YudKiMprT8SrV73KUEgumlF7Vh-oLSbEvsjPjf7RUwUlGBwZc0XEgVICSKvgxJ-FyopIv_kK1SiO_gCqDnz1voHRIWORZIrVu5kAjjDlHJnQ55zGOyd3qEWroX4eUMhni0CIGiZPx_FfBkosQU",
+      "widthPx": 2976,
+      "heightPx": 3968,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICk-MewQQ!2e10!4m2!3m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICk-MewQQ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/115016818737923623762",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWxA-b3-qcwlcgha5c3rh5bsi6-oMhkj2bUj9BTCn8Ihn6Rui7J=s100-p-k-no-mo",
+          "displayName": "ikadek katon"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3nr2sXW316kxA7i_fBsQohhAJEfTIjVct_PIAAemVcaz0f6VP-IWyn7d_gA392OOpHL1oHjZk--cE3_A3BG096wNp9u_HuCY0lnBzbv66Jq2qNCygKSZGjQuVwws1naynr2EVCJMij6Cc9rTr_1RsrNUs8fZpR98fKleR-m8fx1nip-pz2teJDqw37ur6ta-10U_-wVzPGEzpFYF890xFRf-bCSElbiDPupyzT1bzgl893Dbvwm_U1k2eQhS52aDURbnLHHu1jCXyjpxCw0j1wQsQnQ7gTAuoMj8FBLPP-m_yEz7R2WDy1Snl0PivOU50FjgaU8WtyIxyXzA2LpE4BE4JvzTuXEcmeHWf48nzeWQAZFkpEOPVH2V7KcJCWC0_zx74-zNDc5MEJyQFrnjxHbyr_LOPHJPXZhSXA",
+      "widthPx": 3840,
+      "heightPx": 2160,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIClo9R7!2e10!4m2!3m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIClo9R7&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/103509241645409147879",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVKDCHN6AzIGjc-kgHbv-Fog3wZIEC0Ao7BSjfeaIh8Tu3TtIAW=s100-p-k-no-mo",
+          "displayName": "Slacking Packing"
+        }
+      ]
+    }
+  ],
+  "rating": 4.4,
+  "reviews": [
+    {
+      "name": "places/ChIJXzrPTRPAkIgRitGCsHfp3tw/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pFMFVGUlpSMlJqYW5wb1UzWjVNM1pyWDFCUVRVRRAB",
+      "text": {
+        "text": "Cordova Mall was fine and family friendly.  Traveled out of town to celebrate a friend's nieces birthday\nPlay time at the in space trampoline park.  Shopping in the varying,  name recognized stores and enjoying the numerous restaurants made the time with friends that much more fun!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-01-09T11:39:05.641080724Z",
+      "originalText": {
+        "text": "Cordova Mall was fine and family friendly.  Traveled out of town to celebrate a friend's nieces birthday\nPlay time at the in space trampoline park.  Shopping in the varying,  name recognized stores and enjoying the numerous restaurants made the time with friends that much more fun!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pFMFVGUlpSMlJqYW5wb1UzWjVNM1pyWDFCUVRVRRAB!2m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2pFMFVGUlpSMlJqYW5wb1UzWjVNM1pyWDFCUVRVRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/102388672683219513185/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVcrbIe5dOrNAGgUADOA7Lw3xqOWunp6JKjnoBM3CgNh9aUyUQo=s128-c0x00000000-cc-rp-mo-ba4",
+        "displayName": "Tracy Smith"
+      },
+      "relativePublishTimeDescription": "5 months ago"
+    },
+    {
+      "name": "places/ChIJXzrPTRPAkIgRitGCsHfp3tw/reviews/ChdDSUhNMG9nS0VOT1Q5ZU81NDh6endBRRAB",
+      "text": {
+        "text": "This mall has a lot of energy for a small Bennu. Couple of sales heavy situations with the kiosks set up in the middle of the mall, but it’s all fun and games.  Mall entrance directly from the Dick’s Sporting Goods.\n\nThe mall is located just 1 mile from the airport. It provided an excellent place to go waste some time until my wife landed.   High-quality clean, safe, good stores, lots of action and a food court.\n\n💯🇺🇸👏🏽🐺",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-05-30T22:27:17.093737Z",
+      "originalText": {
+        "text": "This mall has a lot of energy for a small Bennu. Couple of sales heavy situations with the kiosks set up in the middle of the mall, but it’s all fun and games.  Mall entrance directly from the Dick’s Sporting Goods.\n\nThe mall is located just 1 mile from the airport. It provided an excellent place to go waste some time until my wife landed.   High-quality clean, safe, good stores, lots of action and a food court.\n\n💯🇺🇸👏🏽🐺",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VOT1Q5ZU81NDh6endBRRAB!2m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VOT1Q5ZU81NDh6endBRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/108596292144762625268/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWBTYZDOgElhjoWog8R3HonfzIMhSD0W7qooOS064nNeh9wX1Fj=s128-c0x00000000-cc-rp-mo-ba6",
+        "displayName": "Rand Eberhard"
+      },
+      "relativePublishTimeDescription": "a year ago"
+    },
+    {
+      "name": "places/ChIJXzrPTRPAkIgRitGCsHfp3tw/reviews/ChZDSUhNMG9nS0VORHl2WXpqdWZTTFhREAE",
+      "text": {
+        "text": "Love the Guess store, and actually the variety of stores this mall offers. My mother, Eva, Axel and I also enjoyed the World Market.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-06-09T17:06:38.855257Z",
+      "originalText": {
+        "text": "Love the Guess store, and actually the variety of stores this mall offers. My mother, Eva, Axel and I also enjoyed the World Market.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VORHl2WXpqdWZTTFhREAE!2m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VORHl2WXpqdWZTTFhREAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/106667532608779964727/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUHTAxSWrV7dnSC8naGZo-242dHtAXotQSBkSKgbHMk8DncUj1Z=s128-c0x00000000-cc-rp-mo-ba6",
+        "displayName": "Col. Jordan Palmer (Jordan Bowling Palmer)"
+      },
+      "relativePublishTimeDescription": "a year ago"
+    },
+    {
+      "name": "places/ChIJXzrPTRPAkIgRitGCsHfp3tw/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xGTlpWUm5XVVY0WkZNNFNrOXZNVUo0WmtkNlRGRRAB",
+      "text": {
+        "text": "I had a lot of fun looking around. There are a lot of different stores and good food. I went for Dick's Sporting Goods but stayed for several hours having fun. Would recommend.",
+        "languageCode": "en"
+      },
+      "rating": 4,
+      "publishTime": "2026-01-31T01:31:18.095678625Z",
+      "originalText": {
+        "text": "I had a lot of fun looking around. There are a lot of different stores and good food. I went for Dick's Sporting Goods but stayed for several hours having fun. Would recommend.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xGTlpWUm5XVVY0WkZNNFNrOXZNVUo0WmtkNlRGRRAB!2m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2xGTlpWUm5XVVY0WkZNNFNrOXZNVUo0WmtkNlRGRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/107874235285212647924/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKliR93wQOs9F4RSo6rvHN3TGhczKFDXhPGEgnOpaJqPiTM3iU=s128-c0x00000000-cc-rp-mo",
+        "displayName": "J"
+      },
+      "relativePublishTimeDescription": "4 months ago"
+    },
+    {
+      "name": "places/ChIJXzrPTRPAkIgRitGCsHfp3tw/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tkSmJVUkNWbXBYTFUxNVZXVmtZV053YW1oRVIzYxAB",
+      "text": {
+        "text": "⭐️⭐️⭐️⭐️⭐️\n“A classic shopping experience with charm and character!”\n\nCordova Mall is hands down one of my favorite places to visit whenever we’re in Pensacola! There’s just something about the atmosphere here that feels timeless — the perfect blend of modern convenience and that warm, brick-and-border charm you just don’t find in newer shopping centers.\n\nI absolutely love the ambience of walking around, browsing through the stores, and actually getting to experience shopping — not just clicking “add to cart.” From the familiar favorites to the unique local spots, there’s always something new to see, and the layout makes it such an easy, enjoyable place to spend an afternoon.\n\nThe mall is clean, well-kept, and has a relaxed yet upscale feel. Whether you’re grabbing a bite, doing some serious shopping, or just strolling around, Cordova Mall makes it feel like an outing — not an errand.\n\nIt’s a true Pensacola gem and a reminder of why in-person shopping will always have a special kind of magic.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-10-08T22:42:42.643396107Z",
+      "originalText": {
+        "text": "⭐️⭐️⭐️⭐️⭐️\n“A classic shopping experience with charm and character!”\n\nCordova Mall is hands down one of my favorite places to visit whenever we’re in Pensacola! There’s just something about the atmosphere here that feels timeless — the perfect blend of modern convenience and that warm, brick-and-border charm you just don’t find in newer shopping centers.\n\nI absolutely love the ambience of walking around, browsing through the stores, and actually getting to experience shopping — not just clicking “add to cart.” From the familiar favorites to the unique local spots, there’s always something new to see, and the layout makes it such an easy, enjoyable place to spend an afternoon.\n\nThe mall is clean, well-kept, and has a relaxed yet upscale feel. Whether you’re grabbing a bite, doing some serious shopping, or just strolling around, Cordova Mall makes it feel like an outing — not an errand.\n\nIt’s a true Pensacola gem and a reminder of why in-person shopping will always have a special kind of magic.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tkSmJVUkNWbXBYTFUxNVZXVmtZV053YW1oRVIzYxAB!2m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2tkSmJVUkNWbXBYTFUxNVZXVmtZV053YW1oRVIzYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/111400012193645609828/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVpH2RndwB279cMFYlIX7CcLceaIwXZWZtqLdEKs2xwdmmkqzJ8qQ=s128-c0x00000000-cc-rp-mo-ba3",
+        "displayName": "Shannon Freas"
+      },
+      "relativePublishTimeDescription": "8 months ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.475113799999995,
+    "longitude": -87.2072414
+  },
+  "plusCode": {
+    "globalCode": "862JFQGV+24",
+    "compoundCode": "FQGV+24 Pensacola, FL, USA"
+  },
+  "restroom": true,
+  "viewport": {
+    "low": {
+      "latitude": 30.4735161697085,
+      "longitude": -87.2093957
+    },
+    "high": {
+      "latitude": 30.476214130291496,
+      "longitude": -87.20601099999999
+    }
+  },
+  "websiteUri": "https://www.simon.com/mall/cordova-mall",
+  "displayName": {
+    "text": "Cordova Mall",
+    "languageCode": "en"
+  },
+  "primaryType": "shopping_mall",
+  "googleMapsUri": "https://maps.google.com/?cid=15915414833445654922&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewSummary": {
+    "text": {
+      "text": "People say this shopping center offers a wide variety of shops and restaurants, and a food court with many options. They also highlight the clean and safe environment, and the friendly staff.\n\nOther reviews mention it can be crowded.",
+      "languageCode": "en-US"
+    },
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a!9m1!1b1",
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "flagContentUri": "https://www.google.com/local/content/rap/report?postId=5%401:CAIQACodChtyc19oOjhaaG9CbFNWV2RvcmU0V0JteHVxOEE%7CCAIQACorChtyc19oOjhaaG9CbFNWV2RvcmU0V0JteHVxOEESDAi_2OfEBhD44ZHwAg&d=17924085&t=8"
+  },
+  "businessStatus": "OPERATIONAL",
+  "parkingOptions": {
+    "freeParkingLot": true,
+    "paidParkingLot": true
+  },
+  "paymentOptions": {
+    "acceptsNfc": true,
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=15915414833445654922&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+  "userRatingCount": 11398,
+  "adrFormatAddress": "<span class=\"street-address\">5100 N 9th Ave</span>, <span class=\"locality\">Pensacola</span>, <span class=\"region\">FL</span> <span class=\"postal-code\">32504</span>, <span class=\"country-name\">USA</span>",
+  "editorialSummary": {
+    "text": "Typical indoor shopping center with a familiar mix of retail stores & a large food court.",
+    "languageCode": "en"
+  },
+  "formattedAddress": "5100 N 9th Ave, Pensacola, FL 32504, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "5100",
+      "shortText": "5100",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "North 9th Avenue",
+      "shortText": "N 9th Ave",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "neighborhood",
+        "political"
+      ],
+      "longText": "Northeast Pensacola",
+      "shortText": "Northeast Pensacola",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Pensacola",
+      "shortText": "Pensacola",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Escambia County",
+      "shortText": "Escambia County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Florida",
+      "shortText": "FL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "32504",
+      "shortText": "32504",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJH1xSchPAkIgRcBFDgpqWGQU",
+        "placeId": "ChIJH1xSchPAkIgRcBFDgpqWGQU",
+        "containment": "WITHIN",
+        "displayName": {
+          "text": "Cordova Mall",
+          "languageCode": "en"
+        }
+      },
+      {
+        "name": "places/ChIJHcho14PqkIgRqP3LiAIOawI",
+        "placeId": "ChIJHcho14PqkIgRqP3LiAIOawI",
+        "containment": "OUTSKIRTS",
+        "displayName": {
+          "text": "Northeast Pensacola",
+          "languageCode": "en"
+        }
+      }
+    ],
+    "landmarks": [
+      {
+        "name": "places/ChIJESOuQmvAkIgR-jAto6dy8cs",
+        "types": [
+          "bar",
+          "establishment",
+          "food",
+          "meal_takeaway",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJESOuQmvAkIgR-jAto6dy8cs",
+        "displayName": {
+          "text": "Red Robin Gourmet Burgers and Brews",
+          "languageCode": "en"
+        },
+        "straightLineDistanceMeters": 151.60213
+      },
+      {
+        "name": "places/ChIJESOuQmvAkIgRTx73Bw6mWIA",
+        "types": [
+          "clothing_store",
+          "establishment",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJESOuQmvAkIgRTx73Bw6mWIA",
+        "displayName": {
+          "text": "Old Navy",
+          "languageCode": "en"
+        },
+        "straightLineDistanceMeters": 75.17863
+      },
+      {
+        "name": "places/ChIJAQBAmxTAkIgRujaRreEcooo",
+        "types": [
+          "bicycle_store",
+          "clothing_store",
+          "establishment",
+          "point_of_interest",
+          "shoe_store",
+          "store"
+        ],
+        "placeId": "ChIJAQBAmxTAkIgRujaRreEcooo",
+        "displayName": {
+          "text": "DICK'S Sporting Goods",
+          "languageCode": "en"
+        },
+        "straightLineDistanceMeters": 138.53938
+      },
+      {
+        "name": "places/ChIJUScnexPAkIgRQpqFvvNoTEQ",
+        "types": [
+          "electronics_store",
+          "establishment",
+          "home_goods_store",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJUScnexPAkIgRQpqFvvNoTEQ",
+        "displayName": {
+          "text": "Best Buy",
+          "languageCode": "en"
+        },
+        "straightLineDistanceMeters": 243.71939
+      },
+      {
+        "name": "places/ChIJESOuQmvAkIgRp1R4qf6I_IA",
+        "types": [
+          "clothing_store",
+          "department_store",
+          "establishment",
+          "point_of_interest",
+          "shoe_store",
+          "store"
+        ],
+        "placeId": "ChIJESOuQmvAkIgRp1R4qf6I_IA",
+        "displayName": {
+          "text": "Ross Dress for Less",
+          "languageCode": "en"
+        },
+        "straightLineDistanceMeters": 106.52931
+      }
+    ]
+  },
+  "generativeSummary": {
+    "overview": {
+      "text": "Clean shopping mall housing 120+ shops, an arcade and a food court, plus an escape room.",
+      "languageCode": "en-US"
+    },
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "overviewFlagContentUri": "https://www.google.com/local/content/rap/report?postId=CiUweDg4OTBjMDEzNGRjZjNhNWY6MHhkY2RlZTk3N2IwODJkMThhMAI&d=17924085&t=12"
+  },
+  "currentOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 12,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T15:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 10:00 AM – 8:00 PM",
+      "Tuesday: 10:00 AM – 8:00 PM",
+      "Wednesday: 10:00 AM – 8:00 PM",
+      "Thursday: 10:00 AM – 8:00 PM",
+      "Friday: 10:00 AM – 9:00 PM",
+      "Saturday: 10:00 AM – 9:00 PM",
+      "Sunday: 12:00 – 6:00 PM"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Shopping Mall",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#4B96F3",
+  "nationalPhoneNumber": "(850) 477-5355",
+  "regularOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 12,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 21,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T15:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 10:00 AM – 8:00 PM",
+      "Tuesday: 10:00 AM – 8:00 PM",
+      "Wednesday: 10:00 AM – 8:00 PM",
+      "Thursday: 10:00 AM – 8:00 PM",
+      "Friday: 10:00 AM – 9:00 PM",
+      "Saturday: 10:00 AM – 9:00 PM",
+      "Sunday: 12:00 – 6:00 PM"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true,
+    "wheelchairAccessibleRestroom": true
+  },
+  "shortFormattedAddress": "5100 N 9th Ave, Pensacola",
+  "primaryTypeDisplayName": {
+    "text": "Shopping Mall",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 850-477-5355"
+}
+ai_overview: Clean shopping mall housing 120+ shops, an arcade and a food court, plus an escape room.
+ai_review_summary: People say this shopping center offers a wide variety of shops and restaurants, and a food court with many options. They also highlight the clean and safe environment, and the friendly staff.
+
+Other reviews mention it can be crowded.
+restroom: true
+free_parking_lot: true
+paid_parking_lot: true
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #4B96F3
+short_formatted_address: 5100 N 9th Ave, Pensacola
+national_phone: (850) 477-5355
+search_vector: '120':7B 'also':55C 'arcad':10B 'center':22B,38C 'clean':3B,58C 'cordova':1A 'court':14B,33B,50C 'crowd':72C 'environ':61C 'escap':17B 'familiar':25B 'food':13B,32B,49C 'friend':64C 'highlight':56C 'hous':6B 'indoor':20B 'larg':31B 'mall':2A,5B,74 'mani':52C 'mention':68C 'mix':26B 'offer':39C 'option':53C 'pensacola':75 'peopl':34C 'plus':15B 'restaur':46C 'retail':28B 'review':67C 'room':18B 'safe':60C 'say':35C 'shop':4B,8B,21B,37C,44C,73 'staff':65C 'store':29B 'typic':19B 'varieti':42C 'wide':41C
+primary_type_display: Shopping Mall
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=15915414833445654922&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJH1xSchPAkIgRcBFDgpqWGQU",
+      "placeId": "ChIJH1xSchPAkIgRcBFDgpqWGQU",
+      "containment": "WITHIN",
+      "displayName": {
+        "text": "Cordova Mall",
+        "languageCode": "en"
+      }
+    },
+    {
+      "name": "places/ChIJHcho14PqkIgRqP3LiAIOawI",
+      "placeId": "ChIJHcho14PqkIgRqP3LiAIOawI",
+      "containment": "OUTSKIRTS",
+      "displayName": {
+        "text": "Northeast Pensacola",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJESOuQmvAkIgR-jAto6dy8cs",
+      "types": [
+        "bar",
+        "establishment",
+        "food",
+        "meal_takeaway",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJESOuQmvAkIgR-jAto6dy8cs",
+      "displayName": {
+        "text": "Red Robin Gourmet Burgers and Brews",
+        "languageCode": "en"
+      },
+      "straightLineDistanceMeters": 151.60213
+    },
+    {
+      "name": "places/ChIJESOuQmvAkIgRTx73Bw6mWIA",
+      "types": [
+        "clothing_store",
+        "establishment",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJESOuQmvAkIgRTx73Bw6mWIA",
+      "displayName": {
+        "text": "Old Navy",
+        "languageCode": "en"
+      },
+      "straightLineDistanceMeters": 75.17863
+    },
+    {
+      "name": "places/ChIJAQBAmxTAkIgRujaRreEcooo",
+      "types": [
+        "bicycle_store",
+        "clothing_store",
+        "establishment",
+        "point_of_interest",
+        "shoe_store",
+        "store"
+      ],
+      "placeId": "ChIJAQBAmxTAkIgRujaRreEcooo",
+      "displayName": {
+        "text": "DICK'S Sporting Goods",
+        "languageCode": "en"
+      },
+      "straightLineDistanceMeters": 138.53938
+    },
+    {
+      "name": "places/ChIJUScnexPAkIgRQpqFvvNoTEQ",
+      "types": [
+        "electronics_store",
+        "establishment",
+        "home_goods_store",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJUScnexPAkIgRQpqFvvNoTEQ",
+      "displayName": {
+        "text": "Best Buy",
+        "languageCode": "en"
+      },
+      "straightLineDistanceMeters": 243.71939
+    },
+    {
+      "name": "places/ChIJESOuQmvAkIgRp1R4qf6I_IA",
+      "types": [
+        "clothing_store",
+        "department_store",
+        "establishment",
+        "point_of_interest",
+        "shoe_store",
+        "store"
+      ],
+      "placeId": "ChIJESOuQmvAkIgRp1R4qf6I_IA",
+      "displayName": {
+        "text": "Ross Dress for Less",
+        "languageCode": "en"
+      },
+      "straightLineDistanceMeters": 106.52931
+    }
+  ]
+}
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: generic
+generative_summary: Clean shopping mall housing 120+ shops, an arcade and a food court, plus an escape room.
+industry_code: retail
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   2 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 2] ---
+id: 551cc4ea-daa3-48eb-8664-b1c805165568
+entity_slug: cordova-mall
+place_id: ChIJH1xSchPAkIgRcBFDgpqWGQU
+containment: WITHIN
+display_name: Cordova Mall
+
+--- entity_address_areas [row 2 of 2] ---
+id: e0355f47-25bc-47bb-b184-ef7675abb0fe
+entity_slug: cordova-mall
+place_id: ChIJHcho14PqkIgRqP3LiAIOawI
+containment: OUTSKIRTS
+display_name: Northeast Pensacola
+
+####################################################################################################
+# TABLE: entity_attributes   -   9 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 9] ---
+id: 5c97145d-feca-47e7-a27f-8f886954d00d
+entity_slug: cordova-mall
+category: amenity
+key: restroom
+label: Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 2 of 9] ---
+id: bd71ceca-0acf-497c-9fbf-99962707f285
+entity_slug: cordova-mall
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 3 of 9] ---
+id: aba90858-77e2-4b85-b523-ce89cf13b10b
+entity_slug: cordova-mall
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 4 of 9] ---
+id: 616a9596-04cc-4550-b9a9-284adaed123c
+entity_slug: cordova-mall
+category: accessibility
+key: access_wheelchairAccessibleRestroom
+label: Wheelchair Accessible Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 5 of 9] ---
+id: e4441490-ec8f-4240-bcd5-3697ab2e5bd6
+entity_slug: cordova-mall
+category: parking
+key: parking_freeParkingLot
+label: Free Parking Lot
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 6 of 9] ---
+id: dbd7da0c-89dc-412d-973e-fe1e099598d0
+entity_slug: cordova-mall
+category: parking
+key: parking_paidParkingLot
+label: Paid Parking Lot
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 7 of 9] ---
+id: b50614a0-618b-45c7-a1eb-e594f0c22cfa
+entity_slug: cordova-mall
+category: payment
+key: pay_acceptsNfc
+label: Accepts Nfc
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 8 of 9] ---
+id: 09ede1a5-2441-4ad8-80ea-8b5aecccf8a1
+entity_slug: cordova-mall
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 9 of 9] ---
+id: e6bb8c1a-77c6-4f0a-bf98-74590af72db6
+entity_slug: cordova-mall
+category: payment
+key: pay_acceptsCreditCards
+label: Accepts Credit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: cordova-mall
+name: Cordova Mall
+industry_code: retail
+is_parent: false
+score_of_7: 5
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: a4c014c4-a66b-4de8-9fd8-77b921eb7e49
+entity_slug: cordova-mall
+place_uri: https://maps.google.com/?cid=15915414833445654922&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 8781
+entity_slug: cordova-mall
+google_review_name: places/ChIJXzrPTRPAkIgRitGCsHfp3tw/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pFMFVGUlpSMlJqYW5wb1UzWjVNM1pyWDFCUVRVRRAB
+rating: 5
+review_text: Cordova Mall was fine and family friendly.  Traveled out of town to celebrate a friend's nieces birthday
+Play time at the in space trampoline park.  Shopping in the varying,  name recognized stores and enjoying the numerous restaurants made the time with friends that much more fun!
+language_code: en
+author_name: Tracy Smith
+author_profile_url: https://www.google.com/maps/contrib/102388672683219513185/reviews
+publish_time: 2026-01-09T11:39:05.641081+00:00
+relative_time: 5 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pFMFVGUlpSMlJqYW5wb1UzWjVNM1pyWDFCUVRVRRAB!2m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 8782
+entity_slug: cordova-mall
+google_review_name: places/ChIJXzrPTRPAkIgRitGCsHfp3tw/reviews/ChdDSUhNMG9nS0VOT1Q5ZU81NDh6endBRRAB
+rating: 5
+review_text: This mall has a lot of energy for a small Bennu. Couple of sales heavy situations with the kiosks set up in the middle of the mall, but it’s all fun and games.  Mall entrance directly from the Dick’s Sporting Goods.
+
+The mall is located just 1 mile from the airport. It provided an excellent place to go waste some time until my wife landed.   High-quality clean, safe, good stores, lots of action and a food court.
+
+💯🇺🇸👏🏽🐺
+language_code: en
+author_name: Rand Eberhard
+author_profile_url: https://www.google.com/maps/contrib/108596292144762625268/reviews
+publish_time: 2025-05-30T22:27:17.093737+00:00
+relative_time: a year ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VOT1Q5ZU81NDh6endBRRAB!2m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 8783
+entity_slug: cordova-mall
+google_review_name: places/ChIJXzrPTRPAkIgRitGCsHfp3tw/reviews/ChZDSUhNMG9nS0VORHl2WXpqdWZTTFhREAE
+rating: 5
+review_text: Love the Guess store, and actually the variety of stores this mall offers. My mother, Eva, Axel and I also enjoyed the World Market.
+language_code: en
+author_name: Col. Jordan Palmer (Jordan Bowling Palmer)
+author_profile_url: https://www.google.com/maps/contrib/106667532608779964727/reviews
+publish_time: 2025-06-09T17:06:38.855257+00:00
+relative_time: a year ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VORHl2WXpqdWZTTFhREAE!2m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 8784
+entity_slug: cordova-mall
+google_review_name: places/ChIJXzrPTRPAkIgRitGCsHfp3tw/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xGTlpWUm5XVVY0WkZNNFNrOXZNVUo0WmtkNlRGRRAB
+rating: 4
+review_text: I had a lot of fun looking around. There are a lot of different stores and good food. I went for Dick's Sporting Goods but stayed for several hours having fun. Would recommend.
+language_code: en
+author_name: J
+author_profile_url: https://www.google.com/maps/contrib/107874235285212647924/reviews
+publish_time: 2026-01-31T01:31:18.095679+00:00
+relative_time: 4 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xGTlpWUm5XVVY0WkZNNFNrOXZNVUo0WmtkNlRGRRAB!2m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 8785
+entity_slug: cordova-mall
+google_review_name: places/ChIJXzrPTRPAkIgRitGCsHfp3tw/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tkSmJVUkNWbXBYTFUxNVZXVmtZV053YW1oRVIzYxAB
+rating: 5
+review_text: ⭐️⭐️⭐️⭐️⭐️
+“A classic shopping experience with charm and character!”
+
+Cordova Mall is hands down one of my favorite places to visit whenever we’re in Pensacola! There’s just something about the atmosphere here that feels timeless — the perfect blend of modern convenience and that warm, brick-and-border charm you just don’t find in newer shopping centers.
+
+I absolutely love the ambience of walking around, browsing through the stores, and actually getting to experience shopping — not just clicking “add to cart.” From the familiar favorites to the unique local spots, there’s always something new to see, and the layout makes it such an easy, enjoyable place to spend an afternoon.
+
+The mall is clean, well-kept, and has a relaxed yet upscale feel. Whether you’re grabbing a bite, doing some serious shopping, or just strolling around, Cordova Mall makes it feel like an outing — not an errand.
+
+It’s a true Pensacola gem and a reminder of why in-person shopping will always have a special kind of magic.
+language_code: en
+author_name: Shannon Freas
+author_profile_url: https://www.google.com/maps/contrib/111400012193645609828/reviews
+publish_time: 2025-10-08T22:42:42.643396+00:00
+relative_time: 8 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tkSmJVUkNWbXBYTFUxNVZXVmtZV053YW1oRVIzYxAB!2m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: f3b4ccdc-0dcf-442d-90ec-c9eb9b76d4dc
+entity_slug: cordova-mall
+day_of_week: 0
+opens_at: 12:00:00
+closes_at: 18:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 06511a6c-84a7-4f01-957e-53edb9d98f34
+entity_slug: cordova-mall
+day_of_week: 1
+opens_at: 10:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 6524e0a5-21a4-4a8d-83b2-71eb7611cb0e
+entity_slug: cordova-mall
+day_of_week: 2
+opens_at: 10:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 5443bb91-5c8e-472a-baa9-75eb6bec397b
+entity_slug: cordova-mall
+day_of_week: 3
+opens_at: 10:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 3f6517c2-3448-4079-90f1-b301148e2224
+entity_slug: cordova-mall
+day_of_week: 4
+opens_at: 10:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: eaca761c-e6e3-458c-9de3-a413fc320da2
+entity_slug: cordova-mall
+day_of_week: 5
+opens_at: 10:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 478b701a-81f4-4883-9bc5-e2a5bb2b5235
+entity_slug: cordova-mall
+day_of_week: 6
+opens_at: 10:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_modules   -   10 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 10] ---
+id: 3e64b039-8a1c-49ea-9847-fbc30b4380e8
+entity_slug: cordova-mall
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 10] ---
+id: d0bcd1e4-91d4-4345-b49c-cfa39f77539f
+entity_slug: cordova-mall
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 10] ---
+id: d8a641ed-ae3d-4009-b63a-272b4ec11b6e
+entity_slug: cordova-mall
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 10] ---
+id: 4cc4ef69-8510-4383-a2d8-9f0a638592fe
+entity_slug: cordova-mall
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 10] ---
+id: 86cba8be-be47-41dd-9e5a-8723a289b6d3
+entity_slug: cordova-mall
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 10] ---
+id: bb086c87-15dd-4c70-90a4-1116b8c5a4fe
+entity_slug: cordova-mall
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 10] ---
+id: 8b298de7-6afd-4a2e-9b31-f37f1cf7bec2
+entity_slug: cordova-mall
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 10] ---
+id: 1e509d62-4f0f-458d-ae60-b22184207ec1
+entity_slug: cordova-mall
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 10] ---
+id: f1f8ba95-ad81-48fc-897a-af5f236cb737
+entity_slug: cordova-mall
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 10] ---
+id: 6bda7b39-e308-40e4-bc00-636e62333757
+entity_slug: cordova-mall
+module_key: shop
+enabled: true
+sort_order: 10
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   27 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 27] ---
+id: f5213961-0926-455b-a2c9-c87c977acb22
+landmark_id: cdf7a39a-c431-46a0-ad0d-2e4ce63996b4
+entity_slug: cordova-mall
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 27] ---
+id: 00f524a7-5ba6-4340-8363-9df1cd052bf6
+landmark_id: cdf7a39a-c431-46a0-ad0d-2e4ce63996b4
+entity_slug: cordova-mall
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 27] ---
+id: 81ea373b-f329-4396-9e82-1dfd716cc0d3
+landmark_id: cdf7a39a-c431-46a0-ad0d-2e4ce63996b4
+entity_slug: cordova-mall
+landmark_type: bar
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 27] ---
+id: 69f84606-3d26-42b1-a72f-7fbf8cada306
+landmark_id: cdf7a39a-c431-46a0-ad0d-2e4ce63996b4
+entity_slug: cordova-mall
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 27] ---
+id: de2ec1ca-f8f2-4945-bb71-30b23ea52cb6
+landmark_id: cdf7a39a-c431-46a0-ad0d-2e4ce63996b4
+entity_slug: cordova-mall
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 27] ---
+id: f4edb887-f047-4472-b7ae-9aebbda8095c
+landmark_id: cdf7a39a-c431-46a0-ad0d-2e4ce63996b4
+entity_slug: cordova-mall
+landmark_type: meal_takeaway
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 27] ---
+id: a1fdbc37-f8d3-411e-8df3-1416f62d931a
+landmark_id: 00046fb5-ca79-489c-9c19-adbaa89288a3
+entity_slug: cordova-mall
+landmark_type: clothing_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 27] ---
+id: 84f32137-e971-4b2f-a52e-038d23474eff
+landmark_id: 00046fb5-ca79-489c-9c19-adbaa89288a3
+entity_slug: cordova-mall
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 27] ---
+id: 5c08fcdd-ff68-4b17-aa97-a5e071493657
+landmark_id: 00046fb5-ca79-489c-9c19-adbaa89288a3
+entity_slug: cordova-mall
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 27] ---
+id: c544184a-1a63-4755-8697-7f5be117619f
+landmark_id: 00046fb5-ca79-489c-9c19-adbaa89288a3
+entity_slug: cordova-mall
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 27] ---
+id: cee3122e-d07d-4a00-8f86-29e29b82e48c
+landmark_id: f5817db5-4995-4b4a-83fe-d235a355553e
+entity_slug: cordova-mall
+landmark_type: bicycle_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 27] ---
+id: 5ab96ec0-cd40-4ddf-9baf-354de930424c
+landmark_id: f5817db5-4995-4b4a-83fe-d235a355553e
+entity_slug: cordova-mall
+landmark_type: clothing_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 27] ---
+id: f53e9628-35c5-483f-beb3-449d2d05403b
+landmark_id: f5817db5-4995-4b4a-83fe-d235a355553e
+entity_slug: cordova-mall
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 27] ---
+id: 6bd1d857-cbeb-47ae-b762-600609374af8
+landmark_id: f5817db5-4995-4b4a-83fe-d235a355553e
+entity_slug: cordova-mall
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 27] ---
+id: 1d80822f-6e23-495c-8fc0-b2bb0da0ce7c
+landmark_id: f5817db5-4995-4b4a-83fe-d235a355553e
+entity_slug: cordova-mall
+landmark_type: shoe_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 27] ---
+id: 9faf31eb-ea95-47ba-8f6d-fe58eb6ee064
+landmark_id: f5817db5-4995-4b4a-83fe-d235a355553e
+entity_slug: cordova-mall
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 27] ---
+id: 17b566fe-71b6-4ef0-8692-8eb95fb9a0f3
+landmark_id: e4c260b4-987a-40ef-bdae-f0dc7cdf4ab3
+entity_slug: cordova-mall
+landmark_type: electronics_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 27] ---
+id: 6f89005c-09bb-4c3b-b8cc-0c642a162099
+landmark_id: e4c260b4-987a-40ef-bdae-f0dc7cdf4ab3
+entity_slug: cordova-mall
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 19 of 27] ---
+id: 0c69abc9-7d99-4d4a-bf77-cf97d165f230
+landmark_id: e4c260b4-987a-40ef-bdae-f0dc7cdf4ab3
+entity_slug: cordova-mall
+landmark_type: home_goods_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 20 of 27] ---
+id: f839c28f-1ebd-4256-aa54-474a50f6cbd1
+landmark_id: e4c260b4-987a-40ef-bdae-f0dc7cdf4ab3
+entity_slug: cordova-mall
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 21 of 27] ---
+id: d4fbceda-1196-4fc8-ba3e-788c6e15ea9a
+landmark_id: e4c260b4-987a-40ef-bdae-f0dc7cdf4ab3
+entity_slug: cordova-mall
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 22 of 27] ---
+id: df725528-9703-4768-8de4-36c68f0706c0
+landmark_id: 64f1969c-604e-4aee-b77f-3a19b39b8bd0
+entity_slug: cordova-mall
+landmark_type: clothing_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 23 of 27] ---
+id: 54640624-300c-40df-8263-53aa7caed22f
+landmark_id: 64f1969c-604e-4aee-b77f-3a19b39b8bd0
+entity_slug: cordova-mall
+landmark_type: department_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 24 of 27] ---
+id: db613003-b5c3-4317-b645-721c22b92ab9
+landmark_id: 64f1969c-604e-4aee-b77f-3a19b39b8bd0
+entity_slug: cordova-mall
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 25 of 27] ---
+id: 3e2b78e1-7b50-4f24-9981-f707473e4d98
+landmark_id: 64f1969c-604e-4aee-b77f-3a19b39b8bd0
+entity_slug: cordova-mall
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 26 of 27] ---
+id: bdec895a-9329-4e7a-bc5c-cd5a52af49db
+landmark_id: 64f1969c-604e-4aee-b77f-3a19b39b8bd0
+entity_slug: cordova-mall
+landmark_type: shoe_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 27 of 27] ---
+id: fa471332-6cca-4634-80b2-28cecf2a2adb
+landmark_id: 64f1969c-604e-4aee-b77f-3a19b39b8bd0
+entity_slug: cordova-mall
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   7 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 7] ---
+id: cdf7a39a-c431-46a0-ad0d-2e4ce63996b4
+entity_slug: cordova-mall
+kind: landmark
+place_id: ChIJESOuQmvAkIgR-jAto6dy8cs
+name: Red Robin Gourmet Burgers and Brews
+types: [
+  "bar",
+  "establishment",
+  "food",
+  "meal_takeaway",
+  "point_of_interest",
+  "restaurant"
+]
+straight_line_distance_meters: 151.60213
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 7] ---
+id: 00046fb5-ca79-489c-9c19-adbaa89288a3
+entity_slug: cordova-mall
+kind: landmark
+place_id: ChIJESOuQmvAkIgRTx73Bw6mWIA
+name: Old Navy
+types: [
+  "clothing_store",
+  "establishment",
+  "point_of_interest",
+  "store"
+]
+straight_line_distance_meters: 75.17863
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 7] ---
+id: f5817db5-4995-4b4a-83fe-d235a355553e
+entity_slug: cordova-mall
+kind: landmark
+place_id: ChIJAQBAmxTAkIgRujaRreEcooo
+name: DICK'S Sporting Goods
+types: [
+  "bicycle_store",
+  "clothing_store",
+  "establishment",
+  "point_of_interest",
+  "shoe_store",
+  "store"
+]
+straight_line_distance_meters: 138.53938
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 7] ---
+id: e4c260b4-987a-40ef-bdae-f0dc7cdf4ab3
+entity_slug: cordova-mall
+kind: landmark
+place_id: ChIJUScnexPAkIgRQpqFvvNoTEQ
+name: Best Buy
+types: [
+  "electronics_store",
+  "establishment",
+  "home_goods_store",
+  "point_of_interest",
+  "store"
+]
+straight_line_distance_meters: 243.71939
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 7] ---
+id: 64f1969c-604e-4aee-b77f-3a19b39b8bd0
+entity_slug: cordova-mall
+kind: landmark
+place_id: ChIJESOuQmvAkIgRp1R4qf6I_IA
+name: Ross Dress for Less
+types: [
+  "clothing_store",
+  "department_store",
+  "establishment",
+  "point_of_interest",
+  "shoe_store",
+  "store"
+]
+straight_line_distance_meters: 106.52931
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 6 of 7] ---
+id: 5241b73d-8dea-49fc-8eb7-19c43209dbad
+entity_slug: cordova-mall
+kind: area
+place_id: ChIJH1xSchPAkIgRcBFDgpqWGQU
+name: Cordova Mall
+containment: WITHIN
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 7 of 7] ---
+id: f5ff405f-5038-4769-bb4f-c1291e596b2f
+entity_slug: cordova-mall
+kind: area
+place_id: ChIJHcho14PqkIgRqP3LiAIOawI
+name: Northeast Pensacola
+containment: OUTSKIRTS
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_photos   -   12 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 12] ---
+id: d75d9ea7-7d79-4611-96b7-5fa51fd4774c
+entity_slug: cordova-mall
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/cordova-mall/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 12] ---
+id: 230e53b5-f9d8-4d89-a16c-b15df764c9a8
+entity_slug: cordova-mall
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/cordova-mall/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 12] ---
+id: f7489139-a141-4e6c-94c0-db6f404aa3cf
+entity_slug: cordova-mall
+url: https://places.googleapis.com/v1/places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3loS0EpzCVRYua93qb4hyQmafUwbRMJ5NsjJlUH_hF2p0vSVoKmJ9uZCtDydjt4Blzcul00iQYINQWRT2ujCmMMfyWWz6ZIBo5YjcTKRHSTiMEQZ_2Psp4mOTAQkSQHVwMSLIIHIvqtf-tx8CQ-XlKCvDuvhPWXr8FU1GC9BEZZDy_OGgnOHqntEYiYpMtoFHGwdg2sMP5c9Nm2bf5rg0fHGemmZ4qcbQ02psYUKdhmVaC7FJUb4ubESw_dFUE2dVAC5eyJHC-lWmK9iUWl4TxZVCKpqxo3SNCrXj8ISNBViKEr9DAYdFr1GKOawUZReBCjBE5rw1kvvJYEeiGhtwBqhN0irVdEFQCmwVdqq9ufv4bMEfwBxZambB6YEqGgWWowNBhvGA3d-ZCRvwJ1An_x7Xi8ZPt8oEWziE95QY3ncQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3loS0EpzCVRYua93qb4hyQmafUwbRMJ5NsjJlUH_hF2p0vSVoKmJ9uZCtDydjt4Blzcul00iQYINQWRT2ujCmMMfyWWz6ZIBo5YjcTKRHSTiMEQZ_2Psp4mOTAQkSQHVwMSLIIHIvqtf-tx8CQ-XlKCvDuvhPWXr8FU1GC9BEZZDy_OGgnOHqntEYiYpMtoFHGwdg2sMP5c9Nm2bf5rg0fHGemmZ4qcbQ02psYUKdhmVaC7FJUb4ubESw_dFUE2dVAC5eyJHC-lWmK9iUWl4TxZVCKpqxo3SNCrXj8ISNBViKEr9DAYdFr1GKOawUZReBCjBE5rw1kvvJYEeiGhtwBqhN0irVdEFQCmwVdqq9ufv4bMEfwBxZambB6YEqGgWWowNBhvGA3d-ZCRvwJ1An_x7Xi8ZPt8oEWziE95QY3ncQ
+is_cover: false
+sort_order: 0
+caption: Cordova Mall
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC875HPMw!2e10!4m2!3m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a
+
+--- entity_photos [row 4 of 12] ---
+id: b2a81fe3-5838-49b2-a7e0-e908fabb7737
+entity_slug: cordova-mall
+url: https://places.googleapis.com/v1/places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3nh-2dqeDmL0ApcXoTJjg1EiiTc3wbxOyJRNdzsoVTqR2I1FamhqGZgZSiCFwzBvW6mUF7U73F7-W86JXLd7_a2oSijSGd9JsesH8V-iA13_Jzek7K7r4AK7CjqEKz-8yzMpxd5t5Jp4-9EDD7VawxHSwNyTS9-xf5LURFy8PWkjmKdC88nr3iaihw-a3WrrGpmcLj6j-9Qtlv2CI0STrXsEVFIvZxD-f-t4PQwYgUEGCMnlifH-LJxM_smfe0F0unuL0E_5ddDobZ4XYAcJuk3UnxffNQpRgZgjia71OQ8-2nSm4eFf6emjam28yhrAU7qgnvmIx03phxEZyeaX_0stB8a7j1A5E-uQ77UMOOeu8jgrhqp2j60Xt61LcE5u2m3cLPeP7Sw1QhlKQmXTRjyIcBgsMhVKPl4pGGuU3mqBlZi/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3nh-2dqeDmL0ApcXoTJjg1EiiTc3wbxOyJRNdzsoVTqR2I1FamhqGZgZSiCFwzBvW6mUF7U73F7-W86JXLd7_a2oSijSGd9JsesH8V-iA13_Jzek7K7r4AK7CjqEKz-8yzMpxd5t5Jp4-9EDD7VawxHSwNyTS9-xf5LURFy8PWkjmKdC88nr3iaihw-a3WrrGpmcLj6j-9Qtlv2CI0STrXsEVFIvZxD-f-t4PQwYgUEGCMnlifH-LJxM_smfe0F0unuL0E_5ddDobZ4XYAcJuk3UnxffNQpRgZgjia71OQ8-2nSm4eFf6emjam28yhrAU7qgnvmIx03phxEZyeaX_0stB8a7j1A5E-uQ77UMOOeu8jgrhqp2j60Xt61LcE5u2m3cLPeP7Sw1QhlKQmXTRjyIcBgsMhVKPl4pGGuU3mqBlZi
+is_cover: false
+sort_order: 1
+caption: Cordova Mall
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC6_eDqhgE!2e10!4m2!3m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a
+
+--- entity_photos [row 5 of 12] ---
+id: 009693aa-2dd3-4e11-924c-6fd5124f33a1
+entity_slug: cordova-mall
+url: https://places.googleapis.com/v1/places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3kUFvWSvY8ncN5PC_SzKowTV8EdT_a5obCeK7c-Jc2iyVhi_-6j5nQAb9NEn17E2pB9oLnNFQZ9lRtLa7ORp1E-NO6n0Ga0EY62VOoW00azXJbUvL6OjfzjWUWAS3YVFgbBWTpkM3q8D7SFfFVGzLB22_hmhChcgXbUiACgYyQ48iiPJzX0I0s2Byr0UDv4C0KsKY6VpWTsZ8XWUBoVSp6xoIuyPDTk3otGIv1lwUZE5zffbH7mrFBgrZy3mXfI3igATrcomWbgTmkKWR-EMHMBqAegwhixcF_LO5ohPlkaExO9DgELJHOaJQOV9bJgDWWIZUJQ7xJhxwXy9dQh5SId5poSQXbghAQkeNRtXfr51-dPUnHsrQ6C92NyELGWhrYAv8GqvwhTdmMkxUrOHvBeY71UhwtPNVHAPYoLldQrIWruJ8V-jbRaRaB5cJu9/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3kUFvWSvY8ncN5PC_SzKowTV8EdT_a5obCeK7c-Jc2iyVhi_-6j5nQAb9NEn17E2pB9oLnNFQZ9lRtLa7ORp1E-NO6n0Ga0EY62VOoW00azXJbUvL6OjfzjWUWAS3YVFgbBWTpkM3q8D7SFfFVGzLB22_hmhChcgXbUiACgYyQ48iiPJzX0I0s2Byr0UDv4C0KsKY6VpWTsZ8XWUBoVSp6xoIuyPDTk3otGIv1lwUZE5zffbH7mrFBgrZy3mXfI3igATrcomWbgTmkKWR-EMHMBqAegwhixcF_LO5ohPlkaExO9DgELJHOaJQOV9bJgDWWIZUJQ7xJhxwXy9dQh5SId5poSQXbghAQkeNRtXfr51-dPUnHsrQ6C92NyELGWhrYAv8GqvwhTdmMkxUrOHvBeY71UhwtPNVHAPYoLldQrIWruJ8V-jbRaRaB5cJu9
+is_cover: false
+sort_order: 2
+caption: Al Peters
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAHPYrPqWeypXWKAZ6mUmy8!2e10!4m2!3m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a
+
+--- entity_photos [row 6 of 12] ---
+id: a0357eee-b882-4a8f-b1f2-8327a1b37af2
+entity_slug: cordova-mall
+url: https://places.googleapis.com/v1/places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3k-zj050wdQKPT9HbyiMQD4IDmemFiyslK8Z_9TpHK12E2WrUnQ2QlX13GrsO6a4MITMYJIRmc9cPi7a9zYg9t3-kkd1fIE2VRYfXqaHYD_NiiU5dY1jxQOlfnZGDhvKotU-TtBcuqMv4vLS2TEO7XZGUTape_NEQaKW4E3u33SqrGsZuMEWkbiS-45MoBxDIypGOXDMPfHRbDX1iGfGejhE788AuevsXSf6k6AMoRyDOofwF6DddbaQDjIPN6QKWAumIVZzACeqjf-jB3Y7VPFVmLeG69B0rl-Rqm-wuN731537OqAE6c_K7phLpj_Oamj3t12ATfZA2F_t5VwSTbZV4EAvJjhSRQd14d35DyjIMZa9QWS5_JBNK9jl_2mEND6x3-NEIb2ih2P2tK61jbvCwuuYyDyIjEW_jUOeK90KA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3k-zj050wdQKPT9HbyiMQD4IDmemFiyslK8Z_9TpHK12E2WrUnQ2QlX13GrsO6a4MITMYJIRmc9cPi7a9zYg9t3-kkd1fIE2VRYfXqaHYD_NiiU5dY1jxQOlfnZGDhvKotU-TtBcuqMv4vLS2TEO7XZGUTape_NEQaKW4E3u33SqrGsZuMEWkbiS-45MoBxDIypGOXDMPfHRbDX1iGfGejhE788AuevsXSf6k6AMoRyDOofwF6DddbaQDjIPN6QKWAumIVZzACeqjf-jB3Y7VPFVmLeG69B0rl-Rqm-wuN731537OqAE6c_K7phLpj_Oamj3t12ATfZA2F_t5VwSTbZV4EAvJjhSRQd14d35DyjIMZa9QWS5_JBNK9jl_2mEND6x3-NEIb2ih2P2tK61jbvCwuuYyDyIjEW_jUOeK90KA
+is_cover: false
+sort_order: 3
+caption: Daisy Allen
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID--OCuVA!2e10!4m2!3m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a
+
+--- entity_photos [row 7 of 12] ---
+id: c6ec57dc-eda5-4497-be13-bb225ceed2b6
+entity_slug: cordova-mall
+url: https://places.googleapis.com/v1/places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3kepH_AAodA1eQI5cMoUEF-Cm8QG0lw5OqTgqwazZ0gIzNCVmOLzuBXFuEFk0_a-uq7_Tar6OzTpFNv8cOS1MF3PLGoI0FUWLwUTdmoiAgk5Gsl_nr9jPXCvVSw-6thX6qKh2ADgvDM3OJl_JuiKKMeLdwKmR5WUm7frybq70A_I2odbwJSuSHjgVunGYisu-deXH2eSzWnC_UDvES8GGFKbilMTceQN6UvVuESO7U6jUcNp-X77IDW6TQ0AzleDSK1GNmi9xkSoc3JLbkS8JwqGlNhEAB0oJHlrkvX2RLoYyPjWqCDkp0uAwwrdqSjLkAgAoZ5X6ztoMtCDPzGTmX8NGfBFjP2MPzViFcWG7fFNUL-Mad9wBV2Qrq55t_ty4C2PqGMIYJPMS48OhuN21jki-IaFso4ZkYgUB-DIoKEyg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3kepH_AAodA1eQI5cMoUEF-Cm8QG0lw5OqTgqwazZ0gIzNCVmOLzuBXFuEFk0_a-uq7_Tar6OzTpFNv8cOS1MF3PLGoI0FUWLwUTdmoiAgk5Gsl_nr9jPXCvVSw-6thX6qKh2ADgvDM3OJl_JuiKKMeLdwKmR5WUm7frybq70A_I2odbwJSuSHjgVunGYisu-deXH2eSzWnC_UDvES8GGFKbilMTceQN6UvVuESO7U6jUcNp-X77IDW6TQ0AzleDSK1GNmi9xkSoc3JLbkS8JwqGlNhEAB0oJHlrkvX2RLoYyPjWqCDkp0uAwwrdqSjLkAgAoZ5X6ztoMtCDPzGTmX8NGfBFjP2MPzViFcWG7fFNUL-Mad9wBV2Qrq55t_ty4C2PqGMIYJPMS48OhuN21jki-IaFso4ZkYgUB-DIoKEyg
+is_cover: false
+sort_order: 4
+caption: Joe Finch
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID46c23ag!2e10!4m2!3m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a
+
+--- entity_photos [row 8 of 12] ---
+id: b3a58a22-f34c-4fbc-b842-9f86c3182a10
+entity_slug: cordova-mall
+url: https://places.googleapis.com/v1/places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3lI2sOrf9-TSKjTfrOfRliOTaHP9pw_Yzaszp6x26AgLJPnR8Ee1wxsq9GiCekO5WPUoq2JnuHRb_AMasdn8NbLShmW0DqoLUE7x6s062W6LKxKXfPh1dIOp1qP0viKTjpd0IHdDkx0ZwaIC9r0OB5joYD486RDFCqa-gNS_BEj_MjtU98Zh6xiBt7fU-uOSV_ri0VqNwztzZ_JoWh5v_GDt-fmuLus7hXgmL0K_xU5IcwPCvWD1rLCkMeIL2L-Xro4cy3IHwiM9w0HKtSpS9JWIobclCMns9DFHKgiLdkXw4voSpkTQJIpGdrlGiBQjo0TbcHR6CgqQrar04SyulgnFsLqEIHdLwXY9KGwYX9AWxSBlS_cnLoTM-2GsdimVxyi2KRvKWNKWXfnkYSgkgM21kFSc-0t-m42qYK2ZUBfs9U/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3lI2sOrf9-TSKjTfrOfRliOTaHP9pw_Yzaszp6x26AgLJPnR8Ee1wxsq9GiCekO5WPUoq2JnuHRb_AMasdn8NbLShmW0DqoLUE7x6s062W6LKxKXfPh1dIOp1qP0viKTjpd0IHdDkx0ZwaIC9r0OB5joYD486RDFCqa-gNS_BEj_MjtU98Zh6xiBt7fU-uOSV_ri0VqNwztzZ_JoWh5v_GDt-fmuLus7hXgmL0K_xU5IcwPCvWD1rLCkMeIL2L-Xro4cy3IHwiM9w0HKtSpS9JWIobclCMns9DFHKgiLdkXw4voSpkTQJIpGdrlGiBQjo0TbcHR6CgqQrar04SyulgnFsLqEIHdLwXY9KGwYX9AWxSBlS_cnLoTM-2GsdimVxyi2KRvKWNKWXfnkYSgkgM21kFSc-0t-m42qYK2ZUBfs9U
+is_cover: false
+sort_order: 5
+caption: Clementine
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID-xdmKtAE!2e10!4m2!3m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a
+
+--- entity_photos [row 9 of 12] ---
+id: 6b748b56-0c4a-474a-b6cf-ea3952c60279
+entity_slug: cordova-mall
+url: https://places.googleapis.com/v1/places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3kPZtYaj4Gxu9lW_fhUg-wz9ECc_iVV06E5Duuw9QXFbM9TBvUc3VXO1FxuivdGzRaZpPTMirsz5JDcw82jcTFxz52blbK6uVJsXyur545tswfa_hxhlhx6sRF6Q192LufqlcrNEYSRckCSoE4AT0gm4ktFL9oNm3-ZoRr-ZXLfGSK34FhbxEcSJ2k4zmZFFr9I1kDPL_FS9px1mfnmXYySTIiBRtmdYAQtO-52epyy4Pd-vsifxYC_ao_Ecx9-0ttdoZpWrADScfRgf16yOFwpyrN95rncmJBsUJLjlD7UO860KwkL3zWT9IVPMkpnMJaDySip5244Zmv70WIhDAOT5jo9uV8SkjPchQolAoyxCcaJ3ca-jl72-ruZQfjfikx3wicFRT1cV9eDoP62TiobgG-G9Sz0zpf6jphUX-C88M8/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3kPZtYaj4Gxu9lW_fhUg-wz9ECc_iVV06E5Duuw9QXFbM9TBvUc3VXO1FxuivdGzRaZpPTMirsz5JDcw82jcTFxz52blbK6uVJsXyur545tswfa_hxhlhx6sRF6Q192LufqlcrNEYSRckCSoE4AT0gm4ktFL9oNm3-ZoRr-ZXLfGSK34FhbxEcSJ2k4zmZFFr9I1kDPL_FS9px1mfnmXYySTIiBRtmdYAQtO-52epyy4Pd-vsifxYC_ao_Ecx9-0ttdoZpWrADScfRgf16yOFwpyrN95rncmJBsUJLjlD7UO860KwkL3zWT9IVPMkpnMJaDySip5244Zmv70WIhDAOT5jo9uV8SkjPchQolAoyxCcaJ3ca-jl72-ruZQfjfikx3wicFRT1cV9eDoP62TiobgG-G9Sz0zpf6jphUX-C88M8
+is_cover: false
+sort_order: 6
+caption: Chad Raffield
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICchPKW0AE!2e10!4m2!3m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a
+
+--- entity_photos [row 10 of 12] ---
+id: 3bb166c0-6ebf-436a-92d2-8618277809c1
+entity_slug: cordova-mall
+url: https://places.googleapis.com/v1/places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3kqoqueFNYvgZ6UZCGjNeYGAuMMeicxyKDp3sMZYDf31ACV0qZ2gsGbyxs3UqRupTT0w-ZPmJ44Q1UGzK4gIQJMAB7ga3sD0cM_xkr_BWhgnivfXSF42QIqcYMrG3bbGS80vUe8nOu0bCIv_igP46gw4yrhoMhifffdyoZhVIDwgRNd8rz5_hX6XWboXdBrlovnJ0d0tNcXmsBFZPhDtgJvbLE-X7rAoAuizqtGNxta1teqOnf_iuvkIQBD38OuOKE8tqCCjWH0xic-tEW93I41-4eEjI-hOAH_zb7apI0mwz1YI8hxqcIRpVmfJRXhqdWajOTGmgDDG-T7ezke28U-YKMQ6euCGto6DTxJvjfIjthy2pLssIymw7FCdpR1AEv5UzQJ2hAamLm48e9W2o_PoBPa5Pxf9W2l2gb4uc3ZNw/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3kqoqueFNYvgZ6UZCGjNeYGAuMMeicxyKDp3sMZYDf31ACV0qZ2gsGbyxs3UqRupTT0w-ZPmJ44Q1UGzK4gIQJMAB7ga3sD0cM_xkr_BWhgnivfXSF42QIqcYMrG3bbGS80vUe8nOu0bCIv_igP46gw4yrhoMhifffdyoZhVIDwgRNd8rz5_hX6XWboXdBrlovnJ0d0tNcXmsBFZPhDtgJvbLE-X7rAoAuizqtGNxta1teqOnf_iuvkIQBD38OuOKE8tqCCjWH0xic-tEW93I41-4eEjI-hOAH_zb7apI0mwz1YI8hxqcIRpVmfJRXhqdWajOTGmgDDG-T7ezke28U-YKMQ6euCGto6DTxJvjfIjthy2pLssIymw7FCdpR1AEv5UzQJ2hAamLm48e9W2o_PoBPa5Pxf9W2l2gb4uc3ZNw
+is_cover: false
+sort_order: 7
+caption: Dustin Wright
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICRobySOg!2e10!4m2!3m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a
+
+--- entity_photos [row 11 of 12] ---
+id: 7212be38-031c-4680-a891-dc9bc1c473df
+entity_slug: cordova-mall
+url: https://places.googleapis.com/v1/places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3nvGggVoNCyLkuYEHsU7jMdFDBj5QMR7MB1Z2VYlbkZ4clbwb01nyiD_14SzpDMWf9zODo7461RFcRawbnzSeWW03amYxr3gFiLXCuJvcj1cQRAHJcqlMrIupnNjdcX6DfttM9iPERTLQOv5yYahmUwAqoEY42rEXd4bANy2_wRjkob5BoZzBS79OJIIPtBR_7GRIwjIoXe9kjd59s7s6ApuX5ckslBKx-XmT0yYJOybGeS1mOzxf91ie6kLKhoBqlVPzmqN-Hq-dLTVBzCnZ1F7YudKiMprT8SrV73KUEgumlF7Vh-oLSbEvsjPjf7RUwUlGBwZc0XEgVICSKvgxJ-FyopIv_kK1SiO_gCqDnz1voHRIWORZIrVu5kAjjDlHJnQ55zGOyd3qEWroX4eUMhni0CIGiZPx_FfBkosQU/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3nvGggVoNCyLkuYEHsU7jMdFDBj5QMR7MB1Z2VYlbkZ4clbwb01nyiD_14SzpDMWf9zODo7461RFcRawbnzSeWW03amYxr3gFiLXCuJvcj1cQRAHJcqlMrIupnNjdcX6DfttM9iPERTLQOv5yYahmUwAqoEY42rEXd4bANy2_wRjkob5BoZzBS79OJIIPtBR_7GRIwjIoXe9kjd59s7s6ApuX5ckslBKx-XmT0yYJOybGeS1mOzxf91ie6kLKhoBqlVPzmqN-Hq-dLTVBzCnZ1F7YudKiMprT8SrV73KUEgumlF7Vh-oLSbEvsjPjf7RUwUlGBwZc0XEgVICSKvgxJ-FyopIv_kK1SiO_gCqDnz1voHRIWORZIrVu5kAjjDlHJnQ55zGOyd3qEWroX4eUMhni0CIGiZPx_FfBkosQU
+is_cover: false
+sort_order: 8
+caption: ikadek katon
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICk-MewQQ!2e10!4m2!3m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a
+
+--- entity_photos [row 12 of 12] ---
+id: 6ebc001c-3781-4d53-ae20-b08c8b8f2595
+entity_slug: cordova-mall
+url: https://places.googleapis.com/v1/places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3nr2sXW316kxA7i_fBsQohhAJEfTIjVct_PIAAemVcaz0f6VP-IWyn7d_gA392OOpHL1oHjZk--cE3_A3BG096wNp9u_HuCY0lnBzbv66Jq2qNCygKSZGjQuVwws1naynr2EVCJMij6Cc9rTr_1RsrNUs8fZpR98fKleR-m8fx1nip-pz2teJDqw37ur6ta-10U_-wVzPGEzpFYF890xFRf-bCSElbiDPupyzT1bzgl893Dbvwm_U1k2eQhS52aDURbnLHHu1jCXyjpxCw0j1wQsQnQ7gTAuoMj8FBLPP-m_yEz7R2WDy1Snl0PivOU50FjgaU8WtyIxyXzA2LpE4BE4JvzTuXEcmeHWf48nzeWQAZFkpEOPVH2V7KcJCWC0_zx74-zNDc5MEJyQFrnjxHbyr_LOPHJPXZhSXA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJXzrPTRPAkIgRitGCsHfp3tw/photos/AaVGc3nr2sXW316kxA7i_fBsQohhAJEfTIjVct_PIAAemVcaz0f6VP-IWyn7d_gA392OOpHL1oHjZk--cE3_A3BG096wNp9u_HuCY0lnBzbv66Jq2qNCygKSZGjQuVwws1naynr2EVCJMij6Cc9rTr_1RsrNUs8fZpR98fKleR-m8fx1nip-pz2teJDqw37ur6ta-10U_-wVzPGEzpFYF890xFRf-bCSElbiDPupyzT1bzgl893Dbvwm_U1k2eQhS52aDURbnLHHu1jCXyjpxCw0j1wQsQnQ7gTAuoMj8FBLPP-m_yEz7R2WDy1Snl0PivOU50FjgaU8WtyIxyXzA2LpE4BE4JvzTuXEcmeHWf48nzeWQAZFkpEOPVH2V7KcJCWC0_zx74-zNDc5MEJyQFrnjxHbyr_LOPHJPXZhSXA
+is_cover: false
+sort_order: 9
+caption: Slacking Packing
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIClo9R7!2e10!4m2!3m1!1s0x8890c0134dcf3a5f:0xdcdee977b082d18a
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: e177f16f-cf45-4306-9790-8e712c4444d9
+entity_slug: cordova-mall
+reviewer_name: Tracy Smith
+rating: 5
+body: Cordova Mall was fine and family friendly.  Traveled out of town to celebrate a friend's nieces birthday
+Play time at the in space trampoline park.  Shopping in the varying,  name recognized stores and enjoying the numerous restaurants made the time with friends that much more fun!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-01-09T11:39:05.641081+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: a846ee4b-b1a3-494a-b2b5-cbbea5b893be
+entity_slug: cordova-mall
+reviewer_name: Rand Eberhard
+rating: 5
+body: This mall has a lot of energy for a small Bennu. Couple of sales heavy situations with the kiosks set up in the middle of the mall, but it’s all fun and games.  Mall entrance directly from the Dick’s Sporting Goods.
+
+The mall is located just 1 mile from the airport. It provided an excellent place to go waste some time until my wife landed.   High-quality clean, safe, good stores, lots of action and a food court.
+
+💯🇺🇸👏🏽🐺
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-05-30T22:27:17.093737+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: c8f7f5de-d3f0-4e6d-aa85-7f58bafe111d
+entity_slug: cordova-mall
+reviewer_name: Col. Jordan Palmer (Jordan Bowling Palmer)
+rating: 5
+body: Love the Guess store, and actually the variety of stores this mall offers. My mother, Eva, Axel and I also enjoyed the World Market.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-06-09T17:06:38.855257+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 58b7c064-db74-4e6f-a1e9-9c5044463a85
+entity_slug: cordova-mall
+reviewer_name: J
+rating: 4
+body: I had a lot of fun looking around. There are a lot of different stores and good food. I went for Dick's Sporting Goods but stayed for several hours having fun. Would recommend.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-01-31T01:31:18.095679+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 56979e93-7054-40df-9d18-76dc2e7a0941
+entity_slug: cordova-mall
+reviewer_name: Shannon Freas
+rating: 5
+body: ⭐️⭐️⭐️⭐️⭐️
+“A classic shopping experience with charm and character!”
+
+Cordova Mall is hands down one of my favorite places to visit whenever we’re in Pensacola! There’s just something about the atmosphere here that feels timeless — the perfect blend of modern convenience and that warm, brick-and-border charm you just don’t find in newer shopping centers.
+
+I absolutely love the ambience of walking around, browsing through the stores, and actually getting to experience shopping — not just clicking “add to cart.” From the familiar favorites to the unique local spots, there’s always something new to see, and the layout makes it such an easy, enjoyable place to spend an afternoon.
+
+The mall is clean, well-kept, and has a relaxed yet upscale feel. Whether you’re grabbing a bite, doing some serious shopping, or just strolling around, Cordova Mall makes it feel like an outing — not an errand.
+
+It’s a true Pensacola gem and a reminder of why in-person shopping will always have a special kind of magic.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-10-08T22:42:42.643396+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   3 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 3] ---
+id: 4d1156e9-7a0f-4f5e-8c1d-920f789eeec9
+entity_slug: cordova-mall
+tag_name: shopping_mall
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 3] ---
+id: b7dfaa62-8748-4117-b28d-3b3b488cb08b
+entity_slug: cordova-mall
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 3 of 3] ---
+id: 3f0ec4bb-e502-4a4e-b166-2b4a85dc52c2
+entity_slug: cordova-mall
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: b1202085-ed53-4f50-ba9d-b69fa2db1f0c
+entity_slug: cordova-mall
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_retail   -   1 row(s)
+####################################################################################################
+
+--- industry_retail [row 1 of 1] ---
+entity_slug: cordova-mall
+product_count: 0
+updated_at: 2026-07-21T16:19:28.491935+00:00
+
+####################################################################################################
+# TABLE: search_index   -   1 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 1] ---
+ref_type: business
+ref_id: cordova-mall
+entity_slug: cordova-mall
+title: Cordova Mall
+category: shopping_mall
+subtitle: Typical indoor shopping center with a familiar mix of retail stores & a large food court.
+search_vector: 'center':8C 'cordova':1A 'court':19C 'familiar':11C 'food':18C 'indoor':6C 'larg':17C 'mall':2A,4B 'mix':12C 'retail':14C 'shop':3B,7C 'store':15C 'typic':5C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: cordova-mall

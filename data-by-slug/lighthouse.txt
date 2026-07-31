@@ -1,0 +1,2684 @@
+====================================================================================================
+SLUG: lighthouse
+NAME: Lighthouse
+INDUSTRY: condo
+SUBTYPE: condominium_complex
+TABLES WITH DATA: 28
+TOTAL ROWS: 258
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (4 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (23 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_amenities  (7 rows)
+  entity_completeness_v  (1 rows)
+  entity_conflicts  (1 rows)
+  entity_items_norm_v  (2 rows)
+  entity_items_v  (2 rows)
+  entity_modules  (14 rows)
+  entity_offer  (1 rows)
+  entity_photos  (160 rows)
+  entity_section_items  (1 rows)
+  entity_section_items_metadata_backup  (1 rows)
+  entity_sections  (1 rows)
+  entity_sources  (3 rows)
+  entity_tags  (17 rows)
+  entity_theme  (2 rows)
+  industry_condo  (1 rows)
+  recovery_import_log  (1 rows)
+  rental_units  (1 rows)
+  search_index  (2 rows)
+  tourist_seen  (3 rows)
+  tourist_swipe_events  (4 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: lighthouse
+name: Lighthouse
+planner_category: things_to_do
+data_quality_score: 70
+issues: missing_hours|missing_lat_lng
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   4 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 4] ---
+id: 19156
+entity_slug: lighthouse
+intent_tag: best_for:outdoor_activity
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 4] ---
+id: 19157
+entity_slug: lighthouse
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 4] ---
+id: 19158
+entity_slug: lighthouse
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 4] ---
+id: 19159
+entity_slug: lighthouse
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: lighthouse
+name: Lighthouse
+is_active: t
+planner_category: things_to_do
+entity_type: condo
+entity_subtype: condo
+city: Orange Beach
+state: AL
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_00.jpg
+voice_summary: Lighthouse in Orange Beach is best for outdoor activity.
+planner_summary: A parking fee will be collected on-site upon arrival by a representative of the Homeowners Association.
+best_for: outdoor activity
+not_best_for: nothing specific flagged
+search_keywords: condo|Condos & Stays
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 23
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 2
+faq_count: 0
+data_quality_score: 70
+data_gaps: missing_hours|missing_lat_lng
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   23 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 23] ---
+id: 21517
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_00.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 23] ---
+id: 21518
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_01.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 23] ---
+id: 21519
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_02.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 23] ---
+id: 21520
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_03.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 23] ---
+id: 21521
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_04.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 23] ---
+id: 21522
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_05.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 23] ---
+id: 21523
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_06.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 23] ---
+id: 21524
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_07.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 23] ---
+id: 21525
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_08.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 23] ---
+id: 21526
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_09.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 11 of 23] ---
+id: 21527
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_10.jpg
+is_cover: f
+sort_order: 10
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 12 of 23] ---
+id: 21528
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_11.jpg
+is_cover: f
+sort_order: 11
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 13 of 23] ---
+id: 21529
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_12.jpg
+is_cover: f
+sort_order: 12
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 14 of 23] ---
+id: 21530
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_13.jpg
+is_cover: f
+sort_order: 13
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 15 of 23] ---
+id: 21531
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_14.jpg
+is_cover: f
+sort_order: 14
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 16 of 23] ---
+id: 21532
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_15.jpg
+is_cover: f
+sort_order: 15
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 17 of 23] ---
+id: 21533
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_16.jpg
+is_cover: f
+sort_order: 16
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 18 of 23] ---
+id: 21534
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_17.jpg
+is_cover: f
+sort_order: 17
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 19 of 23] ---
+id: 21535
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_18.jpg
+is_cover: f
+sort_order: 18
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 20 of 23] ---
+id: 21536
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_19.jpg
+is_cover: f
+sort_order: 19
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 21 of 23] ---
+id: 21537
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_20.jpg
+is_cover: f
+sort_order: 20
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 22 of 23] ---
+id: 21538
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_21.jpg
+is_cover: f
+sort_order: 21
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 23 of 23] ---
+id: 21539
+entity_slug: lighthouse
+entity_name: Lighthouse
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_22.png
+is_cover: f
+sort_order: 22
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 01481142-9cd6-4061-877d-b19cc26efea6
+resource_type: condo
+slug: lighthouse
+name: Lighthouse
+description: A parking fee will be collected on-site upon arrival by a representative of the Homeowners Association.
+entity_slug: lighthouse
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_00.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_04.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_06.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_07.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_08.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_09.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_10.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_11.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_12.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_13.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_14.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_15.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_16.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_17.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_18.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_19.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_20.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_21.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_22.png"
+]
+amenities: []
+faqs: []
+city: Orange Beach
+state: AL
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 7ba82c9466b13133f5619eade059ceed
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 01481142-9cd6-4061-877d-b19cc26efea6
+entity_slug: lighthouse
+slug: lighthouse
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_00.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_04.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_06.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_07.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_08.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_09.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_10.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_11.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_12.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_13.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_14.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_15.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_16.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_17.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_18.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_19.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_20.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_21.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_22.png"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: dcf86dc2-233b-4e13-8182-4369bd1440e9
+slug: lighthouse
+name: Lighthouse
+is_active: true
+featured: false
+entity_type: condo
+entity_subtype: condominium_complex
+description: Overlooking the beautiful waters of Terry Cove, Lighthouse on the Bay offers a relaxing retreat with stunning views and family-friendly amenities. Guests can float along the lazy river, take a dip in the zero-entry outdoor pool, or let the kids enjoy the kiddie pool designed just for them. For year-round comfort, the indoor heated pool provides a cozy swimming option, while the hot tubs offer the perfect place to unwind after a day in the sun. Guests can also enjoy a friendly match on the tennis courts or cook up a meal at the outdoor grilling area surrounded by peaceful waterfront scenery. With its laid-back atmosphere and scenic setting, Lighthouse on the Bay is the ideal spot to relax, recharge, and take in the best of coastal living.
+phone: +18009326760
+menu_pin: 8413
+address_line_1: 455 East Beach Blvd
+city: Orange Beach
+state: AL
+zip: 36542
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_00.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-14T03:10:04.056528+00:00
+updated_at: 2026-07-16T10:58:02.607758+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+parking: false
+business_status: OPERATIONAL
+primary_type: condo
+formatted_address: 455 East Beach Blvd, Gulf Shores, AL
+google_places_data: {}
+search_vector: 'beach':4 'condo':2 'lighthous':1A 'orang':3
+source_url: https://www.liquidlifevacationrentals.com/resort/lighthouse
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: stay
+industry_code: condo
+is_parent: true
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_amenities   -   7 row(s)
+####################################################################################################
+
+--- entity_amenities [row 1 of 7] ---
+id: c0b8e952-b13b-4ba7-a93e-57dcf95f1b93
+entity_slug: lighthouse
+amenity: Outdoor Pool
+category: complex
+sort_order: 2
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 2 of 7] ---
+id: 0e4efef6-4c58-4cb1-bfae-7bc53f7cfad9
+entity_slug: lighthouse
+amenity: Grilling Area
+category: complex
+sort_order: 3
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 3 of 7] ---
+id: 8a462299-97e0-4ce0-aa04-0cf93b6c6ade
+entity_slug: lighthouse
+amenity: Sauna
+category: complex
+sort_order: 5
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 4 of 7] ---
+id: 9b9f5933-61e1-409e-af93-de1c516eaad1
+entity_slug: lighthouse
+amenity: Hot Tubs
+category: complex
+sort_order: 6
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 5 of 7] ---
+id: e0b435f5-7cd5-4145-89f0-b69232bd7cb0
+entity_slug: lighthouse
+amenity: Beach Access
+category: complex
+sort_order: 0
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 6 of 7] ---
+id: 25183113-502d-4972-bd39-4fec498b2268
+entity_slug: lighthouse
+amenity: Fitness Center
+category: complex
+sort_order: 4
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 7 of 7] ---
+id: 9a6c4e93-596b-4819-a139-add68216812b
+entity_slug: lighthouse
+amenity: Indoor Pool
+category: complex
+sort_order: 1
+created_at: 2026-07-07T16:59:52.25115
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: lighthouse
+name: Lighthouse
+industry_code: condo
+is_parent: true
+score_of_7: 3
+
+####################################################################################################
+# TABLE: entity_conflicts   -   1 row(s)
+####################################################################################################
+
+--- entity_conflicts [row 1 of 1] ---
+id: 6f177c5c-6d1f-42eb-86e5-c9febadf1f8a
+entity_slug: lighthouse
+conflict_type: city_mismatch
+evidence: DB city is Orange Beach but Brett-Robinson page address is 455 East Beach Blvd, Gulf Shores, AL 36542.
+recommended_handling: Verify and correct entity.city to Gulf Shores.
+source_system: condos_zip_brett_robinson
+status: open
+created_at: 2026-07-16T11:09:30.749259+00:00
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 2] ---
+entity_slug: lighthouse
+source_table: bookable_resources
+item_type: condo
+section_name: Units
+item_id: 01481142-9cd6-4061-877d-b19cc26efea6
+name: Lighthouse
+description: A parking fee will be collected on-site upon arrival by a representative of the Homeowners Association.
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_00.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_11.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_12.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_13.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_14.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_15.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_16.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_17.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_18.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_19.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_20.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_21.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_22.png"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "item_type_raw": "condo",
+  "resource_type": "condo",
+  "check_out_time": "11:00"
+}
+
+--- entity_items_norm_v [row 2 of 2] ---
+entity_slug: lighthouse
+source_table: entity_section_items
+item_type: rooms
+section_name: Units & Rates
+item_id: fea5febb-6868-43ea-a07e-6103f0601a65
+name: Lighthouse
+description: A parking fee will be collected on-site upon arrival by a representative of the Homeowners Association.
+sort_order: 1
+active: true
+attributes: {
+  "icon": "🏠",
+  "min_nights": 1,
+  "module_key": "rooms",
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "item_type_raw": "rooms",
+  "check_out_time": "11:00"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 2] ---
+entity_slug: lighthouse
+source_table: bookable_resources
+item_type: condo
+section_name: Units
+item_id: 01481142-9cd6-4061-877d-b19cc26efea6
+name: Lighthouse
+description: A parking fee will be collected on-site upon arrival by a representative of the Homeowners Association.
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_00.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_11.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_12.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_13.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_14.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_15.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_16.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_17.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_18.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_19.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_20.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_21.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_22.png"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "resource_type": "condo",
+  "check_out_time": "11:00"
+}
+
+--- entity_items_v [row 2 of 2] ---
+entity_slug: lighthouse
+source_table: entity_section_items
+item_type: rooms
+section_name: Units & Rates
+item_id: fea5febb-6868-43ea-a07e-6103f0601a65
+name: Lighthouse
+description: A parking fee will be collected on-site upon arrival by a representative of the Homeowners Association.
+sort_order: 1
+active: true
+attributes: {
+  "icon": "🏠",
+  "min_nights": 1,
+  "module_key": "rooms",
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "check_out_time": "11:00"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   14 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 14] ---
+id: 77651adf-be16-4f6c-8143-8c726eeba96f
+entity_slug: lighthouse
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 14] ---
+id: 9629a404-71b9-4220-9026-c4a87b172afe
+entity_slug: lighthouse
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 14] ---
+id: d13298a1-76ea-4da0-b547-86dd60b99e18
+entity_slug: lighthouse
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 14] ---
+id: 5a52c763-1ed9-4029-8943-88d988835138
+entity_slug: lighthouse
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 14] ---
+id: f54d8d92-1254-4dd9-b9c4-ab36de7eaf5d
+entity_slug: lighthouse
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 14] ---
+id: dd7b5ba7-293c-4454-8d10-7b0949221f22
+entity_slug: lighthouse
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 14] ---
+id: 1825f1d6-d127-4ac1-9478-58a45909c9ed
+entity_slug: lighthouse
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 14] ---
+id: 7f99a473-ccf6-4ff0-bdf6-53fc87c91593
+entity_slug: lighthouse
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 14] ---
+id: 7af5f860-dc02-4711-8377-31f9282ae17b
+entity_slug: lighthouse
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 14] ---
+id: aeba9888-d300-40bc-bb58-1ccbb67b2898
+entity_slug: lighthouse
+module_key: stay
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 14] ---
+id: 50de6580-3df0-4fc6-b700-550cbd5f6334
+entity_slug: lighthouse
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 14] ---
+id: 780bc057-3360-46a1-81e4-7dc09e3de88d
+entity_slug: lighthouse
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 14] ---
+id: 7f0e2b2e-6a19-43fb-83a5-fc95cb195701
+entity_slug: lighthouse
+module_key: amenities
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 14 of 14] ---
+id: e77c4c82-af12-4e6c-b0fa-5e239725887d
+entity_slug: lighthouse
+module_key: rooms
+enabled: true
+sort_order: 2
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13763
+entity_slug: lighthouse
+name: Lighthouse
+description: A parking fee will be collected on-site upon arrival by a representative of the Homeowners Association.
+offer_type: room
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+####################################################################################################
+# TABLE: entity_photos   -   160 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 160] ---
+id: 93704b8a-2fa8-4ae1-9a07-35e710795877
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8582.jpg
+is_cover: true
+sort_order: 0
+photo_type: gallery
+
+--- entity_photos [row 2 of 160] ---
+id: 3a2f3774-5ae3-453f-92f3-10f3cc9a358a
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/BAF928180B1A8585.jpg
+is_cover: false
+sort_order: 1
+photo_type: gallery
+
+--- entity_photos [row 3 of 160] ---
+id: 3a152b53-30da-4002-814d-8fa9079d861c
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8591.jpg
+is_cover: false
+sort_order: 2
+photo_type: gallery
+
+--- entity_photos [row 4 of 160] ---
+id: 15c054b4-e64c-47ce-ba40-52de1bed3eec
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8606.jpg
+is_cover: false
+sort_order: 3
+photo_type: gallery
+
+--- entity_photos [row 5 of 160] ---
+id: 2786b190-d80a-49bb-a2ef-b0fc56f43779
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8612.jpg
+is_cover: false
+sort_order: 4
+photo_type: gallery
+
+--- entity_photos [row 6 of 160] ---
+id: 9447eda2-e5f7-4a5c-befe-6d2759d72d1e
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8618.jpg
+is_cover: false
+sort_order: 5
+photo_type: gallery
+
+--- entity_photos [row 7 of 160] ---
+id: 6111b87d-4490-4c07-ab28-7f2050215511
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8621.jpg
+is_cover: false
+sort_order: 6
+photo_type: gallery
+
+--- entity_photos [row 8 of 160] ---
+id: a8eb7f5a-335a-40db-a959-891d01323e1c
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8630.jpg
+is_cover: false
+sort_order: 7
+photo_type: gallery
+
+--- entity_photos [row 9 of 160] ---
+id: b79a2e97-4ad0-40ed-bb40-49f31fa35baf
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8602.jpg
+is_cover: false
+sort_order: 8
+photo_type: gallery
+
+--- entity_photos [row 10 of 160] ---
+id: 650c1d4c-d538-456a-9f8d-22cd874fb86a
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8642.jpg
+is_cover: false
+sort_order: 9
+photo_type: gallery
+
+--- entity_photos [row 11 of 160] ---
+id: ee940133-cba5-4f9a-aff3-760cb2e0b440
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8639.jpg
+is_cover: false
+sort_order: 10
+photo_type: gallery
+
+--- entity_photos [row 12 of 160] ---
+id: c04d681a-6bc1-41b1-8c16-dd0ae8d6dcb4
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8615.jpg
+is_cover: false
+sort_order: 11
+photo_type: gallery
+
+--- entity_photos [row 13 of 160] ---
+id: 89470c38-a666-433c-9b70-0954647045f8
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_03.jpg
+is_cover: false
+sort_order: 3
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 14 of 160] ---
+id: f1a1e11d-c8a5-4ff5-bcde-a4c9090b058f
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9365.jpg
+is_cover: false
+sort_order: 336
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 15 of 160] ---
+id: 0ebed4e2-2191-426d-a3cf-425f9a62e509
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_01.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 16 of 160] ---
+id: 117f2f4f-2dd8-451b-9299-f4dabe78ed91
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_00.jpg
+is_cover: true
+sort_order: 0
+photo_type: complex
+
+--- entity_photos [row 17 of 160] ---
+id: ae114c65-323e-479a-84b3-f096919afa85
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_01.jpg
+is_cover: false
+sort_order: 1
+photo_type: complex
+
+--- entity_photos [row 18 of 160] ---
+id: 77d511e1-efe3-4dc9-ac23-7b8e251c3591
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_02.jpg
+is_cover: false
+sort_order: 2
+photo_type: complex
+
+--- entity_photos [row 19 of 160] ---
+id: 8687a531-605a-49ee-b6b6-755d59ca21fa
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_03.jpg
+is_cover: false
+sort_order: 3
+photo_type: complex
+
+--- entity_photos [row 20 of 160] ---
+id: 0ad7d19c-6eb8-4892-8f39-1a49ed4d6b0c
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_04.jpg
+is_cover: false
+sort_order: 4
+photo_type: complex
+
+--- entity_photos [row 21 of 160] ---
+id: 75e04d77-1f3c-44db-982f-8d7504369bd3
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_05.jpg
+is_cover: false
+sort_order: 5
+photo_type: complex
+
+--- entity_photos [row 22 of 160] ---
+id: ece6d741-6b21-4c7d-8752-3400c87b7852
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_06.jpg
+is_cover: false
+sort_order: 6
+photo_type: complex
+
+--- entity_photos [row 23 of 160] ---
+id: f550d247-39a4-4f83-8ef8-83997a4fa46d
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_07.jpg
+is_cover: false
+sort_order: 7
+photo_type: complex
+
+--- entity_photos [row 24 of 160] ---
+id: bfc1584f-9608-46c6-a650-a5b9f64bcadb
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_08.jpg
+is_cover: false
+sort_order: 8
+photo_type: complex
+
+--- entity_photos [row 25 of 160] ---
+id: daad9538-3db5-466b-aa62-664dcc7b9ce4
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_09.jpg
+is_cover: false
+sort_order: 9
+photo_type: complex
+
+--- entity_photos [row 26 of 160] ---
+id: dd75b389-69b5-48be-afd4-4e6db7433059
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_10.jpg
+is_cover: false
+sort_order: 10
+photo_type: complex
+
+--- entity_photos [row 27 of 160] ---
+id: 417eba4c-0691-4a9b-beaf-1b0ba15fafb8
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_11.jpg
+is_cover: false
+sort_order: 11
+photo_type: complex
+
+--- entity_photos [row 28 of 160] ---
+id: fd92260e-f2a0-4ed7-bf07-01a67101c735
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_12.jpg
+is_cover: false
+sort_order: 12
+photo_type: complex
+
+--- entity_photos [row 29 of 160] ---
+id: e024105c-845c-4768-a94d-69731cf06ed8
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_13.jpg
+is_cover: false
+sort_order: 13
+photo_type: complex
+
+--- entity_photos [row 30 of 160] ---
+id: 59cc56a4-4e69-4eeb-bbea-4eb0e45339b4
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_14.jpg
+is_cover: false
+sort_order: 14
+photo_type: complex
+
+--- entity_photos [row 31 of 160] ---
+id: 6a0669d1-363a-45b7-a817-78420f244b5e
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_15.jpg
+is_cover: false
+sort_order: 15
+photo_type: complex
+
+--- entity_photos [row 32 of 160] ---
+id: e0c87641-3fb4-44c6-acd9-6e339fa371bd
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_16.jpg
+is_cover: false
+sort_order: 16
+photo_type: complex
+
+--- entity_photos [row 33 of 160] ---
+id: 8c7c7f4e-5ee3-4f14-b531-f8d601544c44
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_17.jpg
+is_cover: false
+sort_order: 17
+photo_type: complex
+
+--- entity_photos [row 34 of 160] ---
+id: 5a5b5ea8-4cfd-4754-a288-6a4bfc6152f0
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_18.jpg
+is_cover: false
+sort_order: 18
+photo_type: complex
+
+--- entity_photos [row 35 of 160] ---
+id: 116564a2-5926-464b-a2a6-b9e8606cb5a3
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_19.jpg
+is_cover: false
+sort_order: 19
+photo_type: complex
+
+--- entity_photos [row 36 of 160] ---
+id: 38651b68-31e1-4c1a-80e2-49d01829f292
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_20.jpg
+is_cover: false
+sort_order: 20
+photo_type: complex
+
+--- entity_photos [row 37 of 160] ---
+id: 104c7b9d-54ce-4c03-8a8d-df1fe25a5ff1
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_21.jpg
+is_cover: false
+sort_order: 21
+photo_type: complex
+
+--- entity_photos [row 38 of 160] ---
+id: 37138f38-6439-4cac-a5c2-cfbef53e6dca
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_22.png
+is_cover: false
+sort_order: 22
+photo_type: complex
+
+--- entity_photos [row 39 of 160] ---
+id: 3096690b-9375-4687-9ad1-6701593b3e63
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_11.jpg
+is_cover: false
+sort_order: 11
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 40 of 160] ---
+id: 050fbfcf-2d8a-4d29-ba99-0940f5c30ef4
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_20.jpg
+is_cover: false
+sort_order: 20
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 41 of 160] ---
+id: 541580da-abb6-48d9-8b8e-0dfdcc4ee9cf
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9401.jpg
+is_cover: false
+sort_order: 346
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 42 of 160] ---
+id: 006f5932-1256-40ae-99cc-f8140d7f67b6
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9334.jpg
+is_cover: false
+sort_order: 325
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 43 of 160] ---
+id: f95a8a9a-55aa-4100-9535-57cf857781cc
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8687.jpg
+is_cover: false
+sort_order: 318
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 44 of 160] ---
+id: 85523bda-fc4f-499e-9ea5-7da2583edc50
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9304.jpg
+is_cover: false
+sort_order: 315
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 45 of 160] ---
+id: 115dfe02-99d2-4855-aa3c-a30040d79139
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9275.jpg
+is_cover: false
+sort_order: 306
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 46 of 160] ---
+id: 964deef7-21d2-42c9-9094-9475f77ad002
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8684.jpg
+is_cover: false
+sort_order: 317
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 47 of 160] ---
+id: 27842ab6-bf8a-4430-b805-87893b5ef7b7
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9443.jpg
+is_cover: false
+sort_order: 359
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 48 of 160] ---
+id: b6a910b1-2bf8-4cd8-a6f4-2c2a68580466
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8701.jpg
+is_cover: false
+sort_order: 321
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 49 of 160] ---
+id: c66896a8-606d-4353-b98a-ff876643368f
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_12.jpg
+is_cover: false
+sort_order: 12
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 50 of 160] ---
+id: b9863a19-aae7-4ad5-871d-5896700839f0
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_14.jpg
+is_cover: false
+sort_order: 14
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 51 of 160] ---
+id: 2f202836-953e-401a-950b-b60a9af3e27d
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9269.jpg
+is_cover: false
+sort_order: 304
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 52 of 160] ---
+id: df119edb-9aa1-422e-b38b-dffff59b6fcf
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9295.jpg
+is_cover: false
+sort_order: 312
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 53 of 160] ---
+id: a7950084-c4ca-42dd-8936-27b3d5450127
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9284.jpg
+is_cover: false
+sort_order: 309
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 54 of 160] ---
+id: 431cf5ea-30ee-436a-9f5b-2963f1640231
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9322.jpg
+is_cover: false
+sort_order: 321
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 55 of 160] ---
+id: 725024f3-03a2-426f-90de-2f30b9701053
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8660.jpg
+is_cover: false
+sort_order: 326
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 56 of 160] ---
+id: 9bcd585a-4113-4c6c-8935-86b821223f14
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9392.jpg
+is_cover: false
+sort_order: 343
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 57 of 160] ---
+id: d305ab0a-9ebe-4538-9c1d-e799db9a7e8b
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8651.jpg
+is_cover: false
+sort_order: 327
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 58 of 160] ---
+id: 291a1cab-62b1-4cd9-a180-248e21406107
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_05.jpg
+is_cover: false
+sort_order: 5
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 59 of 160] ---
+id: 2f6ac264-1232-4f46-8a87-8f4c1f1145e7
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9310.jpg
+is_cover: false
+sort_order: 317
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 60 of 160] ---
+id: dba36ddd-a61b-4dba-a175-1a10b96cb57d
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8633.jpg
+is_cover: false
+sort_order: 313
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 61 of 160] ---
+id: 768baf53-afce-4966-b236-f2cb044e3d89
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9434.jpg
+is_cover: false
+sort_order: 357
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 62 of 160] ---
+id: a433d105-b292-409f-ba7b-6f2f0b6d1886
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8663.jpg
+is_cover: false
+sort_order: 314
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 63 of 160] ---
+id: b20a6aac-172d-456f-bdd0-0b02052172f0
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9431.jpg
+is_cover: false
+sort_order: 356
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 64 of 160] ---
+id: f34828dd-ba8f-490b-865e-ee3365351953
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9350.jpg
+is_cover: false
+sort_order: 331
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 65 of 160] ---
+id: 4c8c0bb8-add4-41c8-b478-6b452f1cc26c
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9374.jpg
+is_cover: false
+sort_order: 302
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 66 of 160] ---
+id: 9446c0c0-e23d-4f58-89b6-82200a203396
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9422.jpg
+is_cover: false
+sort_order: 353
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 67 of 160] ---
+id: 0135c73d-b88d-4695-99c3-6887458ecc2d
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_02.jpg
+is_cover: false
+sort_order: 2
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 68 of 160] ---
+id: 0cae3608-d8d8-4704-bfe2-7791b5eedba3
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9470.jpg
+is_cover: false
+sort_order: 367
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 69 of 160] ---
+id: 9fd503b2-79d8-4764-88a7-5060d32824bd
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9440.jpg
+is_cover: false
+sort_order: 358
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 70 of 160] ---
+id: 90215c44-5781-4fb2-b32b-3c21b288efb3
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9328.jpg
+is_cover: false
+sort_order: 323
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 71 of 160] ---
+id: bd0d0942-9098-4b2b-9207-afb25bbc84fb
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9479.jpg
+is_cover: false
+sort_order: 369
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 72 of 160] ---
+id: 13b45326-5314-4b3a-b2de-181625493f52
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_17.jpg
+is_cover: false
+sort_order: 17
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 73 of 160] ---
+id: 2246829b-17fe-4dfc-9be7-a2edce0d42b1
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9461.jpg
+is_cover: false
+sort_order: 365
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 74 of 160] ---
+id: 98f04bb4-6f6c-43bc-85b3-d12a40e1c86c
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_10.jpg
+is_cover: false
+sort_order: 10
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 75 of 160] ---
+id: 75b189fc-db79-4483-97a8-492572bcd072
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8648.jpg
+is_cover: false
+sort_order: 324
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 76 of 160] ---
+id: 461d1f9b-62b9-44be-b9fd-5e306951b4ea
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/09FC22820B1A9446.jpg
+is_cover: false
+sort_order: 360
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 77 of 160] ---
+id: faefda0e-5c09-4f94-ada4-b16fe5987232
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9419.jpg
+is_cover: false
+sort_order: 352
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 78 of 160] ---
+id: abb863da-6ac2-49a5-903e-2a4d9126be8d
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9338.jpg
+is_cover: false
+sort_order: 327
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 79 of 160] ---
+id: db470cc7-a5f6-4bb6-bc96-00d686801e0c
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9337.jpg
+is_cover: false
+sort_order: 326
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 80 of 160] ---
+id: 643719e1-be85-4019-8b1d-2a922dca01f7
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9307.jpg
+is_cover: false
+sort_order: 316
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 81 of 160] ---
+id: d8bf437d-e08d-48f4-9afb-9483d0fe87f7
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9353.jpg
+is_cover: false
+sort_order: 332
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 82 of 160] ---
+id: 0133d7c5-612b-404e-8bad-66650cedac7f
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9341.jpg
+is_cover: false
+sort_order: 328
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 83 of 160] ---
+id: 1ed5bb1e-bc6a-45ab-8293-ab88ca377a2f
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9416.jpg
+is_cover: false
+sort_order: 351
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 84 of 160] ---
+id: 15e8eaf3-c7f3-4fbf-a30e-9454138b4bc0
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9301.jpg
+is_cover: false
+sort_order: 314
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 85 of 160] ---
+id: 60e8ae7d-e056-48ab-ab54-ec4a01b673ce
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8702.jpg
+is_cover: false
+sort_order: 320
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 86 of 160] ---
+id: 94a36b66-42b9-49b1-ab03-cf314571b8b4
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9362.jpg
+is_cover: false
+sort_order: 335
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 87 of 160] ---
+id: 2745b0e4-09ee-4c18-b71a-f67798a254da
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9425.jpg
+is_cover: false
+sort_order: 354
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 88 of 160] ---
+id: a847d353-4680-4255-9cb3-994716fe27eb
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9344.jpg
+is_cover: false
+sort_order: 329
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 89 of 160] ---
+id: c00fcc05-d14a-438c-ae74-8faecd729334
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9371.jpg
+is_cover: false
+sort_order: 337
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 90 of 160] ---
+id: 09c2de0d-00b1-49bb-8b4d-df78c0e56d28
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9458.jpg
+is_cover: false
+sort_order: 364
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 91 of 160] ---
+id: 7a8176d2-b47b-4b85-8ee7-e9f1865aa8fc
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9316.jpg
+is_cover: false
+sort_order: 319
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 92 of 160] ---
+id: d69d6f00-4494-4fd1-833c-57ff2f10fb44
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9368.jpg
+is_cover: false
+sort_order: 301
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 93 of 160] ---
+id: ec7473d1-71f5-4f31-953d-2a5145254d55
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9413.jpg
+is_cover: false
+sort_order: 350
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 94 of 160] ---
+id: e41f9e52-e6dd-4129-ad53-0979b989f6b1
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9298.jpg
+is_cover: false
+sort_order: 313
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 95 of 160] ---
+id: c8ac68c3-a008-4cf0-a2d0-445ab1b85d9f
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9455.jpg
+is_cover: false
+sort_order: 363
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 96 of 160] ---
+id: 2b04de9b-605c-4651-a0cd-b6121617d137
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9386.jpg
+is_cover: false
+sort_order: 341
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 97 of 160] ---
+id: 210ee3a5-2b62-49a9-8188-cc6be8085b1d
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9473.jpg
+is_cover: false
+sort_order: 368
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 98 of 160] ---
+id: 6346d8f8-0aff-41b8-9806-d57cdcb9c0ad
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9404.jpg
+is_cover: false
+sort_order: 347
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 99 of 160] ---
+id: c610898b-09e3-4e8e-836b-e2f6bf919a81
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8675.jpg
+is_cover: false
+sort_order: 316
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 100 of 160] ---
+id: c3e9533d-5757-47a5-8760-19b39db71c0e
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_00.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 101 of 160] ---
+id: d08355ef-f82b-4e90-8201-7363bb6e7011
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9281.jpg
+is_cover: false
+sort_order: 308
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 102 of 160] ---
+id: 20eb2626-e711-4d87-85ac-c8f6ba7a3689
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9319.jpg
+is_cover: false
+sort_order: 320
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 103 of 160] ---
+id: 1e5ff095-3405-47eb-9f01-eab177f8a9b9
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9437.jpg
+is_cover: false
+sort_order: 303
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 104 of 160] ---
+id: 42eafd18-801a-4673-8ed6-a7d2161ae0a4
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8599.jpg
+is_cover: false
+sort_order: 322
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 105 of 160] ---
+id: 61c2f73c-80f1-4f95-9d35-e11c78871f78
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9389.jpg
+is_cover: false
+sort_order: 342
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 106 of 160] ---
+id: 9323fa45-3981-4147-9566-2c23ad33ebc9
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8695.jpg
+is_cover: false
+sort_order: 319
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 107 of 160] ---
+id: ffc67dd4-06d6-4659-8400-6221be1875be
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8645.jpg
+is_cover: false
+sort_order: 325
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 108 of 160] ---
+id: d598b389-a26f-4ca7-9cc2-06e06dcb035d
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9380.jpg
+is_cover: false
+sort_order: 339
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 109 of 160] ---
+id: 012e9e92-ca2e-46b3-99a2-c287a5864570
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9290.jpg
+is_cover: false
+sort_order: 311
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 110 of 160] ---
+id: e6eadca2-0c1b-4287-950e-c32083b7d8de
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/8DB2A5780B1A8656.jpg
+is_cover: false
+sort_order: 328
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 111 of 160] ---
+id: b454fe0f-3774-446a-8bdf-d7e8846ec43f
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_15.jpg
+is_cover: false
+sort_order: 15
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 112 of 160] ---
+id: 9165125a-1d5a-4a45-a164-a8bbe62ffd23
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9449.jpg
+is_cover: false
+sort_order: 361
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 113 of 160] ---
+id: 7be76827-76c4-4b40-9dbb-c138d0ed6a5a
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_09.jpg
+is_cover: false
+sort_order: 9
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 114 of 160] ---
+id: 96e8091e-f2fd-44f4-8311-9adaeed235b5
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9272.jpg
+is_cover: false
+sort_order: 305
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 115 of 160] ---
+id: 3978ece8-0f1a-451e-9bc7-128aa8b82207
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_04.jpg
+is_cover: false
+sort_order: 4
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 116 of 160] ---
+id: 8ce20968-75a5-463c-be35-6625d35d0cc4
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_16.jpg
+is_cover: false
+sort_order: 16
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 117 of 160] ---
+id: fff5a643-d588-410d-be5d-23c832626d10
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_22.png
+is_cover: false
+sort_order: 22
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 118 of 160] ---
+id: 67d9e2ee-fa8c-49c5-aafd-0adc55dcd5a4
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_08.jpg
+is_cover: false
+sort_order: 8
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 119 of 160] ---
+id: ddbcdcd9-a8e5-4f6a-a778-185bc7be9afd
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_06.jpg
+is_cover: false
+sort_order: 6
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 120 of 160] ---
+id: f07b36b5-316a-4b9f-986c-9ffbc69a3ecd
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_07.jpg
+is_cover: false
+sort_order: 7
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 121 of 160] ---
+id: f12ad33c-368f-4882-a222-eb35f938688f
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_21.jpg
+is_cover: false
+sort_order: 21
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 122 of 160] ---
+id: e1b45d0f-ac73-4a76-9842-e5f3bbb55850
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8596.jpg
+is_cover: false
+sort_order: 323
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 123 of 160] ---
+id: d8c07cd0-f7ed-45fa-9292-f9db2c4e3316
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_19.jpg
+is_cover: false
+sort_order: 19
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 124 of 160] ---
+id: 5c56f3e4-3b52-4ed9-9b50-e7c4a8d3c7f7
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_18.jpg
+is_cover: false
+sort_order: 18
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 125 of 160] ---
+id: 9d199326-c04b-4bff-94c1-497e2e706f78
+entity_slug: lighthouse
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_13.jpg
+is_cover: false
+sort_order: 13
+photo_type: resource
+source_name: bookable_resource
+resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+
+--- entity_photos [row 126 of 160] ---
+id: 90a0936b-58cd-44f0-b124-826ca269028f
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9383.jpg
+is_cover: false
+sort_order: 340
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 127 of 160] ---
+id: 9868e716-46c4-4d1d-ab0e-2825ae61d6fe
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A8666.jpg
+is_cover: false
+sort_order: 315
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 128 of 160] ---
+id: 74279fce-e98d-4901-801a-691369a84721
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9395.jpg
+is_cover: false
+sort_order: 344
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 129 of 160] ---
+id: 6c7ee13d-b6b5-4385-8020-9a2066ad08ff
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9410.jpg
+is_cover: false
+sort_order: 349
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 130 of 160] ---
+id: 6dd0c7b1-cf8e-4a27-af83-f4c8dd817b8e
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9428.jpg
+is_cover: false
+sort_order: 355
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 131 of 160] ---
+id: 91295d31-68eb-4bd1-b091-447adb15bc83
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9289.jpg
+is_cover: false
+sort_order: 310
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 132 of 160] ---
+id: ebe0547e-201c-4227-a777-de745e5e053d
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9407.jpg
+is_cover: false
+sort_order: 348
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 133 of 160] ---
+id: 3d25e81f-4024-422f-a688-4878f3ad041e
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9278.jpg
+is_cover: false
+sort_order: 307
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 134 of 160] ---
+id: 0f7b8ca2-5be1-4766-a8e1-0f07ea6e0351
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9347.jpg
+is_cover: false
+sort_order: 330
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 135 of 160] ---
+id: 7f4d315b-15dc-4e5b-af9e-ddb94a94b193
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9356.jpg
+is_cover: false
+sort_order: 333
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 136 of 160] ---
+id: 33c3dfbb-d879-4568-8c79-6ca05893c0bd
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9464.jpg
+is_cover: false
+sort_order: 366
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 137 of 160] ---
+id: b96b606c-030e-4bd7-8b59-285f88b07b75
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9331.jpg
+is_cover: false
+sort_order: 324
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 138 of 160] ---
+id: a0ee05f3-415c-4519-b69d-5618a3a4d622
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9325.jpg
+is_cover: false
+sort_order: 322
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 139 of 160] ---
+id: c68416b8-54e6-4f3e-a416-54248415a376
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9313.jpg
+is_cover: false
+sort_order: 318
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 140 of 160] ---
+id: 616627b0-008c-41a0-b13e-1cc93f878581
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9452.jpg
+is_cover: false
+sort_order: 362
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 141 of 160] ---
+id: 6c395e0f-1f01-472c-a4cc-59efc0d91acc
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9359.jpg
+is_cover: false
+sort_order: 334
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 142 of 160] ---
+id: 4726f8ac-19a6-4f47-b57a-5799bbf065d7
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9398.jpg
+is_cover: false
+sort_order: 345
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 143 of 160] ---
+id: dc9c8c6f-df75-4f19-9091-462086fe36ec
+entity_slug: lighthouse
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A9377.jpg
+is_cover: false
+sort_order: 338
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 144 of 160] ---
+id: e9cde6a5-91c8-4c9e-beef-a8a7b80c2735
+entity_slug: lighthouse
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/43893cbf-efc5-4ff3-9c35-f40b6a6a0040
+is_cover: false
+sort_order: 400
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 145 of 160] ---
+id: 7c4e1efd-745b-464f-a8d4-2d5923c3cc93
+entity_slug: lighthouse
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/e7d7b073-d6d5-4ec2-9713-49c527254f3d
+is_cover: false
+sort_order: 401
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 146 of 160] ---
+id: af06c73e-c6f5-46d4-9ceb-e0da519c881d
+entity_slug: lighthouse
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/f1eb4452-0486-4a32-a133-e39c5b5dd982
+is_cover: false
+sort_order: 402
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 147 of 160] ---
+id: 1a925cd2-5728-40ec-b7fd-97596cfa4e7e
+entity_slug: lighthouse
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/8625a348-80b2-4afb-81fa-88df0c71a718
+is_cover: false
+sort_order: 403
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 148 of 160] ---
+id: e0ae8ed4-056f-4c19-ab4f-cb8d4d956977
+entity_slug: lighthouse
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/394d43ff-8731-4e55-868f-fab51f94eed9
+is_cover: false
+sort_order: 404
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 149 of 160] ---
+id: 63bc43f4-3527-4da0-b21c-181e1e524fd9
+entity_slug: lighthouse
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/bef84894-d53f-4c5f-8df4-782e217f8992
+is_cover: false
+sort_order: 405
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 150 of 160] ---
+id: b943c104-2cd7-4c72-9fcb-92e9898acf9a
+entity_slug: lighthouse
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/4978469d-85f5-4af6-8f24-2da22542b9c4
+is_cover: false
+sort_order: 406
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 151 of 160] ---
+id: dd9c6c1b-ae82-4ef4-97b9-c1373657ed2b
+entity_slug: lighthouse
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/f7b08c19-51b8-4502-a9eb-6bee38600aa6
+is_cover: false
+sort_order: 407
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 152 of 160] ---
+id: 471f83da-f120-4497-bc80-6fbf563a6b1c
+entity_slug: lighthouse
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/74be6abc-4671-4d6a-a8ca-460323695ed7
+is_cover: false
+sort_order: 408
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 153 of 160] ---
+id: 9006a898-8c4b-489f-a723-f37af14d0425
+entity_slug: lighthouse
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/5ff0ba0c-3e83-4cb8-915b-0b96c0ff2915
+is_cover: false
+sort_order: 409
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 154 of 160] ---
+id: 064e93da-950f-4697-bbe2-590707cc6b1b
+entity_slug: lighthouse
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/d8241047-51cc-4ccf-83ab-bdad90227b24
+is_cover: false
+sort_order: 410
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 155 of 160] ---
+id: 2d811159-cbc1-4eb2-8db6-565894ed9a15
+entity_slug: lighthouse
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/5f412177-cc72-4c87-9749-ec19b920000e
+is_cover: false
+sort_order: 411
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 156 of 160] ---
+id: d507e632-0d7d-48d5-b431-6e5df8ef325d
+entity_slug: lighthouse
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/09602c66-3b4d-433b-a3ba-600fd53d13dc
+is_cover: false
+sort_order: 412
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 157 of 160] ---
+id: 66e82238-d7c7-4cff-8dee-26b5fea1d641
+entity_slug: lighthouse
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/48ffbd37-7bdb-4429-a8b6-ac3469b83584
+is_cover: false
+sort_order: 413
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 158 of 160] ---
+id: b1ae4723-c688-4925-8fe8-40ec37c565c1
+entity_slug: lighthouse
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/6354d005-d277-4ef4-ad48-aeeae5e7f865
+is_cover: false
+sort_order: 414
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 159 of 160] ---
+id: e4fec6fa-2059-477d-a1a6-c8d5b3eac355
+entity_slug: lighthouse
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/3419ff9a-fcfd-4572-8891-b0f45257f7a8
+is_cover: false
+sort_order: 415
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 160 of 160] ---
+id: ead6af14-57a3-4f46-afa9-75e51847a0ba
+entity_slug: lighthouse
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/b6a1ccdd-1f57-4860-8fe8-c6f0134de2a6
+is_cover: false
+sort_order: 416
+photo_type: gallery
+source_name: extracted:condos_zip
+
+####################################################################################################
+# TABLE: entity_section_items   -   1 row(s)
+####################################################################################################
+
+--- entity_section_items [row 1 of 1] ---
+id: fea5febb-6868-43ea-a07e-6103f0601a65
+section_id: 42429614-275c-47d3-adf6-3aec86a9db22
+entity_slug: lighthouse
+item_name: Lighthouse
+description: A parking fee will be collected on-site upon arrival by a representative of the Homeowners Association.
+icon: 🏠
+metadata: {}
+sort_order: 1
+check_in_time: 16:00
+check_out_time: 11:00
+min_nights: 1
+cleaning_fee: 0
+
+####################################################################################################
+# TABLE: entity_section_items_metadata_backup   -   1 row(s)
+####################################################################################################
+
+--- entity_section_items_metadata_backup [row 1 of 1] ---
+id: fea5febb-6868-43ea-a07e-6103f0601a65
+entity_slug: lighthouse
+item_name: Lighthouse
+metadata: {
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_00.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_11.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_12.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_13.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_14.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_15.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_16.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_17.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_18.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_19.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_20.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_21.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/lighthouse/image_22.png"
+  ],
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "check_out_time": "11:00"
+}
+backed_up_at: 2026-07-16T09:49:37.166591+00:00
+
+####################################################################################################
+# TABLE: entity_sections   -   1 row(s)
+####################################################################################################
+
+--- entity_sections [row 1 of 1] ---
+id: 42429614-275c-47d3-adf6-3aec86a9db22
+entity_slug: lighthouse
+section_type: rooms
+section_name: Units & Rates
+sort_order: 2
+module_key: rooms
+is_active: true
+
+####################################################################################################
+# TABLE: entity_sources   -   3 row(s)
+####################################################################################################
+
+--- entity_sources [row 1 of 3] ---
+id: 9bf2c19c-1dd3-448b-a496-54e2a8a1b161
+entity_slug: lighthouse
+source_system: liquid_life
+source_url: https://www.liquidlifevacationrentals.com/resort/lighthouse
+scope: entity
+observed_at: 2026-07-16T00:00:00+00:00
+confidence: high
+created_at: 2026-07-16T10:58:22.481614+00:00
+
+--- entity_sources [row 2 of 3] ---
+id: 216db270-8acd-417e-bc08-14845cb679ff
+entity_slug: lighthouse
+source_system: liquid_life
+source_url: https://www.liquidlifevacationrentals.com/resort/lighthouse-on-the-bay
+scope: entity
+observed_at: 2026-07-16T00:00:00+00:00
+confidence: high
+created_at: 2026-07-16T10:58:22.481614+00:00
+
+--- entity_sources [row 3 of 3] ---
+id: f25ffdde-abb5-4844-a429-717c8da016c7
+entity_slug: lighthouse
+source_system: condos_zip_brett_robinson
+observed_at: 2026-07-16T00:00:00+00:00
+confidence: medium
+note: Structured scrape of Brett-Robinson property page (condos_data1_3.zip)
+created_at: 2026-07-16T10:59:56.848474+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   17 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 17] ---
+id: 94aaa913-f9d2-4253-952d-890b5113eece
+entity_slug: lighthouse
+tag_name: Marina
+tag_category: amenity
+
+--- entity_tags [row 2 of 17] ---
+id: 2694a774-b0e0-4533-b36c-399f9a320ed2
+entity_slug: lighthouse
+tag_name: Boat Dock
+tag_category: amenity
+
+--- entity_tags [row 3 of 17] ---
+id: 3fc8632c-cb1c-404a-8623-6744db7f93a2
+entity_slug: lighthouse
+tag_name: Fishing Pier
+tag_category: amenity
+
+--- entity_tags [row 4 of 17] ---
+id: 04f22062-c96b-4767-83d2-75f2294b7780
+entity_slug: lighthouse
+tag_name: Lazy River
+tag_category: amenity
+
+--- entity_tags [row 5 of 17] ---
+id: d6440a08-90ef-40d1-8f32-b42104b26c32
+entity_slug: lighthouse
+tag_name: Indoor Heated Pool
+tag_category: amenity
+
+--- entity_tags [row 6 of 17] ---
+id: 8b2f4323-429e-420a-947a-c7d4954a6da7
+entity_slug: lighthouse
+tag_name: Kiddie Pool
+tag_category: amenity
+
+--- entity_tags [row 7 of 17] ---
+id: 6ff7bbf8-fd25-4fc2-a2fc-7fa1f2050a72
+entity_slug: lighthouse
+tag_name: Tennis Court
+tag_category: amenity
+
+--- entity_tags [row 8 of 17] ---
+id: 15f76441-575d-44fe-83c9-ef1fd67ca13b
+entity_slug: lighthouse
+tag_name: Fitness Room
+tag_category: amenity
+
+--- entity_tags [row 9 of 17] ---
+id: cc2e9157-f0ac-4af7-87b0-b4974451f0f4
+entity_slug: lighthouse
+tag_name: condo
+tag_category: type
+
+--- entity_tags [row 10 of 17] ---
+id: 30532499-1886-4b85-b65f-1f36c93af60b
+entity_slug: lighthouse
+tag_name: Condos & Stays
+tag_category: category
+
+--- entity_tags [row 11 of 17] ---
+id: 2313059f-7c1e-40cb-9d20-7f27819051ee
+entity_slug: lighthouse
+tag_name: Outdoor Pool
+tag_category: amenity
+
+--- entity_tags [row 12 of 17] ---
+id: 2c0a4c0c-9358-4a54-8c18-bbc5fb54f054
+entity_slug: lighthouse
+tag_name: Grilling Area
+tag_category: amenity
+
+--- entity_tags [row 13 of 17] ---
+id: a232b703-1f14-42ec-80b4-fbb3d02ad1a1
+entity_slug: lighthouse
+tag_name: Sauna
+tag_category: amenity
+
+--- entity_tags [row 14 of 17] ---
+id: 2dab65d6-25f4-40b0-98f6-b7e36d73434a
+entity_slug: lighthouse
+tag_name: Hot Tubs
+tag_category: amenity
+
+--- entity_tags [row 15 of 17] ---
+id: 588f0814-8816-4752-8c2a-da4399c32b46
+entity_slug: lighthouse
+tag_name: Beach Access
+tag_category: amenity
+
+--- entity_tags [row 16 of 17] ---
+id: 8f02e2ab-851e-4f01-a44c-bdc2eafe18a2
+entity_slug: lighthouse
+tag_name: Fitness Center
+tag_category: amenity
+
+--- entity_tags [row 17 of 17] ---
+id: 11c75d24-4750-491d-a838-ea3457af9b0b
+entity_slug: lighthouse
+tag_name: Indoor Pool
+tag_category: amenity
+
+####################################################################################################
+# TABLE: entity_theme   -   2 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 2] ---
+id: ef943e04-c184-4c74-9218-f60d5ad5aa06
+entity_slug: lighthouse
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+--- entity_theme [row 2 of 2] ---
+id: 840ecc22-8cbd-4047-8d61-4e5d7a3956d4
+entity_slug: lighthouse
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_condo   -   1 row(s)
+####################################################################################################
+
+--- industry_condo [row 1 of 1] ---
+entity_slug: lighthouse
+listed_unit_count: 4
+pet_friendly: false
+updated_at: 2026-07-21T16:59:02.358415+00:00
+
+####################################################################################################
+# TABLE: recovery_import_log   -   1 row(s)
+####################################################################################################
+
+--- recovery_import_log [row 1 of 1] ---
+id: 8ff044a8-4b7f-43a2-8340-df869ce0e3da
+batch_id: draft-businesses-netnew-2026-07-19
+target_table: entity
+target_row_id: 167a894a-2064-44af-aed1-afc651410afc
+entity_slug: lighthouse
+source_db: may
+source_table: entity
+source_id: 867346b9-93d6-400f-b2b2-c2d02c3f1bb3
+action: insert
+imported_at: 2026-07-19T20:29:05.350225+00:00
+
+####################################################################################################
+# TABLE: rental_units   -   1 row(s)
+####################################################################################################
+
+--- rental_units [row 1 of 1] ---
+id: d651102d-033f-412c-809c-a27d834b52a4
+entity_slug: lighthouse
+slug: lighthouse
+name: Lighthouse
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+city: Orange Beach
+state: AL
+source_resource_id: 01481142-9cd6-4061-877d-b19cc26efea6
+is_active: true
+created_at: 2026-07-23T00:06:23.937689+00:00
+updated_at: 2026-07-23T00:06:23.937689+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: offer
+ref_id: 13763
+entity_slug: lighthouse
+title: Lighthouse
+category: room
+subtitle: A parking fee will be collected on-site upon arrival by a representative of the Homeowners Association.
+search_vector: 'arriv':12C 'associ':19C 'collect':7C 'fee':4C 'homeown':18C 'lighthous':1A 'on-sit':8C 'park':3C 'repres':15C 'site':10C 'upon':11C
+
+--- search_index [row 2 of 2] ---
+ref_type: business
+ref_id: lighthouse
+entity_slug: lighthouse
+title: Lighthouse
+category: condominium_complex
+subtitle: Overlooking the beautiful waters of Terry Cove, Lighthouse on the Bay offers a relaxing retreat with stunning views and family-friendly amenities. Guests can float along the lazy river, take a dip in the zero-entry outdoor pool, or let the kids enjoy the kiddie pool designed just for them. For year-round comfort, the indoor heated pool provides a cozy swimming option, while the hot tubs offer the perfect place to unwind after a day in the sun. Guests can also enjoy a friendly match on the tennis courts or cook up a meal at the outdoor grilling area surrounded by peaceful waterfront scenery. With its laid-back atmosphere and scenic setting, Lighthouse on the Bay is the ideal spot to relax, recharge, and take in the best of coastal living.
+search_vector: 'along':30C 'also':88C 'amen':26C 'area':106C 'atmospher':117C 'back':116C 'bay':14C,124C 'beauti':6C 'best':136C 'coastal':138C 'comfort':60C 'complex':3B 'condominium':2B 'cook':98C 'court':96C 'cove':10C 'cozi':67C 'day':82C 'design':52C 'dip':36C 'enjoy':48C,89C 'entri':41C 'famili':24C 'family-friend':23C 'float':29C 'friend':25C,91C 'grill':105C 'guest':27C,86C 'heat':63C 'hot':72C 'ideal':127C 'indoor':62C 'kid':47C 'kiddi':50C 'laid':115C 'laid-back':114C 'lazi':32C 'let':45C 'lighthous':1A,11C,121C 'live':139C 'match':92C 'meal':101C 'offer':15C,74C 'option':69C 'outdoor':42C,104C 'overlook':4C 'peac':109C 'perfect':76C 'place':77C 'pool':43C,51C,64C 'provid':65C 'recharg':131C 'relax':17C,130C 'retreat':18C 'river':33C 'round':59C 'sceneri':111C 'scenic':119C 'set':120C 'spot':128C 'stun':20C 'sun':85C 'surround':107C 'swim':68C 'take':34C,133C 'tenni':95C 'terri':9C 'tub':73C 'unwind':79C 'view':21C 'water':7C 'waterfront':110C 'year':58C 'year-round':57C 'zero':40C 'zero-entri':39C
+
+####################################################################################################
+# TABLE: tourist_seen   -   3 row(s)
+####################################################################################################
+
+--- tourist_seen [row 1 of 3] ---
+id: c63d906a-b40a-4b33-afb4-879405b55662
+tourist_id: c0a3821f-e2ce-4fa6-b1a6-628a522d8e74
+entity_slug: lighthouse
+created_at: 2026-07-11T22:52:24.220132+00:00
+
+--- tourist_seen [row 2 of 3] ---
+id: 4276c420-b7d5-4824-97a7-a5f8dfa76242
+tourist_id: bd6663c0-1558-4dd0-b5f0-3900ed82fc00
+entity_slug: lighthouse
+created_at: 2026-07-11T23:34:46.331866+00:00
+
+--- tourist_seen [row 3 of 3] ---
+id: 31581668-f5f5-4368-bf7e-a4b78a820c3d
+tourist_id: 68555bc3-9e81-40cb-aa0f-9bb0f688fa44
+entity_slug: lighthouse
+created_at: 2026-07-12T03:07:25.779617+00:00
+
+####################################################################################################
+# TABLE: tourist_swipe_events   -   4 row(s)
+####################################################################################################
+
+--- tourist_swipe_events [row 1 of 4] ---
+id: 2bc0fb49-b26c-4082-afb7-d650427b9589
+tourist_id: c0a3821f-e2ce-4fa6-b1a6-628a522d8e74
+entity_slug: lighthouse
+entity_name: Lighthouse
+category: stay
+direction: nope
+created_at: 2026-07-11T22:52:24.006048+00:00
+
+--- tourist_swipe_events [row 2 of 4] ---
+id: da28cc58-22e9-45c0-86d0-cb2e3b5a0a70
+tourist_id: bd6663c0-1558-4dd0-b5f0-3900ed82fc00
+entity_slug: lighthouse
+entity_name: Lighthouse
+category: stay
+direction: like
+created_at: 2026-07-11T23:34:46.309268+00:00
+
+--- tourist_swipe_events [row 3 of 4] ---
+id: 83a753e5-6b52-49f2-9d61-f7049ae8dedd
+tourist_id: bd6663c0-1558-4dd0-b5f0-3900ed82fc00
+entity_slug: lighthouse
+entity_name: Lighthouse
+category: stay
+direction: nope
+created_at: 2026-07-11T23:34:46.309268+00:00
+
+--- tourist_swipe_events [row 4 of 4] ---
+id: 82958113-0352-488c-9310-f4cdfe67a30a
+tourist_id: 68555bc3-9e81-40cb-aa0f-9bb0f688fa44
+entity_slug: lighthouse
+entity_name: Lighthouse
+category: stay
+direction: nope
+created_at: 2026-07-12T03:07:24.147602+00:00
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: lighthouse

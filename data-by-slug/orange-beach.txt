@@ -1,0 +1,650 @@
+====================================================================================================
+SLUG: orange-beach
+NAME: Orange Beach
+INDUSTRY: other
+TABLES WITH DATA: 15
+TOTAL ROWS: 24
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (4 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (3 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_offer  (1 rows)
+  entity_tags  (4 rows)
+  entity_theme  (1 rows)
+  search_index  (2 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: orange-beach
+name: Orange Beach
+planner_category: things_to_do
+data_quality_score: 80
+issues: missing_summary|missing_hours
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   4 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 4] ---
+id: 20888
+entity_slug: orange-beach
+intent_tag: best_for:outdoor_activity
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 4] ---
+id: 20889
+entity_slug: orange-beach
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 4] ---
+id: 20890
+entity_slug: orange-beach
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 4] ---
+id: 20891
+entity_slug: orange-beach
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: orange-beach
+name: Orange Beach
+is_active: t
+planner_category: things_to_do
+entity_type: service
+city: Orange Beach
+state: AL
+address_line_1: Orange Beach, AL, USA
+latitude: 30.269703300000003
+longitude: -87.5867598
+review_count: 0
+website_url: http://www.cityoforangebeach.com/
+hero_image_url: /photos/city-of-orange-beach/photo_01.jpg
+voice_summary: Orange Beach in Orange Beach is best for outdoor activity.
+planner_summary: Orange Beach in Orange Beach is a things to do listing in Gulf Coast Radar.
+best_for: outdoor activity
+not_best_for: nothing specific flagged
+search_keywords: locality|political
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 3
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 4
+faq_count: 0
+data_quality_score: 80
+data_gaps: missing_summary|missing_hours
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   3 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 3] ---
+id: 1995
+entity_slug: orange-beach
+entity_name: Orange Beach
+city: Orange Beach
+url: /photos/city-of-orange-beach/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 3] ---
+id: 1996
+entity_slug: orange-beach
+entity_name: Orange Beach
+city: Orange Beach
+url: /photos/city-of-orange-beach/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 3] ---
+id: 1997
+entity_slug: orange-beach
+entity_name: Orange Beach
+city: Orange Beach
+url: /photos/city-of-orange-beach/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: fbc2c482-5240-4059-9163-828c7ac9b93d
+resource_type: service
+slug: orange-beach
+name: Orange Beach
+entity_slug: orange-beach
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "/photos/city-of-orange-beach/photo_01.jpg",
+  "/photos/city-of-orange-beach/photo_02.jpg",
+  "/photos/city-of-orange-beach/photo_03.jpg"
+]
+amenities: []
+faqs: []
+city: Orange Beach
+state: AL
+latitude: 30.269703300000003
+longitude: -87.5867598
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: c4cb39b9801479bee863de602166284a
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: fbc2c482-5240-4059-9163-828c7ac9b93d
+entity_slug: orange-beach
+slug: orange-beach
+photo_urls: [
+  "/photos/city-of-orange-beach/photo_01.jpg",
+  "/photos/city-of-orange-beach/photo_02.jpg",
+  "/photos/city-of-orange-beach/photo_03.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 9483594a-4a94-4797-91a9-bd95e21ff892
+slug: orange-beach
+name: Orange Beach
+is_active: true
+featured: false
+entity_type: service
+website_url: http://www.cityoforangebeach.com/
+menu_pin: 6537
+city: Orange Beach
+state: AL
+latitude: 30.269703300000003
+longitude: -87.5867598
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/city-of-orange-beach/photo_01.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T04:00:29.717629+00:00
+updated_at: 2026-06-03T04:00:29.717629+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJCQ8_ulMGmogRu41q68XKO-o
+google_maps_uri: https://maps.google.com/?cid=16878306979908062651&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+formatted_address: Orange Beach, AL, USA
+google_places_data: {
+  "id": "ChIJCQ8_ulMGmogRu41q68XKO-o",
+  "types": [
+    "locality",
+    "political"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJCQ8_ulMGmogRu41q68XKO-o/photos/AaVGc3nPyuhVRnJ7tmy52-EZMoyEXBTtA3L6NnPwljqGnw4GgzVI4I2U5cumZ-dXds26NT3BWqIY4vHsT4wwnsDzpgyRA3xLPzR7ZHepqCuriHrT0aVHP8aCtUgECzAl-avxX-GXVjkKP0hMjp9-1aRFpymjF0XA9Hl1zFI4lmGf3ISbe35URX0zB4Ehu3erq-XbOynsumii4RFHb4HbL_E-mWHID42cHNef-j8WXQMnNaoB9VWMy-dr7g5YGgb9ZLi_bmk6v5tayESKBbClApgZU-jjMCiz4tW3FMPaSs-h8CFNw1OfGF7SePnqYeW8ZWNEuOOyo3_84g6Jwv7_i1zt1KkEpznKharkiXOY9boUSr-_PvLim8fxkMjdGDOJMrmGb0CxdRqdC0mmCHFHFxBDGPKansHU-ZmUx1X5gmZ0SYVXLA",
+      "widthPx": 4000,
+      "heightPx": 3000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICamLzAJA!2e10!4m2!3m1!1s0x889a0653ba3f0f09:0xea3bcac5eb6a8dbb",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICamLzAJA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/102973727291740259645",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUIWFYgxeDIKP14twmvFpqs_xwp3voOghYkxtB9825o5ze2ngg0Og=s100-p-k-no-mo",
+          "displayName": "Victor Jordan"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJCQ8_ulMGmogRu41q68XKO-o/photos/AaVGc3lJvsi1IscS9387LQCa4_AGd7ZyZG2o53QB0lkib8Hb4D2VRQG8RbzYQQj713a8k1fMCFlmAvlFTKOJI24tcbgm8pH_L6nQZNWkprwLKs7DfT3Skapwid2KlJ_SfNOV_avtQMkyw6-zO5maOwKwh4al4wzeS1c1Mu_gb6xiGF1uYEtPF705H08o2n28i6YKV7Krx5icnhgCksT7I9v1a0_wVoLPY4jIQwaKpiBMGReLjafTRMVDtO4AgZPLCnfON0vNhQu_GBCXJtL5eILAkC4RHx7iS4fjenbZg-dIS5Rg3eNGX_r4RIOtpzTQR6u3G2rn5PO8G_K8sh7xRrdZXgnBK8HmGAXLehi_9qHfg9bXZTtZm77bhXLJVf4rvIWw2e8hvFe4L5Ewzll3GP7AHxNvnGKQvQU5yKYjH5PXt3H5rg65",
+      "widthPx": 4032,
+      "heightPx": 2268,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDe9sDkmwE!2e10!4m2!3m1!1s0x889a0653ba3f0f09:0xea3bcac5eb6a8dbb",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDe9sDkmwE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/111518554241109399582",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjU9Kvn9_RMrSeTDjWxLn90u1lj7nvZOSahfjqpLr9z4cz-pZwmz=s100-p-k-no-mo",
+          "displayName": "Ken Wagner"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJCQ8_ulMGmogRu41q68XKO-o/photos/AaVGc3lXMLZ7h3zS0uYpTfXOjtieCryEkWwmkCxPgo0Am37vQNEYU7nM5yZkYvtAOWih8sZLRZIkeEiyuwvJtoWuS_OFEWQEND2Kg8KGlzTThX6QNJcsKO4ckm8psdMeQPoFveAwEJF6E7zLgwdtxc7CtuJVqckyINNV0k-QwlFaw7AKvRqQo5R0h9S3u7fY8JUrBTgCC1g2JphghHBvBuVMwQB3RINyr5jKWQQBM8sEyy8bAS8k8NN_HzhJdBacCNKKlZ6HYt2xRNT6EODdZXHcTvijxBjBL1Rjw1O5Wu7np1zFxFYXpJH8WiP7pOIQhNygQSG2YSZwIgMgIkga6N5nqlNBACNzS21w9mNeIcDVrF-6YRIQy34_M4vhkNomVIyPy7vA-aQt64ymjL27EW15mHO9a4-Wfb3QE3xx1esdsvqesmw",
+      "widthPx": 3120,
+      "heightPx": 4160,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC2n6201AE!2e10!4m2!3m1!1s0x889a0653ba3f0f09:0xea3bcac5eb6a8dbb",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIC2n6201AE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104631489726552488091",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWjhmr9gSsYpyWrlp9J1NMKsHCZEelbRJtVO1vZGmH_RTct9535=s100-p-k-no-mo",
+          "displayName": "David Pickett"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJCQ8_ulMGmogRu41q68XKO-o/photos/AaVGc3lXOsQjSBikY20TNyH66Of-ejgZ6O0c0g4n6QigCFkXVAXgNsjW1zIdPsyT8WiB5inzhos5yKFZmGVhvxcXqAsh6VYAn58JY0zDSa1G92-jy8KIzK8LGSaA6r8tysPznmxmeRpCpHnH9C6EwX_kZ8737vWp2J2ABPMF06lFsFOko0_Bp0koolteujem0eXa9tjiQmUTVtxrgWVZBc7Y6yilUO34icgQMm_33lgXnhYdA6S9l8gc9aacmPpfwRkuenG0AB6MRsp33Y5L7q6gLfiaHyHqW7uTll6X_PAV5rHwBJj6NaKi7Qlg-6qo3ENaplKKnBz-0fNkVDk3oZcIhHhhKOgUbNRlDVvFqFDSUYrtshjsWEuWu7qJglsAaUIP5Zs1BbLmdKXk9zb9dbQnp7PztrRBSpYqBE-juQ",
+      "widthPx": 4000,
+      "heightPx": 3000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDG_Ksl!2e10!4m2!3m1!1s0x889a0653ba3f0f09:0xea3bcac5eb6a8dbb",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDG_Ksl&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104186857667142205186",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVDKkPhQJJZ982Q7nO3mvIy6YfhX0lYLjvATDdfoga-1yYM7nIrnQ=s100-p-k-no-mo",
+          "displayName": "Cruiser"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJCQ8_ulMGmogRu41q68XKO-o/photos/AaVGc3kgZcbd_tnRhMNRQDwmgeugDo2MNVLDzt1CgQf5FWLR0R3D3fmgQOMvqLiGigIO4H_aNhOBqgwQNkl9uzb0cOjqAoRK8Y_LKdN4cmH_NwNP0cvmbh8pZgrMABx-TBaANj0CLX0g_eL7bIAo-0Wt884CVmwuTduV3-9YRV3FHNQP5pZbM3ujWDVeZefr8qryhEYrJRiytcI1EStxMccHjMaM17K_ewvtlY9v7bd3mVy1Q41LCTBg-fHcSxoGWLrm2X3KGSbxBoSV9jISoV8Q1CbboMcnmT_6Eki4rwzRtec1mR-f4cjDzZnwD7o24C-eJzicO0to-W4zF_2dfEPjdkP83hIihycWbKJlC_DIyV_1knJe1-W7fyC6OtAQuk4bfBc9fORB-PiPV13xmtzdupP2fju-CG__Fk7pfOaWmzyns8A",
+      "widthPx": 3264,
+      "heightPx": 2448,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDu7trXjQE!2e10!4m2!3m1!1s0x889a0653ba3f0f09:0xea3bcac5eb6a8dbb",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDu7trXjQE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/107229132200852112108",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVnqrG-14naIrE9gIyFdVOgeUXsGNw2Pb8iXSKpA8knelY8qKRd=s100-p-k-no-mo",
+          "displayName": "John Eklund"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJCQ8_ulMGmogRu41q68XKO-o/photos/AaVGc3n2EOFyI1LM4_7NPJd83I151-kTGcxaV_rFSlvi-OY9fBteDa6XDfe1eVlyBpl6l_a4N5SQA86Lho1b3BM87VuRFwqq8Sz5BGZZ0GKtlk8Q_T20ipy9zVf4dnqkBgz55AK8_pTnyqQtrj00tadFXqZUmZuG8Rf7k0cV2LKWlcnrJ7Lsa_T25ggq0cMTafClG6JpCZCLR79ktO_ODzr4PuK6J7EYlsLw7c7cu2AIQoH1pHymAybm-M0kM884ZS84y8H7pYfEUnTc0HdaPkEVStn1t-OC6gA1lJnZsUwzgCuMAUEMk1qxC8n47UrA2ydmXAaykrPQ2TfMNVbophIjwxWkyXacdaIwZ99wi9rPJ2DPYRf26aB79c34kQUy-fBdcbBfdMDDnEnrp18107vNqYJcsJIUoUc4NiQfsN-9lVsmRxIs",
+      "widthPx": 4032,
+      "heightPx": 1816,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICOg7G-sQE!2e10!4m2!3m1!1s0x889a0653ba3f0f09:0xea3bcac5eb6a8dbb",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICOg7G-sQE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/117069003532892804958",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXMYmvhFyi0Q5UN-ZGZDE05M_a33IJW4whWkDddRaw91a7ba9XH=s100-p-k-no-mo",
+          "displayName": "Chris"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJCQ8_ulMGmogRu41q68XKO-o/photos/AaVGc3kkHixZ6wwdjfSGWc6SAdLzfOP4mgcEwpRworQ6WkCtOMWq267RJinbHLIWxisFx0XXIxUtyHl1Nd1SB4JlevEZ3E7YUrARfi877_HjqaUUxFZerzpl238q_B_M7wgYQyaRwK1PS_I_XEJyJmEPktS2EX7IN-LcG8HVogCor8puCtSotKTVdY5jfrcw8vs8WVQoKmesX4iwMJYKQBWX4UO4EIohITqb5HJaauyAIVhQAqKxM0MHTV1vZGPopVnz3fNSNSkKbWc6Wm720tuEeG8-gJjFhH8eVrCEzioUMfdLMUYIJMbq_VuIbGjSDzVg2KG6_H3j1oSYH5W_Jhq55hC6BfamYFIJ_fX0yiMmfpyOedcd6-ABb-bz3EpPb3ARFxc8TlWcktsJQ6ywmCsO_ueroivLxhhRcy0FOC9T6sg-BCsk",
+      "widthPx": 3000,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICe1c3R3wE!2e10!4m2!3m1!1s0x889a0653ba3f0f09:0xea3bcac5eb6a8dbb",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICe1c3R3wE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/105027101845796460395",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVO2kk70JLZEqCF7rispAxKWR4P7Eyq3ZnEsQJTvJAGth6iD32k=s100-p-k-no-mo",
+          "displayName": "Amos “Fame” Coleman jr"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJCQ8_ulMGmogRu41q68XKO-o/photos/AaVGc3mo7WZrGxtXdi48CsBcRwpR8IjCnYWNxHuW9iV9BNeRinAfzjBfKi_oDm-jkFeJxGd1KSCiy1CK5r3mux2qcAUCbqFhi0IXhO-50dFJak1eGoTuqLcdYctQ33p7YOgL3rzq_G0M5zbO8Z-E9OTMubhZnYkU7pvBuvbu5mNV83_Sz91pe9n-d_jiNa_d6AmRgXoHFXHLCWyYwE7MDAyZxtlje2YkGKworkHCEoIxpuy14_bgSR9IJXFNwAZvdwpgDQLqBCqk7F87EuB89JToXqmfFHX_7AnWvwfaG5tySp5yYyX7j1AY6UYKTCoV82G_m_24T-VSvvFkIeRCRYcqzFNcF_07mvX1xFaAVRaGecZddtn8JwLkmu35P2yhg0EBz7jeIel9EoPxoqSfR9cCWkZVJcjj5bQ3FgFSkhMNIjzorA",
+      "widthPx": 4000,
+      "heightPx": 3000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICaqM3mSA!2e10!4m2!3m1!1s0x889a0653ba3f0f09:0xea3bcac5eb6a8dbb",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICaqM3mSA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/102973727291740259645",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUIWFYgxeDIKP14twmvFpqs_xwp3voOghYkxtB9825o5ze2ngg0Og=s100-p-k-no-mo",
+          "displayName": "Victor Jordan"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJCQ8_ulMGmogRu41q68XKO-o/photos/AaVGc3n-rt_4m8zhj_beU5Cjmx8p6rWxuSXoF6g4RnpDIOoW40OEEFe8ECrF5ntZoSQIE3HqWpIph105-CHfSeeZSJmniJpyMOrK2aQIxXQvyQxRLjSqyxdQLsdVvCeGEljijsa4DTfhalj9xcaCIyA0VUazmB0vWZKqSZIem0Ye7JuvEliJCdsdJCIeVf6qdU5uU2JlOimUn-EYkY-nUIqqmJyMaoqq1W_B_U3Pj89rVPHjvp9C11x-Rl2zyGLpiHx0Hxj1yyFGoQFJlt4dSNfJFZgYMb9-qaORDuExptqWlCpUz_9aF891gHnP43Mv1FoJYrsK8pYWujJ4vDLyveHeTa9eVIGe1hcyB15LjdN3eohaAsC7ssMuJ3jP9mDmAu0pqjuIqzrljwS14gMEcmi-a0skcjZRSnCuV6toAaHho8r8dw",
+      "widthPx": 4032,
+      "heightPx": 2268,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICOpeilQA!2e10!4m2!3m1!1s0x889a0653ba3f0f09:0xea3bcac5eb6a8dbb",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICOpeilQA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/115780721266778766645",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUa5BJlGKgSo0laRzWk9WCteRcZRlJ9TiR7ksKTx8YPn0c3CARl7w=s100-p-k-no-mo",
+          "displayName": "Cray"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJCQ8_ulMGmogRu41q68XKO-o/photos/AaVGc3lbA1ZLCzeY-j22aIiVZCNUphzY3_tqn4MsuCOCcDUYNaA0QsBuUxj4br07cEKTeNdFiwkJci0v1V4RWAxo5Ia52obeSOzdr2d_d-6bFHIlPv7b0M3OUYj95Q7FlyS-Tq-fviBdtTNNkh2KCPrttLtOxbOO_RILEa33prWYgbSJ9rDvWTjpG1-ovgDM9CyBRAXIcRWRNCFW1_D71lwWTXkT_nZCeteZmJE9DSaHQhdAjLkpp5zxekuBvQDNrZ9BLwRS9fneNvj_aMxjBhefCIB7a7TkzfgOm4ozgBLrWQZjSC-TcGGmicV-UHaMnYvz_GM-mzJysJCEbfqOWKnMcS57V_Seax2LkXN-HwdGEA_jav71gWEJjLNPCjsUdJoOY78eWH-DunYD2XTWcGscENG0V3c-lDt7AdMegwY_q0BSJg",
+      "widthPx": 4000,
+      "heightPx": 3000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICaqM2mcQ!2e10!4m2!3m1!1s0x889a0653ba3f0f09:0xea3bcac5eb6a8dbb",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICaqM2mcQ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/102973727291740259645",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUIWFYgxeDIKP14twmvFpqs_xwp3voOghYkxtB9825o5ze2ngg0Og=s100-p-k-no-mo",
+          "displayName": "Victor Jordan"
+        }
+      ]
+    }
+  ],
+  "location": {
+    "latitude": 30.269703300000003,
+    "longitude": -87.5867598
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.254605172617072,
+      "longitude": -87.65398698836114
+    },
+    "high": {
+      "latitude": 30.340039995025847,
+      "longitude": -87.51409106206142
+    }
+  },
+  "websiteUri": "http://www.cityoforangebeach.com/",
+  "displayName": {
+    "text": "Orange Beach",
+    "languageCode": "en"
+  },
+  "googleMapsUri": "https://maps.google.com/?cid=16878306979908062651&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=16878306979908062651&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0653ba3f0f09:0xea3bcac5eb6a8dbb!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0653ba3f0f09:0xea3bcac5eb6a8dbb!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "adrFormatAddress": "<span class=\"locality\">Orange Beach</span>, <span class=\"region\">AL</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "Orange Beach, AL, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Orange Beach",
+      "shortText": "Orange Beach",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    }
+  ],
+  "iconBackgroundColor": "#7B9EB0",
+  "shortFormattedAddress": "Orange Beach",
+  "pureServiceAreaBusiness": false
+}
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: Orange Beach
+search_vector: 'beach':2A,4 'orang':1A,3
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=16878306979908062651&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0653ba3f0f09:0xea3bcac5eb6a8dbb!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0653ba3f0f09:0xea3bcac5eb6a8dbb!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+internal_notes: industry_code auto-bucketed to other 2026-07-21 - needs manual review
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: other
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: orange-beach
+name: Orange Beach
+industry_code: other
+is_parent: false
+score_of_7: 2
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 8528ec64-a0e2-413b-b22d-6e79d3955e05
+entity_slug: orange-beach
+place_uri: https://maps.google.com/?cid=16878306979908062651&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0653ba3f0f09:0xea3bcac5eb6a8dbb!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0653ba3f0f09:0xea3bcac5eb6a8dbb!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: orange-beach
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: fbc2c482-5240-4059-9163-828c7ac9b93d
+name: Orange Beach
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "/photos/city-of-orange-beach/photo_01.jpg",
+    "/photos/city-of-orange-beach/photo_02.jpg",
+    "/photos/city-of-orange-beach/photo_03.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: orange-beach
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: fbc2c482-5240-4059-9163-828c7ac9b93d
+name: Orange Beach
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "/photos/city-of-orange-beach/photo_01.jpg",
+    "/photos/city-of-orange-beach/photo_02.jpg",
+    "/photos/city-of-orange-beach/photo_03.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13865
+entity_slug: orange-beach
+name: Orange Beach
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: fbc2c482-5240-4059-9163-828c7ac9b93d
+
+####################################################################################################
+# TABLE: entity_tags   -   4 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 4] ---
+id: b82bc000-bbe1-4bb0-a886-0145693fa1d3
+entity_slug: orange-beach
+tag_name: locality
+tag_category: google_type
+
+--- entity_tags [row 2 of 4] ---
+id: 1f3a9898-06b9-4e37-a72f-806809c7c248
+entity_slug: orange-beach
+tag_name: political
+tag_category: google_type
+
+--- entity_tags [row 3 of 4] ---
+id: 5827ebf2-198c-4c81-a234-dd273b144892
+entity_slug: orange-beach
+tag_name: locality
+tag_category: google_type
+
+--- entity_tags [row 4 of 4] ---
+id: 59fbd4d9-b397-40be-8458-83ba32bae233
+entity_slug: orange-beach
+tag_name: political
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: a441f00c-982a-4180-959e-df0d787ff621
+entity_slug: orange-beach
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: orange-beach
+entity_slug: orange-beach
+title: Orange Beach
+category: service
+search_vector: 'beach':2A 'orang':1A
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 13865
+entity_slug: orange-beach
+title: Orange Beach
+category: rental
+search_vector: 'beach':2A 'orang':1A

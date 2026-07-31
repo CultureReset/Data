@@ -1,0 +1,604 @@
+====================================================================================================
+SLUG: the-dock-house
+NAME: The Dock House
+INDUSTRY: hotel
+SUBTYPE: guest_house
+TABLES WITH DATA: 14
+TOTAL ROWS: 34
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (4 rows)
+  ai_entity_profiles_full  (1 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_modules  (13 rows)
+  entity_nearby_landmark_types  (3 rows)
+  entity_nearby_landmarks  (1 rows)
+  entity_tags  (4 rows)
+  entity_theme  (1 rows)
+  industry_hotel  (1 rows)
+  search_index  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: the-dock-house
+name: The Dock House
+planner_category: lodging
+data_quality_score: 70
+issues: missing_summary|missing_photos|missing_hours
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: true
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   4 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 4] ---
+id: 15366
+entity_slug: the-dock-house
+intent_tag: best_for:lodging_search
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 4] ---
+id: 15367
+entity_slug: the-dock-house
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 4] ---
+id: 15368
+entity_slug: the-dock-house
+intent_tag: missing:missing_photos
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 4] ---
+id: 15369
+entity_slug: the-dock-house
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: the-dock-house
+name: The Dock House
+is_active: t
+planner_category: lodging
+entity_type: hotel
+entity_subtype: guest_house
+city: Orange Beach
+state: AL
+address_line_1: 26642 Marina Rd
+latitude: 30.281647
+longitude: -87.569947
+review_count: 0
+voice_summary: The Dock House in Orange Beach is best for lodging search.
+planner_summary: The Dock House in Orange Beach is a lodging listing in Gulf Coast Radar.
+best_for: lodging search
+not_best_for: nothing specific flagged
+search_keywords: guest_house|lodging|point_of_interest|establishment
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: false
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 0
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 4
+faq_count: 0
+data_quality_score: 70
+data_gaps: missing_summary|missing_photos|missing_hours
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: f81c8ca1-2a42-4cb3-93fe-72eeb3fe3b61
+slug: the-dock-house
+name: The Dock House
+is_active: true
+featured: false
+entity_type: hotel
+entity_subtype: guest_house
+phone: (650) 735-0080
+menu_pin: 4350
+address_line_1: 26642 Marina Rd
+city: Orange Beach
+state: AL
+zip: 36561
+latitude: 30.281647
+longitude: -87.569947
+review_count: 0
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-06T06:25:05.57898+00:00
+updated_at: 2026-06-06T06:25:05.57898+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJtV7gRK8HmogRto1f6zhro30
+google_maps_uri: https://maps.google.com/?cid=9053197568156077494&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: guest_house
+formatted_address: 26642 Marina Rd, Orange Beach, AL 36561, USA
+plus_code: 862J7CJJ+M2
+international_phone: +1 650-735-0080
+google_places_data: {
+  "id": "ChIJtV7gRK8HmogRto1f6zhro30",
+  "types": [
+    "guest_house",
+    "lodging",
+    "point_of_interest",
+    "establishment"
+  ],
+  "location": {
+    "latitude": 30.281647,
+    "longitude": -87.569947
+  },
+  "plusCode": {
+    "globalCode": "862J7CJJ+M2",
+    "compoundCode": "7CJJ+M2 Orange Beach, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.280515969708496,
+      "longitude": -87.5713094302915
+    },
+    "high": {
+      "latitude": 30.283213930291495,
+      "longitude": -87.5686114697085
+    }
+  },
+  "displayName": {
+    "text": "The Dock House",
+    "languageCode": "en"
+  },
+  "primaryType": "guest_house",
+  "googleMapsUri": "https://maps.google.com/?cid=9053197568156077494&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=9053197568156077494&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07af44e05eb5:0x7da36b38eb5f8db6!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a07af44e05eb5:0x7da36b38eb5f8db6!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a07af44e05eb5:0x7da36b38eb5f8db6!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07af44e05eb5:0x7da36b38eb5f8db6!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+  "adrFormatAddress": "<span class=\"street-address\">26642 Marina Rd</span>, <span class=\"locality\">Orange Beach</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36561-3550</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "26642 Marina Rd, Orange Beach, AL 36561, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "26642",
+      "shortText": "26642",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Marina Road",
+      "shortText": "Marina Rd",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Orange Beach",
+      "shortText": "Orange Beach",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36561",
+      "shortText": "36561",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "postal_code_suffix"
+      ],
+      "longText": "3550",
+      "shortText": "3550",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "landmarks": [
+      {
+        "name": "places/ChIJGeYmaqQHmogRaZ30_o9YBYY",
+        "types": [
+          "establishment",
+          "lodging",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJGeYmaqQHmogRaZ30_o9YBYY",
+        "displayName": {
+          "text": "Snowbird-Friendly Condo with Private Balcony, Gas Grill, Jetted Tub, Shared Pool",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 437.15036,
+        "straightLineDistanceMeters": 437.7431
+      }
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Guest House",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#909CE1",
+  "nationalPhoneNumber": "(650) 735-0080",
+  "shortFormattedAddress": "26642 Marina Rd, Orange Beach",
+  "primaryTypeDisplayName": {
+    "text": "Guest House",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 650-735-0080"
+}
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #909CE1
+short_formatted_address: 26642 Marina Rd, Orange Beach
+national_phone: (650) 735-0080
+search_vector: 'beach':7 'dock':2A 'guest':4 'hous':3A,5 'orang':6
+primary_type_display: Guest House
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=9053197568156077494&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07af44e05eb5:0x7da36b38eb5f8db6!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a07af44e05eb5:0x7da36b38eb5f8db6!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a07af44e05eb5:0x7da36b38eb5f8db6!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07af44e05eb5:0x7da36b38eb5f8db6!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "landmarks": [
+    {
+      "name": "places/ChIJGeYmaqQHmogRaZ30_o9YBYY",
+      "types": [
+        "establishment",
+        "lodging",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJGeYmaqQHmogRaZ30_o9YBYY",
+      "displayName": {
+        "text": "Snowbird-Friendly Condo with Private Balcony, Gas Grill, Jetted Tub, Shared Pool",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 437.15036,
+      "straightLineDistanceMeters": 437.7431
+    }
+  ]
+}
+internal_notes:  | NO WORKING PHOTO 2026-07-21: hero and all entity_photos point to missing storage files - needs real re-upload
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: stay
+industry_code: hotel
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: the-dock-house
+name: The Dock House
+industry_code: hotel
+is_parent: false
+score_of_7: 2
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 810f812e-ad0d-493b-9c2c-ed20a7c6d005
+entity_slug: the-dock-house
+place_uri: https://maps.google.com/?cid=9053197568156077494&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07af44e05eb5:0x7da36b38eb5f8db6!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a07af44e05eb5:0x7da36b38eb5f8db6!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a07af44e05eb5:0x7da36b38eb5f8db6!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a07af44e05eb5:0x7da36b38eb5f8db6!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: 8d01f7a2-0519-4bd5-89a5-686a853197e8
+entity_slug: the-dock-house
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 7343be47-45c9-464c-bee3-a3836a004e17
+entity_slug: the-dock-house
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: f8274c7a-7752-40ad-aaf7-9ce9bd4b97ac
+entity_slug: the-dock-house
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: bb73dd2e-9386-4e77-8ceb-af0bb2da75de
+entity_slug: the-dock-house
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: 32832ae2-7465-4378-a266-fa01fa23792a
+entity_slug: the-dock-house
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: c601273b-d73b-4983-bfe4-5dbce330d6c5
+entity_slug: the-dock-house
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: c6db97b0-b9ee-49b5-ae39-0a569d97fec4
+entity_slug: the-dock-house
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 965a25fc-cf2e-4a32-b50e-31d679a09585
+entity_slug: the-dock-house
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: d3416988-0faf-4f49-9339-09292a61cf30
+entity_slug: the-dock-house
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: 2050ac47-38db-45c6-a041-a5e94a29e930
+entity_slug: the-dock-house
+module_key: stay
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: a1185753-a827-4e85-9f33-14289e543f95
+entity_slug: the-dock-house
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: 6b8cf598-8f76-4d71-899c-c7e4ff7f536b
+entity_slug: the-dock-house
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: 970f634a-69a8-42af-9c92-ae10111d471f
+entity_slug: the-dock-house
+module_key: amenities
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   3 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 3] ---
+id: 547f7e7d-67e6-4410-b28c-97def8ef1740
+landmark_id: 1cc48b7e-b406-4fa0-8c85-fc2d6da017d0
+entity_slug: the-dock-house
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 3] ---
+id: d33784d1-ef28-44e8-a114-22d79e2cd915
+landmark_id: 1cc48b7e-b406-4fa0-8c85-fc2d6da017d0
+entity_slug: the-dock-house
+landmark_type: lodging
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 3] ---
+id: baa910aa-14ba-46bf-9791-c34667f3660c
+landmark_id: 1cc48b7e-b406-4fa0-8c85-fc2d6da017d0
+entity_slug: the-dock-house
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   1 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 1] ---
+id: 1cc48b7e-b406-4fa0-8c85-fc2d6da017d0
+entity_slug: the-dock-house
+kind: landmark
+place_id: ChIJGeYmaqQHmogRaZ30_o9YBYY
+name: Snowbird-Friendly Condo with Private Balcony, Gas Grill, Jetted Tub, Shared Pool
+types: [
+  "establishment",
+  "lodging",
+  "point_of_interest"
+]
+travel_distance_meters: 437.15036
+straight_line_distance_meters: 437.7431
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   4 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 4] ---
+id: 935475c4-5c50-4e73-b0bb-ce744438f3e2
+entity_slug: the-dock-house
+tag_name: guest_house
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 4] ---
+id: b418c91d-c981-466a-a220-317d1d776dd0
+entity_slug: the-dock-house
+tag_name: lodging
+tag_category: google_type
+
+--- entity_tags [row 3 of 4] ---
+id: af608762-7d82-4deb-a470-01d990fdeffd
+entity_slug: the-dock-house
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 4 of 4] ---
+id: c0c2c240-2b04-44e3-acea-56a7e85cdeb8
+entity_slug: the-dock-house
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: d4a3b8a0-0ccc-4340-94ff-e2b0eb8d5779
+entity_slug: the-dock-house
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_hotel   -   1 row(s)
+####################################################################################################
+
+--- industry_hotel [row 1 of 1] ---
+entity_slug: the-dock-house
+room_type_count: 0
+has_pool: false
+pet_friendly: false
+updated_at: 2026-07-20T03:16:49.206863+00:00
+
+####################################################################################################
+# TABLE: search_index   -   1 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 1] ---
+ref_type: business
+ref_id: the-dock-house
+entity_slug: the-dock-house
+title: The Dock House
+category: guest_house
+search_vector: 'dock':2A 'guest':4B 'hous':3A,5B
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: the-dock-house

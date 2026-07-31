@@ -1,0 +1,521 @@
+====================================================================================================
+SLUG: e-bike-rentals
+NAME: e-Bike Rentals
+INDUSTRY: rental
+TABLES WITH DATA: 17
+TOTAL ROWS: 38
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (5 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_offer  (1 rows)
+  entity_photos  (4 rows)
+  entity_theme  (1 rows)
+  industry_rental  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: e-bike-rentals
+name: e-Bike Rentals
+planner_category: things_to_do
+data_quality_score: 55
+issues: missing_hours|missing_lat_lng|missing_contact_or_website
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   5 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 5] ---
+id: 20987
+entity_slug: e-bike-rentals
+intent_tag: best_for:outdoor_activity
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 5] ---
+id: 20988
+entity_slug: e-bike-rentals
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 5] ---
+id: 20989
+entity_slug: e-bike-rentals
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 5] ---
+id: 20990
+entity_slug: e-bike-rentals
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 5] ---
+id: 20991
+entity_slug: e-bike-rentals
+intent_tag: missing:missing_contact_or_website
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: e-bike-rentals
+name: e-Bike Rentals
+is_active: t
+planner_category: things_to_do
+entity_type: service
+state: AL
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/e-bike-rentals/photo_01.jpg
+voice_summary: e-Bike Rentals is best for outdoor activity.
+planner_summary: Complimentary e-bikes to explore Orange Beach like a local
+best_for: outdoor activity
+not_best_for: nothing specific flagged
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 2
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 0
+faq_count: 0
+data_quality_score: 55
+data_gaps: missing_hours|missing_lat_lng|missing_contact_or_website
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 7803
+entity_slug: e-bike-rentals
+entity_name: e-Bike Rentals
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/e-bike-rentals/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 7804
+entity_slug: e-bike-rentals
+entity_name: e-Bike Rentals
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/e-bike-rentals/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: f726544b-2485-46ce-bb7d-65c362f40838
+resource_type: service
+slug: e-bike-rentals
+name: e-Bike Rentals
+description: Complimentary e-bikes to explore Orange Beach like a local
+entity_slug: e-bike-rentals
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/e-bike-rentals/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/e-bike-rentals/photo_02.jpg"
+]
+amenities: []
+faqs: []
+state: AL
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 070b65ad61f89efad4c22a2ac99cc85f
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: f726544b-2485-46ce-bb7d-65c362f40838
+entity_slug: e-bike-rentals
+slug: e-bike-rentals
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/e-bike-rentals/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/e-bike-rentals/photo_02.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: d9d081a1-e7be-4748-850c-f8e469df7c4f
+slug: e-bike-rentals
+name: e-Bike Rentals
+is_active: true
+featured: false
+entity_type: service
+description: Complimentary e-bikes to explore Orange Beach like a local
+menu_pin: 7840
+state: AL
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/e-bike-rentals/photo_01.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T05:25:03.400744+00:00
+updated_at: 2026-06-03T05:25:03.400744+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+business_status: OPERATIONAL
+google_places_data: {}
+search_vector: 'bike':3A 'e':2A 'e-bik':1A 'rental':4A
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: rental
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: e-bike-rentals
+name: e-Bike Rentals
+industry_code: rental
+is_parent: false
+score_of_7: 2
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: e-bike-rentals
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: f726544b-2485-46ce-bb7d-65c362f40838
+name: e-Bike Rentals
+description: Complimentary e-bikes to explore Orange Beach like a local
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/e-bike-rentals/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/e-bike-rentals/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: e-bike-rentals
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: f726544b-2485-46ce-bb7d-65c362f40838
+name: e-Bike Rentals
+description: Complimentary e-bikes to explore Orange Beach like a local
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/e-bike-rentals/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/e-bike-rentals/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: afd12e1f-1045-4fab-9a7b-4175c7df3bc9
+entity_slug: e-bike-rentals
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 96956b2b-5fc7-47d9-84b7-802ccfda1f4a
+entity_slug: e-bike-rentals
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: c18248b0-d01a-4ed7-9375-abd925907874
+entity_slug: e-bike-rentals
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: 26cb1514-1c34-454a-a6df-b5ec290f05a0
+entity_slug: e-bike-rentals
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: 77e28480-5203-4622-a86f-8b971a200289
+entity_slug: e-bike-rentals
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: 8d363edc-d533-4a1d-b39e-2b887e7d57ec
+entity_slug: e-bike-rentals
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: e17fedc0-a4ba-43a6-b1ef-5e83496f33b4
+entity_slug: e-bike-rentals
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 66380229-ab0d-4c1b-a060-4f3ba898db80
+entity_slug: e-bike-rentals
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: e7eaf3c9-739f-4eae-94d4-1c6a09a7da3c
+entity_slug: e-bike-rentals
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: 19963827-4a2b-4d9a-84d1-e2c31b3f1131
+entity_slug: e-bike-rentals
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: ccfaf715-9376-4fd2-b524-0be500711247
+entity_slug: e-bike-rentals
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: a0c96280-3b7d-4246-8ce4-a8427b7c3546
+entity_slug: e-bike-rentals
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: 97aa7981-8c86-4c71-914a-84776da4575a
+entity_slug: e-bike-rentals
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13494
+entity_slug: e-bike-rentals
+name: e-Bike Rentals
+description: Complimentary e-bikes to explore Orange Beach like a local
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: f726544b-2485-46ce-bb7d-65c362f40838
+
+####################################################################################################
+# TABLE: entity_photos   -   4 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 4] ---
+id: 9d62efb4-e1fe-4e50-8a88-fc5a5c79d19b
+entity_slug: e-bike-rentals
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/e-bike-rentals/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 4] ---
+id: 07766762-6370-4a20-8c7c-7c16ed11aa91
+entity_slug: e-bike-rentals
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/e-bike-rentals/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 4] ---
+id: 747b7d06-83ba-4d70-a439-482297a56b4b
+entity_slug: e-bike-rentals
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/e-bike-rentals/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: f726544b-2485-46ce-bb7d-65c362f40838
+
+--- entity_photos [row 4 of 4] ---
+id: 2124bf74-e7f1-4894-921c-9f86718be7d5
+entity_slug: e-bike-rentals
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/e-bike-rentals/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: f726544b-2485-46ce-bb7d-65c362f40838
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 53e40aa3-a2c6-44d0-92fc-ef91c2ff3de2
+entity_slug: e-bike-rentals
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_rental   -   1 row(s)
+####################################################################################################
+
+--- industry_rental [row 1 of 1] ---
+entity_slug: e-bike-rentals
+rental_item_count: 0
+hourly_available: false
+half_day_available: false
+full_day_available: false
+weekly_available: false
+delivery_offered: false
+updated_at: 2026-07-21T16:19:28.491935+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: e-bike-rentals
+entity_slug: e-bike-rentals
+title: e-Bike Rentals
+category: service
+subtitle: Complimentary e-bikes to explore Orange Beach like a local
+search_vector: 'beach':12C 'bike':3A,8C 'complimentari':5C 'e':2A,7C 'e-bik':1A,6C 'explor':10C 'like':13C 'local':15C 'orang':11C 'rental':4A
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 13494
+entity_slug: e-bike-rentals
+title: e-Bike Rentals
+category: rental
+subtitle: Complimentary e-bikes to explore Orange Beach like a local
+search_vector: 'beach':12C 'bike':3A,8C 'complimentari':5C 'e':2A,7C 'e-bik':1A,6C 'explor':10C 'like':13C 'local':15C 'orang':11C 'rental':4A
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: e-bike-rentals

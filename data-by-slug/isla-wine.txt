@@ -1,0 +1,2534 @@
+====================================================================================================
+SLUG: isla-wine
+NAME: Isla Wine
+INDUSTRY: retail
+SUBTYPE: liquor_store
+TABLES WITH DATA: 23
+TOTAL ROWS: 148
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (14 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (20 rows)
+  entity  (1 rows)
+  entity_address_areas  (2 rows)
+  entity_attributes  (12 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (6 rows)
+  entity_modules  (10 rows)
+  entity_nearby_landmark_types  (23 rows)
+  entity_nearby_landmarks  (7 rows)
+  entity_photos  (24 rows)
+  entity_reviews  (5 rows)
+  entity_sources  (1 rows)
+  entity_tags  (7 rows)
+  entity_theme  (1 rows)
+  industry_retail  (1 rows)
+  legacy_photo_migration_queue  (3 rows)
+  search_index  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: isla-wine
+name: Isla Wine
+planner_category: food_drink
+data_quality_score: 75
+issues: missing_summary|missing_menu|missing_drink_menu|missing_faqs
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: true
+missing_drink_menu: true
+missing_hours: false
+missing_photos: false
+missing_faqs: true
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   14 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 14] ---
+id: 15049
+entity_slug: isla-wine
+intent_tag: best_for:drinks_or_cocktails
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 14] ---
+id: 15050
+entity_slug: isla-wine
+intent_tag: best_for:takeout
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 14] ---
+id: 15051
+entity_slug: isla-wine
+intent_tag: experience:outdoor
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 14] ---
+id: 15052
+entity_slug: isla-wine
+intent_tag: experience:rainy_day
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 14] ---
+id: 15053
+entity_slug: isla-wine
+intent_tag: meal:drinks
+intent_category: meal_period
+confidence: 0.82
+evidence: Derived from meal flags/menu content.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 14] ---
+id: 15054
+entity_slug: isla-wine
+intent_tag: service:takeout
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 14] ---
+id: 15055
+entity_slug: isla-wine
+intent_tag: service:delivery
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 14] ---
+id: 15056
+entity_slug: isla-wine
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 9 of 14] ---
+id: 15057
+entity_slug: isla-wine
+intent_tag: service:parking
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 10 of 14] ---
+id: 15058
+entity_slug: isla-wine
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 11 of 14] ---
+id: 15059
+entity_slug: isla-wine
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 12 of 14] ---
+id: 15060
+entity_slug: isla-wine
+intent_tag: missing:missing_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 13 of 14] ---
+id: 15061
+entity_slug: isla-wine
+intent_tag: missing:missing_drink_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 14 of 14] ---
+id: 15062
+entity_slug: isla-wine
+intent_tag: missing:missing_faqs
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: isla-wine
+name: Isla Wine
+is_active: t
+planner_category: food_drink
+entity_type: shopping
+entity_subtype: liquor_store
+city: Gulf Shores
+state: AL
+address_line_1: 315 E 22nd Ave
+latitude: 30.275186899999998
+longitude: -87.6820011
+rating: 4.9
+review_count: 35
+website_url: http://www.islawines.com/
+hero_image_url: /photos/isla-wine/photo_01.jpg
+voice_summary: Isla Wine in Gulf Shores is best for drinks or cocktails, takeout. Experience tags: outdoor, rainy_day.
+planner_summary: Isla Wine in Gulf Shores is a food drink listing in Gulf Coast Radar.
+best_for: drinks or cocktails|takeout
+not_best_for: quiet low-energy meal
+meal_periods: drinks
+experience_tags: outdoor|rainy_day
+service_tags: takeout|delivery|accessibility|parking
+search_keywords: liquor_store|wine_bar|bar|food|point_of_interest|store|establishment|drinks|outdoor|rainy_day|takeout|delivery|accessibility|parking
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 20
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 7
+faq_count: 0
+data_quality_score: 75
+data_gaps: missing_summary|missing_menu|missing_drink_menu|missing_faqs
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   20 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 20] ---
+id: 4341
+entity_slug: isla-wine
+entity_name: Isla Wine
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/isla-wine/photo_08.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 20] ---
+id: 4386
+entity_slug: isla-wine
+entity_name: Isla Wine
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/isla-wine/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 20] ---
+id: 4545
+entity_slug: isla-wine
+entity_name: Isla Wine
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/isla-wine/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 20] ---
+id: 4581
+entity_slug: isla-wine
+entity_name: Isla Wine
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/isla-wine/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 20] ---
+id: 4703
+entity_slug: isla-wine
+entity_name: Isla Wine
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/isla-wine/photo_10.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 20] ---
+id: 4739
+entity_slug: isla-wine
+entity_name: Isla Wine
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/isla-wine/photo_09.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 20] ---
+id: 10095
+entity_slug: isla-wine
+entity_name: Isla Wine
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/isla-wine/photo_06.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 20] ---
+id: 10097
+entity_slug: isla-wine
+entity_name: Isla Wine
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/isla-wine/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 20] ---
+id: 10098
+entity_slug: isla-wine
+entity_name: Isla Wine
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/isla-wine/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 20] ---
+id: 10100
+entity_slug: isla-wine
+entity_name: Isla Wine
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/isla-wine/photo_07.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 11 of 20] ---
+id: 22273
+entity_slug: isla-wine
+entity_name: Isla Wine
+city: Gulf Shores
+url: /photos/isla-wine/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 12 of 20] ---
+id: 22274
+entity_slug: isla-wine
+entity_name: Isla Wine
+city: Gulf Shores
+url: /photos/isla-wine/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 13 of 20] ---
+id: 22275
+entity_slug: isla-wine
+entity_name: Isla Wine
+city: Gulf Shores
+url: /photos/isla-wine/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 14 of 20] ---
+id: 22276
+entity_slug: isla-wine
+entity_name: Isla Wine
+city: Gulf Shores
+url: /photos/isla-wine/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 15 of 20] ---
+id: 22277
+entity_slug: isla-wine
+entity_name: Isla Wine
+city: Gulf Shores
+url: /photos/isla-wine/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 16 of 20] ---
+id: 22278
+entity_slug: isla-wine
+entity_name: Isla Wine
+city: Gulf Shores
+url: /photos/isla-wine/photo_06.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 17 of 20] ---
+id: 22279
+entity_slug: isla-wine
+entity_name: Isla Wine
+city: Gulf Shores
+url: /photos/isla-wine/photo_07.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 18 of 20] ---
+id: 22280
+entity_slug: isla-wine
+entity_name: Isla Wine
+city: Gulf Shores
+url: /photos/isla-wine/photo_08.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 19 of 20] ---
+id: 22281
+entity_slug: isla-wine
+entity_name: Isla Wine
+city: Gulf Shores
+url: /photos/isla-wine/photo_09.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 20 of 20] ---
+id: 22282
+entity_slug: isla-wine
+entity_name: Isla Wine
+city: Gulf Shores
+url: /photos/isla-wine/photo_10.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: c1d510e3-a404-4dff-bf24-af995983b81c
+slug: isla-wine
+name: Isla Wine
+is_active: true
+featured: false
+entity_type: shopping
+entity_subtype: liquor_store
+phone: (251) 213-9199
+website_url: http://www.islawines.com/
+menu_pin: 4604
+address_line_1: 315 E 22nd Ave
+city: Gulf Shores
+state: AL
+zip: 36542
+latitude: 30.275186899999998
+longitude: -87.6820011
+rating: 4.9
+review_count: 35
+hero_image_url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/d72a845f-ef6c-4fdd-b83e-9ab03d2efd2b/d72a845f-ef6c-4fdd-b83e-9ab03d2efd2b_1779139728359.976.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: true
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T04:00:05.682533+00:00
+updated_at: 2026-06-03T04:00:05.682533+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJL9c4pboFmogR-iQjFay0AuQ
+google_maps_uri: https://maps.google.com/?cid=16429893041782990074&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: liquor_store
+formatted_address: 315 E 22nd Ave, Gulf Shores, AL 36542, USA
+plus_code: 862J78G9+35
+international_phone: +1 251-213-9199
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+wheelchair_accessible_restroom: true
+wheelchair_accessible_seating: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+accepts_nfc: true
+accepts_cash_only: false
+parking_type: free
+google_places_data: {
+  "id": "ChIJL9c4pboFmogR-iQjFay0AuQ",
+  "types": [
+    "wine_bar",
+    "liquor_store",
+    "bar",
+    "store",
+    "food",
+    "point_of_interest",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3m9e4oyuhXHpqft0kGELGuk4djW6Y6USvoKeVM0-H-as5MGKbeeoxHEgaZGWh9RkkUb9LhsezsN3nJtODWLvb2BFAt-t2a4QM0vwrBd_JTRQI9NqNgQI26UdQ0Kvmg4CBuyKmHDKGvQIiD0JjUZhD528VU2Oev8BUO6jb_IvCxkB5d3B4NshlwIfjwCzeIOTfAtkqQF-GjgN3FJkfzZ5uI3-FbKmF_6kxVLfBTCIhheudf_wf85OmXN7IT2tvjsmeh-5Ui47OjQyr1rX6LTRBHUL3ju4g1KxRf04PCwoFps9HXP63CcRT5tLGZhxcFgwOjk_K6jasj9mfJS5P7oxG_oT5pCiGcv6zysZLNngkszTKEvtDKF6TkWDmRnDZvh4qi8_LzCw6j159ynM9j7iP0LjCCvF2UZLGuKIyCALS7RRZuVCpg2Kk_kY1w5KA",
+      "widthPx": 3218,
+      "heightPx": 4800,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCoNuVUTYwO-8p1GqVrj3fp!2e10!4m2!3m1!1s0x889a05baa538d72f:0xe402b4ac152324fa",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCoNuVUTYwO-8p1GqVrj3fp&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104995868674376525397",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJKZEEK_kKJ7ZcHrLc-DyvPCqCoq_NIr1k4A6BYolUUR2zp5w=s100-p-k-no-mo",
+          "displayName": "Isla Wine"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3kVDnne485MSPJHF3FJmsXKzCr-Z5H4yiPil297T3-zWOE4qYIvpdDH3U3QoBcjFYFjnLoV9GDkCC6FZJfR2Z3XiYz76OvltolrsBxYCSeaJxaj1YqzQUX5k-Ys9Ec09MPB2JHVUIbKSFClT4rCXP2jSQ9-crJv1zpCq3a_JPUV5baX6hui32MDU1d707qDUfCXR_sV0Fb0L2rEwsD1pb__tmQ1x-DgEP1cTz7-di9HEJtPq28gc34F0FIRj5pWhj0yBrCclxhPoASndb5WxVOlYwc9Q7wNMGySf73pPbi1JMiPqvnMsSm0GTpcw-GbtClt-Q-gnbUAxrgMojEyajNc6t9FkTjGIeAOH8nRQpbJ6K3Qeery1g0LEIYycNHJu_ogXvpi_gMD_skI_oCgK_svqjV5GW1U9b0_GFNGdhiyxCnFa5SfqhFDwSaBON1P",
+      "widthPx": 3600,
+      "heightPx": 4800,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDGPCvuOkvVmeFYskO0q8UQ!2e10!4m2!3m1!1s0x889a05baa538d72f:0xe402b4ac152324fa",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDGPCvuOkvVmeFYskO0q8UQ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104995868674376525397",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJKZEEK_kKJ7ZcHrLc-DyvPCqCoq_NIr1k4A6BYolUUR2zp5w=s100-p-k-no-mo",
+          "displayName": "Isla Wine"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3ntpN6zm9FkexFMa7TxoKx3fCF2cMN3ElJy-Mm-WeMekkgd9revqeLp8UGh0zYUbnVLu_4Ma7JcY7jXqbZtLGLCF636kMATSEPQIrjHv2LQQ2lOCoG0-njwwGfawVj03Yu51Z4oQlig-zdQnirpfPRmEXKRlv6crJDN4oqC2JyfYkHt03S2nOneLw_tftQdDeUhOcN7pSN6jxtwtvgzqqjXDRR_lKJ6MNwj5KLwXiIjOuiDt7r2llJoAYSdTjFoUwKwrrFPbpsnYziEp7Py60WhK9cyOtElgobm_oOXcNvscgG4b2cGegWNdRf40NOr8KPRTGASyQhp1ygSeDSIu6rBwagTPHytAZ4gW0m_g38AySS5pytPrfNhT_XYTh5GMfGyq_df0IzC70O9Da3QIKo2yLM57qigGcFl7kBTslyg4VefDp8CserFJ0LYIXmT",
+      "widthPx": 3600,
+      "heightPx": 4800,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCSfKyF2CK1Ye8yf2TdwUty!2e10!4m2!3m1!1s0x889a05baa538d72f:0xe402b4ac152324fa",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCSfKyF2CK1Ye8yf2TdwUty&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104995868674376525397",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJKZEEK_kKJ7ZcHrLc-DyvPCqCoq_NIr1k4A6BYolUUR2zp5w=s100-p-k-no-mo",
+          "displayName": "Isla Wine"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3knmEuVkczqHDn41EGJRNXaWe9R3vW9RTZpPwOcZc6ZBnhn4qUKgcVx5zF0KFAD0ooJsgz3Jc2ZxrHmFP-f8c2DqMSzzOeG1BMACgFSZQDxozxnqsrtYaF_-OeqU_1Obi2wfxO3VbhyVhuaZdFTJHvI1Y4z5qI_q-U4s4st2NnliWwmP8myP9qDXtXd1RrE4N_JTswO_TrLMHOWBfklZ9MUZdqitPVZ6kfIrDkwA2_cfWr3zgzciTBpc7K97-tSxQcV2YqmNhHvVOIITHiGVr8vJyPCmRsoSdAqDnsOoORXf_NRqtdEzYz2T7oTDDEAGJIiXPaW0IpHyg9y1uDGWKhSkuXw0to10iCZXuasZzw4V4LQZnHiu379XqJWoD4UUh18960DJSo1t6WkJ5oDue3LgjGcCBuc74s7GkkFtwU7IaGkxE8LFAueLKj_2w",
+      "widthPx": 4800,
+      "heightPx": 3217,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBZh8ad0F9ApArbZbfNXVj5!2e10!4m2!3m1!1s0x889a05baa538d72f:0xe402b4ac152324fa",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhBZh8ad0F9ApArbZbfNXVj5&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104995868674376525397",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJKZEEK_kKJ7ZcHrLc-DyvPCqCoq_NIr1k4A6BYolUUR2zp5w=s100-p-k-no-mo",
+          "displayName": "Isla Wine"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3l66IKr3vIWEpQiWfC0TtUOKPfKtFQjWaqks6gnX2Xn8F1ZhT1jbfNlBUy3b1-1f04dSyQ6iVobbgOtPmBcNW8OMjVRe0i1ZInLrNkNeo10xzcHF9DOcAYrPgUu-5RWYhAjS_8IVuVOu0wrkl9TsAMQWH6P580B378nuBb0UEN0nMH8bAgY63uhXJqbMFPkFAPx61SsarLqnMDDuzVF2WRz7tX7C1DSUVaLKk73aHehEVd9caK39f3Jzpqy-OKHDyiFunm5h9HkEReRud_FqvjUO5-QCsshNp92gboBpXBDZAk-wc0pCTHNMTPNd-xw0VWmR7lJGhci2QmMfNjs6LsNi7WjiLsLZFRAse28aUziGyvKuq7V-q_G9Fg2GbqoHb8IOBIga6wz349dhDziYB3qkYvBYY816L_k2bEszEnIUYYM7gjep6fIYS-JUg",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAztRwR8QNmo9S1xWKr9FxH!2e10!4m2!3m1!1s0x889a05baa538d72f:0xe402b4ac152324fa",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAztRwR8QNmo9S1xWKr9FxH&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104995868674376525397",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJKZEEK_kKJ7ZcHrLc-DyvPCqCoq_NIr1k4A6BYolUUR2zp5w=s100-p-k-no-mo",
+          "displayName": "Isla Wine"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3mlA-drDztSn__aOVr1WEYbZxxmXqZAyts7aYYgIkF6RC6spSZoNCvRCr1VvyYxYDGbc0qPNR96cwg2cSBoi6ak2Vpy4t-kI51NSRD5lMvUSsM4sWmXIoRvNks31EDVYAeJWj7hLRN9LGvQiUkwJbIFgZl-fAEEPsoQJzhAhezWKJcEXn73tjcM-JIKuMCPIS-2BEU1xLfT4g-3Np64-Ff_nF3_bWD4uWGW4G_Q3FpZtzsgW4rce_ahPnuR3TssytdYdFi5bjnRKxbI39GgcEa0yS5iKDdena6FqP4GlMFgdYn5K4Fj76RjssVwanHrvJPGDq-JMpR0t3FHXgh3JQppR-Gl9ecUUY6FAJS9AD-Ai57-6EwfApUIbQ6tSJexH4ehVqAB1Cr1-TDKJH7DrCMbDmeDn1vrVKl_mQWYBAqHZIdpZ19oI-zm-sZosrjB",
+      "widthPx": 2446,
+      "heightPx": 3057,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBekvW2AR2cw-sdb4pGMMAd!2e10!4m2!3m1!1s0x889a05baa538d72f:0xe402b4ac152324fa",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhBekvW2AR2cw-sdb4pGMMAd&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104995868674376525397",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJKZEEK_kKJ7ZcHrLc-DyvPCqCoq_NIr1k4A6BYolUUR2zp5w=s100-p-k-no-mo",
+          "displayName": "Isla Wine"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3l135fjrnBIy5aFbSU1jMp9Mk4pAbck2a9i6OsTkO171vVDdx26YSU33xW7su7VK9593G_HZSLz-wMHjkVw_BEdJd-yOl19hTU4hoReHOqzkGrUs0XKa9ZktViECN9DNyVNdL1-n69fcUryZzzPvNTalcJSk12Ku_C5HGPO92IglPOrYZ8SqTvkEUC-CX-RNMD_JBNiKKyxmTZB9SNOq8o_fJ3opOQ6FJgIKHVOvZZe35rXetEn_8_O0YKAuS8-i543YP9E7Gcl1n53VWGreYEqi5vTuDbz4qSeWwvd2stZ3tB5MJ3KHT5ne5Jk3OTiPbHkR8qcoK4d77vFlLAJA6vzRq8OoCkBPBcIj4wP0dloDdmVgfOeABipYnQxwBumWoB9t2Gb4Z0VbbfA5Sro9026YD19W-zss69u6yRxnZhb21md9DvAr5CUABn3oxvN",
+      "widthPx": 1536,
+      "heightPx": 2048,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhD-PCOHFijtic46A5FwKI1G!2e10!4m2!3m1!1s0x889a05baa538d72f:0xe402b4ac152324fa",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhD-PCOHFijtic46A5FwKI1G&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104995868674376525397",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJKZEEK_kKJ7ZcHrLc-DyvPCqCoq_NIr1k4A6BYolUUR2zp5w=s100-p-k-no-mo",
+          "displayName": "Isla Wine"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3kjG4EtgBne8YEY2D8Kf_5jeHSnGG0zh_Uu0xSf0xhoRYBY5szjKFJ6b5LgAA1h5Eqp5RBWYj1vuvFr9Pat7q7hIRrroXHLfTdBqXVO7RBJVLMJwajfFpfs5ZwUD_68QI6gRH_PPfu_l4AbZzWLH0REvjfvKoAMsO4Hf-0qOQFcMx6J1oZBLZGkgANccyfZ8KCx8FsCiSNc_JBhya4HuYqRAFPVqsD45bwFno9gQx-EbSMKk4cpLPEyfFuRrqMRDU5-g4oRXkAh2vj_6CQanRhzIgbgIgdBC4xcneG_mk7MY2AH1rmh_qcKVx3xseJSl0qVUFhHqbXtI_uc6TbSo-0V8RJljPsef2TfVbmLV2gYxFQ2P7tgDl6N90KkWo6fyOUOWnOwnuNjWXy3xH18jigA5Oojo_ZWs85hQsacbmgwG7z_m9Jy5EKDhG95hg",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhA1R4W0hSV8GNAik9Uf64GI!2e10!4m2!3m1!1s0x889a05baa538d72f:0xe402b4ac152324fa",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhA1R4W0hSV8GNAik9Uf64GI&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104995868674376525397",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJKZEEK_kKJ7ZcHrLc-DyvPCqCoq_NIr1k4A6BYolUUR2zp5w=s100-p-k-no-mo",
+          "displayName": "Isla Wine"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3nc2yF94-GlRR5n3Uokl3qYI_hGHXHmJTS3HWz_p0MhVaCB0Ab2wcLWCrVlx0is_DBGr0oESiWfmqelq1iJ5duR8NdqMymlus9YIY3K6UQR4nrmUU855KD5b86UieK5r2U43mAwXIxyO4bVzjOC3pIF7pg1LCPWS4cL1qLGZpWAzC1LhT4Ycgw6XDS8y9kAz6oAphXW9wP1kJvElslPcvBqLUenRXrQJkY08YLpzMl7BNZQQe2CvzvquRFFKqHnGMjmUvgLKv6nkTRGflU7CclfHJYlRQn0HuF2_68wbw0L8YSJQrC0x3HmGBpRoVwNvtA2ZiDUQ0sS7BSkiMMpUZ7qBx2TFCSoOOVHjs0ryw3Y77WEgyo6JjtYrkGPrUBOWMf9AMtmipEFbX0iyef4Gubwd4IUp-koVshg78UXYXOpJZ1AXUZ38Oq3tRXcFxVi",
+      "widthPx": 1290,
+      "heightPx": 1658,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDtIMDBbdgqVDvTCf37mYlW!2e10!4m2!3m1!1s0x889a05baa538d72f:0xe402b4ac152324fa",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDtIMDBbdgqVDvTCf37mYlW&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/105587954419739354719",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLRMsJ8vplYOuutheSrPs4_Osh1xa1DREZyzDrhiIqB7pG5NA=s100-p-k-no-mo",
+          "displayName": "J. VWC"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3nAa0uuVL60J6NK5iekOVtI_Rx7FrL-IpEx_6aiAIP3qoIb2ApQIHA9jmFaHrGupCw1dI6FKSQIExoanlUS0B-90lQD-gJ7TndyFV-rd7am1WuBupPK2U9JLyVOjp2nU3Xvjrb5JPRaKgpRF9lgGWNKirmX9xJ8zz56Cs3-o8F7c4aZghHh2YBGaxGjY5mNYMW8iq25LjcHCRPT8fQbSHDZf6d-suEnU2S3pnGyDgqJVOx1xRbYAXp-a0qq3G-MAk-k9M6WQCK2DiDsD4XcbGni0su6ntWiq9lmua2gEeh38bJgK-D3HqZiy3kt7q1SQezDCduiVRjzp5tYrP1q9gMIx48UINQ8yPZ-OXNPTu37ORITNWBDgrUbfE7LPD93qEmyuyZaGo-NmT1ThYHpOazIyALeV-0JrkbceZ5-aRSkj18XnwTrwHtbuUPtzRFs",
+      "widthPx": 3600,
+      "heightPx": 4800,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDqwrvdof90SGCC1ycve7YX!2e10!4m2!3m1!1s0x889a05baa538d72f:0xe402b4ac152324fa",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDqwrvdof90SGCC1ycve7YX&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/105587954419739354719",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLRMsJ8vplYOuutheSrPs4_Osh1xa1DREZyzDrhiIqB7pG5NA=s100-p-k-no-mo",
+          "displayName": "J. VWC"
+        }
+      ]
+    }
+  ],
+  "rating": 4.9,
+  "reviews": [
+    {
+      "name": "places/ChIJL9c4pboFmogR-iQjFay0AuQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT21GSGRIQkxTbWR1YjJRMVozSnRka05CT1dZeFluYxAB",
+      "text": {
+        "text": "Several friends and I attended last night’s wine tasting, and it was such a wonderful experience. The atmosphere was warm and welcoming, the wine and food were excellent, and the insights into the different regions added something special. The staff were incredibly friendly, attentive, and genuinely inviting, which made the evening feel even more comfortable and enjoyable. It was the perfect girls’ night out, and we’ll definitely be coming back.”",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-09-12T13:12:22.824663904Z",
+      "originalText": {
+        "text": "Several friends and I attended last night’s wine tasting, and it was such a wonderful experience. The atmosphere was warm and welcoming, the wine and food were excellent, and the insights into the different regions added something special. The staff were incredibly friendly, attentive, and genuinely inviting, which made the evening feel even more comfortable and enjoyable. It was the perfect girls’ night out, and we’ll definitely be coming back.”",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21GSGRIQkxTbWR1YjJRMVozSnRka05CT1dZeFluYxAB!2m1!1s0x889a05baa538d72f:0xe402b4ac152324fa",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT21GSGRIQkxTbWR1YjJRMVozSnRka05CT1dZeFluYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/109188988233746082246/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIr3tLfmxZINjVZqZd3OYzs-LuHW4VFo-El5jVxgyY1V8Nf8A=s128-c0x00000000-cc-rp-mo-ba3",
+        "displayName": "T D"
+      },
+      "relativePublishTimeDescription": "9 months ago"
+    },
+    {
+      "name": "places/ChIJL9c4pboFmogR-iQjFay0AuQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT25sb1FsOXhTVkZPU2tKdWRFMTNXbmx0U1RSUlJYYxAB",
+      "text": {
+        "text": "Best place to buy wine in Gulf Shores.  Nice boutique wine shop.  The have a wide range of wines from many regions.  Staff is very helpful and knowledgeable.  They serve wins by the glass and some charcuterie too.  Cute place. If you’re a wine lover, this is the place to check out!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-04-07T15:48:05.746913310Z",
+      "originalText": {
+        "text": "Best place to buy wine in Gulf Shores.  Nice boutique wine shop.  The have a wide range of wines from many regions.  Staff is very helpful and knowledgeable.  They serve wins by the glass and some charcuterie too.  Cute place. If you’re a wine lover, this is the place to check out!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25sb1FsOXhTVkZPU2tKdWRFMTNXbmx0U1RSUlJYYxAB!2m1!1s0x889a05baa538d72f:0xe402b4ac152324fa",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT25sb1FsOXhTVkZPU2tKdWRFMTNXbmx0U1RSUlJYYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/112338553272396014089/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUu_cYRcE3U3DYy2OBTPv56W2ouW1Tsj2tDIgfTR7xS6GY6FVWL=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Brian Cooper"
+      },
+      "relativePublishTimeDescription": "2 months ago"
+    },
+    {
+      "name": "places/ChIJL9c4pboFmogR-iQjFay0AuQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT2psSWJUSmZWRFJxVjA5UVUyaHZZWFkxZDJwTE9VRRAB",
+      "text": {
+        "text": "This is a great wine store with one of the best selections I have seen in the area. They even have a decent selection of beer. This location has a nice ambiance and it was a bit hidden away until they started doing road construction in the area and now it is on the main diversion street. Isla Wine also offers a few food options here as well. You also get the benefit that Isla Wine is located right next to Foam Coffee where they have more food options and coffee.",
+        "languageCode": "en"
+      },
+      "rating": 4,
+      "publishTime": "2025-07-01T19:22:04.749521807Z",
+      "originalText": {
+        "text": "This is a great wine store with one of the best selections I have seen in the area. They even have a decent selection of beer. This location has a nice ambiance and it was a bit hidden away until they started doing road construction in the area and now it is on the main diversion street. Isla Wine also offers a few food options here as well. You also get the benefit that Isla Wine is located right next to Foam Coffee where they have more food options and coffee.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2psSWJUSmZWRFJxVjA5UVUyaHZZWFkxZDJwTE9VRRAB!2m1!1s0x889a05baa538d72f:0xe402b4ac152324fa",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2psSWJUSmZWRFJxVjA5UVUyaHZZWFkxZDJwTE9VRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/103196358978878522301/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW4_4GGkdxxrBNHQyeByuiyko11sbBVTTEUNywlRq_aMOkV367hww=s128-c0x00000000-cc-rp-mo-ba7",
+        "displayName": "Shannon (NOLA Gent)"
+      },
+      "relativePublishTimeDescription": "11 months ago"
+    },
+    {
+      "name": "places/ChIJL9c4pboFmogR-iQjFay0AuQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xVd2RXZHlXbTgyTTB3M1JITkhjRzVtZERVME1HYxAB",
+      "text": {
+        "text": "Amazing Food. Amazing people. A great wine selection that peaks your interest. All of it very well curated within a cozy setting.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-01-18T19:02:37.051180581Z",
+      "originalText": {
+        "text": "Amazing Food. Amazing people. A great wine selection that peaks your interest. All of it very well curated within a cozy setting.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xVd2RXZHlXbTgyTTB3M1JITkhjRzVtZERVME1HYxAB!2m1!1s0x889a05baa538d72f:0xe402b4ac152324fa",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2xVd2RXZHlXbTgyTTB3M1JITkhjRzVtZERVME1HYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/104100389745629820272/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLp7EIINMG8QsnTRWwkfBcvnTpzJN-3QmAbnVTV6VLDk9Y1Yg=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Michael T"
+      },
+      "relativePublishTimeDescription": "4 months ago"
+    },
+    {
+      "name": "places/ChIJL9c4pboFmogR-iQjFay0AuQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xwNVlUSnpaMVl4WmpaamVVMTZaV1YxWTBGMVYxRRAB",
+      "text": {
+        "text": "Isla Wine is a true gem in our neighborhood. I absolutely love stopping in—whether it’s to pick up a great bottle or spend time with friends. Robin and her staff are knowledgeable, friendly, and always happy to help. The wine selection is excellent, and the food is delicious. I recently hosted a small gathering there, and everything was perfect—great atmosphere, amazing service, and wonderful hospitality. I can’t wait to do it again!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-06-24T16:11:24.215152032Z",
+      "originalText": {
+        "text": "Isla Wine is a true gem in our neighborhood. I absolutely love stopping in—whether it’s to pick up a great bottle or spend time with friends. Robin and her staff are knowledgeable, friendly, and always happy to help. The wine selection is excellent, and the food is delicious. I recently hosted a small gathering there, and everything was perfect—great atmosphere, amazing service, and wonderful hospitality. I can’t wait to do it again!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xwNVlUSnpaMVl4WmpaamVVMTZaV1YxWTBGMVYxRRAB!2m1!1s0x889a05baa538d72f:0xe402b4ac152324fa",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2xwNVlUSnpaMVl4WmpaamVVMTZaV1YxWTBGMVYxRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/103550053854323469176/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXDXZU2ktaIngboaqprXIBR35pccTcXFNFb7oQBEv6gsQZGOzcj=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Suzette Taylor"
+      },
+      "relativePublishTimeDescription": "11 months ago"
+    }
+  ],
+  "delivery": true,
+  "location": {
+    "latitude": 30.275186899999998,
+    "longitude": -87.6820011
+  },
+  "plusCode": {
+    "globalCode": "862J78G9+35",
+    "compoundCode": "78G9+35 Gulf Shores, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.273837919708505,
+      "longitude": -87.68342223029153
+    },
+    "high": {
+      "latitude": 30.2765358802915,
+      "longitude": -87.6807242697085
+    }
+  },
+  "websiteUri": "http://www.islawines.com/",
+  "displayName": {
+    "text": "Isla Wine",
+    "languageCode": "en"
+  },
+  "primaryType": "liquor_store",
+  "googleMapsUri": "https://maps.google.com/?cid=16429893041782990074&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewSummary": {
+    "text": {
+      "text": "People say this wine store offers an exceptional and well-priced selection of wines, including unique finds, along with delicious food options like charcuterie and whipped feta dip. They also highlight the warm, welcoming, and cozy atmosphere, with both indoor and outdoor seating available. Guests mention the staff are knowledgeable, friendly, and provide excellent service, making for a wonderful experience.",
+      "languageCode": "en-US"
+    },
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05baa538d72f:0xe402b4ac152324fa!9m1!1b1",
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "flagContentUri": "https://www.google.com/local/content/rap/report?postId=5%401:CAIQACodChtyc19oOmh6WnNRT2F6R0U2dnRTQWcyMmlJNXc%7CCAIQACoqChtyc19oOmh6WnNRT2F6R0U2dnRTQWcyMmlJNXcSCwiW9LnQBhD42oM2&d=17924085&t=8"
+  },
+  "businessStatus": "OPERATIONAL",
+  "curbsidePickup": true,
+  "parkingOptions": {
+    "freeParkingLot": true,
+    "freeStreetParking": true
+  },
+  "paymentOptions": {
+    "acceptsNfc": true,
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=16429893041782990074&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05baa538d72f:0xe402b4ac152324fa!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05baa538d72f:0xe402b4ac152324fa!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05baa538d72f:0xe402b4ac152324fa!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05baa538d72f:0xe402b4ac152324fa!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+  "userRatingCount": 35,
+  "adrFormatAddress": "<span class=\"street-address\">315 E 22nd Ave</span>, <span class=\"locality\">Gulf Shores</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36542</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "315 E 22nd Ave, Gulf Shores, AL 36542, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "315",
+      "shortText": "315",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "East 22nd Avenue",
+      "shortText": "E 22nd Ave",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Gulf Shores",
+      "shortText": "Gulf Shores",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36542",
+      "shortText": "36542",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJTRD9S98EmogRgdzsGZysN4M",
+        "placeId": "ChIJTRD9S98EmogRgdzsGZysN4M",
+        "containment": "NEAR",
+        "displayName": {
+          "text": "Our Lady of the Gulf Catholic Church",
+          "languageCode": "en"
+        }
+      },
+      {
+        "name": "places/ChIJP_J_f98EmogR6bCq8UXZn6c",
+        "placeId": "ChIJP_J_f98EmogR6bCq8UXZn6c",
+        "containment": "NEAR",
+        "displayName": {
+          "text": "Meyer Park",
+          "languageCode": "en"
+        }
+      }
+    ],
+    "landmarks": [
+      {
+        "name": "places/ChIJSVWBtdgEmogReyyrFU5KWLY",
+        "types": [
+          "church",
+          "establishment",
+          "place_of_worship",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJSVWBtdgEmogReyyrFU5KWLY",
+        "displayName": {
+          "text": "Our Lady of the Gulf Catholic Church",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 171.61806,
+        "straightLineDistanceMeters": 89.77318
+      },
+      {
+        "name": "places/ChIJwU95Md8EmogRBXy_0zFJD6Q",
+        "types": [
+          "cafe",
+          "establishment",
+          "food",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJwU95Md8EmogRBXy_0zFJD6Q",
+        "displayName": {
+          "text": "Foam Coffee",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "BESIDE",
+        "travelDistanceMeters": 1.1995926,
+        "straightLineDistanceMeters": 17.946522
+      },
+      {
+        "name": "places/ChIJkyJ6rSAFmogRD5lVndPjdgM",
+        "types": [
+          "establishment",
+          "food",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJkyJ6rSAFmogRD5lVndPjdgM",
+        "displayName": {
+          "text": "The ugly Diner",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 162.83823,
+        "straightLineDistanceMeters": 36.1155
+      },
+      {
+        "name": "places/ChIJhfGBztgEmogR4ACNk761oqw",
+        "types": [
+          "establishment",
+          "food",
+          "meal_takeaway",
+          "point_of_interest",
+          "restaurant",
+          "store"
+        ],
+        "placeId": "ChIJhfGBztgEmogR4ACNk761oqw",
+        "displayName": {
+          "text": "Amelia's Deli",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "ACROSS_THE_ROAD",
+        "travelDistanceMeters": 3.9042616,
+        "straightLineDistanceMeters": 35.124287
+      },
+      {
+        "name": "places/ChIJP_J_f98EmogR60gSMkAZ6q8",
+        "types": [
+          "establishment",
+          "park",
+          "point_of_interest",
+          "tourist_attraction"
+        ],
+        "placeId": "ChIJP_J_f98EmogR60gSMkAZ6q8",
+        "displayName": {
+          "text": "Meyer Park",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 179.69637,
+        "straightLineDistanceMeters": 244.80614
+      }
+    ]
+  },
+  "currentOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      }
+    ],
+    "nextCloseTime": "2026-06-11T02:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 11:00 AM – 9:00 PM",
+      "Tuesday: 11:00 AM – 9:00 PM",
+      "Wednesday: 11:00 AM – 9:00 PM",
+      "Thursday: 11:00 AM – 9:00 PM",
+      "Friday: 11:00 AM – 9:00 PM",
+      "Saturday: 11:00 AM – 9:00 PM",
+      "Sunday: Closed"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Wine Store",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#4B96F3",
+  "nationalPhoneNumber": "(251) 213-9199",
+  "regularOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 1,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 21,
+          "minute": 0
+        }
+      }
+    ],
+    "nextCloseTime": "2026-06-11T02:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 11:00 AM – 9:00 PM",
+      "Tuesday: 11:00 AM – 9:00 PM",
+      "Wednesday: 11:00 AM – 9:00 PM",
+      "Thursday: 11:00 AM – 9:00 PM",
+      "Friday: 11:00 AM – 9:00 PM",
+      "Saturday: 11:00 AM – 9:00 PM",
+      "Sunday: Closed"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleSeating": true,
+    "wheelchairAccessibleEntrance": true,
+    "wheelchairAccessibleRestroom": true
+  },
+  "shortFormattedAddress": "315 E 22nd Ave, Gulf Shores",
+  "primaryTypeDisplayName": {
+    "text": "Liquor Store",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-213-9199"
+}
+ai_review_summary: People say this wine store offers an exceptional and well-priced selection of wines, including unique finds, along with delicious food options like charcuterie and whipped feta dip. They also highlight the warm, welcoming, and cozy atmosphere, with both indoor and outdoor seating available. Guests mention the staff are knowledgeable, friendly, and provide excellent service, making for a wonderful experience.
+curbside_pickup: true
+free_parking_lot: true
+free_street_parking: true
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #4B96F3
+short_formatted_address: 315 E 22nd Ave, Gulf Shores
+national_phone: (251) 213-9199
+search_vector: 'along':21C 'also':33C 'atmospher':40C 'avail':47C 'charcuteri':27C 'cozi':39C 'delici':23C 'dip':31C 'excel':57C 'except':10C 'experi':63C 'feta':30C 'find':20C 'food':24C 'friend':54C 'guest':48C 'gulf':66 'highlight':34C 'includ':18C 'indoor':43C 'isla':1A 'knowledg':53C 'like':26C 'liquor':64 'make':59C 'mention':49C 'offer':8C 'option':25C 'outdoor':45C 'peopl':3C 'price':14C 'provid':56C 'say':4C 'seat':46C 'select':15C 'servic':58C 'shore':67 'staff':51C 'store':7C,65 'uniqu':19C 'warm':36C 'welcom':37C 'well':13C 'well-pric':12C 'whip':29C 'wine':2A,6C,17C 'wonder':62C
+primary_type_display: Liquor Store
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=16429893041782990074&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05baa538d72f:0xe402b4ac152324fa!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05baa538d72f:0xe402b4ac152324fa!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05baa538d72f:0xe402b4ac152324fa!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05baa538d72f:0xe402b4ac152324fa!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJTRD9S98EmogRgdzsGZysN4M",
+      "placeId": "ChIJTRD9S98EmogRgdzsGZysN4M",
+      "containment": "NEAR",
+      "displayName": {
+        "text": "Our Lady of the Gulf Catholic Church",
+        "languageCode": "en"
+      }
+    },
+    {
+      "name": "places/ChIJP_J_f98EmogR6bCq8UXZn6c",
+      "placeId": "ChIJP_J_f98EmogR6bCq8UXZn6c",
+      "containment": "NEAR",
+      "displayName": {
+        "text": "Meyer Park",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJSVWBtdgEmogReyyrFU5KWLY",
+      "types": [
+        "church",
+        "establishment",
+        "place_of_worship",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJSVWBtdgEmogReyyrFU5KWLY",
+      "displayName": {
+        "text": "Our Lady of the Gulf Catholic Church",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 171.61806,
+      "straightLineDistanceMeters": 89.77318
+    },
+    {
+      "name": "places/ChIJwU95Md8EmogRBXy_0zFJD6Q",
+      "types": [
+        "cafe",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJwU95Md8EmogRBXy_0zFJD6Q",
+      "displayName": {
+        "text": "Foam Coffee",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "BESIDE",
+      "travelDistanceMeters": 1.1995926,
+      "straightLineDistanceMeters": 17.946522
+    },
+    {
+      "name": "places/ChIJkyJ6rSAFmogRD5lVndPjdgM",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJkyJ6rSAFmogRD5lVndPjdgM",
+      "displayName": {
+        "text": "The ugly Diner",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 162.83823,
+      "straightLineDistanceMeters": 36.1155
+    },
+    {
+      "name": "places/ChIJhfGBztgEmogR4ACNk761oqw",
+      "types": [
+        "establishment",
+        "food",
+        "meal_takeaway",
+        "point_of_interest",
+        "restaurant",
+        "store"
+      ],
+      "placeId": "ChIJhfGBztgEmogR4ACNk761oqw",
+      "displayName": {
+        "text": "Amelia's Deli",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "ACROSS_THE_ROAD",
+      "travelDistanceMeters": 3.9042616,
+      "straightLineDistanceMeters": 35.124287
+    },
+    {
+      "name": "places/ChIJP_J_f98EmogR60gSMkAZ6q8",
+      "types": [
+        "establishment",
+        "park",
+        "point_of_interest",
+        "tourist_attraction"
+      ],
+      "placeId": "ChIJP_J_f98EmogR60gSMkAZ6q8",
+      "displayName": {
+        "text": "Meyer Park",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 179.69637,
+      "straightLineDistanceMeters": 244.80614
+    }
+  ]
+}
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url | hero_image_url v2-fix 2026-07-21: repointed to a photo confirmed to actually exist
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: generic
+industry_code: retail
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   2 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 2] ---
+id: d0e46a77-9530-4a4a-979d-0abbcfb299ee
+entity_slug: isla-wine
+place_id: ChIJTRD9S98EmogRgdzsGZysN4M
+containment: NEAR
+display_name: Our Lady of the Gulf Catholic Church
+
+--- entity_address_areas [row 2 of 2] ---
+id: a76cad18-630c-477a-89e9-e18c75647dc1
+entity_slug: isla-wine
+place_id: ChIJP_J_f98EmogR6bCq8UXZn6c
+containment: NEAR
+display_name: Meyer Park
+
+####################################################################################################
+# TABLE: entity_attributes   -   12 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 12] ---
+id: c491b92d-1c47-4418-9014-0dc214f18763
+entity_slug: isla-wine
+category: service
+key: delivery
+label: Delivery
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 2 of 12] ---
+id: ab85be1e-6580-406d-ad88-dedd7d9e85d6
+entity_slug: isla-wine
+category: service
+key: curbside_pickup
+label: Curbside Pickup
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 3 of 12] ---
+id: dae24421-4a9f-47e4-94eb-1d0e6984529c
+entity_slug: isla-wine
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 4 of 12] ---
+id: 22ddff62-a397-4573-a1eb-02a201e91d26
+entity_slug: isla-wine
+category: accessibility
+key: access_wheelchairAccessibleSeating
+label: Wheelchair Accessible Seating
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 5 of 12] ---
+id: 286b512e-655c-44db-a819-232d1188e4fa
+entity_slug: isla-wine
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 6 of 12] ---
+id: 5f74769b-9e78-4128-b322-6c7e3dee05be
+entity_slug: isla-wine
+category: accessibility
+key: access_wheelchairAccessibleRestroom
+label: Wheelchair Accessible Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 7 of 12] ---
+id: 0f44d521-682d-48e0-918a-eb222c3abfb3
+entity_slug: isla-wine
+category: parking
+key: parking_freeParkingLot
+label: Free Parking Lot
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 8 of 12] ---
+id: 7953e799-98fe-4b86-8363-6f5a37578932
+entity_slug: isla-wine
+category: parking
+key: parking_freeStreetParking
+label: Free Street Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 9 of 12] ---
+id: 5ddbe6f9-697b-4c6f-a9c9-62bfd1a9e014
+entity_slug: isla-wine
+category: payment
+key: pay_acceptsNfc
+label: Accepts Nfc
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 10 of 12] ---
+id: 1202350a-2ba8-499a-bf20-443d56efbdc4
+entity_slug: isla-wine
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 11 of 12] ---
+id: 3a3030be-8687-47c5-ae13-f85ef03ca192
+entity_slug: isla-wine
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 12 of 12] ---
+id: a0edc11a-6df2-491d-847c-ed0245b5835a
+entity_slug: isla-wine
+category: payment
+key: pay_acceptsCreditCards
+label: Accepts Credit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: isla-wine
+name: Isla Wine
+industry_code: retail
+is_parent: false
+score_of_7: 5
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 7b3a34d2-6497-41f8-a4f8-c4a43b3737cf
+entity_slug: isla-wine
+place_uri: https://maps.google.com/?cid=16429893041782990074&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05baa538d72f:0xe402b4ac152324fa!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05baa538d72f:0xe402b4ac152324fa!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05baa538d72f:0xe402b4ac152324fa!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05baa538d72f:0xe402b4ac152324fa!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 4254
+entity_slug: isla-wine
+google_review_name: places/ChIJL9c4pboFmogR-iQjFay0AuQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT21GSGRIQkxTbWR1YjJRMVozSnRka05CT1dZeFluYxAB
+rating: 5
+review_text: Several friends and I attended last night’s wine tasting, and it was such a wonderful experience. The atmosphere was warm and welcoming, the wine and food were excellent, and the insights into the different regions added something special. The staff were incredibly friendly, attentive, and genuinely inviting, which made the evening feel even more comfortable and enjoyable. It was the perfect girls’ night out, and we’ll definitely be coming back.”
+language_code: en
+author_name: T D
+author_profile_url: https://www.google.com/maps/contrib/109188988233746082246/reviews
+publish_time: 2025-09-12T13:12:22.824664+00:00
+relative_time: 9 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21GSGRIQkxTbWR1YjJRMVozSnRka05CT1dZeFluYxAB!2m1!1s0x889a05baa538d72f:0xe402b4ac152324fa
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 4255
+entity_slug: isla-wine
+google_review_name: places/ChIJL9c4pboFmogR-iQjFay0AuQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT25sb1FsOXhTVkZPU2tKdWRFMTNXbmx0U1RSUlJYYxAB
+rating: 5
+review_text: Best place to buy wine in Gulf Shores.  Nice boutique wine shop.  The have a wide range of wines from many regions.  Staff is very helpful and knowledgeable.  They serve wins by the glass and some charcuterie too.  Cute place. If you’re a wine lover, this is the place to check out!
+language_code: en
+author_name: Brian Cooper
+author_profile_url: https://www.google.com/maps/contrib/112338553272396014089/reviews
+publish_time: 2026-04-07T15:48:05.746913+00:00
+relative_time: 2 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25sb1FsOXhTVkZPU2tKdWRFMTNXbmx0U1RSUlJYYxAB!2m1!1s0x889a05baa538d72f:0xe402b4ac152324fa
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 4256
+entity_slug: isla-wine
+google_review_name: places/ChIJL9c4pboFmogR-iQjFay0AuQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT2psSWJUSmZWRFJxVjA5UVUyaHZZWFkxZDJwTE9VRRAB
+rating: 4
+review_text: This is a great wine store with one of the best selections I have seen in the area. They even have a decent selection of beer. This location has a nice ambiance and it was a bit hidden away until they started doing road construction in the area and now it is on the main diversion street. Isla Wine also offers a few food options here as well. You also get the benefit that Isla Wine is located right next to Foam Coffee where they have more food options and coffee.
+language_code: en
+author_name: Shannon (NOLA Gent)
+author_profile_url: https://www.google.com/maps/contrib/103196358978878522301/reviews
+publish_time: 2025-07-01T19:22:04.749522+00:00
+relative_time: 11 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2psSWJUSmZWRFJxVjA5UVUyaHZZWFkxZDJwTE9VRRAB!2m1!1s0x889a05baa538d72f:0xe402b4ac152324fa
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 4257
+entity_slug: isla-wine
+google_review_name: places/ChIJL9c4pboFmogR-iQjFay0AuQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xVd2RXZHlXbTgyTTB3M1JITkhjRzVtZERVME1HYxAB
+rating: 5
+review_text: Amazing Food. Amazing people. A great wine selection that peaks your interest. All of it very well curated within a cozy setting.
+language_code: en
+author_name: Michael T
+author_profile_url: https://www.google.com/maps/contrib/104100389745629820272/reviews
+publish_time: 2026-01-18T19:02:37.051181+00:00
+relative_time: 4 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xVd2RXZHlXbTgyTTB3M1JITkhjRzVtZERVME1HYxAB!2m1!1s0x889a05baa538d72f:0xe402b4ac152324fa
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 4258
+entity_slug: isla-wine
+google_review_name: places/ChIJL9c4pboFmogR-iQjFay0AuQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xwNVlUSnpaMVl4WmpaamVVMTZaV1YxWTBGMVYxRRAB
+rating: 5
+review_text: Isla Wine is a true gem in our neighborhood. I absolutely love stopping in—whether it’s to pick up a great bottle or spend time with friends. Robin and her staff are knowledgeable, friendly, and always happy to help. The wine selection is excellent, and the food is delicious. I recently hosted a small gathering there, and everything was perfect—great atmosphere, amazing service, and wonderful hospitality. I can’t wait to do it again!
+language_code: en
+author_name: Suzette Taylor
+author_profile_url: https://www.google.com/maps/contrib/103550053854323469176/reviews
+publish_time: 2025-06-24T16:11:24.215152+00:00
+relative_time: 11 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xwNVlUSnpaMVl4WmpaamVVMTZaV1YxWTBGMVYxRRAB!2m1!1s0x889a05baa538d72f:0xe402b4ac152324fa
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   6 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 6] ---
+id: 5e919fbf-53c2-45ab-9768-e71dae9b7060
+entity_slug: isla-wine
+day_of_week: 1
+opens_at: 11:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 6] ---
+id: 63c6eacf-162c-402f-8130-f252d68b1583
+entity_slug: isla-wine
+day_of_week: 2
+opens_at: 11:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 6] ---
+id: 1bf32288-6aea-4062-bd5a-9fa730d04505
+entity_slug: isla-wine
+day_of_week: 3
+opens_at: 11:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 6] ---
+id: 1939c944-c828-4651-9816-6feefb793058
+entity_slug: isla-wine
+day_of_week: 4
+opens_at: 11:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 6] ---
+id: f4ed0168-cf01-4ed4-b874-8a2b7e16c653
+entity_slug: isla-wine
+day_of_week: 5
+opens_at: 11:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 6] ---
+id: 4710222f-a3f1-4e03-9823-6ffc718cb14b
+entity_slug: isla-wine
+day_of_week: 6
+opens_at: 11:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_modules   -   10 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 10] ---
+id: 89178cd9-7464-4195-b9a1-f087dc222105
+entity_slug: isla-wine
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 10] ---
+id: 1b9b8410-c5e6-49ec-bcf7-8aaf82160939
+entity_slug: isla-wine
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 10] ---
+id: 593548cc-98cc-43c5-a893-e4b79dfd203b
+entity_slug: isla-wine
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 10] ---
+id: ce35c82f-3c60-439f-b0cb-fe0798a601b7
+entity_slug: isla-wine
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 10] ---
+id: 6804731a-4d4f-49de-964d-5ffad7385299
+entity_slug: isla-wine
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 10] ---
+id: 2ef534a0-e56a-4b0d-af6b-65e2fe0317e0
+entity_slug: isla-wine
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 10] ---
+id: 391ffc9f-999b-4b6b-b9b6-ca988fb8e36b
+entity_slug: isla-wine
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 10] ---
+id: a265edf9-b219-4f8d-b8f8-e54747996162
+entity_slug: isla-wine
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 10] ---
+id: 87bd3f21-8d7a-4207-ac35-a4acdf8025f2
+entity_slug: isla-wine
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 10] ---
+id: 74d2a483-552d-40ad-a0c8-bcd4aa2d1f84
+entity_slug: isla-wine
+module_key: shop
+enabled: true
+sort_order: 10
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   23 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 23] ---
+id: 3e0325e3-432d-49c2-b6c8-45e19bd28a5f
+landmark_id: 67f95cb0-6445-4088-b094-57afa3eabdf8
+entity_slug: isla-wine
+landmark_type: church
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 23] ---
+id: d6807c90-a49c-41f1-8dae-3e32bcadf520
+landmark_id: 67f95cb0-6445-4088-b094-57afa3eabdf8
+entity_slug: isla-wine
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 23] ---
+id: e007c92d-d3c4-4c49-9a55-ecae7a43441b
+landmark_id: 67f95cb0-6445-4088-b094-57afa3eabdf8
+entity_slug: isla-wine
+landmark_type: place_of_worship
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 23] ---
+id: 25bc9001-4359-4cdc-9434-fe28139a3165
+landmark_id: 67f95cb0-6445-4088-b094-57afa3eabdf8
+entity_slug: isla-wine
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 23] ---
+id: b37c9128-0b9c-41ef-a58c-3ddda64d4263
+landmark_id: 7686828d-924f-4fbc-a12d-01038e3f6c1f
+entity_slug: isla-wine
+landmark_type: cafe
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 23] ---
+id: b70b00b7-e0bb-4bf2-bd5e-0b4b966983b7
+landmark_id: 7686828d-924f-4fbc-a12d-01038e3f6c1f
+entity_slug: isla-wine
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 23] ---
+id: 86b91f83-f474-4763-a34d-fb8062d12a8c
+landmark_id: 7686828d-924f-4fbc-a12d-01038e3f6c1f
+entity_slug: isla-wine
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 23] ---
+id: c039dd09-d33c-429f-8ff4-414bf3a6445b
+landmark_id: 7686828d-924f-4fbc-a12d-01038e3f6c1f
+entity_slug: isla-wine
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 23] ---
+id: 2c945a3d-e0de-4b76-8aff-b45f05afcd66
+landmark_id: 7686828d-924f-4fbc-a12d-01038e3f6c1f
+entity_slug: isla-wine
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 23] ---
+id: 14e86c44-a30b-4bd1-94d9-c3edffb72be5
+landmark_id: 0ec29042-340d-49b2-a928-3181a6954d93
+entity_slug: isla-wine
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 23] ---
+id: dcd52809-1cb5-4122-a41a-b347f8eab704
+landmark_id: 0ec29042-340d-49b2-a928-3181a6954d93
+entity_slug: isla-wine
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 23] ---
+id: 85d24648-4569-4ec5-8158-c80fc2c92baf
+landmark_id: 0ec29042-340d-49b2-a928-3181a6954d93
+entity_slug: isla-wine
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 23] ---
+id: 38186599-15f7-437a-8e00-463ce796efec
+landmark_id: 0ec29042-340d-49b2-a928-3181a6954d93
+entity_slug: isla-wine
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 23] ---
+id: 1a63f9ce-20e7-45e3-803a-ec8a1d87d95d
+landmark_id: 122aa609-a2f0-4575-892b-dde00e00a5e3
+entity_slug: isla-wine
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 23] ---
+id: 059abbcd-89cf-408d-94db-0abdf75b8719
+landmark_id: 122aa609-a2f0-4575-892b-dde00e00a5e3
+entity_slug: isla-wine
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 23] ---
+id: d1ee0808-ee39-4e5d-a825-5ba3f3413caa
+landmark_id: 122aa609-a2f0-4575-892b-dde00e00a5e3
+entity_slug: isla-wine
+landmark_type: meal_takeaway
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 23] ---
+id: 1fbf6574-2aac-4a74-8d79-e2b52d5fb232
+landmark_id: 122aa609-a2f0-4575-892b-dde00e00a5e3
+entity_slug: isla-wine
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 23] ---
+id: 18a55934-7daa-499d-a9f9-b2f008ff8e00
+landmark_id: 122aa609-a2f0-4575-892b-dde00e00a5e3
+entity_slug: isla-wine
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 19 of 23] ---
+id: b1663221-1af3-4f42-9a97-de76e7d277f6
+landmark_id: 122aa609-a2f0-4575-892b-dde00e00a5e3
+entity_slug: isla-wine
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 20 of 23] ---
+id: d5b80dc8-3e14-454b-85c4-bd443abdc5bf
+landmark_id: f93e20c0-71b0-4796-843a-ffceff67af9a
+entity_slug: isla-wine
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 21 of 23] ---
+id: c5e6cfed-907c-4fe9-8373-b4e1dbac846f
+landmark_id: f93e20c0-71b0-4796-843a-ffceff67af9a
+entity_slug: isla-wine
+landmark_type: park
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 22 of 23] ---
+id: e4ce4418-92c3-4f70-8b6e-80e053c86564
+landmark_id: f93e20c0-71b0-4796-843a-ffceff67af9a
+entity_slug: isla-wine
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 23 of 23] ---
+id: 5cc893a7-8aaa-48a1-92f8-013d1ce4fc64
+landmark_id: f93e20c0-71b0-4796-843a-ffceff67af9a
+entity_slug: isla-wine
+landmark_type: tourist_attraction
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   7 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 7] ---
+id: 67f95cb0-6445-4088-b094-57afa3eabdf8
+entity_slug: isla-wine
+kind: landmark
+place_id: ChIJSVWBtdgEmogReyyrFU5KWLY
+name: Our Lady of the Gulf Catholic Church
+types: [
+  "church",
+  "establishment",
+  "place_of_worship",
+  "point_of_interest"
+]
+travel_distance_meters: 171.61806
+straight_line_distance_meters: 89.77318
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 7] ---
+id: 7686828d-924f-4fbc-a12d-01038e3f6c1f
+entity_slug: isla-wine
+kind: landmark
+place_id: ChIJwU95Md8EmogRBXy_0zFJD6Q
+name: Foam Coffee
+types: [
+  "cafe",
+  "establishment",
+  "food",
+  "point_of_interest",
+  "store"
+]
+spatial_relationship: BESIDE
+travel_distance_meters: 1.1995926
+straight_line_distance_meters: 17.946522
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 7] ---
+id: 0ec29042-340d-49b2-a928-3181a6954d93
+entity_slug: isla-wine
+kind: landmark
+place_id: ChIJkyJ6rSAFmogRD5lVndPjdgM
+name: The ugly Diner
+types: [
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant"
+]
+travel_distance_meters: 162.83823
+straight_line_distance_meters: 36.1155
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 7] ---
+id: 122aa609-a2f0-4575-892b-dde00e00a5e3
+entity_slug: isla-wine
+kind: landmark
+place_id: ChIJhfGBztgEmogR4ACNk761oqw
+name: Amelia's Deli
+types: [
+  "establishment",
+  "food",
+  "meal_takeaway",
+  "point_of_interest",
+  "restaurant",
+  "store"
+]
+spatial_relationship: ACROSS_THE_ROAD
+travel_distance_meters: 3.9042616
+straight_line_distance_meters: 35.124287
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 7] ---
+id: f93e20c0-71b0-4796-843a-ffceff67af9a
+entity_slug: isla-wine
+kind: landmark
+place_id: ChIJP_J_f98EmogR60gSMkAZ6q8
+name: Meyer Park
+types: [
+  "establishment",
+  "park",
+  "point_of_interest",
+  "tourist_attraction"
+]
+travel_distance_meters: 179.69637
+straight_line_distance_meters: 244.80614
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 6 of 7] ---
+id: 15604597-706a-48b3-bb84-4101186d4b00
+entity_slug: isla-wine
+kind: area
+place_id: ChIJTRD9S98EmogRgdzsGZysN4M
+name: Our Lady of the Gulf Catholic Church
+containment: NEAR
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 7 of 7] ---
+id: 0d1f483d-b89f-42cd-942c-2f9a51a5e6c5
+entity_slug: isla-wine
+kind: area
+place_id: ChIJP_J_f98EmogR6bCq8UXZn6c
+name: Meyer Park
+containment: NEAR
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_photos   -   24 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 24] ---
+id: 29ceabc1-7dff-410d-96b0-2a4a37bff5ba
+entity_slug: isla-wine
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/isla-wine/photo_06.jpg
+is_cover: false
+sort_order: 5
+
+--- entity_photos [row 2 of 24] ---
+id: 85c645ef-9ed6-4591-9bec-5d658c1f8622
+entity_slug: isla-wine
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/isla-wine/photo_04.jpg
+is_cover: false
+sort_order: 3
+
+--- entity_photos [row 3 of 24] ---
+id: a5356f78-a7bc-4897-bb37-1896a2f8337f
+entity_slug: isla-wine
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/isla-wine/photo_05.jpg
+is_cover: false
+sort_order: 4
+
+--- entity_photos [row 4 of 24] ---
+id: 01114bc4-c186-413b-9c0f-2865e1294ce6
+entity_slug: isla-wine
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/isla-wine/photo_07.jpg
+is_cover: false
+sort_order: 6
+
+--- entity_photos [row 5 of 24] ---
+id: 1ba86b0b-2031-4e66-97e5-e7fd827ef2fb
+entity_slug: isla-wine
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/isla-wine/photo_08.jpg
+is_cover: false
+sort_order: 7
+
+--- entity_photos [row 6 of 24] ---
+id: e5c4c283-121f-4548-a505-9ac64b01e9a1
+entity_slug: isla-wine
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/isla-wine/photo_03.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 7 of 24] ---
+id: 244647ab-1b4b-46ee-8fb4-30cee061c6b3
+entity_slug: isla-wine
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/isla-wine/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 8 of 24] ---
+id: 8895fcce-e05c-4149-9522-e5f859978422
+entity_slug: isla-wine
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/isla-wine/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 9 of 24] ---
+id: a6d03043-a102-402c-80e7-a726deb1837b
+entity_slug: isla-wine
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/isla-wine/photo_10.jpg
+is_cover: false
+sort_order: 9
+
+--- entity_photos [row 10 of 24] ---
+id: 6766a93e-017c-41d4-937f-ae2d114e4ae6
+entity_slug: isla-wine
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/isla-wine/photo_09.jpg
+is_cover: false
+sort_order: 8
+
+--- entity_photos [row 11 of 24] ---
+id: 33d5cd21-21da-4eee-ac65-39a0eb42b9ac
+entity_slug: isla-wine
+url: https://places.googleapis.com/v1/places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3m9e4oyuhXHpqft0kGELGuk4djW6Y6USvoKeVM0-H-as5MGKbeeoxHEgaZGWh9RkkUb9LhsezsN3nJtODWLvb2BFAt-t2a4QM0vwrBd_JTRQI9NqNgQI26UdQ0Kvmg4CBuyKmHDKGvQIiD0JjUZhD528VU2Oev8BUO6jb_IvCxkB5d3B4NshlwIfjwCzeIOTfAtkqQF-GjgN3FJkfzZ5uI3-FbKmF_6kxVLfBTCIhheudf_wf85OmXN7IT2tvjsmeh-5Ui47OjQyr1rX6LTRBHUL3ju4g1KxRf04PCwoFps9HXP63CcRT5tLGZhxcFgwOjk_K6jasj9mfJS5P7oxG_oT5pCiGcv6zysZLNngkszTKEvtDKF6TkWDmRnDZvh4qi8_LzCw6j159ynM9j7iP0LjCCvF2UZLGuKIyCALS7RRZuVCpg2Kk_kY1w5KA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3m9e4oyuhXHpqft0kGELGuk4djW6Y6USvoKeVM0-H-as5MGKbeeoxHEgaZGWh9RkkUb9LhsezsN3nJtODWLvb2BFAt-t2a4QM0vwrBd_JTRQI9NqNgQI26UdQ0Kvmg4CBuyKmHDKGvQIiD0JjUZhD528VU2Oev8BUO6jb_IvCxkB5d3B4NshlwIfjwCzeIOTfAtkqQF-GjgN3FJkfzZ5uI3-FbKmF_6kxVLfBTCIhheudf_wf85OmXN7IT2tvjsmeh-5Ui47OjQyr1rX6LTRBHUL3ju4g1KxRf04PCwoFps9HXP63CcRT5tLGZhxcFgwOjk_K6jasj9mfJS5P7oxG_oT5pCiGcv6zysZLNngkszTKEvtDKF6TkWDmRnDZvh4qi8_LzCw6j159ynM9j7iP0LjCCvF2UZLGuKIyCALS7RRZuVCpg2Kk_kY1w5KA
+is_cover: false
+sort_order: 0
+caption: Isla Wine
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCoNuVUTYwO-8p1GqVrj3fp!2e10!4m2!3m1!1s0x889a05baa538d72f:0xe402b4ac152324fa
+
+--- entity_photos [row 12 of 24] ---
+id: 4c25f6e9-eda2-4169-9460-04eeb0670522
+entity_slug: isla-wine
+url: https://places.googleapis.com/v1/places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3kVDnne485MSPJHF3FJmsXKzCr-Z5H4yiPil297T3-zWOE4qYIvpdDH3U3QoBcjFYFjnLoV9GDkCC6FZJfR2Z3XiYz76OvltolrsBxYCSeaJxaj1YqzQUX5k-Ys9Ec09MPB2JHVUIbKSFClT4rCXP2jSQ9-crJv1zpCq3a_JPUV5baX6hui32MDU1d707qDUfCXR_sV0Fb0L2rEwsD1pb__tmQ1x-DgEP1cTz7-di9HEJtPq28gc34F0FIRj5pWhj0yBrCclxhPoASndb5WxVOlYwc9Q7wNMGySf73pPbi1JMiPqvnMsSm0GTpcw-GbtClt-Q-gnbUAxrgMojEyajNc6t9FkTjGIeAOH8nRQpbJ6K3Qeery1g0LEIYycNHJu_ogXvpi_gMD_skI_oCgK_svqjV5GW1U9b0_GFNGdhiyxCnFa5SfqhFDwSaBON1P/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3kVDnne485MSPJHF3FJmsXKzCr-Z5H4yiPil297T3-zWOE4qYIvpdDH3U3QoBcjFYFjnLoV9GDkCC6FZJfR2Z3XiYz76OvltolrsBxYCSeaJxaj1YqzQUX5k-Ys9Ec09MPB2JHVUIbKSFClT4rCXP2jSQ9-crJv1zpCq3a_JPUV5baX6hui32MDU1d707qDUfCXR_sV0Fb0L2rEwsD1pb__tmQ1x-DgEP1cTz7-di9HEJtPq28gc34F0FIRj5pWhj0yBrCclxhPoASndb5WxVOlYwc9Q7wNMGySf73pPbi1JMiPqvnMsSm0GTpcw-GbtClt-Q-gnbUAxrgMojEyajNc6t9FkTjGIeAOH8nRQpbJ6K3Qeery1g0LEIYycNHJu_ogXvpi_gMD_skI_oCgK_svqjV5GW1U9b0_GFNGdhiyxCnFa5SfqhFDwSaBON1P
+is_cover: false
+sort_order: 1
+caption: Isla Wine
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDGPCvuOkvVmeFYskO0q8UQ!2e10!4m2!3m1!1s0x889a05baa538d72f:0xe402b4ac152324fa
+
+--- entity_photos [row 13 of 24] ---
+id: fc86194a-efbb-45a2-8e5e-ba9397ab5034
+entity_slug: isla-wine
+url: https://places.googleapis.com/v1/places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3ntpN6zm9FkexFMa7TxoKx3fCF2cMN3ElJy-Mm-WeMekkgd9revqeLp8UGh0zYUbnVLu_4Ma7JcY7jXqbZtLGLCF636kMATSEPQIrjHv2LQQ2lOCoG0-njwwGfawVj03Yu51Z4oQlig-zdQnirpfPRmEXKRlv6crJDN4oqC2JyfYkHt03S2nOneLw_tftQdDeUhOcN7pSN6jxtwtvgzqqjXDRR_lKJ6MNwj5KLwXiIjOuiDt7r2llJoAYSdTjFoUwKwrrFPbpsnYziEp7Py60WhK9cyOtElgobm_oOXcNvscgG4b2cGegWNdRf40NOr8KPRTGASyQhp1ygSeDSIu6rBwagTPHytAZ4gW0m_g38AySS5pytPrfNhT_XYTh5GMfGyq_df0IzC70O9Da3QIKo2yLM57qigGcFl7kBTslyg4VefDp8CserFJ0LYIXmT/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3ntpN6zm9FkexFMa7TxoKx3fCF2cMN3ElJy-Mm-WeMekkgd9revqeLp8UGh0zYUbnVLu_4Ma7JcY7jXqbZtLGLCF636kMATSEPQIrjHv2LQQ2lOCoG0-njwwGfawVj03Yu51Z4oQlig-zdQnirpfPRmEXKRlv6crJDN4oqC2JyfYkHt03S2nOneLw_tftQdDeUhOcN7pSN6jxtwtvgzqqjXDRR_lKJ6MNwj5KLwXiIjOuiDt7r2llJoAYSdTjFoUwKwrrFPbpsnYziEp7Py60WhK9cyOtElgobm_oOXcNvscgG4b2cGegWNdRf40NOr8KPRTGASyQhp1ygSeDSIu6rBwagTPHytAZ4gW0m_g38AySS5pytPrfNhT_XYTh5GMfGyq_df0IzC70O9Da3QIKo2yLM57qigGcFl7kBTslyg4VefDp8CserFJ0LYIXmT
+is_cover: false
+sort_order: 2
+caption: Isla Wine
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCSfKyF2CK1Ye8yf2TdwUty!2e10!4m2!3m1!1s0x889a05baa538d72f:0xe402b4ac152324fa
+
+--- entity_photos [row 14 of 24] ---
+id: 14ad9b64-f29f-446e-a64b-8d585aae2c23
+entity_slug: isla-wine
+url: https://places.googleapis.com/v1/places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3knmEuVkczqHDn41EGJRNXaWe9R3vW9RTZpPwOcZc6ZBnhn4qUKgcVx5zF0KFAD0ooJsgz3Jc2ZxrHmFP-f8c2DqMSzzOeG1BMACgFSZQDxozxnqsrtYaF_-OeqU_1Obi2wfxO3VbhyVhuaZdFTJHvI1Y4z5qI_q-U4s4st2NnliWwmP8myP9qDXtXd1RrE4N_JTswO_TrLMHOWBfklZ9MUZdqitPVZ6kfIrDkwA2_cfWr3zgzciTBpc7K97-tSxQcV2YqmNhHvVOIITHiGVr8vJyPCmRsoSdAqDnsOoORXf_NRqtdEzYz2T7oTDDEAGJIiXPaW0IpHyg9y1uDGWKhSkuXw0to10iCZXuasZzw4V4LQZnHiu379XqJWoD4UUh18960DJSo1t6WkJ5oDue3LgjGcCBuc74s7GkkFtwU7IaGkxE8LFAueLKj_2w/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3knmEuVkczqHDn41EGJRNXaWe9R3vW9RTZpPwOcZc6ZBnhn4qUKgcVx5zF0KFAD0ooJsgz3Jc2ZxrHmFP-f8c2DqMSzzOeG1BMACgFSZQDxozxnqsrtYaF_-OeqU_1Obi2wfxO3VbhyVhuaZdFTJHvI1Y4z5qI_q-U4s4st2NnliWwmP8myP9qDXtXd1RrE4N_JTswO_TrLMHOWBfklZ9MUZdqitPVZ6kfIrDkwA2_cfWr3zgzciTBpc7K97-tSxQcV2YqmNhHvVOIITHiGVr8vJyPCmRsoSdAqDnsOoORXf_NRqtdEzYz2T7oTDDEAGJIiXPaW0IpHyg9y1uDGWKhSkuXw0to10iCZXuasZzw4V4LQZnHiu379XqJWoD4UUh18960DJSo1t6WkJ5oDue3LgjGcCBuc74s7GkkFtwU7IaGkxE8LFAueLKj_2w
+is_cover: false
+sort_order: 3
+caption: Isla Wine
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBZh8ad0F9ApArbZbfNXVj5!2e10!4m2!3m1!1s0x889a05baa538d72f:0xe402b4ac152324fa
+
+--- entity_photos [row 15 of 24] ---
+id: 8105a6b9-4b6f-4f4c-96de-82a4c06d1bb9
+entity_slug: isla-wine
+url: https://places.googleapis.com/v1/places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3l66IKr3vIWEpQiWfC0TtUOKPfKtFQjWaqks6gnX2Xn8F1ZhT1jbfNlBUy3b1-1f04dSyQ6iVobbgOtPmBcNW8OMjVRe0i1ZInLrNkNeo10xzcHF9DOcAYrPgUu-5RWYhAjS_8IVuVOu0wrkl9TsAMQWH6P580B378nuBb0UEN0nMH8bAgY63uhXJqbMFPkFAPx61SsarLqnMDDuzVF2WRz7tX7C1DSUVaLKk73aHehEVd9caK39f3Jzpqy-OKHDyiFunm5h9HkEReRud_FqvjUO5-QCsshNp92gboBpXBDZAk-wc0pCTHNMTPNd-xw0VWmR7lJGhci2QmMfNjs6LsNi7WjiLsLZFRAse28aUziGyvKuq7V-q_G9Fg2GbqoHb8IOBIga6wz349dhDziYB3qkYvBYY816L_k2bEszEnIUYYM7gjep6fIYS-JUg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3l66IKr3vIWEpQiWfC0TtUOKPfKtFQjWaqks6gnX2Xn8F1ZhT1jbfNlBUy3b1-1f04dSyQ6iVobbgOtPmBcNW8OMjVRe0i1ZInLrNkNeo10xzcHF9DOcAYrPgUu-5RWYhAjS_8IVuVOu0wrkl9TsAMQWH6P580B378nuBb0UEN0nMH8bAgY63uhXJqbMFPkFAPx61SsarLqnMDDuzVF2WRz7tX7C1DSUVaLKk73aHehEVd9caK39f3Jzpqy-OKHDyiFunm5h9HkEReRud_FqvjUO5-QCsshNp92gboBpXBDZAk-wc0pCTHNMTPNd-xw0VWmR7lJGhci2QmMfNjs6LsNi7WjiLsLZFRAse28aUziGyvKuq7V-q_G9Fg2GbqoHb8IOBIga6wz349dhDziYB3qkYvBYY816L_k2bEszEnIUYYM7gjep6fIYS-JUg
+is_cover: false
+sort_order: 4
+caption: Isla Wine
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAztRwR8QNmo9S1xWKr9FxH!2e10!4m2!3m1!1s0x889a05baa538d72f:0xe402b4ac152324fa
+
+--- entity_photos [row 16 of 24] ---
+id: 6d278f29-6361-4da0-9663-210c6c9b2e94
+entity_slug: isla-wine
+url: https://places.googleapis.com/v1/places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3mlA-drDztSn__aOVr1WEYbZxxmXqZAyts7aYYgIkF6RC6spSZoNCvRCr1VvyYxYDGbc0qPNR96cwg2cSBoi6ak2Vpy4t-kI51NSRD5lMvUSsM4sWmXIoRvNks31EDVYAeJWj7hLRN9LGvQiUkwJbIFgZl-fAEEPsoQJzhAhezWKJcEXn73tjcM-JIKuMCPIS-2BEU1xLfT4g-3Np64-Ff_nF3_bWD4uWGW4G_Q3FpZtzsgW4rce_ahPnuR3TssytdYdFi5bjnRKxbI39GgcEa0yS5iKDdena6FqP4GlMFgdYn5K4Fj76RjssVwanHrvJPGDq-JMpR0t3FHXgh3JQppR-Gl9ecUUY6FAJS9AD-Ai57-6EwfApUIbQ6tSJexH4ehVqAB1Cr1-TDKJH7DrCMbDmeDn1vrVKl_mQWYBAqHZIdpZ19oI-zm-sZosrjB/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3mlA-drDztSn__aOVr1WEYbZxxmXqZAyts7aYYgIkF6RC6spSZoNCvRCr1VvyYxYDGbc0qPNR96cwg2cSBoi6ak2Vpy4t-kI51NSRD5lMvUSsM4sWmXIoRvNks31EDVYAeJWj7hLRN9LGvQiUkwJbIFgZl-fAEEPsoQJzhAhezWKJcEXn73tjcM-JIKuMCPIS-2BEU1xLfT4g-3Np64-Ff_nF3_bWD4uWGW4G_Q3FpZtzsgW4rce_ahPnuR3TssytdYdFi5bjnRKxbI39GgcEa0yS5iKDdena6FqP4GlMFgdYn5K4Fj76RjssVwanHrvJPGDq-JMpR0t3FHXgh3JQppR-Gl9ecUUY6FAJS9AD-Ai57-6EwfApUIbQ6tSJexH4ehVqAB1Cr1-TDKJH7DrCMbDmeDn1vrVKl_mQWYBAqHZIdpZ19oI-zm-sZosrjB
+is_cover: false
+sort_order: 5
+caption: Isla Wine
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBekvW2AR2cw-sdb4pGMMAd!2e10!4m2!3m1!1s0x889a05baa538d72f:0xe402b4ac152324fa
+
+--- entity_photos [row 17 of 24] ---
+id: 74c378a7-0bad-4756-9516-51afc290eae6
+entity_slug: isla-wine
+url: https://places.googleapis.com/v1/places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3l135fjrnBIy5aFbSU1jMp9Mk4pAbck2a9i6OsTkO171vVDdx26YSU33xW7su7VK9593G_HZSLz-wMHjkVw_BEdJd-yOl19hTU4hoReHOqzkGrUs0XKa9ZktViECN9DNyVNdL1-n69fcUryZzzPvNTalcJSk12Ku_C5HGPO92IglPOrYZ8SqTvkEUC-CX-RNMD_JBNiKKyxmTZB9SNOq8o_fJ3opOQ6FJgIKHVOvZZe35rXetEn_8_O0YKAuS8-i543YP9E7Gcl1n53VWGreYEqi5vTuDbz4qSeWwvd2stZ3tB5MJ3KHT5ne5Jk3OTiPbHkR8qcoK4d77vFlLAJA6vzRq8OoCkBPBcIj4wP0dloDdmVgfOeABipYnQxwBumWoB9t2Gb4Z0VbbfA5Sro9026YD19W-zss69u6yRxnZhb21md9DvAr5CUABn3oxvN/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3l135fjrnBIy5aFbSU1jMp9Mk4pAbck2a9i6OsTkO171vVDdx26YSU33xW7su7VK9593G_HZSLz-wMHjkVw_BEdJd-yOl19hTU4hoReHOqzkGrUs0XKa9ZktViECN9DNyVNdL1-n69fcUryZzzPvNTalcJSk12Ku_C5HGPO92IglPOrYZ8SqTvkEUC-CX-RNMD_JBNiKKyxmTZB9SNOq8o_fJ3opOQ6FJgIKHVOvZZe35rXetEn_8_O0YKAuS8-i543YP9E7Gcl1n53VWGreYEqi5vTuDbz4qSeWwvd2stZ3tB5MJ3KHT5ne5Jk3OTiPbHkR8qcoK4d77vFlLAJA6vzRq8OoCkBPBcIj4wP0dloDdmVgfOeABipYnQxwBumWoB9t2Gb4Z0VbbfA5Sro9026YD19W-zss69u6yRxnZhb21md9DvAr5CUABn3oxvN
+is_cover: false
+sort_order: 6
+caption: Isla Wine
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhD-PCOHFijtic46A5FwKI1G!2e10!4m2!3m1!1s0x889a05baa538d72f:0xe402b4ac152324fa
+
+--- entity_photos [row 18 of 24] ---
+id: 9c2f4be5-866b-4eae-ba58-770f961708e5
+entity_slug: isla-wine
+url: https://places.googleapis.com/v1/places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3kjG4EtgBne8YEY2D8Kf_5jeHSnGG0zh_Uu0xSf0xhoRYBY5szjKFJ6b5LgAA1h5Eqp5RBWYj1vuvFr9Pat7q7hIRrroXHLfTdBqXVO7RBJVLMJwajfFpfs5ZwUD_68QI6gRH_PPfu_l4AbZzWLH0REvjfvKoAMsO4Hf-0qOQFcMx6J1oZBLZGkgANccyfZ8KCx8FsCiSNc_JBhya4HuYqRAFPVqsD45bwFno9gQx-EbSMKk4cpLPEyfFuRrqMRDU5-g4oRXkAh2vj_6CQanRhzIgbgIgdBC4xcneG_mk7MY2AH1rmh_qcKVx3xseJSl0qVUFhHqbXtI_uc6TbSo-0V8RJljPsef2TfVbmLV2gYxFQ2P7tgDl6N90KkWo6fyOUOWnOwnuNjWXy3xH18jigA5Oojo_ZWs85hQsacbmgwG7z_m9Jy5EKDhG95hg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3kjG4EtgBne8YEY2D8Kf_5jeHSnGG0zh_Uu0xSf0xhoRYBY5szjKFJ6b5LgAA1h5Eqp5RBWYj1vuvFr9Pat7q7hIRrroXHLfTdBqXVO7RBJVLMJwajfFpfs5ZwUD_68QI6gRH_PPfu_l4AbZzWLH0REvjfvKoAMsO4Hf-0qOQFcMx6J1oZBLZGkgANccyfZ8KCx8FsCiSNc_JBhya4HuYqRAFPVqsD45bwFno9gQx-EbSMKk4cpLPEyfFuRrqMRDU5-g4oRXkAh2vj_6CQanRhzIgbgIgdBC4xcneG_mk7MY2AH1rmh_qcKVx3xseJSl0qVUFhHqbXtI_uc6TbSo-0V8RJljPsef2TfVbmLV2gYxFQ2P7tgDl6N90KkWo6fyOUOWnOwnuNjWXy3xH18jigA5Oojo_ZWs85hQsacbmgwG7z_m9Jy5EKDhG95hg
+is_cover: false
+sort_order: 7
+caption: Isla Wine
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhA1R4W0hSV8GNAik9Uf64GI!2e10!4m2!3m1!1s0x889a05baa538d72f:0xe402b4ac152324fa
+
+--- entity_photos [row 19 of 24] ---
+id: a2a6b0bb-ce1e-42d8-9430-7fa852cfb065
+entity_slug: isla-wine
+url: https://places.googleapis.com/v1/places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3nc2yF94-GlRR5n3Uokl3qYI_hGHXHmJTS3HWz_p0MhVaCB0Ab2wcLWCrVlx0is_DBGr0oESiWfmqelq1iJ5duR8NdqMymlus9YIY3K6UQR4nrmUU855KD5b86UieK5r2U43mAwXIxyO4bVzjOC3pIF7pg1LCPWS4cL1qLGZpWAzC1LhT4Ycgw6XDS8y9kAz6oAphXW9wP1kJvElslPcvBqLUenRXrQJkY08YLpzMl7BNZQQe2CvzvquRFFKqHnGMjmUvgLKv6nkTRGflU7CclfHJYlRQn0HuF2_68wbw0L8YSJQrC0x3HmGBpRoVwNvtA2ZiDUQ0sS7BSkiMMpUZ7qBx2TFCSoOOVHjs0ryw3Y77WEgyo6JjtYrkGPrUBOWMf9AMtmipEFbX0iyef4Gubwd4IUp-koVshg78UXYXOpJZ1AXUZ38Oq3tRXcFxVi/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3nc2yF94-GlRR5n3Uokl3qYI_hGHXHmJTS3HWz_p0MhVaCB0Ab2wcLWCrVlx0is_DBGr0oESiWfmqelq1iJ5duR8NdqMymlus9YIY3K6UQR4nrmUU855KD5b86UieK5r2U43mAwXIxyO4bVzjOC3pIF7pg1LCPWS4cL1qLGZpWAzC1LhT4Ycgw6XDS8y9kAz6oAphXW9wP1kJvElslPcvBqLUenRXrQJkY08YLpzMl7BNZQQe2CvzvquRFFKqHnGMjmUvgLKv6nkTRGflU7CclfHJYlRQn0HuF2_68wbw0L8YSJQrC0x3HmGBpRoVwNvtA2ZiDUQ0sS7BSkiMMpUZ7qBx2TFCSoOOVHjs0ryw3Y77WEgyo6JjtYrkGPrUBOWMf9AMtmipEFbX0iyef4Gubwd4IUp-koVshg78UXYXOpJZ1AXUZ38Oq3tRXcFxVi
+is_cover: false
+sort_order: 8
+caption: J. VWC
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDtIMDBbdgqVDvTCf37mYlW!2e10!4m2!3m1!1s0x889a05baa538d72f:0xe402b4ac152324fa
+
+--- entity_photos [row 20 of 24] ---
+id: eed6a07a-fa24-409b-a54b-9c480a333576
+entity_slug: isla-wine
+url: https://places.googleapis.com/v1/places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3nAa0uuVL60J6NK5iekOVtI_Rx7FrL-IpEx_6aiAIP3qoIb2ApQIHA9jmFaHrGupCw1dI6FKSQIExoanlUS0B-90lQD-gJ7TndyFV-rd7am1WuBupPK2U9JLyVOjp2nU3Xvjrb5JPRaKgpRF9lgGWNKirmX9xJ8zz56Cs3-o8F7c4aZghHh2YBGaxGjY5mNYMW8iq25LjcHCRPT8fQbSHDZf6d-suEnU2S3pnGyDgqJVOx1xRbYAXp-a0qq3G-MAk-k9M6WQCK2DiDsD4XcbGni0su6ntWiq9lmua2gEeh38bJgK-D3HqZiy3kt7q1SQezDCduiVRjzp5tYrP1q9gMIx48UINQ8yPZ-OXNPTu37ORITNWBDgrUbfE7LPD93qEmyuyZaGo-NmT1ThYHpOazIyALeV-0JrkbceZ5-aRSkj18XnwTrwHtbuUPtzRFs/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJL9c4pboFmogR-iQjFay0AuQ/photos/AaVGc3nAa0uuVL60J6NK5iekOVtI_Rx7FrL-IpEx_6aiAIP3qoIb2ApQIHA9jmFaHrGupCw1dI6FKSQIExoanlUS0B-90lQD-gJ7TndyFV-rd7am1WuBupPK2U9JLyVOjp2nU3Xvjrb5JPRaKgpRF9lgGWNKirmX9xJ8zz56Cs3-o8F7c4aZghHh2YBGaxGjY5mNYMW8iq25LjcHCRPT8fQbSHDZf6d-suEnU2S3pnGyDgqJVOx1xRbYAXp-a0qq3G-MAk-k9M6WQCK2DiDsD4XcbGni0su6ntWiq9lmua2gEeh38bJgK-D3HqZiy3kt7q1SQezDCduiVRjzp5tYrP1q9gMIx48UINQ8yPZ-OXNPTu37ORITNWBDgrUbfE7LPD93qEmyuyZaGo-NmT1ThYHpOazIyALeV-0JrkbceZ5-aRSkj18XnwTrwHtbuUPtzRFs
+is_cover: false
+sort_order: 9
+caption: J. VWC
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDqwrvdof90SGCC1ycve7YX!2e10!4m2!3m1!1s0x889a05baa538d72f:0xe402b4ac152324fa
+
+--- entity_photos [row 21 of 24] ---
+id: a088c341-ce60-4610-a376-d16b37853107
+entity_slug: isla-wine
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/d72a845f-ef6c-4fdd-b83e-9ab03d2efd2b/d72a845f-ef6c-4fdd-b83e-9ab03d2efd2b_1779139728359.976.jpg
+is_cover: true
+sort_order: 0
+photo_type: hero
+source_name: legacy_businesses_table
+created_at: 2026-07-21T23:25:57.434852+00:00
+
+--- entity_photos [row 22 of 24] ---
+id: 7f286a06-689f-4307-9783-86589d9f581e
+entity_slug: isla-wine
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/4239e4ee-b808-4b40-86ea-f187aaac9277/image_3.jpg
+is_cover: false
+sort_order: 102
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 23 of 24] ---
+id: fdf61351-60ef-499c-a327-43f6c2140a2f
+entity_slug: isla-wine
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/4239e4ee-b808-4b40-86ea-f187aaac9277/image_2.jpg
+is_cover: false
+sort_order: 101
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 24 of 24] ---
+id: 3612859d-e2f0-4822-9af9-f1ef692ae966
+entity_slug: isla-wine
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/4239e4ee-b808-4b40-86ea-f187aaac9277/image_1.jpg
+is_cover: true
+sort_order: 100
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 8cb30508-7353-4416-bc54-08f631883872
+entity_slug: isla-wine
+reviewer_name: T D
+rating: 5
+body: Several friends and I attended last night’s wine tasting, and it was such a wonderful experience. The atmosphere was warm and welcoming, the wine and food were excellent, and the insights into the different regions added something special. The staff were incredibly friendly, attentive, and genuinely inviting, which made the evening feel even more comfortable and enjoyable. It was the perfect girls’ night out, and we’ll definitely be coming back.”
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-09-12T13:12:22.824664+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: 1350c79e-2532-4dde-a65f-2fd92506c0ea
+entity_slug: isla-wine
+reviewer_name: Brian Cooper
+rating: 5
+body: Best place to buy wine in Gulf Shores.  Nice boutique wine shop.  The have a wide range of wines from many regions.  Staff is very helpful and knowledgeable.  They serve wins by the glass and some charcuterie too.  Cute place. If you’re a wine lover, this is the place to check out!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-04-07T15:48:05.746913+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: ff572fdf-55e3-4fb2-a1d5-32a5c4f858fc
+entity_slug: isla-wine
+reviewer_name: Shannon (NOLA Gent)
+rating: 4
+body: This is a great wine store with one of the best selections I have seen in the area. They even have a decent selection of beer. This location has a nice ambiance and it was a bit hidden away until they started doing road construction in the area and now it is on the main diversion street. Isla Wine also offers a few food options here as well. You also get the benefit that Isla Wine is located right next to Foam Coffee where they have more food options and coffee.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-07-01T19:22:04.749522+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 1391dfb2-83c5-42e7-ad87-381b903783b5
+entity_slug: isla-wine
+reviewer_name: Michael T
+rating: 5
+body: Amazing Food. Amazing people. A great wine selection that peaks your interest. All of it very well curated within a cozy setting.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-01-18T19:02:37.051181+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 4fbb2ec7-98fc-4054-8396-c9d2e30d6371
+entity_slug: isla-wine
+reviewer_name: Suzette Taylor
+rating: 5
+body: Isla Wine is a true gem in our neighborhood. I absolutely love stopping in—whether it’s to pick up a great bottle or spend time with friends. Robin and her staff are knowledgeable, friendly, and always happy to help. The wine selection is excellent, and the food is delicious. I recently hosted a small gathering there, and everything was perfect—great atmosphere, amazing service, and wonderful hospitality. I can’t wait to do it again!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-06-24T16:11:24.215152+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_sources   -   1 row(s)
+####################################################################################################
+
+--- entity_sources [row 1 of 1] ---
+id: 6fe995d9-135e-4d87-8b80-3461179c5ac7
+entity_slug: isla-wine
+source_system: website_scrape_advanced
+source_url: http://www.islawines.com/
+scope: profile
+confidence: high
+created_at: 2026-07-16T23:29:34.335105+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   7 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 7] ---
+id: 53ff5290-49c1-4fa2-ab96-be7ee32b3263
+entity_slug: isla-wine
+tag_name: liquor_store
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 7] ---
+id: 4a8c6c5c-271e-4ae8-8586-fe95acc1c972
+entity_slug: isla-wine
+tag_name: wine_bar
+tag_category: google_type
+
+--- entity_tags [row 3 of 7] ---
+id: 8ee29f17-ca72-45e2-82e4-efc061f7daa9
+entity_slug: isla-wine
+tag_name: bar
+tag_category: google_type
+
+--- entity_tags [row 4 of 7] ---
+id: 1a78979f-14a7-4f4f-b42d-5520bb788e6b
+entity_slug: isla-wine
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 5 of 7] ---
+id: 96de0c33-6be0-4db4-87eb-2308f917fa09
+entity_slug: isla-wine
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 6 of 7] ---
+id: 7ac6f951-5936-43fc-9eee-4d7b46279b5c
+entity_slug: isla-wine
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 7 of 7] ---
+id: 40dbbaae-2966-4fec-bbc9-9cc0d45e5e38
+entity_slug: isla-wine
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: cd88fd65-13aa-469e-a6da-8bd65516b4dc
+entity_slug: isla-wine
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_retail   -   1 row(s)
+####################################################################################################
+
+--- industry_retail [row 1 of 1] ---
+entity_slug: isla-wine
+product_count: 0
+curbside_pickup: true
+delivery: true
+updated_at: 2026-07-20T03:17:43.35857+00:00
+
+####################################################################################################
+# TABLE: legacy_photo_migration_queue   -   3 row(s)
+####################################################################################################
+
+--- legacy_photo_migration_queue [row 1 of 3] ---
+id: 188
+entity_slug: isla-wine
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/4239e4ee-b808-4b40-86ea-f187aaac9277/image_3.jpg
+is_cover: false
+sort_order: 102
+status: linked_legacy
+created_at: 2026-07-25T23:32:39.118198+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 2 of 3] ---
+id: 216
+entity_slug: isla-wine
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/4239e4ee-b808-4b40-86ea-f187aaac9277/image_2.jpg
+is_cover: false
+sort_order: 101
+status: linked_legacy
+created_at: 2026-07-25T23:32:39.118198+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 3 of 3] ---
+id: 408
+entity_slug: isla-wine
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/4239e4ee-b808-4b40-86ea-f187aaac9277/image_1.jpg
+is_cover: true
+sort_order: 100
+status: linked_legacy
+created_at: 2026-07-26T00:31:07.222409+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: search_index   -   1 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 1] ---
+ref_type: business
+ref_id: isla-wine
+entity_slug: isla-wine
+title: Isla Wine
+category: liquor_store
+search_vector: 'isla':1A 'liquor':3B 'store':4B 'wine':2A
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: isla-wine

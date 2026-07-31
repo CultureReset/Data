@@ -1,0 +1,2587 @@
+====================================================================================================
+SLUG: grand-caribbean
+NAME: Grand Caribbean
+INDUSTRY: condo
+SUBTYPE: condominium_complex
+TABLES WITH DATA: 32
+TOTAL ROWS: 159
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (7 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (20 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_address_areas  (2 rows)
+  entity_amenities  (4 rows)
+  entity_attributes  (4 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_items_norm_v  (2 rows)
+  entity_items_v  (2 rows)
+  entity_modules  (14 rows)
+  entity_nearby_landmark_types  (18 rows)
+  entity_nearby_landmarks  (7 rows)
+  entity_offer  (1 rows)
+  entity_photos  (36 rows)
+  entity_reviews  (5 rows)
+  entity_section_items  (1 rows)
+  entity_section_items_metadata_backup  (1 rows)
+  entity_sections  (1 rows)
+  entity_sources  (1 rows)
+  entity_tags  (12 rows)
+  entity_theme  (1 rows)
+  industry_condo  (1 rows)
+  legacy_photo_migration_queue  (3 rows)
+  rental_units  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: grand-caribbean
+name: Grand Caribbean
+planner_category: lodging
+data_quality_score: 75
+issues: missing_summary|missing_hours|missing_contact_or_website
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   7 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 7] ---
+id: 883
+entity_slug: grand-caribbean
+intent_tag: best_for:lodging_search
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 7] ---
+id: 884
+entity_slug: grand-caribbean
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 7] ---
+id: 885
+entity_slug: grand-caribbean
+intent_tag: service:parking
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 7] ---
+id: 886
+entity_slug: grand-caribbean
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 7] ---
+id: 887
+entity_slug: grand-caribbean
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 7] ---
+id: 888
+entity_slug: grand-caribbean
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 7] ---
+id: 889
+entity_slug: grand-caribbean
+intent_tag: missing:missing_contact_or_website
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: grand-caribbean
+name: Grand Caribbean
+is_active: t
+planner_category: lodging
+entity_type: condo
+entity_subtype: condominium_complex
+city: Orange Beach
+state: AL
+address_line_1: 25805 Perdido Beach Blvd
+latitude: 30.2704597
+longitude: -87.58380129999999
+rating: 3.9
+review_count: 136
+hero_image_url: /photos/grand-caribbean/photo_01.jpg
+voice_summary: Grand Caribbean in Orange Beach is best for lodging search.
+planner_summary: Grand Caribbean in Orange Beach is a lodging listing in Gulf Coast Radar.
+best_for: lodging search
+not_best_for: nothing specific flagged
+service_tags: accessibility|parking
+search_keywords: condominium_complex|service|point_of_interest|establishment|accessibility|parking
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 20
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 8
+faq_count: 0
+data_quality_score: 75
+data_gaps: missing_summary|missing_hours|missing_contact_or_website
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   20 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 20] ---
+id: 3332
+entity_slug: grand-caribbean
+entity_name: Grand Caribbean
+city: Orange Beach
+url: /photos/grand-caribbean/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 20] ---
+id: 3333
+entity_slug: grand-caribbean
+entity_name: Grand Caribbean
+city: Orange Beach
+url: /photos/grand-caribbean/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 20] ---
+id: 3334
+entity_slug: grand-caribbean
+entity_name: Grand Caribbean
+city: Orange Beach
+url: /photos/grand-caribbean/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 20] ---
+id: 3335
+entity_slug: grand-caribbean
+entity_name: Grand Caribbean
+city: Orange Beach
+url: /photos/grand-caribbean/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 20] ---
+id: 3336
+entity_slug: grand-caribbean
+entity_name: Grand Caribbean
+city: Orange Beach
+url: /photos/grand-caribbean/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 20] ---
+id: 3337
+entity_slug: grand-caribbean
+entity_name: Grand Caribbean
+city: Orange Beach
+url: /photos/grand-caribbean/photo_06.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 20] ---
+id: 3338
+entity_slug: grand-caribbean
+entity_name: Grand Caribbean
+city: Orange Beach
+url: /photos/grand-caribbean/photo_07.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 20] ---
+id: 3339
+entity_slug: grand-caribbean
+entity_name: Grand Caribbean
+city: Orange Beach
+url: /photos/grand-caribbean/photo_08.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 20] ---
+id: 3340
+entity_slug: grand-caribbean
+entity_name: Grand Caribbean
+city: Orange Beach
+url: /photos/grand-caribbean/photo_09.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 20] ---
+id: 3341
+entity_slug: grand-caribbean
+entity_name: Grand Caribbean
+city: Orange Beach
+url: /photos/grand-caribbean/photo_10.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 11 of 20] ---
+id: 4181
+entity_slug: grand-caribbean
+entity_name: Grand Caribbean
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 12 of 20] ---
+id: 4362
+entity_slug: grand-caribbean
+entity_name: Grand Caribbean
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 13 of 20] ---
+id: 9430
+entity_slug: grand-caribbean
+entity_name: Grand Caribbean
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_07.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 14 of 20] ---
+id: 9431
+entity_slug: grand-caribbean
+entity_name: Grand Caribbean
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_06.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 15 of 20] ---
+id: 9432
+entity_slug: grand-caribbean
+entity_name: Grand Caribbean
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 16 of 20] ---
+id: 9433
+entity_slug: grand-caribbean
+entity_name: Grand Caribbean
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_08.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 17 of 20] ---
+id: 9434
+entity_slug: grand-caribbean
+entity_name: Grand Caribbean
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 18 of 20] ---
+id: 9440
+entity_slug: grand-caribbean
+entity_name: Grand Caribbean
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_10.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 19 of 20] ---
+id: 9453
+entity_slug: grand-caribbean
+entity_name: Grand Caribbean
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 20 of 20] ---
+id: 25745
+entity_slug: grand-caribbean
+entity_name: Grand Caribbean
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_09.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: e0ae1600-00e1-4668-b057-4a1de0c5319d
+resource_type: condo
+slug: grand-caribbean
+name: Grand Caribbean
+entity_slug: grand-caribbean
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_06.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_07.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_08.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_10.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_09.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_04.jpg",
+  "/photos/grand-caribbean/photo_01.jpg",
+  "/photos/grand-caribbean/photo_02.jpg",
+  "/photos/grand-caribbean/photo_03.jpg",
+  "/photos/grand-caribbean/photo_04.jpg",
+  "/photos/grand-caribbean/photo_05.jpg",
+  "/photos/grand-caribbean/photo_06.jpg",
+  "/photos/grand-caribbean/photo_07.jpg",
+  "/photos/grand-caribbean/photo_08.jpg",
+  "/photos/grand-caribbean/photo_09.jpg",
+  "/photos/grand-caribbean/photo_10.jpg"
+]
+amenities: []
+faqs: []
+address: 25805 Perdido Beach Blvd
+city: Orange Beach
+state: AL
+latitude: 30.2704597
+longitude: -87.58380129999999
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: c0e5a4f21b6bdb2f4338221928fb047d
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: e0ae1600-00e1-4668-b057-4a1de0c5319d
+entity_slug: grand-caribbean
+slug: grand-caribbean
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_06.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_07.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_08.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_10.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_09.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_04.jpg",
+  "/photos/grand-caribbean/photo_01.jpg",
+  "/photos/grand-caribbean/photo_02.jpg",
+  "/photos/grand-caribbean/photo_03.jpg",
+  "/photos/grand-caribbean/photo_04.jpg",
+  "/photos/grand-caribbean/photo_05.jpg",
+  "/photos/grand-caribbean/photo_06.jpg",
+  "/photos/grand-caribbean/photo_07.jpg",
+  "/photos/grand-caribbean/photo_08.jpg",
+  "/photos/grand-caribbean/photo_09.jpg",
+  "/photos/grand-caribbean/photo_10.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 709810ff-7da8-482a-96c2-2a45430e6c67
+slug: grand-caribbean
+name: Grand Caribbean
+is_active: true
+featured: false
+entity_type: condo
+entity_subtype: condominium_complex
+description: Located in the heart of Orange Beach. Source says it offers beach access across the street, outdoor pool, grilling area and fitness center.
+menu_pin: 2506
+address_line_1: 25805 Perdido Beach Blvd
+city: Orange Beach
+state: AL
+zip: 36561
+latitude: 30.2704597
+longitude: -87.58380129999999
+rating: 3.9
+review_count: 136
+hero_image_url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A7301564.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T03:59:45.785122+00:00
+updated_at: 2026-06-03T03:59:45.785122+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJNaJMUvkGmogRREe3LJg2Pic
+google_maps_uri: https://maps.google.com/?cid=2827757643248387908&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: condominium_complex
+formatted_address: 25805 Perdido Beach Blvd #212, Orange Beach, AL 36561, USA
+plus_code: 862J7CC8+5F
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+wheelchair_accessible_restroom: false
+wheelchair_accessible_seating: false
+parking_type: free
+google_places_data: {
+  "id": "ChIJNaJMUvkGmogRREe3LJg2Pic",
+  "types": [
+    "condominium_complex",
+    "point_of_interest",
+    "service",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3lOnpRosrNAPqJxgJlROckOwyLuWinHysaAE8zIus4TgJSTB8tbfJ1LNxav7LcNYj2vhj8svr2CupqpXT62oVIy8ZS_qLa_5Ls1r__Jyp1a8wcfKHEn8s_3bOTSX4yGq22ZUnfU-SIkXoK-0HYCuXNpZwZZgdFY6FFxJ3KmsNn4pjcpVGFn833Lx61mQI5u8Vz95M5ByVDjVhkRlniSRnRJR9eOSkYsNsRU8vmefUI6c5CA4RahQyP7lk6MmEG3MCK_89bbuTKlqcR9PI9E2Aie75GufCCi0ltnhxNEkZA6X9nrRfgJUuqIbnGWWQThd3eMJAB7wDhS3CwhyFZKivolJgsYJGsRZfnDACGwjMet3JUYR2CglYBJWcgboPsyd1AGg1XNyA1EnVfzwPnHySKp-ntzQBtUdd4Z5DBy4yu_64zb",
+      "widthPx": 2048,
+      "heightPx": 1536,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC6trHU8wE!2e10!4m2!3m1!1s0x889a06f9524ca235:0x273e36982cb74744",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIC6trHU8wE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/102456711999442237899",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWh8MZN3qU2K7GznxCMjEMmysgC22xRaZ8a_v_ax7KngvHVXFM=s100-p-k-no-mo",
+          "displayName": "Grand Caribbean"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3l7ShH5WAhetIamQcNkgPIyBR-zr7N-lsghENxN6xSGWhpY0M44riH9AG-PNrvbYWv4aGSPtv6LidoZwjFWRJMyWOV9tLvZdwbSCoKIXdPTzQxFtvvnOmZLjr2WghtzL_xTtGbP7VfF_ZQFi4uJ2r7_cN8KllXOMEtruaH0eVT5MNDf77H10vgkL8dskUrkSOHb2YnwUIzaPx-jWmo7DsFkHnRqdQbi73XrBjkX-14eORzjGfnS4aKE33tILCM4hPFth0qF921Rc5uhIELSYTtEn1QVqr8OdObcdskK7hyFsBHFztBPmbPwivR69yILYHgsxs3Fl7N4R2LS-Un6r3qWowDTZQJz3rhUzxNiWqYfgl1jmXjyXWyYkwtn4ixiHl6-6lPYw6ye1ROW6TW9p3W8uy2MCQQtxy9SRTITqayeeF7jjZGzZwmW8bRKMQ",
+      "widthPx": 3072,
+      "heightPx": 4080,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhChDap6P_FxdrRiP_01qbmh!2e10!4m2!3m1!1s0x889a06f9524ca235:0x273e36982cb74744",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhChDap6P_FxdrRiP_01qbmh&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/102492434902519398424",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWmiRnxvUVHmVaKzoHPVIfVZqMMDeHU8bPw-23mjIAJ0K9eSgZDiA=s100-p-k-no-mo",
+          "displayName": "Rachel Gilley"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3k0jeW-ZggwiH5B1tR5ic2UYQL56qbtAaHRdGV7nKFSwo-tHpDgzoSAND8Uj3opx4ThLDF--5v__7mT_4kdAw3sCXW1WenR5mk_cb_InXB1sxS2h8OLxD6enXSIE8DilRE3osTo-K05sW5UhYGnDjYO7qFBMOjqslWnP5nmWcpdvHuS7MzaVFfzW22hvCUDHHA7ImM3rRhVcXzRxPQb0wDnypJwUvS5UK_SiNp1KNpLNa2nYFq2cD0iFvAwn3KBAbScGCC3jl6V6jNlLrDAKd-kjLKlpsvLHXduXjmvyLYFqzSIMo2FJPiinaUAbgb6oAfjvEeQsSS97u4ctUFmSXYliObiaDpN1msuSIliEFSJEvg_iJCo6a5MPF6FKTe0WHmjAy2RHKIAOp6knwG6g2HCOEuBlEBJTnxdmdLVY3POT3gmYQ5cO5WHW7_Gh_Te",
+      "widthPx": 2268,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCQ44n0jTDwYlPhI6tqr7UO!2e10!4m2!3m1!1s0x889a06f9524ca235:0x273e36982cb74744",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCQ44n0jTDwYlPhI6tqr7UO&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/116425094744196628743",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIcC-_nh0z7AqzEVsPHs4NyvCUP-ahd_cDwPB--G-Q8lTweVw=s100-p-k-no-mo",
+          "displayName": "Qua Qua"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3kRCXahF2TCXW8a5FDP01HCf3sNK5muY_BICyEgu519LM3wc3Olk2z2jQT4vXWTyn7ju0su89efF62yp2ql6f13OQSHmovu3DV-jAU5gnOhO7_ZkGVVg5eNunkPlppGHViPoj58NEaViVpmniBMR0xi-LmzdWmN_5NpHiAZRsHLhCh952yN9HUhJcOhnWaOmp2WDyJtQS0TcUxNtiEAg5sWmzDrLL18FwpvfH4OtKRIDEag6oJU8ddjgrjPeLUfbfvvyAhpXkEHBdOsA5OUNmQe4xmgiY9QKnBVu3_ThjKE2fa-0kBW8e2GCagjVPaNij5q1MfPrxTQHeRICiLbI7BhJDCzoDzE2Fc6ds30NVz8ptqU2ZKneDa4Ax7DiVzxyegsnVCEzb85-TimD4oEwxYVCMd4C_eFmmmRJ45guGyp9SzX",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIChs-TRuAE!2e10!4m2!3m1!1s0x889a06f9524ca235:0x273e36982cb74744",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIChs-TRuAE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104646321885727736068",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWe3lEB_5ClpLhG9RVlO2EFUpu2C9dRiPw7K8eCsCZ3nguiOuRKSQ=s100-p-k-no-mo",
+          "displayName": "Jane Walker"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3l7HHDc2v1wAogd5yI3qHviHREkWju3jFA10Z3y9_BQ6VBmG3AQMTi9VVfBB5jMSfHMxv07GJftUCML2_YJZCXMzFn6SIsLYJvqghG5KMd0ZikSm7Cxl4kVjBOGLkS2ika1EGx5uHz9-muzwnxwBEnq0uru5Dy7qvhvEScsfgpZGC2Xp6VJoPsO3x-zdKPtbNfdlUMAfxfh3K4oQwSi5U_2F5fJDNO6CigIOXUKCyPcRnGGHcaLjcsnNNYF6MUb9Y-cjO319e5dnYAAX0ZpazvAYG5sdoBn0KoMhjKepuTpKhlEKcuWjJuOhRo3L4lBvt8bI66Gtze2UVbRmJv649ItVKUQaNSDXAkgYXQAXM_SDDCuuP9b6mKGoPe_JFO3sPs0_kYy7igZym-SIImDP2Owz4YFecYBKIzkqPNhwBONcO79",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICZjtXH6wE!2e10!4m2!3m1!1s0x889a06f9524ca235:0x273e36982cb74744",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICZjtXH6wE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/115235584874092793564",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWLyQxmub9gLBjE3-rXQ3rNBhzMgtzBL6VW_TqLqZVcnHcixHO0iQ=s100-p-k-no-mo",
+          "displayName": "Daicy Gil"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3lN0O4YY25xXVq2CYukSeBdWxQ_hp-uZ2fCEpeGeh3pH-9x7lesJIAOdz3g0GyyJtiqZ5xVJ99rfj3Od2KOBydG-N4VtZTpJ-eMbkaOb9yILoPsjbJOlUFu7C1AsdF2m1s2xReTo8O00GHwKkK7t9V-_EytWgOfgXiirU4_GjuCUCJOOZeJj2-Yzp2xCGCyKlLX51B7RGRqacGEuYZt7x6OjbOg_a-rVZsEJiDHxuMUbAD1PoO82CrpCZmUbPd7knpTBi6KghyEyZyCS2vQTcY_lTW9mCfQI3y7ccaOkawBGh9Yt-8UaylUTuTWh41qI7QNzjv6R-4iAfKZ_S5rvJo1J-7tR9INm8wjkFJVnz9PKvbRpa8RYMTHmyOraviIqUuq3dY_ZihsRFXH37Vu-ULg8Xg9l3m6uHvc0K_ysV3WbO0",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICuvPfuvAE!2e10!4m2!3m1!1s0x889a06f9524ca235:0x273e36982cb74744",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICuvPfuvAE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104888775453481374715",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX3u2WbQfT6xi-wWDihXJvG6Yb65_AV0GAQLzOHOy215bOQ7_qHyw=s100-p-k-no-mo",
+          "displayName": "Wendi Gibbs"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3nCzbFgwL_vi5a5WbqlN2Vhod0ISk29k8js6juuTwe0zNV1WT6Zd-lDyLDmzMb_lyhXgwHICeoUefbXcEydPQmE3L6g5NSGM2Q0A72Z80SCTLSc3PuGwT5t0K3YTQTq7GL6sYDeuuicf4I8MHs3D3NULQXSAv3mhYelFTkeas9otkBY1r0gtjN7yi1J5jAAdUhRElwVxhzPlvEsgbTmLvzphz_a-6Ly1p4zK5v0Nz-AJUferrYWL1EHpBuJogA58bb2E5vXxlMoBBfC-VLu6GB6UOBgpV58_ZuCsT8h7gnhpIWMWlkvtyPXTmhLIrsBj0G8F-WF-iyHaOlZQ4CupXH5xQKL5tnvyqzD-iPJNwuvdFU9xWKKXskATLXv3tLVY4Vlgmp19jg5rmr81yNyQwfac73Qz99joTD2C0u1GP0hVA",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIChs-T2NA!2e10!4m2!3m1!1s0x889a06f9524ca235:0x273e36982cb74744",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIChs-T2NA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104646321885727736068",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWe3lEB_5ClpLhG9RVlO2EFUpu2C9dRiPw7K8eCsCZ3nguiOuRKSQ=s100-p-k-no-mo",
+          "displayName": "Jane Walker"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3ktvDQvYM7Z__NugGk_U1vYDgkhkbw3N4AK7KuO_fe31vVz6p3RnJxjuqr-2dNvoZT7kS5lpJmbtme60MIPo3KkIpDZGzxSNC472qhz0HonLUh0c9_Zs1mgEB5y4QRF-eWnuacXKruG1BG7tFynXZw9wNQJIYlPBbqPvKl9HiUMDDPcSaEgB86T4V64O4FJdxjQT7RGKvn7xDM29TQozCXytOHfBDH6jl8rYfv15Fxx6Pkyvb89mSKhsLS4x04Dk-zvxN4qUVFoRTo6YukWaJKdN-TLAUNcejBL9zcrUvguHTS8zvC9vQVpZTUvGHBotVI1Y0Lp1DHGjiJguPtH4VFZBU9hY96ABji0EEHwlMKUVEQRRZSXFf9Q2e-aYyV5qhJH3H5mj3j77Q8qHoESWY_MJfoqfftBbScKhYR1FCS3KGhY",
+      "widthPx": 2988,
+      "heightPx": 3984,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID44PSY6gE!2e10!4m2!3m1!1s0x889a06f9524ca235:0x273e36982cb74744",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID44PSY6gE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/114478450857726020224",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJw25R2Mj5vSQxpK2ubkbWVkyg8obKCuPWFL-dyNjKeZrV40g=s100-p-k-no-mo",
+          "displayName": "Lovie Ritchie"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3nnYN6pnnxP6JPclOnX2lt12E9UjtfO08MhYHlsuG-NgHOnNThD_TBLAxepPoENCaizcKunji2OIfRGUne-V8PUGqjxLZku_OElw0GVsO6M1eF9AD2wQGqWclFIPI30ThYfM2ozhwC2V8GE8V8sY89fXyqQhmbTYvPD3T-6LFlLOzAahB5jEfur3eb6bqlX9MjyK0lRcXog7v9xNdu-pXgzW76XPcRt2ANffBjkgXiip-jxtk-qLtS7k2bEAZ0CF24NMm9PBDS5MgJa3Oj38A9krk7SmOU-9Kn0bwukTwCwR1VDVTSCcYRydepN-L7Q9FNcZeCebQ5tAkGNqbatesHUSZc6NP7NPKUau6q_1nImqOJK8hDnmVcUkHqPe4X0J51HubYDEwrDeY0MfzkMWQ07bDEATKANT26PEpbHQuH0RQ651xVOD5gxRB7HUA",
+      "widthPx": 4080,
+      "heightPx": 3072,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhADyc5UzxD0DWe-BPgACoEr!2e10!4m2!3m1!1s0x889a06f9524ca235:0x273e36982cb74744",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhADyc5UzxD0DWe-BPgACoEr&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/102492434902519398424",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWmiRnxvUVHmVaKzoHPVIfVZqMMDeHU8bPw-23mjIAJ0K9eSgZDiA=s100-p-k-no-mo",
+          "displayName": "Rachel Gilley"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3l4DG1kK1uTVIRrmupW84aRnWH9w9vvHlF9lcAxZ5KitEaUIHE6-DApjiwOWutTCSat54OtEmfmfW18wHimfwjthjx5rqKrPQUA1PMPRoOiGx1u1xDO0XnRhW4oaJrAAcAQluebJ9UMhzaOMhSG2wo58KQOC_8rGREGR3hUhNMTOiBYPkurFpMnACUEeJ5gMRu4sx7RdMUOYWsV6FvuXo9fy8-VHha5q26z-gldsZKBBgKNfzIBtUiy2S4qjUymqmk-yxPO44YJ8DS93ecLKWkM7N4f0f-3snIWyhQVrLew8wm_ndzCB6eECh_MGEcvQDbdMREdWpeVn0tq6SFVnfcBWxxgANh483W8uxrJ8sdc4p_5YTiODVlhWKv5UdTQRs3WObydmp5--U4saVNbn9-ulvvDejwnECDxrsANe2ueN7g",
+      "widthPx": 3264,
+      "heightPx": 1840,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDEhaeDzAE!2e10!4m2!3m1!1s0x889a06f9524ca235:0x273e36982cb74744",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDEhaeDzAE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/112263457786997404808",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUtORwCcOXURaJzh8oYJZLAEFRIcqYRIpAWKloeSNbUtb2RhFFi_g=s100-p-k-no-mo",
+          "displayName": "Alex Lopez"
+        }
+      ]
+    }
+  ],
+  "rating": 3.9,
+  "reviews": [
+    {
+      "name": "places/ChIJNaJMUvkGmogRREe3LJg2Pic/reviews/Ci9DQUlRQUNvZENodHljRjlvT21kSlNtSjVRVE5EVldWbGNtNUZZM0psTWpKRlVtYxAB",
+      "text": {
+        "text": "We stayed here for a few days as we were visiting Orange Beach for a concert. This place is very well maintained, centrally located, and has all the amenities you would want for a beach vacation. It’s located across the street from the beach itself but it’s an easy walk. There is a nice pool and gym\ntoo. Our 2-bedroom condo was clean and very comfortable. Would stay here again!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-10-25T16:50:29.617557073Z",
+      "originalText": {
+        "text": "We stayed here for a few days as we were visiting Orange Beach for a concert. This place is very well maintained, centrally located, and has all the amenities you would want for a beach vacation. It’s located across the street from the beach itself but it’s an easy walk. There is a nice pool and gym\ntoo. Our 2-bedroom condo was clean and very comfortable. Would stay here again!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21kSlNtSjVRVE5EVldWbGNtNUZZM0psTWpKRlVtYxAB!2m1!1s0x889a06f9524ca235:0x273e36982cb74744",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT21kSlNtSjVRVE5EVldWbGNtNUZZM0psTWpKRlVtYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/112321939741401449085/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWtWVEM-I2WXn9G5DIRzcSeSD6glRBn33EzXoUhxrgM6QyVKFI=s128-c0x00000000-cc-rp-mo-ba2",
+        "displayName": "BK rindy"
+      },
+      "relativePublishTimeDescription": "7 months ago"
+    },
+    {
+      "name": "places/ChIJNaJMUvkGmogRREe3LJg2Pic/reviews/ChZDSUhNMG9nS0VJQ0FnSUNkMnZuX1hREAE",
+      "text": {
+        "text": "This is a great place to stay. We are across the road from the beach. View is great, easy walk to the beach. It is within walking distant of several stores and restaurants. Local people are really nice and welcoming. There is some traffic noise but it hasn't bothered us. Has pool and outdoor area with 3 barbeque grills and a seating area.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2024-02-14T16:34:44.292521Z",
+      "originalText": {
+        "text": "This is a great place to stay. We are across the road from the beach. View is great, easy walk to the beach. It is within walking distant of several stores and restaurants. Local people are really nice and welcoming. There is some traffic noise but it hasn't bothered us. Has pool and outdoor area with 3 barbeque grills and a seating area.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNkMnZuX1hREAE!2m1!1s0x889a06f9524ca235:0x273e36982cb74744",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNkMnZuX1hREAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/118211608748214266715/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjU_RdwEC7HwMh8cNLcU3vhAhG9GSTvlHpcfEWX6Al5m-k-_Ydpy=s128-c0x00000000-cc-rp-mo-ba4",
+        "displayName": "Gretchen Wilson"
+      },
+      "relativePublishTimeDescription": "2 years ago"
+    },
+    {
+      "name": "places/ChIJNaJMUvkGmogRREe3LJg2Pic/reviews/ChZDSUhNMG9nS0VJQ0FnSUNPX0lMWEVREAE",
+      "text": {
+        "text": "Overall this was a very nice place. I was a bit hesitant with a few reviews that I had read about issues with parking and traveling across the street to get up the beach. Here are my pros and cons about the complex and then reviews on the particular condo we stayed in.\n\nComplex:\n\nPros: We had absolutely no issues with parking, parking passes, or security. We only saw the building security once during our entire stay and he was, I’m assuming,  on a break watching tv in the veranda area. The pool, pool area, and veranda were all well maintained and clean. Lots of chairs and space too. There was a bay behind the complex and the beach was across the street. Getting to and from the beach wasn’t too bad. They had outside showers to rinse off before coming back into the complex. Complex was well maintained and nice! They have a nice grill area and picnic tables as well.\n\nCons:\nTraffic noise by the pool was awful. They also need a few more beach umbrellas in the pool area. We had to figure out how to get around the complex to find the crosswalk to get to the beach. We found the safest route to be is to walk around the back of the complex by the bay to get to the crosswalk.\n\nOur Condo (115):\n\nPros:\nThe condo was very clean, nicely decorated and well stocked with kitchen items, towels and bedding. The kitchen was updated with nice appliances and we used the kitchen quite a bit. It also had a washer and dryer that we used as well. The condo had a nice view of the bay and beach. Patio furniture was nice too. It had two bedrooms and bathrooms. Nice sleeping arrangements.\n\nCons:\nShower curtain liners were in deep need of being replaced (horribly dirty). The bunks need to be tightened up or replaced. They made so much noise every time anyone moved. The couch needs to be retired (it’s seen better days). Cable tv was bad.\n\nOverall was a nice stay!! We’d come back again!!",
+        "languageCode": "en"
+      },
+      "rating": 4,
+      "publishTime": "2022-06-04T19:27:38.892524Z",
+      "originalText": {
+        "text": "Overall this was a very nice place. I was a bit hesitant with a few reviews that I had read about issues with parking and traveling across the street to get up the beach. Here are my pros and cons about the complex and then reviews on the particular condo we stayed in.\n\nComplex:\n\nPros: We had absolutely no issues with parking, parking passes, or security. We only saw the building security once during our entire stay and he was, I’m assuming,  on a break watching tv in the veranda area. The pool, pool area, and veranda were all well maintained and clean. Lots of chairs and space too. There was a bay behind the complex and the beach was across the street. Getting to and from the beach wasn’t too bad. They had outside showers to rinse off before coming back into the complex. Complex was well maintained and nice! They have a nice grill area and picnic tables as well.\n\nCons:\nTraffic noise by the pool was awful. They also need a few more beach umbrellas in the pool area. We had to figure out how to get around the complex to find the crosswalk to get to the beach. We found the safest route to be is to walk around the back of the complex by the bay to get to the crosswalk.\n\nOur Condo (115):\n\nPros:\nThe condo was very clean, nicely decorated and well stocked with kitchen items, towels and bedding. The kitchen was updated with nice appliances and we used the kitchen quite a bit. It also had a washer and dryer that we used as well. The condo had a nice view of the bay and beach. Patio furniture was nice too. It had two bedrooms and bathrooms. Nice sleeping arrangements.\n\nCons:\nShower curtain liners were in deep need of being replaced (horribly dirty). The bunks need to be tightened up or replaced. They made so much noise every time anyone moved. The couch needs to be retired (it’s seen better days). Cable tv was bad.\n\nOverall was a nice stay!! We’d come back again!!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNPX0lMWEVREAE!2m1!1s0x889a06f9524ca235:0x273e36982cb74744",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNPX0lMWEVREAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/103657213873088362902/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVmURFsS5S-WSFlW0P1V9Op2sLt4xbP2oFsp8MYtfFnVBXAdwY=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Tracy Longino"
+      },
+      "relativePublishTimeDescription": "4 years ago"
+    },
+    {
+      "name": "places/ChIJNaJMUvkGmogRREe3LJg2Pic/reviews/Ci9DQUlRQUNvZENodHljRjlvT2taWU5VaEdRM2hmYjBscWJtNVBTRWR2ZUVVd1NFRRAB",
+      "text": {
+        "text": "10/10 would not stay here again. Paint falling off, a bathroom fan literally hanging for its life by a piece of duck tape. A cabinet door in the kitchen unpainted and doesn’t match the rest. No ceiling fans, just 1 box fan. AC isn’t great- specially in the only bedroom. Broken toilet paper holder. No sheets for the pullout couch. Tiny space. Not enough hooks for hanging things. No enough trash bags. Can it fit 6 people? Sure. Not comfortably though. Only one true bedroom with a door that only shut after we moved the bed. 1 tiny bathroom for six is not ideal. Ok for 1-2 nights, beyond that, would not recommend. More ideal for two adults and two small kids (there’s bunk beds). Positives- decent parking (not covered unless you live there), walk across to public beach access, minutes from shopping and restaurants, washer/dryer in room, view from the patio. Has a small pool. Outdoor grilling area. Room we had was 104.",
+        "languageCode": "en"
+      },
+      "rating": 1,
+      "publishTime": "2025-07-27T16:10:15.929306466Z",
+      "originalText": {
+        "text": "10/10 would not stay here again. Paint falling off, a bathroom fan literally hanging for its life by a piece of duck tape. A cabinet door in the kitchen unpainted and doesn’t match the rest. No ceiling fans, just 1 box fan. AC isn’t great- specially in the only bedroom. Broken toilet paper holder. No sheets for the pullout couch. Tiny space. Not enough hooks for hanging things. No enough trash bags. Can it fit 6 people? Sure. Not comfortably though. Only one true bedroom with a door that only shut after we moved the bed. 1 tiny bathroom for six is not ideal. Ok for 1-2 nights, beyond that, would not recommend. More ideal for two adults and two small kids (there’s bunk beds). Positives- decent parking (not covered unless you live there), walk across to public beach access, minutes from shopping and restaurants, washer/dryer in room, view from the patio. Has a small pool. Outdoor grilling area. Room we had was 104.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2taWU5VaEdRM2hmYjBscWJtNVBTRWR2ZUVVd1NFRRAB!2m1!1s0x889a06f9524ca235:0x273e36982cb74744",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2taWU5VaEdRM2hmYjBscWJtNVBTRWR2ZUVVd1NFRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/115375253345501923302/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUM_0eLMQE0g5SRt27fBz79QF3kWPXUZUYWEHK3fg9t5dxvQbl4=s128-c0x00000000-cc-rp-mo-ba3",
+        "displayName": "Whitney Bevilacqua"
+      },
+      "relativePublishTimeDescription": "10 months ago"
+    },
+    {
+      "name": "places/ChIJNaJMUvkGmogRREe3LJg2Pic/reviews/ChZDSUhNMG9nS0VJQ0FnSUM0eGZDd1FBEAE",
+      "text": {
+        "text": "Very clean, decorations were awesome 👍, Customer service was ok. There was a problem with the air and I could never get anyone on the phone to help me. Other that that , the accommodations were awesome. Highly recommend.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2019-06-10T13:19:09.903911Z",
+      "originalText": {
+        "text": "Very clean, decorations were awesome 👍, Customer service was ok. There was a problem with the air and I could never get anyone on the phone to help me. Other that that , the accommodations were awesome. Highly recommend.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUM0eGZDd1FBEAE!2m1!1s0x889a06f9524ca235:0x273e36982cb74744",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUM0eGZDd1FBEAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/107457493384816759720/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUtPQAeF08JxmKmzQRpMZEAkkaZ-D8ZpgPzbiUeqDdVCKpeAkvCPw=s128-c0x00000000-cc-rp-mo-ba5",
+        "displayName": "Tammy Jackson"
+      },
+      "relativePublishTimeDescription": "7 years ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.2704597,
+    "longitude": -87.58380129999999
+  },
+  "plusCode": {
+    "globalCode": "862J7CC8+5F",
+    "compoundCode": "7CC8+5F Orange Beach, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.269258019708495,
+      "longitude": -87.5851625302915
+    },
+    "high": {
+      "latitude": 30.271955980291494,
+      "longitude": -87.58246456970849
+    }
+  },
+  "displayName": {
+    "text": "Grand Caribbean",
+    "languageCode": "en"
+  },
+  "primaryType": "condominium_complex",
+  "googleMapsUri": "https://maps.google.com/?cid=2827757643248387908&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=2827757643248387908&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a06f9524ca235:0x273e36982cb74744!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a06f9524ca235:0x273e36982cb74744!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a06f9524ca235:0x273e36982cb74744!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a06f9524ca235:0x273e36982cb74744!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "userRatingCount": 136,
+  "adrFormatAddress": "<span class=\"street-address\">25805 Perdido Beach Blvd #212</span>, <span class=\"locality\">Orange Beach</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36561-6159</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "25805 Perdido Beach Blvd #212, Orange Beach, AL 36561, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "subpremise"
+      ],
+      "longText": "212",
+      "shortText": "212",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "25805",
+      "shortText": "25805",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Perdido Beach Boulevard",
+      "shortText": "Perdido Beach Blvd",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Orange Beach",
+      "shortText": "Orange Beach",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36561",
+      "shortText": "36561",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "postal_code_suffix"
+      ],
+      "longText": "6159",
+      "shortText": "6159",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJZ_VFtf4GmogRom3x5ZUNukg",
+        "placeId": "ChIJZ_VFtf4GmogRom3x5ZUNukg",
+        "containment": "WITHIN",
+        "displayName": {
+          "text": "Grand Caribbean",
+          "languageCode": "en"
+        }
+      },
+      {
+        "name": "places/ChIJAf8qlDAEmogR21mSG_IXY-s",
+        "placeId": "ChIJAf8qlDAEmogR21mSG_IXY-s",
+        "containment": "NEAR",
+        "displayName": {
+          "text": "Gulf State Park",
+          "languageCode": "en"
+        }
+      }
+    ],
+    "landmarks": [
+      {
+        "name": "places/ChIJnTKZnv4GmogR2a5h8p2-NoQ",
+        "types": [
+          "establishment",
+          "park",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJnTKZnv4GmogR2a5h8p2-NoQ",
+        "displayName": {
+          "text": "Cotton Bayou Public Beach Access",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 409.672,
+        "straightLineDistanceMeters": 176.09767
+      },
+      {
+        "name": "places/ChIJbQon9fkGmogRM1PXBVFKrHE",
+        "types": [
+          "cafe",
+          "establishment",
+          "food",
+          "point_of_interest",
+          "restaurant",
+          "store"
+        ],
+        "placeId": "ChIJbQon9fkGmogRM1PXBVFKrHE",
+        "displayName": {
+          "text": "Starbucks Coffee Company",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 482.07874,
+        "straightLineDistanceMeters": 399.60284
+      },
+      {
+        "name": "places/ChIJb2994_sGmogRntkS3z6UJWU",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJb2994_sGmogRntkS3z6UJWU",
+        "displayName": {
+          "text": "Summerchase Condominiums",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 436.27414,
+        "straightLineDistanceMeters": 192.69951
+      },
+      {
+        "name": "places/ChIJz89jN_QHmogRgXbC-ltTVH0",
+        "types": [
+          "establishment",
+          "health",
+          "pharmacy",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJz89jN_QHmogRgXbC-ltTVH0",
+        "displayName": {
+          "text": "Walgreens Pharmacy",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 264.33344,
+        "straightLineDistanceMeters": 163.6006
+      },
+      {
+        "name": "places/ChIJqQDC3P4GmogRO0zVFzR8Ts4",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJqQDC3P4GmogRO0zVFzR8Ts4",
+        "displayName": {
+          "text": "Cotton Bayou Boat Launch",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 464.85968,
+        "straightLineDistanceMeters": 124.751816
+      }
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Condominium Complex",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleSeating": false,
+    "wheelchairAccessibleEntrance": true,
+    "wheelchairAccessibleRestroom": false
+  },
+  "shortFormattedAddress": "25805 Perdido Beach Blvd #212, Orange Beach",
+  "primaryTypeDisplayName": {
+    "text": "Condominium Complex",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false
+}
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 25805 Perdido Beach Blvd #212, Orange Beach
+search_vector: 'beach':6 'caribbean':2A 'complex':4 'condominium':3 'grand':1A 'orang':5
+primary_type_display: Condominium Complex
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=2827757643248387908&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a06f9524ca235:0x273e36982cb74744!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a06f9524ca235:0x273e36982cb74744!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a06f9524ca235:0x273e36982cb74744!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a06f9524ca235:0x273e36982cb74744!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJZ_VFtf4GmogRom3x5ZUNukg",
+      "placeId": "ChIJZ_VFtf4GmogRom3x5ZUNukg",
+      "containment": "WITHIN",
+      "displayName": {
+        "text": "Grand Caribbean",
+        "languageCode": "en"
+      }
+    },
+    {
+      "name": "places/ChIJAf8qlDAEmogR21mSG_IXY-s",
+      "placeId": "ChIJAf8qlDAEmogR21mSG_IXY-s",
+      "containment": "NEAR",
+      "displayName": {
+        "text": "Gulf State Park",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJnTKZnv4GmogR2a5h8p2-NoQ",
+      "types": [
+        "establishment",
+        "park",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJnTKZnv4GmogR2a5h8p2-NoQ",
+      "displayName": {
+        "text": "Cotton Bayou Public Beach Access",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 409.672,
+      "straightLineDistanceMeters": 176.09767
+    },
+    {
+      "name": "places/ChIJbQon9fkGmogRM1PXBVFKrHE",
+      "types": [
+        "cafe",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant",
+        "store"
+      ],
+      "placeId": "ChIJbQon9fkGmogRM1PXBVFKrHE",
+      "displayName": {
+        "text": "Starbucks Coffee Company",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 482.07874,
+      "straightLineDistanceMeters": 399.60284
+    },
+    {
+      "name": "places/ChIJb2994_sGmogRntkS3z6UJWU",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJb2994_sGmogRntkS3z6UJWU",
+      "displayName": {
+        "text": "Summerchase Condominiums",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 436.27414,
+      "straightLineDistanceMeters": 192.69951
+    },
+    {
+      "name": "places/ChIJz89jN_QHmogRgXbC-ltTVH0",
+      "types": [
+        "establishment",
+        "health",
+        "pharmacy",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJz89jN_QHmogRgXbC-ltTVH0",
+      "displayName": {
+        "text": "Walgreens Pharmacy",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 264.33344,
+      "straightLineDistanceMeters": 163.6006
+    },
+    {
+      "name": "places/ChIJqQDC3P4GmogRO0zVFzR8Ts4",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJqQDC3P4GmogRO0zVFzR8Ts4",
+      "displayName": {
+        "text": "Cotton Bayou Boat Launch",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 464.85968,
+      "straightLineDistanceMeters": 124.751816
+    }
+  ]
+}
+source_url: https://www.liquidlifevacationrentals.com/resort/grand-caribbean
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: stay
+industry_code: condo
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   2 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 2] ---
+id: 5e12df56-8d03-479e-855a-cac84513ba66
+entity_slug: grand-caribbean
+place_id: ChIJZ_VFtf4GmogRom3x5ZUNukg
+containment: WITHIN
+display_name: Grand Caribbean
+
+--- entity_address_areas [row 2 of 2] ---
+id: 5d44453c-ad0f-4fd3-9213-e2470c0e1219
+entity_slug: grand-caribbean
+place_id: ChIJAf8qlDAEmogR21mSG_IXY-s
+containment: NEAR
+display_name: Gulf State Park
+
+####################################################################################################
+# TABLE: entity_amenities   -   4 row(s)
+####################################################################################################
+
+--- entity_amenities [row 1 of 4] ---
+id: d7c5db65-94ed-47f9-a37c-56547570aa78
+entity_slug: grand-caribbean
+amenity: Beach Access Across the Street
+category: complex
+sort_order: 0
+created_at: 2026-07-07T17:00:22.508867
+
+--- entity_amenities [row 2 of 4] ---
+id: 09161ffc-2399-411f-9586-236787d571aa
+entity_slug: grand-caribbean
+amenity: Grilling area
+category: complex
+sort_order: 2
+created_at: 2026-07-07T17:00:22.508867
+
+--- entity_amenities [row 3 of 4] ---
+id: a521b016-2e3e-4401-a2f9-fbfd32126026
+entity_slug: grand-caribbean
+amenity: Fitness Center
+category: complex
+sort_order: 3
+created_at: 2026-07-07T17:00:22.508867
+
+--- entity_amenities [row 4 of 4] ---
+id: fb49b09f-74df-4a99-8fd7-f0bb88547bbe
+entity_slug: grand-caribbean
+amenity: Outdoor pool
+category: complex
+sort_order: 1
+created_at: 2026-07-07T17:00:22.508867
+
+####################################################################################################
+# TABLE: entity_attributes   -   4 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 4] ---
+id: 967b4042-f201-4ccc-a3b2-de1e43852652
+entity_slug: grand-caribbean
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 2 of 4] ---
+id: 0d91fda2-a64b-4a0e-842b-9d0a24b9fc1e
+entity_slug: grand-caribbean
+category: accessibility
+key: access_wheelchairAccessibleSeating
+label: Wheelchair Accessible Seating
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 3 of 4] ---
+id: 957f090a-cd41-4d6a-baa4-f20a7bede3a4
+entity_slug: grand-caribbean
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 4 of 4] ---
+id: f84770bd-2eed-49c8-accf-8d243b28cf01
+entity_slug: grand-caribbean
+category: accessibility
+key: access_wheelchairAccessibleRestroom
+label: Wheelchair Accessible Restroom
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: grand-caribbean
+name: Grand Caribbean
+industry_code: condo
+is_parent: false
+score_of_7: 4
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: cdf12bb2-5e4b-4971-b24d-be162e134a94
+entity_slug: grand-caribbean
+place_uri: https://maps.google.com/?cid=2827757643248387908&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a06f9524ca235:0x273e36982cb74744!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a06f9524ca235:0x273e36982cb74744!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a06f9524ca235:0x273e36982cb74744!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a06f9524ca235:0x273e36982cb74744!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 1448
+entity_slug: grand-caribbean
+google_review_name: places/ChIJNaJMUvkGmogRREe3LJg2Pic/reviews/Ci9DQUlRQUNvZENodHljRjlvT21kSlNtSjVRVE5EVldWbGNtNUZZM0psTWpKRlVtYxAB
+rating: 5
+review_text: We stayed here for a few days as we were visiting Orange Beach for a concert. This place is very well maintained, centrally located, and has all the amenities you would want for a beach vacation. It’s located across the street from the beach itself but it’s an easy walk. There is a nice pool and gym
+too. Our 2-bedroom condo was clean and very comfortable. Would stay here again!
+language_code: en
+author_name: BK rindy
+author_profile_url: https://www.google.com/maps/contrib/112321939741401449085/reviews
+publish_time: 2025-10-25T16:50:29.617557+00:00
+relative_time: 7 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21kSlNtSjVRVE5EVldWbGNtNUZZM0psTWpKRlVtYxAB!2m1!1s0x889a06f9524ca235:0x273e36982cb74744
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 1449
+entity_slug: grand-caribbean
+google_review_name: places/ChIJNaJMUvkGmogRREe3LJg2Pic/reviews/ChZDSUhNMG9nS0VJQ0FnSUNkMnZuX1hREAE
+rating: 5
+review_text: This is a great place to stay. We are across the road from the beach. View is great, easy walk to the beach. It is within walking distant of several stores and restaurants. Local people are really nice and welcoming. There is some traffic noise but it hasn't bothered us. Has pool and outdoor area with 3 barbeque grills and a seating area.
+language_code: en
+author_name: Gretchen Wilson
+author_profile_url: https://www.google.com/maps/contrib/118211608748214266715/reviews
+publish_time: 2024-02-14T16:34:44.292521+00:00
+relative_time: 2 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNkMnZuX1hREAE!2m1!1s0x889a06f9524ca235:0x273e36982cb74744
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 1450
+entity_slug: grand-caribbean
+google_review_name: places/ChIJNaJMUvkGmogRREe3LJg2Pic/reviews/ChZDSUhNMG9nS0VJQ0FnSUNPX0lMWEVREAE
+rating: 4
+review_text: Overall this was a very nice place. I was a bit hesitant with a few reviews that I had read about issues with parking and traveling across the street to get up the beach. Here are my pros and cons about the complex and then reviews on the particular condo we stayed in.
+
+Complex:
+
+Pros: We had absolutely no issues with parking, parking passes, or security. We only saw the building security once during our entire stay and he was, I’m assuming,  on a break watching tv in the veranda area. The pool, pool area, and veranda were all well maintained and clean. Lots of chairs and space too. There was a bay behind the complex and the beach was across the street. Getting to and from the beach wasn’t too bad. They had outside showers to rinse off before coming back into the complex. Complex was well maintained and nice! They have a nice grill area and picnic tables as well.
+
+Cons:
+Traffic noise by the pool was awful. They also need a few more beach umbrellas in the pool area. We had to figure out how to get around the complex to find the crosswalk to get to the beach. We found the safest route to be is to walk around the back of the complex by the bay to get to the crosswalk.
+
+Our Condo (115):
+
+Pros:
+The condo was very clean, nicely decorated and well stocked with kitchen items, towels and bedding. The kitchen was updated with nice appliances and we used the kitchen quite a bit. It also had a washer and dryer that we used as well. The condo had a nice view of the bay and beach. Patio furniture was nice too. It had two bedrooms and bathrooms. Nice sleeping arrangements.
+
+Cons:
+Shower curtain liners were in deep need of being replaced (horribly dirty). The bunks need to be tightened up or replaced. They made so much noise every time anyone moved. The couch needs to be retired (it’s seen better days). Cable tv was bad.
+
+Overall was a nice stay!! We’d come back again!!
+language_code: en
+author_name: Tracy Longino
+author_profile_url: https://www.google.com/maps/contrib/103657213873088362902/reviews
+publish_time: 2022-06-04T19:27:38.892524+00:00
+relative_time: 4 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNPX0lMWEVREAE!2m1!1s0x889a06f9524ca235:0x273e36982cb74744
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 1451
+entity_slug: grand-caribbean
+google_review_name: places/ChIJNaJMUvkGmogRREe3LJg2Pic/reviews/Ci9DQUlRQUNvZENodHljRjlvT2taWU5VaEdRM2hmYjBscWJtNVBTRWR2ZUVVd1NFRRAB
+rating: 1
+review_text: 10/10 would not stay here again. Paint falling off, a bathroom fan literally hanging for its life by a piece of duck tape. A cabinet door in the kitchen unpainted and doesn’t match the rest. No ceiling fans, just 1 box fan. AC isn’t great- specially in the only bedroom. Broken toilet paper holder. No sheets for the pullout couch. Tiny space. Not enough hooks for hanging things. No enough trash bags. Can it fit 6 people? Sure. Not comfortably though. Only one true bedroom with a door that only shut after we moved the bed. 1 tiny bathroom for six is not ideal. Ok for 1-2 nights, beyond that, would not recommend. More ideal for two adults and two small kids (there’s bunk beds). Positives- decent parking (not covered unless you live there), walk across to public beach access, minutes from shopping and restaurants, washer/dryer in room, view from the patio. Has a small pool. Outdoor grilling area. Room we had was 104.
+language_code: en
+author_name: Whitney Bevilacqua
+author_profile_url: https://www.google.com/maps/contrib/115375253345501923302/reviews
+publish_time: 2025-07-27T16:10:15.929306+00:00
+relative_time: 10 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2taWU5VaEdRM2hmYjBscWJtNVBTRWR2ZUVVd1NFRRAB!2m1!1s0x889a06f9524ca235:0x273e36982cb74744
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 1452
+entity_slug: grand-caribbean
+google_review_name: places/ChIJNaJMUvkGmogRREe3LJg2Pic/reviews/ChZDSUhNMG9nS0VJQ0FnSUM0eGZDd1FBEAE
+rating: 5
+review_text: Very clean, decorations were awesome 👍, Customer service was ok. There was a problem with the air and I could never get anyone on the phone to help me. Other that that , the accommodations were awesome. Highly recommend.
+language_code: en
+author_name: Tammy Jackson
+author_profile_url: https://www.google.com/maps/contrib/107457493384816759720/reviews
+publish_time: 2019-06-10T13:19:09.903911+00:00
+relative_time: 7 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUM0eGZDd1FBEAE!2m1!1s0x889a06f9524ca235:0x273e36982cb74744
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 2] ---
+entity_slug: grand-caribbean
+source_table: bookable_resources
+item_type: condo
+section_name: Units
+item_id: e0ae1600-00e1-4668-b057-4a1de0c5319d
+name: Grand Caribbean
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_04.jpg",
+    "/photos/grand-caribbean/photo_01.jpg",
+    "/photos/grand-caribbean/photo_02.jpg",
+    "/photos/grand-caribbean/photo_03.jpg",
+    "/photos/grand-caribbean/photo_04.jpg",
+    "/photos/grand-caribbean/photo_05.jpg",
+    "/photos/grand-caribbean/photo_06.jpg",
+    "/photos/grand-caribbean/photo_07.jpg",
+    "/photos/grand-caribbean/photo_08.jpg",
+    "/photos/grand-caribbean/photo_09.jpg",
+    "/photos/grand-caribbean/photo_10.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "item_type_raw": "condo",
+  "resource_type": "condo",
+  "check_out_time": "11:00"
+}
+
+--- entity_items_norm_v [row 2 of 2] ---
+entity_slug: grand-caribbean
+source_table: entity_section_items
+item_type: rooms
+section_name: Units & Rates
+item_id: 3c9cf4f0-18cf-4527-b468-a737ed1c8a84
+name: Grand Caribbean
+sort_order: 1
+active: true
+attributes: {
+  "icon": "🏠",
+  "min_nights": 1,
+  "module_key": "rooms",
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "item_type_raw": "rooms",
+  "check_out_time": "11:00"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 2] ---
+entity_slug: grand-caribbean
+source_table: bookable_resources
+item_type: condo
+section_name: Units
+item_id: e0ae1600-00e1-4668-b057-4a1de0c5319d
+name: Grand Caribbean
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_04.jpg",
+    "/photos/grand-caribbean/photo_01.jpg",
+    "/photos/grand-caribbean/photo_02.jpg",
+    "/photos/grand-caribbean/photo_03.jpg",
+    "/photos/grand-caribbean/photo_04.jpg",
+    "/photos/grand-caribbean/photo_05.jpg",
+    "/photos/grand-caribbean/photo_06.jpg",
+    "/photos/grand-caribbean/photo_07.jpg",
+    "/photos/grand-caribbean/photo_08.jpg",
+    "/photos/grand-caribbean/photo_09.jpg",
+    "/photos/grand-caribbean/photo_10.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "resource_type": "condo",
+  "check_out_time": "11:00"
+}
+
+--- entity_items_v [row 2 of 2] ---
+entity_slug: grand-caribbean
+source_table: entity_section_items
+item_type: rooms
+section_name: Units & Rates
+item_id: 3c9cf4f0-18cf-4527-b468-a737ed1c8a84
+name: Grand Caribbean
+sort_order: 1
+active: true
+attributes: {
+  "icon": "🏠",
+  "min_nights": 1,
+  "module_key": "rooms",
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "check_out_time": "11:00"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   14 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 14] ---
+id: 4005e6c1-ba0e-4884-93e5-f6d6c9e05958
+entity_slug: grand-caribbean
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 14] ---
+id: 349eb243-36b3-4913-8b07-e655d46f015a
+entity_slug: grand-caribbean
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 14] ---
+id: 72bbaea2-3939-4e56-a16a-58dd4a050ede
+entity_slug: grand-caribbean
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 14] ---
+id: eb4d393e-1be7-42bd-b99f-fa64c30e51ce
+entity_slug: grand-caribbean
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 14] ---
+id: 8fc0183b-c1dc-43d0-9316-8178e9bc740d
+entity_slug: grand-caribbean
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 14] ---
+id: 3ca964b9-cb67-4ec1-9f44-036b32d5ca61
+entity_slug: grand-caribbean
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 14] ---
+id: ac9c4093-80a9-4905-82df-becc7eb91676
+entity_slug: grand-caribbean
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 14] ---
+id: 95b19c67-9c0d-4a19-90ee-91a49ef71e54
+entity_slug: grand-caribbean
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 14] ---
+id: 04c278ba-4776-4a18-af53-2cb3bb1d2a15
+entity_slug: grand-caribbean
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 14] ---
+id: f3fa29e9-bf88-41ba-88d8-bfa6e974b105
+entity_slug: grand-caribbean
+module_key: stay
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 14] ---
+id: 3b809126-f922-4300-8d1e-0d8382b49eb3
+entity_slug: grand-caribbean
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 14] ---
+id: 807b81cf-1841-457c-8422-24320bac86f0
+entity_slug: grand-caribbean
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 14] ---
+id: 3ba5fde7-8f35-4208-9c4c-f470c6e6dc3d
+entity_slug: grand-caribbean
+module_key: amenities
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 14 of 14] ---
+id: 05623177-f027-4d8f-885c-883e0f2afdb0
+entity_slug: grand-caribbean
+module_key: rooms
+enabled: true
+sort_order: 2
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   18 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 18] ---
+id: b1825943-8e9c-472b-a9b4-047faa062b7f
+landmark_id: c94023b9-3905-4e2e-ae2d-9e9b57ca0166
+entity_slug: grand-caribbean
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 18] ---
+id: 069f710e-457b-49d6-9124-83bbed436b5f
+landmark_id: c94023b9-3905-4e2e-ae2d-9e9b57ca0166
+entity_slug: grand-caribbean
+landmark_type: park
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 18] ---
+id: 9e30240e-4ca7-4a30-822e-4073184d4c5c
+landmark_id: c94023b9-3905-4e2e-ae2d-9e9b57ca0166
+entity_slug: grand-caribbean
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 18] ---
+id: a53c947a-4d78-4f2a-93ac-b4203f22e611
+landmark_id: 519be8ef-2fd5-4474-8cc5-3ca19b416125
+entity_slug: grand-caribbean
+landmark_type: cafe
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 18] ---
+id: 2b4c81d9-c22e-4287-b217-a6ff88e4101c
+landmark_id: 519be8ef-2fd5-4474-8cc5-3ca19b416125
+entity_slug: grand-caribbean
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 18] ---
+id: 8cc4cf5e-657a-40fe-aee0-782a398f0ae1
+landmark_id: 519be8ef-2fd5-4474-8cc5-3ca19b416125
+entity_slug: grand-caribbean
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 18] ---
+id: 444a0f70-5a21-48be-9b41-3470b90bcf9a
+landmark_id: 519be8ef-2fd5-4474-8cc5-3ca19b416125
+entity_slug: grand-caribbean
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 18] ---
+id: 815decda-6449-48bf-9d4a-7e941850960f
+landmark_id: 519be8ef-2fd5-4474-8cc5-3ca19b416125
+entity_slug: grand-caribbean
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 18] ---
+id: eb7e8996-c44e-4a33-bb1a-b907c48abf8f
+landmark_id: 519be8ef-2fd5-4474-8cc5-3ca19b416125
+entity_slug: grand-caribbean
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 18] ---
+id: ce8caae6-7723-4d1c-b6e6-56da62760de7
+landmark_id: ac04fc75-9329-485e-b5aa-c62d4f9e074e
+entity_slug: grand-caribbean
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 18] ---
+id: 6b2b6535-41a8-4f87-93c2-e2ca86970236
+landmark_id: ac04fc75-9329-485e-b5aa-c62d4f9e074e
+entity_slug: grand-caribbean
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 18] ---
+id: 10e7ec4b-316f-4ce2-95f5-5eea07987b3a
+landmark_id: 9b8cb82b-941e-4345-bb5a-3fcfc127d85e
+entity_slug: grand-caribbean
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 18] ---
+id: 4894a585-b716-4eb2-b59c-4d242b292503
+landmark_id: 9b8cb82b-941e-4345-bb5a-3fcfc127d85e
+entity_slug: grand-caribbean
+landmark_type: health
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 18] ---
+id: 45834b52-95d1-44f2-94a2-352b3af6646e
+landmark_id: 9b8cb82b-941e-4345-bb5a-3fcfc127d85e
+entity_slug: grand-caribbean
+landmark_type: pharmacy
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 18] ---
+id: 31dbd2cb-ed30-4f27-8e8a-a1ea6ffe9193
+landmark_id: 9b8cb82b-941e-4345-bb5a-3fcfc127d85e
+entity_slug: grand-caribbean
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 18] ---
+id: 9bfe70c2-b041-484d-a87e-5739a206f257
+landmark_id: 9b8cb82b-941e-4345-bb5a-3fcfc127d85e
+entity_slug: grand-caribbean
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 18] ---
+id: 65b03d29-fc74-4795-a8d7-cf4da232ef19
+landmark_id: 9ca55e4e-ca6b-40cb-bb1f-a4d1a36a2836
+entity_slug: grand-caribbean
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 18] ---
+id: e0aa249f-df36-421d-b02e-7470cf503c3a
+landmark_id: 9ca55e4e-ca6b-40cb-bb1f-a4d1a36a2836
+entity_slug: grand-caribbean
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   7 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 7] ---
+id: c94023b9-3905-4e2e-ae2d-9e9b57ca0166
+entity_slug: grand-caribbean
+kind: landmark
+place_id: ChIJnTKZnv4GmogR2a5h8p2-NoQ
+name: Cotton Bayou Public Beach Access
+types: [
+  "establishment",
+  "park",
+  "point_of_interest"
+]
+travel_distance_meters: 409.672
+straight_line_distance_meters: 176.09767
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 7] ---
+id: 519be8ef-2fd5-4474-8cc5-3ca19b416125
+entity_slug: grand-caribbean
+kind: landmark
+place_id: ChIJbQon9fkGmogRM1PXBVFKrHE
+name: Starbucks Coffee Company
+types: [
+  "cafe",
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant",
+  "store"
+]
+travel_distance_meters: 482.07874
+straight_line_distance_meters: 399.60284
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 7] ---
+id: ac04fc75-9329-485e-b5aa-c62d4f9e074e
+entity_slug: grand-caribbean
+kind: landmark
+place_id: ChIJb2994_sGmogRntkS3z6UJWU
+name: Summerchase Condominiums
+types: [
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 436.27414
+straight_line_distance_meters: 192.69951
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 7] ---
+id: 9b8cb82b-941e-4345-bb5a-3fcfc127d85e
+entity_slug: grand-caribbean
+kind: landmark
+place_id: ChIJz89jN_QHmogRgXbC-ltTVH0
+name: Walgreens Pharmacy
+types: [
+  "establishment",
+  "health",
+  "pharmacy",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 264.33344
+straight_line_distance_meters: 163.6006
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 7] ---
+id: 9ca55e4e-ca6b-40cb-bb1f-a4d1a36a2836
+entity_slug: grand-caribbean
+kind: landmark
+place_id: ChIJqQDC3P4GmogRO0zVFzR8Ts4
+name: Cotton Bayou Boat Launch
+types: [
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 464.85968
+straight_line_distance_meters: 124.751816
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 6 of 7] ---
+id: bf1d14ca-b3af-4717-96f1-a71c939b7df0
+entity_slug: grand-caribbean
+kind: area
+place_id: ChIJZ_VFtf4GmogRom3x5ZUNukg
+name: Grand Caribbean
+containment: WITHIN
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 7 of 7] ---
+id: 6e357a0a-bc62-41c4-a0cf-66c5da2fe3a2
+entity_slug: grand-caribbean
+kind: area
+place_id: ChIJAf8qlDAEmogR21mSG_IXY-s
+name: Gulf State Park
+containment: NEAR
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13581
+entity_slug: grand-caribbean
+name: Grand Caribbean
+offer_type: room
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: e0ae1600-00e1-4668-b057-4a1de0c5319d
+
+####################################################################################################
+# TABLE: entity_photos   -   36 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 36] ---
+id: 198813e9-a5db-42e9-a541-fcee124553ce
+entity_slug: grand-caribbean
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_08.jpg
+is_cover: false
+sort_order: 5
+photo_type: resource
+source_name: bookable_resource
+resource_id: e0ae1600-00e1-4668-b057-4a1de0c5319d
+
+--- entity_photos [row 2 of 36] ---
+id: c4622a28-615e-42fd-9238-2a0ae1256ad6
+entity_slug: grand-caribbean
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_02.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: e0ae1600-00e1-4668-b057-4a1de0c5319d
+
+--- entity_photos [row 3 of 36] ---
+id: 7580d447-527c-4e6d-8229-598cdb27c3bd
+entity_slug: grand-caribbean
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A7301564.jpg
+is_cover: true
+sort_order: 0
+photo_type: gallery
+
+--- entity_photos [row 4 of 36] ---
+id: 121ae76f-e34b-4893-875a-500c7195696f
+entity_slug: grand-caribbean
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A7301575.jpg
+is_cover: false
+sort_order: 1
+photo_type: gallery
+
+--- entity_photos [row 5 of 36] ---
+id: 3c9f4501-d5c3-4a5b-8224-3824baaf9f26
+entity_slug: grand-caribbean
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A7301577.jpg
+is_cover: false
+sort_order: 2
+photo_type: gallery
+
+--- entity_photos [row 6 of 36] ---
+id: 61207c25-6946-48a7-af7d-3f0ee5d4bb5a
+entity_slug: grand-caribbean
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_07.jpg
+is_cover: false
+sort_order: 6
+photo_type: complex
+
+--- entity_photos [row 7 of 36] ---
+id: 8f3b9d6e-0f38-4ab7-b467-08be4b165ec5
+entity_slug: grand-caribbean
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_06.jpg
+is_cover: false
+sort_order: 5
+photo_type: complex
+
+--- entity_photos [row 8 of 36] ---
+id: 29041d6e-77dd-4db8-a31e-30d29c3dd958
+entity_slug: grand-caribbean
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_05.jpg
+is_cover: false
+sort_order: 4
+photo_type: complex
+
+--- entity_photos [row 9 of 36] ---
+id: 47bc906e-ffb6-46a4-807a-ceece420765b
+entity_slug: grand-caribbean
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_08.jpg
+is_cover: false
+sort_order: 7
+photo_type: complex
+
+--- entity_photos [row 10 of 36] ---
+id: 3c90ad04-1818-4a32-affb-44f0ab51f307
+entity_slug: grand-caribbean
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_03.jpg
+is_cover: false
+sort_order: 2
+photo_type: complex
+
+--- entity_photos [row 11 of 36] ---
+id: c06b78e6-c9f2-4dad-a3ca-8c2eab5c992c
+entity_slug: grand-caribbean
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_10.jpg
+is_cover: false
+sort_order: 9
+photo_type: complex
+
+--- entity_photos [row 12 of 36] ---
+id: 91d20b62-52cf-45f1-80d5-bcc177212056
+entity_slug: grand-caribbean
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: complex
+
+--- entity_photos [row 13 of 36] ---
+id: a83f506a-170b-4b40-9cfd-de6ba8880f81
+entity_slug: grand-caribbean
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_09.jpg
+is_cover: false
+sort_order: 8
+photo_type: complex
+
+--- entity_photos [row 14 of 36] ---
+id: d3651cd2-4563-43cf-9317-056d29330deb
+entity_slug: grand-caribbean
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_01.jpg
+is_cover: true
+sort_order: 0
+photo_type: complex
+
+--- entity_photos [row 15 of 36] ---
+id: 8db18196-6cee-40f4-833a-699f322de4d9
+entity_slug: grand-caribbean
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_04.jpg
+is_cover: false
+sort_order: 3
+photo_type: complex
+
+--- entity_photos [row 16 of 36] ---
+id: 91081184-6207-470f-afcb-1b218c1e6309
+entity_slug: grand-caribbean
+url: https://places.googleapis.com/v1/places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3lOnpRosrNAPqJxgJlROckOwyLuWinHysaAE8zIus4TgJSTB8tbfJ1LNxav7LcNYj2vhj8svr2CupqpXT62oVIy8ZS_qLa_5Ls1r__Jyp1a8wcfKHEn8s_3bOTSX4yGq22ZUnfU-SIkXoK-0HYCuXNpZwZZgdFY6FFxJ3KmsNn4pjcpVGFn833Lx61mQI5u8Vz95M5ByVDjVhkRlniSRnRJR9eOSkYsNsRU8vmefUI6c5CA4RahQyP7lk6MmEG3MCK_89bbuTKlqcR9PI9E2Aie75GufCCi0ltnhxNEkZA6X9nrRfgJUuqIbnGWWQThd3eMJAB7wDhS3CwhyFZKivolJgsYJGsRZfnDACGwjMet3JUYR2CglYBJWcgboPsyd1AGg1XNyA1EnVfzwPnHySKp-ntzQBtUdd4Z5DBy4yu_64zb/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3lOnpRosrNAPqJxgJlROckOwyLuWinHysaAE8zIus4TgJSTB8tbfJ1LNxav7LcNYj2vhj8svr2CupqpXT62oVIy8ZS_qLa_5Ls1r__Jyp1a8wcfKHEn8s_3bOTSX4yGq22ZUnfU-SIkXoK-0HYCuXNpZwZZgdFY6FFxJ3KmsNn4pjcpVGFn833Lx61mQI5u8Vz95M5ByVDjVhkRlniSRnRJR9eOSkYsNsRU8vmefUI6c5CA4RahQyP7lk6MmEG3MCK_89bbuTKlqcR9PI9E2Aie75GufCCi0ltnhxNEkZA6X9nrRfgJUuqIbnGWWQThd3eMJAB7wDhS3CwhyFZKivolJgsYJGsRZfnDACGwjMet3JUYR2CglYBJWcgboPsyd1AGg1XNyA1EnVfzwPnHySKp-ntzQBtUdd4Z5DBy4yu_64zb
+is_cover: false
+sort_order: 0
+caption: Grand Caribbean
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC6trHU8wE!2e10!4m2!3m1!1s0x889a06f9524ca235:0x273e36982cb74744
+
+--- entity_photos [row 17 of 36] ---
+id: 5f596ffc-ac68-4157-bdd9-1cf455b454aa
+entity_slug: grand-caribbean
+url: https://places.googleapis.com/v1/places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3l7ShH5WAhetIamQcNkgPIyBR-zr7N-lsghENxN6xSGWhpY0M44riH9AG-PNrvbYWv4aGSPtv6LidoZwjFWRJMyWOV9tLvZdwbSCoKIXdPTzQxFtvvnOmZLjr2WghtzL_xTtGbP7VfF_ZQFi4uJ2r7_cN8KllXOMEtruaH0eVT5MNDf77H10vgkL8dskUrkSOHb2YnwUIzaPx-jWmo7DsFkHnRqdQbi73XrBjkX-14eORzjGfnS4aKE33tILCM4hPFth0qF921Rc5uhIELSYTtEn1QVqr8OdObcdskK7hyFsBHFztBPmbPwivR69yILYHgsxs3Fl7N4R2LS-Un6r3qWowDTZQJz3rhUzxNiWqYfgl1jmXjyXWyYkwtn4ixiHl6-6lPYw6ye1ROW6TW9p3W8uy2MCQQtxy9SRTITqayeeF7jjZGzZwmW8bRKMQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3l7ShH5WAhetIamQcNkgPIyBR-zr7N-lsghENxN6xSGWhpY0M44riH9AG-PNrvbYWv4aGSPtv6LidoZwjFWRJMyWOV9tLvZdwbSCoKIXdPTzQxFtvvnOmZLjr2WghtzL_xTtGbP7VfF_ZQFi4uJ2r7_cN8KllXOMEtruaH0eVT5MNDf77H10vgkL8dskUrkSOHb2YnwUIzaPx-jWmo7DsFkHnRqdQbi73XrBjkX-14eORzjGfnS4aKE33tILCM4hPFth0qF921Rc5uhIELSYTtEn1QVqr8OdObcdskK7hyFsBHFztBPmbPwivR69yILYHgsxs3Fl7N4R2LS-Un6r3qWowDTZQJz3rhUzxNiWqYfgl1jmXjyXWyYkwtn4ixiHl6-6lPYw6ye1ROW6TW9p3W8uy2MCQQtxy9SRTITqayeeF7jjZGzZwmW8bRKMQ
+is_cover: false
+sort_order: 1
+caption: Rachel Gilley
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhChDap6P_FxdrRiP_01qbmh!2e10!4m2!3m1!1s0x889a06f9524ca235:0x273e36982cb74744
+
+--- entity_photos [row 18 of 36] ---
+id: daa39e85-42f6-44ff-8f6f-00a88d4c6454
+entity_slug: grand-caribbean
+url: https://places.googleapis.com/v1/places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3k0jeW-ZggwiH5B1tR5ic2UYQL56qbtAaHRdGV7nKFSwo-tHpDgzoSAND8Uj3opx4ThLDF--5v__7mT_4kdAw3sCXW1WenR5mk_cb_InXB1sxS2h8OLxD6enXSIE8DilRE3osTo-K05sW5UhYGnDjYO7qFBMOjqslWnP5nmWcpdvHuS7MzaVFfzW22hvCUDHHA7ImM3rRhVcXzRxPQb0wDnypJwUvS5UK_SiNp1KNpLNa2nYFq2cD0iFvAwn3KBAbScGCC3jl6V6jNlLrDAKd-kjLKlpsvLHXduXjmvyLYFqzSIMo2FJPiinaUAbgb6oAfjvEeQsSS97u4ctUFmSXYliObiaDpN1msuSIliEFSJEvg_iJCo6a5MPF6FKTe0WHmjAy2RHKIAOp6knwG6g2HCOEuBlEBJTnxdmdLVY3POT3gmYQ5cO5WHW7_Gh_Te/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3k0jeW-ZggwiH5B1tR5ic2UYQL56qbtAaHRdGV7nKFSwo-tHpDgzoSAND8Uj3opx4ThLDF--5v__7mT_4kdAw3sCXW1WenR5mk_cb_InXB1sxS2h8OLxD6enXSIE8DilRE3osTo-K05sW5UhYGnDjYO7qFBMOjqslWnP5nmWcpdvHuS7MzaVFfzW22hvCUDHHA7ImM3rRhVcXzRxPQb0wDnypJwUvS5UK_SiNp1KNpLNa2nYFq2cD0iFvAwn3KBAbScGCC3jl6V6jNlLrDAKd-kjLKlpsvLHXduXjmvyLYFqzSIMo2FJPiinaUAbgb6oAfjvEeQsSS97u4ctUFmSXYliObiaDpN1msuSIliEFSJEvg_iJCo6a5MPF6FKTe0WHmjAy2RHKIAOp6knwG6g2HCOEuBlEBJTnxdmdLVY3POT3gmYQ5cO5WHW7_Gh_Te
+is_cover: false
+sort_order: 2
+caption: Qua Qua
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCQ44n0jTDwYlPhI6tqr7UO!2e10!4m2!3m1!1s0x889a06f9524ca235:0x273e36982cb74744
+
+--- entity_photos [row 19 of 36] ---
+id: 69dd56c8-8c30-4cc7-8d90-4e752da5f2e7
+entity_slug: grand-caribbean
+url: https://places.googleapis.com/v1/places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3kRCXahF2TCXW8a5FDP01HCf3sNK5muY_BICyEgu519LM3wc3Olk2z2jQT4vXWTyn7ju0su89efF62yp2ql6f13OQSHmovu3DV-jAU5gnOhO7_ZkGVVg5eNunkPlppGHViPoj58NEaViVpmniBMR0xi-LmzdWmN_5NpHiAZRsHLhCh952yN9HUhJcOhnWaOmp2WDyJtQS0TcUxNtiEAg5sWmzDrLL18FwpvfH4OtKRIDEag6oJU8ddjgrjPeLUfbfvvyAhpXkEHBdOsA5OUNmQe4xmgiY9QKnBVu3_ThjKE2fa-0kBW8e2GCagjVPaNij5q1MfPrxTQHeRICiLbI7BhJDCzoDzE2Fc6ds30NVz8ptqU2ZKneDa4Ax7DiVzxyegsnVCEzb85-TimD4oEwxYVCMd4C_eFmmmRJ45guGyp9SzX/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3kRCXahF2TCXW8a5FDP01HCf3sNK5muY_BICyEgu519LM3wc3Olk2z2jQT4vXWTyn7ju0su89efF62yp2ql6f13OQSHmovu3DV-jAU5gnOhO7_ZkGVVg5eNunkPlppGHViPoj58NEaViVpmniBMR0xi-LmzdWmN_5NpHiAZRsHLhCh952yN9HUhJcOhnWaOmp2WDyJtQS0TcUxNtiEAg5sWmzDrLL18FwpvfH4OtKRIDEag6oJU8ddjgrjPeLUfbfvvyAhpXkEHBdOsA5OUNmQe4xmgiY9QKnBVu3_ThjKE2fa-0kBW8e2GCagjVPaNij5q1MfPrxTQHeRICiLbI7BhJDCzoDzE2Fc6ds30NVz8ptqU2ZKneDa4Ax7DiVzxyegsnVCEzb85-TimD4oEwxYVCMd4C_eFmmmRJ45guGyp9SzX
+is_cover: false
+sort_order: 3
+caption: Jane Walker
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIChs-TRuAE!2e10!4m2!3m1!1s0x889a06f9524ca235:0x273e36982cb74744
+
+--- entity_photos [row 20 of 36] ---
+id: 169c7d57-5562-4839-aa95-059962598695
+entity_slug: grand-caribbean
+url: https://places.googleapis.com/v1/places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3l7HHDc2v1wAogd5yI3qHviHREkWju3jFA10Z3y9_BQ6VBmG3AQMTi9VVfBB5jMSfHMxv07GJftUCML2_YJZCXMzFn6SIsLYJvqghG5KMd0ZikSm7Cxl4kVjBOGLkS2ika1EGx5uHz9-muzwnxwBEnq0uru5Dy7qvhvEScsfgpZGC2Xp6VJoPsO3x-zdKPtbNfdlUMAfxfh3K4oQwSi5U_2F5fJDNO6CigIOXUKCyPcRnGGHcaLjcsnNNYF6MUb9Y-cjO319e5dnYAAX0ZpazvAYG5sdoBn0KoMhjKepuTpKhlEKcuWjJuOhRo3L4lBvt8bI66Gtze2UVbRmJv649ItVKUQaNSDXAkgYXQAXM_SDDCuuP9b6mKGoPe_JFO3sPs0_kYy7igZym-SIImDP2Owz4YFecYBKIzkqPNhwBONcO79/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3l7HHDc2v1wAogd5yI3qHviHREkWju3jFA10Z3y9_BQ6VBmG3AQMTi9VVfBB5jMSfHMxv07GJftUCML2_YJZCXMzFn6SIsLYJvqghG5KMd0ZikSm7Cxl4kVjBOGLkS2ika1EGx5uHz9-muzwnxwBEnq0uru5Dy7qvhvEScsfgpZGC2Xp6VJoPsO3x-zdKPtbNfdlUMAfxfh3K4oQwSi5U_2F5fJDNO6CigIOXUKCyPcRnGGHcaLjcsnNNYF6MUb9Y-cjO319e5dnYAAX0ZpazvAYG5sdoBn0KoMhjKepuTpKhlEKcuWjJuOhRo3L4lBvt8bI66Gtze2UVbRmJv649ItVKUQaNSDXAkgYXQAXM_SDDCuuP9b6mKGoPe_JFO3sPs0_kYy7igZym-SIImDP2Owz4YFecYBKIzkqPNhwBONcO79
+is_cover: false
+sort_order: 4
+caption: Daicy Gil
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICZjtXH6wE!2e10!4m2!3m1!1s0x889a06f9524ca235:0x273e36982cb74744
+
+--- entity_photos [row 21 of 36] ---
+id: f53aec3b-188e-429a-9b2b-dbb9ba7621cd
+entity_slug: grand-caribbean
+url: https://places.googleapis.com/v1/places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3lN0O4YY25xXVq2CYukSeBdWxQ_hp-uZ2fCEpeGeh3pH-9x7lesJIAOdz3g0GyyJtiqZ5xVJ99rfj3Od2KOBydG-N4VtZTpJ-eMbkaOb9yILoPsjbJOlUFu7C1AsdF2m1s2xReTo8O00GHwKkK7t9V-_EytWgOfgXiirU4_GjuCUCJOOZeJj2-Yzp2xCGCyKlLX51B7RGRqacGEuYZt7x6OjbOg_a-rVZsEJiDHxuMUbAD1PoO82CrpCZmUbPd7knpTBi6KghyEyZyCS2vQTcY_lTW9mCfQI3y7ccaOkawBGh9Yt-8UaylUTuTWh41qI7QNzjv6R-4iAfKZ_S5rvJo1J-7tR9INm8wjkFJVnz9PKvbRpa8RYMTHmyOraviIqUuq3dY_ZihsRFXH37Vu-ULg8Xg9l3m6uHvc0K_ysV3WbO0/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3lN0O4YY25xXVq2CYukSeBdWxQ_hp-uZ2fCEpeGeh3pH-9x7lesJIAOdz3g0GyyJtiqZ5xVJ99rfj3Od2KOBydG-N4VtZTpJ-eMbkaOb9yILoPsjbJOlUFu7C1AsdF2m1s2xReTo8O00GHwKkK7t9V-_EytWgOfgXiirU4_GjuCUCJOOZeJj2-Yzp2xCGCyKlLX51B7RGRqacGEuYZt7x6OjbOg_a-rVZsEJiDHxuMUbAD1PoO82CrpCZmUbPd7knpTBi6KghyEyZyCS2vQTcY_lTW9mCfQI3y7ccaOkawBGh9Yt-8UaylUTuTWh41qI7QNzjv6R-4iAfKZ_S5rvJo1J-7tR9INm8wjkFJVnz9PKvbRpa8RYMTHmyOraviIqUuq3dY_ZihsRFXH37Vu-ULg8Xg9l3m6uHvc0K_ysV3WbO0
+is_cover: false
+sort_order: 5
+caption: Wendi Gibbs
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICuvPfuvAE!2e10!4m2!3m1!1s0x889a06f9524ca235:0x273e36982cb74744
+
+--- entity_photos [row 22 of 36] ---
+id: 3d54b012-640b-4278-ab9e-e01d99a21653
+entity_slug: grand-caribbean
+url: https://places.googleapis.com/v1/places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3nCzbFgwL_vi5a5WbqlN2Vhod0ISk29k8js6juuTwe0zNV1WT6Zd-lDyLDmzMb_lyhXgwHICeoUefbXcEydPQmE3L6g5NSGM2Q0A72Z80SCTLSc3PuGwT5t0K3YTQTq7GL6sYDeuuicf4I8MHs3D3NULQXSAv3mhYelFTkeas9otkBY1r0gtjN7yi1J5jAAdUhRElwVxhzPlvEsgbTmLvzphz_a-6Ly1p4zK5v0Nz-AJUferrYWL1EHpBuJogA58bb2E5vXxlMoBBfC-VLu6GB6UOBgpV58_ZuCsT8h7gnhpIWMWlkvtyPXTmhLIrsBj0G8F-WF-iyHaOlZQ4CupXH5xQKL5tnvyqzD-iPJNwuvdFU9xWKKXskATLXv3tLVY4Vlgmp19jg5rmr81yNyQwfac73Qz99joTD2C0u1GP0hVA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3nCzbFgwL_vi5a5WbqlN2Vhod0ISk29k8js6juuTwe0zNV1WT6Zd-lDyLDmzMb_lyhXgwHICeoUefbXcEydPQmE3L6g5NSGM2Q0A72Z80SCTLSc3PuGwT5t0K3YTQTq7GL6sYDeuuicf4I8MHs3D3NULQXSAv3mhYelFTkeas9otkBY1r0gtjN7yi1J5jAAdUhRElwVxhzPlvEsgbTmLvzphz_a-6Ly1p4zK5v0Nz-AJUferrYWL1EHpBuJogA58bb2E5vXxlMoBBfC-VLu6GB6UOBgpV58_ZuCsT8h7gnhpIWMWlkvtyPXTmhLIrsBj0G8F-WF-iyHaOlZQ4CupXH5xQKL5tnvyqzD-iPJNwuvdFU9xWKKXskATLXv3tLVY4Vlgmp19jg5rmr81yNyQwfac73Qz99joTD2C0u1GP0hVA
+is_cover: false
+sort_order: 6
+caption: Jane Walker
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIChs-T2NA!2e10!4m2!3m1!1s0x889a06f9524ca235:0x273e36982cb74744
+
+--- entity_photos [row 23 of 36] ---
+id: cc0fb85e-a492-4aaa-9c54-caedfad760bc
+entity_slug: grand-caribbean
+url: https://places.googleapis.com/v1/places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3ktvDQvYM7Z__NugGk_U1vYDgkhkbw3N4AK7KuO_fe31vVz6p3RnJxjuqr-2dNvoZT7kS5lpJmbtme60MIPo3KkIpDZGzxSNC472qhz0HonLUh0c9_Zs1mgEB5y4QRF-eWnuacXKruG1BG7tFynXZw9wNQJIYlPBbqPvKl9HiUMDDPcSaEgB86T4V64O4FJdxjQT7RGKvn7xDM29TQozCXytOHfBDH6jl8rYfv15Fxx6Pkyvb89mSKhsLS4x04Dk-zvxN4qUVFoRTo6YukWaJKdN-TLAUNcejBL9zcrUvguHTS8zvC9vQVpZTUvGHBotVI1Y0Lp1DHGjiJguPtH4VFZBU9hY96ABji0EEHwlMKUVEQRRZSXFf9Q2e-aYyV5qhJH3H5mj3j77Q8qHoESWY_MJfoqfftBbScKhYR1FCS3KGhY/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3ktvDQvYM7Z__NugGk_U1vYDgkhkbw3N4AK7KuO_fe31vVz6p3RnJxjuqr-2dNvoZT7kS5lpJmbtme60MIPo3KkIpDZGzxSNC472qhz0HonLUh0c9_Zs1mgEB5y4QRF-eWnuacXKruG1BG7tFynXZw9wNQJIYlPBbqPvKl9HiUMDDPcSaEgB86T4V64O4FJdxjQT7RGKvn7xDM29TQozCXytOHfBDH6jl8rYfv15Fxx6Pkyvb89mSKhsLS4x04Dk-zvxN4qUVFoRTo6YukWaJKdN-TLAUNcejBL9zcrUvguHTS8zvC9vQVpZTUvGHBotVI1Y0Lp1DHGjiJguPtH4VFZBU9hY96ABji0EEHwlMKUVEQRRZSXFf9Q2e-aYyV5qhJH3H5mj3j77Q8qHoESWY_MJfoqfftBbScKhYR1FCS3KGhY
+is_cover: false
+sort_order: 7
+caption: Lovie Ritchie
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID44PSY6gE!2e10!4m2!3m1!1s0x889a06f9524ca235:0x273e36982cb74744
+
+--- entity_photos [row 24 of 36] ---
+id: 98bbf972-5554-4440-a12d-d5916f984bf0
+entity_slug: grand-caribbean
+url: https://places.googleapis.com/v1/places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3nnYN6pnnxP6JPclOnX2lt12E9UjtfO08MhYHlsuG-NgHOnNThD_TBLAxepPoENCaizcKunji2OIfRGUne-V8PUGqjxLZku_OElw0GVsO6M1eF9AD2wQGqWclFIPI30ThYfM2ozhwC2V8GE8V8sY89fXyqQhmbTYvPD3T-6LFlLOzAahB5jEfur3eb6bqlX9MjyK0lRcXog7v9xNdu-pXgzW76XPcRt2ANffBjkgXiip-jxtk-qLtS7k2bEAZ0CF24NMm9PBDS5MgJa3Oj38A9krk7SmOU-9Kn0bwukTwCwR1VDVTSCcYRydepN-L7Q9FNcZeCebQ5tAkGNqbatesHUSZc6NP7NPKUau6q_1nImqOJK8hDnmVcUkHqPe4X0J51HubYDEwrDeY0MfzkMWQ07bDEATKANT26PEpbHQuH0RQ651xVOD5gxRB7HUA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3nnYN6pnnxP6JPclOnX2lt12E9UjtfO08MhYHlsuG-NgHOnNThD_TBLAxepPoENCaizcKunji2OIfRGUne-V8PUGqjxLZku_OElw0GVsO6M1eF9AD2wQGqWclFIPI30ThYfM2ozhwC2V8GE8V8sY89fXyqQhmbTYvPD3T-6LFlLOzAahB5jEfur3eb6bqlX9MjyK0lRcXog7v9xNdu-pXgzW76XPcRt2ANffBjkgXiip-jxtk-qLtS7k2bEAZ0CF24NMm9PBDS5MgJa3Oj38A9krk7SmOU-9Kn0bwukTwCwR1VDVTSCcYRydepN-L7Q9FNcZeCebQ5tAkGNqbatesHUSZc6NP7NPKUau6q_1nImqOJK8hDnmVcUkHqPe4X0J51HubYDEwrDeY0MfzkMWQ07bDEATKANT26PEpbHQuH0RQ651xVOD5gxRB7HUA
+is_cover: false
+sort_order: 8
+caption: Rachel Gilley
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhADyc5UzxD0DWe-BPgACoEr!2e10!4m2!3m1!1s0x889a06f9524ca235:0x273e36982cb74744
+
+--- entity_photos [row 25 of 36] ---
+id: 41f6b36f-6d9f-496b-a4db-5da919fcd450
+entity_slug: grand-caribbean
+url: https://places.googleapis.com/v1/places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3l4DG1kK1uTVIRrmupW84aRnWH9w9vvHlF9lcAxZ5KitEaUIHE6-DApjiwOWutTCSat54OtEmfmfW18wHimfwjthjx5rqKrPQUA1PMPRoOiGx1u1xDO0XnRhW4oaJrAAcAQluebJ9UMhzaOMhSG2wo58KQOC_8rGREGR3hUhNMTOiBYPkurFpMnACUEeJ5gMRu4sx7RdMUOYWsV6FvuXo9fy8-VHha5q26z-gldsZKBBgKNfzIBtUiy2S4qjUymqmk-yxPO44YJ8DS93ecLKWkM7N4f0f-3snIWyhQVrLew8wm_ndzCB6eECh_MGEcvQDbdMREdWpeVn0tq6SFVnfcBWxxgANh483W8uxrJ8sdc4p_5YTiODVlhWKv5UdTQRs3WObydmp5--U4saVNbn9-ulvvDejwnECDxrsANe2ueN7g/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJNaJMUvkGmogRREe3LJg2Pic/photos/AaVGc3l4DG1kK1uTVIRrmupW84aRnWH9w9vvHlF9lcAxZ5KitEaUIHE6-DApjiwOWutTCSat54OtEmfmfW18wHimfwjthjx5rqKrPQUA1PMPRoOiGx1u1xDO0XnRhW4oaJrAAcAQluebJ9UMhzaOMhSG2wo58KQOC_8rGREGR3hUhNMTOiBYPkurFpMnACUEeJ5gMRu4sx7RdMUOYWsV6FvuXo9fy8-VHha5q26z-gldsZKBBgKNfzIBtUiy2S4qjUymqmk-yxPO44YJ8DS93ecLKWkM7N4f0f-3snIWyhQVrLew8wm_ndzCB6eECh_MGEcvQDbdMREdWpeVn0tq6SFVnfcBWxxgANh483W8uxrJ8sdc4p_5YTiODVlhWKv5UdTQRs3WObydmp5--U4saVNbn9-ulvvDejwnECDxrsANe2ueN7g
+is_cover: false
+sort_order: 9
+caption: Alex Lopez
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDEhaeDzAE!2e10!4m2!3m1!1s0x889a06f9524ca235:0x273e36982cb74744
+
+--- entity_photos [row 26 of 36] ---
+id: b778b1c4-d825-4086-bb6e-f1a4f5fffcce
+entity_slug: grand-caribbean
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_10.jpg
+is_cover: false
+sort_order: 6
+photo_type: resource
+source_name: bookable_resource
+resource_id: e0ae1600-00e1-4668-b057-4a1de0c5319d
+
+--- entity_photos [row 27 of 36] ---
+id: 59974310-4272-4afe-9fd8-d0eecce43558
+entity_slug: grand-caribbean
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_05.jpg
+is_cover: false
+sort_order: 2
+photo_type: resource
+source_name: bookable_resource
+resource_id: e0ae1600-00e1-4668-b057-4a1de0c5319d
+
+--- entity_photos [row 28 of 36] ---
+id: ed755ce2-8a93-42c8-97b6-5b489ac567af
+entity_slug: grand-caribbean
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_01.jpg
+is_cover: false
+sort_order: 8
+photo_type: resource
+source_name: bookable_resource
+resource_id: e0ae1600-00e1-4668-b057-4a1de0c5319d
+
+--- entity_photos [row 29 of 36] ---
+id: f0f80c95-83a8-47a6-a95f-7dbe9d00ed98
+entity_slug: grand-caribbean
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_04.jpg
+is_cover: false
+sort_order: 9
+photo_type: resource
+source_name: bookable_resource
+resource_id: e0ae1600-00e1-4668-b057-4a1de0c5319d
+
+--- entity_photos [row 30 of 36] ---
+id: bec4f0f0-f49e-4312-abd1-8bc9f5199433
+entity_slug: grand-caribbean
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_03.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: e0ae1600-00e1-4668-b057-4a1de0c5319d
+
+--- entity_photos [row 31 of 36] ---
+id: 4fd4c14b-5a98-4122-8dcb-b43e4435a13c
+entity_slug: grand-caribbean
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_09.jpg
+is_cover: false
+sort_order: 7
+photo_type: resource
+source_name: bookable_resource
+resource_id: e0ae1600-00e1-4668-b057-4a1de0c5319d
+
+--- entity_photos [row 32 of 36] ---
+id: 851bb728-7f60-4d75-a634-63f3ba31021b
+entity_slug: grand-caribbean
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_06.jpg
+is_cover: false
+sort_order: 3
+photo_type: resource
+source_name: bookable_resource
+resource_id: e0ae1600-00e1-4668-b057-4a1de0c5319d
+
+--- entity_photos [row 33 of 36] ---
+id: 17675363-f604-4d77-b8ae-69c8de801bb6
+entity_slug: grand-caribbean
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_07.jpg
+is_cover: false
+sort_order: 4
+photo_type: resource
+source_name: bookable_resource
+resource_id: e0ae1600-00e1-4668-b057-4a1de0c5319d
+
+--- entity_photos [row 34 of 36] ---
+id: 2ece51a0-4a31-4fae-9fc1-cff8bfa6fce5
+entity_slug: grand-caribbean
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/7a68d3f9-18aa-4522-9b4f-fc66f012a6b5/image_3.jpg
+is_cover: false
+sort_order: 102
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 35 of 36] ---
+id: 4865c540-9dcd-4afc-9d01-a08fa1c1d1a4
+entity_slug: grand-caribbean
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/7a68d3f9-18aa-4522-9b4f-fc66f012a6b5/image_1.jpg
+is_cover: true
+sort_order: 100
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 36 of 36] ---
+id: f25350a1-bbd4-4d11-bc05-e32df9c8533d
+entity_slug: grand-caribbean
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/7a68d3f9-18aa-4522-9b4f-fc66f012a6b5/image_2.jpg
+is_cover: false
+sort_order: 101
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 65d69bc8-063c-4ca9-aded-c3881e3a38f7
+entity_slug: grand-caribbean
+reviewer_name: BK rindy
+rating: 5
+body: We stayed here for a few days as we were visiting Orange Beach for a concert. This place is very well maintained, centrally located, and has all the amenities you would want for a beach vacation. It’s located across the street from the beach itself but it’s an easy walk. There is a nice pool and gym
+too. Our 2-bedroom condo was clean and very comfortable. Would stay here again!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-10-25T16:50:29.617557+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: f144c2a0-9baf-45a4-bca6-bac5e401131d
+entity_slug: grand-caribbean
+reviewer_name: Gretchen Wilson
+rating: 5
+body: This is a great place to stay. We are across the road from the beach. View is great, easy walk to the beach. It is within walking distant of several stores and restaurants. Local people are really nice and welcoming. There is some traffic noise but it hasn't bothered us. Has pool and outdoor area with 3 barbeque grills and a seating area.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2024-02-14T16:34:44.292521+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: a58ff534-2ec0-4790-9ff8-b97cec536132
+entity_slug: grand-caribbean
+reviewer_name: Tracy Longino
+rating: 4
+body: Overall this was a very nice place. I was a bit hesitant with a few reviews that I had read about issues with parking and traveling across the street to get up the beach. Here are my pros and cons about the complex and then reviews on the particular condo we stayed in.
+
+Complex:
+
+Pros: We had absolutely no issues with parking, parking passes, or security. We only saw the building security once during our entire stay and he was, I’m assuming,  on a break watching tv in the veranda area. The pool, pool area, and veranda were all well maintained and clean. Lots of chairs and space too. There was a bay behind the complex and the beach was across the street. Getting to and from the beach wasn’t too bad. They had outside showers to rinse off before coming back into the complex. Complex was well maintained and nice! They have a nice grill area and picnic tables as well.
+
+Cons:
+Traffic noise by the pool was awful. They also need a few more beach umbrellas in the pool area. We had to figure out how to get around the complex to find the crosswalk to get to the beach. We found the safest route to be is to walk around the back of the complex by the bay to get to the crosswalk.
+
+Our Condo (115):
+
+Pros:
+The condo was very clean, nicely decorated and well stocked with kitchen items, towels and bedding. The kitchen was updated with nice appliances and we used the kitchen quite a bit. It also had a washer and dryer that we used as well. The condo had a nice view of the bay and beach. Patio furniture was nice too. It had two bedrooms and bathrooms. Nice sleeping arrangements.
+
+Cons:
+Shower curtain liners were in deep need of being replaced (horribly dirty). The bunks need to be tightened up or replaced. They made so much noise every time anyone moved. The couch needs to be retired (it’s seen better days). Cable tv was bad.
+
+Overall was a nice stay!! We’d come back again!!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2022-06-04T19:27:38.892524+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: bec4340a-a377-410c-bec9-0aa340116582
+entity_slug: grand-caribbean
+reviewer_name: Whitney Bevilacqua
+rating: 1
+body: 10/10 would not stay here again. Paint falling off, a bathroom fan literally hanging for its life by a piece of duck tape. A cabinet door in the kitchen unpainted and doesn’t match the rest. No ceiling fans, just 1 box fan. AC isn’t great- specially in the only bedroom. Broken toilet paper holder. No sheets for the pullout couch. Tiny space. Not enough hooks for hanging things. No enough trash bags. Can it fit 6 people? Sure. Not comfortably though. Only one true bedroom with a door that only shut after we moved the bed. 1 tiny bathroom for six is not ideal. Ok for 1-2 nights, beyond that, would not recommend. More ideal for two adults and two small kids (there’s bunk beds). Positives- decent parking (not covered unless you live there), walk across to public beach access, minutes from shopping and restaurants, washer/dryer in room, view from the patio. Has a small pool. Outdoor grilling area. Room we had was 104.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-07-27T16:10:15.929306+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 58a996e0-dd3c-4d56-94e8-9198d76fe420
+entity_slug: grand-caribbean
+reviewer_name: Tammy Jackson
+rating: 5
+body: Very clean, decorations were awesome 👍, Customer service was ok. There was a problem with the air and I could never get anyone on the phone to help me. Other that that , the accommodations were awesome. Highly recommend.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2019-06-10T13:19:09.903911+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_section_items   -   1 row(s)
+####################################################################################################
+
+--- entity_section_items [row 1 of 1] ---
+id: 3c9cf4f0-18cf-4527-b468-a737ed1c8a84
+section_id: 6de6abe4-fac8-41de-8697-3fa963d17c6b
+entity_slug: grand-caribbean
+item_name: Grand Caribbean
+icon: 🏠
+metadata: {}
+sort_order: 1
+check_in_time: 16:00
+check_out_time: 11:00
+min_nights: 1
+cleaning_fee: 0
+
+####################################################################################################
+# TABLE: entity_section_items_metadata_backup   -   1 row(s)
+####################################################################################################
+
+--- entity_section_items_metadata_backup [row 1 of 1] ---
+id: 3c9cf4f0-18cf-4527-b468-a737ed1c8a84
+entity_slug: grand-caribbean
+item_name: Grand Caribbean
+metadata: {
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/grand-caribbean/photo_04.jpg",
+    "/photos/grand-caribbean/photo_01.jpg",
+    "/photos/grand-caribbean/photo_02.jpg",
+    "/photos/grand-caribbean/photo_03.jpg",
+    "/photos/grand-caribbean/photo_04.jpg",
+    "/photos/grand-caribbean/photo_05.jpg",
+    "/photos/grand-caribbean/photo_06.jpg",
+    "/photos/grand-caribbean/photo_07.jpg",
+    "/photos/grand-caribbean/photo_08.jpg",
+    "/photos/grand-caribbean/photo_09.jpg",
+    "/photos/grand-caribbean/photo_10.jpg"
+  ],
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "check_out_time": "11:00"
+}
+backed_up_at: 2026-07-16T09:49:37.166591+00:00
+
+####################################################################################################
+# TABLE: entity_sections   -   1 row(s)
+####################################################################################################
+
+--- entity_sections [row 1 of 1] ---
+id: 6de6abe4-fac8-41de-8697-3fa963d17c6b
+entity_slug: grand-caribbean
+section_type: rooms
+section_name: Units & Rates
+sort_order: 2
+module_key: rooms
+is_active: true
+
+####################################################################################################
+# TABLE: entity_sources   -   1 row(s)
+####################################################################################################
+
+--- entity_sources [row 1 of 1] ---
+id: 30c2806b-fee5-4520-8a96-c81e43d820b2
+entity_slug: grand-caribbean
+source_system: liquid_life
+source_url: https://www.liquidlifevacationrentals.com/resort/grand-caribbean
+scope: entity
+observed_at: 2026-07-16T00:00:00+00:00
+confidence: high
+created_at: 2026-07-16T10:58:22.481614+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   12 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 12] ---
+id: d39834be-8652-4eeb-ad6e-c54179a589ea
+entity_slug: grand-caribbean
+tag_name: condominium_complex
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 12] ---
+id: 4814a21b-0cce-4c61-b6af-64ea5e246aee
+entity_slug: grand-caribbean
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 3 of 12] ---
+id: ba3a8ddc-090d-4dcd-8058-186017b9e0dd
+entity_slug: grand-caribbean
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 4 of 12] ---
+id: 0c164af2-9043-4a59-bc9d-000deee77fc4
+entity_slug: grand-caribbean
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 5 of 12] ---
+id: 50fd9c22-e8ed-4415-a22c-286dc4d46704
+entity_slug: grand-caribbean
+tag_name: condominium_complex
+tag_category: google_primary_type
+
+--- entity_tags [row 6 of 12] ---
+id: 1b5b6ee4-9ead-452c-87af-f6de7afafc8c
+entity_slug: grand-caribbean
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 7 of 12] ---
+id: d73ded1e-0a0a-4a73-90d7-fea70ee09875
+entity_slug: grand-caribbean
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 8 of 12] ---
+id: e641efe5-fd0f-4809-9c77-b789b82fcd20
+entity_slug: grand-caribbean
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 9 of 12] ---
+id: f4357450-7d2f-469f-94b3-9adda00efe50
+entity_slug: grand-caribbean
+tag_name: Beach Access Across the Street
+tag_category: amenity
+
+--- entity_tags [row 10 of 12] ---
+id: 68cb41de-b050-4287-bd50-e85c62ba947d
+entity_slug: grand-caribbean
+tag_name: Grilling area
+tag_category: amenity
+
+--- entity_tags [row 11 of 12] ---
+id: 1f1b656a-0640-41de-834d-1dcb2f57e190
+entity_slug: grand-caribbean
+tag_name: Fitness Center
+tag_category: amenity
+
+--- entity_tags [row 12 of 12] ---
+id: 8b98c026-4e96-4127-8c48-a4e70ea8d380
+entity_slug: grand-caribbean
+tag_name: Outdoor pool
+tag_category: amenity
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 662061fc-4fbf-4eb5-839f-c345c2443006
+entity_slug: grand-caribbean
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_condo   -   1 row(s)
+####################################################################################################
+
+--- industry_condo [row 1 of 1] ---
+entity_slug: grand-caribbean
+listed_unit_count: 0
+has_pool: false
+pet_friendly: false
+updated_at: 2026-07-21T16:59:02.358415+00:00
+
+####################################################################################################
+# TABLE: legacy_photo_migration_queue   -   3 row(s)
+####################################################################################################
+
+--- legacy_photo_migration_queue [row 1 of 3] ---
+id: 4
+entity_slug: grand-caribbean
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/7a68d3f9-18aa-4522-9b4f-fc66f012a6b5/image_3.jpg
+is_cover: false
+sort_order: 102
+status: linked_legacy
+created_at: 2026-07-25T23:32:39.118198+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 2 of 3] ---
+id: 1
+entity_slug: grand-caribbean
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/7a68d3f9-18aa-4522-9b4f-fc66f012a6b5/image_1.jpg
+is_cover: true
+sort_order: 100
+status: linked_legacy
+created_at: 2026-07-25T23:32:39.118198+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 3 of 3] ---
+id: 3
+entity_slug: grand-caribbean
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/7a68d3f9-18aa-4522-9b4f-fc66f012a6b5/image_2.jpg
+is_cover: false
+sort_order: 101
+status: linked_legacy
+created_at: 2026-07-25T23:32:39.118198+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: rental_units   -   1 row(s)
+####################################################################################################
+
+--- rental_units [row 1 of 1] ---
+id: 3e9346ea-691f-4a31-b904-fbcf90d005c7
+entity_slug: grand-caribbean
+slug: grand-caribbean
+name: Grand Caribbean
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+address: 25805 Perdido Beach Blvd
+city: Orange Beach
+state: AL
+latitude: 30.2704597
+longitude: -87.58380129999999
+source_resource_id: e0ae1600-00e1-4668-b057-4a1de0c5319d
+is_active: true
+created_at: 2026-07-23T00:06:23.937689+00:00
+updated_at: 2026-07-23T00:06:23.937689+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: grand-caribbean
+entity_slug: grand-caribbean
+title: Grand Caribbean
+category: condominium_complex
+subtitle: Located in the heart of Orange Beach. Source says it offers beach access across the street, outdoor pool, grilling area and fitness center.
+search_vector: 'access':17C 'across':18C 'area':24C 'beach':11C,16C 'caribbean':2A 'center':27C 'complex':4B 'condominium':3B 'fit':26C 'grand':1A 'grill':23C 'heart':8C 'locat':5C 'offer':15C 'orang':10C 'outdoor':21C 'pool':22C 'say':13C 'sourc':12C 'street':20C
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 13581
+entity_slug: grand-caribbean
+title: Grand Caribbean
+category: room
+search_vector: 'caribbean':2A 'grand':1A
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: grand-caribbean

@@ -1,0 +1,942 @@
+====================================================================================================
+SLUG: visit-florida
+NAME: VISIT FLORIDA
+INDUSTRY: attraction
+SUBTYPE: attraction
+TABLES WITH DATA: 15
+TOTAL ROWS: 102
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (8 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (10 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_good_for  (14 rows)
+  entity_highlights  (15 rows)
+  entity_hours  (7 rows)
+  entity_photos  (10 rows)
+  entity_tags  (30 rows)
+  entity_theme  (1 rows)
+  industry_attraction  (1 rows)
+  search_index  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: visit-florida
+name: VISIT FLORIDA
+planner_category: food_drink
+data_quality_score: 75
+issues: missing_menu|missing_faqs
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: true
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: true
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   8 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 8] ---
+id: 6697
+entity_slug: visit-florida
+intent_tag: best_for:families_with_kids
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 8] ---
+id: 6698
+entity_slug: visit-florida
+intent_tag: experience:family_kids
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 8] ---
+id: 6699
+entity_slug: visit-florida
+intent_tag: experience:sports_bar
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 8] ---
+id: 6700
+entity_slug: visit-florida
+intent_tag: experience:tourist_favorite
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 8] ---
+id: 6701
+entity_slug: visit-florida
+intent_tag: experience:groups_events
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 8] ---
+id: 6702
+entity_slug: visit-florida
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 8] ---
+id: 6703
+entity_slug: visit-florida
+intent_tag: missing:missing_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 8] ---
+id: 6704
+entity_slug: visit-florida
+intent_tag: missing:missing_faqs
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: visit-florida
+name: VISIT FLORIDA
+is_active: f
+planner_category: food_drink
+entity_type: activity
+entity_subtype: attractions
+city: Florida
+state: FL
+latitude: 27.6648
+longitude: -81.5158
+review_count: 0
+website_url: https://www.visitflorida.com
+voice_summary: VISIT FLORIDA in Florida is best for families with kids. Experience tags: family_kids, sports_bar, tourist_favorite, groups_events.
+planner_summary: VISIT FLORIDA, the state's official tourism marketing corporation, serves as Florida's official source for travel planning to visitors across the globe. The website features comprehensive information about Florida's 1,300 miles of coastline, thousands of beaches, attractions, theme parks, dining experiences, shopping destinations, events, and accommodations. From natural wonders and pristine beaches to fantastical theme parks and cultural attractions, VISIT FLORIDA provides detailed guides for planning the perfect vacation in Florida.
+best_for: families with kids
+not_best_for: quiet low-energy meal
+experience_tags: family_kids|sports_bar|tourist_favorite|groups_events
+search_keywords: florida tourism|travel guide|beaches|theme parks|attractions|events|vacation planning|gulf coast|atlantic coast|family vacation|beach vacation|outdoor adventures|water sports|dining|shopping|accommodations|Travel & Tourism|Events & Entertainment|Travel Guides|Hotels & Accommodations|Restaurants|Outdoor Recreation|State Parks|entertainment|family_kids|sports_bar|tourist_favorite|groups_events
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 10
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 30
+faq_count: 0
+data_quality_score: 75
+data_gaps: missing_menu|missing_faqs
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   10 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 10] ---
+id: 1648
+entity_slug: visit-florida
+entity_name: VISIT FLORIDA
+city: Florida
+url: https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,h_625,q_55,w_500/v1/clients/visitflorida/beachtoyourself1_a97180df-6be8-408e-b2ad-40ad63429fc3.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 10] ---
+id: 1649
+entity_slug: visit-florida
+entity_name: VISIT FLORIDA
+city: Florida
+url: https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_625,q_55,w_500,x_2717,y_1185/v1/clients/visitflorida/11_Flagler_Beachcroppedhoriz_d7364af8-725a-4879-a0cd-c4f9d056d8ed.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 10] ---
+id: 1650
+entity_slug: visit-florida
+entity_name: VISIT FLORIDA
+city: Florida
+url: https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_625,q_55,w_500,x_2717,y_2152/v1/clients/visitflorida/new_smyrna_beach_walkway_full_rights_500px_6791e07f-da9c-4cc8-85fc-bb9ca8c6b154.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 10] ---
+id: 1651
+entity_slug: visit-florida
+entity_name: VISIT FLORIDA
+city: Florida
+url: https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,h_625,q_55,w_500/v1/clients/visitflorida/beach_camping_guide_credit_lauren_tjaden_7__5fb7125f-2c3b-421f-91a1-541638a04e34.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 10] ---
+id: 1652
+entity_slug: visit-florida
+entity_name: VISIT FLORIDA
+city: Florida
+url: https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_625,q_55,w_500,x_2717,y_1969/v1/clients/visitflorida/A55I5819_7bea432d-1c0a-4c8f-a9a3-05a457214438.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 10] ---
+id: 1653
+entity_slug: visit-florida
+entity_name: VISIT FLORIDA
+city: Florida
+url: https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,h_625,q_55,w_500/v1/clients/visitflorida/disney_20048_b3446ad8-0e26-4985-89a1-b07422208e27.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 10] ---
+id: 1654
+entity_slug: visit-florida
+entity_name: VISIT FLORIDA
+city: Florida
+url: https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_625,q_55,w_500,x_1957,y_1185/v1/clients/visitflorida/11_Flagler_Beachcroppedhoriz_d7364af8-725a-4879-a0cd-c4f9d056d8ed.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 10] ---
+id: 1655
+entity_slug: visit-florida
+entity_name: VISIT FLORIDA
+city: Florida
+url: https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_625,q_55,w_500,x_2677,y_2111/v1/clients/visitflorida/ST_PETE_BEACH_DON_CESAR_RESORT_AERIAL_SUNRISE_d62ce507-e1b0-47b2-9cb7-153f263b66e4.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 10] ---
+id: 1656
+entity_slug: visit-florida
+entity_name: VISIT FLORIDA
+city: Florida
+url: https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,h_625,q_55,w_500/v1/clients/visitflorida/1329339359_daytona500_85e2be70-88a9-4200-8792-6782b3ac77fb.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 10] ---
+id: 1657
+entity_slug: visit-florida
+entity_name: VISIT FLORIDA
+city: Florida
+url: https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,h_625,q_55,w_500/v1/clients/visitflorida/1299461703_hollywood_beach0036_308912cc-8328-4be1-aa2f-63992f619e2d.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 1525601d-3093-4b90-895f-0ca8796e8951
+slug: visit-florida
+name: VISIT FLORIDA
+is_active: true
+featured: false
+entity_type: activity
+entity_subtype: attraction
+description: VISIT FLORIDA, the state's official tourism marketing corporation, serves as Florida's official source for travel planning to visitors across the globe. The website features comprehensive information about Florida's 1,300 miles of coastline, thousands of beaches, attractions, theme parks, dining experiences, shopping destinations, events, and accommodations. From natural wonders and pristine beaches to fantastical theme parks and cultural attractions, VISIT FLORIDA provides detailed guides for planning the perfect vacation in Florida.
+subtitle: Official Florida Tourism Marketing Corporation - Your Guide to the Sunshine State
+website_url: https://www.visitflorida.com
+social_instagram: https://www.instagram.com/VISITFLORIDA
+social_facebook: https://www.facebook.com/VISITFLORIDA
+city: Florida
+state: FL
+latitude: 27.6648
+longitude: -81.5158
+review_count: 0
+hero_image_url: https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,h_625,q_55,w_500/v1/clients/visitflorida/beachtoyourself1_a97180df-6be8-408e-b2ad-40ad63429fc3.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T23:02:18.560802+00:00
+updated_at: 2026-06-03T23:02:18.560802+00:00
+gallery_sections: []
+highlights: [
+  "Online travel planning",
+  "Event calendar",
+  "Beach guides",
+  "Theme park information",
+  "Accommodation listings",
+  "Dining guides",
+  "Shopping information",
+  "Travel maps",
+  "Vacation packages",
+  "Mobile accessible",
+  "Multi-language support",
+  "Real-time weather information",
+  "Event listings",
+  "Attraction reviews",
+  "Trip planning tools"
+]
+good_for: [
+  "Families",
+  "Couples",
+  "Solo travelers",
+  "Groups",
+  "Beach vacations",
+  "Theme park enthusiasts",
+  "Nature lovers",
+  "Adventure seekers",
+  "Tourists",
+  "Vacation planners",
+  "Students on spring break",
+  "Retirees",
+  "Honeymoon couples",
+  "Business travelers"
+]
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+business_status: OPERATIONAL
+google_places_data: {}
+search_vector: 'florida':2A,3 'visit':1A
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: attraction
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: visit-florida
+name: VISIT FLORIDA
+industry_code: attraction
+is_parent: false
+score_of_7: 2
+
+####################################################################################################
+# TABLE: entity_good_for   -   14 row(s)
+####################################################################################################
+
+--- entity_good_for [row 1 of 14] ---
+id: ec1b184a-7090-4c58-afdc-3074c6525267
+entity_slug: visit-florida
+audience: Families
+sort_order: 1
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 2 of 14] ---
+id: 589a0b00-a8b5-4240-b4f8-0d62d73033e7
+entity_slug: visit-florida
+audience: Couples
+sort_order: 2
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 3 of 14] ---
+id: d5c24597-9cd5-4596-b5f9-b038c3387822
+entity_slug: visit-florida
+audience: Solo travelers
+sort_order: 3
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 4 of 14] ---
+id: 595a1990-9aba-4370-9bb1-2e2854b5f95a
+entity_slug: visit-florida
+audience: Groups
+sort_order: 4
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 5 of 14] ---
+id: 3bc99bd4-fc94-4699-9475-1017d4f6f8c4
+entity_slug: visit-florida
+audience: Beach vacations
+sort_order: 5
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 6 of 14] ---
+id: e7e26e10-098b-47ff-8fbd-d382103a7b42
+entity_slug: visit-florida
+audience: Theme park enthusiasts
+sort_order: 6
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 7 of 14] ---
+id: 98f48c5f-7881-4730-9725-17c59f570789
+entity_slug: visit-florida
+audience: Nature lovers
+sort_order: 7
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 8 of 14] ---
+id: a1d4705f-aa4e-4f3c-bc27-f2d80f59f5e7
+entity_slug: visit-florida
+audience: Adventure seekers
+sort_order: 8
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 9 of 14] ---
+id: 5042383e-a74d-4dce-9a87-a265784e3ef0
+entity_slug: visit-florida
+audience: Tourists
+sort_order: 9
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 10 of 14] ---
+id: 0eb349b5-7700-4c45-81bc-8b8f03148362
+entity_slug: visit-florida
+audience: Vacation planners
+sort_order: 10
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 11 of 14] ---
+id: 0eb85059-aef8-4fa0-80db-f17119372f0c
+entity_slug: visit-florida
+audience: Students on spring break
+sort_order: 11
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 12 of 14] ---
+id: 98abc063-50e8-4508-942e-43867bb1f8e1
+entity_slug: visit-florida
+audience: Retirees
+sort_order: 12
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 13 of 14] ---
+id: 4ec98674-baad-4b81-bd4d-5d5431f590ad
+entity_slug: visit-florida
+audience: Honeymoon couples
+sort_order: 13
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 14 of 14] ---
+id: d07fbd43-e631-4400-ab4d-f5a4c6220c9b
+entity_slug: visit-florida
+audience: Business travelers
+sort_order: 14
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+####################################################################################################
+# TABLE: entity_highlights   -   15 row(s)
+####################################################################################################
+
+--- entity_highlights [row 1 of 15] ---
+id: 000ba3ba-4a15-46bd-b534-4a81b2f4afe7
+entity_slug: visit-florida
+highlight: Online travel planning
+sort_order: 1
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 2 of 15] ---
+id: 6ba6eb7b-a040-4161-9c17-7387cae3c540
+entity_slug: visit-florida
+highlight: Event calendar
+sort_order: 2
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 3 of 15] ---
+id: 9ff03868-7685-4bdf-8757-e8c56c602283
+entity_slug: visit-florida
+highlight: Beach guides
+sort_order: 3
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 4 of 15] ---
+id: 76e66795-b4b0-4a78-8c34-6f5cc0e84748
+entity_slug: visit-florida
+highlight: Theme park information
+sort_order: 4
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 5 of 15] ---
+id: c8716e19-d139-42b7-b84c-45357e7976ae
+entity_slug: visit-florida
+highlight: Accommodation listings
+sort_order: 5
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 6 of 15] ---
+id: 11a02d43-e389-4e07-965e-2285c72fedd4
+entity_slug: visit-florida
+highlight: Dining guides
+sort_order: 6
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 7 of 15] ---
+id: 22c05a0c-6380-4c3f-87a4-4c7af9016386
+entity_slug: visit-florida
+highlight: Shopping information
+sort_order: 7
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 8 of 15] ---
+id: f5a804ea-1851-4cf4-9f74-2f21fdc1a6d2
+entity_slug: visit-florida
+highlight: Travel maps
+sort_order: 8
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 9 of 15] ---
+id: ad813043-704f-463f-b75f-fbd3a9f1b9c1
+entity_slug: visit-florida
+highlight: Vacation packages
+sort_order: 9
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 10 of 15] ---
+id: 7119efbe-c259-4def-99bf-e2737d3920be
+entity_slug: visit-florida
+highlight: Mobile accessible
+sort_order: 10
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 11 of 15] ---
+id: 6d434c47-87f5-4880-a8fe-67c56ec77f60
+entity_slug: visit-florida
+highlight: Multi-language support
+sort_order: 11
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 12 of 15] ---
+id: 71ca91d9-3e19-4be6-b2d4-837842b85a46
+entity_slug: visit-florida
+highlight: Real-time weather information
+sort_order: 12
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 13 of 15] ---
+id: 28b51d71-0328-4964-8897-0c764e25d78c
+entity_slug: visit-florida
+highlight: Event listings
+sort_order: 13
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 14 of 15] ---
+id: 67df9c0d-a0fd-480e-adc7-e86318243638
+entity_slug: visit-florida
+highlight: Attraction reviews
+sort_order: 14
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 15 of 15] ---
+id: 5545653b-866d-4ccc-bd11-573ee5353d92
+entity_slug: visit-florida
+highlight: Trip planning tools
+sort_order: 15
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: a1d52f91-41af-4b90-8954-c4279fe6b6c8
+entity_slug: visit-florida
+day_of_week: 1
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 916d2c9b-b072-45b5-837c-8618ae45ebf0
+entity_slug: visit-florida
+day_of_week: 2
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 180c9631-d5d6-421f-98f7-2110c659ab23
+entity_slug: visit-florida
+day_of_week: 3
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: f6a9edad-2408-4817-a8bf-e769682d22d1
+entity_slug: visit-florida
+day_of_week: 4
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 02921bcd-3e87-4121-9d09-89886b7f19ec
+entity_slug: visit-florida
+day_of_week: 5
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 86c8334f-0aeb-4a40-9959-51806f6a3b8d
+entity_slug: visit-florida
+day_of_week: 6
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 611e8435-b972-4182-86d8-952e4c5d71cd
+entity_slug: visit-florida
+day_of_week: 0
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_photos   -   10 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 10] ---
+id: c38f0b0a-7082-422b-ae7a-245168e706dc
+entity_slug: visit-florida
+url: https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,h_625,q_55,w_500/v1/clients/visitflorida/beachtoyourself1_a97180df-6be8-408e-b2ad-40ad63429fc3.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 10] ---
+id: c284285d-8415-4f53-b2d8-a962bda36aaf
+entity_slug: visit-florida
+url: https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_625,q_55,w_500,x_2717,y_1185/v1/clients/visitflorida/11_Flagler_Beachcroppedhoriz_d7364af8-725a-4879-a0cd-c4f9d056d8ed.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 10] ---
+id: 4600adc6-d7a8-4b52-9524-c469789ccc21
+entity_slug: visit-florida
+url: https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_625,q_55,w_500,x_2717,y_2152/v1/clients/visitflorida/new_smyrna_beach_walkway_full_rights_500px_6791e07f-da9c-4cc8-85fc-bb9ca8c6b154.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 4 of 10] ---
+id: 42c707f1-683c-4a36-b79e-b69daf3eb51a
+entity_slug: visit-florida
+url: https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,h_625,q_55,w_500/v1/clients/visitflorida/beach_camping_guide_credit_lauren_tjaden_7__5fb7125f-2c3b-421f-91a1-541638a04e34.jpg
+is_cover: false
+sort_order: 3
+
+--- entity_photos [row 5 of 10] ---
+id: b3e71972-974e-489e-81d3-7e74341f601e
+entity_slug: visit-florida
+url: https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_625,q_55,w_500,x_2717,y_1969/v1/clients/visitflorida/A55I5819_7bea432d-1c0a-4c8f-a9a3-05a457214438.jpg
+is_cover: false
+sort_order: 4
+
+--- entity_photos [row 6 of 10] ---
+id: b31e491d-7be1-4646-98dc-c5f852475d61
+entity_slug: visit-florida
+url: https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,h_625,q_55,w_500/v1/clients/visitflorida/disney_20048_b3446ad8-0e26-4985-89a1-b07422208e27.jpg
+is_cover: false
+sort_order: 5
+
+--- entity_photos [row 7 of 10] ---
+id: 0d8d8a7f-167f-456a-82f5-fedbbe6816d7
+entity_slug: visit-florida
+url: https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_625,q_55,w_500,x_1957,y_1185/v1/clients/visitflorida/11_Flagler_Beachcroppedhoriz_d7364af8-725a-4879-a0cd-c4f9d056d8ed.jpg
+is_cover: false
+sort_order: 6
+
+--- entity_photos [row 8 of 10] ---
+id: a55e55a1-99b3-4f2a-b713-4c8157acdde8
+entity_slug: visit-florida
+url: https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,g_xy_center,h_625,q_55,w_500,x_2677,y_2111/v1/clients/visitflorida/ST_PETE_BEACH_DON_CESAR_RESORT_AERIAL_SUNRISE_d62ce507-e1b0-47b2-9cb7-153f263b66e4.jpg
+is_cover: false
+sort_order: 7
+
+--- entity_photos [row 9 of 10] ---
+id: d65622db-6565-4acd-a371-7277c73f0b78
+entity_slug: visit-florida
+url: https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,h_625,q_55,w_500/v1/clients/visitflorida/1329339359_daytona500_85e2be70-88a9-4200-8792-6782b3ac77fb.jpg
+is_cover: false
+sort_order: 8
+
+--- entity_photos [row 10 of 10] ---
+id: 050ae1cf-fa96-44d8-9aa2-154aee1dbbb4
+entity_slug: visit-florida
+url: https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_jpg,h_625,q_55,w_500/v1/clients/visitflorida/1299461703_hollywood_beach0036_308912cc-8328-4be1-aa2f-63992f619e2d.jpg
+is_cover: false
+sort_order: 9
+
+####################################################################################################
+# TABLE: entity_tags   -   30 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 30] ---
+id: 6110aebb-da62-44a4-b5f5-9d5ab755f797
+entity_slug: visit-florida
+tag_name: florida tourism
+
+--- entity_tags [row 2 of 30] ---
+id: e2f3ec84-d33b-4436-811d-c2b2e2f0fa44
+entity_slug: visit-florida
+tag_name: travel guide
+
+--- entity_tags [row 3 of 30] ---
+id: a3a88a52-6b65-44df-8df1-d580b367e5fb
+entity_slug: visit-florida
+tag_name: beaches
+
+--- entity_tags [row 4 of 30] ---
+id: 9305e448-2468-4ac3-b73a-86e18cae5879
+entity_slug: visit-florida
+tag_name: theme parks
+
+--- entity_tags [row 5 of 30] ---
+id: 9de340f9-bdde-44e8-aa36-3ce5b9752cfd
+entity_slug: visit-florida
+tag_name: attractions
+
+--- entity_tags [row 6 of 30] ---
+id: e4255afa-1868-4393-8a1d-67d79a97b4a8
+entity_slug: visit-florida
+tag_name: events
+
+--- entity_tags [row 7 of 30] ---
+id: 49b74186-d3d3-4ba6-9f04-fe391239aaaa
+entity_slug: visit-florida
+tag_name: vacation planning
+
+--- entity_tags [row 8 of 30] ---
+id: f6fd4503-cf1a-4818-8b61-6710bf70c19e
+entity_slug: visit-florida
+tag_name: gulf coast
+
+--- entity_tags [row 9 of 30] ---
+id: 976e769d-8a9b-490c-b2ab-b7cae158396f
+entity_slug: visit-florida
+tag_name: atlantic coast
+
+--- entity_tags [row 10 of 30] ---
+id: 6698750f-bd7d-40da-9276-0a9758503c51
+entity_slug: visit-florida
+tag_name: family vacation
+
+--- entity_tags [row 11 of 30] ---
+id: 7d893f99-0a4c-4af8-8b26-ab022d1a6b98
+entity_slug: visit-florida
+tag_name: beach vacation
+
+--- entity_tags [row 12 of 30] ---
+id: a6349efc-4592-49dc-a1a2-cbb0ef287a16
+entity_slug: visit-florida
+tag_name: outdoor adventures
+
+--- entity_tags [row 13 of 30] ---
+id: 99159fa4-26de-4e5c-ab0b-d5d2dfa265f8
+entity_slug: visit-florida
+tag_name: water sports
+
+--- entity_tags [row 14 of 30] ---
+id: e0577178-31fe-498b-a3ac-77e546298691
+entity_slug: visit-florida
+tag_name: dining
+
+--- entity_tags [row 15 of 30] ---
+id: eba43954-7c8e-4806-abf7-ca718fdec143
+entity_slug: visit-florida
+tag_name: shopping
+
+--- entity_tags [row 16 of 30] ---
+id: eb4a4695-8257-4d9d-82e0-b8afd2446e4e
+entity_slug: visit-florida
+tag_name: accommodations
+
+--- entity_tags [row 17 of 30] ---
+id: f016df59-9f87-4447-b0c8-eaa2f8e52bcf
+entity_slug: visit-florida
+tag_name: Travel & Tourism
+tag_category: category
+
+--- entity_tags [row 18 of 30] ---
+id: 3fa7a0a7-072f-4ef3-81aa-04da05c0994b
+entity_slug: visit-florida
+tag_name: Attractions
+tag_category: category
+
+--- entity_tags [row 19 of 30] ---
+id: 492abb39-7af5-462a-a150-b62c9cd20bf4
+entity_slug: visit-florida
+tag_name: Beaches
+tag_category: category
+
+--- entity_tags [row 20 of 30] ---
+id: d13cca81-d540-443a-82b6-216bee52b7fb
+entity_slug: visit-florida
+tag_name: Events & Entertainment
+tag_category: category
+
+--- entity_tags [row 21 of 30] ---
+id: 88cf93f1-4ef7-40f9-bf7a-c91fc8c52584
+entity_slug: visit-florida
+tag_name: Travel Guides
+tag_category: category
+
+--- entity_tags [row 22 of 30] ---
+id: 5ae80a28-146b-4bb4-a47e-fc95dcc273dc
+entity_slug: visit-florida
+tag_name: Theme Parks
+tag_category: category
+
+--- entity_tags [row 23 of 30] ---
+id: 76069bec-1bf8-439c-a243-d3e1bab5a972
+entity_slug: visit-florida
+tag_name: Hotels & Accommodations
+tag_category: category
+
+--- entity_tags [row 24 of 30] ---
+id: 4912c83e-eefb-4fd1-b1b2-c55b1e67b3de
+entity_slug: visit-florida
+tag_name: Restaurants
+tag_category: category
+
+--- entity_tags [row 25 of 30] ---
+id: d9fbb01b-876e-415b-950a-51691de2b706
+entity_slug: visit-florida
+tag_name: Shopping
+tag_category: category
+
+--- entity_tags [row 26 of 30] ---
+id: 2700d084-b08a-46f4-8b26-c7202bf916ed
+entity_slug: visit-florida
+tag_name: Outdoor Recreation
+tag_category: category
+
+--- entity_tags [row 27 of 30] ---
+id: 2b80ee81-cbc0-441f-afcd-0c944b63a358
+entity_slug: visit-florida
+tag_name: Water Sports
+tag_category: category
+
+--- entity_tags [row 28 of 30] ---
+id: 85130c20-d6a9-4485-bcce-0c84cf4d9184
+entity_slug: visit-florida
+tag_name: State Parks
+tag_category: category
+
+--- entity_tags [row 29 of 30] ---
+id: f39d5073-6fce-4fb1-939a-53575d2076a2
+entity_slug: visit-florida
+tag_name: entertainment
+tag_category: industry
+
+--- entity_tags [row 30 of 30] ---
+id: c97dc60e-f4a2-4694-b4f0-139c14e5ae9d
+entity_slug: visit-florida
+tag_name: attractions
+tag_category: type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 16ff6d0d-089f-4371-af27-24b5927f7e50
+entity_slug: visit-florida
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_attraction   -   1 row(s)
+####################################################################################################
+
+--- industry_attraction [row 1 of 1] ---
+entity_slug: visit-florida
+admission_count: 0
+updated_at: 2026-07-21T16:19:28.491935+00:00
+
+####################################################################################################
+# TABLE: search_index   -   1 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 1] ---
+ref_type: business
+ref_id: visit-florida
+entity_slug: visit-florida
+title: VISIT FLORIDA
+category: attraction
+subtitle: VISIT FLORIDA, the state's official tourism marketing corporation, serves as Florida's official source for travel planning to visitors across the globe. The website features comprehensive information about Florida's 1,300 miles of coastline, thousands of beaches, attractions, theme parks, dining experiences, shopping destinations, events, and accommodations. From natural wonders and pristine beaches to fantastical theme parks and cultural attractions, VISIT FLORIDA provides detailed guides for planning the perfect vacation in Florida.
+search_vector: '1':35C '300':36C 'accommod':52C 'across':24C 'attract':3B,43C,65C 'beach':42C,58C 'coastlin':39C 'comprehens':30C 'corpor':12C 'cultur':64C 'destin':49C 'detail':69C 'dine':46C 'event':50C 'experi':47C 'fantast':60C 'featur':29C 'florida':2A,5C,15C,33C,67C,77C 'globe':26C 'guid':70C 'inform':31C 'market':11C 'mile':37C 'natur':54C 'offici':9C,17C 'park':45C,62C 'perfect':74C 'plan':21C,72C 'pristin':57C 'provid':68C 'serv':13C 'shop':48C 'sourc':18C 'state':7C 'theme':44C,61C 'thousand':40C 'tourism':10C 'travel':20C 'vacat':75C 'visit':1A,4C,66C 'visitor':23C 'websit':28C 'wonder':55C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: visit-florida

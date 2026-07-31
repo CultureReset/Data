@@ -1,0 +1,2333 @@
+====================================================================================================
+SLUG: bp
+NAME: bp
+INDUSTRY: trade_home_service
+SUBTYPE: gas_station
+TABLES WITH DATA: 21
+TOTAL ROWS: 179
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (7 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (3 rows)
+  entity  (1 rows)
+  entity_attributes  (10 rows)
+  entity_completeness_v  (1 rows)
+  entity_fuel_prices  (4 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (7 rows)
+  entity_modules  (10 rows)
+  entity_nearby_landmark_types  (16 rows)
+  entity_nearby_landmarks  (5 rows)
+  entity_photos  (8 rows)
+  entity_reviews  (5 rows)
+  entity_tags  (90 rows)
+  entity_theme  (1 rows)
+  industry_trade_home_service  (1 rows)
+  search_index  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: bp
+name: bp
+planner_category: food_drink
+data_quality_score: 75
+issues: missing_hours|missing_menu|missing_faqs
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: true
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: true
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   7 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 7] ---
+id: 2489
+entity_slug: bp
+intent_tag: best_for:casual_lunch_or_dinner
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 7] ---
+id: 2490
+entity_slug: bp
+intent_tag: cuisine:italian_pizza
+intent_category: cuisine
+confidence: 0.82
+evidence: Derived from cuisine/menu/tags.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 7] ---
+id: 2491
+entity_slug: bp
+intent_tag: cuisine:american
+intent_category: cuisine
+confidence: 0.82
+evidence: Derived from cuisine/menu/tags.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 7] ---
+id: 2492
+entity_slug: bp
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 7] ---
+id: 2493
+entity_slug: bp
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 7] ---
+id: 2494
+entity_slug: bp
+intent_tag: missing:missing_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 7] ---
+id: 2495
+entity_slug: bp
+intent_tag: missing:missing_faqs
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: bp
+name: bp
+is_active: t
+planner_category: food_drink
+entity_type: shopping
+entity_subtype: gas_station
+city: Foley
+state: AL
+address_line_1: 3810 S McKenzie St
+latitude: 30.357903999999994
+longitude: -87.683619
+rating: 4.3
+review_count: 75
+website_url: https://map.bp.com/en-US/US/gas-station/foley/bp/78356054458103653500100000000000
+hero_image_url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfX1G0Irt7h4cZ1Mr3jwh7GqdY88t1RFj-kNPbquHO9UEHbUypKbXD_PYk8_efxseRj5gIyaV8aviFXLWpryEqz6n8mSTxNdlM4aFlXQF0wxOUNruz8sw9QcjmTUAc2WpH1_V0Fot-of2np9eKX1usmldxjRwgPQG2kY4HIHPr3X3QqQWSppotMZe69D6d6J2xApKbgYcxGQt9YDs4Th0CJRCxNBQPpss7fIjxLrEjXH2__OH0h4x6wz93TCcWhJFjPmLzPwlgbTFsw8n1e8SGd7Roghr0elNS4YCtxHZyyL_w&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+voice_summary: bp in Foley is best for casual lunch or dinner. It fits italian/pizza, american.
+planner_summary: Chain gas station with a restroom offering snacks and homemade chicken and pizza.
+best_for: casual lunch or dinner
+not_best_for: nothing specific flagged
+cuisine_tags: italian/pizza|american
+search_keywords: gas_station|service|point_of_interest|establishment|supermarket|grocery_store|food_store|food|store|wheelchairAccessibleRestroom|acceptsNfc|acceptsDebitCards|acceptsCreditCards|italian/pizza|american
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 3
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 90
+faq_count: 0
+data_quality_score: 75
+data_gaps: missing_hours|missing_menu|missing_faqs
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   3 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 3] ---
+id: 21931
+entity_slug: bp
+entity_name: bp
+city: Foley
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfX1G0Irt7h4cZ1Mr3jwh7GqdY88t1RFj-kNPbquHO9UEHbUypKbXD_PYk8_efxseRj5gIyaV8aviFXLWpryEqz6n8mSTxNdlM4aFlXQF0wxOUNruz8sw9QcjmTUAc2WpH1_V0Fot-of2np9eKX1usmldxjRwgPQG2kY4HIHPr3X3QqQWSppotMZe69D6d6J2xApKbgYcxGQt9YDs4Th0CJRCxNBQPpss7fIjxLrEjXH2__OH0h4x6wz93TCcWhJFjPmLzPwlgbTFsw8n1e8SGd7Roghr0elNS4YCtxHZyyL_w&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 3] ---
+id: 21932
+entity_slug: bp
+entity_name: bp
+city: Foley
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfWOyci0ck6lBtqBIDy1AYI2ENVYjpKKslOl0NHOUuBO2249lFz_Q4IekkAo11gqvyEN4Fu6di5vQr2jBDQrQxKuXQIfJ-MfGILgyJp4U9w7VKzk6B0Jwn3bbTxV82KEfNKrL-GvnxmYfYqZAhk3g_-ryZ1HFIgng9IbORNN0AD5ZhXhJJOpe9HhadlQthRkWQUQo6awWMVXSDO-mJ_BpfpRlt-g7QeJANMTpXqaO5MgGmwODXpykKtx_sBBy7F59xdprRcvCGfpX2mOf72K8QrkALNMtrM1AmSeKm6RNmHS8Q&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 3] ---
+id: 21933
+entity_slug: bp
+entity_name: bp
+city: Foley
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfXYtlJO3g2SxG5QzWLGwQsk121AoyKMZyuWZLyaeiFvGpPEwTV0MfIjRlVPJmEjqsMDHQ4Rnf6HlNubY4CBcsSP52iWfCC8ajRUnY2d7fsCjGT6FdHwY8-bqRxB1Dnc01sue3Yd6v__y5kWr-xzC4eTPuMKp-ALPpzfOp3jhCkmE2rASefVG79dg9O1b5V-vZ_J4a9EeHE0d66wvpCG_8NGWCQ7glanShTB5IJz6Q0uWQG5odKHYrp7xolJH_mpqk1dWOYM_ZNWmPq9Iz35bxxrSlPsWMtwY4G7L1FrXGRCgQ&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: dac7f620-7b7b-4dbf-9efc-09d657246146
+slug: bp
+name: bp
+is_active: true
+featured: false
+entity_type: shopping
+entity_subtype: gas_station
+description: Chain gas station with a restroom offering snacks and homemade chicken and pizza.
+phone: (251) 943-4671
+website_url: https://map.bp.com/en-US/US/gas-station/foley/bp/78356054458103653500100000000000
+menu_pin: 2139
+address_line_1: 3810 S McKenzie St
+city: Foley
+state: AL
+zip: 36535
+latitude: 30.357903999999994
+longitude: -87.683619
+rating: 4.3
+review_count: 75
+hero_image_url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfX1G0Irt7h4cZ1Mr3jwh7GqdY88t1RFj-kNPbquHO9UEHbUypKbXD_PYk8_efxseRj5gIyaV8aviFXLWpryEqz6n8mSTxNdlM4aFlXQF0wxOUNruz8sw9QcjmTUAc2WpH1_V0Fot-of2np9eKX1usmldxjRwgPQG2kY4HIHPr3X3QqQWSppotMZe69D6d6J2xApKbgYcxGQt9YDs4Th0CJRCxNBQPpss7fIjxLrEjXH2__OH0h4x6wz93TCcWhJFjPmLzPwlgbTFsw8n1e8SGd7Roghr0elNS4YCtxHZyyL_w&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T03:49:02.508495+00:00
+updated_at: 2026-07-02T04:37:35.222081+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJpcIfWc8PmogRiP2VpB7m8PQ
+google_maps_uri: https://maps.google.com/?cid=17649859958949674376&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: gas_station
+formatted_address: 3810 S McKenzie St, Foley, AL 36535, USA
+plus_code: 862J9858+5H
+international_phone: +1 251-943-4671
+wheelchair_accessible_restroom: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+accepts_nfc: true
+accepts_cash_only: false
+google_places_data: {
+  "id": "ChIJpcIfWc8PmogRiP2VpB7m8PQ",
+  "types": [
+    "gas_station",
+    "point_of_interest",
+    "service",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3m2PM3S482now5kyBsYZGi6jisg_0hleJjuopqFha-2joeLe_iRAWbVbnwXHtrXLcHs14v8uZ2Dw9Fxt09yVEl29BgZt_otN-IyYJXHrwDjCXu1ZHNoo32yZGw6wov7-phVzAm5ZBsx83n2E6WR9KRGkccXJFk2IiTBPSd8MAajqDJdyJbLD18SoKmCKrydY3m7UXn1ryjhfYDZTos9IoF18_KqBXoEKsu1sEeojkIRnBiU48p8uUkPhLANwK6BMg4jO_vy3UDQcco7S98tewRmaxk5kLyJBQua_ySGTv92Ldi9o438-aTC28kG3rfZyvvDlYm8OKwiU_cmlw5D_ZUBECYkAz1skFq40uPCLSW4d8HOLTSkWvur3o8oYzAjQec9FOlfoMop-lqchgXdWubTJEO3fKkF5SeEKE7AeIJ57LcmqHd6eom6hPXicDnS",
+      "widthPx": 2119,
+      "heightPx": 1195,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDHhWys_w761QOvUUBZIPSD!2e10!4m2!3m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDHhWys_w761QOvUUBZIPSD&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/105509806034305272841",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWDC7E8n-lY_uCM0klwwq20Wmq5N3nsRlLlmZOLZTCUuPg4imy_=s100-p-k-no-mo",
+          "displayName": "bp"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3mzRz1uhsgAaIvn14JvjPfN1r3zR8xO87ik3evOEkMbKF0uz3x8_BLbdZb-USvZ6M3JyMXH9AlMyqjmXmtkAorkjtm8i6hyD5EhXkhpKrS6S7l4KB30Fc_xnZc8YU0YNdQBP38YXRNTh_fWetjzPnCfIp0p1fbuQQYlZaWPImCEJsX_EKmWaH1He3o7hom6uDafiUa-JJKp0opADekY2axgvqAwugRzM7JqIz5YuOlS7Z9Idd6BGUhHH5ak-U1NXurtkzSUAe9W3EUHEEDUfM4jYEjmJlbAJ09QYR3QWVdPHZ9YD7Zc1do1GdAcNqZMPnZK_Y-pnVF07YKFrok19dL7OaTaXaSTnhU564UM-HTMOY0zU5lANl7u4k3_DH9DslNuwx6O6u9WMlO6ZkQqG6TNEYlLZ8TZiugpTRb6rdxkZrA",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEOivsKLHvue6ygE!2e10!4m2!3m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEOivsKLHvue6ygE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/117995932058270477733",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLPP4oDO1_oa3ilSpNv_uT39874VfmzaeQHYLErTeIIXh88QQ=s100-p-k-no-mo",
+          "displayName": "Milton Rosado"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3liUOXounPcCWwbbHmKu7-uW1gnwZXvQQEFLxXAyV8ISNw7tjEElfsp0mCZo631uREQ1JrEBYvXKAjdFDwQfC7Q6nDJki8xJguf-HpAKHv-TIfYhJda-XjC905OPSzaRGfGXTROFZKs7rqeJT-ExYfq3RT-K5m6mQ-1CYthEJFbxBCIRT32CxU1kFVO7_EGTyuyXp-TeHQGxD99YWdC0PYAwZvt7KVcFE6F8VBTyoFY-WslhNBsEAeR9lxtvb3Qk6bjiapOCD7IL44fOUDN4kB2SMMrI54_Z2dGu9JJuDlZgn5CfiGrEueR8cA_BizGi8Gm2W3iEzkKqBkIdkCWzkJZlAAEZDoKYYvcqwPpArTUhP3tVWTAKoeChnzDeQq70aHXS6vX3_ivBh4nmuv1izBGGsKai0FfY9INj0M58-JT5Q",
+      "widthPx": 1425,
+      "heightPx": 1202,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDB-rbJRQ!2e10!4m2!3m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDB-rbJRQ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/112136596211417693392",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXpmUTDM8GMbHwFhN6jMlT1heDoW4ltH4YhLqn3mvuOAuc45DKlFA=s100-p-k-no-mo",
+          "displayName": "Mary Griggs"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3lwFsIGtuQIO58bJAij3PvszLygpZt8PnEky1Mj51Tukv-WLkA6XcS7n_gMEWCh0KE2NFzLMpJ8pwzLyc9ZFdFZlKLpnfEfeDKGJ29pthu5Rv-YJtRjojS7NnGn-TvxAdxB3Is1oY6ufAlI-VYoW3WNrQ564pSwMuIoJ63qiH42ML7RyBU2oKDxRoyiy_Edd59shR_6ptQbWZFIjDyb3bJmVYioFQC-aiUksOrtwAZpWoHPhFbI_vUSA5izuLaTt9dDFpAEIsEhCUP-qTHGANsbPJlO_4LRIjFMSy5JeA4TuwC1C_qxdZvMNvaTC1MpGyrI0JWBviYsKAmRZ3sV1S2CnXIpwe3yz97XADvRu6y8VrgwGp2cI_Zh49LZawkZ-6IpYjnOJiUqKoqfqcZ5NmwVfZDKMF9IsnavQiLAtZdkag",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEMThmMn51_P0KA!2e10!4m2!3m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEMThmMn51_P0KA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/117995932058270477733",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLPP4oDO1_oa3ilSpNv_uT39874VfmzaeQHYLErTeIIXh88QQ=s100-p-k-no-mo",
+          "displayName": "Milton Rosado"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3nwb9LGJkDiwpf8WRpGveaHrzfzhXu25EnIBYRaqEu9AxzjuzEe4o4kP5Xk8E1z0K1oG1ppNUuquQ8NSu_LvtvRqjRa9OqlocnaitpGMYd65nfKi5Uov7VTRXFJ2W5s8m94GWlsjY5h58k2B0EeBX8qM78R2oMTBM1iN07VOBlLZ5FvG5IsSVCxc8vMc4I5RQYZdzHvQUJ7fyXJudDt8RNm0OI7JRBgRVn5QAwdEh045_ZaBdHP8nME8meYooPvjzTFGngrsaesIEcJ5MBCFjzS-GxAIfG7XgOUCzwDZj92A1w7csn7vWTgiueYPdnK1TzR9GyaOY3CPXw7avY2vB_CFE4MoslCZxn9Q7BL1AoTc6iG8ZWCy58Bf0pXLRAKvWp35F-brE8GRnhErp9Epn4q6xIQPkbri6FUh3uvbl7wlFBgoWjJH5iB1O6t9m8i",
+      "widthPx": 1552,
+      "heightPx": 1146,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCFT1PmxWpgbUWMLKaCuK0L!2e10!4m2!3m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCFT1PmxWpgbUWMLKaCuK0L&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/105509806034305272841",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWDC7E8n-lY_uCM0klwwq20Wmq5N3nsRlLlmZOLZTCUuPg4imy_=s100-p-k-no-mo",
+          "displayName": "bp"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3nn7c-8Qf4_G5LqoDvz4GcqWY8ZBTqt6evUA6FDqcYsQB4SWPwXK7Cu8PrlOkeiFt2I84xPwTFNvg6eV6nlVInhstBdBtJZVXSekoscYNzzrVaWvCKSHLCUnYANFJJjzRQq_YJ0fGd0vSgQjRU2QAIlg9t_8NWJv5HRYsEUw0sLFYRuDc3QsL_MzxRd5KTVd0ngbRliaBRr3-Mo754pQmlp5s7HD-Ucy6jNdicQeesgZ-yjXiCkLGzd9sixbss8m13IQXrFzdWMKg1bl2LVSOca9x5jGr9iygsPfcjxe6uk6mZtxoFzS5QNrwm9Dmzpxlj1FOmhTpldn0D_nSkOwRrCtuDhHvFapaD3Ewx9DMgYlxj7TFjYQOn-3lY8ghHRSxOM7BU_BhnBEQ5QIrU8BiSetdxKfA98_D-p98JQl-x6FUFcEdF62a4360Q0DSOZ",
+      "widthPx": 2000,
+      "heightPx": 1333,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDUQtkSqIci5lvs3u4PWMqH!2e10!4m2!3m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDUQtkSqIci5lvs3u4PWMqH&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/105509806034305272841",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWDC7E8n-lY_uCM0klwwq20Wmq5N3nsRlLlmZOLZTCUuPg4imy_=s100-p-k-no-mo",
+          "displayName": "bp"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3l0-LOC1vYCeImN0PtQsywwwProuBS1875F0wKmotokxhC6Rxhxlf4jVoqwWYkEe60s8h1BXCsu6Xlj5fJfMKWZkKHdCCxRyPGuhFxS1KrFO-S9_I5tFhXjQv5l5X1RsBAbiL48QqWukVe97CF4Wzv6wp5EvCWhbDC9tPysC7KcfZPxxtgFAuLizzxxNiiJN5mgczD-ChADdDTo_lNvYKreth1zQJZk8aAaIb_FIY9BDOU0Pit_b4QaxnNqXmC9nlCvCWsqgPNrsGCYRWwr8dJ53nqJ8vLKS95FPfpymU5QBsRmZfb_0DqbMoFG5dFPizC1NlVvdOAy16sqdYUDqaC1nGaZBwgHpc4f96GNI51BVmZnJwl9lFZ8I2188BRtUEv2Wna_eykWdBzWao6UoXXOUiVLDUEgkGGKZJ1v0b3vdQ",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEJ-D09eeus71BA!2e10!4m2!3m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEJ-D09eeus71BA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/117995932058270477733",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLPP4oDO1_oa3ilSpNv_uT39874VfmzaeQHYLErTeIIXh88QQ=s100-p-k-no-mo",
+          "displayName": "Milton Rosado"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3lmjlTiYUnjPc5R7V095dA_Hzy2JJpTnAvudTRzZCa0mdinM3oWDDxy7N61gKtorY4SA_EdGc2dLB5GppMJ14e3Aho9nPUo3M4rQqDPHqJv-chUvZ7gxxUN4aEXCDqXIBTv-U6-0q4xs1YuFc3SNtRnlTq5SLyzSRFI7rL4KO_UP7UQu6CDfPdKMudRLe6W-8eeHhfPxYmDHfTqEbSLfCloW7db4AKD0z0FbmXDiFrc3YDD4CLU36q5kbnaif9J9wJLiw4QQbllWBjrN1gdXQ7ZHW8qZBpBdgVEcNACM7nlPKBkHptN9AEPeBM4K-pCn7oNaTbQKSeAKo2H4Dm6ZignILU6BI4CwBgt8kgSTmXsS8JRgBMd7e-TQtyrvMwvr3s5svWPBl__S8b-TLV91K2j9N_3_BAVRJofRVwKZdByaP73rptYfsaWM5iIbMhu",
+      "widthPx": 2000,
+      "heightPx": 1333,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAUnquW_UuZY0U2Ffy4UfY2!2e10!4m2!3m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAUnquW_UuZY0U2Ffy4UfY2&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/105509806034305272841",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWDC7E8n-lY_uCM0klwwq20Wmq5N3nsRlLlmZOLZTCUuPg4imy_=s100-p-k-no-mo",
+          "displayName": "bp"
+        }
+      ]
+    }
+  ],
+  "rating": 4.3,
+  "reviews": [
+    {
+      "name": "places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/reviews/ChdDSUhNMG9nS0VOVGVtcERndFluV3pRRRAB",
+      "text": {
+        "text": "Always Great Customer Service‼️",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-05-30T03:20:19.350274Z",
+      "originalText": {
+        "text": "Always Great Customer Service‼️",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VOVGVtcERndFluV3pRRRAB!2m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VOVGVtcERndFluV3pRRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/117995932058270477733/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLPP4oDO1_oa3ilSpNv_uT39874VfmzaeQHYLErTeIIXh88QQ=s128-c0x00000000-cc-rp-mo-ba3",
+        "displayName": "Milton Rosado"
+      },
+      "relativePublishTimeDescription": "a year ago"
+    },
+    {
+      "name": "places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/reviews/ChZDSUhNMG9nS0VJQ0FnSURCLXBieGZBEAE",
+      "text": {
+        "text": "Huge shout out for having Krispy Krunchy Chicken and carrying chicken livers! Mom's iron was low and they fried them up for me. She loved them!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2023-01-17T16:52:41.343370Z",
+      "originalText": {
+        "text": "Huge shout out for having Krispy Krunchy Chicken and carrying chicken livers! Mom's iron was low and they fried them up for me. She loved them!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURCLXBieGZBEAE!2m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURCLXBieGZBEAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/112136596211417693392/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXpmUTDM8GMbHwFhN6jMlT1heDoW4ltH4YhLqn3mvuOAuc45DKlFA=s128-c0x00000000-cc-rp-mo-ba5",
+        "displayName": "Mary Griggs"
+      },
+      "relativePublishTimeDescription": "3 years ago"
+    },
+    {
+      "name": "places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT214bFVGTkRSbTVQTTBKVGNEZE9VVVZEVkVGNlkxRRAB",
+      "text": {
+        "text": "Great food nice people",
+        "languageCode": "en"
+      },
+      "rating": 4,
+      "publishTime": "2026-02-11T11:45:40.823829651Z",
+      "originalText": {
+        "text": "Great food nice people",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT214bFVGTkRSbTVQTTBKVGNEZE9VVVZEVkVGNlkxRRAB!2m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT214bFVGTkRSbTVQTTBKVGNEZE9VVVZEVkVGNlkxRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/114170797954559912541/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXN1axXG6UOA-rZ58VUx8lVekUPD1xjBsaj7FNEsAcxjWLrccGj=s128-c0x00000000-cc-rp-mo-ba5",
+        "displayName": "Bill Stone"
+      },
+      "relativePublishTimeDescription": "3 months ago"
+    },
+    {
+      "name": "places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/reviews/ChZDSUhNMG9nS0VJQ0FnSUN4M08tY1pBEAE",
+      "text": {
+        "text": "This is the BEST gas station in Foley, and the surrounding area! The staff is so friendly,  courteous,  helpful and kind! I go here almost every day on my way to work, and even on off days. Best selection of items (everything), plus they have EXCELLENT chicken and pizza (made in house)! 5 stars just isn't enough,  I give them 1000 stars ⭐️ ⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️!!!!!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2023-05-12T23:20:26.751255Z",
+      "originalText": {
+        "text": "This is the BEST gas station in Foley, and the surrounding area! The staff is so friendly,  courteous,  helpful and kind! I go here almost every day on my way to work, and even on off days. Best selection of items (everything), plus they have EXCELLENT chicken and pizza (made in house)! 5 stars just isn't enough,  I give them 1000 stars ⭐️ ⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️!!!!!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUN4M08tY1pBEAE!2m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUN4M08tY1pBEAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/100787430695199861695/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJowjsQn-9EsqcQS4qwjokk6edf7yfW2VRmIdmB1ex-bNe_wA=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Darcy Dunham"
+      },
+      "relativePublishTimeDescription": "3 years ago"
+    },
+    {
+      "name": "places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/reviews/ChdDSUhNMG9nS0VJQ0FnSUNKb016dS1nRRAB",
+      "text": {
+        "text": "what a great store! the food is delicious and the employees are A-1! Tilak, patel, Hursh (sp?) are 3 of rhe best guys I know. Patels wife is also a gem (and boss to  These guys and gals are to be commended for a job well done. they arrive very very early in the morning to prepare the food. and always have a smile on their face. best regards, mr. mark",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2023-06-18T16:40:15.114269Z",
+      "originalText": {
+        "text": "what a great store! the food is delicious and the employees are A-1! Tilak, patel, Hursh (sp?) are 3 of rhe best guys I know. Patels wife is also a gem (and boss to  These guys and gals are to be commended for a job well done. they arrive very very early in the morning to prepare the food. and always have a smile on their face. best regards, mr. mark",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNKb016dS1nRRAB!2m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNKb016dS1nRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/105635015472737492864/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocL1elO9Kta1JaqVCTZ8iwKX_FQo8XA6vEuq8A-8y1xPnTF2Ag=s128-c0x00000000-cc-rp-mo-ba2",
+        "displayName": "mark hopper"
+      },
+      "relativePublishTimeDescription": "2 years ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.357903999999994,
+    "longitude": -87.683619
+  },
+  "plusCode": {
+    "globalCode": "862J9858+5H",
+    "compoundCode": "9858+5H Foley, AL, USA"
+  },
+  "restroom": true,
+  "viewport": {
+    "low": {
+      "latitude": 30.35655536970851,
+      "longitude": -87.6849988802915
+    },
+    "high": {
+      "latitude": 30.359253330291505,
+      "longitude": -87.6823009197085
+    }
+  },
+  "websiteUri": "https://map.bp.com/en-US/US/gas-station/foley/bp/78356054458103653500100000000000",
+  "displayName": {
+    "text": "bp",
+    "languageCode": "en"
+  },
+  "fuelOptions": {
+    "fuelPrices": [
+      {
+        "type": "DIESEL",
+        "price": {
+          "nanos": 870000000,
+          "units": "4",
+          "currencyCode": "USD"
+        },
+        "updateTime": "2026-06-09T20:16:24Z"
+      },
+      {
+        "type": "PREMIUM",
+        "price": {
+          "nanos": 650000000,
+          "units": "4",
+          "currencyCode": "USD"
+        },
+        "updateTime": "2026-06-08T05:04:11Z"
+      },
+      {
+        "type": "MIDGRADE",
+        "price": {
+          "nanos": 250000000,
+          "units": "4",
+          "currencyCode": "USD"
+        },
+        "updateTime": "2026-06-08T05:04:11Z"
+      },
+      {
+        "type": "REGULAR_UNLEADED",
+        "price": {
+          "nanos": 660000000,
+          "units": "3",
+          "currencyCode": "USD"
+        },
+        "updateTime": "2026-06-09T20:16:24Z"
+      }
+    ]
+  },
+  "primaryType": "gas_station",
+  "googleMapsUri": "https://maps.google.com/?cid=17649859958949674376&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "paymentOptions": {
+    "acceptsNfc": true,
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=17649859958949674376&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/gas_pinlet",
+  "userRatingCount": 75,
+  "adrFormatAddress": "<span class=\"street-address\">3810 S McKenzie St</span>, <span class=\"locality\">Foley</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36535</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "3810 S McKenzie St, Foley, AL 36535, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "3810",
+      "shortText": "3810",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "South McKenzie Street",
+      "shortText": "S McKenzie St",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Foley",
+      "shortText": "Foley",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36535",
+      "shortText": "36535",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "landmarks": [
+      {
+        "name": "places/ChIJhY71bJIPmogRXF4gkZ5RstU",
+        "types": [
+          "establishment",
+          "liquor_store",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJhY71bJIPmogRXF4gkZ5RstU",
+        "displayName": {
+          "text": "Foley Liquor",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "DOWN_THE_ROAD",
+        "travelDistanceMeters": 22.418827,
+        "straightLineDistanceMeters": 29.522562
+      },
+      {
+        "name": "places/ChIJOeDom5MNmogRW_RXN0GV1zc",
+        "types": [
+          "car_repair",
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJOeDom5MNmogRW_RXN0GV1zc",
+        "displayName": {
+          "text": "Caliber Collision",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 444.30023,
+        "straightLineDistanceMeters": 393.64047
+      },
+      {
+        "name": "places/ChIJ9-riLwUPmogRIDbmdtro7A4",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJ9-riLwUPmogRIDbmdtro7A4",
+        "displayName": {
+          "text": "The Farmhouse Market",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 144.02731,
+        "straightLineDistanceMeters": 160.5391
+      },
+      {
+        "name": "places/ChIJlYYiyR4PmogRUXvB3V7O3hw",
+        "types": [
+          "establishment",
+          "gas_station",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJlYYiyR4PmogRUXvB3V7O3hw",
+        "displayName": {
+          "text": "Circle K",
+          "languageCode": "es"
+        },
+        "travelDistanceMeters": 409.8868,
+        "straightLineDistanceMeters": 304.09735
+      },
+      {
+        "name": "places/ChIJ79jDBMwPmogRIsYQgxhnF5A",
+        "types": [
+          "establishment",
+          "hair_care",
+          "health",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJ79jDBMwPmogRIsYQgxhnF5A",
+        "displayName": {
+          "text": "Nick's Barbershop 💈",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 130.05069,
+        "straightLineDistanceMeters": 102.84527
+      }
+    ]
+  },
+  "generativeSummary": {
+    "overview": {
+      "text": "Chain gas station with a restroom offering snacks and homemade chicken and pizza.",
+      "languageCode": "en-US"
+    },
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "overviewFlagContentUri": "https://www.google.com/local/content/rap/report?postId=CiUweDg4OWEwZmNmNTkxZmMyYTU6MHhmNGYwZTYxZWE0OTVmZDg4MAI&d=17924085&t=12"
+  },
+  "currentOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 0,
+          "minute": 0,
+          "truncated": true
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 59,
+          "truncated": true
+        }
+      }
+    ],
+    "weekdayDescriptions": [
+      "Monday: Open 24 hours",
+      "Tuesday: Open 24 hours",
+      "Wednesday: Open 24 hours",
+      "Thursday: Open 24 hours",
+      "Friday: Open 24 hours",
+      "Saturday: Open 24 hours",
+      "Sunday: Open 24 hours"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Gas Station",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#909CE1",
+  "nationalPhoneNumber": "(251) 943-4671",
+  "regularOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 0,
+          "minute": 0
+        }
+      }
+    ],
+    "weekdayDescriptions": [
+      "Monday: Open 24 hours",
+      "Tuesday: Open 24 hours",
+      "Wednesday: Open 24 hours",
+      "Thursday: Open 24 hours",
+      "Friday: Open 24 hours",
+      "Saturday: Open 24 hours",
+      "Sunday: Open 24 hours"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleRestroom": true
+  },
+  "shortFormattedAddress": "3810 S McKenzie St, Foley",
+  "primaryTypeDisplayName": {
+    "text": "Gas Station",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-943-4671"
+}
+ai_overview: Chain gas station with a restroom offering snacks and homemade chicken and pizza.
+restroom: true
+fuel_options: {
+  "fuelPrices": [
+    {
+      "type": "DIESEL",
+      "price": {
+        "nanos": 870000000,
+        "units": "4",
+        "currencyCode": "USD"
+      },
+      "updateTime": "2026-06-09T20:16:24Z"
+    },
+    {
+      "type": "PREMIUM",
+      "price": {
+        "nanos": 650000000,
+        "units": "4",
+        "currencyCode": "USD"
+      },
+      "updateTime": "2026-06-08T05:04:11Z"
+    },
+    {
+      "type": "MIDGRADE",
+      "price": {
+        "nanos": 250000000,
+        "units": "4",
+        "currencyCode": "USD"
+      },
+      "updateTime": "2026-06-08T05:04:11Z"
+    },
+    {
+      "type": "REGULAR_UNLEADED",
+      "price": {
+        "nanos": 660000000,
+        "units": "3",
+        "currencyCode": "USD"
+      },
+      "updateTime": "2026-06-09T20:16:24Z"
+    }
+  ]
+}
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #909CE1
+short_formatted_address: 3810 S McKenzie St, Foley
+national_phone: (251) 943-4671
+search_vector: 'bp':1A 'chain':2B 'chicken':12B 'foley':17 'gas':3B,15 'homemad':11B 'offer':8B 'pizza':14B 'restroom':7B 'snack':9B 'station':4B,16
+primary_type_display: Gas Station
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=17649859958949674376&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "landmarks": [
+    {
+      "name": "places/ChIJhY71bJIPmogRXF4gkZ5RstU",
+      "types": [
+        "establishment",
+        "liquor_store",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJhY71bJIPmogRXF4gkZ5RstU",
+      "displayName": {
+        "text": "Foley Liquor",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "DOWN_THE_ROAD",
+      "travelDistanceMeters": 22.418827,
+      "straightLineDistanceMeters": 29.522562
+    },
+    {
+      "name": "places/ChIJOeDom5MNmogRW_RXN0GV1zc",
+      "types": [
+        "car_repair",
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJOeDom5MNmogRW_RXN0GV1zc",
+      "displayName": {
+        "text": "Caliber Collision",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 444.30023,
+      "straightLineDistanceMeters": 393.64047
+    },
+    {
+      "name": "places/ChIJ9-riLwUPmogRIDbmdtro7A4",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJ9-riLwUPmogRIDbmdtro7A4",
+      "displayName": {
+        "text": "The Farmhouse Market",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 144.02731,
+      "straightLineDistanceMeters": 160.5391
+    },
+    {
+      "name": "places/ChIJlYYiyR4PmogRUXvB3V7O3hw",
+      "types": [
+        "establishment",
+        "gas_station",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJlYYiyR4PmogRUXvB3V7O3hw",
+      "displayName": {
+        "text": "Circle K",
+        "languageCode": "es"
+      },
+      "travelDistanceMeters": 409.8868,
+      "straightLineDistanceMeters": 304.09735
+    },
+    {
+      "name": "places/ChIJ79jDBMwPmogRIsYQgxhnF5A",
+      "types": [
+        "establishment",
+        "hair_care",
+        "health",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJ79jDBMwPmogRIsYQgxhnF5A",
+      "displayName": {
+        "text": "Nick's Barbershop 💈",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 130.05069,
+      "straightLineDistanceMeters": 102.84527
+    }
+  ]
+}
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: generic
+generative_summary: Chain gas station with a restroom offering snacks and homemade chicken and pizza.
+industry_code: trade_home_service
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_attributes   -   10 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 10] ---
+id: e56ecf58-0cdf-4cc5-97e9-5e9ec1b45fe4
+entity_slug: bp
+category: amenity
+key: restroom
+label: Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 2 of 10] ---
+id: 21663631-b93c-41e2-83b3-5c3e929c5141
+entity_slug: bp
+category: accessibility
+key: access_wheelchairAccessibleRestroom
+label: Wheelchair Accessible Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 3 of 10] ---
+id: 544e0216-7ff1-4b34-827e-e670a4ba8711
+entity_slug: bp
+category: payment
+key: pay_acceptsNfc
+label: Accepts Nfc
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 4 of 10] ---
+id: 9dd85aec-702b-4d48-bd29-1c15f2859a13
+entity_slug: bp
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 5 of 10] ---
+id: a826c6a1-823e-4d0f-9bf8-67809746dd02
+entity_slug: bp
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 6 of 10] ---
+id: 577db1ba-8894-4a75-881d-ca6aebcb4dcb
+entity_slug: bp
+category: payment
+key: pay_acceptsCreditCards
+label: Accepts Credit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 7 of 10] ---
+id: e55cb15b-bb70-4410-b443-12b9f5afe8d5
+entity_slug: bp
+category: amenity
+key: fuel_diesel
+label: Diesel Price
+value: 4.87000000000000000000
+value_type: number
+unit: USD/gal
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-19T15:19:08.03836+00:00
+updated_at: 2026-07-19T15:19:08.03836+00:00
+
+--- entity_attributes [row 8 of 10] ---
+id: ae44188f-64f7-4b59-8468-580c029bb8bf
+entity_slug: bp
+category: amenity
+key: fuel_premium
+label: Premium Price
+value: 4.65000000000000000000
+value_type: number
+unit: USD/gal
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-19T15:19:08.03836+00:00
+updated_at: 2026-07-19T15:19:08.03836+00:00
+
+--- entity_attributes [row 9 of 10] ---
+id: b87fe861-065f-48eb-a6e5-6a72b83bba6a
+entity_slug: bp
+category: amenity
+key: fuel_midgrade
+label: Midgrade Price
+value: 4.25000000000000000000
+value_type: number
+unit: USD/gal
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-19T15:19:08.03836+00:00
+updated_at: 2026-07-19T15:19:08.03836+00:00
+
+--- entity_attributes [row 10 of 10] ---
+id: 954b11ce-66df-4421-8ab3-dbde0c3e5dc1
+entity_slug: bp
+category: amenity
+key: fuel_regular_unleaded
+label: Regular Unleaded Price
+value: 3.66000000000000000000
+value_type: number
+unit: USD/gal
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-19T15:19:08.03836+00:00
+updated_at: 2026-07-19T15:19:08.03836+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: bp
+name: bp
+industry_code: trade_home_service
+is_parent: false
+score_of_7: 5
+
+####################################################################################################
+# TABLE: entity_fuel_prices   -   4 row(s)
+####################################################################################################
+
+--- entity_fuel_prices [row 1 of 4] ---
+id: 7b2b9918-f628-4db5-b5a2-cdbfdee46859
+entity_slug: bp
+fuel_type: DIESEL
+price: 4.87
+currency_code: USD
+update_time: 2026-06-09T20:16:24Z
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+--- entity_fuel_prices [row 2 of 4] ---
+id: aee14990-517c-4b04-85c0-0c12dea56f4f
+entity_slug: bp
+fuel_type: PREMIUM
+price: 4.65
+currency_code: USD
+update_time: 2026-06-08T05:04:11Z
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+--- entity_fuel_prices [row 3 of 4] ---
+id: a8e37c44-845c-40ab-b5b7-d4e5c21c8621
+entity_slug: bp
+fuel_type: MIDGRADE
+price: 4.25
+currency_code: USD
+update_time: 2026-06-08T05:04:11Z
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+--- entity_fuel_prices [row 4 of 4] ---
+id: 21ed7385-8b13-44d3-ac19-5849094be635
+entity_slug: bp
+fuel_type: REGULAR_UNLEADED
+price: 3.66
+currency_code: USD
+update_time: 2026-06-09T20:16:24Z
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 36a9880b-4ccf-4392-9790-00275958335b
+entity_slug: bp
+place_uri: https://maps.google.com/?cid=17649859958949674376&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 4125
+entity_slug: bp
+google_review_name: places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/reviews/ChdDSUhNMG9nS0VOVGVtcERndFluV3pRRRAB
+rating: 5
+review_text: Always Great Customer Service‼️
+language_code: en
+author_name: Milton Rosado
+author_profile_url: https://www.google.com/maps/contrib/117995932058270477733/reviews
+publish_time: 2025-05-30T03:20:19.350274+00:00
+relative_time: a year ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VOVGVtcERndFluV3pRRRAB!2m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 4126
+entity_slug: bp
+google_review_name: places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/reviews/ChZDSUhNMG9nS0VJQ0FnSURCLXBieGZBEAE
+rating: 5
+review_text: Huge shout out for having Krispy Krunchy Chicken and carrying chicken livers! Mom's iron was low and they fried them up for me. She loved them!
+language_code: en
+author_name: Mary Griggs
+author_profile_url: https://www.google.com/maps/contrib/112136596211417693392/reviews
+publish_time: 2023-01-17T16:52:41.34337+00:00
+relative_time: 3 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURCLXBieGZBEAE!2m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 4127
+entity_slug: bp
+google_review_name: places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT214bFVGTkRSbTVQTTBKVGNEZE9VVVZEVkVGNlkxRRAB
+rating: 4
+review_text: Great food nice people
+language_code: en
+author_name: Bill Stone
+author_profile_url: https://www.google.com/maps/contrib/114170797954559912541/reviews
+publish_time: 2026-02-11T11:45:40.82383+00:00
+relative_time: 3 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT214bFVGTkRSbTVQTTBKVGNEZE9VVVZEVkVGNlkxRRAB!2m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 4128
+entity_slug: bp
+google_review_name: places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/reviews/ChZDSUhNMG9nS0VJQ0FnSUN4M08tY1pBEAE
+rating: 5
+review_text: This is the BEST gas station in Foley, and the surrounding area! The staff is so friendly,  courteous,  helpful and kind! I go here almost every day on my way to work, and even on off days. Best selection of items (everything), plus they have EXCELLENT chicken and pizza (made in house)! 5 stars just isn't enough,  I give them 1000 stars ⭐️ ⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️!!!!!
+language_code: en
+author_name: Darcy Dunham
+author_profile_url: https://www.google.com/maps/contrib/100787430695199861695/reviews
+publish_time: 2023-05-12T23:20:26.751255+00:00
+relative_time: 3 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUN4M08tY1pBEAE!2m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 4129
+entity_slug: bp
+google_review_name: places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/reviews/ChdDSUhNMG9nS0VJQ0FnSUNKb016dS1nRRAB
+rating: 5
+review_text: what a great store! the food is delicious and the employees are A-1! Tilak, patel, Hursh (sp?) are 3 of rhe best guys I know. Patels wife is also a gem (and boss to  These guys and gals are to be commended for a job well done. they arrive very very early in the morning to prepare the food. and always have a smile on their face. best regards, mr. mark
+language_code: en
+author_name: mark hopper
+author_profile_url: https://www.google.com/maps/contrib/105635015472737492864/reviews
+publish_time: 2023-06-18T16:40:15.114269+00:00
+relative_time: 2 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNKb016dS1nRRAB!2m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 345e7f4d-984a-40f3-83d0-fe1ae6937670
+entity_slug: bp
+day_of_week: 0
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 6004125a-6084-403a-a0a8-a01953fb9a0f
+entity_slug: bp
+day_of_week: 1
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: b36ee622-27b0-4194-9bd9-2ae395900725
+entity_slug: bp
+day_of_week: 2
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: d01c865a-fb57-4df0-8fcc-1033704f7110
+entity_slug: bp
+day_of_week: 3
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 12d27b30-01fa-46a6-be1f-b8f2f0c2b08d
+entity_slug: bp
+day_of_week: 4
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: bbb16851-aadb-4f39-a52e-edf18d3a7a2f
+entity_slug: bp
+day_of_week: 5
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 99f49cac-5a9b-43c1-9321-0da4a40ca774
+entity_slug: bp
+day_of_week: 6
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_modules   -   10 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 10] ---
+id: 86d0a359-600d-4aa7-98bf-a5bf15c8c147
+entity_slug: bp
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 2 of 10] ---
+id: 56c6f3d2-7c36-4af6-91e0-e571c1e3b4f8
+entity_slug: bp
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 3 of 10] ---
+id: bd8cf83f-5967-451c-9924-896f1636eafa
+entity_slug: bp
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 4 of 10] ---
+id: fa2179b1-e2ba-41cf-95c3-9c6895502fb7
+entity_slug: bp
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 5 of 10] ---
+id: 978ada1a-759b-4087-994a-23808fd7f1f7
+entity_slug: bp
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 6 of 10] ---
+id: 630e3e94-52e8-4cbf-9627-d7236de50471
+entity_slug: bp
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 7 of 10] ---
+id: 40817549-d0f2-4c58-805c-4e336f908d82
+entity_slug: bp
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 8 of 10] ---
+id: 179edd17-54b7-4d10-a389-9ad8c0d6f4ef
+entity_slug: bp
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 9 of 10] ---
+id: 467b7dd8-6fd8-4fed-8589-2eb9143f148c
+entity_slug: bp
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 10 of 10] ---
+id: e45f256b-a34b-467f-8b2a-779ee8058a95
+entity_slug: bp
+module_key: shop
+enabled: true
+sort_order: 10
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   16 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 16] ---
+id: 4b7a7d5d-5d51-4379-b4c5-7a9bf9696a55
+landmark_id: 8befe5e8-f610-4dbc-b50c-7215d38b07cb
+entity_slug: bp
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 16] ---
+id: aff46ea7-01ca-4704-b3e1-283b5cae1c0e
+landmark_id: 8befe5e8-f610-4dbc-b50c-7215d38b07cb
+entity_slug: bp
+landmark_type: liquor_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 16] ---
+id: ef2af5f8-9877-4a83-aa4d-dc96e4419d6d
+landmark_id: 8befe5e8-f610-4dbc-b50c-7215d38b07cb
+entity_slug: bp
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 16] ---
+id: 7d93ffed-fded-4ed4-9c3c-840fc4b58405
+landmark_id: 8befe5e8-f610-4dbc-b50c-7215d38b07cb
+entity_slug: bp
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 16] ---
+id: 702d2d11-16d6-46a2-8def-c839e4a44643
+landmark_id: f2c6c49c-1804-4895-87ea-be031d27d12e
+entity_slug: bp
+landmark_type: car_repair
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 16] ---
+id: 7a0e1308-27fb-45c2-b902-06a2488a410f
+landmark_id: f2c6c49c-1804-4895-87ea-be031d27d12e
+entity_slug: bp
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 16] ---
+id: fb3e1652-5f61-4b40-908a-9f0020a3a0e9
+landmark_id: f2c6c49c-1804-4895-87ea-be031d27d12e
+entity_slug: bp
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 16] ---
+id: 8bc7229f-8d0f-4abf-bf6c-016a9f727d51
+landmark_id: 1aa63d7b-fa14-4499-9a56-839ab3d7c5b8
+entity_slug: bp
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 16] ---
+id: 2968a4ef-c370-4254-8285-fe016f8f9e12
+landmark_id: 1aa63d7b-fa14-4499-9a56-839ab3d7c5b8
+entity_slug: bp
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 16] ---
+id: 32dba1a2-5778-461d-83de-3d9b9c600c50
+landmark_id: eb38e6d3-d66b-409f-ad0d-4d7440957d9e
+entity_slug: bp
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 16] ---
+id: 997f5745-52f3-4373-8aff-c8212d7b5d96
+landmark_id: eb38e6d3-d66b-409f-ad0d-4d7440957d9e
+entity_slug: bp
+landmark_type: gas_station
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 16] ---
+id: 84542eed-dc56-45e8-9a5c-8c92476c6748
+landmark_id: eb38e6d3-d66b-409f-ad0d-4d7440957d9e
+entity_slug: bp
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 16] ---
+id: 67a7cb48-ea08-4be8-a129-1ec8a277b7fb
+landmark_id: f03fba33-88c7-46d9-8af1-132f57ef600e
+entity_slug: bp
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 16] ---
+id: a9b70033-c831-4bc6-b3ca-f2e4aa9f7b9f
+landmark_id: f03fba33-88c7-46d9-8af1-132f57ef600e
+entity_slug: bp
+landmark_type: hair_care
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 16] ---
+id: 8a3024bf-7f4a-4f97-8199-d0351f6d63f9
+landmark_id: f03fba33-88c7-46d9-8af1-132f57ef600e
+entity_slug: bp
+landmark_type: health
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 16] ---
+id: 5b1dc993-f682-4de6-8f00-14b9f48edbba
+landmark_id: f03fba33-88c7-46d9-8af1-132f57ef600e
+entity_slug: bp
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   5 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 5] ---
+id: 8befe5e8-f610-4dbc-b50c-7215d38b07cb
+entity_slug: bp
+kind: landmark
+place_id: ChIJhY71bJIPmogRXF4gkZ5RstU
+name: Foley Liquor
+types: [
+  "establishment",
+  "liquor_store",
+  "point_of_interest",
+  "store"
+]
+spatial_relationship: DOWN_THE_ROAD
+travel_distance_meters: 22.418827
+straight_line_distance_meters: 29.522562
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 5] ---
+id: f2c6c49c-1804-4895-87ea-be031d27d12e
+entity_slug: bp
+kind: landmark
+place_id: ChIJOeDom5MNmogRW_RXN0GV1zc
+name: Caliber Collision
+types: [
+  "car_repair",
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 444.30023
+straight_line_distance_meters: 393.64047
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 5] ---
+id: 1aa63d7b-fa14-4499-9a56-839ab3d7c5b8
+entity_slug: bp
+kind: landmark
+place_id: ChIJ9-riLwUPmogRIDbmdtro7A4
+name: The Farmhouse Market
+types: [
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 144.02731
+straight_line_distance_meters: 160.5391
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 5] ---
+id: eb38e6d3-d66b-409f-ad0d-4d7440957d9e
+entity_slug: bp
+kind: landmark
+place_id: ChIJlYYiyR4PmogRUXvB3V7O3hw
+name: Circle K
+types: [
+  "establishment",
+  "gas_station",
+  "point_of_interest"
+]
+travel_distance_meters: 409.8868
+straight_line_distance_meters: 304.09735
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 5] ---
+id: f03fba33-88c7-46d9-8af1-132f57ef600e
+entity_slug: bp
+kind: landmark
+place_id: ChIJ79jDBMwPmogRIsYQgxhnF5A
+name: Nick's Barbershop 💈
+types: [
+  "establishment",
+  "hair_care",
+  "health",
+  "point_of_interest"
+]
+travel_distance_meters: 130.05069
+straight_line_distance_meters: 102.84527
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_photos   -   8 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 8] ---
+id: 4e3242d9-eb42-4ff3-8a2f-324a33bcd593
+entity_slug: bp
+url: https://places.googleapis.com/v1/places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3m2PM3S482now5kyBsYZGi6jisg_0hleJjuopqFha-2joeLe_iRAWbVbnwXHtrXLcHs14v8uZ2Dw9Fxt09yVEl29BgZt_otN-IyYJXHrwDjCXu1ZHNoo32yZGw6wov7-phVzAm5ZBsx83n2E6WR9KRGkccXJFk2IiTBPSd8MAajqDJdyJbLD18SoKmCKrydY3m7UXn1ryjhfYDZTos9IoF18_KqBXoEKsu1sEeojkIRnBiU48p8uUkPhLANwK6BMg4jO_vy3UDQcco7S98tewRmaxk5kLyJBQua_ySGTv92Ldi9o438-aTC28kG3rfZyvvDlYm8OKwiU_cmlw5D_ZUBECYkAz1skFq40uPCLSW4d8HOLTSkWvur3o8oYzAjQec9FOlfoMop-lqchgXdWubTJEO3fKkF5SeEKE7AeIJ57LcmqHd6eom6hPXicDnS/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3m2PM3S482now5kyBsYZGi6jisg_0hleJjuopqFha-2joeLe_iRAWbVbnwXHtrXLcHs14v8uZ2Dw9Fxt09yVEl29BgZt_otN-IyYJXHrwDjCXu1ZHNoo32yZGw6wov7-phVzAm5ZBsx83n2E6WR9KRGkccXJFk2IiTBPSd8MAajqDJdyJbLD18SoKmCKrydY3m7UXn1ryjhfYDZTos9IoF18_KqBXoEKsu1sEeojkIRnBiU48p8uUkPhLANwK6BMg4jO_vy3UDQcco7S98tewRmaxk5kLyJBQua_ySGTv92Ldi9o438-aTC28kG3rfZyvvDlYm8OKwiU_cmlw5D_ZUBECYkAz1skFq40uPCLSW4d8HOLTSkWvur3o8oYzAjQec9FOlfoMop-lqchgXdWubTJEO3fKkF5SeEKE7AeIJ57LcmqHd6eom6hPXicDnS
+is_cover: false
+sort_order: 0
+caption: bp
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDHhWys_w761QOvUUBZIPSD!2e10!4m2!3m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88
+
+--- entity_photos [row 2 of 8] ---
+id: 45f1159c-89de-4e0a-8668-a7d3eceeba6a
+entity_slug: bp
+url: https://places.googleapis.com/v1/places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3mzRz1uhsgAaIvn14JvjPfN1r3zR8xO87ik3evOEkMbKF0uz3x8_BLbdZb-USvZ6M3JyMXH9AlMyqjmXmtkAorkjtm8i6hyD5EhXkhpKrS6S7l4KB30Fc_xnZc8YU0YNdQBP38YXRNTh_fWetjzPnCfIp0p1fbuQQYlZaWPImCEJsX_EKmWaH1He3o7hom6uDafiUa-JJKp0opADekY2axgvqAwugRzM7JqIz5YuOlS7Z9Idd6BGUhHH5ak-U1NXurtkzSUAe9W3EUHEEDUfM4jYEjmJlbAJ09QYR3QWVdPHZ9YD7Zc1do1GdAcNqZMPnZK_Y-pnVF07YKFrok19dL7OaTaXaSTnhU564UM-HTMOY0zU5lANl7u4k3_DH9DslNuwx6O6u9WMlO6ZkQqG6TNEYlLZ8TZiugpTRb6rdxkZrA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3mzRz1uhsgAaIvn14JvjPfN1r3zR8xO87ik3evOEkMbKF0uz3x8_BLbdZb-USvZ6M3JyMXH9AlMyqjmXmtkAorkjtm8i6hyD5EhXkhpKrS6S7l4KB30Fc_xnZc8YU0YNdQBP38YXRNTh_fWetjzPnCfIp0p1fbuQQYlZaWPImCEJsX_EKmWaH1He3o7hom6uDafiUa-JJKp0opADekY2axgvqAwugRzM7JqIz5YuOlS7Z9Idd6BGUhHH5ak-U1NXurtkzSUAe9W3EUHEEDUfM4jYEjmJlbAJ09QYR3QWVdPHZ9YD7Zc1do1GdAcNqZMPnZK_Y-pnVF07YKFrok19dL7OaTaXaSTnhU564UM-HTMOY0zU5lANl7u4k3_DH9DslNuwx6O6u9WMlO6ZkQqG6TNEYlLZ8TZiugpTRb6rdxkZrA
+is_cover: false
+sort_order: 1
+caption: Milton Rosado
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEOivsKLHvue6ygE!2e10!4m2!3m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88
+
+--- entity_photos [row 3 of 8] ---
+id: a96eda37-dc3d-493b-913b-34cc56b5208a
+entity_slug: bp
+url: https://places.googleapis.com/v1/places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3liUOXounPcCWwbbHmKu7-uW1gnwZXvQQEFLxXAyV8ISNw7tjEElfsp0mCZo631uREQ1JrEBYvXKAjdFDwQfC7Q6nDJki8xJguf-HpAKHv-TIfYhJda-XjC905OPSzaRGfGXTROFZKs7rqeJT-ExYfq3RT-K5m6mQ-1CYthEJFbxBCIRT32CxU1kFVO7_EGTyuyXp-TeHQGxD99YWdC0PYAwZvt7KVcFE6F8VBTyoFY-WslhNBsEAeR9lxtvb3Qk6bjiapOCD7IL44fOUDN4kB2SMMrI54_Z2dGu9JJuDlZgn5CfiGrEueR8cA_BizGi8Gm2W3iEzkKqBkIdkCWzkJZlAAEZDoKYYvcqwPpArTUhP3tVWTAKoeChnzDeQq70aHXS6vX3_ivBh4nmuv1izBGGsKai0FfY9INj0M58-JT5Q/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3liUOXounPcCWwbbHmKu7-uW1gnwZXvQQEFLxXAyV8ISNw7tjEElfsp0mCZo631uREQ1JrEBYvXKAjdFDwQfC7Q6nDJki8xJguf-HpAKHv-TIfYhJda-XjC905OPSzaRGfGXTROFZKs7rqeJT-ExYfq3RT-K5m6mQ-1CYthEJFbxBCIRT32CxU1kFVO7_EGTyuyXp-TeHQGxD99YWdC0PYAwZvt7KVcFE6F8VBTyoFY-WslhNBsEAeR9lxtvb3Qk6bjiapOCD7IL44fOUDN4kB2SMMrI54_Z2dGu9JJuDlZgn5CfiGrEueR8cA_BizGi8Gm2W3iEzkKqBkIdkCWzkJZlAAEZDoKYYvcqwPpArTUhP3tVWTAKoeChnzDeQq70aHXS6vX3_ivBh4nmuv1izBGGsKai0FfY9INj0M58-JT5Q
+is_cover: false
+sort_order: 2
+caption: Mary Griggs
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDB-rbJRQ!2e10!4m2!3m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88
+
+--- entity_photos [row 4 of 8] ---
+id: a794ae21-0387-475b-ab1d-1ab142675293
+entity_slug: bp
+url: https://places.googleapis.com/v1/places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3lwFsIGtuQIO58bJAij3PvszLygpZt8PnEky1Mj51Tukv-WLkA6XcS7n_gMEWCh0KE2NFzLMpJ8pwzLyc9ZFdFZlKLpnfEfeDKGJ29pthu5Rv-YJtRjojS7NnGn-TvxAdxB3Is1oY6ufAlI-VYoW3WNrQ564pSwMuIoJ63qiH42ML7RyBU2oKDxRoyiy_Edd59shR_6ptQbWZFIjDyb3bJmVYioFQC-aiUksOrtwAZpWoHPhFbI_vUSA5izuLaTt9dDFpAEIsEhCUP-qTHGANsbPJlO_4LRIjFMSy5JeA4TuwC1C_qxdZvMNvaTC1MpGyrI0JWBviYsKAmRZ3sV1S2CnXIpwe3yz97XADvRu6y8VrgwGp2cI_Zh49LZawkZ-6IpYjnOJiUqKoqfqcZ5NmwVfZDKMF9IsnavQiLAtZdkag/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3lwFsIGtuQIO58bJAij3PvszLygpZt8PnEky1Mj51Tukv-WLkA6XcS7n_gMEWCh0KE2NFzLMpJ8pwzLyc9ZFdFZlKLpnfEfeDKGJ29pthu5Rv-YJtRjojS7NnGn-TvxAdxB3Is1oY6ufAlI-VYoW3WNrQ564pSwMuIoJ63qiH42ML7RyBU2oKDxRoyiy_Edd59shR_6ptQbWZFIjDyb3bJmVYioFQC-aiUksOrtwAZpWoHPhFbI_vUSA5izuLaTt9dDFpAEIsEhCUP-qTHGANsbPJlO_4LRIjFMSy5JeA4TuwC1C_qxdZvMNvaTC1MpGyrI0JWBviYsKAmRZ3sV1S2CnXIpwe3yz97XADvRu6y8VrgwGp2cI_Zh49LZawkZ-6IpYjnOJiUqKoqfqcZ5NmwVfZDKMF9IsnavQiLAtZdkag
+is_cover: false
+sort_order: 3
+caption: Milton Rosado
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEMThmMn51_P0KA!2e10!4m2!3m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88
+
+--- entity_photos [row 5 of 8] ---
+id: 9fc77309-299f-4a67-aecb-a06815cc1caa
+entity_slug: bp
+url: https://places.googleapis.com/v1/places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3nwb9LGJkDiwpf8WRpGveaHrzfzhXu25EnIBYRaqEu9AxzjuzEe4o4kP5Xk8E1z0K1oG1ppNUuquQ8NSu_LvtvRqjRa9OqlocnaitpGMYd65nfKi5Uov7VTRXFJ2W5s8m94GWlsjY5h58k2B0EeBX8qM78R2oMTBM1iN07VOBlLZ5FvG5IsSVCxc8vMc4I5RQYZdzHvQUJ7fyXJudDt8RNm0OI7JRBgRVn5QAwdEh045_ZaBdHP8nME8meYooPvjzTFGngrsaesIEcJ5MBCFjzS-GxAIfG7XgOUCzwDZj92A1w7csn7vWTgiueYPdnK1TzR9GyaOY3CPXw7avY2vB_CFE4MoslCZxn9Q7BL1AoTc6iG8ZWCy58Bf0pXLRAKvWp35F-brE8GRnhErp9Epn4q6xIQPkbri6FUh3uvbl7wlFBgoWjJH5iB1O6t9m8i/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3nwb9LGJkDiwpf8WRpGveaHrzfzhXu25EnIBYRaqEu9AxzjuzEe4o4kP5Xk8E1z0K1oG1ppNUuquQ8NSu_LvtvRqjRa9OqlocnaitpGMYd65nfKi5Uov7VTRXFJ2W5s8m94GWlsjY5h58k2B0EeBX8qM78R2oMTBM1iN07VOBlLZ5FvG5IsSVCxc8vMc4I5RQYZdzHvQUJ7fyXJudDt8RNm0OI7JRBgRVn5QAwdEh045_ZaBdHP8nME8meYooPvjzTFGngrsaesIEcJ5MBCFjzS-GxAIfG7XgOUCzwDZj92A1w7csn7vWTgiueYPdnK1TzR9GyaOY3CPXw7avY2vB_CFE4MoslCZxn9Q7BL1AoTc6iG8ZWCy58Bf0pXLRAKvWp35F-brE8GRnhErp9Epn4q6xIQPkbri6FUh3uvbl7wlFBgoWjJH5iB1O6t9m8i
+is_cover: false
+sort_order: 4
+caption: bp
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCFT1PmxWpgbUWMLKaCuK0L!2e10!4m2!3m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88
+
+--- entity_photos [row 6 of 8] ---
+id: 70b5592e-f59b-41bf-8d51-702d6658c88d
+entity_slug: bp
+url: https://places.googleapis.com/v1/places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3nn7c-8Qf4_G5LqoDvz4GcqWY8ZBTqt6evUA6FDqcYsQB4SWPwXK7Cu8PrlOkeiFt2I84xPwTFNvg6eV6nlVInhstBdBtJZVXSekoscYNzzrVaWvCKSHLCUnYANFJJjzRQq_YJ0fGd0vSgQjRU2QAIlg9t_8NWJv5HRYsEUw0sLFYRuDc3QsL_MzxRd5KTVd0ngbRliaBRr3-Mo754pQmlp5s7HD-Ucy6jNdicQeesgZ-yjXiCkLGzd9sixbss8m13IQXrFzdWMKg1bl2LVSOca9x5jGr9iygsPfcjxe6uk6mZtxoFzS5QNrwm9Dmzpxlj1FOmhTpldn0D_nSkOwRrCtuDhHvFapaD3Ewx9DMgYlxj7TFjYQOn-3lY8ghHRSxOM7BU_BhnBEQ5QIrU8BiSetdxKfA98_D-p98JQl-x6FUFcEdF62a4360Q0DSOZ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3nn7c-8Qf4_G5LqoDvz4GcqWY8ZBTqt6evUA6FDqcYsQB4SWPwXK7Cu8PrlOkeiFt2I84xPwTFNvg6eV6nlVInhstBdBtJZVXSekoscYNzzrVaWvCKSHLCUnYANFJJjzRQq_YJ0fGd0vSgQjRU2QAIlg9t_8NWJv5HRYsEUw0sLFYRuDc3QsL_MzxRd5KTVd0ngbRliaBRr3-Mo754pQmlp5s7HD-Ucy6jNdicQeesgZ-yjXiCkLGzd9sixbss8m13IQXrFzdWMKg1bl2LVSOca9x5jGr9iygsPfcjxe6uk6mZtxoFzS5QNrwm9Dmzpxlj1FOmhTpldn0D_nSkOwRrCtuDhHvFapaD3Ewx9DMgYlxj7TFjYQOn-3lY8ghHRSxOM7BU_BhnBEQ5QIrU8BiSetdxKfA98_D-p98JQl-x6FUFcEdF62a4360Q0DSOZ
+is_cover: false
+sort_order: 5
+caption: bp
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDUQtkSqIci5lvs3u4PWMqH!2e10!4m2!3m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88
+
+--- entity_photos [row 7 of 8] ---
+id: de8a3804-4c0b-487d-8d70-b75c3d6f5bdd
+entity_slug: bp
+url: https://places.googleapis.com/v1/places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3l0-LOC1vYCeImN0PtQsywwwProuBS1875F0wKmotokxhC6Rxhxlf4jVoqwWYkEe60s8h1BXCsu6Xlj5fJfMKWZkKHdCCxRyPGuhFxS1KrFO-S9_I5tFhXjQv5l5X1RsBAbiL48QqWukVe97CF4Wzv6wp5EvCWhbDC9tPysC7KcfZPxxtgFAuLizzxxNiiJN5mgczD-ChADdDTo_lNvYKreth1zQJZk8aAaIb_FIY9BDOU0Pit_b4QaxnNqXmC9nlCvCWsqgPNrsGCYRWwr8dJ53nqJ8vLKS95FPfpymU5QBsRmZfb_0DqbMoFG5dFPizC1NlVvdOAy16sqdYUDqaC1nGaZBwgHpc4f96GNI51BVmZnJwl9lFZ8I2188BRtUEv2Wna_eykWdBzWao6UoXXOUiVLDUEgkGGKZJ1v0b3vdQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3l0-LOC1vYCeImN0PtQsywwwProuBS1875F0wKmotokxhC6Rxhxlf4jVoqwWYkEe60s8h1BXCsu6Xlj5fJfMKWZkKHdCCxRyPGuhFxS1KrFO-S9_I5tFhXjQv5l5X1RsBAbiL48QqWukVe97CF4Wzv6wp5EvCWhbDC9tPysC7KcfZPxxtgFAuLizzxxNiiJN5mgczD-ChADdDTo_lNvYKreth1zQJZk8aAaIb_FIY9BDOU0Pit_b4QaxnNqXmC9nlCvCWsqgPNrsGCYRWwr8dJ53nqJ8vLKS95FPfpymU5QBsRmZfb_0DqbMoFG5dFPizC1NlVvdOAy16sqdYUDqaC1nGaZBwgHpc4f96GNI51BVmZnJwl9lFZ8I2188BRtUEv2Wna_eykWdBzWao6UoXXOUiVLDUEgkGGKZJ1v0b3vdQ
+is_cover: false
+sort_order: 6
+caption: Milton Rosado
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEJ-D09eeus71BA!2e10!4m2!3m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88
+
+--- entity_photos [row 8 of 8] ---
+id: a7c92162-438a-4792-9e36-52c823de8b7c
+entity_slug: bp
+url: https://places.googleapis.com/v1/places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3lmjlTiYUnjPc5R7V095dA_Hzy2JJpTnAvudTRzZCa0mdinM3oWDDxy7N61gKtorY4SA_EdGc2dLB5GppMJ14e3Aho9nPUo3M4rQqDPHqJv-chUvZ7gxxUN4aEXCDqXIBTv-U6-0q4xs1YuFc3SNtRnlTq5SLyzSRFI7rL4KO_UP7UQu6CDfPdKMudRLe6W-8eeHhfPxYmDHfTqEbSLfCloW7db4AKD0z0FbmXDiFrc3YDD4CLU36q5kbnaif9J9wJLiw4QQbllWBjrN1gdXQ7ZHW8qZBpBdgVEcNACM7nlPKBkHptN9AEPeBM4K-pCn7oNaTbQKSeAKo2H4Dm6ZignILU6BI4CwBgt8kgSTmXsS8JRgBMd7e-TQtyrvMwvr3s5svWPBl__S8b-TLV91K2j9N_3_BAVRJofRVwKZdByaP73rptYfsaWM5iIbMhu/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJpcIfWc8PmogRiP2VpB7m8PQ/photos/AaVGc3lmjlTiYUnjPc5R7V095dA_Hzy2JJpTnAvudTRzZCa0mdinM3oWDDxy7N61gKtorY4SA_EdGc2dLB5GppMJ14e3Aho9nPUo3M4rQqDPHqJv-chUvZ7gxxUN4aEXCDqXIBTv-U6-0q4xs1YuFc3SNtRnlTq5SLyzSRFI7rL4KO_UP7UQu6CDfPdKMudRLe6W-8eeHhfPxYmDHfTqEbSLfCloW7db4AKD0z0FbmXDiFrc3YDD4CLU36q5kbnaif9J9wJLiw4QQbllWBjrN1gdXQ7ZHW8qZBpBdgVEcNACM7nlPKBkHptN9AEPeBM4K-pCn7oNaTbQKSeAKo2H4Dm6ZignILU6BI4CwBgt8kgSTmXsS8JRgBMd7e-TQtyrvMwvr3s5svWPBl__S8b-TLV91K2j9N_3_BAVRJofRVwKZdByaP73rptYfsaWM5iIbMhu
+is_cover: false
+sort_order: 7
+caption: bp
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAUnquW_UuZY0U2Ffy4UfY2!2e10!4m2!3m1!1s0x889a0fcf591fc2a5:0xf4f0e61ea495fd88
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 039084d2-19fe-4571-ac8e-da55c9ba9e5a
+entity_slug: bp
+reviewer_name: Milton Rosado
+rating: 5
+body: Always Great Customer Service‼️
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-05-30T03:20:19.350274+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: 6a4f3430-c2aa-43b2-9cd6-a20b7bc14869
+entity_slug: bp
+reviewer_name: Mary Griggs
+rating: 5
+body: Huge shout out for having Krispy Krunchy Chicken and carrying chicken livers! Mom's iron was low and they fried them up for me. She loved them!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2023-01-17T16:52:41.34337+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: feee6385-50e4-4bba-b10e-e6f199897d11
+entity_slug: bp
+reviewer_name: Bill Stone
+rating: 4
+body: Great food nice people
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-02-11T11:45:40.82383+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 8c4a6dc5-d95f-42a3-b9fc-e12cc5187238
+entity_slug: bp
+reviewer_name: Darcy Dunham
+rating: 5
+body: This is the BEST gas station in Foley, and the surrounding area! The staff is so friendly,  courteous,  helpful and kind! I go here almost every day on my way to work, and even on off days. Best selection of items (everything), plus they have EXCELLENT chicken and pizza (made in house)! 5 stars just isn't enough,  I give them 1000 stars ⭐️ ⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️!!!!!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2023-05-12T23:20:26.751255+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 9fbe07b1-1d1c-4740-9fc9-b6a26bccab60
+entity_slug: bp
+reviewer_name: mark hopper
+rating: 5
+body: what a great store! the food is delicious and the employees are A-1! Tilak, patel, Hursh (sp?) are 3 of rhe best guys I know. Patels wife is also a gem (and boss to  These guys and gals are to be commended for a job well done. they arrive very very early in the morning to prepare the food. and always have a smile on their face. best regards, mr. mark
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2023-06-18T16:40:15.114269+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   90 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 90] ---
+id: df4248f4-536c-4050-ace0-bb2c85928ca9
+entity_slug: bp
+tag_name: gas_station
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 90] ---
+id: 7b6440ec-9b54-4f42-af6b-fc351b862884
+entity_slug: bp
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 3 of 90] ---
+id: 85270f83-1a67-4880-9b6b-603d0ca365b8
+entity_slug: bp
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 4 of 90] ---
+id: c1100f7c-4720-43eb-b13d-8a3bd044324b
+entity_slug: bp
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 5 of 90] ---
+id: 952aae1d-c488-4c3b-86e9-f2b5fd686f84
+entity_slug: bp
+tag_name: gas_station
+tag_category: google_primary_type
+
+--- entity_tags [row 6 of 90] ---
+id: 97028c92-0455-43dc-9fec-eca38fc487a2
+entity_slug: bp
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 7 of 90] ---
+id: ab006507-556a-421f-bf29-250bd3c74519
+entity_slug: bp
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 8 of 90] ---
+id: 62026c8a-7979-43bc-b6f6-b188870af2d6
+entity_slug: bp
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 9 of 90] ---
+id: d408cfcb-d5be-4364-9af5-acd2f0965a1c
+entity_slug: bp
+tag_name: gas_station
+tag_category: google_primary_type
+
+--- entity_tags [row 10 of 90] ---
+id: 108db47f-adbe-4598-b0be-d8333edf4eb5
+entity_slug: bp
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 11 of 90] ---
+id: 09bdb150-256f-48c0-a987-6db747b80562
+entity_slug: bp
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 12 of 90] ---
+id: 1ab87d7d-197e-4528-a0df-2ab71f073981
+entity_slug: bp
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 13 of 90] ---
+id: 3896b10a-2f72-4e9c-8ab1-6080f8a7864b
+entity_slug: bp
+tag_name: gas_station
+tag_category: google_type
+
+--- entity_tags [row 14 of 90] ---
+id: 6799d217-7452-4a03-a906-083e204ed24a
+entity_slug: bp
+tag_name: supermarket
+tag_category: google_type
+
+--- entity_tags [row 15 of 90] ---
+id: 2cea891c-cff3-4615-b569-db456533aeda
+entity_slug: bp
+tag_name: grocery_store
+tag_category: google_type
+
+--- entity_tags [row 16 of 90] ---
+id: 361b0ccb-403d-4d97-bdce-fefcdfa322a8
+entity_slug: bp
+tag_name: gas_station
+tag_category: google_type
+
+--- entity_tags [row 17 of 90] ---
+id: 196781a4-6777-461b-90dc-a026204e73dc
+entity_slug: bp
+tag_name: supermarket
+tag_category: google_type
+
+--- entity_tags [row 18 of 90] ---
+id: e8e354fc-82b0-4c2b-838f-9086a02ddd2b
+entity_slug: bp
+tag_name: grocery_store
+tag_category: google_type
+
+--- entity_tags [row 19 of 90] ---
+id: 656dddde-d9ab-45f9-869d-80196a183886
+entity_slug: bp
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 20 of 90] ---
+id: 349c4c0d-4c0c-4a17-b3a8-ee2e31102c5a
+entity_slug: bp
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 21 of 90] ---
+id: f48b35f2-53c6-4a28-b557-b47509899019
+entity_slug: bp
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 22 of 90] ---
+id: e90aa3ca-07c4-4ab2-b20c-fc9168206d52
+entity_slug: bp
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 23 of 90] ---
+id: 64c8c00b-0063-4d2d-9195-9a9081f2a5c3
+entity_slug: bp
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 24 of 90] ---
+id: 30f5400e-3553-49d0-90e7-c00297a2c74f
+entity_slug: bp
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 25 of 90] ---
+id: 278587c6-4b8f-483b-b3bc-644f5297b8b1
+entity_slug: bp
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 26 of 90] ---
+id: 101e08a8-2e7e-43a1-928d-eba235199f76
+entity_slug: bp
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 27 of 90] ---
+id: f4f6afa8-3500-4e4c-9bb3-2e9a95be13f6
+entity_slug: bp
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 28 of 90] ---
+id: edb08016-1603-4cea-8016-285a8023cd61
+entity_slug: bp
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 29 of 90] ---
+id: 87aa5b8d-e940-4e5b-bae0-ce8178bbb964
+entity_slug: bp
+tag_name: gas_station
+tag_category: google_type
+
+--- entity_tags [row 30 of 90] ---
+id: 5d98194e-1112-4756-83bb-b18f89b137aa
+entity_slug: bp
+tag_name: supermarket
+tag_category: google_type
+
+--- entity_tags [row 31 of 90] ---
+id: ad455de4-9945-4a9d-bf48-af9aedd7577a
+entity_slug: bp
+tag_name: grocery_store
+tag_category: google_type
+
+--- entity_tags [row 32 of 90] ---
+id: d102fb6a-b712-4906-9b70-920ef01d13ee
+entity_slug: bp
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 33 of 90] ---
+id: 2ab9c1ae-5efe-4127-be68-f91ab6bc66e1
+entity_slug: bp
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 34 of 90] ---
+id: 88d5b397-ee83-479c-8bf6-a1b574e3258d
+entity_slug: bp
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 35 of 90] ---
+id: 0afbbcc1-99f6-4463-8ba0-8299d8bdfe90
+entity_slug: bp
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 36 of 90] ---
+id: 2d487a65-1948-4966-9f81-856209b8da8f
+entity_slug: bp
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 37 of 90] ---
+id: a8ba4e5c-5c6c-408c-9f57-953b6cc60c8f
+entity_slug: bp
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 38 of 90] ---
+id: 41a494ae-c323-46a7-a80b-7aa9f0874b64
+entity_slug: bp
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 39 of 90] ---
+id: 92b14686-06af-46d0-9d0f-2b4074663358
+entity_slug: bp
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 40 of 90] ---
+id: fae18723-1a4b-4c0e-ac4c-4b01d2012138
+entity_slug: bp
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 41 of 90] ---
+id: 236fca59-5c84-4b1e-9eeb-e584a740e5f2
+entity_slug: bp
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 42 of 90] ---
+id: 74b3d564-8e13-4f65-a889-3b99619add78
+entity_slug: bp
+tag_name: gas_station
+tag_category: google_type
+
+--- entity_tags [row 43 of 90] ---
+id: 51549d91-57db-417f-8c16-d49c2f0e32b1
+entity_slug: bp
+tag_name: supermarket
+tag_category: google_type
+
+--- entity_tags [row 44 of 90] ---
+id: 300eef9b-d2f8-473a-982f-d2190bbfcaf4
+entity_slug: bp
+tag_name: grocery_store
+tag_category: google_type
+
+--- entity_tags [row 45 of 90] ---
+id: 395c4a83-6d09-4ce3-b093-02c066cba9c0
+entity_slug: bp
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 46 of 90] ---
+id: c1bd058c-ad75-4594-a9dc-c3a30884625e
+entity_slug: bp
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 47 of 90] ---
+id: decdf084-80b4-4d5c-930c-527f97f373b5
+entity_slug: bp
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 48 of 90] ---
+id: 12588635-1c0f-4ee1-be1d-1360f9ba76d5
+entity_slug: bp
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 49 of 90] ---
+id: 8d68afe1-9ef1-4cc1-a978-fe4fdf240419
+entity_slug: bp
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 50 of 90] ---
+id: 7aca4b3f-d2d6-40d9-9840-0eefa66732ab
+entity_slug: bp
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 51 of 90] ---
+id: ea33b38d-7832-476b-b77d-ae1cb5f1a5f7
+entity_slug: bp
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 52 of 90] ---
+id: 8fccfaf0-a05a-4930-86b0-5e3098ac4d69
+entity_slug: bp
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 53 of 90] ---
+id: f03130e2-fc81-4a0d-b820-740938badb85
+entity_slug: bp
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 54 of 90] ---
+id: b94e7e8d-bd67-4d34-a1eb-4d1d08b84c0c
+entity_slug: bp
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 55 of 90] ---
+id: 87cda048-f000-4dcd-b9b0-4f5bf38790ea
+entity_slug: bp
+tag_name: gas_station
+tag_category: google_type
+
+--- entity_tags [row 56 of 90] ---
+id: cbd44a27-ea5e-40b7-8323-e764c1323f66
+entity_slug: bp
+tag_name: supermarket
+tag_category: google_type
+
+--- entity_tags [row 57 of 90] ---
+id: 325f0497-ff4c-4a50-accf-4f13817486f3
+entity_slug: bp
+tag_name: grocery_store
+tag_category: google_type
+
+--- entity_tags [row 58 of 90] ---
+id: 0fa6335d-1bf4-4ef3-886d-82b8c01f0f72
+entity_slug: bp
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 59 of 90] ---
+id: 704131e4-06ea-4e04-9f9d-3d6e8bcd311d
+entity_slug: bp
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 60 of 90] ---
+id: 40ead074-1527-488c-8223-06a58aa3c6a9
+entity_slug: bp
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 61 of 90] ---
+id: a56b31c2-e696-4135-9fa1-12bd18e10e0a
+entity_slug: bp
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 62 of 90] ---
+id: 14eb8d2d-025d-4862-b160-6c395f747c33
+entity_slug: bp
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 63 of 90] ---
+id: a882158e-8518-4b75-8644-84322a01d8ad
+entity_slug: bp
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 64 of 90] ---
+id: a9937280-edf8-4aa9-9673-5302fecefeba
+entity_slug: bp
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 65 of 90] ---
+id: 21d408d6-a905-41ce-b4eb-086608031def
+entity_slug: bp
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 66 of 90] ---
+id: c11023ec-343f-4486-98d9-33f5813087e3
+entity_slug: bp
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 67 of 90] ---
+id: abbe038b-2db7-4fed-aa3f-eaf68ced8375
+entity_slug: bp
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 68 of 90] ---
+id: 4205e108-176b-4cad-abf0-541c26b91170
+entity_slug: bp
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 69 of 90] ---
+id: ebd580a4-ef16-4231-ac13-579f075a9ba9
+entity_slug: bp
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 70 of 90] ---
+id: fe09d60e-4ace-4586-b031-8b138a371991
+entity_slug: bp
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 71 of 90] ---
+id: da3b7b18-2e90-4f28-b2f7-ec52eb84fe34
+entity_slug: bp
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 72 of 90] ---
+id: 63d30fe1-edfa-43dd-b40d-b71e54007de2
+entity_slug: bp
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 73 of 90] ---
+id: 34965c0b-fef9-403d-b19b-492980d1e7c0
+entity_slug: bp
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 74 of 90] ---
+id: 7ef4db8a-f4d6-4439-b92a-64bc1d09c947
+entity_slug: bp
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 75 of 90] ---
+id: 39f11b0b-1bef-464b-86ac-379efffd77f1
+entity_slug: bp
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 76 of 90] ---
+id: d36b42b3-fea1-4e5b-ba0d-3586e17a5e55
+entity_slug: bp
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 77 of 90] ---
+id: f487051d-3653-402c-b25b-c6430e2b53c0
+entity_slug: bp
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 78 of 90] ---
+id: 2e12dd99-83f6-46e6-a53b-24394614ffe0
+entity_slug: bp
+tag_name: gas_station
+tag_category: google_type
+
+--- entity_tags [row 79 of 90] ---
+id: 65b71370-9596-4f14-ac9f-00f754f7b84d
+entity_slug: bp
+tag_name: supermarket
+tag_category: google_type
+
+--- entity_tags [row 80 of 90] ---
+id: 1f6e13fd-b48d-4bca-bc6d-00297da0bbaa
+entity_slug: bp
+tag_name: grocery_store
+tag_category: google_type
+
+--- entity_tags [row 81 of 90] ---
+id: 8372edb8-8722-496a-9ba0-4ef3aa13a3c0
+entity_slug: bp
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 82 of 90] ---
+id: 7c9e3985-67f4-4de6-b6c2-0246a267e7b9
+entity_slug: bp
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 83 of 90] ---
+id: c27ac7a6-0b2e-428d-acb6-85719f72b3f9
+entity_slug: bp
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 84 of 90] ---
+id: ecf7f795-f786-4fcb-86cc-6f66e4eb371f
+entity_slug: bp
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 85 of 90] ---
+id: 57e0cc6a-5ffe-46e1-b1d3-ded7d1245b10
+entity_slug: bp
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 86 of 90] ---
+id: 5d1b34ce-eb17-451a-91ab-0bd22b98c6db
+entity_slug: bp
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 87 of 90] ---
+id: 7ad9d3ba-4191-4c20-8299-76fa792e9161
+entity_slug: bp
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 88 of 90] ---
+id: 1e6b675c-c969-421a-96fc-bb16d9e33d30
+entity_slug: bp
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 89 of 90] ---
+id: 42a5542a-13ad-4d6f-8988-d389c2b3b956
+entity_slug: bp
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 90 of 90] ---
+id: ab6358ff-430a-445a-92bb-64b124b2b9a4
+entity_slug: bp
+tag_name: acceptsCreditCards
+tag_category: payment
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: a4c37543-7820-4cf6-be67-b2aaac9caab8
+entity_slug: bp
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_trade_home_service   -   1 row(s)
+####################################################################################################
+
+--- industry_trade_home_service [row 1 of 1] ---
+entity_slug: bp
+service_count: 0
+updated_at: 2026-07-21T16:19:28.491935+00:00
+
+####################################################################################################
+# TABLE: search_index   -   1 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 1] ---
+ref_type: business
+ref_id: bp
+entity_slug: bp
+title: bp
+category: gas_station
+subtitle: Chain gas station with a restroom offering snacks and homemade chicken and pizza.
+search_vector: 'bp':1A 'chain':4C 'chicken':14C 'gas':2B,5C 'homemad':13C 'offer':10C 'pizza':16C 'restroom':9C 'snack':11C 'station':3B,6C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: bp

@@ -1,0 +1,827 @@
+====================================================================================================
+SLUG: island-quik-mart
+NAME: Island Quik Mart
+INDUSTRY: retail
+SUBTYPE: shopping
+TABLES WITH DATA: 13
+TOTAL ROWS: 38
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (4 rows)
+  ai_entity_profiles_full  (1 rows)
+  entity  (1 rows)
+  entity_attributes  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_hours  (7 rows)
+  entity_modules  (10 rows)
+  entity_tags  (8 rows)
+  entity_theme  (1 rows)
+  industry_retail  (1 rows)
+  search_index  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: island-quik-mart
+name: Island Quik Mart
+planner_category: shopping
+data_quality_score: 80
+issues: missing_summary|missing_photos
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: true
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   4 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 4] ---
+id: 8423
+entity_slug: island-quik-mart
+intent_tag: best_for:shopping
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 4] ---
+id: 8424
+entity_slug: island-quik-mart
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 4] ---
+id: 8425
+entity_slug: island-quik-mart
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 4] ---
+id: 8426
+entity_slug: island-quik-mart
+intent_tag: missing:missing_photos
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: island-quik-mart
+name: Island Quik Mart
+is_active: t
+planner_category: shopping
+entity_type: shopping
+entity_subtype: shopping
+city: Gulf Shores
+state: AL
+address_line_1: 15827 AL-180, Gulf Shores, AL 36542, USA
+latitude: 30.2532216
+longitude: -87.7534187
+rating: 3.4
+review_count: 5
+voice_summary: Island Quik Mart in Gulf Shores is best for shopping.
+planner_summary: Island Quik Mart in Gulf Shores is a shopping listing in Gulf Coast Radar.
+best_for: shopping
+not_best_for: nothing specific flagged
+service_tags: accessibility
+search_keywords: convenience_store|gas_station|service|food_store|food|point_of_interest|store|establishment|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: false
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 0
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 8
+faq_count: 0
+data_quality_score: 80
+data_gaps: missing_summary|missing_photos
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 19311dca-7f68-495a-a366-543cba082fa7
+slug: island-quik-mart
+name: Island Quik Mart
+is_active: true
+featured: false
+entity_type: shopping
+entity_subtype: shopping
+phone: (251) 967-2862
+menu_pin: 6291
+address_line_1: 15827 AL-180, Gulf Shores, AL 36542, USA
+city: Gulf Shores
+state: AL
+zip: 36542
+latitude: 30.2532216
+longitude: -87.7534187
+rating: 3.4
+review_count: 5
+good_for_kids: false
+created_at: 2026-06-03T04:00:07.518241+00:00
+updated_at: 2026-06-03T04:00:07.518241+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJc8VxtZUbmogR7SS-f74HqJA
+google_maps_uri: https://maps.google.com/?cid=10423589852317361389&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA
+business_status: OPERATIONAL
+primary_type: convenience_store
+formatted_address: 15827 AL-180, Gulf Shores, AL 36542, USA
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+accepts_nfc: true
+google_places_data: {
+  "name": "Island Quik Mart",
+  "phone": "(251) 967-2862",
+  "types": [
+    "convenience_store",
+    "gas_station",
+    "service",
+    "food_store",
+    "food",
+    "point_of_interest",
+    "store",
+    "establishment"
+  ],
+  "rating": 3.4,
+  "_source": "google-places-new-api-v1",
+  "payment": {
+    "acceptsNfc": true,
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "delivery": false,
+  "place_id": "ChIJc8VxtZUbmogR7SS-f74HqJA",
+  "plus_code": {
+    "globalCode": "862J763W+7J",
+    "compoundCode": "763W+7J Gulf Shores, AL, USA"
+  },
+  "icon_color": "#4B96F3",
+  "_query_used": "Island Quik Mart 15827 AL-180, Gulf Shores, AL 36542, USA",
+  "_scraped_at": "2026-05-17T08:00:45.068Z",
+  "coordinates": {
+    "latitude": 30.253221600000003,
+    "longitude": -87.7534187
+  },
+  "primary_type": "convenience_store",
+  "review_count": 5,
+  "accessibility": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true
+  },
+  "current_hours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "date": {
+            "day": 17,
+            "year": 2026,
+            "month": 5
+          },
+          "hour": 5,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "date": {
+            "day": 17,
+            "year": 2026,
+            "month": 5
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "date": {
+            "day": 18,
+            "year": 2026,
+            "month": 5
+          },
+          "hour": 5,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "date": {
+            "day": 18,
+            "year": 2026,
+            "month": 5
+          },
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "date": {
+            "day": 19,
+            "year": 2026,
+            "month": 5
+          },
+          "hour": 5,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 19,
+            "year": 2026,
+            "month": 5
+          },
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 20,
+            "year": 2026,
+            "month": 5
+          },
+          "hour": 5,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 20,
+            "year": 2026,
+            "month": 5
+          },
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 21,
+            "year": 2026,
+            "month": 5
+          },
+          "hour": 5,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 21,
+            "year": 2026,
+            "month": 5
+          },
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 22,
+            "year": 2026,
+            "month": 5
+          },
+          "hour": 5,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 22,
+            "year": 2026,
+            "month": 5
+          },
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "date": {
+            "day": 23,
+            "year": 2026,
+            "month": 5
+          },
+          "hour": 5,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "date": {
+            "day": 23,
+            "year": 2026,
+            "month": 5
+          },
+          "hour": 22,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-05-17T10:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 5:00 AM – 10:00 PM",
+      "Tuesday: 5:00 AM – 10:00 PM",
+      "Wednesday: 5:00 AM – 10:00 PM",
+      "Thursday: 5:00 AM – 10:00 PM",
+      "Friday: 5:00 AM – 10:00 PM",
+      "Saturday: 5:00 AM – 10:00 PM",
+      "Sunday: 5:00 AM – 9:00 PM"
+    ]
+  },
+  "regular_hours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 5,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "hour": 5,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 5,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 5,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 5,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 5,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 5,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 22,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-05-17T10:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 5:00 AM – 10:00 PM",
+      "Tuesday: 5:00 AM – 10:00 PM",
+      "Wednesday: 5:00 AM – 10:00 PM",
+      "Thursday: 5:00 AM – 10:00 PM",
+      "Friday: 5:00 AM – 10:00 PM",
+      "Saturday: 5:00 AM – 10:00 PM",
+      "Sunday: 5:00 AM – 9:00 PM"
+    ]
+  },
+  "short_address": "15827 AL-180, Gulf Shores",
+  "business_status": "OPERATIONAL",
+  "google_maps_uri": "https://maps.google.com/?cid=10423589852317361389&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "formatted_address": "15827 AL-180, Gulf Shores, AL 36542, USA",
+  "address_components": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "15827",
+      "shortText": "15827",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Alabama 180",
+      "shortText": "AL-180",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Gulf Shores",
+      "shortText": "Gulf Shores",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36542",
+      "shortText": "36542",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code_suffix"
+      ],
+      "longText": "8227",
+      "shortText": "8227",
+      "languageCode": "en"
+    }
+  ],
+  "utc_offset_minutes": -300,
+  "international_phone": "+1 251-967-2862",
+  "primary_type_display": "Convenience store"
+}
+search_vector: 'conveni':4 'gulf':6 'island':1A 'mart':3A 'quik':2A 'shore':7 'store':5
+internal_notes:  | NO WORKING PHOTO 2026-07-21: hero and all entity_photos point to missing storage files - needs real re-upload
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: generic
+industry_code: retail
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_attributes   -   1 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 1] ---
+id: 38245deb-a153-4e0f-8a03-97070c970115
+entity_slug: island-quik-mart
+category: service
+key: delivery
+label: Delivery
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: island-quik-mart
+name: Island Quik Mart
+industry_code: retail
+is_parent: false
+score_of_7: 4
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 273bc805-3479-47f8-9c91-59476bae2adb
+entity_slug: island-quik-mart
+day_of_week: 0
+opens_at: 05:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 7e56d1bd-f5ee-465c-b999-27c61e421104
+entity_slug: island-quik-mart
+day_of_week: 1
+opens_at: 05:00:00
+closes_at: 22:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: efc6356a-07f0-4744-b1b3-41860dfa33e3
+entity_slug: island-quik-mart
+day_of_week: 2
+opens_at: 05:00:00
+closes_at: 22:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: ea860995-d8b1-488a-9ef7-d1ab14379307
+entity_slug: island-quik-mart
+day_of_week: 3
+opens_at: 05:00:00
+closes_at: 22:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 2fee8510-5cec-44e3-9b99-14d69f67c5d4
+entity_slug: island-quik-mart
+day_of_week: 4
+opens_at: 05:00:00
+closes_at: 22:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: cb101e00-0cf5-4a41-bb19-9e8b9e37f4cd
+entity_slug: island-quik-mart
+day_of_week: 5
+opens_at: 05:00:00
+closes_at: 22:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 49c13126-52d4-446b-96a8-fb9a6eea539c
+entity_slug: island-quik-mart
+day_of_week: 6
+opens_at: 05:00:00
+closes_at: 22:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_modules   -   10 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 10] ---
+id: d06cf4a5-2319-42be-9c32-dcf6ebc97396
+entity_slug: island-quik-mart
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 10] ---
+id: c7d2edf7-8b79-44ec-bf6a-5bf27b8ea17e
+entity_slug: island-quik-mart
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 10] ---
+id: ebaedc58-a9f1-424d-a729-dfd462a130e0
+entity_slug: island-quik-mart
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 10] ---
+id: 949c7d7b-e564-40b2-bc18-e9e6d1ce6fe3
+entity_slug: island-quik-mart
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 10] ---
+id: b0ad7aff-e62a-4d8e-bfe5-918c4aceb7e6
+entity_slug: island-quik-mart
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 10] ---
+id: 3138004d-adc7-4276-a05e-fc12e5122c4c
+entity_slug: island-quik-mart
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 10] ---
+id: 7d15cb26-f128-4705-a95b-bc11bfc7eeed
+entity_slug: island-quik-mart
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 10] ---
+id: 54a8fae2-63a9-43c2-9cd4-024e29cf0e5b
+entity_slug: island-quik-mart
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 10] ---
+id: 6a935ff2-ffee-441c-9c3e-453a9eeeefcb
+entity_slug: island-quik-mart
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 10] ---
+id: 47cdc2b2-1a53-4ac8-93e0-c73f5ae2ecae
+entity_slug: island-quik-mart
+module_key: shop
+enabled: true
+sort_order: 10
+
+####################################################################################################
+# TABLE: entity_tags   -   8 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 8] ---
+id: 75f38a2e-8f78-4377-848c-985f5e5b8f74
+entity_slug: island-quik-mart
+tag_name: convenience_store
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 8] ---
+id: 179dfbf6-bfc8-405e-ae6c-847b08f712aa
+entity_slug: island-quik-mart
+tag_name: gas_station
+tag_category: google_type
+
+--- entity_tags [row 3 of 8] ---
+id: fe822b26-e27b-40b1-9885-ddd83417981b
+entity_slug: island-quik-mart
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 4 of 8] ---
+id: 7bc120c1-5c53-4727-9735-397517fb6be8
+entity_slug: island-quik-mart
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 5 of 8] ---
+id: a0e7a743-fffb-4f54-ac34-eba063ffc639
+entity_slug: island-quik-mart
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 6 of 8] ---
+id: c3c97996-197a-4fe9-a0a4-8b47674fd131
+entity_slug: island-quik-mart
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 7 of 8] ---
+id: 4ba0bd3c-5a47-4af3-b6bf-1d6b339ff9c7
+entity_slug: island-quik-mart
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 8 of 8] ---
+id: 4aea6f5c-50bb-4389-9aa6-91cad589d5ef
+entity_slug: island-quik-mart
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: a175e297-6912-447e-ace8-405ed0d2468c
+entity_slug: island-quik-mart
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_retail   -   1 row(s)
+####################################################################################################
+
+--- industry_retail [row 1 of 1] ---
+entity_slug: island-quik-mart
+product_count: 0
+updated_at: 2026-07-20T03:17:43.35857+00:00
+
+####################################################################################################
+# TABLE: search_index   -   1 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 1] ---
+ref_type: business
+ref_id: island-quik-mart
+entity_slug: island-quik-mart
+title: Island Quik Mart
+category: shopping
+search_vector: 'island':1A 'mart':3A 'quik':2A 'shop':4B
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: island-quik-mart

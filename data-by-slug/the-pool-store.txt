@@ -1,0 +1,1826 @@
+====================================================================================================
+SLUG: the-pool-store
+NAME: The Pool Store
+INDUSTRY: other
+SUBTYPE: service
+TABLES WITH DATA: 24
+TOTAL ROWS: 99
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (5 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (6 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_address_areas  (1 rows)
+  entity_attributes  (2 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_nearby_landmark_types  (20 rows)
+  entity_nearby_landmarks  (6 rows)
+  entity_offer  (1 rows)
+  entity_photos  (16 rows)
+  entity_reviews  (5 rows)
+  entity_sources  (1 rows)
+  entity_tags  (6 rows)
+  entity_theme  (1 rows)
+  search_index  (2 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: the-pool-store
+name: The Pool Store
+planner_category: shopping
+data_quality_score: 80
+issues: missing_summary|missing_hours
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   5 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 5] ---
+id: 12547
+entity_slug: the-pool-store
+intent_tag: best_for:shopping
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 5] ---
+id: 12548
+entity_slug: the-pool-store
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 5] ---
+id: 12549
+entity_slug: the-pool-store
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 5] ---
+id: 12550
+entity_slug: the-pool-store
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 5] ---
+id: 12551
+entity_slug: the-pool-store
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: the-pool-store
+name: The Pool Store
+is_active: t
+planner_category: shopping
+entity_type: service
+entity_subtype: service
+city: Gulf Shores
+state: AL
+address_line_1: 3460 Gulf Shores Pkwy
+latitude: 30.291858100000002
+longitude: -87.68347639999999
+rating: 4.5
+review_count: 14
+website_url: http://gulfshorespoolstore.com/
+hero_image_url: /photos/the-pool-store/photo_01.jpg
+voice_summary: The Pool Store in Gulf Shores is best for shopping.
+planner_summary: The Pool Store in Gulf Shores is a shopping listing in Gulf Coast Radar.
+best_for: shopping
+not_best_for: nothing specific flagged
+service_tags: accessibility
+search_keywords: service|point_of_interest|establishment|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 6
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 6
+faq_count: 0
+data_quality_score: 80
+data_gaps: missing_summary|missing_hours
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   6 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 6] ---
+id: 6728
+entity_slug: the-pool-store
+entity_name: The Pool Store
+city: Gulf Shores
+url: /photos/the-pool-store/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 6] ---
+id: 6729
+entity_slug: the-pool-store
+entity_name: The Pool Store
+city: Gulf Shores
+url: /photos/the-pool-store/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 6] ---
+id: 6730
+entity_slug: the-pool-store
+entity_name: The Pool Store
+city: Gulf Shores
+url: /photos/the-pool-store/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 6] ---
+id: 18230
+entity_slug: the-pool-store
+entity_name: The Pool Store
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-pool-store/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 6] ---
+id: 26900
+entity_slug: the-pool-store
+entity_name: The Pool Store
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-pool-store/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 6] ---
+id: 26953
+entity_slug: the-pool-store
+entity_name: The Pool Store
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-pool-store/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: c2c84e1d-0a9e-4fa2-a12f-347bef1c6111
+resource_type: service
+slug: the-pool-store
+name: The Pool Store
+entity_slug: the-pool-store
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-pool-store/photo_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-pool-store/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-pool-store/photo_03.jpg",
+  "/photos/the-pool-store/photo_01.jpg",
+  "/photos/the-pool-store/photo_02.jpg",
+  "/photos/the-pool-store/photo_03.jpg"
+]
+amenities: []
+faqs: []
+address: 3460 Gulf Shores Pkwy
+city: Gulf Shores
+state: AL
+latitude: 30.291858100000002
+longitude: -87.68347639999999
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 928f9a9e2e4a5f28bd6188abafca14f6
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: c2c84e1d-0a9e-4fa2-a12f-347bef1c6111
+entity_slug: the-pool-store
+slug: the-pool-store
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-pool-store/photo_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-pool-store/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-pool-store/photo_03.jpg",
+  "/photos/the-pool-store/photo_01.jpg",
+  "/photos/the-pool-store/photo_02.jpg",
+  "/photos/the-pool-store/photo_03.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: ccba2c14-2753-4511-b390-d4a867db8cac
+slug: the-pool-store
+name: The Pool Store
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: service
+phone: (251) 948-5600
+website_url: http://gulfshorespoolstore.com/
+menu_pin: 2994
+address_line_1: 3460 Gulf Shores Pkwy
+city: Gulf Shores
+state: AL
+zip: 36542
+latitude: 30.291858100000002
+longitude: -87.68347639999999
+rating: 4.5
+review_count: 14
+hero_image_url: https://places.googleapis.com/v1/places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3nao1ysaaJ1rsLqbc6Bmxexi6AZm0rr7Da_lwv6DjEK6DtmhG1rYI82QlsRqx_aWL61GtqgC7kts4qgfYHN_mW6Td1iz0ej1LZclQKXp9tkAbTt1Cks7UTmUMiU_UyBLcNRR5p_CwPo9PJm3TvEBB3ULuGD5WgG7TKT5nYT9rEhqoVz-vxJSI8NvRTuQ6DOyp3fSyJ7FM13swObOV0orlfjICsaeYi2rJrQEcHR4DfX6Kwwa46Qckck6trangIvepQrxXV-NX8jLPG6_bCffxkDmcsY6DE-xEtAx6Aa3qvoniXmYSsSK515ay7pSHLbc9pGN9ITh_0-qxupGzHo3donHP0jzvAaK4o5DMHjGrBWW6_vcCxRjzY3FAYQoEwMJz2niLF9qNqZrpMcI5HXRVZ89eJhilTvn2iQgWSgw9MDUMzqSQyknTXV6-lsPfA8/media?maxHeightPx=1600&maxWidthPx=1600
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T04:02:38.691735+00:00
+updated_at: 2026-06-03T04:02:38.691735+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJx8-7CMkImogR3NtTAKezKsc
+google_maps_uri: https://maps.google.com/?cid=14351480692415912924&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: service
+formatted_address: 3460 Gulf Shores Pkwy, Gulf Shores, AL 36542, USA
+plus_code: 862J78R8+PJ
+international_phone: +1 251-948-5600
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+google_places_data: {
+  "id": "ChIJx8-7CMkImogR3NtTAKezKsc",
+  "types": [
+    "point_of_interest",
+    "service",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3nao1ysaaJ1rsLqbc6Bmxexi6AZm0rr7Da_lwv6DjEK6DtmhG1rYI82QlsRqx_aWL61GtqgC7kts4qgfYHN_mW6Td1iz0ej1LZclQKXp9tkAbTt1Cks7UTmUMiU_UyBLcNRR5p_CwPo9PJm3TvEBB3ULuGD5WgG7TKT5nYT9rEhqoVz-vxJSI8NvRTuQ6DOyp3fSyJ7FM13swObOV0orlfjICsaeYi2rJrQEcHR4DfX6Kwwa46Qckck6trangIvepQrxXV-NX8jLPG6_bCffxkDmcsY6DE-xEtAx6Aa3qvoniXmYSsSK515ay7pSHLbc9pGN9ITh_0-qxupGzHo3donHP0jzvAaK4o5DMHjGrBWW6_vcCxRjzY3FAYQoEwMJz2niLF9qNqZrpMcI5HXRVZ89eJhilTvn2iQgWSgw9MDUMzqSQyknTXV6-lsPfA8",
+      "widthPx": 4032,
+      "heightPx": 2268,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhB_m_GlffZYEcgHTI3DoPLO!2e10!4m2!3m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhB_m_GlffZYEcgHTI3DoPLO&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/100704259166575523567",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX_Yh9llAz1IVbJX7sjrOcuHAS1vnltOfHOoZIYWAILIlrYozUE=s100-p-k-no-mo",
+          "displayName": "The Pool Store"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3lyGWffdKxzSzV8EVgeTPnUMCx8jiQ-rP2QJKk3eapYKNYiOBwqMT50M_cu3qr62jnboltJUJsEI6QLhpJL2UTomLKYL_wpFsQQP7Zj6H_uY094wL4rB3ah0vE8nN8IVTSvlE43dWIyRjedugFRHaVqJLvxv6SYmDyqlwqac-6eJYBf1HUEkbTt5HDzP48r48uxeOmjARiuh2iW5rYWQtf5F3i7sYhzOs0tTwB9-93uj8dSoq0djtqAKhwcqgDu0a_MnD_IJ4cfiEA9G8rsDT30shTht7Q1ucfQFpn_d48HxhpiEaymdH-F8epGCRa6DHtz6G41mVq798eS2zhjsuLlg7ytYlxaIUqLnqZW9ycjEhoFwT1nDNkdxmdoRSglHVzCDxFeE7vK6NlAFYDUbbspJuPwdQnlzoHA8COheEuV_bUtqtdzqbcCpROnn6PD",
+      "widthPx": 1344,
+      "heightPx": 1805,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAx8cxmYHHpwLu83u81TFug!2e10!4m2!3m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAx8cxmYHHpwLu83u81TFug&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/100704259166575523567",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX_Yh9llAz1IVbJX7sjrOcuHAS1vnltOfHOoZIYWAILIlrYozUE=s100-p-k-no-mo",
+          "displayName": "The Pool Store"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3mWu7VtK3YSuzW7Y8EN6cAvjJx35grOXy69ybM5A3GL4IDLzH2zYfsutdcVsZbyGF3DODqf1nyrJ0LtXC5Vv-IfFsZOvKeYdZQv0EFDRYeKFtestEXYwgooffrB_DqXGEN3b1XnrSB5rKxIhtfNBdIiURWYl2r5v6ktlf3PKS--xgpBcujMa9L8df_tGaQ8QqSYO075jHUpFtqYnbi3G7tmn0G2WcZF-fMkccDnn8lQMerj0jHtJCUcnHBnvmVnS6sQNdipUhDGjUDlzBISvt2-ato691Rc1mR2ZLmuK77MK9XT3nYfpeKllIy8IJs9PPXEz2hSNxwE7k3fss1x_16z94nCXcvtv_xIKLF_XkwE4n36Y769McZ-f0ZbCHVzygseyewwe9ecRzmSbkYe5rDhvtanu-NDjHa-fxbjlqtCGi4",
+      "widthPx": 2048,
+      "heightPx": 1536,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDaoazcqwE!2e10!4m2!3m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDaoazcqwE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/100704259166575523567",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX_Yh9llAz1IVbJX7sjrOcuHAS1vnltOfHOoZIYWAILIlrYozUE=s100-p-k-no-mo",
+          "displayName": "The Pool Store"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3l8cK-0uOLWgJhvyQiyRinzVzPW6u4LMVIdP2vVTQTRvKKD0WeO9_BYNWhT04mhcsyw69MuSNSHwL6pJK1Fl9OS2IvPBk26Y3RjQbHCsMs1FHuGY-oUR44jfbTi0OYRHRrjJtptkoa9D42erlWVZjIlkU9B-H9kYa74ad2vEBU_QtGrIWVPj0Z0F7LEuirsCIbeZMqw9Awf7O8KbHbWq9VqQCwouenoyePdbXHTs1iuFu6ZieOKBfgU2aPUqsNfu-IWePpn-IXJ9nDGLRl6yYFeDwLESprYzF7Y93qkUp1RYt3-DW-CO9cDF_nuzbnFmjWd3H1J0o35H_jY0GKZQX_ZcgydWQg7ytJidBfO4Ir3_2POO2XEGbKp6m9dWtvMZkmTGalbaqGZ3APS22tHRWeOrIYKj4q17mp_EqGisEU",
+      "widthPx": 322,
+      "heightPx": 306,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICKpZb3Tw!2e10!4m2!3m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICKpZb3Tw&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/100704259166575523567",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX_Yh9llAz1IVbJX7sjrOcuHAS1vnltOfHOoZIYWAILIlrYozUE=s100-p-k-no-mo",
+          "displayName": "The Pool Store"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3mqD90Vw-C3ep3jjcXRuO0y-az3hHpGPTOYeEV0yox3LScX5JLEF34lWQ_cllUqVwuLU9E9thp-4sJ9GQWSGhG7FsQvN2qdJx3ptKDFDCue3Hz3aTe-v-QXcXteuWTlVfX405Y9HAQMtQsd0V0s1Ek5Py4qCzmdVswgphBthMW-5e0IhQlNKf_EHUVe-O3_qcFO9Y3DBqRpBRCKbvYBWIY7_bz2vAqrtwwe5xcoM2pRfNKIGZomuihtI35Qt0CVc-C7GKc0CNub72d1QS52CW5QxLSWe5XRiEeFNJGvvnvd8zD-SPIUjUZMCKYwIa80EidDo_lL386c8TLgZOs213GnvSXL7RSMNXwCATvbO2Nfp1lq6yiF3OVlIQhtp9K7LH04331MVDHjymUedDq7XrINqRupwCbiA2u4CNuSO4ehRjx2r7ru7j_fzoTypg",
+      "widthPx": 2268,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCUlhtZO-UMdGFT-MLE2aSy!2e10!4m2!3m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCUlhtZO-UMdGFT-MLE2aSy&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/100704259166575523567",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX_Yh9llAz1IVbJX7sjrOcuHAS1vnltOfHOoZIYWAILIlrYozUE=s100-p-k-no-mo",
+          "displayName": "The Pool Store"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3l9HVJG2H5L8sCps0G2xfmBZpciaPWoMmJ-3CgfkmMku6I3nxsFyr5viYc6bC2Ng0LUXbx-jSL2K8mZ7cwCcRNZeXFWoPDkbDDrF0FawtoahWKW55LANS8taHeXB8Aj7m2_O9-oaDBdfXbpZc0waqc_FC06yAV1NGJ8TEYVS9xckLfvIuptOfK8BcqXSgxT1cw4mOP976H16szPQamsyQNf5IeBNQhdjUNi-MD0HnnFxujFtlq4cSYn7z0WIM6WWKjFT0Q2fO28yX0UwieoQIvHDtJWNWmyB5-LN5MpKj5LZEzxg_e9tovoWDZgTFM_0SSrYqP2rrmOmtHtja337pOUZ60cSPaOc5L8co1MRbG8QS92-8QLEC1admPAnHYoJwKZeKdxEsKqmKn0LlDMvB8bV3kJbTJA9vtbutCzRb8",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICeuN-pZg!2e10!4m2!3m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICeuN-pZg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/107323447544347135793",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWjy-8k-vujWveIaRHsLSEOgi7iC4XZcfzC74FF0PM6-iVQYoLL=s100-p-k-no-mo",
+          "displayName": "Amelia Annette Baldwin"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3kwiuxqEfYnOLAE-qN3f1v8NPIKegCjPsYdRw02_DvMSlN2rj91R8Cit3EYgE7Nv025LNZ9xwIDvj-NUvXbffr0a1lNc-zgDp3DeaHkHVfZYITNwAtbGq9Yb7o3y0MJhBWMiT7oQSF7ejPRYC4FTq543M7ELxPe1k2chguUlrF2QzCzvKoevWTz5VpiWflaLoPUHm_UgPDzKa2f1Q5bpONklAeiFum0CfQHNR-O4EHKG46r7nwS28WVsZrI0H68xsk4kD6aRcJF30jwbSlt6lbj3LjCxsHJZQAnmq1tMxuPqO8HCtOzUpad9kVgIu8UnaDfiGrJR71N3EGpxryRXNSuB7haw1qefc7cm05a7_L3HVLhxkwqrpbGD-azn0dgdAJJ7E_KMxRb7FeRRnfuds35RHnEQBnNYY2IrR0kuP41Eg",
+      "widthPx": 399,
+      "heightPx": 390,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICKpZafag!2e10!4m2!3m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICKpZafag&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/100704259166575523567",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX_Yh9llAz1IVbJX7sjrOcuHAS1vnltOfHOoZIYWAILIlrYozUE=s100-p-k-no-mo",
+          "displayName": "The Pool Store"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3kzHTyt5Gwp9XvkhDa_czsOMgMCyo6IhsTKbK9QWWguUzIgahM8hfssSU1WJPuUzqL3v4KAoHceHwRTt84GdfS0hLxtZSAIdcT30MFU5m02Y873_ZnrYgUbV2ekN_fpl-EZ0EQPL7hJ5F_eUsWtUrP2vXNxA2AjqRCDesZudvsdy26pl_ORghKObPaijj2IlsgUZiQP_zEF5MGEM-O901bAlWEF_yRBjJyZnNiSO1V1xGzVoVhM7p_6tGn_c7beV46CNhohKXQgmDHlu-9Pb7ffPk751WfiPZBepa6NVPMaR-N6ZyGbS4GKqd8rWYkpSf1sfVb-WShqdd0OGXJvbIy2hQIvUcJZoJTRxRPNeFfHFbbYEsBwljQB0bkYx8xrwEXFtor3TnbH26VMClBLWsZHqI56QNTLV9qz1p2mTF5SH_Rx7gTbbtf8yLIQbRDX",
+      "widthPx": 1140,
+      "heightPx": 968,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDhy5P6lLqHfpbkm0wVVc4D!2e10!4m2!3m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDhy5P6lLqHfpbkm0wVVc4D&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/100704259166575523567",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX_Yh9llAz1IVbJX7sjrOcuHAS1vnltOfHOoZIYWAILIlrYozUE=s100-p-k-no-mo",
+          "displayName": "The Pool Store"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3ltZOjRUearYnlivsO4lPwiVPvySskmQBNmcjFRrzlpywq-x-ifyG9h-8-Ebn9lsjWmUMkQZoxf3m8yzM5T2BTRImki-egr8wk65KYYB3lfBok6jNHslRhIhPi0VO3C00BzVseigyFg44CmxS-BF7Ty6PyETmfgCXw33WswEtC92a-rg_LbkMzWlw43FcxJgj88WM-taO4-9HDjJwFtPKb7yxxUHIY7uDcWegzUZvQhRDh_VZOMH6LvxK02j1WRTfnflUMTl86QBX87ueeuA9afHJJ0Mu6OdeRsMUTdieH2idKdquq9dbr-aOKQeoPToPJzZtVPmBJ1udRsPo8Eo8O38VYd-hOF9IyhRVubN4Uf6DM60gNTamgogj_S88V8B8U2QXQyLLCreU5SWz5V07R_0lLtN1igr3UixmQl03ui_A",
+      "widthPx": 500,
+      "heightPx": 386,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICKpZaBCg!2e10!4m2!3m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICKpZaBCg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/100704259166575523567",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX_Yh9llAz1IVbJX7sjrOcuHAS1vnltOfHOoZIYWAILIlrYozUE=s100-p-k-no-mo",
+          "displayName": "The Pool Store"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3ll39EegGMN4W6heJtgUX8CsR15b3Blc7z6dqfb3ZimdHlV2pbEda_YtVgMCIq3EExLpvWxP-HoIsVLYtysHbaX4irryPYf2VJf5OVHIoY1SxCCwK1LTCIpN2eBDNrur-p2dUZJwk2VYgpqQgKvfXqlZJhXVIb0fXwieHbsyordZGvv9qi6j4PP8iYCJU_xOpQf9keagbqMQxlgREg6oQFJ4uW8nwdUf0V0Q2WuTBu7Iajm24zeNk0Lq8S5SnxrWFpFxh70HsAKX91m7hq6OiDCkJtZ8azD60Lj9XnnFCZMUfNa0y1I3wNfSxUgDjbHlSqodzcxcz16PeWAgs_XeBa3oQJLREGsxYHVI0hw9laKsGQ45e7PD7pXZ0Rl7ij0bJOlIBP_ruv-JGyGgYhO6IHIYgXMWn9r2dX1kkL_GG9SX2KO8EN0Gf9QnyYpbSCU",
+      "widthPx": 4032,
+      "heightPx": 2268,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAYGMqCTSIZqppbalFp0tMX!2e10!4m2!3m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAYGMqCTSIZqppbalFp0tMX&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/100704259166575523567",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX_Yh9llAz1IVbJX7sjrOcuHAS1vnltOfHOoZIYWAILIlrYozUE=s100-p-k-no-mo",
+          "displayName": "The Pool Store"
+        }
+      ]
+    }
+  ],
+  "rating": 4.5,
+  "reviews": [
+    {
+      "name": "places/ChIJx8-7CMkImogR3NtTAKezKsc/reviews/Ci9DQUlRQUNvZENodHljRjlvT25wWlVVeDFhRGxITFRkNU9WbDRkWEpMTmpOUE9GRRAB",
+      "text": {
+        "text": "This is a fantastic family-owned pool store that truly cares about its customers. They go out of their way to meet your needs and make sure you leave satisfied. You can tell they take pride in their work and genuinely want to help. Whether you’re shopping for supplies or just need advice, they’re always friendly  and willing to assist. Highly recommend supporting this local gem!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-07-19T18:03:00.114854370Z",
+      "originalText": {
+        "text": "This is a fantastic family-owned pool store that truly cares about its customers. They go out of their way to meet your needs and make sure you leave satisfied. You can tell they take pride in their work and genuinely want to help. Whether you’re shopping for supplies or just need advice, they’re always friendly  and willing to assist. Highly recommend supporting this local gem!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25wWlVVeDFhRGxITFRkNU9WbDRkWEpMTmpOUE9GRRAB!2m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT25wWlVVeDFhRGxITFRkNU9WbDRkWEpMTmpOUE9GRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/111686324681459886458/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUEfTVfkMZe_TFtZ4rZggUtyAPV7t7M3a_3he7mOKID8SxrFMha=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Jennifer Taylor"
+      },
+      "relativePublishTimeDescription": "10 months ago"
+    },
+    {
+      "name": "places/ChIJx8-7CMkImogR3NtTAKezKsc/reviews/ChZDSUhNMG9nS0VQclp5NHExZ1B5T1hREAE",
+      "text": {
+        "text": "WOW, what an experience. Just when I was losing faith in pool service companies. My neighbor recommended these folks. Guess what ! They’re fantastic economical reliable. If you’re tired of getting screwed over by Pool Service companies, give these folks a chance they won’t let you down.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-06-04T18:06:07.967993Z",
+      "originalText": {
+        "text": "WOW, what an experience. Just when I was losing faith in pool service companies. My neighbor recommended these folks. Guess what ! They’re fantastic economical reliable. If you’re tired of getting screwed over by Pool Service companies, give these folks a chance they won’t let you down.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VQclp5NHExZ1B5T1hREAE!2m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VQclp5NHExZ1B5T1hREAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/117235562774883094829/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIeTueynde4I39O7WWq2s7rKk45gUfs1xz93wx1j3da7VPrUA=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Ruben Enriquez"
+      },
+      "relativePublishTimeDescription": "a year ago"
+    },
+    {
+      "name": "places/ChIJx8-7CMkImogR3NtTAKezKsc/reviews/ChdDSUhNMG9nS0VJQ0FnSUNldU4tcHhnRRAB",
+      "text": {
+        "text": "We have received good advice here and bought chemicals and had water tested here. Very nice folks.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2022-09-05T23:00:40.376298Z",
+      "originalText": {
+        "text": "We have received good advice here and bought chemicals and had water tested here. Very nice folks.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNldU4tcHhnRRAB!2m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNldU4tcHhnRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/107323447544347135793/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWjy-8k-vujWveIaRHsLSEOgi7iC4XZcfzC74FF0PM6-iVQYoLL=s128-c0x00000000-cc-rp-mo-ba2",
+        "displayName": "Amelia Annette Baldwin"
+      },
+      "relativePublishTimeDescription": "3 years ago"
+    },
+    {
+      "name": "places/ChIJx8-7CMkImogR3NtTAKezKsc/reviews/ChZDSUhNMG9nS0VJQ0FnSUNxaWZQN2NnEAE",
+      "text": {
+        "text": "The Pool Store installed a new pump system and control panel and also am having them service our pool.  They were very dedicated and worked with our new system until it worked flawlessly!\n\nOur pool has never looked better with their dependable servicing and maintenance.\n\nThe young lady in the store is very knowledgeable and  offers great service.\n\nHighly recommend to anyone looking for a pool company!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2021-06-10T20:03:51.936670Z",
+      "originalText": {
+        "text": "The Pool Store installed a new pump system and control panel and also am having them service our pool.  They were very dedicated and worked with our new system until it worked flawlessly!\n\nOur pool has never looked better with their dependable servicing and maintenance.\n\nThe young lady in the store is very knowledgeable and  offers great service.\n\nHighly recommend to anyone looking for a pool company!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNxaWZQN2NnEAE!2m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNxaWZQN2NnEAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/113540964554730897283/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWD5_4S4o6YzDNYzfYdV-UTOyLiqQjD8ah9gDwGtdQh9bbURnaBOw=s128-c0x00000000-cc-rp-mo-ba4",
+        "displayName": "Lynn Tjeerdsma"
+      },
+      "relativePublishTimeDescription": "5 years ago"
+    },
+    {
+      "name": "places/ChIJx8-7CMkImogR3NtTAKezKsc/reviews/ChdDSUhNMG9nS0VJQ0FnSUNtbFpXZHdRRRAB",
+      "text": {
+        "text": "One of the best and oldest pool maintenance services in town! Highly recommend for your weekly pool maintenance. Great staff!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2022-01-04T15:31:57.736492Z",
+      "originalText": {
+        "text": "One of the best and oldest pool maintenance services in town! Highly recommend for your weekly pool maintenance. Great staff!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNtbFpXZHdRRRAB!2m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNtbFpXZHdRRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/108297687555793602746/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocK_3WfPmqYEjHtpvC0mGh8SN0rwGkMQszyW5DAxQPkJt6rq5Q=s128-c0x00000000-cc-rp-mo-ba3",
+        "displayName": "J S"
+      },
+      "relativePublishTimeDescription": "4 years ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.291858100000002,
+    "longitude": -87.68347639999999
+  },
+  "plusCode": {
+    "globalCode": "862J78R8+PJ",
+    "compoundCode": "78R8+PJ Gulf Shores, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.290555819708505,
+      "longitude": -87.68500218029149
+    },
+    "high": {
+      "latitude": 30.293253780291504,
+      "longitude": -87.68230421970848
+    }
+  },
+  "websiteUri": "http://gulfshorespoolstore.com/",
+  "displayName": {
+    "text": "The Pool Store",
+    "languageCode": "en"
+  },
+  "primaryType": "service",
+  "googleMapsUri": "https://maps.google.com/?cid=14351480692415912924&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=14351480692415912924&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "userRatingCount": 14,
+  "adrFormatAddress": "<span class=\"street-address\">3460 Gulf Shores Pkwy</span>, <span class=\"locality\">Gulf Shores</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36542</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "3460 Gulf Shores Pkwy, Gulf Shores, AL 36542, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "3460",
+      "shortText": "3460",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Gulf Shores Parkway",
+      "shortText": "Gulf Shores Pkwy",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Gulf Shores",
+      "shortText": "Gulf Shores",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36542",
+      "shortText": "36542",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJpZ0ldRAFmogRpxkNq2RSPMk",
+        "placeId": "ChIJpZ0ldRAFmogRpxkNq2RSPMk",
+        "containment": "NEAR",
+        "displayName": {
+          "text": "Gulf Shores International Airport at Jack Edwards Field",
+          "languageCode": "en"
+        }
+      }
+    ],
+    "landmarks": [
+      {
+        "name": "places/ChIJAcGzx-cFmogR4csOwdHiuV0",
+        "types": [
+          "cafe",
+          "clothing_store",
+          "establishment",
+          "food",
+          "point_of_interest",
+          "restaurant",
+          "store"
+        ],
+        "placeId": "ChIJAcGzx-cFmogR4csOwdHiuV0",
+        "displayName": {
+          "text": "Beach Girl Coffee",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "AROUND_THE_CORNER",
+        "travelDistanceMeters": 179.78708,
+        "straightLineDistanceMeters": 41.79311
+      },
+      {
+        "name": "places/ChIJV4UnrjgFmogRPhuw9cTME0A",
+        "types": [
+          "establishment",
+          "finance",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJV4UnrjgFmogRPhuw9cTME0A",
+        "displayName": {
+          "text": "Cash Cow",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "AROUND_THE_CORNER",
+        "travelDistanceMeters": 275.36908,
+        "straightLineDistanceMeters": 186.60146
+      },
+      {
+        "name": "places/ChIJ0zpy40QbmogRLHj2pIx-OIc",
+        "types": [
+          "establishment",
+          "lodging",
+          "point_of_interest",
+          "real_estate_agency",
+          "travel_agency"
+        ],
+        "placeId": "ChIJ0zpy40QbmogRLHj2pIx-OIc",
+        "displayName": {
+          "text": "Crystal Tower By Young's Suncoast",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 451.03287,
+        "straightLineDistanceMeters": 390.97678
+      },
+      {
+        "name": "places/ChIJdxI0xjsFmogRBojMP7Pu2no",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJdxI0xjsFmogRBojMP7Pu2no",
+        "displayName": {
+          "text": "Gulf Shores Wedding Chapel",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 366.27017,
+        "straightLineDistanceMeters": 160.20773
+      },
+      {
+        "name": "places/ChIJi2x1zTgFmogRQbDtimWUpZ0",
+        "types": [
+          "car_wash",
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJi2x1zTgFmogRQbDtimWUpZ0",
+        "displayName": {
+          "text": "Tropical Suds Car Wash",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 414.8833,
+        "straightLineDistanceMeters": 375.16376
+      }
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Pool Cleaning Service",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "nationalPhoneNumber": "(251) 948-5600",
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true
+  },
+  "shortFormattedAddress": "3460 Gulf Shores Pkwy, Gulf Shores",
+  "primaryTypeDisplayName": {
+    "text": "Services",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-948-5600"
+}
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 3460 Gulf Shores Pkwy, Gulf Shores
+national_phone: (251) 948-5600
+search_vector: 'gulf':5 'pool':2A 'servic':4 'shore':6 'store':3A
+primary_type_display: Services
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=14351480692415912924&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJpZ0ldRAFmogRpxkNq2RSPMk",
+      "placeId": "ChIJpZ0ldRAFmogRpxkNq2RSPMk",
+      "containment": "NEAR",
+      "displayName": {
+        "text": "Gulf Shores International Airport at Jack Edwards Field",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJAcGzx-cFmogR4csOwdHiuV0",
+      "types": [
+        "cafe",
+        "clothing_store",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant",
+        "store"
+      ],
+      "placeId": "ChIJAcGzx-cFmogR4csOwdHiuV0",
+      "displayName": {
+        "text": "Beach Girl Coffee",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "AROUND_THE_CORNER",
+      "travelDistanceMeters": 179.78708,
+      "straightLineDistanceMeters": 41.79311
+    },
+    {
+      "name": "places/ChIJV4UnrjgFmogRPhuw9cTME0A",
+      "types": [
+        "establishment",
+        "finance",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJV4UnrjgFmogRPhuw9cTME0A",
+      "displayName": {
+        "text": "Cash Cow",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "AROUND_THE_CORNER",
+      "travelDistanceMeters": 275.36908,
+      "straightLineDistanceMeters": 186.60146
+    },
+    {
+      "name": "places/ChIJ0zpy40QbmogRLHj2pIx-OIc",
+      "types": [
+        "establishment",
+        "lodging",
+        "point_of_interest",
+        "real_estate_agency",
+        "travel_agency"
+      ],
+      "placeId": "ChIJ0zpy40QbmogRLHj2pIx-OIc",
+      "displayName": {
+        "text": "Crystal Tower By Young's Suncoast",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 451.03287,
+      "straightLineDistanceMeters": 390.97678
+    },
+    {
+      "name": "places/ChIJdxI0xjsFmogRBojMP7Pu2no",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJdxI0xjsFmogRBojMP7Pu2no",
+      "displayName": {
+        "text": "Gulf Shores Wedding Chapel",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 366.27017,
+      "straightLineDistanceMeters": 160.20773
+    },
+    {
+      "name": "places/ChIJi2x1zTgFmogRQbDtimWUpZ0",
+      "types": [
+        "car_wash",
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJi2x1zTgFmogRQbDtimWUpZ0",
+      "displayName": {
+        "text": "Tropical Suds Car Wash",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 414.8833,
+      "straightLineDistanceMeters": 375.16376
+    }
+  ]
+}
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url | hero_image_url v2-fix 2026-07-21: repointed to a photo confirmed to actually exist
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: other
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   1 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 1] ---
+id: 130d57e8-6e8f-451c-a48d-23744065f6a6
+entity_slug: the-pool-store
+place_id: ChIJpZ0ldRAFmogRpxkNq2RSPMk
+containment: NEAR
+display_name: Gulf Shores International Airport at Jack Edwards Field
+
+####################################################################################################
+# TABLE: entity_attributes   -   2 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 2] ---
+id: d32cd40a-7d88-4bb1-9ab7-e5cdc1f55f4e
+entity_slug: the-pool-store
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 2 of 2] ---
+id: 373527f6-d3fc-4338-a99d-8d6bfc088992
+entity_slug: the-pool-store
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: the-pool-store
+name: The Pool Store
+industry_code: other
+is_parent: false
+score_of_7: 5
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 8f6ffa99-0290-4d2f-8f80-8ea71c34fca9
+entity_slug: the-pool-store
+place_uri: https://maps.google.com/?cid=14351480692415912924&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 259
+entity_slug: the-pool-store
+google_review_name: places/ChIJx8-7CMkImogR3NtTAKezKsc/reviews/ChdDSUhNMG9nS0VJQ0FnSUNldU4tcHhnRRAB
+rating: 5
+review_text: We have received good advice here and bought chemicals and had water tested here. Very nice folks.
+language_code: en
+author_name: Amelia Annette Baldwin
+author_profile_url: https://www.google.com/maps/contrib/107323447544347135793/reviews
+publish_time: 2022-09-05T23:00:40.376298+00:00
+relative_time: 3 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNldU4tcHhnRRAB!2m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 258
+entity_slug: the-pool-store
+google_review_name: places/ChIJx8-7CMkImogR3NtTAKezKsc/reviews/ChZDSUhNMG9nS0VQclp5NHExZ1B5T1hREAE
+rating: 5
+review_text: WOW, what an experience. Just when I was losing faith in pool service companies. My neighbor recommended these folks. Guess what ! They’re fantastic economical reliable. If you’re tired of getting screwed over by Pool Service companies, give these folks a chance they won’t let you down.
+language_code: en
+author_name: Ruben Enriquez
+author_profile_url: https://www.google.com/maps/contrib/117235562774883094829/reviews
+publish_time: 2025-06-04T18:06:07.967993+00:00
+relative_time: a year ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VQclp5NHExZ1B5T1hREAE!2m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 257
+entity_slug: the-pool-store
+google_review_name: places/ChIJx8-7CMkImogR3NtTAKezKsc/reviews/Ci9DQUlRQUNvZENodHljRjlvT25wWlVVeDFhRGxITFRkNU9WbDRkWEpMTmpOUE9GRRAB
+rating: 5
+review_text: This is a fantastic family-owned pool store that truly cares about its customers. They go out of their way to meet your needs and make sure you leave satisfied. You can tell they take pride in their work and genuinely want to help. Whether you’re shopping for supplies or just need advice, they’re always friendly  and willing to assist. Highly recommend supporting this local gem!
+language_code: en
+author_name: Jennifer Taylor
+author_profile_url: https://www.google.com/maps/contrib/111686324681459886458/reviews
+publish_time: 2025-07-19T18:03:00.114854+00:00
+relative_time: 10 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25wWlVVeDFhRGxITFRkNU9WbDRkWEpMTmpOUE9GRRAB!2m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 260
+entity_slug: the-pool-store
+google_review_name: places/ChIJx8-7CMkImogR3NtTAKezKsc/reviews/ChZDSUhNMG9nS0VJQ0FnSUNxaWZQN2NnEAE
+rating: 5
+review_text: The Pool Store installed a new pump system and control panel and also am having them service our pool.  They were very dedicated and worked with our new system until it worked flawlessly!
+
+Our pool has never looked better with their dependable servicing and maintenance.
+
+The young lady in the store is very knowledgeable and  offers great service.
+
+Highly recommend to anyone looking for a pool company!
+language_code: en
+author_name: Lynn Tjeerdsma
+author_profile_url: https://www.google.com/maps/contrib/113540964554730897283/reviews
+publish_time: 2021-06-10T20:03:51.93667+00:00
+relative_time: 5 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNxaWZQN2NnEAE!2m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 261
+entity_slug: the-pool-store
+google_review_name: places/ChIJx8-7CMkImogR3NtTAKezKsc/reviews/ChdDSUhNMG9nS0VJQ0FnSUNtbFpXZHdRRRAB
+rating: 5
+review_text: One of the best and oldest pool maintenance services in town! Highly recommend for your weekly pool maintenance. Great staff!
+language_code: en
+author_name: J S
+author_profile_url: https://www.google.com/maps/contrib/108297687555793602746/reviews
+publish_time: 2022-01-04T15:31:57.736492+00:00
+relative_time: 4 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNtbFpXZHdRRRAB!2m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: the-pool-store
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: c2c84e1d-0a9e-4fa2-a12f-347bef1c6111
+name: The Pool Store
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-pool-store/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-pool-store/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-pool-store/photo_03.jpg",
+    "/photos/the-pool-store/photo_01.jpg",
+    "/photos/the-pool-store/photo_02.jpg",
+    "/photos/the-pool-store/photo_03.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: the-pool-store
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: c2c84e1d-0a9e-4fa2-a12f-347bef1c6111
+name: The Pool Store
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-pool-store/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-pool-store/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-pool-store/photo_03.jpg",
+    "/photos/the-pool-store/photo_01.jpg",
+    "/photos/the-pool-store/photo_02.jpg",
+    "/photos/the-pool-store/photo_03.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: 670abbfd-9721-41fb-9925-bc843f1c240d
+entity_slug: the-pool-store
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 8924620f-9dc3-49a7-9800-d238c128dd5e
+entity_slug: the-pool-store
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: c30a958e-59b9-4382-82d1-daa3d0e1082a
+entity_slug: the-pool-store
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: 0e34a1e8-0f8b-4543-9902-ccc636078a23
+entity_slug: the-pool-store
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: c636c025-d513-4874-bc34-89cd34e35b51
+entity_slug: the-pool-store
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: dc45747d-c01f-45d2-b6c4-a87a5840c5df
+entity_slug: the-pool-store
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 97bbbc4b-1f0d-464f-905d-3ad23eba3b8b
+entity_slug: the-pool-store
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 9aad7cfa-f762-4af8-9080-f0eb88cc84e0
+entity_slug: the-pool-store
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: ac1348f9-7157-49cd-a97a-fd0dbbe8f4ea
+entity_slug: the-pool-store
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: eb11cc96-b992-44e0-8273-e31235f91250
+entity_slug: the-pool-store
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: 468cdcff-05c4-4732-a318-c41d13d63d16
+entity_slug: the-pool-store
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: f28dd773-0a86-4610-9722-592fe92ed65d
+entity_slug: the-pool-store
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: 90caa3c6-16c7-49db-89b7-6035d4d13b65
+entity_slug: the-pool-store
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   20 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 20] ---
+id: 25870528-b314-4f5e-99db-ddf3bbe2aa0b
+landmark_id: b5edae97-6264-4cd9-bde2-ef762f9afd04
+entity_slug: the-pool-store
+landmark_type: cafe
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 20] ---
+id: 2ac28432-2229-42d7-b52a-841369f519f0
+landmark_id: b5edae97-6264-4cd9-bde2-ef762f9afd04
+entity_slug: the-pool-store
+landmark_type: clothing_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 20] ---
+id: 10670915-1cba-4d8f-b725-cad62354996c
+landmark_id: b5edae97-6264-4cd9-bde2-ef762f9afd04
+entity_slug: the-pool-store
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 20] ---
+id: 520862ce-52b9-4b99-a705-c63cf6626090
+landmark_id: b5edae97-6264-4cd9-bde2-ef762f9afd04
+entity_slug: the-pool-store
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 20] ---
+id: 517c128b-04d6-4e29-ba86-0f5f66dfbee8
+landmark_id: b5edae97-6264-4cd9-bde2-ef762f9afd04
+entity_slug: the-pool-store
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 20] ---
+id: de8584b4-3424-4a1a-ac79-42e1b83236be
+landmark_id: b5edae97-6264-4cd9-bde2-ef762f9afd04
+entity_slug: the-pool-store
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 20] ---
+id: b7d97da7-4183-4a4f-99cc-d121b4a60cd1
+landmark_id: b5edae97-6264-4cd9-bde2-ef762f9afd04
+entity_slug: the-pool-store
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 20] ---
+id: d9daef70-2ce3-44bb-a830-d42e6d4bf451
+landmark_id: 28357be2-bd53-4e73-8f31-ec832d98bf53
+entity_slug: the-pool-store
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 20] ---
+id: f34425f4-d2fb-41a3-a204-e3ab6b6b3b00
+landmark_id: 28357be2-bd53-4e73-8f31-ec832d98bf53
+entity_slug: the-pool-store
+landmark_type: finance
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 20] ---
+id: b6ba0770-6266-4352-9343-8966c38f1eec
+landmark_id: 28357be2-bd53-4e73-8f31-ec832d98bf53
+entity_slug: the-pool-store
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 20] ---
+id: 06dd5ce8-bb0d-46b2-86f0-c6dfbfed5a4c
+landmark_id: e9bdcdb4-92c6-4e8b-977a-d6cb2eeda26b
+entity_slug: the-pool-store
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 20] ---
+id: 876df3c6-5595-4f3f-93ac-86760af9ad80
+landmark_id: e9bdcdb4-92c6-4e8b-977a-d6cb2eeda26b
+entity_slug: the-pool-store
+landmark_type: lodging
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 20] ---
+id: 5e9a4bea-446a-4ae6-832e-bd145acdbd88
+landmark_id: e9bdcdb4-92c6-4e8b-977a-d6cb2eeda26b
+entity_slug: the-pool-store
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 20] ---
+id: 24f8e774-a67a-4414-979f-b7f80560f069
+landmark_id: e9bdcdb4-92c6-4e8b-977a-d6cb2eeda26b
+entity_slug: the-pool-store
+landmark_type: real_estate_agency
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 20] ---
+id: ee5b3298-7a35-4e88-91ff-28b00f4a050a
+landmark_id: e9bdcdb4-92c6-4e8b-977a-d6cb2eeda26b
+entity_slug: the-pool-store
+landmark_type: travel_agency
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 20] ---
+id: cc86e83b-1d82-455d-8d7f-953a798fb095
+landmark_id: 8b0dbd67-37e3-4946-aa35-3465069f4ac8
+entity_slug: the-pool-store
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 20] ---
+id: ff180535-ac70-420a-9316-d515bc0abeed
+landmark_id: 8b0dbd67-37e3-4946-aa35-3465069f4ac8
+entity_slug: the-pool-store
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 20] ---
+id: ff57ee99-40ef-40b3-ab07-330f5f007979
+landmark_id: aa4e6525-bdeb-49b4-8aff-2e572b873fd1
+entity_slug: the-pool-store
+landmark_type: car_wash
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 19 of 20] ---
+id: e7761fab-0f36-48a1-87b2-5848cbcad2ec
+landmark_id: aa4e6525-bdeb-49b4-8aff-2e572b873fd1
+entity_slug: the-pool-store
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 20 of 20] ---
+id: 306c0aec-0276-4405-9952-51c1938e1cfd
+landmark_id: aa4e6525-bdeb-49b4-8aff-2e572b873fd1
+entity_slug: the-pool-store
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   6 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 6] ---
+id: b5edae97-6264-4cd9-bde2-ef762f9afd04
+entity_slug: the-pool-store
+kind: landmark
+place_id: ChIJAcGzx-cFmogR4csOwdHiuV0
+name: Beach Girl Coffee
+types: [
+  "cafe",
+  "clothing_store",
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant",
+  "store"
+]
+spatial_relationship: AROUND_THE_CORNER
+travel_distance_meters: 179.78708
+straight_line_distance_meters: 41.79311
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 6] ---
+id: 28357be2-bd53-4e73-8f31-ec832d98bf53
+entity_slug: the-pool-store
+kind: landmark
+place_id: ChIJV4UnrjgFmogRPhuw9cTME0A
+name: Cash Cow
+types: [
+  "establishment",
+  "finance",
+  "point_of_interest"
+]
+spatial_relationship: AROUND_THE_CORNER
+travel_distance_meters: 275.36908
+straight_line_distance_meters: 186.60146
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 6] ---
+id: e9bdcdb4-92c6-4e8b-977a-d6cb2eeda26b
+entity_slug: the-pool-store
+kind: landmark
+place_id: ChIJ0zpy40QbmogRLHj2pIx-OIc
+name: Crystal Tower By Young's Suncoast
+types: [
+  "establishment",
+  "lodging",
+  "point_of_interest",
+  "real_estate_agency",
+  "travel_agency"
+]
+travel_distance_meters: 451.03287
+straight_line_distance_meters: 390.97678
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 6] ---
+id: 8b0dbd67-37e3-4946-aa35-3465069f4ac8
+entity_slug: the-pool-store
+kind: landmark
+place_id: ChIJdxI0xjsFmogRBojMP7Pu2no
+name: Gulf Shores Wedding Chapel
+types: [
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 366.27017
+straight_line_distance_meters: 160.20773
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 6] ---
+id: aa4e6525-bdeb-49b4-8aff-2e572b873fd1
+entity_slug: the-pool-store
+kind: landmark
+place_id: ChIJi2x1zTgFmogRQbDtimWUpZ0
+name: Tropical Suds Car Wash
+types: [
+  "car_wash",
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 414.8833
+straight_line_distance_meters: 375.16376
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 6 of 6] ---
+id: 0b70a47c-ade1-4fc2-a928-5f5a37d0d537
+entity_slug: the-pool-store
+kind: area
+place_id: ChIJpZ0ldRAFmogRpxkNq2RSPMk
+name: Gulf Shores International Airport at Jack Edwards Field
+containment: NEAR
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 14159
+entity_slug: the-pool-store
+name: The Pool Store
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: c2c84e1d-0a9e-4fa2-a12f-347bef1c6111
+
+####################################################################################################
+# TABLE: entity_photos   -   16 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 16] ---
+id: 94785364-3043-4893-9006-ca0aa829cb5d
+entity_slug: the-pool-store
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-pool-store/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 2 of 16] ---
+id: 463cea78-8401-49f3-a8b8-ed7ea83db0ca
+entity_slug: the-pool-store
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-pool-store/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 3 of 16] ---
+id: cdf193b5-939f-43dd-8a45-c6d9f5a628f7
+entity_slug: the-pool-store
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-pool-store/photo_03.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 4 of 16] ---
+id: e7a8a689-41bd-4d22-a38e-9e26756bdc03
+entity_slug: the-pool-store
+url: https://places.googleapis.com/v1/places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3nao1ysaaJ1rsLqbc6Bmxexi6AZm0rr7Da_lwv6DjEK6DtmhG1rYI82QlsRqx_aWL61GtqgC7kts4qgfYHN_mW6Td1iz0ej1LZclQKXp9tkAbTt1Cks7UTmUMiU_UyBLcNRR5p_CwPo9PJm3TvEBB3ULuGD5WgG7TKT5nYT9rEhqoVz-vxJSI8NvRTuQ6DOyp3fSyJ7FM13swObOV0orlfjICsaeYi2rJrQEcHR4DfX6Kwwa46Qckck6trangIvepQrxXV-NX8jLPG6_bCffxkDmcsY6DE-xEtAx6Aa3qvoniXmYSsSK515ay7pSHLbc9pGN9ITh_0-qxupGzHo3donHP0jzvAaK4o5DMHjGrBWW6_vcCxRjzY3FAYQoEwMJz2niLF9qNqZrpMcI5HXRVZ89eJhilTvn2iQgWSgw9MDUMzqSQyknTXV6-lsPfA8/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3nao1ysaaJ1rsLqbc6Bmxexi6AZm0rr7Da_lwv6DjEK6DtmhG1rYI82QlsRqx_aWL61GtqgC7kts4qgfYHN_mW6Td1iz0ej1LZclQKXp9tkAbTt1Cks7UTmUMiU_UyBLcNRR5p_CwPo9PJm3TvEBB3ULuGD5WgG7TKT5nYT9rEhqoVz-vxJSI8NvRTuQ6DOyp3fSyJ7FM13swObOV0orlfjICsaeYi2rJrQEcHR4DfX6Kwwa46Qckck6trangIvepQrxXV-NX8jLPG6_bCffxkDmcsY6DE-xEtAx6Aa3qvoniXmYSsSK515ay7pSHLbc9pGN9ITh_0-qxupGzHo3donHP0jzvAaK4o5DMHjGrBWW6_vcCxRjzY3FAYQoEwMJz2niLF9qNqZrpMcI5HXRVZ89eJhilTvn2iQgWSgw9MDUMzqSQyknTXV6-lsPfA8
+is_cover: false
+sort_order: 0
+caption: The Pool Store
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhB_m_GlffZYEcgHTI3DoPLO!2e10!4m2!3m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc
+
+--- entity_photos [row 5 of 16] ---
+id: 529b24ab-fb1d-4a05-991f-d9f07560d3b6
+entity_slug: the-pool-store
+url: https://places.googleapis.com/v1/places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3lyGWffdKxzSzV8EVgeTPnUMCx8jiQ-rP2QJKk3eapYKNYiOBwqMT50M_cu3qr62jnboltJUJsEI6QLhpJL2UTomLKYL_wpFsQQP7Zj6H_uY094wL4rB3ah0vE8nN8IVTSvlE43dWIyRjedugFRHaVqJLvxv6SYmDyqlwqac-6eJYBf1HUEkbTt5HDzP48r48uxeOmjARiuh2iW5rYWQtf5F3i7sYhzOs0tTwB9-93uj8dSoq0djtqAKhwcqgDu0a_MnD_IJ4cfiEA9G8rsDT30shTht7Q1ucfQFpn_d48HxhpiEaymdH-F8epGCRa6DHtz6G41mVq798eS2zhjsuLlg7ytYlxaIUqLnqZW9ycjEhoFwT1nDNkdxmdoRSglHVzCDxFeE7vK6NlAFYDUbbspJuPwdQnlzoHA8COheEuV_bUtqtdzqbcCpROnn6PD/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3lyGWffdKxzSzV8EVgeTPnUMCx8jiQ-rP2QJKk3eapYKNYiOBwqMT50M_cu3qr62jnboltJUJsEI6QLhpJL2UTomLKYL_wpFsQQP7Zj6H_uY094wL4rB3ah0vE8nN8IVTSvlE43dWIyRjedugFRHaVqJLvxv6SYmDyqlwqac-6eJYBf1HUEkbTt5HDzP48r48uxeOmjARiuh2iW5rYWQtf5F3i7sYhzOs0tTwB9-93uj8dSoq0djtqAKhwcqgDu0a_MnD_IJ4cfiEA9G8rsDT30shTht7Q1ucfQFpn_d48HxhpiEaymdH-F8epGCRa6DHtz6G41mVq798eS2zhjsuLlg7ytYlxaIUqLnqZW9ycjEhoFwT1nDNkdxmdoRSglHVzCDxFeE7vK6NlAFYDUbbspJuPwdQnlzoHA8COheEuV_bUtqtdzqbcCpROnn6PD
+is_cover: false
+sort_order: 1
+caption: The Pool Store
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAx8cxmYHHpwLu83u81TFug!2e10!4m2!3m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc
+
+--- entity_photos [row 6 of 16] ---
+id: 097a5701-a698-4a2f-b3d8-42a6e409a8c8
+entity_slug: the-pool-store
+url: https://places.googleapis.com/v1/places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3mWu7VtK3YSuzW7Y8EN6cAvjJx35grOXy69ybM5A3GL4IDLzH2zYfsutdcVsZbyGF3DODqf1nyrJ0LtXC5Vv-IfFsZOvKeYdZQv0EFDRYeKFtestEXYwgooffrB_DqXGEN3b1XnrSB5rKxIhtfNBdIiURWYl2r5v6ktlf3PKS--xgpBcujMa9L8df_tGaQ8QqSYO075jHUpFtqYnbi3G7tmn0G2WcZF-fMkccDnn8lQMerj0jHtJCUcnHBnvmVnS6sQNdipUhDGjUDlzBISvt2-ato691Rc1mR2ZLmuK77MK9XT3nYfpeKllIy8IJs9PPXEz2hSNxwE7k3fss1x_16z94nCXcvtv_xIKLF_XkwE4n36Y769McZ-f0ZbCHVzygseyewwe9ecRzmSbkYe5rDhvtanu-NDjHa-fxbjlqtCGi4/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3mWu7VtK3YSuzW7Y8EN6cAvjJx35grOXy69ybM5A3GL4IDLzH2zYfsutdcVsZbyGF3DODqf1nyrJ0LtXC5Vv-IfFsZOvKeYdZQv0EFDRYeKFtestEXYwgooffrB_DqXGEN3b1XnrSB5rKxIhtfNBdIiURWYl2r5v6ktlf3PKS--xgpBcujMa9L8df_tGaQ8QqSYO075jHUpFtqYnbi3G7tmn0G2WcZF-fMkccDnn8lQMerj0jHtJCUcnHBnvmVnS6sQNdipUhDGjUDlzBISvt2-ato691Rc1mR2ZLmuK77MK9XT3nYfpeKllIy8IJs9PPXEz2hSNxwE7k3fss1x_16z94nCXcvtv_xIKLF_XkwE4n36Y769McZ-f0ZbCHVzygseyewwe9ecRzmSbkYe5rDhvtanu-NDjHa-fxbjlqtCGi4
+is_cover: false
+sort_order: 2
+caption: The Pool Store
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDaoazcqwE!2e10!4m2!3m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc
+
+--- entity_photos [row 7 of 16] ---
+id: a9e3084a-a827-453b-8f08-e4c845100f51
+entity_slug: the-pool-store
+url: https://places.googleapis.com/v1/places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3l8cK-0uOLWgJhvyQiyRinzVzPW6u4LMVIdP2vVTQTRvKKD0WeO9_BYNWhT04mhcsyw69MuSNSHwL6pJK1Fl9OS2IvPBk26Y3RjQbHCsMs1FHuGY-oUR44jfbTi0OYRHRrjJtptkoa9D42erlWVZjIlkU9B-H9kYa74ad2vEBU_QtGrIWVPj0Z0F7LEuirsCIbeZMqw9Awf7O8KbHbWq9VqQCwouenoyePdbXHTs1iuFu6ZieOKBfgU2aPUqsNfu-IWePpn-IXJ9nDGLRl6yYFeDwLESprYzF7Y93qkUp1RYt3-DW-CO9cDF_nuzbnFmjWd3H1J0o35H_jY0GKZQX_ZcgydWQg7ytJidBfO4Ir3_2POO2XEGbKp6m9dWtvMZkmTGalbaqGZ3APS22tHRWeOrIYKj4q17mp_EqGisEU/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3l8cK-0uOLWgJhvyQiyRinzVzPW6u4LMVIdP2vVTQTRvKKD0WeO9_BYNWhT04mhcsyw69MuSNSHwL6pJK1Fl9OS2IvPBk26Y3RjQbHCsMs1FHuGY-oUR44jfbTi0OYRHRrjJtptkoa9D42erlWVZjIlkU9B-H9kYa74ad2vEBU_QtGrIWVPj0Z0F7LEuirsCIbeZMqw9Awf7O8KbHbWq9VqQCwouenoyePdbXHTs1iuFu6ZieOKBfgU2aPUqsNfu-IWePpn-IXJ9nDGLRl6yYFeDwLESprYzF7Y93qkUp1RYt3-DW-CO9cDF_nuzbnFmjWd3H1J0o35H_jY0GKZQX_ZcgydWQg7ytJidBfO4Ir3_2POO2XEGbKp6m9dWtvMZkmTGalbaqGZ3APS22tHRWeOrIYKj4q17mp_EqGisEU
+is_cover: false
+sort_order: 3
+caption: The Pool Store
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICKpZb3Tw!2e10!4m2!3m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc
+
+--- entity_photos [row 8 of 16] ---
+id: d8c58357-b6e3-49c4-9ca5-6d491021fe85
+entity_slug: the-pool-store
+url: https://places.googleapis.com/v1/places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3mqD90Vw-C3ep3jjcXRuO0y-az3hHpGPTOYeEV0yox3LScX5JLEF34lWQ_cllUqVwuLU9E9thp-4sJ9GQWSGhG7FsQvN2qdJx3ptKDFDCue3Hz3aTe-v-QXcXteuWTlVfX405Y9HAQMtQsd0V0s1Ek5Py4qCzmdVswgphBthMW-5e0IhQlNKf_EHUVe-O3_qcFO9Y3DBqRpBRCKbvYBWIY7_bz2vAqrtwwe5xcoM2pRfNKIGZomuihtI35Qt0CVc-C7GKc0CNub72d1QS52CW5QxLSWe5XRiEeFNJGvvnvd8zD-SPIUjUZMCKYwIa80EidDo_lL386c8TLgZOs213GnvSXL7RSMNXwCATvbO2Nfp1lq6yiF3OVlIQhtp9K7LH04331MVDHjymUedDq7XrINqRupwCbiA2u4CNuSO4ehRjx2r7ru7j_fzoTypg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3mqD90Vw-C3ep3jjcXRuO0y-az3hHpGPTOYeEV0yox3LScX5JLEF34lWQ_cllUqVwuLU9E9thp-4sJ9GQWSGhG7FsQvN2qdJx3ptKDFDCue3Hz3aTe-v-QXcXteuWTlVfX405Y9HAQMtQsd0V0s1Ek5Py4qCzmdVswgphBthMW-5e0IhQlNKf_EHUVe-O3_qcFO9Y3DBqRpBRCKbvYBWIY7_bz2vAqrtwwe5xcoM2pRfNKIGZomuihtI35Qt0CVc-C7GKc0CNub72d1QS52CW5QxLSWe5XRiEeFNJGvvnvd8zD-SPIUjUZMCKYwIa80EidDo_lL386c8TLgZOs213GnvSXL7RSMNXwCATvbO2Nfp1lq6yiF3OVlIQhtp9K7LH04331MVDHjymUedDq7XrINqRupwCbiA2u4CNuSO4ehRjx2r7ru7j_fzoTypg
+is_cover: false
+sort_order: 4
+caption: The Pool Store
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCUlhtZO-UMdGFT-MLE2aSy!2e10!4m2!3m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc
+
+--- entity_photos [row 9 of 16] ---
+id: e51cc3ba-89bd-45f4-9619-88007c6e1806
+entity_slug: the-pool-store
+url: https://places.googleapis.com/v1/places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3l9HVJG2H5L8sCps0G2xfmBZpciaPWoMmJ-3CgfkmMku6I3nxsFyr5viYc6bC2Ng0LUXbx-jSL2K8mZ7cwCcRNZeXFWoPDkbDDrF0FawtoahWKW55LANS8taHeXB8Aj7m2_O9-oaDBdfXbpZc0waqc_FC06yAV1NGJ8TEYVS9xckLfvIuptOfK8BcqXSgxT1cw4mOP976H16szPQamsyQNf5IeBNQhdjUNi-MD0HnnFxujFtlq4cSYn7z0WIM6WWKjFT0Q2fO28yX0UwieoQIvHDtJWNWmyB5-LN5MpKj5LZEzxg_e9tovoWDZgTFM_0SSrYqP2rrmOmtHtja337pOUZ60cSPaOc5L8co1MRbG8QS92-8QLEC1admPAnHYoJwKZeKdxEsKqmKn0LlDMvB8bV3kJbTJA9vtbutCzRb8/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3l9HVJG2H5L8sCps0G2xfmBZpciaPWoMmJ-3CgfkmMku6I3nxsFyr5viYc6bC2Ng0LUXbx-jSL2K8mZ7cwCcRNZeXFWoPDkbDDrF0FawtoahWKW55LANS8taHeXB8Aj7m2_O9-oaDBdfXbpZc0waqc_FC06yAV1NGJ8TEYVS9xckLfvIuptOfK8BcqXSgxT1cw4mOP976H16szPQamsyQNf5IeBNQhdjUNi-MD0HnnFxujFtlq4cSYn7z0WIM6WWKjFT0Q2fO28yX0UwieoQIvHDtJWNWmyB5-LN5MpKj5LZEzxg_e9tovoWDZgTFM_0SSrYqP2rrmOmtHtja337pOUZ60cSPaOc5L8co1MRbG8QS92-8QLEC1admPAnHYoJwKZeKdxEsKqmKn0LlDMvB8bV3kJbTJA9vtbutCzRb8
+is_cover: false
+sort_order: 5
+caption: Amelia Annette Baldwin
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICeuN-pZg!2e10!4m2!3m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc
+
+--- entity_photos [row 10 of 16] ---
+id: f8a4ee75-5205-407c-8745-0841f3da7f62
+entity_slug: the-pool-store
+url: https://places.googleapis.com/v1/places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3kwiuxqEfYnOLAE-qN3f1v8NPIKegCjPsYdRw02_DvMSlN2rj91R8Cit3EYgE7Nv025LNZ9xwIDvj-NUvXbffr0a1lNc-zgDp3DeaHkHVfZYITNwAtbGq9Yb7o3y0MJhBWMiT7oQSF7ejPRYC4FTq543M7ELxPe1k2chguUlrF2QzCzvKoevWTz5VpiWflaLoPUHm_UgPDzKa2f1Q5bpONklAeiFum0CfQHNR-O4EHKG46r7nwS28WVsZrI0H68xsk4kD6aRcJF30jwbSlt6lbj3LjCxsHJZQAnmq1tMxuPqO8HCtOzUpad9kVgIu8UnaDfiGrJR71N3EGpxryRXNSuB7haw1qefc7cm05a7_L3HVLhxkwqrpbGD-azn0dgdAJJ7E_KMxRb7FeRRnfuds35RHnEQBnNYY2IrR0kuP41Eg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3kwiuxqEfYnOLAE-qN3f1v8NPIKegCjPsYdRw02_DvMSlN2rj91R8Cit3EYgE7Nv025LNZ9xwIDvj-NUvXbffr0a1lNc-zgDp3DeaHkHVfZYITNwAtbGq9Yb7o3y0MJhBWMiT7oQSF7ejPRYC4FTq543M7ELxPe1k2chguUlrF2QzCzvKoevWTz5VpiWflaLoPUHm_UgPDzKa2f1Q5bpONklAeiFum0CfQHNR-O4EHKG46r7nwS28WVsZrI0H68xsk4kD6aRcJF30jwbSlt6lbj3LjCxsHJZQAnmq1tMxuPqO8HCtOzUpad9kVgIu8UnaDfiGrJR71N3EGpxryRXNSuB7haw1qefc7cm05a7_L3HVLhxkwqrpbGD-azn0dgdAJJ7E_KMxRb7FeRRnfuds35RHnEQBnNYY2IrR0kuP41Eg
+is_cover: false
+sort_order: 6
+caption: The Pool Store
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICKpZafag!2e10!4m2!3m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc
+
+--- entity_photos [row 11 of 16] ---
+id: 5314ff66-fbff-4270-bda5-db1b3931167a
+entity_slug: the-pool-store
+url: https://places.googleapis.com/v1/places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3kzHTyt5Gwp9XvkhDa_czsOMgMCyo6IhsTKbK9QWWguUzIgahM8hfssSU1WJPuUzqL3v4KAoHceHwRTt84GdfS0hLxtZSAIdcT30MFU5m02Y873_ZnrYgUbV2ekN_fpl-EZ0EQPL7hJ5F_eUsWtUrP2vXNxA2AjqRCDesZudvsdy26pl_ORghKObPaijj2IlsgUZiQP_zEF5MGEM-O901bAlWEF_yRBjJyZnNiSO1V1xGzVoVhM7p_6tGn_c7beV46CNhohKXQgmDHlu-9Pb7ffPk751WfiPZBepa6NVPMaR-N6ZyGbS4GKqd8rWYkpSf1sfVb-WShqdd0OGXJvbIy2hQIvUcJZoJTRxRPNeFfHFbbYEsBwljQB0bkYx8xrwEXFtor3TnbH26VMClBLWsZHqI56QNTLV9qz1p2mTF5SH_Rx7gTbbtf8yLIQbRDX/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3kzHTyt5Gwp9XvkhDa_czsOMgMCyo6IhsTKbK9QWWguUzIgahM8hfssSU1WJPuUzqL3v4KAoHceHwRTt84GdfS0hLxtZSAIdcT30MFU5m02Y873_ZnrYgUbV2ekN_fpl-EZ0EQPL7hJ5F_eUsWtUrP2vXNxA2AjqRCDesZudvsdy26pl_ORghKObPaijj2IlsgUZiQP_zEF5MGEM-O901bAlWEF_yRBjJyZnNiSO1V1xGzVoVhM7p_6tGn_c7beV46CNhohKXQgmDHlu-9Pb7ffPk751WfiPZBepa6NVPMaR-N6ZyGbS4GKqd8rWYkpSf1sfVb-WShqdd0OGXJvbIy2hQIvUcJZoJTRxRPNeFfHFbbYEsBwljQB0bkYx8xrwEXFtor3TnbH26VMClBLWsZHqI56QNTLV9qz1p2mTF5SH_Rx7gTbbtf8yLIQbRDX
+is_cover: false
+sort_order: 7
+caption: The Pool Store
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDhy5P6lLqHfpbkm0wVVc4D!2e10!4m2!3m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc
+
+--- entity_photos [row 12 of 16] ---
+id: fd5e27c7-1874-46bc-89f2-de13a20b6d72
+entity_slug: the-pool-store
+url: https://places.googleapis.com/v1/places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3ltZOjRUearYnlivsO4lPwiVPvySskmQBNmcjFRrzlpywq-x-ifyG9h-8-Ebn9lsjWmUMkQZoxf3m8yzM5T2BTRImki-egr8wk65KYYB3lfBok6jNHslRhIhPi0VO3C00BzVseigyFg44CmxS-BF7Ty6PyETmfgCXw33WswEtC92a-rg_LbkMzWlw43FcxJgj88WM-taO4-9HDjJwFtPKb7yxxUHIY7uDcWegzUZvQhRDh_VZOMH6LvxK02j1WRTfnflUMTl86QBX87ueeuA9afHJJ0Mu6OdeRsMUTdieH2idKdquq9dbr-aOKQeoPToPJzZtVPmBJ1udRsPo8Eo8O38VYd-hOF9IyhRVubN4Uf6DM60gNTamgogj_S88V8B8U2QXQyLLCreU5SWz5V07R_0lLtN1igr3UixmQl03ui_A/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3ltZOjRUearYnlivsO4lPwiVPvySskmQBNmcjFRrzlpywq-x-ifyG9h-8-Ebn9lsjWmUMkQZoxf3m8yzM5T2BTRImki-egr8wk65KYYB3lfBok6jNHslRhIhPi0VO3C00BzVseigyFg44CmxS-BF7Ty6PyETmfgCXw33WswEtC92a-rg_LbkMzWlw43FcxJgj88WM-taO4-9HDjJwFtPKb7yxxUHIY7uDcWegzUZvQhRDh_VZOMH6LvxK02j1WRTfnflUMTl86QBX87ueeuA9afHJJ0Mu6OdeRsMUTdieH2idKdquq9dbr-aOKQeoPToPJzZtVPmBJ1udRsPo8Eo8O38VYd-hOF9IyhRVubN4Uf6DM60gNTamgogj_S88V8B8U2QXQyLLCreU5SWz5V07R_0lLtN1igr3UixmQl03ui_A
+is_cover: false
+sort_order: 8
+caption: The Pool Store
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICKpZaBCg!2e10!4m2!3m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc
+
+--- entity_photos [row 13 of 16] ---
+id: 6cc699c1-4380-4322-ad54-72d75d061ec1
+entity_slug: the-pool-store
+url: https://places.googleapis.com/v1/places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3ll39EegGMN4W6heJtgUX8CsR15b3Blc7z6dqfb3ZimdHlV2pbEda_YtVgMCIq3EExLpvWxP-HoIsVLYtysHbaX4irryPYf2VJf5OVHIoY1SxCCwK1LTCIpN2eBDNrur-p2dUZJwk2VYgpqQgKvfXqlZJhXVIb0fXwieHbsyordZGvv9qi6j4PP8iYCJU_xOpQf9keagbqMQxlgREg6oQFJ4uW8nwdUf0V0Q2WuTBu7Iajm24zeNk0Lq8S5SnxrWFpFxh70HsAKX91m7hq6OiDCkJtZ8azD60Lj9XnnFCZMUfNa0y1I3wNfSxUgDjbHlSqodzcxcz16PeWAgs_XeBa3oQJLREGsxYHVI0hw9laKsGQ45e7PD7pXZ0Rl7ij0bJOlIBP_ruv-JGyGgYhO6IHIYgXMWn9r2dX1kkL_GG9SX2KO8EN0Gf9QnyYpbSCU/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJx8-7CMkImogR3NtTAKezKsc/photos/AaVGc3ll39EegGMN4W6heJtgUX8CsR15b3Blc7z6dqfb3ZimdHlV2pbEda_YtVgMCIq3EExLpvWxP-HoIsVLYtysHbaX4irryPYf2VJf5OVHIoY1SxCCwK1LTCIpN2eBDNrur-p2dUZJwk2VYgpqQgKvfXqlZJhXVIb0fXwieHbsyordZGvv9qi6j4PP8iYCJU_xOpQf9keagbqMQxlgREg6oQFJ4uW8nwdUf0V0Q2WuTBu7Iajm24zeNk0Lq8S5SnxrWFpFxh70HsAKX91m7hq6OiDCkJtZ8azD60Lj9XnnFCZMUfNa0y1I3wNfSxUgDjbHlSqodzcxcz16PeWAgs_XeBa3oQJLREGsxYHVI0hw9laKsGQ45e7PD7pXZ0Rl7ij0bJOlIBP_ruv-JGyGgYhO6IHIYgXMWn9r2dX1kkL_GG9SX2KO8EN0Gf9QnyYpbSCU
+is_cover: false
+sort_order: 9
+caption: The Pool Store
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAYGMqCTSIZqppbalFp0tMX!2e10!4m2!3m1!1s0x889a08c908bbcfc7:0xc72ab3a70053dbdc
+
+--- entity_photos [row 14 of 16] ---
+id: 239d5e38-958e-4d07-be6f-af32624e8138
+entity_slug: the-pool-store
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-pool-store/photo_03.jpg
+is_cover: false
+sort_order: 2
+photo_type: resource
+source_name: bookable_resource
+resource_id: c2c84e1d-0a9e-4fa2-a12f-347bef1c6111
+
+--- entity_photos [row 15 of 16] ---
+id: 830664d5-25c8-401f-be6e-df0b0fa11254
+entity_slug: the-pool-store
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-pool-store/photo_02.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: c2c84e1d-0a9e-4fa2-a12f-347bef1c6111
+
+--- entity_photos [row 16 of 16] ---
+id: 5c98f31e-8443-4173-a096-d332af056bdf
+entity_slug: the-pool-store
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-pool-store/photo_01.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: c2c84e1d-0a9e-4fa2-a12f-347bef1c6111
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: f982e311-ca6b-4eec-90aa-68a192185e93
+entity_slug: the-pool-store
+reviewer_name: Jennifer Taylor
+rating: 5
+body: This is a fantastic family-owned pool store that truly cares about its customers. They go out of their way to meet your needs and make sure you leave satisfied. You can tell they take pride in their work and genuinely want to help. Whether you’re shopping for supplies or just need advice, they’re always friendly  and willing to assist. Highly recommend supporting this local gem!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-07-19T18:03:00.114854+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: a62c7ece-f246-49be-92fa-1c2abd169d38
+entity_slug: the-pool-store
+reviewer_name: Ruben Enriquez
+rating: 5
+body: WOW, what an experience. Just when I was losing faith in pool service companies. My neighbor recommended these folks. Guess what ! They’re fantastic economical reliable. If you’re tired of getting screwed over by Pool Service companies, give these folks a chance they won’t let you down.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-06-04T18:06:07.967993+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: 06406d39-2fc4-4bb5-8d73-3669adc9b15a
+entity_slug: the-pool-store
+reviewer_name: Amelia Annette Baldwin
+rating: 5
+body: We have received good advice here and bought chemicals and had water tested here. Very nice folks.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2022-09-05T23:00:40.376298+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 2dbd440b-dfc8-4325-88a2-ca045daf352e
+entity_slug: the-pool-store
+reviewer_name: Lynn Tjeerdsma
+rating: 5
+body: The Pool Store installed a new pump system and control panel and also am having them service our pool.  They were very dedicated and worked with our new system until it worked flawlessly!
+
+Our pool has never looked better with their dependable servicing and maintenance.
+
+The young lady in the store is very knowledgeable and  offers great service.
+
+Highly recommend to anyone looking for a pool company!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2021-06-10T20:03:51.93667+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 29bb0775-d247-4c68-b610-b0973e9b00a9
+entity_slug: the-pool-store
+reviewer_name: J S
+rating: 5
+body: One of the best and oldest pool maintenance services in town! Highly recommend for your weekly pool maintenance. Great staff!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2022-01-04T15:31:57.736492+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_sources   -   1 row(s)
+####################################################################################################
+
+--- entity_sources [row 1 of 1] ---
+id: 1a0effe5-2ad5-446a-be25-d261999b03ac
+entity_slug: the-pool-store
+source_system: website_scrape_advanced
+source_url: http://gulfshorespoolstore.com/
+scope: profile
+confidence: high
+created_at: 2026-07-16T23:29:34.335105+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   6 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 6] ---
+id: 80575556-24ce-4ef5-8804-d45dc9c9007f
+entity_slug: the-pool-store
+tag_name: service
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 6] ---
+id: f21b8937-e906-427d-ac68-ac6a3ad8b90f
+entity_slug: the-pool-store
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 3 of 6] ---
+id: 1ed27bb6-f234-43af-8a68-489820af5c77
+entity_slug: the-pool-store
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 4 of 6] ---
+id: 05f15008-5719-4784-8151-2992ded2ebcd
+entity_slug: the-pool-store
+tag_name: service
+tag_category: google_primary_type
+
+--- entity_tags [row 5 of 6] ---
+id: eb14b35e-ad90-494e-a68f-758f8a6c8d61
+entity_slug: the-pool-store
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 6 of 6] ---
+id: 39eba471-d3a0-4303-aa49-de4d8bd3d1a7
+entity_slug: the-pool-store
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: c6dd2804-8443-471d-bb92-18517fc6c264
+entity_slug: the-pool-store
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: the-pool-store
+entity_slug: the-pool-store
+title: The Pool Store
+category: service
+search_vector: 'pool':2A 'servic':4B 'store':3A
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 14159
+entity_slug: the-pool-store
+title: The Pool Store
+category: rental
+search_vector: 'pool':2A 'store':3A

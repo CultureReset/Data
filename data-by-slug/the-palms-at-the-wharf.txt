@@ -1,0 +1,1886 @@
+====================================================================================================
+SLUG: the-palms-at-the-wharf
+NAME: The Palms At The Wharf
+INDUSTRY: event_venue
+SUBTYPE: event_venue
+PARENT: the-wharf
+TABLES WITH DATA: 22
+TOTAL ROWS: 108
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (7 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (10 rows)
+  entity  (1 rows)
+  entity_address_areas  (1 rows)
+  entity_attributes  (6 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (3 rows)
+  entity_hours  (5 rows)
+  entity_modules  (16 rows)
+  entity_nearby_landmark_types  (23 rows)
+  entity_nearby_landmarks  (6 rows)
+  entity_photos  (13 rows)
+  entity_reviews  (3 rows)
+  entity_tags  (3 rows)
+  entity_theme  (1 rows)
+  industry_event_venue  (1 rows)
+  legacy_photo_migration_queue  (3 rows)
+  search_index  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: the-palms-at-the-wharf
+name: The Palms At The Wharf
+planner_category: food_drink
+data_quality_score: 75
+issues: missing_summary|missing_menu|missing_faqs
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: true
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: true
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   7 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 7] ---
+id: 17067
+entity_slug: the-palms-at-the-wharf
+intent_tag: best_for:casual_lunch_or_dinner
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 7] ---
+id: 17068
+entity_slug: the-palms-at-the-wharf
+intent_tag: experience:groups_events
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 7] ---
+id: 17069
+entity_slug: the-palms-at-the-wharf
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 7] ---
+id: 17070
+entity_slug: the-palms-at-the-wharf
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 7] ---
+id: 17071
+entity_slug: the-palms-at-the-wharf
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 7] ---
+id: 17072
+entity_slug: the-palms-at-the-wharf
+intent_tag: missing:missing_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 7] ---
+id: 17073
+entity_slug: the-palms-at-the-wharf
+intent_tag: missing:missing_faqs
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: the-palms-at-the-wharf
+name: The Palms At The Wharf
+is_active: t
+planner_category: food_drink
+entity_type: restaurant
+entity_subtype: event_venue
+city: Orange Beach
+state: AL
+address_line_1: 4790 Main St
+latitude: 30.294201800000003
+longitude: -87.6290508
+rating: 4.3
+review_count: 3
+hero_image_url: /photos/the-palms-at-the-wharf/photo_01.jpg
+voice_summary: The Palms At The Wharf in Orange Beach is best for casual lunch or dinner. Experience tags: groups_events.
+planner_summary: The Palms At The Wharf in Orange Beach is a food drink listing in Gulf Coast Radar.
+best_for: casual lunch or dinner
+not_best_for: nothing specific flagged
+experience_tags: groups_events
+service_tags: accessibility
+search_keywords: event_venue|point_of_interest|establishment|groups_events|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 10
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 3
+faq_count: 0
+data_quality_score: 75
+data_gaps: missing_summary|missing_menu|missing_faqs
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   10 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 10] ---
+id: 11629
+entity_slug: the-palms-at-the-wharf
+entity_name: The Palms At The Wharf
+city: Orange Beach
+url: /photos/the-palms-at-the-wharf/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 10] ---
+id: 11630
+entity_slug: the-palms-at-the-wharf
+entity_name: The Palms At The Wharf
+city: Orange Beach
+url: /photos/the-palms-at-the-wharf/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 10] ---
+id: 11631
+entity_slug: the-palms-at-the-wharf
+entity_name: The Palms At The Wharf
+city: Orange Beach
+url: /photos/the-palms-at-the-wharf/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 10] ---
+id: 11632
+entity_slug: the-palms-at-the-wharf
+entity_name: The Palms At The Wharf
+city: Orange Beach
+url: /photos/the-palms-at-the-wharf/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 10] ---
+id: 11633
+entity_slug: the-palms-at-the-wharf
+entity_name: The Palms At The Wharf
+city: Orange Beach
+url: /photos/the-palms-at-the-wharf/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 10] ---
+id: 17617
+entity_slug: the-palms-at-the-wharf
+entity_name: The Palms At The Wharf
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-palms-at-the-wharf/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 10] ---
+id: 18207
+entity_slug: the-palms-at-the-wharf
+entity_name: The Palms At The Wharf
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-palms-at-the-wharf/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 10] ---
+id: 18208
+entity_slug: the-palms-at-the-wharf
+entity_name: The Palms At The Wharf
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-palms-at-the-wharf/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 10] ---
+id: 18209
+entity_slug: the-palms-at-the-wharf
+entity_name: The Palms At The Wharf
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-palms-at-the-wharf/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 10] ---
+id: 18210
+entity_slug: the-palms-at-the-wharf
+entity_name: The Palms At The Wharf
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-palms-at-the-wharf/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: e4c29538-c104-41bd-8228-070f49e8aec2
+slug: the-palms-at-the-wharf
+name: The Palms At The Wharf
+is_active: true
+featured: false
+entity_type: restaurant
+entity_subtype: event_venue
+description: Event Venue in Orange Beach, AL. Rated 4.3★ from 3 reviews.
+phone: (251) 224-1000
+menu_pin: 6220
+address_line_1: 4790 Main St
+city: Orange Beach
+state: AL
+zip: 36561
+latitude: 30.294201800000003
+longitude: -87.6290508
+rating: 4.3
+review_count: 3
+hero_image_url: https://places.googleapis.com/v1/places/ChIJPUlFSMMFmogRXLxdGIUOjLo/photos/AaVGc3lAe5DtG9--RIkucde1UTjSavrqEshNJoYC3HDQHNoHlLfdwqKClkJJHJyxFA-FDxvbh7_p9SkyW61V2FT6uSe8Apf6TFf2vR3zE1h7uOTg6FKRkjEYTHiwr7KJbMcitvqiQzuPi3AL_mN1qjqa1rGSRov6VzzKZ6wEHvlLGSSnKV4YkBi_ehO4NlI41ANpnPVogdGxY9Jc3jOk_6prbinw3bUELKmbbB6__AY9OH0zlWHVFDrp8j1B8ponjiC96cwpW1z1C2jwz84zX4r6TxJUQXcIiBeD7b7OdF7Mmsr56iQLKYnMWlTAdQlY1Z9DtE0kVo4LbAbVrAX8LjeZWrIPS96S9PvyUimBZC1aZq8hZx8WLhv2VG8PJk2ymPEpnH8zduUvNVqjXnRmM5NA1sV7RYX5WS9SGpZZbkX6JLx5yA/media?maxHeightPx=1600&maxWidthPx=1600
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T04:02:37.795728+00:00
+updated_at: 2026-07-03T16:21:47.586927+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJPUlFSMMFmogRXLxdGIUOjLo
+google_maps_uri: https://maps.google.com/?cid=13442134952596323420&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: event_venue
+formatted_address: 4790 Main St, Orange Beach, AL 36561, USA
+plus_code: 862J79VC+M9
+international_phone: +1 251-224-1000
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+wheelchair_accessible_restroom: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+google_places_data: {
+  "id": "ChIJPUlFSMMFmogRXLxdGIUOjLo",
+  "types": [
+    "event_venue",
+    "point_of_interest",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJPUlFSMMFmogRXLxdGIUOjLo/photos/AaVGc3lAe5DtG9--RIkucde1UTjSavrqEshNJoYC3HDQHNoHlLfdwqKClkJJHJyxFA-FDxvbh7_p9SkyW61V2FT6uSe8Apf6TFf2vR3zE1h7uOTg6FKRkjEYTHiwr7KJbMcitvqiQzuPi3AL_mN1qjqa1rGSRov6VzzKZ6wEHvlLGSSnKV4YkBi_ehO4NlI41ANpnPVogdGxY9Jc3jOk_6prbinw3bUELKmbbB6__AY9OH0zlWHVFDrp8j1B8ponjiC96cwpW1z1C2jwz84zX4r6TxJUQXcIiBeD7b7OdF7Mmsr56iQLKYnMWlTAdQlY1Z9DtE0kVo4LbAbVrAX8LjeZWrIPS96S9PvyUimBZC1aZq8hZx8WLhv2VG8PJk2ymPEpnH8zduUvNVqjXnRmM5NA1sV7RYX5WS9SGpZZbkX6JLx5yA",
+      "widthPx": 4032,
+      "heightPx": 2268,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICBrs7WDQ!2e10!4m2!3m1!1s0x889a05c34845493d:0xba8c0e85185dbc5c",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICBrs7WDQ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/109921603556543928676",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLn0iwoz6A0HNcu2KpFqZzxtHCpvbHns-WVNNPQahr-MzKoeV8j=s100-p-k-no-mo",
+          "displayName": "Chris Huebschman"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJPUlFSMMFmogRXLxdGIUOjLo/photos/AaVGc3kHtDlis73eEvQJm1_3FrACdheiqjPLto3vDvsP3U_Ukx1aBEo0Hy8LMxWYsJdgn4euREMALX3zTlzcv69_J4udgoORVxA8S0IL0QdoKxnNVygEo_ei_GILKv0qLA9Hf4CEeTvP_NL3syo-4Un3LvWp3LMQQgRAm18LEDjEdtMOR94BZbshhjKpioPcKLdTrKOJL_eqvSK-6J49a3JvA0icaXyEp7viqjPv4SiGlRraLZ-N4HAaUO67t-WERXghW1MaczXmjobiJV1W6ffYpWYr8j6PorIKBcvbcdol-Bst_8M6epfjoXHzDJzoAK3RaC8g-HQ-_BCuYM8X8bVeLr6HBCEnTwE6zUwMm9BCBDnJ7SZeHdWxRqsCizqDT4fHLCh1iqO71W-LlcIUCM2M082nRtlGQ75AsKpdftSZaLAhDA",
+      "widthPx": 4000,
+      "heightPx": 1848,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICxvuzCaQ!2e10!4m2!3m1!1s0x889a05c34845493d:0xba8c0e85185dbc5c",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICxvuzCaQ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104245531968752705992",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWwk8dWsi_AEe5lXW7x11jLJLRoyW7j997b1sIFYxKCpv9KQIHh=s100-p-k-no-mo",
+          "displayName": "Daniel Shrider"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJPUlFSMMFmogRXLxdGIUOjLo/photos/AaVGc3mmKkqmLLS6VXjqxkfPTTyuN6P4DZGgDFuQITZMknl1yAX0SQzy90HrzRgJ8XE8S1Nlv-dDnabZ9ZMUdzJ76MTMhe9E2hxxjSLlHo3aFNj2nRfV5yosse7DzJZHpGqdOltC-96dKjbzdaXFZ6Ojq5gzZ1IX82UswF1l64mIJkrO1jEjK1bpDU_EB9M1D-_lJgmVYC4BrzpRMhLHpXD7o3yBQ5vCz0TS_z9XHIa4HAYKbbG97aeb2Icrkxn2ufugowg-mVQGD2_PP7SpHTR1F0aCq1Ao5k09mHGNsEySi7WF--uCzUAJsle-jtj5FDN-t7oRc3bQmINQbQN-dNDEY_BBVLzVfxE7mAP_ltWQ4jbvw9B_2V6sV8u87coTlOYf8gF09RKhWy54BA8pNQHFKzMIAaakH86u_Dxy8KdYgtMKXA",
+      "widthPx": 745,
+      "heightPx": 720,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDEjJGxCA!2e10!4m2!3m1!1s0x889a05c34845493d:0xba8c0e85185dbc5c",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDEjJGxCA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/102518204278033841621",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIkbTHAt8a4QZ3A_h3lCoItcotAWLgn9eK9qd1aTVeGxjrZ=s100-p-k-no-mo",
+          "displayName": "Charlotte Henderson"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJPUlFSMMFmogRXLxdGIUOjLo/photos/AaVGc3lEBys900hAa-De7H5dT-ZZtk6PcS72oS8rg6iafTzJGJYxiUVEAmTgzGhJJNsdQg50YLUHj8e1ImDKuOwy1D1pWWSc2rW8MDiXkO_PfpU9X0EO9IxT1JAPo6p2rweRcylo_E19WWroRatkouD6MNM8zCT_lWlz7LwRxrer5Q34JG_pqspIkYGCxgBoHvv2DAhI9k-S-HbGoEgKwF4ymyOEhfEdIcXpsKDcG7XLubaRMu3uHoE9k440dHY5CZDHDUEaY3KZL-S75ke8l6JqW0SD7pQqAupE6mYn3G6lYrxrgdDfSoIlSIt8vHHkpeL0m0qagvSWZNasbSK1YxvaxyTEROan5Q1YD1nX8lQHK9Gsfb6o01cK5KNlDocYk6xbMUYEBesDAy9FnmhBCxohvUtJz18Da4Q3-Iv0p3k4Iyg",
+      "widthPx": 4032,
+      "heightPx": 1816,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDxu7ruRA!2e10!4m2!3m1!1s0x889a05c34845493d:0xba8c0e85185dbc5c",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDxu7ruRA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/118184293260209819998",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXWJXyNfpJltyJbCnyFmr3LJMaZW_znrit8UmXTVXlWbm0A-wA9=s100-p-k-no-mo",
+          "displayName": "Renato Martins"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJPUlFSMMFmogRXLxdGIUOjLo/photos/AaVGc3m3Y7J_hleSkWgLyrdg_34y97otwVmR3SRvNncLBFRBebFYyzw7Eh0bInYgm7wtCp4Lhd3yFwWJxo5WZJv-tN3CTvrQmeWrnh9rMfa0NOTEF3bRCMFo_hvpgQKyixt9IySqoIFaeNmIuO8Q6UsB0lo8AJiWKFYI2DD3dHyfhh0j03ACvDsR8K_Ia9fAGpzrrbe0nCN1RdP0B6RaZQsnUxvEhDTSS3l3yOjFGLNINfePH4L4OwUfsMr2pAiEDGJFM_tm07iHZeIixDn16mhoDHTPHg13j2J5QyQg4V8CMtjw4s3EN5B-fhc5C2sOiFNQubTl8rLNM6fuycO9xeQQBQF9TZJBxeV3SPfVLnRNd9hINqdR_R0lASdeMTff7wxxqlQEv46_mmZoMkJNJGj-GZRn-cRHatj_aldwrTuJqiRBj0Yq",
+      "widthPx": 3072,
+      "heightPx": 4096,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIChyvr1qwE!2e10!4m2!3m1!1s0x889a05c34845493d:0xba8c0e85185dbc5c",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIChyvr1qwE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/100114285676529578168",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVju2fHedHpm41oTUmHKD23wViCiON23N5_cb8w2VyTaicFzTjGFw=s100-p-k-no-mo",
+          "displayName": "Melinda Pernestti"
+        }
+      ]
+    }
+  ],
+  "rating": 4.3,
+  "reviews": [
+    {
+      "name": "places/ChIJPUlFSMMFmogRXLxdGIUOjLo/reviews/ChZDSUhNMG9nS0VJQ0FnSURHaHJ5NE1REAE",
+      "text": {
+        "text": "Just got here!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2021-11-25T20:48:15.141240Z",
+      "originalText": {
+        "text": "Just got here!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURHaHJ5NE1REAE!2m1!1s0x889a05c34845493d:0xba8c0e85185dbc5c",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURHaHJ5NE1REAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/104997400457775093712/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLVvB8jzADreklE4ifVeS-PqvHjsQZULEHVr3SrM8KDHqkJAw=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Raymond McConnell"
+      },
+      "relativePublishTimeDescription": "4 years ago"
+    },
+    {
+      "name": "places/ChIJPUlFSMMFmogRXLxdGIUOjLo/reviews/ChZDSUhNMG9nS0VJQ0FnSURPMGM2akF3EAE",
+      "rating": 5,
+      "publishTime": "2022-07-07T18:25:58.718653Z",
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURPMGM2akF3EAE!2m1!1s0x889a05c34845493d:0xba8c0e85185dbc5c",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURPMGM2akF3EAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/107185825166666969624/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWFhkAWKFzjrssucOXRWOnRJ22TaYuMLSlAB0XLZiy3whkNqFpJ=s128-c0x00000000-cc-rp-mo-ba2",
+        "displayName": "Debbie Ruttenbur"
+      },
+      "relativePublishTimeDescription": "3 years ago"
+    },
+    {
+      "name": "places/ChIJPUlFSMMFmogRXLxdGIUOjLo/reviews/ChdDSUhNMG9nS0VJQ0FnSUNnN3FxZm1nRRAB",
+      "rating": 3,
+      "publishTime": "2016-08-04T15:23:27.362Z",
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNnN3FxZm1nRRAB!2m1!1s0x889a05c34845493d:0xba8c0e85185dbc5c",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNnN3FxZm1nRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/111649480238707803289/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVTS1zE_nwpuwEoOt28fUk7JbD2Hos8tCWqvbgRnG9y3YYNF4KH=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Andrew Branscum"
+      },
+      "relativePublishTimeDescription": "9 years ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.294201800000003,
+    "longitude": -87.6290508
+  },
+  "plusCode": {
+    "globalCode": "862J79VC+M9",
+    "compoundCode": "79VC+M9 Orange Beach, AL, USA"
+  },
+  "restroom": true,
+  "viewport": {
+    "low": {
+      "latitude": 30.292882469708502,
+      "longitude": -87.6303295802915
+    },
+    "high": {
+      "latitude": 30.2955804302915,
+      "longitude": -87.6276316197085
+    }
+  },
+  "displayName": {
+    "text": "The Palms At The Wharf",
+    "languageCode": "en"
+  },
+  "primaryType": "event_venue",
+  "googleMapsUri": "https://maps.google.com/?cid=13442134952596323420&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "paymentOptions": {
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=13442134952596323420&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05c34845493d:0xba8c0e85185dbc5c!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05c34845493d:0xba8c0e85185dbc5c!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05c34845493d:0xba8c0e85185dbc5c!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05c34845493d:0xba8c0e85185dbc5c!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "userRatingCount": 3,
+  "adrFormatAddress": "<span class=\"street-address\">4790 Main St</span>, <span class=\"locality\">Orange Beach</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36561</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "4790 Main St, Orange Beach, AL 36561, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "4790",
+      "shortText": "4790",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Main Street",
+      "shortText": "Main St",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Orange Beach",
+      "shortText": "Orange Beach",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36561",
+      "shortText": "36561",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJ7T7Xq9wFmogRahIOl40NkO4",
+        "placeId": "ChIJ7T7Xq9wFmogRahIOl40NkO4",
+        "containment": "WITHIN",
+        "displayName": {
+          "text": "The Wharf",
+          "languageCode": "en"
+        }
+      }
+    ],
+    "landmarks": [
+      {
+        "name": "places/ChIJvfvStq0FmogRzhDmwHKhsDA",
+        "types": [
+          "establishment",
+          "food",
+          "point_of_interest",
+          "restaurant",
+          "shopping_mall",
+          "tourist_attraction"
+        ],
+        "placeId": "ChIJvfvStq0FmogRzhDmwHKhsDA",
+        "displayName": {
+          "text": "The Wharf",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "WITHIN",
+        "travelDistanceMeters": 332.01733,
+        "straightLineDistanceMeters": 128.29407
+      },
+      {
+        "name": "places/ChIJjUVMSMMFmogRb0-XfuWyIEY",
+        "types": [
+          "bar",
+          "establishment",
+          "food",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJjUVMSMMFmogRb0-XfuWyIEY",
+        "displayName": {
+          "text": "Ginny Lane Bar and Grill",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 119.10723,
+        "straightLineDistanceMeters": 67.2638
+      },
+      {
+        "name": "places/ChIJP3KjbsQFmogROsuRYtNn7qU",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJP3KjbsQFmogROsuRYtNn7qU",
+        "displayName": {
+          "text": "The Wharf Marina",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 43.58507,
+        "straightLineDistanceMeters": 67.2638
+      },
+      {
+        "name": "places/ChIJw7XRVtsFmogRfOO_7qsC_pE",
+        "types": [
+          "clothing_store",
+          "establishment",
+          "point_of_interest",
+          "shoe_store",
+          "store"
+        ],
+        "placeId": "ChIJw7XRVtsFmogRfOO_7qsC_pE",
+        "displayName": {
+          "text": "Seaside Shoes & SWIM",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "DOWN_THE_ROAD",
+        "travelDistanceMeters": 25.69502,
+        "straightLineDistanceMeters": 27.984793
+      },
+      {
+        "name": "places/ChIJbaMnU8MFmogRz0WOaS-DJqQ",
+        "types": [
+          "bar",
+          "establishment",
+          "food",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJbaMnU8MFmogRz0WOaS-DJqQ",
+        "displayName": {
+          "text": "Villaggio Grille",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "BESIDE",
+        "travelDistanceMeters": 19.559448,
+        "straightLineDistanceMeters": 23.355572
+      }
+    ]
+  },
+  "currentOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 17,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T13:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 8:00 AM – 5:00 PM",
+      "Tuesday: 8:00 AM – 5:00 PM",
+      "Wednesday: 8:00 AM – 5:00 PM",
+      "Thursday: 8:00 AM – 5:00 PM",
+      "Friday: 8:00 AM – 5:00 PM",
+      "Saturday: Closed",
+      "Sunday: Closed"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Event Venue",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "nationalPhoneNumber": "(251) 224-1000",
+  "regularOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 1,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 17,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T13:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 8:00 AM – 5:00 PM",
+      "Tuesday: 8:00 AM – 5:00 PM",
+      "Wednesday: 8:00 AM – 5:00 PM",
+      "Thursday: 8:00 AM – 5:00 PM",
+      "Friday: 8:00 AM – 5:00 PM",
+      "Saturday: Closed",
+      "Sunday: Closed"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true,
+    "wheelchairAccessibleRestroom": true
+  },
+  "shortFormattedAddress": "4790 Main St, Orange Beach",
+  "primaryTypeDisplayName": {
+    "text": "Event Venue",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-224-1000"
+}
+restroom: true
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 4790 Main St, Orange Beach
+national_phone: (251) 224-1000
+search_vector: 'beach':9 'event':6 'orang':8 'palm':2A 'venu':7 'wharf':5A
+primary_type_display: Event Venue
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=13442134952596323420&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05c34845493d:0xba8c0e85185dbc5c!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05c34845493d:0xba8c0e85185dbc5c!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05c34845493d:0xba8c0e85185dbc5c!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05c34845493d:0xba8c0e85185dbc5c!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJ7T7Xq9wFmogRahIOl40NkO4",
+      "placeId": "ChIJ7T7Xq9wFmogRahIOl40NkO4",
+      "containment": "WITHIN",
+      "displayName": {
+        "text": "The Wharf",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJvfvStq0FmogRzhDmwHKhsDA",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant",
+        "shopping_mall",
+        "tourist_attraction"
+      ],
+      "placeId": "ChIJvfvStq0FmogRzhDmwHKhsDA",
+      "displayName": {
+        "text": "The Wharf",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "WITHIN",
+      "travelDistanceMeters": 332.01733,
+      "straightLineDistanceMeters": 128.29407
+    },
+    {
+      "name": "places/ChIJjUVMSMMFmogRb0-XfuWyIEY",
+      "types": [
+        "bar",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJjUVMSMMFmogRb0-XfuWyIEY",
+      "displayName": {
+        "text": "Ginny Lane Bar and Grill",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 119.10723,
+      "straightLineDistanceMeters": 67.2638
+    },
+    {
+      "name": "places/ChIJP3KjbsQFmogROsuRYtNn7qU",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJP3KjbsQFmogROsuRYtNn7qU",
+      "displayName": {
+        "text": "The Wharf Marina",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 43.58507,
+      "straightLineDistanceMeters": 67.2638
+    },
+    {
+      "name": "places/ChIJw7XRVtsFmogRfOO_7qsC_pE",
+      "types": [
+        "clothing_store",
+        "establishment",
+        "point_of_interest",
+        "shoe_store",
+        "store"
+      ],
+      "placeId": "ChIJw7XRVtsFmogRfOO_7qsC_pE",
+      "displayName": {
+        "text": "Seaside Shoes & SWIM",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "DOWN_THE_ROAD",
+      "travelDistanceMeters": 25.69502,
+      "straightLineDistanceMeters": 27.984793
+    },
+    {
+      "name": "places/ChIJbaMnU8MFmogRz0WOaS-DJqQ",
+      "types": [
+        "bar",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJbaMnU8MFmogRz0WOaS-DJqQ",
+      "displayName": {
+        "text": "Villaggio Grille",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "BESIDE",
+      "travelDistanceMeters": 19.559448,
+      "straightLineDistanceMeters": 23.355572
+    }
+  ]
+}
+parent_entity_slug: the-wharf
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url | hero_image_url v2-fix 2026-07-21: repointed to a photo confirmed to actually exist
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: menu
+industry_code: event_venue
+is_parent: false
+depth: 1
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   1 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 1] ---
+id: cc366581-5bad-432d-a49b-9e9d9eda4b74
+entity_slug: the-palms-at-the-wharf
+place_id: ChIJ7T7Xq9wFmogRahIOl40NkO4
+containment: WITHIN
+display_name: The Wharf
+
+####################################################################################################
+# TABLE: entity_attributes   -   6 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 6] ---
+id: f10a3f58-9e0c-4482-9a28-6f8aaece311f
+entity_slug: the-palms-at-the-wharf
+category: amenity
+key: restroom
+label: Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 2 of 6] ---
+id: 585bcec4-f2ac-4609-86ae-6e023ca4560f
+entity_slug: the-palms-at-the-wharf
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 3 of 6] ---
+id: 092a7dbb-851b-48eb-94e4-2ceb91797880
+entity_slug: the-palms-at-the-wharf
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 4 of 6] ---
+id: d5ceed09-9296-43ad-9693-7589a00a988b
+entity_slug: the-palms-at-the-wharf
+category: accessibility
+key: access_wheelchairAccessibleRestroom
+label: Wheelchair Accessible Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 5 of 6] ---
+id: 89c072dd-cb42-4e03-968c-ea5e1bcc2131
+entity_slug: the-palms-at-the-wharf
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 6 of 6] ---
+id: a830e4f3-5e78-41c6-995e-9c9c04bffe78
+entity_slug: the-palms-at-the-wharf
+category: payment
+key: pay_acceptsCreditCards
+label: Accepts Credit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: the-palms-at-the-wharf
+name: The Palms At The Wharf
+industry_code: event_venue
+parent_entity_slug: the-wharf
+is_parent: false
+score_of_7: 5
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 542682f6-6cf6-4411-b2b2-51f790d25bc5
+entity_slug: the-palms-at-the-wharf
+place_uri: https://maps.google.com/?cid=13442134952596323420&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05c34845493d:0xba8c0e85185dbc5c!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05c34845493d:0xba8c0e85185dbc5c!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05c34845493d:0xba8c0e85185dbc5c!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05c34845493d:0xba8c0e85185dbc5c!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   3 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 3] ---
+review_id: 10399
+entity_slug: the-palms-at-the-wharf
+google_review_name: places/ChIJPUlFSMMFmogRXLxdGIUOjLo/reviews/ChZDSUhNMG9nS0VJQ0FnSURHaHJ5NE1REAE
+rating: 5
+review_text: Just got here!
+language_code: en
+author_name: Raymond McConnell
+author_profile_url: https://www.google.com/maps/contrib/104997400457775093712/reviews
+publish_time: 2021-11-25T20:48:15.14124+00:00
+relative_time: 4 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURHaHJ5NE1REAE!2m1!1s0x889a05c34845493d:0xba8c0e85185dbc5c
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 3] ---
+review_id: 10400
+entity_slug: the-palms-at-the-wharf
+google_review_name: places/ChIJPUlFSMMFmogRXLxdGIUOjLo/reviews/ChZDSUhNMG9nS0VJQ0FnSURPMGM2akF3EAE
+rating: 5
+author_name: Debbie Ruttenbur
+author_profile_url: https://www.google.com/maps/contrib/107185825166666969624/reviews
+publish_time: 2022-07-07T18:25:58.718653+00:00
+relative_time: 3 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURPMGM2akF3EAE!2m1!1s0x889a05c34845493d:0xba8c0e85185dbc5c
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 3] ---
+review_id: 10401
+entity_slug: the-palms-at-the-wharf
+google_review_name: places/ChIJPUlFSMMFmogRXLxdGIUOjLo/reviews/ChdDSUhNMG9nS0VJQ0FnSUNnN3FxZm1nRRAB
+rating: 3
+author_name: Andrew Branscum
+author_profile_url: https://www.google.com/maps/contrib/111649480238707803289/reviews
+publish_time: 2016-08-04T15:23:27.362+00:00
+relative_time: 9 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNnN3FxZm1nRRAB!2m1!1s0x889a05c34845493d:0xba8c0e85185dbc5c
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   5 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 5] ---
+id: 8096bedc-a26c-48ee-a9df-69200af3cadd
+entity_slug: the-palms-at-the-wharf
+day_of_week: 1
+opens_at: 08:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 5] ---
+id: 86b66875-b47a-4789-b73c-eba788a34b89
+entity_slug: the-palms-at-the-wharf
+day_of_week: 2
+opens_at: 08:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 5] ---
+id: cbb7a948-d3b2-42de-af83-138d72698594
+entity_slug: the-palms-at-the-wharf
+day_of_week: 3
+opens_at: 08:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 5] ---
+id: d13479c4-a867-41d5-91e7-38bc014ba323
+entity_slug: the-palms-at-the-wharf
+day_of_week: 4
+opens_at: 08:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 5] ---
+id: fe58d4b6-ea23-41f1-a1db-aec64b44afe5
+entity_slug: the-palms-at-the-wharf
+day_of_week: 5
+opens_at: 08:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_modules   -   16 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 16] ---
+id: 5b2ac979-c32a-4bdb-83e3-736a2ffd9579
+entity_slug: the-palms-at-the-wharf
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 16] ---
+id: 89376eb0-ecb7-4041-8395-c76cd35c1705
+entity_slug: the-palms-at-the-wharf
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 16] ---
+id: 42a40c88-49f8-43c6-9a71-53cc00e5b494
+entity_slug: the-palms-at-the-wharf
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 16] ---
+id: 2b63e856-7d54-46b9-a039-be7f843b94dd
+entity_slug: the-palms-at-the-wharf
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 16] ---
+id: d634a47a-9540-47f1-b181-ec3750f2c13b
+entity_slug: the-palms-at-the-wharf
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 16] ---
+id: 0ee88e6d-1c2d-4c7d-b8bd-e457077bf582
+entity_slug: the-palms-at-the-wharf
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 16] ---
+id: 1bef8c31-e969-453d-bbdf-ee90a991a3e8
+entity_slug: the-palms-at-the-wharf
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 16] ---
+id: b1636b71-e382-4212-948b-547dbadcac5b
+entity_slug: the-palms-at-the-wharf
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 16] ---
+id: 143e192e-2eb3-495f-a9aa-124f674287ab
+entity_slug: the-palms-at-the-wharf
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 16] ---
+id: f076d10d-0616-4511-882b-4850b1e4d95f
+entity_slug: the-palms-at-the-wharf
+module_key: menu
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 16] ---
+id: 93da31be-38a8-4ed4-bd58-125ac3d89595
+entity_slug: the-palms-at-the-wharf
+module_key: drinks
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 16] ---
+id: dca1652a-9280-49a0-87a7-56ad44fd7238
+entity_slug: the-palms-at-the-wharf
+module_key: happy_hour
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 16] ---
+id: 65d35d8a-3086-4ad8-abcb-32e50a43d615
+entity_slug: the-palms-at-the-wharf
+module_key: specials
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 14 of 16] ---
+id: b839a6a6-0318-4905-aa2f-6e0273f10c74
+entity_slug: the-palms-at-the-wharf
+module_key: events
+enabled: true
+sort_order: 14
+
+--- entity_modules [row 15 of 16] ---
+id: 968c2d24-13af-4d73-9acb-edb3c6dfac93
+entity_slug: the-palms-at-the-wharf
+module_key: loyalty
+enabled: true
+sort_order: 15
+
+--- entity_modules [row 16 of 16] ---
+id: 1e360ebf-c8c5-410a-8e3a-a9f4eeb11efb
+entity_slug: the-palms-at-the-wharf
+module_key: booking
+enabled: true
+sort_order: 16
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   23 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 23] ---
+id: 0bfe7d50-618b-4894-8290-f669b5e98ef2
+landmark_id: e9a6ed0e-d4ff-4b4c-9003-dd3e9860ee6a
+entity_slug: the-palms-at-the-wharf
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 23] ---
+id: c9f7c039-4dbc-43d5-bc05-61a4ede5355b
+landmark_id: e9a6ed0e-d4ff-4b4c-9003-dd3e9860ee6a
+entity_slug: the-palms-at-the-wharf
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 23] ---
+id: 02f38c1f-7577-4550-ab63-e6ad6436e127
+landmark_id: e9a6ed0e-d4ff-4b4c-9003-dd3e9860ee6a
+entity_slug: the-palms-at-the-wharf
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 23] ---
+id: 6bd74da4-6be4-429c-954c-6ff6541ecc39
+landmark_id: e9a6ed0e-d4ff-4b4c-9003-dd3e9860ee6a
+entity_slug: the-palms-at-the-wharf
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 23] ---
+id: c8d2409b-ada1-48a4-a619-9810ab875e80
+landmark_id: e9a6ed0e-d4ff-4b4c-9003-dd3e9860ee6a
+entity_slug: the-palms-at-the-wharf
+landmark_type: shopping_mall
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 23] ---
+id: 3ff2a3a1-bcd4-4a13-906e-02048f1bb9b3
+landmark_id: e9a6ed0e-d4ff-4b4c-9003-dd3e9860ee6a
+entity_slug: the-palms-at-the-wharf
+landmark_type: tourist_attraction
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 23] ---
+id: 9497973a-c4e3-4270-8928-457329cd8fc5
+landmark_id: 74e21d81-4e2b-43b0-8434-bfdc586bcd04
+entity_slug: the-palms-at-the-wharf
+landmark_type: bar
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 23] ---
+id: aec9af7c-53c3-4a02-ae2f-a2b414c3d35d
+landmark_id: 74e21d81-4e2b-43b0-8434-bfdc586bcd04
+entity_slug: the-palms-at-the-wharf
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 23] ---
+id: d981272c-bc6f-47d7-a122-6665144d01ee
+landmark_id: 74e21d81-4e2b-43b0-8434-bfdc586bcd04
+entity_slug: the-palms-at-the-wharf
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 23] ---
+id: 196a3789-975a-45bc-9dfd-0b568a497ba9
+landmark_id: 74e21d81-4e2b-43b0-8434-bfdc586bcd04
+entity_slug: the-palms-at-the-wharf
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 23] ---
+id: c0a9ef01-c44a-4211-a51d-dcb28b04a234
+landmark_id: 74e21d81-4e2b-43b0-8434-bfdc586bcd04
+entity_slug: the-palms-at-the-wharf
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 23] ---
+id: 31fe1e12-a7f0-4a34-848e-8f5e01a5da04
+landmark_id: d2c23fc5-b8cb-4ed3-a7ac-b963f592f6a7
+entity_slug: the-palms-at-the-wharf
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 23] ---
+id: a4f288bf-2725-4607-a8f1-2299e8fd8bdf
+landmark_id: d2c23fc5-b8cb-4ed3-a7ac-b963f592f6a7
+entity_slug: the-palms-at-the-wharf
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 23] ---
+id: ed35cb7e-a211-4bb7-9426-5b1f1e8973d9
+landmark_id: 79a35dab-8966-4ae5-912e-40026bc6c1b4
+entity_slug: the-palms-at-the-wharf
+landmark_type: clothing_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 23] ---
+id: 3e9fb9e1-1fbd-4995-8e4f-ca2af2fe8932
+landmark_id: 79a35dab-8966-4ae5-912e-40026bc6c1b4
+entity_slug: the-palms-at-the-wharf
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 23] ---
+id: 11ff92b4-4ea6-48fa-832f-6eedd7a50be1
+landmark_id: 79a35dab-8966-4ae5-912e-40026bc6c1b4
+entity_slug: the-palms-at-the-wharf
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 23] ---
+id: e553eb98-821b-4bb4-91aa-fd773eef6ded
+landmark_id: 79a35dab-8966-4ae5-912e-40026bc6c1b4
+entity_slug: the-palms-at-the-wharf
+landmark_type: shoe_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 23] ---
+id: 149175c0-9c8f-4f7d-8ac9-12e1c6d749eb
+landmark_id: 79a35dab-8966-4ae5-912e-40026bc6c1b4
+entity_slug: the-palms-at-the-wharf
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 19 of 23] ---
+id: b63f11fa-b1c2-4b18-a3e8-c06306775736
+landmark_id: e4ff95ca-3fab-4435-879b-697694310e64
+entity_slug: the-palms-at-the-wharf
+landmark_type: bar
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 20 of 23] ---
+id: 242e77eb-66f9-44aa-b49a-4737f41273e6
+landmark_id: e4ff95ca-3fab-4435-879b-697694310e64
+entity_slug: the-palms-at-the-wharf
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 21 of 23] ---
+id: 18941bfd-08d6-4acc-b444-23ddf3d1404c
+landmark_id: e4ff95ca-3fab-4435-879b-697694310e64
+entity_slug: the-palms-at-the-wharf
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 22 of 23] ---
+id: 5ba31342-07f3-42ba-a419-280ee32f95cc
+landmark_id: e4ff95ca-3fab-4435-879b-697694310e64
+entity_slug: the-palms-at-the-wharf
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 23 of 23] ---
+id: 05287cc1-14d6-467f-bcfa-bc347fcaf3b8
+landmark_id: e4ff95ca-3fab-4435-879b-697694310e64
+entity_slug: the-palms-at-the-wharf
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   6 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 6] ---
+id: e9a6ed0e-d4ff-4b4c-9003-dd3e9860ee6a
+entity_slug: the-palms-at-the-wharf
+kind: landmark
+place_id: ChIJvfvStq0FmogRzhDmwHKhsDA
+name: The Wharf
+types: [
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant",
+  "shopping_mall",
+  "tourist_attraction"
+]
+spatial_relationship: WITHIN
+travel_distance_meters: 332.01733
+straight_line_distance_meters: 128.29407
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 6] ---
+id: 74e21d81-4e2b-43b0-8434-bfdc586bcd04
+entity_slug: the-palms-at-the-wharf
+kind: landmark
+place_id: ChIJjUVMSMMFmogRb0-XfuWyIEY
+name: Ginny Lane Bar and Grill
+types: [
+  "bar",
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant"
+]
+travel_distance_meters: 119.10723
+straight_line_distance_meters: 67.2638
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 6] ---
+id: d2c23fc5-b8cb-4ed3-a7ac-b963f592f6a7
+entity_slug: the-palms-at-the-wharf
+kind: landmark
+place_id: ChIJP3KjbsQFmogROsuRYtNn7qU
+name: The Wharf Marina
+types: [
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 43.58507
+straight_line_distance_meters: 67.2638
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 6] ---
+id: 79a35dab-8966-4ae5-912e-40026bc6c1b4
+entity_slug: the-palms-at-the-wharf
+kind: landmark
+place_id: ChIJw7XRVtsFmogRfOO_7qsC_pE
+name: Seaside Shoes & SWIM
+types: [
+  "clothing_store",
+  "establishment",
+  "point_of_interest",
+  "shoe_store",
+  "store"
+]
+spatial_relationship: DOWN_THE_ROAD
+travel_distance_meters: 25.69502
+straight_line_distance_meters: 27.984793
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 6] ---
+id: e4ff95ca-3fab-4435-879b-697694310e64
+entity_slug: the-palms-at-the-wharf
+kind: landmark
+place_id: ChIJbaMnU8MFmogRz0WOaS-DJqQ
+name: Villaggio Grille
+types: [
+  "bar",
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant"
+]
+spatial_relationship: BESIDE
+travel_distance_meters: 19.559448
+straight_line_distance_meters: 23.355572
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 6 of 6] ---
+id: 16d57994-808c-42b7-b099-691040c5645a
+entity_slug: the-palms-at-the-wharf
+kind: area
+place_id: ChIJ7T7Xq9wFmogRahIOl40NkO4
+name: The Wharf
+containment: WITHIN
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_photos   -   13 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 13] ---
+id: 6b6b2fab-d455-492a-a572-443d587ac71f
+entity_slug: the-palms-at-the-wharf
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-palms-at-the-wharf/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 13] ---
+id: 55cbb5b3-c096-47df-a2af-1a6fefb87d8d
+entity_slug: the-palms-at-the-wharf
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-palms-at-the-wharf/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 13] ---
+id: 9563a64f-33a3-479c-8b2e-43242ba5bc47
+entity_slug: the-palms-at-the-wharf
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-palms-at-the-wharf/photo_03.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 4 of 13] ---
+id: 3ce6a973-c071-4f55-9e29-6de438bcb795
+entity_slug: the-palms-at-the-wharf
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-palms-at-the-wharf/photo_04.jpg
+is_cover: false
+sort_order: 3
+
+--- entity_photos [row 5 of 13] ---
+id: 0e33a42c-3534-4f02-aa3b-4d9ef10692d9
+entity_slug: the-palms-at-the-wharf
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-palms-at-the-wharf/photo_05.jpg
+is_cover: false
+sort_order: 4
+
+--- entity_photos [row 6 of 13] ---
+id: c025755e-412c-41c9-8d55-8c4ddb276cb7
+entity_slug: the-palms-at-the-wharf
+url: https://places.googleapis.com/v1/places/ChIJPUlFSMMFmogRXLxdGIUOjLo/photos/AaVGc3lAe5DtG9--RIkucde1UTjSavrqEshNJoYC3HDQHNoHlLfdwqKClkJJHJyxFA-FDxvbh7_p9SkyW61V2FT6uSe8Apf6TFf2vR3zE1h7uOTg6FKRkjEYTHiwr7KJbMcitvqiQzuPi3AL_mN1qjqa1rGSRov6VzzKZ6wEHvlLGSSnKV4YkBi_ehO4NlI41ANpnPVogdGxY9Jc3jOk_6prbinw3bUELKmbbB6__AY9OH0zlWHVFDrp8j1B8ponjiC96cwpW1z1C2jwz84zX4r6TxJUQXcIiBeD7b7OdF7Mmsr56iQLKYnMWlTAdQlY1Z9DtE0kVo4LbAbVrAX8LjeZWrIPS96S9PvyUimBZC1aZq8hZx8WLhv2VG8PJk2ymPEpnH8zduUvNVqjXnRmM5NA1sV7RYX5WS9SGpZZbkX6JLx5yA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJPUlFSMMFmogRXLxdGIUOjLo/photos/AaVGc3lAe5DtG9--RIkucde1UTjSavrqEshNJoYC3HDQHNoHlLfdwqKClkJJHJyxFA-FDxvbh7_p9SkyW61V2FT6uSe8Apf6TFf2vR3zE1h7uOTg6FKRkjEYTHiwr7KJbMcitvqiQzuPi3AL_mN1qjqa1rGSRov6VzzKZ6wEHvlLGSSnKV4YkBi_ehO4NlI41ANpnPVogdGxY9Jc3jOk_6prbinw3bUELKmbbB6__AY9OH0zlWHVFDrp8j1B8ponjiC96cwpW1z1C2jwz84zX4r6TxJUQXcIiBeD7b7OdF7Mmsr56iQLKYnMWlTAdQlY1Z9DtE0kVo4LbAbVrAX8LjeZWrIPS96S9PvyUimBZC1aZq8hZx8WLhv2VG8PJk2ymPEpnH8zduUvNVqjXnRmM5NA1sV7RYX5WS9SGpZZbkX6JLx5yA
+is_cover: false
+sort_order: 0
+caption: Chris Huebschman
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICBrs7WDQ!2e10!4m2!3m1!1s0x889a05c34845493d:0xba8c0e85185dbc5c
+
+--- entity_photos [row 7 of 13] ---
+id: 6f5262e1-80c4-4765-9e09-6a555807ae09
+entity_slug: the-palms-at-the-wharf
+url: https://places.googleapis.com/v1/places/ChIJPUlFSMMFmogRXLxdGIUOjLo/photos/AaVGc3kHtDlis73eEvQJm1_3FrACdheiqjPLto3vDvsP3U_Ukx1aBEo0Hy8LMxWYsJdgn4euREMALX3zTlzcv69_J4udgoORVxA8S0IL0QdoKxnNVygEo_ei_GILKv0qLA9Hf4CEeTvP_NL3syo-4Un3LvWp3LMQQgRAm18LEDjEdtMOR94BZbshhjKpioPcKLdTrKOJL_eqvSK-6J49a3JvA0icaXyEp7viqjPv4SiGlRraLZ-N4HAaUO67t-WERXghW1MaczXmjobiJV1W6ffYpWYr8j6PorIKBcvbcdol-Bst_8M6epfjoXHzDJzoAK3RaC8g-HQ-_BCuYM8X8bVeLr6HBCEnTwE6zUwMm9BCBDnJ7SZeHdWxRqsCizqDT4fHLCh1iqO71W-LlcIUCM2M082nRtlGQ75AsKpdftSZaLAhDA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJPUlFSMMFmogRXLxdGIUOjLo/photos/AaVGc3kHtDlis73eEvQJm1_3FrACdheiqjPLto3vDvsP3U_Ukx1aBEo0Hy8LMxWYsJdgn4euREMALX3zTlzcv69_J4udgoORVxA8S0IL0QdoKxnNVygEo_ei_GILKv0qLA9Hf4CEeTvP_NL3syo-4Un3LvWp3LMQQgRAm18LEDjEdtMOR94BZbshhjKpioPcKLdTrKOJL_eqvSK-6J49a3JvA0icaXyEp7viqjPv4SiGlRraLZ-N4HAaUO67t-WERXghW1MaczXmjobiJV1W6ffYpWYr8j6PorIKBcvbcdol-Bst_8M6epfjoXHzDJzoAK3RaC8g-HQ-_BCuYM8X8bVeLr6HBCEnTwE6zUwMm9BCBDnJ7SZeHdWxRqsCizqDT4fHLCh1iqO71W-LlcIUCM2M082nRtlGQ75AsKpdftSZaLAhDA
+is_cover: false
+sort_order: 1
+caption: Daniel Shrider
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICxvuzCaQ!2e10!4m2!3m1!1s0x889a05c34845493d:0xba8c0e85185dbc5c
+
+--- entity_photos [row 8 of 13] ---
+id: dd85f896-0a6a-4a3a-8e0d-b85844a0f639
+entity_slug: the-palms-at-the-wharf
+url: https://places.googleapis.com/v1/places/ChIJPUlFSMMFmogRXLxdGIUOjLo/photos/AaVGc3mmKkqmLLS6VXjqxkfPTTyuN6P4DZGgDFuQITZMknl1yAX0SQzy90HrzRgJ8XE8S1Nlv-dDnabZ9ZMUdzJ76MTMhe9E2hxxjSLlHo3aFNj2nRfV5yosse7DzJZHpGqdOltC-96dKjbzdaXFZ6Ojq5gzZ1IX82UswF1l64mIJkrO1jEjK1bpDU_EB9M1D-_lJgmVYC4BrzpRMhLHpXD7o3yBQ5vCz0TS_z9XHIa4HAYKbbG97aeb2Icrkxn2ufugowg-mVQGD2_PP7SpHTR1F0aCq1Ao5k09mHGNsEySi7WF--uCzUAJsle-jtj5FDN-t7oRc3bQmINQbQN-dNDEY_BBVLzVfxE7mAP_ltWQ4jbvw9B_2V6sV8u87coTlOYf8gF09RKhWy54BA8pNQHFKzMIAaakH86u_Dxy8KdYgtMKXA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJPUlFSMMFmogRXLxdGIUOjLo/photos/AaVGc3mmKkqmLLS6VXjqxkfPTTyuN6P4DZGgDFuQITZMknl1yAX0SQzy90HrzRgJ8XE8S1Nlv-dDnabZ9ZMUdzJ76MTMhe9E2hxxjSLlHo3aFNj2nRfV5yosse7DzJZHpGqdOltC-96dKjbzdaXFZ6Ojq5gzZ1IX82UswF1l64mIJkrO1jEjK1bpDU_EB9M1D-_lJgmVYC4BrzpRMhLHpXD7o3yBQ5vCz0TS_z9XHIa4HAYKbbG97aeb2Icrkxn2ufugowg-mVQGD2_PP7SpHTR1F0aCq1Ao5k09mHGNsEySi7WF--uCzUAJsle-jtj5FDN-t7oRc3bQmINQbQN-dNDEY_BBVLzVfxE7mAP_ltWQ4jbvw9B_2V6sV8u87coTlOYf8gF09RKhWy54BA8pNQHFKzMIAaakH86u_Dxy8KdYgtMKXA
+is_cover: false
+sort_order: 2
+caption: Charlotte Henderson
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDEjJGxCA!2e10!4m2!3m1!1s0x889a05c34845493d:0xba8c0e85185dbc5c
+
+--- entity_photos [row 9 of 13] ---
+id: fde44f50-82b5-491e-8fbc-61aaa4d37a21
+entity_slug: the-palms-at-the-wharf
+url: https://places.googleapis.com/v1/places/ChIJPUlFSMMFmogRXLxdGIUOjLo/photos/AaVGc3lEBys900hAa-De7H5dT-ZZtk6PcS72oS8rg6iafTzJGJYxiUVEAmTgzGhJJNsdQg50YLUHj8e1ImDKuOwy1D1pWWSc2rW8MDiXkO_PfpU9X0EO9IxT1JAPo6p2rweRcylo_E19WWroRatkouD6MNM8zCT_lWlz7LwRxrer5Q34JG_pqspIkYGCxgBoHvv2DAhI9k-S-HbGoEgKwF4ymyOEhfEdIcXpsKDcG7XLubaRMu3uHoE9k440dHY5CZDHDUEaY3KZL-S75ke8l6JqW0SD7pQqAupE6mYn3G6lYrxrgdDfSoIlSIt8vHHkpeL0m0qagvSWZNasbSK1YxvaxyTEROan5Q1YD1nX8lQHK9Gsfb6o01cK5KNlDocYk6xbMUYEBesDAy9FnmhBCxohvUtJz18Da4Q3-Iv0p3k4Iyg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJPUlFSMMFmogRXLxdGIUOjLo/photos/AaVGc3lEBys900hAa-De7H5dT-ZZtk6PcS72oS8rg6iafTzJGJYxiUVEAmTgzGhJJNsdQg50YLUHj8e1ImDKuOwy1D1pWWSc2rW8MDiXkO_PfpU9X0EO9IxT1JAPo6p2rweRcylo_E19WWroRatkouD6MNM8zCT_lWlz7LwRxrer5Q34JG_pqspIkYGCxgBoHvv2DAhI9k-S-HbGoEgKwF4ymyOEhfEdIcXpsKDcG7XLubaRMu3uHoE9k440dHY5CZDHDUEaY3KZL-S75ke8l6JqW0SD7pQqAupE6mYn3G6lYrxrgdDfSoIlSIt8vHHkpeL0m0qagvSWZNasbSK1YxvaxyTEROan5Q1YD1nX8lQHK9Gsfb6o01cK5KNlDocYk6xbMUYEBesDAy9FnmhBCxohvUtJz18Da4Q3-Iv0p3k4Iyg
+is_cover: false
+sort_order: 3
+caption: Renato Martins
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDxu7ruRA!2e10!4m2!3m1!1s0x889a05c34845493d:0xba8c0e85185dbc5c
+
+--- entity_photos [row 10 of 13] ---
+id: 3d8a1c68-001d-4f2a-96a5-a97f998833d1
+entity_slug: the-palms-at-the-wharf
+url: https://places.googleapis.com/v1/places/ChIJPUlFSMMFmogRXLxdGIUOjLo/photos/AaVGc3m3Y7J_hleSkWgLyrdg_34y97otwVmR3SRvNncLBFRBebFYyzw7Eh0bInYgm7wtCp4Lhd3yFwWJxo5WZJv-tN3CTvrQmeWrnh9rMfa0NOTEF3bRCMFo_hvpgQKyixt9IySqoIFaeNmIuO8Q6UsB0lo8AJiWKFYI2DD3dHyfhh0j03ACvDsR8K_Ia9fAGpzrrbe0nCN1RdP0B6RaZQsnUxvEhDTSS3l3yOjFGLNINfePH4L4OwUfsMr2pAiEDGJFM_tm07iHZeIixDn16mhoDHTPHg13j2J5QyQg4V8CMtjw4s3EN5B-fhc5C2sOiFNQubTl8rLNM6fuycO9xeQQBQF9TZJBxeV3SPfVLnRNd9hINqdR_R0lASdeMTff7wxxqlQEv46_mmZoMkJNJGj-GZRn-cRHatj_aldwrTuJqiRBj0Yq/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJPUlFSMMFmogRXLxdGIUOjLo/photos/AaVGc3m3Y7J_hleSkWgLyrdg_34y97otwVmR3SRvNncLBFRBebFYyzw7Eh0bInYgm7wtCp4Lhd3yFwWJxo5WZJv-tN3CTvrQmeWrnh9rMfa0NOTEF3bRCMFo_hvpgQKyixt9IySqoIFaeNmIuO8Q6UsB0lo8AJiWKFYI2DD3dHyfhh0j03ACvDsR8K_Ia9fAGpzrrbe0nCN1RdP0B6RaZQsnUxvEhDTSS3l3yOjFGLNINfePH4L4OwUfsMr2pAiEDGJFM_tm07iHZeIixDn16mhoDHTPHg13j2J5QyQg4V8CMtjw4s3EN5B-fhc5C2sOiFNQubTl8rLNM6fuycO9xeQQBQF9TZJBxeV3SPfVLnRNd9hINqdR_R0lASdeMTff7wxxqlQEv46_mmZoMkJNJGj-GZRn-cRHatj_aldwrTuJqiRBj0Yq
+is_cover: false
+sort_order: 4
+caption: Melinda Pernestti
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIChyvr1qwE!2e10!4m2!3m1!1s0x889a05c34845493d:0xba8c0e85185dbc5c
+
+--- entity_photos [row 11 of 13] ---
+id: 3c07d028-4c7d-49a4-a03d-941735881d8f
+entity_slug: the-palms-at-the-wharf
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/8eaca356-ff3b-49cb-a666-d9586414b352/image_2.jpg
+is_cover: false
+sort_order: 101
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 12 of 13] ---
+id: 7009c63a-ebe4-4491-8827-8efed6ef94e1
+entity_slug: the-palms-at-the-wharf
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/8eaca356-ff3b-49cb-a666-d9586414b352/image_3.jpg
+is_cover: false
+sort_order: 102
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 13 of 13] ---
+id: 98991bcc-6f4f-43d8-8d8c-901c263a97c0
+entity_slug: the-palms-at-the-wharf
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/8eaca356-ff3b-49cb-a666-d9586414b352/image_1.jpg
+is_cover: true
+sort_order: 100
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: entity_reviews   -   3 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 3] ---
+id: 16e62882-7d57-48c9-a3de-5b1bcab534af
+entity_slug: the-palms-at-the-wharf
+reviewer_name: Debbie Ruttenbur
+rating: 5
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2022-07-07T18:25:58.718653+00:00
+updated_at: 2026-07-19T15:18:39.834104+00:00
+
+--- entity_reviews [row 2 of 3] ---
+id: 4093fa3d-10e2-4f61-ad6d-5d96da48c380
+entity_slug: the-palms-at-the-wharf
+reviewer_name: Andrew Branscum
+rating: 3
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2016-08-04T15:23:27.362+00:00
+updated_at: 2026-07-19T15:18:39.834104+00:00
+
+--- entity_reviews [row 3 of 3] ---
+id: 7f4bfc77-9574-42f9-892c-6a47e844eff0
+entity_slug: the-palms-at-the-wharf
+reviewer_name: Raymond McConnell
+rating: 5
+body: Just got here!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2021-11-25T20:48:15.14124+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   3 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 3] ---
+id: 0d6884e2-46a3-4c77-9d3c-7468e188ee32
+entity_slug: the-palms-at-the-wharf
+tag_name: event_venue
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 3] ---
+id: b3a05781-028d-4729-92c7-ce9348798afb
+entity_slug: the-palms-at-the-wharf
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 3 of 3] ---
+id: f5220203-d390-49df-b761-fee3b8587b2e
+entity_slug: the-palms-at-the-wharf
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 21cc74a2-cd46-41d0-825c-0abcb18eb701
+entity_slug: the-palms-at-the-wharf
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_event_venue   -   1 row(s)
+####################################################################################################
+
+--- industry_event_venue [row 1 of 1] ---
+entity_slug: the-palms-at-the-wharf
+package_count: 0
+updated_at: 2026-07-20T03:17:43.35857+00:00
+
+####################################################################################################
+# TABLE: legacy_photo_migration_queue   -   3 row(s)
+####################################################################################################
+
+--- legacy_photo_migration_queue [row 1 of 3] ---
+id: 2116
+entity_slug: the-palms-at-the-wharf
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/8eaca356-ff3b-49cb-a666-d9586414b352/image_2.jpg
+is_cover: false
+sort_order: 101
+status: linked_legacy
+created_at: 2026-07-26T00:36:20.285499+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 2 of 3] ---
+id: 2446
+entity_slug: the-palms-at-the-wharf
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/8eaca356-ff3b-49cb-a666-d9586414b352/image_3.jpg
+is_cover: false
+sort_order: 102
+status: linked_legacy
+created_at: 2026-07-26T00:36:20.285499+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 3 of 3] ---
+id: 2368
+entity_slug: the-palms-at-the-wharf
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/8eaca356-ff3b-49cb-a666-d9586414b352/image_1.jpg
+is_cover: true
+sort_order: 100
+status: linked_legacy
+created_at: 2026-07-26T00:36:20.285499+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: search_index   -   1 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 1] ---
+ref_type: business
+ref_id: the-palms-at-the-wharf
+entity_slug: the-palms-at-the-wharf
+title: The Palms At The Wharf
+category: event_venue
+subtitle: Event Venue in Orange Beach, AL. Rated 4.3★ from 3 reviews.
+search_vector: '3':17C '4.3':15C 'al':13C 'beach':12C 'event':6B,8C 'orang':11C 'palm':2A 'rate':14C 'review':18C 'venu':7B,9C 'wharf':5A
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: the-palms-at-the-wharf

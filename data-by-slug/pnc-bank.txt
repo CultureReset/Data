@@ -1,0 +1,1053 @@
+====================================================================================================
+SLUG: pnc-bank
+NAME: PNC Bank
+INDUSTRY: professional_service
+SUBTYPE: bank
+TABLES WITH DATA: 21
+TOTAL ROWS: 79
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (4 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (5 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_hours  (12 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_offer  (1 rows)
+  entity_photos  (10 rows)
+  entity_tags  (19 rows)
+  entity_theme  (1 rows)
+  industry_professional_service  (1 rows)
+  professional_services  (1 rows)
+  search_index  (2 rows)
+  service_menu  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: pnc-bank
+name: PNC Bank
+planner_category: local_service
+data_quality_score: 90
+issues: missing_summary
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   4 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 4] ---
+id: 13218
+entity_slug: pnc-bank
+intent_tag: best_for:local_information
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 4] ---
+id: 13219
+entity_slug: pnc-bank
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 4] ---
+id: 13220
+entity_slug: pnc-bank
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 4] ---
+id: 13221
+entity_slug: pnc-bank
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: pnc-bank
+name: PNC Bank
+is_active: t
+planner_category: local_service
+entity_type: service
+entity_subtype: bank
+city: Gulf Shores
+state: AL
+address_line_1: 3830 Gulf Shores Pkwy
+latitude: 30.3043257
+longitude: -87.6823948
+rating: 2.8
+review_count: 23
+website_url: https://locator.pnc.com/en/details/al/gulf-shores/branch/3830-gulf-shores-pkwy?lnksrc=branch-listing-google
+hero_image_url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfXR_E3pRZZmJ9JxOnPzSSRyZ3pPKHTJswXHwseXDBaUHlBkqegHPT6kLKczGGf5RpbAHiOklxAU0y5TrnT3ZQixkxXc_MmZkZT7qXSzh58VRkUZ7oGy8k-TMK5wzV2urtYJFjRvgmTsq7gdlGhzB1qvLg4oFv4hNq-Ni2e8KinBY3awYM5jgtPFoJazt2hsnOItrtBFMTCpgtBIJ-nrJIcPXgiFr_U5T73g2Cms_aXZZzAVIwr1VGXIVI52utb9IfJy2H-8lCZ5wigpRg2E4TCsrM1XC_JhUHmPJnbDLs_iKL2Ck700lATVPhmUMN9z5b2JEiTIoS2GxpsV3SGfWJZdNc8EeuAyygz8UWhxU2RfsXzh2jBgt-jfa6rI-sLF78QnW8oXUy32ieG0kCol25FgC82B2BJU_M3fS6H0BuwQTjY&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+voice_summary: PNC Bank in Gulf Shores is best for local information.
+planner_summary: PNC Bank in Gulf Shores is a local service listing in Gulf Coast Radar.
+best_for: local information
+not_best_for: nothing specific flagged
+service_tags: accessibility
+search_keywords: bank|atm|finance|point_of_interest|establishment|financial services|banking|deposits|loans|wealth management|gulf shores|alabama|Banks|ATM Locations|financial-services|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 5
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 19
+faq_count: 0
+data_quality_score: 90
+data_gaps: missing_summary
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   5 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 5] ---
+id: 11043
+entity_slug: pnc-bank
+entity_name: PNC Bank
+city: Gulf Shores
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfXR_E3pRZZmJ9JxOnPzSSRyZ3pPKHTJswXHwseXDBaUHlBkqegHPT6kLKczGGf5RpbAHiOklxAU0y5TrnT3ZQixkxXc_MmZkZT7qXSzh58VRkUZ7oGy8k-TMK5wzV2urtYJFjRvgmTsq7gdlGhzB1qvLg4oFv4hNq-Ni2e8KinBY3awYM5jgtPFoJazt2hsnOItrtBFMTCpgtBIJ-nrJIcPXgiFr_U5T73g2Cms_aXZZzAVIwr1VGXIVI52utb9IfJy2H-8lCZ5wigpRg2E4TCsrM1XC_JhUHmPJnbDLs_iKL2Ck700lATVPhmUMN9z5b2JEiTIoS2GxpsV3SGfWJZdNc8EeuAyygz8UWhxU2RfsXzh2jBgt-jfa6rI-sLF78QnW8oXUy32ieG0kCol25FgC82B2BJU_M3fS6H0BuwQTjY&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 5] ---
+id: 11044
+entity_slug: pnc-bank
+entity_name: PNC Bank
+city: Gulf Shores
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfULL8XB2e34PpyI4vxFfE2pkCU4F481EQPcot4UWXoEBcoS8Ogp1cIv8uA6uc0JmKBwsW1DjGZn3rsrC4nCvpIWyyc8awT7yqx3eSc1EEygGy_W4C35N1X9ZmRsGzatPaY58u-3T2oGo6KBN09XlLXgR-sIk0POiDcN6cgWnJOsm1nRBcLlb7_L3zgPaUHYghgadWkTbwT7M7m6xf5C2hw2-Gmi4jeSPp9AexfieKKeQj4RdHQlMUjwvAGDwA85M2-gEMo9GFlGXTICJL47qim50A8YLP8SQD3JF5VlUYOK13gFkohSlWEnGcYLiMaqt18w-y7Uhn0RONQqQ56IFc66xHP9Co__r4VUiHiIC5Pxx20mjXS8FFJ7vLT7-wQxlscE6oowd4dmd2s70OUBh2orxkZJrft4RD8AWkFTiF4Kuw&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 5] ---
+id: 11045
+entity_slug: pnc-bank
+entity_name: PNC Bank
+city: Gulf Shores
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfWH-ZeXlkhHW-IeaSfSEf9Oiy16Xmwd_SD_sPSe9l1L7I2AcW5PNYUjwwZ-ihelX5jJCwe4OPEdZrDTFks0-E1BSNPBg3nTQSpd_OKdK0IGBPFEjvT6PQQzGMkEUCc8a25MRn_uALRWNVcTdI6ra0OdNSBNOUefA4RlldGv41DFXsTS4NkvF3E3O43KZIDvUkzMT08LbdTYaBrd6EaoNdcCzXu2i2FlClut0i31uFguMWHjnhWdp9dg6oyJrgi2Hk2Bl5e_Fm1dj8LiP671CSCuyk8G2TUEuAsXSYrSWfhl8g&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 5] ---
+id: 11046
+entity_slug: pnc-bank
+entity_name: PNC Bank
+city: Gulf Shores
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfUbTwV8za8wCqs7O7zO-16dSu8REe2xeDYGS6gRrJXNyV1m78qu7yrphQbkMBu40OhbPKHw9vmDWh32mgKev8uTd7Lq0fm2R-s6Jh_gP9MiOcfmxWkHoKA-hgOean51mpc4rUuhgLzgu684MsB3sbknY_G0OXcwfjc82-WL3qW-UXQygWF6-q2mVLSyhNHzLaNS43JCv_Bf6PPtiUKj0uk6RIblPI3l9pel4H-RC_AwePymbCnOlnNNyU4V_AXEUSS9mjRhHIUF9KNN_kbZWJLZGets-7Jp5x59OGeuAvxVag&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 5] ---
+id: 11047
+entity_slug: pnc-bank
+entity_name: PNC Bank
+city: Gulf Shores
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfUzmMpnqt8ZbfJ7WFGsxNXf06ycoqZ_y3a9S-wETzEpFM_uqxphrT1Hr3lC1kZ_TMGXIvqu2oPdv-m6VbZVFIig7Xf8MvRttocax7O85QJolRK8m5v_mD8uOhkx8LDkJF04KbXegPi3F3Zvn45_ewyzAbuQReww2xRHhsS9FmZl_4hUSYdTrZQcvaAj2P1OdZQpRgs7FpV0WX_LVp6LxjAHqD3x038dn6rph5gTAjXVytHCrAgPg330cVU3EHDQwST4JbEwtFvT8N4wul_jKXtkwpKZ_N5P-7qbhg7_BxcMJQ&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: a0302db2-7558-4822-a079-a5390473c741
+resource_type: service
+slug: pnc-bank
+name: PNC Bank
+entity_slug: pnc-bank
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfXR_E3pRZZmJ9JxOnPzSSRyZ3pPKHTJswXHwseXDBaUHlBkqegHPT6kLKczGGf5RpbAHiOklxAU0y5TrnT3ZQixkxXc_MmZkZT7qXSzh58VRkUZ7oGy8k-TMK5wzV2urtYJFjRvgmTsq7gdlGhzB1qvLg4oFv4hNq-Ni2e8KinBY3awYM5jgtPFoJazt2hsnOItrtBFMTCpgtBIJ-nrJIcPXgiFr_U5T73g2Cms_aXZZzAVIwr1VGXIVI52utb9IfJy2H-8lCZ5wigpRg2E4TCsrM1XC_JhUHmPJnbDLs_iKL2Ck700lATVPhmUMN9z5b2JEiTIoS2GxpsV3SGfWJZdNc8EeuAyygz8UWhxU2RfsXzh2jBgt-jfa6rI-sLF78QnW8oXUy32ieG0kCol25FgC82B2BJU_M3fS6H0BuwQTjY&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo",
+  "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfULL8XB2e34PpyI4vxFfE2pkCU4F481EQPcot4UWXoEBcoS8Ogp1cIv8uA6uc0JmKBwsW1DjGZn3rsrC4nCvpIWyyc8awT7yqx3eSc1EEygGy_W4C35N1X9ZmRsGzatPaY58u-3T2oGo6KBN09XlLXgR-sIk0POiDcN6cgWnJOsm1nRBcLlb7_L3zgPaUHYghgadWkTbwT7M7m6xf5C2hw2-Gmi4jeSPp9AexfieKKeQj4RdHQlMUjwvAGDwA85M2-gEMo9GFlGXTICJL47qim50A8YLP8SQD3JF5VlUYOK13gFkohSlWEnGcYLiMaqt18w-y7Uhn0RONQqQ56IFc66xHP9Co__r4VUiHiIC5Pxx20mjXS8FFJ7vLT7-wQxlscE6oowd4dmd2s70OUBh2orxkZJrft4RD8AWkFTiF4Kuw&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo",
+  "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfWH-ZeXlkhHW-IeaSfSEf9Oiy16Xmwd_SD_sPSe9l1L7I2AcW5PNYUjwwZ-ihelX5jJCwe4OPEdZrDTFks0-E1BSNPBg3nTQSpd_OKdK0IGBPFEjvT6PQQzGMkEUCc8a25MRn_uALRWNVcTdI6ra0OdNSBNOUefA4RlldGv41DFXsTS4NkvF3E3O43KZIDvUkzMT08LbdTYaBrd6EaoNdcCzXu2i2FlClut0i31uFguMWHjnhWdp9dg6oyJrgi2Hk2Bl5e_Fm1dj8LiP671CSCuyk8G2TUEuAsXSYrSWfhl8g&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo",
+  "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfUbTwV8za8wCqs7O7zO-16dSu8REe2xeDYGS6gRrJXNyV1m78qu7yrphQbkMBu40OhbPKHw9vmDWh32mgKev8uTd7Lq0fm2R-s6Jh_gP9MiOcfmxWkHoKA-hgOean51mpc4rUuhgLzgu684MsB3sbknY_G0OXcwfjc82-WL3qW-UXQygWF6-q2mVLSyhNHzLaNS43JCv_Bf6PPtiUKj0uk6RIblPI3l9pel4H-RC_AwePymbCnOlnNNyU4V_AXEUSS9mjRhHIUF9KNN_kbZWJLZGets-7Jp5x59OGeuAvxVag&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo",
+  "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfUzmMpnqt8ZbfJ7WFGsxNXf06ycoqZ_y3a9S-wETzEpFM_uqxphrT1Hr3lC1kZ_TMGXIvqu2oPdv-m6VbZVFIig7Xf8MvRttocax7O85QJolRK8m5v_mD8uOhkx8LDkJF04KbXegPi3F3Zvn45_ewyzAbuQReww2xRHhsS9FmZl_4hUSYdTrZQcvaAj2P1OdZQpRgs7FpV0WX_LVp6LxjAHqD3x038dn6rph5gTAjXVytHCrAgPg330cVU3EHDQwST4JbEwtFvT8N4wul_jKXtkwpKZ_N5P-7qbhg7_BxcMJQ&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo"
+]
+amenities: []
+faqs: []
+address: 3830 Gulf Shores Pkwy
+city: Gulf Shores
+state: AL
+latitude: 30.3043257
+longitude: -87.6823948
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: b066827ff8dd0181aadbd78812acf040
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: a0302db2-7558-4822-a079-a5390473c741
+entity_slug: pnc-bank
+slug: pnc-bank
+photo_urls: [
+  "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfXR_E3pRZZmJ9JxOnPzSSRyZ3pPKHTJswXHwseXDBaUHlBkqegHPT6kLKczGGf5RpbAHiOklxAU0y5TrnT3ZQixkxXc_MmZkZT7qXSzh58VRkUZ7oGy8k-TMK5wzV2urtYJFjRvgmTsq7gdlGhzB1qvLg4oFv4hNq-Ni2e8KinBY3awYM5jgtPFoJazt2hsnOItrtBFMTCpgtBIJ-nrJIcPXgiFr_U5T73g2Cms_aXZZzAVIwr1VGXIVI52utb9IfJy2H-8lCZ5wigpRg2E4TCsrM1XC_JhUHmPJnbDLs_iKL2Ck700lATVPhmUMN9z5b2JEiTIoS2GxpsV3SGfWJZdNc8EeuAyygz8UWhxU2RfsXzh2jBgt-jfa6rI-sLF78QnW8oXUy32ieG0kCol25FgC82B2BJU_M3fS6H0BuwQTjY&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo",
+  "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfULL8XB2e34PpyI4vxFfE2pkCU4F481EQPcot4UWXoEBcoS8Ogp1cIv8uA6uc0JmKBwsW1DjGZn3rsrC4nCvpIWyyc8awT7yqx3eSc1EEygGy_W4C35N1X9ZmRsGzatPaY58u-3T2oGo6KBN09XlLXgR-sIk0POiDcN6cgWnJOsm1nRBcLlb7_L3zgPaUHYghgadWkTbwT7M7m6xf5C2hw2-Gmi4jeSPp9AexfieKKeQj4RdHQlMUjwvAGDwA85M2-gEMo9GFlGXTICJL47qim50A8YLP8SQD3JF5VlUYOK13gFkohSlWEnGcYLiMaqt18w-y7Uhn0RONQqQ56IFc66xHP9Co__r4VUiHiIC5Pxx20mjXS8FFJ7vLT7-wQxlscE6oowd4dmd2s70OUBh2orxkZJrft4RD8AWkFTiF4Kuw&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo",
+  "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfWH-ZeXlkhHW-IeaSfSEf9Oiy16Xmwd_SD_sPSe9l1L7I2AcW5PNYUjwwZ-ihelX5jJCwe4OPEdZrDTFks0-E1BSNPBg3nTQSpd_OKdK0IGBPFEjvT6PQQzGMkEUCc8a25MRn_uALRWNVcTdI6ra0OdNSBNOUefA4RlldGv41DFXsTS4NkvF3E3O43KZIDvUkzMT08LbdTYaBrd6EaoNdcCzXu2i2FlClut0i31uFguMWHjnhWdp9dg6oyJrgi2Hk2Bl5e_Fm1dj8LiP671CSCuyk8G2TUEuAsXSYrSWfhl8g&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo",
+  "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfUbTwV8za8wCqs7O7zO-16dSu8REe2xeDYGS6gRrJXNyV1m78qu7yrphQbkMBu40OhbPKHw9vmDWh32mgKev8uTd7Lq0fm2R-s6Jh_gP9MiOcfmxWkHoKA-hgOean51mpc4rUuhgLzgu684MsB3sbknY_G0OXcwfjc82-WL3qW-UXQygWF6-q2mVLSyhNHzLaNS43JCv_Bf6PPtiUKj0uk6RIblPI3l9pel4H-RC_AwePymbCnOlnNNyU4V_AXEUSS9mjRhHIUF9KNN_kbZWJLZGets-7Jp5x59OGeuAvxVag&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo",
+  "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfUzmMpnqt8ZbfJ7WFGsxNXf06ycoqZ_y3a9S-wETzEpFM_uqxphrT1Hr3lC1kZ_TMGXIvqu2oPdv-m6VbZVFIig7Xf8MvRttocax7O85QJolRK8m5v_mD8uOhkx8LDkJF04KbXegPi3F3Zvn45_ewyzAbuQReww2xRHhsS9FmZl_4hUSYdTrZQcvaAj2P1OdZQpRgs7FpV0WX_LVp6LxjAHqD3x038dn6rph5gTAjXVytHCrAgPg330cVU3EHDQwST4JbEwtFvT8N4wul_jKXtkwpKZ_N5P-7qbhg7_BxcMJQ&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: e84e89a0-4bf2-4778-893e-e2617910be6a
+slug: pnc-bank
+name: PNC Bank
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: bank
+subtitle: PNC Bank Branch & ATM Locator
+phone: (251) 967-5810
+website_url: https://locator.pnc.com/en/details/al/gulf-shores/branch/3830-gulf-shores-pkwy?lnksrc=branch-listing-google
+menu_pin: 4866
+address_line_1: 3830 Gulf Shores Pkwy
+city: Gulf Shores
+state: AL
+zip: 36542
+latitude: 30.3043257
+longitude: -87.6823948
+rating: 2.8
+review_count: 23
+hero_image_url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfXR_E3pRZZmJ9JxOnPzSSRyZ3pPKHTJswXHwseXDBaUHlBkqegHPT6kLKczGGf5RpbAHiOklxAU0y5TrnT3ZQixkxXc_MmZkZT7qXSzh58VRkUZ7oGy8k-TMK5wzV2urtYJFjRvgmTsq7gdlGhzB1qvLg4oFv4hNq-Ni2e8KinBY3awYM5jgtPFoJazt2hsnOItrtBFMTCpgtBIJ-nrJIcPXgiFr_U5T73g2Cms_aXZZzAVIwr1VGXIVI52utb9IfJy2H-8lCZ5wigpRg2E4TCsrM1XC_JhUHmPJnbDLs_iKL2Ck700lATVPhmUMN9z5b2JEiTIoS2GxpsV3SGfWJZdNc8EeuAyygz8UWhxU2RfsXzh2jBgt-jfa6rI-sLF78QnW8oXUy32ieG0kCol25FgC82B2BJU_M3fS6H0BuwQTjY&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T04:01:52.310021+00:00
+updated_at: 2026-06-03T04:01:52.310021+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJNcO3NUEFmogRTisBA0YxiDY
+google_maps_uri: https://maps.google.com/?cid=3929444851648637774&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA
+business_status: OPERATIONAL
+primary_type: bank
+formatted_address: 3830 Gulf Shores Pkwy Lot 4, Gulf Shores, AL 36542, USA
+plus_code: 862J8839+P2
+international_phone: +1 251-967-5810
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+google_places_data: {
+  "name": "PNC Bank",
+  "phone": "(251) 967-5810",
+  "types": [
+    "bank",
+    "atm",
+    "finance",
+    "point_of_interest",
+    "establishment"
+  ],
+  "rating": 2.8,
+  "website": "https://locator.pnc.com/en/details/al/gulf-shores/branch/3830-gulf-shores-pkwy?lnksrc=branch-listing-google",
+  "place_id": "ChIJNcO3NUEFmogRTisBA0YxiDY",
+  "plus_code": {
+    "globalCode": "862J8839+P2",
+    "compoundCode": "8839+P2 Gulf Shores, AL, USA"
+  },
+  "_query_used": "PNC Bank 3830 Gulf Shores Parkway",
+  "coordinates": {
+    "latitude": 30.3043257,
+    "longitude": -87.6823948
+  },
+  "_enriched_at": "2026-05-17T18:44:08.138Z",
+  "primary_type": "bank",
+  "review_count": 23,
+  "accessibility": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true
+  },
+  "regular_hours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 1,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 17,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-05-18T14:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 9:00 AM – 5:00 PM",
+      "Tuesday: 9:00 AM – 5:00 PM",
+      "Wednesday: 9:00 AM – 5:00 PM",
+      "Thursday: 9:00 AM – 5:00 PM",
+      "Friday: 9:00 AM – 5:00 PM",
+      "Saturday: Closed",
+      "Sunday: Closed"
+    ]
+  },
+  "short_address": "3830 Gulf Shores Pkwy Lot 4, Gulf Shores",
+  "business_status": "OPERATIONAL",
+  "google_maps_uri": "https://maps.google.com/?cid=3929444851648637774&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "formatted_address": "3830 Gulf Shores Pkwy Lot 4, Gulf Shores, AL 36542, USA",
+  "address_components": [
+    {
+      "types": [
+        "subpremise"
+      ],
+      "longText": "Lot 4",
+      "shortText": "Lot 4",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "3830",
+      "shortText": "3830",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Gulf Shores Parkway",
+      "shortText": "Gulf Shores Pkwy",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Gulf Shores",
+      "shortText": "Gulf Shores",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36542",
+      "shortText": "36542",
+      "languageCode": "en"
+    }
+  ],
+  "international_phone": "+1 251-967-5810",
+  "primary_type_display": "Bank"
+}
+search_vector: 'bank':2A,3 'gulf':4 'pnc':1A 'shore':5
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: professional_service
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: pnc-bank
+name: PNC Bank
+industry_code: professional_service
+is_parent: false
+score_of_7: 5
+
+####################################################################################################
+# TABLE: entity_hours   -   12 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 12] ---
+id: 93dc3a46-ad13-4336-8eec-918dc0f8ff94
+entity_slug: pnc-bank
+day_of_week: 1
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 12] ---
+id: 2e86f0bd-4483-4f99-9258-a7c79462bc96
+entity_slug: pnc-bank
+day_of_week: 2
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 12] ---
+id: a3313035-edf9-4c36-b20b-39cfe4c394ac
+entity_slug: pnc-bank
+day_of_week: 3
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 12] ---
+id: 4fd3f567-b7f3-4961-9714-9382e98ee4bb
+entity_slug: pnc-bank
+day_of_week: 4
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 12] ---
+id: b410a806-12d9-4918-aa6d-55c27413b249
+entity_slug: pnc-bank
+day_of_week: 5
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 12] ---
+id: 3bf467f2-ecfd-48ff-abac-92e7a9085051
+entity_slug: pnc-bank
+day_of_week: 1
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 12] ---
+id: 039bd274-ea54-4d9c-8918-b3e46228d5ef
+entity_slug: pnc-bank
+day_of_week: 2
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 8 of 12] ---
+id: c11a538e-cc2e-4474-88a7-1623dcba01f9
+entity_slug: pnc-bank
+day_of_week: 3
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 9 of 12] ---
+id: aa2f3e52-c7ee-4c7f-92a3-f0cba1dc296b
+entity_slug: pnc-bank
+day_of_week: 4
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 10 of 12] ---
+id: 9625afc2-5006-4511-b400-d5d5e2508d95
+entity_slug: pnc-bank
+day_of_week: 5
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 11 of 12] ---
+id: 711aa9d3-c4e5-48d6-a4ee-42352fc13871
+entity_slug: pnc-bank
+day_of_week: 6
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 12 of 12] ---
+id: bdfe68b3-c7c2-49ec-9dc6-a200f7b90bd1
+entity_slug: pnc-bank
+day_of_week: 0
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: pnc-bank
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: a0302db2-7558-4822-a079-a5390473c741
+name: PNC Bank
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfXR_E3pRZZmJ9JxOnPzSSRyZ3pPKHTJswXHwseXDBaUHlBkqegHPT6kLKczGGf5RpbAHiOklxAU0y5TrnT3ZQixkxXc_MmZkZT7qXSzh58VRkUZ7oGy8k-TMK5wzV2urtYJFjRvgmTsq7gdlGhzB1qvLg4oFv4hNq-Ni2e8KinBY3awYM5jgtPFoJazt2hsnOItrtBFMTCpgtBIJ-nrJIcPXgiFr_U5T73g2Cms_aXZZzAVIwr1VGXIVI52utb9IfJy2H-8lCZ5wigpRg2E4TCsrM1XC_JhUHmPJnbDLs_iKL2Ck700lATVPhmUMN9z5b2JEiTIoS2GxpsV3SGfWJZdNc8EeuAyygz8UWhxU2RfsXzh2jBgt-jfa6rI-sLF78QnW8oXUy32ieG0kCol25FgC82B2BJU_M3fS6H0BuwQTjY&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo",
+    "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfULL8XB2e34PpyI4vxFfE2pkCU4F481EQPcot4UWXoEBcoS8Ogp1cIv8uA6uc0JmKBwsW1DjGZn3rsrC4nCvpIWyyc8awT7yqx3eSc1EEygGy_W4C35N1X9ZmRsGzatPaY58u-3T2oGo6KBN09XlLXgR-sIk0POiDcN6cgWnJOsm1nRBcLlb7_L3zgPaUHYghgadWkTbwT7M7m6xf5C2hw2-Gmi4jeSPp9AexfieKKeQj4RdHQlMUjwvAGDwA85M2-gEMo9GFlGXTICJL47qim50A8YLP8SQD3JF5VlUYOK13gFkohSlWEnGcYLiMaqt18w-y7Uhn0RONQqQ56IFc66xHP9Co__r4VUiHiIC5Pxx20mjXS8FFJ7vLT7-wQxlscE6oowd4dmd2s70OUBh2orxkZJrft4RD8AWkFTiF4Kuw&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo",
+    "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfWH-ZeXlkhHW-IeaSfSEf9Oiy16Xmwd_SD_sPSe9l1L7I2AcW5PNYUjwwZ-ihelX5jJCwe4OPEdZrDTFks0-E1BSNPBg3nTQSpd_OKdK0IGBPFEjvT6PQQzGMkEUCc8a25MRn_uALRWNVcTdI6ra0OdNSBNOUefA4RlldGv41DFXsTS4NkvF3E3O43KZIDvUkzMT08LbdTYaBrd6EaoNdcCzXu2i2FlClut0i31uFguMWHjnhWdp9dg6oyJrgi2Hk2Bl5e_Fm1dj8LiP671CSCuyk8G2TUEuAsXSYrSWfhl8g&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo",
+    "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfUbTwV8za8wCqs7O7zO-16dSu8REe2xeDYGS6gRrJXNyV1m78qu7yrphQbkMBu40OhbPKHw9vmDWh32mgKev8uTd7Lq0fm2R-s6Jh_gP9MiOcfmxWkHoKA-hgOean51mpc4rUuhgLzgu684MsB3sbknY_G0OXcwfjc82-WL3qW-UXQygWF6-q2mVLSyhNHzLaNS43JCv_Bf6PPtiUKj0uk6RIblPI3l9pel4H-RC_AwePymbCnOlnNNyU4V_AXEUSS9mjRhHIUF9KNN_kbZWJLZGets-7Jp5x59OGeuAvxVag&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo",
+    "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfUzmMpnqt8ZbfJ7WFGsxNXf06ycoqZ_y3a9S-wETzEpFM_uqxphrT1Hr3lC1kZ_TMGXIvqu2oPdv-m6VbZVFIig7Xf8MvRttocax7O85QJolRK8m5v_mD8uOhkx8LDkJF04KbXegPi3F3Zvn45_ewyzAbuQReww2xRHhsS9FmZl_4hUSYdTrZQcvaAj2P1OdZQpRgs7FpV0WX_LVp6LxjAHqD3x038dn6rph5gTAjXVytHCrAgPg330cVU3EHDQwST4JbEwtFvT8N4wul_jKXtkwpKZ_N5P-7qbhg7_BxcMJQ&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: pnc-bank
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: a0302db2-7558-4822-a079-a5390473c741
+name: PNC Bank
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfXR_E3pRZZmJ9JxOnPzSSRyZ3pPKHTJswXHwseXDBaUHlBkqegHPT6kLKczGGf5RpbAHiOklxAU0y5TrnT3ZQixkxXc_MmZkZT7qXSzh58VRkUZ7oGy8k-TMK5wzV2urtYJFjRvgmTsq7gdlGhzB1qvLg4oFv4hNq-Ni2e8KinBY3awYM5jgtPFoJazt2hsnOItrtBFMTCpgtBIJ-nrJIcPXgiFr_U5T73g2Cms_aXZZzAVIwr1VGXIVI52utb9IfJy2H-8lCZ5wigpRg2E4TCsrM1XC_JhUHmPJnbDLs_iKL2Ck700lATVPhmUMN9z5b2JEiTIoS2GxpsV3SGfWJZdNc8EeuAyygz8UWhxU2RfsXzh2jBgt-jfa6rI-sLF78QnW8oXUy32ieG0kCol25FgC82B2BJU_M3fS6H0BuwQTjY&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo",
+    "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfULL8XB2e34PpyI4vxFfE2pkCU4F481EQPcot4UWXoEBcoS8Ogp1cIv8uA6uc0JmKBwsW1DjGZn3rsrC4nCvpIWyyc8awT7yqx3eSc1EEygGy_W4C35N1X9ZmRsGzatPaY58u-3T2oGo6KBN09XlLXgR-sIk0POiDcN6cgWnJOsm1nRBcLlb7_L3zgPaUHYghgadWkTbwT7M7m6xf5C2hw2-Gmi4jeSPp9AexfieKKeQj4RdHQlMUjwvAGDwA85M2-gEMo9GFlGXTICJL47qim50A8YLP8SQD3JF5VlUYOK13gFkohSlWEnGcYLiMaqt18w-y7Uhn0RONQqQ56IFc66xHP9Co__r4VUiHiIC5Pxx20mjXS8FFJ7vLT7-wQxlscE6oowd4dmd2s70OUBh2orxkZJrft4RD8AWkFTiF4Kuw&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo",
+    "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfWH-ZeXlkhHW-IeaSfSEf9Oiy16Xmwd_SD_sPSe9l1L7I2AcW5PNYUjwwZ-ihelX5jJCwe4OPEdZrDTFks0-E1BSNPBg3nTQSpd_OKdK0IGBPFEjvT6PQQzGMkEUCc8a25MRn_uALRWNVcTdI6ra0OdNSBNOUefA4RlldGv41DFXsTS4NkvF3E3O43KZIDvUkzMT08LbdTYaBrd6EaoNdcCzXu2i2FlClut0i31uFguMWHjnhWdp9dg6oyJrgi2Hk2Bl5e_Fm1dj8LiP671CSCuyk8G2TUEuAsXSYrSWfhl8g&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo",
+    "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfUbTwV8za8wCqs7O7zO-16dSu8REe2xeDYGS6gRrJXNyV1m78qu7yrphQbkMBu40OhbPKHw9vmDWh32mgKev8uTd7Lq0fm2R-s6Jh_gP9MiOcfmxWkHoKA-hgOean51mpc4rUuhgLzgu684MsB3sbknY_G0OXcwfjc82-WL3qW-UXQygWF6-q2mVLSyhNHzLaNS43JCv_Bf6PPtiUKj0uk6RIblPI3l9pel4H-RC_AwePymbCnOlnNNyU4V_AXEUSS9mjRhHIUF9KNN_kbZWJLZGets-7Jp5x59OGeuAvxVag&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo",
+    "https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfUzmMpnqt8ZbfJ7WFGsxNXf06ycoqZ_y3a9S-wETzEpFM_uqxphrT1Hr3lC1kZ_TMGXIvqu2oPdv-m6VbZVFIig7Xf8MvRttocax7O85QJolRK8m5v_mD8uOhkx8LDkJF04KbXegPi3F3Zvn45_ewyzAbuQReww2xRHhsS9FmZl_4hUSYdTrZQcvaAj2P1OdZQpRgs7FpV0WX_LVp6LxjAHqD3x038dn6rph5gTAjXVytHCrAgPg330cVU3EHDQwST4JbEwtFvT8N4wul_jKXtkwpKZ_N5P-7qbhg7_BxcMJQ&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: 01f1e6a3-10a0-403a-8937-3435cc8f4bc7
+entity_slug: pnc-bank
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 0b7b1716-da64-43da-a026-f5edc9330b01
+entity_slug: pnc-bank
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: 9fad16fd-d5fd-4644-8a7f-f5f6c5eabefb
+entity_slug: pnc-bank
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: 36ec6f58-077b-4249-b60e-e516348c1435
+entity_slug: pnc-bank
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: 6a053005-54a0-4a48-add2-579a93d3450f
+entity_slug: pnc-bank
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: 536166f1-e95d-4948-bb89-f30604dd3e01
+entity_slug: pnc-bank
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: a3fb8e81-6e1c-4291-8964-8961ae905c16
+entity_slug: pnc-bank
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 72e92d9c-d6ed-4c37-aa53-31b89fb4cfe1
+entity_slug: pnc-bank
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: 65664893-f9f8-4307-a1b3-60cb87aa83c8
+entity_slug: pnc-bank
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: 870e836a-ccac-4048-9898-3270a7424286
+entity_slug: pnc-bank
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: 685d04c0-5836-4fa2-8550-ca2e1f010112
+entity_slug: pnc-bank
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: c5f18897-2957-4b03-8c80-6ff6c8e527b8
+entity_slug: pnc-bank
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: 1c0fbe47-8b0b-41a4-a6fc-7c28dc22e153
+entity_slug: pnc-bank
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13954
+entity_slug: pnc-bank
+name: PNC Bank
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: a0302db2-7558-4822-a079-a5390473c741
+
+####################################################################################################
+# TABLE: entity_photos   -   10 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 10] ---
+id: d2e80e6c-b66a-40f1-9763-56c16d7645ef
+entity_slug: pnc-bank
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfUbTwV8za8wCqs7O7zO-16dSu8REe2xeDYGS6gRrJXNyV1m78qu7yrphQbkMBu40OhbPKHw9vmDWh32mgKev8uTd7Lq0fm2R-s6Jh_gP9MiOcfmxWkHoKA-hgOean51mpc4rUuhgLzgu684MsB3sbknY_G0OXcwfjc82-WL3qW-UXQygWF6-q2mVLSyhNHzLaNS43JCv_Bf6PPtiUKj0uk6RIblPI3l9pel4H-RC_AwePymbCnOlnNNyU4V_AXEUSS9mjRhHIUF9KNN_kbZWJLZGets-7Jp5x59OGeuAvxVag&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: false
+sort_order: 104
+photo_type: gallery
+source_name: extracted:bookable_resources.photo_urls
+
+--- entity_photos [row 2 of 10] ---
+id: 38cbea64-bfc6-4cf2-ab92-de9c2ef597cf
+entity_slug: pnc-bank
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfULL8XB2e34PpyI4vxFfE2pkCU4F481EQPcot4UWXoEBcoS8Ogp1cIv8uA6uc0JmKBwsW1DjGZn3rsrC4nCvpIWyyc8awT7yqx3eSc1EEygGy_W4C35N1X9ZmRsGzatPaY58u-3T2oGo6KBN09XlLXgR-sIk0POiDcN6cgWnJOsm1nRBcLlb7_L3zgPaUHYghgadWkTbwT7M7m6xf5C2hw2-Gmi4jeSPp9AexfieKKeQj4RdHQlMUjwvAGDwA85M2-gEMo9GFlGXTICJL47qim50A8YLP8SQD3JF5VlUYOK13gFkohSlWEnGcYLiMaqt18w-y7Uhn0RONQqQ56IFc66xHP9Co__r4VUiHiIC5Pxx20mjXS8FFJ7vLT7-wQxlscE6oowd4dmd2s70OUBh2orxkZJrft4RD8AWkFTiF4Kuw&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: false
+sort_order: 102
+photo_type: gallery
+source_name: extracted:bookable_resources.photo_urls
+
+--- entity_photos [row 3 of 10] ---
+id: 271698ce-b144-4bb0-9c40-993f6ded6672
+entity_slug: pnc-bank
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfUzmMpnqt8ZbfJ7WFGsxNXf06ycoqZ_y3a9S-wETzEpFM_uqxphrT1Hr3lC1kZ_TMGXIvqu2oPdv-m6VbZVFIig7Xf8MvRttocax7O85QJolRK8m5v_mD8uOhkx8LDkJF04KbXegPi3F3Zvn45_ewyzAbuQReww2xRHhsS9FmZl_4hUSYdTrZQcvaAj2P1OdZQpRgs7FpV0WX_LVp6LxjAHqD3x038dn6rph5gTAjXVytHCrAgPg330cVU3EHDQwST4JbEwtFvT8N4wul_jKXtkwpKZ_N5P-7qbhg7_BxcMJQ&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: false
+sort_order: 105
+photo_type: gallery
+source_name: extracted:bookable_resources.photo_urls
+
+--- entity_photos [row 4 of 10] ---
+id: 25c2e0bb-fda5-4412-bad9-df44edd36ae7
+entity_slug: pnc-bank
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfWH-ZeXlkhHW-IeaSfSEf9Oiy16Xmwd_SD_sPSe9l1L7I2AcW5PNYUjwwZ-ihelX5jJCwe4OPEdZrDTFks0-E1BSNPBg3nTQSpd_OKdK0IGBPFEjvT6PQQzGMkEUCc8a25MRn_uALRWNVcTdI6ra0OdNSBNOUefA4RlldGv41DFXsTS4NkvF3E3O43KZIDvUkzMT08LbdTYaBrd6EaoNdcCzXu2i2FlClut0i31uFguMWHjnhWdp9dg6oyJrgi2Hk2Bl5e_Fm1dj8LiP671CSCuyk8G2TUEuAsXSYrSWfhl8g&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: false
+sort_order: 103
+photo_type: gallery
+source_name: extracted:bookable_resources.photo_urls
+
+--- entity_photos [row 5 of 10] ---
+id: 91f3040f-2bed-44df-877d-d033c753f8e4
+entity_slug: pnc-bank
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfXR_E3pRZZmJ9JxOnPzSSRyZ3pPKHTJswXHwseXDBaUHlBkqegHPT6kLKczGGf5RpbAHiOklxAU0y5TrnT3ZQixkxXc_MmZkZT7qXSzh58VRkUZ7oGy8k-TMK5wzV2urtYJFjRvgmTsq7gdlGhzB1qvLg4oFv4hNq-Ni2e8KinBY3awYM5jgtPFoJazt2hsnOItrtBFMTCpgtBIJ-nrJIcPXgiFr_U5T73g2Cms_aXZZzAVIwr1VGXIVI52utb9IfJy2H-8lCZ5wigpRg2E4TCsrM1XC_JhUHmPJnbDLs_iKL2Ck700lATVPhmUMN9z5b2JEiTIoS2GxpsV3SGfWJZdNc8EeuAyygz8UWhxU2RfsXzh2jBgt-jfa6rI-sLF78QnW8oXUy32ieG0kCol25FgC82B2BJU_M3fS6H0BuwQTjY&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: false
+sort_order: 101
+photo_type: gallery
+source_name: extracted:bookable_resources.photo_urls
+
+--- entity_photos [row 6 of 10] ---
+id: bcad5de5-199a-4104-aeb5-143b050f0ddc
+entity_slug: pnc-bank
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfUbTwV8za8wCqs7O7zO-16dSu8REe2xeDYGS6gRrJXNyV1m78qu7yrphQbkMBu40OhbPKHw9vmDWh32mgKev8uTd7Lq0fm2R-s6Jh_gP9MiOcfmxWkHoKA-hgOean51mpc4rUuhgLzgu684MsB3sbknY_G0OXcwfjc82-WL3qW-UXQygWF6-q2mVLSyhNHzLaNS43JCv_Bf6PPtiUKj0uk6RIblPI3l9pel4H-RC_AwePymbCnOlnNNyU4V_AXEUSS9mjRhHIUF9KNN_kbZWJLZGets-7Jp5x59OGeuAvxVag&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: false
+sort_order: 3
+photo_type: resource
+source_name: bookable_resource
+resource_id: a0302db2-7558-4822-a079-a5390473c741
+
+--- entity_photos [row 7 of 10] ---
+id: a0fd2d76-3f1b-4bfc-b8c4-27b6f54a34a9
+entity_slug: pnc-bank
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfWH-ZeXlkhHW-IeaSfSEf9Oiy16Xmwd_SD_sPSe9l1L7I2AcW5PNYUjwwZ-ihelX5jJCwe4OPEdZrDTFks0-E1BSNPBg3nTQSpd_OKdK0IGBPFEjvT6PQQzGMkEUCc8a25MRn_uALRWNVcTdI6ra0OdNSBNOUefA4RlldGv41DFXsTS4NkvF3E3O43KZIDvUkzMT08LbdTYaBrd6EaoNdcCzXu2i2FlClut0i31uFguMWHjnhWdp9dg6oyJrgi2Hk2Bl5e_Fm1dj8LiP671CSCuyk8G2TUEuAsXSYrSWfhl8g&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: false
+sort_order: 2
+photo_type: resource
+source_name: bookable_resource
+resource_id: a0302db2-7558-4822-a079-a5390473c741
+
+--- entity_photos [row 8 of 10] ---
+id: 43b6bf59-0207-400b-b7a4-b9bde8a20775
+entity_slug: pnc-bank
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfUzmMpnqt8ZbfJ7WFGsxNXf06ycoqZ_y3a9S-wETzEpFM_uqxphrT1Hr3lC1kZ_TMGXIvqu2oPdv-m6VbZVFIig7Xf8MvRttocax7O85QJolRK8m5v_mD8uOhkx8LDkJF04KbXegPi3F3Zvn45_ewyzAbuQReww2xRHhsS9FmZl_4hUSYdTrZQcvaAj2P1OdZQpRgs7FpV0WX_LVp6LxjAHqD3x038dn6rph5gTAjXVytHCrAgPg330cVU3EHDQwST4JbEwtFvT8N4wul_jKXtkwpKZ_N5P-7qbhg7_BxcMJQ&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: false
+sort_order: 4
+photo_type: resource
+source_name: bookable_resource
+resource_id: a0302db2-7558-4822-a079-a5390473c741
+
+--- entity_photos [row 9 of 10] ---
+id: f710be12-ec0b-4aad-bc3c-40cf581bd1ff
+entity_slug: pnc-bank
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfULL8XB2e34PpyI4vxFfE2pkCU4F481EQPcot4UWXoEBcoS8Ogp1cIv8uA6uc0JmKBwsW1DjGZn3rsrC4nCvpIWyyc8awT7yqx3eSc1EEygGy_W4C35N1X9ZmRsGzatPaY58u-3T2oGo6KBN09XlLXgR-sIk0POiDcN6cgWnJOsm1nRBcLlb7_L3zgPaUHYghgadWkTbwT7M7m6xf5C2hw2-Gmi4jeSPp9AexfieKKeQj4RdHQlMUjwvAGDwA85M2-gEMo9GFlGXTICJL47qim50A8YLP8SQD3JF5VlUYOK13gFkohSlWEnGcYLiMaqt18w-y7Uhn0RONQqQ56IFc66xHP9Co__r4VUiHiIC5Pxx20mjXS8FFJ7vLT7-wQxlscE6oowd4dmd2s70OUBh2orxkZJrft4RD8AWkFTiF4Kuw&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: a0302db2-7558-4822-a079-a5390473c741
+
+--- entity_photos [row 10 of 10] ---
+id: 500c6ce4-c02a-42bf-ba33-d2340d882570
+entity_slug: pnc-bank
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfXR_E3pRZZmJ9JxOnPzSSRyZ3pPKHTJswXHwseXDBaUHlBkqegHPT6kLKczGGf5RpbAHiOklxAU0y5TrnT3ZQixkxXc_MmZkZT7qXSzh58VRkUZ7oGy8k-TMK5wzV2urtYJFjRvgmTsq7gdlGhzB1qvLg4oFv4hNq-Ni2e8KinBY3awYM5jgtPFoJazt2hsnOItrtBFMTCpgtBIJ-nrJIcPXgiFr_U5T73g2Cms_aXZZzAVIwr1VGXIVI52utb9IfJy2H-8lCZ5wigpRg2E4TCsrM1XC_JhUHmPJnbDLs_iKL2Ck700lATVPhmUMN9z5b2JEiTIoS2GxpsV3SGfWJZdNc8EeuAyygz8UWhxU2RfsXzh2jBgt-jfa6rI-sLF78QnW8oXUy32ieG0kCol25FgC82B2BJU_M3fS6H0BuwQTjY&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: a0302db2-7558-4822-a079-a5390473c741
+
+####################################################################################################
+# TABLE: entity_tags   -   19 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 19] ---
+id: 0e3e9e09-998a-49f3-a265-44bf2c5d4d71
+entity_slug: pnc-bank
+tag_name: bank
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 19] ---
+id: 6a4689c5-2c06-4577-83e4-3f757ff448e8
+entity_slug: pnc-bank
+tag_name: atm
+tag_category: google_type
+
+--- entity_tags [row 3 of 19] ---
+id: 9570d2fc-c6b0-485d-8ac6-600165d28021
+entity_slug: pnc-bank
+tag_name: finance
+tag_category: google_type
+
+--- entity_tags [row 4 of 19] ---
+id: 04b572b3-df4c-4e7b-bf07-23599202df40
+entity_slug: pnc-bank
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 5 of 19] ---
+id: dac8b400-bc9a-49a4-bfc6-4ceefefeb9af
+entity_slug: pnc-bank
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 6 of 19] ---
+id: c6bf81d3-9d08-4296-9bd5-ebf9c5e19147
+entity_slug: pnc-bank
+tag_name: bank
+
+--- entity_tags [row 7 of 19] ---
+id: 05b4e55f-6777-467d-916c-683870967901
+entity_slug: pnc-bank
+tag_name: financial services
+
+--- entity_tags [row 8 of 19] ---
+id: 3f110ca7-0a7c-49e4-80ea-a9ad422c7b83
+entity_slug: pnc-bank
+tag_name: atm
+
+--- entity_tags [row 9 of 19] ---
+id: d044b42d-525c-4af4-8525-3ad0b5f9d678
+entity_slug: pnc-bank
+tag_name: banking
+
+--- entity_tags [row 10 of 19] ---
+id: 9737951d-d9e6-46dc-ba65-f02c9c122971
+entity_slug: pnc-bank
+tag_name: deposits
+
+--- entity_tags [row 11 of 19] ---
+id: 8766fd9a-ba40-4a37-8be6-576464950cc4
+entity_slug: pnc-bank
+tag_name: loans
+
+--- entity_tags [row 12 of 19] ---
+id: 0bebe11d-097d-4477-93e4-2a03c1e97db1
+entity_slug: pnc-bank
+tag_name: wealth management
+
+--- entity_tags [row 13 of 19] ---
+id: 990f747e-cf73-449c-879d-bd89e5da9e74
+entity_slug: pnc-bank
+tag_name: gulf shores
+
+--- entity_tags [row 14 of 19] ---
+id: bf32eda4-2dbb-4862-a0f1-d1a4c510acd1
+entity_slug: pnc-bank
+tag_name: alabama
+
+--- entity_tags [row 15 of 19] ---
+id: b1c8721f-4de1-4513-8d43-487de5a8e194
+entity_slug: pnc-bank
+tag_name: Banks
+tag_category: category
+
+--- entity_tags [row 16 of 19] ---
+id: 27d3b4df-7238-400e-929e-989a17a05aa9
+entity_slug: pnc-bank
+tag_name: Financial Services
+tag_category: category
+
+--- entity_tags [row 17 of 19] ---
+id: d2bc5cdf-927b-420e-9bc8-ecc805d918da
+entity_slug: pnc-bank
+tag_name: ATM Locations
+tag_category: category
+
+--- entity_tags [row 18 of 19] ---
+id: bc7fcb7e-9043-41d4-a8e8-82cfa5f65bf3
+entity_slug: pnc-bank
+tag_name: banking
+tag_category: industry
+
+--- entity_tags [row 19 of 19] ---
+id: 32fe7795-1b14-4a85-b08f-dd0f7932975c
+entity_slug: pnc-bank
+tag_name: financial-services
+tag_category: type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: a3943bfd-d055-4577-978b-faa2e009a05a
+entity_slug: pnc-bank
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_professional_service   -   1 row(s)
+####################################################################################################
+
+--- industry_professional_service [row 1 of 1] ---
+entity_slug: pnc-bank
+service_count: 0
+updated_at: 2026-07-20T03:17:43.35857+00:00
+
+####################################################################################################
+# TABLE: professional_services   -   1 row(s)
+####################################################################################################
+
+--- professional_services [row 1 of 1] ---
+id: 0da414f2-56c3-4282-b313-37be4a53365f
+entity_slug: pnc-bank
+name: PNC Bank
+sort_order: 0
+is_active: true
+created_at: 2026-07-24T08:30:32.961268+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: pnc-bank
+entity_slug: pnc-bank
+title: PNC Bank
+category: bank
+search_vector: 'bank':2A,3B 'pnc':1A
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 13954
+entity_slug: pnc-bank
+title: PNC Bank
+category: rental
+search_vector: 'bank':2A 'pnc':1A
+
+####################################################################################################
+# TABLE: service_menu   -   1 row(s)
+####################################################################################################
+
+--- service_menu [row 1 of 1] ---
+id: e3d1e25d-da93-4c6c-acc2-cd6f8f341a4b
+entity_slug: pnc-bank
+name: PNC Bank
+sort_order: 0
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: pnc-bank

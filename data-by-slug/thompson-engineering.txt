@@ -1,0 +1,1335 @@
+====================================================================================================
+SLUG: thompson-engineering
+NAME: Thompson Engineering
+INDUSTRY: other
+SUBTYPE: service
+PARENT: the-wharf
+TABLES WITH DATA: 23
+TOTAL ROWS: 80
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (5 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_address_areas  (1 rows)
+  entity_attributes  (2 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (1 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_nearby_landmark_types  (20 rows)
+  entity_nearby_landmarks  (6 rows)
+  entity_offer  (1 rows)
+  entity_photos  (4 rows)
+  entity_reviews  (1 rows)
+  entity_tags  (12 rows)
+  entity_theme  (1 rows)
+  search_index  (2 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: thompson-engineering
+name: Thompson Engineering
+planner_category: local_service
+data_quality_score: 80
+issues: missing_summary|missing_hours
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   5 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 5] ---
+id: 19335
+entity_slug: thompson-engineering
+intent_tag: best_for:local_information
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 5] ---
+id: 19336
+entity_slug: thompson-engineering
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 5] ---
+id: 19337
+entity_slug: thompson-engineering
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 5] ---
+id: 19338
+entity_slug: thompson-engineering
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 5] ---
+id: 19339
+entity_slug: thompson-engineering
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: thompson-engineering
+name: Thompson Engineering
+is_active: t
+planner_category: local_service
+entity_type: service
+entity_subtype: service
+city: Orange Beach
+state: AL
+address_line_1: 4830 Main St
+latitude: 30.2946865
+longitude: -87.628587
+rating: 5
+review_count: 1
+website_url: http://www.thompsonengineering.com/
+hero_image_url: /photos/thompson-engineering/photo_01.jpg
+voice_summary: Thompson Engineering in Orange Beach is best for local information.
+planner_summary: Thompson Engineering in Orange Beach is a local service listing in Gulf Coast Radar.
+best_for: local information
+not_best_for: nothing specific flagged
+service_tags: accessibility
+search_keywords: service|point_of_interest|establishment|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 2
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 9
+faq_count: 0
+data_quality_score: 80
+data_gaps: missing_summary|missing_hours
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 6923
+entity_slug: thompson-engineering
+entity_name: Thompson Engineering
+city: Orange Beach
+url: /photos/thompson-engineering/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 14154
+entity_slug: thompson-engineering
+entity_name: Thompson Engineering
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/thompson-engineering/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 6d7bcfcc-36ba-40c3-8180-ca43952e4722
+resource_type: service
+slug: thompson-engineering
+name: Thompson Engineering
+entity_slug: thompson-engineering
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/thompson-engineering/photo_01.jpg",
+  "/photos/thompson-engineering/photo_01.jpg"
+]
+amenities: []
+faqs: []
+address: 4830 Main St
+city: Orange Beach
+state: AL
+latitude: 30.2946865
+longitude: -87.628587
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 20061ccd9732a4b4859a317e3ba12f4a
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 6d7bcfcc-36ba-40c3-8180-ca43952e4722
+entity_slug: thompson-engineering
+slug: thompson-engineering
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/thompson-engineering/photo_01.jpg",
+  "/photos/thompson-engineering/photo_01.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: f58637ef-e5a1-4a55-9f0e-5ae240621a8f
+slug: thompson-engineering
+name: Thompson Engineering
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: service
+phone: (251) 378-6190
+website_url: http://www.thompsonengineering.com/
+menu_pin: 2835
+address_line_1: 4830 Main St
+city: Orange Beach
+state: AL
+zip: 36561
+latitude: 30.2946865
+longitude: -87.628587
+rating: 5
+review_count: 1
+hero_image_url: https://alwharf-assets.nyc3.digitaloceanspaces.com/images/merchant-full/_304x304_crop_center-center_none_ns/THE-WHARF-RAW-176-2.jpg?v=1777641994
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T03:48:27.172756+00:00
+updated_at: 2026-06-03T03:48:27.172756+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJ2SJ6aBAFmogRZe1ZURdB5wY
+google_maps_uri: https://maps.google.com/?cid=497437852252630373&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: service
+formatted_address: 4830 Main St Suite G-212, Orange Beach, AL 36561, USA
+plus_code: 862J79VC+VH
+international_phone: +1 251-378-6190
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+google_places_data: {
+  "id": "ChIJ2SJ6aBAFmogRZe1ZURdB5wY",
+  "types": [
+    "service",
+    "point_of_interest",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJ2SJ6aBAFmogRZe1ZURdB5wY/photos/AaVGc3mkrqZGf1OQyTB1F07IhN0GPw5yJNdJqBVZ_NaydoLCfF-65plByZek_KnR2HexRu5sNr3E_VHGazWBWFmhvUV0CMb_TZtJdkeo7OKO19d0AeOvdkCPHGMWp515F6zPXAgc1FZVgkGiDu3PxmDvEXYAEaDAjQDzfnT31sSrvMpOKnnaqIAJ3rB-H4IfnOjddjFc9LJ7HarZT-OLqOvAMVKm-hJXnEyMDxjEACOT9LsWxJarqXidi2p9KEV33YzJir8fyAuVKylp9OB1pEmKiPmsTK9ze6pw-eISGg8dPKy_qD89nIKxncz6H0b2WT2TdhcEl9aZnTlcG612IAd7mFpZWfUt6mcGkZBLBZ2zWgBZPRO1V-xW7WqWrq_xrer0DxxvKMgnly5IhT4y9V6-RjOZ88tGkNrrNnSnHsBYnERjvQ",
+      "widthPx": 4000,
+      "heightPx": 3000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgMCwmP-VRA!2e10!4m2!3m1!1s0x889a0510687a22d9:0x6e741175159ed65",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgMCwmP-VRA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/113024880470712314761",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocK6zv0IhkrlIdq-jgC-JJoIBZg4ouj1Z-59aELgEa0KybEkWzcy=s100-p-k-no-mo",
+          "displayName": "Brad Baker"
+        }
+      ]
+    }
+  ],
+  "rating": 5,
+  "reviews": [
+    {
+      "name": "places/ChIJ2SJ6aBAFmogRZe1ZURdB5wY/reviews/ChdDSUhNMG9nS0VJQ0FnSURoMjdtZnFBRRAB",
+      "text": {
+        "text": "Very educated people!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2023-03-18T16:14:03.386052Z",
+      "originalText": {
+        "text": "Very educated people!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURoMjdtZnFBRRAB!2m1!1s0x889a0510687a22d9:0x6e741175159ed65",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURoMjdtZnFBRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/114965141080195791113/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWFyTHoImC1YKZC2mLgF-YhFEJQSLhIF3fFwc2xF98A02PqXRy8=s128-c0x00000000-cc-rp-mo-ba3",
+        "displayName": "Stephanie Nicole"
+      },
+      "relativePublishTimeDescription": "3 years ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.2946865,
+    "longitude": -87.628587
+  },
+  "plusCode": {
+    "globalCode": "862J79VC+VH",
+    "compoundCode": "79VC+VH Orange Beach, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.293134069708504,
+      "longitude": -87.6300387802915
+    },
+    "high": {
+      "latitude": 30.2958320302915,
+      "longitude": -87.6273408197085
+    }
+  },
+  "websiteUri": "http://www.thompsonengineering.com/",
+  "displayName": {
+    "text": "Thompson Engineering",
+    "languageCode": "en"
+  },
+  "primaryType": "service",
+  "googleMapsUri": "https://maps.google.com/?cid=497437852252630373&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=497437852252630373&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0510687a22d9:0x6e741175159ed65!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0510687a22d9:0x6e741175159ed65!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0510687a22d9:0x6e741175159ed65!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0510687a22d9:0x6e741175159ed65!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "userRatingCount": 1,
+  "adrFormatAddress": "<span class=\"street-address\">4830 Main St Suite G-212</span>, <span class=\"locality\">Orange Beach</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36561</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "4830 Main St Suite G-212, Orange Beach, AL 36561, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "subpremise"
+      ],
+      "longText": "Suite G-212",
+      "shortText": "Suite G-212",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "4830",
+      "shortText": "4830",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Main Street",
+      "shortText": "Main St",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Orange Beach",
+      "shortText": "Orange Beach",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36561",
+      "shortText": "36561",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJ7T7Xq9wFmogRahIOl40NkO4",
+        "placeId": "ChIJ7T7Xq9wFmogRahIOl40NkO4",
+        "containment": "WITHIN",
+        "displayName": {
+          "text": "The Wharf",
+          "languageCode": "en"
+        }
+      }
+    ],
+    "landmarks": [
+      {
+        "name": "places/ChIJvfvStq0FmogRzhDmwHKhsDA",
+        "types": [
+          "establishment",
+          "food",
+          "point_of_interest",
+          "restaurant",
+          "shopping_mall",
+          "tourist_attraction"
+        ],
+        "placeId": "ChIJvfvStq0FmogRzhDmwHKhsDA",
+        "displayName": {
+          "text": "The Wharf",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "WITHIN",
+        "travelDistanceMeters": 347.4135,
+        "straightLineDistanceMeters": 136.68971
+      },
+      {
+        "name": "places/ChIJP3KjbsQFmogROsuRYtNn7qU",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJP3KjbsQFmogROsuRYtNn7qU",
+        "displayName": {
+          "text": "The Wharf Marina",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 58.98125,
+        "straightLineDistanceMeters": 74.07068
+      },
+      {
+        "name": "places/ChIJjUVMSMMFmogRb0-XfuWyIEY",
+        "types": [
+          "bar",
+          "establishment",
+          "food",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJjUVMSMMFmogRb0-XfuWyIEY",
+        "displayName": {
+          "text": "Ginny Lane Bar and Grill",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 134.50342,
+        "straightLineDistanceMeters": 74.07068
+      },
+      {
+        "name": "places/ChIJw7XRVtsFmogRfOO_7qsC_pE",
+        "types": [
+          "clothing_store",
+          "establishment",
+          "point_of_interest",
+          "shoe_store",
+          "store"
+        ],
+        "placeId": "ChIJw7XRVtsFmogRfOO_7qsC_pE",
+        "displayName": {
+          "text": "Seaside Shoes & SWIM",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "ACROSS_THE_ROAD",
+        "travelDistanceMeters": 50.66622,
+        "straightLineDistanceMeters": 42.09134
+      },
+      {
+        "name": "places/ChIJjUVMSMMFmogR6PCDJOYkPio",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJjUVMSMMFmogR6PCDJOYkPio",
+        "displayName": {
+          "text": "Wharf",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 76.45642,
+        "straightLineDistanceMeters": 81.59985
+      }
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Engineer",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "nationalPhoneNumber": "(251) 378-6190",
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true
+  },
+  "shortFormattedAddress": "4830 Main St Suite G-212, Orange Beach",
+  "primaryTypeDisplayName": {
+    "text": "Services",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-378-6190"
+}
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 4830 Main St Suite G-212, Orange Beach
+national_phone: (251) 378-6190
+search_vector: 'beach':5 'engin':2A 'orang':4 'servic':3 'thompson':1A
+primary_type_display: Services
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=497437852252630373&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0510687a22d9:0x6e741175159ed65!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0510687a22d9:0x6e741175159ed65!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0510687a22d9:0x6e741175159ed65!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0510687a22d9:0x6e741175159ed65!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJ7T7Xq9wFmogRahIOl40NkO4",
+      "placeId": "ChIJ7T7Xq9wFmogRahIOl40NkO4",
+      "containment": "WITHIN",
+      "displayName": {
+        "text": "The Wharf",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJvfvStq0FmogRzhDmwHKhsDA",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant",
+        "shopping_mall",
+        "tourist_attraction"
+      ],
+      "placeId": "ChIJvfvStq0FmogRzhDmwHKhsDA",
+      "displayName": {
+        "text": "The Wharf",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "WITHIN",
+      "travelDistanceMeters": 347.4135,
+      "straightLineDistanceMeters": 136.68971
+    },
+    {
+      "name": "places/ChIJP3KjbsQFmogROsuRYtNn7qU",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJP3KjbsQFmogROsuRYtNn7qU",
+      "displayName": {
+        "text": "The Wharf Marina",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 58.98125,
+      "straightLineDistanceMeters": 74.07068
+    },
+    {
+      "name": "places/ChIJjUVMSMMFmogRb0-XfuWyIEY",
+      "types": [
+        "bar",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJjUVMSMMFmogRb0-XfuWyIEY",
+      "displayName": {
+        "text": "Ginny Lane Bar and Grill",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 134.50342,
+      "straightLineDistanceMeters": 74.07068
+    },
+    {
+      "name": "places/ChIJw7XRVtsFmogRfOO_7qsC_pE",
+      "types": [
+        "clothing_store",
+        "establishment",
+        "point_of_interest",
+        "shoe_store",
+        "store"
+      ],
+      "placeId": "ChIJw7XRVtsFmogRfOO_7qsC_pE",
+      "displayName": {
+        "text": "Seaside Shoes & SWIM",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "ACROSS_THE_ROAD",
+      "travelDistanceMeters": 50.66622,
+      "straightLineDistanceMeters": 42.09134
+    },
+    {
+      "name": "places/ChIJjUVMSMMFmogR6PCDJOYkPio",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJjUVMSMMFmogR6PCDJOYkPio",
+      "displayName": {
+        "text": "Wharf",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 76.45642,
+      "straightLineDistanceMeters": 81.59985
+    }
+  ]
+}
+parent_entity_slug: the-wharf
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url | hero_image_url v2-fix 2026-07-21: repointed to a photo confirmed to actually exist
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: other
+is_parent: false
+depth: 1
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   1 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 1] ---
+id: 9b1036ed-b7d5-46c2-904c-b8a96ea62d4f
+entity_slug: thompson-engineering
+place_id: ChIJ7T7Xq9wFmogRahIOl40NkO4
+containment: WITHIN
+display_name: The Wharf
+
+####################################################################################################
+# TABLE: entity_attributes   -   2 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 2] ---
+id: ec31b16c-f557-4011-9a74-96361d34963b
+entity_slug: thompson-engineering
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 2 of 2] ---
+id: 56b3179b-e69c-4f81-b719-459d085c17be
+entity_slug: thompson-engineering
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: thompson-engineering
+name: Thompson Engineering
+industry_code: other
+parent_entity_slug: the-wharf
+is_parent: false
+score_of_7: 5
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: ba348819-1bac-491b-b00e-72f53f6b4aaa
+entity_slug: thompson-engineering
+place_uri: https://maps.google.com/?cid=497437852252630373&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0510687a22d9:0x6e741175159ed65!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0510687a22d9:0x6e741175159ed65!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0510687a22d9:0x6e741175159ed65!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0510687a22d9:0x6e741175159ed65!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   1 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 1] ---
+review_id: 10432
+entity_slug: thompson-engineering
+google_review_name: places/ChIJ2SJ6aBAFmogRZe1ZURdB5wY/reviews/ChdDSUhNMG9nS0VJQ0FnSURoMjdtZnFBRRAB
+rating: 5
+review_text: Very educated people!
+language_code: en
+author_name: Stephanie Nicole
+author_profile_url: https://www.google.com/maps/contrib/114965141080195791113/reviews
+publish_time: 2023-03-18T16:14:03.386052+00:00
+relative_time: 3 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURoMjdtZnFBRRAB!2m1!1s0x889a0510687a22d9:0x6e741175159ed65
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: thompson-engineering
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 6d7bcfcc-36ba-40c3-8180-ca43952e4722
+name: Thompson Engineering
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/thompson-engineering/photo_01.jpg",
+    "/photos/thompson-engineering/photo_01.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: thompson-engineering
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 6d7bcfcc-36ba-40c3-8180-ca43952e4722
+name: Thompson Engineering
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/thompson-engineering/photo_01.jpg",
+    "/photos/thompson-engineering/photo_01.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: 1468583b-e9e7-4de4-a9d7-8a8f19c3b63e
+entity_slug: thompson-engineering
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 34ed7b5a-8719-4ade-b483-79c5d4e1fa32
+entity_slug: thompson-engineering
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: aa575c95-b91e-4b9f-9aef-51922f3dd491
+entity_slug: thompson-engineering
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: b95dea82-f4c1-4877-a8a4-8259cd296ae0
+entity_slug: thompson-engineering
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: 828e8f21-dc4f-409a-86fc-8b9722c3552d
+entity_slug: thompson-engineering
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: a862ec0a-2645-4566-8c87-70cb58cfe996
+entity_slug: thompson-engineering
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 328d17d7-35b5-483f-8484-0f4af11aa002
+entity_slug: thompson-engineering
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 2d7656ab-297f-4f71-96c0-c5a07d716fbc
+entity_slug: thompson-engineering
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: b78c4aa8-44d8-42df-a725-533a7c0376de
+entity_slug: thompson-engineering
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: 7bc57005-f903-4b02-a7c9-3cb7ff110211
+entity_slug: thompson-engineering
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: bba944ea-4f63-469a-92b9-78e7dffb14f5
+entity_slug: thompson-engineering
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: cc30fbad-2690-4e36-a4df-764dd393c891
+entity_slug: thompson-engineering
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: 618adebf-428f-4fd7-8f2c-fd4aaaa741ac
+entity_slug: thompson-engineering
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   20 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 20] ---
+id: 53604a34-7792-4616-a40e-a413d67fef11
+landmark_id: 3129e58a-37bd-462c-884d-862afd0a8e21
+entity_slug: thompson-engineering
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 20] ---
+id: 9012fbc4-3905-43e1-bd2a-48e205344e4c
+landmark_id: 3129e58a-37bd-462c-884d-862afd0a8e21
+entity_slug: thompson-engineering
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 20] ---
+id: a77db172-feaf-4afa-992c-058faf4ca9be
+landmark_id: 3129e58a-37bd-462c-884d-862afd0a8e21
+entity_slug: thompson-engineering
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 20] ---
+id: 9cf06840-217d-4a71-9f9d-ebf3747dce98
+landmark_id: 3129e58a-37bd-462c-884d-862afd0a8e21
+entity_slug: thompson-engineering
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 20] ---
+id: 4c5bc9ba-3e51-4ae6-9183-cec88c521d9e
+landmark_id: 3129e58a-37bd-462c-884d-862afd0a8e21
+entity_slug: thompson-engineering
+landmark_type: shopping_mall
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 20] ---
+id: c25450c5-3b63-40f1-b2da-b681efea69da
+landmark_id: 3129e58a-37bd-462c-884d-862afd0a8e21
+entity_slug: thompson-engineering
+landmark_type: tourist_attraction
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 20] ---
+id: f7649f5e-14dd-45b6-9284-8b22addaa18a
+landmark_id: 85a4bf64-0fd3-43a2-ab70-13ee0dedc5aa
+entity_slug: thompson-engineering
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 20] ---
+id: 15b3353d-2319-4136-8875-2e6c2d78c53a
+landmark_id: 85a4bf64-0fd3-43a2-ab70-13ee0dedc5aa
+entity_slug: thompson-engineering
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 20] ---
+id: 63270ef0-55ba-4d6d-bd2b-5fa1365564d1
+landmark_id: 7c3d5a89-ec85-4cac-af48-b91d09500c01
+entity_slug: thompson-engineering
+landmark_type: bar
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 20] ---
+id: d52b3321-3b76-406a-b98f-79179a7df0dc
+landmark_id: 7c3d5a89-ec85-4cac-af48-b91d09500c01
+entity_slug: thompson-engineering
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 20] ---
+id: 48bdd0fe-0dc8-4bf8-8a14-dd05bfc2d457
+landmark_id: 7c3d5a89-ec85-4cac-af48-b91d09500c01
+entity_slug: thompson-engineering
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 20] ---
+id: 4c4f0424-0893-4d26-afdd-a31b9c291579
+landmark_id: 7c3d5a89-ec85-4cac-af48-b91d09500c01
+entity_slug: thompson-engineering
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 20] ---
+id: 00c60961-a665-4ed1-a26a-f9862322c019
+landmark_id: 7c3d5a89-ec85-4cac-af48-b91d09500c01
+entity_slug: thompson-engineering
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 20] ---
+id: 65c68525-9aa5-445f-9263-73bb97169b5f
+landmark_id: f60434ef-709b-459a-90e8-99395324d296
+entity_slug: thompson-engineering
+landmark_type: clothing_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 20] ---
+id: fe8de693-ac80-4633-9c50-1c1ddbb9c986
+landmark_id: f60434ef-709b-459a-90e8-99395324d296
+entity_slug: thompson-engineering
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 20] ---
+id: 2599cf62-56b2-4de8-86a1-47612457ef6f
+landmark_id: f60434ef-709b-459a-90e8-99395324d296
+entity_slug: thompson-engineering
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 20] ---
+id: fcc2ef53-5a57-49dc-a31c-42e9b6312c60
+landmark_id: f60434ef-709b-459a-90e8-99395324d296
+entity_slug: thompson-engineering
+landmark_type: shoe_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 20] ---
+id: d00955e8-7668-4415-9107-8bd922a7ca9f
+landmark_id: f60434ef-709b-459a-90e8-99395324d296
+entity_slug: thompson-engineering
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 19 of 20] ---
+id: 7bfa3375-11d0-4ba7-995b-e51a1177c594
+landmark_id: d6b15219-ec35-4ee8-82a6-d4f4dd67d4ae
+entity_slug: thompson-engineering
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 20 of 20] ---
+id: c2b41d9d-744c-408e-bc94-e9cbf70bc932
+landmark_id: d6b15219-ec35-4ee8-82a6-d4f4dd67d4ae
+entity_slug: thompson-engineering
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   6 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 6] ---
+id: 3129e58a-37bd-462c-884d-862afd0a8e21
+entity_slug: thompson-engineering
+kind: landmark
+place_id: ChIJvfvStq0FmogRzhDmwHKhsDA
+name: The Wharf
+types: [
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant",
+  "shopping_mall",
+  "tourist_attraction"
+]
+spatial_relationship: WITHIN
+travel_distance_meters: 347.4135
+straight_line_distance_meters: 136.68971
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 6] ---
+id: 85a4bf64-0fd3-43a2-ab70-13ee0dedc5aa
+entity_slug: thompson-engineering
+kind: landmark
+place_id: ChIJP3KjbsQFmogROsuRYtNn7qU
+name: The Wharf Marina
+types: [
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 58.98125
+straight_line_distance_meters: 74.07068
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 6] ---
+id: 7c3d5a89-ec85-4cac-af48-b91d09500c01
+entity_slug: thompson-engineering
+kind: landmark
+place_id: ChIJjUVMSMMFmogRb0-XfuWyIEY
+name: Ginny Lane Bar and Grill
+types: [
+  "bar",
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant"
+]
+travel_distance_meters: 134.50342
+straight_line_distance_meters: 74.07068
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 6] ---
+id: f60434ef-709b-459a-90e8-99395324d296
+entity_slug: thompson-engineering
+kind: landmark
+place_id: ChIJw7XRVtsFmogRfOO_7qsC_pE
+name: Seaside Shoes & SWIM
+types: [
+  "clothing_store",
+  "establishment",
+  "point_of_interest",
+  "shoe_store",
+  "store"
+]
+spatial_relationship: ACROSS_THE_ROAD
+travel_distance_meters: 50.66622
+straight_line_distance_meters: 42.09134
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 6] ---
+id: d6b15219-ec35-4ee8-82a6-d4f4dd67d4ae
+entity_slug: thompson-engineering
+kind: landmark
+place_id: ChIJjUVMSMMFmogR6PCDJOYkPio
+name: Wharf
+types: [
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 76.45642
+straight_line_distance_meters: 81.59985
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 6 of 6] ---
+id: 60357c12-cba5-40dc-a0c0-d3124fa768da
+entity_slug: thompson-engineering
+kind: area
+place_id: ChIJ7T7Xq9wFmogRahIOl40NkO4
+name: The Wharf
+containment: WITHIN
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 14171
+entity_slug: thompson-engineering
+name: Thompson Engineering
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 6d7bcfcc-36ba-40c3-8180-ca43952e4722
+
+####################################################################################################
+# TABLE: entity_photos   -   4 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 4] ---
+id: a55ef247-3303-4927-ac63-b995b630e8e9
+entity_slug: thompson-engineering
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/thompson-engineering/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 4] ---
+id: 67a00459-1303-4f37-9d58-8d81bfb280c8
+entity_slug: thompson-engineering
+url: https://alwharf-assets.nyc3.digitaloceanspaces.com/images/merchant-full/_304x304_crop_center-center_none_ns/THE-WHARF-RAW-176-2.jpg?v=1777641994
+is_cover: true
+sort_order: 0
+photo_type: gallery
+
+--- entity_photos [row 3 of 4] ---
+id: c11ea0e0-6084-4c40-a084-8d6a036d3703
+entity_slug: thompson-engineering
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/thompson-engineering/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 6d7bcfcc-36ba-40c3-8180-ca43952e4722
+
+--- entity_photos [row 4 of 4] ---
+id: 5c0c6210-b5f2-40da-ab68-3e48eaf290bd
+entity_slug: thompson-engineering
+url: https://places.googleapis.com/v1/places/ChIJ2SJ6aBAFmogRZe1ZURdB5wY/photos/AaVGc3mkrqZGf1OQyTB1F07IhN0GPw5yJNdJqBVZ_NaydoLCfF-65plByZek_KnR2HexRu5sNr3E_VHGazWBWFmhvUV0CMb_TZtJdkeo7OKO19d0AeOvdkCPHGMWp515F6zPXAgc1FZVgkGiDu3PxmDvEXYAEaDAjQDzfnT31sSrvMpOKnnaqIAJ3rB-H4IfnOjddjFc9LJ7HarZT-OLqOvAMVKm-hJXnEyMDxjEACOT9LsWxJarqXidi2p9KEV33YzJir8fyAuVKylp9OB1pEmKiPmsTK9ze6pw-eISGg8dPKy_qD89nIKxncz6H0b2WT2TdhcEl9aZnTlcG612IAd7mFpZWfUt6mcGkZBLBZ2zWgBZPRO1V-xW7WqWrq_xrer0DxxvKMgnly5IhT4y9V6-RjOZ88tGkNrrNnSnHsBYnERjvQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ2SJ6aBAFmogRZe1ZURdB5wY/photos/AaVGc3mkrqZGf1OQyTB1F07IhN0GPw5yJNdJqBVZ_NaydoLCfF-65plByZek_KnR2HexRu5sNr3E_VHGazWBWFmhvUV0CMb_TZtJdkeo7OKO19d0AeOvdkCPHGMWp515F6zPXAgc1FZVgkGiDu3PxmDvEXYAEaDAjQDzfnT31sSrvMpOKnnaqIAJ3rB-H4IfnOjddjFc9LJ7HarZT-OLqOvAMVKm-hJXnEyMDxjEACOT9LsWxJarqXidi2p9KEV33YzJir8fyAuVKylp9OB1pEmKiPmsTK9ze6pw-eISGg8dPKy_qD89nIKxncz6H0b2WT2TdhcEl9aZnTlcG612IAd7mFpZWfUt6mcGkZBLBZ2zWgBZPRO1V-xW7WqWrq_xrer0DxxvKMgnly5IhT4y9V6-RjOZ88tGkNrrNnSnHsBYnERjvQ
+is_cover: false
+sort_order: 0
+caption: Brad Baker
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgMCwmP-VRA!2e10!4m2!3m1!1s0x889a0510687a22d9:0x6e741175159ed65
+
+####################################################################################################
+# TABLE: entity_reviews   -   1 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 1] ---
+id: f1f1e837-4b65-4a66-ac20-53af69b5b813
+entity_slug: thompson-engineering
+reviewer_name: Stephanie Nicole
+rating: 5
+body: Very educated people!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2023-03-18T16:14:03.386052+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   12 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 12] ---
+id: 5403de90-5c77-4764-b3d8-1b7c73e4fbb3
+entity_slug: thompson-engineering
+tag_name: service
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 12] ---
+id: b2d1d9ea-6c55-4197-a5fd-3459b673ea2d
+entity_slug: thompson-engineering
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 3 of 12] ---
+id: 32f7709a-b3c5-4090-a5d8-7c87158ac0fc
+entity_slug: thompson-engineering
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 4 of 12] ---
+id: 42bdb2ac-741e-41f6-9314-7b93b4dbb939
+entity_slug: thompson-engineering
+tag_name: service
+tag_category: google_primary_type
+
+--- entity_tags [row 5 of 12] ---
+id: 81c7cb4f-a9ef-43e7-ad49-d99042f48c5b
+entity_slug: thompson-engineering
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 6 of 12] ---
+id: 1b9c27b1-bbeb-420e-bffb-3932b9d810c3
+entity_slug: thompson-engineering
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 7 of 12] ---
+id: 44c9ad17-46ac-4f32-b11b-a8dd9954d621
+entity_slug: thompson-engineering
+tag_name: service
+tag_category: google_primary_type
+
+--- entity_tags [row 8 of 12] ---
+id: 6f5dafb0-c0ef-4339-a010-a9e6b9e40372
+entity_slug: thompson-engineering
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 9 of 12] ---
+id: 4b60e72e-616a-4d97-9a8d-3d0a062887e3
+entity_slug: thompson-engineering
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 10 of 12] ---
+id: ba445e9e-ba79-4261-9728-9885525985ae
+entity_slug: thompson-engineering
+tag_name: businesses + services
+tag_category: wharf
+
+--- entity_tags [row 11 of 12] ---
+id: ad03d599-1547-4b00-8b1c-2c4e3bcbb127
+entity_slug: thompson-engineering
+tag_name: the wharf
+tag_category: wharf
+
+--- entity_tags [row 12 of 12] ---
+id: cc837f95-1a00-4148-bded-15152658759b
+entity_slug: thompson-engineering
+tag_name: orange beach
+tag_category: wharf
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 294209ee-3f3a-4282-a3d1-c77c98f130f2
+entity_slug: thompson-engineering
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: offer
+ref_id: 14171
+entity_slug: thompson-engineering
+title: Thompson Engineering
+category: rental
+search_vector: 'engin':2A 'thompson':1A
+
+--- search_index [row 2 of 2] ---
+ref_type: business
+ref_id: thompson-engineering
+entity_slug: thompson-engineering
+title: Thompson Engineering
+category: service
+search_vector: 'engin':2A 'servic':3B 'thompson':1A

@@ -1,0 +1,693 @@
+====================================================================================================
+SLUG: airbnb
+NAME: Airbnb
+INDUSTRY: vacation_rental
+SUBTYPE: vacation_rental
+TABLES WITH DATA: 16
+TOTAL ROWS: 73
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (6 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (1 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_good_for  (10 rows)
+  entity_highlights  (9 rows)
+  entity_hours  (7 rows)
+  entity_modules  (13 rows)
+  entity_photos  (1 rows)
+  entity_tags  (18 rows)
+  entity_theme  (1 rows)
+  industry_vacation_rental  (1 rows)
+  search_index  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: airbnb
+name: Airbnb
+planner_category: things_to_do
+data_quality_score: 80
+issues: missing_lat_lng
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: false
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   6 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 6] ---
+id: 3947
+entity_slug: airbnb
+intent_tag: best_for:outdoor_activity
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 6] ---
+id: 3948
+entity_slug: airbnb
+intent_tag: experience:tourist_favorite
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 6] ---
+id: 3949
+entity_slug: airbnb
+intent_tag: experience:groups_events
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 6] ---
+id: 3950
+entity_slug: airbnb
+intent_tag: service:booking_available
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 6] ---
+id: 3951
+entity_slug: airbnb
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 6] ---
+id: 3952
+entity_slug: airbnb
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: airbnb
+name: Airbnb
+is_active: t
+planner_category: things_to_do
+entity_type: hotel
+entity_subtype: vacation-rentals
+review_count: 0
+website_url: https://www.airbnb.com/
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/airbnb/photo_01.jpg
+voice_summary: Airbnb is best for outdoor activity. Experience tags: tourist_favorite, groups_events.
+planner_summary: Get an Airbnb for every kind of trip. Access 8 million vacation rentals, 2 million Guest Favorites across 220+ countries and regions worldwide. Find unique homes, cabins, beach houses, and local experiences for your next getaway.
+best_for: outdoor activity
+not_best_for: nothing specific flagged
+experience_tags: tourist_favorite|groups_events
+service_tags: booking_available
+search_keywords: vacation rentals|vacation homes|cabins|beach houses|unique accommodations|experiences|travel|lodging|short-term rentals|guest favorites|Travel & Lodging|Accommodations|Beach Homes|Cabin Rentals|Travel Experiences|travel-and-hospitality|vacation-rentals|tourist_favorite|groups_events|booking_available
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 1
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 18
+faq_count: 0
+data_quality_score: 80
+data_gaps: missing_lat_lng
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   1 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 1] ---
+id: 27194
+entity_slug: airbnb
+entity_name: Airbnb
+url: https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-UserProfile/original/5347d650-16de-4f5a-a38e-79edc988befa.png?im_w=720
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: b3f77097-99fe-4bac-86ef-95e435df89a9
+slug: airbnb
+name: Airbnb
+is_active: true
+featured: false
+entity_type: hotel
+entity_subtype: vacation_rental
+description: Get an Airbnb for every kind of trip. Access 8 million vacation rentals, 2 million Guest Favorites across 220+ countries and regions worldwide. Find unique homes, cabins, beach houses, and local experiences for your next getaway.
+subtitle: Vacation Rentals, Cabins, Beach Houses, Unique Homes & Experiences
+website_url: https://www.airbnb.com/
+menu_pin: 7006
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/airbnb/photo_01.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T22:45:57.511289+00:00
+updated_at: 2026-06-03T22:45:57.511289+00:00
+gallery_sections: []
+highlights: [
+  "Online booking",
+  "Mobile app",
+  "Secure payments",
+  "Host verification",
+  "Guest reviews",
+  "24/7 customer support",
+  "WiFi-enabled properties",
+  "Pet-friendly options",
+  "Wheelchair accessible properties"
+]
+good_for: [
+  "Families",
+  "Couples",
+  "Solo travelers",
+  "Groups",
+  "Beach vacations",
+  "Mountain retreats",
+  "City getaways",
+  "Adventure seekers",
+  "Remote workers",
+  "Tourists"
+]
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+business_status: OPERATIONAL
+google_places_data: {}
+search_vector: 'airbnb':1A
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: stay
+industry_code: vacation_rental
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: airbnb
+name: Airbnb
+industry_code: vacation_rental
+is_parent: false
+score_of_7: 2
+
+####################################################################################################
+# TABLE: entity_good_for   -   10 row(s)
+####################################################################################################
+
+--- entity_good_for [row 1 of 10] ---
+id: 9e3521d4-40e3-4ba8-94c9-979a450ac9a4
+entity_slug: airbnb
+audience: Families
+sort_order: 1
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 2 of 10] ---
+id: a49f8020-82f4-4854-bf32-89911bcd8fc9
+entity_slug: airbnb
+audience: Couples
+sort_order: 2
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 3 of 10] ---
+id: 40b41af0-4ca5-4155-bdbb-a55efd142424
+entity_slug: airbnb
+audience: Solo travelers
+sort_order: 3
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 4 of 10] ---
+id: 85f69af6-c283-4b56-964f-9c3ac0fca86a
+entity_slug: airbnb
+audience: Groups
+sort_order: 4
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 5 of 10] ---
+id: 6b504c38-5a4f-4458-88b6-a97bca2ae767
+entity_slug: airbnb
+audience: Beach vacations
+sort_order: 5
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 6 of 10] ---
+id: 644e7e4a-3dd8-47e3-9d17-8f47ebf67572
+entity_slug: airbnb
+audience: Mountain retreats
+sort_order: 6
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 7 of 10] ---
+id: fb8d9325-5728-4cfd-9bd1-5ab13fdc5b59
+entity_slug: airbnb
+audience: City getaways
+sort_order: 7
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 8 of 10] ---
+id: 0f65a8a3-b628-4e39-af0d-6c63fd633396
+entity_slug: airbnb
+audience: Adventure seekers
+sort_order: 8
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 9 of 10] ---
+id: cb8b5c00-fecf-434f-81cf-48e2ef99206d
+entity_slug: airbnb
+audience: Remote workers
+sort_order: 9
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 10 of 10] ---
+id: 2064e2e2-b897-49e5-a77b-bbaf576ac8f4
+entity_slug: airbnb
+audience: Tourists
+sort_order: 10
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+####################################################################################################
+# TABLE: entity_highlights   -   9 row(s)
+####################################################################################################
+
+--- entity_highlights [row 1 of 9] ---
+id: 30e45ba0-9a3b-45e6-8170-b4b52d9a24e2
+entity_slug: airbnb
+highlight: Online booking
+sort_order: 1
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 2 of 9] ---
+id: 09abd3c6-19b5-4dda-9325-cecb66114172
+entity_slug: airbnb
+highlight: Mobile app
+sort_order: 2
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 3 of 9] ---
+id: 6e81dd51-a484-4176-9102-5257b71365d0
+entity_slug: airbnb
+highlight: Secure payments
+sort_order: 3
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 4 of 9] ---
+id: 1a195df3-729f-4085-9d6a-f5ecff35cc78
+entity_slug: airbnb
+highlight: Host verification
+sort_order: 4
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 5 of 9] ---
+id: f5fd194e-2650-47de-ab53-1e903e066c3f
+entity_slug: airbnb
+highlight: Guest reviews
+sort_order: 5
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 6 of 9] ---
+id: 53bcb83b-7678-4fbe-b592-9df4c8ad3c4b
+entity_slug: airbnb
+highlight: 24/7 customer support
+sort_order: 6
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 7 of 9] ---
+id: afe062da-63f8-4a93-a1ca-a91137922aa7
+entity_slug: airbnb
+highlight: WiFi-enabled properties
+sort_order: 7
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 8 of 9] ---
+id: 1086f673-a071-4375-bd82-26012055083a
+entity_slug: airbnb
+highlight: Pet-friendly options
+sort_order: 8
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 9 of 9] ---
+id: c9994a59-096e-409a-ae3b-2c3aeb0dbe91
+entity_slug: airbnb
+highlight: Wheelchair accessible properties
+sort_order: 9
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 6eb74ec0-0542-4d97-af37-a2cfa57fc3d3
+entity_slug: airbnb
+day_of_week: 1
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 0ca58e89-2407-43e8-83a5-077c2b4f2a70
+entity_slug: airbnb
+day_of_week: 2
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: be9ccb57-bc46-45be-8317-2959fe2ba1f0
+entity_slug: airbnb
+day_of_week: 3
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 1aebd948-2814-4899-af52-0abd2e062197
+entity_slug: airbnb
+day_of_week: 4
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: b2642b21-06f7-4599-8570-4c9d8c44363d
+entity_slug: airbnb
+day_of_week: 5
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 3b132cf3-14fb-43a3-9b9d-603e84e7e347
+entity_slug: airbnb
+day_of_week: 6
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: aa66baed-2000-46cd-9f6e-f30351cad6e3
+entity_slug: airbnb
+day_of_week: 0
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: 4bb25379-d02c-40f0-9572-bc346b7e7154
+entity_slug: airbnb
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: b4038634-de1a-4963-b2bb-bcc243d55b22
+entity_slug: airbnb
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: 26a8b66a-79b1-46ef-b36f-12dfe9c410ae
+entity_slug: airbnb
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: eef40255-a80b-4c2b-97ed-906339115daa
+entity_slug: airbnb
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: 350b8217-82b6-4b6a-8166-47eed554a38e
+entity_slug: airbnb
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: 3bc8c01b-3cc6-4684-aaab-89e2a286b2e4
+entity_slug: airbnb
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 3ff0744a-6566-4f8c-bb42-ee50a9e8c86e
+entity_slug: airbnb
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: ceb38f7c-1a47-4e0f-b5f3-5c132650c3f1
+entity_slug: airbnb
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: 8c584ab7-2332-4e37-bb18-997af8de776c
+entity_slug: airbnb
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: 1211e1d0-a51d-4be5-85a4-6fbba834797b
+entity_slug: airbnb
+module_key: stay
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: 7e408c0b-dc60-4486-b4ba-85aea826ccd3
+entity_slug: airbnb
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: e469fa94-585f-4705-a1f1-259f2516363d
+entity_slug: airbnb
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: 7d64b2b3-b417-4eaf-b37b-9d01671c63ef
+entity_slug: airbnb
+module_key: amenities
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_photos   -   1 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 1] ---
+id: 8b004eca-275f-442a-80b1-5a4c0cb70580
+entity_slug: airbnb
+url: https://a0.muscache.com/im/pictures/airbnb-platform-assets/AirbnbPlatformAssets-UserProfile/original/5347d650-16de-4f5a-a38e-79edc988befa.png?im_w=720
+is_cover: true
+sort_order: 0
+photo_type: complex
+
+####################################################################################################
+# TABLE: entity_tags   -   18 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 18] ---
+id: 646577e8-9175-4c1e-9303-842beed9f469
+entity_slug: airbnb
+tag_name: vacation rentals
+
+--- entity_tags [row 2 of 18] ---
+id: 4f88ce3e-af07-4559-a910-a52361ad0777
+entity_slug: airbnb
+tag_name: vacation homes
+
+--- entity_tags [row 3 of 18] ---
+id: d4bffed2-f09d-4448-a5d9-c3ad657624a3
+entity_slug: airbnb
+tag_name: cabins
+
+--- entity_tags [row 4 of 18] ---
+id: 07b78ba6-ba0e-44bc-bf32-3acc767169d0
+entity_slug: airbnb
+tag_name: beach houses
+
+--- entity_tags [row 5 of 18] ---
+id: 1f0864ad-8e40-4235-a366-25a8553ffa0e
+entity_slug: airbnb
+tag_name: unique accommodations
+
+--- entity_tags [row 6 of 18] ---
+id: 6ffbcb10-400d-401a-89d3-6bba6213b2f7
+entity_slug: airbnb
+tag_name: experiences
+
+--- entity_tags [row 7 of 18] ---
+id: ab985efc-5699-4f9e-a90e-d873b9515a82
+entity_slug: airbnb
+tag_name: travel
+
+--- entity_tags [row 8 of 18] ---
+id: 0ee8538d-0c1c-42d6-97c1-981b3f9a970b
+entity_slug: airbnb
+tag_name: lodging
+
+--- entity_tags [row 9 of 18] ---
+id: b53f1399-d6e9-4ed9-8e9b-2bc8b2a29155
+entity_slug: airbnb
+tag_name: short-term rentals
+
+--- entity_tags [row 10 of 18] ---
+id: 1437ff33-4518-4cc8-a9c7-5ef32acaff52
+entity_slug: airbnb
+tag_name: guest favorites
+
+--- entity_tags [row 11 of 18] ---
+id: b48a5ee2-c26f-4010-93c0-90c2dfca915e
+entity_slug: airbnb
+tag_name: Vacation Rentals
+tag_category: category
+
+--- entity_tags [row 12 of 18] ---
+id: da3613a2-fcbf-4178-9c52-487ccc0e14bb
+entity_slug: airbnb
+tag_name: Travel & Lodging
+tag_category: category
+
+--- entity_tags [row 13 of 18] ---
+id: 70299bb4-484e-405c-b479-21ecb58de2ee
+entity_slug: airbnb
+tag_name: Accommodations
+tag_category: category
+
+--- entity_tags [row 14 of 18] ---
+id: f9271321-e34e-4c8f-b129-6ccf2bd80ea0
+entity_slug: airbnb
+tag_name: Beach Homes
+tag_category: category
+
+--- entity_tags [row 15 of 18] ---
+id: 4b8a0950-153f-4099-8e96-a9f43de29790
+entity_slug: airbnb
+tag_name: Cabin Rentals
+tag_category: category
+
+--- entity_tags [row 16 of 18] ---
+id: d4e411da-50cd-4871-a7b8-92c91c70be4a
+entity_slug: airbnb
+tag_name: Travel Experiences
+tag_category: category
+
+--- entity_tags [row 17 of 18] ---
+id: 00ea6ed2-daf1-4ea5-90ce-58fc687e6cca
+entity_slug: airbnb
+tag_name: travel-and-hospitality
+tag_category: industry
+
+--- entity_tags [row 18 of 18] ---
+id: 256bf3ea-b5d2-419f-9eef-ce22522d8808
+entity_slug: airbnb
+tag_name: vacation-rentals
+tag_category: type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 869bd816-2a2a-4231-8d0c-5851f67e13b7
+entity_slug: airbnb
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_vacation_rental   -   1 row(s)
+####################################################################################################
+
+--- industry_vacation_rental [row 1 of 1] ---
+entity_slug: airbnb
+unit_count: 0
+pet_friendly: false
+has_pool: false
+updated_at: 2026-07-21T16:59:02.358415+00:00
+
+####################################################################################################
+# TABLE: search_index   -   1 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 1] ---
+ref_type: business
+ref_id: airbnb
+entity_slug: airbnb
+title: Airbnb
+category: vacation_rental
+subtitle: Get an Airbnb for every kind of trip. Access 8 million vacation rentals, 2 million Guest Favorites across 220+ countries and regions worldwide. Find unique homes, cabins, beach houses, and local experiences for your next getaway.
+search_vector: '2':17C '220':22C '8':13C 'access':12C 'across':21C 'airbnb':1A,6C 'beach':31C 'cabin':30C 'countri':23C 'everi':8C 'experi':35C 'favorit':20C 'find':27C 'get':4C 'getaway':39C 'guest':19C 'home':29C 'hous':32C 'kind':9C 'local':34C 'million':14C,18C 'next':38C 'region':25C 'rental':3B,16C 'trip':11C 'uniqu':28C 'vacat':2B,15C 'worldwid':26C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: airbnb

@@ -1,0 +1,676 @@
+====================================================================================================
+SLUG: da-car-wash
+NAME: Da' Car Wash
+INDUSTRY: trade_home_service
+SUBTYPE: car_wash
+TABLES WITH DATA: 19
+TOTAL ROWS: 61
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (3 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_offer  (1 rows)
+  entity_photos  (4 rows)
+  entity_tags  (18 rows)
+  entity_theme  (1 rows)
+  industry_trade_home_service  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: da-car-wash
+name: Da' Car Wash
+planner_category: things_to_do
+data_quality_score: 90
+issues: missing_lat_lng
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: false
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   3 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 3] ---
+id: 18661
+entity_slug: da-car-wash
+intent_tag: best_for:outdoor_activity
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 3] ---
+id: 18662
+entity_slug: da-car-wash
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 3] ---
+id: 18663
+entity_slug: da-car-wash
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: da-car-wash
+name: Da' Car Wash
+is_active: t
+planner_category: things_to_do
+entity_type: service
+entity_subtype: car-wash
+city: Orange Beach
+state: AL
+address_line_1: 24130 Canal Road
+review_count: 0
+website_url: http://www.dacarwash.com
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/da-car-wash/photo_01.jpg
+voice_summary: Da' Car Wash in Orange Beach is best for outdoor activity.
+planner_summary: Da' Car Wash is Alabama's most cutting-edge express car wash! We make getting a clean car as easy and convenient as possible! Simply drive up on our state of the art conveyor system, then sit back and glide to a clean ride!
+best_for: outdoor activity
+not_best_for: nothing specific flagged
+search_keywords: car wash|express car wash|auto detailing|vehicle cleaning|Orange Beach|Gulf Shores|Alabama|conveyor wash|self-service vacuum|unlimited membership|fast pass|Automotive Services|Vehicle Maintenance|automotive-services|car-wash
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 2
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 18
+faq_count: 0
+data_quality_score: 90
+data_gaps: missing_lat_lng
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 7827
+entity_slug: da-car-wash
+entity_name: Da' Car Wash
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/da-car-wash/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 7828
+entity_slug: da-car-wash
+entity_name: Da' Car Wash
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/da-car-wash/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 9aa81d6e-72d4-40b9-9dfd-2e5d8609c672
+resource_type: service
+slug: da-car-wash
+name: Da' Car Wash
+description: Da' Car Wash is Alabama's most cutting-edge express car wash! We make getting a clean car as easy and convenient as possible! Simply drive up on our state of the art conveyor system, then sit back and glide to a clean ride!
+entity_slug: da-car-wash
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/da-car-wash/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/da-car-wash/photo_02.jpg"
+]
+amenities: []
+faqs: []
+address: 24130 Canal Road
+city: Orange Beach
+state: AL
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: bc2ca42f213aaed9da96c42e4b966f2c
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 9aa81d6e-72d4-40b9-9dfd-2e5d8609c672
+entity_slug: da-car-wash
+slug: da-car-wash
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/da-car-wash/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/da-car-wash/photo_02.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 9ebdb181-bb81-481d-86a9-aef183f794dc
+slug: da-car-wash
+name: Da' Car Wash
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: car_wash
+description: Da' Car Wash is Alabama's most cutting-edge express car wash! We make getting a clean car as easy and convenient as possible! Simply drive up on our state of the art conveyor system, then sit back and glide to a clean ride!
+subtitle: Alabama's most cutting-edge express car wash
+phone: (251) 981-6666
+website_url: http://www.dacarwash.com
+menu_pin: 6373
+social_facebook: https://www.facebook.com/Dacarwash
+address_line_1: 24130 Canal Road
+city: Orange Beach
+state: AL
+zip: 36561
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/da-car-wash/photo_01.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T22:54:39.94963+00:00
+updated_at: 2026-07-02T03:28:22.498088+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+business_status: OPERATIONAL
+google_places_data: {}
+search_vector: 'beach':5 'car':2A 'da':1A 'orang':4 'wash':3A
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: trade_home_service
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: da-car-wash
+name: Da' Car Wash
+industry_code: trade_home_service
+is_parent: false
+score_of_7: 4
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 4df4ee0c-4ad5-45b7-a05b-ed7a9c0047ab
+entity_slug: da-car-wash
+day_of_week: 1
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 33254ca4-a617-4004-9538-bf88a853870c
+entity_slug: da-car-wash
+day_of_week: 2
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 7e8b5fef-52d9-4646-9cae-2a2e5a94a3e1
+entity_slug: da-car-wash
+day_of_week: 3
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 8f4c73d7-1ea1-47cf-8cb5-c406dac4c3aa
+entity_slug: da-car-wash
+day_of_week: 4
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 1d0ebc74-5436-4bc9-a864-2640570888d3
+entity_slug: da-car-wash
+day_of_week: 5
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: da18c361-11c4-4375-add7-a936c790aab2
+entity_slug: da-car-wash
+day_of_week: 6
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: eb96e89a-43aa-4eef-a731-c717967e65d8
+entity_slug: da-car-wash
+day_of_week: 0
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: da-car-wash
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 9aa81d6e-72d4-40b9-9dfd-2e5d8609c672
+name: Da' Car Wash
+description: Da' Car Wash is Alabama's most cutting-edge express car wash! We make getting a clean car as easy and convenient as possible! Simply drive up on our state of the art conveyor system, then sit back and glide to a clean ride!
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/da-car-wash/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/da-car-wash/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: da-car-wash
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 9aa81d6e-72d4-40b9-9dfd-2e5d8609c672
+name: Da' Car Wash
+description: Da' Car Wash is Alabama's most cutting-edge express car wash! We make getting a clean car as easy and convenient as possible! Simply drive up on our state of the art conveyor system, then sit back and glide to a clean ride!
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/da-car-wash/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/da-car-wash/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: 9944126c-1376-4dda-8533-25399521ad67
+entity_slug: da-car-wash
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 3427548a-8120-45c7-a34b-00fe6ead038e
+entity_slug: da-car-wash
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: 11eed48c-051e-4ba6-b433-7a9e997d615a
+entity_slug: da-car-wash
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: 2b73c061-8588-417e-af0b-1bfb4401680a
+entity_slug: da-car-wash
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: 35186655-039b-445c-9598-4c5ce164c000
+entity_slug: da-car-wash
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: 98f25854-5146-4ab9-8175-148e9ac3f825
+entity_slug: da-car-wash
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 26c05fe9-a3ed-4b9d-99b9-1001e12414a5
+entity_slug: da-car-wash
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: f3f9f766-132d-4987-8b39-71eab8bf3d23
+entity_slug: da-car-wash
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: 12cd3ea6-d5bb-4a35-b411-5465df3705ec
+entity_slug: da-car-wash
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: 3af260d6-2eb5-409e-9723-bd42bbc9a7c3
+entity_slug: da-car-wash
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: 0f34f3fd-9d19-484c-8bd9-184e05e33e77
+entity_slug: da-car-wash
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: 3cb65f6b-7931-459f-9847-3820d456a941
+entity_slug: da-car-wash
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: 1082c2b4-1d21-49e5-8b35-5ca59586b154
+entity_slug: da-car-wash
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13467
+entity_slug: da-car-wash
+name: Da' Car Wash
+description: Da' Car Wash is Alabama's most cutting-edge express car wash! We make getting a clean car as easy and convenient as possible! Simply drive up on our state of the art conveyor system, then sit back and glide to a clean ride!
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 9aa81d6e-72d4-40b9-9dfd-2e5d8609c672
+
+####################################################################################################
+# TABLE: entity_photos   -   4 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 4] ---
+id: b8e479dd-347c-48eb-9701-b80fdd385f90
+entity_slug: da-car-wash
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/da-car-wash/photo_01.jpg
+is_cover: false
+sort_order: 101
+photo_type: gallery
+source_name: extracted:bookable_resources.photo_urls
+
+--- entity_photos [row 2 of 4] ---
+id: 93ffd831-7c8d-423b-837c-4ac24a729c00
+entity_slug: da-car-wash
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/da-car-wash/photo_02.jpg
+is_cover: false
+sort_order: 102
+photo_type: gallery
+source_name: extracted:bookable_resources.photo_urls
+
+--- entity_photos [row 3 of 4] ---
+id: b60a7b0d-99bb-4e5f-8b63-0246d8638fb0
+entity_slug: da-car-wash
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/da-car-wash/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 9aa81d6e-72d4-40b9-9dfd-2e5d8609c672
+
+--- entity_photos [row 4 of 4] ---
+id: f885a70b-84ce-4b57-b043-7a90eeba7452
+entity_slug: da-car-wash
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/da-car-wash/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: 9aa81d6e-72d4-40b9-9dfd-2e5d8609c672
+
+####################################################################################################
+# TABLE: entity_tags   -   18 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 18] ---
+id: 7a9d039c-e55c-4c19-8e60-a365bd265582
+entity_slug: da-car-wash
+tag_name: car wash
+
+--- entity_tags [row 2 of 18] ---
+id: e775e609-676d-461b-8222-22d2d239efc9
+entity_slug: da-car-wash
+tag_name: express car wash
+
+--- entity_tags [row 3 of 18] ---
+id: 54084bda-ec3d-48b6-932d-206723aebef7
+entity_slug: da-car-wash
+tag_name: auto detailing
+
+--- entity_tags [row 4 of 18] ---
+id: a8ffa258-ce41-426c-9e22-7c1cfd7409cc
+entity_slug: da-car-wash
+tag_name: vehicle cleaning
+
+--- entity_tags [row 5 of 18] ---
+id: 69222bed-cc40-4d83-9d81-103b63652010
+entity_slug: da-car-wash
+tag_name: Orange Beach
+
+--- entity_tags [row 6 of 18] ---
+id: 55937887-e193-4171-b040-d30c0484f8a9
+entity_slug: da-car-wash
+tag_name: Gulf Shores
+
+--- entity_tags [row 7 of 18] ---
+id: c98c07c8-0175-4bd4-9ed6-6661c5cc691f
+entity_slug: da-car-wash
+tag_name: Alabama
+
+--- entity_tags [row 8 of 18] ---
+id: 029cb899-eb5e-4cd4-9ab3-0d923a39846c
+entity_slug: da-car-wash
+tag_name: conveyor wash
+
+--- entity_tags [row 9 of 18] ---
+id: 69eec52f-18bf-45f5-aa47-a361c1c3d132
+entity_slug: da-car-wash
+tag_name: self-service vacuum
+
+--- entity_tags [row 10 of 18] ---
+id: 4485a7fd-25b0-4522-8177-60bd033cc2ed
+entity_slug: da-car-wash
+tag_name: unlimited membership
+
+--- entity_tags [row 11 of 18] ---
+id: 89854b7f-d391-47c8-8817-506a3da4c458
+entity_slug: da-car-wash
+tag_name: fast pass
+
+--- entity_tags [row 12 of 18] ---
+id: 30c795f4-b151-48b4-9850-d2ac6f512ee1
+entity_slug: da-car-wash
+tag_name: Automotive Services
+tag_category: category
+
+--- entity_tags [row 13 of 18] ---
+id: 26ca8b5e-7416-484c-b0eb-376ba16d2d89
+entity_slug: da-car-wash
+tag_name: Car Wash
+tag_category: category
+
+--- entity_tags [row 14 of 18] ---
+id: f9bda6d6-3359-4a82-b337-03c6194fdc5e
+entity_slug: da-car-wash
+tag_name: Express Car Wash
+tag_category: category
+
+--- entity_tags [row 15 of 18] ---
+id: 4567513f-cea2-4395-9621-3761c511d326
+entity_slug: da-car-wash
+tag_name: Auto Detailing
+tag_category: category
+
+--- entity_tags [row 16 of 18] ---
+id: 9830c5cd-d824-40a6-a8b6-b1e28404742c
+entity_slug: da-car-wash
+tag_name: Vehicle Maintenance
+tag_category: category
+
+--- entity_tags [row 17 of 18] ---
+id: 6452fc61-5e41-456a-b7c2-91d2b16e2b4a
+entity_slug: da-car-wash
+tag_name: automotive-services
+tag_category: industry
+
+--- entity_tags [row 18 of 18] ---
+id: 578e76e4-0bbf-4b9b-8b2a-9139754fbf8f
+entity_slug: da-car-wash
+tag_name: car-wash
+tag_category: type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 748d55cc-be22-47db-85b0-8f404bed79a3
+entity_slug: da-car-wash
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_trade_home_service   -   1 row(s)
+####################################################################################################
+
+--- industry_trade_home_service [row 1 of 1] ---
+entity_slug: da-car-wash
+service_count: 0
+updated_at: 2026-07-21T16:19:28.491935+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: offer
+ref_id: 13467
+entity_slug: da-car-wash
+title: Da' Car Wash
+category: rental
+subtitle: Da' Car Wash is Alabama's most cutting-edge express car wash! We make getting a clean car as easy and convenient as possible! Simply drive up on our state of the art conveyor system, then sit back and glide to a clean ride!
+search_vector: 'alabama':8C 'art':37C 'back':42C 'car':2A,5C,15C,22C 'clean':21C,47C 'conveni':26C 'conveyor':38C 'cut':12C 'cutting-edg':11C 'da':1A,4C 'drive':30C 'easi':24C 'edg':13C 'express':14C 'get':19C 'glide':44C 'make':18C 'possibl':28C 'ride':48C 'simpli':29C 'sit':41C 'state':34C 'system':39C 'wash':3A,6C,16C
+
+--- search_index [row 2 of 2] ---
+ref_type: business
+ref_id: da-car-wash
+entity_slug: da-car-wash
+title: Da' Car Wash
+category: car_wash
+subtitle: Da' Car Wash is Alabama's most cutting-edge express car wash! We make getting a clean car as easy and convenient as possible! Simply drive up on our state of the art conveyor system, then sit back and glide to a clean ride!
+search_vector: 'alabama':10C 'art':39C 'back':44C 'car':2A,4B,7C,17C,24C 'clean':23C,49C 'conveni':28C 'conveyor':40C 'cut':14C 'cutting-edg':13C 'da':1A,6C 'drive':32C 'easi':26C 'edg':15C 'express':16C 'get':21C 'glide':46C 'make':20C 'possibl':30C 'ride':50C 'simpli':31C 'sit':43C 'state':36C 'system':41C 'wash':3A,5B,8C,18C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: da-car-wash

@@ -1,0 +1,2455 @@
+====================================================================================================
+SLUG: lagoon-run
+NAME: Lagoon Run
+INDUSTRY: condo
+SUBTYPE: condominium_complex
+TABLES WITH DATA: 31
+TOTAL ROWS: 145
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (5 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (20 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_address_areas  (2 rows)
+  entity_attributes  (2 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (2 rows)
+  entity_items_v  (2 rows)
+  entity_modules  (14 rows)
+  entity_nearby_landmark_types  (14 rows)
+  entity_nearby_landmarks  (7 rows)
+  entity_offer  (1 rows)
+  entity_photos  (33 rows)
+  entity_reviews  (5 rows)
+  entity_section_items  (1 rows)
+  entity_section_items_metadata_backup  (1 rows)
+  entity_sections  (1 rows)
+  entity_tags  (8 rows)
+  entity_theme  (1 rows)
+  industry_condo  (1 rows)
+  legacy_photo_migration_queue  (2 rows)
+  rental_units  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: lagoon-run
+name: Lagoon Run
+planner_category: lodging
+data_quality_score: 80
+issues: missing_summary|missing_hours
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   5 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 5] ---
+id: 6463
+entity_slug: lagoon-run
+intent_tag: best_for:lodging_search
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 5] ---
+id: 6464
+entity_slug: lagoon-run
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 5] ---
+id: 6465
+entity_slug: lagoon-run
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 5] ---
+id: 6466
+entity_slug: lagoon-run
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 5] ---
+id: 6467
+entity_slug: lagoon-run
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: lagoon-run
+name: Lagoon Run
+is_active: t
+planner_category: lodging
+entity_type: condo
+entity_subtype: condominium_complex
+city: Gulf Shores
+state: AL
+address_line_1: 1784 W Beach Blvd
+latitude: 30.2414741
+longitude: -87.742134
+rating: 4.6
+review_count: 58
+website_url: http://lagoonrun.com/
+hero_image_url: /photos/lagoon-run/photo_01.jpg
+voice_summary: Lagoon Run in Gulf Shores is best for lodging search.
+planner_summary: Lagoon Run in Gulf Shores is a lodging listing in Gulf Coast Radar.
+best_for: lodging search
+not_best_for: nothing specific flagged
+service_tags: accessibility
+search_keywords: condominium_complex|point_of_interest|service|establishment|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 20
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 8
+faq_count: 0
+data_quality_score: 80
+data_gaps: missing_summary|missing_hours
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   20 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 20] ---
+id: 3956
+entity_slug: lagoon-run
+entity_name: Lagoon Run
+city: Gulf Shores
+url: /photos/lagoon-run/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 20] ---
+id: 3957
+entity_slug: lagoon-run
+entity_name: Lagoon Run
+city: Gulf Shores
+url: /photos/lagoon-run/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 20] ---
+id: 3958
+entity_slug: lagoon-run
+entity_name: Lagoon Run
+city: Gulf Shores
+url: /photos/lagoon-run/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 20] ---
+id: 3959
+entity_slug: lagoon-run
+entity_name: Lagoon Run
+city: Gulf Shores
+url: /photos/lagoon-run/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 20] ---
+id: 3960
+entity_slug: lagoon-run
+entity_name: Lagoon Run
+city: Gulf Shores
+url: /photos/lagoon-run/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 20] ---
+id: 3961
+entity_slug: lagoon-run
+entity_name: Lagoon Run
+city: Gulf Shores
+url: /photos/lagoon-run/photo_06.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 20] ---
+id: 3962
+entity_slug: lagoon-run
+entity_name: Lagoon Run
+city: Gulf Shores
+url: /photos/lagoon-run/photo_07.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 20] ---
+id: 3963
+entity_slug: lagoon-run
+entity_name: Lagoon Run
+city: Gulf Shores
+url: /photos/lagoon-run/photo_08.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 20] ---
+id: 3964
+entity_slug: lagoon-run
+entity_name: Lagoon Run
+city: Gulf Shores
+url: /photos/lagoon-run/photo_09.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 20] ---
+id: 3965
+entity_slug: lagoon-run
+entity_name: Lagoon Run
+city: Gulf Shores
+url: /photos/lagoon-run/photo_10.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 11 of 20] ---
+id: 4944
+entity_slug: lagoon-run
+entity_name: Lagoon Run
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_09.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 12 of 20] ---
+id: 4978
+entity_slug: lagoon-run
+entity_name: Lagoon Run
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_08.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 13 of 20] ---
+id: 5236
+entity_slug: lagoon-run
+entity_name: Lagoon Run
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 14 of 20] ---
+id: 14125
+entity_slug: lagoon-run
+entity_name: Lagoon Run
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 15 of 20] ---
+id: 14127
+entity_slug: lagoon-run
+entity_name: Lagoon Run
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 16 of 20] ---
+id: 14130
+entity_slug: lagoon-run
+entity_name: Lagoon Run
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 17 of 20] ---
+id: 14131
+entity_slug: lagoon-run
+entity_name: Lagoon Run
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 18 of 20] ---
+id: 14132
+entity_slug: lagoon-run
+entity_name: Lagoon Run
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_06.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 19 of 20] ---
+id: 14135
+entity_slug: lagoon-run
+entity_name: Lagoon Run
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_07.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 20 of 20] ---
+id: 14136
+entity_slug: lagoon-run
+entity_name: Lagoon Run
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_10.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: c89ae58a-0ba1-4d74-b6de-297033c4bd8a
+resource_type: condo
+slug: lagoon-run
+name: Lagoon Run
+entity_slug: lagoon-run
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_04.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_06.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_07.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_10.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_09.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_08.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_01.jpg",
+  "/photos/lagoon-run/photo_01.jpg",
+  "/photos/lagoon-run/photo_02.jpg",
+  "/photos/lagoon-run/photo_03.jpg",
+  "/photos/lagoon-run/photo_04.jpg",
+  "/photos/lagoon-run/photo_05.jpg",
+  "/photos/lagoon-run/photo_06.jpg",
+  "/photos/lagoon-run/photo_07.jpg",
+  "/photos/lagoon-run/photo_08.jpg",
+  "/photos/lagoon-run/photo_09.jpg",
+  "/photos/lagoon-run/photo_10.jpg"
+]
+amenities: []
+faqs: []
+address: 1784 W Beach Blvd
+city: Gulf Shores
+state: AL
+latitude: 30.2414741
+longitude: -87.742134
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: bebdd0c679fcf4132d31bfebcf5f5b47
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: c89ae58a-0ba1-4d74-b6de-297033c4bd8a
+entity_slug: lagoon-run
+slug: lagoon-run
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_04.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_06.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_07.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_10.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_09.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_08.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_01.jpg",
+  "/photos/lagoon-run/photo_01.jpg",
+  "/photos/lagoon-run/photo_02.jpg",
+  "/photos/lagoon-run/photo_03.jpg",
+  "/photos/lagoon-run/photo_04.jpg",
+  "/photos/lagoon-run/photo_05.jpg",
+  "/photos/lagoon-run/photo_06.jpg",
+  "/photos/lagoon-run/photo_07.jpg",
+  "/photos/lagoon-run/photo_08.jpg",
+  "/photos/lagoon-run/photo_09.jpg",
+  "/photos/lagoon-run/photo_10.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: b1f93c48-13a6-45ed-a37e-4cc031c0d7dc
+slug: lagoon-run
+name: Lagoon Run
+is_active: true
+featured: false
+entity_type: condo
+entity_subtype: condominium_complex
+phone: (251) 270-0050
+website_url: http://lagoonrun.com/
+menu_pin: 6910
+address_line_1: 1784 W Beach Blvd
+city: Gulf Shores
+state: AL
+zip: 36542
+latitude: 30.2414741
+longitude: -87.742134
+rating: 4.6
+review_count: 58
+hero_image_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/c9039249-5ae0-4477-8107-6a33e091352e/image_1.jpg
+good_for_kids: false
+created_at: 2026-06-03T04:00:16.044158+00:00
+updated_at: 2026-06-03T04:00:16.044158+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJPQP-fYMbmogRzc1BbgEvcPU
+google_maps_uri: https://maps.google.com/?cid=17685687419875216845&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: condominium_complex
+formatted_address: 1784 W Beach Blvd, Gulf Shores, AL 36542, USA
+plus_code: 862J67R5+H4
+international_phone: +1 251-270-0050
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+google_places_data: {
+  "id": "ChIJPQP-fYMbmogRzc1BbgEvcPU",
+  "types": [
+    "condominium_complex",
+    "service",
+    "point_of_interest",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3lgXRDsMA9u6CZhWWtxJdQflw5m_Gx2jevhuY4rf4z6XPDHtcVVQTwU4mtM3FY8WGXnan1BO3kEHqT_AumyS2YjTnlVHOEeo1hvqqAe9jP8do8US5e6X62w32A3J7zvlnept916DZ23yVoFSPObi71sHefLjVMD9rKELe5Zfdb8-vrC7OekH7Hbiz_RtZL4VVH_B5Ku-kBGGns6wxlvwQe5B-iwanFKqj4PlJmIPhSV0EvpZFUkHa8V1pGomohufJQ5_AUn2jFsM9FgUDVTYznpbm4mxktmuaZdbnjQ4s8uaR9JhAYHFCXwl5T558uDrAOyiBOxzv670XKTC0mwNb8vf9VnYA6Z74l6MlKeJd6e5W9GtQZlT7bSmCDBviuFO6u9NaNHu8MjeFmLxC7yGIfiidM3o7WNxZvF6ErMNnqpf9ek",
+      "widthPx": 2048,
+      "heightPx": 1536,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgMCAzrDYvwE!2e10!4m2!3m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgMCAzrDYvwE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/108196584734390729405",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKR2ClQRFZCWmvde8FfocYg1X_dwQlO2z6m1vLjtOzwzHeoIg=s100-p-k-no-mo",
+          "displayName": "Lagoon Run"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3m8ZrkVA38XtrIvU4qGLrjEHAykUqaby5gEAXqihOtgSUm72q2CbyKn9TQZaCClxEOCnBGzaGp0HplclLSLC6xDvFfFAfAFbwZO1Oo4DV35htdOXoToZZ95cVWizo6ZF7WddBOzuXIIyrk2LtYtJYCFlCWrMsp6Cs9fN6Ij-xGF2jKVakHyvw7xCMc-sojH3Ik9syttMlM2y92IwrVdQ7-g9Tf943IZOAfoOWo_82cVCMsqwEvTqX__1UVQNx7ra9Y1uRuFZ-bXPjaZZ2wXJs5VR3aClcT-Qf0Bm2pMgkQ_HS6-G4bf0zp6x0eTVm_pWQA0LmsvVA0JlDMeXk_S1TbBzklNX3s1uOw57C1GRXcf0hJ7ZZdkOxy_abmIPHE3fUsck39kUyTYP_2W6AjoVNvrC2l5rMIvPrZdNU9hV-9Caw",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEK3xsqCNh5qfBw!2e10!4m2!3m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEK3xsqCNh5qfBw&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/100056037179653287490",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLQ5YTV6NIf-q7dE5l1AkOLauXjb5Bptp0XP8MR9D0X1D-yRA=s100-p-k-no-mo",
+          "displayName": "Karina Johnson"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3lbmry_zNk3nrXbvrif3piid4cxHUTkWhgmEc3D40xeAOtp01dKYjpD_KqGRNqcphUn2FDXEgpOJkg4qSDrD6TY8WLyiRWWpxSj5yeRD1JErejlBgTm8vvLb_GKHxwco3GBC-p2gK5ZOU9iQELWCVQ8hBYSHCb_f4VMxyA2XHccoEE_nIrMWrRsD7rEFbgc2027BFc2WuvEPI1LxxqNghdFXRVYytOXUSrSCKSkGTgbKY0iS8i5BI8Zc7Af9HgXjbYOAwNgox0e1_VnnBaKhAUcudzp-4LDAQJAFRS-gey252sd0khgjxrA6jPzPdhXDcnE4wBMbNlgFIw-eTnR9Molcn8DEMSDJVCG3-UxLLHbZU-cRidyt9tIg9bRA-bcUZARqP51rbtORJ70JBztOzauAHbHTvTTlHreCIDI5sVusyNe1PtjnOX3W8KO0w",
+      "widthPx": 4800,
+      "heightPx": 2799,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCnVHwpTOi0CvLQXg4m-m2U!2e10!4m2!3m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCnVHwpTOi0CvLQXg4m-m2U&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/108040458085264533847",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWXY_NAWGMB_r27p2m9-l2GCAc537vvhi7K81WRaEJntbjheZIHSA=s100-p-k-no-mo",
+          "displayName": "Ankit Parekh"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3nLxh38Q_zH_x3R3yFXrI-5BxQh-2d-oKkLxGkrjQBpUR8Z1Cw_PSBYnJiZnFs0RJjEdlNK51DFKFlv5mFiLrawx6L5I-4ansfqo--X5BfH5pX36hjS_wqNxcxe21tKMfU8JHNFGXOpWo15Lvm2fCaTvrF75Yr831oMV2Uor0F028ShMnfuWnelhx8qauq3Q2SKdfbEqtMdHUMjcH0GOPXEg3DGSDTqRijr36J_5w8XjGIgNCyZ4gRBBr1KonWbXS7R6nd0hKuQMV3dWGEr5nLUgU_7VErDgb0-AFJfyF9LtNj0qrtSM8F1W448gjwtNEeMXzW_RjiU9eAI6burhBSTgUsM9rhQs2s8kkPro9ysr_V3kZOTncOVY5wnn2lPJbbm7A67cMVEwJ-OQPtembgSp7lmOtKyPAjoFZwoZl5K7eP1nFntw5r4VL3h22HC",
+      "widthPx": 3600,
+      "heightPx": 4800,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAvPyXv4l_iOZnG8gOjetXQ!2e10!4m2!3m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAvPyXv4l_iOZnG8gOjetXQ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/109313810624404686576",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJBPn1DFN_FqKuV9EM9r13gbmtI2uii8goQse1YPELDnOm1og=s100-p-k-no-mo",
+          "displayName": "Mary Jo Poole"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3kWTk4I6doyDWOSO2x1n9h9EDam2tt6Gy91i8AfANZOJ8gg68UIb2BIWq837oTdms7gXiULaXfjkin5MoXBQhIlC3NHH6-J27bRCvv998sYiZlFpo6YKg9DPpHPpQ0fo3m3IH8YK-nFgVkVIwxA7fyqTkhbSd2CO0ocb7SLeO2D_5dhZUaRWYi6ozgx0aeFKeht8NhjkJI2b9qYZRuHj_fyJ76vcSV4sOlWpQ-7WxOOhK9X1jNZlSbEpUjZPcwOqB7WN56wxdAJb9UKEkTvSPfpdvlTYix7XS0GRdPmsGeJwZ69l9gGVk7V2ova2QgLl8Vcn89_MT4p99mtAyCbMlNaOLoQ-g8Cpo26O_9rusn6K_e9GPx9uq5w-mCUMOGWVeeFNHG92LtTvBTwRBrWZRE1s-P9EYhAZymZosp4rxiHZhx8",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICcvqrG3AE!2e10!4m2!3m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICcvqrG3AE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/107191847905871565703",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKP2BY3V3t_ncI_Jh8sFO8CibVmBP1Ph6hQfQGMjWuEYLGXkQ=s100-p-k-no-mo",
+          "displayName": "Thomas Bailey"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3n6bMVJKt6X_RKPDqKXD37s3jIGDqtcfE2rnK-0jrGB-8YhJmwQapVQR08hrLDh7dTvHgsnMNUAbfcfnLc5pQLdUB90vVG3iTbtjeBmW77B90mJA4GwEOVh8vcMN1g-L8o5tqDGH90qQbJ6Fu_q9O7gHGeFbaYOcjOFrafB45PnGWujaGNoKd8XgimkeGVHaXY_iWU26DKHFeiPKscS6aEB8FhBazXSA2elEAYwhgK3c72bkho905zBpcofiq4ahnppwspX0lOMlYfb9D3bTKhadgdFVKdz2_yRmJFW6ML-NJwzU3nzPbrOLBx2GFhcnGbP9zglHAowuC5FBngvx_H3Ki9XGiXAqYDMW0ismGUVrl79lHQ_okQ-cLDP9d9YzLlsOEaAyENHYxvTbJicRyrTTgbcENNERumNTSH8dfrxiw",
+      "widthPx": 1080,
+      "heightPx": 1080,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID4vfGHSg!2e10!4m2!3m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID4vfGHSg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/113678400199599533707",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKzPfdT_YT9FGIMVreHkGCey1uUO-0GAlS2JJXuQlYA3IsUiA=s100-p-k-no-mo",
+          "displayName": "Ben Blackledge"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3lglF9IyIORSSFC-zR-pN9_94axnbQt4xlMp3bpRwvPwbM-l83X7yV4Qr12CYLF7SljBVWRQqHlwtgtF2ip4RNtdHRSs6iHHUqvqE4gM09djJRdTB4fXJzItSm6ol_sGJCgRnBhp2MLiKFPqEEunQmeXOkFT-h5ywL8boXGxe8ZQzeNNMWiH5bvH7IAE1I0CT2XC2nw4fyMY24DuDJD9r8rctiuqNs5c7h7JwXxMxnNOwtzmJCT03zxqAg8yGNHF0jiLnVapDpK-DkqEkFGlnDe7Y6JBwa3bJyTdU-AtAHc1Zx8qkupexRlpiMojfLrkD2sS5qav16PRHOQb7MyT-7vouOB4h7DnQXEEu5kbp7DKX5TxwDq8WlpZJuX0ofuD2Bn0aOlkj6MXHrST14b5G747ONFIOQ8GAzruroMPysqzENPn2yktv7xyc140Q",
+      "widthPx": 3072,
+      "heightPx": 4080,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAwVWDhU7p15kQjc6XHRmOC!2e10!4m2!3m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAwVWDhU7p15kQjc6XHRmOC&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104106300188638526305",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUsnwryeLYrGL-OnjVHpIsCBhQ2KYGn73UvLh1VzGfs-ujHHoUI=s100-p-k-no-mo",
+          "displayName": "Shannon Schenk"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3mRc4htDop9gzBBQ_LQomvnfnrquUZ3XA7eJcz3gSC8X2KIUTu9mRFI4rkfO8gmdMKzUh1spHFMUt2PNjDZSojYe-lUfrEF7I5Em-ZrSB79KOpUNnzcQlZHhtfyaqcS_zY0hvocrVaafEPCCNy0hP4Onx5GKDKp8ajIk2p-t5Qg3bCQAg6gEXP3vWOW86_dHmgr4L0K7b75t8ec4LUElkajCHVpEXjJ9rN6GvHclCx05qlu7vUJ_P2KZUB1hbjaPID4pAz5M364oSVsFtfurCIdJ90tIkqlGxMmnqtB1cYTMc5th33XJ_4MgjRwgthTcwuY-Xb-oCvbZwU8FdxLpdhG8l-0LwRHis9eoq94XtwUiIru1HDEII6KWuqeiWGWqw2Vi9pCZxfjs6Nd3hdtVshdRytX_UpsvGgbgfbfmsk",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICZuMH6EA!2e10!4m2!3m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICZuMH6EA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/100601289068034857560",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJcaOHF6-TxD-U_XMd-JtUUpUhGI8mP0dDZUXcDZQ-drztGd1Ol=s100-p-k-no-mo",
+          "displayName": "Jme Nichole"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3kd6ix8vP8SulZUogPUfZS8Hzynv_YoVFYUMBFAsCUnddNXPjmz2CZglQc0ikiGPGFUQE9GclE_Da2LVfIB2C0iX7AeHE84CnlYEc_48yzr6nlFRRV8Pd6A_JnpOkfR7sMe6O7M7KegAsiVakUv5WK7Uydhw99ocNXlEdiVZz8VFfTK7uGlpt92af1koEBFRxzlxJfCI7rpbG4ZkYqAelUOQqTpS9K54iwDpR4tDq8cgZVDTMIQlVckm0F4JeovNAXvyEnPSysEzPqogagcrWVQqykl0nWPeyohWD5Sh0SLGQOq9uodLuvadBmyxWE4qvQwzC8bGBr9SjYxHr-DFYErvVzeuLkf_NK4CMbf3ja1d485fiHsnUgD-eWDJpIV1yIhHW_FL8QNXHKOCsRhMONIZkBdiCeDdyTYKHUzxIw",
+      "widthPx": 2160,
+      "heightPx": 3840,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8z4O8CA!2e10!4m2!3m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID8z4O8CA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/117556633344717873285",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXSi-JFBUNCPLynDLOuRR_7mxew3sJhv8DE9IG1pHp66sjaZVD_kA=s100-p-k-no-mo",
+          "displayName": "Judas Bertrand"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3lJwqKo5WDLConEWn381AOJ8uVFITaw4YU6gMj6oNzXEOp7mciYY5pjB83toEtvM75oKntDtjJRVmKhjDS5waZrbfUHEk8dzY2I9_je_aewYyFLmWaD00KZzO8SWox0-6ALJx2M0pYJDMTwB8fS-D-XR5VQgmcFNdBxFtcPcn8k98ZWh5pV8t08KL-c9wQrULWYG8ob9JkF8SF6JTrmRyOFbkBfCBAnxPddyli4mMYc44a0z93MygnS6OFoh-EtZ7tAlBhrSQG2lIO3EDmYizLzTXG2R7BSfhqG_TxJ9RATwL8f-09luXy-QIOOgThiZD0tc43RuHejIkqg537JpveHVn7kVfL33VeDHwmr3vFs-1z32OyynEsrRSRovvm9Szgv2nULQlWqoFqilj6m4LNDm6j-zxUdGmeGUo8i2TE",
+      "widthPx": 3000,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICrg8WDdg!2e10!4m2!3m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICrg8WDdg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/103295840284766381416",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUuDpqIPeaCAulwm9DZEqiXu_LHy9qXrvDksbDNsBJyz35SXP02=s100-p-k-no-mo",
+          "displayName": "Corey Raines"
+        }
+      ]
+    }
+  ],
+  "rating": 4.6,
+  "reviews": [
+    {
+      "name": "places/ChIJPQP-fYMbmogRzc1BbgEvcPU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xRNFUydHpkVFZ3VWs1YVdFMUpVRUZ3YVZSV1RWRRAB",
+      "text": {
+        "text": "Love this place. Stayed in 203 and was a great place. Clean and well furnished, everything you need. Bed was super comfy and loved being able to sit on porch and look at Bay.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-08-30T20:58:13.715315994Z",
+      "originalText": {
+        "text": "Love this place. Stayed in 203 and was a great place. Clean and well furnished, everything you need. Bed was super comfy and loved being able to sit on porch and look at Bay.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xRNFUydHpkVFZ3VWs1YVdFMUpVRUZ3YVZSV1RWRRAB!2m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2xRNFUydHpkVFZ3VWs1YVdFMUpVRUZ3YVZSV1RWRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/109313810624404686576/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJBPn1DFN_FqKuV9EM9r13gbmtI2uii8goQse1YPELDnOm1og=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Mary Jo Poole"
+      },
+      "relativePublishTimeDescription": "9 months ago"
+    },
+    {
+      "name": "places/ChIJPQP-fYMbmogRzc1BbgEvcPU/reviews/ChZDSUhNMG9nS0VJQ0FnSURDOGZfYktnEAE",
+      "text": {
+        "text": "Quaint and charming! The condo itself was very clean and tidy. I was most impressed that the kitchen was stocked with many of the items you'd have at home, very convenient if you'd rather cook and stay in. Will definitely stay again and highly recommend! The beach was a short walk across the street with private access. The pier and boat launch on the property had a wonderful view of the sunset as well!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2020-10-01T18:58:40.103330Z",
+      "originalText": {
+        "text": "Quaint and charming! The condo itself was very clean and tidy. I was most impressed that the kitchen was stocked with many of the items you'd have at home, very convenient if you'd rather cook and stay in. Will definitely stay again and highly recommend! The beach was a short walk across the street with private access. The pier and boat launch on the property had a wonderful view of the sunset as well!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURDOGZfYktnEAE!2m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURDOGZfYktnEAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/110741807056607164440/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWUyeFKXXITJVK-mTqmaFqMvYrBa5SBm3spDcNZgv-IDtfazreuUw=s128-c0x00000000-cc-rp-mo-ba2",
+        "displayName": "Heather Gibbs"
+      },
+      "relativePublishTimeDescription": "5 years ago"
+    },
+    {
+      "name": "places/ChIJPQP-fYMbmogRzc1BbgEvcPU/reviews/ChdDSUhNMG9nS0VKbnFnOG5TdS1mT3VnRRAB",
+      "text": {
+        "text": "It was great, the pool was always nice and warm. I would definitely recommend going during summer vacation.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-05-24T17:31:38.042465Z",
+      "originalText": {
+        "text": "It was great, the pool was always nice and warm. I would definitely recommend going during summer vacation.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VKbnFnOG5TdS1mT3VnRRAB!2m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VKbnFnOG5TdS1mT3VnRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/100056037179653287490/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLQ5YTV6NIf-q7dE5l1AkOLauXjb5Bptp0XP8MR9D0X1D-yRA=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Karina Johnson"
+      },
+      "relativePublishTimeDescription": "a year ago"
+    },
+    {
+      "name": "places/ChIJPQP-fYMbmogRzc1BbgEvcPU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2kwMVlsaFJibU51UkdnMGRsRndSbFJRUkRGSFgzYxAB",
+      "text": {
+        "text": "Lagoon Run was a great stay! We were in condo 108 it had two queen bedrooms and a king room with private bathroom. It was steps away from the beach. When you got done with the beach and wanted to just sit outside there is a dock in the lagoon with swings and picnic tables. Loved our stay!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-08-24T23:13:29.443030081Z",
+      "originalText": {
+        "text": "Lagoon Run was a great stay! We were in condo 108 it had two queen bedrooms and a king room with private bathroom. It was steps away from the beach. When you got done with the beach and wanted to just sit outside there is a dock in the lagoon with swings and picnic tables. Loved our stay!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2kwMVlsaFJibU51UkdnMGRsRndSbFJRUkRGSFgzYxAB!2m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2kwMVlsaFJibU51UkdnMGRsRndSbFJRUkRGSFgzYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/106921305333868206548/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLxaDB8pEDAVKnHbX4lPZlrqv1f0PPKECTL5GkNoq_2IoQAPw=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Christian Scudder"
+      },
+      "relativePublishTimeDescription": "9 months ago"
+    },
+    {
+      "name": "places/ChIJPQP-fYMbmogRzc1BbgEvcPU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2w5MWJHdDNPVVk0Y0RSeGFHcEpaMkZEZFRka1kzYxAB",
+      "text": {
+        "text": "Great condo location to the Gulf!  Super friendly people there that own and maintain and they are wonderful to guests.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-12-17T11:49:54.555625706Z",
+      "originalText": {
+        "text": "Great condo location to the Gulf!  Super friendly people there that own and maintain and they are wonderful to guests.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2w5MWJHdDNPVVk0Y0RSeGFHcEpaMkZEZFRka1kzYxAB!2m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2w5MWJHdDNPVVk0Y0RSeGFHcEpaMkZEZFRka1kzYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/104106300188638526305/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUsnwryeLYrGL-OnjVHpIsCBhQ2KYGn73UvLh1VzGfs-ujHHoUI=s128-c0x00000000-cc-rp-mo-ba5",
+        "displayName": "Shannon Schenk"
+      },
+      "relativePublishTimeDescription": "5 months ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.2414741,
+    "longitude": -87.742134
+  },
+  "plusCode": {
+    "globalCode": "862J67R5+H4",
+    "compoundCode": "67R5+H4 Gulf Shores, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.2399671197085,
+      "longitude": -87.7433242802915
+    },
+    "high": {
+      "latitude": 30.2426650802915,
+      "longitude": -87.74062631970848
+    }
+  },
+  "websiteUri": "http://lagoonrun.com/",
+  "displayName": {
+    "text": "Lagoon Run",
+    "languageCode": "en"
+  },
+  "primaryType": "condominium_complex",
+  "googleMapsUri": "https://maps.google.com/?cid=17685687419875216845&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=17685687419875216845&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b837dfe033d:0xf5702f016e41cdcd!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a1b837dfe033d:0xf5702f016e41cdcd!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b837dfe033d:0xf5702f016e41cdcd!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "userRatingCount": 58,
+  "adrFormatAddress": "<span class=\"street-address\">1784 W Beach Blvd</span>, <span class=\"locality\">Gulf Shores</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36542</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "1784 W Beach Blvd, Gulf Shores, AL 36542, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "1784",
+      "shortText": "1784",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "West Beach Boulevard",
+      "shortText": "W Beach Blvd",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Gulf Shores",
+      "shortText": "Gulf Shores",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36542",
+      "shortText": "36542",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJv3rGnYQbmogR3tix-4FHAA0",
+        "placeId": "ChIJv3rGnYQbmogR3tix-4FHAA0",
+        "containment": "OUTSKIRTS",
+        "displayName": {
+          "text": "Lagoon Run",
+          "languageCode": "en"
+        }
+      },
+      {
+        "name": "places/ChIJv3rGnYQbmogRKTsYT10G7q4",
+        "placeId": "ChIJv3rGnYQbmogRKTsYT10G7q4",
+        "containment": "OUTSKIRTS",
+        "displayName": {
+          "text": "Lagoon Run",
+          "languageCode": "en"
+        }
+      }
+    ],
+    "landmarks": [
+      {
+        "name": "places/ChIJU1TI-oQbmogRU2AYnFqoQzA",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJU1TI-oQbmogRU2AYnFqoQzA",
+        "displayName": {
+          "text": "Gulf Shores Surf & Racquet Club",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 369.56796,
+        "straightLineDistanceMeters": 202.05081
+      },
+      {
+        "name": "places/ChIJA2q3kYIbmogR9VdXErvuFZo",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJA2q3kYIbmogR9VdXErvuFZo",
+        "displayName": {
+          "text": "Lee Callaway Bridge",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 479.76288,
+        "straightLineDistanceMeters": 407.89172
+      },
+      {
+        "name": "places/ChIJfahGmoQbmogRWvRDH1gwPOQ",
+        "types": [
+          "establishment",
+          "lodging",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJfahGmoQbmogRWvRDH1gwPOQ",
+        "displayName": {
+          "text": "Flash Sale~Book Now~Tortuga Sunrise~Sleeps 8",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 215.71701,
+        "straightLineDistanceMeters": 26.542566
+      },
+      {
+        "name": "places/ChIJ8Z5xmoQbmogRrU3VSpTRDbM",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "real_estate_agency",
+          "travel_agency"
+        ],
+        "placeId": "ChIJ8Z5xmoQbmogRrU3VSpTRDbM",
+        "displayName": {
+          "text": "Cottage at Lagoon by Wyndham Vacation Rentals",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 162.30807,
+        "straightLineDistanceMeters": 58.084377
+      },
+      {
+        "name": "places/ChIJ8Z5xmoQbmogRjzqAF6t7okU",
+        "types": [
+          "establishment",
+          "lodging",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJ8Z5xmoQbmogRjzqAF6t7okU",
+        "displayName": {
+          "text": "Coconut Lagoon",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 171.3742,
+        "straightLineDistanceMeters": 51.897774
+      }
+    ]
+  },
+  "currentOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 0,
+          "minute": 0,
+          "truncated": true
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 59,
+          "truncated": true
+        }
+      }
+    ],
+    "weekdayDescriptions": [
+      "Monday: Open 24 hours",
+      "Tuesday: Open 24 hours",
+      "Wednesday: Open 24 hours",
+      "Thursday: Open 24 hours",
+      "Friday: Open 24 hours",
+      "Saturday: Open 24 hours",
+      "Sunday: Open 24 hours"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Condominium Complex",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "nationalPhoneNumber": "(251) 270-0050",
+  "regularOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 0,
+          "minute": 0
+        }
+      }
+    ],
+    "weekdayDescriptions": [
+      "Monday: Open 24 hours",
+      "Tuesday: Open 24 hours",
+      "Wednesday: Open 24 hours",
+      "Thursday: Open 24 hours",
+      "Friday: Open 24 hours",
+      "Saturday: Open 24 hours",
+      "Sunday: Open 24 hours"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true
+  },
+  "shortFormattedAddress": "1784 W Beach Blvd, Gulf Shores",
+  "primaryTypeDisplayName": {
+    "text": "Condominium Complex",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-270-0050"
+}
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 1784 W Beach Blvd, Gulf Shores
+national_phone: (251) 270-0050
+search_vector: 'complex':4 'condominium':3 'gulf':5 'lagoon':1A 'run':2A 'shore':6
+primary_type_display: Condominium Complex
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=17685687419875216845&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b837dfe033d:0xf5702f016e41cdcd!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a1b837dfe033d:0xf5702f016e41cdcd!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b837dfe033d:0xf5702f016e41cdcd!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJv3rGnYQbmogR3tix-4FHAA0",
+      "placeId": "ChIJv3rGnYQbmogR3tix-4FHAA0",
+      "containment": "OUTSKIRTS",
+      "displayName": {
+        "text": "Lagoon Run",
+        "languageCode": "en"
+      }
+    },
+    {
+      "name": "places/ChIJv3rGnYQbmogRKTsYT10G7q4",
+      "placeId": "ChIJv3rGnYQbmogRKTsYT10G7q4",
+      "containment": "OUTSKIRTS",
+      "displayName": {
+        "text": "Lagoon Run",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJU1TI-oQbmogRU2AYnFqoQzA",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJU1TI-oQbmogRU2AYnFqoQzA",
+      "displayName": {
+        "text": "Gulf Shores Surf & Racquet Club",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 369.56796,
+      "straightLineDistanceMeters": 202.05081
+    },
+    {
+      "name": "places/ChIJA2q3kYIbmogR9VdXErvuFZo",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJA2q3kYIbmogR9VdXErvuFZo",
+      "displayName": {
+        "text": "Lee Callaway Bridge",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 479.76288,
+      "straightLineDistanceMeters": 407.89172
+    },
+    {
+      "name": "places/ChIJfahGmoQbmogRWvRDH1gwPOQ",
+      "types": [
+        "establishment",
+        "lodging",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJfahGmoQbmogRWvRDH1gwPOQ",
+      "displayName": {
+        "text": "Flash Sale~Book Now~Tortuga Sunrise~Sleeps 8",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 215.71701,
+      "straightLineDistanceMeters": 26.542566
+    },
+    {
+      "name": "places/ChIJ8Z5xmoQbmogRrU3VSpTRDbM",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "real_estate_agency",
+        "travel_agency"
+      ],
+      "placeId": "ChIJ8Z5xmoQbmogRrU3VSpTRDbM",
+      "displayName": {
+        "text": "Cottage at Lagoon by Wyndham Vacation Rentals",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 162.30807,
+      "straightLineDistanceMeters": 58.084377
+    },
+    {
+      "name": "places/ChIJ8Z5xmoQbmogRjzqAF6t7okU",
+      "types": [
+        "establishment",
+        "lodging",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJ8Z5xmoQbmogRjzqAF6t7okU",
+      "displayName": {
+        "text": "Coconut Lagoon",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 171.3742,
+      "straightLineDistanceMeters": 51.897774
+    }
+  ]
+}
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url | hero_image_url v2-fix 2026-07-21: repointed to a photo confirmed to actually exist
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: stay
+industry_code: condo
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   2 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 2] ---
+id: 00c07745-9aa5-43f2-8d32-fa8454abfd86
+entity_slug: lagoon-run
+place_id: ChIJv3rGnYQbmogR3tix-4FHAA0
+containment: OUTSKIRTS
+display_name: Lagoon Run
+
+--- entity_address_areas [row 2 of 2] ---
+id: 53e47eab-2287-4b08-9abf-3a772da364a6
+entity_slug: lagoon-run
+place_id: ChIJv3rGnYQbmogRKTsYT10G7q4
+containment: OUTSKIRTS
+display_name: Lagoon Run
+
+####################################################################################################
+# TABLE: entity_attributes   -   2 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 2] ---
+id: afa91113-8497-40fe-838b-8a7f028c8e79
+entity_slug: lagoon-run
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 2 of 2] ---
+id: d1c2f7c4-021c-4eac-a09c-7fbb2219da9c
+entity_slug: lagoon-run
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: lagoon-run
+name: Lagoon Run
+industry_code: condo
+is_parent: false
+score_of_7: 6
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 973f9b21-d25d-4ec5-a055-c5a9e6f503f8
+entity_slug: lagoon-run
+place_uri: https://maps.google.com/?cid=17685687419875216845&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b837dfe033d:0xf5702f016e41cdcd!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a1b837dfe033d:0xf5702f016e41cdcd!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b837dfe033d:0xf5702f016e41cdcd!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 5075
+entity_slug: lagoon-run
+google_review_name: places/ChIJPQP-fYMbmogRzc1BbgEvcPU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xRNFUydHpkVFZ3VWs1YVdFMUpVRUZ3YVZSV1RWRRAB
+rating: 5
+review_text: Love this place. Stayed in 203 and was a great place. Clean and well furnished, everything you need. Bed was super comfy and loved being able to sit on porch and look at Bay.
+language_code: en
+author_name: Mary Jo Poole
+author_profile_url: https://www.google.com/maps/contrib/109313810624404686576/reviews
+publish_time: 2025-08-30T20:58:13.715316+00:00
+relative_time: 9 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xRNFUydHpkVFZ3VWs1YVdFMUpVRUZ3YVZSV1RWRRAB!2m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 5076
+entity_slug: lagoon-run
+google_review_name: places/ChIJPQP-fYMbmogRzc1BbgEvcPU/reviews/ChZDSUhNMG9nS0VJQ0FnSURDOGZfYktnEAE
+rating: 5
+review_text: Quaint and charming! The condo itself was very clean and tidy. I was most impressed that the kitchen was stocked with many of the items you'd have at home, very convenient if you'd rather cook and stay in. Will definitely stay again and highly recommend! The beach was a short walk across the street with private access. The pier and boat launch on the property had a wonderful view of the sunset as well!
+language_code: en
+author_name: Heather Gibbs
+author_profile_url: https://www.google.com/maps/contrib/110741807056607164440/reviews
+publish_time: 2020-10-01T18:58:40.10333+00:00
+relative_time: 5 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURDOGZfYktnEAE!2m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 5077
+entity_slug: lagoon-run
+google_review_name: places/ChIJPQP-fYMbmogRzc1BbgEvcPU/reviews/ChdDSUhNMG9nS0VKbnFnOG5TdS1mT3VnRRAB
+rating: 5
+review_text: It was great, the pool was always nice and warm. I would definitely recommend going during summer vacation.
+language_code: en
+author_name: Karina Johnson
+author_profile_url: https://www.google.com/maps/contrib/100056037179653287490/reviews
+publish_time: 2025-05-24T17:31:38.042465+00:00
+relative_time: a year ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VKbnFnOG5TdS1mT3VnRRAB!2m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 5078
+entity_slug: lagoon-run
+google_review_name: places/ChIJPQP-fYMbmogRzc1BbgEvcPU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2kwMVlsaFJibU51UkdnMGRsRndSbFJRUkRGSFgzYxAB
+rating: 5
+review_text: Lagoon Run was a great stay! We were in condo 108 it had two queen bedrooms and a king room with private bathroom. It was steps away from the beach. When you got done with the beach and wanted to just sit outside there is a dock in the lagoon with swings and picnic tables. Loved our stay!
+language_code: en
+author_name: Christian Scudder
+author_profile_url: https://www.google.com/maps/contrib/106921305333868206548/reviews
+publish_time: 2025-08-24T23:13:29.44303+00:00
+relative_time: 9 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2kwMVlsaFJibU51UkdnMGRsRndSbFJRUkRGSFgzYxAB!2m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 5079
+entity_slug: lagoon-run
+google_review_name: places/ChIJPQP-fYMbmogRzc1BbgEvcPU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2w5MWJHdDNPVVk0Y0RSeGFHcEpaMkZEZFRka1kzYxAB
+rating: 5
+review_text: Great condo location to the Gulf!  Super friendly people there that own and maintain and they are wonderful to guests.
+language_code: en
+author_name: Shannon Schenk
+author_profile_url: https://www.google.com/maps/contrib/104106300188638526305/reviews
+publish_time: 2025-12-17T11:49:54.555626+00:00
+relative_time: 5 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2w5MWJHdDNPVVk0Y0RSeGFHcEpaMkZEZFRka1kzYxAB!2m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: f89edd42-184a-4f25-b8ad-0eed7cc0483b
+entity_slug: lagoon-run
+day_of_week: 0
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: d9cba37f-ffe2-46bb-9a1d-81a66cb3ed7f
+entity_slug: lagoon-run
+day_of_week: 1
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: c53a8473-819d-43ad-b16e-af14e83022a1
+entity_slug: lagoon-run
+day_of_week: 2
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: f4f430a1-baa8-4235-bdbe-f98aa090cecc
+entity_slug: lagoon-run
+day_of_week: 3
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: ab2bbd62-88f1-40ae-b0af-4fa028d719d4
+entity_slug: lagoon-run
+day_of_week: 4
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: b5f6d143-1367-47a1-aacd-2640dea15f06
+entity_slug: lagoon-run
+day_of_week: 5
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 79c4e49e-6afb-472e-b175-031e7d07fade
+entity_slug: lagoon-run
+day_of_week: 6
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 2] ---
+entity_slug: lagoon-run
+source_table: bookable_resources
+item_type: condo
+section_name: Units
+item_id: c89ae58a-0ba1-4d74-b6de-297033c4bd8a
+name: Lagoon Run
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_01.jpg",
+    "/photos/lagoon-run/photo_01.jpg",
+    "/photos/lagoon-run/photo_02.jpg",
+    "/photos/lagoon-run/photo_03.jpg",
+    "/photos/lagoon-run/photo_04.jpg",
+    "/photos/lagoon-run/photo_05.jpg",
+    "/photos/lagoon-run/photo_06.jpg",
+    "/photos/lagoon-run/photo_07.jpg",
+    "/photos/lagoon-run/photo_08.jpg",
+    "/photos/lagoon-run/photo_09.jpg",
+    "/photos/lagoon-run/photo_10.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "item_type_raw": "condo",
+  "resource_type": "condo",
+  "check_out_time": "11:00"
+}
+
+--- entity_items_norm_v [row 2 of 2] ---
+entity_slug: lagoon-run
+source_table: entity_section_items
+item_type: rooms
+section_name: Units & Rates
+item_id: f762167b-94d1-43bd-99cd-19f9f7f5dce0
+name: Lagoon Run
+sort_order: 1
+active: true
+attributes: {
+  "icon": "🏠",
+  "min_nights": 1,
+  "module_key": "rooms",
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "item_type_raw": "rooms",
+  "check_out_time": "11:00"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 2] ---
+entity_slug: lagoon-run
+source_table: bookable_resources
+item_type: condo
+section_name: Units
+item_id: c89ae58a-0ba1-4d74-b6de-297033c4bd8a
+name: Lagoon Run
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_01.jpg",
+    "/photos/lagoon-run/photo_01.jpg",
+    "/photos/lagoon-run/photo_02.jpg",
+    "/photos/lagoon-run/photo_03.jpg",
+    "/photos/lagoon-run/photo_04.jpg",
+    "/photos/lagoon-run/photo_05.jpg",
+    "/photos/lagoon-run/photo_06.jpg",
+    "/photos/lagoon-run/photo_07.jpg",
+    "/photos/lagoon-run/photo_08.jpg",
+    "/photos/lagoon-run/photo_09.jpg",
+    "/photos/lagoon-run/photo_10.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "resource_type": "condo",
+  "check_out_time": "11:00"
+}
+
+--- entity_items_v [row 2 of 2] ---
+entity_slug: lagoon-run
+source_table: entity_section_items
+item_type: rooms
+section_name: Units & Rates
+item_id: f762167b-94d1-43bd-99cd-19f9f7f5dce0
+name: Lagoon Run
+sort_order: 1
+active: true
+attributes: {
+  "icon": "🏠",
+  "min_nights": 1,
+  "module_key": "rooms",
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "check_out_time": "11:00"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   14 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 14] ---
+id: b2fdc9c1-2294-456b-8a4f-340091254d69
+entity_slug: lagoon-run
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 14] ---
+id: 2b82094b-fa5f-4968-a76d-1623f528c798
+entity_slug: lagoon-run
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 14] ---
+id: 712b91b9-03d3-46a4-9fb2-b4bab5446cf5
+entity_slug: lagoon-run
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 14] ---
+id: be7e8978-8ae8-49c8-a952-a5d2ebe22daa
+entity_slug: lagoon-run
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 14] ---
+id: 058a5bf7-6f5b-4ed7-8ff0-88ddb6f8cdb0
+entity_slug: lagoon-run
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 14] ---
+id: 4ce82993-7d72-46ba-a6e6-501da2f14998
+entity_slug: lagoon-run
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 14] ---
+id: 72d6e0ad-c137-4c61-b05a-f4714b447beb
+entity_slug: lagoon-run
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 14] ---
+id: 94db4556-2575-4d58-b30b-28496fcc697a
+entity_slug: lagoon-run
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 14] ---
+id: e32e1c24-2ee7-42e0-bdec-cf6950d5c2c4
+entity_slug: lagoon-run
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 14] ---
+id: 41abcab2-f38c-48b4-a2ab-7125a339f38a
+entity_slug: lagoon-run
+module_key: stay
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 14] ---
+id: 0279ee9c-e654-43c1-92fe-225bf1ee70a6
+entity_slug: lagoon-run
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 14] ---
+id: 4b9ae549-e119-4ee6-affb-714ad8029227
+entity_slug: lagoon-run
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 14] ---
+id: abb7472e-df1f-4f3d-8434-783378d369ee
+entity_slug: lagoon-run
+module_key: amenities
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 14 of 14] ---
+id: c4442a71-e3a6-4e9c-b37e-269a6ea19e93
+entity_slug: lagoon-run
+module_key: rooms
+enabled: true
+sort_order: 2
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   14 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 14] ---
+id: f261191d-9634-4a28-9a67-ca138ab34787
+landmark_id: 81be80bc-ad31-4c31-afd6-74229f963ed8
+entity_slug: lagoon-run
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 14] ---
+id: 59f2937e-f439-4285-82eb-eb2be7e9c821
+landmark_id: 81be80bc-ad31-4c31-afd6-74229f963ed8
+entity_slug: lagoon-run
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 14] ---
+id: 2a13fff7-92ad-4769-ab51-026a9efde56a
+landmark_id: e0a2f520-57ca-4421-b3cc-1d40cb50911b
+entity_slug: lagoon-run
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 14] ---
+id: 82c0c570-2f03-4868-8a36-eb681ac20624
+landmark_id: e0a2f520-57ca-4421-b3cc-1d40cb50911b
+entity_slug: lagoon-run
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 14] ---
+id: 2bc23a34-fa56-42a1-b9f3-ce9d0390ac46
+landmark_id: 4e596490-841a-483e-b971-915ff039c6c5
+entity_slug: lagoon-run
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 14] ---
+id: d7606c46-d3bf-4f30-9733-3380cbe81def
+landmark_id: 4e596490-841a-483e-b971-915ff039c6c5
+entity_slug: lagoon-run
+landmark_type: lodging
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 14] ---
+id: 1c40c781-ae17-4ba6-b431-6df8e0c88b27
+landmark_id: 4e596490-841a-483e-b971-915ff039c6c5
+entity_slug: lagoon-run
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 14] ---
+id: f60995ec-f45a-4e79-a8bb-99982bf54f72
+landmark_id: 75addb54-6ada-48f5-9906-2746a0ae85dc
+entity_slug: lagoon-run
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 14] ---
+id: c747431b-b91a-47a0-8eba-c56b10dc9a04
+landmark_id: 75addb54-6ada-48f5-9906-2746a0ae85dc
+entity_slug: lagoon-run
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 14] ---
+id: c6ae8aab-9121-4670-bc13-b79b583cdc10
+landmark_id: 75addb54-6ada-48f5-9906-2746a0ae85dc
+entity_slug: lagoon-run
+landmark_type: real_estate_agency
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 14] ---
+id: 303c36cf-8ad0-4efa-84c0-c78b82bca2fd
+landmark_id: 75addb54-6ada-48f5-9906-2746a0ae85dc
+entity_slug: lagoon-run
+landmark_type: travel_agency
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 14] ---
+id: a4990d94-a846-491c-afaf-4e0f00f3d107
+landmark_id: e4cb8e73-1189-4440-a05b-3df82c79fe08
+entity_slug: lagoon-run
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 14] ---
+id: ef6b068d-0ced-4d38-8b6c-bb5eda3cc13c
+landmark_id: e4cb8e73-1189-4440-a05b-3df82c79fe08
+entity_slug: lagoon-run
+landmark_type: lodging
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 14] ---
+id: cb2dc884-d263-495c-9654-6983999901ec
+landmark_id: e4cb8e73-1189-4440-a05b-3df82c79fe08
+entity_slug: lagoon-run
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   7 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 7] ---
+id: 81be80bc-ad31-4c31-afd6-74229f963ed8
+entity_slug: lagoon-run
+kind: landmark
+place_id: ChIJU1TI-oQbmogRU2AYnFqoQzA
+name: Gulf Shores Surf & Racquet Club
+types: [
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 369.56796
+straight_line_distance_meters: 202.05081
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 7] ---
+id: e0a2f520-57ca-4421-b3cc-1d40cb50911b
+entity_slug: lagoon-run
+kind: landmark
+place_id: ChIJA2q3kYIbmogR9VdXErvuFZo
+name: Lee Callaway Bridge
+types: [
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 479.76288
+straight_line_distance_meters: 407.89172
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 7] ---
+id: 4e596490-841a-483e-b971-915ff039c6c5
+entity_slug: lagoon-run
+kind: landmark
+place_id: ChIJfahGmoQbmogRWvRDH1gwPOQ
+name: Flash Sale~Book Now~Tortuga Sunrise~Sleeps 8
+types: [
+  "establishment",
+  "lodging",
+  "point_of_interest"
+]
+travel_distance_meters: 215.71701
+straight_line_distance_meters: 26.542566
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 7] ---
+id: 75addb54-6ada-48f5-9906-2746a0ae85dc
+entity_slug: lagoon-run
+kind: landmark
+place_id: ChIJ8Z5xmoQbmogRrU3VSpTRDbM
+name: Cottage at Lagoon by Wyndham Vacation Rentals
+types: [
+  "establishment",
+  "point_of_interest",
+  "real_estate_agency",
+  "travel_agency"
+]
+travel_distance_meters: 162.30807
+straight_line_distance_meters: 58.084377
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 7] ---
+id: e4cb8e73-1189-4440-a05b-3df82c79fe08
+entity_slug: lagoon-run
+kind: landmark
+place_id: ChIJ8Z5xmoQbmogRjzqAF6t7okU
+name: Coconut Lagoon
+types: [
+  "establishment",
+  "lodging",
+  "point_of_interest"
+]
+travel_distance_meters: 171.3742
+straight_line_distance_meters: 51.897774
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 6 of 7] ---
+id: 23b9808a-fe52-49e9-b3af-a1e6e403850e
+entity_slug: lagoon-run
+kind: area
+place_id: ChIJv3rGnYQbmogRKTsYT10G7q4
+name: Lagoon Run
+containment: OUTSKIRTS
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 7 of 7] ---
+id: 4fc7a2e4-7e78-4e28-8c8d-9dd1b012e5ed
+entity_slug: lagoon-run
+kind: area
+place_id: ChIJv3rGnYQbmogR3tix-4FHAA0
+name: Lagoon Run
+containment: OUTSKIRTS
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13743
+entity_slug: lagoon-run
+name: Lagoon Run
+offer_type: room
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: c89ae58a-0ba1-4d74-b6de-297033c4bd8a
+
+####################################################################################################
+# TABLE: entity_photos   -   33 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 33] ---
+id: 6656d95d-41a8-4efa-9fc9-3dda077d5077
+entity_slug: lagoon-run
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_10.jpg
+is_cover: false
+sort_order: 6
+photo_type: resource
+source_name: bookable_resource
+resource_id: c89ae58a-0ba1-4d74-b6de-297033c4bd8a
+
+--- entity_photos [row 2 of 33] ---
+id: d7bb7abe-75eb-467a-9749-4dcffdf47a96
+entity_slug: lagoon-run
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_03.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: c89ae58a-0ba1-4d74-b6de-297033c4bd8a
+
+--- entity_photos [row 3 of 33] ---
+id: 3f8f68e4-cf0f-4c78-85a6-e6d52efcc3b1
+entity_slug: lagoon-run
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_03.jpg
+is_cover: false
+sort_order: 2
+photo_type: complex
+
+--- entity_photos [row 4 of 33] ---
+id: cf76e4d7-abc5-4f96-9fec-5f51798b8388
+entity_slug: lagoon-run
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_04.jpg
+is_cover: false
+sort_order: 3
+photo_type: complex
+
+--- entity_photos [row 5 of 33] ---
+id: 23bd34be-54e2-4c1f-ab75-8a1b7f91c0c4
+entity_slug: lagoon-run
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: complex
+
+--- entity_photos [row 6 of 33] ---
+id: 7774c3a4-ca05-4328-85be-6258dc94348f
+entity_slug: lagoon-run
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_05.jpg
+is_cover: false
+sort_order: 4
+photo_type: complex
+
+--- entity_photos [row 7 of 33] ---
+id: 8568ef6e-91df-4ff9-a128-9894f4137caa
+entity_slug: lagoon-run
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_06.jpg
+is_cover: false
+sort_order: 5
+photo_type: complex
+
+--- entity_photos [row 8 of 33] ---
+id: e4e09555-57a7-4687-a26c-d63ae7dbef71
+entity_slug: lagoon-run
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_07.jpg
+is_cover: false
+sort_order: 6
+photo_type: complex
+
+--- entity_photos [row 9 of 33] ---
+id: e87b78e5-e4d4-4a2d-a3c0-8a30f736cc0d
+entity_slug: lagoon-run
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_10.jpg
+is_cover: false
+sort_order: 9
+photo_type: complex
+
+--- entity_photos [row 10 of 33] ---
+id: 7c91ea03-63a4-4158-9687-0fe5626b960b
+entity_slug: lagoon-run
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_09.jpg
+is_cover: false
+sort_order: 8
+photo_type: complex
+
+--- entity_photos [row 11 of 33] ---
+id: 89a45c1e-49ea-44af-8014-b450792138d2
+entity_slug: lagoon-run
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_08.jpg
+is_cover: false
+sort_order: 7
+photo_type: complex
+
+--- entity_photos [row 12 of 33] ---
+id: dfdd2938-6993-46d0-8862-f22d9b009204
+entity_slug: lagoon-run
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_01.jpg
+is_cover: true
+sort_order: 0
+photo_type: complex
+
+--- entity_photos [row 13 of 33] ---
+id: 56d7d2b7-d1c3-4b7f-98c5-8fa1c1a184ac
+entity_slug: lagoon-run
+url: https://places.googleapis.com/v1/places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3lgXRDsMA9u6CZhWWtxJdQflw5m_Gx2jevhuY4rf4z6XPDHtcVVQTwU4mtM3FY8WGXnan1BO3kEHqT_AumyS2YjTnlVHOEeo1hvqqAe9jP8do8US5e6X62w32A3J7zvlnept916DZ23yVoFSPObi71sHefLjVMD9rKELe5Zfdb8-vrC7OekH7Hbiz_RtZL4VVH_B5Ku-kBGGns6wxlvwQe5B-iwanFKqj4PlJmIPhSV0EvpZFUkHa8V1pGomohufJQ5_AUn2jFsM9FgUDVTYznpbm4mxktmuaZdbnjQ4s8uaR9JhAYHFCXwl5T558uDrAOyiBOxzv670XKTC0mwNb8vf9VnYA6Z74l6MlKeJd6e5W9GtQZlT7bSmCDBviuFO6u9NaNHu8MjeFmLxC7yGIfiidM3o7WNxZvF6ErMNnqpf9ek/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3lgXRDsMA9u6CZhWWtxJdQflw5m_Gx2jevhuY4rf4z6XPDHtcVVQTwU4mtM3FY8WGXnan1BO3kEHqT_AumyS2YjTnlVHOEeo1hvqqAe9jP8do8US5e6X62w32A3J7zvlnept916DZ23yVoFSPObi71sHefLjVMD9rKELe5Zfdb8-vrC7OekH7Hbiz_RtZL4VVH_B5Ku-kBGGns6wxlvwQe5B-iwanFKqj4PlJmIPhSV0EvpZFUkHa8V1pGomohufJQ5_AUn2jFsM9FgUDVTYznpbm4mxktmuaZdbnjQ4s8uaR9JhAYHFCXwl5T558uDrAOyiBOxzv670XKTC0mwNb8vf9VnYA6Z74l6MlKeJd6e5W9GtQZlT7bSmCDBviuFO6u9NaNHu8MjeFmLxC7yGIfiidM3o7WNxZvF6ErMNnqpf9ek
+is_cover: false
+sort_order: 0
+caption: Lagoon Run
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgMCAzrDYvwE!2e10!4m2!3m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd
+
+--- entity_photos [row 14 of 33] ---
+id: 67beb8c5-00c6-47de-87e5-d0dd6280b06c
+entity_slug: lagoon-run
+url: https://places.googleapis.com/v1/places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3m8ZrkVA38XtrIvU4qGLrjEHAykUqaby5gEAXqihOtgSUm72q2CbyKn9TQZaCClxEOCnBGzaGp0HplclLSLC6xDvFfFAfAFbwZO1Oo4DV35htdOXoToZZ95cVWizo6ZF7WddBOzuXIIyrk2LtYtJYCFlCWrMsp6Cs9fN6Ij-xGF2jKVakHyvw7xCMc-sojH3Ik9syttMlM2y92IwrVdQ7-g9Tf943IZOAfoOWo_82cVCMsqwEvTqX__1UVQNx7ra9Y1uRuFZ-bXPjaZZ2wXJs5VR3aClcT-Qf0Bm2pMgkQ_HS6-G4bf0zp6x0eTVm_pWQA0LmsvVA0JlDMeXk_S1TbBzklNX3s1uOw57C1GRXcf0hJ7ZZdkOxy_abmIPHE3fUsck39kUyTYP_2W6AjoVNvrC2l5rMIvPrZdNU9hV-9Caw/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3m8ZrkVA38XtrIvU4qGLrjEHAykUqaby5gEAXqihOtgSUm72q2CbyKn9TQZaCClxEOCnBGzaGp0HplclLSLC6xDvFfFAfAFbwZO1Oo4DV35htdOXoToZZ95cVWizo6ZF7WddBOzuXIIyrk2LtYtJYCFlCWrMsp6Cs9fN6Ij-xGF2jKVakHyvw7xCMc-sojH3Ik9syttMlM2y92IwrVdQ7-g9Tf943IZOAfoOWo_82cVCMsqwEvTqX__1UVQNx7ra9Y1uRuFZ-bXPjaZZ2wXJs5VR3aClcT-Qf0Bm2pMgkQ_HS6-G4bf0zp6x0eTVm_pWQA0LmsvVA0JlDMeXk_S1TbBzklNX3s1uOw57C1GRXcf0hJ7ZZdkOxy_abmIPHE3fUsck39kUyTYP_2W6AjoVNvrC2l5rMIvPrZdNU9hV-9Caw
+is_cover: false
+sort_order: 1
+caption: Karina Johnson
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEK3xsqCNh5qfBw!2e10!4m2!3m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd
+
+--- entity_photos [row 15 of 33] ---
+id: 9886bf49-e136-4c81-b872-07dd63b07874
+entity_slug: lagoon-run
+url: https://places.googleapis.com/v1/places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3lbmry_zNk3nrXbvrif3piid4cxHUTkWhgmEc3D40xeAOtp01dKYjpD_KqGRNqcphUn2FDXEgpOJkg4qSDrD6TY8WLyiRWWpxSj5yeRD1JErejlBgTm8vvLb_GKHxwco3GBC-p2gK5ZOU9iQELWCVQ8hBYSHCb_f4VMxyA2XHccoEE_nIrMWrRsD7rEFbgc2027BFc2WuvEPI1LxxqNghdFXRVYytOXUSrSCKSkGTgbKY0iS8i5BI8Zc7Af9HgXjbYOAwNgox0e1_VnnBaKhAUcudzp-4LDAQJAFRS-gey252sd0khgjxrA6jPzPdhXDcnE4wBMbNlgFIw-eTnR9Molcn8DEMSDJVCG3-UxLLHbZU-cRidyt9tIg9bRA-bcUZARqP51rbtORJ70JBztOzauAHbHTvTTlHreCIDI5sVusyNe1PtjnOX3W8KO0w/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3lbmry_zNk3nrXbvrif3piid4cxHUTkWhgmEc3D40xeAOtp01dKYjpD_KqGRNqcphUn2FDXEgpOJkg4qSDrD6TY8WLyiRWWpxSj5yeRD1JErejlBgTm8vvLb_GKHxwco3GBC-p2gK5ZOU9iQELWCVQ8hBYSHCb_f4VMxyA2XHccoEE_nIrMWrRsD7rEFbgc2027BFc2WuvEPI1LxxqNghdFXRVYytOXUSrSCKSkGTgbKY0iS8i5BI8Zc7Af9HgXjbYOAwNgox0e1_VnnBaKhAUcudzp-4LDAQJAFRS-gey252sd0khgjxrA6jPzPdhXDcnE4wBMbNlgFIw-eTnR9Molcn8DEMSDJVCG3-UxLLHbZU-cRidyt9tIg9bRA-bcUZARqP51rbtORJ70JBztOzauAHbHTvTTlHreCIDI5sVusyNe1PtjnOX3W8KO0w
+is_cover: false
+sort_order: 2
+caption: Ankit Parekh
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCnVHwpTOi0CvLQXg4m-m2U!2e10!4m2!3m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd
+
+--- entity_photos [row 16 of 33] ---
+id: a8539944-828b-4032-88f0-ffbf520b0ed3
+entity_slug: lagoon-run
+url: https://places.googleapis.com/v1/places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3nLxh38Q_zH_x3R3yFXrI-5BxQh-2d-oKkLxGkrjQBpUR8Z1Cw_PSBYnJiZnFs0RJjEdlNK51DFKFlv5mFiLrawx6L5I-4ansfqo--X5BfH5pX36hjS_wqNxcxe21tKMfU8JHNFGXOpWo15Lvm2fCaTvrF75Yr831oMV2Uor0F028ShMnfuWnelhx8qauq3Q2SKdfbEqtMdHUMjcH0GOPXEg3DGSDTqRijr36J_5w8XjGIgNCyZ4gRBBr1KonWbXS7R6nd0hKuQMV3dWGEr5nLUgU_7VErDgb0-AFJfyF9LtNj0qrtSM8F1W448gjwtNEeMXzW_RjiU9eAI6burhBSTgUsM9rhQs2s8kkPro9ysr_V3kZOTncOVY5wnn2lPJbbm7A67cMVEwJ-OQPtembgSp7lmOtKyPAjoFZwoZl5K7eP1nFntw5r4VL3h22HC/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3nLxh38Q_zH_x3R3yFXrI-5BxQh-2d-oKkLxGkrjQBpUR8Z1Cw_PSBYnJiZnFs0RJjEdlNK51DFKFlv5mFiLrawx6L5I-4ansfqo--X5BfH5pX36hjS_wqNxcxe21tKMfU8JHNFGXOpWo15Lvm2fCaTvrF75Yr831oMV2Uor0F028ShMnfuWnelhx8qauq3Q2SKdfbEqtMdHUMjcH0GOPXEg3DGSDTqRijr36J_5w8XjGIgNCyZ4gRBBr1KonWbXS7R6nd0hKuQMV3dWGEr5nLUgU_7VErDgb0-AFJfyF9LtNj0qrtSM8F1W448gjwtNEeMXzW_RjiU9eAI6burhBSTgUsM9rhQs2s8kkPro9ysr_V3kZOTncOVY5wnn2lPJbbm7A67cMVEwJ-OQPtembgSp7lmOtKyPAjoFZwoZl5K7eP1nFntw5r4VL3h22HC
+is_cover: false
+sort_order: 3
+caption: Mary Jo Poole
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAvPyXv4l_iOZnG8gOjetXQ!2e10!4m2!3m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd
+
+--- entity_photos [row 17 of 33] ---
+id: 008e91e6-d255-40f4-b389-05a0e8e5b225
+entity_slug: lagoon-run
+url: https://places.googleapis.com/v1/places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3kWTk4I6doyDWOSO2x1n9h9EDam2tt6Gy91i8AfANZOJ8gg68UIb2BIWq837oTdms7gXiULaXfjkin5MoXBQhIlC3NHH6-J27bRCvv998sYiZlFpo6YKg9DPpHPpQ0fo3m3IH8YK-nFgVkVIwxA7fyqTkhbSd2CO0ocb7SLeO2D_5dhZUaRWYi6ozgx0aeFKeht8NhjkJI2b9qYZRuHj_fyJ76vcSV4sOlWpQ-7WxOOhK9X1jNZlSbEpUjZPcwOqB7WN56wxdAJb9UKEkTvSPfpdvlTYix7XS0GRdPmsGeJwZ69l9gGVk7V2ova2QgLl8Vcn89_MT4p99mtAyCbMlNaOLoQ-g8Cpo26O_9rusn6K_e9GPx9uq5w-mCUMOGWVeeFNHG92LtTvBTwRBrWZRE1s-P9EYhAZymZosp4rxiHZhx8/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3kWTk4I6doyDWOSO2x1n9h9EDam2tt6Gy91i8AfANZOJ8gg68UIb2BIWq837oTdms7gXiULaXfjkin5MoXBQhIlC3NHH6-J27bRCvv998sYiZlFpo6YKg9DPpHPpQ0fo3m3IH8YK-nFgVkVIwxA7fyqTkhbSd2CO0ocb7SLeO2D_5dhZUaRWYi6ozgx0aeFKeht8NhjkJI2b9qYZRuHj_fyJ76vcSV4sOlWpQ-7WxOOhK9X1jNZlSbEpUjZPcwOqB7WN56wxdAJb9UKEkTvSPfpdvlTYix7XS0GRdPmsGeJwZ69l9gGVk7V2ova2QgLl8Vcn89_MT4p99mtAyCbMlNaOLoQ-g8Cpo26O_9rusn6K_e9GPx9uq5w-mCUMOGWVeeFNHG92LtTvBTwRBrWZRE1s-P9EYhAZymZosp4rxiHZhx8
+is_cover: false
+sort_order: 4
+caption: Thomas Bailey
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICcvqrG3AE!2e10!4m2!3m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd
+
+--- entity_photos [row 18 of 33] ---
+id: 51447437-4eae-4659-88d8-272b086ff6fc
+entity_slug: lagoon-run
+url: https://places.googleapis.com/v1/places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3n6bMVJKt6X_RKPDqKXD37s3jIGDqtcfE2rnK-0jrGB-8YhJmwQapVQR08hrLDh7dTvHgsnMNUAbfcfnLc5pQLdUB90vVG3iTbtjeBmW77B90mJA4GwEOVh8vcMN1g-L8o5tqDGH90qQbJ6Fu_q9O7gHGeFbaYOcjOFrafB45PnGWujaGNoKd8XgimkeGVHaXY_iWU26DKHFeiPKscS6aEB8FhBazXSA2elEAYwhgK3c72bkho905zBpcofiq4ahnppwspX0lOMlYfb9D3bTKhadgdFVKdz2_yRmJFW6ML-NJwzU3nzPbrOLBx2GFhcnGbP9zglHAowuC5FBngvx_H3Ki9XGiXAqYDMW0ismGUVrl79lHQ_okQ-cLDP9d9YzLlsOEaAyENHYxvTbJicRyrTTgbcENNERumNTSH8dfrxiw/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3n6bMVJKt6X_RKPDqKXD37s3jIGDqtcfE2rnK-0jrGB-8YhJmwQapVQR08hrLDh7dTvHgsnMNUAbfcfnLc5pQLdUB90vVG3iTbtjeBmW77B90mJA4GwEOVh8vcMN1g-L8o5tqDGH90qQbJ6Fu_q9O7gHGeFbaYOcjOFrafB45PnGWujaGNoKd8XgimkeGVHaXY_iWU26DKHFeiPKscS6aEB8FhBazXSA2elEAYwhgK3c72bkho905zBpcofiq4ahnppwspX0lOMlYfb9D3bTKhadgdFVKdz2_yRmJFW6ML-NJwzU3nzPbrOLBx2GFhcnGbP9zglHAowuC5FBngvx_H3Ki9XGiXAqYDMW0ismGUVrl79lHQ_okQ-cLDP9d9YzLlsOEaAyENHYxvTbJicRyrTTgbcENNERumNTSH8dfrxiw
+is_cover: false
+sort_order: 5
+caption: Ben Blackledge
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID4vfGHSg!2e10!4m2!3m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd
+
+--- entity_photos [row 19 of 33] ---
+id: bc17d6ad-04f0-4b64-93f6-e708bee127a8
+entity_slug: lagoon-run
+url: https://places.googleapis.com/v1/places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3lglF9IyIORSSFC-zR-pN9_94axnbQt4xlMp3bpRwvPwbM-l83X7yV4Qr12CYLF7SljBVWRQqHlwtgtF2ip4RNtdHRSs6iHHUqvqE4gM09djJRdTB4fXJzItSm6ol_sGJCgRnBhp2MLiKFPqEEunQmeXOkFT-h5ywL8boXGxe8ZQzeNNMWiH5bvH7IAE1I0CT2XC2nw4fyMY24DuDJD9r8rctiuqNs5c7h7JwXxMxnNOwtzmJCT03zxqAg8yGNHF0jiLnVapDpK-DkqEkFGlnDe7Y6JBwa3bJyTdU-AtAHc1Zx8qkupexRlpiMojfLrkD2sS5qav16PRHOQb7MyT-7vouOB4h7DnQXEEu5kbp7DKX5TxwDq8WlpZJuX0ofuD2Bn0aOlkj6MXHrST14b5G747ONFIOQ8GAzruroMPysqzENPn2yktv7xyc140Q/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3lglF9IyIORSSFC-zR-pN9_94axnbQt4xlMp3bpRwvPwbM-l83X7yV4Qr12CYLF7SljBVWRQqHlwtgtF2ip4RNtdHRSs6iHHUqvqE4gM09djJRdTB4fXJzItSm6ol_sGJCgRnBhp2MLiKFPqEEunQmeXOkFT-h5ywL8boXGxe8ZQzeNNMWiH5bvH7IAE1I0CT2XC2nw4fyMY24DuDJD9r8rctiuqNs5c7h7JwXxMxnNOwtzmJCT03zxqAg8yGNHF0jiLnVapDpK-DkqEkFGlnDe7Y6JBwa3bJyTdU-AtAHc1Zx8qkupexRlpiMojfLrkD2sS5qav16PRHOQb7MyT-7vouOB4h7DnQXEEu5kbp7DKX5TxwDq8WlpZJuX0ofuD2Bn0aOlkj6MXHrST14b5G747ONFIOQ8GAzruroMPysqzENPn2yktv7xyc140Q
+is_cover: false
+sort_order: 6
+caption: Shannon Schenk
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAwVWDhU7p15kQjc6XHRmOC!2e10!4m2!3m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd
+
+--- entity_photos [row 20 of 33] ---
+id: 4d862115-779f-4e49-af18-be4eacb8072b
+entity_slug: lagoon-run
+url: https://places.googleapis.com/v1/places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3mRc4htDop9gzBBQ_LQomvnfnrquUZ3XA7eJcz3gSC8X2KIUTu9mRFI4rkfO8gmdMKzUh1spHFMUt2PNjDZSojYe-lUfrEF7I5Em-ZrSB79KOpUNnzcQlZHhtfyaqcS_zY0hvocrVaafEPCCNy0hP4Onx5GKDKp8ajIk2p-t5Qg3bCQAg6gEXP3vWOW86_dHmgr4L0K7b75t8ec4LUElkajCHVpEXjJ9rN6GvHclCx05qlu7vUJ_P2KZUB1hbjaPID4pAz5M364oSVsFtfurCIdJ90tIkqlGxMmnqtB1cYTMc5th33XJ_4MgjRwgthTcwuY-Xb-oCvbZwU8FdxLpdhG8l-0LwRHis9eoq94XtwUiIru1HDEII6KWuqeiWGWqw2Vi9pCZxfjs6Nd3hdtVshdRytX_UpsvGgbgfbfmsk/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3mRc4htDop9gzBBQ_LQomvnfnrquUZ3XA7eJcz3gSC8X2KIUTu9mRFI4rkfO8gmdMKzUh1spHFMUt2PNjDZSojYe-lUfrEF7I5Em-ZrSB79KOpUNnzcQlZHhtfyaqcS_zY0hvocrVaafEPCCNy0hP4Onx5GKDKp8ajIk2p-t5Qg3bCQAg6gEXP3vWOW86_dHmgr4L0K7b75t8ec4LUElkajCHVpEXjJ9rN6GvHclCx05qlu7vUJ_P2KZUB1hbjaPID4pAz5M364oSVsFtfurCIdJ90tIkqlGxMmnqtB1cYTMc5th33XJ_4MgjRwgthTcwuY-Xb-oCvbZwU8FdxLpdhG8l-0LwRHis9eoq94XtwUiIru1HDEII6KWuqeiWGWqw2Vi9pCZxfjs6Nd3hdtVshdRytX_UpsvGgbgfbfmsk
+is_cover: false
+sort_order: 7
+caption: Jme Nichole
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICZuMH6EA!2e10!4m2!3m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd
+
+--- entity_photos [row 21 of 33] ---
+id: 21d59cf2-3b02-467a-9a87-a2753c6ffac1
+entity_slug: lagoon-run
+url: https://places.googleapis.com/v1/places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3kd6ix8vP8SulZUogPUfZS8Hzynv_YoVFYUMBFAsCUnddNXPjmz2CZglQc0ikiGPGFUQE9GclE_Da2LVfIB2C0iX7AeHE84CnlYEc_48yzr6nlFRRV8Pd6A_JnpOkfR7sMe6O7M7KegAsiVakUv5WK7Uydhw99ocNXlEdiVZz8VFfTK7uGlpt92af1koEBFRxzlxJfCI7rpbG4ZkYqAelUOQqTpS9K54iwDpR4tDq8cgZVDTMIQlVckm0F4JeovNAXvyEnPSysEzPqogagcrWVQqykl0nWPeyohWD5Sh0SLGQOq9uodLuvadBmyxWE4qvQwzC8bGBr9SjYxHr-DFYErvVzeuLkf_NK4CMbf3ja1d485fiHsnUgD-eWDJpIV1yIhHW_FL8QNXHKOCsRhMONIZkBdiCeDdyTYKHUzxIw/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3kd6ix8vP8SulZUogPUfZS8Hzynv_YoVFYUMBFAsCUnddNXPjmz2CZglQc0ikiGPGFUQE9GclE_Da2LVfIB2C0iX7AeHE84CnlYEc_48yzr6nlFRRV8Pd6A_JnpOkfR7sMe6O7M7KegAsiVakUv5WK7Uydhw99ocNXlEdiVZz8VFfTK7uGlpt92af1koEBFRxzlxJfCI7rpbG4ZkYqAelUOQqTpS9K54iwDpR4tDq8cgZVDTMIQlVckm0F4JeovNAXvyEnPSysEzPqogagcrWVQqykl0nWPeyohWD5Sh0SLGQOq9uodLuvadBmyxWE4qvQwzC8bGBr9SjYxHr-DFYErvVzeuLkf_NK4CMbf3ja1d485fiHsnUgD-eWDJpIV1yIhHW_FL8QNXHKOCsRhMONIZkBdiCeDdyTYKHUzxIw
+is_cover: false
+sort_order: 8
+caption: Judas Bertrand
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8z4O8CA!2e10!4m2!3m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd
+
+--- entity_photos [row 22 of 33] ---
+id: 29499333-559c-4db4-bc9a-2c03d5e679e6
+entity_slug: lagoon-run
+url: https://places.googleapis.com/v1/places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3lJwqKo5WDLConEWn381AOJ8uVFITaw4YU6gMj6oNzXEOp7mciYY5pjB83toEtvM75oKntDtjJRVmKhjDS5waZrbfUHEk8dzY2I9_je_aewYyFLmWaD00KZzO8SWox0-6ALJx2M0pYJDMTwB8fS-D-XR5VQgmcFNdBxFtcPcn8k98ZWh5pV8t08KL-c9wQrULWYG8ob9JkF8SF6JTrmRyOFbkBfCBAnxPddyli4mMYc44a0z93MygnS6OFoh-EtZ7tAlBhrSQG2lIO3EDmYizLzTXG2R7BSfhqG_TxJ9RATwL8f-09luXy-QIOOgThiZD0tc43RuHejIkqg537JpveHVn7kVfL33VeDHwmr3vFs-1z32OyynEsrRSRovvm9Szgv2nULQlWqoFqilj6m4LNDm6j-zxUdGmeGUo8i2TE/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJPQP-fYMbmogRzc1BbgEvcPU/photos/AaVGc3lJwqKo5WDLConEWn381AOJ8uVFITaw4YU6gMj6oNzXEOp7mciYY5pjB83toEtvM75oKntDtjJRVmKhjDS5waZrbfUHEk8dzY2I9_je_aewYyFLmWaD00KZzO8SWox0-6ALJx2M0pYJDMTwB8fS-D-XR5VQgmcFNdBxFtcPcn8k98ZWh5pV8t08KL-c9wQrULWYG8ob9JkF8SF6JTrmRyOFbkBfCBAnxPddyli4mMYc44a0z93MygnS6OFoh-EtZ7tAlBhrSQG2lIO3EDmYizLzTXG2R7BSfhqG_TxJ9RATwL8f-09luXy-QIOOgThiZD0tc43RuHejIkqg537JpveHVn7kVfL33VeDHwmr3vFs-1z32OyynEsrRSRovvm9Szgv2nULQlWqoFqilj6m4LNDm6j-zxUdGmeGUo8i2TE
+is_cover: false
+sort_order: 9
+caption: Corey Raines
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICrg8WDdg!2e10!4m2!3m1!1s0x889a1b837dfe033d:0xf5702f016e41cdcd
+
+--- entity_photos [row 23 of 33] ---
+id: 74d3e403-014a-453e-b57b-9b4a72374e0b
+entity_slug: lagoon-run
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_04.jpg
+is_cover: false
+sort_order: 2
+photo_type: resource
+source_name: bookable_resource
+resource_id: c89ae58a-0ba1-4d74-b6de-297033c4bd8a
+
+--- entity_photos [row 24 of 33] ---
+id: 88ee132b-55b1-4a2f-b00a-4d277a5a3613
+entity_slug: lagoon-run
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_01.jpg
+is_cover: false
+sort_order: 9
+photo_type: resource
+source_name: bookable_resource
+resource_id: c89ae58a-0ba1-4d74-b6de-297033c4bd8a
+
+--- entity_photos [row 25 of 33] ---
+id: 96a0fbc4-517b-494a-b592-3f17a1359fe7
+entity_slug: lagoon-run
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_05.jpg
+is_cover: false
+sort_order: 3
+photo_type: resource
+source_name: bookable_resource
+resource_id: c89ae58a-0ba1-4d74-b6de-297033c4bd8a
+
+--- entity_photos [row 26 of 33] ---
+id: 2126f2b7-ff22-4248-8bf1-6cac2cbf4895
+entity_slug: lagoon-run
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_02.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: c89ae58a-0ba1-4d74-b6de-297033c4bd8a
+
+--- entity_photos [row 27 of 33] ---
+id: 22f4da33-4b01-4cb1-bb6b-94fcb875e804
+entity_slug: lagoon-run
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_09.jpg
+is_cover: false
+sort_order: 7
+photo_type: resource
+source_name: bookable_resource
+resource_id: c89ae58a-0ba1-4d74-b6de-297033c4bd8a
+
+--- entity_photos [row 28 of 33] ---
+id: 7d730629-1d95-474c-b9bb-1dd6087ba8f9
+entity_slug: lagoon-run
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_08.jpg
+is_cover: false
+sort_order: 8
+photo_type: resource
+source_name: bookable_resource
+resource_id: c89ae58a-0ba1-4d74-b6de-297033c4bd8a
+
+--- entity_photos [row 29 of 33] ---
+id: ea31443a-d168-4aab-be25-a9c40f7285b7
+entity_slug: lagoon-run
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_07.jpg
+is_cover: false
+sort_order: 5
+photo_type: resource
+source_name: bookable_resource
+resource_id: c89ae58a-0ba1-4d74-b6de-297033c4bd8a
+
+--- entity_photos [row 30 of 33] ---
+id: 3c5a9c09-0559-4ae2-a514-e9163714c622
+entity_slug: lagoon-run
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_06.jpg
+is_cover: false
+sort_order: 4
+photo_type: resource
+source_name: bookable_resource
+resource_id: c89ae58a-0ba1-4d74-b6de-297033c4bd8a
+
+--- entity_photos [row 31 of 33] ---
+id: 55e13543-b954-40ea-b10d-792a4c257a7e
+entity_slug: lagoon-run
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/c9039249-5ae0-4477-8107-6a33e091352e/image_1.jpg
+is_cover: true
+sort_order: 0
+photo_type: hero
+source_name: legacy_businesses_table
+created_at: 2026-07-21T23:25:57.434852+00:00
+
+--- entity_photos [row 32 of 33] ---
+id: bd2785a3-608e-41c6-afb7-8e06e9a69e9a
+entity_slug: lagoon-run
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/c9039249-5ae0-4477-8107-6a33e091352e/image_3.jpg
+is_cover: false
+sort_order: 102
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 33 of 33] ---
+id: 4894c187-9fc3-4b08-9454-c1a6ca0b7258
+entity_slug: lagoon-run
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/c9039249-5ae0-4477-8107-6a33e091352e/image_2.jpg
+is_cover: false
+sort_order: 101
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: a24d112d-aad2-46f3-b5c3-8c55ec93d13b
+entity_slug: lagoon-run
+reviewer_name: Mary Jo Poole
+rating: 5
+body: Love this place. Stayed in 203 and was a great place. Clean and well furnished, everything you need. Bed was super comfy and loved being able to sit on porch and look at Bay.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-08-30T20:58:13.715316+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: c8f333c2-8d66-446d-b236-c0c019151a24
+entity_slug: lagoon-run
+reviewer_name: Heather Gibbs
+rating: 5
+body: Quaint and charming! The condo itself was very clean and tidy. I was most impressed that the kitchen was stocked with many of the items you'd have at home, very convenient if you'd rather cook and stay in. Will definitely stay again and highly recommend! The beach was a short walk across the street with private access. The pier and boat launch on the property had a wonderful view of the sunset as well!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2020-10-01T18:58:40.10333+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: a3b2cc48-257a-437b-b6c8-b4e832805248
+entity_slug: lagoon-run
+reviewer_name: Karina Johnson
+rating: 5
+body: It was great, the pool was always nice and warm. I would definitely recommend going during summer vacation.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-05-24T17:31:38.042465+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 59d02121-446c-45f4-8bfc-ceb1f7ef5dcc
+entity_slug: lagoon-run
+reviewer_name: Christian Scudder
+rating: 5
+body: Lagoon Run was a great stay! We were in condo 108 it had two queen bedrooms and a king room with private bathroom. It was steps away from the beach. When you got done with the beach and wanted to just sit outside there is a dock in the lagoon with swings and picnic tables. Loved our stay!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-08-24T23:13:29.44303+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 60b510bf-ffb5-404f-b1a4-b48fc61f1893
+entity_slug: lagoon-run
+reviewer_name: Shannon Schenk
+rating: 5
+body: Great condo location to the Gulf!  Super friendly people there that own and maintain and they are wonderful to guests.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-12-17T11:49:54.555626+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_section_items   -   1 row(s)
+####################################################################################################
+
+--- entity_section_items [row 1 of 1] ---
+id: f762167b-94d1-43bd-99cd-19f9f7f5dce0
+section_id: 532acaf8-062b-4a0a-9936-37445ac10b45
+entity_slug: lagoon-run
+item_name: Lagoon Run
+icon: 🏠
+metadata: {}
+sort_order: 1
+check_in_time: 16:00
+check_out_time: 11:00
+min_nights: 1
+cleaning_fee: 0
+
+####################################################################################################
+# TABLE: entity_section_items_metadata_backup   -   1 row(s)
+####################################################################################################
+
+--- entity_section_items_metadata_backup [row 1 of 1] ---
+id: f762167b-94d1-43bd-99cd-19f9f7f5dce0
+entity_slug: lagoon-run
+item_name: Lagoon Run
+metadata: {
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lagoon-run/photo_01.jpg",
+    "/photos/lagoon-run/photo_01.jpg",
+    "/photos/lagoon-run/photo_02.jpg",
+    "/photos/lagoon-run/photo_03.jpg",
+    "/photos/lagoon-run/photo_04.jpg",
+    "/photos/lagoon-run/photo_05.jpg",
+    "/photos/lagoon-run/photo_06.jpg",
+    "/photos/lagoon-run/photo_07.jpg",
+    "/photos/lagoon-run/photo_08.jpg",
+    "/photos/lagoon-run/photo_09.jpg",
+    "/photos/lagoon-run/photo_10.jpg"
+  ],
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "check_out_time": "11:00"
+}
+backed_up_at: 2026-07-16T09:49:37.166591+00:00
+
+####################################################################################################
+# TABLE: entity_sections   -   1 row(s)
+####################################################################################################
+
+--- entity_sections [row 1 of 1] ---
+id: 532acaf8-062b-4a0a-9936-37445ac10b45
+entity_slug: lagoon-run
+section_type: rooms
+section_name: Units & Rates
+sort_order: 2
+module_key: rooms
+is_active: true
+
+####################################################################################################
+# TABLE: entity_tags   -   8 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 8] ---
+id: 972d471d-8f8b-4195-9729-f315036bd960
+entity_slug: lagoon-run
+tag_name: condominium_complex
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 8] ---
+id: 5f8c7eba-632f-4aaa-ab0e-93371afe8df5
+entity_slug: lagoon-run
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 3 of 8] ---
+id: d75be044-ace4-42d5-bf55-4f867970ff08
+entity_slug: lagoon-run
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 4 of 8] ---
+id: 709d7e1a-4096-4e0e-9055-f792ec4e5002
+entity_slug: lagoon-run
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 5 of 8] ---
+id: e21b45c6-554d-4596-af54-f483c24e1940
+entity_slug: lagoon-run
+tag_name: condominium_complex
+tag_category: google_primary_type
+
+--- entity_tags [row 6 of 8] ---
+id: 10c18651-1f80-4254-b46e-f65d30f169e2
+entity_slug: lagoon-run
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 7 of 8] ---
+id: 58eea3c4-0b33-4062-b278-7893efba9260
+entity_slug: lagoon-run
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 8 of 8] ---
+id: 52621965-3229-4fcc-9cdf-a12cc0336911
+entity_slug: lagoon-run
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 75200367-8700-4784-af19-68004580512e
+entity_slug: lagoon-run
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_condo   -   1 row(s)
+####################################################################################################
+
+--- industry_condo [row 1 of 1] ---
+entity_slug: lagoon-run
+listed_unit_count: 0
+has_pool: false
+pet_friendly: false
+updated_at: 2026-07-21T16:59:02.358415+00:00
+
+####################################################################################################
+# TABLE: legacy_photo_migration_queue   -   2 row(s)
+####################################################################################################
+
+--- legacy_photo_migration_queue [row 1 of 2] ---
+id: 679
+entity_slug: lagoon-run
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/c9039249-5ae0-4477-8107-6a33e091352e/image_3.jpg
+is_cover: false
+sort_order: 102
+status: linked_legacy
+created_at: 2026-07-26T00:31:07.222409+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 2 of 2] ---
+id: 1194
+entity_slug: lagoon-run
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/c9039249-5ae0-4477-8107-6a33e091352e/image_2.jpg
+is_cover: false
+sort_order: 101
+status: linked_legacy
+created_at: 2026-07-26T00:31:07.222409+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: rental_units   -   1 row(s)
+####################################################################################################
+
+--- rental_units [row 1 of 1] ---
+id: 3e7eb122-05d0-45cd-b130-0eda3aded241
+entity_slug: lagoon-run
+slug: lagoon-run
+name: Lagoon Run
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+address: 1784 W Beach Blvd
+city: Gulf Shores
+state: AL
+latitude: 30.2414741
+longitude: -87.742134
+source_resource_id: c89ae58a-0ba1-4d74-b6de-297033c4bd8a
+is_active: true
+created_at: 2026-07-23T00:06:23.937689+00:00
+updated_at: 2026-07-23T00:06:23.937689+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: offer
+ref_id: 13743
+entity_slug: lagoon-run
+title: Lagoon Run
+category: room
+search_vector: 'lagoon':1A 'run':2A
+
+--- search_index [row 2 of 2] ---
+ref_type: business
+ref_id: lagoon-run
+entity_slug: lagoon-run
+title: Lagoon Run
+category: condominium_complex
+search_vector: 'complex':4B 'condominium':3B 'lagoon':1A 'run':2A
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: lagoon-run

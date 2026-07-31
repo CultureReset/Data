@@ -1,0 +1,1561 @@
+====================================================================================================
+SLUG: a-1-taxi-service
+NAME: A-1 Taxi Service
+INDUSTRY: transportation
+SUBTYPE: taxi_service
+TABLES WITH DATA: 24
+TOTAL ROWS: 90
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (4 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (9 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_address_areas  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_nearby_landmarks  (1 rows)
+  entity_offer  (1 rows)
+  entity_photos  (20 rows)
+  entity_reviews  (5 rows)
+  entity_tags  (10 rows)
+  entity_theme  (1 rows)
+  industry_transportation  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: a-1-taxi-service
+name: A-1 Taxi Service
+planner_category: local_service
+data_quality_score: 80
+issues: missing_summary|missing_hours
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   4 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 4] ---
+id: 16096
+entity_slug: a-1-taxi-service
+intent_tag: best_for:local_information
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 4] ---
+id: 16097
+entity_slug: a-1-taxi-service
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 4] ---
+id: 16098
+entity_slug: a-1-taxi-service
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 4] ---
+id: 16099
+entity_slug: a-1-taxi-service
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: a-1-taxi-service
+name: A-1 Taxi Service
+is_active: t
+planner_category: local_service
+entity_type: service
+entity_subtype: taxi_service
+city: Gulf Shores
+state: AL
+address_line_1: 2508 Henrietta Fulford Pl
+latitude: 30.261234799999997
+longitude: -87.72446459999999
+rating: 3.6
+review_count: 19
+hero_image_url: /photos/a-1-taxi-service/photo_01.jpg
+voice_summary: A-1 Taxi Service in Gulf Shores is best for local information.
+planner_summary: A-1 Taxi Service in Gulf Shores is a local service listing in Gulf Coast Radar.
+best_for: local information
+not_best_for: nothing specific flagged
+search_keywords: taxi_service|transportation_service|point_of_interest|service|establishment
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 9
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 10
+faq_count: 0
+data_quality_score: 80
+data_gaps: missing_summary|missing_hours
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   9 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 9] ---
+id: 10555
+entity_slug: a-1-taxi-service
+entity_name: A-1 Taxi Service
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 9] ---
+id: 19687
+entity_slug: a-1-taxi-service
+entity_name: A-1 Taxi Service
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_01.jpg
+is_cover: f
+sort_order: 0
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 9] ---
+id: 19688
+entity_slug: a-1-taxi-service
+entity_name: A-1 Taxi Service
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 9] ---
+id: 19689
+entity_slug: a-1-taxi-service
+entity_name: A-1 Taxi Service
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 9] ---
+id: 22623
+entity_slug: a-1-taxi-service
+entity_name: A-1 Taxi Service
+city: Gulf Shores
+url: /photos/a-1-taxi-service/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 9] ---
+id: 22624
+entity_slug: a-1-taxi-service
+entity_name: A-1 Taxi Service
+city: Gulf Shores
+url: /photos/a-1-taxi-service/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 9] ---
+id: 22625
+entity_slug: a-1-taxi-service
+entity_name: A-1 Taxi Service
+city: Gulf Shores
+url: /photos/a-1-taxi-service/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 9] ---
+id: 24439
+entity_slug: a-1-taxi-service
+entity_name: A-1 Taxi Service
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 9] ---
+id: 24440
+entity_slug: a-1-taxi-service
+entity_name: A-1 Taxi Service
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 36a2e8d1-45b3-4294-8b13-c41fce1c18f8
+resource_type: service
+slug: a-1-taxi-service
+name: A-1 Taxi Service
+entity_slug: a-1-taxi-service
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_03.jpg",
+  "/photos/a-1-taxi-service/photo_01.jpg",
+  "/photos/a-1-taxi-service/photo_02.jpg",
+  "/photos/a-1-taxi-service/photo_03.jpg"
+]
+amenities: []
+faqs: []
+address: 2508 Henrietta Fulford Pl
+city: Gulf Shores
+state: AL
+latitude: 30.261234799999997
+longitude: -87.72446459999999
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 5879b9ba54c94d29fdb30a6657d3255a
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 36a2e8d1-45b3-4294-8b13-c41fce1c18f8
+entity_slug: a-1-taxi-service
+slug: a-1-taxi-service
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_03.jpg",
+  "/photos/a-1-taxi-service/photo_01.jpg",
+  "/photos/a-1-taxi-service/photo_02.jpg",
+  "/photos/a-1-taxi-service/photo_03.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 36fc5267-b670-4f86-82ad-4b6221d6a722
+slug: a-1-taxi-service
+name: A-1 Taxi Service
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: taxi_service
+phone: (251) 981-9300
+menu_pin: 1210
+address_line_1: 2508 Henrietta Fulford Pl
+city: Gulf Shores
+state: AL
+zip: 36542
+latitude: 30.261234799999997
+longitude: -87.72446459999999
+rating: 3.6
+review_count: 19
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_01.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T04:00:46.99044+00:00
+updated_at: 2026-06-03T04:00:46.99044+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJi_hvphMbmogRn3ZnEZkCgEc
+google_maps_uri: https://maps.google.com/?cid=5152120830157092511&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: taxi_service
+formatted_address: 2508 Henrietta Fulford Pl, Gulf Shores, AL 36542, USA
+plus_code: 862J776G+F6
+international_phone: +1 251-981-9300
+google_places_data: {
+  "id": "ChIJi_hvphMbmogRn3ZnEZkCgEc",
+  "types": [
+    "taxi_service",
+    "point_of_interest",
+    "transportation_service",
+    "service",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3kbB4Pk04QlEOiuaz9amyprfr9LqCwQ2sg_do16RrjI_GXQ8QzPQZEOMGWBmheoW9aOHF45Md4nCguLFaWuoPwtWS3-RazZYQZ0lIKw14vQOPzAPLm1YoEb3zyiDzw3kMs8DvFKh9UUKR_8poyrDnOQ8y1_9gYsB9b4jnIkI0G86n0pWmCBvFklCNY_1DDbzAUSTbwqactR-QcsuJLJNQ1aP-b37xcMgauret5l3d3cPlV0d904kW9wqrglnJxtfDu52_D2Vg2r7KU1U3qY1kHzZnG5BpUF3JBACiE394AAJuiWtc0bvJ350VTU9HkqAuRGyRJM-1SmwQo9vTSWaqX-g_Mh9cefcFclnwM_Tb5j984DvZcR7D5W32tXO8bXRXpi69nK6llmHjAn9ABMdOH1XO0tWiHJy1E_vzIFc77y4-6e",
+      "widthPx": 360,
+      "heightPx": 640,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8wdakjgE!2e10!4m2!3m1!1s0x889a1b13a66ff88b:0x478002991167769f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID8wdakjgE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106847525451919877552",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWw4Zi-PULmxuNbe4RinD4MwNkYWg_h_G269OO9RodfbLkczk4=s100-p-k-no-mo",
+          "displayName": "A-1 Taxi Service"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3kQxPkifWMLwZJCAmV1vQftBjs21GXtouvyKhS7-CSAIlR41uBRjliDhuYjcl9BvpXwL_gn7D-fzrtYvShGrEsAvyy-kPOmojNFU6i0bcBUDsfyUOT_tLnVknW3EOFr-Bq1Z_bHSQ45NXPFrmYgSyNvIs_6VEKw0RdRVZyPMTCv1njBOVEaJc1EpSUY2t4tCOidwF8RK2aByUPTSQZnp_WgiE2KXw6itDtSVxjkgEVxNIe_3wNC0fsXWZVngpCTw73c6ONJ8qI5KFJLsdom7PYn7PZZ0VpgoBjF6SREiqCidqN-iKCPBYMJ_08A5LAl9gqdfWgnOW2SCrRZV-wmfz0IffO3uL6UaQZLA4y8fVhIfRhm3fMfJCwqqrRTyxAKApqzMAMRJgDJPRzThxaoy_qTv38NtjAdoq966S9NhWiXFCo",
+      "widthPx": 3000,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICeiKbQxwE!2e10!4m2!3m1!1s0x889a1b13a66ff88b:0x478002991167769f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICeiKbQxwE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106847525451919877552",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWw4Zi-PULmxuNbe4RinD4MwNkYWg_h_G269OO9RodfbLkczk4=s100-p-k-no-mo",
+          "displayName": "A-1 Taxi Service"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3ntAI3EG1GM-y87NITBmBrBI7TWLp_wGo3KHFzpfwCPpVrCNcDZxbptQciQxVfD2J1BzxDkOH-JPx8S-Uw63GKNZ5e1siCe0FmyES8FoqVjT4_jlX8wBIPwLnhQxmf1PRSkn5xkUifTIL0ZenPLpJPLu7YhoHPuiGxqGGypsB6b4CYv-MntEb-F76YgXs0FgnZxEjrkzGm-e2-hExrdMsbn9dMVcC5GeIrVWLGwFqXLfo1v0o1kv8j7mdO2cO9ak10T6dr1qgd9VMNq2zFoAQ47lkQxqActxVXkfW_Wqsm_BcypcBgnyUiQFD0Eq77QSYojerR4EwE4iV7kzsWSqN5wX5AHItdGSbctRMy8MFo-WpK4oVvAh-bodlc_3qu_pgx7usdWD3Yx8Ttluom8AZgS5qny7eZhFfLeMUm_okXYdDQ",
+      "widthPx": 640,
+      "heightPx": 361,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8wdakngE!2e10!4m2!3m1!1s0x889a1b13a66ff88b:0x478002991167769f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID8wdakngE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106847525451919877552",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWw4Zi-PULmxuNbe4RinD4MwNkYWg_h_G269OO9RodfbLkczk4=s100-p-k-no-mo",
+          "displayName": "A-1 Taxi Service"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3mLjuJOEyCbchBp1HxWAvzPR7Q14i5FR5JvPfvxHSZ-MAIthHWch5r1VkpN2G-Ev0XupGQF8UxCA9F0llFreOrJCX7Ew3Sjut9n7HFzsMBjEqqptpi0Qk-NLcZkf5Z4dxTGf_U5gKTMzdXpJWD0CEQYdvTuqXc2pEG5wT5CNBKUmVM06p9TNVCPqQmDKh5vWVjsfj9yQl9lSYXrxak9etPq8W9mhjqyhC2laG6KpY9QI4E7eEPMf5R6jGWJ37ZR6qx4XvBvFK5K3CvNqhGBPRcC0OX7Q3Cgl9fSmwYlkve55WutWk7l72Z5fA7b-h9fWuD9hJsdQ5ZTDFSdqa0sQeVWKEb2SGB3UAGRtQ0IS2Q3yV7lV060Skq0VH_BEsUBwGIKXUfdqo8ERxxKCviSR4vmZw5uRXXb2V3kGK3jUak",
+      "widthPx": 640,
+      "heightPx": 361,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8wdakbg!2e10!4m2!3m1!1s0x889a1b13a66ff88b:0x478002991167769f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID8wdakbg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106847525451919877552",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWw4Zi-PULmxuNbe4RinD4MwNkYWg_h_G269OO9RodfbLkczk4=s100-p-k-no-mo",
+          "displayName": "A-1 Taxi Service"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3l4TmFW3IbMvt6MQfaW7L9jOCn9whcJEYPqzfsd7iVc69QZ-Op8Tt5hqEq-ddBajQueZZRGnJEMlWw6AMgTJnbejfW3wrS7i_tit16vER3qpDd1QgbryvAYJsigoIq8ip38u8tkYWlcqaTi7-bWYuD20-NE274Bp4xbeLQtoJ7L7dy2YxQten9tt3G8A1jDQ_c1gn29GGMk2Auv6pKIt_h9RbK5Ja6TWNKhRRrQULlhsFk_-lRWIw1T4arTdy7LNWSsgD-GAzXhRnqTdv8AcRNZ4zfoD74gLQAUG-cab49yxYKLz_sbY0hzDLFMzGx2_6ieWrc2WRj5Spwsdx68iqu-Vr0PDSIKPaZ-rKkXQuEDwDrGdV1FD93quBOF2QqVRXcqhy-BDDD-Je7J8ElYo22IxUxEP1o-71wiQYQm_fGX8750",
+      "widthPx": 640,
+      "heightPx": 480,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8wdakrgE!2e10!4m2!3m1!1s0x889a1b13a66ff88b:0x478002991167769f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID8wdakrgE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106847525451919877552",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWw4Zi-PULmxuNbe4RinD4MwNkYWg_h_G269OO9RodfbLkczk4=s100-p-k-no-mo",
+          "displayName": "A-1 Taxi Service"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3n2XIsOeINGORFeDFB_NAypDsoKolDOqp38XMG5__gJw0p2sx_7-F_xDwDzFoP_OpVZ4zLk5JrR-2MVTiIQ9gPpyCea3EetRc7899nkUXyuO38R-zJwSYu1aq5wNCWuVUCdi12RKQIcyjFdEEi2PR008V28r_EsRYnnIhX7MnCHWKHaVCBjA8Nv5y0XafTFpMsu_blRagozkvEzu79vovHshrE_86VaMDGAS5b04AGPBzfyYYOScW9LGw9HEcIGd-TMo119rffLGSdQHpbg8D4Cchr6-DvbN-CTVgugWdcbzvCbwJwoegeJCzLm7CN2bUAT2eJSDsKAVrOigGeevVAY90Fy5ZrLXwdGB8tHkF3kRCeRNsRAZMp8LwD6eqXwz5w7hGJvOgKoij1nK7SG5qJ2KiK0rr45xqFfULJjxC0M9g",
+      "widthPx": 2700,
+      "heightPx": 4800,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8wdakTg!2e10!4m2!3m1!1s0x889a1b13a66ff88b:0x478002991167769f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID8wdakTg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106847525451919877552",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWw4Zi-PULmxuNbe4RinD4MwNkYWg_h_G269OO9RodfbLkczk4=s100-p-k-no-mo",
+          "displayName": "A-1 Taxi Service"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3nquA1UeRzdz76reAC9CDPp8KIHrOxIv2tq-ZjAldwKc7JxhzO9WFfXf68NJdUo1M7cZgxo2VOJKZ1h2QShgfkQBHlBsqeR0kOp4NKO4s7UApN959BIT3D2UNQnXZygo2JfZbg-1mODvapTfRR4IJumHiOaYaqU9kky0haFXzuGgHLSNOo8YcgUdvichOO4PTCWNTFuYKxNSZeJUNZ6xk8MfUyZE_nxNnqZZRnNq593Ns14iEDZsFG8Pe7WxaA6hHWgeQtg9rGh_sR_MmaLdN4Bw5EM4zvVIvyfZOjoVhFPXKbgAm0DRM5FiPpmNSovdTYF1HV-euJpCzRyW7-UPfA-PjYBxd2Ktu6V2tfnPzg3FqaEAT1Tge8eTeKoniSCnToUCxnJwWlEJk0AaSKly3B6_OweH74mSsld6GEOX2lEh8Y",
+      "widthPx": 1440,
+      "heightPx": 2560,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8wdakvgE!2e10!4m2!3m1!1s0x889a1b13a66ff88b:0x478002991167769f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID8wdakvgE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106847525451919877552",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWw4Zi-PULmxuNbe4RinD4MwNkYWg_h_G269OO9RodfbLkczk4=s100-p-k-no-mo",
+          "displayName": "A-1 Taxi Service"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3mKC2ggJr8W9yrOAoatGHD6xiIpXzLBv3ZGTItSifkVYcudDv5mjSSMWZDtD1D6-Wfx1mDQdBjATSLHfFcZhtGfc2cNREmOai3YBMMzJcAA2rBdjQi9ovKwm5ys2CpkYpRQNV_xXqaU5h4Hl_vAedMVmA4yBd53Z9jbvM3DtI8dByvQe4ul5OWLSWh3TEz2_t6FKjAwKY-tGVqP4Mr52JkrBgyWHwyBBrmGhJrx2TTG_0OUvFaDyHlmrtSjWiaJP5oV03ryZi4ast6b7L8gXQ0f7pDQxM2WvkufuKhGy3AHsoIu_LUnXfQ-jSHm40bD8ieqPy6Anl3Njy7Pp_ojsqK9jSuwTYXFj5Xim6Xm6XEmCSTDgT7IXG0eiLvG8xPskTg3YgYlnREXcbsiNYH76_M8jDJET1HpR4fk5Lj4wzm8Lg",
+      "widthPx": 1440,
+      "heightPx": 2560,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8wdakGg!2e10!4m2!3m1!1s0x889a1b13a66ff88b:0x478002991167769f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID8wdakGg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106847525451919877552",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWw4Zi-PULmxuNbe4RinD4MwNkYWg_h_G269OO9RodfbLkczk4=s100-p-k-no-mo",
+          "displayName": "A-1 Taxi Service"
+        }
+      ]
+    }
+  ],
+  "rating": 3.6,
+  "reviews": [
+    {
+      "name": "places/ChIJi_hvphMbmogRn3ZnEZkCgEc/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tsUlVWWm1UbXRtWW5Fd1preEhjMU00TUU1c01uYxAB",
+      "text": {
+        "text": "We were running out of time to catch a flight and uber and Lyft had no cars available. Called Terri and she saved the day! Picked us up quick, was friendly and professional, and we made our flight. Will definitely be using them again!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-09-09T03:25:11.435564661Z",
+      "originalText": {
+        "text": "We were running out of time to catch a flight and uber and Lyft had no cars available. Called Terri and she saved the day! Picked us up quick, was friendly and professional, and we made our flight. Will definitely be using them again!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tsUlVWWm1UbXRtWW5Fd1preEhjMU00TUU1c01uYxAB!2m1!1s0x889a1b13a66ff88b:0x478002991167769f",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2tsUlVWWm1UbXRtWW5Fd1preEhjMU00TUU1c01uYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/104108982038961711361/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUmP3VYc-Xig1p2MicNHdtE10UuJgbVrpz5dkKgBUcBbYIpDas=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Kelly Sadlo"
+      },
+      "relativePublishTimeDescription": "9 months ago"
+    },
+    {
+      "name": "places/ChIJi_hvphMbmogRn3ZnEZkCgEc/reviews/Ci9DQUlRQUNvZENodHljRjlvT214TmVrTm1Sa0ZRVERBM2NsZ3ROV3d0WkhKb1JFRRAB",
+      "text": {
+        "text": "We absolutely loved riding with Teri! She was so kind, funny, and caring. We literally hired her all weekend and the prices were great. Thank you Teri with Ms. Mary’s/A-1 taxi service.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-07-20T23:38:03.595425372Z",
+      "originalText": {
+        "text": "We absolutely loved riding with Teri! She was so kind, funny, and caring. We literally hired her all weekend and the prices were great. Thank you Teri with Ms. Mary’s/A-1 taxi service.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT214TmVrTm1Sa0ZRVERBM2NsZ3ROV3d0WkhKb1JFRRAB!2m1!1s0x889a1b13a66ff88b:0x478002991167769f",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT214TmVrTm1Sa0ZRVERBM2NsZ3ROV3d0WkhKb1JFRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/105865116886677817762/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJjE-N_OTo9dnErkgEXm456wXftF2IlhngkDmIkakD-uiIlDQ=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Sarah Carnahan"
+      },
+      "relativePublishTimeDescription": "10 months ago"
+    },
+    {
+      "name": "places/ChIJi_hvphMbmogRn3ZnEZkCgEc/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xoSVJHRjNNRkJPYlhwMmRHdHJTbFJDYmxKUlpFRRAB",
+      "text": {
+        "text": "Best taxi service in Orange Beach/Gulf Shores! Easy to schedule rides and van fits 14 comfortably.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-09-03T12:30:50.748968323Z",
+      "originalText": {
+        "text": "Best taxi service in Orange Beach/Gulf Shores! Easy to schedule rides and van fits 14 comfortably.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xoSVJHRjNNRkJPYlhwMmRHdHJTbFJDYmxKUlpFRRAB!2m1!1s0x889a1b13a66ff88b:0x478002991167769f",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2xoSVJHRjNNRkJPYlhwMmRHdHJTbFJDYmxKUlpFRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/112402231998305874461/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXyyJm7goirjOH5rvENP557CIsMwC9PtXFeZaqRU9oGg1lREImf=s128-c0x00000000-cc-rp-mo-ba3",
+        "displayName": "Jacob Harb"
+      },
+      "relativePublishTimeDescription": "9 months ago"
+    },
+    {
+      "name": "places/ChIJi_hvphMbmogRn3ZnEZkCgEc/reviews/ChdDSUhNMG9nS0VJQ0FnSUNlaU1uOWpRRRAB",
+      "text": {
+        "text": "We had the absolute most amazing trips with A-1 Taxi service!! Every time I called they were either there or in the area !! Our driver Mrs.Mary’s daughter was the best driver we’ve had! She completely made our Bachelorette night! We will definitely be using them from here out! Ty so much!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2022-09-04T16:12:58.047798Z",
+      "originalText": {
+        "text": "We had the absolute most amazing trips with A-1 Taxi service!! Every time I called they were either there or in the area !! Our driver Mrs.Mary’s daughter was the best driver we’ve had! She completely made our Bachelorette night! We will definitely be using them from here out! Ty so much!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNlaU1uOWpRRRAB!2m1!1s0x889a1b13a66ff88b:0x478002991167769f",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNlaU1uOWpRRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/108135795136624371384/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKQaa-sITncj0LNG8G8axTLMyZqlDM-9H7qscLCFbaAbRIMxw=s128-c0x00000000-cc-rp-mo",
+        "displayName": "dawn broderway"
+      },
+      "relativePublishTimeDescription": "3 years ago"
+    },
+    {
+      "name": "places/ChIJi_hvphMbmogRn3ZnEZkCgEc/reviews/ChdDSUhNMG9nS0VJQ0FnSUNXay1QR3JBRRAB",
+      "text": {
+        "text": "This is the 2nd time Mary’s A-1 picked me up from the airport and also took me to the grocery on the way to my condo in Gulf Shores.\nHer rates were very fair. She didn’t charge me extra even though my plan delay caused her to wait.  I appreciate the Southern hospitality, her knowledge of the area and overall kindness.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2022-03-05T21:20:28.782786Z",
+      "originalText": {
+        "text": "This is the 2nd time Mary’s A-1 picked me up from the airport and also took me to the grocery on the way to my condo in Gulf Shores.\nHer rates were very fair. She didn’t charge me extra even though my plan delay caused her to wait.  I appreciate the Southern hospitality, her knowledge of the area and overall kindness.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNXay1QR3JBRRAB!2m1!1s0x889a1b13a66ff88b:0x478002991167769f",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNXay1QR3JBRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/118405802018990694497/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWhdiKOEhKokN-07pZEPu8tuoXhEDOdNk6b1mc3vi17KYwB2OwHHg=s128-c0x00000000-cc-rp-mo-ba2",
+        "displayName": "Lee Kahre"
+      },
+      "relativePublishTimeDescription": "4 years ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.261234799999997,
+    "longitude": -87.72446459999999
+  },
+  "plusCode": {
+    "globalCode": "862J776G+F6",
+    "compoundCode": "776G+F6 Gulf Shores, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.2596238697085,
+      "longitude": -87.7259715302915
+    },
+    "high": {
+      "latitude": 30.262321830291494,
+      "longitude": -87.7232735697085
+    }
+  },
+  "displayName": {
+    "text": "A-1 Taxi Service",
+    "languageCode": "en"
+  },
+  "primaryType": "taxi_service",
+  "googleMapsUri": "https://maps.google.com/?cid=5152120830157092511&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=5152120830157092511&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b13a66ff88b:0x478002991167769f!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a1b13a66ff88b:0x478002991167769f!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a1b13a66ff88b:0x478002991167769f!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b13a66ff88b:0x478002991167769f!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "userRatingCount": 19,
+  "adrFormatAddress": "<span class=\"street-address\">2508 Henrietta Fulford Pl</span>, <span class=\"locality\">Gulf Shores</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36542</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "2508 Henrietta Fulford Pl, Gulf Shores, AL 36542, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "2508",
+      "shortText": "2508",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Henrietta Fulford Place",
+      "shortText": "Henrietta Fulford Pl",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Gulf Shores",
+      "shortText": "Gulf Shores",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36542",
+      "shortText": "36542",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJa4tdoRMbmogRmQ7ObSAEfjs",
+        "placeId": "ChIJa4tdoRMbmogRmQ7ObSAEfjs",
+        "containment": "NEAR",
+        "displayName": {
+          "text": "Doc's RV Park",
+          "languageCode": "en"
+        }
+      }
+    ]
+  },
+  "currentOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 0,
+          "minute": 0,
+          "truncated": true
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 59,
+          "truncated": true
+        }
+      }
+    ],
+    "weekdayDescriptions": [
+      "Monday: Open 24 hours",
+      "Tuesday: Open 24 hours",
+      "Wednesday: Open 24 hours",
+      "Thursday: Open 24 hours",
+      "Friday: Open 24 hours",
+      "Saturday: Open 24 hours",
+      "Sunday: Open 24 hours"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Taxi Service",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "nationalPhoneNumber": "(251) 981-9300",
+  "regularOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 0,
+          "minute": 0
+        }
+      }
+    ],
+    "weekdayDescriptions": [
+      "Monday: Open 24 hours",
+      "Tuesday: Open 24 hours",
+      "Wednesday: Open 24 hours",
+      "Thursday: Open 24 hours",
+      "Friday: Open 24 hours",
+      "Saturday: Open 24 hours",
+      "Sunday: Open 24 hours"
+    ]
+  },
+  "shortFormattedAddress": "2508 Henrietta Fulford Pl, Gulf Shores",
+  "primaryTypeDisplayName": {
+    "text": "Taxi Service",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-981-9300"
+}
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 2508 Henrietta Fulford Pl, Gulf Shores
+national_phone: (251) 981-9300
+search_vector: '-1':2A 'gulf':7 'servic':4A,6 'shore':8 'taxi':3A,5
+primary_type_display: Taxi Service
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=5152120830157092511&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b13a66ff88b:0x478002991167769f!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a1b13a66ff88b:0x478002991167769f!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a1b13a66ff88b:0x478002991167769f!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b13a66ff88b:0x478002991167769f!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJa4tdoRMbmogRmQ7ObSAEfjs",
+      "placeId": "ChIJa4tdoRMbmogRmQ7ObSAEfjs",
+      "containment": "NEAR",
+      "displayName": {
+        "text": "Doc's RV Park",
+        "languageCode": "en"
+      }
+    }
+  ]
+}
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: transportation
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   1 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 1] ---
+id: 8c9af136-dd27-4b4d-8387-08bebe41900c
+entity_slug: a-1-taxi-service
+place_id: ChIJa4tdoRMbmogRmQ7ObSAEfjs
+containment: NEAR
+display_name: Doc's RV Park
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: a-1-taxi-service
+name: A-1 Taxi Service
+industry_code: transportation
+is_parent: false
+score_of_7: 5
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: a6814688-30f1-4fa9-8957-e4c72b03aab7
+entity_slug: a-1-taxi-service
+place_uri: https://maps.google.com/?cid=5152120830157092511&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b13a66ff88b:0x478002991167769f!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a1b13a66ff88b:0x478002991167769f!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a1b13a66ff88b:0x478002991167769f!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b13a66ff88b:0x478002991167769f!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 6521
+entity_slug: a-1-taxi-service
+google_review_name: places/ChIJi_hvphMbmogRn3ZnEZkCgEc/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tsUlVWWm1UbXRtWW5Fd1preEhjMU00TUU1c01uYxAB
+rating: 5
+review_text: We were running out of time to catch a flight and uber and Lyft had no cars available. Called Terri and she saved the day! Picked us up quick, was friendly and professional, and we made our flight. Will definitely be using them again!
+language_code: en
+author_name: Kelly Sadlo
+author_profile_url: https://www.google.com/maps/contrib/104108982038961711361/reviews
+publish_time: 2025-09-09T03:25:11.435565+00:00
+relative_time: 9 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tsUlVWWm1UbXRtWW5Fd1preEhjMU00TUU1c01uYxAB!2m1!1s0x889a1b13a66ff88b:0x478002991167769f
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 6522
+entity_slug: a-1-taxi-service
+google_review_name: places/ChIJi_hvphMbmogRn3ZnEZkCgEc/reviews/Ci9DQUlRQUNvZENodHljRjlvT214TmVrTm1Sa0ZRVERBM2NsZ3ROV3d0WkhKb1JFRRAB
+rating: 5
+review_text: We absolutely loved riding with Teri! She was so kind, funny, and caring. We literally hired her all weekend and the prices were great. Thank you Teri with Ms. Mary’s/A-1 taxi service.
+language_code: en
+author_name: Sarah Carnahan
+author_profile_url: https://www.google.com/maps/contrib/105865116886677817762/reviews
+publish_time: 2025-07-20T23:38:03.595425+00:00
+relative_time: 10 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT214TmVrTm1Sa0ZRVERBM2NsZ3ROV3d0WkhKb1JFRRAB!2m1!1s0x889a1b13a66ff88b:0x478002991167769f
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 6523
+entity_slug: a-1-taxi-service
+google_review_name: places/ChIJi_hvphMbmogRn3ZnEZkCgEc/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xoSVJHRjNNRkJPYlhwMmRHdHJTbFJDYmxKUlpFRRAB
+rating: 5
+review_text: Best taxi service in Orange Beach/Gulf Shores! Easy to schedule rides and van fits 14 comfortably.
+language_code: en
+author_name: Jacob Harb
+author_profile_url: https://www.google.com/maps/contrib/112402231998305874461/reviews
+publish_time: 2025-09-03T12:30:50.748968+00:00
+relative_time: 9 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xoSVJHRjNNRkJPYlhwMmRHdHJTbFJDYmxKUlpFRRAB!2m1!1s0x889a1b13a66ff88b:0x478002991167769f
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 6524
+entity_slug: a-1-taxi-service
+google_review_name: places/ChIJi_hvphMbmogRn3ZnEZkCgEc/reviews/ChdDSUhNMG9nS0VJQ0FnSUNlaU1uOWpRRRAB
+rating: 5
+review_text: We had the absolute most amazing trips with A-1 Taxi service!! Every time I called they were either there or in the area !! Our driver Mrs.Mary’s daughter was the best driver we’ve had! She completely made our Bachelorette night! We will definitely be using them from here out! Ty so much!
+language_code: en
+author_name: dawn broderway
+author_profile_url: https://www.google.com/maps/contrib/108135795136624371384/reviews
+publish_time: 2022-09-04T16:12:58.047798+00:00
+relative_time: 3 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNlaU1uOWpRRRAB!2m1!1s0x889a1b13a66ff88b:0x478002991167769f
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 6525
+entity_slug: a-1-taxi-service
+google_review_name: places/ChIJi_hvphMbmogRn3ZnEZkCgEc/reviews/ChdDSUhNMG9nS0VJQ0FnSUNXay1QR3JBRRAB
+rating: 5
+review_text: This is the 2nd time Mary’s A-1 picked me up from the airport and also took me to the grocery on the way to my condo in Gulf Shores.
+Her rates were very fair. She didn’t charge me extra even though my plan delay caused her to wait.  I appreciate the Southern hospitality, her knowledge of the area and overall kindness.
+language_code: en
+author_name: Lee Kahre
+author_profile_url: https://www.google.com/maps/contrib/118405802018990694497/reviews
+publish_time: 2022-03-05T21:20:28.782786+00:00
+relative_time: 4 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNXay1QR3JBRRAB!2m1!1s0x889a1b13a66ff88b:0x478002991167769f
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: c4bc9b5b-4352-43db-8241-615274ad3012
+entity_slug: a-1-taxi-service
+day_of_week: 0
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 670a1818-953a-4613-aff8-194f38df81bf
+entity_slug: a-1-taxi-service
+day_of_week: 1
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: c5514fe8-73a7-4c72-ae0e-b9f8c7f71fbf
+entity_slug: a-1-taxi-service
+day_of_week: 2
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: c69e61c2-2be3-4de5-b3fb-92e72079bc80
+entity_slug: a-1-taxi-service
+day_of_week: 3
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 686a1d66-3b13-4193-a5b4-91a28540112f
+entity_slug: a-1-taxi-service
+day_of_week: 4
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 9929e9e1-6533-4fe9-bf93-a3706b017ddf
+entity_slug: a-1-taxi-service
+day_of_week: 5
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 05384902-e232-4e13-93f0-49702f8438f7
+entity_slug: a-1-taxi-service
+day_of_week: 6
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: a-1-taxi-service
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 36a2e8d1-45b3-4294-8b13-c41fce1c18f8
+name: A-1 Taxi Service
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_03.jpg",
+    "/photos/a-1-taxi-service/photo_01.jpg",
+    "/photos/a-1-taxi-service/photo_02.jpg",
+    "/photos/a-1-taxi-service/photo_03.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: a-1-taxi-service
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 36a2e8d1-45b3-4294-8b13-c41fce1c18f8
+name: A-1 Taxi Service
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_03.jpg",
+    "/photos/a-1-taxi-service/photo_01.jpg",
+    "/photos/a-1-taxi-service/photo_02.jpg",
+    "/photos/a-1-taxi-service/photo_03.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: bc652cfd-a0e2-4565-a9cb-08d6e87cbbff
+entity_slug: a-1-taxi-service
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 36dc49b4-c61d-4c8d-9fb2-db4ce6f87b13
+entity_slug: a-1-taxi-service
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: f2b65583-4190-4aeb-ae9b-846bc1d193dc
+entity_slug: a-1-taxi-service
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: 04b46fd3-799b-44b4-8ea4-5177a4efe328
+entity_slug: a-1-taxi-service
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: 5c84d28f-df2c-49c6-ae3c-f285af6657f1
+entity_slug: a-1-taxi-service
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: 9708ec60-5100-453b-954c-574c79791f6b
+entity_slug: a-1-taxi-service
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 053d4074-5530-47f4-b7a3-b078d68f6af0
+entity_slug: a-1-taxi-service
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: ced15108-5081-4b31-9c31-69db4b234ed6
+entity_slug: a-1-taxi-service
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: 4d9276fa-7725-41e9-b3c3-c55ff76ad5b0
+entity_slug: a-1-taxi-service
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: 9aba01a6-95aa-4fbb-af53-5e7899fa7905
+entity_slug: a-1-taxi-service
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: 7b335c1d-4d88-4f65-b290-9d361274adde
+entity_slug: a-1-taxi-service
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: 5cfc8077-0400-4c27-979e-85c75ee9165f
+entity_slug: a-1-taxi-service
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: 0f14a91d-b1f1-411e-9bbd-b5ad14abcbbb
+entity_slug: a-1-taxi-service
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   1 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 1] ---
+id: 25ea0591-c85f-4100-9cd5-666b427ea2c3
+entity_slug: a-1-taxi-service
+kind: area
+place_id: ChIJa4tdoRMbmogRmQ7ObSAEfjs
+name: Doc's RV Park
+containment: NEAR
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13231
+entity_slug: a-1-taxi-service
+name: A-1 Taxi Service
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 36a2e8d1-45b3-4294-8b13-c41fce1c18f8
+
+####################################################################################################
+# TABLE: entity_photos   -   20 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 20] ---
+id: a325f385-6cb2-4ea0-8abc-490d281f3d6f
+entity_slug: a-1-taxi-service
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_01.jpg
+is_cover: false
+sort_order: 0
+
+--- entity_photos [row 2 of 20] ---
+id: e66080e4-5996-475e-8604-de6126d07cfa
+entity_slug: a-1-taxi-service
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 20] ---
+id: 68d10fd3-1e9c-43ad-ab5c-25df99338fa8
+entity_slug: a-1-taxi-service
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_03.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 4 of 20] ---
+id: f709cb4d-2f6f-456e-801d-cc17ebbb74dc
+entity_slug: a-1-taxi-service
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 5 of 20] ---
+id: d5d7ef44-a035-42a5-80c6-765e38ebc85f
+entity_slug: a-1-taxi-service
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 6 of 20] ---
+id: 50e50737-bcea-474c-abd5-a28b030fca57
+entity_slug: a-1-taxi-service
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_03.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 7 of 20] ---
+id: e7f62e7b-e4d2-4b8a-8226-9822add645bd
+entity_slug: a-1-taxi-service
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_01.jpg
+is_cover: false
+sort_order: 3
+photo_type: resource
+source_name: bookable_resource
+resource_id: 36a2e8d1-45b3-4294-8b13-c41fce1c18f8
+
+--- entity_photos [row 8 of 20] ---
+id: 4e5f9e85-f96c-4a4e-b230-60be28e26929
+entity_slug: a-1-taxi-service
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 36a2e8d1-45b3-4294-8b13-c41fce1c18f8
+
+--- entity_photos [row 9 of 20] ---
+id: 11510865-fef6-4531-9715-78b21335eabc
+entity_slug: a-1-taxi-service
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_02.jpg
+is_cover: false
+sort_order: 4
+photo_type: resource
+source_name: bookable_resource
+resource_id: 36a2e8d1-45b3-4294-8b13-c41fce1c18f8
+
+--- entity_photos [row 10 of 20] ---
+id: 1b8befc8-55f5-4472-afff-b39b4b0adf81
+entity_slug: a-1-taxi-service
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: 36a2e8d1-45b3-4294-8b13-c41fce1c18f8
+
+--- entity_photos [row 11 of 20] ---
+id: 3fd37491-bc47-40cb-9858-edf7d9856f24
+entity_slug: a-1-taxi-service
+url: https://places.googleapis.com/v1/places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3kbB4Pk04QlEOiuaz9amyprfr9LqCwQ2sg_do16RrjI_GXQ8QzPQZEOMGWBmheoW9aOHF45Md4nCguLFaWuoPwtWS3-RazZYQZ0lIKw14vQOPzAPLm1YoEb3zyiDzw3kMs8DvFKh9UUKR_8poyrDnOQ8y1_9gYsB9b4jnIkI0G86n0pWmCBvFklCNY_1DDbzAUSTbwqactR-QcsuJLJNQ1aP-b37xcMgauret5l3d3cPlV0d904kW9wqrglnJxtfDu52_D2Vg2r7KU1U3qY1kHzZnG5BpUF3JBACiE394AAJuiWtc0bvJ350VTU9HkqAuRGyRJM-1SmwQo9vTSWaqX-g_Mh9cefcFclnwM_Tb5j984DvZcR7D5W32tXO8bXRXpi69nK6llmHjAn9ABMdOH1XO0tWiHJy1E_vzIFc77y4-6e/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3kbB4Pk04QlEOiuaz9amyprfr9LqCwQ2sg_do16RrjI_GXQ8QzPQZEOMGWBmheoW9aOHF45Md4nCguLFaWuoPwtWS3-RazZYQZ0lIKw14vQOPzAPLm1YoEb3zyiDzw3kMs8DvFKh9UUKR_8poyrDnOQ8y1_9gYsB9b4jnIkI0G86n0pWmCBvFklCNY_1DDbzAUSTbwqactR-QcsuJLJNQ1aP-b37xcMgauret5l3d3cPlV0d904kW9wqrglnJxtfDu52_D2Vg2r7KU1U3qY1kHzZnG5BpUF3JBACiE394AAJuiWtc0bvJ350VTU9HkqAuRGyRJM-1SmwQo9vTSWaqX-g_Mh9cefcFclnwM_Tb5j984DvZcR7D5W32tXO8bXRXpi69nK6llmHjAn9ABMdOH1XO0tWiHJy1E_vzIFc77y4-6e
+is_cover: false
+sort_order: 0
+caption: A-1 Taxi Service
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8wdakjgE!2e10!4m2!3m1!1s0x889a1b13a66ff88b:0x478002991167769f
+
+--- entity_photos [row 12 of 20] ---
+id: da28ff6f-ccd2-40f6-9664-beab4884ee0d
+entity_slug: a-1-taxi-service
+url: https://places.googleapis.com/v1/places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3kQxPkifWMLwZJCAmV1vQftBjs21GXtouvyKhS7-CSAIlR41uBRjliDhuYjcl9BvpXwL_gn7D-fzrtYvShGrEsAvyy-kPOmojNFU6i0bcBUDsfyUOT_tLnVknW3EOFr-Bq1Z_bHSQ45NXPFrmYgSyNvIs_6VEKw0RdRVZyPMTCv1njBOVEaJc1EpSUY2t4tCOidwF8RK2aByUPTSQZnp_WgiE2KXw6itDtSVxjkgEVxNIe_3wNC0fsXWZVngpCTw73c6ONJ8qI5KFJLsdom7PYn7PZZ0VpgoBjF6SREiqCidqN-iKCPBYMJ_08A5LAl9gqdfWgnOW2SCrRZV-wmfz0IffO3uL6UaQZLA4y8fVhIfRhm3fMfJCwqqrRTyxAKApqzMAMRJgDJPRzThxaoy_qTv38NtjAdoq966S9NhWiXFCo/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3kQxPkifWMLwZJCAmV1vQftBjs21GXtouvyKhS7-CSAIlR41uBRjliDhuYjcl9BvpXwL_gn7D-fzrtYvShGrEsAvyy-kPOmojNFU6i0bcBUDsfyUOT_tLnVknW3EOFr-Bq1Z_bHSQ45NXPFrmYgSyNvIs_6VEKw0RdRVZyPMTCv1njBOVEaJc1EpSUY2t4tCOidwF8RK2aByUPTSQZnp_WgiE2KXw6itDtSVxjkgEVxNIe_3wNC0fsXWZVngpCTw73c6ONJ8qI5KFJLsdom7PYn7PZZ0VpgoBjF6SREiqCidqN-iKCPBYMJ_08A5LAl9gqdfWgnOW2SCrRZV-wmfz0IffO3uL6UaQZLA4y8fVhIfRhm3fMfJCwqqrRTyxAKApqzMAMRJgDJPRzThxaoy_qTv38NtjAdoq966S9NhWiXFCo
+is_cover: false
+sort_order: 1
+caption: A-1 Taxi Service
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICeiKbQxwE!2e10!4m2!3m1!1s0x889a1b13a66ff88b:0x478002991167769f
+
+--- entity_photos [row 13 of 20] ---
+id: 8bd96695-4db8-4c6f-8a2d-d3a3f138137e
+entity_slug: a-1-taxi-service
+url: https://places.googleapis.com/v1/places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3ntAI3EG1GM-y87NITBmBrBI7TWLp_wGo3KHFzpfwCPpVrCNcDZxbptQciQxVfD2J1BzxDkOH-JPx8S-Uw63GKNZ5e1siCe0FmyES8FoqVjT4_jlX8wBIPwLnhQxmf1PRSkn5xkUifTIL0ZenPLpJPLu7YhoHPuiGxqGGypsB6b4CYv-MntEb-F76YgXs0FgnZxEjrkzGm-e2-hExrdMsbn9dMVcC5GeIrVWLGwFqXLfo1v0o1kv8j7mdO2cO9ak10T6dr1qgd9VMNq2zFoAQ47lkQxqActxVXkfW_Wqsm_BcypcBgnyUiQFD0Eq77QSYojerR4EwE4iV7kzsWSqN5wX5AHItdGSbctRMy8MFo-WpK4oVvAh-bodlc_3qu_pgx7usdWD3Yx8Ttluom8AZgS5qny7eZhFfLeMUm_okXYdDQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3ntAI3EG1GM-y87NITBmBrBI7TWLp_wGo3KHFzpfwCPpVrCNcDZxbptQciQxVfD2J1BzxDkOH-JPx8S-Uw63GKNZ5e1siCe0FmyES8FoqVjT4_jlX8wBIPwLnhQxmf1PRSkn5xkUifTIL0ZenPLpJPLu7YhoHPuiGxqGGypsB6b4CYv-MntEb-F76YgXs0FgnZxEjrkzGm-e2-hExrdMsbn9dMVcC5GeIrVWLGwFqXLfo1v0o1kv8j7mdO2cO9ak10T6dr1qgd9VMNq2zFoAQ47lkQxqActxVXkfW_Wqsm_BcypcBgnyUiQFD0Eq77QSYojerR4EwE4iV7kzsWSqN5wX5AHItdGSbctRMy8MFo-WpK4oVvAh-bodlc_3qu_pgx7usdWD3Yx8Ttluom8AZgS5qny7eZhFfLeMUm_okXYdDQ
+is_cover: false
+sort_order: 2
+caption: A-1 Taxi Service
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8wdakngE!2e10!4m2!3m1!1s0x889a1b13a66ff88b:0x478002991167769f
+
+--- entity_photos [row 14 of 20] ---
+id: c9f9dc9d-450c-412e-9fa7-c7524575e38f
+entity_slug: a-1-taxi-service
+url: https://places.googleapis.com/v1/places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3mLjuJOEyCbchBp1HxWAvzPR7Q14i5FR5JvPfvxHSZ-MAIthHWch5r1VkpN2G-Ev0XupGQF8UxCA9F0llFreOrJCX7Ew3Sjut9n7HFzsMBjEqqptpi0Qk-NLcZkf5Z4dxTGf_U5gKTMzdXpJWD0CEQYdvTuqXc2pEG5wT5CNBKUmVM06p9TNVCPqQmDKh5vWVjsfj9yQl9lSYXrxak9etPq8W9mhjqyhC2laG6KpY9QI4E7eEPMf5R6jGWJ37ZR6qx4XvBvFK5K3CvNqhGBPRcC0OX7Q3Cgl9fSmwYlkve55WutWk7l72Z5fA7b-h9fWuD9hJsdQ5ZTDFSdqa0sQeVWKEb2SGB3UAGRtQ0IS2Q3yV7lV060Skq0VH_BEsUBwGIKXUfdqo8ERxxKCviSR4vmZw5uRXXb2V3kGK3jUak/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3mLjuJOEyCbchBp1HxWAvzPR7Q14i5FR5JvPfvxHSZ-MAIthHWch5r1VkpN2G-Ev0XupGQF8UxCA9F0llFreOrJCX7Ew3Sjut9n7HFzsMBjEqqptpi0Qk-NLcZkf5Z4dxTGf_U5gKTMzdXpJWD0CEQYdvTuqXc2pEG5wT5CNBKUmVM06p9TNVCPqQmDKh5vWVjsfj9yQl9lSYXrxak9etPq8W9mhjqyhC2laG6KpY9QI4E7eEPMf5R6jGWJ37ZR6qx4XvBvFK5K3CvNqhGBPRcC0OX7Q3Cgl9fSmwYlkve55WutWk7l72Z5fA7b-h9fWuD9hJsdQ5ZTDFSdqa0sQeVWKEb2SGB3UAGRtQ0IS2Q3yV7lV060Skq0VH_BEsUBwGIKXUfdqo8ERxxKCviSR4vmZw5uRXXb2V3kGK3jUak
+is_cover: false
+sort_order: 3
+caption: A-1 Taxi Service
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8wdakbg!2e10!4m2!3m1!1s0x889a1b13a66ff88b:0x478002991167769f
+
+--- entity_photos [row 15 of 20] ---
+id: e3086242-b425-4fe3-95f4-72dc3405fc8e
+entity_slug: a-1-taxi-service
+url: https://places.googleapis.com/v1/places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3l4TmFW3IbMvt6MQfaW7L9jOCn9whcJEYPqzfsd7iVc69QZ-Op8Tt5hqEq-ddBajQueZZRGnJEMlWw6AMgTJnbejfW3wrS7i_tit16vER3qpDd1QgbryvAYJsigoIq8ip38u8tkYWlcqaTi7-bWYuD20-NE274Bp4xbeLQtoJ7L7dy2YxQten9tt3G8A1jDQ_c1gn29GGMk2Auv6pKIt_h9RbK5Ja6TWNKhRRrQULlhsFk_-lRWIw1T4arTdy7LNWSsgD-GAzXhRnqTdv8AcRNZ4zfoD74gLQAUG-cab49yxYKLz_sbY0hzDLFMzGx2_6ieWrc2WRj5Spwsdx68iqu-Vr0PDSIKPaZ-rKkXQuEDwDrGdV1FD93quBOF2QqVRXcqhy-BDDD-Je7J8ElYo22IxUxEP1o-71wiQYQm_fGX8750/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3l4TmFW3IbMvt6MQfaW7L9jOCn9whcJEYPqzfsd7iVc69QZ-Op8Tt5hqEq-ddBajQueZZRGnJEMlWw6AMgTJnbejfW3wrS7i_tit16vER3qpDd1QgbryvAYJsigoIq8ip38u8tkYWlcqaTi7-bWYuD20-NE274Bp4xbeLQtoJ7L7dy2YxQten9tt3G8A1jDQ_c1gn29GGMk2Auv6pKIt_h9RbK5Ja6TWNKhRRrQULlhsFk_-lRWIw1T4arTdy7LNWSsgD-GAzXhRnqTdv8AcRNZ4zfoD74gLQAUG-cab49yxYKLz_sbY0hzDLFMzGx2_6ieWrc2WRj5Spwsdx68iqu-Vr0PDSIKPaZ-rKkXQuEDwDrGdV1FD93quBOF2QqVRXcqhy-BDDD-Je7J8ElYo22IxUxEP1o-71wiQYQm_fGX8750
+is_cover: false
+sort_order: 4
+caption: A-1 Taxi Service
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8wdakrgE!2e10!4m2!3m1!1s0x889a1b13a66ff88b:0x478002991167769f
+
+--- entity_photos [row 16 of 20] ---
+id: 94ae1f7c-7d76-490d-9965-b75c8b98d1d3
+entity_slug: a-1-taxi-service
+url: https://places.googleapis.com/v1/places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3n2XIsOeINGORFeDFB_NAypDsoKolDOqp38XMG5__gJw0p2sx_7-F_xDwDzFoP_OpVZ4zLk5JrR-2MVTiIQ9gPpyCea3EetRc7899nkUXyuO38R-zJwSYu1aq5wNCWuVUCdi12RKQIcyjFdEEi2PR008V28r_EsRYnnIhX7MnCHWKHaVCBjA8Nv5y0XafTFpMsu_blRagozkvEzu79vovHshrE_86VaMDGAS5b04AGPBzfyYYOScW9LGw9HEcIGd-TMo119rffLGSdQHpbg8D4Cchr6-DvbN-CTVgugWdcbzvCbwJwoegeJCzLm7CN2bUAT2eJSDsKAVrOigGeevVAY90Fy5ZrLXwdGB8tHkF3kRCeRNsRAZMp8LwD6eqXwz5w7hGJvOgKoij1nK7SG5qJ2KiK0rr45xqFfULJjxC0M9g/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3n2XIsOeINGORFeDFB_NAypDsoKolDOqp38XMG5__gJw0p2sx_7-F_xDwDzFoP_OpVZ4zLk5JrR-2MVTiIQ9gPpyCea3EetRc7899nkUXyuO38R-zJwSYu1aq5wNCWuVUCdi12RKQIcyjFdEEi2PR008V28r_EsRYnnIhX7MnCHWKHaVCBjA8Nv5y0XafTFpMsu_blRagozkvEzu79vovHshrE_86VaMDGAS5b04AGPBzfyYYOScW9LGw9HEcIGd-TMo119rffLGSdQHpbg8D4Cchr6-DvbN-CTVgugWdcbzvCbwJwoegeJCzLm7CN2bUAT2eJSDsKAVrOigGeevVAY90Fy5ZrLXwdGB8tHkF3kRCeRNsRAZMp8LwD6eqXwz5w7hGJvOgKoij1nK7SG5qJ2KiK0rr45xqFfULJjxC0M9g
+is_cover: false
+sort_order: 5
+caption: A-1 Taxi Service
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8wdakTg!2e10!4m2!3m1!1s0x889a1b13a66ff88b:0x478002991167769f
+
+--- entity_photos [row 17 of 20] ---
+id: 019c8084-9b21-4805-a7fe-2a7eab3f35bf
+entity_slug: a-1-taxi-service
+url: https://places.googleapis.com/v1/places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3nquA1UeRzdz76reAC9CDPp8KIHrOxIv2tq-ZjAldwKc7JxhzO9WFfXf68NJdUo1M7cZgxo2VOJKZ1h2QShgfkQBHlBsqeR0kOp4NKO4s7UApN959BIT3D2UNQnXZygo2JfZbg-1mODvapTfRR4IJumHiOaYaqU9kky0haFXzuGgHLSNOo8YcgUdvichOO4PTCWNTFuYKxNSZeJUNZ6xk8MfUyZE_nxNnqZZRnNq593Ns14iEDZsFG8Pe7WxaA6hHWgeQtg9rGh_sR_MmaLdN4Bw5EM4zvVIvyfZOjoVhFPXKbgAm0DRM5FiPpmNSovdTYF1HV-euJpCzRyW7-UPfA-PjYBxd2Ktu6V2tfnPzg3FqaEAT1Tge8eTeKoniSCnToUCxnJwWlEJk0AaSKly3B6_OweH74mSsld6GEOX2lEh8Y/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3nquA1UeRzdz76reAC9CDPp8KIHrOxIv2tq-ZjAldwKc7JxhzO9WFfXf68NJdUo1M7cZgxo2VOJKZ1h2QShgfkQBHlBsqeR0kOp4NKO4s7UApN959BIT3D2UNQnXZygo2JfZbg-1mODvapTfRR4IJumHiOaYaqU9kky0haFXzuGgHLSNOo8YcgUdvichOO4PTCWNTFuYKxNSZeJUNZ6xk8MfUyZE_nxNnqZZRnNq593Ns14iEDZsFG8Pe7WxaA6hHWgeQtg9rGh_sR_MmaLdN4Bw5EM4zvVIvyfZOjoVhFPXKbgAm0DRM5FiPpmNSovdTYF1HV-euJpCzRyW7-UPfA-PjYBxd2Ktu6V2tfnPzg3FqaEAT1Tge8eTeKoniSCnToUCxnJwWlEJk0AaSKly3B6_OweH74mSsld6GEOX2lEh8Y
+is_cover: false
+sort_order: 6
+caption: A-1 Taxi Service
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8wdakvgE!2e10!4m2!3m1!1s0x889a1b13a66ff88b:0x478002991167769f
+
+--- entity_photos [row 18 of 20] ---
+id: 35fd653c-21ef-436b-aa8e-ce1f0f459e00
+entity_slug: a-1-taxi-service
+url: https://places.googleapis.com/v1/places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3mKC2ggJr8W9yrOAoatGHD6xiIpXzLBv3ZGTItSifkVYcudDv5mjSSMWZDtD1D6-Wfx1mDQdBjATSLHfFcZhtGfc2cNREmOai3YBMMzJcAA2rBdjQi9ovKwm5ys2CpkYpRQNV_xXqaU5h4Hl_vAedMVmA4yBd53Z9jbvM3DtI8dByvQe4ul5OWLSWh3TEz2_t6FKjAwKY-tGVqP4Mr52JkrBgyWHwyBBrmGhJrx2TTG_0OUvFaDyHlmrtSjWiaJP5oV03ryZi4ast6b7L8gXQ0f7pDQxM2WvkufuKhGy3AHsoIu_LUnXfQ-jSHm40bD8ieqPy6Anl3Njy7Pp_ojsqK9jSuwTYXFj5Xim6Xm6XEmCSTDgT7IXG0eiLvG8xPskTg3YgYlnREXcbsiNYH76_M8jDJET1HpR4fk5Lj4wzm8Lg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJi_hvphMbmogRn3ZnEZkCgEc/photos/AaVGc3mKC2ggJr8W9yrOAoatGHD6xiIpXzLBv3ZGTItSifkVYcudDv5mjSSMWZDtD1D6-Wfx1mDQdBjATSLHfFcZhtGfc2cNREmOai3YBMMzJcAA2rBdjQi9ovKwm5ys2CpkYpRQNV_xXqaU5h4Hl_vAedMVmA4yBd53Z9jbvM3DtI8dByvQe4ul5OWLSWh3TEz2_t6FKjAwKY-tGVqP4Mr52JkrBgyWHwyBBrmGhJrx2TTG_0OUvFaDyHlmrtSjWiaJP5oV03ryZi4ast6b7L8gXQ0f7pDQxM2WvkufuKhGy3AHsoIu_LUnXfQ-jSHm40bD8ieqPy6Anl3Njy7Pp_ojsqK9jSuwTYXFj5Xim6Xm6XEmCSTDgT7IXG0eiLvG8xPskTg3YgYlnREXcbsiNYH76_M8jDJET1HpR4fk5Lj4wzm8Lg
+is_cover: false
+sort_order: 7
+caption: A-1 Taxi Service
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8wdakGg!2e10!4m2!3m1!1s0x889a1b13a66ff88b:0x478002991167769f
+
+--- entity_photos [row 19 of 20] ---
+id: 175d99f6-6f27-47b9-862a-442899a2ce3f
+entity_slug: a-1-taxi-service
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_03.jpg
+is_cover: false
+sort_order: 5
+photo_type: resource
+source_name: bookable_resource
+resource_id: 36a2e8d1-45b3-4294-8b13-c41fce1c18f8
+
+--- entity_photos [row 20 of 20] ---
+id: 91aab10e-b8c1-4519-89be-4bbdbea606b2
+entity_slug: a-1-taxi-service
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/a-1-taxi-service/photo_03.jpg
+is_cover: false
+sort_order: 2
+photo_type: resource
+source_name: bookable_resource
+resource_id: 36a2e8d1-45b3-4294-8b13-c41fce1c18f8
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 56392d81-f3d6-46b8-ab06-f3019a05908b
+entity_slug: a-1-taxi-service
+reviewer_name: Kelly Sadlo
+rating: 5
+body: We were running out of time to catch a flight and uber and Lyft had no cars available. Called Terri and she saved the day! Picked us up quick, was friendly and professional, and we made our flight. Will definitely be using them again!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-09-09T03:25:11.435565+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: 7999009a-c3b6-4ade-a45c-37f91dc7be39
+entity_slug: a-1-taxi-service
+reviewer_name: Sarah Carnahan
+rating: 5
+body: We absolutely loved riding with Teri! She was so kind, funny, and caring. We literally hired her all weekend and the prices were great. Thank you Teri with Ms. Mary’s/A-1 taxi service.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-07-20T23:38:03.595425+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: 1337dd00-4e2c-42e9-b5f4-1e20ced94ecd
+entity_slug: a-1-taxi-service
+reviewer_name: Jacob Harb
+rating: 5
+body: Best taxi service in Orange Beach/Gulf Shores! Easy to schedule rides and van fits 14 comfortably.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-09-03T12:30:50.748968+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 441c844b-1f2e-4ebd-b1c0-6d850e09bef1
+entity_slug: a-1-taxi-service
+reviewer_name: dawn broderway
+rating: 5
+body: We had the absolute most amazing trips with A-1 Taxi service!! Every time I called they were either there or in the area !! Our driver Mrs.Mary’s daughter was the best driver we’ve had! She completely made our Bachelorette night! We will definitely be using them from here out! Ty so much!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2022-09-04T16:12:58.047798+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 5eadaffb-32c1-4984-97f4-bfefaf134799
+entity_slug: a-1-taxi-service
+reviewer_name: Lee Kahre
+rating: 5
+body: This is the 2nd time Mary’s A-1 picked me up from the airport and also took me to the grocery on the way to my condo in Gulf Shores.
+Her rates were very fair. She didn’t charge me extra even though my plan delay caused her to wait.  I appreciate the Southern hospitality, her knowledge of the area and overall kindness.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2022-03-05T21:20:28.782786+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   10 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 10] ---
+id: 0e82b1ec-3286-4bf2-8f4b-74aead33af11
+entity_slug: a-1-taxi-service
+tag_name: taxi_service
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 10] ---
+id: 2aafc92a-990b-4859-bd9d-9e963c611e99
+entity_slug: a-1-taxi-service
+tag_name: transportation_service
+tag_category: google_type
+
+--- entity_tags [row 3 of 10] ---
+id: f6ec4769-9735-4b06-a8fc-e948d58e0afa
+entity_slug: a-1-taxi-service
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 4 of 10] ---
+id: 28befc79-dc2c-49fd-bbe6-d9e71a2f6562
+entity_slug: a-1-taxi-service
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 5 of 10] ---
+id: ae3ebb37-b4c4-4088-b738-b32067c2ec84
+entity_slug: a-1-taxi-service
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 6 of 10] ---
+id: 572c25f9-6942-49fa-b689-98c75f4cf3fc
+entity_slug: a-1-taxi-service
+tag_name: taxi_service
+tag_category: google_primary_type
+
+--- entity_tags [row 7 of 10] ---
+id: a0e8562b-7a8d-49ac-a1d3-787b3118fb6e
+entity_slug: a-1-taxi-service
+tag_name: transportation_service
+tag_category: google_type
+
+--- entity_tags [row 8 of 10] ---
+id: cc672a39-d8be-45b2-857e-4ae3358693f8
+entity_slug: a-1-taxi-service
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 9 of 10] ---
+id: 462a7e55-2757-49c6-a0af-7560e692b660
+entity_slug: a-1-taxi-service
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 10 of 10] ---
+id: 60315e7d-ab3f-48ae-ac2d-7e76c712ccf2
+entity_slug: a-1-taxi-service
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: f2d177fd-549e-499e-91f7-605d8c3c77cf
+entity_slug: a-1-taxi-service
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_transportation   -   1 row(s)
+####################################################################################################
+
+--- industry_transportation [row 1 of 1] ---
+entity_slug: a-1-taxi-service
+service_count: 0
+updated_at: 2026-07-20T03:17:43.35857+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: offer
+ref_id: 13231
+entity_slug: a-1-taxi-service
+title: A-1 Taxi Service
+category: rental
+search_vector: '-1':2A 'servic':4A 'taxi':3A
+
+--- search_index [row 2 of 2] ---
+ref_type: business
+ref_id: a-1-taxi-service
+entity_slug: a-1-taxi-service
+title: A-1 Taxi Service
+category: taxi_service
+search_vector: '-1':2A 'servic':4A,6B 'taxi':3A,5B
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: a-1-taxi-service

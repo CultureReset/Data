@@ -1,0 +1,2311 @@
+====================================================================================================
+SLUG: petland
+NAME: Petland
+INDUSTRY: other
+SUBTYPE: pet_care
+TABLES WITH DATA: 24
+TOTAL ROWS: 111
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (5 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_address_areas  (2 rows)
+  entity_attributes  (11 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_nearby_landmark_types  (21 rows)
+  entity_nearby_landmarks  (7 rows)
+  entity_offer  (1 rows)
+  entity_photos  (14 rows)
+  entity_reviews  (5 rows)
+  entity_tags  (6 rows)
+  entity_theme  (1 rows)
+  search_index  (2 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: petland
+name: Petland
+planner_category: shopping
+data_quality_score: 100
+recommended_next_action: ready_for_ai
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: false
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   5 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 5] ---
+id: 13081
+entity_slug: petland
+intent_tag: best_for:shopping
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 5] ---
+id: 13082
+entity_slug: petland
+intent_tag: service:booking_available
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 5] ---
+id: 13083
+entity_slug: petland
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 5] ---
+id: 13084
+entity_slug: petland
+intent_tag: service:parking
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 5] ---
+id: 13085
+entity_slug: petland
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: petland
+name: Petland
+is_active: t
+planner_category: shopping
+entity_type: service
+entity_subtype: pet_care
+city: Pensacola
+state: FL
+address_line_1: 6235 N Davis Hwy
+latitude: 30.487069499999997
+longitude: -87.2242747
+rating: 4
+review_count: 1998
+website_url: https://www.petlandpensacola.com/
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/petland/photo_01.jpg
+voice_summary: Petland in Pensacola is best for shopping.
+planner_summary: Chain retailer featuring a wide range of pets including dogs, reptiles, and birds, plus supplies.
+best_for: shopping
+not_best_for: nothing specific flagged
+service_tags: booking_available|accessibility|parking
+search_keywords: pet_care|pet_store|point_of_interest|store|service|establishment|booking_available|accessibility|parking
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 2
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 6
+faq_count: 0
+data_quality_score: 100
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 7745
+entity_slug: petland
+entity_name: Petland
+city: Pensacola
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/petland/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 7746
+entity_slug: petland
+entity_name: Petland
+city: Pensacola
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/petland/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 2c2fbaa7-bb88-4df7-9d86-f631a7062af1
+resource_type: service
+slug: petland
+name: Petland
+description: Chain retailer featuring a wide range of pets including dogs, reptiles, and birds, plus supplies.
+entity_slug: petland
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/petland/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/petland/photo_02.jpg"
+]
+amenities: []
+faqs: []
+address: 6235 N Davis Hwy
+city: Pensacola
+state: FL
+latitude: 30.487069499999997
+longitude: -87.2242747
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 4758fdda8349f98939fc82c5065f72ec
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 2c2fbaa7-bb88-4df7-9d86-f631a7062af1
+entity_slug: petland
+slug: petland
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/petland/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/petland/photo_02.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: df5310aa-5787-454d-b032-52d4fe9d48e5
+slug: petland
+name: Petland
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: pet_care
+description: Chain retailer featuring a wide range of pets including dogs, reptiles, and birds, plus supplies.
+phone: (850) 498-1752
+website_url: https://www.petlandpensacola.com/
+menu_pin: 3065
+address_line_1: 6235 N Davis Hwy
+city: Pensacola
+state: FL
+zip: 32504
+latitude: 30.487069499999997
+longitude: -87.2242747
+rating: 4
+review_count: 1998
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/petland/photo_01.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T04:01:47.658626+00:00
+updated_at: 2026-06-03T04:01:47.658626+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJ0zEZt_m_kIgR91MTM8qm1DA
+google_maps_uri: https://maps.google.com/?cid=3518620596253709303&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: pet_care
+formatted_address: 6235 N Davis Hwy #118, Pensacola, FL 32504, USA
+plus_code: 862JFQPG+R7
+international_phone: +1 850-498-1752
+editorial_summary: Retail chain stocking a wide range of pet supplies, including food, bedding & grooming products.
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+wheelchair_accessible_restroom: true
+wheelchair_accessible_seating: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+accepts_nfc: true
+accepts_cash_only: false
+parking_type: free
+google_places_data: {
+  "id": "ChIJ0zEZt_m_kIgR91MTM8qm1DA",
+  "types": [
+    "pet_store",
+    "pet_care",
+    "store",
+    "point_of_interest",
+    "service",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3k6Mz2rcKe1FKyuBNwHD8GbQ2BBPoTIxOsul5GhLaa6wiEzsSXpsgv_YmxeJMGa-38TGAKtwUKNQ819TRceu-KD2MkLNXujcupphKFWHhQ9-hq5yTyQh8_1SzaV2w6XPnYXRg-ytTesK5s7-VzmY1RgGrKY2BTCRxIQqBOVE78ybsGh426SDUmLNT5GYMgbBINb5n_dSO6m68w5er7YGRdqhhJkbhZlr-BJ7iy5R-bhedcWzh9PrBKPF-Aqa_PA0I-Bkq-ESAu4uh6Uu7nwX9LmaWUaXVxUmh58d0kA00PNAT6nEK02HNHTQ5AF90qxJPu5013G24krX7o0DEXp1zvy3BNu-A1cAPTvGbHqCd82sF1AbHdqnQmLuIPh_rw2RXbwUU3RSOLTRN5q6O8iPhuICgQfBhSsORArpXYdIVx9Xg",
+      "widthPx": 640,
+      "heightPx": 640,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC61K3NIg!2e10!4m2!3m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIC61K3NIg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104986083831818847594",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUh7vAlrio9DOJS04piDvnXaQcBpMAGm3HkGj9pUipnynDBQdu6=s100-p-k-no-mo",
+          "displayName": "Petland"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3kjYAFCR-CIhosk3W8uxSy9sg-ZkSnhd92421RAGTX5Yu4C92quxMnbvt9tn-XrncpYAS4HyuR-Ejun7N565aZKpx9zZ3vyprPBFD1qR5-Yj9u60h670VWA533LZYP8TSnSS1QPHRZj35TRKnP_QJ665q9Sllla7Euaa9Z3baAG1ySnJu3xL3KMS7xFk0hnTJ6Kd-OYJY2BwTv9oRSSB4gPkT-J05q8_CmwhGSYi0uGEwGKbsMB9K-gjHW-XU_YOp_TvWoCEAfkG0QqHHPaPEbc27lQAfNPDqokvc0iJOp_4mAsb0uZaM1NbFTp6negm1eCiNwdGuufg_23qKCtChdGv825VVV0Iv6l7OwNok4qtCyb7Iw9tK0yzaRyf8savmvt4xYpEBJlZnZZ3-7gynm1FqnaFV7CgLS2kXy6zuQEtl6GPNccJ7GcU56X2Q",
+      "widthPx": 4000,
+      "heightPx": 3000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDACDmGpHoOUb4JK9Tv82gK!2e10!4m2!3m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDACDmGpHoOUb4JK9Tv82gK&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/114895272480163591926",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJdqqFn7Y8eoqkMOjI5vqf2CAVA5U_FyokyGezDp1Z9q95vIA=s100-p-k-no-mo",
+          "displayName": "Dale Brunette"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3kcmKQlNUmktBG8a_Jh1QPR7_agdtnVpLw_l7xTsrVy37-q-V1gXUbHp7pZ3oM2cbI2FJq1Kc3haV2GLp7QetFk2Sbv-87BGJ7BAshYA2R6-DXo7DFmGS9F1_-NE1uyG-Yqh7KoZm2VQVdSl5I7ioRmUIESSSK3gn-K1FPSMIO-1xazlVDiVp5vkNkaxNHh7AIB2P_7Ql4qZ6yliSp7Oy4R7AEs_g--iuoA2cjFcVKBcbjO5-1GSBm0Qt6V23NFSABGURbsnw0le_bgI408-vxlhYxwsDcTe18MSnsQ-I7Uch2E6nmXxXzkwKBu1cHVL0f1n0GAXCo8e3PpB28iH5ZMVS7kljlJTuJ9ynbMOz64_BSuZZyI-2Z_SKecAQuVeH87CQOtp1G9EKdd0j0xKVMgXgf8i1aSqDWbsxxCbaN6Wg",
+      "widthPx": 680,
+      "heightPx": 453,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICbyoHoMw!2e10!4m2!3m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICbyoHoMw&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104986083831818847594",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUh7vAlrio9DOJS04piDvnXaQcBpMAGm3HkGj9pUipnynDBQdu6=s100-p-k-no-mo",
+          "displayName": "Petland"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3noPHCXQV9-E3EaSkQCw-mzBuX1rETZTseiPWZD6MZhbRTsUMjTEYg0dpZYKN_pw53f8Hw3vGFzclp-50v8pnE52g2GPV8cST0OpctGTA7pS0wkKMhcjqJOyXpUwzFHQPqYmc900R2538Dthkxi28AQuOZkT322J6sduQEoD_3NaCRoET8R36hghCEfTRcDwE3Iy9qp5_I3KRL7_cC_pMpq_xrC5wFOHgRbqzVTiVzNYY3zxWoGX7u9hWFo6wHNESHaHTFtMpYRBxD8zS0MHrY9fflfAUI8DAiVXTGF_yuPf2u-63UasOHbZ-UfYh0BAhdwvFIb5fsgNyzE2ph6yGh7L9npwcbA16dRPqtzYpE71OyClyzguJ86pOJMwD1-FjS4bdjpMj7akMp-YjUn1XdLMPe6nMpN-NV_CEHliiXF9UTasTkCE9kiHGpqxTiO",
+      "widthPx": 3072,
+      "heightPx": 4080,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCd69IiynPyIVea77nXYwSw!2e10!4m2!3m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCd69IiynPyIVea77nXYwSw&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/114664907617157868460",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUJrEdoqY_lY_HoPnlA2eP1_WN_vNhGLmwwkCRojCcKcyWTwEz2kA=s100-p-k-no-mo",
+          "displayName": "Dejalil"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3m6BStx6egb56SjvaZ7FhviTFPItnl_kaWcxUERgkwinQNGC7K1WiqSbUz9Kl8TCXuJgkhCHmTB7-1FFBgf47wu-vwBwDAP2VIwx3HA3uzZTv7YJ6lt-NqYQEmbJEgT3tpjz2tURwT6Z73sUw7jk3oLh-0vT41VpIUuam8SEPTo7qRuyNoBY39ykaWQEDNpGGusPfPesSatk7q76ocbiQnZSU_GRWkepIOI_Z9RQ6n-hVYxaVKS7WF3keD4oYwJ3PahaeAV_2h97WGdNHA4WNFrq5dAYHjqOd8X_xuq12-XoM0GeNRn0BOS5TlkY8qUWawfoXPIw6r-xx7Tbac_d9wzHHcF1n2QpyOVFVrwkIEf2lwooDbb72WfD3zdT663WgOqrZkpwRvnWi7blrr8RlPG2S0oRGBM6xLpRnTXMRqiEMH5sBiecoB63vBEg-St",
+      "widthPx": 4080,
+      "heightPx": 3060,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhA0ZZNZJfppPBSMfCwmEzo9!2e10!4m2!3m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhA0ZZNZJfppPBSMfCwmEzo9&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/103249132880832901837",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX84z7LO91gnLs5fc38fv2-iNKBcSazlxYtc0RdOLACO_zINZCeXQ=s100-p-k-no-mo",
+          "displayName": "Dan Black"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3kyWkMs1A4vlZTwuBjJvqKS-o9GN9QdOBZKo_FQsrzpWfAMZAUWopPaiUGVgM_aKRpF_t3WUPeOI83WQHZLYRpTJ2e8UBx0iA0NVcjR0_xFzpIx7KaVzo3ry5hegn4zzgCakqF-a-uMM47Yr5FdXQlDMK3WjKeFJLeEB8j2kUN5MVL0VZco82m44AhvkV_Cofj-NQ-T3glOs0dmLnmYD0q-lnaWgS7WPJqbtnt136l5bA9Ay2pygqPOdRQOC8XzowOtWZE2lF5wfdPeprHD96oti5uWdxDmHicKrZj56GDa0L0kHkVRQdq7lhMLBlvDvUzTVmWOcNw3aftQapglns4gpie_PxyVsjAEJJpVceBENa6tStfcHs4R9fgXg-wyq_FglFT0Nw0JwpKjcVau4fEM9gmKco_OC4-RYofBd0wsxHxU",
+      "widthPx": 4080,
+      "heightPx": 3072,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICrzdiPsAE!2e10!4m2!3m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICrzdiPsAE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/111477189340826106452",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW-LudHsm5I6MzCwnP6FjyekOgTGjEsSYnucAOepw8ANxroBJ4=s100-p-k-no-mo",
+          "displayName": "Zach R."
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3kojeWUxljauxA3S3DJK4yWAWxa6LBzaaJd40RYgNyga6r-Y8-RNkdx4oYehk2fDUd3NcE932_4BMW0VsXQ3B1YEmoUVGvB_GNoJqsHRwcW5CLdZM5gff5QtugkdicqwSLoQ9nTiBZcPUcNS37Vs2r0jI-YOzwppTl8hTPLTBIoIMs7EtDc0x-ZIZhj1m_62eZWQJPx6Avu91qahushKcFQv51lsspJrI_w4KBP8nYyisc46lEc_wHALRpeS11I0knYsIlH0Mop_UTSGK4UfIUE_w72lWdtERtp2Y2vIqg9SCsilvOECLeUzDU5KGxjY1vHvMIRLxtKqcfHumWP5QgY9iVfCdefN0n7oNFfFRAL_VGZHXr4YeAlAhxNzPWVCi7-cV0D52p4HEiVif2h4LLZ_HPhwxVR__ljwr8EOdI6IkSG",
+      "widthPx": 798,
+      "heightPx": 960,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICbyumNlgE!2e10!4m2!3m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICbyumNlgE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104986083831818847594",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUh7vAlrio9DOJS04piDvnXaQcBpMAGm3HkGj9pUipnynDBQdu6=s100-p-k-no-mo",
+          "displayName": "Petland"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3lFkDrSWCqigGkpcCW9X7Dq3TF_vTcrZ5IsZY0hsI-Ir4Vz_3FeDHIL88WE6sUP5twQJFf7XcivxbHS1LbMPBikcDtuTc8g9zaPawY_6xxBLq3FRRQADhmzvxhXnFGM1e_uqHCLKUI8UwasZk2U1HsUk9-UwHE157ZMIrZqkCjy9YmdvKO1vPrA3bwQNLmSCfM9jujkExZDat3iu1lS7VELetwFwTF0P-uBZE4Am-fiNxz8ThovEFKuIdNcBekkjVeH3WyG8SSO3imHZGS4oS1wHWLcjoE5JN_1ZZJoTf5SWkdGHGul85jhxMskbun252J4WTB3nA8Iadi6sFDlOi7zMftpaKa5jTb6eE48FMJL-ZK-PbHVmpExnVvt-JFRVjXlIyZBkKvzRntJ7dSpIKVBPR2z1iqw3YGdPYNzlQWHgW73eLthukayRjSTH6wc",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCkLXGwP3IGTy87HTc4rOJ8!2e10!4m2!3m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCkLXGwP3IGTy87HTc4rOJ8&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/103596508085539840984",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUCxVeTniWgcv5UAHCsRf3amJ1RNZ9chQqecxMZKw4-sV69IHcQ=s100-p-k-no-mo",
+          "displayName": "Elizabeth Hightower"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3mn7sZokiodOAZptLBOCgp1AVQISAsaD3zrJc79ss7UlWdd9vyyaj19703Srvu1vPRoiREdM0HopO1MWsm6gI24S34NgM-gHmCiXJZXX4ZS52zL_w7GYRxDF6bb8vq3JIcFx890bKlnz3XZIquP1t5wrUSKKbZrhaaA7BE371tvFG7H2v-CLpNYO6ziNBm4bX91y17x-yxcSM6sivhc5pAvMMCPqmfbHQtec6kTNwfylg8dQwG1Zgdhwz2BATKfnclvmLcqTpl83zKi2_do-r1aAiTpyx1harUlwZDkyMjjBkCdWY2k7wbkrBKa3mf6cMRdFPf5CXw5ipCJsxl6R2ncTuTO28H0KvkjaWvZ05a1P3Q59EpHJ6kVKqQkcbpQUqbaSgLmRbbdfZpsv7yPxLsOkVJrdRIr2VHWWBxkVjP3_tE",
+      "widthPx": 2052,
+      "heightPx": 3648,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICHm-bNswE!2e10!4m2!3m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICHm-bNswE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/110998619325904997921",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLt6_bUj1acccgHR7tOu5pT6Rv3jc9JmygdT69jPIGOKf64mQ=s100-p-k-no-mo",
+          "displayName": "Jon boy"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3nCinOVTNzHrSQcErmdGQboC2_dQud3YGhZvj9hL4D-zMY85_w6PjbmmoGqA7LpdueWgEuzd6YkPJEEf0ZFvu-MFfUbB7zvKmyezsuCSaVBpqaXiWXimssOisicsmrekXS3olS0wGtU0KHE_Nv_a2ZE4HmLlKG90EZN9vKVg440sxU7_yjBPqlee8zGJML1sQMErNL7daVTuGAl9Ba-Q-m2-IZsXk-jZYzxJckzcSET5wralvL4nU-6-7i-7hTCSczUIgK5Ghr-tUvFI-d6_x04x_IbvckFsR0sv-h5FH3_8nJ4Y9m76WJV4hBzrOQHGYqlyMza_kVgtF6pb242gZ_Yd-7FM0iD51NFFzXHyzY338nOivxij19RDCayu1JbzrwHss8BQFwH9kl0awWDbIcHKVGNyGAX4pVGiSl28vSJOQ",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDikqC7Qw!2e10!4m2!3m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDikqC7Qw&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/102288119117514229576",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVhI2QNR2Fnws92Uaj21MaCVmP_ODIRFgeBOWUJXtvKxOqgdXtb=s100-p-k-no-mo",
+          "displayName": "Louis DiPaola"
+        }
+      ]
+    }
+  ],
+  "rating": 4,
+  "reviews": [
+    {
+      "name": "places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/reviews/Ci9DQUlRQUNvZENodHljRjlvT25sVmRGbFpRemt0VldaUlRVRlhURFV4T1ZKWldIYxAB",
+      "text": {
+        "text": "Absolutely amazing. Wetland has stepped up their game throughout the years. Went to get some fish the other day, and was blown away with the selection. I lost count of how many fish I saw for the first time in person. Austin was incredibly helpful, and Key (the time prior) was so amazing.\nI felt like i was at an actual aquarium/zoo, lol.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-12-14T18:33:07.827110133Z",
+      "originalText": {
+        "text": "Absolutely amazing. Wetland has stepped up their game throughout the years. Went to get some fish the other day, and was blown away with the selection. I lost count of how many fish I saw for the first time in person. Austin was incredibly helpful, and Key (the time prior) was so amazing.\nI felt like i was at an actual aquarium/zoo, lol.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25sVmRGbFpRemt0VldaUlRVRlhURFV4T1ZKWldIYxAB!2m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT25sVmRGbFpRemt0VldaUlRVRlhURFV4T1ZKWldIYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/112664263892390064343/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXQMmm-21_-Y1uYmkoxC-FW11-DEh4p3qhGVHx3XjEU5YREYXV5=s128-c0x00000000-cc-rp-mo-ba4",
+        "displayName": "Streamylc"
+      },
+      "relativePublishTimeDescription": "5 months ago"
+    },
+    {
+      "name": "places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/reviews/Ci9DQUlRQUNvZENodHljRjlvT2s5SVRYb3RSSGh1TFROeU5WUTNRelJGYm1WcldWRRAB",
+      "text": {
+        "text": "Not a fan of this place, we bought a Rabbit that died the same week (after everyone was easily attached) & their response was (moving fwd =( new rabbit, to late, trust was lost).\n\nThe prices today are astronomical. I'm talking like 2k to 8k+ pending the pet.\n\nBut, I LOVE Love💕love  the opportunity to walk into this Bright Clean-ish environment to see & sometimes touch the animals. It's Very Therapeutic. If rescue centers were laid out this charming, *with pet supplies they'd have more customers.\n\nPhotos: warning- it gets hard to leave",
+        "languageCode": "en"
+      },
+      "rating": 3,
+      "publishTime": "2025-08-30T16:47:51.171939101Z",
+      "originalText": {
+        "text": "Not a fan of this place, we bought a Rabbit that died the same week (after everyone was easily attached) & their response was (moving fwd =( new rabbit, to late, trust was lost).\n\nThe prices today are astronomical. I'm talking like 2k to 8k+ pending the pet.\n\nBut, I LOVE Love💕love  the opportunity to walk into this Bright Clean-ish environment to see & sometimes touch the animals. It's Very Therapeutic. If rescue centers were laid out this charming, *with pet supplies they'd have more customers.\n\nPhotos: warning- it gets hard to leave",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2s5SVRYb3RSSGh1TFROeU5WUTNRelJGYm1WcldWRRAB!2m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2s5SVRYb3RSSGh1TFROeU5WUTNRelJGYm1WcldWRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/112213832163653640701/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX4H2hUOBCFJi8_KHvw1m0c-n2P8vdcTLM-a9PhkIe9ibI3jpA=s128-c0x00000000-cc-rp-mo-ba3",
+        "displayName": "Moni G"
+      },
+      "relativePublishTimeDescription": "9 months ago"
+    },
+    {
+      "name": "places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/reviews/Ci9DQUlRQUNvZENodHljRjlvT25Fd04wcE1NRlJGTlc5YVozQkNRbTV1YzJKYVoyYxAB",
+      "text": {
+        "text": "Adorable$3-10K (after tax &/or supplies) animals get all the love I can give in a store setting.. nothing more.\n\nGreat place to veg out for a moment. Animals soothe the soul. SOooo 2☆'s to the animals, 1☆ to staff,  & minus 2 for being SOooo overpriced",
+        "languageCode": "en"
+      },
+      "rating": 3,
+      "publishTime": "2025-11-25T20:07:42.799848062Z",
+      "originalText": {
+        "text": "Adorable$3-10K (after tax &/or supplies) animals get all the love I can give in a store setting.. nothing more.\n\nGreat place to veg out for a moment. Animals soothe the soul. SOooo 2☆'s to the animals, 1☆ to staff,  & minus 2 for being SOooo overpriced",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25Fd04wcE1NRlJGTlc5YVozQkNRbTV1YzJKYVoyYxAB!2m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT25Fd04wcE1NRlJGTlc5YVozQkNRbTV1YzJKYVoyYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/105411437533205068651/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjV830ubxfD_YBVTMFsIcXjOGFmxCAvj7iOcXOzVz3CzZM1XJmXTDQ=s128-c0x00000000-cc-rp-mo-ba5",
+        "displayName": "Miss H. On-Es'ty"
+      },
+      "relativePublishTimeDescription": "6 months ago"
+    },
+    {
+      "name": "places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/reviews/ChZDSUhNMG9nS0VJQ0FnSUNIbS1iTkl3EAE",
+      "text": {
+        "text": "This place is a lot of fun! They have so many types of pets. I love that they have a turtle walking around freely throughout the store. I've never seen anything like that before!\nThere was also the parrot in the open. These guys have several fish, birds, puppies, bunnies, etc.\nEvery employee was super friendly and helpful.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2024-09-09T05:51:15.086208Z",
+      "originalText": {
+        "text": "This place is a lot of fun! They have so many types of pets. I love that they have a turtle walking around freely throughout the store. I've never seen anything like that before!\nThere was also the parrot in the open. These guys have several fish, birds, puppies, bunnies, etc.\nEvery employee was super friendly and helpful.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNIbS1iTkl3EAE!2m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNIbS1iTkl3EAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/110998619325904997921/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLt6_bUj1acccgHR7tOu5pT6Rv3jc9JmygdT69jPIGOKf64mQ=s128-c0x00000000-cc-rp-mo-ba6",
+        "displayName": "Jon boy"
+      },
+      "relativePublishTimeDescription": "a year ago"
+    },
+    {
+      "name": "places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/reviews/Ci9DQUlRQUNvZENodHljRjlvT25KNGMxTjRTRGx2YjJsVE1VRnZhMlJxVkVkamVVRRAB",
+      "text": {
+        "text": "Very good price look how big our dog then got she is so wonderful. we love her",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-12-16T12:51:50.911778605Z",
+      "originalText": {
+        "text": "Very good price look how big our dog then got she is so wonderful. we love her",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25KNGMxTjRTRGx2YjJsVE1VRnZhMlJxVkVkamVVRRAB!2m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT25KNGMxTjRTRGx2YjJsVE1VRnZhMlJxVkVkamVVRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/100165524881614249744/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUZi_w7g4WYMXTy1JIqPQfg1TVAYyjwAWYR_gDh9tpDngrqs10=s128-c0x00000000-cc-rp-mo-ba4",
+        "displayName": "BF Happy Movers LLC"
+      },
+      "relativePublishTimeDescription": "5 months ago"
+    }
+  ],
+  "delivery": false,
+  "location": {
+    "latitude": 30.487069499999997,
+    "longitude": -87.2242747
+  },
+  "plusCode": {
+    "globalCode": "862JFQPG+R7",
+    "compoundCode": "FQPG+R7 Pensacola, FL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.485839219708495,
+      "longitude": -87.2255815802915
+    },
+    "high": {
+      "latitude": 30.488537180291495,
+      "longitude": -87.2228836197085
+    }
+  },
+  "websiteUri": "https://www.petlandpensacola.com/",
+  "displayName": {
+    "text": "Petland",
+    "languageCode": "en"
+  },
+  "primaryType": "pet_care",
+  "googleMapsUri": "https://maps.google.com/?cid=3518620596253709303&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "curbsidePickup": false,
+  "parkingOptions": {
+    "freeParkingLot": true
+  },
+  "paymentOptions": {
+    "acceptsNfc": true,
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=3518620596253709303&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890bff9b71931d3:0x30d4a6ca331353f7!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x8890bff9b71931d3:0x30d4a6ca331353f7!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890bff9b71931d3:0x30d4a6ca331353f7!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "userRatingCount": 1998,
+  "adrFormatAddress": "<span class=\"street-address\">6235 N Davis Hwy #118</span>, <span class=\"locality\">Pensacola</span>, <span class=\"region\">FL</span> <span class=\"postal-code\">32504-6962</span>, <span class=\"country-name\">USA</span>",
+  "editorialSummary": {
+    "text": "Retail chain stocking a wide range of pet supplies, including food, bedding & grooming products.",
+    "languageCode": "en"
+  },
+  "formattedAddress": "6235 N Davis Hwy #118, Pensacola, FL 32504, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "subpremise"
+      ],
+      "longText": "118",
+      "shortText": "118",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "6235",
+      "shortText": "6235",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "North Davis Highway",
+      "shortText": "N Davis Hwy",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "neighborhood",
+        "political"
+      ],
+      "longText": "North Central Pensacola",
+      "shortText": "North Central Pensacola",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Pensacola",
+      "shortText": "Pensacola",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Escambia County",
+      "shortText": "Escambia County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Florida",
+      "shortText": "FL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "32504",
+      "shortText": "32504",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "postal_code_suffix"
+      ],
+      "longText": "6962",
+      "shortText": "6962",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJZ0nmzPm_kIgRCqSF063OZO4",
+        "placeId": "ChIJZ0nmzPm_kIgRCqSF063OZO4",
+        "containment": "WITHIN",
+        "displayName": {
+          "text": "Pensacola Square",
+          "languageCode": "en"
+        }
+      },
+      {
+        "name": "places/ChIJdd74n4eVkIgRwApr4ar89YA",
+        "placeId": "ChIJdd74n4eVkIgRwApr4ar89YA",
+        "containment": "OUTSKIRTS",
+        "displayName": {
+          "text": "North Central Pensacola",
+          "languageCode": "en"
+        }
+      }
+    ],
+    "landmarks": [
+      {
+        "name": "places/ChIJ0zEZt_m_kIgRMP9t0TxQ5E4",
+        "types": [
+          "establishment",
+          "home_goods_store",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJ0zEZt_m_kIgRMP9t0TxQ5E4",
+        "displayName": {
+          "text": "Hobby Lobby",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 245.58397,
+        "straightLineDistanceMeters": 217.33437
+      },
+      {
+        "name": "places/ChIJ0zEZt_m_kIgR6zmmuMLTTNE",
+        "types": [
+          "book_store",
+          "establishment",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJ0zEZt_m_kIgR6zmmuMLTTNE",
+        "displayName": {
+          "text": "Books-A-Million",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 208.90706,
+        "straightLineDistanceMeters": 154.73071
+      },
+      {
+        "name": "places/ChIJB9EiWvi_kIgRIwvuyhUz7Hs",
+        "types": [
+          "atm",
+          "bank",
+          "establishment",
+          "finance",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJB9EiWvi_kIgRIwvuyhUz7Hs",
+        "displayName": {
+          "text": "Navy Federal Credit Union",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 279.81995,
+        "straightLineDistanceMeters": 194.64279
+      },
+      {
+        "name": "places/ChIJf5UHWB6_kIgRCiLHDPYBt30",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJf5UHWB6_kIgRCiLHDPYBt30",
+        "displayName": {
+          "text": "Grizzly Axes",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 246.52367,
+        "straightLineDistanceMeters": 222.628
+      },
+      {
+        "name": "places/ChIJ_SgDFfi_kIgRH0fMGWFKvx4",
+        "types": [
+          "clothing_store",
+          "establishment",
+          "home_goods_store",
+          "point_of_interest",
+          "shoe_store",
+          "store"
+        ],
+        "placeId": "ChIJ_SgDFfi_kIgRH0fMGWFKvx4",
+        "displayName": {
+          "text": "bealls",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 165.54219,
+        "straightLineDistanceMeters": 176.19351
+      }
+    ]
+  },
+  "generativeSummary": {
+    "overview": {
+      "text": "Chain retailer featuring a wide range of pets including dogs, reptiles, and birds, plus supplies.",
+      "languageCode": "en-US"
+    },
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "overviewFlagContentUri": "https://www.google.com/local/content/rap/report?postId=CiUweDg4OTBiZmY5YjcxOTMxZDM6MHgzMGQ0YTZjYTMzMTM1M2Y3MAI&d=17924085&t=12"
+  },
+  "currentOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T15:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 10:00 AM – 8:00 PM",
+      "Tuesday: 10:00 AM – 8:00 PM",
+      "Wednesday: 10:00 AM – 8:00 PM",
+      "Thursday: 10:00 AM – 8:00 PM",
+      "Friday: 10:00 AM – 8:00 PM",
+      "Saturday: 10:00 AM – 8:00 PM",
+      "Sunday: 11:00 AM – 8:00 PM"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Pet Adoption Service",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "nationalPhoneNumber": "(850) 498-1752",
+  "regularOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 20,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T15:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 10:00 AM – 8:00 PM",
+      "Tuesday: 10:00 AM – 8:00 PM",
+      "Wednesday: 10:00 AM – 8:00 PM",
+      "Thursday: 10:00 AM – 8:00 PM",
+      "Friday: 10:00 AM – 8:00 PM",
+      "Saturday: 10:00 AM – 8:00 PM",
+      "Sunday: 11:00 AM – 8:00 PM"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleSeating": true,
+    "wheelchairAccessibleEntrance": true,
+    "wheelchairAccessibleRestroom": true
+  },
+  "shortFormattedAddress": "6235 N Davis Hwy #118, Pensacola",
+  "primaryTypeDisplayName": {
+    "text": "Pet Care",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 850-498-1752"
+}
+ai_overview: Chain retailer featuring a wide range of pets including dogs, reptiles, and birds, plus supplies.
+curbside_pickup: false
+free_parking_lot: true
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 6235 N Davis Hwy #118, Pensacola
+national_phone: (850) 498-1752
+search_vector: 'bed':28B 'bird':14B 'care':32 'chain':2B,18B 'dog':11B 'featur':4B 'food':27B 'groom':29B 'includ':10B,26B 'pensacola':33 'pet':9B,24B,31 'petland':1A 'plus':15B 'product':30B 'rang':7B,22B 'reptil':12B 'retail':3B,17B 'stock':19B 'suppli':16B,25B 'wide':6B,21B
+primary_type_display: Pet Care
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=3518620596253709303&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890bff9b71931d3:0x30d4a6ca331353f7!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x8890bff9b71931d3:0x30d4a6ca331353f7!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890bff9b71931d3:0x30d4a6ca331353f7!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJZ0nmzPm_kIgRCqSF063OZO4",
+      "placeId": "ChIJZ0nmzPm_kIgRCqSF063OZO4",
+      "containment": "WITHIN",
+      "displayName": {
+        "text": "Pensacola Square",
+        "languageCode": "en"
+      }
+    },
+    {
+      "name": "places/ChIJdd74n4eVkIgRwApr4ar89YA",
+      "placeId": "ChIJdd74n4eVkIgRwApr4ar89YA",
+      "containment": "OUTSKIRTS",
+      "displayName": {
+        "text": "North Central Pensacola",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJ0zEZt_m_kIgRMP9t0TxQ5E4",
+      "types": [
+        "establishment",
+        "home_goods_store",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJ0zEZt_m_kIgRMP9t0TxQ5E4",
+      "displayName": {
+        "text": "Hobby Lobby",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 245.58397,
+      "straightLineDistanceMeters": 217.33437
+    },
+    {
+      "name": "places/ChIJ0zEZt_m_kIgR6zmmuMLTTNE",
+      "types": [
+        "book_store",
+        "establishment",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJ0zEZt_m_kIgR6zmmuMLTTNE",
+      "displayName": {
+        "text": "Books-A-Million",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 208.90706,
+      "straightLineDistanceMeters": 154.73071
+    },
+    {
+      "name": "places/ChIJB9EiWvi_kIgRIwvuyhUz7Hs",
+      "types": [
+        "atm",
+        "bank",
+        "establishment",
+        "finance",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJB9EiWvi_kIgRIwvuyhUz7Hs",
+      "displayName": {
+        "text": "Navy Federal Credit Union",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 279.81995,
+      "straightLineDistanceMeters": 194.64279
+    },
+    {
+      "name": "places/ChIJf5UHWB6_kIgRCiLHDPYBt30",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJf5UHWB6_kIgRCiLHDPYBt30",
+      "displayName": {
+        "text": "Grizzly Axes",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 246.52367,
+      "straightLineDistanceMeters": 222.628
+    },
+    {
+      "name": "places/ChIJ_SgDFfi_kIgRH0fMGWFKvx4",
+      "types": [
+        "clothing_store",
+        "establishment",
+        "home_goods_store",
+        "point_of_interest",
+        "shoe_store",
+        "store"
+      ],
+      "placeId": "ChIJ_SgDFfi_kIgRH0fMGWFKvx4",
+      "displayName": {
+        "text": "bealls",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 165.54219,
+      "straightLineDistanceMeters": 176.19351
+    }
+  ]
+}
+internal_notes: industry_code auto-bucketed to other 2026-07-21 - needs manual review
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+generative_summary: Chain retailer featuring a wide range of pets including dogs, reptiles, and birds, plus supplies.
+industry_code: other
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   2 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 2] ---
+id: 247d3e3e-cc9f-4d4b-884b-9778944a6005
+entity_slug: petland
+place_id: ChIJZ0nmzPm_kIgRCqSF063OZO4
+containment: WITHIN
+display_name: Pensacola Square
+
+--- entity_address_areas [row 2 of 2] ---
+id: e5112d03-91d9-4d07-a76d-b31b7ad0284b
+entity_slug: petland
+place_id: ChIJdd74n4eVkIgRwApr4ar89YA
+containment: OUTSKIRTS
+display_name: North Central Pensacola
+
+####################################################################################################
+# TABLE: entity_attributes   -   11 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 11] ---
+id: c37fbda3-f99b-4505-9369-f2bfad8c1219
+entity_slug: petland
+category: service
+key: delivery
+label: Delivery
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 2 of 11] ---
+id: 54468331-0834-4149-9f82-7ba867168d65
+entity_slug: petland
+category: service
+key: curbside_pickup
+label: Curbside Pickup
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 3 of 11] ---
+id: 4d6b017b-e6f7-4cf4-8266-60ba733e484d
+entity_slug: petland
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 4 of 11] ---
+id: 5ec0efd4-fff8-47bb-83d3-6a8bbfcf3489
+entity_slug: petland
+category: accessibility
+key: access_wheelchairAccessibleSeating
+label: Wheelchair Accessible Seating
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 5 of 11] ---
+id: 2975a3e9-c8ed-424e-a541-a9bccfbcec47
+entity_slug: petland
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 6 of 11] ---
+id: 9d40a9b1-35e4-4021-be68-5a373ebba881
+entity_slug: petland
+category: accessibility
+key: access_wheelchairAccessibleRestroom
+label: Wheelchair Accessible Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 7 of 11] ---
+id: 5117d94e-0fb0-49b5-af74-bf9cde95db8a
+entity_slug: petland
+category: parking
+key: parking_freeParkingLot
+label: Free Parking Lot
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 8 of 11] ---
+id: 50ec4156-7ba6-43ba-88e2-e767b80f0391
+entity_slug: petland
+category: payment
+key: pay_acceptsNfc
+label: Accepts Nfc
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 9 of 11] ---
+id: f04f9bc6-1695-41b5-bc1f-282302e346fc
+entity_slug: petland
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 10 of 11] ---
+id: e7f808dc-d615-4173-a167-54c3c34f8a6c
+entity_slug: petland
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 11 of 11] ---
+id: 231d6ea1-cb75-445a-82d5-30645f9b3c89
+entity_slug: petland
+category: payment
+key: pay_acceptsCreditCards
+label: Accepts Credit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: petland
+name: Petland
+industry_code: other
+is_parent: false
+score_of_7: 6
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: bda6c63f-056c-4f4c-9445-8126919e0def
+entity_slug: petland
+place_uri: https://maps.google.com/?cid=3518620596253709303&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890bff9b71931d3:0x30d4a6ca331353f7!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x8890bff9b71931d3:0x30d4a6ca331353f7!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890bff9b71931d3:0x30d4a6ca331353f7!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 6447
+entity_slug: petland
+google_review_name: places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/reviews/Ci9DQUlRQUNvZENodHljRjlvT25KNGMxTjRTRGx2YjJsVE1VRnZhMlJxVkVkamVVRRAB
+rating: 5
+review_text: Very good price look how big our dog then got she is so wonderful. we love her
+language_code: en
+author_name: BF Happy Movers LLC
+author_profile_url: https://www.google.com/maps/contrib/100165524881614249744/reviews
+publish_time: 2025-12-16T12:51:50.911779+00:00
+relative_time: 5 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25KNGMxTjRTRGx2YjJsVE1VRnZhMlJxVkVkamVVRRAB!2m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 6443
+entity_slug: petland
+google_review_name: places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/reviews/Ci9DQUlRQUNvZENodHljRjlvT25sVmRGbFpRemt0VldaUlRVRlhURFV4T1ZKWldIYxAB
+rating: 5
+review_text: Absolutely amazing. Wetland has stepped up their game throughout the years. Went to get some fish the other day, and was blown away with the selection. I lost count of how many fish I saw for the first time in person. Austin was incredibly helpful, and Key (the time prior) was so amazing.
+I felt like i was at an actual aquarium/zoo, lol.
+language_code: en
+author_name: Streamylc
+author_profile_url: https://www.google.com/maps/contrib/112664263892390064343/reviews
+publish_time: 2025-12-14T18:33:07.82711+00:00
+relative_time: 5 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25sVmRGbFpRemt0VldaUlRVRlhURFV4T1ZKWldIYxAB!2m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 6444
+entity_slug: petland
+google_review_name: places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/reviews/Ci9DQUlRQUNvZENodHljRjlvT2s5SVRYb3RSSGh1TFROeU5WUTNRelJGYm1WcldWRRAB
+rating: 3
+review_text: Not a fan of this place, we bought a Rabbit that died the same week (after everyone was easily attached) & their response was (moving fwd =( new rabbit, to late, trust was lost).
+
+The prices today are astronomical. I'm talking like 2k to 8k+ pending the pet.
+
+But, I LOVE Love💕love  the opportunity to walk into this Bright Clean-ish environment to see & sometimes touch the animals. It's Very Therapeutic. If rescue centers were laid out this charming, *with pet supplies they'd have more customers.
+
+Photos: warning- it gets hard to leave
+language_code: en
+author_name: Moni G
+author_profile_url: https://www.google.com/maps/contrib/112213832163653640701/reviews
+publish_time: 2025-08-30T16:47:51.171939+00:00
+relative_time: 9 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2s5SVRYb3RSSGh1TFROeU5WUTNRelJGYm1WcldWRRAB!2m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 6445
+entity_slug: petland
+google_review_name: places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/reviews/Ci9DQUlRQUNvZENodHljRjlvT25Fd04wcE1NRlJGTlc5YVozQkNRbTV1YzJKYVoyYxAB
+rating: 3
+review_text: Adorable$3-10K (after tax &/or supplies) animals get all the love I can give in a store setting.. nothing more.
+
+Great place to veg out for a moment. Animals soothe the soul. SOooo 2☆'s to the animals, 1☆ to staff,  & minus 2 for being SOooo overpriced
+language_code: en
+author_name: Miss H. On-Es'ty
+author_profile_url: https://www.google.com/maps/contrib/105411437533205068651/reviews
+publish_time: 2025-11-25T20:07:42.799848+00:00
+relative_time: 6 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25Fd04wcE1NRlJGTlc5YVozQkNRbTV1YzJKYVoyYxAB!2m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 6446
+entity_slug: petland
+google_review_name: places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/reviews/ChZDSUhNMG9nS0VJQ0FnSUNIbS1iTkl3EAE
+rating: 5
+review_text: This place is a lot of fun! They have so many types of pets. I love that they have a turtle walking around freely throughout the store. I've never seen anything like that before!
+There was also the parrot in the open. These guys have several fish, birds, puppies, bunnies, etc.
+Every employee was super friendly and helpful.
+language_code: en
+author_name: Jon boy
+author_profile_url: https://www.google.com/maps/contrib/110998619325904997921/reviews
+publish_time: 2024-09-09T05:51:15.086208+00:00
+relative_time: a year ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNIbS1iTkl3EAE!2m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 79c93238-ebe4-49ab-9e27-0c85e9bdc85d
+entity_slug: petland
+day_of_week: 0
+opens_at: 11:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 1a9b2613-1a52-4158-8475-d8fb9941ea1a
+entity_slug: petland
+day_of_week: 1
+opens_at: 10:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: e7ca9562-220f-482f-bfc4-b5ebbad3c267
+entity_slug: petland
+day_of_week: 2
+opens_at: 10:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: eebaf2d8-4af9-4999-975a-6b19a9f196e1
+entity_slug: petland
+day_of_week: 3
+opens_at: 10:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: f9e4d6d9-b191-4803-b904-8ed62f74b020
+entity_slug: petland
+day_of_week: 4
+opens_at: 10:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: cb2a4f2d-1caf-4a61-a538-f02c680796cc
+entity_slug: petland
+day_of_week: 5
+opens_at: 10:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: e1602069-cc41-48b0-b7e2-716fec5e3cca
+entity_slug: petland
+day_of_week: 6
+opens_at: 10:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: petland
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 2c2fbaa7-bb88-4df7-9d86-f631a7062af1
+name: Petland
+description: Chain retailer featuring a wide range of pets including dogs, reptiles, and birds, plus supplies.
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/petland/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/petland/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: petland
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 2c2fbaa7-bb88-4df7-9d86-f631a7062af1
+name: Petland
+description: Chain retailer featuring a wide range of pets including dogs, reptiles, and birds, plus supplies.
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/petland/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/petland/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: d5fb77a7-8631-40b8-bd2a-ef8738acf443
+entity_slug: petland
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 8fe743ba-33ec-4720-aabe-28f468f09cd5
+entity_slug: petland
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: e3c3ba20-5b4f-4139-82db-b20f05be5c5d
+entity_slug: petland
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: cf94d48e-6eca-44f5-b4c9-34e2f1bffac8
+entity_slug: petland
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: 95e48f7e-8d08-4c6b-85be-0132f06f3410
+entity_slug: petland
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: e7a1eba3-ae59-4e66-a252-ebd89be4f671
+entity_slug: petland
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 7d4ada24-c6b8-4de4-a042-436bf66cae9c
+entity_slug: petland
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 8a58cc9c-fcf3-4f6d-9c92-072267617bbe
+entity_slug: petland
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: e38646bc-03a0-4f21-89bb-ddd3f2002619
+entity_slug: petland
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: c4c0e991-e164-45c7-bb2a-b768e53b5460
+entity_slug: petland
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: 90947246-a3d6-44fb-863d-c591ac2bf233
+entity_slug: petland
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: dc86193d-2371-49b0-a7ed-0030dee4de3a
+entity_slug: petland
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: 816dd180-6aad-433b-886e-90c011d4d473
+entity_slug: petland
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   21 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 21] ---
+id: 07c751c7-22bf-4588-a6a1-bd50997877c0
+landmark_id: 2111e703-152d-498e-a3ab-26107db366f9
+entity_slug: petland
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 21] ---
+id: 77750f9b-8088-41a6-a8a8-79eb0ef9ce02
+landmark_id: 2111e703-152d-498e-a3ab-26107db366f9
+entity_slug: petland
+landmark_type: home_goods_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 21] ---
+id: e424fd1b-726c-4054-9f21-631f55a653b4
+landmark_id: 2111e703-152d-498e-a3ab-26107db366f9
+entity_slug: petland
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 21] ---
+id: 396ba28f-5c37-4164-9c0c-f995dd106701
+landmark_id: 2111e703-152d-498e-a3ab-26107db366f9
+entity_slug: petland
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 21] ---
+id: 6c1cf62a-0ea5-4a1b-8561-022678a9ee39
+landmark_id: 8ae0b9ce-5a77-41ac-ac2c-dc78ba66b2e8
+entity_slug: petland
+landmark_type: book_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 21] ---
+id: 327d3830-1b52-4770-9124-80c2d46d31e8
+landmark_id: 8ae0b9ce-5a77-41ac-ac2c-dc78ba66b2e8
+entity_slug: petland
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 21] ---
+id: 2890997b-83f1-4078-9738-ee52139a6ba0
+landmark_id: 8ae0b9ce-5a77-41ac-ac2c-dc78ba66b2e8
+entity_slug: petland
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 21] ---
+id: 58e22308-846b-482b-8188-920b90f407a1
+landmark_id: 8ae0b9ce-5a77-41ac-ac2c-dc78ba66b2e8
+entity_slug: petland
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 21] ---
+id: 71674fd6-3ecf-4b11-bbbd-071e9e738e50
+landmark_id: 512aec0f-37be-4ceb-8a34-a155391770b8
+entity_slug: petland
+landmark_type: atm
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 21] ---
+id: fa9b657e-ef56-4bb7-b5ca-80b98d8ebe79
+landmark_id: 512aec0f-37be-4ceb-8a34-a155391770b8
+entity_slug: petland
+landmark_type: bank
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 21] ---
+id: 55632116-d940-40c1-ae54-eabc24a21c8e
+landmark_id: 512aec0f-37be-4ceb-8a34-a155391770b8
+entity_slug: petland
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 21] ---
+id: f0a94e36-ae33-4772-9ecb-c3cf09005b5a
+landmark_id: 512aec0f-37be-4ceb-8a34-a155391770b8
+entity_slug: petland
+landmark_type: finance
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 21] ---
+id: 5b836db3-7b58-49f4-a924-6baa4d1cb8a8
+landmark_id: 512aec0f-37be-4ceb-8a34-a155391770b8
+entity_slug: petland
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 21] ---
+id: 894727db-d8a3-41fb-a8af-6a105b179ee9
+landmark_id: 7d324907-e3bf-4d1c-9d3d-90f4e2649aa5
+entity_slug: petland
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 21] ---
+id: 3ee87c55-0ab9-48c8-a45d-4dbd243a0c4e
+landmark_id: 7d324907-e3bf-4d1c-9d3d-90f4e2649aa5
+entity_slug: petland
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 21] ---
+id: dd6c93ef-2449-4d39-8687-92204a353d15
+landmark_id: 980a8bc6-bf9a-411a-885e-11f459c4b074
+entity_slug: petland
+landmark_type: clothing_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 21] ---
+id: 1db6f16b-1930-4316-838e-245efcf7aa36
+landmark_id: 980a8bc6-bf9a-411a-885e-11f459c4b074
+entity_slug: petland
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 21] ---
+id: 0e5be64f-01ea-4ece-acb6-ea18b316c650
+landmark_id: 980a8bc6-bf9a-411a-885e-11f459c4b074
+entity_slug: petland
+landmark_type: home_goods_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 19 of 21] ---
+id: 5c56238a-6af7-4d01-8aac-4d6063637fae
+landmark_id: 980a8bc6-bf9a-411a-885e-11f459c4b074
+entity_slug: petland
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 20 of 21] ---
+id: de2e1f13-6a51-4637-8cce-37dbfe1346bf
+landmark_id: 980a8bc6-bf9a-411a-885e-11f459c4b074
+entity_slug: petland
+landmark_type: shoe_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 21 of 21] ---
+id: accd4186-a40b-4681-bd7e-93b24d715dc2
+landmark_id: 980a8bc6-bf9a-411a-885e-11f459c4b074
+entity_slug: petland
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   7 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 7] ---
+id: 2111e703-152d-498e-a3ab-26107db366f9
+entity_slug: petland
+kind: landmark
+place_id: ChIJ0zEZt_m_kIgRMP9t0TxQ5E4
+name: Hobby Lobby
+types: [
+  "establishment",
+  "home_goods_store",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 245.58397
+straight_line_distance_meters: 217.33437
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 7] ---
+id: 8ae0b9ce-5a77-41ac-ac2c-dc78ba66b2e8
+entity_slug: petland
+kind: landmark
+place_id: ChIJ0zEZt_m_kIgR6zmmuMLTTNE
+name: Books-A-Million
+types: [
+  "book_store",
+  "establishment",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 208.90706
+straight_line_distance_meters: 154.73071
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 7] ---
+id: 512aec0f-37be-4ceb-8a34-a155391770b8
+entity_slug: petland
+kind: landmark
+place_id: ChIJB9EiWvi_kIgRIwvuyhUz7Hs
+name: Navy Federal Credit Union
+types: [
+  "atm",
+  "bank",
+  "establishment",
+  "finance",
+  "point_of_interest"
+]
+travel_distance_meters: 279.81995
+straight_line_distance_meters: 194.64279
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 7] ---
+id: 7d324907-e3bf-4d1c-9d3d-90f4e2649aa5
+entity_slug: petland
+kind: landmark
+place_id: ChIJf5UHWB6_kIgRCiLHDPYBt30
+name: Grizzly Axes
+types: [
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 246.52367
+straight_line_distance_meters: 222.628
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 7] ---
+id: 980a8bc6-bf9a-411a-885e-11f459c4b074
+entity_slug: petland
+kind: landmark
+place_id: ChIJ_SgDFfi_kIgRH0fMGWFKvx4
+name: bealls
+types: [
+  "clothing_store",
+  "establishment",
+  "home_goods_store",
+  "point_of_interest",
+  "shoe_store",
+  "store"
+]
+travel_distance_meters: 165.54219
+straight_line_distance_meters: 176.19351
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 6 of 7] ---
+id: ffebb8e0-e0ba-4aa2-8d1b-3de30ce29a2b
+entity_slug: petland
+kind: area
+place_id: ChIJZ0nmzPm_kIgRCqSF063OZO4
+name: Pensacola Square
+containment: WITHIN
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 7 of 7] ---
+id: 3e984196-621a-49ca-a196-d5f55175023b
+entity_slug: petland
+kind: area
+place_id: ChIJdd74n4eVkIgRwApr4ar89YA
+name: North Central Pensacola
+containment: OUTSKIRTS
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13922
+entity_slug: petland
+name: Petland
+description: Chain retailer featuring a wide range of pets including dogs, reptiles, and birds, plus supplies.
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 2c2fbaa7-bb88-4df7-9d86-f631a7062af1
+
+####################################################################################################
+# TABLE: entity_photos   -   14 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 14] ---
+id: 1aee61ff-0e59-4acd-89f7-92d39183936d
+entity_slug: petland
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/petland/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 14] ---
+id: 73b8b702-a17f-42be-af19-039db7ef3a78
+entity_slug: petland
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/petland/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 14] ---
+id: 071446d5-05c4-4f09-b39a-d1fa4fc0d1b3
+entity_slug: petland
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/petland/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 2c2fbaa7-bb88-4df7-9d86-f631a7062af1
+
+--- entity_photos [row 4 of 14] ---
+id: dad364a5-6cbc-4b62-a2c8-d59f996ab4e9
+entity_slug: petland
+url: https://places.googleapis.com/v1/places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3k6Mz2rcKe1FKyuBNwHD8GbQ2BBPoTIxOsul5GhLaa6wiEzsSXpsgv_YmxeJMGa-38TGAKtwUKNQ819TRceu-KD2MkLNXujcupphKFWHhQ9-hq5yTyQh8_1SzaV2w6XPnYXRg-ytTesK5s7-VzmY1RgGrKY2BTCRxIQqBOVE78ybsGh426SDUmLNT5GYMgbBINb5n_dSO6m68w5er7YGRdqhhJkbhZlr-BJ7iy5R-bhedcWzh9PrBKPF-Aqa_PA0I-Bkq-ESAu4uh6Uu7nwX9LmaWUaXVxUmh58d0kA00PNAT6nEK02HNHTQ5AF90qxJPu5013G24krX7o0DEXp1zvy3BNu-A1cAPTvGbHqCd82sF1AbHdqnQmLuIPh_rw2RXbwUU3RSOLTRN5q6O8iPhuICgQfBhSsORArpXYdIVx9Xg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3k6Mz2rcKe1FKyuBNwHD8GbQ2BBPoTIxOsul5GhLaa6wiEzsSXpsgv_YmxeJMGa-38TGAKtwUKNQ819TRceu-KD2MkLNXujcupphKFWHhQ9-hq5yTyQh8_1SzaV2w6XPnYXRg-ytTesK5s7-VzmY1RgGrKY2BTCRxIQqBOVE78ybsGh426SDUmLNT5GYMgbBINb5n_dSO6m68w5er7YGRdqhhJkbhZlr-BJ7iy5R-bhedcWzh9PrBKPF-Aqa_PA0I-Bkq-ESAu4uh6Uu7nwX9LmaWUaXVxUmh58d0kA00PNAT6nEK02HNHTQ5AF90qxJPu5013G24krX7o0DEXp1zvy3BNu-A1cAPTvGbHqCd82sF1AbHdqnQmLuIPh_rw2RXbwUU3RSOLTRN5q6O8iPhuICgQfBhSsORArpXYdIVx9Xg
+is_cover: false
+sort_order: 0
+caption: Petland
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC61K3NIg!2e10!4m2!3m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7
+
+--- entity_photos [row 5 of 14] ---
+id: 46cec6cd-ca6b-4c43-b9b1-dc2cf6b7f838
+entity_slug: petland
+url: https://places.googleapis.com/v1/places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3kjYAFCR-CIhosk3W8uxSy9sg-ZkSnhd92421RAGTX5Yu4C92quxMnbvt9tn-XrncpYAS4HyuR-Ejun7N565aZKpx9zZ3vyprPBFD1qR5-Yj9u60h670VWA533LZYP8TSnSS1QPHRZj35TRKnP_QJ665q9Sllla7Euaa9Z3baAG1ySnJu3xL3KMS7xFk0hnTJ6Kd-OYJY2BwTv9oRSSB4gPkT-J05q8_CmwhGSYi0uGEwGKbsMB9K-gjHW-XU_YOp_TvWoCEAfkG0QqHHPaPEbc27lQAfNPDqokvc0iJOp_4mAsb0uZaM1NbFTp6negm1eCiNwdGuufg_23qKCtChdGv825VVV0Iv6l7OwNok4qtCyb7Iw9tK0yzaRyf8savmvt4xYpEBJlZnZZ3-7gynm1FqnaFV7CgLS2kXy6zuQEtl6GPNccJ7GcU56X2Q/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3kjYAFCR-CIhosk3W8uxSy9sg-ZkSnhd92421RAGTX5Yu4C92quxMnbvt9tn-XrncpYAS4HyuR-Ejun7N565aZKpx9zZ3vyprPBFD1qR5-Yj9u60h670VWA533LZYP8TSnSS1QPHRZj35TRKnP_QJ665q9Sllla7Euaa9Z3baAG1ySnJu3xL3KMS7xFk0hnTJ6Kd-OYJY2BwTv9oRSSB4gPkT-J05q8_CmwhGSYi0uGEwGKbsMB9K-gjHW-XU_YOp_TvWoCEAfkG0QqHHPaPEbc27lQAfNPDqokvc0iJOp_4mAsb0uZaM1NbFTp6negm1eCiNwdGuufg_23qKCtChdGv825VVV0Iv6l7OwNok4qtCyb7Iw9tK0yzaRyf8savmvt4xYpEBJlZnZZ3-7gynm1FqnaFV7CgLS2kXy6zuQEtl6GPNccJ7GcU56X2Q
+is_cover: false
+sort_order: 1
+caption: Dale Brunette
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDACDmGpHoOUb4JK9Tv82gK!2e10!4m2!3m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7
+
+--- entity_photos [row 6 of 14] ---
+id: 0268e1f9-e7f8-4374-80f4-d891c672ec7b
+entity_slug: petland
+url: https://places.googleapis.com/v1/places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3kcmKQlNUmktBG8a_Jh1QPR7_agdtnVpLw_l7xTsrVy37-q-V1gXUbHp7pZ3oM2cbI2FJq1Kc3haV2GLp7QetFk2Sbv-87BGJ7BAshYA2R6-DXo7DFmGS9F1_-NE1uyG-Yqh7KoZm2VQVdSl5I7ioRmUIESSSK3gn-K1FPSMIO-1xazlVDiVp5vkNkaxNHh7AIB2P_7Ql4qZ6yliSp7Oy4R7AEs_g--iuoA2cjFcVKBcbjO5-1GSBm0Qt6V23NFSABGURbsnw0le_bgI408-vxlhYxwsDcTe18MSnsQ-I7Uch2E6nmXxXzkwKBu1cHVL0f1n0GAXCo8e3PpB28iH5ZMVS7kljlJTuJ9ynbMOz64_BSuZZyI-2Z_SKecAQuVeH87CQOtp1G9EKdd0j0xKVMgXgf8i1aSqDWbsxxCbaN6Wg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3kcmKQlNUmktBG8a_Jh1QPR7_agdtnVpLw_l7xTsrVy37-q-V1gXUbHp7pZ3oM2cbI2FJq1Kc3haV2GLp7QetFk2Sbv-87BGJ7BAshYA2R6-DXo7DFmGS9F1_-NE1uyG-Yqh7KoZm2VQVdSl5I7ioRmUIESSSK3gn-K1FPSMIO-1xazlVDiVp5vkNkaxNHh7AIB2P_7Ql4qZ6yliSp7Oy4R7AEs_g--iuoA2cjFcVKBcbjO5-1GSBm0Qt6V23NFSABGURbsnw0le_bgI408-vxlhYxwsDcTe18MSnsQ-I7Uch2E6nmXxXzkwKBu1cHVL0f1n0GAXCo8e3PpB28iH5ZMVS7kljlJTuJ9ynbMOz64_BSuZZyI-2Z_SKecAQuVeH87CQOtp1G9EKdd0j0xKVMgXgf8i1aSqDWbsxxCbaN6Wg
+is_cover: false
+sort_order: 2
+caption: Petland
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICbyoHoMw!2e10!4m2!3m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7
+
+--- entity_photos [row 7 of 14] ---
+id: 066091e3-6ad9-4868-8b3f-0c52f5ddfe3e
+entity_slug: petland
+url: https://places.googleapis.com/v1/places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3noPHCXQV9-E3EaSkQCw-mzBuX1rETZTseiPWZD6MZhbRTsUMjTEYg0dpZYKN_pw53f8Hw3vGFzclp-50v8pnE52g2GPV8cST0OpctGTA7pS0wkKMhcjqJOyXpUwzFHQPqYmc900R2538Dthkxi28AQuOZkT322J6sduQEoD_3NaCRoET8R36hghCEfTRcDwE3Iy9qp5_I3KRL7_cC_pMpq_xrC5wFOHgRbqzVTiVzNYY3zxWoGX7u9hWFo6wHNESHaHTFtMpYRBxD8zS0MHrY9fflfAUI8DAiVXTGF_yuPf2u-63UasOHbZ-UfYh0BAhdwvFIb5fsgNyzE2ph6yGh7L9npwcbA16dRPqtzYpE71OyClyzguJ86pOJMwD1-FjS4bdjpMj7akMp-YjUn1XdLMPe6nMpN-NV_CEHliiXF9UTasTkCE9kiHGpqxTiO/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3noPHCXQV9-E3EaSkQCw-mzBuX1rETZTseiPWZD6MZhbRTsUMjTEYg0dpZYKN_pw53f8Hw3vGFzclp-50v8pnE52g2GPV8cST0OpctGTA7pS0wkKMhcjqJOyXpUwzFHQPqYmc900R2538Dthkxi28AQuOZkT322J6sduQEoD_3NaCRoET8R36hghCEfTRcDwE3Iy9qp5_I3KRL7_cC_pMpq_xrC5wFOHgRbqzVTiVzNYY3zxWoGX7u9hWFo6wHNESHaHTFtMpYRBxD8zS0MHrY9fflfAUI8DAiVXTGF_yuPf2u-63UasOHbZ-UfYh0BAhdwvFIb5fsgNyzE2ph6yGh7L9npwcbA16dRPqtzYpE71OyClyzguJ86pOJMwD1-FjS4bdjpMj7akMp-YjUn1XdLMPe6nMpN-NV_CEHliiXF9UTasTkCE9kiHGpqxTiO
+is_cover: false
+sort_order: 3
+caption: Dejalil
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCd69IiynPyIVea77nXYwSw!2e10!4m2!3m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7
+
+--- entity_photos [row 8 of 14] ---
+id: 207c464d-b2c0-443f-9bb9-a04736a4d3e4
+entity_slug: petland
+url: https://places.googleapis.com/v1/places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3m6BStx6egb56SjvaZ7FhviTFPItnl_kaWcxUERgkwinQNGC7K1WiqSbUz9Kl8TCXuJgkhCHmTB7-1FFBgf47wu-vwBwDAP2VIwx3HA3uzZTv7YJ6lt-NqYQEmbJEgT3tpjz2tURwT6Z73sUw7jk3oLh-0vT41VpIUuam8SEPTo7qRuyNoBY39ykaWQEDNpGGusPfPesSatk7q76ocbiQnZSU_GRWkepIOI_Z9RQ6n-hVYxaVKS7WF3keD4oYwJ3PahaeAV_2h97WGdNHA4WNFrq5dAYHjqOd8X_xuq12-XoM0GeNRn0BOS5TlkY8qUWawfoXPIw6r-xx7Tbac_d9wzHHcF1n2QpyOVFVrwkIEf2lwooDbb72WfD3zdT663WgOqrZkpwRvnWi7blrr8RlPG2S0oRGBM6xLpRnTXMRqiEMH5sBiecoB63vBEg-St/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3m6BStx6egb56SjvaZ7FhviTFPItnl_kaWcxUERgkwinQNGC7K1WiqSbUz9Kl8TCXuJgkhCHmTB7-1FFBgf47wu-vwBwDAP2VIwx3HA3uzZTv7YJ6lt-NqYQEmbJEgT3tpjz2tURwT6Z73sUw7jk3oLh-0vT41VpIUuam8SEPTo7qRuyNoBY39ykaWQEDNpGGusPfPesSatk7q76ocbiQnZSU_GRWkepIOI_Z9RQ6n-hVYxaVKS7WF3keD4oYwJ3PahaeAV_2h97WGdNHA4WNFrq5dAYHjqOd8X_xuq12-XoM0GeNRn0BOS5TlkY8qUWawfoXPIw6r-xx7Tbac_d9wzHHcF1n2QpyOVFVrwkIEf2lwooDbb72WfD3zdT663WgOqrZkpwRvnWi7blrr8RlPG2S0oRGBM6xLpRnTXMRqiEMH5sBiecoB63vBEg-St
+is_cover: false
+sort_order: 4
+caption: Dan Black
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhA0ZZNZJfppPBSMfCwmEzo9!2e10!4m2!3m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7
+
+--- entity_photos [row 9 of 14] ---
+id: d21c8400-3a94-41e4-8a06-6014bb390f29
+entity_slug: petland
+url: https://places.googleapis.com/v1/places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3kyWkMs1A4vlZTwuBjJvqKS-o9GN9QdOBZKo_FQsrzpWfAMZAUWopPaiUGVgM_aKRpF_t3WUPeOI83WQHZLYRpTJ2e8UBx0iA0NVcjR0_xFzpIx7KaVzo3ry5hegn4zzgCakqF-a-uMM47Yr5FdXQlDMK3WjKeFJLeEB8j2kUN5MVL0VZco82m44AhvkV_Cofj-NQ-T3glOs0dmLnmYD0q-lnaWgS7WPJqbtnt136l5bA9Ay2pygqPOdRQOC8XzowOtWZE2lF5wfdPeprHD96oti5uWdxDmHicKrZj56GDa0L0kHkVRQdq7lhMLBlvDvUzTVmWOcNw3aftQapglns4gpie_PxyVsjAEJJpVceBENa6tStfcHs4R9fgXg-wyq_FglFT0Nw0JwpKjcVau4fEM9gmKco_OC4-RYofBd0wsxHxU/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3kyWkMs1A4vlZTwuBjJvqKS-o9GN9QdOBZKo_FQsrzpWfAMZAUWopPaiUGVgM_aKRpF_t3WUPeOI83WQHZLYRpTJ2e8UBx0iA0NVcjR0_xFzpIx7KaVzo3ry5hegn4zzgCakqF-a-uMM47Yr5FdXQlDMK3WjKeFJLeEB8j2kUN5MVL0VZco82m44AhvkV_Cofj-NQ-T3glOs0dmLnmYD0q-lnaWgS7WPJqbtnt136l5bA9Ay2pygqPOdRQOC8XzowOtWZE2lF5wfdPeprHD96oti5uWdxDmHicKrZj56GDa0L0kHkVRQdq7lhMLBlvDvUzTVmWOcNw3aftQapglns4gpie_PxyVsjAEJJpVceBENa6tStfcHs4R9fgXg-wyq_FglFT0Nw0JwpKjcVau4fEM9gmKco_OC4-RYofBd0wsxHxU
+is_cover: false
+sort_order: 5
+caption: Zach R.
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICrzdiPsAE!2e10!4m2!3m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7
+
+--- entity_photos [row 10 of 14] ---
+id: 16149393-0afa-4d74-ac85-738aa8271411
+entity_slug: petland
+url: https://places.googleapis.com/v1/places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3kojeWUxljauxA3S3DJK4yWAWxa6LBzaaJd40RYgNyga6r-Y8-RNkdx4oYehk2fDUd3NcE932_4BMW0VsXQ3B1YEmoUVGvB_GNoJqsHRwcW5CLdZM5gff5QtugkdicqwSLoQ9nTiBZcPUcNS37Vs2r0jI-YOzwppTl8hTPLTBIoIMs7EtDc0x-ZIZhj1m_62eZWQJPx6Avu91qahushKcFQv51lsspJrI_w4KBP8nYyisc46lEc_wHALRpeS11I0knYsIlH0Mop_UTSGK4UfIUE_w72lWdtERtp2Y2vIqg9SCsilvOECLeUzDU5KGxjY1vHvMIRLxtKqcfHumWP5QgY9iVfCdefN0n7oNFfFRAL_VGZHXr4YeAlAhxNzPWVCi7-cV0D52p4HEiVif2h4LLZ_HPhwxVR__ljwr8EOdI6IkSG/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3kojeWUxljauxA3S3DJK4yWAWxa6LBzaaJd40RYgNyga6r-Y8-RNkdx4oYehk2fDUd3NcE932_4BMW0VsXQ3B1YEmoUVGvB_GNoJqsHRwcW5CLdZM5gff5QtugkdicqwSLoQ9nTiBZcPUcNS37Vs2r0jI-YOzwppTl8hTPLTBIoIMs7EtDc0x-ZIZhj1m_62eZWQJPx6Avu91qahushKcFQv51lsspJrI_w4KBP8nYyisc46lEc_wHALRpeS11I0knYsIlH0Mop_UTSGK4UfIUE_w72lWdtERtp2Y2vIqg9SCsilvOECLeUzDU5KGxjY1vHvMIRLxtKqcfHumWP5QgY9iVfCdefN0n7oNFfFRAL_VGZHXr4YeAlAhxNzPWVCi7-cV0D52p4HEiVif2h4LLZ_HPhwxVR__ljwr8EOdI6IkSG
+is_cover: false
+sort_order: 6
+caption: Petland
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICbyumNlgE!2e10!4m2!3m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7
+
+--- entity_photos [row 11 of 14] ---
+id: 673f4336-73a1-4609-8921-a8da0e4c99f5
+entity_slug: petland
+url: https://places.googleapis.com/v1/places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3lFkDrSWCqigGkpcCW9X7Dq3TF_vTcrZ5IsZY0hsI-Ir4Vz_3FeDHIL88WE6sUP5twQJFf7XcivxbHS1LbMPBikcDtuTc8g9zaPawY_6xxBLq3FRRQADhmzvxhXnFGM1e_uqHCLKUI8UwasZk2U1HsUk9-UwHE157ZMIrZqkCjy9YmdvKO1vPrA3bwQNLmSCfM9jujkExZDat3iu1lS7VELetwFwTF0P-uBZE4Am-fiNxz8ThovEFKuIdNcBekkjVeH3WyG8SSO3imHZGS4oS1wHWLcjoE5JN_1ZZJoTf5SWkdGHGul85jhxMskbun252J4WTB3nA8Iadi6sFDlOi7zMftpaKa5jTb6eE48FMJL-ZK-PbHVmpExnVvt-JFRVjXlIyZBkKvzRntJ7dSpIKVBPR2z1iqw3YGdPYNzlQWHgW73eLthukayRjSTH6wc/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3lFkDrSWCqigGkpcCW9X7Dq3TF_vTcrZ5IsZY0hsI-Ir4Vz_3FeDHIL88WE6sUP5twQJFf7XcivxbHS1LbMPBikcDtuTc8g9zaPawY_6xxBLq3FRRQADhmzvxhXnFGM1e_uqHCLKUI8UwasZk2U1HsUk9-UwHE157ZMIrZqkCjy9YmdvKO1vPrA3bwQNLmSCfM9jujkExZDat3iu1lS7VELetwFwTF0P-uBZE4Am-fiNxz8ThovEFKuIdNcBekkjVeH3WyG8SSO3imHZGS4oS1wHWLcjoE5JN_1ZZJoTf5SWkdGHGul85jhxMskbun252J4WTB3nA8Iadi6sFDlOi7zMftpaKa5jTb6eE48FMJL-ZK-PbHVmpExnVvt-JFRVjXlIyZBkKvzRntJ7dSpIKVBPR2z1iqw3YGdPYNzlQWHgW73eLthukayRjSTH6wc
+is_cover: false
+sort_order: 7
+caption: Elizabeth Hightower
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCkLXGwP3IGTy87HTc4rOJ8!2e10!4m2!3m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7
+
+--- entity_photos [row 12 of 14] ---
+id: 6112b829-2ca9-462e-87d9-7f253f107375
+entity_slug: petland
+url: https://places.googleapis.com/v1/places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3mn7sZokiodOAZptLBOCgp1AVQISAsaD3zrJc79ss7UlWdd9vyyaj19703Srvu1vPRoiREdM0HopO1MWsm6gI24S34NgM-gHmCiXJZXX4ZS52zL_w7GYRxDF6bb8vq3JIcFx890bKlnz3XZIquP1t5wrUSKKbZrhaaA7BE371tvFG7H2v-CLpNYO6ziNBm4bX91y17x-yxcSM6sivhc5pAvMMCPqmfbHQtec6kTNwfylg8dQwG1Zgdhwz2BATKfnclvmLcqTpl83zKi2_do-r1aAiTpyx1harUlwZDkyMjjBkCdWY2k7wbkrBKa3mf6cMRdFPf5CXw5ipCJsxl6R2ncTuTO28H0KvkjaWvZ05a1P3Q59EpHJ6kVKqQkcbpQUqbaSgLmRbbdfZpsv7yPxLsOkVJrdRIr2VHWWBxkVjP3_tE/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3mn7sZokiodOAZptLBOCgp1AVQISAsaD3zrJc79ss7UlWdd9vyyaj19703Srvu1vPRoiREdM0HopO1MWsm6gI24S34NgM-gHmCiXJZXX4ZS52zL_w7GYRxDF6bb8vq3JIcFx890bKlnz3XZIquP1t5wrUSKKbZrhaaA7BE371tvFG7H2v-CLpNYO6ziNBm4bX91y17x-yxcSM6sivhc5pAvMMCPqmfbHQtec6kTNwfylg8dQwG1Zgdhwz2BATKfnclvmLcqTpl83zKi2_do-r1aAiTpyx1harUlwZDkyMjjBkCdWY2k7wbkrBKa3mf6cMRdFPf5CXw5ipCJsxl6R2ncTuTO28H0KvkjaWvZ05a1P3Q59EpHJ6kVKqQkcbpQUqbaSgLmRbbdfZpsv7yPxLsOkVJrdRIr2VHWWBxkVjP3_tE
+is_cover: false
+sort_order: 8
+caption: Jon boy
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICHm-bNswE!2e10!4m2!3m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7
+
+--- entity_photos [row 13 of 14] ---
+id: 41aa9aa9-a66f-4fb2-af41-2352035b2077
+entity_slug: petland
+url: https://places.googleapis.com/v1/places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3nCinOVTNzHrSQcErmdGQboC2_dQud3YGhZvj9hL4D-zMY85_w6PjbmmoGqA7LpdueWgEuzd6YkPJEEf0ZFvu-MFfUbB7zvKmyezsuCSaVBpqaXiWXimssOisicsmrekXS3olS0wGtU0KHE_Nv_a2ZE4HmLlKG90EZN9vKVg440sxU7_yjBPqlee8zGJML1sQMErNL7daVTuGAl9Ba-Q-m2-IZsXk-jZYzxJckzcSET5wralvL4nU-6-7i-7hTCSczUIgK5Ghr-tUvFI-d6_x04x_IbvckFsR0sv-h5FH3_8nJ4Y9m76WJV4hBzrOQHGYqlyMza_kVgtF6pb242gZ_Yd-7FM0iD51NFFzXHyzY338nOivxij19RDCayu1JbzrwHss8BQFwH9kl0awWDbIcHKVGNyGAX4pVGiSl28vSJOQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ0zEZt_m_kIgR91MTM8qm1DA/photos/AaVGc3nCinOVTNzHrSQcErmdGQboC2_dQud3YGhZvj9hL4D-zMY85_w6PjbmmoGqA7LpdueWgEuzd6YkPJEEf0ZFvu-MFfUbB7zvKmyezsuCSaVBpqaXiWXimssOisicsmrekXS3olS0wGtU0KHE_Nv_a2ZE4HmLlKG90EZN9vKVg440sxU7_yjBPqlee8zGJML1sQMErNL7daVTuGAl9Ba-Q-m2-IZsXk-jZYzxJckzcSET5wralvL4nU-6-7i-7hTCSczUIgK5Ghr-tUvFI-d6_x04x_IbvckFsR0sv-h5FH3_8nJ4Y9m76WJV4hBzrOQHGYqlyMza_kVgtF6pb242gZ_Yd-7FM0iD51NFFzXHyzY338nOivxij19RDCayu1JbzrwHss8BQFwH9kl0awWDbIcHKVGNyGAX4pVGiSl28vSJOQ
+is_cover: false
+sort_order: 9
+caption: Louis DiPaola
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDikqC7Qw!2e10!4m2!3m1!1s0x8890bff9b71931d3:0x30d4a6ca331353f7
+
+--- entity_photos [row 14 of 14] ---
+id: 5613baf9-3cfe-45c0-9d83-b125f8163b5c
+entity_slug: petland
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/petland/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: 2c2fbaa7-bb88-4df7-9d86-f631a7062af1
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 6bfcd180-dd42-4d4e-a4ee-7128743801e0
+entity_slug: petland
+reviewer_name: Streamylc
+rating: 5
+body: Absolutely amazing. Wetland has stepped up their game throughout the years. Went to get some fish the other day, and was blown away with the selection. I lost count of how many fish I saw for the first time in person. Austin was incredibly helpful, and Key (the time prior) was so amazing.
+I felt like i was at an actual aquarium/zoo, lol.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-12-14T18:33:07.82711+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: 93896c35-053d-43e6-ac91-046b7fb92f9f
+entity_slug: petland
+reviewer_name: Moni G
+rating: 3
+body: Not a fan of this place, we bought a Rabbit that died the same week (after everyone was easily attached) & their response was (moving fwd =( new rabbit, to late, trust was lost).
+
+The prices today are astronomical. I'm talking like 2k to 8k+ pending the pet.
+
+But, I LOVE Love💕love  the opportunity to walk into this Bright Clean-ish environment to see & sometimes touch the animals. It's Very Therapeutic. If rescue centers were laid out this charming, *with pet supplies they'd have more customers.
+
+Photos: warning- it gets hard to leave
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-08-30T16:47:51.171939+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: cc34a22a-de89-42ee-9001-5b07e81088de
+entity_slug: petland
+reviewer_name: Miss H. On-Es'ty
+rating: 3
+body: Adorable$3-10K (after tax &/or supplies) animals get all the love I can give in a store setting.. nothing more.
+
+Great place to veg out for a moment. Animals soothe the soul. SOooo 2☆'s to the animals, 1☆ to staff,  & minus 2 for being SOooo overpriced
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-11-25T20:07:42.799848+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: f16aa267-66e8-4082-b8bf-2495a26f43a5
+entity_slug: petland
+reviewer_name: Jon boy
+rating: 5
+body: This place is a lot of fun! They have so many types of pets. I love that they have a turtle walking around freely throughout the store. I've never seen anything like that before!
+There was also the parrot in the open. These guys have several fish, birds, puppies, bunnies, etc.
+Every employee was super friendly and helpful.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2024-09-09T05:51:15.086208+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 71430974-fc8a-43e0-b9ff-4aa6872b58f2
+entity_slug: petland
+reviewer_name: BF Happy Movers LLC
+rating: 5
+body: Very good price look how big our dog then got she is so wonderful. we love her
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-12-16T12:51:50.911779+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   6 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 6] ---
+id: 5cbe7a68-7a84-41b5-ba94-78d5c4d16a0b
+entity_slug: petland
+tag_name: pet_care
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 6] ---
+id: c6ea9e2f-6642-4350-8915-229f31840087
+entity_slug: petland
+tag_name: pet_store
+tag_category: google_type
+
+--- entity_tags [row 3 of 6] ---
+id: 63608c65-96a3-4837-9b4e-d39b76146cab
+entity_slug: petland
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 4 of 6] ---
+id: 8727995f-1dd0-4770-91d5-91b2dcbd9db7
+entity_slug: petland
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 5 of 6] ---
+id: 4c6896a3-4adc-47d4-a771-741eade6b4b0
+entity_slug: petland
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 6 of 6] ---
+id: dc2b1786-2b21-4896-97ee-e442311b1ccd
+entity_slug: petland
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 4a26db83-76cc-490d-857a-1a453c16a909
+entity_slug: petland
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: offer
+ref_id: 13922
+entity_slug: petland
+title: Petland
+category: rental
+subtitle: Chain retailer featuring a wide range of pets including dogs, reptiles, and birds, plus supplies.
+search_vector: 'bird':14C 'chain':2C 'dog':11C 'featur':4C 'includ':10C 'pet':9C 'petland':1A 'plus':15C 'rang':7C 'reptil':12C 'retail':3C 'suppli':16C 'wide':6C
+
+--- search_index [row 2 of 2] ---
+ref_type: business
+ref_id: petland
+entity_slug: petland
+title: Petland
+category: pet_care
+subtitle: Chain retailer featuring a wide range of pets including dogs, reptiles, and birds, plus supplies.
+search_vector: 'bird':16C 'care':3B 'chain':4C 'dog':13C 'featur':6C 'includ':12C 'pet':2B,11C 'petland':1A 'plus':17C 'rang':9C 'reptil':14C 'retail':5C 'suppli':18C 'wide':8C

@@ -1,0 +1,2420 @@
+====================================================================================================
+SLUG: enterprise-foley-al
+NAME: Enterprise Rent-A-Car
+INDUSTRY: rental
+SUBTYPE: car_rental
+TABLES WITH DATA: 27
+TOTAL ROWS: 144
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (5 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_attributes  (6 rows)
+  entity_completeness_v  (1 rows)
+  entity_good_for  (10 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_highlights  (15 rows)
+  entity_hours  (6 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_nearby_landmark_types  (20 rows)
+  entity_nearby_landmarks  (5 rows)
+  entity_offer  (1 rows)
+  entity_photos  (14 rows)
+  entity_reviews  (5 rows)
+  entity_tags  (23 rows)
+  entity_theme  (1 rows)
+  industry_rental  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: enterprise-foley-al
+name: Enterprise Rent-A-Car
+planner_category: things_to_do
+data_quality_score: 100
+recommended_next_action: ready_for_ai
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: false
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   5 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 5] ---
+id: 8114
+entity_slug: enterprise-foley-al
+intent_tag: best_for:things_to_do
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 5] ---
+id: 8115
+entity_slug: enterprise-foley-al
+intent_tag: service:takeout
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 5] ---
+id: 8116
+entity_slug: enterprise-foley-al
+intent_tag: service:reservations
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 5] ---
+id: 8117
+entity_slug: enterprise-foley-al
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 5] ---
+id: 8118
+entity_slug: enterprise-foley-al
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: enterprise-foley-al
+name: Enterprise Rent-A-Car
+is_active: t
+planner_category: things_to_do
+entity_type: service
+entity_subtype: car_rental
+city: Foley
+state: AL
+address_line_1: 3410 S McKenzie St
+latitude: 30.363730999999994
+longitude: -87.6837682
+rating: 3.9
+review_count: 628
+website_url: https://www.enterprise.com/en/car-rental-locations/us/al/foley-5526.html?mcid=yext:245709
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-foley-al/photo_01.jpg
+voice_summary: Enterprise Rent-A-Car in Foley is best for things to do.
+planner_summary: Enterprise Rent-A-Car is part of the world's largest car rental provider, as measured by revenue, fleet, and employees. The Foley location at 3410 S McKenzie St offers convenient car rental services with a wide selection of vehicles including economy cars, full-size sedans, SUVs, minivans, and pickup trucks. Enterprise provides excellent customer service, competitive rates, and flexibility for all your transportation needs - whether you need a short-term rental, one-way rental, long-term rental, or specialty vehicle.
+best_for: things to do
+not_best_for: nothing specific flagged
+service_tags: takeout|reservations|accessibility
+search_keywords: car rental|vehicle rental|truck rental|van rental|exotic cars|one-way rental|long-term rental|business rental|affordable rates|locations nationwide|Car Rentals|Truck Rentals|Van Rentals|Exotic Car Rentals|Used Car Sales|Fleet Management|Transportation Services|automotive-rental|rentals|car_rental|point_of_interest|service|establishment|takeout|reservations|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 2
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 23
+faq_count: 0
+data_quality_score: 100
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 15962
+entity_slug: enterprise-foley-al
+entity_name: Enterprise Rent-A-Car
+city: Foley
+url: https://www.enterprise.com/content/dam/ecom/logo-enterprise.png
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 15963
+entity_slug: enterprise-foley-al
+entity_name: Enterprise Rent-A-Car
+city: Foley
+url: https://media-cdn-delta.jazelc.com/media/?src=https%3A%2F%2Fcontent.homenetiol.com%2F2001358%2F2102149%2F0x0%2Fb0320ed38778426294aab61e3b415279.jpg&scale=-400&ext=jpeg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: b474c528-60de-446b-bbfd-314c33305442
+resource_type: service
+slug: enterprise-foley-al
+name: Enterprise Rent-A-Car
+description: Enterprise Rent-A-Car is part of the world's largest car rental provider, as measured by revenue, fleet, and employees. The Foley location at 3410 S McKenzie St offers convenient car rental services with a wide selection of vehicles including economy cars, full-size sedans, SUVs, minivans, and pickup trucks. Enterprise provides excellent customer service, competitive rates, and flexibility for all your transportation needs - whether you need a short-term rental, one-way rental, long-term rental, or specialty vehicle.
+entity_slug: enterprise-foley-al
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://www.enterprise.com/content/dam/ecom/logo-enterprise.png",
+  "https://media-cdn-delta.jazelc.com/media/?src=https%3A%2F%2Fcontent.homenetiol.com%2F2001358%2F2102149%2F0x0%2Fb0320ed38778426294aab61e3b415279.jpg&scale=-400&ext=jpeg"
+]
+amenities: []
+faqs: []
+address: 3410 S McKenzie St
+city: Foley
+state: AL
+latitude: 30.363730999999994
+longitude: -87.6837682
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 39f6c65346ee05956ce6cf6163925e86
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: b474c528-60de-446b-bbfd-314c33305442
+entity_slug: enterprise-foley-al
+slug: enterprise-foley-al
+photo_urls: [
+  "https://www.enterprise.com/content/dam/ecom/logo-enterprise.png",
+  "https://media-cdn-delta.jazelc.com/media/?src=https%3A%2F%2Fcontent.homenetiol.com%2F2001358%2F2102149%2F0x0%2Fb0320ed38778426294aab61e3b415279.jpg&scale=-400&ext=jpeg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: b2858d45-c42c-47fb-b3ba-1bddc090879b
+slug: enterprise-foley-al
+name: Enterprise Rent-A-Car
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: car_rental
+description: Enterprise Rent-A-Car is part of the world's largest car rental provider, as measured by revenue, fleet, and employees. The Foley location at 3410 S McKenzie St offers convenient car rental services with a wide selection of vehicles including economy cars, full-size sedans, SUVs, minivans, and pickup trucks. Enterprise provides excellent customer service, competitive rates, and flexibility for all your transportation needs - whether you need a short-term rental, one-way rental, long-term rental, or specialty vehicle.
+subtitle: More than 9,500 locations worldwide - your preferred car rental partner
+phone: (251) 943-3888
+website_url: https://www.enterprise.com/en/car-rental-locations/us/al/foley-5526.html?mcid=yext:245709
+menu_pin: 6059
+social_instagram: https://www.instagram.com/enterprise/
+social_facebook: https://www.facebook.com/enterprise
+address_line_1: 3410 S McKenzie St
+city: Foley
+state: AL
+zip: 36535
+latitude: 30.363730999999994
+longitude: -87.6837682
+rating: 3.9
+review_count: 628
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-foley-al/photo_01.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T22:55:22.314452+00:00
+updated_at: 2026-06-03T22:55:22.314452+00:00
+gallery_sections: []
+highlights: [
+  "Pick-up service available",
+  "Online reservation system",
+  "Wide vehicle selection",
+  "Competitive rates",
+  "One-way rentals",
+  "Long-term rentals",
+  "Business rental programs",
+  "Exotic car rentals",
+  "Fleet management services",
+  "Roadside assistance",
+  "Damage waiver options",
+  "Supplemental liability protection",
+  "Personal effects coverage",
+  "TollPass program",
+  "Enterprise Plus rewards program"
+]
+good_for: [
+  "Business travelers",
+  "Vacation rentals",
+  "One-way trips",
+  "Long-term rentals",
+  "Moving and relocations",
+  "Replacement rentals after accidents",
+  "Corporate accounts",
+  "Weekend getaways",
+  "Road trips",
+  "Families"
+]
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJYzHDBMwPmogRgBW-AkOTnhc
+google_maps_uri: https://maps.google.com/?cid=1701959625210729856&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: car_rental
+formatted_address: 3410 S McKenzie St, Foley, AL 36535, USA
+plus_code: 862J9878+FF
+international_phone: +1 251-943-3888
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+accepts_nfc: true
+accepts_cash_only: false
+google_places_data: {
+  "id": "ChIJYzHDBMwPmogRgBW-AkOTnhc",
+  "types": [
+    "car_rental",
+    "point_of_interest",
+    "service",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3mukGy2-uClXh5Vn1fXUrmFOA4WVcpXvTrMeoEHsyFYYBkYvLfEjCMJInat1Om2STojkhlQjqkQJdr2GFlmjpboNPuFeRLQMG7Ne1_sdnTbubD7ejQf52luuowc0nhG6BKaf0Ca7q6-Z1q2v4SRp7hQdEyMOE8pHGjcKJxxu6g9y3gW3GUvhEakIhjAsKXxJIkaF6b8utDtJKLmZi9ZVcUxRWuKInufY2kk9oy3IbNyXbzmOxCUTRzhF3UQs63TnJpMvffxoVihRHtNsOZySTcrPQf8BjCfEVboKBSX6dNI0U7rLfJFlkeBRiHvldE25FH-SIVvI5Ag88KhNhl95s6F9e5YECd62_SGJ3hWQ9sZQjgSZ2wTesQhfezwlhOOJ0UVN8M8jd-tAcBE0hTccCiRVXjpm2JSKrsGAx-CF5GheMm7s3-W6r_I72S8WEZc",
+      "widthPx": 1900,
+      "heightPx": 1900,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAjKuoNTndT96nITGgxqlC7!2e10!4m2!3m1!1s0x889a0fcc04c33163:0x179e934302be1580",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAjKuoNTndT96nITGgxqlC7&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/112235139772991901312",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUeyU6tRL9zTXZ6xas64AzMPh_iqY91dojtMFJk6M48IlC8xhu5=s100-p-k-no-mo",
+          "displayName": "Enterprise Rent-A-Car"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3n_Q7JZAbCQBr0n-f-DLzUWhsOhVEVq7ORPmh9shRHorq2RDu3BlXLUn9wzCfOa2NViA6UfIkNG1PeUoNVEhc7skwfebD9kc7nHS82_gwdgsauQBfeQpqu2jp6IKrW819OMRJmzfl1Nmcug_10ZxMxvdZ4aSJ66D5n3MPNlT9me1bwwzEe_StE5KEe23hCmqEf6RMG6CJiCqop9xcDwwy9GkZFEmD9goXbiwGLenaOx5SuC07HEcomUL6RBk8GmBNrdAzR8mzHUCDOeuEDg-2OFILw-ilvneaYlH2NNd7Vp5thwEKY8c_Ff7jsPZT6ODigQgFIcAY2NKhYxZQ2Ux-axpnodOxtGxQKMQrh1ZhD5L5cskzFHwzfVVnOf-4_CtRZ0NDfpUP0kjcC6aVM6e1NbmQmPzjrV5NfL6qNBIrt5Hw",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICWu7KdJg!2e10!4m2!3m1!1s0x889a0fcc04c33163:0x179e934302be1580",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICWu7KdJg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/108830532145799008526",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUHRRSyiKaN4ejStPXwI3ylozB0aTXq4kUIWyWDqiDcg_ZbOUtq=s100-p-k-no-mo",
+          "displayName": "L. Robert Robinson"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3kwwgEGFsjjOiWddfDqyi7McNs0eLOA8LiRvp5asXHT4XdjGVdT0Zy5hwKtKCTDHZqjkbtyF0CMq0Y4U7MH8Mui71QZnsQvGTFhXJ9TjWBzCJjyDVD8Zx-ELYWPtbaZMx1z3V3lGpjK2_0-9a7-qHcJ-g9SRpHrOLeRS5xQhOqIp1FRTZSajkQvaW5s2TnsK6Qgjj5ULDrRw4_5ynal4GnUjfn_tiemtdENry33Vk0rjMjthl-eW7mrrO1OIRf9mJQC8E6YqBI5_YOV7m9reIw2Y56cC2_AxbqgYROB3MwnxXKD8pFMMPZCFH_H79HX-BEXT2M2l-OqkLfm4S44507o-LOosN9S2jhxJmPnI7MUKW3oUvUPrutl-Yq25tPSLH0-KDInX_Ek3BQw4wLz1JZiJMRRQJttJndCskz6LZtvJeou",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICWu_LO9QE!2e10!4m2!3m1!1s0x889a0fcc04c33163:0x179e934302be1580",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICWu_LO9QE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/108830532145799008526",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUHRRSyiKaN4ejStPXwI3ylozB0aTXq4kUIWyWDqiDcg_ZbOUtq=s100-p-k-no-mo",
+          "displayName": "L. Robert Robinson"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3nVDHxvun4EPqKbSrpYalfcHvscn_hLi4fa3RpwE7oeEqgtT9uTOrZELZ71ZvD3dtKiKPul4szqjKtljAdPZs65fpyk6iTrz5j8RHalrMsOmQPSBcITGi1ahtnlozgqirTBqibb0IQmZ1cglFtQbHyz3RXLnjVF-L7vPdfKyD8rOHZYUvqUW3SfHqs1ejdUSGnaegfHrfEnDvTxEUXzcQqRtyglv5lZ1M5H_KXTGzLwNuy31noEFruufM3OWwsnLxrN40Tm585TkutCDbem1KmE6e1U9tlJ1ffiwUSwb_BhZeVBSmlJ9nx_RAIT-_Ws14cxspq7p-7CwMmPAmlpu05u_hJT_RO2HjDHcoHDg25CyyiJ9MDZ75q1Na7drKE2BV4iBAoburFX6tTYMg4aoeU4f6riJwkfROSM29HNGh03NaI",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEJr5tODJ_tKs1wE!2e10!4m2!3m1!1s0x889a0fcc04c33163:0x179e934302be1580",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEJr5tODJ_tKs1wE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/114182021027157140557",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKx7c3umVsx_SJNPVIdFFzoJVOPEjxUAY2LO3c8kucyfa_xRQ=s100-p-k-no-mo",
+          "displayName": "RNS33 3333"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3lPAniIedATZze-v_b37QvLjVvVSeYEHbI4TccTo_15QNGdEj_KYHrrpuyfDExSeNGPN8OVyditPypGwkFyaSFDOdDt7pCNfFpkZLyImZoHGt724EAV-6kZ6Aa418s9MUihIpIjRrksWyJ8Qnd3JccJCOaDoaWYJA9OvyRujBWeqUHfbyALSZMqKR59nzXqYn9rKAWKS6qQeGyANlT9ltR3zNsWIIFOlvllVQ-BAssiZFV4cEvKLQ94oNC-Xk8Jqty7UYMHJIXaEGGDWYBc6XiOXkoibgTSF2rPIrkZ_O6aDWNxf8L8oO-9S4Jya0lxYoFW6D2phjDCP9SjUYbHkZb-WNkhQlDc4RZtAquqJHUWgzLGwq0XyaEnntY7eIO5RKiyhJYE1XCeDhkC9TOztu0ZeVWezsC299vPl4fXKVUOyg",
+      "widthPx": 3264,
+      "heightPx": 2448,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICK58T5Eg!2e10!4m2!3m1!1s0x889a0fcc04c33163:0x179e934302be1580",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICK58T5Eg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/102180941091266275125",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWI_fGPnQgzCEdWjXn0CknIDt8YQJ-zpZAPSe9bzag8c-QShwzj=s100-p-k-no-mo",
+          "displayName": "Tim Mason"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3m4a939kpduzVA1JrpaYCQPfgZxslu06v46d9khxixgcXpr8boPMikUImrFCsH5oeZ8Po_bw_3ceFPpXab_hfkqUUj6k32fZ0LXcD_Ht_p6i89I_6MnbUplo5f9-uspM6kGTy9ZPA_m5zu-l5lrc7rIJZpEezkSve9dTdhd2OSHfCCewiN536WdTsO1cCMBHEYOsuKZWTZywfIdJyZ-MVNqlTTX_mH9D69af7dmxxZyYecEvnGMxCIsoNskowGxa2Fpnhk9aYQr3O_Wgmau77vS-kbH0Kup90QLEbrvywpOPKghThRX4Gpr4yO1aDzTAlvJBLi1o4EOGVxuR7S7SMlbfZ_DfQoSNcVAXfs8cAqTqfHooevAiNGVj8UlU5HKhBkGH7iAxarW1twl1F5e28CwwIs5WvNId8MTpUVmTyw_ua_j",
+      "widthPx": 2268,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICDnoqUuwE!2e10!4m2!3m1!1s0x889a0fcc04c33163:0x179e934302be1580",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICDnoqUuwE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/110443587227159616301",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXfpce4MVk35SYuK8_gc891sy24GuCz4e_9qxnslvz5kX2JG8yUjw=s100-p-k-no-mo",
+          "displayName": "Tamara Farmer"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3krZqdJX0cDCuw6eJZD67FxwXOi4UZR85IKjI406ZW3-per1obL8rj5VStV0Da77XZo23954YkYE3L9JvCrdaiSUzd0mOd_AqFpgjzOtkqsAQqqxe8-oqUBG-ZtYtJ7qGbtFrGyjAGy2azzZYn6bQrBZzZlsIt6njS4Cp0goAi9Vpq1kH8jAhIwC_PCrUynXZKkuAD0UCeJMef1btDbrD8LO0ry6FqWrJa1ZlwlBMvUnPYxj2MxumK7Jj3cEv-FWcYI81ksA-RhMwzB4PXWI7JrVEURXoChpXvBl7783e0mowNyxu0Y4uANlTSEc37L2x1uObOZN5cqv2aoGNOI280Wym6wHPlhfTmwW1N8v8TyBZyLxB-0cFWhmVPYUijacDmVDUWlY4v53NfuT9s8m6vgfDa3fTIqC1TQKV12kQzLnFYD",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8-4XWlwE!2e10!4m2!3m1!1s0x889a0fcc04c33163:0x179e934302be1580",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID8-4XWlwE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/116602464645467590855",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocK6OgUjwcBikAcmTfPqVnAszYrc8NRhmxA4TO80ss9IL9_NWw=s100-p-k-no-mo",
+          "displayName": "Timothy McIntosh"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3mdKo86B2nUR3l6Q71SIdjyW-aU2UTVZT9gfk0EabIrwXVGXuf84GnvwYmzJn3peSTHpd9hCRYAfxKMuKOYpefynEYqmETNeRfX55zt2z5UWMpCZxhKlFvkB50d2RzBLvXmdsyUfsKlHNThOSfB-HeMVcFNSQv93y1EwRTrpRBa-PtGL5eEwRj4W_mowIEszIrn-jO0QaJHfXKbNAlAKiCrNhTW55FuM3zm5nHm_Rr5LKIYPBH0jPszpk36o_rfCTsXU3Aha1vyIcgybTAuRCp6sqxuUJ0n6ptiDl06wqaJbj3aIyk00vioehkDuC28x9j9xJVvGY7gNVsFjwLvey7dUw74yCKY56vWHpxQ4BgurjDz3myIvaezOcDzkdYBLWh9hzl9cFTHJfXOsDyIBFIGZaZ9SR_cYaBY_qpq7FHE8Q",
+      "widthPx": 3120,
+      "heightPx": 4160,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID026fHOg!2e10!4m2!3m1!1s0x889a0fcc04c33163:0x179e934302be1580",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID026fHOg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/103098824656736974203",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVYEn9grBH1Yj-xSQMDSnRz1hIZrDNvLNo-NQd5MhrGSqozsNBAnw=s100-p-k-no-mo",
+          "displayName": "Wendy Lynn Garland"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3nczxlsc1r2qcXEUVK1EkGbDnT1W0tJ_X3jVyKUvq1jtzg6kPNqa06S48rX9mWJRo_mdG1D11CijQymrZdp5j9sgdT-FfdHW_B8FXmsNUZ0FZII4FjXWAl_Ufvvzg0W7U0890YtdpMSd0b7dHXDgq5-7MIaEFRfs2z13MopNtVIqXVW2iXstCghkl-lXi1ao_KRDmMpCc4Y5kqRavy4ICdao8HWG0n2TPcNcjnNk5UUcEQqFm1Xlojr4_WfWH8-eNU6jnebRj0f2z768T_mg3aIWCYLYboUEURxwhCO9cQAEQlq5Q2irsE_ykpusN-u3Syb_JWl5Ipk7ofW80Qj0EW4wmfbccMkQMTsCbKSlclLokATISKufc6agmXY1p3yBFsn6UbPbl2Gx0lamrRA7Hz-0wa5emrnlDCOd9CHVjJUHlG0",
+      "widthPx": 720,
+      "heightPx": 405,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDE9tCngQE!2e10!4m2!3m1!1s0x889a0fcc04c33163:0x179e934302be1580",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDE9tCngQE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/113212928363807811091",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUp8lO_uOtjGS_HiJwbZ4ivg-7VOW-xEeqg5K12BnhGWsdY4h6M=s100-p-k-no-mo",
+          "displayName": "Parkers Travel Usa"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3l29TMNVx4YLK2g6vLSdL_UDpEpR9AbHQX5ADWTMGPR5G9pAYYrndsLrdXc23Kj7LPUwJJqQ5UWbn_BIWVrxXQEkS_-t1bI61dxqtouAZ9i0f3BzPTzkScX-cyol0g6UgBf9F7fa10Q3SY-HWAD-KFD4EMi90Ep5Nz6EpomsbJWqhOZkWg4tmBCOcDIV6bPYhKbrULoal6QYDWeb1AgkjcciD7pip-T8esd0ptE4IkeqtS_Mi8rhqHObuisOEkxgz7vr6E7L0j_kdwMb5tlGeuoyunaSjZGC89A5qNjeiLjyKt5uBoWqdonOea5VaN4T90xEqRKE0zZIU9Lr50hugPMS5JnBiR4epg-qqJDQGy4a1F-M-_qbb6e4RDP01bsohH8FRHV--1jy6e8q2zJUmosIimDA149OPpwqSrkGuX7I5ybOiGXKOYKtXHslsGy",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAtXzYxNJNcv_ImaTP9S29V!2e10!4m2!3m1!1s0x889a0fcc04c33163:0x179e934302be1580",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAtXzYxNJNcv_ImaTP9S29V&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/114850601271050087212",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjU_qCIqxyXsvgA72uw6hUNMYbBuJFmw_7W_WkbkeHVfB8bzKfOJ_Q=s100-p-k-no-mo",
+          "displayName": "Sheila Guarino"
+        }
+      ]
+    }
+  ],
+  "rating": 3.9,
+  "reviews": [
+    {
+      "name": "places/ChIJYzHDBMwPmogRgBW-AkOTnhc/reviews/Ci9DQUlRQUNvZENodHljRjlvT21aYWJ6bEdaa3haZVZwUWVESjVTWGM1YmkxR1kxRRAB",
+      "text": {
+        "text": "My experience started off very rocky. I called and spoke with Que, the area manager. He assured me that he would be at the location all day and he would have a car for me at the price point my warranty covered (my car was in the shop). When I finally called back, not only had he left, he hadn't given anyone in the office a heads up about my situation.\nWhen I called back, there were no vehicles with my price point, as promised and Que was nowhere to be found.\nThen an angel of a man, Desmond, the Asst Mgr, came on the line. He made sure to take great care of me. My anxiety was high because I had been given the runaround from my warranty company all day, my job was adamant that I had to drive in the next day, it was after 4 in the afternoon and the information I had been given earlier wasn't correct. This professional young man jumped into action. He found a car for me (at this point, I didn't care what type). He explained exactly what I needed to pick up the car and he promised to get me in and out in less than 30 minutes because I was in my lunch break at work (I didn't get off until after they closed). He single handedly saved my relationship with Enterprise. I was willing to walk away and go to another rental car service.\nWhen I returned the car, he inquired about my car and voiced how happy he was that my car got fixed quickly. He thanked me for trusting him to make my experience a good one (which he did) and reminded me that he and his staff are always there to help. I had some other questions about future one way rentals and he helped me understand the process and what needed to be done.\nThe level of communication and teamwork in that office is top notch the entire team, minus the 1st person I spoke to, was working together to help other guests check in and check out and their demeanor with one another was smooth and respectful. The office was clean and bright and everyone had a smile or an upbeat manner about themselves. No one seemed grumpy.\nI will be back. I have Desmond's card. I have faith in this location.\nThank you Desmond! Keep being amazing.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-03-02T15:59:05.083709396Z",
+      "originalText": {
+        "text": "My experience started off very rocky. I called and spoke with Que, the area manager. He assured me that he would be at the location all day and he would have a car for me at the price point my warranty covered (my car was in the shop). When I finally called back, not only had he left, he hadn't given anyone in the office a heads up about my situation.\nWhen I called back, there were no vehicles with my price point, as promised and Que was nowhere to be found.\nThen an angel of a man, Desmond, the Asst Mgr, came on the line. He made sure to take great care of me. My anxiety was high because I had been given the runaround from my warranty company all day, my job was adamant that I had to drive in the next day, it was after 4 in the afternoon and the information I had been given earlier wasn't correct. This professional young man jumped into action. He found a car for me (at this point, I didn't care what type). He explained exactly what I needed to pick up the car and he promised to get me in and out in less than 30 minutes because I was in my lunch break at work (I didn't get off until after they closed). He single handedly saved my relationship with Enterprise. I was willing to walk away and go to another rental car service.\nWhen I returned the car, he inquired about my car and voiced how happy he was that my car got fixed quickly. He thanked me for trusting him to make my experience a good one (which he did) and reminded me that he and his staff are always there to help. I had some other questions about future one way rentals and he helped me understand the process and what needed to be done.\nThe level of communication and teamwork in that office is top notch the entire team, minus the 1st person I spoke to, was working together to help other guests check in and check out and their demeanor with one another was smooth and respectful. The office was clean and bright and everyone had a smile or an upbeat manner about themselves. No one seemed grumpy.\nI will be back. I have Desmond's card. I have faith in this location.\nThank you Desmond! Keep being amazing.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21aYWJ6bEdaa3haZVZwUWVESjVTWGM1YmkxR1kxRRAB!2m1!1s0x889a0fcc04c33163:0x179e934302be1580",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT21aYWJ6bEdaa3haZVZwUWVESjVTWGM1YmkxR1kxRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/106792837263389588458/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVZSknKWOsWaEqTrC-NP67r-BgT0KMKdEJnyorWmhEv5gOV1CbV3A=s128-c0x00000000-cc-rp-mo-ba4",
+        "displayName": "Shauna Young"
+      },
+      "relativePublishTimeDescription": "3 months ago"
+    },
+    {
+      "name": "places/ChIJYzHDBMwPmogRgBW-AkOTnhc/reviews/Ci9DQUlRQUNvZENodHljRjlvT201eE9FUktlWE5hZEhGNFJqUlJiWEUzUm01clJIYxAB",
+      "text": {
+        "text": "Stinky little compact car. Smelled like a sweaty dirty old man. No hubcaps. Only needed car for 2 days but no after hours drop off. Had to keep car three additional days due to this. Call their number directly and was routed to a call center where I was quoted price that was $13 a day different than the price that I was charged at their location . And then had to keep it For an additional three days so because of this, I spent $181 dollars more than I expected to!",
+        "languageCode": "en"
+      },
+      "rating": 1,
+      "publishTime": "2025-09-04T00:00:24.528253730Z",
+      "originalText": {
+        "text": "Stinky little compact car. Smelled like a sweaty dirty old man. No hubcaps. Only needed car for 2 days but no after hours drop off. Had to keep car three additional days due to this. Call their number directly and was routed to a call center where I was quoted price that was $13 a day different than the price that I was charged at their location . And then had to keep it For an additional three days so because of this, I spent $181 dollars more than I expected to!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT201eE9FUktlWE5hZEhGNFJqUlJiWEUzUm01clJIYxAB!2m1!1s0x889a0fcc04c33163:0x179e934302be1580",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT201eE9FUktlWE5hZEhGNFJqUlJiWEUzUm01clJIYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/114850601271050087212/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjU_qCIqxyXsvgA72uw6hUNMYbBuJFmw_7W_WkbkeHVfB8bzKfOJ_Q=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Sheila Guarino"
+      },
+      "relativePublishTimeDescription": "9 months ago"
+    },
+    {
+      "name": "places/ChIJYzHDBMwPmogRgBW-AkOTnhc/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOWVQwVjBUMlIzVlVOTFdtVjBiekpwVVd0UllsRRAB",
+      "text": {
+        "text": "Excellent experience.  I went at the last minute for a rental that day and I showed up 30 minutes before they closed and they assisted me immediately.  Very kind, professional and customer oriented.  A+++",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-03-03T17:46:37.388193195Z",
+      "originalText": {
+        "text": "Excellent experience.  I went at the last minute for a rental that day and I showed up 30 minutes before they closed and they assisted me immediately.  Very kind, professional and customer oriented.  A+++",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xOWVQwVjBUMlIzVlVOTFdtVjBiekpwVVd0UllsRRAB!2m1!1s0x889a0fcc04c33163:0x179e934302be1580",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2xOWVQwVjBUMlIzVlVOTFdtVjBiekpwVVd0UllsRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/101582618981071458448/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocL7Hp537SvNl1LotN8xxdecu-W48SEe7MBfu29yvAWl1UR-3w=s128-c0x00000000-cc-rp-mo-ba3",
+        "displayName": "Edward Alonso"
+      },
+      "relativePublishTimeDescription": "3 months ago"
+    },
+    {
+      "name": "places/ChIJYzHDBMwPmogRgBW-AkOTnhc/reviews/Ci9DQUlRQUNvZENodHljRjlvT25WVFQyOXVNR1JvU2tkVFFsWXRPRVZ0TWtaU1VtYxAB",
+      "text": {
+        "text": "The service once we arrived to the service center was prompt and the car rental was lovely. However, we do feel that a pickup should have been an option given it was 8 miles away- the location said it was outside their limits. Unfortunately, it did cost us a $15 UBER each way. This was my only suggestion for rental options and why I choose Enterprise to rent from. This location should consider this extra service to keep future business. Please let me know if this changes in the future as I have reviewed and stated the lack of this service on my associations website.",
+        "languageCode": "en"
+      },
+      "rating": 4,
+      "publishTime": "2025-12-13T01:51:31.855615456Z",
+      "originalText": {
+        "text": "The service once we arrived to the service center was prompt and the car rental was lovely. However, we do feel that a pickup should have been an option given it was 8 miles away- the location said it was outside their limits. Unfortunately, it did cost us a $15 UBER each way. This was my only suggestion for rental options and why I choose Enterprise to rent from. This location should consider this extra service to keep future business. Please let me know if this changes in the future as I have reviewed and stated the lack of this service on my associations website.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25WVFQyOXVNR1JvU2tkVFFsWXRPRVZ0TWtaU1VtYxAB!2m1!1s0x889a0fcc04c33163:0x179e934302be1580",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT25WVFQyOXVNR1JvU2tkVFFsWXRPRVZ0TWtaU1VtYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/108225126282377351741/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXkiIMBmmONA0--_ISL1Uvyl3kn4woIyULT7iH3XdQZnvk488xf=s128-c0x00000000-cc-rp-mo",
+        "displayName": "petenmskel"
+      },
+      "relativePublishTimeDescription": "6 months ago"
+    },
+    {
+      "name": "places/ChIJYzHDBMwPmogRgBW-AkOTnhc/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KRVpXcHVhRmRUVmtOMGFGODNhSGhsUm5ORGJuYxAB",
+      "text": {
+        "text": "Not sure where everyone is giving credit for good service. It could have been a bad day. But it happened twice.\n\nInsurance secured a rental car it was close to end of day on Saturday so I can understand frustration of staff that close to closing. No one was helpful had to get an Uber there couldn't get a single person on the phone before arrived and I was given straight attitude from the moment I walked in.\n\nThere was a confusion in reservation which is partially at fault of enterprise partially on my insurance. Long story short had to wait till 8 am on Monday.\n\nMy wife to go get the car and again straight attitude from the same clerk. She said she was in lobby rushing her out of chair while she was waiting because the reservation was taking longer. Mind you she is holding a small child. My wife already stressed from accident and time having to wait is on phone with insurance and was constantly rushed we gladly went down the road at hertz and within minutes had a rental car ready and they picked us up and answered on the second ring.\n\nWe couldn't effectively back plan a wreck on a Saturday morning. It was terrible; I will never and I mean never go to enterprise I would leave zero stars if I could",
+        "languageCode": "en"
+      },
+      "rating": 1,
+      "publishTime": "2025-10-02T12:35:35.311334077Z",
+      "originalText": {
+        "text": "Not sure where everyone is giving credit for good service. It could have been a bad day. But it happened twice.\n\nInsurance secured a rental car it was close to end of day on Saturday so I can understand frustration of staff that close to closing. No one was helpful had to get an Uber there couldn't get a single person on the phone before arrived and I was given straight attitude from the moment I walked in.\n\nThere was a confusion in reservation which is partially at fault of enterprise partially on my insurance. Long story short had to wait till 8 am on Monday.\n\nMy wife to go get the car and again straight attitude from the same clerk. She said she was in lobby rushing her out of chair while she was waiting because the reservation was taking longer. Mind you she is holding a small child. My wife already stressed from accident and time having to wait is on phone with insurance and was constantly rushed we gladly went down the road at hertz and within minutes had a rental car ready and they picked us up and answered on the second ring.\n\nWe couldn't effectively back plan a wreck on a Saturday morning. It was terrible; I will never and I mean never go to enterprise I would leave zero stars if I could",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21KRVpXcHVhRmRUVmtOMGFGODNhSGhsUm5ORGJuYxAB!2m1!1s0x889a0fcc04c33163:0x179e934302be1580",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT21KRVpXcHVhRmRUVmtOMGFGODNhSGhsUm5ORGJuYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/113731022296416291072/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLFsPjyc3abXFarc1m3sEg9o8Wvuz2FFBiUpi6aePCgFChP_g=s128-c0x00000000-cc-rp-mo-ba2",
+        "displayName": "Jacob Thompson"
+      },
+      "relativePublishTimeDescription": "8 months ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.363730999999994,
+    "longitude": -87.6837682
+  },
+  "plusCode": {
+    "globalCode": "862J9878+FF",
+    "compoundCode": "9878+FF Foley, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.362384969708504,
+      "longitude": -87.6850245302915
+    },
+    "high": {
+      "latitude": 30.3650829302915,
+      "longitude": -87.6823265697085
+    }
+  },
+  "websiteUri": "https://www.enterprise.com/en/car-rental-locations/us/al/foley-5526.html?mcid=yext:245709",
+  "displayName": {
+    "text": "Enterprise Rent-A-Car",
+    "languageCode": "en"
+  },
+  "primaryType": "car_rental",
+  "googleMapsUri": "https://maps.google.com/?cid=1701959625210729856&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewSummary": {
+    "text": {
+      "text": "Customers consistently praise this car rental establishment for its professional, friendly, and helpful staff, reliable vehicles, and quick and easy service.\n\nOther reviews mention reservations can be unfulfilled and vehicles can be poorly maintained.",
+      "languageCode": "en-US"
+    },
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0fcc04c33163:0x179e934302be1580!9m1!1b1",
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "flagContentUri": "https://www.google.com/local/content/rap/report?postId=5%401:CAIQACodChtyc19oOkdEenM0b19DRjBmcDN1ZzhPaXBDRGc%7CCAIQACoqChtyc19oOkdEenM0b19DRjBmcDN1ZzhPaXBDRGcSCwiW9LnQBhD42oM2&d=17924085&t=8"
+  },
+  "businessStatus": "OPERATIONAL",
+  "paymentOptions": {
+    "acceptsNfc": true,
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=1701959625210729856&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fcc04c33163:0x179e934302be1580!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0fcc04c33163:0x179e934302be1580!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0fcc04c33163:0x179e934302be1580!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fcc04c33163:0x179e934302be1580!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "userRatingCount": 628,
+  "adrFormatAddress": "<span class=\"street-address\">3410 S McKenzie St</span>, <span class=\"locality\">Foley</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36535</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "3410 S McKenzie St, Foley, AL 36535, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "3410",
+      "shortText": "3410",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "South McKenzie Street",
+      "shortText": "S McKenzie St",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Foley",
+      "shortText": "Foley",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36535",
+      "shortText": "36535",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "landmarks": [
+      {
+        "name": "places/ChIJ-51mv4UPmogRjfqS4N-ITSg",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "real_estate_agency"
+        ],
+        "placeId": "ChIJ-51mv4UPmogRjfqS4N-ITSg",
+        "displayName": {
+          "text": "The Cottages at Foley Farms",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 100.69339,
+        "straightLineDistanceMeters": 172.12321
+      },
+      {
+        "name": "places/ChIJOeDom5MNmogRW_RXN0GV1zc",
+        "types": [
+          "car_repair",
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJOeDom5MNmogRW_RXN0GV1zc",
+        "displayName": {
+          "text": "Caliber Collision",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 295.26868,
+        "straightLineDistanceMeters": 260.1353
+      },
+      {
+        "name": "places/ChIJ6w_eO28PmogRAVdXh1JuxHQ",
+        "types": [
+          "establishment",
+          "food",
+          "point_of_interest",
+          "restaurant",
+          "store"
+        ],
+        "placeId": "ChIJ6w_eO28PmogRAVdXh1JuxHQ",
+        "displayName": {
+          "text": "Culver’s",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 435.73834,
+        "straightLineDistanceMeters": 221.68329
+      },
+      {
+        "name": "places/ChIJdbK4PcAPmogR-MprJT2LESs",
+        "types": [
+          "cafe",
+          "establishment",
+          "food",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJdbK4PcAPmogR-MprJT2LESs",
+        "displayName": {
+          "text": "7 Brew Coffee",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 473.73962,
+        "straightLineDistanceMeters": 329.0147
+      },
+      {
+        "name": "places/ChIJY30LRR8PmogRH0UALhDC7-k",
+        "types": [
+          "establishment",
+          "food",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJY30LRR8PmogRH0UALhDC7-k",
+        "displayName": {
+          "text": "Texas Roadhouse",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 473.38248,
+        "straightLineDistanceMeters": 156.29196
+      }
+    ]
+  },
+  "generativeSummary": {
+    "overview": {
+      "text": "Chain providing cars and vans for rent at a location with an efficient staff and active military discounts.",
+      "languageCode": "en-US"
+    },
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "overviewFlagContentUri": "https://www.google.com/local/content/rap/report?postId=CiUweDg4OWEwZmNjMDRjMzMxNjM6MHgxNzllOTM0MzAyYmUxNTgwMAI&d=17924085&t=12"
+  },
+  "currentOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 12,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T13:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 8:00 AM – 6:00 PM",
+      "Tuesday: 8:00 AM – 6:00 PM",
+      "Wednesday: 8:00 AM – 6:00 PM",
+      "Thursday: 8:00 AM – 6:00 PM",
+      "Friday: 8:00 AM – 6:00 PM",
+      "Saturday: 9:00 AM – 12:00 PM",
+      "Sunday: Closed"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Car Rental Agency",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "nationalPhoneNumber": "(251) 943-3888",
+  "regularOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 1,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 12,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T13:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 8:00 AM – 6:00 PM",
+      "Tuesday: 8:00 AM – 6:00 PM",
+      "Wednesday: 8:00 AM – 6:00 PM",
+      "Thursday: 8:00 AM – 6:00 PM",
+      "Friday: 8:00 AM – 6:00 PM",
+      "Saturday: 9:00 AM – 12:00 PM",
+      "Sunday: Closed"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true
+  },
+  "shortFormattedAddress": "3410 S McKenzie St, Foley",
+  "primaryTypeDisplayName": {
+    "text": "Car Rental Agency",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-943-3888"
+}
+ai_overview: Chain providing cars and vans for rent at a location with an efficient staff and active military discounts.
+ai_review_summary: Customers consistently praise this car rental establishment for its professional, friendly, and helpful staff, reliable vehicles, and quick and easy service.
+
+Other reviews mention reservations can be unfulfilled and vehicles can be poorly maintained.
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 3410 S McKenzie St, Foley
+national_phone: (251) 943-3888
+search_vector: 'activ':21B 'car':5A,8B,28C,58 'chain':6B 'consist':25C 'custom':24C 'discount':23B 'easi':43C 'effici':18B 'enterpris':1A 'establish':30C 'foley':60 'friend':34C 'help':36C 'locat':15B 'maintain':57C 'mention':47C 'militari':22B 'poor':56C 'prais':26C 'profession':33C 'provid':7B 'quick':41C 'reliabl':38C 'rent':3A,12B 'rent-a-car':2A 'rental':29C,59 'reserv':48C 'review':46C 'servic':44C 'staff':19B,37C 'unfulfil':51C 'van':10B 'vehicl':39C,53C
+primary_type_display: Car Rental Agency
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=1701959625210729856&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fcc04c33163:0x179e934302be1580!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0fcc04c33163:0x179e934302be1580!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0fcc04c33163:0x179e934302be1580!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fcc04c33163:0x179e934302be1580!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "landmarks": [
+    {
+      "name": "places/ChIJ-51mv4UPmogRjfqS4N-ITSg",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "real_estate_agency"
+      ],
+      "placeId": "ChIJ-51mv4UPmogRjfqS4N-ITSg",
+      "displayName": {
+        "text": "The Cottages at Foley Farms",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 100.69339,
+      "straightLineDistanceMeters": 172.12321
+    },
+    {
+      "name": "places/ChIJOeDom5MNmogRW_RXN0GV1zc",
+      "types": [
+        "car_repair",
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJOeDom5MNmogRW_RXN0GV1zc",
+      "displayName": {
+        "text": "Caliber Collision",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 295.26868,
+      "straightLineDistanceMeters": 260.1353
+    },
+    {
+      "name": "places/ChIJ6w_eO28PmogRAVdXh1JuxHQ",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant",
+        "store"
+      ],
+      "placeId": "ChIJ6w_eO28PmogRAVdXh1JuxHQ",
+      "displayName": {
+        "text": "Culver’s",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 435.73834,
+      "straightLineDistanceMeters": 221.68329
+    },
+    {
+      "name": "places/ChIJdbK4PcAPmogR-MprJT2LESs",
+      "types": [
+        "cafe",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJdbK4PcAPmogR-MprJT2LESs",
+      "displayName": {
+        "text": "7 Brew Coffee",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 473.73962,
+      "straightLineDistanceMeters": 329.0147
+    },
+    {
+      "name": "places/ChIJY30LRR8PmogRH0UALhDC7-k",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJY30LRR8PmogRH0UALhDC7-k",
+      "displayName": {
+        "text": "Texas Roadhouse",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 473.38248,
+      "straightLineDistanceMeters": 156.29196
+    }
+  ]
+}
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+generative_summary: Chain providing cars and vans for rent at a location with an efficient staff and active military discounts.
+industry_code: rental
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_attributes   -   6 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 6] ---
+id: 5ea6e43c-155d-4ec8-81e5-4864d768ea7e
+entity_slug: enterprise-foley-al
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 2 of 6] ---
+id: 08eb72e6-5987-4ed3-b67f-0ca8acee2228
+entity_slug: enterprise-foley-al
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 3 of 6] ---
+id: 13e3a7b4-f437-466a-b67c-1d3950b7c5ce
+entity_slug: enterprise-foley-al
+category: payment
+key: pay_acceptsNfc
+label: Accepts Nfc
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 4 of 6] ---
+id: 3ecf06cb-9cea-46b6-89ba-c301d4cfddc5
+entity_slug: enterprise-foley-al
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 5 of 6] ---
+id: f12a642c-6630-423e-b3bc-d6b73869dc21
+entity_slug: enterprise-foley-al
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 6 of 6] ---
+id: e91ba9e6-5f29-4405-aedf-00f343a22d06
+entity_slug: enterprise-foley-al
+category: payment
+key: pay_acceptsCreditCards
+label: Accepts Credit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: enterprise-foley-al
+name: Enterprise Rent-A-Car
+industry_code: rental
+is_parent: false
+score_of_7: 6
+
+####################################################################################################
+# TABLE: entity_good_for   -   10 row(s)
+####################################################################################################
+
+--- entity_good_for [row 1 of 10] ---
+id: 81060741-da61-411a-9e87-7fccbfaea5fb
+entity_slug: enterprise-foley-al
+audience: Business travelers
+sort_order: 1
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 2 of 10] ---
+id: 02c58c36-406f-49ed-b158-8bb3c12b7aed
+entity_slug: enterprise-foley-al
+audience: Vacation rentals
+sort_order: 2
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 3 of 10] ---
+id: cfa9f937-e684-4735-99a5-0029e5b5c88a
+entity_slug: enterprise-foley-al
+audience: One-way trips
+sort_order: 3
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 4 of 10] ---
+id: 25b2c9bc-eff9-4aec-81b0-c552dfe4cf8c
+entity_slug: enterprise-foley-al
+audience: Long-term rentals
+sort_order: 4
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 5 of 10] ---
+id: 8c4ad8ce-8dfd-4c90-a5d5-53a45132d104
+entity_slug: enterprise-foley-al
+audience: Moving and relocations
+sort_order: 5
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 6 of 10] ---
+id: 449bc7d6-e924-445b-a9e5-7403d346aae5
+entity_slug: enterprise-foley-al
+audience: Replacement rentals after accidents
+sort_order: 6
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 7 of 10] ---
+id: 45fc0977-a187-4cb7-9520-d2c9f7095a3b
+entity_slug: enterprise-foley-al
+audience: Corporate accounts
+sort_order: 7
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 8 of 10] ---
+id: 4d8e0bf6-deac-4d1c-844b-1f711cbb5740
+entity_slug: enterprise-foley-al
+audience: Weekend getaways
+sort_order: 8
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 9 of 10] ---
+id: cb50decd-2e84-454e-b1d3-7c37a40222a8
+entity_slug: enterprise-foley-al
+audience: Road trips
+sort_order: 9
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 10 of 10] ---
+id: d4ed521d-748f-4397-be66-b1f1fe6f7a1e
+entity_slug: enterprise-foley-al
+audience: Families
+sort_order: 10
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: cf28cf3d-5ca1-4c91-acf0-bc611cba8210
+entity_slug: enterprise-foley-al
+place_uri: https://maps.google.com/?cid=1701959625210729856&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fcc04c33163:0x179e934302be1580!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0fcc04c33163:0x179e934302be1580!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0fcc04c33163:0x179e934302be1580!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fcc04c33163:0x179e934302be1580!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 5059
+entity_slug: enterprise-foley-al
+google_review_name: places/ChIJYzHDBMwPmogRgBW-AkOTnhc/reviews/Ci9DQUlRQUNvZENodHljRjlvT21aYWJ6bEdaa3haZVZwUWVESjVTWGM1YmkxR1kxRRAB
+rating: 5
+review_text: My experience started off very rocky. I called and spoke with Que, the area manager. He assured me that he would be at the location all day and he would have a car for me at the price point my warranty covered (my car was in the shop). When I finally called back, not only had he left, he hadn't given anyone in the office a heads up about my situation.
+When I called back, there were no vehicles with my price point, as promised and Que was nowhere to be found.
+Then an angel of a man, Desmond, the Asst Mgr, came on the line. He made sure to take great care of me. My anxiety was high because I had been given the runaround from my warranty company all day, my job was adamant that I had to drive in the next day, it was after 4 in the afternoon and the information I had been given earlier wasn't correct. This professional young man jumped into action. He found a car for me (at this point, I didn't care what type). He explained exactly what I needed to pick up the car and he promised to get me in and out in less than 30 minutes because I was in my lunch break at work (I didn't get off until after they closed). He single handedly saved my relationship with Enterprise. I was willing to walk away and go to another rental car service.
+When I returned the car, he inquired about my car and voiced how happy he was that my car got fixed quickly. He thanked me for trusting him to make my experience a good one (which he did) and reminded me that he and his staff are always there to help. I had some other questions about future one way rentals and he helped me understand the process and what needed to be done.
+The level of communication and teamwork in that office is top notch the entire team, minus the 1st person I spoke to, was working together to help other guests check in and check out and their demeanor with one another was smooth and respectful. The office was clean and bright and everyone had a smile or an upbeat manner about themselves. No one seemed grumpy.
+I will be back. I have Desmond's card. I have faith in this location.
+Thank you Desmond! Keep being amazing.
+language_code: en
+author_name: Shauna Young
+author_profile_url: https://www.google.com/maps/contrib/106792837263389588458/reviews
+publish_time: 2026-03-02T15:59:05.083709+00:00
+relative_time: 3 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21aYWJ6bEdaa3haZVZwUWVESjVTWGM1YmkxR1kxRRAB!2m1!1s0x889a0fcc04c33163:0x179e934302be1580
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 5060
+entity_slug: enterprise-foley-al
+google_review_name: places/ChIJYzHDBMwPmogRgBW-AkOTnhc/reviews/Ci9DQUlRQUNvZENodHljRjlvT201eE9FUktlWE5hZEhGNFJqUlJiWEUzUm01clJIYxAB
+rating: 1
+review_text: Stinky little compact car. Smelled like a sweaty dirty old man. No hubcaps. Only needed car for 2 days but no after hours drop off. Had to keep car three additional days due to this. Call their number directly and was routed to a call center where I was quoted price that was $13 a day different than the price that I was charged at their location . And then had to keep it For an additional three days so because of this, I spent $181 dollars more than I expected to!
+language_code: en
+author_name: Sheila Guarino
+author_profile_url: https://www.google.com/maps/contrib/114850601271050087212/reviews
+publish_time: 2025-09-04T00:00:24.528254+00:00
+relative_time: 9 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT201eE9FUktlWE5hZEhGNFJqUlJiWEUzUm01clJIYxAB!2m1!1s0x889a0fcc04c33163:0x179e934302be1580
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 5061
+entity_slug: enterprise-foley-al
+google_review_name: places/ChIJYzHDBMwPmogRgBW-AkOTnhc/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOWVQwVjBUMlIzVlVOTFdtVjBiekpwVVd0UllsRRAB
+rating: 5
+review_text: Excellent experience.  I went at the last minute for a rental that day and I showed up 30 minutes before they closed and they assisted me immediately.  Very kind, professional and customer oriented.  A+++
+language_code: en
+author_name: Edward Alonso
+author_profile_url: https://www.google.com/maps/contrib/101582618981071458448/reviews
+publish_time: 2026-03-03T17:46:37.388193+00:00
+relative_time: 3 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xOWVQwVjBUMlIzVlVOTFdtVjBiekpwVVd0UllsRRAB!2m1!1s0x889a0fcc04c33163:0x179e934302be1580
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 5062
+entity_slug: enterprise-foley-al
+google_review_name: places/ChIJYzHDBMwPmogRgBW-AkOTnhc/reviews/Ci9DQUlRQUNvZENodHljRjlvT25WVFQyOXVNR1JvU2tkVFFsWXRPRVZ0TWtaU1VtYxAB
+rating: 4
+review_text: The service once we arrived to the service center was prompt and the car rental was lovely. However, we do feel that a pickup should have been an option given it was 8 miles away- the location said it was outside their limits. Unfortunately, it did cost us a $15 UBER each way. This was my only suggestion for rental options and why I choose Enterprise to rent from. This location should consider this extra service to keep future business. Please let me know if this changes in the future as I have reviewed and stated the lack of this service on my associations website.
+language_code: en
+author_name: petenmskel
+author_profile_url: https://www.google.com/maps/contrib/108225126282377351741/reviews
+publish_time: 2025-12-13T01:51:31.855615+00:00
+relative_time: 6 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25WVFQyOXVNR1JvU2tkVFFsWXRPRVZ0TWtaU1VtYxAB!2m1!1s0x889a0fcc04c33163:0x179e934302be1580
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 5063
+entity_slug: enterprise-foley-al
+google_review_name: places/ChIJYzHDBMwPmogRgBW-AkOTnhc/reviews/Ci9DQUlRQUNvZENodHljRjlvT21KRVpXcHVhRmRUVmtOMGFGODNhSGhsUm5ORGJuYxAB
+rating: 1
+review_text: Not sure where everyone is giving credit for good service. It could have been a bad day. But it happened twice.
+
+Insurance secured a rental car it was close to end of day on Saturday so I can understand frustration of staff that close to closing. No one was helpful had to get an Uber there couldn't get a single person on the phone before arrived and I was given straight attitude from the moment I walked in.
+
+There was a confusion in reservation which is partially at fault of enterprise partially on my insurance. Long story short had to wait till 8 am on Monday.
+
+My wife to go get the car and again straight attitude from the same clerk. She said she was in lobby rushing her out of chair while she was waiting because the reservation was taking longer. Mind you she is holding a small child. My wife already stressed from accident and time having to wait is on phone with insurance and was constantly rushed we gladly went down the road at hertz and within minutes had a rental car ready and they picked us up and answered on the second ring.
+
+We couldn't effectively back plan a wreck on a Saturday morning. It was terrible; I will never and I mean never go to enterprise I would leave zero stars if I could
+language_code: en
+author_name: Jacob Thompson
+author_profile_url: https://www.google.com/maps/contrib/113731022296416291072/reviews
+publish_time: 2025-10-02T12:35:35.311334+00:00
+relative_time: 8 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21KRVpXcHVhRmRUVmtOMGFGODNhSGhsUm5ORGJuYxAB!2m1!1s0x889a0fcc04c33163:0x179e934302be1580
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_highlights   -   15 row(s)
+####################################################################################################
+
+--- entity_highlights [row 1 of 15] ---
+id: 41ad9aba-c67e-4ef6-9de7-588885320c18
+entity_slug: enterprise-foley-al
+highlight: Pick-up service available
+sort_order: 1
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 2 of 15] ---
+id: a9fd65a2-9298-4933-84b6-8fdb0e5bfb8a
+entity_slug: enterprise-foley-al
+highlight: Online reservation system
+sort_order: 2
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 3 of 15] ---
+id: 80bdc807-1f9f-4f26-96be-d244e6f8c35c
+entity_slug: enterprise-foley-al
+highlight: Wide vehicle selection
+sort_order: 3
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 4 of 15] ---
+id: 96dcb1b4-848e-42a7-9c21-eaed15092396
+entity_slug: enterprise-foley-al
+highlight: Competitive rates
+sort_order: 4
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 5 of 15] ---
+id: 3cdfc907-c093-48e6-8097-dd90196fc495
+entity_slug: enterprise-foley-al
+highlight: One-way rentals
+sort_order: 5
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 6 of 15] ---
+id: 920a367d-f6e8-4b40-afbc-75b24655aa47
+entity_slug: enterprise-foley-al
+highlight: Long-term rentals
+sort_order: 6
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 7 of 15] ---
+id: 5a417a39-6fd2-4bf1-9189-c66cf6717ff8
+entity_slug: enterprise-foley-al
+highlight: Business rental programs
+sort_order: 7
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 8 of 15] ---
+id: 6e6a1be7-0640-4da3-a774-4fe7cd358016
+entity_slug: enterprise-foley-al
+highlight: Exotic car rentals
+sort_order: 8
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 9 of 15] ---
+id: 0d7874cd-f247-4b58-a73f-358048e864cd
+entity_slug: enterprise-foley-al
+highlight: Fleet management services
+sort_order: 9
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 10 of 15] ---
+id: 24b38536-a305-45d2-8d3e-b3bdebc4925f
+entity_slug: enterprise-foley-al
+highlight: Roadside assistance
+sort_order: 10
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 11 of 15] ---
+id: fa2ee508-8466-4110-b9ac-bce44366eb32
+entity_slug: enterprise-foley-al
+highlight: Damage waiver options
+sort_order: 11
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 12 of 15] ---
+id: f63b9600-8d7d-4e25-95ba-008065721eb6
+entity_slug: enterprise-foley-al
+highlight: Supplemental liability protection
+sort_order: 12
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 13 of 15] ---
+id: 7e998cd8-b845-41e6-8c56-8969ef093a56
+entity_slug: enterprise-foley-al
+highlight: Personal effects coverage
+sort_order: 13
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 14 of 15] ---
+id: 5385cc30-bd5c-40e4-a4f0-310e26d37b23
+entity_slug: enterprise-foley-al
+highlight: TollPass program
+sort_order: 14
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 15 of 15] ---
+id: ddba7cec-b0ab-498d-81d0-742bb17605d9
+entity_slug: enterprise-foley-al
+highlight: Enterprise Plus rewards program
+sort_order: 15
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   6 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 6] ---
+id: 6af4f3e0-430c-405d-8e23-37b2acdadd89
+entity_slug: enterprise-foley-al
+day_of_week: 1
+opens_at: 08:00:00
+closes_at: 18:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 6] ---
+id: fac380c5-b87d-4a2b-9562-ea1029bcdf8e
+entity_slug: enterprise-foley-al
+day_of_week: 2
+opens_at: 08:00:00
+closes_at: 18:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 6] ---
+id: dbddc4ec-b629-4144-a64b-cfc736cddcb9
+entity_slug: enterprise-foley-al
+day_of_week: 3
+opens_at: 08:00:00
+closes_at: 18:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 6] ---
+id: e2c67729-3bdb-4114-aed1-269223a43b0f
+entity_slug: enterprise-foley-al
+day_of_week: 4
+opens_at: 08:00:00
+closes_at: 18:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 6] ---
+id: c25b8292-b754-4dbf-8197-52753edf9159
+entity_slug: enterprise-foley-al
+day_of_week: 5
+opens_at: 08:00:00
+closes_at: 18:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 6] ---
+id: 7bcdb0ab-ed5c-4abc-b124-1aee1b566c56
+entity_slug: enterprise-foley-al
+day_of_week: 6
+opens_at: 09:00:00
+closes_at: 12:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: enterprise-foley-al
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: b474c528-60de-446b-bbfd-314c33305442
+name: Enterprise Rent-A-Car
+description: Enterprise Rent-A-Car is part of the world's largest car rental provider, as measured by revenue, fleet, and employees. The Foley location at 3410 S McKenzie St offers convenient car rental services with a wide selection of vehicles including economy cars, full-size sedans, SUVs, minivans, and pickup trucks. Enterprise provides excellent customer service, competitive rates, and flexibility for all your transportation needs - whether you need a short-term rental, one-way rental, long-term rental, or specialty vehicle.
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://www.enterprise.com/content/dam/ecom/logo-enterprise.png",
+    "https://media-cdn-delta.jazelc.com/media/?src=https%3A%2F%2Fcontent.homenetiol.com%2F2001358%2F2102149%2F0x0%2Fb0320ed38778426294aab61e3b415279.jpg&scale=-400&ext=jpeg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: enterprise-foley-al
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: b474c528-60de-446b-bbfd-314c33305442
+name: Enterprise Rent-A-Car
+description: Enterprise Rent-A-Car is part of the world's largest car rental provider, as measured by revenue, fleet, and employees. The Foley location at 3410 S McKenzie St offers convenient car rental services with a wide selection of vehicles including economy cars, full-size sedans, SUVs, minivans, and pickup trucks. Enterprise provides excellent customer service, competitive rates, and flexibility for all your transportation needs - whether you need a short-term rental, one-way rental, long-term rental, or specialty vehicle.
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://www.enterprise.com/content/dam/ecom/logo-enterprise.png",
+    "https://media-cdn-delta.jazelc.com/media/?src=https%3A%2F%2Fcontent.homenetiol.com%2F2001358%2F2102149%2F0x0%2Fb0320ed38778426294aab61e3b415279.jpg&scale=-400&ext=jpeg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: 4bd7962a-0f8c-4797-881b-c765ee51d512
+entity_slug: enterprise-foley-al
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 61c82cfa-93e4-42b6-b71a-700de545d148
+entity_slug: enterprise-foley-al
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: edc0fb38-39a2-4155-8167-c7ce3c86bc13
+entity_slug: enterprise-foley-al
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: b7888591-8c8a-469b-ac95-1a4715baa8cd
+entity_slug: enterprise-foley-al
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: dcc08a5b-f22a-4175-ac11-ee10122671d6
+entity_slug: enterprise-foley-al
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: c13a0ca7-d566-4afc-b5fc-4eee6a08b9fe
+entity_slug: enterprise-foley-al
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 22d8b4f7-d790-4961-aa48-b64905b2a5e1
+entity_slug: enterprise-foley-al
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 08b105be-1264-4d3f-8bf1-65a9bb4c8b8d
+entity_slug: enterprise-foley-al
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: 9281d922-bfc3-4fac-937b-9a1e938f418d
+entity_slug: enterprise-foley-al
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: 848bc03f-4880-4f03-affa-364974e3a605
+entity_slug: enterprise-foley-al
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: c3fa4039-2256-4d78-97b4-739252138c03
+entity_slug: enterprise-foley-al
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: ac5ca5f6-3f49-49b2-ba1f-a4b9450f4809
+entity_slug: enterprise-foley-al
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: 291ba58d-fd73-4485-a599-f0a4cec365c0
+entity_slug: enterprise-foley-al
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   20 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 20] ---
+id: 8130e56f-8a0a-47d5-8e97-03cd95f386eb
+landmark_id: 4e44d647-1649-40ec-87e1-dc5eb2085e77
+entity_slug: enterprise-foley-al
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 20] ---
+id: 327fe26c-9775-4111-831c-0bf78a46d823
+landmark_id: 4e44d647-1649-40ec-87e1-dc5eb2085e77
+entity_slug: enterprise-foley-al
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 20] ---
+id: 997478e1-f2df-4ca6-a8fe-8151b1eb3423
+landmark_id: 4e44d647-1649-40ec-87e1-dc5eb2085e77
+entity_slug: enterprise-foley-al
+landmark_type: real_estate_agency
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 20] ---
+id: e27e2f39-ca6a-4b2c-84d3-0377bd596964
+landmark_id: b366d819-0cb1-477d-9146-348ea4098182
+entity_slug: enterprise-foley-al
+landmark_type: car_repair
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 20] ---
+id: 9e60a31a-e7c9-4c73-9f44-1d53c9116a6f
+landmark_id: b366d819-0cb1-477d-9146-348ea4098182
+entity_slug: enterprise-foley-al
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 20] ---
+id: 8c24778c-ff24-4977-b592-38bb4b99241d
+landmark_id: b366d819-0cb1-477d-9146-348ea4098182
+entity_slug: enterprise-foley-al
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 20] ---
+id: eea968b3-a1b4-49ea-8fe7-2958c95ccf11
+landmark_id: e04e665e-9b26-4807-a1b4-04e31aaa86a5
+entity_slug: enterprise-foley-al
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 20] ---
+id: c511a7dd-4b9d-450c-8726-0c0a3bb04a0b
+landmark_id: e04e665e-9b26-4807-a1b4-04e31aaa86a5
+entity_slug: enterprise-foley-al
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 20] ---
+id: d0355882-a575-4bc9-b8f5-71781d2b775c
+landmark_id: e04e665e-9b26-4807-a1b4-04e31aaa86a5
+entity_slug: enterprise-foley-al
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 20] ---
+id: 224bf25f-802c-4f34-b1f5-11f2e00c8b75
+landmark_id: e04e665e-9b26-4807-a1b4-04e31aaa86a5
+entity_slug: enterprise-foley-al
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 20] ---
+id: b241a30e-dd8d-4f7b-b743-26c7e96f512a
+landmark_id: e04e665e-9b26-4807-a1b4-04e31aaa86a5
+entity_slug: enterprise-foley-al
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 20] ---
+id: a666cfc5-7db1-4de6-a067-aec62e8a3986
+landmark_id: 6c37189f-63ac-488e-a7d3-0e1f57efe6fd
+entity_slug: enterprise-foley-al
+landmark_type: cafe
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 20] ---
+id: cf788669-bf17-47ea-b8d3-4dc11adef203
+landmark_id: 6c37189f-63ac-488e-a7d3-0e1f57efe6fd
+entity_slug: enterprise-foley-al
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 20] ---
+id: becd42b3-7957-4353-80dc-7f4238b17418
+landmark_id: 6c37189f-63ac-488e-a7d3-0e1f57efe6fd
+entity_slug: enterprise-foley-al
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 20] ---
+id: f3ec5a03-1695-41dd-a751-777ae3e01f2c
+landmark_id: 6c37189f-63ac-488e-a7d3-0e1f57efe6fd
+entity_slug: enterprise-foley-al
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 20] ---
+id: e6d02946-6453-4316-b014-7bbefbd1e481
+landmark_id: 6c37189f-63ac-488e-a7d3-0e1f57efe6fd
+entity_slug: enterprise-foley-al
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 20] ---
+id: 5408fca2-f31c-437f-8bc4-50028b5929bb
+landmark_id: e7701b13-1f29-4cd7-b180-e478c3acd50a
+entity_slug: enterprise-foley-al
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 20] ---
+id: b47c0d21-c67d-44a7-89a9-b64f2da20d2f
+landmark_id: e7701b13-1f29-4cd7-b180-e478c3acd50a
+entity_slug: enterprise-foley-al
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 19 of 20] ---
+id: 934af140-e022-4386-8f17-b24bf0fd57ed
+landmark_id: e7701b13-1f29-4cd7-b180-e478c3acd50a
+entity_slug: enterprise-foley-al
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 20 of 20] ---
+id: 6b6dc34e-f157-4163-be07-3123c1dbcdaa
+landmark_id: e7701b13-1f29-4cd7-b180-e478c3acd50a
+entity_slug: enterprise-foley-al
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   5 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 5] ---
+id: 4e44d647-1649-40ec-87e1-dc5eb2085e77
+entity_slug: enterprise-foley-al
+kind: landmark
+place_id: ChIJ-51mv4UPmogRjfqS4N-ITSg
+name: The Cottages at Foley Farms
+types: [
+  "establishment",
+  "point_of_interest",
+  "real_estate_agency"
+]
+travel_distance_meters: 100.69339
+straight_line_distance_meters: 172.12321
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 5] ---
+id: b366d819-0cb1-477d-9146-348ea4098182
+entity_slug: enterprise-foley-al
+kind: landmark
+place_id: ChIJOeDom5MNmogRW_RXN0GV1zc
+name: Caliber Collision
+types: [
+  "car_repair",
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 295.26868
+straight_line_distance_meters: 260.1353
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 5] ---
+id: e04e665e-9b26-4807-a1b4-04e31aaa86a5
+entity_slug: enterprise-foley-al
+kind: landmark
+place_id: ChIJ6w_eO28PmogRAVdXh1JuxHQ
+name: Culver’s
+types: [
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant",
+  "store"
+]
+travel_distance_meters: 435.73834
+straight_line_distance_meters: 221.68329
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 5] ---
+id: 6c37189f-63ac-488e-a7d3-0e1f57efe6fd
+entity_slug: enterprise-foley-al
+kind: landmark
+place_id: ChIJdbK4PcAPmogR-MprJT2LESs
+name: 7 Brew Coffee
+types: [
+  "cafe",
+  "establishment",
+  "food",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 473.73962
+straight_line_distance_meters: 329.0147
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 5] ---
+id: e7701b13-1f29-4cd7-b180-e478c3acd50a
+entity_slug: enterprise-foley-al
+kind: landmark
+place_id: ChIJY30LRR8PmogRH0UALhDC7-k
+name: Texas Roadhouse
+types: [
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant"
+]
+travel_distance_meters: 473.38248
+straight_line_distance_meters: 156.29196
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13524
+entity_slug: enterprise-foley-al
+name: Enterprise Rent-A-Car
+description: Enterprise Rent-A-Car is part of the world's largest car rental provider, as measured by revenue, fleet, and employees. The Foley location at 3410 S McKenzie St offers convenient car rental services with a wide selection of vehicles including economy cars, full-size sedans, SUVs, minivans, and pickup trucks. Enterprise provides excellent customer service, competitive rates, and flexibility for all your transportation needs - whether you need a short-term rental, one-way rental, long-term rental, or specialty vehicle.
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: b474c528-60de-446b-bbfd-314c33305442
+
+####################################################################################################
+# TABLE: entity_photos   -   14 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 14] ---
+id: cc6aa96e-e697-4738-a7d6-93e6c3db7f71
+entity_slug: enterprise-foley-al
+url: https://www.enterprise.com/content/dam/ecom/logo-enterprise.png
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 14] ---
+id: 080ea075-f4bf-4bdc-8a14-264fb5e32c33
+entity_slug: enterprise-foley-al
+url: https://media-cdn-delta.jazelc.com/media/?src=https%3A%2F%2Fcontent.homenetiol.com%2F2001358%2F2102149%2F0x0%2Fb0320ed38778426294aab61e3b415279.jpg&scale=-400&ext=jpeg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 14] ---
+id: dc722f02-c039-46d6-861e-a919cf7505fb
+entity_slug: enterprise-foley-al
+url: https://www.enterprise.com/content/dam/ecom/logo-enterprise.png
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: b474c528-60de-446b-bbfd-314c33305442
+
+--- entity_photos [row 4 of 14] ---
+id: 97f0459d-c7b5-488f-b05e-79c554a1c3dc
+entity_slug: enterprise-foley-al
+url: https://media-cdn-delta.jazelc.com/media/?src=https%3A%2F%2Fcontent.homenetiol.com%2F2001358%2F2102149%2F0x0%2Fb0320ed38778426294aab61e3b415279.jpg&scale=-400&ext=jpeg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: b474c528-60de-446b-bbfd-314c33305442
+
+--- entity_photos [row 5 of 14] ---
+id: 4dcb2caa-9b73-4430-966a-d34a4b3e300c
+entity_slug: enterprise-foley-al
+url: https://places.googleapis.com/v1/places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3mukGy2-uClXh5Vn1fXUrmFOA4WVcpXvTrMeoEHsyFYYBkYvLfEjCMJInat1Om2STojkhlQjqkQJdr2GFlmjpboNPuFeRLQMG7Ne1_sdnTbubD7ejQf52luuowc0nhG6BKaf0Ca7q6-Z1q2v4SRp7hQdEyMOE8pHGjcKJxxu6g9y3gW3GUvhEakIhjAsKXxJIkaF6b8utDtJKLmZi9ZVcUxRWuKInufY2kk9oy3IbNyXbzmOxCUTRzhF3UQs63TnJpMvffxoVihRHtNsOZySTcrPQf8BjCfEVboKBSX6dNI0U7rLfJFlkeBRiHvldE25FH-SIVvI5Ag88KhNhl95s6F9e5YECd62_SGJ3hWQ9sZQjgSZ2wTesQhfezwlhOOJ0UVN8M8jd-tAcBE0hTccCiRVXjpm2JSKrsGAx-CF5GheMm7s3-W6r_I72S8WEZc/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3mukGy2-uClXh5Vn1fXUrmFOA4WVcpXvTrMeoEHsyFYYBkYvLfEjCMJInat1Om2STojkhlQjqkQJdr2GFlmjpboNPuFeRLQMG7Ne1_sdnTbubD7ejQf52luuowc0nhG6BKaf0Ca7q6-Z1q2v4SRp7hQdEyMOE8pHGjcKJxxu6g9y3gW3GUvhEakIhjAsKXxJIkaF6b8utDtJKLmZi9ZVcUxRWuKInufY2kk9oy3IbNyXbzmOxCUTRzhF3UQs63TnJpMvffxoVihRHtNsOZySTcrPQf8BjCfEVboKBSX6dNI0U7rLfJFlkeBRiHvldE25FH-SIVvI5Ag88KhNhl95s6F9e5YECd62_SGJ3hWQ9sZQjgSZ2wTesQhfezwlhOOJ0UVN8M8jd-tAcBE0hTccCiRVXjpm2JSKrsGAx-CF5GheMm7s3-W6r_I72S8WEZc
+is_cover: false
+sort_order: 0
+caption: Enterprise Rent-A-Car
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAjKuoNTndT96nITGgxqlC7!2e10!4m2!3m1!1s0x889a0fcc04c33163:0x179e934302be1580
+
+--- entity_photos [row 6 of 14] ---
+id: cde5fdda-3841-486f-9ffc-f16532f034a9
+entity_slug: enterprise-foley-al
+url: https://places.googleapis.com/v1/places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3n_Q7JZAbCQBr0n-f-DLzUWhsOhVEVq7ORPmh9shRHorq2RDu3BlXLUn9wzCfOa2NViA6UfIkNG1PeUoNVEhc7skwfebD9kc7nHS82_gwdgsauQBfeQpqu2jp6IKrW819OMRJmzfl1Nmcug_10ZxMxvdZ4aSJ66D5n3MPNlT9me1bwwzEe_StE5KEe23hCmqEf6RMG6CJiCqop9xcDwwy9GkZFEmD9goXbiwGLenaOx5SuC07HEcomUL6RBk8GmBNrdAzR8mzHUCDOeuEDg-2OFILw-ilvneaYlH2NNd7Vp5thwEKY8c_Ff7jsPZT6ODigQgFIcAY2NKhYxZQ2Ux-axpnodOxtGxQKMQrh1ZhD5L5cskzFHwzfVVnOf-4_CtRZ0NDfpUP0kjcC6aVM6e1NbmQmPzjrV5NfL6qNBIrt5Hw/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3n_Q7JZAbCQBr0n-f-DLzUWhsOhVEVq7ORPmh9shRHorq2RDu3BlXLUn9wzCfOa2NViA6UfIkNG1PeUoNVEhc7skwfebD9kc7nHS82_gwdgsauQBfeQpqu2jp6IKrW819OMRJmzfl1Nmcug_10ZxMxvdZ4aSJ66D5n3MPNlT9me1bwwzEe_StE5KEe23hCmqEf6RMG6CJiCqop9xcDwwy9GkZFEmD9goXbiwGLenaOx5SuC07HEcomUL6RBk8GmBNrdAzR8mzHUCDOeuEDg-2OFILw-ilvneaYlH2NNd7Vp5thwEKY8c_Ff7jsPZT6ODigQgFIcAY2NKhYxZQ2Ux-axpnodOxtGxQKMQrh1ZhD5L5cskzFHwzfVVnOf-4_CtRZ0NDfpUP0kjcC6aVM6e1NbmQmPzjrV5NfL6qNBIrt5Hw
+is_cover: false
+sort_order: 1
+caption: L. Robert Robinson
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICWu7KdJg!2e10!4m2!3m1!1s0x889a0fcc04c33163:0x179e934302be1580
+
+--- entity_photos [row 7 of 14] ---
+id: cd8420b0-83fa-4ac3-bd20-117a243ee6c4
+entity_slug: enterprise-foley-al
+url: https://places.googleapis.com/v1/places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3kwwgEGFsjjOiWddfDqyi7McNs0eLOA8LiRvp5asXHT4XdjGVdT0Zy5hwKtKCTDHZqjkbtyF0CMq0Y4U7MH8Mui71QZnsQvGTFhXJ9TjWBzCJjyDVD8Zx-ELYWPtbaZMx1z3V3lGpjK2_0-9a7-qHcJ-g9SRpHrOLeRS5xQhOqIp1FRTZSajkQvaW5s2TnsK6Qgjj5ULDrRw4_5ynal4GnUjfn_tiemtdENry33Vk0rjMjthl-eW7mrrO1OIRf9mJQC8E6YqBI5_YOV7m9reIw2Y56cC2_AxbqgYROB3MwnxXKD8pFMMPZCFH_H79HX-BEXT2M2l-OqkLfm4S44507o-LOosN9S2jhxJmPnI7MUKW3oUvUPrutl-Yq25tPSLH0-KDInX_Ek3BQw4wLz1JZiJMRRQJttJndCskz6LZtvJeou/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3kwwgEGFsjjOiWddfDqyi7McNs0eLOA8LiRvp5asXHT4XdjGVdT0Zy5hwKtKCTDHZqjkbtyF0CMq0Y4U7MH8Mui71QZnsQvGTFhXJ9TjWBzCJjyDVD8Zx-ELYWPtbaZMx1z3V3lGpjK2_0-9a7-qHcJ-g9SRpHrOLeRS5xQhOqIp1FRTZSajkQvaW5s2TnsK6Qgjj5ULDrRw4_5ynal4GnUjfn_tiemtdENry33Vk0rjMjthl-eW7mrrO1OIRf9mJQC8E6YqBI5_YOV7m9reIw2Y56cC2_AxbqgYROB3MwnxXKD8pFMMPZCFH_H79HX-BEXT2M2l-OqkLfm4S44507o-LOosN9S2jhxJmPnI7MUKW3oUvUPrutl-Yq25tPSLH0-KDInX_Ek3BQw4wLz1JZiJMRRQJttJndCskz6LZtvJeou
+is_cover: false
+sort_order: 2
+caption: L. Robert Robinson
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICWu_LO9QE!2e10!4m2!3m1!1s0x889a0fcc04c33163:0x179e934302be1580
+
+--- entity_photos [row 8 of 14] ---
+id: a9f86f61-346b-471c-8d83-3d5d0ea1f2d0
+entity_slug: enterprise-foley-al
+url: https://places.googleapis.com/v1/places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3nVDHxvun4EPqKbSrpYalfcHvscn_hLi4fa3RpwE7oeEqgtT9uTOrZELZ71ZvD3dtKiKPul4szqjKtljAdPZs65fpyk6iTrz5j8RHalrMsOmQPSBcITGi1ahtnlozgqirTBqibb0IQmZ1cglFtQbHyz3RXLnjVF-L7vPdfKyD8rOHZYUvqUW3SfHqs1ejdUSGnaegfHrfEnDvTxEUXzcQqRtyglv5lZ1M5H_KXTGzLwNuy31noEFruufM3OWwsnLxrN40Tm585TkutCDbem1KmE6e1U9tlJ1ffiwUSwb_BhZeVBSmlJ9nx_RAIT-_Ws14cxspq7p-7CwMmPAmlpu05u_hJT_RO2HjDHcoHDg25CyyiJ9MDZ75q1Na7drKE2BV4iBAoburFX6tTYMg4aoeU4f6riJwkfROSM29HNGh03NaI/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3nVDHxvun4EPqKbSrpYalfcHvscn_hLi4fa3RpwE7oeEqgtT9uTOrZELZ71ZvD3dtKiKPul4szqjKtljAdPZs65fpyk6iTrz5j8RHalrMsOmQPSBcITGi1ahtnlozgqirTBqibb0IQmZ1cglFtQbHyz3RXLnjVF-L7vPdfKyD8rOHZYUvqUW3SfHqs1ejdUSGnaegfHrfEnDvTxEUXzcQqRtyglv5lZ1M5H_KXTGzLwNuy31noEFruufM3OWwsnLxrN40Tm585TkutCDbem1KmE6e1U9tlJ1ffiwUSwb_BhZeVBSmlJ9nx_RAIT-_Ws14cxspq7p-7CwMmPAmlpu05u_hJT_RO2HjDHcoHDg25CyyiJ9MDZ75q1Na7drKE2BV4iBAoburFX6tTYMg4aoeU4f6riJwkfROSM29HNGh03NaI
+is_cover: false
+sort_order: 3
+caption: RNS33 3333
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEJr5tODJ_tKs1wE!2e10!4m2!3m1!1s0x889a0fcc04c33163:0x179e934302be1580
+
+--- entity_photos [row 9 of 14] ---
+id: aade85b3-0bc4-41a0-b8e4-ace9e69d6156
+entity_slug: enterprise-foley-al
+url: https://places.googleapis.com/v1/places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3lPAniIedATZze-v_b37QvLjVvVSeYEHbI4TccTo_15QNGdEj_KYHrrpuyfDExSeNGPN8OVyditPypGwkFyaSFDOdDt7pCNfFpkZLyImZoHGt724EAV-6kZ6Aa418s9MUihIpIjRrksWyJ8Qnd3JccJCOaDoaWYJA9OvyRujBWeqUHfbyALSZMqKR59nzXqYn9rKAWKS6qQeGyANlT9ltR3zNsWIIFOlvllVQ-BAssiZFV4cEvKLQ94oNC-Xk8Jqty7UYMHJIXaEGGDWYBc6XiOXkoibgTSF2rPIrkZ_O6aDWNxf8L8oO-9S4Jya0lxYoFW6D2phjDCP9SjUYbHkZb-WNkhQlDc4RZtAquqJHUWgzLGwq0XyaEnntY7eIO5RKiyhJYE1XCeDhkC9TOztu0ZeVWezsC299vPl4fXKVUOyg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3lPAniIedATZze-v_b37QvLjVvVSeYEHbI4TccTo_15QNGdEj_KYHrrpuyfDExSeNGPN8OVyditPypGwkFyaSFDOdDt7pCNfFpkZLyImZoHGt724EAV-6kZ6Aa418s9MUihIpIjRrksWyJ8Qnd3JccJCOaDoaWYJA9OvyRujBWeqUHfbyALSZMqKR59nzXqYn9rKAWKS6qQeGyANlT9ltR3zNsWIIFOlvllVQ-BAssiZFV4cEvKLQ94oNC-Xk8Jqty7UYMHJIXaEGGDWYBc6XiOXkoibgTSF2rPIrkZ_O6aDWNxf8L8oO-9S4Jya0lxYoFW6D2phjDCP9SjUYbHkZb-WNkhQlDc4RZtAquqJHUWgzLGwq0XyaEnntY7eIO5RKiyhJYE1XCeDhkC9TOztu0ZeVWezsC299vPl4fXKVUOyg
+is_cover: false
+sort_order: 4
+caption: Tim Mason
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICK58T5Eg!2e10!4m2!3m1!1s0x889a0fcc04c33163:0x179e934302be1580
+
+--- entity_photos [row 10 of 14] ---
+id: 869fa977-3e15-451f-8c70-c5652ad93dc5
+entity_slug: enterprise-foley-al
+url: https://places.googleapis.com/v1/places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3m4a939kpduzVA1JrpaYCQPfgZxslu06v46d9khxixgcXpr8boPMikUImrFCsH5oeZ8Po_bw_3ceFPpXab_hfkqUUj6k32fZ0LXcD_Ht_p6i89I_6MnbUplo5f9-uspM6kGTy9ZPA_m5zu-l5lrc7rIJZpEezkSve9dTdhd2OSHfCCewiN536WdTsO1cCMBHEYOsuKZWTZywfIdJyZ-MVNqlTTX_mH9D69af7dmxxZyYecEvnGMxCIsoNskowGxa2Fpnhk9aYQr3O_Wgmau77vS-kbH0Kup90QLEbrvywpOPKghThRX4Gpr4yO1aDzTAlvJBLi1o4EOGVxuR7S7SMlbfZ_DfQoSNcVAXfs8cAqTqfHooevAiNGVj8UlU5HKhBkGH7iAxarW1twl1F5e28CwwIs5WvNId8MTpUVmTyw_ua_j/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3m4a939kpduzVA1JrpaYCQPfgZxslu06v46d9khxixgcXpr8boPMikUImrFCsH5oeZ8Po_bw_3ceFPpXab_hfkqUUj6k32fZ0LXcD_Ht_p6i89I_6MnbUplo5f9-uspM6kGTy9ZPA_m5zu-l5lrc7rIJZpEezkSve9dTdhd2OSHfCCewiN536WdTsO1cCMBHEYOsuKZWTZywfIdJyZ-MVNqlTTX_mH9D69af7dmxxZyYecEvnGMxCIsoNskowGxa2Fpnhk9aYQr3O_Wgmau77vS-kbH0Kup90QLEbrvywpOPKghThRX4Gpr4yO1aDzTAlvJBLi1o4EOGVxuR7S7SMlbfZ_DfQoSNcVAXfs8cAqTqfHooevAiNGVj8UlU5HKhBkGH7iAxarW1twl1F5e28CwwIs5WvNId8MTpUVmTyw_ua_j
+is_cover: false
+sort_order: 5
+caption: Tamara Farmer
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICDnoqUuwE!2e10!4m2!3m1!1s0x889a0fcc04c33163:0x179e934302be1580
+
+--- entity_photos [row 11 of 14] ---
+id: cef119df-bcd6-4c79-83c6-a54ba6b12806
+entity_slug: enterprise-foley-al
+url: https://places.googleapis.com/v1/places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3krZqdJX0cDCuw6eJZD67FxwXOi4UZR85IKjI406ZW3-per1obL8rj5VStV0Da77XZo23954YkYE3L9JvCrdaiSUzd0mOd_AqFpgjzOtkqsAQqqxe8-oqUBG-ZtYtJ7qGbtFrGyjAGy2azzZYn6bQrBZzZlsIt6njS4Cp0goAi9Vpq1kH8jAhIwC_PCrUynXZKkuAD0UCeJMef1btDbrD8LO0ry6FqWrJa1ZlwlBMvUnPYxj2MxumK7Jj3cEv-FWcYI81ksA-RhMwzB4PXWI7JrVEURXoChpXvBl7783e0mowNyxu0Y4uANlTSEc37L2x1uObOZN5cqv2aoGNOI280Wym6wHPlhfTmwW1N8v8TyBZyLxB-0cFWhmVPYUijacDmVDUWlY4v53NfuT9s8m6vgfDa3fTIqC1TQKV12kQzLnFYD/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3krZqdJX0cDCuw6eJZD67FxwXOi4UZR85IKjI406ZW3-per1obL8rj5VStV0Da77XZo23954YkYE3L9JvCrdaiSUzd0mOd_AqFpgjzOtkqsAQqqxe8-oqUBG-ZtYtJ7qGbtFrGyjAGy2azzZYn6bQrBZzZlsIt6njS4Cp0goAi9Vpq1kH8jAhIwC_PCrUynXZKkuAD0UCeJMef1btDbrD8LO0ry6FqWrJa1ZlwlBMvUnPYxj2MxumK7Jj3cEv-FWcYI81ksA-RhMwzB4PXWI7JrVEURXoChpXvBl7783e0mowNyxu0Y4uANlTSEc37L2x1uObOZN5cqv2aoGNOI280Wym6wHPlhfTmwW1N8v8TyBZyLxB-0cFWhmVPYUijacDmVDUWlY4v53NfuT9s8m6vgfDa3fTIqC1TQKV12kQzLnFYD
+is_cover: false
+sort_order: 6
+caption: Timothy McIntosh
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8-4XWlwE!2e10!4m2!3m1!1s0x889a0fcc04c33163:0x179e934302be1580
+
+--- entity_photos [row 12 of 14] ---
+id: 9988ee97-46b2-4602-8870-bca155efa027
+entity_slug: enterprise-foley-al
+url: https://places.googleapis.com/v1/places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3mdKo86B2nUR3l6Q71SIdjyW-aU2UTVZT9gfk0EabIrwXVGXuf84GnvwYmzJn3peSTHpd9hCRYAfxKMuKOYpefynEYqmETNeRfX55zt2z5UWMpCZxhKlFvkB50d2RzBLvXmdsyUfsKlHNThOSfB-HeMVcFNSQv93y1EwRTrpRBa-PtGL5eEwRj4W_mowIEszIrn-jO0QaJHfXKbNAlAKiCrNhTW55FuM3zm5nHm_Rr5LKIYPBH0jPszpk36o_rfCTsXU3Aha1vyIcgybTAuRCp6sqxuUJ0n6ptiDl06wqaJbj3aIyk00vioehkDuC28x9j9xJVvGY7gNVsFjwLvey7dUw74yCKY56vWHpxQ4BgurjDz3myIvaezOcDzkdYBLWh9hzl9cFTHJfXOsDyIBFIGZaZ9SR_cYaBY_qpq7FHE8Q/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3mdKo86B2nUR3l6Q71SIdjyW-aU2UTVZT9gfk0EabIrwXVGXuf84GnvwYmzJn3peSTHpd9hCRYAfxKMuKOYpefynEYqmETNeRfX55zt2z5UWMpCZxhKlFvkB50d2RzBLvXmdsyUfsKlHNThOSfB-HeMVcFNSQv93y1EwRTrpRBa-PtGL5eEwRj4W_mowIEszIrn-jO0QaJHfXKbNAlAKiCrNhTW55FuM3zm5nHm_Rr5LKIYPBH0jPszpk36o_rfCTsXU3Aha1vyIcgybTAuRCp6sqxuUJ0n6ptiDl06wqaJbj3aIyk00vioehkDuC28x9j9xJVvGY7gNVsFjwLvey7dUw74yCKY56vWHpxQ4BgurjDz3myIvaezOcDzkdYBLWh9hzl9cFTHJfXOsDyIBFIGZaZ9SR_cYaBY_qpq7FHE8Q
+is_cover: false
+sort_order: 7
+caption: Wendy Lynn Garland
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID026fHOg!2e10!4m2!3m1!1s0x889a0fcc04c33163:0x179e934302be1580
+
+--- entity_photos [row 13 of 14] ---
+id: 690be538-9b6a-4ca5-a3d6-063178584806
+entity_slug: enterprise-foley-al
+url: https://places.googleapis.com/v1/places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3nczxlsc1r2qcXEUVK1EkGbDnT1W0tJ_X3jVyKUvq1jtzg6kPNqa06S48rX9mWJRo_mdG1D11CijQymrZdp5j9sgdT-FfdHW_B8FXmsNUZ0FZII4FjXWAl_Ufvvzg0W7U0890YtdpMSd0b7dHXDgq5-7MIaEFRfs2z13MopNtVIqXVW2iXstCghkl-lXi1ao_KRDmMpCc4Y5kqRavy4ICdao8HWG0n2TPcNcjnNk5UUcEQqFm1Xlojr4_WfWH8-eNU6jnebRj0f2z768T_mg3aIWCYLYboUEURxwhCO9cQAEQlq5Q2irsE_ykpusN-u3Syb_JWl5Ipk7ofW80Qj0EW4wmfbccMkQMTsCbKSlclLokATISKufc6agmXY1p3yBFsn6UbPbl2Gx0lamrRA7Hz-0wa5emrnlDCOd9CHVjJUHlG0/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3nczxlsc1r2qcXEUVK1EkGbDnT1W0tJ_X3jVyKUvq1jtzg6kPNqa06S48rX9mWJRo_mdG1D11CijQymrZdp5j9sgdT-FfdHW_B8FXmsNUZ0FZII4FjXWAl_Ufvvzg0W7U0890YtdpMSd0b7dHXDgq5-7MIaEFRfs2z13MopNtVIqXVW2iXstCghkl-lXi1ao_KRDmMpCc4Y5kqRavy4ICdao8HWG0n2TPcNcjnNk5UUcEQqFm1Xlojr4_WfWH8-eNU6jnebRj0f2z768T_mg3aIWCYLYboUEURxwhCO9cQAEQlq5Q2irsE_ykpusN-u3Syb_JWl5Ipk7ofW80Qj0EW4wmfbccMkQMTsCbKSlclLokATISKufc6agmXY1p3yBFsn6UbPbl2Gx0lamrRA7Hz-0wa5emrnlDCOd9CHVjJUHlG0
+is_cover: false
+sort_order: 8
+caption: Parkers Travel Usa
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDE9tCngQE!2e10!4m2!3m1!1s0x889a0fcc04c33163:0x179e934302be1580
+
+--- entity_photos [row 14 of 14] ---
+id: c1119362-f01f-463d-b5ff-f2cfd77baeb5
+entity_slug: enterprise-foley-al
+url: https://places.googleapis.com/v1/places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3l29TMNVx4YLK2g6vLSdL_UDpEpR9AbHQX5ADWTMGPR5G9pAYYrndsLrdXc23Kj7LPUwJJqQ5UWbn_BIWVrxXQEkS_-t1bI61dxqtouAZ9i0f3BzPTzkScX-cyol0g6UgBf9F7fa10Q3SY-HWAD-KFD4EMi90Ep5Nz6EpomsbJWqhOZkWg4tmBCOcDIV6bPYhKbrULoal6QYDWeb1AgkjcciD7pip-T8esd0ptE4IkeqtS_Mi8rhqHObuisOEkxgz7vr6E7L0j_kdwMb5tlGeuoyunaSjZGC89A5qNjeiLjyKt5uBoWqdonOea5VaN4T90xEqRKE0zZIU9Lr50hugPMS5JnBiR4epg-qqJDQGy4a1F-M-_qbb6e4RDP01bsohH8FRHV--1jy6e8q2zJUmosIimDA149OPpwqSrkGuX7I5ybOiGXKOYKtXHslsGy/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJYzHDBMwPmogRgBW-AkOTnhc/photos/AaVGc3l29TMNVx4YLK2g6vLSdL_UDpEpR9AbHQX5ADWTMGPR5G9pAYYrndsLrdXc23Kj7LPUwJJqQ5UWbn_BIWVrxXQEkS_-t1bI61dxqtouAZ9i0f3BzPTzkScX-cyol0g6UgBf9F7fa10Q3SY-HWAD-KFD4EMi90Ep5Nz6EpomsbJWqhOZkWg4tmBCOcDIV6bPYhKbrULoal6QYDWeb1AgkjcciD7pip-T8esd0ptE4IkeqtS_Mi8rhqHObuisOEkxgz7vr6E7L0j_kdwMb5tlGeuoyunaSjZGC89A5qNjeiLjyKt5uBoWqdonOea5VaN4T90xEqRKE0zZIU9Lr50hugPMS5JnBiR4epg-qqJDQGy4a1F-M-_qbb6e4RDP01bsohH8FRHV--1jy6e8q2zJUmosIimDA149OPpwqSrkGuX7I5ybOiGXKOYKtXHslsGy
+is_cover: false
+sort_order: 9
+caption: Sheila Guarino
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAtXzYxNJNcv_ImaTP9S29V!2e10!4m2!3m1!1s0x889a0fcc04c33163:0x179e934302be1580
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 031cebf3-ac9e-4a62-8f3a-0611b7f419dd
+entity_slug: enterprise-foley-al
+reviewer_name: Shauna Young
+rating: 5
+body: My experience started off very rocky. I called and spoke with Que, the area manager. He assured me that he would be at the location all day and he would have a car for me at the price point my warranty covered (my car was in the shop). When I finally called back, not only had he left, he hadn't given anyone in the office a heads up about my situation.
+When I called back, there were no vehicles with my price point, as promised and Que was nowhere to be found.
+Then an angel of a man, Desmond, the Asst Mgr, came on the line. He made sure to take great care of me. My anxiety was high because I had been given the runaround from my warranty company all day, my job was adamant that I had to drive in the next day, it was after 4 in the afternoon and the information I had been given earlier wasn't correct. This professional young man jumped into action. He found a car for me (at this point, I didn't care what type). He explained exactly what I needed to pick up the car and he promised to get me in and out in less than 30 minutes because I was in my lunch break at work (I didn't get off until after they closed). He single handedly saved my relationship with Enterprise. I was willing to walk away and go to another rental car service.
+When I returned the car, he inquired about my car and voiced how happy he was that my car got fixed quickly. He thanked me for trusting him to make my experience a good one (which he did) and reminded me that he and his staff are always there to help. I had some other questions about future one way rentals and he helped me understand the process and what needed to be done.
+The level of communication and teamwork in that office is top notch the entire team, minus the 1st person I spoke to, was working together to help other guests check in and check out and their demeanor with one another was smooth and respectful. The office was clean and bright and everyone had a smile or an upbeat manner about themselves. No one seemed grumpy.
+I will be back. I have Desmond's card. I have faith in this location.
+Thank you Desmond! Keep being amazing.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-03-02T15:59:05.083709+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: 97f31ff2-ed36-436a-8d26-1db393bece91
+entity_slug: enterprise-foley-al
+reviewer_name: Sheila Guarino
+rating: 1
+body: Stinky little compact car. Smelled like a sweaty dirty old man. No hubcaps. Only needed car for 2 days but no after hours drop off. Had to keep car three additional days due to this. Call their number directly and was routed to a call center where I was quoted price that was $13 a day different than the price that I was charged at their location . And then had to keep it For an additional three days so because of this, I spent $181 dollars more than I expected to!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-09-04T00:00:24.528254+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: e0efa837-f9fc-40af-9cff-b58d1c2cd8b2
+entity_slug: enterprise-foley-al
+reviewer_name: Edward Alonso
+rating: 5
+body: Excellent experience.  I went at the last minute for a rental that day and I showed up 30 minutes before they closed and they assisted me immediately.  Very kind, professional and customer oriented.  A+++
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-03-03T17:46:37.388193+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 4ba52845-76a2-47f0-adc2-2685891fd2b4
+entity_slug: enterprise-foley-al
+reviewer_name: petenmskel
+rating: 4
+body: The service once we arrived to the service center was prompt and the car rental was lovely. However, we do feel that a pickup should have been an option given it was 8 miles away- the location said it was outside their limits. Unfortunately, it did cost us a $15 UBER each way. This was my only suggestion for rental options and why I choose Enterprise to rent from. This location should consider this extra service to keep future business. Please let me know if this changes in the future as I have reviewed and stated the lack of this service on my associations website.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-12-13T01:51:31.855615+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: db3d8570-d725-4be8-b68e-bfeefec96a98
+entity_slug: enterprise-foley-al
+reviewer_name: Jacob Thompson
+rating: 1
+body: Not sure where everyone is giving credit for good service. It could have been a bad day. But it happened twice.
+
+Insurance secured a rental car it was close to end of day on Saturday so I can understand frustration of staff that close to closing. No one was helpful had to get an Uber there couldn't get a single person on the phone before arrived and I was given straight attitude from the moment I walked in.
+
+There was a confusion in reservation which is partially at fault of enterprise partially on my insurance. Long story short had to wait till 8 am on Monday.
+
+My wife to go get the car and again straight attitude from the same clerk. She said she was in lobby rushing her out of chair while she was waiting because the reservation was taking longer. Mind you she is holding a small child. My wife already stressed from accident and time having to wait is on phone with insurance and was constantly rushed we gladly went down the road at hertz and within minutes had a rental car ready and they picked us up and answered on the second ring.
+
+We couldn't effectively back plan a wreck on a Saturday morning. It was terrible; I will never and I mean never go to enterprise I would leave zero stars if I could
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-10-02T12:35:35.311334+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   23 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 23] ---
+id: 90d3f25a-4086-453f-9885-0c23a1e43448
+entity_slug: enterprise-foley-al
+tag_name: car rental
+
+--- entity_tags [row 2 of 23] ---
+id: 458c0afc-5196-40bf-8963-b5147bc0c7aa
+entity_slug: enterprise-foley-al
+tag_name: vehicle rental
+
+--- entity_tags [row 3 of 23] ---
+id: 72d0d1a9-82f4-4717-84ca-ba0b45032fa3
+entity_slug: enterprise-foley-al
+tag_name: truck rental
+
+--- entity_tags [row 4 of 23] ---
+id: 8c4fb987-5add-4000-8a3d-62c48e00b73b
+entity_slug: enterprise-foley-al
+tag_name: van rental
+
+--- entity_tags [row 5 of 23] ---
+id: 3954d8ef-a7d1-48fc-974b-c1f0ae167da9
+entity_slug: enterprise-foley-al
+tag_name: exotic cars
+
+--- entity_tags [row 6 of 23] ---
+id: 327667cb-4203-4f6b-b2bb-58535a9d2e0f
+entity_slug: enterprise-foley-al
+tag_name: one-way rental
+
+--- entity_tags [row 7 of 23] ---
+id: 45a7af16-2e7f-4004-a20b-9778f44729bd
+entity_slug: enterprise-foley-al
+tag_name: long-term rental
+
+--- entity_tags [row 8 of 23] ---
+id: dcebad3e-cf06-4fbe-9937-3ed51c52a2f6
+entity_slug: enterprise-foley-al
+tag_name: business rental
+
+--- entity_tags [row 9 of 23] ---
+id: 8602cfab-f3c9-4c8b-bb18-b9202ba173dd
+entity_slug: enterprise-foley-al
+tag_name: affordable rates
+
+--- entity_tags [row 10 of 23] ---
+id: a6da78e5-ea19-46bc-97bd-70c8e18dcb51
+entity_slug: enterprise-foley-al
+tag_name: locations nationwide
+
+--- entity_tags [row 11 of 23] ---
+id: d6fd94dc-4906-47ef-9275-75f91c2a5eb6
+entity_slug: enterprise-foley-al
+tag_name: Car Rentals
+tag_category: category
+
+--- entity_tags [row 12 of 23] ---
+id: 0a18ed91-edf6-455d-b46a-aba7e614cfb5
+entity_slug: enterprise-foley-al
+tag_name: Truck Rentals
+tag_category: category
+
+--- entity_tags [row 13 of 23] ---
+id: 1bd3c7f1-b5d1-4b97-a7da-f67096f16fda
+entity_slug: enterprise-foley-al
+tag_name: Van Rentals
+tag_category: category
+
+--- entity_tags [row 14 of 23] ---
+id: 271ddbf9-fd17-44a7-bcee-a25dc229ed20
+entity_slug: enterprise-foley-al
+tag_name: Exotic Car Rentals
+tag_category: category
+
+--- entity_tags [row 15 of 23] ---
+id: 807ca43c-df96-414b-8292-20e0eb3bdf73
+entity_slug: enterprise-foley-al
+tag_name: Used Car Sales
+tag_category: category
+
+--- entity_tags [row 16 of 23] ---
+id: 52f5439e-5247-46ab-b1ee-974fea3f4c3e
+entity_slug: enterprise-foley-al
+tag_name: Fleet Management
+tag_category: category
+
+--- entity_tags [row 17 of 23] ---
+id: 5ae30a92-3c2d-4343-9081-a703bf65b328
+entity_slug: enterprise-foley-al
+tag_name: Transportation Services
+tag_category: category
+
+--- entity_tags [row 18 of 23] ---
+id: 855d2fd8-cfe4-4cd0-842e-652d4cb87dd8
+entity_slug: enterprise-foley-al
+tag_name: automotive-rental
+tag_category: industry
+
+--- entity_tags [row 19 of 23] ---
+id: 358d8017-bf94-4e85-8ab1-78e599701c7d
+entity_slug: enterprise-foley-al
+tag_name: rentals
+tag_category: type
+
+--- entity_tags [row 20 of 23] ---
+id: 8764bd27-c6a6-4bf1-b7a1-064d10e56384
+entity_slug: enterprise-foley-al
+tag_name: car_rental
+tag_category: google_primary_type
+
+--- entity_tags [row 21 of 23] ---
+id: 2ae62d8a-0b82-419d-8280-2d64e37a1277
+entity_slug: enterprise-foley-al
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 22 of 23] ---
+id: a1a3ffcf-4d5c-4a63-b138-4762fa17f642
+entity_slug: enterprise-foley-al
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 23 of 23] ---
+id: ce76d0e0-12ec-4559-a04e-00edaf45ff5e
+entity_slug: enterprise-foley-al
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 405bac81-a827-4638-a81c-10a1c6d9e56c
+entity_slug: enterprise-foley-al
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_rental   -   1 row(s)
+####################################################################################################
+
+--- industry_rental [row 1 of 1] ---
+entity_slug: enterprise-foley-al
+rental_item_count: 0
+hourly_available: false
+half_day_available: false
+full_day_available: false
+weekly_available: false
+delivery_offered: false
+updated_at: 2026-07-21T16:19:28.491935+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: offer
+ref_id: 13524
+entity_slug: enterprise-foley-al
+title: Enterprise Rent-A-Car
+category: rental
+subtitle: Enterprise Rent-A-Car is part of the world's largest car rental provider, as measured by revenue, fleet, and employees. The Foley location at 3410 S McKenzie St offers convenient car rental services with a wide selection of vehicles including economy cars, full-size sedans, SUVs, minivans, and pickup trucks. Enterprise provides excellent customer service, competitive rates, and flexibility for all your transportation needs - whether you need a short-term rental, one-way rental, long-term rental, or specialty vehicle.
+search_vector: '3410':32C 'car':5A,10C,18C,38C,49C 'competit':64C 'conveni':37C 'custom':62C 'economi':48C 'employe':27C 'enterpris':1A,6C,59C 'excel':61C 'fleet':25C 'flexibl':67C 'foley':29C 'full':51C 'full-siz':50C 'includ':47C 'largest':17C 'locat':30C 'long':86C 'long-term':85C 'mckenzi':34C 'measur':22C 'minivan':55C 'need':72C,75C 'offer':36C 'one':82C 'one-way':81C 'part':12C 'pickup':57C 'provid':20C,60C 'rate':65C 'rent':3A,8C 'rent-a-car':2A,7C 'rental':19C,39C,80C,84C,88C 'revenu':24C 'sedan':53C 'select':44C 'servic':40C,63C 'short':78C 'short-term':77C 'size':52C 'specialti':90C 'st':35C 'suv':54C 'term':79C,87C 'transport':71C 'truck':58C 'vehicl':46C,91C 'way':83C 'whether':73C 'wide':43C 'world':15C
+
+--- search_index [row 2 of 2] ---
+ref_type: business
+ref_id: enterprise-foley-al
+entity_slug: enterprise-foley-al
+title: Enterprise Rent-A-Car
+category: car_rental
+subtitle: Enterprise Rent-A-Car is part of the world's largest car rental provider, as measured by revenue, fleet, and employees. The Foley location at 3410 S McKenzie St offers convenient car rental services with a wide selection of vehicles including economy cars, full-size sedans, SUVs, minivans, and pickup trucks. Enterprise provides excellent customer service, competitive rates, and flexibility for all your transportation needs - whether you need a short-term rental, one-way rental, long-term rental, or specialty vehicle.
+search_vector: '3410':34C 'car':5A,6B,12C,20C,40C,51C 'competit':66C 'conveni':39C 'custom':64C 'economi':50C 'employe':29C 'enterpris':1A,8C,61C 'excel':63C 'fleet':27C 'flexibl':69C 'foley':31C 'full':53C 'full-siz':52C 'includ':49C 'largest':19C 'locat':32C 'long':88C 'long-term':87C 'mckenzi':36C 'measur':24C 'minivan':57C 'need':74C,77C 'offer':38C 'one':84C 'one-way':83C 'part':14C 'pickup':59C 'provid':22C,62C 'rate':67C 'rent':3A,10C 'rent-a-car':2A,9C 'rental':7B,21C,41C,82C,86C,90C 'revenu':26C 'sedan':55C 'select':46C 'servic':42C,65C 'short':80C 'short-term':79C 'size':54C 'specialti':92C 'st':37C 'suv':56C 'term':81C,89C 'transport':73C 'truck':60C 'vehicl':48C,93C 'way':85C 'whether':75C 'wide':45C 'world':17C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: enterprise-foley-al

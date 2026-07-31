@@ -1,0 +1,499 @@
+====================================================================================================
+SLUG: presidential-suite
+NAME: Presidential Suite
+INDUSTRY: other
+TABLES WITH DATA: 15
+TOTAL ROWS: 36
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (5 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_offer  (1 rows)
+  entity_photos  (4 rows)
+  entity_theme  (1 rows)
+  search_index  (2 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: presidential-suite
+name: Presidential Suite
+planner_category: local_service
+data_quality_score: 55
+issues: missing_hours|missing_lat_lng|missing_contact_or_website
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   5 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 5] ---
+id: 20917
+entity_slug: presidential-suite
+intent_tag: best_for:local_information
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 5] ---
+id: 20918
+entity_slug: presidential-suite
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 5] ---
+id: 20919
+entity_slug: presidential-suite
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 5] ---
+id: 20920
+entity_slug: presidential-suite
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 5] ---
+id: 20921
+entity_slug: presidential-suite
+intent_tag: missing:missing_contact_or_website
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: presidential-suite
+name: Presidential Suite
+is_active: t
+planner_category: local_service
+entity_type: service
+state: AL
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/presidential-suite/photo_01.jpg
+voice_summary: Presidential Suite is best for local information.
+planner_summary: Luxury presidential suite accommodation
+best_for: local information
+not_best_for: nothing specific flagged
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 2
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 0
+faq_count: 0
+data_quality_score: 55
+data_gaps: missing_hours|missing_lat_lng|missing_contact_or_website
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 7729
+entity_slug: presidential-suite
+entity_name: Presidential Suite
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/presidential-suite/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 7730
+entity_slug: presidential-suite
+entity_name: Presidential Suite
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/presidential-suite/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 9884f08e-26bd-455f-b227-238d469cde89
+resource_type: service
+slug: presidential-suite
+name: Presidential Suite
+description: Luxury presidential suite accommodation
+entity_slug: presidential-suite
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/presidential-suite/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/presidential-suite/photo_02.jpg"
+]
+amenities: []
+faqs: []
+state: AL
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 77e48847f9b554979143966a1c810cec
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 9884f08e-26bd-455f-b227-238d469cde89
+entity_slug: presidential-suite
+slug: presidential-suite
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/presidential-suite/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/presidential-suite/photo_02.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 26e922dd-fc16-40db-8849-01de5cb271aa
+slug: presidential-suite
+name: Presidential Suite
+is_active: true
+featured: false
+entity_type: service
+description: Luxury presidential suite accommodation
+menu_pin: 3586
+state: AL
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/presidential-suite/photo_01.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T05:25:02.599582+00:00
+updated_at: 2026-06-03T05:25:02.599582+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+business_status: OPERATIONAL
+google_places_data: {}
+search_vector: 'presidenti':1A 'suit':2A
+internal_notes: industry_code auto-bucketed to other 2026-07-21 - needs manual review
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: other
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: presidential-suite
+name: Presidential Suite
+industry_code: other
+is_parent: false
+score_of_7: 2
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: presidential-suite
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 9884f08e-26bd-455f-b227-238d469cde89
+name: Presidential Suite
+description: Luxury presidential suite accommodation
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/presidential-suite/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/presidential-suite/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: presidential-suite
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 9884f08e-26bd-455f-b227-238d469cde89
+name: Presidential Suite
+description: Luxury presidential suite accommodation
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/presidential-suite/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/presidential-suite/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: 1e4f10df-8837-4301-a556-78b90f7d6a2b
+entity_slug: presidential-suite
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 56744578-49c8-4a86-9a82-d9df82778c3d
+entity_slug: presidential-suite
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: 472928c3-8398-4850-9735-72620068f91e
+entity_slug: presidential-suite
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: 19da92fa-8b7f-4371-b9e5-7dcf349375a1
+entity_slug: presidential-suite
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: ca84939a-70d8-4c69-b1df-73d77755f081
+entity_slug: presidential-suite
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: 3ca95c79-f14c-41bf-ae75-a80840fd2a59
+entity_slug: presidential-suite
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: ea7957f7-926a-4d96-9407-e91249df9f33
+entity_slug: presidential-suite
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 028fd7b2-2ba6-4834-b31a-94df739bfcd2
+entity_slug: presidential-suite
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: 08a74863-70d6-4f21-b664-fddcaea08f48
+entity_slug: presidential-suite
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: ee208fd5-1b51-43db-90fc-f52d17f871fb
+entity_slug: presidential-suite
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: fe9a49fd-7582-484a-9c42-ed5eae2b0fc9
+entity_slug: presidential-suite
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: 9d79a32b-b74d-4077-ab71-8ca762ab63a8
+entity_slug: presidential-suite
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: 678bc1f9-81ae-4efe-aa73-cd0966569cf4
+entity_slug: presidential-suite
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13971
+entity_slug: presidential-suite
+name: Presidential Suite
+description: Luxury presidential suite accommodation
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 9884f08e-26bd-455f-b227-238d469cde89
+
+####################################################################################################
+# TABLE: entity_photos   -   4 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 4] ---
+id: 7a245105-56be-47ff-b341-a1cef3d3d8b1
+entity_slug: presidential-suite
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/presidential-suite/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 4] ---
+id: cc8c08f1-dc07-4918-8618-95883581a4a5
+entity_slug: presidential-suite
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/presidential-suite/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 4] ---
+id: 30ab04ac-f2dc-4eb3-abf7-6229b0a96475
+entity_slug: presidential-suite
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/presidential-suite/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 9884f08e-26bd-455f-b227-238d469cde89
+
+--- entity_photos [row 4 of 4] ---
+id: 42a5903e-240c-4495-9f4d-fed521b83317
+entity_slug: presidential-suite
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/presidential-suite/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: 9884f08e-26bd-455f-b227-238d469cde89
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 1ace7cfe-3b26-4ae7-9e69-3ccf482e1bc5
+entity_slug: presidential-suite
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: presidential-suite
+entity_slug: presidential-suite
+title: Presidential Suite
+category: service
+subtitle: Luxury presidential suite accommodation
+search_vector: 'accommod':6C 'luxuri':3C 'presidenti':1A,4C 'suit':2A,5C
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 13971
+entity_slug: presidential-suite
+title: Presidential Suite
+category: rental
+subtitle: Luxury presidential suite accommodation
+search_vector: 'accommod':6C 'luxuri':3C 'presidenti':1A,4C 'suit':2A,5C

@@ -1,0 +1,539 @@
+====================================================================================================
+SLUG: paddlesport-rentals
+NAME: Paddlesport Rentals
+INDUSTRY: watersport
+TABLES WITH DATA: 17
+TOTAL ROWS: 40
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (7 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_offer  (1 rows)
+  entity_photos  (4 rows)
+  entity_theme  (1 rows)
+  industry_watersport  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: paddlesport-rentals
+name: Paddlesport Rentals
+planner_category: things_to_do
+data_quality_score: 55
+issues: missing_hours|missing_lat_lng|missing_contact_or_website
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   7 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 7] ---
+id: 20759
+entity_slug: paddlesport-rentals
+intent_tag: best_for:water_activity
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 7] ---
+id: 20760
+entity_slug: paddlesport-rentals
+intent_tag: experience:sports_bar
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 7] ---
+id: 20761
+entity_slug: paddlesport-rentals
+intent_tag: service:water_activity
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 7] ---
+id: 20762
+entity_slug: paddlesport-rentals
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 7] ---
+id: 20763
+entity_slug: paddlesport-rentals
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 7] ---
+id: 20764
+entity_slug: paddlesport-rentals
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 7] ---
+id: 20765
+entity_slug: paddlesport-rentals
+intent_tag: missing:missing_contact_or_website
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: paddlesport-rentals
+name: Paddlesport Rentals
+is_active: t
+planner_category: things_to_do
+entity_type: service
+state: AL
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/paddlesport-rentals/photo_01.jpg
+voice_summary: Paddlesport Rentals is best for water activity. Experience tags: sports_bar.
+planner_summary: Paddle sports for a more relaxing excursion
+best_for: water activity
+not_best_for: quiet low-energy meal
+experience_tags: sports_bar
+service_tags: water_activity
+search_keywords: sports_bar|water_activity
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 2
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 0
+faq_count: 0
+data_quality_score: 55
+data_gaps: missing_hours|missing_lat_lng|missing_contact_or_website
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 7550
+entity_slug: paddlesport-rentals
+entity_name: Paddlesport Rentals
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/paddlesport-rentals/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 7551
+entity_slug: paddlesport-rentals
+entity_name: Paddlesport Rentals
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/paddlesport-rentals/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: b44f20e3-1cb4-4159-bd1c-60e0287fe01a
+resource_type: service
+slug: paddlesport-rentals
+name: Paddlesport Rentals
+description: Paddle sports for a more relaxing excursion
+entity_slug: paddlesport-rentals
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/paddlesport-rentals/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/paddlesport-rentals/photo_02.jpg"
+]
+amenities: []
+faqs: []
+state: AL
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: d9df6004fe5f707beb753e89638223cc
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: b44f20e3-1cb4-4159-bd1c-60e0287fe01a
+entity_slug: paddlesport-rentals
+slug: paddlesport-rentals
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/paddlesport-rentals/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/paddlesport-rentals/photo_02.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: e122083d-0513-4d50-b415-b1cc8acd360d
+slug: paddlesport-rentals
+name: Paddlesport Rentals
+is_active: true
+featured: false
+entity_type: service
+description: Paddle sports for a more relaxing excursion
+menu_pin: 1463
+state: AL
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/paddlesport-rentals/photo_01.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T05:24:58.952192+00:00
+updated_at: 2026-06-03T05:24:58.952192+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+business_status: OPERATIONAL
+google_places_data: {}
+search_vector: 'paddlesport':1A 'rental':2A
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: watersport
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: paddlesport-rentals
+name: Paddlesport Rentals
+industry_code: watersport
+is_parent: false
+score_of_7: 2
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: paddlesport-rentals
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: b44f20e3-1cb4-4159-bd1c-60e0287fe01a
+name: Paddlesport Rentals
+description: Paddle sports for a more relaxing excursion
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/paddlesport-rentals/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/paddlesport-rentals/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: paddlesport-rentals
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: b44f20e3-1cb4-4159-bd1c-60e0287fe01a
+name: Paddlesport Rentals
+description: Paddle sports for a more relaxing excursion
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/paddlesport-rentals/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/paddlesport-rentals/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: 243c3f42-89ff-444d-a1da-9eb4c9ec27cc
+entity_slug: paddlesport-rentals
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 07bfbbb5-7380-4b8c-9cf8-e9b54ce9d082
+entity_slug: paddlesport-rentals
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: e424b1ba-674d-4bdb-a548-77c8fa3c1098
+entity_slug: paddlesport-rentals
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: 104f9098-85b8-4c7a-9847-70c9e40c503f
+entity_slug: paddlesport-rentals
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: f37c6245-5711-4dad-aaa7-f2d0f422d461
+entity_slug: paddlesport-rentals
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: 83a50058-8222-4974-95a5-ab3a33bd0231
+entity_slug: paddlesport-rentals
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: ab77f916-1f22-48c3-acf8-a967a25a7bbf
+entity_slug: paddlesport-rentals
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 839d78c4-7a56-4ff9-a0ed-e38f3b37334a
+entity_slug: paddlesport-rentals
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: aac79e34-259d-47e7-9dcb-13f10c86e138
+entity_slug: paddlesport-rentals
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: f451c7ac-0efd-47b5-93c8-c19e594af4a4
+entity_slug: paddlesport-rentals
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: bfc481a2-a70d-4536-bb8b-60952ac64c5a
+entity_slug: paddlesport-rentals
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: 14a41b8d-eb7b-460a-92d8-8bfb53427374
+entity_slug: paddlesport-rentals
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: e23abb3e-eda2-49ae-8ea4-91f29deaa2cb
+entity_slug: paddlesport-rentals
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13888
+entity_slug: paddlesport-rentals
+name: Paddlesport Rentals
+description: Paddle sports for a more relaxing excursion
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: b44f20e3-1cb4-4159-bd1c-60e0287fe01a
+
+####################################################################################################
+# TABLE: entity_photos   -   4 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 4] ---
+id: dc13907e-c447-445c-b51a-2b984da75b88
+entity_slug: paddlesport-rentals
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/paddlesport-rentals/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 4] ---
+id: b8ed48cb-e332-4608-abb9-ddb97923fdf0
+entity_slug: paddlesport-rentals
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/paddlesport-rentals/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 4] ---
+id: 9f506b46-71f6-4498-b38d-ff5708a5b73e
+entity_slug: paddlesport-rentals
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/paddlesport-rentals/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: b44f20e3-1cb4-4159-bd1c-60e0287fe01a
+
+--- entity_photos [row 4 of 4] ---
+id: 4775b948-68a0-4236-8296-20d0ffcb3efb
+entity_slug: paddlesport-rentals
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/paddlesport-rentals/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: b44f20e3-1cb4-4159-bd1c-60e0287fe01a
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: a84b129a-6675-4d0c-a577-f768dff118d0
+entity_slug: paddlesport-rentals
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_watersport   -   1 row(s)
+####################################################################################################
+
+--- industry_watersport [row 1 of 1] ---
+entity_slug: paddlesport-rentals
+activity_count: 0
+capacity_max: 0
+updated_at: 2026-07-21T16:49:01.676572+00:00
+waiver_required: false
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: paddlesport-rentals
+entity_slug: paddlesport-rentals
+title: Paddlesport Rentals
+category: service
+subtitle: Paddle sports for a more relaxing excursion
+search_vector: 'excurs':9C 'paddl':3C 'paddlesport':1A 'relax':8C 'rental':2A 'sport':4C
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 13888
+entity_slug: paddlesport-rentals
+title: Paddlesport Rentals
+category: rental
+subtitle: Paddle sports for a more relaxing excursion
+search_vector: 'excurs':9C 'paddl':3C 'paddlesport':1A 'relax':8C 'rental':2A 'sport':4C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: paddlesport-rentals

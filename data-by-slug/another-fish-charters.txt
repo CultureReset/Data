@@ -1,0 +1,908 @@
+====================================================================================================
+SLUG: another-fish-charters
+NAME: Another Fish Charters
+INDUSTRY: charter_fishing
+SUBTYPE: fishing_charter
+TABLES WITH DATA: 17
+TOTAL ROWS: 64
+====================================================================================================
+
+TABLE INDEX:
+  bookable_resources  (1 rows)
+  charter_fishing_type  (3 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_items_norm_v  (7 rows)
+  entity_items_v  (7 rows)
+  entity_offer  (7 rows)
+  entity_sources  (3 rows)
+  entity_tags  (3 rows)
+  entity_theme  (1 rows)
+  industry_charter_fishing  (1 rows)
+  offering_prices  (6 rows)
+  offerings  (6 rows)
+  search_index  (14 rows)
+  v_industry_facts_slugs  (1 rows)
+  vessels  (1 rows)
+  whats_included  (1 rows)
+
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 8e0b2343-5cfd-4e0b-bbeb-b7ebea500003
+resource_type: boat
+slug: another-fish-charters-boat
+name: Another Fish Charters
+description: Family charter boat; max 6 (some trips 4 max)
+entity_slug: another-fish-charters
+capacity: 6
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: []
+amenities: []
+faqs: []
+is_active: true
+created_at: 2026-07-16T12:06:36.28116+00:00
+updated_at: 2026-07-16T12:06:36.28116+00:00
+
+####################################################################################################
+# TABLE: charter_fishing_type   -   3 row(s)
+####################################################################################################
+
+--- charter_fishing_type [row 1 of 3] ---
+id: 9
+entity_slug: another-fish-charters
+fishing_type: Inshore
+
+--- charter_fishing_type [row 2 of 3] ---
+id: 25
+entity_slug: another-fish-charters
+fishing_type: Red Snapper
+
+--- charter_fishing_type [row 3 of 3] ---
+id: 32
+entity_slug: another-fish-charters
+fishing_type: Nearshore
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 05734d49-7403-4e1d-ad83-03b95bd0a1ed
+slug: another-fish-charters
+name: Another Fish Charters
+is_active: true
+featured: false
+entity_type: activity
+entity_subtype: fishing_charter
+description: Guided inshore and nearshore trips with gear included.
+website_url: https://www.anotherfishchartersorangebeach.com
+menu_pin: 6165
+city: Gulf Shores
+state: AL
+review_count: 0
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-07-07T17:33:27.941024+00:00
+updated_at: 2026-07-07T17:33:27.941024+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+business_status: OPERATIONAL
+google_places_data: {}
+search_vector: 'anoth':1A 'charter':3A 'fish':2A 'gulf':4 'shore':5
+internal_notes:  | NO WORKING PHOTO 2026-07-21: hero and all entity_photos point to missing storage files - needs real re-upload
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: charter_fishing
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: another-fish-charters
+name: Another Fish Charters
+industry_code: charter_fishing
+is_parent: false
+score_of_7: 2
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   7 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 7] ---
+entity_slug: another-fish-charters
+source_table: offerings
+item_type: charter
+section_name: Charter
+item_id: 38805a94-83b5-4a96-b32e-0222a5da436c
+name: Quick Catch (2hr)
+price_from: 350
+price_label: flat
+sort_order: 1
+active: true
+attributes: {
+  "unit": "flat",
+  "capacity": 6,
+  "fee_note": "Base 2 passengers; +$50 per additional",
+  "item_type_raw": "charter",
+  "trip_category": "Inshore",
+  "duration_minutes": 120
+}
+
+--- entity_items_norm_v [row 2 of 7] ---
+entity_slug: another-fish-charters
+source_table: offerings
+item_type: charter
+section_name: Charter
+item_id: 89ec5131-9073-4d66-bdaa-934b634c890e
+name: 4hr Trip
+price_from: 550
+price_label: flat
+sort_order: 3
+active: true
+attributes: {
+  "unit": "flat",
+  "capacity": 6,
+  "item_type_raw": "charter",
+  "trip_category": "Nearshore",
+  "duration_minutes": 240
+}
+
+--- entity_items_norm_v [row 3 of 7] ---
+entity_slug: another-fish-charters
+source_table: offerings
+item_type: charter
+section_name: Charter
+item_id: e0dc941f-b80e-4605-b1a6-902db5e8e242
+name: 6hr Trip
+price_from: 750
+price_label: flat
+sort_order: 5
+active: true
+attributes: {
+  "unit": "flat",
+  "capacity": 6,
+  "item_type_raw": "charter",
+  "trip_category": "Nearshore",
+  "duration_minutes": 360
+}
+
+--- entity_items_norm_v [row 4 of 7] ---
+entity_slug: another-fish-charters
+source_table: offerings
+item_type: charter
+section_name: Charter
+item_id: 4e6afc1e-5c63-4569-8fc0-3519749cdf98
+name: 5hr Trip
+price_from: 650
+price_label: flat
+sort_order: 4
+active: true
+attributes: {
+  "unit": "flat",
+  "capacity": 6,
+  "item_type_raw": "charter",
+  "trip_category": "Nearshore",
+  "duration_minutes": 300
+}
+
+--- entity_items_norm_v [row 5 of 7] ---
+entity_slug: another-fish-charters
+source_table: offerings
+item_type: charter
+section_name: Charter
+item_id: 5ffb9e6a-ff15-4871-af5f-892f66afd6f7
+name: 3hr Trip
+price_from: 450
+price_label: flat
+sort_order: 2
+active: true
+attributes: {
+  "unit": "flat",
+  "capacity": 6,
+  "item_type_raw": "charter",
+  "trip_category": "Nearshore",
+  "duration_minutes": 180
+}
+
+--- entity_items_norm_v [row 6 of 7] ---
+entity_slug: another-fish-charters
+source_table: offerings
+item_type: charter
+section_name: Charter
+item_id: 25140c86-d2b0-4be9-b320-16269acba915
+name: Red Snapper 4hr
+price_from: 850
+price_label: flat
+sort_order: 6
+active: true
+attributes: {
+  "unit": "flat",
+  "capacity": 6,
+  "item_type_raw": "charter",
+  "trip_category": "Red Snapper",
+  "duration_minutes": 240
+}
+
+--- entity_items_norm_v [row 7 of 7] ---
+entity_slug: another-fish-charters
+source_table: bookable_resources
+item_type: boat
+section_name: Units
+item_id: 8e0b2343-5cfd-4e0b-bbeb-b7ebea500003
+name: Another Fish Charters
+description: Family charter boat; max 6 (some trips 4 max)
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "capacity": 6,
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "boat",
+  "resource_type": "boat"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   7 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 7] ---
+entity_slug: another-fish-charters
+source_table: offerings
+item_type: charter
+section_name: Charter
+item_id: 38805a94-83b5-4a96-b32e-0222a5da436c
+name: Quick Catch (2hr)
+price_from: 350
+price_label: flat
+sort_order: 1
+active: true
+attributes: {
+  "unit": "flat",
+  "capacity": 6,
+  "fee_note": "Base 2 passengers; +$50 per additional",
+  "trip_category": "Inshore",
+  "duration_minutes": 120
+}
+
+--- entity_items_v [row 2 of 7] ---
+entity_slug: another-fish-charters
+source_table: offerings
+item_type: charter
+section_name: Charter
+item_id: 89ec5131-9073-4d66-bdaa-934b634c890e
+name: 4hr Trip
+price_from: 550
+price_label: flat
+sort_order: 3
+active: true
+attributes: {
+  "unit": "flat",
+  "capacity": 6,
+  "trip_category": "Nearshore",
+  "duration_minutes": 240
+}
+
+--- entity_items_v [row 3 of 7] ---
+entity_slug: another-fish-charters
+source_table: offerings
+item_type: charter
+section_name: Charter
+item_id: e0dc941f-b80e-4605-b1a6-902db5e8e242
+name: 6hr Trip
+price_from: 750
+price_label: flat
+sort_order: 5
+active: true
+attributes: {
+  "unit": "flat",
+  "capacity": 6,
+  "trip_category": "Nearshore",
+  "duration_minutes": 360
+}
+
+--- entity_items_v [row 4 of 7] ---
+entity_slug: another-fish-charters
+source_table: offerings
+item_type: charter
+section_name: Charter
+item_id: 4e6afc1e-5c63-4569-8fc0-3519749cdf98
+name: 5hr Trip
+price_from: 650
+price_label: flat
+sort_order: 4
+active: true
+attributes: {
+  "unit": "flat",
+  "capacity": 6,
+  "trip_category": "Nearshore",
+  "duration_minutes": 300
+}
+
+--- entity_items_v [row 5 of 7] ---
+entity_slug: another-fish-charters
+source_table: offerings
+item_type: charter
+section_name: Charter
+item_id: 5ffb9e6a-ff15-4871-af5f-892f66afd6f7
+name: 3hr Trip
+price_from: 450
+price_label: flat
+sort_order: 2
+active: true
+attributes: {
+  "unit": "flat",
+  "capacity": 6,
+  "trip_category": "Nearshore",
+  "duration_minutes": 180
+}
+
+--- entity_items_v [row 6 of 7] ---
+entity_slug: another-fish-charters
+source_table: offerings
+item_type: charter
+section_name: Charter
+item_id: 25140c86-d2b0-4be9-b320-16269acba915
+name: Red Snapper 4hr
+price_from: 850
+price_label: flat
+sort_order: 6
+active: true
+attributes: {
+  "unit": "flat",
+  "capacity": 6,
+  "trip_category": "Red Snapper",
+  "duration_minutes": 240
+}
+
+--- entity_items_v [row 7 of 7] ---
+entity_slug: another-fish-charters
+source_table: bookable_resources
+item_type: boat
+section_name: Units
+item_id: 8e0b2343-5cfd-4e0b-bbeb-b7ebea500003
+name: Another Fish Charters
+description: Family charter boat; max 6 (some trips 4 max)
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "capacity": 6,
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "boat"
+}
+
+####################################################################################################
+# TABLE: entity_offer   -   7 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 7] ---
+offer_id: 12758
+entity_slug: another-fish-charters
+name: Quick Catch (2hr)
+offer_type: charter
+sort_order: 1
+is_available: true
+duration_minutes: 120
+party_max: 6
+capacity: 6
+legacy_source: offerings
+legacy_id: 38805a94-83b5-4a96-b32e-0222a5da436c
+
+--- entity_offer [row 2 of 7] ---
+offer_id: 12762
+entity_slug: another-fish-charters
+name: 4hr Trip
+offer_type: charter
+sort_order: 3
+is_available: true
+duration_minutes: 240
+party_max: 6
+capacity: 6
+legacy_source: offerings
+legacy_id: 89ec5131-9073-4d66-bdaa-934b634c890e
+
+--- entity_offer [row 3 of 7] ---
+offer_id: 12763
+entity_slug: another-fish-charters
+name: 6hr Trip
+offer_type: charter
+sort_order: 5
+is_available: true
+duration_minutes: 360
+party_max: 6
+capacity: 6
+legacy_source: offerings
+legacy_id: e0dc941f-b80e-4605-b1a6-902db5e8e242
+
+--- entity_offer [row 4 of 7] ---
+offer_id: 12767
+entity_slug: another-fish-charters
+name: 5hr Trip
+offer_type: charter
+sort_order: 4
+is_available: true
+duration_minutes: 300
+party_max: 6
+capacity: 6
+legacy_source: offerings
+legacy_id: 4e6afc1e-5c63-4569-8fc0-3519749cdf98
+
+--- entity_offer [row 5 of 7] ---
+offer_id: 12769
+entity_slug: another-fish-charters
+name: 3hr Trip
+offer_type: charter
+sort_order: 2
+is_available: true
+duration_minutes: 180
+party_max: 6
+capacity: 6
+legacy_source: offerings
+legacy_id: 5ffb9e6a-ff15-4871-af5f-892f66afd6f7
+
+--- entity_offer [row 6 of 7] ---
+offer_id: 12779
+entity_slug: another-fish-charters
+name: Red Snapper 4hr
+offer_type: charter
+sort_order: 6
+is_available: true
+duration_minutes: 240
+party_max: 6
+capacity: 6
+legacy_source: offerings
+legacy_id: 25140c86-d2b0-4be9-b320-16269acba915
+
+--- entity_offer [row 7 of 7] ---
+offer_id: 13268
+entity_slug: another-fish-charters
+name: Another Fish Charters
+description: Family charter boat; max 6 (some trips 4 max)
+offer_type: rental
+sort_order: 0
+is_available: true
+capacity: 6
+legacy_source: bookable_resources
+legacy_id: 8e0b2343-5cfd-4e0b-bbeb-b7ebea500003
+
+####################################################################################################
+# TABLE: entity_sources   -   3 row(s)
+####################################################################################################
+
+--- entity_sources [row 1 of 3] ---
+id: e22c22d4-9b90-4464-bb11-d11bcb1cd82f
+entity_slug: another-fish-charters
+source_system: gulfshores_fishing_directory
+source_url: https://www.gulfshores.com/things-to-do/fishing/
+observed_at: 2026-07-16T00:00:00+00:00
+confidence: high
+note: Listed on GulfShores.com fishing directory
+created_at: 2026-07-16T10:52:15.170087+00:00
+
+--- entity_sources [row 2 of 3] ---
+id: 664264a0-9430-43b9-b58b-34c51ffe326f
+entity_slug: another-fish-charters
+source_system: gcr_fishing_charters_full
+source_url: https://www.anotherfishchartersorangebeach.com/
+scope: charter-detail
+observed_at: 2026-07-16T12:06:36.28116+00:00
+confidence: high
+note: Capt. Ronnie Doyle | Trips in calm protected waters close to shore. Good for families and first-timers.
+created_at: 2026-07-16T12:06:36.28116+00:00
+
+--- entity_sources [row 3 of 3] ---
+id: 8a45ed5d-6f36-42c7-b985-64f8e52d2a98
+entity_slug: another-fish-charters
+source_system: gcr_things_to_do_master
+scope: listing
+observed_at: 2026-07-16T13:27:57.036524+00:00
+confidence: medium
+note: Matched to GCR Things-To-Do master export by normalized business name
+created_at: 2026-07-16T13:27:57.036524+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   3 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 3] ---
+id: 291e9c29-859e-4834-aa41-68320259cdcf
+entity_slug: another-fish-charters
+tag_name: fishing_charter_or_guide
+tag_category: fishing
+
+--- entity_tags [row 2 of 3] ---
+id: ef5f509e-1d7d-42ec-95a5-155658de2126
+entity_slug: another-fish-charters
+tag_name: Fishing Charters
+tag_category: category
+
+--- entity_tags [row 3 of 3] ---
+id: bad3e01f-b2b3-4ec7-8982-0fc84ddb549e
+entity_slug: another-fish-charters
+tag_name: Gulf Shores
+tag_category: category
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: dbe50317-2517-401c-843c-44f4f148ec0e
+entity_slug: another-fish-charters
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_charter_fishing   -   1 row(s)
+####################################################################################################
+
+--- industry_charter_fishing [row 1 of 1] ---
+entity_slug: another-fish-charters
+passenger_max: 6
+trip_count: 6
+shortest_trip_hours: 2
+longest_trip_hours: 6
+price_low: 350
+price_high: 850
+offers_private: false
+offers_shared: false
+overnight_available: false
+updated_at: 2026-07-20T03:12:13.608051+00:00
+
+####################################################################################################
+# TABLE: offering_prices   -   6 row(s)
+####################################################################################################
+
+--- offering_prices [row 1 of 6] ---
+id: c34485cd-87dd-44e8-aedf-ea2443072b1d
+entity_slug: another-fish-charters
+offering_id: 38805a94-83b5-4a96-b32e-0222a5da436c
+label: Quick Catch (2hr)
+price: 350
+sort_order: 1
+created_at: 2026-07-16T12:06:36.28116+00:00
+
+--- offering_prices [row 2 of 6] ---
+id: 40cf2e78-4aa5-4db6-b85c-768e05c8eb1d
+entity_slug: another-fish-charters
+offering_id: 89ec5131-9073-4d66-bdaa-934b634c890e
+label: 4hr Trip
+price: 550
+sort_order: 3
+created_at: 2026-07-16T12:06:36.28116+00:00
+
+--- offering_prices [row 3 of 6] ---
+id: 4ec2cbbc-c8e7-49ab-a43e-972bfbd6779d
+entity_slug: another-fish-charters
+offering_id: e0dc941f-b80e-4605-b1a6-902db5e8e242
+label: 6hr Trip
+price: 750
+sort_order: 5
+created_at: 2026-07-16T12:06:36.28116+00:00
+
+--- offering_prices [row 4 of 6] ---
+id: d37cb243-597d-401c-85d9-ebbd61d3843c
+entity_slug: another-fish-charters
+offering_id: 4e6afc1e-5c63-4569-8fc0-3519749cdf98
+label: 5hr Trip
+price: 650
+sort_order: 4
+created_at: 2026-07-16T12:06:36.28116+00:00
+
+--- offering_prices [row 5 of 6] ---
+id: 4f10da77-946c-45ff-a97a-18ea8bd2ad89
+entity_slug: another-fish-charters
+offering_id: 5ffb9e6a-ff15-4871-af5f-892f66afd6f7
+label: 3hr Trip
+price: 450
+sort_order: 2
+created_at: 2026-07-16T12:06:36.28116+00:00
+
+--- offering_prices [row 6 of 6] ---
+id: a230d727-cb05-4634-8e63-1705efe0648e
+entity_slug: another-fish-charters
+offering_id: 25140c86-d2b0-4be9-b320-16269acba915
+label: Red Snapper 4hr
+price: 850
+sort_order: 6
+created_at: 2026-07-16T12:06:36.28116+00:00
+
+####################################################################################################
+# TABLE: offerings   -   6 row(s)
+####################################################################################################
+
+--- offerings [row 1 of 6] ---
+id: 38805a94-83b5-4a96-b32e-0222a5da436c
+entity_slug: another-fish-charters
+name: Quick Catch (2hr)
+unit: flat
+kind: charter
+price_from: 350
+capacity: 6
+duration_minutes: 120
+details: {}
+active: true
+sort_order: 1
+created_at: 2026-07-16T12:06:36.28116+00:00
+updated_at: 2026-07-16T12:06:36.28116+00:00
+fee_note: Base 2 passengers; +$50 per additional
+trip_category: Inshore
+
+--- offerings [row 2 of 6] ---
+id: 89ec5131-9073-4d66-bdaa-934b634c890e
+entity_slug: another-fish-charters
+name: 4hr Trip
+unit: flat
+kind: charter
+price_from: 550
+capacity: 6
+duration_minutes: 240
+details: {}
+active: true
+sort_order: 3
+created_at: 2026-07-16T12:06:36.28116+00:00
+updated_at: 2026-07-16T12:06:36.28116+00:00
+trip_category: Nearshore
+
+--- offerings [row 3 of 6] ---
+id: e0dc941f-b80e-4605-b1a6-902db5e8e242
+entity_slug: another-fish-charters
+name: 6hr Trip
+unit: flat
+kind: charter
+price_from: 750
+capacity: 6
+duration_minutes: 360
+details: {}
+active: true
+sort_order: 5
+created_at: 2026-07-16T12:06:36.28116+00:00
+updated_at: 2026-07-16T12:06:36.28116+00:00
+trip_category: Nearshore
+
+--- offerings [row 4 of 6] ---
+id: 4e6afc1e-5c63-4569-8fc0-3519749cdf98
+entity_slug: another-fish-charters
+name: 5hr Trip
+unit: flat
+kind: charter
+price_from: 650
+capacity: 6
+duration_minutes: 300
+details: {}
+active: true
+sort_order: 4
+created_at: 2026-07-16T12:06:36.28116+00:00
+updated_at: 2026-07-16T12:06:36.28116+00:00
+trip_category: Nearshore
+
+--- offerings [row 5 of 6] ---
+id: 5ffb9e6a-ff15-4871-af5f-892f66afd6f7
+entity_slug: another-fish-charters
+name: 3hr Trip
+unit: flat
+kind: charter
+price_from: 450
+capacity: 6
+duration_minutes: 180
+details: {}
+active: true
+sort_order: 2
+created_at: 2026-07-16T12:06:36.28116+00:00
+updated_at: 2026-07-16T12:06:36.28116+00:00
+trip_category: Nearshore
+
+--- offerings [row 6 of 6] ---
+id: 25140c86-d2b0-4be9-b320-16269acba915
+entity_slug: another-fish-charters
+name: Red Snapper 4hr
+unit: flat
+kind: charter
+price_from: 850
+capacity: 6
+duration_minutes: 240
+details: {}
+active: true
+sort_order: 6
+created_at: 2026-07-16T12:06:36.28116+00:00
+updated_at: 2026-07-16T12:06:36.28116+00:00
+trip_category: Red Snapper
+
+####################################################################################################
+# TABLE: search_index   -   14 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 14] ---
+ref_type: activity
+ref_id: 38805a94-83b5-4a96-b32e-0222a5da436c
+entity_slug: another-fish-charters
+title: Quick Catch (2hr)
+category: Inshore
+price: 350
+search_vector: '2hr':3A 'catch':2A 'quick':1A
+
+--- search_index [row 2 of 14] ---
+ref_type: activity
+ref_id: 89ec5131-9073-4d66-bdaa-934b634c890e
+entity_slug: another-fish-charters
+title: 4hr Trip
+category: Nearshore
+price: 550
+search_vector: '4hr':1A 'trip':2A
+
+--- search_index [row 3 of 14] ---
+ref_type: activity
+ref_id: e0dc941f-b80e-4605-b1a6-902db5e8e242
+entity_slug: another-fish-charters
+title: 6hr Trip
+category: Nearshore
+price: 750
+search_vector: '6hr':1A 'trip':2A
+
+--- search_index [row 4 of 14] ---
+ref_type: activity
+ref_id: 4e6afc1e-5c63-4569-8fc0-3519749cdf98
+entity_slug: another-fish-charters
+title: 5hr Trip
+category: Nearshore
+price: 650
+search_vector: '5hr':1A 'trip':2A
+
+--- search_index [row 5 of 14] ---
+ref_type: activity
+ref_id: 5ffb9e6a-ff15-4871-af5f-892f66afd6f7
+entity_slug: another-fish-charters
+title: 3hr Trip
+category: Nearshore
+price: 450
+search_vector: '3hr':1A 'trip':2A
+
+--- search_index [row 6 of 14] ---
+ref_type: activity
+ref_id: 25140c86-d2b0-4be9-b320-16269acba915
+entity_slug: another-fish-charters
+title: Red Snapper 4hr
+category: Red Snapper
+price: 850
+search_vector: '4hr':3A 'red':1A 'snapper':2A
+
+--- search_index [row 7 of 14] ---
+ref_type: offer
+ref_id: 12758
+entity_slug: another-fish-charters
+title: Quick Catch (2hr)
+category: charter
+search_vector: '2hr':3A 'catch':2A 'quick':1A
+
+--- search_index [row 8 of 14] ---
+ref_type: offer
+ref_id: 12762
+entity_slug: another-fish-charters
+title: 4hr Trip
+category: charter
+search_vector: '4hr':1A 'trip':2A
+
+--- search_index [row 9 of 14] ---
+ref_type: offer
+ref_id: 12763
+entity_slug: another-fish-charters
+title: 6hr Trip
+category: charter
+search_vector: '6hr':1A 'trip':2A
+
+--- search_index [row 10 of 14] ---
+ref_type: offer
+ref_id: 12767
+entity_slug: another-fish-charters
+title: 5hr Trip
+category: charter
+search_vector: '5hr':1A 'trip':2A
+
+--- search_index [row 11 of 14] ---
+ref_type: offer
+ref_id: 12769
+entity_slug: another-fish-charters
+title: 3hr Trip
+category: charter
+search_vector: '3hr':1A 'trip':2A
+
+--- search_index [row 12 of 14] ---
+ref_type: offer
+ref_id: 12779
+entity_slug: another-fish-charters
+title: Red Snapper 4hr
+category: charter
+search_vector: '4hr':3A 'red':1A 'snapper':2A
+
+--- search_index [row 13 of 14] ---
+ref_type: offer
+ref_id: 13268
+entity_slug: another-fish-charters
+title: Another Fish Charters
+category: rental
+subtitle: Family charter boat; max 6 (some trips 4 max)
+search_vector: '4':11C '6':8C 'anoth':1A 'boat':6C 'charter':3A,5C 'famili':4C 'fish':2A 'max':7C,12C 'trip':10C
+
+--- search_index [row 14 of 14] ---
+ref_type: business
+ref_id: another-fish-charters
+entity_slug: another-fish-charters
+title: Another Fish Charters
+category: fishing_charter
+subtitle: Guided inshore and nearshore trips with gear included.
+search_vector: 'anoth':1A 'charter':3A,5B 'fish':2A,4B 'gear':12C 'guid':6C 'includ':13C 'inshor':7C 'nearshor':9C 'trip':10C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: another-fish-charters
+
+####################################################################################################
+# TABLE: vessels   -   1 row(s)
+####################################################################################################
+
+--- vessels [row 1 of 1] ---
+id: 9d88a30f-ba25-43f0-904a-0a74a2209455
+entity_slug: another-fish-charters
+slug: another-fish-charters-boat
+name: Another Fish Charters
+vessel_category: boat
+passenger_max: 6
+description: Family charter boat; max 6 (some trips 4 max)
+source_resource_id: 8e0b2343-5cfd-4e0b-bbeb-b7ebea500003
+is_active: true
+created_at: 2026-07-23T00:06:23.937689+00:00
+updated_at: 2026-07-23T00:06:23.937689+00:00
+
+####################################################################################################
+# TABLE: whats_included   -   1 row(s)
+####################################################################################################
+
+--- whats_included [row 1 of 1] ---
+id: 159363b0-77a8-4947-8a7e-3f491f3381b0
+included_item: Family-friendly inshore/backbay/nearshore fishing in calm protected waters close to shore. No long offshore runs.
+sort_order: 0
+created_at: 2026-07-16T12:06:36.28116
+entity_slug: another-fish-charters
+item_name: Family-friendly inshore/backbay/nearshore fishing in calm protected waters close to shore. No long offshore runs.

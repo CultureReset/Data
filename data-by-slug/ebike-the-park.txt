@@ -1,0 +1,2741 @@
+====================================================================================================
+SLUG: ebike-the-park
+NAME: EBIKE THE PARK
+INDUSTRY: rental
+SUBTYPE: bike_rental
+TABLES WITH DATA: 30
+TOTAL ROWS: 160
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (3 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (3 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_attributes  (6 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (8 rows)
+  entity_items_v  (8 rows)
+  entity_modules  (13 rows)
+  entity_nearby_landmark_types  (26 rows)
+  entity_nearby_landmarks  (5 rows)
+  entity_offer  (8 rows)
+  entity_photos  (16 rows)
+  entity_reviews  (5 rows)
+  entity_sources  (1 rows)
+  entity_tags  (9 rows)
+  entity_theme  (1 rows)
+  industry_rental  (1 rows)
+  offering_prices  (2 rows)
+  offerings  (7 rows)
+  search_index  (16 rows)
+  tourist_seen  (1 rows)
+  tourist_swipe_events  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: ebike-the-park
+name: EBIKE THE PARK
+planner_category: things_to_do
+data_quality_score: 100
+recommended_next_action: ready_for_ai
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: false
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   3 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 3] ---
+id: 1811
+entity_slug: ebike-the-park
+intent_tag: best_for:outdoor_activity
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 3] ---
+id: 1812
+entity_slug: ebike-the-park
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 3] ---
+id: 1813
+entity_slug: ebike-the-park
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: ebike-the-park
+name: EBIKE THE PARK
+is_active: t
+planner_category: things_to_do
+entity_type: service
+entity_subtype: service
+city: Gulf Shores
+state: AL
+address_line_1: 117 E 14th Ave
+latitude: 30.263202300000003
+longitude: -87.6874082
+rating: 5
+review_count: 195
+website_url: http://www.ebikethepark.com/
+hero_image_url: /photos/ebike-the-park/photo_01.jpg
+voice_summary: EBIKE THE PARK in Gulf Shores is best for outdoor activity.
+planner_summary: Bicycle rental service near the Gulf State Park supplying e-bikes and pedal bikes for exploring trails.
+best_for: outdoor activity
+not_best_for: nothing specific flagged
+service_tags: accessibility
+search_keywords: service|point_of_interest|establishment|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 3
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 3
+faq_count: 0
+data_quality_score: 100
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   3 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 3] ---
+id: 14374
+entity_slug: ebike-the-park
+entity_name: EBIKE THE PARK
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ebike-the-park/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 3] ---
+id: 18802
+entity_slug: ebike-the-park
+entity_name: EBIKE THE PARK
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ebike-the-park/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 3] ---
+id: 18803
+entity_slug: ebike-the-park
+entity_name: EBIKE THE PARK
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ebike-the-park/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 6b52f909-32ae-47ac-8ac4-5a122958f864
+resource_type: service
+slug: ebike-the-park
+name: EBIKE THE PARK
+description: Bicycle rental service near the Gulf State Park supplying e-bikes and pedal bikes for exploring trails.
+entity_slug: ebike-the-park
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ebike-the-park/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ebike-the-park/photo_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ebike-the-park/photo_03.jpg"
+]
+amenities: []
+faqs: []
+address: 117 E 14th Ave
+city: Gulf Shores
+state: AL
+latitude: 30.263202300000003
+longitude: -87.6874082
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 9e4e1973fd99671ca1a8fda31f5cf7cb
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 6b52f909-32ae-47ac-8ac4-5a122958f864
+entity_slug: ebike-the-park
+slug: ebike-the-park
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ebike-the-park/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ebike-the-park/photo_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ebike-the-park/photo_03.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 6fcfc762-77c1-492a-9986-14bb101b2f04
+slug: ebike-the-park
+name: EBIKE THE PARK
+is_active: true
+featured: false
+entity_type: activity
+entity_subtype: bike_rental
+description: Bicycle rental service near the Gulf State Park supplying e-bikes and pedal bikes for exploring trails.
+phone: (251) 460-1088
+website_url: http://www.ebikethepark.com/
+menu_pin: 2874
+address_line_1: 117 E 14th Ave
+city: Gulf Shores
+state: AL
+zip: 36542
+latitude: 30.263202300000003
+longitude: -87.6874082
+rating: 5
+review_count: 195
+hero_image_url: https://places.googleapis.com/v1/places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3lvVHxZjHNuvBrCmv7icfemJqt0wW6OCJ62me1UYkgt7AIXJDOYdG2Rei2v7AXOqajZCveP9t6iqKVVpum0vx_eAmIAsUCEYunj0sUpQmxYz10_fcQZmuuEdJBQV94KW2UWDAZdi5VJLmOqtkggfVACk70_U04ujMkH0TWh1jgK_qZrwC94JB9NJple3omUflF9tQcqUdfF0dbLfQp8aKrDO_o8-XQ7bm1uNhG4EKUErKlvuPZ2SU_WQbw1gAPLHg4DbwDe6lupD6EzJTcuUPA-3okYUO3tw9HlGdxoblnjgjIUgmdtL-TOMn3yvKoau7Xdy6m94AsD0PYxWEwnjC226YMrrWh0ArSYaDuP0llV1-16bwm93ByannYB3OX4lPiXggrKmKWZPGkjb4wHjs7ki_DHh7gWya17XsfV9Ja8DOuP_3YtNDGMPH0W8khD/media?maxHeightPx=1600&maxWidthPx=1600
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-06T06:22:29.579963+00:00
+updated_at: 2026-06-06T06:22:29.579963+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJcae3z6IFmogRyXlpd5LY3-g
+google_maps_uri: https://maps.google.com/?cid=16780368860185983433&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: service
+formatted_address: 117 E 14th Ave, Gulf Shores, AL 36542, USA
+plus_code: 862J7877+72
+international_phone: +1 251-460-1088
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+accepts_cash_only: false
+google_places_data: {
+  "id": "ChIJcae3z6IFmogRyXlpd5LY3-g",
+  "types": [
+    "point_of_interest",
+    "service",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3lvVHxZjHNuvBrCmv7icfemJqt0wW6OCJ62me1UYkgt7AIXJDOYdG2Rei2v7AXOqajZCveP9t6iqKVVpum0vx_eAmIAsUCEYunj0sUpQmxYz10_fcQZmuuEdJBQV94KW2UWDAZdi5VJLmOqtkggfVACk70_U04ujMkH0TWh1jgK_qZrwC94JB9NJple3omUflF9tQcqUdfF0dbLfQp8aKrDO_o8-XQ7bm1uNhG4EKUErKlvuPZ2SU_WQbw1gAPLHg4DbwDe6lupD6EzJTcuUPA-3okYUO3tw9HlGdxoblnjgjIUgmdtL-TOMn3yvKoau7Xdy6m94AsD0PYxWEwnjC226YMrrWh0ArSYaDuP0llV1-16bwm93ByannYB3OX4lPiXggrKmKWZPGkjb4wHjs7ki_DHh7gWya17XsfV9Ja8DOuP_3YtNDGMPH0W8khD",
+      "widthPx": 1621,
+      "heightPx": 911,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBs9172wVLK0ICT5itCQmcL!2e10!4m2!3m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhBs9172wVLK0ICT5itCQmcL&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/113658918605945676584",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVF8se8mgcHbFS94u1rhTvb5oKIWX2FeHNbhzGsHZfHgk6fJLeX=s100-p-k-no-mo",
+          "displayName": "EBIKE THE PARK"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3kLQrb2u1VMGpTD7p_PMxNvYMyLJlwGBurhZmA7QwnLAJw8lAo8fMQszOx1TRmTbu9UOvzUz7cxc-nBsn4Mg43LJB1BccXRGzRIMBx9oH_oiHH1yms-gAkY-XY1ou0Vof9JzMBvWXCUQfSKpUchhHjB0e_INj4AsqP-CXOYO4zbatTU3S1aiYy_RsPwufJK8E0HfhFx1mOoyoK9Lfooj9N_9sKvcHafJ0tRCLlZb4pp3-VHihOq2tbwI6S3In1Y-KuwqsJZpReIHo4WMak4ZJXd6MtsLoIhU5EdvTEKKAtZFe90fDP-S__AUEotDsGmC4wdrxJ27ZfYXgcvaK91XksFedIgPf_4IGUHeFGYYwRK0B6z1VgkOHUAeIgQJH-Uue0dd1BVY1XJbJo6Ti0xsKrPaLvXhAE2IaTksr_4sFt1pSrfbA-8C83y0yZ5d3Ag",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDHVZv5fg4s-knt4zXbmX8n!2e10!4m2!3m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDHVZv5fg4s-knt4zXbmX8n&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/109936477879699675126",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIwN597aPDdUaargXlxX1Wld9hOE3iUeWJkepauAhUNLRYLp_cV=s100-p-k-no-mo",
+          "displayName": "Amy Teather"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3mqfnjq2GVajvxSY5_HwvoZICcMWtZNQSMsqCwzALyRM7FreXqX1oBfWPa0HXJG1Fi6393k1O5NQ_-HQQj2a_kTckxy1aKbFefXsAd0lPYrjBGOG32XTKK1qPcXDAiEzDdTDuT2Lp29ciuvSS-KjkARWkA-5dEvwjkldgOHY4BQHGseeZtvnw5kgtNep7hXGU1jd-LO__bF6_bEULSljtogqMW1ucSko1AQFKpFnbS59UdWjKvwapMRuKtR6aKpyDXSGSVPAA83qQVtKrA1KkVOY4SY8sUeP-57vdnoACaxZG0yLiSYjUDDCL2iv_yGD4BIGRJeGZ2uOaGEDv2YuK1rwt5I8vXgL_HAobMk_LUleug1tPuWMc9ds8c_G1pJDWjEibQ-OVtL1GzlaicFPdeh-dkM8GHI79yYXzbxAd2hI9AzjaAZP7ir3ywEsaep",
+      "widthPx": 940,
+      "heightPx": 788,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDZr_BcD3cLvG25y6dCHv09!2e10!4m2!3m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDZr_BcD3cLvG25y6dCHv09&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/109099903460679027620",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjU3zsplEokb2nbJwOGatYmbYnMIx5sb_E1Ug3JMZvWw_IBD85cz=s100-p-k-no-mo",
+          "displayName": "Terri O."
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3lV1Bw4HEoiH-Aa9k370KXQe6VWz6RwG_dpSlJX7AoNbbfDQ0Soi5JO1Kx_g0dVVROVQcwZmuhu2YI3UFL1CpAGjG2lJy3zwQtpOaIuT3UurTbYDmrBXNJwYj3E3TsTHOgXWUkv6yYRSXl1f9iTdASw_oI_hQW-xfA8Kv3MLCKBnw-bqH18_8-cXuiaKOHgM5WqEuXNxVhV86Y3jAflxcVXenUjtEWW28gU937L3NjQ4j-BCAoBRTNI9cO3LgZwiJt550U17BeeVWf6Qa9ka5V-VJSN6KGaXbJylk7zEqw2BGyKMYZEfKMnp0frTQahflhd_c0rk1Htma9sT2HwC-5WdpbtCgqkMJsm1U6xicHH8FKZ6orBa_bEegtH3esYhq8ZxGoTHLPoA4nh4ekQWcAVZDPBsechLigxIgsZWWUVCP1W-8npHlKJzidmRMJD",
+      "widthPx": 4800,
+      "heightPx": 3600,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhC9CyYcpm2gJzn608G2IyLh!2e10!4m2!3m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhC9CyYcpm2gJzn608G2IyLh&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/103616669051301945502",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXrjJLXGndOD8xZ5nJDO7ZtJEAwzcEQQAwpfpzY5CHbdzcXtg=s100-p-k-no-mo",
+          "displayName": "Andy Fogle"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3kCRZpEA-s8bF1cOP65c3o3WKWAUkO6bfHbVVt0eiNzY9OM9XZU65273mUPLEUJs00PhpjTPcwlP7OOuT4iPI5s9oVj0AOitna7SvhT5pllfRa4cXQBQ12Fa2_pJm5J8sqAnQTOCxHfAYQCoRHwJcpuGHkFpnVtPfZFzFU6WPcEJ5ODyZMKb5R-kXjf8hYiP5aWE0wlTVEYXPX-Jc6eosTBSKH_8eU2z0lYsbFb4fQbydXtpyquOl8qBoLzCAzpzUZd8e1Ie-kQwl7mpTKutQ-5ihE-7mMA4U40ttjE0cbRrv8pwaMc_16YD8RdGrhZXAqU3EqIpGff_3Agwh07kv5aUNv_b44M_N2cfPhfFxRcb26NqHrVeC_iuX_G5yNw2lazKDkGCkazZpyKNw0UpgwFP2SCayJVbwndGINw_5M21MyKt7swnhmqvvTwaWG_",
+      "widthPx": 3600,
+      "heightPx": 4800,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhD0YonQEfJ0uevWRZo9W2CV!2e10!4m2!3m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhD0YonQEfJ0uevWRZo9W2CV&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/113023734076708957099",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWDbRs5iKlFlnoQ_qtT5BvLcTgmuwX1CI7b02bCNPrI_eWPXx0u=s100-p-k-no-mo",
+          "displayName": "Alexis Clark"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3l21_9dmmw6loXk1K9C-M268FKEpZRAJNLXQWqGm49o6b2HYDBlJyYAqHrK-Cb1KnOVC1jlaTvHYHNWsVyHTYt7u8H4TBEgKhr9cDKWlXs-2ZxCI_1ELqIIyhi1zaPDXM00KX0LOrU1t_zV71ZgfjSugeZPSNAipqx5dLHVPALmRN5jENprBQVdSbZc3DA9B3S1P3zva8128KUyzt6oitGmIxhHmLs4nMlYpQrAGXDLUaDxY9X19Eh3p_shoc6zrxglfcyrY4MBZz4Ka-bRGdr2YVb8Bw_DC8EHCkcrb8_--BMmScNed3mcWhYFmjN3Js3y63aNafDH5hkh6gXONUgao1PwJkXcswKozpZStLljavHTFekWGcqO1wyaYDOJ0mtXwDWb3mH0r5BbTdBUwtBUfvqAWXFSbsLi9FEsHRr8lA",
+      "widthPx": 2831,
+      "heightPx": 3152,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICl1dbGIw!2e10!4m2!3m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICl1dbGIw&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/113658918605945676584",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVF8se8mgcHbFS94u1rhTvb5oKIWX2FeHNbhzGsHZfHgk6fJLeX=s100-p-k-no-mo",
+          "displayName": "EBIKE THE PARK"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3leyr9AvGbQFkwvn8gh9u6qm-azStpv3Fr-tiA4DRZfF7Zux5vyzwuZk1IYnfO5TW3a-3y0OwfhmpSFqalgBBz9U6cv1EpsK9UWox8erwqusnHXFTLXTusYcvOi4CruTyC4eWFazx7VWLseltMRbyBiKzCHwyH6Ec_37clYtfeOZXOaO8NdVhR_uADdKZymwFMUaN93wE2bpZfpOZP0dOqbej8UnVXsTO2RTB6HE79TYmqrN88cFTc-66Xw9pREtGEiHp9Htumx5V6slwraMiUjnpDdKsIoaE5_3OBFqHVXd_svGQ_Qd1de1x3HLiPdDhLhuNWViQn5w-hg8nrM87aCVfX06X2XzWXmlJMR9BKX56_Sv5fPrkGT3OXXllI_a-Lon7kzDpGa1mDjEa92UXrng2g09aIuE6VHtsFWy8aSnjlt76nHGaOEDjsXLqhD",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAFc6ztZa2zjOCTpTN4XmqA!2e10!4m2!3m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAFc6ztZa2zjOCTpTN4XmqA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/102447830946848521254",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocI0a5MREHCgaGOZsZSoosKI-cC9NNQJm7EJ8PNVNAPq3_IkgA=s100-p-k-no-mo",
+          "displayName": "Rebecca Weeks"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3klEWSVuxruCyvDo6E4oX8yduKLP5m1AMVU4U-_T2bsBgG7WFBbm9YaylMsLrz4PrhRqIccPA38s1nxbgTOcMUKflZylWcPlrRoKk04OGZpUjIx1ttEcHzr56wJwKQJVxA4vdhAtSCw8rx1fgFvYS2fcY9709fGBdT7gZeqrNpdDol46DSq6R22cSt5zV55yYL-aVcfojMHwZXdl5BE8XiekSF142EGEVgGbd8lZ7OSGxHU09cGnAbkaTXbF5Y5UP-OQVghel8wQQsHkV5UBylWieTX3QG-txCsMmS7uVyEIS03hKohoGx0kL9xYSOytpl-KDSJkkA8ik8V9YZj4InDz6A5MqZqew4TuV23SCR0zXYvP-D0pXPKpM6fRWPB2dszWPLMEV_uquKwmwzBlkhlWwKL5ZQAX4BZsAovBGwRXk692sszFg8d02aCqQ",
+      "widthPx": 3600,
+      "heightPx": 4800,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDDmmMCvlAbA1C6v0PGan3d!2e10!4m2!3m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDDmmMCvlAbA1C6v0PGan3d&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/110711273784036027558",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXmDNFSuT0K7TO0B6P09KKlI6XMy4npNDkTdJS2e3tGCSzPs93elQ=s100-p-k-no-mo",
+          "displayName": "cyndee verhelle"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3l6qhm-BUNMmZOJMzrTKyIsRBS7_THjWAd55IwdRTHEBecXwHSur9mdm8GgtBTzHeCYGIOH4xkSJnxj7dTMdHI4ekrDKWBbwkgGenO4JC1g774xF-ueuNbufMMKh_CjweSUi6z-oynd1Qo_Fn0UE4TMonHNIjolxUBluLxpkYCgJSOQtL16oGW_FcSWLi7Vylkl9n5SI4E7_UuLQHMuc04rYjXPQ1o9DcyJtnYUUoLhtuGpAMOrqHNM7JqXxBByThUKhTZYlDoJWSaFEj914K7l79y50qtsX8cDuTmghxjoYFCHyddwX2nIfUO2jvYLzQh5GWr4aGsvBkuDbeV2s2u4YSxY_ODob87izZrftBtYn_2gj3TL2GfYh1opXZnNnSLLHEz5pt9BfjaZ5PaNto1vHbl04LVvjpQiPNSaebVCzrWchaX68JhVma5fzl3k",
+      "widthPx": 4000,
+      "heightPx": 3000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDf-D3p702l9Jv4Wcglx75P!2e10!4m2!3m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDf-D3p702l9Jv4Wcglx75P&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/102400274193908947658",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXX4TZ_QoafmypVhqHZvS0UFWgk1X6JXqSvAjpzPTGji2f8oFCPIQ=s100-p-k-no-mo",
+          "displayName": "Brenda Stout"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3nucH3fN2IWYAEUt7eMFnF301AyrxrTr0GN_8pZVUvG3Zx147MxK2cD-lYnjgjuEZxKRRKmFL9eroDkIvLbCEAQ77LaC-H_7GQp4yPA88cVr9UTuJxaFouS9IzTabmmjEukdNGlPeW4hsrw3VLX9Qm3V3bE8CyxZlVy-OzNDHxwzQfJqjJv_4h9zgQXwXwgBsGgGy2wCIhLOXuIt-xWoKTpvJaHOIT3pKq5E9Xs0vCyidzPZqsmJaUED0nK8UNrNZzPqXbHckXcqIzIe0y_iD_2Izhb2yo73q2ZBtzeo-o6vQwgsoZEtxGCk2qkf1WmVFhq6J0u2xOw3HaRYpz1WpzCj7QjAcUj2V-0I_F-7RXAl4UnrxiQg32BX3Unm7nK4DczL8pKRSwQlo78SfEK1GsRb9IfUNow-J_ZHeko-6wcAY8",
+      "widthPx": 692,
+      "heightPx": 923,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC5iYmpygE!2e10!4m2!3m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIC5iYmpygE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/113658918605945676584",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVF8se8mgcHbFS94u1rhTvb5oKIWX2FeHNbhzGsHZfHgk6fJLeX=s100-p-k-no-mo",
+          "displayName": "EBIKE THE PARK"
+        }
+      ]
+    }
+  ],
+  "rating": 5,
+  "reviews": [
+    {
+      "name": "places/ChIJcae3z6IFmogRyXlpd5LY3-g/reviews/Ci9DQUlRQUNvZENodHljRjlvT20xU1dYWnJNRVJPVVdwRFREaE1hVGhyTjJOTFptYxAB",
+      "text": {
+        "text": "Renee and Ray were so great to work with! So friendly and informative. We truly loved our time visiting the state park on E-Bikes. The upgraded seat was a must! The park was beautiful and had lots of nice stopping points for rest, scenery, and picnics. Frequent rest stops throughout the park. Loved that the bike included the cooler bag for snacks, drinks, and other personal belongings. Seamless and the enjoyful experience! Who knew E-Bikes would be SO fun!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-01-16T19:43:18.666456321Z",
+      "originalText": {
+        "text": "Renee and Ray were so great to work with! So friendly and informative. We truly loved our time visiting the state park on E-Bikes. The upgraded seat was a must! The park was beautiful and had lots of nice stopping points for rest, scenery, and picnics. Frequent rest stops throughout the park. Loved that the bike included the cooler bag for snacks, drinks, and other personal belongings. Seamless and the enjoyful experience! Who knew E-Bikes would be SO fun!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT20xU1dYWnJNRVJPVVdwRFREaE1hVGhyTjJOTFptYxAB!2m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT20xU1dYWnJNRVJPVVdwRFREaE1hVGhyTjJOTFptYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/108791587013677263536/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJOAGoe9M8-CV_JHNJu0DGo7pE1KTtscUE_KvCnMTdmqYnd7g=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Abigail Chada"
+      },
+      "relativePublishTimeDescription": "4 months ago"
+    },
+    {
+      "name": "places/ChIJcae3z6IFmogRyXlpd5LY3-g/reviews/Ci9DQUlRQUNvZENodHljRjlvT25ONFVuWkZOMmhMVFVNdFMxZGhRbmxITjI1cVkwRRAB",
+      "text": {
+        "text": "Renee and Rachelle were a pleasure to work with. Very easy to book online. Everything was ready to go when we got there.  Quick little ride to get into the park although we had a hard time following the map, but that’s on us!  The ladies also gave us great recommendations for dining after our ride.  We will definitely be back!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-02-25T01:53:01.754044741Z",
+      "originalText": {
+        "text": "Renee and Rachelle were a pleasure to work with. Very easy to book online. Everything was ready to go when we got there.  Quick little ride to get into the park although we had a hard time following the map, but that’s on us!  The ladies also gave us great recommendations for dining after our ride.  We will definitely be back!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25ONFVuWkZOMmhMVFVNdFMxZGhRbmxITjI1cVkwRRAB!2m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT25ONFVuWkZOMmhMVFVNdFMxZGhRbmxITjI1cVkwRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/102033036264052562576/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocI5qCPociLBmfYPOfp0M5EVdtpw8aMw-iNJ_g7_S3Tk7X9PMw=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Shanon DeBernardi"
+      },
+      "relativePublishTimeDescription": "3 months ago"
+    },
+    {
+      "name": "places/ChIJcae3z6IFmogRyXlpd5LY3-g/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tsbFl6UndXa1F4YTJsR1RIRlpiSE4wYUhZMWRGRRAB",
+      "text": {
+        "text": "Amazing Experience!\nRented an ebike for 5 hours today and it was fantastic! The bike was in perfect condition with plenty of battery life. Made exploring the park so easy and fun—covered way more ground than I could have otherwise. The rental location is in a perfect location for accessing the park. Staff was helpful and the whole process was seamless. Highly recommend and can’t wait to come back!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-12-28T22:32:58.469145052Z",
+      "originalText": {
+        "text": "Amazing Experience!\nRented an ebike for 5 hours today and it was fantastic! The bike was in perfect condition with plenty of battery life. Made exploring the park so easy and fun—covered way more ground than I could have otherwise. The rental location is in a perfect location for accessing the park. Staff was helpful and the whole process was seamless. Highly recommend and can’t wait to come back!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tsbFl6UndXa1F4YTJsR1RIRlpiSE4wYUhZMWRGRRAB!2m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2tsbFl6UndXa1F4YTJsR1RIRlpiSE4wYUhZMWRGRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/103616669051301945502/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXrjJLXGndOD8xZ5nJDO7ZtJEAwzcEQQAwpfpzY5CHbdzcXtg=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Andy Fogle"
+      },
+      "relativePublishTimeDescription": "5 months ago"
+    },
+    {
+      "name": "places/ChIJcae3z6IFmogRyXlpd5LY3-g/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tsNE1rSm9jMms1UTJOMk9XNTNVV1p2ZVU1a1FrRRAB",
+      "text": {
+        "text": "I highly, highly recommend Ebike The Park!! We rented ebikes from Ebike The Park on Oct 10th!!! It could not have been a more enjoyable experience!! From the ease of making the reservations (we opted for the larger more comfortable seat, best $5 we ever spent), to the perfect location  right near Gulf Shores Park, to the tutorial for the bikes, the tips from Ray as to where we might want to ride (He mentioned we may want to be in the look out for Lefty), to the map, helmets and cooler bags!!! It was all so easy and we were off on our adventure!! The Park is gorgeous with the Spanish moss hanging from the huge trees, the great flat, paved trails, beautiful boardwalks to ride on, breathtaking views and wonderful people we met along our ride! The 5hr rental is great for allowing time for photo stops, snack and water stops and just leisurely enjoying the park!! And I loved my special email after our return!!!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-10-29T13:34:56.156584009Z",
+      "originalText": {
+        "text": "I highly, highly recommend Ebike The Park!! We rented ebikes from Ebike The Park on Oct 10th!!! It could not have been a more enjoyable experience!! From the ease of making the reservations (we opted for the larger more comfortable seat, best $5 we ever spent), to the perfect location  right near Gulf Shores Park, to the tutorial for the bikes, the tips from Ray as to where we might want to ride (He mentioned we may want to be in the look out for Lefty), to the map, helmets and cooler bags!!! It was all so easy and we were off on our adventure!! The Park is gorgeous with the Spanish moss hanging from the huge trees, the great flat, paved trails, beautiful boardwalks to ride on, breathtaking views and wonderful people we met along our ride! The 5hr rental is great for allowing time for photo stops, snack and water stops and just leisurely enjoying the park!! And I loved my special email after our return!!!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tsNE1rSm9jMms1UTJOMk9XNTNVV1p2ZVU1a1FrRRAB!2m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2tsNE1rSm9jMms1UTJOMk9XNTNVV1p2ZVU1a1FrRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/102400274193908947658/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXX4TZ_QoafmypVhqHZvS0UFWgk1X6JXqSvAjpzPTGji2f8oFCPIQ=s128-c0x00000000-cc-rp-mo-ba2",
+        "displayName": "Brenda Stout"
+      },
+      "relativePublishTimeDescription": "7 months ago"
+    },
+    {
+      "name": "places/ChIJcae3z6IFmogRyXlpd5LY3-g/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCRFIzaEZlbmwxWW1KbWNUTnVabmhCVW5CM1FWRRAB",
+      "text": {
+        "text": "We have spent January and February in the area for the last 3 years. We have used this company to rent eBike’s all three years. It is probably the most fun activity that we do. And the owners are such wonderful people. And we like to support people like Ray and Renee. We will continue to ride with them at least once and maybe twice each time we’re in the area. It’s really a lot of fun and the park is simply beautiful.And they have great eBikes.\n\nFeb. 24, 2026: This is an update of my last review. We leave our time as snowbirds in 4 day and we had to get in one more ride.This was our 3rd ride over our 2-month visit.\nWe so thoroughly enjoy riding with this company. We can’t recommend Ray and Renee’s company highly enough. They are wonderful owners that truly care about their customers. They’ll show you exactly how to use their EBikes. The park couldn’t be more beautiful. This is an activity that you should not miss when you’re in the area. Thanks for a really fun activity Ray and Renee. This is definitely the top activity that we enjoy doing when we are here.\nAnd the price to do this is really excellent!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-02-25T23:10:09.893480500Z",
+      "originalText": {
+        "text": "We have spent January and February in the area for the last 3 years. We have used this company to rent eBike’s all three years. It is probably the most fun activity that we do. And the owners are such wonderful people. And we like to support people like Ray and Renee. We will continue to ride with them at least once and maybe twice each time we’re in the area. It’s really a lot of fun and the park is simply beautiful.And they have great eBikes.\n\nFeb. 24, 2026: This is an update of my last review. We leave our time as snowbirds in 4 day and we had to get in one more ride.This was our 3rd ride over our 2-month visit.\nWe so thoroughly enjoy riding with this company. We can’t recommend Ray and Renee’s company highly enough. They are wonderful owners that truly care about their customers. They’ll show you exactly how to use their EBikes. The park couldn’t be more beautiful. This is an activity that you should not miss when you’re in the area. Thanks for a really fun activity Ray and Renee. This is definitely the top activity that we enjoy doing when we are here.\nAnd the price to do this is really excellent!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pCRFIzaEZlbmwxWW1KbWNUTnVabmhCVW5CM1FWRRAB!2m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2pCRFIzaEZlbmwxWW1KbWNUTnVabmhCVW5CM1FWRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/111332107154232785284/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKirXLwjgJb7Lk_b3M0WB1aK297WSz9T7iJ01wIx7tyc5Gv4Q=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Ben Yates"
+      },
+      "relativePublishTimeDescription": "3 months ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.263202300000003,
+    "longitude": -87.6874082
+  },
+  "plusCode": {
+    "globalCode": "862J7877+72",
+    "compoundCode": "7877+72 Gulf Shores, AL, USA"
+  },
+  "restroom": true,
+  "viewport": {
+    "low": {
+      "latitude": 30.26186191970849,
+      "longitude": -87.68883333029149
+    },
+    "high": {
+      "latitude": 30.26455988029149,
+      "longitude": -87.68613536970848
+    }
+  },
+  "websiteUri": "http://www.ebikethepark.com/",
+  "displayName": {
+    "text": "EBIKE THE PARK",
+    "languageCode": "en"
+  },
+  "primaryType": "service",
+  "googleMapsUri": "https://maps.google.com/?cid=16780368860185983433&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewSummary": {
+    "text": {
+      "text": "People say this bicycle rental service offers well-maintained e-bikes, perfect for exploring the nearby trails. They also highlight the convenient location right in the park, the helpful instructions provided, and the extended rental period of 5 hours.",
+      "languageCode": "en-US"
+    },
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05a2cfb7a771:0xe8dfd892776979c9!9m1!1b1",
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "flagContentUri": "https://www.google.com/local/content/rap/report?postId=5%401:CAIQACodChtyc19oOlktTkJxbFVLXzY1SGNJTlhXbllockE%7CCAIQACorChtyc19oOlktTkJxbFVLXzY1SGNJTlhXbllockESDAiimI_BBhDSjIOmAg&d=17924085&t=8"
+  },
+  "businessStatus": "OPERATIONAL",
+  "paymentOptions": {
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=16780368860185983433&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05a2cfb7a771:0xe8dfd892776979c9!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05a2cfb7a771:0xe8dfd892776979c9!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05a2cfb7a771:0xe8dfd892776979c9!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "userRatingCount": 195,
+  "adrFormatAddress": "<span class=\"street-address\">117 E 14th Ave</span>, <span class=\"locality\">Gulf Shores</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36542</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "117 E 14th Ave, Gulf Shores, AL 36542, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "117",
+      "shortText": "117",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "East 14th Avenue",
+      "shortText": "E 14th Ave",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Gulf Shores",
+      "shortText": "Gulf Shores",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36542",
+      "shortText": "36542",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "landmarks": [
+      {
+        "name": "places/ChIJZeOEkM8EmogRIzvPuPs92wU",
+        "types": [
+          "car_repair",
+          "establishment",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJZeOEkM8EmogRIzvPuPs92wU",
+        "displayName": {
+          "text": "NAPA Auto Parts - AUTOWORX LLC",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 112.36168,
+        "straightLineDistanceMeters": 55.81775
+      },
+      {
+        "name": "places/ChIJe7MNEdAEmogRMtkTHahF9L8",
+        "types": [
+          "atm",
+          "bank",
+          "establishment",
+          "finance",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJe7MNEdAEmogRMtkTHahF9L8",
+        "displayName": {
+          "text": "Regions Bank",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "AROUND_THE_CORNER",
+        "travelDistanceMeters": 79.19509,
+        "straightLineDistanceMeters": 80.7459
+      },
+      {
+        "name": "places/ChIJN6G97s8EmogRnA32Z9yhO4o",
+        "types": [
+          "convenience_store",
+          "establishment",
+          "food",
+          "gas_station",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJN6G97s8EmogRnA32Z9yhO4o",
+        "displayName": {
+          "text": "Murphy USA",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 394.97275,
+        "straightLineDistanceMeters": 247.10173
+      },
+      {
+        "name": "places/ChIJK6jzK9AEmogRkWGir7x5yUA",
+        "types": [
+          "establishment",
+          "food",
+          "grocery_or_supermarket",
+          "liquor_store",
+          "point_of_interest",
+          "store",
+          "supermarket"
+        ],
+        "placeId": "ChIJK6jzK9AEmogRkWGir7x5yUA",
+        "displayName": {
+          "text": "Rouses Market",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 411.69238,
+        "straightLineDistanceMeters": 399.8336
+      },
+      {
+        "name": "places/ChIJfU0KHNAEmogRDymEaC3jLus",
+        "types": [
+          "establishment",
+          "food",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJfU0KHNAEmogRDymEaC3jLus",
+        "displayName": {
+          "text": "TCBY",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 207.73335,
+        "straightLineDistanceMeters": 135.20866
+      }
+    ]
+  },
+  "generativeSummary": {
+    "overview": {
+      "text": "Bicycle rental service near the Gulf State Park supplying e-bikes and pedal bikes for exploring trails.",
+      "languageCode": "en-US"
+    },
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "overviewFlagContentUri": "https://www.google.com/local/content/rap/report?postId=CiUweDg4OWEwNWEyY2ZiN2E3NzE6MHhlOGRmZDg5Mjc3Njk3OWM5MAI&d=17924085&t=12"
+  },
+  "currentOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 16,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 16,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 16,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 16,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 16,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 16,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T14:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: Closed",
+      "Tuesday: 9:00 AM – 4:00 PM",
+      "Wednesday: 9:00 AM – 4:00 PM",
+      "Thursday: 9:00 AM – 4:00 PM",
+      "Friday: 9:00 AM – 4:00 PM",
+      "Saturday: 9:00 AM – 4:00 PM",
+      "Sunday: 9:00 AM – 4:00 PM"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Bicycle Rental Service",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "nationalPhoneNumber": "(251) 460-1088",
+  "regularOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "hour": 16,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 16,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 16,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 16,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 16,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 16,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T14:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: Closed",
+      "Tuesday: 9:00 AM – 4:00 PM",
+      "Wednesday: 9:00 AM – 4:00 PM",
+      "Thursday: 9:00 AM – 4:00 PM",
+      "Friday: 9:00 AM – 4:00 PM",
+      "Saturday: 9:00 AM – 4:00 PM",
+      "Sunday: 9:00 AM – 4:00 PM"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true
+  },
+  "shortFormattedAddress": "117 E 14th Ave, Gulf Shores",
+  "primaryTypeDisplayName": {
+    "text": "Services",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-460-1088"
+}
+ai_overview: Bicycle rental service near the Gulf State Park supplying e-bikes and pedal bikes for exploring trails.
+ai_review_summary: People say this bicycle rental service offers well-maintained e-bikes, perfect for exploring the nearby trails. They also highlight the convenient location right in the park, the helpful instructions provided, and the extended rental period of 5 hours.
+restroom: true
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 117 E 14th Ave, Gulf Shores
+national_phone: (251) 460-1088
+search_vector: '5':61C 'also':42C 'bicycl':4B,25C 'bike':15B,18B,34C 'conveni':45C 'e':14B,33C 'e-bik':13B,32C 'ebik':1A 'explor':20B,37C 'extend':57C 'gulf':9B,64 'help':52C 'highlight':43C 'hour':62C 'instruct':53C 'locat':46C 'maintain':31C 'near':7B 'nearbi':39C 'offer':28C 'park':3A,11B,50C 'pedal':17B 'peopl':22C 'perfect':35C 'period':59C 'provid':54C 'rental':5B,26C,58C 'right':47C 'say':23C 'servic':6B,27C,63 'shore':65 'state':10B 'suppli':12B 'trail':21B,40C 'well':30C 'well-maintain':29C
+primary_type_display: Services
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=16780368860185983433&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05a2cfb7a771:0xe8dfd892776979c9!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05a2cfb7a771:0xe8dfd892776979c9!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05a2cfb7a771:0xe8dfd892776979c9!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "landmarks": [
+    {
+      "name": "places/ChIJZeOEkM8EmogRIzvPuPs92wU",
+      "types": [
+        "car_repair",
+        "establishment",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJZeOEkM8EmogRIzvPuPs92wU",
+      "displayName": {
+        "text": "NAPA Auto Parts - AUTOWORX LLC",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 112.36168,
+      "straightLineDistanceMeters": 55.81775
+    },
+    {
+      "name": "places/ChIJe7MNEdAEmogRMtkTHahF9L8",
+      "types": [
+        "atm",
+        "bank",
+        "establishment",
+        "finance",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJe7MNEdAEmogRMtkTHahF9L8",
+      "displayName": {
+        "text": "Regions Bank",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "AROUND_THE_CORNER",
+      "travelDistanceMeters": 79.19509,
+      "straightLineDistanceMeters": 80.7459
+    },
+    {
+      "name": "places/ChIJN6G97s8EmogRnA32Z9yhO4o",
+      "types": [
+        "convenience_store",
+        "establishment",
+        "food",
+        "gas_station",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJN6G97s8EmogRnA32Z9yhO4o",
+      "displayName": {
+        "text": "Murphy USA",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 394.97275,
+      "straightLineDistanceMeters": 247.10173
+    },
+    {
+      "name": "places/ChIJK6jzK9AEmogRkWGir7x5yUA",
+      "types": [
+        "establishment",
+        "food",
+        "grocery_or_supermarket",
+        "liquor_store",
+        "point_of_interest",
+        "store",
+        "supermarket"
+      ],
+      "placeId": "ChIJK6jzK9AEmogRkWGir7x5yUA",
+      "displayName": {
+        "text": "Rouses Market",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 411.69238,
+      "straightLineDistanceMeters": 399.8336
+    },
+    {
+      "name": "places/ChIJfU0KHNAEmogRDymEaC3jLus",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJfU0KHNAEmogRDymEaC3jLus",
+      "displayName": {
+        "text": "TCBY",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 207.73335,
+      "straightLineDistanceMeters": 135.20866
+    }
+  ]
+}
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url | hero_image_url v2-fix 2026-07-21: repointed to a photo confirmed to actually exist
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+generative_summary: Bicycle rental service near the Gulf State Park supplying e-bikes and pedal bikes for exploring trails.
+industry_code: rental
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_attributes   -   6 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 6] ---
+id: c9830d6d-75bb-4b10-b8a7-7608f17a80c3
+entity_slug: ebike-the-park
+category: amenity
+key: restroom
+label: Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 2 of 6] ---
+id: c8a45a77-5f9a-4645-9c46-9dbfdb12e07b
+entity_slug: ebike-the-park
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 3 of 6] ---
+id: 8f725292-97f3-4a61-bc52-3e03eaceb267
+entity_slug: ebike-the-park
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 4 of 6] ---
+id: 882422db-3741-4fc4-b6cf-0a28b4df03b8
+entity_slug: ebike-the-park
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 5 of 6] ---
+id: 231a5b71-ff58-406f-869e-3e5f2bfb13ea
+entity_slug: ebike-the-park
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 6 of 6] ---
+id: 451da2c4-5857-4c2b-a83f-ecca0261480b
+entity_slug: ebike-the-park
+category: payment
+key: pay_acceptsCreditCards
+label: Accepts Credit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: ebike-the-park
+name: EBIKE THE PARK
+industry_code: rental
+is_parent: false
+score_of_7: 7
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 2b6a2c87-5109-42bc-9037-1e191231b73b
+entity_slug: ebike-the-park
+place_uri: https://maps.google.com/?cid=16780368860185983433&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05a2cfb7a771:0xe8dfd892776979c9!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05a2cfb7a771:0xe8dfd892776979c9!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05a2cfb7a771:0xe8dfd892776979c9!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 106
+entity_slug: ebike-the-park
+google_review_name: places/ChIJcae3z6IFmogRyXlpd5LY3-g/reviews/Ci9DQUlRQUNvZENodHljRjlvT20xU1dYWnJNRVJPVVdwRFREaE1hVGhyTjJOTFptYxAB
+rating: 5
+review_text: Renee and Ray were so great to work with! So friendly and informative. We truly loved our time visiting the state park on E-Bikes. The upgraded seat was a must! The park was beautiful and had lots of nice stopping points for rest, scenery, and picnics. Frequent rest stops throughout the park. Loved that the bike included the cooler bag for snacks, drinks, and other personal belongings. Seamless and the enjoyful experience! Who knew E-Bikes would be SO fun!
+language_code: en
+author_name: Abigail Chada
+author_profile_url: https://www.google.com/maps/contrib/108791587013677263536/reviews
+publish_time: 2026-01-16T19:43:18.666456+00:00
+relative_time: 4 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT20xU1dYWnJNRVJPVVdwRFREaE1hVGhyTjJOTFptYxAB!2m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 107
+entity_slug: ebike-the-park
+google_review_name: places/ChIJcae3z6IFmogRyXlpd5LY3-g/reviews/Ci9DQUlRQUNvZENodHljRjlvT25ONFVuWkZOMmhMVFVNdFMxZGhRbmxITjI1cVkwRRAB
+rating: 5
+review_text: Renee and Rachelle were a pleasure to work with. Very easy to book online. Everything was ready to go when we got there.  Quick little ride to get into the park although we had a hard time following the map, but that’s on us!  The ladies also gave us great recommendations for dining after our ride.  We will definitely be back!
+language_code: en
+author_name: Shanon DeBernardi
+author_profile_url: https://www.google.com/maps/contrib/102033036264052562576/reviews
+publish_time: 2026-02-25T01:53:01.754045+00:00
+relative_time: 3 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25ONFVuWkZOMmhMVFVNdFMxZGhRbmxITjI1cVkwRRAB!2m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 108
+entity_slug: ebike-the-park
+google_review_name: places/ChIJcae3z6IFmogRyXlpd5LY3-g/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tsbFl6UndXa1F4YTJsR1RIRlpiSE4wYUhZMWRGRRAB
+rating: 5
+review_text: Amazing Experience!
+Rented an ebike for 5 hours today and it was fantastic! The bike was in perfect condition with plenty of battery life. Made exploring the park so easy and fun—covered way more ground than I could have otherwise. The rental location is in a perfect location for accessing the park. Staff was helpful and the whole process was seamless. Highly recommend and can’t wait to come back!
+language_code: en
+author_name: Andy Fogle
+author_profile_url: https://www.google.com/maps/contrib/103616669051301945502/reviews
+publish_time: 2025-12-28T22:32:58.469145+00:00
+relative_time: 5 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tsbFl6UndXa1F4YTJsR1RIRlpiSE4wYUhZMWRGRRAB!2m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 109
+entity_slug: ebike-the-park
+google_review_name: places/ChIJcae3z6IFmogRyXlpd5LY3-g/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tsNE1rSm9jMms1UTJOMk9XNTNVV1p2ZVU1a1FrRRAB
+rating: 5
+review_text: I highly, highly recommend Ebike The Park!! We rented ebikes from Ebike The Park on Oct 10th!!! It could not have been a more enjoyable experience!! From the ease of making the reservations (we opted for the larger more comfortable seat, best $5 we ever spent), to the perfect location  right near Gulf Shores Park, to the tutorial for the bikes, the tips from Ray as to where we might want to ride (He mentioned we may want to be in the look out for Lefty), to the map, helmets and cooler bags!!! It was all so easy and we were off on our adventure!! The Park is gorgeous with the Spanish moss hanging from the huge trees, the great flat, paved trails, beautiful boardwalks to ride on, breathtaking views and wonderful people we met along our ride! The 5hr rental is great for allowing time for photo stops, snack and water stops and just leisurely enjoying the park!! And I loved my special email after our return!!!
+language_code: en
+author_name: Brenda Stout
+author_profile_url: https://www.google.com/maps/contrib/102400274193908947658/reviews
+publish_time: 2025-10-29T13:34:56.156584+00:00
+relative_time: 7 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tsNE1rSm9jMms1UTJOMk9XNTNVV1p2ZVU1a1FrRRAB!2m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 110
+entity_slug: ebike-the-park
+google_review_name: places/ChIJcae3z6IFmogRyXlpd5LY3-g/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCRFIzaEZlbmwxWW1KbWNUTnVabmhCVW5CM1FWRRAB
+rating: 5
+review_text: We have spent January and February in the area for the last 3 years. We have used this company to rent eBike’s all three years. It is probably the most fun activity that we do. And the owners are such wonderful people. And we like to support people like Ray and Renee. We will continue to ride with them at least once and maybe twice each time we’re in the area. It’s really a lot of fun and the park is simply beautiful.And they have great eBikes.
+
+Feb. 24, 2026: This is an update of my last review. We leave our time as snowbirds in 4 day and we had to get in one more ride.This was our 3rd ride over our 2-month visit.
+We so thoroughly enjoy riding with this company. We can’t recommend Ray and Renee’s company highly enough. They are wonderful owners that truly care about their customers. They’ll show you exactly how to use their EBikes. The park couldn’t be more beautiful. This is an activity that you should not miss when you’re in the area. Thanks for a really fun activity Ray and Renee. This is definitely the top activity that we enjoy doing when we are here.
+And the price to do this is really excellent!
+language_code: en
+author_name: Ben Yates
+author_profile_url: https://www.google.com/maps/contrib/111332107154232785284/reviews
+publish_time: 2026-02-25T23:10:09.89348+00:00
+relative_time: 3 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pCRFIzaEZlbmwxWW1KbWNUTnVabmhCVW5CM1FWRRAB!2m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 3883efb3-af9d-4251-8ec6-dbdc8b2bf26d
+entity_slug: ebike-the-park
+day_of_week: 1
+opens_at: 09:00:00
+closes_at: 18:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 242d781e-8ee8-43e6-8bd0-fb3b2f5c7cc1
+entity_slug: ebike-the-park
+day_of_week: 0
+opens_at: 09:00:00
+closes_at: 16:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: fe058a2e-ce50-4a98-bf33-8a424da42579
+entity_slug: ebike-the-park
+day_of_week: 2
+opens_at: 09:00:00
+closes_at: 16:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: a3f5086f-fd78-421d-b059-5924206daafc
+entity_slug: ebike-the-park
+day_of_week: 3
+opens_at: 09:00:00
+closes_at: 16:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 8a4ee88d-f6cc-4ef7-9c89-2aeec7f08f44
+entity_slug: ebike-the-park
+day_of_week: 4
+opens_at: 09:00:00
+closes_at: 16:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 9d27786b-feb0-46dd-a9ee-d8fa10eba53d
+entity_slug: ebike-the-park
+day_of_week: 5
+opens_at: 09:00:00
+closes_at: 16:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: a5fb0696-c9af-41ed-9fee-0ce99896b935
+entity_slug: ebike-the-park
+day_of_week: 6
+opens_at: 09:00:00
+closes_at: 16:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   8 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 8] ---
+entity_slug: ebike-the-park
+source_table: offerings
+item_type: rental
+section_name: Rental
+item_id: a88ca9ea-84a0-4deb-ba0e-c20d1f0fba43
+name: E-Bike
+price_from: 50
+price_label: per day
+sort_order: 0
+active: true
+attributes: {
+  "unit": "per day",
+  "fee_note": "Up to 5 hours of ride time. Very generous ride time. Fat tire trikes and trailers also available at additional rates.",
+  "item_type_raw": "rental"
+}
+
+--- entity_items_norm_v [row 2 of 8] ---
+entity_slug: ebike-the-park
+source_table: offerings
+item_type: service
+section_name: Service
+item_id: 771f5e51-bd87-43ab-890b-394d722e913c
+name: Kid carriers & trailers
+price_label: flat
+sort_order: 88
+active: true
+attributes: {
+  "unit": "flat",
+  "item_type_raw": "service"
+}
+
+--- entity_items_norm_v [row 3 of 8] ---
+entity_slug: ebike-the-park
+source_table: offerings
+item_type: service
+section_name: Service
+item_id: 51e2f722-d9d0-4262-a961-e4e81c22571a
+name: Pet trailers
+price_label: flat
+sort_order: 89
+active: true
+attributes: {
+  "unit": "flat",
+  "item_type_raw": "service"
+}
+
+--- entity_items_norm_v [row 4 of 8] ---
+entity_slug: ebike-the-park
+source_table: offerings
+item_type: service
+section_name: Service
+item_id: 029e1e60-7e24-4e82-98c1-0b264a9be2fa
+name: Premium seat upgrades
+price_label: flat
+sort_order: 90
+active: true
+attributes: {
+  "unit": "flat",
+  "item_type_raw": "service"
+}
+
+--- entity_items_norm_v [row 5 of 8] ---
+entity_slug: ebike-the-park
+source_table: offerings
+item_type: service
+section_name: Service
+item_id: 978761cf-3ec1-4ce0-9c09-662a85a4a9e4
+name: Easy step-thru e-bikes
+price_label: flat
+sort_order: 86
+active: true
+attributes: {
+  "unit": "flat",
+  "item_type_raw": "service"
+}
+
+--- entity_items_norm_v [row 6 of 8] ---
+entity_slug: ebike-the-park
+source_table: offerings
+item_type: service
+section_name: Service
+item_id: 662c4499-1159-4291-b3f4-1f3183cc1ded
+name: Guided trail recommendations
+price_label: flat
+sort_order: 91
+active: true
+attributes: {
+  "unit": "flat",
+  "item_type_raw": "service"
+}
+
+--- entity_items_norm_v [row 7 of 8] ---
+entity_slug: ebike-the-park
+source_table: offerings
+item_type: service
+section_name: Service
+item_id: 5b0da6a9-dc89-481b-a824-42af628feff9
+name: Fat tire electric trikes
+price_label: flat
+sort_order: 87
+active: true
+attributes: {
+  "unit": "flat",
+  "item_type_raw": "service"
+}
+
+--- entity_items_norm_v [row 8 of 8] ---
+entity_slug: ebike-the-park
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 6b52f909-32ae-47ac-8ac4-5a122958f864
+name: EBIKE THE PARK
+description: Bicycle rental service near the Gulf State Park supplying e-bikes and pedal bikes for exploring trails.
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ebike-the-park/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ebike-the-park/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ebike-the-park/photo_03.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   8 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 8] ---
+entity_slug: ebike-the-park
+source_table: offerings
+item_type: rental
+section_name: Rental
+item_id: a88ca9ea-84a0-4deb-ba0e-c20d1f0fba43
+name: E-Bike
+price_from: 50
+price_label: per day
+sort_order: 0
+active: true
+attributes: {
+  "unit": "per day",
+  "fee_note": "Up to 5 hours of ride time. Very generous ride time. Fat tire trikes and trailers also available at additional rates."
+}
+
+--- entity_items_v [row 2 of 8] ---
+entity_slug: ebike-the-park
+source_table: offerings
+item_type: service
+section_name: Service
+item_id: 771f5e51-bd87-43ab-890b-394d722e913c
+name: Kid carriers & trailers
+price_label: flat
+sort_order: 88
+active: true
+attributes: {
+  "unit": "flat"
+}
+
+--- entity_items_v [row 3 of 8] ---
+entity_slug: ebike-the-park
+source_table: offerings
+item_type: service
+section_name: Service
+item_id: 51e2f722-d9d0-4262-a961-e4e81c22571a
+name: Pet trailers
+price_label: flat
+sort_order: 89
+active: true
+attributes: {
+  "unit": "flat"
+}
+
+--- entity_items_v [row 4 of 8] ---
+entity_slug: ebike-the-park
+source_table: offerings
+item_type: service
+section_name: Service
+item_id: 029e1e60-7e24-4e82-98c1-0b264a9be2fa
+name: Premium seat upgrades
+price_label: flat
+sort_order: 90
+active: true
+attributes: {
+  "unit": "flat"
+}
+
+--- entity_items_v [row 5 of 8] ---
+entity_slug: ebike-the-park
+source_table: offerings
+item_type: service
+section_name: Service
+item_id: 978761cf-3ec1-4ce0-9c09-662a85a4a9e4
+name: Easy step-thru e-bikes
+price_label: flat
+sort_order: 86
+active: true
+attributes: {
+  "unit": "flat"
+}
+
+--- entity_items_v [row 6 of 8] ---
+entity_slug: ebike-the-park
+source_table: offerings
+item_type: service
+section_name: Service
+item_id: 662c4499-1159-4291-b3f4-1f3183cc1ded
+name: Guided trail recommendations
+price_label: flat
+sort_order: 91
+active: true
+attributes: {
+  "unit": "flat"
+}
+
+--- entity_items_v [row 7 of 8] ---
+entity_slug: ebike-the-park
+source_table: offerings
+item_type: service
+section_name: Service
+item_id: 5b0da6a9-dc89-481b-a824-42af628feff9
+name: Fat tire electric trikes
+price_label: flat
+sort_order: 87
+active: true
+attributes: {
+  "unit": "flat"
+}
+
+--- entity_items_v [row 8 of 8] ---
+entity_slug: ebike-the-park
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 6b52f909-32ae-47ac-8ac4-5a122958f864
+name: EBIKE THE PARK
+description: Bicycle rental service near the Gulf State Park supplying e-bikes and pedal bikes for exploring trails.
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ebike-the-park/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ebike-the-park/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ebike-the-park/photo_03.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: 2f68653f-de2a-456e-88c9-c11519cd36ca
+entity_slug: ebike-the-park
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 9718a97f-1917-4ff7-8589-f208b9502611
+entity_slug: ebike-the-park
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: a3413296-b96d-4c4b-83e8-9cedeb484e02
+entity_slug: ebike-the-park
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: f1c511f9-5a5a-4cac-a48c-724f27d6ef24
+entity_slug: ebike-the-park
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: adf42bca-2956-4905-8fc7-1a7159be0537
+entity_slug: ebike-the-park
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: e8b73f69-4745-4b35-8aec-77aef482199e
+entity_slug: ebike-the-park
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 5b3fdec5-d0cf-455c-b89f-ed2ab81e1407
+entity_slug: ebike-the-park
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: a0da584f-2c4a-44b3-b57d-4c4855948194
+entity_slug: ebike-the-park
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: 6503b557-0256-404b-9dbd-700ec5dc3d3f
+entity_slug: ebike-the-park
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: ae52ffb6-a45f-46ba-8ab6-7c10ae34b97e
+entity_slug: ebike-the-park
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: 88d857b8-775d-43ec-9124-7ad6baa98f85
+entity_slug: ebike-the-park
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: 5c2c17c8-0009-4f9b-aa53-83f69bbae2e9
+entity_slug: ebike-the-park
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: 6d90496c-29e0-4f9f-9115-8e7d6d2a05e0
+entity_slug: ebike-the-park
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   26 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 26] ---
+id: 4f3b67b2-4f0e-40fe-9b86-42f395f832b3
+landmark_id: bb6b5c25-1a29-4538-8987-5c89655ae7be
+entity_slug: ebike-the-park
+landmark_type: car_repair
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 26] ---
+id: 1e9fcf9d-f022-4ec6-b39c-fb271bb99f8c
+landmark_id: bb6b5c25-1a29-4538-8987-5c89655ae7be
+entity_slug: ebike-the-park
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 26] ---
+id: 74331114-85e0-4997-a618-23f1cd753742
+landmark_id: bb6b5c25-1a29-4538-8987-5c89655ae7be
+entity_slug: ebike-the-park
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 26] ---
+id: af3f0f5b-3562-4566-97ed-c9167fadca42
+landmark_id: bb6b5c25-1a29-4538-8987-5c89655ae7be
+entity_slug: ebike-the-park
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 26] ---
+id: c2f7de15-f291-4fd2-b5cd-6f4252dfaf9d
+landmark_id: 9c9ac749-dc54-4dbb-bf24-3d60401c1be1
+entity_slug: ebike-the-park
+landmark_type: atm
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 26] ---
+id: 25c78d69-ac1b-4621-a0b9-4f350719020a
+landmark_id: 9c9ac749-dc54-4dbb-bf24-3d60401c1be1
+entity_slug: ebike-the-park
+landmark_type: bank
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 26] ---
+id: 943942ae-5e23-4313-88c1-091aa18de74d
+landmark_id: 9c9ac749-dc54-4dbb-bf24-3d60401c1be1
+entity_slug: ebike-the-park
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 26] ---
+id: b045823e-021f-4624-b6ce-da118f3d3427
+landmark_id: 9c9ac749-dc54-4dbb-bf24-3d60401c1be1
+entity_slug: ebike-the-park
+landmark_type: finance
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 26] ---
+id: 995e629e-f4bc-496f-b9a9-941c31167bdc
+landmark_id: 9c9ac749-dc54-4dbb-bf24-3d60401c1be1
+entity_slug: ebike-the-park
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 26] ---
+id: 7c4482ee-b162-4ec4-b57c-410275c53842
+landmark_id: 6b61d75b-3124-41f4-953c-0b8fc2e53ca6
+entity_slug: ebike-the-park
+landmark_type: convenience_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 26] ---
+id: a4a0d45d-841f-480d-88f0-811b0395266a
+landmark_id: 6b61d75b-3124-41f4-953c-0b8fc2e53ca6
+entity_slug: ebike-the-park
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 26] ---
+id: 6d87fe7c-0354-431c-b791-6574be3809fb
+landmark_id: 6b61d75b-3124-41f4-953c-0b8fc2e53ca6
+entity_slug: ebike-the-park
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 26] ---
+id: c15dd8f4-750b-4622-81f1-6f63122b5b38
+landmark_id: 6b61d75b-3124-41f4-953c-0b8fc2e53ca6
+entity_slug: ebike-the-park
+landmark_type: gas_station
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 26] ---
+id: 5686392a-d512-42b6-9887-63fffdbd1d39
+landmark_id: 6b61d75b-3124-41f4-953c-0b8fc2e53ca6
+entity_slug: ebike-the-park
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 26] ---
+id: e997664e-3869-46a9-9c51-28fb0fdd472f
+landmark_id: 6b61d75b-3124-41f4-953c-0b8fc2e53ca6
+entity_slug: ebike-the-park
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 26] ---
+id: 69eaa8b6-1fe5-4a89-b78a-b441db87716d
+landmark_id: 4a24f27b-960e-4263-962d-e1d887f3af37
+entity_slug: ebike-the-park
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 26] ---
+id: 81ea1740-44b9-4760-8fc3-bdc1d75dfa7a
+landmark_id: 4a24f27b-960e-4263-962d-e1d887f3af37
+entity_slug: ebike-the-park
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 26] ---
+id: 7f65cde9-1e4f-4775-b874-13d34618fb14
+landmark_id: 4a24f27b-960e-4263-962d-e1d887f3af37
+entity_slug: ebike-the-park
+landmark_type: grocery_or_supermarket
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 19 of 26] ---
+id: 8c7f6180-2ae9-4e8f-8979-8398406a3be3
+landmark_id: 4a24f27b-960e-4263-962d-e1d887f3af37
+entity_slug: ebike-the-park
+landmark_type: liquor_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 20 of 26] ---
+id: 142b7881-def0-4e50-8541-908f06645cca
+landmark_id: 4a24f27b-960e-4263-962d-e1d887f3af37
+entity_slug: ebike-the-park
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 21 of 26] ---
+id: c6944a42-2031-45f7-88b4-1978d5f4141e
+landmark_id: 4a24f27b-960e-4263-962d-e1d887f3af37
+entity_slug: ebike-the-park
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 22 of 26] ---
+id: 50d1c26e-3f01-408d-9ebb-791c8bb30ca5
+landmark_id: 4a24f27b-960e-4263-962d-e1d887f3af37
+entity_slug: ebike-the-park
+landmark_type: supermarket
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 23 of 26] ---
+id: 82be9442-3d8c-4005-8a5b-b41e37ed711d
+landmark_id: 1bf7d799-b318-4154-9607-0bf475ceb5b6
+entity_slug: ebike-the-park
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 24 of 26] ---
+id: ce7d6424-d55f-4b93-9411-faa22933c640
+landmark_id: 1bf7d799-b318-4154-9607-0bf475ceb5b6
+entity_slug: ebike-the-park
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 25 of 26] ---
+id: 7a1271a0-cc31-425a-ba95-50d835ac3900
+landmark_id: 1bf7d799-b318-4154-9607-0bf475ceb5b6
+entity_slug: ebike-the-park
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 26 of 26] ---
+id: 670ef468-7926-41d8-b814-468c11228092
+landmark_id: 1bf7d799-b318-4154-9607-0bf475ceb5b6
+entity_slug: ebike-the-park
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   5 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 5] ---
+id: bb6b5c25-1a29-4538-8987-5c89655ae7be
+entity_slug: ebike-the-park
+kind: landmark
+place_id: ChIJZeOEkM8EmogRIzvPuPs92wU
+name: NAPA Auto Parts - AUTOWORX LLC
+types: [
+  "car_repair",
+  "establishment",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 112.36168
+straight_line_distance_meters: 55.81775
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 5] ---
+id: 9c9ac749-dc54-4dbb-bf24-3d60401c1be1
+entity_slug: ebike-the-park
+kind: landmark
+place_id: ChIJe7MNEdAEmogRMtkTHahF9L8
+name: Regions Bank
+types: [
+  "atm",
+  "bank",
+  "establishment",
+  "finance",
+  "point_of_interest"
+]
+spatial_relationship: AROUND_THE_CORNER
+travel_distance_meters: 79.19509
+straight_line_distance_meters: 80.7459
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 5] ---
+id: 6b61d75b-3124-41f4-953c-0b8fc2e53ca6
+entity_slug: ebike-the-park
+kind: landmark
+place_id: ChIJN6G97s8EmogRnA32Z9yhO4o
+name: Murphy USA
+types: [
+  "convenience_store",
+  "establishment",
+  "food",
+  "gas_station",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 394.97275
+straight_line_distance_meters: 247.10173
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 5] ---
+id: 4a24f27b-960e-4263-962d-e1d887f3af37
+entity_slug: ebike-the-park
+kind: landmark
+place_id: ChIJK6jzK9AEmogRkWGir7x5yUA
+name: Rouses Market
+types: [
+  "establishment",
+  "food",
+  "grocery_or_supermarket",
+  "liquor_store",
+  "point_of_interest",
+  "store",
+  "supermarket"
+]
+travel_distance_meters: 411.69238
+straight_line_distance_meters: 399.8336
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 5] ---
+id: 1bf7d799-b318-4154-9607-0bf475ceb5b6
+entity_slug: ebike-the-park
+kind: landmark
+place_id: ChIJfU0KHNAEmogRDymEaC3jLus
+name: TCBY
+types: [
+  "establishment",
+  "food",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 207.73335
+straight_line_distance_meters: 135.20866
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   8 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 8] ---
+offer_id: 12740
+entity_slug: ebike-the-park
+name: E-Bike
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: offerings
+legacy_id: a88ca9ea-84a0-4deb-ba0e-c20d1f0fba43
+
+--- entity_offer [row 2 of 8] ---
+offer_id: 12830
+entity_slug: ebike-the-park
+name: Kid carriers & trailers
+offer_type: service
+sort_order: 88
+is_available: true
+legacy_source: offerings
+legacy_id: 771f5e51-bd87-43ab-890b-394d722e913c
+
+--- entity_offer [row 3 of 8] ---
+offer_id: 12837
+entity_slug: ebike-the-park
+name: Pet trailers
+offer_type: service
+sort_order: 89
+is_available: true
+legacy_source: offerings
+legacy_id: 51e2f722-d9d0-4262-a961-e4e81c22571a
+
+--- entity_offer [row 4 of 8] ---
+offer_id: 12855
+entity_slug: ebike-the-park
+name: Premium seat upgrades
+offer_type: service
+sort_order: 90
+is_available: true
+legacy_source: offerings
+legacy_id: 029e1e60-7e24-4e82-98c1-0b264a9be2fa
+
+--- entity_offer [row 5 of 8] ---
+offer_id: 12866
+entity_slug: ebike-the-park
+name: Easy step-thru e-bikes
+offer_type: service
+sort_order: 86
+is_available: true
+legacy_source: offerings
+legacy_id: 978761cf-3ec1-4ce0-9c09-662a85a4a9e4
+
+--- entity_offer [row 6 of 8] ---
+offer_id: 12873
+entity_slug: ebike-the-park
+name: Guided trail recommendations
+offer_type: service
+sort_order: 91
+is_available: true
+legacy_source: offerings
+legacy_id: 662c4499-1159-4291-b3f4-1f3183cc1ded
+
+--- entity_offer [row 7 of 8] ---
+offer_id: 12885
+entity_slug: ebike-the-park
+name: Fat tire electric trikes
+offer_type: service
+sort_order: 87
+is_available: true
+legacy_source: offerings
+legacy_id: 5b0da6a9-dc89-481b-a824-42af628feff9
+
+--- entity_offer [row 8 of 8] ---
+offer_id: 13505
+entity_slug: ebike-the-park
+name: EBIKE THE PARK
+description: Bicycle rental service near the Gulf State Park supplying e-bikes and pedal bikes for exploring trails.
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 6b52f909-32ae-47ac-8ac4-5a122958f864
+
+####################################################################################################
+# TABLE: entity_photos   -   16 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 16] ---
+id: 26469d5f-ec2c-464b-96fd-e999b8f9fea3
+entity_slug: ebike-the-park
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ebike-the-park/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 16] ---
+id: 92064115-be47-4245-b405-c458e2960b24
+entity_slug: ebike-the-park
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ebike-the-park/photo_03.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 3 of 16] ---
+id: b0c05fb6-c5a7-4e63-bcc2-fddb4a0b840e
+entity_slug: ebike-the-park
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ebike-the-park/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 4 of 16] ---
+id: fa1c53c6-5da1-4860-9870-f6dae202ab27
+entity_slug: ebike-the-park
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ebike-the-park/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 6b52f909-32ae-47ac-8ac4-5a122958f864
+
+--- entity_photos [row 5 of 16] ---
+id: 1666a396-54a4-4674-b826-a8b54e41c726
+entity_slug: ebike-the-park
+url: https://places.googleapis.com/v1/places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3lvVHxZjHNuvBrCmv7icfemJqt0wW6OCJ62me1UYkgt7AIXJDOYdG2Rei2v7AXOqajZCveP9t6iqKVVpum0vx_eAmIAsUCEYunj0sUpQmxYz10_fcQZmuuEdJBQV94KW2UWDAZdi5VJLmOqtkggfVACk70_U04ujMkH0TWh1jgK_qZrwC94JB9NJple3omUflF9tQcqUdfF0dbLfQp8aKrDO_o8-XQ7bm1uNhG4EKUErKlvuPZ2SU_WQbw1gAPLHg4DbwDe6lupD6EzJTcuUPA-3okYUO3tw9HlGdxoblnjgjIUgmdtL-TOMn3yvKoau7Xdy6m94AsD0PYxWEwnjC226YMrrWh0ArSYaDuP0llV1-16bwm93ByannYB3OX4lPiXggrKmKWZPGkjb4wHjs7ki_DHh7gWya17XsfV9Ja8DOuP_3YtNDGMPH0W8khD/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3lvVHxZjHNuvBrCmv7icfemJqt0wW6OCJ62me1UYkgt7AIXJDOYdG2Rei2v7AXOqajZCveP9t6iqKVVpum0vx_eAmIAsUCEYunj0sUpQmxYz10_fcQZmuuEdJBQV94KW2UWDAZdi5VJLmOqtkggfVACk70_U04ujMkH0TWh1jgK_qZrwC94JB9NJple3omUflF9tQcqUdfF0dbLfQp8aKrDO_o8-XQ7bm1uNhG4EKUErKlvuPZ2SU_WQbw1gAPLHg4DbwDe6lupD6EzJTcuUPA-3okYUO3tw9HlGdxoblnjgjIUgmdtL-TOMn3yvKoau7Xdy6m94AsD0PYxWEwnjC226YMrrWh0ArSYaDuP0llV1-16bwm93ByannYB3OX4lPiXggrKmKWZPGkjb4wHjs7ki_DHh7gWya17XsfV9Ja8DOuP_3YtNDGMPH0W8khD
+is_cover: false
+sort_order: 0
+caption: EBIKE THE PARK
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBs9172wVLK0ICT5itCQmcL!2e10!4m2!3m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9
+
+--- entity_photos [row 6 of 16] ---
+id: 95cda0d1-2839-4019-8c39-8e82a12c8773
+entity_slug: ebike-the-park
+url: https://places.googleapis.com/v1/places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3kLQrb2u1VMGpTD7p_PMxNvYMyLJlwGBurhZmA7QwnLAJw8lAo8fMQszOx1TRmTbu9UOvzUz7cxc-nBsn4Mg43LJB1BccXRGzRIMBx9oH_oiHH1yms-gAkY-XY1ou0Vof9JzMBvWXCUQfSKpUchhHjB0e_INj4AsqP-CXOYO4zbatTU3S1aiYy_RsPwufJK8E0HfhFx1mOoyoK9Lfooj9N_9sKvcHafJ0tRCLlZb4pp3-VHihOq2tbwI6S3In1Y-KuwqsJZpReIHo4WMak4ZJXd6MtsLoIhU5EdvTEKKAtZFe90fDP-S__AUEotDsGmC4wdrxJ27ZfYXgcvaK91XksFedIgPf_4IGUHeFGYYwRK0B6z1VgkOHUAeIgQJH-Uue0dd1BVY1XJbJo6Ti0xsKrPaLvXhAE2IaTksr_4sFt1pSrfbA-8C83y0yZ5d3Ag/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3kLQrb2u1VMGpTD7p_PMxNvYMyLJlwGBurhZmA7QwnLAJw8lAo8fMQszOx1TRmTbu9UOvzUz7cxc-nBsn4Mg43LJB1BccXRGzRIMBx9oH_oiHH1yms-gAkY-XY1ou0Vof9JzMBvWXCUQfSKpUchhHjB0e_INj4AsqP-CXOYO4zbatTU3S1aiYy_RsPwufJK8E0HfhFx1mOoyoK9Lfooj9N_9sKvcHafJ0tRCLlZb4pp3-VHihOq2tbwI6S3In1Y-KuwqsJZpReIHo4WMak4ZJXd6MtsLoIhU5EdvTEKKAtZFe90fDP-S__AUEotDsGmC4wdrxJ27ZfYXgcvaK91XksFedIgPf_4IGUHeFGYYwRK0B6z1VgkOHUAeIgQJH-Uue0dd1BVY1XJbJo6Ti0xsKrPaLvXhAE2IaTksr_4sFt1pSrfbA-8C83y0yZ5d3Ag
+is_cover: false
+sort_order: 1
+caption: Amy Teather
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDHVZv5fg4s-knt4zXbmX8n!2e10!4m2!3m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9
+
+--- entity_photos [row 7 of 16] ---
+id: e2b73a13-b8fa-4082-9829-8f126837f842
+entity_slug: ebike-the-park
+url: https://places.googleapis.com/v1/places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3mqfnjq2GVajvxSY5_HwvoZICcMWtZNQSMsqCwzALyRM7FreXqX1oBfWPa0HXJG1Fi6393k1O5NQ_-HQQj2a_kTckxy1aKbFefXsAd0lPYrjBGOG32XTKK1qPcXDAiEzDdTDuT2Lp29ciuvSS-KjkARWkA-5dEvwjkldgOHY4BQHGseeZtvnw5kgtNep7hXGU1jd-LO__bF6_bEULSljtogqMW1ucSko1AQFKpFnbS59UdWjKvwapMRuKtR6aKpyDXSGSVPAA83qQVtKrA1KkVOY4SY8sUeP-57vdnoACaxZG0yLiSYjUDDCL2iv_yGD4BIGRJeGZ2uOaGEDv2YuK1rwt5I8vXgL_HAobMk_LUleug1tPuWMc9ds8c_G1pJDWjEibQ-OVtL1GzlaicFPdeh-dkM8GHI79yYXzbxAd2hI9AzjaAZP7ir3ywEsaep/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3mqfnjq2GVajvxSY5_HwvoZICcMWtZNQSMsqCwzALyRM7FreXqX1oBfWPa0HXJG1Fi6393k1O5NQ_-HQQj2a_kTckxy1aKbFefXsAd0lPYrjBGOG32XTKK1qPcXDAiEzDdTDuT2Lp29ciuvSS-KjkARWkA-5dEvwjkldgOHY4BQHGseeZtvnw5kgtNep7hXGU1jd-LO__bF6_bEULSljtogqMW1ucSko1AQFKpFnbS59UdWjKvwapMRuKtR6aKpyDXSGSVPAA83qQVtKrA1KkVOY4SY8sUeP-57vdnoACaxZG0yLiSYjUDDCL2iv_yGD4BIGRJeGZ2uOaGEDv2YuK1rwt5I8vXgL_HAobMk_LUleug1tPuWMc9ds8c_G1pJDWjEibQ-OVtL1GzlaicFPdeh-dkM8GHI79yYXzbxAd2hI9AzjaAZP7ir3ywEsaep
+is_cover: false
+sort_order: 2
+caption: Terri O.
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDZr_BcD3cLvG25y6dCHv09!2e10!4m2!3m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9
+
+--- entity_photos [row 8 of 16] ---
+id: 0c9e393e-1819-480d-8836-bb061a44f049
+entity_slug: ebike-the-park
+url: https://places.googleapis.com/v1/places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3lV1Bw4HEoiH-Aa9k370KXQe6VWz6RwG_dpSlJX7AoNbbfDQ0Soi5JO1Kx_g0dVVROVQcwZmuhu2YI3UFL1CpAGjG2lJy3zwQtpOaIuT3UurTbYDmrBXNJwYj3E3TsTHOgXWUkv6yYRSXl1f9iTdASw_oI_hQW-xfA8Kv3MLCKBnw-bqH18_8-cXuiaKOHgM5WqEuXNxVhV86Y3jAflxcVXenUjtEWW28gU937L3NjQ4j-BCAoBRTNI9cO3LgZwiJt550U17BeeVWf6Qa9ka5V-VJSN6KGaXbJylk7zEqw2BGyKMYZEfKMnp0frTQahflhd_c0rk1Htma9sT2HwC-5WdpbtCgqkMJsm1U6xicHH8FKZ6orBa_bEegtH3esYhq8ZxGoTHLPoA4nh4ekQWcAVZDPBsechLigxIgsZWWUVCP1W-8npHlKJzidmRMJD/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3lV1Bw4HEoiH-Aa9k370KXQe6VWz6RwG_dpSlJX7AoNbbfDQ0Soi5JO1Kx_g0dVVROVQcwZmuhu2YI3UFL1CpAGjG2lJy3zwQtpOaIuT3UurTbYDmrBXNJwYj3E3TsTHOgXWUkv6yYRSXl1f9iTdASw_oI_hQW-xfA8Kv3MLCKBnw-bqH18_8-cXuiaKOHgM5WqEuXNxVhV86Y3jAflxcVXenUjtEWW28gU937L3NjQ4j-BCAoBRTNI9cO3LgZwiJt550U17BeeVWf6Qa9ka5V-VJSN6KGaXbJylk7zEqw2BGyKMYZEfKMnp0frTQahflhd_c0rk1Htma9sT2HwC-5WdpbtCgqkMJsm1U6xicHH8FKZ6orBa_bEegtH3esYhq8ZxGoTHLPoA4nh4ekQWcAVZDPBsechLigxIgsZWWUVCP1W-8npHlKJzidmRMJD
+is_cover: false
+sort_order: 3
+caption: Andy Fogle
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhC9CyYcpm2gJzn608G2IyLh!2e10!4m2!3m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9
+
+--- entity_photos [row 9 of 16] ---
+id: 70c2d64d-44fc-4544-a272-c648d2cfa2b0
+entity_slug: ebike-the-park
+url: https://places.googleapis.com/v1/places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3kCRZpEA-s8bF1cOP65c3o3WKWAUkO6bfHbVVt0eiNzY9OM9XZU65273mUPLEUJs00PhpjTPcwlP7OOuT4iPI5s9oVj0AOitna7SvhT5pllfRa4cXQBQ12Fa2_pJm5J8sqAnQTOCxHfAYQCoRHwJcpuGHkFpnVtPfZFzFU6WPcEJ5ODyZMKb5R-kXjf8hYiP5aWE0wlTVEYXPX-Jc6eosTBSKH_8eU2z0lYsbFb4fQbydXtpyquOl8qBoLzCAzpzUZd8e1Ie-kQwl7mpTKutQ-5ihE-7mMA4U40ttjE0cbRrv8pwaMc_16YD8RdGrhZXAqU3EqIpGff_3Agwh07kv5aUNv_b44M_N2cfPhfFxRcb26NqHrVeC_iuX_G5yNw2lazKDkGCkazZpyKNw0UpgwFP2SCayJVbwndGINw_5M21MyKt7swnhmqvvTwaWG_/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3kCRZpEA-s8bF1cOP65c3o3WKWAUkO6bfHbVVt0eiNzY9OM9XZU65273mUPLEUJs00PhpjTPcwlP7OOuT4iPI5s9oVj0AOitna7SvhT5pllfRa4cXQBQ12Fa2_pJm5J8sqAnQTOCxHfAYQCoRHwJcpuGHkFpnVtPfZFzFU6WPcEJ5ODyZMKb5R-kXjf8hYiP5aWE0wlTVEYXPX-Jc6eosTBSKH_8eU2z0lYsbFb4fQbydXtpyquOl8qBoLzCAzpzUZd8e1Ie-kQwl7mpTKutQ-5ihE-7mMA4U40ttjE0cbRrv8pwaMc_16YD8RdGrhZXAqU3EqIpGff_3Agwh07kv5aUNv_b44M_N2cfPhfFxRcb26NqHrVeC_iuX_G5yNw2lazKDkGCkazZpyKNw0UpgwFP2SCayJVbwndGINw_5M21MyKt7swnhmqvvTwaWG_
+is_cover: false
+sort_order: 4
+caption: Alexis Clark
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhD0YonQEfJ0uevWRZo9W2CV!2e10!4m2!3m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9
+
+--- entity_photos [row 10 of 16] ---
+id: 7081aca2-bbf4-41f4-adf5-ad63dfb77636
+entity_slug: ebike-the-park
+url: https://places.googleapis.com/v1/places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3l21_9dmmw6loXk1K9C-M268FKEpZRAJNLXQWqGm49o6b2HYDBlJyYAqHrK-Cb1KnOVC1jlaTvHYHNWsVyHTYt7u8H4TBEgKhr9cDKWlXs-2ZxCI_1ELqIIyhi1zaPDXM00KX0LOrU1t_zV71ZgfjSugeZPSNAipqx5dLHVPALmRN5jENprBQVdSbZc3DA9B3S1P3zva8128KUyzt6oitGmIxhHmLs4nMlYpQrAGXDLUaDxY9X19Eh3p_shoc6zrxglfcyrY4MBZz4Ka-bRGdr2YVb8Bw_DC8EHCkcrb8_--BMmScNed3mcWhYFmjN3Js3y63aNafDH5hkh6gXONUgao1PwJkXcswKozpZStLljavHTFekWGcqO1wyaYDOJ0mtXwDWb3mH0r5BbTdBUwtBUfvqAWXFSbsLi9FEsHRr8lA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3l21_9dmmw6loXk1K9C-M268FKEpZRAJNLXQWqGm49o6b2HYDBlJyYAqHrK-Cb1KnOVC1jlaTvHYHNWsVyHTYt7u8H4TBEgKhr9cDKWlXs-2ZxCI_1ELqIIyhi1zaPDXM00KX0LOrU1t_zV71ZgfjSugeZPSNAipqx5dLHVPALmRN5jENprBQVdSbZc3DA9B3S1P3zva8128KUyzt6oitGmIxhHmLs4nMlYpQrAGXDLUaDxY9X19Eh3p_shoc6zrxglfcyrY4MBZz4Ka-bRGdr2YVb8Bw_DC8EHCkcrb8_--BMmScNed3mcWhYFmjN3Js3y63aNafDH5hkh6gXONUgao1PwJkXcswKozpZStLljavHTFekWGcqO1wyaYDOJ0mtXwDWb3mH0r5BbTdBUwtBUfvqAWXFSbsLi9FEsHRr8lA
+is_cover: false
+sort_order: 5
+caption: EBIKE THE PARK
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICl1dbGIw!2e10!4m2!3m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9
+
+--- entity_photos [row 11 of 16] ---
+id: b91bd2fc-31d5-4e88-baf2-58087b3c93b2
+entity_slug: ebike-the-park
+url: https://places.googleapis.com/v1/places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3leyr9AvGbQFkwvn8gh9u6qm-azStpv3Fr-tiA4DRZfF7Zux5vyzwuZk1IYnfO5TW3a-3y0OwfhmpSFqalgBBz9U6cv1EpsK9UWox8erwqusnHXFTLXTusYcvOi4CruTyC4eWFazx7VWLseltMRbyBiKzCHwyH6Ec_37clYtfeOZXOaO8NdVhR_uADdKZymwFMUaN93wE2bpZfpOZP0dOqbej8UnVXsTO2RTB6HE79TYmqrN88cFTc-66Xw9pREtGEiHp9Htumx5V6slwraMiUjnpDdKsIoaE5_3OBFqHVXd_svGQ_Qd1de1x3HLiPdDhLhuNWViQn5w-hg8nrM87aCVfX06X2XzWXmlJMR9BKX56_Sv5fPrkGT3OXXllI_a-Lon7kzDpGa1mDjEa92UXrng2g09aIuE6VHtsFWy8aSnjlt76nHGaOEDjsXLqhD/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3leyr9AvGbQFkwvn8gh9u6qm-azStpv3Fr-tiA4DRZfF7Zux5vyzwuZk1IYnfO5TW3a-3y0OwfhmpSFqalgBBz9U6cv1EpsK9UWox8erwqusnHXFTLXTusYcvOi4CruTyC4eWFazx7VWLseltMRbyBiKzCHwyH6Ec_37clYtfeOZXOaO8NdVhR_uADdKZymwFMUaN93wE2bpZfpOZP0dOqbej8UnVXsTO2RTB6HE79TYmqrN88cFTc-66Xw9pREtGEiHp9Htumx5V6slwraMiUjnpDdKsIoaE5_3OBFqHVXd_svGQ_Qd1de1x3HLiPdDhLhuNWViQn5w-hg8nrM87aCVfX06X2XzWXmlJMR9BKX56_Sv5fPrkGT3OXXllI_a-Lon7kzDpGa1mDjEa92UXrng2g09aIuE6VHtsFWy8aSnjlt76nHGaOEDjsXLqhD
+is_cover: false
+sort_order: 6
+caption: Rebecca Weeks
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAFc6ztZa2zjOCTpTN4XmqA!2e10!4m2!3m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9
+
+--- entity_photos [row 12 of 16] ---
+id: 3f61b134-235e-427c-9b04-1b36a6001312
+entity_slug: ebike-the-park
+url: https://places.googleapis.com/v1/places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3klEWSVuxruCyvDo6E4oX8yduKLP5m1AMVU4U-_T2bsBgG7WFBbm9YaylMsLrz4PrhRqIccPA38s1nxbgTOcMUKflZylWcPlrRoKk04OGZpUjIx1ttEcHzr56wJwKQJVxA4vdhAtSCw8rx1fgFvYS2fcY9709fGBdT7gZeqrNpdDol46DSq6R22cSt5zV55yYL-aVcfojMHwZXdl5BE8XiekSF142EGEVgGbd8lZ7OSGxHU09cGnAbkaTXbF5Y5UP-OQVghel8wQQsHkV5UBylWieTX3QG-txCsMmS7uVyEIS03hKohoGx0kL9xYSOytpl-KDSJkkA8ik8V9YZj4InDz6A5MqZqew4TuV23SCR0zXYvP-D0pXPKpM6fRWPB2dszWPLMEV_uquKwmwzBlkhlWwKL5ZQAX4BZsAovBGwRXk692sszFg8d02aCqQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3klEWSVuxruCyvDo6E4oX8yduKLP5m1AMVU4U-_T2bsBgG7WFBbm9YaylMsLrz4PrhRqIccPA38s1nxbgTOcMUKflZylWcPlrRoKk04OGZpUjIx1ttEcHzr56wJwKQJVxA4vdhAtSCw8rx1fgFvYS2fcY9709fGBdT7gZeqrNpdDol46DSq6R22cSt5zV55yYL-aVcfojMHwZXdl5BE8XiekSF142EGEVgGbd8lZ7OSGxHU09cGnAbkaTXbF5Y5UP-OQVghel8wQQsHkV5UBylWieTX3QG-txCsMmS7uVyEIS03hKohoGx0kL9xYSOytpl-KDSJkkA8ik8V9YZj4InDz6A5MqZqew4TuV23SCR0zXYvP-D0pXPKpM6fRWPB2dszWPLMEV_uquKwmwzBlkhlWwKL5ZQAX4BZsAovBGwRXk692sszFg8d02aCqQ
+is_cover: false
+sort_order: 7
+caption: cyndee verhelle
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDDmmMCvlAbA1C6v0PGan3d!2e10!4m2!3m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9
+
+--- entity_photos [row 13 of 16] ---
+id: 587f01ad-bcb7-4cc3-bb87-00ca89fb56ed
+entity_slug: ebike-the-park
+url: https://places.googleapis.com/v1/places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3l6qhm-BUNMmZOJMzrTKyIsRBS7_THjWAd55IwdRTHEBecXwHSur9mdm8GgtBTzHeCYGIOH4xkSJnxj7dTMdHI4ekrDKWBbwkgGenO4JC1g774xF-ueuNbufMMKh_CjweSUi6z-oynd1Qo_Fn0UE4TMonHNIjolxUBluLxpkYCgJSOQtL16oGW_FcSWLi7Vylkl9n5SI4E7_UuLQHMuc04rYjXPQ1o9DcyJtnYUUoLhtuGpAMOrqHNM7JqXxBByThUKhTZYlDoJWSaFEj914K7l79y50qtsX8cDuTmghxjoYFCHyddwX2nIfUO2jvYLzQh5GWr4aGsvBkuDbeV2s2u4YSxY_ODob87izZrftBtYn_2gj3TL2GfYh1opXZnNnSLLHEz5pt9BfjaZ5PaNto1vHbl04LVvjpQiPNSaebVCzrWchaX68JhVma5fzl3k/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3l6qhm-BUNMmZOJMzrTKyIsRBS7_THjWAd55IwdRTHEBecXwHSur9mdm8GgtBTzHeCYGIOH4xkSJnxj7dTMdHI4ekrDKWBbwkgGenO4JC1g774xF-ueuNbufMMKh_CjweSUi6z-oynd1Qo_Fn0UE4TMonHNIjolxUBluLxpkYCgJSOQtL16oGW_FcSWLi7Vylkl9n5SI4E7_UuLQHMuc04rYjXPQ1o9DcyJtnYUUoLhtuGpAMOrqHNM7JqXxBByThUKhTZYlDoJWSaFEj914K7l79y50qtsX8cDuTmghxjoYFCHyddwX2nIfUO2jvYLzQh5GWr4aGsvBkuDbeV2s2u4YSxY_ODob87izZrftBtYn_2gj3TL2GfYh1opXZnNnSLLHEz5pt9BfjaZ5PaNto1vHbl04LVvjpQiPNSaebVCzrWchaX68JhVma5fzl3k
+is_cover: false
+sort_order: 8
+caption: Brenda Stout
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDf-D3p702l9Jv4Wcglx75P!2e10!4m2!3m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9
+
+--- entity_photos [row 14 of 16] ---
+id: 0a94e7b5-d142-4339-a968-0eb875aa494c
+entity_slug: ebike-the-park
+url: https://places.googleapis.com/v1/places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3nucH3fN2IWYAEUt7eMFnF301AyrxrTr0GN_8pZVUvG3Zx147MxK2cD-lYnjgjuEZxKRRKmFL9eroDkIvLbCEAQ77LaC-H_7GQp4yPA88cVr9UTuJxaFouS9IzTabmmjEukdNGlPeW4hsrw3VLX9Qm3V3bE8CyxZlVy-OzNDHxwzQfJqjJv_4h9zgQXwXwgBsGgGy2wCIhLOXuIt-xWoKTpvJaHOIT3pKq5E9Xs0vCyidzPZqsmJaUED0nK8UNrNZzPqXbHckXcqIzIe0y_iD_2Izhb2yo73q2ZBtzeo-o6vQwgsoZEtxGCk2qkf1WmVFhq6J0u2xOw3HaRYpz1WpzCj7QjAcUj2V-0I_F-7RXAl4UnrxiQg32BX3Unm7nK4DczL8pKRSwQlo78SfEK1GsRb9IfUNow-J_ZHeko-6wcAY8/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJcae3z6IFmogRyXlpd5LY3-g/photos/AaVGc3nucH3fN2IWYAEUt7eMFnF301AyrxrTr0GN_8pZVUvG3Zx147MxK2cD-lYnjgjuEZxKRRKmFL9eroDkIvLbCEAQ77LaC-H_7GQp4yPA88cVr9UTuJxaFouS9IzTabmmjEukdNGlPeW4hsrw3VLX9Qm3V3bE8CyxZlVy-OzNDHxwzQfJqjJv_4h9zgQXwXwgBsGgGy2wCIhLOXuIt-xWoKTpvJaHOIT3pKq5E9Xs0vCyidzPZqsmJaUED0nK8UNrNZzPqXbHckXcqIzIe0y_iD_2Izhb2yo73q2ZBtzeo-o6vQwgsoZEtxGCk2qkf1WmVFhq6J0u2xOw3HaRYpz1WpzCj7QjAcUj2V-0I_F-7RXAl4UnrxiQg32BX3Unm7nK4DczL8pKRSwQlo78SfEK1GsRb9IfUNow-J_ZHeko-6wcAY8
+is_cover: false
+sort_order: 9
+caption: EBIKE THE PARK
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC5iYmpygE!2e10!4m2!3m1!1s0x889a05a2cfb7a771:0xe8dfd892776979c9
+
+--- entity_photos [row 15 of 16] ---
+id: f592f07d-73e2-46d4-9cf7-813fccd1fd5d
+entity_slug: ebike-the-park
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ebike-the-park/photo_03.jpg
+is_cover: false
+sort_order: 2
+photo_type: resource
+source_name: bookable_resource
+resource_id: 6b52f909-32ae-47ac-8ac4-5a122958f864
+
+--- entity_photos [row 16 of 16] ---
+id: 882b1e0f-a47a-4be6-97d7-e20886270926
+entity_slug: ebike-the-park
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ebike-the-park/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: 6b52f909-32ae-47ac-8ac4-5a122958f864
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 31c4712e-2253-400b-9612-359e854966c4
+entity_slug: ebike-the-park
+reviewer_name: Abigail Chada
+rating: 5
+body: Renee and Ray were so great to work with! So friendly and informative. We truly loved our time visiting the state park on E-Bikes. The upgraded seat was a must! The park was beautiful and had lots of nice stopping points for rest, scenery, and picnics. Frequent rest stops throughout the park. Loved that the bike included the cooler bag for snacks, drinks, and other personal belongings. Seamless and the enjoyful experience! Who knew E-Bikes would be SO fun!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-01-16T19:43:18.666456+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: 2fb9fee1-90bf-417a-b53c-38db459ce678
+entity_slug: ebike-the-park
+reviewer_name: Shanon DeBernardi
+rating: 5
+body: Renee and Rachelle were a pleasure to work with. Very easy to book online. Everything was ready to go when we got there.  Quick little ride to get into the park although we had a hard time following the map, but that’s on us!  The ladies also gave us great recommendations for dining after our ride.  We will definitely be back!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-02-25T01:53:01.754045+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: 91502de2-560c-4b85-9287-fe2588731dba
+entity_slug: ebike-the-park
+reviewer_name: Andy Fogle
+rating: 5
+body: Amazing Experience!
+Rented an ebike for 5 hours today and it was fantastic! The bike was in perfect condition with plenty of battery life. Made exploring the park so easy and fun—covered way more ground than I could have otherwise. The rental location is in a perfect location for accessing the park. Staff was helpful and the whole process was seamless. Highly recommend and can’t wait to come back!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-12-28T22:32:58.469145+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 89aac9a7-4256-47d0-a65b-f0322fdfaa33
+entity_slug: ebike-the-park
+reviewer_name: Brenda Stout
+rating: 5
+body: I highly, highly recommend Ebike The Park!! We rented ebikes from Ebike The Park on Oct 10th!!! It could not have been a more enjoyable experience!! From the ease of making the reservations (we opted for the larger more comfortable seat, best $5 we ever spent), to the perfect location  right near Gulf Shores Park, to the tutorial for the bikes, the tips from Ray as to where we might want to ride (He mentioned we may want to be in the look out for Lefty), to the map, helmets and cooler bags!!! It was all so easy and we were off on our adventure!! The Park is gorgeous with the Spanish moss hanging from the huge trees, the great flat, paved trails, beautiful boardwalks to ride on, breathtaking views and wonderful people we met along our ride! The 5hr rental is great for allowing time for photo stops, snack and water stops and just leisurely enjoying the park!! And I loved my special email after our return!!!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-10-29T13:34:56.156584+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 8b4fc68e-ff1c-4c40-a57b-757c1beedb02
+entity_slug: ebike-the-park
+reviewer_name: Ben Yates
+rating: 5
+body: We have spent January and February in the area for the last 3 years. We have used this company to rent eBike’s all three years. It is probably the most fun activity that we do. And the owners are such wonderful people. And we like to support people like Ray and Renee. We will continue to ride with them at least once and maybe twice each time we’re in the area. It’s really a lot of fun and the park is simply beautiful.And they have great eBikes.
+
+Feb. 24, 2026: This is an update of my last review. We leave our time as snowbirds in 4 day and we had to get in one more ride.This was our 3rd ride over our 2-month visit.
+We so thoroughly enjoy riding with this company. We can’t recommend Ray and Renee’s company highly enough. They are wonderful owners that truly care about their customers. They’ll show you exactly how to use their EBikes. The park couldn’t be more beautiful. This is an activity that you should not miss when you’re in the area. Thanks for a really fun activity Ray and Renee. This is definitely the top activity that we enjoy doing when we are here.
+And the price to do this is really excellent!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-02-25T23:10:09.89348+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_sources   -   1 row(s)
+####################################################################################################
+
+--- entity_sources [row 1 of 1] ---
+id: 8a5a561a-4f4a-439f-90e3-539f5dcc5bf9
+entity_slug: ebike-the-park
+source_system: gulfshores_outfitters_enriched
+source_url: https://www.gulfshores.com/things-to-do/ebike-the-park/
+scope: directory-listing
+observed_at: 2026-07-16T12:10:42.556364+00:00
+confidence: high
+note: Gulf Shores | Best/safest access to Gulf State Park trails; excellent for families and first-timers; wildlife-focused trail maps provided
+created_at: 2026-07-16T12:10:42.556364+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   9 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 9] ---
+id: b8123419-b8f8-40eb-87c6-de7c65d460d9
+entity_slug: ebike-the-park
+tag_name: easy step-thru e-bikes
+tag_category: service
+
+--- entity_tags [row 2 of 9] ---
+id: 6baa5533-5136-4539-9de2-1c6065bff104
+entity_slug: ebike-the-park
+tag_name: fat tire electric trikes
+tag_category: service
+
+--- entity_tags [row 3 of 9] ---
+id: aad7746e-5db7-40c0-acda-e30b34f6115a
+entity_slug: ebike-the-park
+tag_name: kid carriers & trailers
+tag_category: service
+
+--- entity_tags [row 4 of 9] ---
+id: 190c991a-f3b8-4793-92e6-5cb3cbc010aa
+entity_slug: ebike-the-park
+tag_name: pet trailers
+tag_category: service
+
+--- entity_tags [row 5 of 9] ---
+id: 91d0973f-dc8c-45dc-b4ec-9d0e80165155
+entity_slug: ebike-the-park
+tag_name: premium seat upgrades
+tag_category: service
+
+--- entity_tags [row 6 of 9] ---
+id: 69bdfa46-7993-4cf4-8c1f-6ad60763de50
+entity_slug: ebike-the-park
+tag_name: guided trail recommendations
+tag_category: service
+
+--- entity_tags [row 7 of 9] ---
+id: 89ad419d-bf52-48d8-afff-54bbcd6a9016
+entity_slug: ebike-the-park
+tag_name: service
+tag_category: google_primary_type
+
+--- entity_tags [row 8 of 9] ---
+id: d3bd94ae-266b-46cb-a8f7-360af949cb8f
+entity_slug: ebike-the-park
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 9 of 9] ---
+id: ab163dc8-55fc-428c-830d-84e5eceeef85
+entity_slug: ebike-the-park
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 76ae5fd1-bd92-4146-9290-af823dd13ae1
+entity_slug: ebike-the-park
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_rental   -   1 row(s)
+####################################################################################################
+
+--- industry_rental [row 1 of 1] ---
+entity_slug: ebike-the-park
+rental_item_count: 7
+price_low: 50
+price_high: 50
+hourly_available: false
+half_day_available: false
+full_day_available: true
+weekly_available: false
+delivery_offered: false
+updated_at: 2026-07-20T03:16:04.409339+00:00
+
+####################################################################################################
+# TABLE: offering_prices   -   2 row(s)
+####################################################################################################
+
+--- offering_prices [row 1 of 2] ---
+id: a400035f-57ac-4da6-8143-ab6c02930d6f
+entity_slug: ebike-the-park
+offering_id: a88ca9ea-84a0-4deb-ba0e-c20d1f0fba43
+label: Full day
+price: 50
+sort_order: 0
+created_at: 2026-07-07T22:17:17.410651+00:00
+
+--- offering_prices [row 2 of 2] ---
+id: 508d0dc7-bc88-4481-b06d-73f78af9e08a
+entity_slug: ebike-the-park
+label: eBike (full day) — $50 for up to 5 hours
+price: 50
+sort_order: 18
+created_at: 2026-07-16T12:10:42.556364+00:00
+
+####################################################################################################
+# TABLE: offerings   -   7 row(s)
+####################################################################################################
+
+--- offerings [row 1 of 7] ---
+id: a88ca9ea-84a0-4deb-ba0e-c20d1f0fba43
+entity_slug: ebike-the-park
+name: E-Bike
+unit: per day
+kind: rental
+price_from: 50
+details: {}
+active: true
+sort_order: 0
+created_at: 2026-07-07T22:17:17.410651+00:00
+updated_at: 2026-07-07T22:17:17.410651+00:00
+fee_note: Up to 5 hours of ride time. Very generous ride time. Fat tire trikes and trailers also available at additional rates.
+
+--- offerings [row 2 of 7] ---
+id: 771f5e51-bd87-43ab-890b-394d722e913c
+entity_slug: ebike-the-park
+name: Kid carriers & trailers
+unit: flat
+kind: service
+details: {}
+active: true
+sort_order: 88
+created_at: 2026-07-16T12:10:42.556364+00:00
+updated_at: 2026-07-16T12:10:42.556364+00:00
+
+--- offerings [row 3 of 7] ---
+id: 51e2f722-d9d0-4262-a961-e4e81c22571a
+entity_slug: ebike-the-park
+name: Pet trailers
+unit: flat
+kind: service
+details: {}
+active: true
+sort_order: 89
+created_at: 2026-07-16T12:10:42.556364+00:00
+updated_at: 2026-07-16T12:10:42.556364+00:00
+
+--- offerings [row 4 of 7] ---
+id: 029e1e60-7e24-4e82-98c1-0b264a9be2fa
+entity_slug: ebike-the-park
+name: Premium seat upgrades
+unit: flat
+kind: service
+details: {}
+active: true
+sort_order: 90
+created_at: 2026-07-16T12:10:42.556364+00:00
+updated_at: 2026-07-16T12:10:42.556364+00:00
+
+--- offerings [row 5 of 7] ---
+id: 978761cf-3ec1-4ce0-9c09-662a85a4a9e4
+entity_slug: ebike-the-park
+name: Easy step-thru e-bikes
+unit: flat
+kind: service
+details: {}
+active: true
+sort_order: 86
+created_at: 2026-07-16T12:10:42.556364+00:00
+updated_at: 2026-07-16T12:10:42.556364+00:00
+
+--- offerings [row 6 of 7] ---
+id: 662c4499-1159-4291-b3f4-1f3183cc1ded
+entity_slug: ebike-the-park
+name: Guided trail recommendations
+unit: flat
+kind: service
+details: {}
+active: true
+sort_order: 91
+created_at: 2026-07-16T12:10:42.556364+00:00
+updated_at: 2026-07-16T12:10:42.556364+00:00
+
+--- offerings [row 7 of 7] ---
+id: 5b0da6a9-dc89-481b-a824-42af628feff9
+entity_slug: ebike-the-park
+name: Fat tire electric trikes
+unit: flat
+kind: service
+details: {}
+active: true
+sort_order: 87
+created_at: 2026-07-16T12:10:42.556364+00:00
+updated_at: 2026-07-16T12:10:42.556364+00:00
+
+####################################################################################################
+# TABLE: search_index   -   16 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 16] ---
+ref_type: activity
+ref_id: a88ca9ea-84a0-4deb-ba0e-c20d1f0fba43
+entity_slug: ebike-the-park
+title: E-Bike
+category: activity
+price: 50
+search_vector: 'bike':3A 'e':2A 'e-bik':1A
+
+--- search_index [row 2 of 16] ---
+ref_type: activity
+ref_id: 771f5e51-bd87-43ab-890b-394d722e913c
+entity_slug: ebike-the-park
+title: Kid carriers & trailers
+category: activity
+search_vector: 'carrier':2A 'kid':1A 'trailer':3A
+
+--- search_index [row 3 of 16] ---
+ref_type: activity
+ref_id: 51e2f722-d9d0-4262-a961-e4e81c22571a
+entity_slug: ebike-the-park
+title: Pet trailers
+category: activity
+search_vector: 'pet':1A 'trailer':2A
+
+--- search_index [row 4 of 16] ---
+ref_type: activity
+ref_id: 029e1e60-7e24-4e82-98c1-0b264a9be2fa
+entity_slug: ebike-the-park
+title: Premium seat upgrades
+category: activity
+search_vector: 'premium':1A 'seat':2A 'upgrad':3A
+
+--- search_index [row 5 of 16] ---
+ref_type: activity
+ref_id: 978761cf-3ec1-4ce0-9c09-662a85a4a9e4
+entity_slug: ebike-the-park
+title: Easy step-thru e-bikes
+category: activity
+search_vector: 'bike':7A 'e':6A 'e-bik':5A 'easi':1A 'step':3A 'step-thru':2A 'thru':4A
+
+--- search_index [row 6 of 16] ---
+ref_type: activity
+ref_id: 662c4499-1159-4291-b3f4-1f3183cc1ded
+entity_slug: ebike-the-park
+title: Guided trail recommendations
+category: activity
+search_vector: 'guid':1A 'recommend':3A 'trail':2A
+
+--- search_index [row 7 of 16] ---
+ref_type: activity
+ref_id: 5b0da6a9-dc89-481b-a824-42af628feff9
+entity_slug: ebike-the-park
+title: Fat tire electric trikes
+category: activity
+search_vector: 'electr':3A 'fat':1A 'tire':2A 'trike':4A
+
+--- search_index [row 8 of 16] ---
+ref_type: business
+ref_id: ebike-the-park
+entity_slug: ebike-the-park
+title: EBIKE THE PARK
+category: bike_rental
+subtitle: Bicycle rental service near the Gulf State Park supplying e-bikes and pedal bikes for exploring trails.
+search_vector: 'bicycl':6C 'bike':4B,17C,20C 'e':16C 'e-bik':15C 'ebik':1A 'explor':22C 'gulf':11C 'near':9C 'park':3A,13C 'pedal':19C 'rental':5B,7C 'servic':8C 'state':12C 'suppli':14C 'trail':23C
+
+--- search_index [row 9 of 16] ---
+ref_type: offer
+ref_id: 12740
+entity_slug: ebike-the-park
+title: E-Bike
+category: rental
+search_vector: 'bike':3A 'e':2A 'e-bik':1A
+
+--- search_index [row 10 of 16] ---
+ref_type: offer
+ref_id: 12830
+entity_slug: ebike-the-park
+title: Kid carriers & trailers
+category: service
+search_vector: 'carrier':2A 'kid':1A 'trailer':3A
+
+--- search_index [row 11 of 16] ---
+ref_type: offer
+ref_id: 12837
+entity_slug: ebike-the-park
+title: Pet trailers
+category: service
+search_vector: 'pet':1A 'trailer':2A
+
+--- search_index [row 12 of 16] ---
+ref_type: offer
+ref_id: 12855
+entity_slug: ebike-the-park
+title: Premium seat upgrades
+category: service
+search_vector: 'premium':1A 'seat':2A 'upgrad':3A
+
+--- search_index [row 13 of 16] ---
+ref_type: offer
+ref_id: 12866
+entity_slug: ebike-the-park
+title: Easy step-thru e-bikes
+category: service
+search_vector: 'bike':7A 'e':6A 'e-bik':5A 'easi':1A 'step':3A 'step-thru':2A 'thru':4A
+
+--- search_index [row 14 of 16] ---
+ref_type: offer
+ref_id: 12873
+entity_slug: ebike-the-park
+title: Guided trail recommendations
+category: service
+search_vector: 'guid':1A 'recommend':3A 'trail':2A
+
+--- search_index [row 15 of 16] ---
+ref_type: offer
+ref_id: 12885
+entity_slug: ebike-the-park
+title: Fat tire electric trikes
+category: service
+search_vector: 'electr':3A 'fat':1A 'tire':2A 'trike':4A
+
+--- search_index [row 16 of 16] ---
+ref_type: offer
+ref_id: 13505
+entity_slug: ebike-the-park
+title: EBIKE THE PARK
+category: rental
+subtitle: Bicycle rental service near the Gulf State Park supplying e-bikes and pedal bikes for exploring trails.
+search_vector: 'bicycl':4C 'bike':15C,18C 'e':14C 'e-bik':13C 'ebik':1A 'explor':20C 'gulf':9C 'near':7C 'park':3A,11C 'pedal':17C 'rental':5C 'servic':6C 'state':10C 'suppli':12C 'trail':21C
+
+####################################################################################################
+# TABLE: tourist_seen   -   1 row(s)
+####################################################################################################
+
+--- tourist_seen [row 1 of 1] ---
+id: c9fa0a9c-03de-4fd9-80b1-8f6915381527
+tourist_id: 73a5a5d3-25c2-42a3-be99-e4c916f56c72
+entity_slug: ebike-the-park
+created_at: 2026-07-27T23:31:13.374539+00:00
+
+####################################################################################################
+# TABLE: tourist_swipe_events   -   1 row(s)
+####################################################################################################
+
+--- tourist_swipe_events [row 1 of 1] ---
+id: 46cb4d2a-f31d-4343-b191-53dbc0a3aa71
+tourist_id: 0eae72e6-2535-424e-bd65-024879c35e40
+entity_slug: ebike-the-park
+entity_name: EBIKE THE PARK
+category: stay
+direction: nope
+created_at: 2026-07-27T23:31:13.301376+00:00
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: ebike-the-park

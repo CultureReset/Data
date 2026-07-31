@@ -1,0 +1,599 @@
+====================================================================================================
+SLUG: oso-alabama
+NAME: OSO Alabama
+INDUSTRY: trade_home_service
+SUBTYPE: cleaning_service
+TABLES WITH DATA: 21
+TOTAL ROWS: 48
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (4 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_offer  (1 rows)
+  entity_photos  (4 rows)
+  entity_tags  (2 rows)
+  entity_theme  (1 rows)
+  industry_trade_home_service  (1 rows)
+  search_index  (2 rows)
+  service_menu  (1 rows)
+  trade_home_services  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: oso-alabama
+name: OSO Alabama
+planner_category: local_service
+data_quality_score: 70
+issues: missing_summary|missing_lat_lng
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   4 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 4] ---
+id: 8471
+entity_slug: oso-alabama
+intent_tag: best_for:local_information
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 4] ---
+id: 8472
+entity_slug: oso-alabama
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 4] ---
+id: 8473
+entity_slug: oso-alabama
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 4] ---
+id: 8474
+entity_slug: oso-alabama
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: oso-alabama
+name: OSO Alabama
+is_active: t
+planner_category: local_service
+entity_type: service
+entity_subtype: unknown
+review_count: 0
+website_url: https://osoalabama.com
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/oso-alabama/photo_01.jpg
+voice_summary: OSO Alabama is best for local information.
+planner_summary: OSO Alabama is a local service listing in Gulf Coast Radar.
+best_for: local information
+not_best_for: nothing specific flagged
+search_keywords: unknown
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 2
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 2
+faq_count: 0
+data_quality_score: 70
+data_gaps: missing_summary|missing_lat_lng
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 7358
+entity_slug: oso-alabama
+entity_name: OSO Alabama
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/oso-alabama/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 7359
+entity_slug: oso-alabama
+entity_name: OSO Alabama
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/oso-alabama/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: cef22488-cb5d-499c-a1bb-a377d690e4bd
+resource_type: service
+slug: oso-alabama
+name: OSO Alabama
+entity_slug: oso-alabama
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/oso-alabama/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/oso-alabama/photo_02.jpg"
+]
+amenities: []
+faqs: []
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 8222f384d2fe1c1cba98aa141f2803da
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: cef22488-cb5d-499c-a1bb-a377d690e4bd
+entity_slug: oso-alabama
+slug: oso-alabama
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/oso-alabama/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/oso-alabama/photo_02.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 011108ae-c2f4-439a-859f-f9807c30dd4d
+slug: oso-alabama
+name: OSO Alabama
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: cleaning_service
+website_url: https://osoalabama.com
+menu_pin: 5407
+city: Gulf Shores
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/oso-alabama/photo_01.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T22:58:37.762278+00:00
+updated_at: 2026-06-03T22:58:37.762278+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+business_status: OPERATIONAL
+google_places_data: {}
+search_vector: 'alabama':2A 'gulf':3 'oso':1A 'shore':4
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: trade_home_service
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: oso-alabama
+name: OSO Alabama
+industry_code: trade_home_service
+is_parent: false
+score_of_7: 3
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 432297d1-22a6-4234-a519-dd8ad9bda5b0
+entity_slug: oso-alabama
+day_of_week: 1
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 526de776-5805-4821-bb29-423b1802e47a
+entity_slug: oso-alabama
+day_of_week: 2
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 5947a9f8-abb7-4c57-9b14-2637266ab621
+entity_slug: oso-alabama
+day_of_week: 3
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 5b179d36-90ab-44f6-8898-fe7db3997b20
+entity_slug: oso-alabama
+day_of_week: 4
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: ec639af3-8840-492d-8abb-75dac34ec6da
+entity_slug: oso-alabama
+day_of_week: 5
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 5b44cfc2-29f1-4ca7-8c4e-189e8a241d96
+entity_slug: oso-alabama
+day_of_week: 6
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: d8e0f1f4-a60c-414a-83da-da99a5b3a2a8
+entity_slug: oso-alabama
+day_of_week: 0
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: oso-alabama
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: cef22488-cb5d-499c-a1bb-a377d690e4bd
+name: OSO Alabama
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/oso-alabama/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/oso-alabama/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: oso-alabama
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: cef22488-cb5d-499c-a1bb-a377d690e4bd
+name: OSO Alabama
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/oso-alabama/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/oso-alabama/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: 4b5d05be-6342-4f03-b70f-07abe60989e5
+entity_slug: oso-alabama
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: d2de4fd4-7dab-4d7f-84b6-9cd7d25edece
+entity_slug: oso-alabama
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: 45a1a178-750e-4b33-9849-eb5dbbae56f4
+entity_slug: oso-alabama
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: 0f84a1a3-42fc-4bb5-89f8-36fad5b4793f
+entity_slug: oso-alabama
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: 46c6c0b8-5c47-4b67-9e59-5981445b564c
+entity_slug: oso-alabama
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: dfb9200e-0e57-4112-83b3-026cb9da109d
+entity_slug: oso-alabama
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 683e1d04-39f9-411c-977e-e70b5f91f218
+entity_slug: oso-alabama
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 1a14d0fd-8840-4fc1-9253-c7921e162c9f
+entity_slug: oso-alabama
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: 381d16c2-1263-4d61-85fe-40f374ea3f90
+entity_slug: oso-alabama
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: 55310e57-b1e8-494a-9873-c47fa65c48da
+entity_slug: oso-alabama
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: 919eeca6-ca95-4ec1-97ca-34b1b079328b
+entity_slug: oso-alabama
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: 3be62906-7d8d-41a3-9ed1-a10f08f548b3
+entity_slug: oso-alabama
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: 79e286d9-10a7-4ae5-b26d-062dec46beb1
+entity_slug: oso-alabama
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13884
+entity_slug: oso-alabama
+name: OSO Alabama
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: cef22488-cb5d-499c-a1bb-a377d690e4bd
+
+####################################################################################################
+# TABLE: entity_photos   -   4 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 4] ---
+id: 72c84514-8fdd-4623-9d05-c5f97f0ed970
+entity_slug: oso-alabama
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/oso-alabama/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 4] ---
+id: 713cb7e7-5d39-475e-83e2-8cd3a10f83be
+entity_slug: oso-alabama
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/oso-alabama/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 4] ---
+id: 3fda1bf0-9393-467e-adcd-e218be060522
+entity_slug: oso-alabama
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/oso-alabama/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: cef22488-cb5d-499c-a1bb-a377d690e4bd
+
+--- entity_photos [row 4 of 4] ---
+id: 8abe6b0c-ef1c-461b-97e0-9ed2b95e57a6
+entity_slug: oso-alabama
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/oso-alabama/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: cef22488-cb5d-499c-a1bb-a377d690e4bd
+
+####################################################################################################
+# TABLE: entity_tags   -   2 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 2] ---
+id: bb7f530d-36e7-49ff-b40d-b2e6ea509e8d
+entity_slug: oso-alabama
+tag_name: unknown
+tag_category: industry
+
+--- entity_tags [row 2 of 2] ---
+id: cb381b4e-8d33-4848-82c3-ed61c913071d
+entity_slug: oso-alabama
+tag_name: unknown
+tag_category: type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 5e19668f-eb06-48c1-8e53-9966417b4f1d
+entity_slug: oso-alabama
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_trade_home_service   -   1 row(s)
+####################################################################################################
+
+--- industry_trade_home_service [row 1 of 1] ---
+entity_slug: oso-alabama
+service_count: 0
+updated_at: 2026-07-20T03:17:43.35857+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: offer
+ref_id: 13884
+entity_slug: oso-alabama
+title: OSO Alabama
+category: rental
+search_vector: 'alabama':2A 'oso':1A
+
+--- search_index [row 2 of 2] ---
+ref_type: business
+ref_id: oso-alabama
+entity_slug: oso-alabama
+title: OSO Alabama
+category: cleaning_service
+search_vector: 'alabama':2A 'clean':3B 'oso':1A 'servic':4B
+
+####################################################################################################
+# TABLE: service_menu   -   1 row(s)
+####################################################################################################
+
+--- service_menu [row 1 of 1] ---
+id: 7e13a276-ba7f-40f1-b6fa-b7f0f0114d0d
+entity_slug: oso-alabama
+name: OSO Alabama
+sort_order: 0
+
+####################################################################################################
+# TABLE: trade_home_services   -   1 row(s)
+####################################################################################################
+
+--- trade_home_services [row 1 of 1] ---
+id: 0f4489dd-2c0f-4a45-b922-879cf3b1d780
+entity_slug: oso-alabama
+name: OSO Alabama
+sort_order: 0
+is_active: true
+created_at: 2026-07-24T08:30:32.961268+00:00
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: oso-alabama

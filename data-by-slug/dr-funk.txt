@@ -1,0 +1,1397 @@
+====================================================================================================
+SLUG: dr-funk
+NAME: Dr. Funk
+INDUSTRY: health_medical
+SUBTYPE: doctor
+TABLES WITH DATA: 24
+TOTAL ROWS: 84
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (6 rows)
+  ai_entity_profiles_full  (1 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_attributes  (6 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (4 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_nearby_landmark_types  (21 rows)
+  entity_nearby_landmarks  (5 rows)
+  entity_offer  (1 rows)
+  entity_reviews  (4 rows)
+  entity_tags  (8 rows)
+  entity_theme  (1 rows)
+  health_medical_services  (1 rows)
+  industry_health_medical  (1 rows)
+  search_index  (2 rows)
+  service_menu  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: dr-funk
+name: Dr. Funk
+planner_category: local_service
+data_quality_score: 65
+issues: missing_summary|missing_photos|missing_hours|missing_contact_or_website
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: true
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   6 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 6] ---
+id: 19263
+entity_slug: dr-funk
+intent_tag: best_for:local_information
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 6] ---
+id: 19264
+entity_slug: dr-funk
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 6] ---
+id: 19265
+entity_slug: dr-funk
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 6] ---
+id: 19266
+entity_slug: dr-funk
+intent_tag: missing:missing_photos
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 6] ---
+id: 19267
+entity_slug: dr-funk
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 6] ---
+id: 19268
+entity_slug: dr-funk
+intent_tag: missing:missing_contact_or_website
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: dr-funk
+name: Dr. Funk
+is_active: t
+planner_category: local_service
+entity_type: service
+entity_subtype: doctor
+city: Gulf Shores
+state: AL
+address_line_1: 20021 Dotson St
+latitude: 30.305769700000003
+longitude: -87.68384429999999
+rating: 3.8
+review_count: 4
+voice_summary: Dr. Funk in Gulf Shores is best for local information.
+planner_summary: Dr. Funk in Gulf Shores is a local service listing in Gulf Coast Radar.
+best_for: local information
+not_best_for: nothing specific flagged
+service_tags: accessibility
+search_keywords: doctor|health|point_of_interest|establishment|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: false
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 0
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 8
+faq_count: 0
+data_quality_score: 65
+data_gaps: missing_summary|missing_photos|missing_hours|missing_contact_or_website
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 2e1b31cd-c1d3-40cf-97a7-294c1cc5c30a
+resource_type: service
+slug: dr-funk
+name: Dr. Funk
+entity_slug: dr-funk
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: []
+amenities: []
+faqs: []
+address: 20021 Dotson St
+city: Gulf Shores
+state: AL
+latitude: 30.305769700000003
+longitude: -87.68384429999999
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: fe7a67678e2c99b9d7bac7f745dfecc6
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 2e1b31cd-c1d3-40cf-97a7-294c1cc5c30a
+entity_slug: dr-funk
+slug: dr-funk
+photo_urls: []
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: aaa25399-a45b-481c-82fb-2c28e8e9741e
+slug: dr-funk
+name: Dr. Funk
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: doctor
+menu_pin: 7696
+address_line_1: 20021 Dotson St
+city: Gulf Shores
+state: AL
+zip: 36542
+latitude: 30.305769700000003
+longitude: -87.68384429999999
+rating: 3.8
+review_count: 4
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T04:01:24.302735+00:00
+updated_at: 2026-06-03T04:01:24.302735+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJMWHcp0YFmogRzpkngn078Yo
+google_maps_uri: https://maps.google.com/?cid=10011848856861907406&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: doctor
+formatted_address: 20021 Dotson St, Gulf Shores, AL 36542, USA
+plus_code: 862J8848+8F
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+accepts_cash_only: false
+google_places_data: {
+  "id": "ChIJMWHcp0YFmogRzpkngn078Yo",
+  "types": [
+    "doctor",
+    "health",
+    "point_of_interest",
+    "establishment"
+  ],
+  "rating": 3.8,
+  "reviews": [
+    {
+      "name": "places/ChIJMWHcp0YFmogRzpkngn078Yo/reviews/ChdDSUhNMG9nS0VJQ0FnSUNpeTh6dzh3RRAB",
+      "text": {
+        "text": "He is very rude. If you aren’t interested in the pharmaceuticals he is peddling, he refers to you as a bad first date. Going to see a healthcare professional it’s not a date.",
+        "languageCode": "en"
+      },
+      "rating": 1,
+      "publishTime": "2020-11-15T22:29:27.123655Z",
+      "originalText": {
+        "text": "He is very rude. If you aren’t interested in the pharmaceuticals he is peddling, he refers to you as a bad first date. Going to see a healthcare professional it’s not a date.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNpeTh6dzh3RRAB!2m1!1s0x889a0546a7dc6131:0x8af13b7d822799ce",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNpeTh6dzh3RRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/105177544618245029823/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKR0c7RFVPOE-CEQznjOEuyk-17XmgoT2IgRraUvPJYDjkWWQ=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Noneya"
+      },
+      "relativePublishTimeDescription": "5 years ago"
+    },
+    {
+      "name": "places/ChIJMWHcp0YFmogRzpkngn078Yo/reviews/ChZDSUhNMG9nS0VJQ0FnSURCbnZucmJ3EAE",
+      "rating": 5,
+      "publishTime": "2023-01-20T08:15:49.983372Z",
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURCbnZucmJ3EAE!2m1!1s0x889a0546a7dc6131:0x8af13b7d822799ce",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURCbnZucmJ3EAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/108484855633559194313/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVLS8w2JvvWDcYaQcW12p-xX1tyJ9YpwoZpCaER20dif3QrMTcc=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Tammy Merrow"
+      },
+      "relativePublishTimeDescription": "3 years ago"
+    },
+    {
+      "name": "places/ChIJMWHcp0YFmogRzpkngn078Yo/reviews/ChZDSUhNMG9nS0VJQ0FnSUM4bmFmREp3EAE",
+      "rating": 5,
+      "publishTime": "2020-07-12T01:59:29.158483Z",
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUM4bmFmREp3EAE!2m1!1s0x889a0546a7dc6131:0x8af13b7d822799ce",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUM4bmFmREp3EAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/107060981860873958866/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVOuV1iyY2H1zWmXIvtySXjQIqmV_S9Sz5j1knfpkWJq0ZfhuPE=s128-c0x00000000-cc-rp-mo-ba2",
+        "displayName": "Denise Daniel"
+      },
+      "relativePublishTimeDescription": "5 years ago"
+    },
+    {
+      "name": "places/ChIJMWHcp0YFmogRzpkngn078Yo/reviews/ChdDSUhNMG9nS0VJQ0FnSURJa052dDVBRRAB",
+      "rating": 4,
+      "publishTime": "2018-12-17T09:02:03.471764876Z",
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURJa052dDVBRRAB!2m1!1s0x889a0546a7dc6131:0x8af13b7d822799ce",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURJa052dDVBRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/108463083186902323184/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUvEg1ER_zoaub5dXy1Ozq3fyPFYaHXcb5k2JAjZqknNgzX9EmvOA=s128-c0x00000000-cc-rp-mo-ba2",
+        "displayName": "Stacey Taylor"
+      },
+      "relativePublishTimeDescription": "7 years ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.305769700000003,
+    "longitude": -87.68384429999999
+  },
+  "plusCode": {
+    "globalCode": "862J8848+8F",
+    "compoundCode": "8848+8F Gulf Shores, AL, USA"
+  },
+  "restroom": true,
+  "viewport": {
+    "low": {
+      "latitude": 30.304508469708505,
+      "longitude": -87.6852718802915
+    },
+    "high": {
+      "latitude": 30.307206430291505,
+      "longitude": -87.68257391970849
+    }
+  },
+  "displayName": {
+    "text": "Dr. Funk",
+    "languageCode": "en"
+  },
+  "primaryType": "doctor",
+  "googleMapsUri": "https://maps.google.com/?cid=10011848856861907406&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "paymentOptions": {
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=10011848856861907406&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0546a7dc6131:0x8af13b7d822799ce!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0546a7dc6131:0x8af13b7d822799ce!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0546a7dc6131:0x8af13b7d822799ce!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0546a7dc6131:0x8af13b7d822799ce!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "userRatingCount": 4,
+  "adrFormatAddress": "<span class=\"street-address\">20021 Dotson St</span>, <span class=\"locality\">Gulf Shores</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36542-2704</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "20021 Dotson St, Gulf Shores, AL 36542, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "20021",
+      "shortText": "20021",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Dotson Street",
+      "shortText": "Dotson St",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Gulf Shores",
+      "shortText": "Gulf Shores",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36542",
+      "shortText": "36542",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "postal_code_suffix"
+      ],
+      "longText": "2704",
+      "shortText": "2704",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "landmarks": [
+      {
+        "name": "places/ChIJ2yafBEQFmogRVdOWq40MunA",
+        "types": [
+          "establishment",
+          "food",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJ2yafBEQFmogRVdOWq40MunA",
+        "displayName": {
+          "text": "Cactus Cantina Gulf Shores",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "AROUND_THE_CORNER",
+        "travelDistanceMeters": 89.63286,
+        "straightLineDistanceMeters": 42.96321
+      },
+      {
+        "name": "places/ChIJ5YlmBEQFmogR7MPBWKIpMQw",
+        "types": [
+          "clothing_store",
+          "establishment",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJ5YlmBEQFmogR7MPBWKIpMQw",
+        "displayName": {
+          "text": "Hertha's Seconds Boutique",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "AROUND_THE_CORNER",
+        "travelDistanceMeters": 82.00976,
+        "straightLineDistanceMeters": 21.591764
+      },
+      {
+        "name": "places/ChIJlYuKfBYOmogREn70dakYWmc",
+        "types": [
+          "establishment",
+          "gym",
+          "health",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJlYuKfBYOmogREn70dakYWmc",
+        "displayName": {
+          "text": "Ace's Better Bodies",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "AROUND_THE_CORNER",
+        "travelDistanceMeters": 194.66467,
+        "straightLineDistanceMeters": 146.62462
+      },
+      {
+        "name": "places/ChIJq2pF1EYFmogRPR1AekAmMQE",
+        "types": [
+          "cafe",
+          "establishment",
+          "food",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJq2pF1EYFmogRPR1AekAmMQE",
+        "displayName": {
+          "text": "Starbucks Coffee Company",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 397.047,
+        "straightLineDistanceMeters": 300.21497
+      },
+      {
+        "name": "places/ChIJ2yafBEQFmogRPQrcY0-tJyk",
+        "types": [
+          "beauty_salon",
+          "establishment",
+          "hair_care",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJ2yafBEQFmogRPQrcY0-tJyk",
+        "displayName": {
+          "text": "Alise & Co. Salon",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "BESIDE",
+        "travelDistanceMeters": 66.92098,
+        "straightLineDistanceMeters": 22.293293
+      }
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Doctor",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true
+  },
+  "shortFormattedAddress": "20021 Dotson St, Gulf Shores",
+  "primaryTypeDisplayName": {
+    "text": "Doctor",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false
+}
+restroom: true
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 20021 Dotson St, Gulf Shores
+search_vector: 'doctor':3 'dr':1A 'funk':2A 'gulf':4 'shore':5
+primary_type_display: Doctor
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=10011848856861907406&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0546a7dc6131:0x8af13b7d822799ce!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0546a7dc6131:0x8af13b7d822799ce!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0546a7dc6131:0x8af13b7d822799ce!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0546a7dc6131:0x8af13b7d822799ce!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "landmarks": [
+    {
+      "name": "places/ChIJ2yafBEQFmogRVdOWq40MunA",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJ2yafBEQFmogRVdOWq40MunA",
+      "displayName": {
+        "text": "Cactus Cantina Gulf Shores",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "AROUND_THE_CORNER",
+      "travelDistanceMeters": 89.63286,
+      "straightLineDistanceMeters": 42.96321
+    },
+    {
+      "name": "places/ChIJ5YlmBEQFmogR7MPBWKIpMQw",
+      "types": [
+        "clothing_store",
+        "establishment",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJ5YlmBEQFmogR7MPBWKIpMQw",
+      "displayName": {
+        "text": "Hertha's Seconds Boutique",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "AROUND_THE_CORNER",
+      "travelDistanceMeters": 82.00976,
+      "straightLineDistanceMeters": 21.591764
+    },
+    {
+      "name": "places/ChIJlYuKfBYOmogREn70dakYWmc",
+      "types": [
+        "establishment",
+        "gym",
+        "health",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJlYuKfBYOmogREn70dakYWmc",
+      "displayName": {
+        "text": "Ace's Better Bodies",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "AROUND_THE_CORNER",
+      "travelDistanceMeters": 194.66467,
+      "straightLineDistanceMeters": 146.62462
+    },
+    {
+      "name": "places/ChIJq2pF1EYFmogRPR1AekAmMQE",
+      "types": [
+        "cafe",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJq2pF1EYFmogRPR1AekAmMQE",
+      "displayName": {
+        "text": "Starbucks Coffee Company",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 397.047,
+      "straightLineDistanceMeters": 300.21497
+    },
+    {
+      "name": "places/ChIJ2yafBEQFmogRPQrcY0-tJyk",
+      "types": [
+        "beauty_salon",
+        "establishment",
+        "hair_care",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJ2yafBEQFmogRPQrcY0-tJyk",
+      "displayName": {
+        "text": "Alise & Co. Salon",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "BESIDE",
+      "travelDistanceMeters": 66.92098,
+      "straightLineDistanceMeters": 22.293293
+    }
+  ]
+}
+internal_notes:  | NO WORKING PHOTO 2026-07-21: hero and all entity_photos point to missing storage files - needs real re-upload
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: health_medical
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_attributes   -   6 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 6] ---
+id: afe98916-bd71-4aab-9f0d-b68e58d9e769
+entity_slug: dr-funk
+category: amenity
+key: restroom
+label: Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 2 of 6] ---
+id: 4d6f6cfc-3894-4031-89c2-eef19f4b70d8
+entity_slug: dr-funk
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 3 of 6] ---
+id: 9d0f8811-3645-4a11-9a16-b17223fc4919
+entity_slug: dr-funk
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 4 of 6] ---
+id: 29541962-93dd-47d4-b6b7-b95d733a0d23
+entity_slug: dr-funk
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 5 of 6] ---
+id: c47ee821-ecb5-41be-8118-433b3d6578ff
+entity_slug: dr-funk
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 6 of 6] ---
+id: bbe7bde4-937b-4a7d-b373-51b82592854d
+entity_slug: dr-funk
+category: payment
+key: pay_acceptsCreditCards
+label: Accepts Credit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: dr-funk
+name: Dr. Funk
+industry_code: health_medical
+is_parent: false
+score_of_7: 3
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 6e2eb73f-4f59-411a-9106-6b17d96782ab
+entity_slug: dr-funk
+place_uri: https://maps.google.com/?cid=10011848856861907406&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0546a7dc6131:0x8af13b7d822799ce!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0546a7dc6131:0x8af13b7d822799ce!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0546a7dc6131:0x8af13b7d822799ce!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0546a7dc6131:0x8af13b7d822799ce!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   4 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 4] ---
+review_id: 5472
+entity_slug: dr-funk
+google_review_name: places/ChIJMWHcp0YFmogRzpkngn078Yo/reviews/ChdDSUhNMG9nS0VJQ0FnSUNpeTh6dzh3RRAB
+rating: 1
+review_text: He is very rude. If you aren’t interested in the pharmaceuticals he is peddling, he refers to you as a bad first date. Going to see a healthcare professional it’s not a date.
+language_code: en
+author_name: Noneya
+author_profile_url: https://www.google.com/maps/contrib/105177544618245029823/reviews
+publish_time: 2020-11-15T22:29:27.123655+00:00
+relative_time: 5 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNpeTh6dzh3RRAB!2m1!1s0x889a0546a7dc6131:0x8af13b7d822799ce
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 4] ---
+review_id: 5473
+entity_slug: dr-funk
+google_review_name: places/ChIJMWHcp0YFmogRzpkngn078Yo/reviews/ChZDSUhNMG9nS0VJQ0FnSURCbnZucmJ3EAE
+rating: 5
+author_name: Tammy Merrow
+author_profile_url: https://www.google.com/maps/contrib/108484855633559194313/reviews
+publish_time: 2023-01-20T08:15:49.983372+00:00
+relative_time: 3 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURCbnZucmJ3EAE!2m1!1s0x889a0546a7dc6131:0x8af13b7d822799ce
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 4] ---
+review_id: 5474
+entity_slug: dr-funk
+google_review_name: places/ChIJMWHcp0YFmogRzpkngn078Yo/reviews/ChZDSUhNMG9nS0VJQ0FnSUM4bmFmREp3EAE
+rating: 5
+author_name: Denise Daniel
+author_profile_url: https://www.google.com/maps/contrib/107060981860873958866/reviews
+publish_time: 2020-07-12T01:59:29.158483+00:00
+relative_time: 5 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUM4bmFmREp3EAE!2m1!1s0x889a0546a7dc6131:0x8af13b7d822799ce
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 4] ---
+review_id: 5475
+entity_slug: dr-funk
+google_review_name: places/ChIJMWHcp0YFmogRzpkngn078Yo/reviews/ChdDSUhNMG9nS0VJQ0FnSURJa052dDVBRRAB
+rating: 4
+author_name: Stacey Taylor
+author_profile_url: https://www.google.com/maps/contrib/108463083186902323184/reviews
+publish_time: 2018-12-17T09:02:03.471765+00:00
+relative_time: 7 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURJa052dDVBRRAB!2m1!1s0x889a0546a7dc6131:0x8af13b7d822799ce
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: dr-funk
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 2e1b31cd-c1d3-40cf-97a7-294c1cc5c30a
+name: Dr. Funk
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: dr-funk
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 2e1b31cd-c1d3-40cf-97a7-294c1cc5c30a
+name: Dr. Funk
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: 2f27858a-f942-4aaf-b93d-a90cbc3fd50b
+entity_slug: dr-funk
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 1268d2b8-6df2-409b-8375-d54d02147c01
+entity_slug: dr-funk
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: 3dae4f14-7b95-4614-ab0c-018ab56af238
+entity_slug: dr-funk
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: 80119e91-161a-44bf-9384-fb4cdeb4633b
+entity_slug: dr-funk
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: 217b0bdb-06c2-4b28-bc4b-9ce139aab2bd
+entity_slug: dr-funk
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: dadde470-2615-44ff-a564-1e65a8e2f472
+entity_slug: dr-funk
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 91c297b7-5066-42a2-839f-924b1bcbf329
+entity_slug: dr-funk
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 8715fe0d-1b1f-4cad-97b9-2f33f307beff
+entity_slug: dr-funk
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: 83f5a40d-5ac4-41c8-a8b5-baae4ba6ca42
+entity_slug: dr-funk
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: c5b6cb7b-7c38-41d3-9369-97d617168f47
+entity_slug: dr-funk
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 11 of 13] ---
+id: 296de3b9-9feb-4ffd-bbb3-d56c60fe6b28
+entity_slug: dr-funk
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 12 of 13] ---
+id: 92cf1f80-54de-4cb8-beff-b6c865b8da7d
+entity_slug: dr-funk
+module_key: schedule
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 13 of 13] ---
+id: 4c3b4b91-d09a-4cd2-8c1b-14cd5c2a7c59
+entity_slug: dr-funk
+module_key: services
+enabled: true
+sort_order: 10
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   21 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 21] ---
+id: bb2488e3-cca8-4150-b5cf-3f0bc9a06e10
+landmark_id: d343839b-36ec-43f5-9527-cf3c2aa48267
+entity_slug: dr-funk
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 21] ---
+id: f9df3ac7-cb6f-4dfa-8076-24d8b04c2e57
+landmark_id: d343839b-36ec-43f5-9527-cf3c2aa48267
+entity_slug: dr-funk
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 21] ---
+id: b48cfa5c-e088-4445-94ab-6e25e47fd7de
+landmark_id: d343839b-36ec-43f5-9527-cf3c2aa48267
+entity_slug: dr-funk
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 21] ---
+id: d614682d-01da-4675-a071-7fc516722a61
+landmark_id: d343839b-36ec-43f5-9527-cf3c2aa48267
+entity_slug: dr-funk
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 21] ---
+id: cf9c0ace-26ba-4b65-bbe2-104357604d35
+landmark_id: 0f286701-78fd-496e-87d9-4e8b4481636d
+entity_slug: dr-funk
+landmark_type: clothing_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 21] ---
+id: b7acdf60-5971-4003-bbb6-fd6e38dd8978
+landmark_id: 0f286701-78fd-496e-87d9-4e8b4481636d
+entity_slug: dr-funk
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 21] ---
+id: 7d107b17-b2f7-4b10-b9a3-907d944c78e2
+landmark_id: 0f286701-78fd-496e-87d9-4e8b4481636d
+entity_slug: dr-funk
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 21] ---
+id: a9065521-57e3-4ddb-a50b-2e1504035415
+landmark_id: 0f286701-78fd-496e-87d9-4e8b4481636d
+entity_slug: dr-funk
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 21] ---
+id: 41722e82-a97d-4b00-9a5d-1b1275e7245b
+landmark_id: 83109fed-51b7-4dbd-883b-00dabccda29d
+entity_slug: dr-funk
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 21] ---
+id: 61874c67-3dcc-496b-a2ab-cef3be09d550
+landmark_id: 83109fed-51b7-4dbd-883b-00dabccda29d
+entity_slug: dr-funk
+landmark_type: gym
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 21] ---
+id: 7ad5405e-e25d-4c54-b608-233a7fffbc30
+landmark_id: 83109fed-51b7-4dbd-883b-00dabccda29d
+entity_slug: dr-funk
+landmark_type: health
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 21] ---
+id: 75546712-4341-40d5-8608-013518d90674
+landmark_id: 83109fed-51b7-4dbd-883b-00dabccda29d
+entity_slug: dr-funk
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 21] ---
+id: 84678ff8-7348-41f3-b3fb-d9f61152b24a
+landmark_id: ddcd1fa0-4908-4115-86f3-de306a19b1c3
+entity_slug: dr-funk
+landmark_type: cafe
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 21] ---
+id: 0795aeca-b6b6-4f00-adb6-7a9129908606
+landmark_id: ddcd1fa0-4908-4115-86f3-de306a19b1c3
+entity_slug: dr-funk
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 21] ---
+id: 2a966c87-eadc-493f-81f1-49be46e35fd7
+landmark_id: ddcd1fa0-4908-4115-86f3-de306a19b1c3
+entity_slug: dr-funk
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 21] ---
+id: 0302d6d2-9ac2-4c00-bd66-7d429fc17662
+landmark_id: ddcd1fa0-4908-4115-86f3-de306a19b1c3
+entity_slug: dr-funk
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 21] ---
+id: d6ee8f24-f225-477e-b601-914dbb1bd264
+landmark_id: ddcd1fa0-4908-4115-86f3-de306a19b1c3
+entity_slug: dr-funk
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 21] ---
+id: cc44f8be-ede9-45dd-bebd-1e67d6778e82
+landmark_id: 4c1479ea-85f3-4e44-b402-371821256f9b
+entity_slug: dr-funk
+landmark_type: beauty_salon
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 19 of 21] ---
+id: 8c311a59-7550-4a69-aa65-925b86b5dce6
+landmark_id: 4c1479ea-85f3-4e44-b402-371821256f9b
+entity_slug: dr-funk
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 20 of 21] ---
+id: fdbf50ee-68bb-4ab4-a825-8495850b308a
+landmark_id: 4c1479ea-85f3-4e44-b402-371821256f9b
+entity_slug: dr-funk
+landmark_type: hair_care
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 21 of 21] ---
+id: 6d8fa09d-2a17-4ddf-86dc-9110ad4b77ea
+landmark_id: 4c1479ea-85f3-4e44-b402-371821256f9b
+entity_slug: dr-funk
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   5 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 5] ---
+id: d343839b-36ec-43f5-9527-cf3c2aa48267
+entity_slug: dr-funk
+kind: landmark
+place_id: ChIJ2yafBEQFmogRVdOWq40MunA
+name: Cactus Cantina Gulf Shores
+types: [
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant"
+]
+spatial_relationship: AROUND_THE_CORNER
+travel_distance_meters: 89.63286
+straight_line_distance_meters: 42.96321
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 5] ---
+id: 0f286701-78fd-496e-87d9-4e8b4481636d
+entity_slug: dr-funk
+kind: landmark
+place_id: ChIJ5YlmBEQFmogR7MPBWKIpMQw
+name: Hertha's Seconds Boutique
+types: [
+  "clothing_store",
+  "establishment",
+  "point_of_interest",
+  "store"
+]
+spatial_relationship: AROUND_THE_CORNER
+travel_distance_meters: 82.00976
+straight_line_distance_meters: 21.591764
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 5] ---
+id: 83109fed-51b7-4dbd-883b-00dabccda29d
+entity_slug: dr-funk
+kind: landmark
+place_id: ChIJlYuKfBYOmogREn70dakYWmc
+name: Ace's Better Bodies
+types: [
+  "establishment",
+  "gym",
+  "health",
+  "point_of_interest"
+]
+spatial_relationship: AROUND_THE_CORNER
+travel_distance_meters: 194.66467
+straight_line_distance_meters: 146.62462
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 5] ---
+id: ddcd1fa0-4908-4115-86f3-de306a19b1c3
+entity_slug: dr-funk
+kind: landmark
+place_id: ChIJq2pF1EYFmogRPR1AekAmMQE
+name: Starbucks Coffee Company
+types: [
+  "cafe",
+  "establishment",
+  "food",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 397.047
+straight_line_distance_meters: 300.21497
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 5] ---
+id: 4c1479ea-85f3-4e44-b402-371821256f9b
+entity_slug: dr-funk
+kind: landmark
+place_id: ChIJ2yafBEQFmogRPQrcY0-tJyk
+name: Alise & Co. Salon
+types: [
+  "beauty_salon",
+  "establishment",
+  "hair_care",
+  "point_of_interest"
+]
+spatial_relationship: BESIDE
+travel_distance_meters: 66.92098
+straight_line_distance_meters: 22.293293
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13488
+entity_slug: dr-funk
+name: Dr. Funk
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 2e1b31cd-c1d3-40cf-97a7-294c1cc5c30a
+
+####################################################################################################
+# TABLE: entity_reviews   -   4 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 4] ---
+id: 6af10c8a-0cc8-455a-b205-2842b8b2c264
+entity_slug: dr-funk
+reviewer_name: Noneya
+rating: 1
+body: He is very rude. If you aren’t interested in the pharmaceuticals he is peddling, he refers to you as a bad first date. Going to see a healthcare professional it’s not a date.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2020-11-15T22:29:27.123655+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 4] ---
+id: 671fad1f-6670-4785-a370-b13892ae487b
+entity_slug: dr-funk
+reviewer_name: Tammy Merrow
+rating: 5
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2023-01-20T08:15:49.983372+00:00
+updated_at: 2026-07-19T15:18:39.834104+00:00
+
+--- entity_reviews [row 3 of 4] ---
+id: 432966fa-a988-44d2-8365-056509df1001
+entity_slug: dr-funk
+reviewer_name: Denise Daniel
+rating: 5
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2020-07-12T01:59:29.158483+00:00
+updated_at: 2026-07-19T15:18:39.834104+00:00
+
+--- entity_reviews [row 4 of 4] ---
+id: ba780d10-10a6-47b3-b037-25951e4ea69b
+entity_slug: dr-funk
+reviewer_name: Stacey Taylor
+rating: 4
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2018-12-17T09:02:03.471765+00:00
+updated_at: 2026-07-19T15:18:39.834104+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   8 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 8] ---
+id: 258bd63b-ee50-4079-b6f3-c263addb028b
+entity_slug: dr-funk
+tag_name: doctor
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 8] ---
+id: ec1d89f1-72e3-4c08-8149-8b8931dba048
+entity_slug: dr-funk
+tag_name: health
+tag_category: google_type
+
+--- entity_tags [row 3 of 8] ---
+id: 91bc1596-1a88-4cb8-8fa6-28a920f24ab6
+entity_slug: dr-funk
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 4 of 8] ---
+id: 0a3d2f10-725c-438c-acdd-0466bd51fe37
+entity_slug: dr-funk
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 5 of 8] ---
+id: 7498e675-bc45-4281-ae8c-97cc091d0c0b
+entity_slug: dr-funk
+tag_name: doctor
+tag_category: google_primary_type
+
+--- entity_tags [row 6 of 8] ---
+id: 9e7d90fd-aa26-4596-9ed0-a8492edd421f
+entity_slug: dr-funk
+tag_name: health
+tag_category: google_type
+
+--- entity_tags [row 7 of 8] ---
+id: 63941dc2-c63f-4b25-a141-2b2158e85d55
+entity_slug: dr-funk
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 8 of 8] ---
+id: ab8ae8fa-99d5-486a-a2d3-575d386accb0
+entity_slug: dr-funk
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: c2f6c4ba-d47a-4050-89d2-67c54373134e
+entity_slug: dr-funk
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: health_medical_services   -   1 row(s)
+####################################################################################################
+
+--- health_medical_services [row 1 of 1] ---
+id: 1896f369-0434-4d9f-af1b-dba8eda754ea
+entity_slug: dr-funk
+name: Dr. Funk
+sort_order: 0
+is_active: true
+created_at: 2026-07-24T08:30:32.961268+00:00
+
+####################################################################################################
+# TABLE: industry_health_medical   -   1 row(s)
+####################################################################################################
+
+--- industry_health_medical [row 1 of 1] ---
+entity_slug: dr-funk
+service_count: 0
+updated_at: 2026-07-20T03:17:43.35857+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: offer
+ref_id: 13488
+entity_slug: dr-funk
+title: Dr. Funk
+category: rental
+search_vector: 'dr':1A 'funk':2A
+
+--- search_index [row 2 of 2] ---
+ref_type: business
+ref_id: dr-funk
+entity_slug: dr-funk
+title: Dr. Funk
+category: doctor
+search_vector: 'doctor':3B 'dr':1A 'funk':2A
+
+####################################################################################################
+# TABLE: service_menu   -   1 row(s)
+####################################################################################################
+
+--- service_menu [row 1 of 1] ---
+id: 24c0312b-2c36-44c2-bca7-71c1778fd2b0
+entity_slug: dr-funk
+name: Dr. Funk
+sort_order: 0
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: dr-funk

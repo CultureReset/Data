@@ -1,0 +1,2667 @@
+====================================================================================================
+SLUG: sea-oats
+NAME: Sea Oats
+INDUSTRY: condo
+SUBTYPE: condominium_complex
+TABLES WITH DATA: 31
+TOTAL ROWS: 168
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (7 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (20 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_attributes  (3 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (2 rows)
+  entity_items_v  (2 rows)
+  entity_modules  (14 rows)
+  entity_nearby_landmark_types  (13 rows)
+  entity_nearby_landmarks  (5 rows)
+  entity_offer  (1 rows)
+  entity_photos  (52 rows)
+  entity_reviews  (5 rows)
+  entity_section_items  (1 rows)
+  entity_section_items_metadata_backup  (1 rows)
+  entity_sections  (1 rows)
+  entity_sources  (1 rows)
+  entity_tags  (12 rows)
+  entity_theme  (1 rows)
+  industry_condo  (1 rows)
+  legacy_photo_migration_queue  (3 rows)
+  rental_units  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: sea-oats
+name: Sea Oats
+planner_category: things_to_do
+data_quality_score: 80
+issues: missing_summary|missing_hours
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   7 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 7] ---
+id: 27188
+entity_slug: sea-oats
+intent_tag: best_for:outdoor_activity
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 7] ---
+id: 27189
+entity_slug: sea-oats
+intent_tag: experience:pet_friendly
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 7] ---
+id: 27190
+entity_slug: sea-oats
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 7] ---
+id: 27191
+entity_slug: sea-oats
+intent_tag: service:parking
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 7] ---
+id: 27192
+entity_slug: sea-oats
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 7] ---
+id: 27193
+entity_slug: sea-oats
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 7] ---
+id: 27194
+entity_slug: sea-oats
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: sea-oats
+name: Sea Oats
+is_active: t
+planner_category: things_to_do
+entity_type: condo
+entity_subtype: condominium_complex
+city: Gulf Shores
+state: AL
+address_line_1: 1872 W Beach Blvd
+latitude: 30.2410278
+longitude: -87.7456918
+rating: 4.4
+review_count: 152
+website_url: http://www.hotelnicolle.com/listing/sea-oats-gulf-shores/
+hero_image_url: /photos/sea-oats/photo_01.jpg
+voice_summary: Sea Oats in Gulf Shores is best for outdoor activity. Experience tags: pet_friendly.
+planner_summary: Sea Oats in Gulf Shores is a things to do listing in Gulf Coast Radar.
+best_for: outdoor activity
+not_best_for: nothing specific flagged
+experience_tags: pet_friendly
+service_tags: accessibility|parking
+search_keywords: condominium_complex|service|point_of_interest|establishment|pet_friendly|accessibility|parking
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 20
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 8
+faq_count: 0
+data_quality_score: 80
+data_gaps: missing_summary|missing_hours
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   20 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 20] ---
+id: 5970
+entity_slug: sea-oats
+entity_name: Sea Oats
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 20] ---
+id: 13495
+entity_slug: sea-oats
+entity_name: Sea Oats
+city: Gulf Shores
+url: /photos/sea-oats/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 20] ---
+id: 13496
+entity_slug: sea-oats
+entity_name: Sea Oats
+city: Gulf Shores
+url: /photos/sea-oats/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 20] ---
+id: 13497
+entity_slug: sea-oats
+entity_name: Sea Oats
+city: Gulf Shores
+url: /photos/sea-oats/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 20] ---
+id: 13498
+entity_slug: sea-oats
+entity_name: Sea Oats
+city: Gulf Shores
+url: /photos/sea-oats/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 20] ---
+id: 13499
+entity_slug: sea-oats
+entity_name: Sea Oats
+city: Gulf Shores
+url: /photos/sea-oats/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 20] ---
+id: 13500
+entity_slug: sea-oats
+entity_name: Sea Oats
+city: Gulf Shores
+url: /photos/sea-oats/photo_06.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 20] ---
+id: 13501
+entity_slug: sea-oats
+entity_name: Sea Oats
+city: Gulf Shores
+url: /photos/sea-oats/photo_07.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 20] ---
+id: 13502
+entity_slug: sea-oats
+entity_name: Sea Oats
+city: Gulf Shores
+url: /photos/sea-oats/photo_08.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 20] ---
+id: 13503
+entity_slug: sea-oats
+entity_name: Sea Oats
+city: Gulf Shores
+url: /photos/sea-oats/photo_09.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 11 of 20] ---
+id: 13504
+entity_slug: sea-oats
+entity_name: Sea Oats
+city: Gulf Shores
+url: /photos/sea-oats/photo_10.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 12 of 20] ---
+id: 15460
+entity_slug: sea-oats
+entity_name: Sea Oats
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_08.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 13 of 20] ---
+id: 15457
+entity_slug: sea-oats
+entity_name: Sea Oats
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_07.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 14 of 20] ---
+id: 15458
+entity_slug: sea-oats
+entity_name: Sea Oats
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_06.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 15 of 20] ---
+id: 15461
+entity_slug: sea-oats
+entity_name: Sea Oats
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_09.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 16 of 20] ---
+id: 15450
+entity_slug: sea-oats
+entity_name: Sea Oats
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 17 of 20] ---
+id: 15455
+entity_slug: sea-oats
+entity_name: Sea Oats
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 18 of 20] ---
+id: 15456
+entity_slug: sea-oats
+entity_name: Sea Oats
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 19 of 20] ---
+id: 15470
+entity_slug: sea-oats
+entity_name: Sea Oats
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 20 of 20] ---
+id: 15471
+entity_slug: sea-oats
+entity_name: Sea Oats
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_10.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 7f0016ae-80e1-4670-a4d9-d9cbf1c94270
+resource_type: condo
+slug: sea-oats
+name: Sea Oats
+entity_slug: sea-oats
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_04.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_06.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_07.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_08.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_09.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_10.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_02.jpg",
+  "/photos/sea-oats/photo_01.jpg",
+  "/photos/sea-oats/photo_02.jpg",
+  "/photos/sea-oats/photo_03.jpg",
+  "/photos/sea-oats/photo_04.jpg",
+  "/photos/sea-oats/photo_05.jpg",
+  "/photos/sea-oats/photo_06.jpg",
+  "/photos/sea-oats/photo_07.jpg",
+  "/photos/sea-oats/photo_08.jpg",
+  "/photos/sea-oats/photo_09.jpg",
+  "/photos/sea-oats/photo_10.jpg"
+]
+amenities: []
+faqs: []
+address: 1872 W Beach Blvd
+city: Gulf Shores
+state: AL
+latitude: 30.2410278
+longitude: -87.7456918
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: d3b6092196d04df8baea1e6f8d6110db
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 7f0016ae-80e1-4670-a4d9-d9cbf1c94270
+entity_slug: sea-oats
+slug: sea-oats
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_04.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_06.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_07.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_08.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_09.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_10.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_02.jpg",
+  "/photos/sea-oats/photo_01.jpg",
+  "/photos/sea-oats/photo_02.jpg",
+  "/photos/sea-oats/photo_03.jpg",
+  "/photos/sea-oats/photo_04.jpg",
+  "/photos/sea-oats/photo_05.jpg",
+  "/photos/sea-oats/photo_06.jpg",
+  "/photos/sea-oats/photo_07.jpg",
+  "/photos/sea-oats/photo_08.jpg",
+  "/photos/sea-oats/photo_09.jpg",
+  "/photos/sea-oats/photo_10.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 36d23deb-853c-4d04-a5bc-9c1b713f9a45
+slug: sea-oats
+name: Sea Oats
+is_active: true
+featured: false
+entity_type: condo
+entity_subtype: condominium_complex
+description: Nestled along West Beach in Gulf Shores, Sea Oats offers a laid-back coastal retreat with everything you need for a relaxing getaway. Guests can enjoy two outdoor pools for cooling off on warm days or take a short walk across the street to the private beach access for a day by the Gulf. Fishing enthusiasts will love the private pier, perfect for casting a line and soaking in the peaceful lagoon views. Boaters can also take advantage of onsite boat launch facilities, making it easy to explore the surrounding waterways. With its convenient location near local shops and restaurants, Sea Oats is the perfect blend of relaxation and adventure for your next Gulf Shores vacation.
+website_url: http://www.hotelnicolle.com/listing/sea-oats-gulf-shores/
+menu_pin: 8147
+address_line_1: 1872 W Beach Blvd
+city: Gulf Shores
+state: AL
+zip: 36542
+latitude: 30.2410278
+longitude: -87.7456918
+rating: 4.4
+review_count: 152
+hero_image_url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A5582.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T04:02:10.652903+00:00
+updated_at: 2026-06-03T04:02:10.652903+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJ-8nzCoUbmogRIiYBncSyfrE
+google_maps_uri: https://maps.google.com/?cid=12789856549296219682&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: condominium_complex
+formatted_address: 1872 W Beach Blvd e103, Gulf Shores, AL 36542, USA
+plus_code: 862J67R3+CP
+wheelchair_accessible_entrance: false
+wheelchair_accessible_parking: true
+parking_type: free
+google_places_data: {
+  "id": "ChIJ-8nzCoUbmogRIiYBncSyfrE",
+  "types": [
+    "condominium_complex",
+    "point_of_interest",
+    "service",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3kGGDzmqHGw1-Tn9hxn95aATFsoS8KVfSAddCR5SbqLRYb3epHOV18VgzkKVlGQ0yUNly4LJY-zUUFT_kTz1K0U0F2Y9TbUexKUuIVrI7Ubuid1N2sO9Lw2VTt1CuzZK-cErfTuiUtRyBbXLWTt6q7zYh8dsVBu-2U0jzR7_3jOztJb54tnfOszZrpQloWdWf24VpurebF5IGkcAuHAocaN3S4_K0ySMa8FPQPjQep48Y3HKaISVFqLTYIKeM6tHtRLWTDnUInQnJNzKEwECmQt-Qcym5YDDecJmENDimxjNLdo-OCA5Y3VT8XUQ24CEM-cxOow8Q6syohH7Ooew3G-JAMGvyj3bSlkxbakc5JdC8p7CoKpZpyWcwhudK8kmjhp9fgZ8T_GGs-tA4pvj37Sbr2Mk_ywrWticNu4-k-3_qEVc1xK7fsbHTPYomUe",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAgT-cllyVROuBdMXI8xWzR!2e10!4m2!3m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAgT-cllyVROuBdMXI8xWzR&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/113018312558461384089",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJ0M4r9Ee-cmVMJpd4CVsrXEvXFpy0VwhX4YoEG1CRpBC8qzA=s100-p-k-no-mo",
+          "displayName": "Elaine Day"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3lcccIWNjDtbY1rwz-GcZih88QBbQXGXwGgi9j8j6uPbOp83fI5K2gidYf2010MQd5kj_a9-pB7I6sCs7qrUTT-HeLwcTbqq1OepwXJYn2f7movHwXRG9hqP1GQ6fKbREVt-liuYUW-90zeYH07UZb3gX3dDJCuBUcaHui_xR75pt3j7e1jcZyxcRQBNxBuhyS5dHNdrWusXj3kdvAYPB_PEpiQO0pdC7vZ63TgkLgzoXcG2Dcpryf3WG6J1R1wyu5cDXjPEzUrdkBioF04o4nWDhonc9kYJqc4s4jQXU3ONImooMW07WFwjBXZbfFxw1ccjZleUnBErJo5sKX-j2JTpQ4d86t3T5coinr6ZCY2d6d7jDkspBYuEfmabNjazT9pGvcoLsPojeYXv6-uapck5ERrswJA6RlY2lF0xefsIA",
+      "widthPx": 1800,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICR3P6EEw!2e10!4m2!3m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICR3P6EEw&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/101174196467304241778",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUl2YqvG3QJ3Tg7e5BB_L73d7VMOmIOcDc8McH5YfHkFjzJOxgV=s100-p-k-no-mo",
+          "displayName": "Scoti “Scubi Doo”"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3kqUDExgL5SuhTbi0tFupJ_Rhm69aYTbhLzWO1K_rXklmRIWWCcdSG1kvBbKxxjFAuJoz8hx-kQbBP-wDxYrS4fhKA75FFf4Ns5P49D3m4TED3kGi1SuINXek4SlayDGYFUruLyX1n5cB7WAXVXt9b1-0E_SJFFnF7qkKS8QomMv_6si5zQbPsFlb-42GY35nqKrDKn5CydlXSU5c9wr0m81_yey9qQGj5JC5PZOSer06aZl7AT9Oh0JPrYh8jKi_P9xxR1GbwpQN3MuGLCL-R9ShEI1-UTe94vadLaPd80ycBQm8IH1BZDWt-V9wMN5-QTw_FKOSLsmHu8mAWnFiacAsbILA4PC2O0WSm_PEZCDDub72DLbwtmUkyKXP_Z_hdnDii_Hxs1UYHmvNlSVwpO-EfVHxeAzof1CF7_mk4org",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC276DreQ!2e10!4m2!3m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIC276DreQ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/115231496569117358011",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocL3Wx9yd-yxFM9752u63NVi978chgVYlWQCNhUgUDtL799CrA=s100-p-k-no-mo",
+          "displayName": "Ranee Jones"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3mS4q7zYnlJWu9X9yzIBBakbOdYsQjfOPD1ubnUYmsanNmUSOV9UC5BM3vJ1BbYwDBLngzhC2d7G4gLLQ5a_itzwfiKNjwctSCG3koD5tUXOK-19FtDvw7AEQDivHq-wJc1XH5dKRMxZOr3JBVsc83fVvx1PVP1ioyaS6IFRFvudWJjNOF6Srf-I5zaBZ0mPxtbegPz3H_6gSWgO1CODXlZ6xuUohlkfz7HNcEWTdROfSxZv3nlikD9PyxuPgnKTADrUNtCQz79MLeqn5jJty2n7rrgjTOo2DvXC-hMAZ8dZpZpVKOoZ7s-kVECWfNMWTYfLaYgWO6F5U-njqMZtmir3F3JfdweLHQFHQjNiS7CwD4ABqMLJNjdQY1TsA1xcvDWtGyAwLL7ywEv70rJjzuS1CcoPDUj9QJaF2zmIcV1lUtivxB8tzNm7jHXJk6S",
+      "widthPx": 4800,
+      "heightPx": 3600,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBQYaNw36FPXUVBh84nlQDr!2e10!4m2!3m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhBQYaNw36FPXUVBh84nlQDr&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/113018312558461384089",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJ0M4r9Ee-cmVMJpd4CVsrXEvXFpy0VwhX4YoEG1CRpBC8qzA=s100-p-k-no-mo",
+          "displayName": "Elaine Day"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3ntVrD1swJ0OLi70oNmAIR8evZeYoi0EbQlkDEf37QYZYhwu8D-Xm0U7UatifOaFlEBr7kFk6tPMHMtmLn7DF8p7y9TrGDlNIcY2dplb6HNXKSUbgnxlVpQB66l_qWFgLrXY6FgSwNYw4ZduuS3BoI8TB4kmFLfRL9JdddBugvFGdlR1NCEVn7-yqUnhKwF4_JU7nXvBrGAI9T0vkSiWbFgDoydLP9v6dk0s0KRm3uud7nAa2cV7_h-Tnlof2DH63-D1IDd3pqqtnYosKO5tTY9zY4eXsjM3Z-2o-SNKLjX9SLcyWXXscXMCn0hkA-x1UCxC7slIt-XQxWsq3u1znS6Kh-DOGyEfUAT43F5Aw6hlCubAk0LQ8rxJq4KfZV_daRUFWxKD5tIhWOQ5WNMwvYg7Vbd0oA98jE92q7nl9bRMdJC",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICKw_n-yQE!2e10!4m2!3m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICKw_n-yQE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/112063021685594431951",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX9rTaxAa68uCa8bBTiGGGmUS-gwkZQBWUrytQK-vRs9jow_kyzEg=s100-p-k-no-mo",
+          "displayName": "Sarah J. Parker"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3nIs1a7ovasmSrGb-Vgi9qYmt8D4c_1M-sGawUabJSDHhp9L-8QUCdpUntHRH2G-xjfbpQZBgBmu-dCAhjWDHEeCn4-ZUReK7_7WgWdNly_Fy04KbtW6f2QwwL1lV2ymCcGXH26lJFdXPufz3wDO61gy6iX2jVuiHHGloMMY1Foh63QzxEUxfKOidbuZl5V8S0wPiRgATLDS5fT9Ha27ua-NGwwXdB09LxNHpDQzz-cCIeLD7cLcRQSszBF64IpgDygOKBPKPvQxO4f6AdRGkcaahiy5vDqPp-4yBcqQze1CqCNCsIAPR3M56o1uZjLFS03HGH-O1wSZqUwY1aABM9cBixi_r1Vupczp0E6DGIWwxWLCnGoiZl4eq3v74brcvNiDFvGad2DjDlf6_wbq5P8rpKmce2IkJeQONqFjLTDklKe",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICkgcWt4QE!2e10!4m2!3m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICkgcWt4QE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/100291462234624117047",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUh11mt6dguxstmA6G06A7zAtwM07NtUPY1CWnDh2sNUvACbZA1=s100-p-k-no-mo",
+          "displayName": "Jake Culbertson"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3komvI0nd4-EyExrbQF3F-lwv7ZUB-vak2fY4AozRE_Y0iUdEOFhJ0boq9iYS-837JsF8OAMUXOqxSbQM2zoCOfUhZ7_t-zeT5DeXzC9Sn26rfIDwsuJCizByCGRmnxQ5YLqzi6dPCuwXwgyLpqnzexh_6cUZs3HkbKoVXkZ9tYeEE5X41dDy8wtYpFlkXtTwhCFFjxfBvvrQL1-3VVgdMazryQIj8qwWJNQLc1JY8z7tQwY3eTvwj6tkHBzWluU6zJkV8WLdtQpG9grXXRMksPwtrkrEfO0W_icDShEUflZZJNUYDxu84t5zJpf2crNYGCzh9Zr09JAFgn7U3OaJrXYGmvWU05VP9IcQQredCtVk1-uSc9bKgkvw2uaNKtcxsys3OYJF7UtQueITnZ5aLQQnxF4cnX4WuyY_sWM--WNNzq",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICcjJyYqwE!2e10!4m2!3m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICcjJyYqwE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/114018758287291907180",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIuVyEJFcI-P1_qPmJ-5iwrhaCdU50mTVbLL3fne4jvH6ERtsA=s100-p-k-no-mo",
+          "displayName": "Trent Birdsong"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3nJTb0z4lytV8o49_5oi5c-gxYk7ddcxc-fLEc5ggYmN05k9mqhwYu7h3SCta0uDRpxpEPMP4z-OfY0XbtY5EcZZ7bfqtePKN7myFL8ddWiQx9BiVtU3p-7tCl1Dcd_Q6yb8NDuNcSatTlCUprKEkikcsUWhyhhsjtO5911pU02MfaMn03hfGRMSoKWefVyr4ZKqh3_pcCxZG4BOZtl7bkec5MvCF5rW9-gjSPILI5q7IyV_mc9Eyxwa9waCjH9m3xwpSKMdwF53OUU_ocKOCivSEFBw2C0QqCfwb45CL59PFX52qYm3o5wAwfKLbK0m469pNxg6q0zyIPrSejE7cFsQa4oEtSiP4g66GfMqqNgbP5koUk_X7-d0q8RrZJbkoBzqi1KcL7sm7KZntsR6wDi_u7G6imlwYUwWYGQyqSunJtj",
+      "widthPx": 3264,
+      "heightPx": 2448,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID4kvTXywE!2e10!4m2!3m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID4kvTXywE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/103706434518315882186",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUrUXtl2UOs-ykc2Oy1DwjM2Wtfk76O-6z00e2j_1fq9qmwpb9e=s100-p-k-no-mo",
+          "displayName": "Joe Gallegos"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3mr2DYtQiWWscyJzfgk6sQWbCU85dTy0eINiluyx0rX7LplpDa5ACf55gLsRUnbipQ5dG_0c7gpqzOibnxTKz2eGD9MpHfEqUa0qtkKR1CbHenrw4wQocjUr7vlJTT9gGKEzt1pgDUweW3BUtRQXSYUzDFyGxD08UPncizHU30nzrBxmj7ak9GkjlouJYcm5YM2K_lVCa3Xm73dIthZubHOJk_c_QN0ou7En80kqun8TH7_5DuJjBG1eXS0PbcUVnOKI5MEqbZtOn8Ki3xAsqpnCXA27gnPBjuqSSFWFT5bldIqfmrMlNYWEIqGS07P4UXqIsXCipvZiu9Sr2mxFJBxOIKYhQ4WvYLXpZ2xLA-w48tlMkQ8IK5f3ESRYdTtrdc_BStHLPh8Zr4VzOhj4U--UtJiM4dVXZU3e2HsS7GD2Hs",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICUppDKtwE!2e10!4m2!3m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICUppDKtwE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/102578100905068999151",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWqGAEFZknIYb2JkQQTGdwBuM4cu_3l4w9ItVKZXosrF-3xoxbmUQ=s100-p-k-no-mo",
+          "displayName": "Clint Wallace"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3lBJPcaDCv74V5jA6vOt0_PrD-LfXXpnFb9kPPqiyGPcN7w7jhl_NGkTm-zg1U34NPOFxvyDibjbn-i99F3LTTRWbf1W7VTVi1-Az7h_I-H_XaExpLjoA2kYXVTKHXbH-EqxCQYxRUgsvhIKssNfpIC2DgL2K8mQWT7ButOiug4bjCvzihxneAHSTK6zQh-vpsT2TzMSpsfW5BriVdw8_X95wQEzstlLPql9-Bz0lgstf8hixWfOLunbAZILcx8GEfnM48nLmrlIt6OAnNzPtyu9Ubt_PujQR0hZ1UdClc51yRT-xxDEkbTTfs2OBxyJitBs5thQEAcqA8nLdfkGgJdCOx3KLGuS6y21Tqe-wD9wjRT3RZXK-lUJILl5DtRGo6fP-KUiW17CnvmngG3AASnhxnyoSpGoILNBc3Ij7HTBikV",
+      "widthPx": 1868,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICXj4-aggE!2e10!4m2!3m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICXj4-aggE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/109148005817115929282",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUofxKvgxDxHANyH6pNUn3Txu5sYetwOJwwqKuHohoARJPCgCXW=s100-p-k-no-mo",
+          "displayName": "Vernon Helmick"
+        }
+      ]
+    }
+  ],
+  "rating": 4.4,
+  "reviews": [
+    {
+      "name": "places/ChIJ-8nzCoUbmogRIiYBncSyfrE/reviews/Ci9DQUlRQUNvZENodHljRjlvT2twTU5sQTJSbGx2VlVsbU16VmthMVJuWTJGaVVYYxAB",
+      "text": {
+        "text": "We visit here annually and absolutely love this location. Easy access to both the beach and to the lagoon. The location is perfect for us because we are away from “most” of the high rise condos so the skyline isn’t obstructed. Condo is within about 10 minutes of a Walmart and 5 minutes from a general store with all necessities.\nThings to consider. There are no elevators so either way you will be walking a couple to 4 flights of steps. This ok for us but there is no physical impairment for us that makes this difficult. Also I don’t think they mention it, but there is only enough toilet paper to get you through the day. So you will need toilet paper, garbage bags, dish soap and any detergents needed.\nThe kitchen comes with all your basic needs.  Don’t forget a few essential seasonings such as salt and pepper. These are usually not here.\nThere are usually lots of people staying here that fish because of the location to the lagoon and the inlet just down the street.  They have a setup to clean fish on the pier which is very nifty to have.\nBeach access is maybe a hundred yard walk from the condo parking lot to where you’d place your chair in the sand.\nPools are always clean, not heated but always very clear.\nSo overall we have stayed here twice and will continue to stay here as we enjoy the location, service, and people we encounter here.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-10-14T15:42:37.408711345Z",
+      "originalText": {
+        "text": "We visit here annually and absolutely love this location. Easy access to both the beach and to the lagoon. The location is perfect for us because we are away from “most” of the high rise condos so the skyline isn’t obstructed. Condo is within about 10 minutes of a Walmart and 5 minutes from a general store with all necessities.\nThings to consider. There are no elevators so either way you will be walking a couple to 4 flights of steps. This ok for us but there is no physical impairment for us that makes this difficult. Also I don’t think they mention it, but there is only enough toilet paper to get you through the day. So you will need toilet paper, garbage bags, dish soap and any detergents needed.\nThe kitchen comes with all your basic needs.  Don’t forget a few essential seasonings such as salt and pepper. These are usually not here.\nThere are usually lots of people staying here that fish because of the location to the lagoon and the inlet just down the street.  They have a setup to clean fish on the pier which is very nifty to have.\nBeach access is maybe a hundred yard walk from the condo parking lot to where you’d place your chair in the sand.\nPools are always clean, not heated but always very clear.\nSo overall we have stayed here twice and will continue to stay here as we enjoy the location, service, and people we encounter here.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2twTU5sQTJSbGx2VlVsbU16VmthMVJuWTJGaVVYYxAB!2m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2twTU5sQTJSbGx2VlVsbU16VmthMVJuWTJGaVVYYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/101356817507157566632/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLvaWlUkq4uAd_T4My2O3EtqE2eVQ_lZP8SkAYsTVmdQrZk7A=s128-c0x00000000-cc-rp-mo-ba2",
+        "displayName": "JOSEPH TINGLE"
+      },
+      "relativePublishTimeDescription": "7 months ago"
+    },
+    {
+      "name": "places/ChIJ-8nzCoUbmogRIiYBncSyfrE/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tWM1VHaHVNVUl4UTFoeGNHRmlZbVF5Ym1ZNE5HYxAB",
+      "text": {
+        "text": "Our friends own a condo at Sea Oats and we highly recommend staying at Sea Oats. The units are amazing, clean and have everything you need. We stayed in D206 and it was equipped with all you needed- and with hangers 🙂 which I loved because I hang my stuff up as soon as we arrive.  The unit was beautiful and very comfortable. I love how it is decorated.  The owners make sure that you are comfortable and have everything need. We definitely will return.  The view is also nice. You can see the gulf and the lagoon. We liked that it was down on the two lane part of the road also it wasn’t as busy but was still very close to all the shops and other entertainments.  I would definitely recommend staying at Sea Oats. Especially unit D206 ☺️",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-06-21T12:39:24.775352428Z",
+      "originalText": {
+        "text": "Our friends own a condo at Sea Oats and we highly recommend staying at Sea Oats. The units are amazing, clean and have everything you need. We stayed in D206 and it was equipped with all you needed- and with hangers 🙂 which I loved because I hang my stuff up as soon as we arrive.  The unit was beautiful and very comfortable. I love how it is decorated.  The owners make sure that you are comfortable and have everything need. We definitely will return.  The view is also nice. You can see the gulf and the lagoon. We liked that it was down on the two lane part of the road also it wasn’t as busy but was still very close to all the shops and other entertainments.  I would definitely recommend staying at Sea Oats. Especially unit D206 ☺️",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tWM1VHaHVNVUl4UTFoeGNHRmlZbVF5Ym1ZNE5HYxAB!2m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2tWM1VHaHVNVUl4UTFoeGNHRmlZbVF5Ym1ZNE5HYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/113018312558461384089/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJ0M4r9Ee-cmVMJpd4CVsrXEvXFpy0VwhX4YoEG1CRpBC8qzA=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Elaine Day"
+      },
+      "relativePublishTimeDescription": "11 months ago"
+    },
+    {
+      "name": "places/ChIJ-8nzCoUbmogRIiYBncSyfrE/reviews/Ci9DQUlRQUNvZENodHljRjlvT213eVRtaFJjRVpTUkdoSFVsaEZNVkowTFZBNFpuYxAB",
+      "text": {
+        "text": "Love these condos! Great location! The beach is across the street and short distance from the condo to the beach. There is a great green area to walk your dogs and by the bay since I have two fur babies and this plays a big part when I look for condo to stay. Inside one of the condo where we stayed, the carpet was a bit old but if the owner is willing to replace this old carpet with tiles, then I would give it a 5 starts. Unfortunately, I forgot to take pictures of the area and inside the condo but definitely, be back.",
+        "languageCode": "en"
+      },
+      "rating": 4,
+      "publishTime": "2025-11-20T16:44:49.981892833Z",
+      "originalText": {
+        "text": "Love these condos! Great location! The beach is across the street and short distance from the condo to the beach. There is a great green area to walk your dogs and by the bay since I have two fur babies and this plays a big part when I look for condo to stay. Inside one of the condo where we stayed, the carpet was a bit old but if the owner is willing to replace this old carpet with tiles, then I would give it a 5 starts. Unfortunately, I forgot to take pictures of the area and inside the condo but definitely, be back.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT213eVRtaFJjRVpTUkdoSFVsaEZNVkowTFZBNFpuYxAB!2m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT213eVRtaFJjRVpTUkdoSFVsaEZNVkowTFZBNFpuYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/105819169247175235546/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKo30q935INLcGTpg3O4dBuI-Ky09RD3tdazFVvYIpnjmu5cAyA=s128-c0x00000000-cc-rp-mo-ba3",
+        "displayName": "HTown TX"
+      },
+      "relativePublishTimeDescription": "6 months ago"
+    },
+    {
+      "name": "places/ChIJ-8nzCoUbmogRIiYBncSyfrE/reviews/ChdDSUhNMG9nS0VJQ0FnSUNSM043TmhRRRAB",
+      "text": {
+        "text": "Nice location, It is quiet for the most part and just across the street from the beach. About 3 and 1/2 mi to downtown. The place that we are in is updated and is a two bedroom two bath unit. There seems to be plenty of parking with a centrally located pool.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2023-03-27T17:35:18.384128Z",
+      "originalText": {
+        "text": "Nice location, It is quiet for the most part and just across the street from the beach. About 3 and 1/2 mi to downtown. The place that we are in is updated and is a two bedroom two bath unit. There seems to be plenty of parking with a centrally located pool.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNSM043TmhRRRAB!2m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNSM043TmhRRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/101174196467304241778/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUl2YqvG3QJ3Tg7e5BB_L73d7VMOmIOcDc8McH5YfHkFjzJOxgV=s128-c0x00000000-cc-rp-mo-ba6",
+        "displayName": "Scoti “Scubi Doo”"
+      },
+      "relativePublishTimeDescription": "3 years ago"
+    },
+    {
+      "name": "places/ChIJ-8nzCoUbmogRIiYBncSyfrE/reviews/ChZDSUhNMG9nS0VJQ0FnSURnbWZUVUl3EAE",
+      "text": {
+        "text": "For me, the lagoon is better than the beach. But I know a lot of other people love the beach, I just didn't go often enough to take pictures. The lagoon however, I loved for the fishing and the birds. The bird I have included pictures of is always there, his name is Walter. If you dig a place with 2 swimming pools, a beach, and a lagoon in easy walking distance then this is definitely for you.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2017-07-18T02:39:41.281Z",
+      "originalText": {
+        "text": "For me, the lagoon is better than the beach. But I know a lot of other people love the beach, I just didn't go often enough to take pictures. The lagoon however, I loved for the fishing and the birds. The bird I have included pictures of is always there, his name is Walter. If you dig a place with 2 swimming pools, a beach, and a lagoon in easy walking distance then this is definitely for you.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURnbWZUVUl3EAE!2m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURnbWZUVUl3EAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/115850520810793218146/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJZauLf8DkJFEJm1_LQ3Wkz1cOfsMWq6WH1xW5Ii9SsSoORYis=s128-c0x00000000-cc-rp-mo-ba2",
+        "displayName": "Owen Brinson"
+      },
+      "relativePublishTimeDescription": "8 years ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.2410278,
+    "longitude": -87.7456918
+  },
+  "plusCode": {
+    "globalCode": "862J67R3+CP",
+    "compoundCode": "67R3+CP Gulf Shores, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.23966211970849,
+      "longitude": -87.7471455802915
+    },
+    "high": {
+      "latitude": 30.24236008029149,
+      "longitude": -87.74444761970848
+    }
+  },
+  "allowsDogs": true,
+  "websiteUri": "http://www.hotelnicolle.com/listing/sea-oats-gulf-shores/",
+  "displayName": {
+    "text": "Sea Oats",
+    "languageCode": "en"
+  },
+  "primaryType": "condominium_complex",
+  "googleMapsUri": "https://maps.google.com/?cid=12789856549296219682&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewSummary": {
+    "text": {
+      "text": "People say these condos offer easy access to both the beach and a lagoon, with clean units that are well-equipped. Guests also highlight the clean pools and convenient fish cleaning station on the pier.\n\nSome reviews mention there can be many stairs to climb.",
+      "languageCode": "en-US"
+    },
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a1b850af3c9fb:0xb17eb2c49d012622!9m1!1b1",
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "flagContentUri": "https://www.google.com/local/content/rap/report?postId=5%401:CAIQACodChtyc19oOk82TDdDME14SFZ1Y2hNOERqa1pPWlE%7CCAIQACorChtyc19oOk82TDdDME14SFZ1Y2hNOERqa1pPWlESDAjBs7XPBhDgsrXaAw&d=17924085&t=8"
+  },
+  "businessStatus": "OPERATIONAL",
+  "parkingOptions": {
+    "freeParkingLot": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=12789856549296219682&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b850af3c9fb:0xb17eb2c49d012622!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a1b850af3c9fb:0xb17eb2c49d012622!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b850af3c9fb:0xb17eb2c49d012622!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "userRatingCount": 152,
+  "adrFormatAddress": "<span class=\"street-address\">1872 W Beach Blvd e103</span>, <span class=\"locality\">Gulf Shores</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36542</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "1872 W Beach Blvd e103, Gulf Shores, AL 36542, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "subpremise"
+      ],
+      "longText": "e103",
+      "shortText": "e103",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "1872",
+      "shortText": "1872",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "West Beach Boulevard",
+      "shortText": "W Beach Blvd",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Gulf Shores",
+      "shortText": "Gulf Shores",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36542",
+      "shortText": "36542",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "landmarks": [
+      {
+        "name": "places/ChIJU1TI-oQbmogRU2AYnFqoQzA",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJU1TI-oQbmogRU2AYnFqoQzA",
+        "displayName": {
+          "text": "Gulf Shores Surf & Racquet Club",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 310.26404,
+        "straightLineDistanceMeters": 158.95389
+      },
+      {
+        "name": "places/ChIJNylhco8bmogR1AfxkluzF9c",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJNylhco8bmogR1AfxkluzF9c",
+        "displayName": {
+          "text": "Bel Sole Condominiums",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 334.13324,
+        "straightLineDistanceMeters": 174.19202
+      },
+      {
+        "name": "places/ChIJuWPNg48bmogRLp7yV79eSXY",
+        "types": [
+          "establishment",
+          "lodging",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJuWPNg48bmogRLp7yV79eSXY",
+        "displayName": {
+          "text": "The Landing",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 170.14488,
+        "straightLineDistanceMeters": 137.02629
+      },
+      {
+        "name": "places/ChIJa9vlCY8bmogRe9eYtQPuvpQ",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "real_estate_agency"
+        ],
+        "placeId": "ChIJa9vlCY8bmogRe9eYtQPuvpQ",
+        "displayName": {
+          "text": "Lagoon Tower",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 302.72678,
+        "straightLineDistanceMeters": 255.45901
+      },
+      {
+        "name": "places/ChIJ4TDqB48bmogRD530H8BAFZU",
+        "types": [
+          "establishment",
+          "lodging",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJ4TDqB48bmogRD530H8BAFZU",
+        "displayName": {
+          "text": "Laguna Bella1948 west beach boulevar",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 354.70117,
+        "straightLineDistanceMeters": 280.85165
+      }
+    ]
+  },
+  "currentOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 0,
+          "minute": 0,
+          "truncated": true
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 59,
+          "truncated": true
+        }
+      }
+    ],
+    "weekdayDescriptions": [
+      "Monday: Open 24 hours",
+      "Tuesday: Open 24 hours",
+      "Wednesday: Open 24 hours",
+      "Thursday: Open 24 hours",
+      "Friday: Open 24 hours",
+      "Saturday: Open 24 hours",
+      "Sunday: Open 24 hours"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Condominium Complex",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "regularOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 0,
+          "minute": 0
+        }
+      }
+    ],
+    "weekdayDescriptions": [
+      "Monday: Open 24 hours",
+      "Tuesday: Open 24 hours",
+      "Wednesday: Open 24 hours",
+      "Thursday: Open 24 hours",
+      "Friday: Open 24 hours",
+      "Saturday: Open 24 hours",
+      "Sunday: Open 24 hours"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": false
+  },
+  "shortFormattedAddress": "1872 W Beach Blvd e103, Gulf Shores",
+  "primaryTypeDisplayName": {
+    "text": "Condominium Complex",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false
+}
+ai_review_summary: People say these condos offer easy access to both the beach and a lagoon, with clean units that are well-equipped. Guests also highlight the clean pools and convenient fish cleaning station on the pier.
+
+Some reviews mention there can be many stairs to climb.
+allows_dogs: true
+free_parking_lot: true
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 1872 W Beach Blvd e103, Gulf Shores
+search_vector: 'access':9C 'also':26C 'beach':13C 'clean':18C,29C,34C 'climb':48C 'complex':50 'condo':6C 'condominium':49 'conveni':32C 'easi':8C 'equip':24C 'fish':33C 'guest':25C 'gulf':51 'highlight':27C 'lagoon':16C 'mani':45C 'mention':41C 'oat':2A 'offer':7C 'peopl':3C 'pier':38C 'pool':30C 'review':40C 'say':4C 'sea':1A 'shore':52 'stair':46C 'station':35C 'unit':19C 'well':23C 'well-equip':22C
+primary_type_display: Condominium Complex
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=12789856549296219682&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b850af3c9fb:0xb17eb2c49d012622!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a1b850af3c9fb:0xb17eb2c49d012622!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b850af3c9fb:0xb17eb2c49d012622!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "landmarks": [
+    {
+      "name": "places/ChIJU1TI-oQbmogRU2AYnFqoQzA",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJU1TI-oQbmogRU2AYnFqoQzA",
+      "displayName": {
+        "text": "Gulf Shores Surf & Racquet Club",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 310.26404,
+      "straightLineDistanceMeters": 158.95389
+    },
+    {
+      "name": "places/ChIJNylhco8bmogR1AfxkluzF9c",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJNylhco8bmogR1AfxkluzF9c",
+      "displayName": {
+        "text": "Bel Sole Condominiums",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 334.13324,
+      "straightLineDistanceMeters": 174.19202
+    },
+    {
+      "name": "places/ChIJuWPNg48bmogRLp7yV79eSXY",
+      "types": [
+        "establishment",
+        "lodging",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJuWPNg48bmogRLp7yV79eSXY",
+      "displayName": {
+        "text": "The Landing",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 170.14488,
+      "straightLineDistanceMeters": 137.02629
+    },
+    {
+      "name": "places/ChIJa9vlCY8bmogRe9eYtQPuvpQ",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "real_estate_agency"
+      ],
+      "placeId": "ChIJa9vlCY8bmogRe9eYtQPuvpQ",
+      "displayName": {
+        "text": "Lagoon Tower",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 302.72678,
+      "straightLineDistanceMeters": 255.45901
+    },
+    {
+      "name": "places/ChIJ4TDqB48bmogRD530H8BAFZU",
+      "types": [
+        "establishment",
+        "lodging",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJ4TDqB48bmogRD530H8BAFZU",
+      "displayName": {
+        "text": "Laguna Bella1948 west beach boulevar",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 354.70117,
+      "straightLineDistanceMeters": 280.85165
+    }
+  ]
+}
+source_url: https://www.liquidlifevacationrentals.com/resort/sea-oats
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: stay
+industry_code: condo
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_attributes   -   3 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 3] ---
+id: 91a54df6-feb5-40c2-b58b-4be246bc985a
+entity_slug: sea-oats
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 2 of 3] ---
+id: 621e08a7-62c1-4885-9974-fbec4093cd51
+entity_slug: sea-oats
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 3 of 3] ---
+id: e44093b5-50d1-4942-9dc9-0a742396b1d7
+entity_slug: sea-oats
+category: parking
+key: parking_freeParkingLot
+label: Free Parking Lot
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: sea-oats
+name: Sea Oats
+industry_code: condo
+is_parent: false
+score_of_7: 5
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 9f19b821-59a0-4e11-aee9-d8153e98b4cd
+entity_slug: sea-oats
+place_uri: https://maps.google.com/?cid=12789856549296219682&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b850af3c9fb:0xb17eb2c49d012622!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a1b850af3c9fb:0xb17eb2c49d012622!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b850af3c9fb:0xb17eb2c49d012622!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 8987
+entity_slug: sea-oats
+google_review_name: places/ChIJ-8nzCoUbmogRIiYBncSyfrE/reviews/Ci9DQUlRQUNvZENodHljRjlvT2twTU5sQTJSbGx2VlVsbU16VmthMVJuWTJGaVVYYxAB
+rating: 5
+review_text: We visit here annually and absolutely love this location. Easy access to both the beach and to the lagoon. The location is perfect for us because we are away from “most” of the high rise condos so the skyline isn’t obstructed. Condo is within about 10 minutes of a Walmart and 5 minutes from a general store with all necessities.
+Things to consider. There are no elevators so either way you will be walking a couple to 4 flights of steps. This ok for us but there is no physical impairment for us that makes this difficult. Also I don’t think they mention it, but there is only enough toilet paper to get you through the day. So you will need toilet paper, garbage bags, dish soap and any detergents needed.
+The kitchen comes with all your basic needs.  Don’t forget a few essential seasonings such as salt and pepper. These are usually not here.
+There are usually lots of people staying here that fish because of the location to the lagoon and the inlet just down the street.  They have a setup to clean fish on the pier which is very nifty to have.
+Beach access is maybe a hundred yard walk from the condo parking lot to where you’d place your chair in the sand.
+Pools are always clean, not heated but always very clear.
+So overall we have stayed here twice and will continue to stay here as we enjoy the location, service, and people we encounter here.
+language_code: en
+author_name: JOSEPH TINGLE
+author_profile_url: https://www.google.com/maps/contrib/101356817507157566632/reviews
+publish_time: 2025-10-14T15:42:37.408711+00:00
+relative_time: 7 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2twTU5sQTJSbGx2VlVsbU16VmthMVJuWTJGaVVYYxAB!2m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 8988
+entity_slug: sea-oats
+google_review_name: places/ChIJ-8nzCoUbmogRIiYBncSyfrE/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tWM1VHaHVNVUl4UTFoeGNHRmlZbVF5Ym1ZNE5HYxAB
+rating: 5
+review_text: Our friends own a condo at Sea Oats and we highly recommend staying at Sea Oats. The units are amazing, clean and have everything you need. We stayed in D206 and it was equipped with all you needed- and with hangers 🙂 which I loved because I hang my stuff up as soon as we arrive.  The unit was beautiful and very comfortable. I love how it is decorated.  The owners make sure that you are comfortable and have everything need. We definitely will return.  The view is also nice. You can see the gulf and the lagoon. We liked that it was down on the two lane part of the road also it wasn’t as busy but was still very close to all the shops and other entertainments.  I would definitely recommend staying at Sea Oats. Especially unit D206 ☺️
+language_code: en
+author_name: Elaine Day
+author_profile_url: https://www.google.com/maps/contrib/113018312558461384089/reviews
+publish_time: 2025-06-21T12:39:24.775352+00:00
+relative_time: 11 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tWM1VHaHVNVUl4UTFoeGNHRmlZbVF5Ym1ZNE5HYxAB!2m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 8989
+entity_slug: sea-oats
+google_review_name: places/ChIJ-8nzCoUbmogRIiYBncSyfrE/reviews/Ci9DQUlRQUNvZENodHljRjlvT213eVRtaFJjRVpTUkdoSFVsaEZNVkowTFZBNFpuYxAB
+rating: 4
+review_text: Love these condos! Great location! The beach is across the street and short distance from the condo to the beach. There is a great green area to walk your dogs and by the bay since I have two fur babies and this plays a big part when I look for condo to stay. Inside one of the condo where we stayed, the carpet was a bit old but if the owner is willing to replace this old carpet with tiles, then I would give it a 5 starts. Unfortunately, I forgot to take pictures of the area and inside the condo but definitely, be back.
+language_code: en
+author_name: HTown TX
+author_profile_url: https://www.google.com/maps/contrib/105819169247175235546/reviews
+publish_time: 2025-11-20T16:44:49.981893+00:00
+relative_time: 6 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT213eVRtaFJjRVpTUkdoSFVsaEZNVkowTFZBNFpuYxAB!2m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 8990
+entity_slug: sea-oats
+google_review_name: places/ChIJ-8nzCoUbmogRIiYBncSyfrE/reviews/ChdDSUhNMG9nS0VJQ0FnSUNSM043TmhRRRAB
+rating: 5
+review_text: Nice location, It is quiet for the most part and just across the street from the beach. About 3 and 1/2 mi to downtown. The place that we are in is updated and is a two bedroom two bath unit. There seems to be plenty of parking with a centrally located pool.
+language_code: en
+author_name: Scoti “Scubi Doo”
+author_profile_url: https://www.google.com/maps/contrib/101174196467304241778/reviews
+publish_time: 2023-03-27T17:35:18.384128+00:00
+relative_time: 3 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNSM043TmhRRRAB!2m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 8991
+entity_slug: sea-oats
+google_review_name: places/ChIJ-8nzCoUbmogRIiYBncSyfrE/reviews/ChZDSUhNMG9nS0VJQ0FnSURnbWZUVUl3EAE
+rating: 5
+review_text: For me, the lagoon is better than the beach. But I know a lot of other people love the beach, I just didn't go often enough to take pictures. The lagoon however, I loved for the fishing and the birds. The bird I have included pictures of is always there, his name is Walter. If you dig a place with 2 swimming pools, a beach, and a lagoon in easy walking distance then this is definitely for you.
+language_code: en
+author_name: Owen Brinson
+author_profile_url: https://www.google.com/maps/contrib/115850520810793218146/reviews
+publish_time: 2017-07-18T02:39:41.281+00:00
+relative_time: 8 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURnbWZUVUl3EAE!2m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: f01a693e-5644-4c84-af83-28a20ec5c2c4
+entity_slug: sea-oats
+day_of_week: 0
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 4b2a722e-4b91-4a62-a5db-6883a5e4dad3
+entity_slug: sea-oats
+day_of_week: 1
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 8fc12b74-3673-4727-8ba1-d80a9dc3524c
+entity_slug: sea-oats
+day_of_week: 2
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: bc18e693-ffdd-49ba-8677-f0a85dbd5f67
+entity_slug: sea-oats
+day_of_week: 3
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 23cb52e6-4514-432f-93ca-ae4ff141a916
+entity_slug: sea-oats
+day_of_week: 4
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 8ded880f-76c2-4f81-b209-54c5107a1bd9
+entity_slug: sea-oats
+day_of_week: 5
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: e4d9ff65-4c50-4f3c-ade7-6ed031d78b0c
+entity_slug: sea-oats
+day_of_week: 6
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 2] ---
+entity_slug: sea-oats
+source_table: bookable_resources
+item_type: condo
+section_name: Units
+item_id: 7f0016ae-80e1-4670-a4d9-d9cbf1c94270
+name: Sea Oats
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_02.jpg",
+    "/photos/sea-oats/photo_01.jpg",
+    "/photos/sea-oats/photo_02.jpg",
+    "/photos/sea-oats/photo_03.jpg",
+    "/photos/sea-oats/photo_04.jpg",
+    "/photos/sea-oats/photo_05.jpg",
+    "/photos/sea-oats/photo_06.jpg",
+    "/photos/sea-oats/photo_07.jpg",
+    "/photos/sea-oats/photo_08.jpg",
+    "/photos/sea-oats/photo_09.jpg",
+    "/photos/sea-oats/photo_10.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "item_type_raw": "condo",
+  "resource_type": "condo",
+  "check_out_time": "11:00"
+}
+
+--- entity_items_norm_v [row 2 of 2] ---
+entity_slug: sea-oats
+source_table: entity_section_items
+item_type: rooms
+section_name: Units & Rates
+item_id: a5c33f4f-7950-4e96-93ee-a4ab0789c2e0
+name: Sea Oats
+sort_order: 1
+active: true
+attributes: {
+  "icon": "🏠",
+  "min_nights": 1,
+  "module_key": "rooms",
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "item_type_raw": "rooms",
+  "check_out_time": "11:00"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 2] ---
+entity_slug: sea-oats
+source_table: bookable_resources
+item_type: condo
+section_name: Units
+item_id: 7f0016ae-80e1-4670-a4d9-d9cbf1c94270
+name: Sea Oats
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_02.jpg",
+    "/photos/sea-oats/photo_01.jpg",
+    "/photos/sea-oats/photo_02.jpg",
+    "/photos/sea-oats/photo_03.jpg",
+    "/photos/sea-oats/photo_04.jpg",
+    "/photos/sea-oats/photo_05.jpg",
+    "/photos/sea-oats/photo_06.jpg",
+    "/photos/sea-oats/photo_07.jpg",
+    "/photos/sea-oats/photo_08.jpg",
+    "/photos/sea-oats/photo_09.jpg",
+    "/photos/sea-oats/photo_10.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "resource_type": "condo",
+  "check_out_time": "11:00"
+}
+
+--- entity_items_v [row 2 of 2] ---
+entity_slug: sea-oats
+source_table: entity_section_items
+item_type: rooms
+section_name: Units & Rates
+item_id: a5c33f4f-7950-4e96-93ee-a4ab0789c2e0
+name: Sea Oats
+sort_order: 1
+active: true
+attributes: {
+  "icon": "🏠",
+  "min_nights": 1,
+  "module_key": "rooms",
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "check_out_time": "11:00"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   14 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 14] ---
+id: 6a57dacc-1590-4998-a870-58c096183031
+entity_slug: sea-oats
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 14] ---
+id: 360e9069-c2b1-4cca-8f55-cf884d7aad80
+entity_slug: sea-oats
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 14] ---
+id: 90158d5e-19a7-4f8d-9517-a679bde41613
+entity_slug: sea-oats
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 14] ---
+id: 8e880201-bf25-45d5-9383-41e440691cfe
+entity_slug: sea-oats
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 14] ---
+id: a108de49-a09d-4935-a4ee-8f809af824f6
+entity_slug: sea-oats
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 14] ---
+id: 0cb1654d-b14e-4990-8f74-64b572b2c752
+entity_slug: sea-oats
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 14] ---
+id: 59832964-6e83-416f-baf6-32b45436744e
+entity_slug: sea-oats
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 14] ---
+id: 3ba60f67-45c4-41fb-b8ed-6389c92d2108
+entity_slug: sea-oats
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 14] ---
+id: 7bdf93f8-f756-4608-a99c-3286aba119a9
+entity_slug: sea-oats
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 14] ---
+id: ad805a40-a6e6-4863-95c5-e0748d016ff8
+entity_slug: sea-oats
+module_key: stay
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 14] ---
+id: 764ab960-df34-4c0d-91e1-dd3c71906825
+entity_slug: sea-oats
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 14] ---
+id: d6dbebc5-c028-4f16-8285-74a80ee0665e
+entity_slug: sea-oats
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 14] ---
+id: f55f6745-e32b-4d09-b0a7-9ddf408098ba
+entity_slug: sea-oats
+module_key: amenities
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 14 of 14] ---
+id: f662f540-a8a7-479e-b580-65c4ee23ccd0
+entity_slug: sea-oats
+module_key: rooms
+enabled: true
+sort_order: 2
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   13 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 13] ---
+id: 67751e35-26b7-4032-ad3c-6496bb2f6579
+landmark_id: 8586fa59-1405-4e2c-ac61-5ad127b93b6f
+entity_slug: sea-oats
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 13] ---
+id: 74101fb4-1cea-4916-890b-530ceead9ab2
+landmark_id: 8586fa59-1405-4e2c-ac61-5ad127b93b6f
+entity_slug: sea-oats
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 13] ---
+id: a850bf75-b465-4ca3-98e0-7ed1212404c6
+landmark_id: 2c4574b3-d325-4882-a77a-e4b0b98fe50b
+entity_slug: sea-oats
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 13] ---
+id: 709b2cbf-ed70-49c4-a2da-1355d4fba8c7
+landmark_id: 2c4574b3-d325-4882-a77a-e4b0b98fe50b
+entity_slug: sea-oats
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 13] ---
+id: 663a5b60-8c4f-4b66-a7c6-d021f1ffcd84
+landmark_id: 8a60d437-1351-4808-a0fe-4ad57dc562b1
+entity_slug: sea-oats
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 13] ---
+id: 9835b82b-7a7f-40f3-8cbc-7e016aec00d2
+landmark_id: 8a60d437-1351-4808-a0fe-4ad57dc562b1
+entity_slug: sea-oats
+landmark_type: lodging
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 13] ---
+id: 5f481628-f17a-400c-abf3-62117f754c55
+landmark_id: 8a60d437-1351-4808-a0fe-4ad57dc562b1
+entity_slug: sea-oats
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 13] ---
+id: fde8a830-0d2c-42db-a7c7-93f06e7a8178
+landmark_id: 9c7b7db0-6ad3-42e5-8c27-a3b7ff099abb
+entity_slug: sea-oats
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 13] ---
+id: b2f0a698-40b0-4cb5-992e-7da565a4a342
+landmark_id: 9c7b7db0-6ad3-42e5-8c27-a3b7ff099abb
+entity_slug: sea-oats
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 13] ---
+id: d1c02526-b0dd-4cb6-9ed8-4db9ad1c2973
+landmark_id: 9c7b7db0-6ad3-42e5-8c27-a3b7ff099abb
+entity_slug: sea-oats
+landmark_type: real_estate_agency
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 13] ---
+id: 0bf1d65a-82bf-4ad7-b310-62cec7da0b32
+landmark_id: bd2ba254-2070-4518-b45d-5fabc080ba27
+entity_slug: sea-oats
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 13] ---
+id: bf3937d7-3165-4917-a558-680d0aeb4d1f
+landmark_id: bd2ba254-2070-4518-b45d-5fabc080ba27
+entity_slug: sea-oats
+landmark_type: lodging
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 13] ---
+id: 4cbe9813-fa60-40be-a6ea-088a5d93d9b9
+landmark_id: bd2ba254-2070-4518-b45d-5fabc080ba27
+entity_slug: sea-oats
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   5 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 5] ---
+id: 8586fa59-1405-4e2c-ac61-5ad127b93b6f
+entity_slug: sea-oats
+kind: landmark
+place_id: ChIJU1TI-oQbmogRU2AYnFqoQzA
+name: Gulf Shores Surf & Racquet Club
+types: [
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 310.26404
+straight_line_distance_meters: 158.95389
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 5] ---
+id: 2c4574b3-d325-4882-a77a-e4b0b98fe50b
+entity_slug: sea-oats
+kind: landmark
+place_id: ChIJNylhco8bmogR1AfxkluzF9c
+name: Bel Sole Condominiums
+types: [
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 334.13324
+straight_line_distance_meters: 174.19202
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 5] ---
+id: 8a60d437-1351-4808-a0fe-4ad57dc562b1
+entity_slug: sea-oats
+kind: landmark
+place_id: ChIJuWPNg48bmogRLp7yV79eSXY
+name: The Landing
+types: [
+  "establishment",
+  "lodging",
+  "point_of_interest"
+]
+travel_distance_meters: 170.14488
+straight_line_distance_meters: 137.02629
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 5] ---
+id: 9c7b7db0-6ad3-42e5-8c27-a3b7ff099abb
+entity_slug: sea-oats
+kind: landmark
+place_id: ChIJa9vlCY8bmogRe9eYtQPuvpQ
+name: Lagoon Tower
+types: [
+  "establishment",
+  "point_of_interest",
+  "real_estate_agency"
+]
+travel_distance_meters: 302.72678
+straight_line_distance_meters: 255.45901
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 5] ---
+id: bd2ba254-2070-4518-b45d-5fabc080ba27
+entity_slug: sea-oats
+kind: landmark
+place_id: ChIJ4TDqB48bmogRD530H8BAFZU
+name: Laguna Bella1948 west beach boulevar
+types: [
+  "establishment",
+  "lodging",
+  "point_of_interest"
+]
+travel_distance_meters: 354.70117
+straight_line_distance_meters: 280.85165
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 14040
+entity_slug: sea-oats
+name: Sea Oats
+offer_type: room
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 7f0016ae-80e1-4670-a4d9-d9cbf1c94270
+
+####################################################################################################
+# TABLE: entity_photos   -   52 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 52] ---
+id: 2f86c0bc-ea9d-4f27-b329-048f24e45465
+entity_slug: sea-oats
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_03.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: 7f0016ae-80e1-4670-a4d9-d9cbf1c94270
+
+--- entity_photos [row 2 of 52] ---
+id: b4dcd962-6da4-4c4b-a6e9-6e49019ec324
+entity_slug: sea-oats
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A5582.jpg
+is_cover: true
+sort_order: 0
+photo_type: gallery
+
+--- entity_photos [row 3 of 52] ---
+id: b647e850-15b4-4469-a33c-d6f28c45dc20
+entity_slug: sea-oats
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A5558.jpg
+is_cover: false
+sort_order: 1
+photo_type: gallery
+
+--- entity_photos [row 4 of 52] ---
+id: 36e12b60-b520-4237-9941-6c08ed32dfd9
+entity_slug: sea-oats
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_01.jpg
+is_cover: true
+sort_order: 0
+photo_type: complex
+
+--- entity_photos [row 5 of 52] ---
+id: cde29276-f745-437c-ac3c-bb696b496fc2
+entity_slug: sea-oats
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_04.jpg
+is_cover: false
+sort_order: 3
+photo_type: complex
+
+--- entity_photos [row 6 of 52] ---
+id: 654bcae8-9f04-4d36-9a43-58f2a3a8ab05
+entity_slug: sea-oats
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_05.jpg
+is_cover: false
+sort_order: 4
+photo_type: complex
+
+--- entity_photos [row 7 of 52] ---
+id: 725d5eeb-66c7-412e-a590-71c2c651c832
+entity_slug: sea-oats
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_07.jpg
+is_cover: false
+sort_order: 6
+photo_type: complex
+
+--- entity_photos [row 8 of 52] ---
+id: 968d165d-c94e-4118-abd5-a67e4f65cd2f
+entity_slug: sea-oats
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_06.jpg
+is_cover: false
+sort_order: 5
+photo_type: complex
+
+--- entity_photos [row 9 of 52] ---
+id: 2091b1b1-361c-49b7-8135-ce4162bc3e8e
+entity_slug: sea-oats
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_08.jpg
+is_cover: false
+sort_order: 7
+photo_type: complex
+
+--- entity_photos [row 10 of 52] ---
+id: c74593b7-ca55-40cf-bd85-a675feb8418d
+entity_slug: sea-oats
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_09.jpg
+is_cover: false
+sort_order: 8
+photo_type: complex
+
+--- entity_photos [row 11 of 52] ---
+id: 3236369a-7f05-450d-b2da-787c38147ed8
+entity_slug: sea-oats
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_03.jpg
+is_cover: false
+sort_order: 2
+photo_type: complex
+
+--- entity_photos [row 12 of 52] ---
+id: 6cdf61a5-940c-49ab-8737-a070716b74f7
+entity_slug: sea-oats
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_10.jpg
+is_cover: false
+sort_order: 9
+photo_type: complex
+
+--- entity_photos [row 13 of 52] ---
+id: 95e270be-7f78-4d89-b387-a76e7f944697
+entity_slug: sea-oats
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: complex
+
+--- entity_photos [row 14 of 52] ---
+id: d6d48a87-69f9-4647-9bb0-7de0f7115326
+entity_slug: sea-oats
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_09.jpg
+is_cover: false
+sort_order: 7
+photo_type: resource
+source_name: bookable_resource
+resource_id: 7f0016ae-80e1-4670-a4d9-d9cbf1c94270
+
+--- entity_photos [row 15 of 52] ---
+id: 01476aa2-dd4e-4a2c-b373-3b0ae5bf94c7
+entity_slug: sea-oats
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_07.jpg
+is_cover: false
+sort_order: 5
+photo_type: resource
+source_name: bookable_resource
+resource_id: 7f0016ae-80e1-4670-a4d9-d9cbf1c94270
+
+--- entity_photos [row 16 of 52] ---
+id: bf3ab1fd-51c5-47ba-b750-499c59cb7f12
+entity_slug: sea-oats
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_02.jpg
+is_cover: false
+sort_order: 9
+photo_type: resource
+source_name: bookable_resource
+resource_id: 7f0016ae-80e1-4670-a4d9-d9cbf1c94270
+
+--- entity_photos [row 17 of 52] ---
+id: 244fbc9a-e306-4490-b186-221eea79537a
+entity_slug: sea-oats
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_05.jpg
+is_cover: false
+sort_order: 3
+photo_type: resource
+source_name: bookable_resource
+resource_id: 7f0016ae-80e1-4670-a4d9-d9cbf1c94270
+
+--- entity_photos [row 18 of 52] ---
+id: 2fbd2ffd-7dd6-4e8e-9924-a14794dc096c
+entity_slug: sea-oats
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A5555.jpg
+is_cover: false
+sort_order: 304
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 19 of 52] ---
+id: f5774798-e311-443a-977c-c2336b2e3750
+entity_slug: sea-oats
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A5588.jpg
+is_cover: false
+sort_order: 305
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 20 of 52] ---
+id: 8a402864-fd65-4d0f-aca7-f630dd1b65f9
+entity_slug: sea-oats
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A5594.jpg
+is_cover: false
+sort_order: 306
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 21 of 52] ---
+id: d13c426f-fded-4ec4-99cc-af6e4c9f00ab
+entity_slug: sea-oats
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A5600.jpg
+is_cover: false
+sort_order: 307
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 22 of 52] ---
+id: c6541710-a81d-4370-a9a2-edc02be6e126
+entity_slug: sea-oats
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A5603.jpg
+is_cover: false
+sort_order: 308
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 23 of 52] ---
+id: 4d21c5e8-441b-4da9-99de-680183ff4d8b
+entity_slug: sea-oats
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A5630.jpg
+is_cover: false
+sort_order: 309
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 24 of 52] ---
+id: a3702d0a-f210-4175-b884-dddcbd486294
+entity_slug: sea-oats
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A5561.jpg
+is_cover: false
+sort_order: 310
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 25 of 52] ---
+id: 64c263f2-3a8c-4095-9dde-96585e6f4add
+entity_slug: sea-oats
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A5567.jpg
+is_cover: false
+sort_order: 311
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 26 of 52] ---
+id: 6c847808-d06c-44ad-b4e5-812e8f4bc141
+entity_slug: sea-oats
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A5606.jpg
+is_cover: false
+sort_order: 312
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 27 of 52] ---
+id: 45d981c7-f134-42a0-8ed2-a49235291c1b
+entity_slug: sea-oats
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A5609.jpg
+is_cover: false
+sort_order: 313
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 28 of 52] ---
+id: 51503f99-146d-453b-be61-dcf9404dac3d
+entity_slug: sea-oats
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A5612.jpg
+is_cover: false
+sort_order: 314
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 29 of 52] ---
+id: 8c24bb9a-aabb-4581-8123-59e4700147ed
+entity_slug: sea-oats
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A5615.jpg
+is_cover: false
+sort_order: 315
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 30 of 52] ---
+id: 4f4b923f-94d2-41a9-900a-95456b04b4d6
+entity_slug: sea-oats
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A5621.jpg
+is_cover: false
+sort_order: 316
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 31 of 52] ---
+id: 222514a8-558d-4028-bbc2-ca5c59788040
+entity_slug: sea-oats
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A5627.jpg
+is_cover: false
+sort_order: 317
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 32 of 52] ---
+id: f9398eaa-cc58-4f22-9d3f-4f6cccf844ec
+entity_slug: sea-oats
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A5624.jpg
+is_cover: false
+sort_order: 318
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 33 of 52] ---
+id: 67bd2c56-0a13-4461-bec7-ddaeb18aae27
+entity_slug: sea-oats
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A5579.jpg
+is_cover: false
+sort_order: 319
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 34 of 52] ---
+id: 69527c89-34e1-48a7-b052-16f602b5ad45
+entity_slug: sea-oats
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A5573.jpg
+is_cover: false
+sort_order: 320
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 35 of 52] ---
+id: 1e381876-97d6-4af1-9846-c596c4b0c5b8
+entity_slug: sea-oats
+url: https://places.googleapis.com/v1/places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3kGGDzmqHGw1-Tn9hxn95aATFsoS8KVfSAddCR5SbqLRYb3epHOV18VgzkKVlGQ0yUNly4LJY-zUUFT_kTz1K0U0F2Y9TbUexKUuIVrI7Ubuid1N2sO9Lw2VTt1CuzZK-cErfTuiUtRyBbXLWTt6q7zYh8dsVBu-2U0jzR7_3jOztJb54tnfOszZrpQloWdWf24VpurebF5IGkcAuHAocaN3S4_K0ySMa8FPQPjQep48Y3HKaISVFqLTYIKeM6tHtRLWTDnUInQnJNzKEwECmQt-Qcym5YDDecJmENDimxjNLdo-OCA5Y3VT8XUQ24CEM-cxOow8Q6syohH7Ooew3G-JAMGvyj3bSlkxbakc5JdC8p7CoKpZpyWcwhudK8kmjhp9fgZ8T_GGs-tA4pvj37Sbr2Mk_ywrWticNu4-k-3_qEVc1xK7fsbHTPYomUe/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3kGGDzmqHGw1-Tn9hxn95aATFsoS8KVfSAddCR5SbqLRYb3epHOV18VgzkKVlGQ0yUNly4LJY-zUUFT_kTz1K0U0F2Y9TbUexKUuIVrI7Ubuid1N2sO9Lw2VTt1CuzZK-cErfTuiUtRyBbXLWTt6q7zYh8dsVBu-2U0jzR7_3jOztJb54tnfOszZrpQloWdWf24VpurebF5IGkcAuHAocaN3S4_K0ySMa8FPQPjQep48Y3HKaISVFqLTYIKeM6tHtRLWTDnUInQnJNzKEwECmQt-Qcym5YDDecJmENDimxjNLdo-OCA5Y3VT8XUQ24CEM-cxOow8Q6syohH7Ooew3G-JAMGvyj3bSlkxbakc5JdC8p7CoKpZpyWcwhudK8kmjhp9fgZ8T_GGs-tA4pvj37Sbr2Mk_ywrWticNu4-k-3_qEVc1xK7fsbHTPYomUe
+is_cover: false
+sort_order: 0
+caption: Elaine Day
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAgT-cllyVROuBdMXI8xWzR!2e10!4m2!3m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622
+
+--- entity_photos [row 36 of 52] ---
+id: d17e5393-7ff8-4d0d-90f8-d104d8dc1d53
+entity_slug: sea-oats
+url: https://places.googleapis.com/v1/places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3lcccIWNjDtbY1rwz-GcZih88QBbQXGXwGgi9j8j6uPbOp83fI5K2gidYf2010MQd5kj_a9-pB7I6sCs7qrUTT-HeLwcTbqq1OepwXJYn2f7movHwXRG9hqP1GQ6fKbREVt-liuYUW-90zeYH07UZb3gX3dDJCuBUcaHui_xR75pt3j7e1jcZyxcRQBNxBuhyS5dHNdrWusXj3kdvAYPB_PEpiQO0pdC7vZ63TgkLgzoXcG2Dcpryf3WG6J1R1wyu5cDXjPEzUrdkBioF04o4nWDhonc9kYJqc4s4jQXU3ONImooMW07WFwjBXZbfFxw1ccjZleUnBErJo5sKX-j2JTpQ4d86t3T5coinr6ZCY2d6d7jDkspBYuEfmabNjazT9pGvcoLsPojeYXv6-uapck5ERrswJA6RlY2lF0xefsIA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3lcccIWNjDtbY1rwz-GcZih88QBbQXGXwGgi9j8j6uPbOp83fI5K2gidYf2010MQd5kj_a9-pB7I6sCs7qrUTT-HeLwcTbqq1OepwXJYn2f7movHwXRG9hqP1GQ6fKbREVt-liuYUW-90zeYH07UZb3gX3dDJCuBUcaHui_xR75pt3j7e1jcZyxcRQBNxBuhyS5dHNdrWusXj3kdvAYPB_PEpiQO0pdC7vZ63TgkLgzoXcG2Dcpryf3WG6J1R1wyu5cDXjPEzUrdkBioF04o4nWDhonc9kYJqc4s4jQXU3ONImooMW07WFwjBXZbfFxw1ccjZleUnBErJo5sKX-j2JTpQ4d86t3T5coinr6ZCY2d6d7jDkspBYuEfmabNjazT9pGvcoLsPojeYXv6-uapck5ERrswJA6RlY2lF0xefsIA
+is_cover: false
+sort_order: 1
+caption: Scoti “Scubi Doo”
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICR3P6EEw!2e10!4m2!3m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622
+
+--- entity_photos [row 37 of 52] ---
+id: 0fabe795-c371-41e9-aabe-e91c60092caf
+entity_slug: sea-oats
+url: https://places.googleapis.com/v1/places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3kqUDExgL5SuhTbi0tFupJ_Rhm69aYTbhLzWO1K_rXklmRIWWCcdSG1kvBbKxxjFAuJoz8hx-kQbBP-wDxYrS4fhKA75FFf4Ns5P49D3m4TED3kGi1SuINXek4SlayDGYFUruLyX1n5cB7WAXVXt9b1-0E_SJFFnF7qkKS8QomMv_6si5zQbPsFlb-42GY35nqKrDKn5CydlXSU5c9wr0m81_yey9qQGj5JC5PZOSer06aZl7AT9Oh0JPrYh8jKi_P9xxR1GbwpQN3MuGLCL-R9ShEI1-UTe94vadLaPd80ycBQm8IH1BZDWt-V9wMN5-QTw_FKOSLsmHu8mAWnFiacAsbILA4PC2O0WSm_PEZCDDub72DLbwtmUkyKXP_Z_hdnDii_Hxs1UYHmvNlSVwpO-EfVHxeAzof1CF7_mk4org/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3kqUDExgL5SuhTbi0tFupJ_Rhm69aYTbhLzWO1K_rXklmRIWWCcdSG1kvBbKxxjFAuJoz8hx-kQbBP-wDxYrS4fhKA75FFf4Ns5P49D3m4TED3kGi1SuINXek4SlayDGYFUruLyX1n5cB7WAXVXt9b1-0E_SJFFnF7qkKS8QomMv_6si5zQbPsFlb-42GY35nqKrDKn5CydlXSU5c9wr0m81_yey9qQGj5JC5PZOSer06aZl7AT9Oh0JPrYh8jKi_P9xxR1GbwpQN3MuGLCL-R9ShEI1-UTe94vadLaPd80ycBQm8IH1BZDWt-V9wMN5-QTw_FKOSLsmHu8mAWnFiacAsbILA4PC2O0WSm_PEZCDDub72DLbwtmUkyKXP_Z_hdnDii_Hxs1UYHmvNlSVwpO-EfVHxeAzof1CF7_mk4org
+is_cover: false
+sort_order: 2
+caption: Ranee Jones
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC276DreQ!2e10!4m2!3m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622
+
+--- entity_photos [row 38 of 52] ---
+id: 6d3df227-e410-46f1-b172-28ed2732ac6f
+entity_slug: sea-oats
+url: https://places.googleapis.com/v1/places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3mS4q7zYnlJWu9X9yzIBBakbOdYsQjfOPD1ubnUYmsanNmUSOV9UC5BM3vJ1BbYwDBLngzhC2d7G4gLLQ5a_itzwfiKNjwctSCG3koD5tUXOK-19FtDvw7AEQDivHq-wJc1XH5dKRMxZOr3JBVsc83fVvx1PVP1ioyaS6IFRFvudWJjNOF6Srf-I5zaBZ0mPxtbegPz3H_6gSWgO1CODXlZ6xuUohlkfz7HNcEWTdROfSxZv3nlikD9PyxuPgnKTADrUNtCQz79MLeqn5jJty2n7rrgjTOo2DvXC-hMAZ8dZpZpVKOoZ7s-kVECWfNMWTYfLaYgWO6F5U-njqMZtmir3F3JfdweLHQFHQjNiS7CwD4ABqMLJNjdQY1TsA1xcvDWtGyAwLL7ywEv70rJjzuS1CcoPDUj9QJaF2zmIcV1lUtivxB8tzNm7jHXJk6S/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3mS4q7zYnlJWu9X9yzIBBakbOdYsQjfOPD1ubnUYmsanNmUSOV9UC5BM3vJ1BbYwDBLngzhC2d7G4gLLQ5a_itzwfiKNjwctSCG3koD5tUXOK-19FtDvw7AEQDivHq-wJc1XH5dKRMxZOr3JBVsc83fVvx1PVP1ioyaS6IFRFvudWJjNOF6Srf-I5zaBZ0mPxtbegPz3H_6gSWgO1CODXlZ6xuUohlkfz7HNcEWTdROfSxZv3nlikD9PyxuPgnKTADrUNtCQz79MLeqn5jJty2n7rrgjTOo2DvXC-hMAZ8dZpZpVKOoZ7s-kVECWfNMWTYfLaYgWO6F5U-njqMZtmir3F3JfdweLHQFHQjNiS7CwD4ABqMLJNjdQY1TsA1xcvDWtGyAwLL7ywEv70rJjzuS1CcoPDUj9QJaF2zmIcV1lUtivxB8tzNm7jHXJk6S
+is_cover: false
+sort_order: 3
+caption: Elaine Day
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBQYaNw36FPXUVBh84nlQDr!2e10!4m2!3m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622
+
+--- entity_photos [row 39 of 52] ---
+id: 5923268b-07e3-4e86-b9cc-e9ce04c36b1b
+entity_slug: sea-oats
+url: https://places.googleapis.com/v1/places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3ntVrD1swJ0OLi70oNmAIR8evZeYoi0EbQlkDEf37QYZYhwu8D-Xm0U7UatifOaFlEBr7kFk6tPMHMtmLn7DF8p7y9TrGDlNIcY2dplb6HNXKSUbgnxlVpQB66l_qWFgLrXY6FgSwNYw4ZduuS3BoI8TB4kmFLfRL9JdddBugvFGdlR1NCEVn7-yqUnhKwF4_JU7nXvBrGAI9T0vkSiWbFgDoydLP9v6dk0s0KRm3uud7nAa2cV7_h-Tnlof2DH63-D1IDd3pqqtnYosKO5tTY9zY4eXsjM3Z-2o-SNKLjX9SLcyWXXscXMCn0hkA-x1UCxC7slIt-XQxWsq3u1znS6Kh-DOGyEfUAT43F5Aw6hlCubAk0LQ8rxJq4KfZV_daRUFWxKD5tIhWOQ5WNMwvYg7Vbd0oA98jE92q7nl9bRMdJC/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3ntVrD1swJ0OLi70oNmAIR8evZeYoi0EbQlkDEf37QYZYhwu8D-Xm0U7UatifOaFlEBr7kFk6tPMHMtmLn7DF8p7y9TrGDlNIcY2dplb6HNXKSUbgnxlVpQB66l_qWFgLrXY6FgSwNYw4ZduuS3BoI8TB4kmFLfRL9JdddBugvFGdlR1NCEVn7-yqUnhKwF4_JU7nXvBrGAI9T0vkSiWbFgDoydLP9v6dk0s0KRm3uud7nAa2cV7_h-Tnlof2DH63-D1IDd3pqqtnYosKO5tTY9zY4eXsjM3Z-2o-SNKLjX9SLcyWXXscXMCn0hkA-x1UCxC7slIt-XQxWsq3u1znS6Kh-DOGyEfUAT43F5Aw6hlCubAk0LQ8rxJq4KfZV_daRUFWxKD5tIhWOQ5WNMwvYg7Vbd0oA98jE92q7nl9bRMdJC
+is_cover: false
+sort_order: 4
+caption: Sarah J. Parker
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICKw_n-yQE!2e10!4m2!3m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622
+
+--- entity_photos [row 40 of 52] ---
+id: 76f034f0-6a6c-4b5a-8d51-49c4aa1bc01d
+entity_slug: sea-oats
+url: https://places.googleapis.com/v1/places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3nIs1a7ovasmSrGb-Vgi9qYmt8D4c_1M-sGawUabJSDHhp9L-8QUCdpUntHRH2G-xjfbpQZBgBmu-dCAhjWDHEeCn4-ZUReK7_7WgWdNly_Fy04KbtW6f2QwwL1lV2ymCcGXH26lJFdXPufz3wDO61gy6iX2jVuiHHGloMMY1Foh63QzxEUxfKOidbuZl5V8S0wPiRgATLDS5fT9Ha27ua-NGwwXdB09LxNHpDQzz-cCIeLD7cLcRQSszBF64IpgDygOKBPKPvQxO4f6AdRGkcaahiy5vDqPp-4yBcqQze1CqCNCsIAPR3M56o1uZjLFS03HGH-O1wSZqUwY1aABM9cBixi_r1Vupczp0E6DGIWwxWLCnGoiZl4eq3v74brcvNiDFvGad2DjDlf6_wbq5P8rpKmce2IkJeQONqFjLTDklKe/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3nIs1a7ovasmSrGb-Vgi9qYmt8D4c_1M-sGawUabJSDHhp9L-8QUCdpUntHRH2G-xjfbpQZBgBmu-dCAhjWDHEeCn4-ZUReK7_7WgWdNly_Fy04KbtW6f2QwwL1lV2ymCcGXH26lJFdXPufz3wDO61gy6iX2jVuiHHGloMMY1Foh63QzxEUxfKOidbuZl5V8S0wPiRgATLDS5fT9Ha27ua-NGwwXdB09LxNHpDQzz-cCIeLD7cLcRQSszBF64IpgDygOKBPKPvQxO4f6AdRGkcaahiy5vDqPp-4yBcqQze1CqCNCsIAPR3M56o1uZjLFS03HGH-O1wSZqUwY1aABM9cBixi_r1Vupczp0E6DGIWwxWLCnGoiZl4eq3v74brcvNiDFvGad2DjDlf6_wbq5P8rpKmce2IkJeQONqFjLTDklKe
+is_cover: false
+sort_order: 5
+caption: Jake Culbertson
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICkgcWt4QE!2e10!4m2!3m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622
+
+--- entity_photos [row 41 of 52] ---
+id: 542c1ea8-b1cd-40fc-a577-ed52edd3f3b8
+entity_slug: sea-oats
+url: https://places.googleapis.com/v1/places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3komvI0nd4-EyExrbQF3F-lwv7ZUB-vak2fY4AozRE_Y0iUdEOFhJ0boq9iYS-837JsF8OAMUXOqxSbQM2zoCOfUhZ7_t-zeT5DeXzC9Sn26rfIDwsuJCizByCGRmnxQ5YLqzi6dPCuwXwgyLpqnzexh_6cUZs3HkbKoVXkZ9tYeEE5X41dDy8wtYpFlkXtTwhCFFjxfBvvrQL1-3VVgdMazryQIj8qwWJNQLc1JY8z7tQwY3eTvwj6tkHBzWluU6zJkV8WLdtQpG9grXXRMksPwtrkrEfO0W_icDShEUflZZJNUYDxu84t5zJpf2crNYGCzh9Zr09JAFgn7U3OaJrXYGmvWU05VP9IcQQredCtVk1-uSc9bKgkvw2uaNKtcxsys3OYJF7UtQueITnZ5aLQQnxF4cnX4WuyY_sWM--WNNzq/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3komvI0nd4-EyExrbQF3F-lwv7ZUB-vak2fY4AozRE_Y0iUdEOFhJ0boq9iYS-837JsF8OAMUXOqxSbQM2zoCOfUhZ7_t-zeT5DeXzC9Sn26rfIDwsuJCizByCGRmnxQ5YLqzi6dPCuwXwgyLpqnzexh_6cUZs3HkbKoVXkZ9tYeEE5X41dDy8wtYpFlkXtTwhCFFjxfBvvrQL1-3VVgdMazryQIj8qwWJNQLc1JY8z7tQwY3eTvwj6tkHBzWluU6zJkV8WLdtQpG9grXXRMksPwtrkrEfO0W_icDShEUflZZJNUYDxu84t5zJpf2crNYGCzh9Zr09JAFgn7U3OaJrXYGmvWU05VP9IcQQredCtVk1-uSc9bKgkvw2uaNKtcxsys3OYJF7UtQueITnZ5aLQQnxF4cnX4WuyY_sWM--WNNzq
+is_cover: false
+sort_order: 6
+caption: Trent Birdsong
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICcjJyYqwE!2e10!4m2!3m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622
+
+--- entity_photos [row 42 of 52] ---
+id: 861da8dc-8a64-4e33-8516-70660ec7dbb6
+entity_slug: sea-oats
+url: https://places.googleapis.com/v1/places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3nJTb0z4lytV8o49_5oi5c-gxYk7ddcxc-fLEc5ggYmN05k9mqhwYu7h3SCta0uDRpxpEPMP4z-OfY0XbtY5EcZZ7bfqtePKN7myFL8ddWiQx9BiVtU3p-7tCl1Dcd_Q6yb8NDuNcSatTlCUprKEkikcsUWhyhhsjtO5911pU02MfaMn03hfGRMSoKWefVyr4ZKqh3_pcCxZG4BOZtl7bkec5MvCF5rW9-gjSPILI5q7IyV_mc9Eyxwa9waCjH9m3xwpSKMdwF53OUU_ocKOCivSEFBw2C0QqCfwb45CL59PFX52qYm3o5wAwfKLbK0m469pNxg6q0zyIPrSejE7cFsQa4oEtSiP4g66GfMqqNgbP5koUk_X7-d0q8RrZJbkoBzqi1KcL7sm7KZntsR6wDi_u7G6imlwYUwWYGQyqSunJtj/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3nJTb0z4lytV8o49_5oi5c-gxYk7ddcxc-fLEc5ggYmN05k9mqhwYu7h3SCta0uDRpxpEPMP4z-OfY0XbtY5EcZZ7bfqtePKN7myFL8ddWiQx9BiVtU3p-7tCl1Dcd_Q6yb8NDuNcSatTlCUprKEkikcsUWhyhhsjtO5911pU02MfaMn03hfGRMSoKWefVyr4ZKqh3_pcCxZG4BOZtl7bkec5MvCF5rW9-gjSPILI5q7IyV_mc9Eyxwa9waCjH9m3xwpSKMdwF53OUU_ocKOCivSEFBw2C0QqCfwb45CL59PFX52qYm3o5wAwfKLbK0m469pNxg6q0zyIPrSejE7cFsQa4oEtSiP4g66GfMqqNgbP5koUk_X7-d0q8RrZJbkoBzqi1KcL7sm7KZntsR6wDi_u7G6imlwYUwWYGQyqSunJtj
+is_cover: false
+sort_order: 7
+caption: Joe Gallegos
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID4kvTXywE!2e10!4m2!3m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622
+
+--- entity_photos [row 43 of 52] ---
+id: 6db82769-31b3-4b9c-ac20-d837336c5aa9
+entity_slug: sea-oats
+url: https://places.googleapis.com/v1/places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3mr2DYtQiWWscyJzfgk6sQWbCU85dTy0eINiluyx0rX7LplpDa5ACf55gLsRUnbipQ5dG_0c7gpqzOibnxTKz2eGD9MpHfEqUa0qtkKR1CbHenrw4wQocjUr7vlJTT9gGKEzt1pgDUweW3BUtRQXSYUzDFyGxD08UPncizHU30nzrBxmj7ak9GkjlouJYcm5YM2K_lVCa3Xm73dIthZubHOJk_c_QN0ou7En80kqun8TH7_5DuJjBG1eXS0PbcUVnOKI5MEqbZtOn8Ki3xAsqpnCXA27gnPBjuqSSFWFT5bldIqfmrMlNYWEIqGS07P4UXqIsXCipvZiu9Sr2mxFJBxOIKYhQ4WvYLXpZ2xLA-w48tlMkQ8IK5f3ESRYdTtrdc_BStHLPh8Zr4VzOhj4U--UtJiM4dVXZU3e2HsS7GD2Hs/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3mr2DYtQiWWscyJzfgk6sQWbCU85dTy0eINiluyx0rX7LplpDa5ACf55gLsRUnbipQ5dG_0c7gpqzOibnxTKz2eGD9MpHfEqUa0qtkKR1CbHenrw4wQocjUr7vlJTT9gGKEzt1pgDUweW3BUtRQXSYUzDFyGxD08UPncizHU30nzrBxmj7ak9GkjlouJYcm5YM2K_lVCa3Xm73dIthZubHOJk_c_QN0ou7En80kqun8TH7_5DuJjBG1eXS0PbcUVnOKI5MEqbZtOn8Ki3xAsqpnCXA27gnPBjuqSSFWFT5bldIqfmrMlNYWEIqGS07P4UXqIsXCipvZiu9Sr2mxFJBxOIKYhQ4WvYLXpZ2xLA-w48tlMkQ8IK5f3ESRYdTtrdc_BStHLPh8Zr4VzOhj4U--UtJiM4dVXZU3e2HsS7GD2Hs
+is_cover: false
+sort_order: 8
+caption: Clint Wallace
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICUppDKtwE!2e10!4m2!3m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622
+
+--- entity_photos [row 44 of 52] ---
+id: 3b0c5a85-abe3-4341-ab3b-5d9fcde2d9b3
+entity_slug: sea-oats
+url: https://places.googleapis.com/v1/places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3lBJPcaDCv74V5jA6vOt0_PrD-LfXXpnFb9kPPqiyGPcN7w7jhl_NGkTm-zg1U34NPOFxvyDibjbn-i99F3LTTRWbf1W7VTVi1-Az7h_I-H_XaExpLjoA2kYXVTKHXbH-EqxCQYxRUgsvhIKssNfpIC2DgL2K8mQWT7ButOiug4bjCvzihxneAHSTK6zQh-vpsT2TzMSpsfW5BriVdw8_X95wQEzstlLPql9-Bz0lgstf8hixWfOLunbAZILcx8GEfnM48nLmrlIt6OAnNzPtyu9Ubt_PujQR0hZ1UdClc51yRT-xxDEkbTTfs2OBxyJitBs5thQEAcqA8nLdfkGgJdCOx3KLGuS6y21Tqe-wD9wjRT3RZXK-lUJILl5DtRGo6fP-KUiW17CnvmngG3AASnhxnyoSpGoILNBc3Ij7HTBikV/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ-8nzCoUbmogRIiYBncSyfrE/photos/AaVGc3lBJPcaDCv74V5jA6vOt0_PrD-LfXXpnFb9kPPqiyGPcN7w7jhl_NGkTm-zg1U34NPOFxvyDibjbn-i99F3LTTRWbf1W7VTVi1-Az7h_I-H_XaExpLjoA2kYXVTKHXbH-EqxCQYxRUgsvhIKssNfpIC2DgL2K8mQWT7ButOiug4bjCvzihxneAHSTK6zQh-vpsT2TzMSpsfW5BriVdw8_X95wQEzstlLPql9-Bz0lgstf8hixWfOLunbAZILcx8GEfnM48nLmrlIt6OAnNzPtyu9Ubt_PujQR0hZ1UdClc51yRT-xxDEkbTTfs2OBxyJitBs5thQEAcqA8nLdfkGgJdCOx3KLGuS6y21Tqe-wD9wjRT3RZXK-lUJILl5DtRGo6fP-KUiW17CnvmngG3AASnhxnyoSpGoILNBc3Ij7HTBikV
+is_cover: false
+sort_order: 9
+caption: Vernon Helmick
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICXj4-aggE!2e10!4m2!3m1!1s0x889a1b850af3c9fb:0xb17eb2c49d012622
+
+--- entity_photos [row 45 of 52] ---
+id: ee3b2638-8bb2-455d-9a52-b0d699919c84
+entity_slug: sea-oats
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_08.jpg
+is_cover: false
+sort_order: 6
+photo_type: resource
+source_name: bookable_resource
+resource_id: 7f0016ae-80e1-4670-a4d9-d9cbf1c94270
+
+--- entity_photos [row 46 of 52] ---
+id: c6a05f40-ee1e-4edd-9eeb-b6fa29aa81e0
+entity_slug: sea-oats
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 7f0016ae-80e1-4670-a4d9-d9cbf1c94270
+
+--- entity_photos [row 47 of 52] ---
+id: 4bf96bd7-8f36-4e90-9eef-630ea91c52c2
+entity_slug: sea-oats
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_06.jpg
+is_cover: false
+sort_order: 4
+photo_type: resource
+source_name: bookable_resource
+resource_id: 7f0016ae-80e1-4670-a4d9-d9cbf1c94270
+
+--- entity_photos [row 48 of 52] ---
+id: dbe9d04a-cb49-40f6-bd1b-9781120c7f52
+entity_slug: sea-oats
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_10.jpg
+is_cover: false
+sort_order: 8
+photo_type: resource
+source_name: bookable_resource
+resource_id: 7f0016ae-80e1-4670-a4d9-d9cbf1c94270
+
+--- entity_photos [row 49 of 52] ---
+id: 168d1d02-4447-4042-9dc4-7f2a57360556
+entity_slug: sea-oats
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_04.jpg
+is_cover: false
+sort_order: 2
+photo_type: resource
+source_name: bookable_resource
+resource_id: 7f0016ae-80e1-4670-a4d9-d9cbf1c94270
+
+--- entity_photos [row 50 of 52] ---
+id: 3365dae9-aa60-4588-848a-a3e063beaa21
+entity_slug: sea-oats
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/bbb0378f-8411-4869-9199-e1032d498555/image_2.jpg
+is_cover: false
+sort_order: 101
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 51 of 52] ---
+id: 1e054c76-66da-40c2-a632-e1b86203ca48
+entity_slug: sea-oats
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/bbb0378f-8411-4869-9199-e1032d498555/image_1.jpg
+is_cover: true
+sort_order: 100
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 52 of 52] ---
+id: 54c5c233-4a40-40da-be58-6245efb4f676
+entity_slug: sea-oats
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/bbb0378f-8411-4869-9199-e1032d498555/image_3.jpg
+is_cover: false
+sort_order: 102
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 78481ef3-7044-42b3-9edf-c28fb778fd28
+entity_slug: sea-oats
+reviewer_name: JOSEPH TINGLE
+rating: 5
+body: We visit here annually and absolutely love this location. Easy access to both the beach and to the lagoon. The location is perfect for us because we are away from “most” of the high rise condos so the skyline isn’t obstructed. Condo is within about 10 minutes of a Walmart and 5 minutes from a general store with all necessities.
+Things to consider. There are no elevators so either way you will be walking a couple to 4 flights of steps. This ok for us but there is no physical impairment for us that makes this difficult. Also I don’t think they mention it, but there is only enough toilet paper to get you through the day. So you will need toilet paper, garbage bags, dish soap and any detergents needed.
+The kitchen comes with all your basic needs.  Don’t forget a few essential seasonings such as salt and pepper. These are usually not here.
+There are usually lots of people staying here that fish because of the location to the lagoon and the inlet just down the street.  They have a setup to clean fish on the pier which is very nifty to have.
+Beach access is maybe a hundred yard walk from the condo parking lot to where you’d place your chair in the sand.
+Pools are always clean, not heated but always very clear.
+So overall we have stayed here twice and will continue to stay here as we enjoy the location, service, and people we encounter here.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-10-14T15:42:37.408711+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: f3cb5514-42fe-4734-bc17-188f1eb18d0c
+entity_slug: sea-oats
+reviewer_name: Elaine Day
+rating: 5
+body: Our friends own a condo at Sea Oats and we highly recommend staying at Sea Oats. The units are amazing, clean and have everything you need. We stayed in D206 and it was equipped with all you needed- and with hangers 🙂 which I loved because I hang my stuff up as soon as we arrive.  The unit was beautiful and very comfortable. I love how it is decorated.  The owners make sure that you are comfortable and have everything need. We definitely will return.  The view is also nice. You can see the gulf and the lagoon. We liked that it was down on the two lane part of the road also it wasn’t as busy but was still very close to all the shops and other entertainments.  I would definitely recommend staying at Sea Oats. Especially unit D206 ☺️
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-06-21T12:39:24.775352+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: fc4820e2-6729-438a-8a61-bab3c4eb1339
+entity_slug: sea-oats
+reviewer_name: HTown TX
+rating: 4
+body: Love these condos! Great location! The beach is across the street and short distance from the condo to the beach. There is a great green area to walk your dogs and by the bay since I have two fur babies and this plays a big part when I look for condo to stay. Inside one of the condo where we stayed, the carpet was a bit old but if the owner is willing to replace this old carpet with tiles, then I would give it a 5 starts. Unfortunately, I forgot to take pictures of the area and inside the condo but definitely, be back.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-11-20T16:44:49.981893+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 7daa5bdc-b592-4334-b4fd-34f274e80b2b
+entity_slug: sea-oats
+reviewer_name: Scoti “Scubi Doo”
+rating: 5
+body: Nice location, It is quiet for the most part and just across the street from the beach. About 3 and 1/2 mi to downtown. The place that we are in is updated and is a two bedroom two bath unit. There seems to be plenty of parking with a centrally located pool.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2023-03-27T17:35:18.384128+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 5113dd0b-4667-4158-8560-9179ba00e15a
+entity_slug: sea-oats
+reviewer_name: Owen Brinson
+rating: 5
+body: For me, the lagoon is better than the beach. But I know a lot of other people love the beach, I just didn't go often enough to take pictures. The lagoon however, I loved for the fishing and the birds. The bird I have included pictures of is always there, his name is Walter. If you dig a place with 2 swimming pools, a beach, and a lagoon in easy walking distance then this is definitely for you.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2017-07-18T02:39:41.281+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_section_items   -   1 row(s)
+####################################################################################################
+
+--- entity_section_items [row 1 of 1] ---
+id: a5c33f4f-7950-4e96-93ee-a4ab0789c2e0
+section_id: 7394db2e-196d-451d-ad51-38be0769de9b
+entity_slug: sea-oats
+item_name: Sea Oats
+icon: 🏠
+metadata: {}
+sort_order: 1
+check_in_time: 16:00
+check_out_time: 11:00
+min_nights: 1
+cleaning_fee: 0
+
+####################################################################################################
+# TABLE: entity_section_items_metadata_backup   -   1 row(s)
+####################################################################################################
+
+--- entity_section_items_metadata_backup [row 1 of 1] ---
+id: a5c33f4f-7950-4e96-93ee-a4ab0789c2e0
+entity_slug: sea-oats
+item_name: Sea Oats
+metadata: {
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/sea-oats/photo_02.jpg",
+    "/photos/sea-oats/photo_01.jpg",
+    "/photos/sea-oats/photo_02.jpg",
+    "/photos/sea-oats/photo_03.jpg",
+    "/photos/sea-oats/photo_04.jpg",
+    "/photos/sea-oats/photo_05.jpg",
+    "/photos/sea-oats/photo_06.jpg",
+    "/photos/sea-oats/photo_07.jpg",
+    "/photos/sea-oats/photo_08.jpg",
+    "/photos/sea-oats/photo_09.jpg",
+    "/photos/sea-oats/photo_10.jpg"
+  ],
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "check_out_time": "11:00"
+}
+backed_up_at: 2026-07-16T09:49:37.166591+00:00
+
+####################################################################################################
+# TABLE: entity_sections   -   1 row(s)
+####################################################################################################
+
+--- entity_sections [row 1 of 1] ---
+id: 7394db2e-196d-451d-ad51-38be0769de9b
+entity_slug: sea-oats
+section_type: rooms
+section_name: Units & Rates
+sort_order: 2
+module_key: rooms
+is_active: true
+
+####################################################################################################
+# TABLE: entity_sources   -   1 row(s)
+####################################################################################################
+
+--- entity_sources [row 1 of 1] ---
+id: ae9bd15a-89bf-439a-8c1c-c261b0369b69
+entity_slug: sea-oats
+source_system: liquid_life
+source_url: https://www.liquidlifevacationrentals.com/resort/sea-oats
+scope: entity
+observed_at: 2026-07-16T00:00:00+00:00
+confidence: high
+created_at: 2026-07-16T10:58:22.481614+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   12 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 12] ---
+id: 294dff85-7630-4cb2-bc02-9827bfe7a713
+entity_slug: sea-oats
+tag_name: condominium_complex
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 12] ---
+id: 3392b63a-b6e8-45ad-90ee-e4afb2591dff
+entity_slug: sea-oats
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 3 of 12] ---
+id: 112a702c-05bb-4006-a85f-e61eb21e8d0d
+entity_slug: sea-oats
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 4 of 12] ---
+id: 329d6cd8-8dcd-424e-ad9a-1b2d5e0b8e34
+entity_slug: sea-oats
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 5 of 12] ---
+id: 85c4edfa-9582-41ae-a654-6e33b730f32e
+entity_slug: sea-oats
+tag_name: Beach Access Across the Street
+tag_category: amenity
+
+--- entity_tags [row 6 of 12] ---
+id: ccd64c16-49f6-450c-ae56-f06ecaf33c04
+entity_slug: sea-oats
+tag_name: Boat Ramp
+tag_category: amenity
+
+--- entity_tags [row 7 of 12] ---
+id: 56c06657-b69a-4a40-bcbf-ca30593cf9ce
+entity_slug: sea-oats
+tag_name: Grilling Area
+tag_category: amenity
+
+--- entity_tags [row 8 of 12] ---
+id: 32f966aa-9fba-4ab0-b8a7-ba40fc990fe8
+entity_slug: sea-oats
+tag_name: Outdoor Pools
+tag_category: amenity
+
+--- entity_tags [row 9 of 12] ---
+id: 09ef0018-43e4-405a-a5db-e9dda226da22
+entity_slug: sea-oats
+tag_name: condominium_complex
+tag_category: google_primary_type
+
+--- entity_tags [row 10 of 12] ---
+id: a0b694b5-df40-42bf-a674-21b3e47a74c4
+entity_slug: sea-oats
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 11 of 12] ---
+id: 6ce56a79-fdaf-479a-878e-5f9bc2b9317e
+entity_slug: sea-oats
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 12 of 12] ---
+id: bbf4ae0e-2d97-4033-a28c-ec7da7cfe81d
+entity_slug: sea-oats
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 685b970b-3bfb-42ff-b2fd-c905ef97e7b6
+entity_slug: sea-oats
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_condo   -   1 row(s)
+####################################################################################################
+
+--- industry_condo [row 1 of 1] ---
+entity_slug: sea-oats
+listed_unit_count: 0
+has_pool: false
+pet_friendly: false
+updated_at: 2026-07-21T16:59:02.358415+00:00
+
+####################################################################################################
+# TABLE: legacy_photo_migration_queue   -   3 row(s)
+####################################################################################################
+
+--- legacy_photo_migration_queue [row 1 of 3] ---
+id: 1608
+entity_slug: sea-oats
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/bbb0378f-8411-4869-9199-e1032d498555/image_2.jpg
+is_cover: false
+sort_order: 101
+status: linked_legacy
+created_at: 2026-07-26T00:36:20.285499+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 2 of 3] ---
+id: 243
+entity_slug: sea-oats
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/bbb0378f-8411-4869-9199-e1032d498555/image_1.jpg
+is_cover: true
+sort_order: 100
+status: linked_legacy
+created_at: 2026-07-25T23:32:39.118198+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 3 of 3] ---
+id: 1785
+entity_slug: sea-oats
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/bbb0378f-8411-4869-9199-e1032d498555/image_3.jpg
+is_cover: false
+sort_order: 102
+status: linked_legacy
+created_at: 2026-07-26T00:36:20.285499+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: rental_units   -   1 row(s)
+####################################################################################################
+
+--- rental_units [row 1 of 1] ---
+id: 64657252-7d6a-4153-9a23-90ae59b0b6de
+entity_slug: sea-oats
+slug: sea-oats
+name: Sea Oats
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+address: 1872 W Beach Blvd
+city: Gulf Shores
+state: AL
+latitude: 30.2410278
+longitude: -87.7456918
+source_resource_id: 7f0016ae-80e1-4670-a4d9-d9cbf1c94270
+is_active: true
+created_at: 2026-07-23T00:06:23.937689+00:00
+updated_at: 2026-07-23T00:06:23.937689+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: offer
+ref_id: 14040
+entity_slug: sea-oats
+title: Sea Oats
+category: room
+search_vector: 'oat':2A 'sea':1A
+
+--- search_index [row 2 of 2] ---
+ref_type: business
+ref_id: sea-oats
+entity_slug: sea-oats
+title: Sea Oats
+category: condominium_complex
+subtitle: Nestled along West Beach in Gulf Shores, Sea Oats offers a laid-back coastal retreat with everything you need for a relaxing getaway. Guests can enjoy two outdoor pools for cooling off on warm days or take a short walk across the street to the private beach access for a day by the Gulf. Fishing enthusiasts will love the private pier, perfect for casting a line and soaking in the peaceful lagoon views. Boaters can also take advantage of onsite boat launch facilities, making it easy to explore the surrounding waterways. With its convenient location near local shops and restaurants, Sea Oats is the perfect blend of relaxation and adventure for your next Gulf Shores vacation.
+search_vector: 'access':53C 'across':46C 'advantag':83C 'adventur':115C 'along':6C 'also':81C 'back':18C 'beach':8C,52C 'blend':111C 'boat':86C 'boater':79C 'cast':69C 'coastal':19C 'complex':4B 'condominium':3B 'conveni':99C 'cool':36C 'day':40C,56C 'easi':91C 'enjoy':31C 'enthusiast':61C 'everyth':22C 'explor':93C 'facil':88C 'fish':60C 'getaway':28C 'guest':29C 'gulf':10C,59C,119C 'lagoon':77C 'laid':17C 'laid-back':16C 'launch':87C 'line':71C 'local':102C 'locat':100C 'love':63C 'make':89C 'near':101C 'need':24C 'nestl':5C 'next':118C 'oat':2A,13C,107C 'offer':14C 'onsit':85C 'outdoor':33C 'peac':76C 'perfect':67C,110C 'pier':66C 'pool':34C 'privat':51C,65C 'relax':27C,113C 'restaur':105C 'retreat':20C 'sea':1A,12C,106C 'shop':103C 'shore':11C,120C 'short':44C 'soak':73C 'street':48C 'surround':95C 'take':42C,82C 'two':32C 'vacat':121C 'view':78C 'walk':45C 'warm':39C 'waterway':96C 'west':7C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: sea-oats

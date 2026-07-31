@@ -1,0 +1,1570 @@
+====================================================================================================
+SLUG: jakob-atkins
+NAME: Jakob Atkins
+INDUSTRY: other
+SUBTYPE: service
+TABLES WITH DATA: 24
+TOTAL ROWS: 73
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (4 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_address_areas  (1 rows)
+  entity_attributes  (2 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (1 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_nearby_landmark_types  (17 rows)
+  entity_nearby_landmarks  (6 rows)
+  entity_offer  (1 rows)
+  entity_photos  (3 rows)
+  entity_reviews  (1 rows)
+  entity_tags  (3 rows)
+  entity_theme  (1 rows)
+  search_index  (2 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: jakob-atkins
+name: Jakob Atkins
+planner_category: local_service
+data_quality_score: 90
+issues: missing_summary
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   4 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 4] ---
+id: 22440
+entity_slug: jakob-atkins
+intent_tag: best_for:local_information
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 4] ---
+id: 22441
+entity_slug: jakob-atkins
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 4] ---
+id: 22442
+entity_slug: jakob-atkins
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 4] ---
+id: 22443
+entity_slug: jakob-atkins
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: jakob-atkins
+name: Jakob Atkins
+is_active: t
+planner_category: local_service
+entity_type: service
+entity_subtype: service
+city: Orange Beach
+state: AL
+address_line_1: 16 Market St
+latitude: 30.2611621
+longitude: -87.6253942
+rating: 5
+review_count: 1
+hero_image_url: /photos/jakob-atkins/photo_01.jpg
+voice_summary: Jakob Atkins in Orange Beach is best for local information.
+planner_summary: Jakob Atkins in Orange Beach is a local service listing in Gulf Coast Radar.
+best_for: local information
+not_best_for: nothing specific flagged
+service_tags: accessibility
+search_keywords: service|point_of_interest|establishment|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 2
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 3
+faq_count: 0
+data_quality_score: 90
+data_gaps: missing_summary
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 14000
+entity_slug: jakob-atkins
+entity_name: Jakob Atkins
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/jakob-atkins/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 22529
+entity_slug: jakob-atkins
+entity_name: Jakob Atkins
+city: Orange Beach
+url: /photos/jakob-atkins/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 87deacdd-4ac2-4620-bf11-d655af40f5a6
+resource_type: service
+slug: jakob-atkins
+name: Jakob Atkins
+entity_slug: jakob-atkins
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/jakob-atkins/photo_01.jpg",
+  "/photos/jakob-atkins/photo_01.jpg"
+]
+amenities: []
+faqs: []
+address: 16 Market St
+city: Orange Beach
+state: AL
+latitude: 30.2611621
+longitude: -87.6253942
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 88d8fadc838e1fff52cdfaee435d3c95
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 87deacdd-4ac2-4620-bf11-d655af40f5a6
+entity_slug: jakob-atkins
+slug: jakob-atkins
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/jakob-atkins/photo_01.jpg",
+  "/photos/jakob-atkins/photo_01.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: be0aa264-ad6c-43eb-8b14-6415a5dd7d6d
+slug: jakob-atkins
+name: Jakob Atkins
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: service
+phone: (205) 522-0078
+menu_pin: 9790
+address_line_1: 16 Market St
+city: Orange Beach
+state: AL
+zip: 36561
+latitude: 30.2611621
+longitude: -87.6253942
+rating: 5
+review_count: 1
+hero_image_url: https://places.googleapis.com/v1/places/ChIJqfpr8kAFmogR6O-rTybjU8U/photos/AaVGc3lAvD-TFWm-DQXyeYkKGTN6GYNLAAy-Z7Qh2didpwxObi-tyxKcxLW6q7T16gXtSPyumsO5zvvqVfNWR8CgluYlzuSzu3-9i5jAr9VdZsS2yHs0MuzVYZa0oY8kpmMh7p7Sy13Am3Dh5yTCX_faCExVhsZ3z45TaVZEJRYV7w-lIRjV2_6X5gshQ1PPcIyiuN3HxnVeBSrz9V-TZLU95Bqic0wj97n8TmC9aRwkm9EXeArKk_0TGf32M07f3FB36HpT40AIEx0slv7fo72nH5EyZ_nq-I7qsZgMtuDxwj3bwpoNbtdXiCQW_FJW3RwfCm8ILgcsjQCAem3yV9LmO24uuFhX7P8BKUhpLaJjODQ0GNSBK_SQD7tmMoC0zMGWhphdMJtIWuL2Pi2zTGfONaqZvJasyFGm3RTmLd1ECwdY89oCFzJFPYCp7HDQBbL8/media?maxHeightPx=1600&maxWidthPx=1600
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T04:00:09.73511+00:00
+updated_at: 2026-06-03T04:00:09.73511+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJqfpr8kAFmogR6O-rTybjU8U
+google_maps_uri: https://maps.google.com/?cid=14218958202223718376&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: service
+formatted_address: 16 Market St, Orange Beach, AL 36561, USA
+plus_code: 862J796F+FR
+international_phone: +1 205-522-0078
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+google_places_data: {
+  "id": "ChIJqfpr8kAFmogR6O-rTybjU8U",
+  "types": [
+    "point_of_interest",
+    "service",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJqfpr8kAFmogR6O-rTybjU8U/photos/AaVGc3lAvD-TFWm-DQXyeYkKGTN6GYNLAAy-Z7Qh2didpwxObi-tyxKcxLW6q7T16gXtSPyumsO5zvvqVfNWR8CgluYlzuSzu3-9i5jAr9VdZsS2yHs0MuzVYZa0oY8kpmMh7p7Sy13Am3Dh5yTCX_faCExVhsZ3z45TaVZEJRYV7w-lIRjV2_6X5gshQ1PPcIyiuN3HxnVeBSrz9V-TZLU95Bqic0wj97n8TmC9aRwkm9EXeArKk_0TGf32M07f3FB36HpT40AIEx0slv7fo72nH5EyZ_nq-I7qsZgMtuDxwj3bwpoNbtdXiCQW_FJW3RwfCm8ILgcsjQCAem3yV9LmO24uuFhX7P8BKUhpLaJjODQ0GNSBK_SQD7tmMoC0zMGWhphdMJtIWuL2Pi2zTGfONaqZvJasyFGm3RTmLd1ECwdY89oCFzJFPYCp7HDQBbL8",
+      "widthPx": 3428,
+      "heightPx": 4800,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCRshNgWqEccX7fp_2BTq9V!2e10!4m2!3m1!1s0x889a0540f26bfaa9:0xc553e3264fabefe8",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCRshNgWqEccX7fp_2BTq9V&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/117616632627179224859",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUMb3iz5QviIBVWNaKRo2bgjiIZrVXI8zoiVS3KvgjualITyr7f=s100-p-k-no-mo",
+          "displayName": "Jakob Atkins"
+        }
+      ]
+    }
+  ],
+  "rating": 5,
+  "reviews": [
+    {
+      "name": "places/ChIJqfpr8kAFmogR6O-rTybjU8U/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xadllucDFWMEpSY1VSNGFtUlpPV1l6YzBRelQxRRAB",
+      "text": {
+        "text": "⭐️⭐️⭐️⭐️⭐️\nWorking with Jakob Atkins to sell my home was an exceptional experience from beginning to end. Jakob brought professionalism, honesty, and a genuine sense of care that made the entire selling process smooth and stress‑free. He guided me through preparing the house, choosing the right price, and marketing it in a way that truly showcased its best features.\n\nJakob’s communication was outstanding—consistent, clear, and always timely. He made sure I understood every step and felt comfortable with each decision. When it came to negotiation, Jakob’s expertise really shined. He positioned my home perfectly in the market and secured a strong offer that exceeded my expectations.\n\nWhat I appreciated most was how invested he was in my success. I never felt like just another client; he treated the sale of my home with the same care and dedication as if it were his own.\n\nThank you, Jakob, for your hard work, your guidance, and your commitment to achieving the best outcome. I’m truly grateful for everything you did, and I highly recommend you to anyone looking to sell their home.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-03-10T18:11:01.677538201Z",
+      "originalText": {
+        "text": "⭐️⭐️⭐️⭐️⭐️\nWorking with Jakob Atkins to sell my home was an exceptional experience from beginning to end. Jakob brought professionalism, honesty, and a genuine sense of care that made the entire selling process smooth and stress‑free. He guided me through preparing the house, choosing the right price, and marketing it in a way that truly showcased its best features.\n\nJakob’s communication was outstanding—consistent, clear, and always timely. He made sure I understood every step and felt comfortable with each decision. When it came to negotiation, Jakob’s expertise really shined. He positioned my home perfectly in the market and secured a strong offer that exceeded my expectations.\n\nWhat I appreciated most was how invested he was in my success. I never felt like just another client; he treated the sale of my home with the same care and dedication as if it were his own.\n\nThank you, Jakob, for your hard work, your guidance, and your commitment to achieving the best outcome. I’m truly grateful for everything you did, and I highly recommend you to anyone looking to sell their home.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xadllucDFWMEpSY1VSNGFtUlpPV1l6YzBRelQxRRAB!2m1!1s0x889a0540f26bfaa9:0xc553e3264fabefe8",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2xadllucDFWMEpSY1VSNGFtUlpPV1l6YzBRelQxRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/106077461797891592913/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKFizR5Q-Fpc9mYouWGwf0GbRmm_Rg8SIWZLktEmb7q3dwhEQ=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Mike Hawley"
+      },
+      "relativePublishTimeDescription": "3 months ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.2611621,
+    "longitude": -87.6253942
+  },
+  "plusCode": {
+    "globalCode": "862J796F+FR",
+    "compoundCode": "796F+FR Orange Beach, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.259769419708505,
+      "longitude": -87.6267040302915
+    },
+    "high": {
+      "latitude": 30.262467380291504,
+      "longitude": -87.62400606970849
+    }
+  },
+  "displayName": {
+    "text": "Jakob Atkins",
+    "languageCode": "en"
+  },
+  "primaryType": "service",
+  "googleMapsUri": "https://maps.google.com/?cid=14218958202223718376&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=14218958202223718376&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0540f26bfaa9:0xc553e3264fabefe8!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0540f26bfaa9:0xc553e3264fabefe8!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0540f26bfaa9:0xc553e3264fabefe8!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0540f26bfaa9:0xc553e3264fabefe8!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "userRatingCount": 1,
+  "adrFormatAddress": "<span class=\"street-address\">16 Market St</span>, <span class=\"locality\">Orange Beach</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36561</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "16 Market St, Orange Beach, AL 36561, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "16",
+      "shortText": "16",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Market Street",
+      "shortText": "Market St",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Orange Beach",
+      "shortText": "Orange Beach",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36561",
+      "shortText": "36561",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJFa2UTyQEmogRaVHUQj4YIl4",
+        "placeId": "ChIJFa2UTyQEmogRaVHUQj4YIl4",
+        "containment": "OUTSKIRTS",
+        "displayName": {
+          "text": "The Village Tannin",
+          "languageCode": "en"
+        }
+      }
+    ],
+    "landmarks": [
+      {
+        "name": "places/ChIJXyyMUSQEmogR5OdW12eB4dA",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJXyyMUSQEmogR5OdW12eB4dA",
+        "displayName": {
+          "text": "The Village Tannin",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "WITHIN",
+        "travelDistanceMeters": 18.947357,
+        "straightLineDistanceMeters": 26.113436
+      },
+      {
+        "name": "places/ChIJJ4W9oSYEmogR-1cAWYUkpvM",
+        "types": [
+          "bar",
+          "establishment",
+          "lodging",
+          "night_club",
+          "point_of_interest",
+          "spa"
+        ],
+        "placeId": "ChIJJ4W9oSYEmogR-1cAWYUkpvM",
+        "displayName": {
+          "text": "Original Romar House B & B Inn",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 307.5964,
+        "straightLineDistanceMeters": 229.87546
+      },
+      {
+        "name": "places/ChIJ37Yr7JwGmogRh2Rqb_bKfBM",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "real_estate_agency",
+          "travel_agency"
+        ],
+        "placeId": "ChIJ37Yr7JwGmogRh2Rqb_bKfBM",
+        "displayName": {
+          "text": "Phoenix West II Vacation Rental Condominiums",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 406.88095,
+        "straightLineDistanceMeters": 220.28812
+      },
+      {
+        "name": "places/ChIJN-OjgCMEmogRDTNSjc1KQDQ",
+        "types": [
+          "establishment",
+          "lodging",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJN-OjgCMEmogRDTNSjc1KQDQ",
+        "displayName": {
+          "text": "Beach Music Rental Houses",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 239.23878,
+        "straightLineDistanceMeters": 267.0687
+      },
+      {
+        "name": "places/ChIJm3uhCksbmogRYII0DVkUT78",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJm3uhCksbmogRYII0DVkUT78",
+        "displayName": {
+          "text": "Beach Bike Rentals",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "DOWN_THE_ROAD",
+        "travelDistanceMeters": 164.1347,
+        "straightLineDistanceMeters": 138.84181
+      }
+    ]
+  },
+  "currentOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T13:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 8:00 AM – 8:00 PM",
+      "Tuesday: 8:00 AM – 8:00 PM",
+      "Wednesday: 8:00 AM – 8:00 PM",
+      "Thursday: 8:00 AM – 8:00 PM",
+      "Friday: 8:00 AM – 8:00 PM",
+      "Saturday: 8:00 AM – 8:00 PM",
+      "Sunday: 8:00 AM – 8:00 PM"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Real Estate Agent",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "nationalPhoneNumber": "(205) 522-0078",
+  "regularOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 20,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T13:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 8:00 AM – 8:00 PM",
+      "Tuesday: 8:00 AM – 8:00 PM",
+      "Wednesday: 8:00 AM – 8:00 PM",
+      "Thursday: 8:00 AM – 8:00 PM",
+      "Friday: 8:00 AM – 8:00 PM",
+      "Saturday: 8:00 AM – 8:00 PM",
+      "Sunday: 8:00 AM – 8:00 PM"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true
+  },
+  "shortFormattedAddress": "16 Market St, Orange Beach",
+  "primaryTypeDisplayName": {
+    "text": "Services",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 205-522-0078"
+}
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 16 Market St, Orange Beach
+national_phone: (205) 522-0078
+search_vector: 'atkin':2A 'beach':5 'jakob':1A 'orang':4 'servic':3
+primary_type_display: Services
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=14218958202223718376&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0540f26bfaa9:0xc553e3264fabefe8!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0540f26bfaa9:0xc553e3264fabefe8!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0540f26bfaa9:0xc553e3264fabefe8!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0540f26bfaa9:0xc553e3264fabefe8!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJFa2UTyQEmogRaVHUQj4YIl4",
+      "placeId": "ChIJFa2UTyQEmogRaVHUQj4YIl4",
+      "containment": "OUTSKIRTS",
+      "displayName": {
+        "text": "The Village Tannin",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJXyyMUSQEmogR5OdW12eB4dA",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJXyyMUSQEmogR5OdW12eB4dA",
+      "displayName": {
+        "text": "The Village Tannin",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "WITHIN",
+      "travelDistanceMeters": 18.947357,
+      "straightLineDistanceMeters": 26.113436
+    },
+    {
+      "name": "places/ChIJJ4W9oSYEmogR-1cAWYUkpvM",
+      "types": [
+        "bar",
+        "establishment",
+        "lodging",
+        "night_club",
+        "point_of_interest",
+        "spa"
+      ],
+      "placeId": "ChIJJ4W9oSYEmogR-1cAWYUkpvM",
+      "displayName": {
+        "text": "Original Romar House B & B Inn",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 307.5964,
+      "straightLineDistanceMeters": 229.87546
+    },
+    {
+      "name": "places/ChIJ37Yr7JwGmogRh2Rqb_bKfBM",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "real_estate_agency",
+        "travel_agency"
+      ],
+      "placeId": "ChIJ37Yr7JwGmogRh2Rqb_bKfBM",
+      "displayName": {
+        "text": "Phoenix West II Vacation Rental Condominiums",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 406.88095,
+      "straightLineDistanceMeters": 220.28812
+    },
+    {
+      "name": "places/ChIJN-OjgCMEmogRDTNSjc1KQDQ",
+      "types": [
+        "establishment",
+        "lodging",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJN-OjgCMEmogRDTNSjc1KQDQ",
+      "displayName": {
+        "text": "Beach Music Rental Houses",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 239.23878,
+      "straightLineDistanceMeters": 267.0687
+    },
+    {
+      "name": "places/ChIJm3uhCksbmogRYII0DVkUT78",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJm3uhCksbmogRYII0DVkUT78",
+      "displayName": {
+        "text": "Beach Bike Rentals",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "DOWN_THE_ROAD",
+      "travelDistanceMeters": 164.1347,
+      "straightLineDistanceMeters": 138.84181
+    }
+  ]
+}
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url | hero_image_url v2-fix 2026-07-21: repointed to a photo confirmed to actually exist
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: other
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   1 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 1] ---
+id: 58e88cc7-d1f3-425f-bf4a-2a43452204ce
+entity_slug: jakob-atkins
+place_id: ChIJFa2UTyQEmogRaVHUQj4YIl4
+containment: OUTSKIRTS
+display_name: The Village Tannin
+
+####################################################################################################
+# TABLE: entity_attributes   -   2 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 2] ---
+id: 4b566fb0-3ca7-4412-a00e-6efa5661a67b
+entity_slug: jakob-atkins
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 2 of 2] ---
+id: 7fe757c6-7fdf-4a37-8db5-0dfc40ce1453
+entity_slug: jakob-atkins
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: jakob-atkins
+name: Jakob Atkins
+industry_code: other
+is_parent: false
+score_of_7: 6
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 30aece87-cc13-4a1f-8818-a200eab91892
+entity_slug: jakob-atkins
+place_uri: https://maps.google.com/?cid=14218958202223718376&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0540f26bfaa9:0xc553e3264fabefe8!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0540f26bfaa9:0xc553e3264fabefe8!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0540f26bfaa9:0xc553e3264fabefe8!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0540f26bfaa9:0xc553e3264fabefe8!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   1 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 1] ---
+review_id: 1459
+entity_slug: jakob-atkins
+google_review_name: places/ChIJqfpr8kAFmogR6O-rTybjU8U/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xadllucDFWMEpSY1VSNGFtUlpPV1l6YzBRelQxRRAB
+rating: 5
+review_text: ⭐️⭐️⭐️⭐️⭐️
+Working with Jakob Atkins to sell my home was an exceptional experience from beginning to end. Jakob brought professionalism, honesty, and a genuine sense of care that made the entire selling process smooth and stress‑free. He guided me through preparing the house, choosing the right price, and marketing it in a way that truly showcased its best features.
+
+Jakob’s communication was outstanding—consistent, clear, and always timely. He made sure I understood every step and felt comfortable with each decision. When it came to negotiation, Jakob’s expertise really shined. He positioned my home perfectly in the market and secured a strong offer that exceeded my expectations.
+
+What I appreciated most was how invested he was in my success. I never felt like just another client; he treated the sale of my home with the same care and dedication as if it were his own.
+
+Thank you, Jakob, for your hard work, your guidance, and your commitment to achieving the best outcome. I’m truly grateful for everything you did, and I highly recommend you to anyone looking to sell their home.
+language_code: en
+author_name: Mike Hawley
+author_profile_url: https://www.google.com/maps/contrib/106077461797891592913/reviews
+publish_time: 2026-03-10T18:11:01.677538+00:00
+relative_time: 3 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xadllucDFWMEpSY1VSNGFtUlpPV1l6YzBRelQxRRAB!2m1!1s0x889a0540f26bfaa9:0xc553e3264fabefe8
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 0f0ec274-d7f9-484e-b12e-a66caf4658e9
+entity_slug: jakob-atkins
+day_of_week: 0
+opens_at: 08:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 757e1d60-0abb-4c3b-9e65-1febed671d42
+entity_slug: jakob-atkins
+day_of_week: 1
+opens_at: 08:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 50880db8-247e-4ff0-98a2-7c95fbdd2b25
+entity_slug: jakob-atkins
+day_of_week: 2
+opens_at: 08:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: bd3b9ddf-d741-4b62-a59f-ed927573c05e
+entity_slug: jakob-atkins
+day_of_week: 3
+opens_at: 08:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 6cbc9001-fc6f-4abe-b822-77d4b3009ef1
+entity_slug: jakob-atkins
+day_of_week: 4
+opens_at: 08:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: e810ed80-2ddd-4be3-bf0b-a762cd867173
+entity_slug: jakob-atkins
+day_of_week: 5
+opens_at: 08:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: ca852b76-5eb0-47e1-a520-d52329af1b3a
+entity_slug: jakob-atkins
+day_of_week: 6
+opens_at: 08:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: jakob-atkins
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 87deacdd-4ac2-4620-bf11-d655af40f5a6
+name: Jakob Atkins
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/jakob-atkins/photo_01.jpg",
+    "/photos/jakob-atkins/photo_01.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: jakob-atkins
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 87deacdd-4ac2-4620-bf11-d655af40f5a6
+name: Jakob Atkins
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/jakob-atkins/photo_01.jpg",
+    "/photos/jakob-atkins/photo_01.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: 485f18f2-a754-4f10-8e7c-9fbf258705a7
+entity_slug: jakob-atkins
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 808d88c3-431b-46aa-b79d-9537fa7c80a9
+entity_slug: jakob-atkins
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: 34282b9b-5809-4168-ae16-717af31049cf
+entity_slug: jakob-atkins
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: c3deaef4-e302-4741-a660-42858e1b1a3a
+entity_slug: jakob-atkins
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: 86dcc175-ed0b-4b91-ac6d-012d31d1e5e9
+entity_slug: jakob-atkins
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: 54fa13a4-b73d-44c3-91df-c06de46881d5
+entity_slug: jakob-atkins
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 819e7c0a-2575-41b6-9e1e-4b33eadfc486
+entity_slug: jakob-atkins
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 2366b84c-b167-4c81-83de-7016db0dcd4f
+entity_slug: jakob-atkins
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: 1bf0cba7-de7d-4e76-98d9-755570d27990
+entity_slug: jakob-atkins
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: bb93c1eb-9723-4605-a683-81b8bd8dee92
+entity_slug: jakob-atkins
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: 8e25382d-e9b6-4480-9ff5-829c553eeb16
+entity_slug: jakob-atkins
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: 221608d6-6852-4580-bbac-1b63db69157f
+entity_slug: jakob-atkins
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: f3568524-2870-4b1d-b293-b1788fb7a94e
+entity_slug: jakob-atkins
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   17 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 17] ---
+id: 0c5b20a8-7b8b-442c-aed1-6d33ed2ccee2
+landmark_id: 78518782-1527-4021-8249-0f1b2a8fc8ba
+entity_slug: jakob-atkins
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 17] ---
+id: cb9c34ce-64e7-485c-8016-b1a6014cbfe4
+landmark_id: 78518782-1527-4021-8249-0f1b2a8fc8ba
+entity_slug: jakob-atkins
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 17] ---
+id: a402abf2-f366-4a09-b2bc-c6a4329c4e9a
+landmark_id: 43c4df46-9d55-45d4-963a-135b0f599e78
+entity_slug: jakob-atkins
+landmark_type: bar
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 17] ---
+id: 9265553d-e36a-461e-a148-8ff6c6562e2e
+landmark_id: 43c4df46-9d55-45d4-963a-135b0f599e78
+entity_slug: jakob-atkins
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 17] ---
+id: 742e3772-ef20-4d8e-bf73-33ccd9549ebf
+landmark_id: 43c4df46-9d55-45d4-963a-135b0f599e78
+entity_slug: jakob-atkins
+landmark_type: lodging
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 17] ---
+id: ee087528-b967-43f6-8cff-171f79e271f4
+landmark_id: 43c4df46-9d55-45d4-963a-135b0f599e78
+entity_slug: jakob-atkins
+landmark_type: night_club
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 17] ---
+id: 2524588b-0cf1-44b5-93fd-4ec032aafb5a
+landmark_id: 43c4df46-9d55-45d4-963a-135b0f599e78
+entity_slug: jakob-atkins
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 17] ---
+id: fc1c6b3f-6509-4818-aee5-eb29937dabaf
+landmark_id: 43c4df46-9d55-45d4-963a-135b0f599e78
+entity_slug: jakob-atkins
+landmark_type: spa
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 17] ---
+id: ea42858c-605e-41af-81f2-68779268a5e2
+landmark_id: b202db38-0fea-4999-b736-8cb05a3a03d3
+entity_slug: jakob-atkins
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 17] ---
+id: 81ce51e9-214d-43c2-803d-aa057da2f0a6
+landmark_id: b202db38-0fea-4999-b736-8cb05a3a03d3
+entity_slug: jakob-atkins
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 17] ---
+id: 91675782-b539-456f-ae44-e7e37e770247
+landmark_id: b202db38-0fea-4999-b736-8cb05a3a03d3
+entity_slug: jakob-atkins
+landmark_type: real_estate_agency
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 17] ---
+id: 4c117ab1-ed9a-4343-8f16-9e845e96ea94
+landmark_id: b202db38-0fea-4999-b736-8cb05a3a03d3
+entity_slug: jakob-atkins
+landmark_type: travel_agency
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 17] ---
+id: 5343cd06-e654-4752-b255-1872b640b0a2
+landmark_id: 724540d8-3b2c-484b-bbee-00e12b8be62a
+entity_slug: jakob-atkins
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 17] ---
+id: 09a3e913-446c-4d9a-b425-597dda5adf11
+landmark_id: 724540d8-3b2c-484b-bbee-00e12b8be62a
+entity_slug: jakob-atkins
+landmark_type: lodging
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 17] ---
+id: e3fc077a-c859-47c7-8653-25667fe30af1
+landmark_id: 724540d8-3b2c-484b-bbee-00e12b8be62a
+entity_slug: jakob-atkins
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 17] ---
+id: 01c11319-5a04-4c43-86cd-5811edaf23a3
+landmark_id: 47dcc85b-06d5-4b3a-b0d9-7be74337187f
+entity_slug: jakob-atkins
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 17] ---
+id: 109f0879-a84c-499f-a5b6-673784ca62d2
+landmark_id: 47dcc85b-06d5-4b3a-b0d9-7be74337187f
+entity_slug: jakob-atkins
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   6 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 6] ---
+id: 78518782-1527-4021-8249-0f1b2a8fc8ba
+entity_slug: jakob-atkins
+kind: landmark
+place_id: ChIJXyyMUSQEmogR5OdW12eB4dA
+name: The Village Tannin
+types: [
+  "establishment",
+  "point_of_interest"
+]
+spatial_relationship: WITHIN
+travel_distance_meters: 18.947357
+straight_line_distance_meters: 26.113436
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 6] ---
+id: 43c4df46-9d55-45d4-963a-135b0f599e78
+entity_slug: jakob-atkins
+kind: landmark
+place_id: ChIJJ4W9oSYEmogR-1cAWYUkpvM
+name: Original Romar House B & B Inn
+types: [
+  "bar",
+  "establishment",
+  "lodging",
+  "night_club",
+  "point_of_interest",
+  "spa"
+]
+travel_distance_meters: 307.5964
+straight_line_distance_meters: 229.87546
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 6] ---
+id: b202db38-0fea-4999-b736-8cb05a3a03d3
+entity_slug: jakob-atkins
+kind: landmark
+place_id: ChIJ37Yr7JwGmogRh2Rqb_bKfBM
+name: Phoenix West II Vacation Rental Condominiums
+types: [
+  "establishment",
+  "point_of_interest",
+  "real_estate_agency",
+  "travel_agency"
+]
+travel_distance_meters: 406.88095
+straight_line_distance_meters: 220.28812
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 6] ---
+id: 724540d8-3b2c-484b-bbee-00e12b8be62a
+entity_slug: jakob-atkins
+kind: landmark
+place_id: ChIJN-OjgCMEmogRDTNSjc1KQDQ
+name: Beach Music Rental Houses
+types: [
+  "establishment",
+  "lodging",
+  "point_of_interest"
+]
+travel_distance_meters: 239.23878
+straight_line_distance_meters: 267.0687
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 6] ---
+id: 47dcc85b-06d5-4b3a-b0d9-7be74337187f
+entity_slug: jakob-atkins
+kind: landmark
+place_id: ChIJm3uhCksbmogRYII0DVkUT78
+name: Beach Bike Rentals
+types: [
+  "establishment",
+  "point_of_interest"
+]
+spatial_relationship: DOWN_THE_ROAD
+travel_distance_meters: 164.1347
+straight_line_distance_meters: 138.84181
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 6 of 6] ---
+id: 941f5eb0-a77e-42d4-8d8c-d7676df94738
+entity_slug: jakob-atkins
+kind: area
+place_id: ChIJFa2UTyQEmogRaVHUQj4YIl4
+name: The Village Tannin
+containment: OUTSKIRTS
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13704
+entity_slug: jakob-atkins
+name: Jakob Atkins
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 87deacdd-4ac2-4620-bf11-d655af40f5a6
+
+####################################################################################################
+# TABLE: entity_photos   -   3 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 3] ---
+id: c76f5718-23b3-4b79-bec7-e58ff274aea6
+entity_slug: jakob-atkins
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/jakob-atkins/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 3] ---
+id: 94831b12-0f60-4789-b420-a20213a87dc2
+entity_slug: jakob-atkins
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/jakob-atkins/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 87deacdd-4ac2-4620-bf11-d655af40f5a6
+
+--- entity_photos [row 3 of 3] ---
+id: 9a89efb3-baaa-496c-b0ae-5fd6cdee67d1
+entity_slug: jakob-atkins
+url: https://places.googleapis.com/v1/places/ChIJqfpr8kAFmogR6O-rTybjU8U/photos/AaVGc3lAvD-TFWm-DQXyeYkKGTN6GYNLAAy-Z7Qh2didpwxObi-tyxKcxLW6q7T16gXtSPyumsO5zvvqVfNWR8CgluYlzuSzu3-9i5jAr9VdZsS2yHs0MuzVYZa0oY8kpmMh7p7Sy13Am3Dh5yTCX_faCExVhsZ3z45TaVZEJRYV7w-lIRjV2_6X5gshQ1PPcIyiuN3HxnVeBSrz9V-TZLU95Bqic0wj97n8TmC9aRwkm9EXeArKk_0TGf32M07f3FB36HpT40AIEx0slv7fo72nH5EyZ_nq-I7qsZgMtuDxwj3bwpoNbtdXiCQW_FJW3RwfCm8ILgcsjQCAem3yV9LmO24uuFhX7P8BKUhpLaJjODQ0GNSBK_SQD7tmMoC0zMGWhphdMJtIWuL2Pi2zTGfONaqZvJasyFGm3RTmLd1ECwdY89oCFzJFPYCp7HDQBbL8/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJqfpr8kAFmogR6O-rTybjU8U/photos/AaVGc3lAvD-TFWm-DQXyeYkKGTN6GYNLAAy-Z7Qh2didpwxObi-tyxKcxLW6q7T16gXtSPyumsO5zvvqVfNWR8CgluYlzuSzu3-9i5jAr9VdZsS2yHs0MuzVYZa0oY8kpmMh7p7Sy13Am3Dh5yTCX_faCExVhsZ3z45TaVZEJRYV7w-lIRjV2_6X5gshQ1PPcIyiuN3HxnVeBSrz9V-TZLU95Bqic0wj97n8TmC9aRwkm9EXeArKk_0TGf32M07f3FB36HpT40AIEx0slv7fo72nH5EyZ_nq-I7qsZgMtuDxwj3bwpoNbtdXiCQW_FJW3RwfCm8ILgcsjQCAem3yV9LmO24uuFhX7P8BKUhpLaJjODQ0GNSBK_SQD7tmMoC0zMGWhphdMJtIWuL2Pi2zTGfONaqZvJasyFGm3RTmLd1ECwdY89oCFzJFPYCp7HDQBbL8
+is_cover: false
+sort_order: 0
+caption: Jakob Atkins
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCRshNgWqEccX7fp_2BTq9V!2e10!4m2!3m1!1s0x889a0540f26bfaa9:0xc553e3264fabefe8
+
+####################################################################################################
+# TABLE: entity_reviews   -   1 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 1] ---
+id: 142de0a2-62f6-4b39-9fa4-afce13434f0a
+entity_slug: jakob-atkins
+reviewer_name: Mike Hawley
+rating: 5
+body: ⭐️⭐️⭐️⭐️⭐️
+Working with Jakob Atkins to sell my home was an exceptional experience from beginning to end. Jakob brought professionalism, honesty, and a genuine sense of care that made the entire selling process smooth and stress‑free. He guided me through preparing the house, choosing the right price, and marketing it in a way that truly showcased its best features.
+
+Jakob’s communication was outstanding—consistent, clear, and always timely. He made sure I understood every step and felt comfortable with each decision. When it came to negotiation, Jakob’s expertise really shined. He positioned my home perfectly in the market and secured a strong offer that exceeded my expectations.
+
+What I appreciated most was how invested he was in my success. I never felt like just another client; he treated the sale of my home with the same care and dedication as if it were his own.
+
+Thank you, Jakob, for your hard work, your guidance, and your commitment to achieving the best outcome. I’m truly grateful for everything you did, and I highly recommend you to anyone looking to sell their home.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-03-10T18:11:01.677538+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   3 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 3] ---
+id: 12d9fbda-0f80-434b-bb14-b697cefa462b
+entity_slug: jakob-atkins
+tag_name: service
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 3] ---
+id: 71583154-eca9-4ac2-b04b-d19449932bb6
+entity_slug: jakob-atkins
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 3 of 3] ---
+id: 35baae9c-6174-437b-a1e5-e8bc77f3ce01
+entity_slug: jakob-atkins
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 74b513f3-3f73-42f6-987d-39d0667189f3
+entity_slug: jakob-atkins
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: jakob-atkins
+entity_slug: jakob-atkins
+title: Jakob Atkins
+category: service
+search_vector: 'atkin':2A 'jakob':1A 'servic':3B
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 13704
+entity_slug: jakob-atkins
+title: Jakob Atkins
+category: rental
+search_vector: 'atkin':2A 'jakob':1A

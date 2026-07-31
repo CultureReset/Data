@@ -1,0 +1,2718 @@
+====================================================================================================
+SLUG: pipedreams
+NAME: Pipedreams
+INDUSTRY: vacation_rental
+SUBTYPE: vacation_rental
+TABLES WITH DATA: 23
+TOTAL ROWS: 228
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (7 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (60 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_items_norm_v  (2 rows)
+  entity_items_v  (2 rows)
+  entity_modules  (14 rows)
+  entity_offer  (1 rows)
+  entity_photos  (120 rows)
+  entity_section_items  (1 rows)
+  entity_section_items_metadata_backup  (1 rows)
+  entity_sections  (1 rows)
+  entity_tags  (5 rows)
+  entity_theme  (2 rows)
+  industry_vacation_rental  (1 rows)
+  recovery_import_log  (1 rows)
+  rental_units  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: pipedreams
+name: Pipedreams
+planner_category: things_to_do
+data_quality_score: 55
+issues: missing_summary|missing_hours|missing_lat_lng|missing_contact_or_website
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   7 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 7] ---
+id: 24551
+entity_slug: pipedreams
+intent_tag: best_for:things_to_do
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 7] ---
+id: 24552
+entity_slug: pipedreams
+intent_tag: experience:pet_friendly
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 7] ---
+id: 24553
+entity_slug: pipedreams
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 7] ---
+id: 24554
+entity_slug: pipedreams
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 7] ---
+id: 24555
+entity_slug: pipedreams
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 7] ---
+id: 24556
+entity_slug: pipedreams
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 7] ---
+id: 24557
+entity_slug: pipedreams
+intent_tag: missing:missing_contact_or_website
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: pipedreams
+name: Pipedreams
+is_active: t
+planner_category: things_to_do
+entity_type: vacation-rental
+entity_subtype: vacation-rental
+city: Orange Beach
+state: AL
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_00.jpg
+voice_summary: Pipedreams in Orange Beach is best for things to do. Experience tags: pet_friendly.
+planner_summary: Pipedreams in Orange Beach is a things to do listing in Gulf Coast Radar.
+best_for: things to do
+not_best_for: nothing specific flagged
+experience_tags: pet_friendly
+search_keywords: vacation-rental|Vacation Homes|Pet Friendly|Sleeps 10|3.5 Baths|pet_friendly
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 60
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 5
+faq_count: 0
+data_quality_score: 55
+data_gaps: missing_summary|missing_hours|missing_lat_lng|missing_contact_or_website
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   60 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 60] ---
+id: 918
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_00.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 60] ---
+id: 919
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_01.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 60] ---
+id: 920
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_02.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 60] ---
+id: 921
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_03.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 60] ---
+id: 922
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_04.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 60] ---
+id: 923
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_05.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 60] ---
+id: 924
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_06.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 60] ---
+id: 925
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_07.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 60] ---
+id: 926
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_08.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 60] ---
+id: 927
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_09.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 11 of 60] ---
+id: 928
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_10.jpg
+is_cover: f
+sort_order: 10
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 12 of 60] ---
+id: 929
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_11.jpg
+is_cover: f
+sort_order: 11
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 13 of 60] ---
+id: 930
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_12.jpg
+is_cover: f
+sort_order: 12
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 14 of 60] ---
+id: 931
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_13.jpg
+is_cover: f
+sort_order: 13
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 15 of 60] ---
+id: 932
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_14.jpg
+is_cover: f
+sort_order: 14
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 16 of 60] ---
+id: 933
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_15.jpg
+is_cover: f
+sort_order: 15
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 17 of 60] ---
+id: 934
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_16.jpg
+is_cover: f
+sort_order: 16
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 18 of 60] ---
+id: 935
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_17.jpg
+is_cover: f
+sort_order: 17
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 19 of 60] ---
+id: 936
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_18.jpg
+is_cover: f
+sort_order: 18
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 20 of 60] ---
+id: 937
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_19.jpg
+is_cover: f
+sort_order: 19
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 21 of 60] ---
+id: 938
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_20.jpg
+is_cover: f
+sort_order: 20
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 22 of 60] ---
+id: 939
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_21.jpg
+is_cover: f
+sort_order: 21
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 23 of 60] ---
+id: 940
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_22.jpg
+is_cover: f
+sort_order: 22
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 24 of 60] ---
+id: 941
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_23.jpg
+is_cover: f
+sort_order: 23
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 25 of 60] ---
+id: 942
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_24.jpg
+is_cover: f
+sort_order: 24
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 26 of 60] ---
+id: 943
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_25.jpg
+is_cover: f
+sort_order: 25
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 27 of 60] ---
+id: 944
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_26.jpg
+is_cover: f
+sort_order: 26
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 28 of 60] ---
+id: 945
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_27.jpg
+is_cover: f
+sort_order: 27
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 29 of 60] ---
+id: 946
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_28.jpg
+is_cover: f
+sort_order: 28
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 30 of 60] ---
+id: 947
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_29.jpg
+is_cover: f
+sort_order: 29
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 31 of 60] ---
+id: 948
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_30.jpg
+is_cover: f
+sort_order: 30
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 32 of 60] ---
+id: 949
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_31.jpg
+is_cover: f
+sort_order: 31
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 33 of 60] ---
+id: 950
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_32.jpg
+is_cover: f
+sort_order: 32
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 34 of 60] ---
+id: 951
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_33.jpg
+is_cover: f
+sort_order: 33
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 35 of 60] ---
+id: 952
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_34.jpg
+is_cover: f
+sort_order: 34
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 36 of 60] ---
+id: 953
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_35.jpg
+is_cover: f
+sort_order: 35
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 37 of 60] ---
+id: 954
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_36.jpg
+is_cover: f
+sort_order: 36
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 38 of 60] ---
+id: 955
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_37.jpg
+is_cover: f
+sort_order: 37
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 39 of 60] ---
+id: 956
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_38.jpg
+is_cover: f
+sort_order: 38
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 40 of 60] ---
+id: 957
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_39.jpg
+is_cover: f
+sort_order: 39
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 41 of 60] ---
+id: 958
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_40.jpg
+is_cover: f
+sort_order: 40
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 42 of 60] ---
+id: 959
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_41.jpg
+is_cover: f
+sort_order: 41
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 43 of 60] ---
+id: 960
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_42.jpg
+is_cover: f
+sort_order: 42
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 44 of 60] ---
+id: 961
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_43.jpg
+is_cover: f
+sort_order: 43
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 45 of 60] ---
+id: 962
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_44.jpg
+is_cover: f
+sort_order: 44
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 46 of 60] ---
+id: 963
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_45.jpg
+is_cover: f
+sort_order: 45
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 47 of 60] ---
+id: 964
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_46.jpg
+is_cover: f
+sort_order: 46
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 48 of 60] ---
+id: 965
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_47.jpg
+is_cover: f
+sort_order: 47
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 49 of 60] ---
+id: 966
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_48.jpg
+is_cover: f
+sort_order: 48
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 50 of 60] ---
+id: 967
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_49.jpg
+is_cover: f
+sort_order: 49
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 51 of 60] ---
+id: 968
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_50.jpg
+is_cover: f
+sort_order: 50
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 52 of 60] ---
+id: 969
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_51.jpg
+is_cover: f
+sort_order: 51
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 53 of 60] ---
+id: 970
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_52.jpg
+is_cover: f
+sort_order: 52
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 54 of 60] ---
+id: 971
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_53.jpg
+is_cover: f
+sort_order: 53
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 55 of 60] ---
+id: 972
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_54.jpg
+is_cover: f
+sort_order: 54
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 56 of 60] ---
+id: 973
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_55.jpg
+is_cover: f
+sort_order: 55
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 57 of 60] ---
+id: 974
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_56.jpg
+is_cover: f
+sort_order: 56
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 58 of 60] ---
+id: 975
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_57.jpg
+is_cover: f
+sort_order: 57
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 59 of 60] ---
+id: 976
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_58.jpg
+is_cover: f
+sort_order: 58
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 60 of 60] ---
+id: 977
+entity_slug: pipedreams
+entity_name: Pipedreams
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_59.jpg
+is_cover: f
+sort_order: 59
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+resource_type: condo
+slug: pipedreams
+name: Pipedreams
+entity_slug: pipedreams
+capacity: 10
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_00.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_04.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_06.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_07.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_08.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_09.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_10.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_11.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_12.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_13.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_14.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_15.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_16.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_17.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_18.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_19.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_20.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_21.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_22.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_23.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_24.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_25.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_26.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_27.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_28.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_29.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_30.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_31.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_32.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_33.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_34.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_35.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_36.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_37.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_38.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_39.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_40.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_41.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_42.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_43.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_44.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_45.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_46.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_47.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_48.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_49.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_50.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_51.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_52.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_53.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_54.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_55.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_56.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_57.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_58.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_59.jpg"
+]
+amenities: []
+faqs: []
+city: Orange Beach
+state: AL
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 126b97c30282cc2ba7348694644489b7
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+entity_slug: pipedreams
+slug: pipedreams
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_00.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_04.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_06.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_07.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_08.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_09.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_10.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_11.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_12.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_13.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_14.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_15.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_16.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_17.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_18.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_19.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_20.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_21.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_22.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_23.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_24.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_25.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_26.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_27.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_28.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_29.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_30.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_31.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_32.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_33.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_34.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_35.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_36.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_37.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_38.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_39.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_40.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_41.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_42.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_43.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_44.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_45.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_46.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_47.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_48.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_49.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_50.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_51.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_52.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_53.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_54.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_55.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_56.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_57.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_58.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_59.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: d22a8549-be62-412b-8403-d294b4c203c9
+slug: pipedreams
+name: Pipedreams
+is_active: true
+featured: false
+entity_type: vacation-rental
+entity_subtype: vacation_rental
+menu_pin: 6710
+city: Orange Beach
+state: AL
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_00.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-14T05:18:27.471283+00:00
+updated_at: 2026-06-14T05:18:27.471283+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+sleeps_min: 10
+sleeps_max: 10
+pet_friendly: true
+parking: false
+business_status: OPERATIONAL
+primary_type: vacation-rental
+google_places_data: {}
+search_vector: 'beach':6 'orang':5 'pipedream':1A 'rental':4 'vacat':3 'vacation-rent':2
+bedrooms: 4
+bathrooms: 3.5
+max_guests: 10
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: stay
+industry_code: vacation_rental
+is_parent: true
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: pipedreams
+name: Pipedreams
+industry_code: vacation_rental
+is_parent: true
+score_of_7: 2
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 2] ---
+entity_slug: pipedreams
+source_table: bookable_resources
+item_type: condo
+section_name: Units
+item_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+name: Pipedreams
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "capacity": 10,
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_00.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_11.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_12.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_13.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_14.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_15.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_16.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_17.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_18.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_19.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_20.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_21.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_22.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_23.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_24.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_25.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_26.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_27.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_28.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_29.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_30.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_31.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_32.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_33.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_34.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_35.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_36.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_37.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_38.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_39.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_40.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_41.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_42.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_43.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_44.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_45.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_46.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_47.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_48.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_49.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_50.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_51.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_52.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_53.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_54.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_55.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_56.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_57.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_58.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_59.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "item_type_raw": "condo",
+  "resource_type": "condo",
+  "check_out_time": "11:00"
+}
+
+--- entity_items_norm_v [row 2 of 2] ---
+entity_slug: pipedreams
+source_table: entity_section_items
+item_type: rooms
+section_name: Units & Rates
+item_id: cdadceba-f571-4e0e-85b8-3e33d8213e2b
+name: Pipedreams
+sort_order: 1
+active: true
+attributes: {
+  "icon": "🏠",
+  "capacity": 10,
+  "min_nights": 1,
+  "module_key": "rooms",
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "item_type_raw": "rooms",
+  "check_out_time": "11:00"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 2] ---
+entity_slug: pipedreams
+source_table: bookable_resources
+item_type: condo
+section_name: Units
+item_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+name: Pipedreams
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "capacity": 10,
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_00.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_11.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_12.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_13.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_14.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_15.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_16.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_17.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_18.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_19.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_20.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_21.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_22.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_23.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_24.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_25.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_26.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_27.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_28.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_29.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_30.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_31.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_32.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_33.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_34.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_35.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_36.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_37.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_38.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_39.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_40.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_41.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_42.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_43.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_44.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_45.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_46.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_47.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_48.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_49.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_50.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_51.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_52.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_53.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_54.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_55.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_56.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_57.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_58.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_59.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "resource_type": "condo",
+  "check_out_time": "11:00"
+}
+
+--- entity_items_v [row 2 of 2] ---
+entity_slug: pipedreams
+source_table: entity_section_items
+item_type: rooms
+section_name: Units & Rates
+item_id: cdadceba-f571-4e0e-85b8-3e33d8213e2b
+name: Pipedreams
+sort_order: 1
+active: true
+attributes: {
+  "icon": "🏠",
+  "capacity": 10,
+  "min_nights": 1,
+  "module_key": "rooms",
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "check_out_time": "11:00"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   14 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 14] ---
+id: ab38a82e-2359-4b91-a609-b1ad7a23abe2
+entity_slug: pipedreams
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 14] ---
+id: 346dbe1a-6efc-47a5-af32-0a1272b10e76
+entity_slug: pipedreams
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 14] ---
+id: a2add2c1-0aac-4e3e-9ece-169e553a7363
+entity_slug: pipedreams
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 14] ---
+id: 71e3f582-7970-48a8-873d-dd97b414f67e
+entity_slug: pipedreams
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 14] ---
+id: 236467d6-3806-4f26-b4ce-4fbd32afc68b
+entity_slug: pipedreams
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 14] ---
+id: 1591d6d3-5cbe-425e-9a36-e73448dab110
+entity_slug: pipedreams
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 14] ---
+id: efcb9eb4-6b80-4427-b78b-94d9a4d7f00f
+entity_slug: pipedreams
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 14] ---
+id: fb72dc5d-64f2-430d-8012-ad4fe6ac2bbe
+entity_slug: pipedreams
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 14] ---
+id: e357edca-30cd-42c6-9fd5-70ee3cf64a04
+entity_slug: pipedreams
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 14] ---
+id: ab9aee65-515f-457c-a3e1-92e2a391f20e
+entity_slug: pipedreams
+module_key: stay
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 14] ---
+id: 263859a5-25f6-4fc7-aa46-01f1e9597e9a
+entity_slug: pipedreams
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 14] ---
+id: d31b2e31-22cb-4c36-abc6-4e28ab02d4de
+entity_slug: pipedreams
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 14] ---
+id: 8e703bb8-a16b-457b-815b-1ca623eba5db
+entity_slug: pipedreams
+module_key: amenities
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 14 of 14] ---
+id: 0b6b360c-bb5d-4780-b5ad-3c19d319f4ab
+entity_slug: pipedreams
+module_key: rooms
+enabled: true
+sort_order: 2
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13949
+entity_slug: pipedreams
+name: Pipedreams
+offer_type: room
+sort_order: 0
+is_available: true
+capacity: 10
+legacy_source: bookable_resources
+legacy_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+####################################################################################################
+# TABLE: entity_photos   -   120 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 120] ---
+id: 0c5c849e-d13a-49c6-8dee-25caeb4f3602
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_22.jpg
+is_cover: false
+sort_order: 22
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 2 of 120] ---
+id: bfa24c49-1798-40f8-99f5-7e0c3b3723cc
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_02.jpg
+is_cover: false
+sort_order: 2
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 3 of 120] ---
+id: f95cb068-a838-46c5-af5d-2b4b8c828531
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_50.jpg
+is_cover: false
+sort_order: 50
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 4 of 120] ---
+id: 73508f31-7d97-4146-bec3-493e244e6fd7
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_55.jpg
+is_cover: false
+sort_order: 55
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 5 of 120] ---
+id: a6ee5bc3-48d7-41c2-ac15-55e8681cac34
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_59.jpg
+is_cover: false
+sort_order: 59
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 6 of 120] ---
+id: 767d235b-a739-4c05-85be-0ee50ea2ff28
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_03.jpg
+is_cover: false
+sort_order: 3
+photo_type: complex
+
+--- entity_photos [row 7 of 120] ---
+id: 93369d14-5511-468a-985c-34aed1281620
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_04.jpg
+is_cover: false
+sort_order: 4
+photo_type: complex
+
+--- entity_photos [row 8 of 120] ---
+id: be7c7121-566d-49f6-a7ee-6a1426c13efa
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_05.jpg
+is_cover: false
+sort_order: 5
+photo_type: complex
+
+--- entity_photos [row 9 of 120] ---
+id: 4f5ef855-198e-4e2f-bb34-b1966ed6a449
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_06.jpg
+is_cover: false
+sort_order: 6
+photo_type: complex
+
+--- entity_photos [row 10 of 120] ---
+id: 485bac76-af3e-4002-aeab-3eb90214a833
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_07.jpg
+is_cover: false
+sort_order: 7
+photo_type: complex
+
+--- entity_photos [row 11 of 120] ---
+id: c170feb7-61cb-457b-baee-69f685a4cef4
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_08.jpg
+is_cover: false
+sort_order: 8
+photo_type: complex
+
+--- entity_photos [row 12 of 120] ---
+id: 191dd36d-a620-487a-abfc-af40d764ef18
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_09.jpg
+is_cover: false
+sort_order: 9
+photo_type: complex
+
+--- entity_photos [row 13 of 120] ---
+id: 8bcfb128-4df3-4dd5-a7cd-4c158d8c2515
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_10.jpg
+is_cover: false
+sort_order: 10
+photo_type: complex
+
+--- entity_photos [row 14 of 120] ---
+id: b98b2871-07b1-4679-b4af-3796ad92e64c
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_11.jpg
+is_cover: false
+sort_order: 11
+photo_type: complex
+
+--- entity_photos [row 15 of 120] ---
+id: a488e06c-600a-4186-8f93-355c9d92091b
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_12.jpg
+is_cover: false
+sort_order: 12
+photo_type: complex
+
+--- entity_photos [row 16 of 120] ---
+id: 95070b20-d501-4e32-a966-fdd7f8763c54
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_13.jpg
+is_cover: false
+sort_order: 13
+photo_type: complex
+
+--- entity_photos [row 17 of 120] ---
+id: 3f2d1ebf-6bbc-4c77-ac17-d3fb654f5154
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_14.jpg
+is_cover: false
+sort_order: 14
+photo_type: complex
+
+--- entity_photos [row 18 of 120] ---
+id: 7026caa2-5d28-4776-a44b-f0b010ed3eeb
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_15.jpg
+is_cover: false
+sort_order: 15
+photo_type: complex
+
+--- entity_photos [row 19 of 120] ---
+id: 83ff292a-2fe8-418c-9f55-4006f175d81c
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_16.jpg
+is_cover: false
+sort_order: 16
+photo_type: complex
+
+--- entity_photos [row 20 of 120] ---
+id: 3ed2f244-8083-4294-88e1-dc1b1f06bcaf
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_17.jpg
+is_cover: false
+sort_order: 17
+photo_type: complex
+
+--- entity_photos [row 21 of 120] ---
+id: b4dfa400-94c1-4f1a-84b5-03d72c1eeb00
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_18.jpg
+is_cover: false
+sort_order: 18
+photo_type: complex
+
+--- entity_photos [row 22 of 120] ---
+id: 8ae61829-b6f1-42b2-8dcf-951f8026a497
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_19.jpg
+is_cover: false
+sort_order: 19
+photo_type: complex
+
+--- entity_photos [row 23 of 120] ---
+id: 124d54a2-4b89-48a6-bf60-3f50afd76088
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_20.jpg
+is_cover: false
+sort_order: 20
+photo_type: complex
+
+--- entity_photos [row 24 of 120] ---
+id: bc395428-6a13-4001-aa62-d289c6f64257
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_21.jpg
+is_cover: false
+sort_order: 21
+photo_type: complex
+
+--- entity_photos [row 25 of 120] ---
+id: deee23ea-8fcd-47ea-ab77-7f765ddab3c9
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_22.jpg
+is_cover: false
+sort_order: 22
+photo_type: complex
+
+--- entity_photos [row 26 of 120] ---
+id: ba466418-b7d4-4fe5-93fc-914f483ef5fe
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_23.jpg
+is_cover: false
+sort_order: 23
+photo_type: complex
+
+--- entity_photos [row 27 of 120] ---
+id: 5ca55d0f-2637-44d5-9964-b559bbe3a222
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_24.jpg
+is_cover: false
+sort_order: 24
+photo_type: complex
+
+--- entity_photos [row 28 of 120] ---
+id: 55ffb7d8-f07d-4388-964c-a1bf62aa34f5
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_25.jpg
+is_cover: false
+sort_order: 25
+photo_type: complex
+
+--- entity_photos [row 29 of 120] ---
+id: 12cdce6e-5666-4d8e-adf1-2067c937673a
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_26.jpg
+is_cover: false
+sort_order: 26
+photo_type: complex
+
+--- entity_photos [row 30 of 120] ---
+id: 56d0364f-76b9-4494-93bf-7d09ba15597b
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_27.jpg
+is_cover: false
+sort_order: 27
+photo_type: complex
+
+--- entity_photos [row 31 of 120] ---
+id: fa607f9e-6b62-4123-965a-c88433f80863
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_28.jpg
+is_cover: false
+sort_order: 28
+photo_type: complex
+
+--- entity_photos [row 32 of 120] ---
+id: 26e113a3-17a9-4738-9ecc-cf79f51d5589
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_29.jpg
+is_cover: false
+sort_order: 29
+photo_type: complex
+
+--- entity_photos [row 33 of 120] ---
+id: 695e77fc-bc14-49d7-b1a6-322e7669fcd9
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_30.jpg
+is_cover: false
+sort_order: 30
+photo_type: complex
+
+--- entity_photos [row 34 of 120] ---
+id: 7cba3267-520a-4b08-a413-9cc3e394c04e
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_31.jpg
+is_cover: false
+sort_order: 31
+photo_type: complex
+
+--- entity_photos [row 35 of 120] ---
+id: 10c973be-0eaf-4d78-bf88-7b48a97b1276
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_32.jpg
+is_cover: false
+sort_order: 32
+photo_type: complex
+
+--- entity_photos [row 36 of 120] ---
+id: b992ef94-48a5-4aac-8a76-5a5fadcb98b8
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_33.jpg
+is_cover: false
+sort_order: 33
+photo_type: complex
+
+--- entity_photos [row 37 of 120] ---
+id: bae871f1-72ce-4246-9211-b272040cda97
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_34.jpg
+is_cover: false
+sort_order: 34
+photo_type: complex
+
+--- entity_photos [row 38 of 120] ---
+id: f4ec2df1-a2fb-413e-a317-4f9a2e38e2d6
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_35.jpg
+is_cover: false
+sort_order: 35
+photo_type: complex
+
+--- entity_photos [row 39 of 120] ---
+id: 7e7c0233-0472-4f75-a1ec-73256496e6d5
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_36.jpg
+is_cover: false
+sort_order: 36
+photo_type: complex
+
+--- entity_photos [row 40 of 120] ---
+id: 50ac6386-9419-444d-9ff4-80b4847406c4
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_37.jpg
+is_cover: false
+sort_order: 37
+photo_type: complex
+
+--- entity_photos [row 41 of 120] ---
+id: 57fdeade-5792-4b62-919d-9398447fda81
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_38.jpg
+is_cover: false
+sort_order: 38
+photo_type: complex
+
+--- entity_photos [row 42 of 120] ---
+id: d60bf698-53a1-43d2-b17d-8db46014b8e8
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_39.jpg
+is_cover: false
+sort_order: 39
+photo_type: complex
+
+--- entity_photos [row 43 of 120] ---
+id: d8e21210-da63-406e-87b6-601ec3b859ae
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_40.jpg
+is_cover: false
+sort_order: 40
+photo_type: complex
+
+--- entity_photos [row 44 of 120] ---
+id: ec5f4469-1469-4908-ab88-7933bd7e3852
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_41.jpg
+is_cover: false
+sort_order: 41
+photo_type: complex
+
+--- entity_photos [row 45 of 120] ---
+id: 83f1dbe4-05ad-436d-90c0-fc19804b6aa7
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_12.jpg
+is_cover: false
+sort_order: 12
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 46 of 120] ---
+id: f0437825-4276-405b-8f04-644406cad1c2
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_15.jpg
+is_cover: false
+sort_order: 15
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 47 of 120] ---
+id: 9937d988-4f82-42ab-8fd3-b05e0d0894cf
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_00.jpg
+is_cover: true
+sort_order: 0
+photo_type: complex
+
+--- entity_photos [row 48 of 120] ---
+id: d653c986-c2d9-4c7a-a4cc-1155755cfe22
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_01.jpg
+is_cover: false
+sort_order: 1
+photo_type: complex
+
+--- entity_photos [row 49 of 120] ---
+id: dd686c11-fea5-4b71-bbda-be3ee83e8dfc
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_02.jpg
+is_cover: false
+sort_order: 2
+photo_type: complex
+
+--- entity_photos [row 50 of 120] ---
+id: 3c18e902-47cc-4542-a781-493e6ff88930
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_42.jpg
+is_cover: false
+sort_order: 42
+photo_type: complex
+
+--- entity_photos [row 51 of 120] ---
+id: 788d2f85-bcc4-4c4b-a707-388ae32e1f63
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_43.jpg
+is_cover: false
+sort_order: 43
+photo_type: complex
+
+--- entity_photos [row 52 of 120] ---
+id: 3513c655-90f5-40a0-9822-fe868e64fcb3
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_44.jpg
+is_cover: false
+sort_order: 44
+photo_type: complex
+
+--- entity_photos [row 53 of 120] ---
+id: f2aace97-8aae-42ac-a1ae-ee235585da15
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_45.jpg
+is_cover: false
+sort_order: 45
+photo_type: complex
+
+--- entity_photos [row 54 of 120] ---
+id: 223960bd-1b7f-4b00-ae19-4bba4f5370ca
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_46.jpg
+is_cover: false
+sort_order: 46
+photo_type: complex
+
+--- entity_photos [row 55 of 120] ---
+id: 0077863f-67db-452d-9c80-94dc43ae890d
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_47.jpg
+is_cover: false
+sort_order: 47
+photo_type: complex
+
+--- entity_photos [row 56 of 120] ---
+id: 753ac9b1-5e6b-45ce-b9cd-ae59bb76b095
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_48.jpg
+is_cover: false
+sort_order: 48
+photo_type: complex
+
+--- entity_photos [row 57 of 120] ---
+id: 9b6e5176-a4c4-4334-b309-3c0b1e6e97b1
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_49.jpg
+is_cover: false
+sort_order: 49
+photo_type: complex
+
+--- entity_photos [row 58 of 120] ---
+id: ac658fb8-785a-44ac-89a7-dc8aa2c7a03a
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_50.jpg
+is_cover: false
+sort_order: 50
+photo_type: complex
+
+--- entity_photos [row 59 of 120] ---
+id: 6e98de6c-4f97-4e4b-b1b7-1766f0c61d22
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_51.jpg
+is_cover: false
+sort_order: 51
+photo_type: complex
+
+--- entity_photos [row 60 of 120] ---
+id: a95df77d-166a-4e95-901e-9cd2d2722ba9
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_52.jpg
+is_cover: false
+sort_order: 52
+photo_type: complex
+
+--- entity_photos [row 61 of 120] ---
+id: de7cf5f3-055e-4609-bf6c-7f3977f36697
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_53.jpg
+is_cover: false
+sort_order: 53
+photo_type: complex
+
+--- entity_photos [row 62 of 120] ---
+id: 35396c91-a3fe-4d66-b7e0-a19c3808e49b
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_54.jpg
+is_cover: false
+sort_order: 54
+photo_type: complex
+
+--- entity_photos [row 63 of 120] ---
+id: ce3d0076-c588-4bbc-bf79-966f269a4055
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_55.jpg
+is_cover: false
+sort_order: 55
+photo_type: complex
+
+--- entity_photos [row 64 of 120] ---
+id: bff86c4e-66b7-4678-b4d3-11f674f74f74
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_56.jpg
+is_cover: false
+sort_order: 56
+photo_type: complex
+
+--- entity_photos [row 65 of 120] ---
+id: 194d1f66-76c2-4e5c-afee-3fa34718c08c
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_57.jpg
+is_cover: false
+sort_order: 57
+photo_type: complex
+
+--- entity_photos [row 66 of 120] ---
+id: a49927b9-f78c-4289-b01a-822b2adaf91a
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_58.jpg
+is_cover: false
+sort_order: 58
+photo_type: complex
+
+--- entity_photos [row 67 of 120] ---
+id: 927733ac-cbc3-4e07-811a-d069453f58ca
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_59.jpg
+is_cover: false
+sort_order: 59
+photo_type: complex
+
+--- entity_photos [row 68 of 120] ---
+id: 8bb35787-50fb-4d12-80cf-8f25d8402d63
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_36.jpg
+is_cover: false
+sort_order: 36
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 69 of 120] ---
+id: 6f011ed1-56d8-4c49-9881-1a80c19ff83f
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_43.jpg
+is_cover: false
+sort_order: 43
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 70 of 120] ---
+id: 97ede0da-1518-4ad8-8fb3-e62b8b5d0d5e
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_17.jpg
+is_cover: false
+sort_order: 17
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 71 of 120] ---
+id: aa15609a-5d6a-4835-9ade-eea6dd4cf1cb
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_31.jpg
+is_cover: false
+sort_order: 31
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 72 of 120] ---
+id: 24b87542-61f4-4c7f-8119-c5d5866ee94c
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_20.jpg
+is_cover: false
+sort_order: 20
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 73 of 120] ---
+id: 70ab7613-b836-4a42-9c87-6df9ce70e65c
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_16.jpg
+is_cover: false
+sort_order: 16
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 74 of 120] ---
+id: 965c7048-9593-4ce1-abf2-379503c1ca31
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_47.jpg
+is_cover: false
+sort_order: 47
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 75 of 120] ---
+id: 525005cc-2c79-4c6f-a782-3f3f0533fa60
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_40.jpg
+is_cover: false
+sort_order: 40
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 76 of 120] ---
+id: d0a85450-fb6a-44c9-a713-a09c7bacfec9
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_23.jpg
+is_cover: false
+sort_order: 23
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 77 of 120] ---
+id: 4b31948d-9daa-4fd3-b56b-9b5454745781
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_44.jpg
+is_cover: false
+sort_order: 44
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 78 of 120] ---
+id: e70bfa58-1926-4943-a467-564a532a99ce
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_27.jpg
+is_cover: false
+sort_order: 27
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 79 of 120] ---
+id: e3d1edfd-373c-49ea-bfe3-944d68094ca9
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_42.jpg
+is_cover: false
+sort_order: 42
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 80 of 120] ---
+id: fe70bd1a-db6c-4db7-9e12-b6f705e19aca
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_56.jpg
+is_cover: false
+sort_order: 56
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 81 of 120] ---
+id: 65b817cd-212f-4a2f-afcf-827d544db85a
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_07.jpg
+is_cover: false
+sort_order: 7
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 82 of 120] ---
+id: 174c8655-9245-43c1-a790-2c95eae2a6fe
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_01.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 83 of 120] ---
+id: 12cee078-e70a-406a-b7a2-f656551dd5c6
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_06.jpg
+is_cover: false
+sort_order: 6
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 84 of 120] ---
+id: d008406e-06d5-47e0-9313-cc0d0207427b
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_18.jpg
+is_cover: false
+sort_order: 18
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 85 of 120] ---
+id: 1dfcef8a-5e71-46a0-82d7-907648dae98f
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_14.jpg
+is_cover: false
+sort_order: 14
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 86 of 120] ---
+id: abd0a92f-9dfd-462c-94b9-5fb9c90c3ed8
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_45.jpg
+is_cover: false
+sort_order: 45
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 87 of 120] ---
+id: 3a83745f-1872-4c4d-9c8a-2d2da7baa2c9
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_11.jpg
+is_cover: false
+sort_order: 11
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 88 of 120] ---
+id: c98475c6-27c6-4e53-8bef-d8be243febba
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_57.jpg
+is_cover: false
+sort_order: 57
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 89 of 120] ---
+id: 3bbe0bd0-28c9-4fcc-9da4-e5e6b3077711
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_21.jpg
+is_cover: false
+sort_order: 21
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 90 of 120] ---
+id: d4993596-86c2-41b4-937a-98815188abd5
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_38.jpg
+is_cover: false
+sort_order: 38
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 91 of 120] ---
+id: c5430c57-ecf9-43b5-863e-5dd8814433e7
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_54.jpg
+is_cover: false
+sort_order: 54
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 92 of 120] ---
+id: 9cc6591f-11c4-4e94-a757-4bcc3625828c
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_48.jpg
+is_cover: false
+sort_order: 48
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 93 of 120] ---
+id: 5eb33bc3-6492-4eae-88ec-871bdd3df12e
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_35.jpg
+is_cover: false
+sort_order: 35
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 94 of 120] ---
+id: 223ed4a4-60d6-4c6e-91c0-90c1e6a35ec2
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_19.jpg
+is_cover: false
+sort_order: 19
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 95 of 120] ---
+id: 47bcd972-70c5-4f77-902b-9d4ec5e9bed2
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_08.jpg
+is_cover: false
+sort_order: 8
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 96 of 120] ---
+id: 45468bc9-8302-498b-aab4-967bed5e0d9e
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_53.jpg
+is_cover: false
+sort_order: 53
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 97 of 120] ---
+id: 8a62b957-112d-45bb-9999-48154b2b0bd8
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_26.jpg
+is_cover: false
+sort_order: 26
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 98 of 120] ---
+id: f7dd86a4-d808-48aa-81a7-e7d934ec0ece
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_10.jpg
+is_cover: false
+sort_order: 10
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 99 of 120] ---
+id: 91366b7f-b2fb-48db-bbc4-60b9d95df33c
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_34.jpg
+is_cover: false
+sort_order: 34
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 100 of 120] ---
+id: ddfca101-fe15-46fa-a2fe-7edd10e414ff
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_37.jpg
+is_cover: false
+sort_order: 37
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 101 of 120] ---
+id: f1a353f9-ec7a-4f45-8c5d-f5093ed32b83
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_24.jpg
+is_cover: false
+sort_order: 24
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 102 of 120] ---
+id: dec2754b-b6b8-4bef-8acc-e9c2ff4a2fd1
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_29.jpg
+is_cover: false
+sort_order: 29
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 103 of 120] ---
+id: 2fab5ae5-fda9-4519-aab0-b32c18c4fa63
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_28.jpg
+is_cover: false
+sort_order: 28
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 104 of 120] ---
+id: f0a3ca1f-9d1d-4e27-8204-51854729c882
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_49.jpg
+is_cover: false
+sort_order: 49
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 105 of 120] ---
+id: 43d3026a-1651-4649-b27d-19e7016ce909
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_09.jpg
+is_cover: false
+sort_order: 9
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 106 of 120] ---
+id: e84b4424-0d6b-4fef-afb1-5c8e73dac5c5
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_41.jpg
+is_cover: false
+sort_order: 41
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 107 of 120] ---
+id: 8ab8a129-198c-427f-92b1-812ea5edeabd
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_25.jpg
+is_cover: false
+sort_order: 25
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 108 of 120] ---
+id: 347a1918-8307-4263-b576-e13193a680a9
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_30.jpg
+is_cover: false
+sort_order: 30
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 109 of 120] ---
+id: d1779577-08cb-4dd3-90ac-04ce29e593f1
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_39.jpg
+is_cover: false
+sort_order: 39
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 110 of 120] ---
+id: b2bbeec8-d7fa-45a2-ba75-5bad250a9ecc
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_32.jpg
+is_cover: false
+sort_order: 32
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 111 of 120] ---
+id: 61dd7abc-5958-4a9a-9889-b296747d5c18
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_13.jpg
+is_cover: false
+sort_order: 13
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 112 of 120] ---
+id: 8da00ead-0aa4-4789-a244-03f58ed7d63b
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_03.jpg
+is_cover: false
+sort_order: 3
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 113 of 120] ---
+id: 845b306a-09a1-4743-94f5-41470fb058bf
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_00.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 114 of 120] ---
+id: eb3a9c75-080e-4e51-bf00-5c6b7edc399c
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_46.jpg
+is_cover: false
+sort_order: 46
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 115 of 120] ---
+id: 28e3cf7d-9372-4aa4-9224-3306a90e2c58
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_58.jpg
+is_cover: false
+sort_order: 58
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 116 of 120] ---
+id: d730b9b3-a5dc-4852-9ee2-3b9b64954011
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_05.jpg
+is_cover: false
+sort_order: 5
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 117 of 120] ---
+id: 689389a8-2c48-4f39-89d8-ead432ba609e
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_33.jpg
+is_cover: false
+sort_order: 33
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 118 of 120] ---
+id: 785c9f4b-f590-4221-8908-97e1bb0554d7
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_51.jpg
+is_cover: false
+sort_order: 51
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 119 of 120] ---
+id: f0125882-4852-416c-a43b-4c108af0db88
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_52.jpg
+is_cover: false
+sort_order: 52
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+--- entity_photos [row 120 of 120] ---
+id: d1276e51-c801-47f2-bf71-d28575d8ec42
+entity_slug: pipedreams
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_04.jpg
+is_cover: false
+sort_order: 4
+photo_type: resource
+source_name: bookable_resource
+resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+
+####################################################################################################
+# TABLE: entity_section_items   -   1 row(s)
+####################################################################################################
+
+--- entity_section_items [row 1 of 1] ---
+id: cdadceba-f571-4e0e-85b8-3e33d8213e2b
+section_id: 2aab2e33-6e6e-4e63-976b-0eebba8730a7
+entity_slug: pipedreams
+item_name: Pipedreams
+icon: 🏠
+metadata: {}
+sort_order: 1
+check_in_time: 16:00
+check_out_time: 11:00
+min_nights: 1
+cleaning_fee: 0
+capacity: 10
+
+####################################################################################################
+# TABLE: entity_section_items_metadata_backup   -   1 row(s)
+####################################################################################################
+
+--- entity_section_items_metadata_backup [row 1 of 1] ---
+id: cdadceba-f571-4e0e-85b8-3e33d8213e2b
+entity_slug: pipedreams
+item_name: Pipedreams
+metadata: {
+  "capacity": 10,
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_00.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_11.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_12.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_13.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_14.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_15.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_16.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_17.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_18.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_19.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_20.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_21.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_22.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_23.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_24.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_25.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_26.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_27.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_28.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_29.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_30.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_31.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_32.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_33.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_34.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_35.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_36.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_37.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_38.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_39.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_40.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_41.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_42.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_43.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_44.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_45.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_46.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_47.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_48.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_49.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_50.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_51.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_52.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_53.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_54.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_55.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_56.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_57.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_58.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/vacation-homes/pipedreams/image_59.jpg"
+  ],
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "check_out_time": "11:00"
+}
+backed_up_at: 2026-07-16T09:49:37.166591+00:00
+
+####################################################################################################
+# TABLE: entity_sections   -   1 row(s)
+####################################################################################################
+
+--- entity_sections [row 1 of 1] ---
+id: 2aab2e33-6e6e-4e63-976b-0eebba8730a7
+entity_slug: pipedreams
+section_type: rooms
+section_name: Units & Rates
+sort_order: 2
+module_key: rooms
+is_active: true
+
+####################################################################################################
+# TABLE: entity_tags   -   5 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 5] ---
+id: 8430042c-e19a-4a4d-a680-b7217481f744
+entity_slug: pipedreams
+tag_name: vacation-rental
+tag_category: type
+
+--- entity_tags [row 2 of 5] ---
+id: 1e407b2d-7a75-4dd7-a94d-54e90d565750
+entity_slug: pipedreams
+tag_name: Vacation Homes
+tag_category: category
+
+--- entity_tags [row 3 of 5] ---
+id: 48af15c4-31b1-479c-a430-33811df9e1ea
+entity_slug: pipedreams
+tag_name: Pet Friendly
+tag_category: amenity
+
+--- entity_tags [row 4 of 5] ---
+id: 01c13c94-cf95-40e9-8166-ce052a325ed7
+entity_slug: pipedreams
+tag_name: Sleeps 10
+tag_category: amenity
+
+--- entity_tags [row 5 of 5] ---
+id: 5c68a294-f59a-41d6-b0dd-4d653dd4a628
+entity_slug: pipedreams
+tag_name: 3.5 Baths
+tag_category: amenity
+
+####################################################################################################
+# TABLE: entity_theme   -   2 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 2] ---
+id: 28eeb4a2-b9bc-42bf-a770-a38df04eb74c
+entity_slug: pipedreams
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+--- entity_theme [row 2 of 2] ---
+id: d2541ac6-81a7-4d64-bb4e-8271719d4575
+entity_slug: pipedreams
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_vacation_rental   -   1 row(s)
+####################################################################################################
+
+--- industry_vacation_rental [row 1 of 1] ---
+entity_slug: pipedreams
+unit_count: 1
+bedrooms_min: 4
+bedrooms_max: 4
+bathrooms: 3.5
+sleeps_min: 10
+sleeps_max: 10
+cleaning_fee: 0
+min_stay_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+pet_friendly: true
+updated_at: 2026-07-21T16:59:02.358415+00:00
+
+####################################################################################################
+# TABLE: recovery_import_log   -   1 row(s)
+####################################################################################################
+
+--- recovery_import_log [row 1 of 1] ---
+id: 198b8672-eee6-448a-baff-db7c0d6e0981
+batch_id: draft-businesses-netnew-2026-07-19
+target_table: entity
+target_row_id: 88978f25-9039-43c0-aca3-7d6e66196ea7
+entity_slug: pipedreams
+source_db: may
+source_table: entity
+source_id: f72c4a9d-ea46-42ad-bb2c-c4d3d9d94116
+action: insert
+imported_at: 2026-07-19T20:33:24.034873+00:00
+
+####################################################################################################
+# TABLE: rental_units   -   1 row(s)
+####################################################################################################
+
+--- rental_units [row 1 of 1] ---
+id: ec1a316f-0d6e-4d25-8be9-3b183f099475
+entity_slug: pipedreams
+slug: pipedreams
+name: Pipedreams
+sleeps: 10
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+city: Orange Beach
+state: AL
+source_resource_id: a158f208-37c4-4c2a-8483-d1eba3ba7ecd
+is_active: true
+created_at: 2026-07-23T00:06:23.937689+00:00
+updated_at: 2026-07-23T00:06:23.937689+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: pipedreams
+entity_slug: pipedreams
+title: Pipedreams
+category: vacation_rental
+search_vector: 'pipedream':1A 'rental':3B 'vacat':2B
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 13949
+entity_slug: pipedreams
+title: Pipedreams
+category: room
+search_vector: 'pipedream':1A
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: pipedreams

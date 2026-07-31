@@ -1,0 +1,1151 @@
+====================================================================================================
+SLUG: brightside-boatworks
+NAME: Brightside Boatworks
+INDUSTRY: other
+TABLES WITH DATA: 20
+TOTAL ROWS: 60
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (4 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (3 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (1 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_offer  (1 rows)
+  entity_photos  (16 rows)
+  entity_reviews  (1 rows)
+  entity_tags  (2 rows)
+  entity_theme  (1 rows)
+  search_index  (2 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: brightside-boatworks
+name: Brightside Boatworks
+planner_category: local_service
+data_quality_score: 80
+issues: missing_summary|missing_hours
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   4 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 4] ---
+id: 1374
+entity_slug: brightside-boatworks
+intent_tag: best_for:local_information
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 4] ---
+id: 1375
+entity_slug: brightside-boatworks
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 4] ---
+id: 1376
+entity_slug: brightside-boatworks
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 4] ---
+id: 1377
+entity_slug: brightside-boatworks
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: brightside-boatworks
+name: Brightside Boatworks
+is_active: t
+planner_category: local_service
+entity_type: service
+city: Gulf Shores
+state: AL
+address_line_1: 417 Winters Ave
+latitude: 30.327873
+longitude: -87.66917079999999
+rating: 5
+review_count: 1
+website_url: http://brightsideboatworks.com/
+hero_image_url: /photos/brightside-boatworks/photo_01.jpg
+voice_summary: Brightside Boatworks in Gulf Shores is best for local information.
+planner_summary: Brightside Boatworks in Gulf Shores is a local service listing in Gulf Coast Radar.
+best_for: local information
+not_best_for: nothing specific flagged
+search_keywords: point_of_interest|establishment
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 3
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 2
+faq_count: 0
+data_quality_score: 80
+data_gaps: missing_summary|missing_hours
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   3 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 3] ---
+id: 14371
+entity_slug: brightside-boatworks
+entity_name: Brightside Boatworks
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/brightside-boatworks/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 3] ---
+id: 18725
+entity_slug: brightside-boatworks
+entity_name: Brightside Boatworks
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/brightside-boatworks/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 3] ---
+id: 24883
+entity_slug: brightside-boatworks
+entity_name: Brightside Boatworks
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/brightside-boatworks/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: b53ce79a-9004-4491-8da0-4d69280e82db
+resource_type: service
+slug: brightside-boatworks
+name: Brightside Boatworks
+entity_slug: brightside-boatworks
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/brightside-boatworks/photo_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/brightside-boatworks/photo_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/brightside-boatworks/photo_01.jpg"
+]
+amenities: []
+faqs: []
+address: 417 Winters Ave
+city: Gulf Shores
+state: AL
+latitude: 30.327873
+longitude: -87.66917079999999
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 165870da1f78c221d385da1ef712d8c9
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: b53ce79a-9004-4491-8da0-4d69280e82db
+entity_slug: brightside-boatworks
+slug: brightside-boatworks
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/brightside-boatworks/photo_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/brightside-boatworks/photo_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/brightside-boatworks/photo_01.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 1ca54ed5-ff86-4b1d-9b40-44e8692ada3c
+slug: brightside-boatworks
+name: Brightside Boatworks
+is_active: true
+featured: false
+entity_type: service
+phone: (251) 223-3369
+website_url: http://brightsideboatworks.com/
+menu_pin: 4638
+address_line_1: 417 Winters Ave
+city: Gulf Shores
+state: AL
+zip: 36542
+latitude: 30.327873
+longitude: -87.66917079999999
+rating: 5
+review_count: 1
+hero_image_url: https://places.googleapis.com/v1/places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3n8ZNddGrvpkQqGg_czAcYq-KspDMjxzdpHKJbhb5jUaiGLtUZcnO05rIuA22R59wbDHwxuvnq2oZ_HiS_Btl5fxLVa9awt-CbrxIMzPatLFKpAWlcb0iARqH9aarAMUe0H-hKVN27QAXTDb4s7HdP8lCIojlx1SBCFsc8UUqKDnXcvvTN_e4lX_IRnfmVl-iKhZ3_ncR09WiFgXrQZEIKIbz3Udk4hz9yCaWGNuFsqwEh5kGYTn1rjaXHVdRysKavOGekhtu1mYTOTFqp8y3ECz2J-V4qamt-k6cQd09u33Xg8D4MgVvFgm5rN5QF4dTWYOnhVwQ7krszUKVgIMQpe6t-iiQtIeE8_xllJQyOxW4XIGwbQEGyaEICaQ5j51vRLvk5g7JoK5irQAzupn2871edTz0P0b4ACRbi0LCQS1C4sXNFMWC_PG3LtnABe/media?maxHeightPx=1600&maxWidthPx=1600
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-06T06:22:00.423519+00:00
+updated_at: 2026-06-06T06:22:00.423519+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJwfm0MEcPmogRna1QI0MnQyg
+google_maps_uri: https://maps.google.com/?cid=2901205754265513373&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+formatted_address: 417 Winters Ave, Gulf Shores, AL 36542, USA
+plus_code: 862J88HJ+48
+international_phone: +1 251-223-3369
+google_places_data: {
+  "id": "ChIJwfm0MEcPmogRna1QI0MnQyg",
+  "types": [
+    "point_of_interest",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3n8ZNddGrvpkQqGg_czAcYq-KspDMjxzdpHKJbhb5jUaiGLtUZcnO05rIuA22R59wbDHwxuvnq2oZ_HiS_Btl5fxLVa9awt-CbrxIMzPatLFKpAWlcb0iARqH9aarAMUe0H-hKVN27QAXTDb4s7HdP8lCIojlx1SBCFsc8UUqKDnXcvvTN_e4lX_IRnfmVl-iKhZ3_ncR09WiFgXrQZEIKIbz3Udk4hz9yCaWGNuFsqwEh5kGYTn1rjaXHVdRysKavOGekhtu1mYTOTFqp8y3ECz2J-V4qamt-k6cQd09u33Xg8D4MgVvFgm5rN5QF4dTWYOnhVwQ7krszUKVgIMQpe6t-iiQtIeE8_xllJQyOxW4XIGwbQEGyaEICaQ5j51vRLvk5g7JoK5irQAzupn2871edTz0P0b4ACRbi0LCQS1C4sXNFMWC_PG3LtnABe",
+      "widthPx": 2046,
+      "heightPx": 956,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDuwIuKTfGFmt9h19pFvdJa!2e10!4m2!3m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDuwIuKTfGFmt9h19pFvdJa&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/107720034843738334269",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKtSgDvkg9VMr67LcOEQP_qeYO6teglMpGPuiRTj_AKigUSiA=s100-p-k-no-mo",
+          "displayName": "Brightside Boatworks LLC"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3nfIvQlQtbp7watMzCcrurj34UjqkXh3bpCcbvmuLyqo2QfqKJZrKVR8gA9_kOJgLJwML0GocuZZIJrJAB4SLfYwqQrv8tbE6C-3dscbQRnTr7kGA5J2x8AY1ewJaXrlhC1ta2mcxEO4JISFb-I3uUlOMfY_760KvnPqUOTpaXVxrKtR4eQsJyoUewjR4nz9WTVfDnWAMwYFA5Z8LZ7d5bcnBqUJN6emqdWKYHqcanBGQEEOwJ753mP_ai-vna38m64ISFr5HxhIk94a5fauqQktkXK-PQroecA1AviGAKuaVWezRHRuPbx4RSs9n3geokfR1fgIXW5Q-SP93U4JEpTnJBGo3NAfKKR_lFAfsUnKcTG2D7YP6G8FCMozRXCVMpVRc60HhK6T0yViXd3EYX9Ryj0QGfQqe3u4azLKm73JUHgxDqEI8xh1fBeaBks",
+      "widthPx": 4000,
+      "heightPx": 3000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhD1RRd4HVBJUsLfJ9tzO7QH!2e10!4m2!3m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhD1RRd4HVBJUsLfJ9tzO7QH&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/107720034843738334269",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKtSgDvkg9VMr67LcOEQP_qeYO6teglMpGPuiRTj_AKigUSiA=s100-p-k-no-mo",
+          "displayName": "Brightside Boatworks LLC"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3m0wnUVreWJBQYYizNoNtp7ytsmeZRtJUzR1LBDThrh-uPxKYpMLqe2qTFnmgoujN6aHcqU9_RvyZ07o-kvgTfBK3lQL6UZiocRZrvxXUjHfjhrN4JRuicx6PWpaphECyOtqhDrxTUXcJRLRUkg7SI-rJJyv5oxikHQUo2G9adAyxsoHvOYcIXpKv9vaFYMJFIr-1xv03JApeIXpITDJROQGKU4p7oVHMm5sMJqHGt3tu4j4zUvRP16RXzgIXTXHHCfDFXodg_CjDPrKx0_fHk6PqihoBSx0f2WaxkWSqfVZDJtM3KOtUsEWOhgh7FYdFKVJrZRoE_HbbjLm77wlpEnXYUme5t9f-ok8S69zqqa4rERO1TYOtvFpn-dsjgnL2A4eY4E808HC22irxtZO_H_iEsFlZNK33nCJjXklsaGMZPwEnTLwz4HIxPRPrYY",
+      "widthPx": 4000,
+      "heightPx": 3000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCnMBrzoCmAYPiW4jMs9N5q!2e10!4m2!3m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCnMBrzoCmAYPiW4jMs9N5q&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/107720034843738334269",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKtSgDvkg9VMr67LcOEQP_qeYO6teglMpGPuiRTj_AKigUSiA=s100-p-k-no-mo",
+          "displayName": "Brightside Boatworks LLC"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3m0bvnEjv1WAuL8RRYQXRpM8d7jeXreHycBI9Zh71jG3K8DrtcaXLkG2BhvX_PGat-oknZo4G_WcNR0fRQIA4Rw0xCU9tRY66ssbjwRfmpHr84K8pv0M8tj51d3xitvcG1_rTwSlOviuLZSHwMY7Ze7uGXBxH_TiLE7akZ-xluFAVtE-zvGrpnELmEp1R4zWLzgJrzxFf9DeWR2IBHYcUtsD12rtkDwzQr4JTcop8m0UNeyyq23nH3UPxySkikqPq4hRY9ZRvIItBqqzSIrMGBHJtZq-y5lpoL3G9KI5zCs6b7FriqGg7hGm074NC_ghHQ1k45u1VTaqRFWAnXwJ6snxcWj-PISbzdLNaMM6xixIHf5YLK3LvBxU3Fym4Iv10g26sWUDjDzMh9fA80Ct14g06jLO6Ukg-q8ueH5XKo3u0-YL3YodsjxuVNEWXgn",
+      "widthPx": 3000,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAu1qD9HRBDzFK7X_tVFyfL!2e10!4m2!3m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAu1qD9HRBDzFK7X_tVFyfL&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/107720034843738334269",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKtSgDvkg9VMr67LcOEQP_qeYO6teglMpGPuiRTj_AKigUSiA=s100-p-k-no-mo",
+          "displayName": "Brightside Boatworks LLC"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3mh6Xvb1BOo0xNijUqInPZ1-kaCHGscZe7_ZcN3nU1oB-vnovtZeUxoPMIErGBPkE0EmCBu1IRZNdP7Ekr7s3aYx3izASVoi8hqHDLnr8vvQufb43clVnCP7PXZjlKogKQ35iT4MPZ8ISnZNB01TftOTD9GMIdLZZ2X6_KcCFuO0seWbY-EBYtvVPplSZkfN8rs2E2i0W0BmWNyXnUmMUzXcXXkURaxxry6Qv9fHh9PiB5Z0HpL-OSI9HyS_QoWkzvdnJyw9sZyO25EinKCQtg_NLG8VSbP3mrRfSvO6zvPoEX4e-KbA5vp-h8W7G8wg_3lmCrwncB0rfLiEqCnfRd_gN82eChlFgUEXtlHMxKRRHkhS4kdmFpedOzAVhCd0UWjtHX1Ms3CKgieds-XIOoQWjQVGAWduoAtawz4MnWxnGRz2GSYsncAScvfEaTw",
+      "widthPx": 4000,
+      "heightPx": 3000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAUo3myruVr9TLzB4ZGEW0e!2e10!4m2!3m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAUo3myruVr9TLzB4ZGEW0e&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/107720034843738334269",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKtSgDvkg9VMr67LcOEQP_qeYO6teglMpGPuiRTj_AKigUSiA=s100-p-k-no-mo",
+          "displayName": "Brightside Boatworks LLC"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3ka7aN74Yx5B9mRmJgrhaC14dmpBTSC_JVYj3nM2QvqeKXzopnPMtiSaD25VOf3b4_HggXgHebThs9qOv9zU8qrxYNNDUzl-PGZeP1eaBeIPykRe4g0FXwXoMIODWm8NFntAq5o32bDPD63xAtOXicxMfJlcrDR-Ol2mWD5eUrl2WMDiWYpu20-KwoTJrRBW36L3nRpB2Qd3_Kil17F5OvSWglNt2rQV-5WxRB4t7rTqljynwIHPZ-TJPfGp_0p6GqVtKk4PhlAJDRPsl4zB2v-UIw_Mnkq8AXuOZ_e9qYpYN79EhcWJLM0P2bzzJeTzPBGR6imFkb44PjvXb_gd0UEtK-PLBWVK0p7don41mQYKzuJCnPQY7L1HHU7HDcwV4dv4LHEXYIGIYYYDNmJuMDHb53KwlThOQWnkyuKn3-JBuTxl7LLCEWb6bIP9Gk8",
+      "widthPx": 3000,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhC2th4M9CJ-V0OgCvFqxOze!2e10!4m2!3m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhC2th4M9CJ-V0OgCvFqxOze&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/107720034843738334269",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKtSgDvkg9VMr67LcOEQP_qeYO6teglMpGPuiRTj_AKigUSiA=s100-p-k-no-mo",
+          "displayName": "Brightside Boatworks LLC"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3kikH2rBGdpGYLyD0kA4-4MreFqWWkD-xRWq7iwcY2y8KSI3uD4_b_0waNY3AmHR7YLIGYwjRzeHV-MBM8sADIyTPBQFNuvFrnY_frAiQmII3ZG59g73lr9jTRGXRGehJzl16jZv8CVHulk1HGeQNd28Dwhsyrh0Xuzbp5O0yOghGlHUsbS4iL822gEB53WX5Qs2NJhZppG9jxONaQDP9eTLCA4kb64dIyA3aDu3ecMWUfoCHwsrSnNIv_vdp3A5ottw10mHY4endoxLKwSDmNvPe1HGwrnAJxw-R5BXsfumP4dFVQjrI2UDd4DKdSJZnH1tHb-8NYyNa-5-zwXuedWGh4XcnyDnzIr9Cc6TQWonqIK-bsR2wzOI2DE5V_tl0Cd3u7ff-6L4gl4Wsx_vqlzqyd3LGowDGjapLDkjt0WSBFN60gmKioqLwbmm4Ww",
+      "widthPx": 3000,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCtg-mS-MhsD360m5ogmBEF!2e10!4m2!3m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCtg-mS-MhsD360m5ogmBEF&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/107720034843738334269",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKtSgDvkg9VMr67LcOEQP_qeYO6teglMpGPuiRTj_AKigUSiA=s100-p-k-no-mo",
+          "displayName": "Brightside Boatworks LLC"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3nwL-ReRoPRbiqQ_IqUhz7RfOqyFD7WZldHxAm84BpC4I3Ll4PANU_qscJkvT7qSTdg7Bd6ThAK-uUobbq-rf2lfI9GrgMcNRAE-006RNhxT4f3PiAWdUDGE5j9FjNqkacognEnFD9AYuZ8e28tao7l_stQSat3H5qd-fgwh6Ys9BikLCbN7n4UMyNSjBZ5YwkplCOweWld2Hv2BJkhoKifsh26aBgsdFU1Ki5Jpo08UKlS3XhLsSsCtt4kifImFU61v7WRUKWqXQ1wtlwuIKGqa6w8CpQNB6XcC7nA8eujgIgEF8RVwArk8Pi7hBMJ8GY7-7PY6udIFFmzDur76pe06nDppR7o64HIBGktCv-R-3FcqyUFEia3dyqCqFA9-LlCd8WSk_QDAnrv9d4AiwS4EIF80foFZ8K-bjKSu5s5A40_ZgRcU4O4dGiyjMqk",
+      "widthPx": 4000,
+      "heightPx": 3000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhD4KXD6-qnLb-jrOKRGW7HF!2e10!4m2!3m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhD4KXD6-qnLb-jrOKRGW7HF&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/107720034843738334269",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKtSgDvkg9VMr67LcOEQP_qeYO6teglMpGPuiRTj_AKigUSiA=s100-p-k-no-mo",
+          "displayName": "Brightside Boatworks LLC"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3mZtRxB12l_adzT8eeTOeV8DHReCcTCbsy0CNHqoc30mF5HYdRVx4SUfC3lzwRbj04wQloVT0lXybr6aowlhYgLiQgf_ADNCcf8ozbqxqBWMuaKa_iajTvbfeqIPWde8Y_N9fzn5wAa5oRRrgV2zrOlw0JDe_wbRjRfPdTWFgIUj8bn28Dnqem0oAIMtQZvdc3eRWjwde5h7WfO8iaA8vKVmiATNAllquh_46LuSeEsq7M9DxU8wd6kx6XlgwDdZHmt6nfJex0zHYTQMTS23LQYG1b8ghbdmKP5AAiPjeCOKEt2B3_qA7F4h37Et1pLDCu6vTQrGRoJnmKLf2yy20eomByyEOXSph0qzeIGcI2uK64H50hJCpWMnKWAbL9XMfCCpdSAOrDt5F1S17u84yOmEa0qdz6VihhnfC4vOsFqPiHQ3iQ13OcbkmIwXYpv",
+      "widthPx": 3000,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhACHa9akNr0Ga9DfFeqPU8v!2e10!4m2!3m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhACHa9akNr0Ga9DfFeqPU8v&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/107720034843738334269",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKtSgDvkg9VMr67LcOEQP_qeYO6teglMpGPuiRTj_AKigUSiA=s100-p-k-no-mo",
+          "displayName": "Brightside Boatworks LLC"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3lfDINgT8_03-IeZaBOXSRYtzFMF-unZcKV5V-8w58IGZsU411XR-AszDgbgYUtHX9YX4eR5kG_boS6YHjI4D6JFkeSQT0E-KunD6txK2YIO2v87uGHRNmnZGmwFx7Iuj7-_m1hjbpGAToIc6lrN8SS3bT4xZmkyHdBnTkL636l2HHoY7JbRusF42d-5KUVf9_N5JODsVo1B9lCtEn_tKsKaGYz99Y_vITddpWQDYkkuYu5iQETSYBxjSJHSRkSX4-nYuVlBZmbtgoXU1UvMpODUkvENOhUH_W_QzMMPBN1MJOwg3VG22N_ftHeLULrjTFG7VJL-igcFBVRY2G2KnAyM1NCNvMLgmNQ9IBZZtK-K3gD-C7F8qADyTaAMuMQNXXxaMCVf2OTzIw7JUsWTx9lxYHrLVyMU9SOxjjV2oAA2zWczQG_Ks2J1ud7AA",
+      "widthPx": 3000,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhB8wnqvRknDYhzfhJbUkwns!2e10!4m2!3m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhB8wnqvRknDYhzfhJbUkwns&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/107720034843738334269",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKtSgDvkg9VMr67LcOEQP_qeYO6teglMpGPuiRTj_AKigUSiA=s100-p-k-no-mo",
+          "displayName": "Brightside Boatworks LLC"
+        }
+      ]
+    }
+  ],
+  "rating": 5,
+  "reviews": [
+    {
+      "name": "places/ChIJwfm0MEcPmogRna1QI0MnQyg/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xWclQyWkJTVVJQYlZsVmExYzJlR0p5YjJveVZWRRAB",
+      "text": {
+        "text": "Best boat detailing folks in the business. I would not use anyone else!  Your boat will never look better when they are done",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-05-30T15:22:06.669089363Z",
+      "originalText": {
+        "text": "Best boat detailing folks in the business. I would not use anyone else!  Your boat will never look better when they are done",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xWclQyWkJTVVJQYlZsVmExYzJlR0p5YjJveVZWRRAB!2m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2xWclQyWkJTVVJQYlZsVmExYzJlR0p5YjJveVZWRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/101749007061942890795/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJUpQyb9kqPYpoCVXYPQgeQCmVHh6d323Slb-IagzC36N8uEg=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Edwin Lamberth"
+      },
+      "relativePublishTimeDescription": "a week ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.327873,
+    "longitude": -87.66917079999999
+  },
+  "plusCode": {
+    "globalCode": "862J88HJ+48",
+    "compoundCode": "88HJ+48 Gulf Shores, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.326602269708506,
+      "longitude": -87.67051953029149
+    },
+    "high": {
+      "latitude": 30.329300230291505,
+      "longitude": -87.66782156970848
+    }
+  },
+  "websiteUri": "http://brightsideboatworks.com/",
+  "displayName": {
+    "text": "Brightside Boatworks",
+    "languageCode": "en"
+  },
+  "googleMapsUri": "https://maps.google.com/?cid=2901205754265513373&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=2901205754265513373&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0f4730b4f9c1:0x284327432350ad9d!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0f4730b4f9c1:0x284327432350ad9d!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0f4730b4f9c1:0x284327432350ad9d!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "userRatingCount": 1,
+  "adrFormatAddress": "<span class=\"street-address\">417 Winters Ave</span>, <span class=\"locality\">Gulf Shores</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36542</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "417 Winters Ave, Gulf Shores, AL 36542, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "417",
+      "shortText": "417",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Winters Avenue",
+      "shortText": "Winters Ave",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Gulf Shores",
+      "shortText": "Gulf Shores",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36542",
+      "shortText": "36542",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {},
+  "currentOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 0,
+          "minute": 0,
+          "truncated": true
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 59,
+          "truncated": true
+        }
+      }
+    ],
+    "weekdayDescriptions": [
+      "Monday: Open 24 hours",
+      "Tuesday: Open 24 hours",
+      "Wednesday: Open 24 hours",
+      "Thursday: Open 24 hours",
+      "Friday: Open 24 hours",
+      "Saturday: Open 24 hours",
+      "Sunday: Open 24 hours"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Boat detailing service",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "nationalPhoneNumber": "(251) 223-3369",
+  "regularOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 0,
+          "minute": 0
+        }
+      }
+    ],
+    "weekdayDescriptions": [
+      "Monday: Open 24 hours",
+      "Tuesday: Open 24 hours",
+      "Wednesday: Open 24 hours",
+      "Thursday: Open 24 hours",
+      "Friday: Open 24 hours",
+      "Saturday: Open 24 hours",
+      "Sunday: Open 24 hours"
+    ]
+  },
+  "shortFormattedAddress": "417 Winters Ave, Gulf Shores",
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-223-3369"
+}
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 417 Winters Ave, Gulf Shores
+national_phone: (251) 223-3369
+search_vector: 'boatwork':2A 'brightsid':1A 'gulf':3 'shore':4
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=2901205754265513373&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0f4730b4f9c1:0x284327432350ad9d!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0f4730b4f9c1:0x284327432350ad9d!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0f4730b4f9c1:0x284327432350ad9d!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {}
+internal_notes: industry_code auto-bucketed to other 2026-07-21 - needs manual review | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url | hero_image_url v2-fix 2026-07-21: repointed to a photo confirmed to actually exist
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: other
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: brightside-boatworks
+name: Brightside Boatworks
+industry_code: other
+is_parent: false
+score_of_7: 5
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 25824f22-2f53-46b6-8951-d6687ceb1dbc
+entity_slug: brightside-boatworks
+place_uri: https://maps.google.com/?cid=2901205754265513373&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0f4730b4f9c1:0x284327432350ad9d!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0f4730b4f9c1:0x284327432350ad9d!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0f4730b4f9c1:0x284327432350ad9d!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   1 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 1] ---
+review_id: 6555
+entity_slug: brightside-boatworks
+google_review_name: places/ChIJwfm0MEcPmogRna1QI0MnQyg/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xWclQyWkJTVVJQYlZsVmExYzJlR0p5YjJveVZWRRAB
+rating: 5
+review_text: Best boat detailing folks in the business. I would not use anyone else!  Your boat will never look better when they are done
+language_code: en
+author_name: Edwin Lamberth
+author_profile_url: https://www.google.com/maps/contrib/101749007061942890795/reviews
+publish_time: 2026-05-30T15:22:06.669089+00:00
+relative_time: a week ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xWclQyWkJTVVJQYlZsVmExYzJlR0p5YjJveVZWRRAB!2m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: b42fc5bd-3007-4c9b-b93c-f80790c55fc9
+entity_slug: brightside-boatworks
+day_of_week: 0
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: d3dbef63-2f76-4415-9e3c-455de89e2b02
+entity_slug: brightside-boatworks
+day_of_week: 1
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: edbcd765-7fde-4968-9031-d833d0445182
+entity_slug: brightside-boatworks
+day_of_week: 2
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: aed689c5-062c-427c-934a-0e12e3f711bd
+entity_slug: brightside-boatworks
+day_of_week: 3
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 78981068-dbe1-4b7e-ab66-77ed03118bae
+entity_slug: brightside-boatworks
+day_of_week: 4
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 93b50300-b2d1-49a8-a75b-a972d49acbcf
+entity_slug: brightside-boatworks
+day_of_week: 5
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 05675bb7-c3df-4755-b2a8-47109170bd50
+entity_slug: brightside-boatworks
+day_of_week: 6
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: brightside-boatworks
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: b53ce79a-9004-4491-8da0-4d69280e82db
+name: Brightside Boatworks
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/brightside-boatworks/photo_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/brightside-boatworks/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/brightside-boatworks/photo_01.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: brightside-boatworks
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: b53ce79a-9004-4491-8da0-4d69280e82db
+name: Brightside Boatworks
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/brightside-boatworks/photo_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/brightside-boatworks/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/brightside-boatworks/photo_01.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: e9cfbc1e-16f3-4eb3-958e-314684416de1
+entity_slug: brightside-boatworks
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 19f0c101-b15e-4c15-a347-ddd68bfcd040
+entity_slug: brightside-boatworks
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: 77ab153d-83cd-4e4c-8df1-b432b5c40c9e
+entity_slug: brightside-boatworks
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: b50b5405-a979-456f-90c4-e04e4799674f
+entity_slug: brightside-boatworks
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: 196b808c-7639-44b1-9a78-c761bf6f5014
+entity_slug: brightside-boatworks
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: f34713f1-d297-409e-a54f-b53d3ba72b94
+entity_slug: brightside-boatworks
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 09a41b68-9066-4462-b3bd-087229533b25
+entity_slug: brightside-boatworks
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 54d37030-b9e8-4852-8393-19c51c73b2eb
+entity_slug: brightside-boatworks
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: 511b614a-99a9-452e-9f1c-162195ef0a24
+entity_slug: brightside-boatworks
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: 7df5968d-6dce-4d94-8467-3ef77c776dad
+entity_slug: brightside-boatworks
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: 72b9b8f5-79db-4e87-b89b-67f32d3cf3a4
+entity_slug: brightside-boatworks
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: eccadbde-fb13-462f-b216-520d54de83ab
+entity_slug: brightside-boatworks
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: 755fa42b-febd-4c10-bfad-775143693810
+entity_slug: brightside-boatworks
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13370
+entity_slug: brightside-boatworks
+name: Brightside Boatworks
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: b53ce79a-9004-4491-8da0-4d69280e82db
+
+####################################################################################################
+# TABLE: entity_photos   -   16 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 16] ---
+id: 192b01d5-f29c-4ebe-b60e-3f7589c37377
+entity_slug: brightside-boatworks
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/brightside-boatworks/photo_03.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 2 of 16] ---
+id: c59ba5e2-b9da-4c1b-bf1d-049fd58935c7
+entity_slug: brightside-boatworks
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/brightside-boatworks/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 16] ---
+id: d54ff84a-d5a2-48ce-9668-f5399a753b1a
+entity_slug: brightside-boatworks
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/brightside-boatworks/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 4 of 16] ---
+id: ffb496f5-92e6-452d-8072-070d496eb4f3
+entity_slug: brightside-boatworks
+url: https://places.googleapis.com/v1/places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3n8ZNddGrvpkQqGg_czAcYq-KspDMjxzdpHKJbhb5jUaiGLtUZcnO05rIuA22R59wbDHwxuvnq2oZ_HiS_Btl5fxLVa9awt-CbrxIMzPatLFKpAWlcb0iARqH9aarAMUe0H-hKVN27QAXTDb4s7HdP8lCIojlx1SBCFsc8UUqKDnXcvvTN_e4lX_IRnfmVl-iKhZ3_ncR09WiFgXrQZEIKIbz3Udk4hz9yCaWGNuFsqwEh5kGYTn1rjaXHVdRysKavOGekhtu1mYTOTFqp8y3ECz2J-V4qamt-k6cQd09u33Xg8D4MgVvFgm5rN5QF4dTWYOnhVwQ7krszUKVgIMQpe6t-iiQtIeE8_xllJQyOxW4XIGwbQEGyaEICaQ5j51vRLvk5g7JoK5irQAzupn2871edTz0P0b4ACRbi0LCQS1C4sXNFMWC_PG3LtnABe/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3n8ZNddGrvpkQqGg_czAcYq-KspDMjxzdpHKJbhb5jUaiGLtUZcnO05rIuA22R59wbDHwxuvnq2oZ_HiS_Btl5fxLVa9awt-CbrxIMzPatLFKpAWlcb0iARqH9aarAMUe0H-hKVN27QAXTDb4s7HdP8lCIojlx1SBCFsc8UUqKDnXcvvTN_e4lX_IRnfmVl-iKhZ3_ncR09WiFgXrQZEIKIbz3Udk4hz9yCaWGNuFsqwEh5kGYTn1rjaXHVdRysKavOGekhtu1mYTOTFqp8y3ECz2J-V4qamt-k6cQd09u33Xg8D4MgVvFgm5rN5QF4dTWYOnhVwQ7krszUKVgIMQpe6t-iiQtIeE8_xllJQyOxW4XIGwbQEGyaEICaQ5j51vRLvk5g7JoK5irQAzupn2871edTz0P0b4ACRbi0LCQS1C4sXNFMWC_PG3LtnABe
+is_cover: false
+sort_order: 0
+caption: Brightside Boatworks LLC
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDuwIuKTfGFmt9h19pFvdJa!2e10!4m2!3m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d
+
+--- entity_photos [row 5 of 16] ---
+id: a0293cae-4aec-402a-8bc8-b9967c043afe
+entity_slug: brightside-boatworks
+url: https://places.googleapis.com/v1/places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3nfIvQlQtbp7watMzCcrurj34UjqkXh3bpCcbvmuLyqo2QfqKJZrKVR8gA9_kOJgLJwML0GocuZZIJrJAB4SLfYwqQrv8tbE6C-3dscbQRnTr7kGA5J2x8AY1ewJaXrlhC1ta2mcxEO4JISFb-I3uUlOMfY_760KvnPqUOTpaXVxrKtR4eQsJyoUewjR4nz9WTVfDnWAMwYFA5Z8LZ7d5bcnBqUJN6emqdWKYHqcanBGQEEOwJ753mP_ai-vna38m64ISFr5HxhIk94a5fauqQktkXK-PQroecA1AviGAKuaVWezRHRuPbx4RSs9n3geokfR1fgIXW5Q-SP93U4JEpTnJBGo3NAfKKR_lFAfsUnKcTG2D7YP6G8FCMozRXCVMpVRc60HhK6T0yViXd3EYX9Ryj0QGfQqe3u4azLKm73JUHgxDqEI8xh1fBeaBks/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3nfIvQlQtbp7watMzCcrurj34UjqkXh3bpCcbvmuLyqo2QfqKJZrKVR8gA9_kOJgLJwML0GocuZZIJrJAB4SLfYwqQrv8tbE6C-3dscbQRnTr7kGA5J2x8AY1ewJaXrlhC1ta2mcxEO4JISFb-I3uUlOMfY_760KvnPqUOTpaXVxrKtR4eQsJyoUewjR4nz9WTVfDnWAMwYFA5Z8LZ7d5bcnBqUJN6emqdWKYHqcanBGQEEOwJ753mP_ai-vna38m64ISFr5HxhIk94a5fauqQktkXK-PQroecA1AviGAKuaVWezRHRuPbx4RSs9n3geokfR1fgIXW5Q-SP93U4JEpTnJBGo3NAfKKR_lFAfsUnKcTG2D7YP6G8FCMozRXCVMpVRc60HhK6T0yViXd3EYX9Ryj0QGfQqe3u4azLKm73JUHgxDqEI8xh1fBeaBks
+is_cover: false
+sort_order: 1
+caption: Brightside Boatworks LLC
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhD1RRd4HVBJUsLfJ9tzO7QH!2e10!4m2!3m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d
+
+--- entity_photos [row 6 of 16] ---
+id: a9e04b24-2b26-4072-8a08-ff4e41b06413
+entity_slug: brightside-boatworks
+url: https://places.googleapis.com/v1/places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3m0wnUVreWJBQYYizNoNtp7ytsmeZRtJUzR1LBDThrh-uPxKYpMLqe2qTFnmgoujN6aHcqU9_RvyZ07o-kvgTfBK3lQL6UZiocRZrvxXUjHfjhrN4JRuicx6PWpaphECyOtqhDrxTUXcJRLRUkg7SI-rJJyv5oxikHQUo2G9adAyxsoHvOYcIXpKv9vaFYMJFIr-1xv03JApeIXpITDJROQGKU4p7oVHMm5sMJqHGt3tu4j4zUvRP16RXzgIXTXHHCfDFXodg_CjDPrKx0_fHk6PqihoBSx0f2WaxkWSqfVZDJtM3KOtUsEWOhgh7FYdFKVJrZRoE_HbbjLm77wlpEnXYUme5t9f-ok8S69zqqa4rERO1TYOtvFpn-dsjgnL2A4eY4E808HC22irxtZO_H_iEsFlZNK33nCJjXklsaGMZPwEnTLwz4HIxPRPrYY/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3m0wnUVreWJBQYYizNoNtp7ytsmeZRtJUzR1LBDThrh-uPxKYpMLqe2qTFnmgoujN6aHcqU9_RvyZ07o-kvgTfBK3lQL6UZiocRZrvxXUjHfjhrN4JRuicx6PWpaphECyOtqhDrxTUXcJRLRUkg7SI-rJJyv5oxikHQUo2G9adAyxsoHvOYcIXpKv9vaFYMJFIr-1xv03JApeIXpITDJROQGKU4p7oVHMm5sMJqHGt3tu4j4zUvRP16RXzgIXTXHHCfDFXodg_CjDPrKx0_fHk6PqihoBSx0f2WaxkWSqfVZDJtM3KOtUsEWOhgh7FYdFKVJrZRoE_HbbjLm77wlpEnXYUme5t9f-ok8S69zqqa4rERO1TYOtvFpn-dsjgnL2A4eY4E808HC22irxtZO_H_iEsFlZNK33nCJjXklsaGMZPwEnTLwz4HIxPRPrYY
+is_cover: false
+sort_order: 2
+caption: Brightside Boatworks LLC
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCnMBrzoCmAYPiW4jMs9N5q!2e10!4m2!3m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d
+
+--- entity_photos [row 7 of 16] ---
+id: 71e4c27d-9531-4793-8e4b-e797e6126e87
+entity_slug: brightside-boatworks
+url: https://places.googleapis.com/v1/places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3m0bvnEjv1WAuL8RRYQXRpM8d7jeXreHycBI9Zh71jG3K8DrtcaXLkG2BhvX_PGat-oknZo4G_WcNR0fRQIA4Rw0xCU9tRY66ssbjwRfmpHr84K8pv0M8tj51d3xitvcG1_rTwSlOviuLZSHwMY7Ze7uGXBxH_TiLE7akZ-xluFAVtE-zvGrpnELmEp1R4zWLzgJrzxFf9DeWR2IBHYcUtsD12rtkDwzQr4JTcop8m0UNeyyq23nH3UPxySkikqPq4hRY9ZRvIItBqqzSIrMGBHJtZq-y5lpoL3G9KI5zCs6b7FriqGg7hGm074NC_ghHQ1k45u1VTaqRFWAnXwJ6snxcWj-PISbzdLNaMM6xixIHf5YLK3LvBxU3Fym4Iv10g26sWUDjDzMh9fA80Ct14g06jLO6Ukg-q8ueH5XKo3u0-YL3YodsjxuVNEWXgn/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3m0bvnEjv1WAuL8RRYQXRpM8d7jeXreHycBI9Zh71jG3K8DrtcaXLkG2BhvX_PGat-oknZo4G_WcNR0fRQIA4Rw0xCU9tRY66ssbjwRfmpHr84K8pv0M8tj51d3xitvcG1_rTwSlOviuLZSHwMY7Ze7uGXBxH_TiLE7akZ-xluFAVtE-zvGrpnELmEp1R4zWLzgJrzxFf9DeWR2IBHYcUtsD12rtkDwzQr4JTcop8m0UNeyyq23nH3UPxySkikqPq4hRY9ZRvIItBqqzSIrMGBHJtZq-y5lpoL3G9KI5zCs6b7FriqGg7hGm074NC_ghHQ1k45u1VTaqRFWAnXwJ6snxcWj-PISbzdLNaMM6xixIHf5YLK3LvBxU3Fym4Iv10g26sWUDjDzMh9fA80Ct14g06jLO6Ukg-q8ueH5XKo3u0-YL3YodsjxuVNEWXgn
+is_cover: false
+sort_order: 3
+caption: Brightside Boatworks LLC
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAu1qD9HRBDzFK7X_tVFyfL!2e10!4m2!3m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d
+
+--- entity_photos [row 8 of 16] ---
+id: 1925dd5c-4bf2-4dcf-84a9-f89120d5b414
+entity_slug: brightside-boatworks
+url: https://places.googleapis.com/v1/places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3mh6Xvb1BOo0xNijUqInPZ1-kaCHGscZe7_ZcN3nU1oB-vnovtZeUxoPMIErGBPkE0EmCBu1IRZNdP7Ekr7s3aYx3izASVoi8hqHDLnr8vvQufb43clVnCP7PXZjlKogKQ35iT4MPZ8ISnZNB01TftOTD9GMIdLZZ2X6_KcCFuO0seWbY-EBYtvVPplSZkfN8rs2E2i0W0BmWNyXnUmMUzXcXXkURaxxry6Qv9fHh9PiB5Z0HpL-OSI9HyS_QoWkzvdnJyw9sZyO25EinKCQtg_NLG8VSbP3mrRfSvO6zvPoEX4e-KbA5vp-h8W7G8wg_3lmCrwncB0rfLiEqCnfRd_gN82eChlFgUEXtlHMxKRRHkhS4kdmFpedOzAVhCd0UWjtHX1Ms3CKgieds-XIOoQWjQVGAWduoAtawz4MnWxnGRz2GSYsncAScvfEaTw/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3mh6Xvb1BOo0xNijUqInPZ1-kaCHGscZe7_ZcN3nU1oB-vnovtZeUxoPMIErGBPkE0EmCBu1IRZNdP7Ekr7s3aYx3izASVoi8hqHDLnr8vvQufb43clVnCP7PXZjlKogKQ35iT4MPZ8ISnZNB01TftOTD9GMIdLZZ2X6_KcCFuO0seWbY-EBYtvVPplSZkfN8rs2E2i0W0BmWNyXnUmMUzXcXXkURaxxry6Qv9fHh9PiB5Z0HpL-OSI9HyS_QoWkzvdnJyw9sZyO25EinKCQtg_NLG8VSbP3mrRfSvO6zvPoEX4e-KbA5vp-h8W7G8wg_3lmCrwncB0rfLiEqCnfRd_gN82eChlFgUEXtlHMxKRRHkhS4kdmFpedOzAVhCd0UWjtHX1Ms3CKgieds-XIOoQWjQVGAWduoAtawz4MnWxnGRz2GSYsncAScvfEaTw
+is_cover: false
+sort_order: 4
+caption: Brightside Boatworks LLC
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAUo3myruVr9TLzB4ZGEW0e!2e10!4m2!3m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d
+
+--- entity_photos [row 9 of 16] ---
+id: deb2f00d-4967-42cd-a867-35273d939ce7
+entity_slug: brightside-boatworks
+url: https://places.googleapis.com/v1/places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3ka7aN74Yx5B9mRmJgrhaC14dmpBTSC_JVYj3nM2QvqeKXzopnPMtiSaD25VOf3b4_HggXgHebThs9qOv9zU8qrxYNNDUzl-PGZeP1eaBeIPykRe4g0FXwXoMIODWm8NFntAq5o32bDPD63xAtOXicxMfJlcrDR-Ol2mWD5eUrl2WMDiWYpu20-KwoTJrRBW36L3nRpB2Qd3_Kil17F5OvSWglNt2rQV-5WxRB4t7rTqljynwIHPZ-TJPfGp_0p6GqVtKk4PhlAJDRPsl4zB2v-UIw_Mnkq8AXuOZ_e9qYpYN79EhcWJLM0P2bzzJeTzPBGR6imFkb44PjvXb_gd0UEtK-PLBWVK0p7don41mQYKzuJCnPQY7L1HHU7HDcwV4dv4LHEXYIGIYYYDNmJuMDHb53KwlThOQWnkyuKn3-JBuTxl7LLCEWb6bIP9Gk8/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3ka7aN74Yx5B9mRmJgrhaC14dmpBTSC_JVYj3nM2QvqeKXzopnPMtiSaD25VOf3b4_HggXgHebThs9qOv9zU8qrxYNNDUzl-PGZeP1eaBeIPykRe4g0FXwXoMIODWm8NFntAq5o32bDPD63xAtOXicxMfJlcrDR-Ol2mWD5eUrl2WMDiWYpu20-KwoTJrRBW36L3nRpB2Qd3_Kil17F5OvSWglNt2rQV-5WxRB4t7rTqljynwIHPZ-TJPfGp_0p6GqVtKk4PhlAJDRPsl4zB2v-UIw_Mnkq8AXuOZ_e9qYpYN79EhcWJLM0P2bzzJeTzPBGR6imFkb44PjvXb_gd0UEtK-PLBWVK0p7don41mQYKzuJCnPQY7L1HHU7HDcwV4dv4LHEXYIGIYYYDNmJuMDHb53KwlThOQWnkyuKn3-JBuTxl7LLCEWb6bIP9Gk8
+is_cover: false
+sort_order: 5
+caption: Brightside Boatworks LLC
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhC2th4M9CJ-V0OgCvFqxOze!2e10!4m2!3m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d
+
+--- entity_photos [row 10 of 16] ---
+id: 4252b0bc-caf8-4133-a13a-fc4fbdd72655
+entity_slug: brightside-boatworks
+url: https://places.googleapis.com/v1/places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3kikH2rBGdpGYLyD0kA4-4MreFqWWkD-xRWq7iwcY2y8KSI3uD4_b_0waNY3AmHR7YLIGYwjRzeHV-MBM8sADIyTPBQFNuvFrnY_frAiQmII3ZG59g73lr9jTRGXRGehJzl16jZv8CVHulk1HGeQNd28Dwhsyrh0Xuzbp5O0yOghGlHUsbS4iL822gEB53WX5Qs2NJhZppG9jxONaQDP9eTLCA4kb64dIyA3aDu3ecMWUfoCHwsrSnNIv_vdp3A5ottw10mHY4endoxLKwSDmNvPe1HGwrnAJxw-R5BXsfumP4dFVQjrI2UDd4DKdSJZnH1tHb-8NYyNa-5-zwXuedWGh4XcnyDnzIr9Cc6TQWonqIK-bsR2wzOI2DE5V_tl0Cd3u7ff-6L4gl4Wsx_vqlzqyd3LGowDGjapLDkjt0WSBFN60gmKioqLwbmm4Ww/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3kikH2rBGdpGYLyD0kA4-4MreFqWWkD-xRWq7iwcY2y8KSI3uD4_b_0waNY3AmHR7YLIGYwjRzeHV-MBM8sADIyTPBQFNuvFrnY_frAiQmII3ZG59g73lr9jTRGXRGehJzl16jZv8CVHulk1HGeQNd28Dwhsyrh0Xuzbp5O0yOghGlHUsbS4iL822gEB53WX5Qs2NJhZppG9jxONaQDP9eTLCA4kb64dIyA3aDu3ecMWUfoCHwsrSnNIv_vdp3A5ottw10mHY4endoxLKwSDmNvPe1HGwrnAJxw-R5BXsfumP4dFVQjrI2UDd4DKdSJZnH1tHb-8NYyNa-5-zwXuedWGh4XcnyDnzIr9Cc6TQWonqIK-bsR2wzOI2DE5V_tl0Cd3u7ff-6L4gl4Wsx_vqlzqyd3LGowDGjapLDkjt0WSBFN60gmKioqLwbmm4Ww
+is_cover: false
+sort_order: 6
+caption: Brightside Boatworks LLC
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCtg-mS-MhsD360m5ogmBEF!2e10!4m2!3m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d
+
+--- entity_photos [row 11 of 16] ---
+id: e30bf8fe-f122-4af4-bb5a-b4872688b950
+entity_slug: brightside-boatworks
+url: https://places.googleapis.com/v1/places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3nwL-ReRoPRbiqQ_IqUhz7RfOqyFD7WZldHxAm84BpC4I3Ll4PANU_qscJkvT7qSTdg7Bd6ThAK-uUobbq-rf2lfI9GrgMcNRAE-006RNhxT4f3PiAWdUDGE5j9FjNqkacognEnFD9AYuZ8e28tao7l_stQSat3H5qd-fgwh6Ys9BikLCbN7n4UMyNSjBZ5YwkplCOweWld2Hv2BJkhoKifsh26aBgsdFU1Ki5Jpo08UKlS3XhLsSsCtt4kifImFU61v7WRUKWqXQ1wtlwuIKGqa6w8CpQNB6XcC7nA8eujgIgEF8RVwArk8Pi7hBMJ8GY7-7PY6udIFFmzDur76pe06nDppR7o64HIBGktCv-R-3FcqyUFEia3dyqCqFA9-LlCd8WSk_QDAnrv9d4AiwS4EIF80foFZ8K-bjKSu5s5A40_ZgRcU4O4dGiyjMqk/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3nwL-ReRoPRbiqQ_IqUhz7RfOqyFD7WZldHxAm84BpC4I3Ll4PANU_qscJkvT7qSTdg7Bd6ThAK-uUobbq-rf2lfI9GrgMcNRAE-006RNhxT4f3PiAWdUDGE5j9FjNqkacognEnFD9AYuZ8e28tao7l_stQSat3H5qd-fgwh6Ys9BikLCbN7n4UMyNSjBZ5YwkplCOweWld2Hv2BJkhoKifsh26aBgsdFU1Ki5Jpo08UKlS3XhLsSsCtt4kifImFU61v7WRUKWqXQ1wtlwuIKGqa6w8CpQNB6XcC7nA8eujgIgEF8RVwArk8Pi7hBMJ8GY7-7PY6udIFFmzDur76pe06nDppR7o64HIBGktCv-R-3FcqyUFEia3dyqCqFA9-LlCd8WSk_QDAnrv9d4AiwS4EIF80foFZ8K-bjKSu5s5A40_ZgRcU4O4dGiyjMqk
+is_cover: false
+sort_order: 7
+caption: Brightside Boatworks LLC
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhD4KXD6-qnLb-jrOKRGW7HF!2e10!4m2!3m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d
+
+--- entity_photos [row 12 of 16] ---
+id: 2d4a7058-b121-4a43-a87f-18e0608cd414
+entity_slug: brightside-boatworks
+url: https://places.googleapis.com/v1/places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3mZtRxB12l_adzT8eeTOeV8DHReCcTCbsy0CNHqoc30mF5HYdRVx4SUfC3lzwRbj04wQloVT0lXybr6aowlhYgLiQgf_ADNCcf8ozbqxqBWMuaKa_iajTvbfeqIPWde8Y_N9fzn5wAa5oRRrgV2zrOlw0JDe_wbRjRfPdTWFgIUj8bn28Dnqem0oAIMtQZvdc3eRWjwde5h7WfO8iaA8vKVmiATNAllquh_46LuSeEsq7M9DxU8wd6kx6XlgwDdZHmt6nfJex0zHYTQMTS23LQYG1b8ghbdmKP5AAiPjeCOKEt2B3_qA7F4h37Et1pLDCu6vTQrGRoJnmKLf2yy20eomByyEOXSph0qzeIGcI2uK64H50hJCpWMnKWAbL9XMfCCpdSAOrDt5F1S17u84yOmEa0qdz6VihhnfC4vOsFqPiHQ3iQ13OcbkmIwXYpv/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3mZtRxB12l_adzT8eeTOeV8DHReCcTCbsy0CNHqoc30mF5HYdRVx4SUfC3lzwRbj04wQloVT0lXybr6aowlhYgLiQgf_ADNCcf8ozbqxqBWMuaKa_iajTvbfeqIPWde8Y_N9fzn5wAa5oRRrgV2zrOlw0JDe_wbRjRfPdTWFgIUj8bn28Dnqem0oAIMtQZvdc3eRWjwde5h7WfO8iaA8vKVmiATNAllquh_46LuSeEsq7M9DxU8wd6kx6XlgwDdZHmt6nfJex0zHYTQMTS23LQYG1b8ghbdmKP5AAiPjeCOKEt2B3_qA7F4h37Et1pLDCu6vTQrGRoJnmKLf2yy20eomByyEOXSph0qzeIGcI2uK64H50hJCpWMnKWAbL9XMfCCpdSAOrDt5F1S17u84yOmEa0qdz6VihhnfC4vOsFqPiHQ3iQ13OcbkmIwXYpv
+is_cover: false
+sort_order: 8
+caption: Brightside Boatworks LLC
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhACHa9akNr0Ga9DfFeqPU8v!2e10!4m2!3m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d
+
+--- entity_photos [row 13 of 16] ---
+id: b42b227f-510f-409e-9b93-ae65d8d87230
+entity_slug: brightside-boatworks
+url: https://places.googleapis.com/v1/places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3lfDINgT8_03-IeZaBOXSRYtzFMF-unZcKV5V-8w58IGZsU411XR-AszDgbgYUtHX9YX4eR5kG_boS6YHjI4D6JFkeSQT0E-KunD6txK2YIO2v87uGHRNmnZGmwFx7Iuj7-_m1hjbpGAToIc6lrN8SS3bT4xZmkyHdBnTkL636l2HHoY7JbRusF42d-5KUVf9_N5JODsVo1B9lCtEn_tKsKaGYz99Y_vITddpWQDYkkuYu5iQETSYBxjSJHSRkSX4-nYuVlBZmbtgoXU1UvMpODUkvENOhUH_W_QzMMPBN1MJOwg3VG22N_ftHeLULrjTFG7VJL-igcFBVRY2G2KnAyM1NCNvMLgmNQ9IBZZtK-K3gD-C7F8qADyTaAMuMQNXXxaMCVf2OTzIw7JUsWTx9lxYHrLVyMU9SOxjjV2oAA2zWczQG_Ks2J1ud7AA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJwfm0MEcPmogRna1QI0MnQyg/photos/AaVGc3lfDINgT8_03-IeZaBOXSRYtzFMF-unZcKV5V-8w58IGZsU411XR-AszDgbgYUtHX9YX4eR5kG_boS6YHjI4D6JFkeSQT0E-KunD6txK2YIO2v87uGHRNmnZGmwFx7Iuj7-_m1hjbpGAToIc6lrN8SS3bT4xZmkyHdBnTkL636l2HHoY7JbRusF42d-5KUVf9_N5JODsVo1B9lCtEn_tKsKaGYz99Y_vITddpWQDYkkuYu5iQETSYBxjSJHSRkSX4-nYuVlBZmbtgoXU1UvMpODUkvENOhUH_W_QzMMPBN1MJOwg3VG22N_ftHeLULrjTFG7VJL-igcFBVRY2G2KnAyM1NCNvMLgmNQ9IBZZtK-K3gD-C7F8qADyTaAMuMQNXXxaMCVf2OTzIw7JUsWTx9lxYHrLVyMU9SOxjjV2oAA2zWczQG_Ks2J1ud7AA
+is_cover: false
+sort_order: 9
+caption: Brightside Boatworks LLC
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhB8wnqvRknDYhzfhJbUkwns!2e10!4m2!3m1!1s0x889a0f4730b4f9c1:0x284327432350ad9d
+
+--- entity_photos [row 14 of 16] ---
+id: f7b80171-a283-497d-9f72-2d24db94975a
+entity_slug: brightside-boatworks
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/brightside-boatworks/photo_01.jpg
+is_cover: false
+sort_order: 2
+photo_type: resource
+source_name: bookable_resource
+resource_id: b53ce79a-9004-4491-8da0-4d69280e82db
+
+--- entity_photos [row 15 of 16] ---
+id: a8b58a7b-22c3-455e-b626-69f4a7ae13dd
+entity_slug: brightside-boatworks
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/brightside-boatworks/photo_03.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: b53ce79a-9004-4491-8da0-4d69280e82db
+
+--- entity_photos [row 16 of 16] ---
+id: 46d239e8-75db-420e-9558-94f5def2b518
+entity_slug: brightside-boatworks
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/brightside-boatworks/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: b53ce79a-9004-4491-8da0-4d69280e82db
+
+####################################################################################################
+# TABLE: entity_reviews   -   1 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 1] ---
+id: cdfd6ec5-44b1-4bd7-bde3-6adbb09a156b
+entity_slug: brightside-boatworks
+reviewer_name: Edwin Lamberth
+rating: 5
+body: Best boat detailing folks in the business. I would not use anyone else!  Your boat will never look better when they are done
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-05-30T15:22:06.669089+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   2 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 2] ---
+id: c0d8bf30-c212-4f11-94fc-bcfac195e99d
+entity_slug: brightside-boatworks
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 2 of 2] ---
+id: b3ee61de-fa6a-4202-b4b4-1186694c0775
+entity_slug: brightside-boatworks
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 9616d6c1-b724-4736-b283-df5fac55ee8d
+entity_slug: brightside-boatworks
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: offer
+ref_id: 13370
+entity_slug: brightside-boatworks
+title: Brightside Boatworks
+category: rental
+search_vector: 'boatwork':2A 'brightsid':1A
+
+--- search_index [row 2 of 2] ---
+ref_type: business
+ref_id: brightside-boatworks
+entity_slug: brightside-boatworks
+title: Brightside Boatworks
+category: service
+search_vector: 'boatwork':2A 'brightsid':1A

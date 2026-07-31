@@ -1,0 +1,1969 @@
+====================================================================================================
+SLUG: heron-pointe-at-the-wharf
+NAME: Heron Pointe at the Wharf
+INDUSTRY: event_venue
+SUBTYPE: event_venue
+PARENT: the-wharf
+TABLES WITH DATA: 21
+TOTAL ROWS: 124
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (8 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (20 rows)
+  entity  (1 rows)
+  entity_attributes  (6 rows)
+  entity_completeness_v  (1 rows)
+  entity_conflicts  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_modules  (16 rows)
+  entity_nearby_landmark_types  (18 rows)
+  entity_nearby_landmarks  (5 rows)
+  entity_photos  (23 rows)
+  entity_reviews  (5 rows)
+  entity_tags  (6 rows)
+  entity_theme  (1 rows)
+  industry_event_venue  (1 rows)
+  legacy_photo_migration_queue  (2 rows)
+  search_index  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: heron-pointe-at-the-wharf
+name: Heron Pointe at the Wharf
+planner_category: food_drink
+data_quality_score: 65
+issues: missing_summary|missing_hours|missing_menu|missing_faqs
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: true
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: true
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   8 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 8] ---
+id: 25461
+entity_slug: heron-pointe-at-the-wharf
+intent_tag: best_for:casual_lunch_or_dinner
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 8] ---
+id: 25462
+entity_slug: heron-pointe-at-the-wharf
+intent_tag: experience:groups_events
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 8] ---
+id: 25463
+entity_slug: heron-pointe-at-the-wharf
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 8] ---
+id: 25464
+entity_slug: heron-pointe-at-the-wharf
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 8] ---
+id: 25465
+entity_slug: heron-pointe-at-the-wharf
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 8] ---
+id: 25466
+entity_slug: heron-pointe-at-the-wharf
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 8] ---
+id: 25467
+entity_slug: heron-pointe-at-the-wharf
+intent_tag: missing:missing_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 8] ---
+id: 25468
+entity_slug: heron-pointe-at-the-wharf
+intent_tag: missing:missing_faqs
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: heron-pointe-at-the-wharf
+name: Heron Pointe at the Wharf
+is_active: t
+planner_category: food_drink
+entity_type: restaurant
+entity_subtype: event_venue
+city: Orange Beach
+state: AL
+address_line_1: 4985 Wharf Pkwy E
+latitude: 30.2967339
+longitude: -87.6270954
+rating: 4.8
+review_count: 29
+hero_image_url: /photos/heron-pointe-at-the-wharf/photo_01.jpg
+voice_summary: Heron Pointe at the Wharf in Orange Beach is best for casual lunch or dinner. Experience tags: groups_events.
+planner_summary: Heron Pointe at the Wharf in Orange Beach is a food drink listing in Gulf Coast Radar.
+best_for: casual lunch or dinner
+not_best_for: nothing specific flagged
+experience_tags: groups_events
+service_tags: accessibility
+search_keywords: event_venue|point_of_interest|establishment|groups_events|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 20
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 6
+faq_count: 0
+data_quality_score: 65
+data_gaps: missing_summary|missing_hours|missing_menu|missing_faqs
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   20 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 20] ---
+id: 4651
+entity_slug: heron-pointe-at-the-wharf
+entity_name: Heron Pointe at the Wharf
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/heron-pointe-at-the-wharf/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 20] ---
+id: 4882
+entity_slug: heron-pointe-at-the-wharf
+entity_name: Heron Pointe at the Wharf
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/heron-pointe-at-the-wharf/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 20] ---
+id: 4959
+entity_slug: heron-pointe-at-the-wharf
+entity_name: Heron Pointe at the Wharf
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/heron-pointe-at-the-wharf/photo_08.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 20] ---
+id: 9909
+entity_slug: heron-pointe-at-the-wharf
+entity_name: Heron Pointe at the Wharf
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/heron-pointe-at-the-wharf/photo_10.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 20] ---
+id: 9912
+entity_slug: heron-pointe-at-the-wharf
+entity_name: Heron Pointe at the Wharf
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/heron-pointe-at-the-wharf/photo_07.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 20] ---
+id: 9913
+entity_slug: heron-pointe-at-the-wharf
+entity_name: Heron Pointe at the Wharf
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/heron-pointe-at-the-wharf/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 20] ---
+id: 9916
+entity_slug: heron-pointe-at-the-wharf
+entity_name: Heron Pointe at the Wharf
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/heron-pointe-at-the-wharf/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 20] ---
+id: 9919
+entity_slug: heron-pointe-at-the-wharf
+entity_name: Heron Pointe at the Wharf
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/heron-pointe-at-the-wharf/photo_09.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 20] ---
+id: 9920
+entity_slug: heron-pointe-at-the-wharf
+entity_name: Heron Pointe at the Wharf
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/heron-pointe-at-the-wharf/photo_06.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 20] ---
+id: 9922
+entity_slug: heron-pointe-at-the-wharf
+entity_name: Heron Pointe at the Wharf
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/heron-pointe-at-the-wharf/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 11 of 20] ---
+id: 18883
+entity_slug: heron-pointe-at-the-wharf
+entity_name: Heron Pointe at the Wharf
+city: Orange Beach
+url: /photos/heron-pointe-at-the-wharf/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 12 of 20] ---
+id: 18884
+entity_slug: heron-pointe-at-the-wharf
+entity_name: Heron Pointe at the Wharf
+city: Orange Beach
+url: /photos/heron-pointe-at-the-wharf/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 13 of 20] ---
+id: 18885
+entity_slug: heron-pointe-at-the-wharf
+entity_name: Heron Pointe at the Wharf
+city: Orange Beach
+url: /photos/heron-pointe-at-the-wharf/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 14 of 20] ---
+id: 18886
+entity_slug: heron-pointe-at-the-wharf
+entity_name: Heron Pointe at the Wharf
+city: Orange Beach
+url: /photos/heron-pointe-at-the-wharf/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 15 of 20] ---
+id: 18927
+entity_slug: heron-pointe-at-the-wharf
+entity_name: Heron Pointe at the Wharf
+city: Orange Beach
+url: /photos/heron-pointe-at-the-wharf/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 16 of 20] ---
+id: 18928
+entity_slug: heron-pointe-at-the-wharf
+entity_name: Heron Pointe at the Wharf
+city: Orange Beach
+url: /photos/heron-pointe-at-the-wharf/photo_06.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 17 of 20] ---
+id: 18929
+entity_slug: heron-pointe-at-the-wharf
+entity_name: Heron Pointe at the Wharf
+city: Orange Beach
+url: /photos/heron-pointe-at-the-wharf/photo_07.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 18 of 20] ---
+id: 18930
+entity_slug: heron-pointe-at-the-wharf
+entity_name: Heron Pointe at the Wharf
+city: Orange Beach
+url: /photos/heron-pointe-at-the-wharf/photo_08.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 19 of 20] ---
+id: 18970
+entity_slug: heron-pointe-at-the-wharf
+entity_name: Heron Pointe at the Wharf
+city: Orange Beach
+url: /photos/heron-pointe-at-the-wharf/photo_09.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 20 of 20] ---
+id: 18971
+entity_slug: heron-pointe-at-the-wharf
+entity_name: Heron Pointe at the Wharf
+city: Orange Beach
+url: /photos/heron-pointe-at-the-wharf/photo_10.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: c245c3ce-6ce9-4dc5-93d2-53ffe54b1340
+slug: heron-pointe-at-the-wharf
+name: Heron Pointe at the Wharf
+is_active: true
+featured: false
+entity_type: restaurant
+entity_subtype: event_venue
+description: Event Venue in Orange Beach, AL. Rated 4.8★ from 29 reviews.
+phone: (407) 222-4479
+menu_pin: 8736
+address_line_1: 4985 Wharf Pkwy E
+city: Orange Beach
+state: AL
+zip: 36561
+latitude: 30.2967339
+longitude: -87.6270954
+rating: 4.8
+review_count: 29
+hero_image_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/182061f0-df7d-4e39-bfa0-0ad8e4a17561/image_1.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T03:59:59.184491+00:00
+updated_at: 2026-07-03T16:21:47.586927+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJj9ULGd0FmogRAcRKxUuw5SM
+google_maps_uri: https://maps.google.com/?cid=2586667400473265153&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: event_venue
+formatted_address: 4985 Wharf Pkwy E, Orange Beach, AL 36561, USA
+plus_code: 862J79WF+M5
+international_phone: +1 407-222-4479
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+wheelchair_accessible_restroom: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+google_places_data: {
+  "id": "ChIJj9ULGd0FmogRAcRKxUuw5SM",
+  "types": [
+    "event_venue",
+    "point_of_interest",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3nFGahTGcUvNvlSm_paDEWP3T0cPkOSJ9UD9Rsom3NBFZByhFhi0Hgh2KA59QY9G5-MwgcTrguJdxWix4jNKbMb-X395VDdUfwmWM3kSZuuZbnYS4HH7Ttg8TQp1YCUFdxmdMJWwAwG09Zd0QC9SECaN4RQ4fzB2X8c9sdRL7iu6DJtw9F_kQtB_WEG-83kfw3cUofdTLVNalk6NCGxPK-IocqQFcJqhJUIQimShVf4EvmXiJoaLwvQqCKbffxstAL7jqAmFcHmqma5U88CQ79qmdKTN4KgmO6ppRtsrmqaJcLFYGtZ3ZxVkyHh9BOiUtyY_KGIjmr4gt1GhWJSQsCavJQa8KBtclfx_ZZmtfTBKIi_h555XQYX3LFxsP2498y56zqR--OQFkBxBCG5r0rnahdId-XYFmNYc4wTqMt1OaPR",
+      "widthPx": 3024,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDRwYjYiQE!2e10!4m2!3m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDRwYjYiQE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104657454969195496878",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWDM9y15Xh4WBpnjr_1BF3vW4uuGAoTLA6_OKv757NLf6aQvhsL=s100-p-k-no-mo",
+          "displayName": "Gulf Coast Homes Bellator Real Estate-Orange Beach"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3k70RTGClpOjAudiGGLIuDUzNLk6sh8CETKn1hFQFW85BMua0c1-KHAXsnKB5os4Zuv-Nbuoz8cw2mpm8dn1ZBZk_jYF2eJmqFPr6cQEFf2uiwA6CcvtCxfEyksGMZrsmFRimE3agbO73C08F7-sUJvfXbHPu2MF7xrb-RuelRtRg0N-kFZg0STpeaF3NwQ41uuIgxEIeRGr_E2pJi2ACTmU7DsGLqixakxeCbuxIGYAfg4opKKEFruFSg_6Jsb3AJNXXtxum5aFjdhKSCAYTLacD93XbIla687QO5b4txFVszuGtXC7ODZYEkfaMerZlBltf_BGvv0JIqkQylM7NHc8JrdMGQGsXK97U6TbDb1E-2A73s4Fgr3fS8QmDnd4YZfcX9lzsZKsHfzpo7Vg-XtdwW3VvMSK_s",
+      "widthPx": 2160,
+      "heightPx": 2160,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICM1t6qPg!2e10!4m2!3m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICM1t6qPg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/117173583466814615287",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXDm4VK6P-Ilz6MTcLIG0jsQiibvVsl5uwJCyw0hZYXltdsb3YBbA=s100-p-k-no-mo",
+          "displayName": "Alex L"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3kUzze4JFnO6l8j3yiuOfoUZV4Bl_Xf67aWx6mLv-Q2_ZyOGu85WG30fIpwY9a-DkKB9tnNh0a847KpXGrxWlE2CwrkqI01SY3MlX_FbvaCnTxdtOj09MUpaCrEoCrq76i2APqhLRVNGXt3Lvp_JOgaZkqJbHE5GZLRLEXmO3p_SetD9CpneWpB8c8WdPWTy_7q99bMddQAs37ldMZauaRxyxdzjK-zfnyeSjDkCToPEIdRFSFO4mrr0kEcN8jr8AoJWOrVSQWx1DQsyPFeqvKXCUhw47BHqTPM-1zDUHse7TkL-u9kRAKT9cNxTEQS3DodiyaTksfCnoJE72vp_hbSlKpLSHxFWn_dNP5nghw87I54rYEWR8mp-U8L7Hps_80CLkcY_zRTEAX86C57UO7D2IMAP_mzEmLpLLlz9WdeAaY",
+      "widthPx": 2448,
+      "heightPx": 3264,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICxgbrHxQE!2e10!4m2!3m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICxgbrHxQE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104261550089160926803",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjV5C8BjngQ5EfNbpOCBA4ct-S-L2XYWSFpMdErc-Kw6k98QehZDGw=s100-p-k-no-mo",
+          "displayName": "Darlene Henderson"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3ljsP75oD0N7O_BWH9DTJU7ojs4o3PKpckm7GLy7JwfhOKgdtmitLVB_mh3a2gXe1ztyBXTQBoG_zSihPL9woUHDpTSHSiniGHqkTqYxd1UJvWLyDsgDj3QLgCZJ90pk5WZKCPEiQpKBdFgD5rRRy7-rNLw8p26T-w3OEXWqPSrp_F3moEokK1IUvrO_VzKEFyPnS-UNert-cyutkZmnSUDCFlkhirjR6HjHYXKWWZXfZaO0fti-Omc3ZbBZox3ZN_F88j8EA616DcdZl7JLOFT7QTdT54zcKGnO_z_GuXXR-kIfG51qJ_nxGhkGwz9f7hB7uWUzZyuUEHpsTRWRcRQ-A2Jvs72PFV5cz87GtrsF6_Hko2qRRX-SR2Y2pzVCwLpe6vRh35PySOxiDe9UKoOBNLV_zWVqy2Qvc3TZXbmXqg0",
+      "widthPx": 2448,
+      "heightPx": 3264,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICxgbrHhQE!2e10!4m2!3m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICxgbrHhQE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104261550089160926803",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjV5C8BjngQ5EfNbpOCBA4ct-S-L2XYWSFpMdErc-Kw6k98QehZDGw=s100-p-k-no-mo",
+          "displayName": "Darlene Henderson"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3leUInRy0yQW2CnxP8wQCw3AsnT_-NzP8EyjewU4ux_2pqrHDqga71siC1gwLDOun008i_jwirAE-KG4piHQUBd32NTN-X3OAZYhVVBe6r0lAHLh9RT1WEofOR_80t5cQH_I1opO4ThytwZg5xw-aaLMVuYM66frirUJQt3h363N-hHvYFDQ7gSAMq7_GmZiy_eb72zohVQH4_CWxxYfg6cGbLoSO8sLQEl-WkGmtdAogTAlzoOm2ajMONwrsk8OWSsr0nAcTeV3pktbYbwcSz5gVoEBbg_u3QdBnGDRdDvAuWMZSWHbrn9bdkWjR0sifO1DwSYTrj43iSF-vcknMVmf8P-fFP1182Ez0vBjtYT0m35S-LNSnHoR_CEbTPRrnQsbQU1amxrJG3FCbV8XlWbBczup9k5621JJAbpypOTGj5J",
+      "widthPx": 2160,
+      "heightPx": 2160,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICM1p7FrgE!2e10!4m2!3m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICM1p7FrgE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/117173583466814615287",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXDm4VK6P-Ilz6MTcLIG0jsQiibvVsl5uwJCyw0hZYXltdsb3YBbA=s100-p-k-no-mo",
+          "displayName": "Alex L"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3msLtqxhESiBxv5Wx5Fy7YQIavheJF2k3o6VhgERAvHqz69SMzWNYutN8QNJ0StG-QIuljHzwjK3JoLRlmR_0C40EPyiyqCN4GqxoC0x7AxiHUd1sEM15aZrxZEKbw8UqUIiuvpjjYsn_2X6-p4go7ogdAP07YcHH-mA-sW9QYbtCbK71WsUwFo_tAfF0GXWOg2Jc5cONedmJsXV-VND4Z4Dqm8ZqySqG3EspHzEnuH3nkUrhS6F05peTBd-iNEtPnkaCXC4tSvModqi0kmhuElIesFXUKxvgkM9aba4qZLcATrR9Ph1Ikpn1YtHEoEuQa-1dFj8ibyVgW-DJMObl4VgF7_Ovk2LiSdcDn1QRNA96ZetzddE8LYAB5mQBRLP12JGBqigHtZeQztHV4MhUW9QhKnA6lEI5IjI-R7mkVWag",
+      "widthPx": 3456,
+      "heightPx": 3456,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDxl8W9RQ!2e10!4m2!3m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDxl8W9RQ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/114377880149710224958",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW8ueQcZ7Mflnw_vEy9NSo2yE-ylgZFaff3e5zNHvubrhRoL7lEEA=s100-p-k-no-mo",
+          "displayName": "Jennifer A"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3mnu66WEG-bzyThw1KqXNZDiHr56fMOSRu_AzSbDApJvwGM7oASA4lqndJJFT1HES1P0VEOvzkrTiIZ-TYDzI8hAs5VPgKQnDdLddNcAz6CqTCRYF37-Wvs2-uc2iJwSE17n_bLyJhmmHP_Mxi596WtLayj-Ysg-H3hIN_SRhAK1A6DF68VjyCCL9Y5dt_sPNRdQdMUMhUHceUXUQUuHwGRds9L1AZT8IZwblq1T4D_R5M5MnpHcjKN-ESAD3hS08DCJW0zw1wueuP8Wwe-IUWpIJtl7780zEqYLkf0jx2ipZK4PbjVZOKuY3FvT7qTsUs8uLy1z6gHNjFeg8Wrxlmmd93EBh8ZB4gGm6z2jyvcpHE74zxkbzdUFk9xVlHRRkMKkpustEhfSNBSpk0IuxpsVV4Z_JIjVzpHkzmLGEaVZxU",
+      "widthPx": 2160,
+      "heightPx": 2160,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICM1t6q7gE!2e10!4m2!3m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICM1t6q7gE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/117173583466814615287",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXDm4VK6P-Ilz6MTcLIG0jsQiibvVsl5uwJCyw0hZYXltdsb3YBbA=s100-p-k-no-mo",
+          "displayName": "Alex L"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3mPlBfnaYcVyHhBI2dfrvcNPeEp3LRiL_ZO4QjsjuZj0HjZNvJ3VhR-QN2d5JcILO7GsfmQdMBuYgu05i-UGO5Zaje0BXmHszMW3dEhoQN7c9gZh0mAhKfiPU5pNxrbXiGcYyD9SN722IUWxi764MIsny4xcQhTtDSJKNrgGm0P7wIev_-SulG7yuJwK_bKnOLTK5Y84PpUvkplFglx9C76pR-C6meggkt9UHZ6XtcClp0H07NShh3Ii0JXlvs94DauJw5SJteumFiAHUg_z_9-wxmLPcYIa2e1Jq8F-dqKgUtv405UmCnJ7_CDjrkYSSGEr-FEfvWlhszBgnTT2qzu1w6M-N_wRq4eVp69-iF7qvrlicx2a_xpnjf6RxUxvWgdRNKd1qCrWKNtJXHkAG2XDyvcGPnokNGB-RiQP9wYftsp",
+      "widthPx": 4048,
+      "heightPx": 3036,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDEm_bGlgE!2e10!4m2!3m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDEm_bGlgE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/102112908523425292750",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXg8t6oNKQkCxh5zuVbDLPQNtOdEv5a7kNfRWDsH_6Q4eB4r_bS=s100-p-k-no-mo",
+          "displayName": "Lauren Linder"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3kPPq9MvquJnKO6uKNvMeJv95oDEJDbd-REyurzkuKFWa9bDytBTmnSIGAX5x0y1e0beyboUM-0UkBJex34_6LInw32Yq0MmgUjiSHtyaMiNKd6LpLzhq70S2w4NsXGnCRr1VwRPwPYcTOB457cxsByMA4AWk9Ydwt6nqgEygFEhR8JvDX5tS-kFoxqhK2-lmpyCxhwG4ONxJAljR5w4mcKVOyRv4mBEqagoS4J5FGTw1iD_ofdw3gxJF6CrkuOG3wpjj9JGVQvAU6pFFpn161DVayNehtp43wOtJmgJN0Xo7ETVA1DCcAaOgz0FdfIjgAg_EYqQuH4yFPRgycnQsSG7enQPFBqMhKgFkjkTnK60bB6Shw5nUvmrCZizJX3YkvZDr0t_HCPZZmgUfNRjNbNoLLuwHQd1Ihqm_H8mMpGWQ",
+      "widthPx": 2160,
+      "heightPx": 2160,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICM1t6qGQ!2e10!4m2!3m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICM1t6qGQ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/117173583466814615287",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXDm4VK6P-Ilz6MTcLIG0jsQiibvVsl5uwJCyw0hZYXltdsb3YBbA=s100-p-k-no-mo",
+          "displayName": "Alex L"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3lH1HJuRnFtWJ_mNO9lrgRYN3kUZH9SAoUZ1aJj4roCF18Li_Pvoj378M7-zHQLCshDBsBAdedsYuMvFQTHos8gfN5f5U2ZRScws5kBPTM8uOZ4hv3TGBp2YHgkx_jfeTAfFUSPATm6EWcoazjCIGjfnX_IkERDKsM1dL5-2cxPucMw18ee_45BJDJ0juiaezaEiC8t643DphaNsMlb1HUL5_maaEV96mhbtYoiIwm1RupbXGKNtW4BN4itlwUqLZ1PcdL7_U_TdhNv4VqP5Uav4Jx3UwPoFOIN4_wrwN2ZYgzKQdOIcpVKHgHLWiNGZ4MZUJO6lMspJ8ryXIHT2AyZ8OQoY1qWw0iatMnOtX72yPySiGE6vvoVolDiC2gbT_VD3O09bCzEK48VrqyJ62wEQQVfTpPF0VP0MuGDU6iN1Q",
+      "widthPx": 4800,
+      "heightPx": 3199,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC4hsTEFw!2e10!4m2!3m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIC4hsTEFw&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/100565264287584411356",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWdzlg2pjqKegOErLMu66Q9WrWHA6h7QUzKkjQEcvgRp5cInCYF-w=s100-p-k-no-mo",
+          "displayName": "Callie Pritchett"
+        }
+      ]
+    }
+  ],
+  "rating": 4.8,
+  "reviews": [
+    {
+      "name": "places/ChIJj9ULGd0FmogRAcRKxUuw5SM/reviews/Ci9DQUlRQUNvZENodHljRjlvT21ReWREaG9iVkZGV0VSRGNUQlZaMnM1TVV0VFRsRRAB",
+      "text": {
+        "text": "Brad and the Wharf management were the best to work with. They were all extremely understanding, helpful, and trustworthy. One guest lost a diamond earring, and management found it that day on the property. Thank you for everything!!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-12-03T21:05:47.541198513Z",
+      "originalText": {
+        "text": "Brad and the Wharf management were the best to work with. They were all extremely understanding, helpful, and trustworthy. One guest lost a diamond earring, and management found it that day on the property. Thank you for everything!!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21ReWREaG9iVkZGV0VSRGNUQlZaMnM1TVV0VFRsRRAB!2m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT21ReWREaG9iVkZGV0VSRGNUQlZaMnM1TVV0VFRsRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/110093726169339735729/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJddtmu0IEqncUzEZQexSMEl7RD042r_4TjLjtD_hcj46k9_A=s128-c0x00000000-cc-rp-mo-ba2",
+        "displayName": "Abigail Roberts"
+      },
+      "relativePublishTimeDescription": "6 months ago"
+    },
+    {
+      "name": "places/ChIJj9ULGd0FmogRAcRKxUuw5SM/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pBd05VOTJWRUYxWXpSM1RqQjZRV3RQWVMwMU0xRRAB",
+      "text": {
+        "text": "Attended a wedding here. It was perfect! They set up a large tent to the side of the house for the reception. Beautiful!!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-11-16T12:56:36.099677834Z",
+      "originalText": {
+        "text": "Attended a wedding here. It was perfect! They set up a large tent to the side of the house for the reception. Beautiful!!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pBd05VOTJWRUYxWXpSM1RqQjZRV3RQWVMwMU0xRRAB!2m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2pBd05VOTJWRUYxWXpSM1RqQjZRV3RQWVMwMU0xRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/109244193003555964919/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX0_205PkJLBHJglPvZTISTWYzkMuReOF7J2AAh-gFDW7qjLqh7=s128-c0x00000000-cc-rp-mo-ba4",
+        "displayName": "Teresa Clay"
+      },
+      "relativePublishTimeDescription": "6 months ago"
+    },
+    {
+      "name": "places/ChIJj9ULGd0FmogRAcRKxUuw5SM/reviews/ChZDSUhNMG9nS0VJQ0FnSURLaXN2ZkpBEAE",
+      "text": {
+        "text": "Absolutely, positively one of the nicest venues we have visited. And I've been to a LOT of venues. If you're ever invited to this place, I don't care if you have to walk there from Jackson, Mississippi. It will be worth every step.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2021-05-07T03:28:40.804496Z",
+      "originalText": {
+        "text": "Absolutely, positively one of the nicest venues we have visited. And I've been to a LOT of venues. If you're ever invited to this place, I don't care if you have to walk there from Jackson, Mississippi. It will be worth every step.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURLaXN2ZkpBEAE!2m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURLaXN2ZkpBEAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/115538368270378156041/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUh2TeTWESCPqrqyX5aftc_wwjZVR_S7DMp_UkvHa_W1U2wMo9E=s128-c0x00000000-cc-rp-mo-ba4",
+        "displayName": "Kevin Adair"
+      },
+      "relativePublishTimeDescription": "5 years ago"
+    },
+    {
+      "name": "places/ChIJj9ULGd0FmogRAcRKxUuw5SM/reviews/Ci9DQUlRQUNvZENodHljRjlvT205dldHc3pjM1JCYkRsaU1FMVFjVTg1V1ZGRmQwRRAB",
+      "text": {
+        "text": "Beautiful wedding venue. Almost makes me want to get married again…but not quite.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-09-30T00:21:35.964796725Z",
+      "originalText": {
+        "text": "Beautiful wedding venue. Almost makes me want to get married again…but not quite.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT205dldHc3pjM1JCYkRsaU1FMVFjVTg1V1ZGRmQwRRAB!2m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT205dldHc3pjM1JCYkRsaU1FMVFjVTg1V1ZGRmQwRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/110017328529270586164/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVmsOr8NK_Pfjq6YnwSh6Qz-V3x_Guvm_fOD9B-wAPlbfeM9a4CjQ=s128-c0x00000000-cc-rp-mo-ba4",
+        "displayName": "Doug Bounds"
+      },
+      "relativePublishTimeDescription": "8 months ago"
+    },
+    {
+      "name": "places/ChIJj9ULGd0FmogRAcRKxUuw5SM/reviews/ChZDSUhNMG9nS0VJUHR1UFNDMXNieEpBEAE",
+      "text": {
+        "text": "Brad and his team were fantastic to work with. He made sure everything was ready at the venue for\nour parties. The venue is perfect for all celebrations. Highly recommend!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-05-26T13:48:08.936852Z",
+      "originalText": {
+        "text": "Brad and his team were fantastic to work with. He made sure everything was ready at the venue for\nour parties. The venue is perfect for all celebrations. Highly recommend!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJUHR1UFNDMXNieEpBEAE!2m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJUHR1UFNDMXNieEpBEAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/111444697653548198672/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVi65IIIybdh55FP4M0bJBBACuj5UKtKt9r0PqTkvHSze835Go=s128-c0x00000000-cc-rp-mo-ba2",
+        "displayName": "Cindy Nabors"
+      },
+      "relativePublishTimeDescription": "a year ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.2967339,
+    "longitude": -87.6270954
+  },
+  "plusCode": {
+    "globalCode": "862J79WF+M5",
+    "compoundCode": "79WF+M5 Orange Beach, AL, USA"
+  },
+  "restroom": true,
+  "viewport": {
+    "low": {
+      "latitude": 30.2952168197085,
+      "longitude": -87.62827828029151
+    },
+    "high": {
+      "latitude": 30.2979147802915,
+      "longitude": -87.6255803197085
+    }
+  },
+  "displayName": {
+    "text": "Heron Pointe at the Wharf",
+    "languageCode": "en"
+  },
+  "primaryType": "event_venue",
+  "googleMapsUri": "https://maps.google.com/?cid=2586667400473265153&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "paymentOptions": {
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=2586667400473265153&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05dd190bd58f:0x23e5b04bc54ac401!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05dd190bd58f:0x23e5b04bc54ac401!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05dd190bd58f:0x23e5b04bc54ac401!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "userRatingCount": 29,
+  "adrFormatAddress": "<span class=\"street-address\">4985 Wharf Pkwy E</span>, <span class=\"locality\">Orange Beach</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36561</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "4985 Wharf Pkwy E, Orange Beach, AL 36561, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "4985",
+      "shortText": "4985",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Wharf Parkway East",
+      "shortText": "Wharf Pkwy E",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Orange Beach",
+      "shortText": "Orange Beach",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36561",
+      "shortText": "36561",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "landmarks": [
+      {
+        "name": "places/ChIJnXObmrYHmogRyKjo335Hjyc",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJnXObmrYHmogRyKjo335Hjyc",
+        "displayName": {
+          "text": "The Wharf Amphitheater",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "AROUND_THE_CORNER",
+        "travelDistanceMeters": 136.47075,
+        "straightLineDistanceMeters": 183.26482
+      },
+      {
+        "name": "places/ChIJjUVMSMMFmogR6PCDJOYkPio",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJjUVMSMMFmogR6PCDJOYkPio",
+        "displayName": {
+          "text": "Wharf",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "DOWN_THE_ROAD",
+        "travelDistanceMeters": 256.39474,
+        "straightLineDistanceMeters": 242.08133
+      },
+      {
+        "name": "places/ChIJjUVMSMMFmogRb0-XfuWyIEY",
+        "types": [
+          "bar",
+          "establishment",
+          "food",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJjUVMSMMFmogRb0-XfuWyIEY",
+        "displayName": {
+          "text": "Ginny Lane Bar and Grill",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 389.43054,
+        "straightLineDistanceMeters": 298.8633
+      },
+      {
+        "name": "places/ChIJn9f8HN0FmogRioNaU4U3I0c",
+        "types": [
+          "atm",
+          "bar",
+          "establishment",
+          "finance",
+          "food",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJn9f8HN0FmogRioNaU4U3I0c",
+        "displayName": {
+          "text": "Island Time Daiquiris & Pizza at The Wharf",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "DOWN_THE_ROAD",
+        "travelDistanceMeters": 217.46997,
+        "straightLineDistanceMeters": 217.2812
+      },
+      {
+        "name": "places/ChIJP3KjbsQFmogROsuRYtNn7qU",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJP3KjbsQFmogROsuRYtNn7qU",
+        "displayName": {
+          "text": "The Wharf Marina",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 313.9084,
+        "straightLineDistanceMeters": 298.8633
+      }
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Event Venue",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "nationalPhoneNumber": "(407) 222-4479",
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true,
+    "wheelchairAccessibleRestroom": true
+  },
+  "shortFormattedAddress": "4985 Wharf Pkwy E, Orange Beach",
+  "primaryTypeDisplayName": {
+    "text": "Event Venue",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 407-222-4479"
+}
+restroom: true
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 4985 Wharf Pkwy E, Orange Beach
+national_phone: (407) 222-4479
+search_vector: 'beach':9 'event':6 'heron':1A 'orang':8 'point':2A 'venu':7 'wharf':5A
+primary_type_display: Event Venue
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=2586667400473265153&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05dd190bd58f:0x23e5b04bc54ac401!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05dd190bd58f:0x23e5b04bc54ac401!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05dd190bd58f:0x23e5b04bc54ac401!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "landmarks": [
+    {
+      "name": "places/ChIJnXObmrYHmogRyKjo335Hjyc",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJnXObmrYHmogRyKjo335Hjyc",
+      "displayName": {
+        "text": "The Wharf Amphitheater",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "AROUND_THE_CORNER",
+      "travelDistanceMeters": 136.47075,
+      "straightLineDistanceMeters": 183.26482
+    },
+    {
+      "name": "places/ChIJjUVMSMMFmogR6PCDJOYkPio",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJjUVMSMMFmogR6PCDJOYkPio",
+      "displayName": {
+        "text": "Wharf",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "DOWN_THE_ROAD",
+      "travelDistanceMeters": 256.39474,
+      "straightLineDistanceMeters": 242.08133
+    },
+    {
+      "name": "places/ChIJjUVMSMMFmogRb0-XfuWyIEY",
+      "types": [
+        "bar",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJjUVMSMMFmogRb0-XfuWyIEY",
+      "displayName": {
+        "text": "Ginny Lane Bar and Grill",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 389.43054,
+      "straightLineDistanceMeters": 298.8633
+    },
+    {
+      "name": "places/ChIJn9f8HN0FmogRioNaU4U3I0c",
+      "types": [
+        "atm",
+        "bar",
+        "establishment",
+        "finance",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJn9f8HN0FmogRioNaU4U3I0c",
+      "displayName": {
+        "text": "Island Time Daiquiris & Pizza at The Wharf",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "DOWN_THE_ROAD",
+      "travelDistanceMeters": 217.46997,
+      "straightLineDistanceMeters": 217.2812
+    },
+    {
+      "name": "places/ChIJP3KjbsQFmogROsuRYtNn7qU",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJP3KjbsQFmogROsuRYtNn7qU",
+      "displayName": {
+        "text": "The Wharf Marina",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 313.9084,
+      "straightLineDistanceMeters": 298.8633
+    }
+  ]
+}
+parent_entity_slug: the-wharf
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url | hero_image_url v2-fix 2026-07-21: repointed to a photo confirmed to actually exist
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: menu
+industry_code: event_venue
+is_parent: false
+depth: 1
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_attributes   -   6 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 6] ---
+id: d5341239-0980-43f3-aae9-01d2aec384a3
+entity_slug: heron-pointe-at-the-wharf
+category: amenity
+key: restroom
+label: Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 2 of 6] ---
+id: 629ba02e-e005-4433-9227-44bcd304eba8
+entity_slug: heron-pointe-at-the-wharf
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 3 of 6] ---
+id: b5fcba5e-f592-460d-99a7-66191dae6572
+entity_slug: heron-pointe-at-the-wharf
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 4 of 6] ---
+id: bdf35cd7-5283-469c-9854-5f43a723e8d5
+entity_slug: heron-pointe-at-the-wharf
+category: accessibility
+key: access_wheelchairAccessibleRestroom
+label: Wheelchair Accessible Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 5 of 6] ---
+id: 0ae16e43-f59f-4c18-876c-7b0aa916fbd7
+entity_slug: heron-pointe-at-the-wharf
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 6 of 6] ---
+id: 8d90501d-61bf-49c3-a690-7ab7b27fe0b7
+entity_slug: heron-pointe-at-the-wharf
+category: payment
+key: pay_acceptsCreditCards
+label: Accepts Credit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: heron-pointe-at-the-wharf
+name: Heron Pointe at the Wharf
+industry_code: event_venue
+parent_entity_slug: the-wharf
+is_parent: false
+score_of_7: 4
+
+####################################################################################################
+# TABLE: entity_conflicts   -   1 row(s)
+####################################################################################################
+
+--- entity_conflicts [row 1 of 1] ---
+id: e61434c8-8c17-4b72-8541-67254a0fd525
+entity_slug: heron-pointe-at-the-wharf
+conflict_type: duplicate_entity_cluster
+evidence: heron-pointe-at-the-wharf,heron-pointe
+recommended_handling: owner to choose canonical + merge children
+source_system: gcr_duplicate_audit
+status: open
+created_at: 2026-07-16T13:43:56.223546+00:00
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 35c09250-6a99-47b2-a917-75d9effaab1b
+entity_slug: heron-pointe-at-the-wharf
+place_uri: https://maps.google.com/?cid=2586667400473265153&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05dd190bd58f:0x23e5b04bc54ac401!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05dd190bd58f:0x23e5b04bc54ac401!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05dd190bd58f:0x23e5b04bc54ac401!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 10417
+entity_slug: heron-pointe-at-the-wharf
+google_review_name: places/ChIJj9ULGd0FmogRAcRKxUuw5SM/reviews/Ci9DQUlRQUNvZENodHljRjlvT21ReWREaG9iVkZGV0VSRGNUQlZaMnM1TVV0VFRsRRAB
+rating: 5
+review_text: Brad and the Wharf management were the best to work with. They were all extremely understanding, helpful, and trustworthy. One guest lost a diamond earring, and management found it that day on the property. Thank you for everything!!
+language_code: en
+author_name: Abigail Roberts
+author_profile_url: https://www.google.com/maps/contrib/110093726169339735729/reviews
+publish_time: 2025-12-03T21:05:47.541199+00:00
+relative_time: 6 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21ReWREaG9iVkZGV0VSRGNUQlZaMnM1TVV0VFRsRRAB!2m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 10418
+entity_slug: heron-pointe-at-the-wharf
+google_review_name: places/ChIJj9ULGd0FmogRAcRKxUuw5SM/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pBd05VOTJWRUYxWXpSM1RqQjZRV3RQWVMwMU0xRRAB
+rating: 5
+review_text: Attended a wedding here. It was perfect! They set up a large tent to the side of the house for the reception. Beautiful!!
+language_code: en
+author_name: Teresa Clay
+author_profile_url: https://www.google.com/maps/contrib/109244193003555964919/reviews
+publish_time: 2025-11-16T12:56:36.099678+00:00
+relative_time: 6 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pBd05VOTJWRUYxWXpSM1RqQjZRV3RQWVMwMU0xRRAB!2m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 10419
+entity_slug: heron-pointe-at-the-wharf
+google_review_name: places/ChIJj9ULGd0FmogRAcRKxUuw5SM/reviews/ChZDSUhNMG9nS0VJQ0FnSURLaXN2ZkpBEAE
+rating: 5
+review_text: Absolutely, positively one of the nicest venues we have visited. And I've been to a LOT of venues. If you're ever invited to this place, I don't care if you have to walk there from Jackson, Mississippi. It will be worth every step.
+language_code: en
+author_name: Kevin Adair
+author_profile_url: https://www.google.com/maps/contrib/115538368270378156041/reviews
+publish_time: 2021-05-07T03:28:40.804496+00:00
+relative_time: 5 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURLaXN2ZkpBEAE!2m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 10420
+entity_slug: heron-pointe-at-the-wharf
+google_review_name: places/ChIJj9ULGd0FmogRAcRKxUuw5SM/reviews/Ci9DQUlRQUNvZENodHljRjlvT205dldHc3pjM1JCYkRsaU1FMVFjVTg1V1ZGRmQwRRAB
+rating: 5
+review_text: Beautiful wedding venue. Almost makes me want to get married again…but not quite.
+language_code: en
+author_name: Doug Bounds
+author_profile_url: https://www.google.com/maps/contrib/110017328529270586164/reviews
+publish_time: 2025-09-30T00:21:35.964797+00:00
+relative_time: 8 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT205dldHc3pjM1JCYkRsaU1FMVFjVTg1V1ZGRmQwRRAB!2m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 10421
+entity_slug: heron-pointe-at-the-wharf
+google_review_name: places/ChIJj9ULGd0FmogRAcRKxUuw5SM/reviews/ChZDSUhNMG9nS0VJUHR1UFNDMXNieEpBEAE
+rating: 5
+review_text: Brad and his team were fantastic to work with. He made sure everything was ready at the venue for
+our parties. The venue is perfect for all celebrations. Highly recommend!
+language_code: en
+author_name: Cindy Nabors
+author_profile_url: https://www.google.com/maps/contrib/111444697653548198672/reviews
+publish_time: 2025-05-26T13:48:08.936852+00:00
+relative_time: a year ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJUHR1UFNDMXNieEpBEAE!2m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_modules   -   16 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 16] ---
+id: 15962a1e-dbb9-47ef-8e91-94ce0e82a029
+entity_slug: heron-pointe-at-the-wharf
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 16] ---
+id: eca0f0af-868e-4b80-a04f-d32b3173982b
+entity_slug: heron-pointe-at-the-wharf
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 16] ---
+id: 156d48b9-0b25-4138-a7b5-aefbefcdeec3
+entity_slug: heron-pointe-at-the-wharf
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 16] ---
+id: 730230e5-b393-47e9-85f9-8bcea92a4c3e
+entity_slug: heron-pointe-at-the-wharf
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 16] ---
+id: c9b4e664-bd32-4a03-aa6b-b83fc5b98cc4
+entity_slug: heron-pointe-at-the-wharf
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 16] ---
+id: 8ee60206-05d6-4045-9d2f-4af639bb341b
+entity_slug: heron-pointe-at-the-wharf
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 16] ---
+id: 85669a31-f1b6-496f-8338-d68c582f1c72
+entity_slug: heron-pointe-at-the-wharf
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 16] ---
+id: f80ff799-2c1c-44b9-9795-46e61b6268be
+entity_slug: heron-pointe-at-the-wharf
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 16] ---
+id: dbc6917e-c1a9-49e1-9d91-a701db81f453
+entity_slug: heron-pointe-at-the-wharf
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 16] ---
+id: a6443bec-cd50-47ee-84ed-15205fc137bc
+entity_slug: heron-pointe-at-the-wharf
+module_key: menu
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 16] ---
+id: 9d2dc637-6945-4197-867e-34ee80132f4e
+entity_slug: heron-pointe-at-the-wharf
+module_key: drinks
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 16] ---
+id: 3160c539-16d3-4d80-816a-180c0d0e2edc
+entity_slug: heron-pointe-at-the-wharf
+module_key: happy_hour
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 16] ---
+id: 654001ae-da3d-4704-badd-7238de979c63
+entity_slug: heron-pointe-at-the-wharf
+module_key: specials
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 14 of 16] ---
+id: f89963c9-c1cf-4b76-b06d-045d0f9becb2
+entity_slug: heron-pointe-at-the-wharf
+module_key: events
+enabled: true
+sort_order: 14
+
+--- entity_modules [row 15 of 16] ---
+id: 081233b8-9a9e-4538-b788-159cd2856d28
+entity_slug: heron-pointe-at-the-wharf
+module_key: loyalty
+enabled: true
+sort_order: 15
+
+--- entity_modules [row 16 of 16] ---
+id: 36c688a9-c002-453e-a284-47fcb50cf3ad
+entity_slug: heron-pointe-at-the-wharf
+module_key: booking
+enabled: true
+sort_order: 16
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   18 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 18] ---
+id: 4a38e554-418d-4f7d-88a1-fa3393e5c361
+landmark_id: 24458c7b-7d9b-4f98-ba06-97049d0d0c83
+entity_slug: heron-pointe-at-the-wharf
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 18] ---
+id: 0fa266fe-cebf-4acd-8236-8716dec260d8
+landmark_id: 24458c7b-7d9b-4f98-ba06-97049d0d0c83
+entity_slug: heron-pointe-at-the-wharf
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 18] ---
+id: 08eed2fc-c668-4e0d-9044-9f8f308fe488
+landmark_id: 11f28075-d835-4f16-8a87-3975e1d51cc4
+entity_slug: heron-pointe-at-the-wharf
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 18] ---
+id: 19d488ab-64d7-40bc-96a8-fe2e8cee27a1
+landmark_id: 11f28075-d835-4f16-8a87-3975e1d51cc4
+entity_slug: heron-pointe-at-the-wharf
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 18] ---
+id: 7f5548a5-8148-44ea-96e0-acf4e04419bc
+landmark_id: e7895b09-815f-4d28-8d22-b159842a79e7
+entity_slug: heron-pointe-at-the-wharf
+landmark_type: bar
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 18] ---
+id: e5e7fb4e-8d4f-4df1-9bd7-7f7be8cab306
+landmark_id: e7895b09-815f-4d28-8d22-b159842a79e7
+entity_slug: heron-pointe-at-the-wharf
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 18] ---
+id: 46653e92-2d95-403a-aa9a-81d7b41b4f59
+landmark_id: e7895b09-815f-4d28-8d22-b159842a79e7
+entity_slug: heron-pointe-at-the-wharf
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 18] ---
+id: 73ce76e9-c720-419c-8b06-9b029aa55830
+landmark_id: e7895b09-815f-4d28-8d22-b159842a79e7
+entity_slug: heron-pointe-at-the-wharf
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 18] ---
+id: ce529e8d-1949-450a-a9b1-4fdb1aa9d8d6
+landmark_id: e7895b09-815f-4d28-8d22-b159842a79e7
+entity_slug: heron-pointe-at-the-wharf
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 18] ---
+id: 2b460867-44ab-4f4d-a6bc-8a57738600fa
+landmark_id: 70692ed3-f403-4555-be2b-da638b49f90d
+entity_slug: heron-pointe-at-the-wharf
+landmark_type: atm
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 18] ---
+id: 7a754d41-5c2c-4e1a-8346-91223252027e
+landmark_id: 70692ed3-f403-4555-be2b-da638b49f90d
+entity_slug: heron-pointe-at-the-wharf
+landmark_type: bar
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 18] ---
+id: 0220a1c9-bfa0-4b42-84a0-2ea59595354e
+landmark_id: 70692ed3-f403-4555-be2b-da638b49f90d
+entity_slug: heron-pointe-at-the-wharf
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 18] ---
+id: fb369532-1dac-4964-ab62-e611feb522f9
+landmark_id: 70692ed3-f403-4555-be2b-da638b49f90d
+entity_slug: heron-pointe-at-the-wharf
+landmark_type: finance
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 18] ---
+id: 29091a8c-dbb8-4015-9e38-5fab8a05483c
+landmark_id: 70692ed3-f403-4555-be2b-da638b49f90d
+entity_slug: heron-pointe-at-the-wharf
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 18] ---
+id: 823899b6-ac35-403f-a821-2c0adaf54e65
+landmark_id: 70692ed3-f403-4555-be2b-da638b49f90d
+entity_slug: heron-pointe-at-the-wharf
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 18] ---
+id: 140318e7-7888-402b-bb56-77051031e5b5
+landmark_id: 70692ed3-f403-4555-be2b-da638b49f90d
+entity_slug: heron-pointe-at-the-wharf
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 18] ---
+id: 3101d4bd-6cfa-42c2-a64b-f8e424c821f8
+landmark_id: d6baef5e-e26e-4215-89de-8b288ddcca92
+entity_slug: heron-pointe-at-the-wharf
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 18] ---
+id: 2b9db061-41e3-4581-8e2a-224c572755ea
+landmark_id: d6baef5e-e26e-4215-89de-8b288ddcca92
+entity_slug: heron-pointe-at-the-wharf
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   5 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 5] ---
+id: 24458c7b-7d9b-4f98-ba06-97049d0d0c83
+entity_slug: heron-pointe-at-the-wharf
+kind: landmark
+place_id: ChIJnXObmrYHmogRyKjo335Hjyc
+name: The Wharf Amphitheater
+types: [
+  "establishment",
+  "point_of_interest"
+]
+spatial_relationship: AROUND_THE_CORNER
+travel_distance_meters: 136.47075
+straight_line_distance_meters: 183.26482
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 5] ---
+id: 11f28075-d835-4f16-8a87-3975e1d51cc4
+entity_slug: heron-pointe-at-the-wharf
+kind: landmark
+place_id: ChIJjUVMSMMFmogR6PCDJOYkPio
+name: Wharf
+types: [
+  "establishment",
+  "point_of_interest"
+]
+spatial_relationship: DOWN_THE_ROAD
+travel_distance_meters: 256.39474
+straight_line_distance_meters: 242.08133
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 5] ---
+id: e7895b09-815f-4d28-8d22-b159842a79e7
+entity_slug: heron-pointe-at-the-wharf
+kind: landmark
+place_id: ChIJjUVMSMMFmogRb0-XfuWyIEY
+name: Ginny Lane Bar and Grill
+types: [
+  "bar",
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant"
+]
+travel_distance_meters: 389.43054
+straight_line_distance_meters: 298.8633
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 5] ---
+id: 70692ed3-f403-4555-be2b-da638b49f90d
+entity_slug: heron-pointe-at-the-wharf
+kind: landmark
+place_id: ChIJn9f8HN0FmogRioNaU4U3I0c
+name: Island Time Daiquiris & Pizza at The Wharf
+types: [
+  "atm",
+  "bar",
+  "establishment",
+  "finance",
+  "food",
+  "point_of_interest",
+  "restaurant"
+]
+spatial_relationship: DOWN_THE_ROAD
+travel_distance_meters: 217.46997
+straight_line_distance_meters: 217.2812
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 5] ---
+id: d6baef5e-e26e-4215-89de-8b288ddcca92
+entity_slug: heron-pointe-at-the-wharf
+kind: landmark
+place_id: ChIJP3KjbsQFmogROsuRYtNn7qU
+name: The Wharf Marina
+types: [
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 313.9084
+straight_line_distance_meters: 298.8633
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_photos   -   23 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 23] ---
+id: 99667b01-fb56-413e-bad7-a58e4078aa81
+entity_slug: heron-pointe-at-the-wharf
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/heron-pointe-at-the-wharf/photo_10.jpg
+is_cover: false
+sort_order: 9
+
+--- entity_photos [row 2 of 23] ---
+id: 250691de-6964-4c62-828a-26ab120f7da6
+entity_slug: heron-pointe-at-the-wharf
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/heron-pointe-at-the-wharf/photo_07.jpg
+is_cover: false
+sort_order: 6
+
+--- entity_photos [row 3 of 23] ---
+id: 2142ba5a-05bb-4ccc-a8c1-d1c0a52c87ca
+entity_slug: heron-pointe-at-the-wharf
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/heron-pointe-at-the-wharf/photo_05.jpg
+is_cover: false
+sort_order: 4
+
+--- entity_photos [row 4 of 23] ---
+id: edb08f38-6f91-47ef-82dc-dea60f7791b4
+entity_slug: heron-pointe-at-the-wharf
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/heron-pointe-at-the-wharf/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 5 of 23] ---
+id: 255fb691-b221-43a6-a080-d6bf102adfff
+entity_slug: heron-pointe-at-the-wharf
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/heron-pointe-at-the-wharf/photo_09.jpg
+is_cover: false
+sort_order: 8
+
+--- entity_photos [row 6 of 23] ---
+id: 594701bf-36a5-429d-9bf8-cd1633c405e1
+entity_slug: heron-pointe-at-the-wharf
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/heron-pointe-at-the-wharf/photo_06.jpg
+is_cover: false
+sort_order: 5
+
+--- entity_photos [row 7 of 23] ---
+id: 4249354c-02e0-4adb-8d0e-853b3c28e796
+entity_slug: heron-pointe-at-the-wharf
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/heron-pointe-at-the-wharf/photo_04.jpg
+is_cover: false
+sort_order: 3
+
+--- entity_photos [row 8 of 23] ---
+id: b1d648bd-7c3f-4195-9797-6f67416b6e97
+entity_slug: heron-pointe-at-the-wharf
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/heron-pointe-at-the-wharf/photo_03.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 9 of 23] ---
+id: 232d6f2f-e71e-4d96-aadf-b3079fbcf453
+entity_slug: heron-pointe-at-the-wharf
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/heron-pointe-at-the-wharf/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 10 of 23] ---
+id: 3d99147a-5958-4f7e-8f4d-600839432859
+entity_slug: heron-pointe-at-the-wharf
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/heron-pointe-at-the-wharf/photo_08.jpg
+is_cover: false
+sort_order: 7
+
+--- entity_photos [row 11 of 23] ---
+id: 9bc88007-351c-4124-b1cd-937e01734a5d
+entity_slug: heron-pointe-at-the-wharf
+url: https://places.googleapis.com/v1/places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3nFGahTGcUvNvlSm_paDEWP3T0cPkOSJ9UD9Rsom3NBFZByhFhi0Hgh2KA59QY9G5-MwgcTrguJdxWix4jNKbMb-X395VDdUfwmWM3kSZuuZbnYS4HH7Ttg8TQp1YCUFdxmdMJWwAwG09Zd0QC9SECaN4RQ4fzB2X8c9sdRL7iu6DJtw9F_kQtB_WEG-83kfw3cUofdTLVNalk6NCGxPK-IocqQFcJqhJUIQimShVf4EvmXiJoaLwvQqCKbffxstAL7jqAmFcHmqma5U88CQ79qmdKTN4KgmO6ppRtsrmqaJcLFYGtZ3ZxVkyHh9BOiUtyY_KGIjmr4gt1GhWJSQsCavJQa8KBtclfx_ZZmtfTBKIi_h555XQYX3LFxsP2498y56zqR--OQFkBxBCG5r0rnahdId-XYFmNYc4wTqMt1OaPR/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3nFGahTGcUvNvlSm_paDEWP3T0cPkOSJ9UD9Rsom3NBFZByhFhi0Hgh2KA59QY9G5-MwgcTrguJdxWix4jNKbMb-X395VDdUfwmWM3kSZuuZbnYS4HH7Ttg8TQp1YCUFdxmdMJWwAwG09Zd0QC9SECaN4RQ4fzB2X8c9sdRL7iu6DJtw9F_kQtB_WEG-83kfw3cUofdTLVNalk6NCGxPK-IocqQFcJqhJUIQimShVf4EvmXiJoaLwvQqCKbffxstAL7jqAmFcHmqma5U88CQ79qmdKTN4KgmO6ppRtsrmqaJcLFYGtZ3ZxVkyHh9BOiUtyY_KGIjmr4gt1GhWJSQsCavJQa8KBtclfx_ZZmtfTBKIi_h555XQYX3LFxsP2498y56zqR--OQFkBxBCG5r0rnahdId-XYFmNYc4wTqMt1OaPR
+is_cover: false
+sort_order: 0
+caption: Gulf Coast Homes Bellator Real Estate-Orange Beach
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDRwYjYiQE!2e10!4m2!3m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401
+
+--- entity_photos [row 12 of 23] ---
+id: 80f3f6e0-20c7-40f1-9bc9-abaaca8e0e0b
+entity_slug: heron-pointe-at-the-wharf
+url: https://places.googleapis.com/v1/places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3k70RTGClpOjAudiGGLIuDUzNLk6sh8CETKn1hFQFW85BMua0c1-KHAXsnKB5os4Zuv-Nbuoz8cw2mpm8dn1ZBZk_jYF2eJmqFPr6cQEFf2uiwA6CcvtCxfEyksGMZrsmFRimE3agbO73C08F7-sUJvfXbHPu2MF7xrb-RuelRtRg0N-kFZg0STpeaF3NwQ41uuIgxEIeRGr_E2pJi2ACTmU7DsGLqixakxeCbuxIGYAfg4opKKEFruFSg_6Jsb3AJNXXtxum5aFjdhKSCAYTLacD93XbIla687QO5b4txFVszuGtXC7ODZYEkfaMerZlBltf_BGvv0JIqkQylM7NHc8JrdMGQGsXK97U6TbDb1E-2A73s4Fgr3fS8QmDnd4YZfcX9lzsZKsHfzpo7Vg-XtdwW3VvMSK_s/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3k70RTGClpOjAudiGGLIuDUzNLk6sh8CETKn1hFQFW85BMua0c1-KHAXsnKB5os4Zuv-Nbuoz8cw2mpm8dn1ZBZk_jYF2eJmqFPr6cQEFf2uiwA6CcvtCxfEyksGMZrsmFRimE3agbO73C08F7-sUJvfXbHPu2MF7xrb-RuelRtRg0N-kFZg0STpeaF3NwQ41uuIgxEIeRGr_E2pJi2ACTmU7DsGLqixakxeCbuxIGYAfg4opKKEFruFSg_6Jsb3AJNXXtxum5aFjdhKSCAYTLacD93XbIla687QO5b4txFVszuGtXC7ODZYEkfaMerZlBltf_BGvv0JIqkQylM7NHc8JrdMGQGsXK97U6TbDb1E-2A73s4Fgr3fS8QmDnd4YZfcX9lzsZKsHfzpo7Vg-XtdwW3VvMSK_s
+is_cover: false
+sort_order: 1
+caption: Alex L
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICM1t6qPg!2e10!4m2!3m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401
+
+--- entity_photos [row 13 of 23] ---
+id: 8a6c255f-bc2a-4c5b-b184-06bf7fe6c5dc
+entity_slug: heron-pointe-at-the-wharf
+url: https://places.googleapis.com/v1/places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3kUzze4JFnO6l8j3yiuOfoUZV4Bl_Xf67aWx6mLv-Q2_ZyOGu85WG30fIpwY9a-DkKB9tnNh0a847KpXGrxWlE2CwrkqI01SY3MlX_FbvaCnTxdtOj09MUpaCrEoCrq76i2APqhLRVNGXt3Lvp_JOgaZkqJbHE5GZLRLEXmO3p_SetD9CpneWpB8c8WdPWTy_7q99bMddQAs37ldMZauaRxyxdzjK-zfnyeSjDkCToPEIdRFSFO4mrr0kEcN8jr8AoJWOrVSQWx1DQsyPFeqvKXCUhw47BHqTPM-1zDUHse7TkL-u9kRAKT9cNxTEQS3DodiyaTksfCnoJE72vp_hbSlKpLSHxFWn_dNP5nghw87I54rYEWR8mp-U8L7Hps_80CLkcY_zRTEAX86C57UO7D2IMAP_mzEmLpLLlz9WdeAaY/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3kUzze4JFnO6l8j3yiuOfoUZV4Bl_Xf67aWx6mLv-Q2_ZyOGu85WG30fIpwY9a-DkKB9tnNh0a847KpXGrxWlE2CwrkqI01SY3MlX_FbvaCnTxdtOj09MUpaCrEoCrq76i2APqhLRVNGXt3Lvp_JOgaZkqJbHE5GZLRLEXmO3p_SetD9CpneWpB8c8WdPWTy_7q99bMddQAs37ldMZauaRxyxdzjK-zfnyeSjDkCToPEIdRFSFO4mrr0kEcN8jr8AoJWOrVSQWx1DQsyPFeqvKXCUhw47BHqTPM-1zDUHse7TkL-u9kRAKT9cNxTEQS3DodiyaTksfCnoJE72vp_hbSlKpLSHxFWn_dNP5nghw87I54rYEWR8mp-U8L7Hps_80CLkcY_zRTEAX86C57UO7D2IMAP_mzEmLpLLlz9WdeAaY
+is_cover: false
+sort_order: 2
+caption: Darlene Henderson
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICxgbrHxQE!2e10!4m2!3m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401
+
+--- entity_photos [row 14 of 23] ---
+id: d462778c-a0b5-485f-aabc-75de66496291
+entity_slug: heron-pointe-at-the-wharf
+url: https://places.googleapis.com/v1/places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3ljsP75oD0N7O_BWH9DTJU7ojs4o3PKpckm7GLy7JwfhOKgdtmitLVB_mh3a2gXe1ztyBXTQBoG_zSihPL9woUHDpTSHSiniGHqkTqYxd1UJvWLyDsgDj3QLgCZJ90pk5WZKCPEiQpKBdFgD5rRRy7-rNLw8p26T-w3OEXWqPSrp_F3moEokK1IUvrO_VzKEFyPnS-UNert-cyutkZmnSUDCFlkhirjR6HjHYXKWWZXfZaO0fti-Omc3ZbBZox3ZN_F88j8EA616DcdZl7JLOFT7QTdT54zcKGnO_z_GuXXR-kIfG51qJ_nxGhkGwz9f7hB7uWUzZyuUEHpsTRWRcRQ-A2Jvs72PFV5cz87GtrsF6_Hko2qRRX-SR2Y2pzVCwLpe6vRh35PySOxiDe9UKoOBNLV_zWVqy2Qvc3TZXbmXqg0/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3ljsP75oD0N7O_BWH9DTJU7ojs4o3PKpckm7GLy7JwfhOKgdtmitLVB_mh3a2gXe1ztyBXTQBoG_zSihPL9woUHDpTSHSiniGHqkTqYxd1UJvWLyDsgDj3QLgCZJ90pk5WZKCPEiQpKBdFgD5rRRy7-rNLw8p26T-w3OEXWqPSrp_F3moEokK1IUvrO_VzKEFyPnS-UNert-cyutkZmnSUDCFlkhirjR6HjHYXKWWZXfZaO0fti-Omc3ZbBZox3ZN_F88j8EA616DcdZl7JLOFT7QTdT54zcKGnO_z_GuXXR-kIfG51qJ_nxGhkGwz9f7hB7uWUzZyuUEHpsTRWRcRQ-A2Jvs72PFV5cz87GtrsF6_Hko2qRRX-SR2Y2pzVCwLpe6vRh35PySOxiDe9UKoOBNLV_zWVqy2Qvc3TZXbmXqg0
+is_cover: false
+sort_order: 3
+caption: Darlene Henderson
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICxgbrHhQE!2e10!4m2!3m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401
+
+--- entity_photos [row 15 of 23] ---
+id: ff53abbc-6876-4393-b5c2-d97d17e0e0ff
+entity_slug: heron-pointe-at-the-wharf
+url: https://places.googleapis.com/v1/places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3leUInRy0yQW2CnxP8wQCw3AsnT_-NzP8EyjewU4ux_2pqrHDqga71siC1gwLDOun008i_jwirAE-KG4piHQUBd32NTN-X3OAZYhVVBe6r0lAHLh9RT1WEofOR_80t5cQH_I1opO4ThytwZg5xw-aaLMVuYM66frirUJQt3h363N-hHvYFDQ7gSAMq7_GmZiy_eb72zohVQH4_CWxxYfg6cGbLoSO8sLQEl-WkGmtdAogTAlzoOm2ajMONwrsk8OWSsr0nAcTeV3pktbYbwcSz5gVoEBbg_u3QdBnGDRdDvAuWMZSWHbrn9bdkWjR0sifO1DwSYTrj43iSF-vcknMVmf8P-fFP1182Ez0vBjtYT0m35S-LNSnHoR_CEbTPRrnQsbQU1amxrJG3FCbV8XlWbBczup9k5621JJAbpypOTGj5J/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3leUInRy0yQW2CnxP8wQCw3AsnT_-NzP8EyjewU4ux_2pqrHDqga71siC1gwLDOun008i_jwirAE-KG4piHQUBd32NTN-X3OAZYhVVBe6r0lAHLh9RT1WEofOR_80t5cQH_I1opO4ThytwZg5xw-aaLMVuYM66frirUJQt3h363N-hHvYFDQ7gSAMq7_GmZiy_eb72zohVQH4_CWxxYfg6cGbLoSO8sLQEl-WkGmtdAogTAlzoOm2ajMONwrsk8OWSsr0nAcTeV3pktbYbwcSz5gVoEBbg_u3QdBnGDRdDvAuWMZSWHbrn9bdkWjR0sifO1DwSYTrj43iSF-vcknMVmf8P-fFP1182Ez0vBjtYT0m35S-LNSnHoR_CEbTPRrnQsbQU1amxrJG3FCbV8XlWbBczup9k5621JJAbpypOTGj5J
+is_cover: false
+sort_order: 4
+caption: Alex L
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICM1p7FrgE!2e10!4m2!3m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401
+
+--- entity_photos [row 16 of 23] ---
+id: 682a4cbf-ad55-476b-98c5-8e7931d34faa
+entity_slug: heron-pointe-at-the-wharf
+url: https://places.googleapis.com/v1/places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3msLtqxhESiBxv5Wx5Fy7YQIavheJF2k3o6VhgERAvHqz69SMzWNYutN8QNJ0StG-QIuljHzwjK3JoLRlmR_0C40EPyiyqCN4GqxoC0x7AxiHUd1sEM15aZrxZEKbw8UqUIiuvpjjYsn_2X6-p4go7ogdAP07YcHH-mA-sW9QYbtCbK71WsUwFo_tAfF0GXWOg2Jc5cONedmJsXV-VND4Z4Dqm8ZqySqG3EspHzEnuH3nkUrhS6F05peTBd-iNEtPnkaCXC4tSvModqi0kmhuElIesFXUKxvgkM9aba4qZLcATrR9Ph1Ikpn1YtHEoEuQa-1dFj8ibyVgW-DJMObl4VgF7_Ovk2LiSdcDn1QRNA96ZetzddE8LYAB5mQBRLP12JGBqigHtZeQztHV4MhUW9QhKnA6lEI5IjI-R7mkVWag/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3msLtqxhESiBxv5Wx5Fy7YQIavheJF2k3o6VhgERAvHqz69SMzWNYutN8QNJ0StG-QIuljHzwjK3JoLRlmR_0C40EPyiyqCN4GqxoC0x7AxiHUd1sEM15aZrxZEKbw8UqUIiuvpjjYsn_2X6-p4go7ogdAP07YcHH-mA-sW9QYbtCbK71WsUwFo_tAfF0GXWOg2Jc5cONedmJsXV-VND4Z4Dqm8ZqySqG3EspHzEnuH3nkUrhS6F05peTBd-iNEtPnkaCXC4tSvModqi0kmhuElIesFXUKxvgkM9aba4qZLcATrR9Ph1Ikpn1YtHEoEuQa-1dFj8ibyVgW-DJMObl4VgF7_Ovk2LiSdcDn1QRNA96ZetzddE8LYAB5mQBRLP12JGBqigHtZeQztHV4MhUW9QhKnA6lEI5IjI-R7mkVWag
+is_cover: false
+sort_order: 5
+caption: Jennifer A
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDxl8W9RQ!2e10!4m2!3m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401
+
+--- entity_photos [row 17 of 23] ---
+id: 9b798f98-ce30-4adc-9239-d2cfbcfaf3c4
+entity_slug: heron-pointe-at-the-wharf
+url: https://places.googleapis.com/v1/places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3mnu66WEG-bzyThw1KqXNZDiHr56fMOSRu_AzSbDApJvwGM7oASA4lqndJJFT1HES1P0VEOvzkrTiIZ-TYDzI8hAs5VPgKQnDdLddNcAz6CqTCRYF37-Wvs2-uc2iJwSE17n_bLyJhmmHP_Mxi596WtLayj-Ysg-H3hIN_SRhAK1A6DF68VjyCCL9Y5dt_sPNRdQdMUMhUHceUXUQUuHwGRds9L1AZT8IZwblq1T4D_R5M5MnpHcjKN-ESAD3hS08DCJW0zw1wueuP8Wwe-IUWpIJtl7780zEqYLkf0jx2ipZK4PbjVZOKuY3FvT7qTsUs8uLy1z6gHNjFeg8Wrxlmmd93EBh8ZB4gGm6z2jyvcpHE74zxkbzdUFk9xVlHRRkMKkpustEhfSNBSpk0IuxpsVV4Z_JIjVzpHkzmLGEaVZxU/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3mnu66WEG-bzyThw1KqXNZDiHr56fMOSRu_AzSbDApJvwGM7oASA4lqndJJFT1HES1P0VEOvzkrTiIZ-TYDzI8hAs5VPgKQnDdLddNcAz6CqTCRYF37-Wvs2-uc2iJwSE17n_bLyJhmmHP_Mxi596WtLayj-Ysg-H3hIN_SRhAK1A6DF68VjyCCL9Y5dt_sPNRdQdMUMhUHceUXUQUuHwGRds9L1AZT8IZwblq1T4D_R5M5MnpHcjKN-ESAD3hS08DCJW0zw1wueuP8Wwe-IUWpIJtl7780zEqYLkf0jx2ipZK4PbjVZOKuY3FvT7qTsUs8uLy1z6gHNjFeg8Wrxlmmd93EBh8ZB4gGm6z2jyvcpHE74zxkbzdUFk9xVlHRRkMKkpustEhfSNBSpk0IuxpsVV4Z_JIjVzpHkzmLGEaVZxU
+is_cover: false
+sort_order: 6
+caption: Alex L
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICM1t6q7gE!2e10!4m2!3m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401
+
+--- entity_photos [row 18 of 23] ---
+id: 14f005ea-2dca-471a-9873-8029e891f671
+entity_slug: heron-pointe-at-the-wharf
+url: https://places.googleapis.com/v1/places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3mPlBfnaYcVyHhBI2dfrvcNPeEp3LRiL_ZO4QjsjuZj0HjZNvJ3VhR-QN2d5JcILO7GsfmQdMBuYgu05i-UGO5Zaje0BXmHszMW3dEhoQN7c9gZh0mAhKfiPU5pNxrbXiGcYyD9SN722IUWxi764MIsny4xcQhTtDSJKNrgGm0P7wIev_-SulG7yuJwK_bKnOLTK5Y84PpUvkplFglx9C76pR-C6meggkt9UHZ6XtcClp0H07NShh3Ii0JXlvs94DauJw5SJteumFiAHUg_z_9-wxmLPcYIa2e1Jq8F-dqKgUtv405UmCnJ7_CDjrkYSSGEr-FEfvWlhszBgnTT2qzu1w6M-N_wRq4eVp69-iF7qvrlicx2a_xpnjf6RxUxvWgdRNKd1qCrWKNtJXHkAG2XDyvcGPnokNGB-RiQP9wYftsp/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3mPlBfnaYcVyHhBI2dfrvcNPeEp3LRiL_ZO4QjsjuZj0HjZNvJ3VhR-QN2d5JcILO7GsfmQdMBuYgu05i-UGO5Zaje0BXmHszMW3dEhoQN7c9gZh0mAhKfiPU5pNxrbXiGcYyD9SN722IUWxi764MIsny4xcQhTtDSJKNrgGm0P7wIev_-SulG7yuJwK_bKnOLTK5Y84PpUvkplFglx9C76pR-C6meggkt9UHZ6XtcClp0H07NShh3Ii0JXlvs94DauJw5SJteumFiAHUg_z_9-wxmLPcYIa2e1Jq8F-dqKgUtv405UmCnJ7_CDjrkYSSGEr-FEfvWlhszBgnTT2qzu1w6M-N_wRq4eVp69-iF7qvrlicx2a_xpnjf6RxUxvWgdRNKd1qCrWKNtJXHkAG2XDyvcGPnokNGB-RiQP9wYftsp
+is_cover: false
+sort_order: 7
+caption: Lauren Linder
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDEm_bGlgE!2e10!4m2!3m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401
+
+--- entity_photos [row 19 of 23] ---
+id: d9f16ca3-a9b7-4471-b096-32e9894cdf50
+entity_slug: heron-pointe-at-the-wharf
+url: https://places.googleapis.com/v1/places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3kPPq9MvquJnKO6uKNvMeJv95oDEJDbd-REyurzkuKFWa9bDytBTmnSIGAX5x0y1e0beyboUM-0UkBJex34_6LInw32Yq0MmgUjiSHtyaMiNKd6LpLzhq70S2w4NsXGnCRr1VwRPwPYcTOB457cxsByMA4AWk9Ydwt6nqgEygFEhR8JvDX5tS-kFoxqhK2-lmpyCxhwG4ONxJAljR5w4mcKVOyRv4mBEqagoS4J5FGTw1iD_ofdw3gxJF6CrkuOG3wpjj9JGVQvAU6pFFpn161DVayNehtp43wOtJmgJN0Xo7ETVA1DCcAaOgz0FdfIjgAg_EYqQuH4yFPRgycnQsSG7enQPFBqMhKgFkjkTnK60bB6Shw5nUvmrCZizJX3YkvZDr0t_HCPZZmgUfNRjNbNoLLuwHQd1Ihqm_H8mMpGWQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3kPPq9MvquJnKO6uKNvMeJv95oDEJDbd-REyurzkuKFWa9bDytBTmnSIGAX5x0y1e0beyboUM-0UkBJex34_6LInw32Yq0MmgUjiSHtyaMiNKd6LpLzhq70S2w4NsXGnCRr1VwRPwPYcTOB457cxsByMA4AWk9Ydwt6nqgEygFEhR8JvDX5tS-kFoxqhK2-lmpyCxhwG4ONxJAljR5w4mcKVOyRv4mBEqagoS4J5FGTw1iD_ofdw3gxJF6CrkuOG3wpjj9JGVQvAU6pFFpn161DVayNehtp43wOtJmgJN0Xo7ETVA1DCcAaOgz0FdfIjgAg_EYqQuH4yFPRgycnQsSG7enQPFBqMhKgFkjkTnK60bB6Shw5nUvmrCZizJX3YkvZDr0t_HCPZZmgUfNRjNbNoLLuwHQd1Ihqm_H8mMpGWQ
+is_cover: false
+sort_order: 8
+caption: Alex L
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICM1t6qGQ!2e10!4m2!3m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401
+
+--- entity_photos [row 20 of 23] ---
+id: d236d20c-ba7f-48c0-9eb9-001d1c4734c8
+entity_slug: heron-pointe-at-the-wharf
+url: https://places.googleapis.com/v1/places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3lH1HJuRnFtWJ_mNO9lrgRYN3kUZH9SAoUZ1aJj4roCF18Li_Pvoj378M7-zHQLCshDBsBAdedsYuMvFQTHos8gfN5f5U2ZRScws5kBPTM8uOZ4hv3TGBp2YHgkx_jfeTAfFUSPATm6EWcoazjCIGjfnX_IkERDKsM1dL5-2cxPucMw18ee_45BJDJ0juiaezaEiC8t643DphaNsMlb1HUL5_maaEV96mhbtYoiIwm1RupbXGKNtW4BN4itlwUqLZ1PcdL7_U_TdhNv4VqP5Uav4Jx3UwPoFOIN4_wrwN2ZYgzKQdOIcpVKHgHLWiNGZ4MZUJO6lMspJ8ryXIHT2AyZ8OQoY1qWw0iatMnOtX72yPySiGE6vvoVolDiC2gbT_VD3O09bCzEK48VrqyJ62wEQQVfTpPF0VP0MuGDU6iN1Q/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJj9ULGd0FmogRAcRKxUuw5SM/photos/AaVGc3lH1HJuRnFtWJ_mNO9lrgRYN3kUZH9SAoUZ1aJj4roCF18Li_Pvoj378M7-zHQLCshDBsBAdedsYuMvFQTHos8gfN5f5U2ZRScws5kBPTM8uOZ4hv3TGBp2YHgkx_jfeTAfFUSPATm6EWcoazjCIGjfnX_IkERDKsM1dL5-2cxPucMw18ee_45BJDJ0juiaezaEiC8t643DphaNsMlb1HUL5_maaEV96mhbtYoiIwm1RupbXGKNtW4BN4itlwUqLZ1PcdL7_U_TdhNv4VqP5Uav4Jx3UwPoFOIN4_wrwN2ZYgzKQdOIcpVKHgHLWiNGZ4MZUJO6lMspJ8ryXIHT2AyZ8OQoY1qWw0iatMnOtX72yPySiGE6vvoVolDiC2gbT_VD3O09bCzEK48VrqyJ62wEQQVfTpPF0VP0MuGDU6iN1Q
+is_cover: false
+sort_order: 9
+caption: Callie Pritchett
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC4hsTEFw!2e10!4m2!3m1!1s0x889a05dd190bd58f:0x23e5b04bc54ac401
+
+--- entity_photos [row 21 of 23] ---
+id: 7d8f2701-0572-4007-a287-a7889b463b42
+entity_slug: heron-pointe-at-the-wharf
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/182061f0-df7d-4e39-bfa0-0ad8e4a17561/image_1.jpg
+is_cover: true
+sort_order: 0
+photo_type: hero
+source_name: legacy_businesses_table
+created_at: 2026-07-21T23:25:57.434852+00:00
+
+--- entity_photos [row 22 of 23] ---
+id: 18e01d99-47a4-4085-81cf-0b2b72cc64a6
+entity_slug: heron-pointe-at-the-wharf
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/182061f0-df7d-4e39-bfa0-0ad8e4a17561/image_2.jpg
+is_cover: false
+sort_order: 101
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 23 of 23] ---
+id: f4959752-3ee0-47b8-9a35-cad8f41c5830
+entity_slug: heron-pointe-at-the-wharf
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/182061f0-df7d-4e39-bfa0-0ad8e4a17561/image_3.jpg
+is_cover: false
+sort_order: 102
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 13ad8cfa-8392-435d-b543-21ffea6e2b7f
+entity_slug: heron-pointe-at-the-wharf
+reviewer_name: Abigail Roberts
+rating: 5
+body: Brad and the Wharf management were the best to work with. They were all extremely understanding, helpful, and trustworthy. One guest lost a diamond earring, and management found it that day on the property. Thank you for everything!!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-12-03T21:05:47.541199+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: 0ebb6008-ddeb-4680-b89c-d83784e3e37e
+entity_slug: heron-pointe-at-the-wharf
+reviewer_name: Teresa Clay
+rating: 5
+body: Attended a wedding here. It was perfect! They set up a large tent to the side of the house for the reception. Beautiful!!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-11-16T12:56:36.099678+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: 30a78796-4edf-47a7-aaac-106f87f1c524
+entity_slug: heron-pointe-at-the-wharf
+reviewer_name: Kevin Adair
+rating: 5
+body: Absolutely, positively one of the nicest venues we have visited. And I've been to a LOT of venues. If you're ever invited to this place, I don't care if you have to walk there from Jackson, Mississippi. It will be worth every step.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2021-05-07T03:28:40.804496+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: cc52b6a6-725a-4f5f-93f7-83c192822e09
+entity_slug: heron-pointe-at-the-wharf
+reviewer_name: Doug Bounds
+rating: 5
+body: Beautiful wedding venue. Almost makes me want to get married again…but not quite.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-09-30T00:21:35.964797+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: fac5df09-c89f-46b1-8503-2e8c95f59add
+entity_slug: heron-pointe-at-the-wharf
+reviewer_name: Cindy Nabors
+rating: 5
+body: Brad and his team were fantastic to work with. He made sure everything was ready at the venue for
+our parties. The venue is perfect for all celebrations. Highly recommend!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-05-26T13:48:08.936852+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   6 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 6] ---
+id: 1614a298-a380-48c3-9cc6-adb5d3b7d020
+entity_slug: heron-pointe-at-the-wharf
+tag_name: event_venue
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 6] ---
+id: 55f83442-e3eb-4071-8f80-80a57ffa6fab
+entity_slug: heron-pointe-at-the-wharf
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 3 of 6] ---
+id: 05fc4927-2ca6-4e60-bc70-16a11f4d1ece
+entity_slug: heron-pointe-at-the-wharf
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 4 of 6] ---
+id: bf01ad4f-40fb-4509-8529-dc06cabdaf7c
+entity_slug: heron-pointe-at-the-wharf
+tag_name: event_venue
+tag_category: google_primary_type
+
+--- entity_tags [row 5 of 6] ---
+id: 48190e6b-409b-4685-9a3e-552fa183a62f
+entity_slug: heron-pointe-at-the-wharf
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 6 of 6] ---
+id: 66e0163d-11e9-4f91-8237-115e90ab37e2
+entity_slug: heron-pointe-at-the-wharf
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 5b052e28-8cc6-49cf-9507-065e65f94979
+entity_slug: heron-pointe-at-the-wharf
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_event_venue   -   1 row(s)
+####################################################################################################
+
+--- industry_event_venue [row 1 of 1] ---
+entity_slug: heron-pointe-at-the-wharf
+package_count: 0
+updated_at: 2026-07-20T03:17:43.35857+00:00
+
+####################################################################################################
+# TABLE: legacy_photo_migration_queue   -   2 row(s)
+####################################################################################################
+
+--- legacy_photo_migration_queue [row 1 of 2] ---
+id: 1089
+entity_slug: heron-pointe-at-the-wharf
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/182061f0-df7d-4e39-bfa0-0ad8e4a17561/image_2.jpg
+is_cover: false
+sort_order: 101
+status: linked_legacy
+created_at: 2026-07-26T00:31:07.222409+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 2 of 2] ---
+id: 506
+entity_slug: heron-pointe-at-the-wharf
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/182061f0-df7d-4e39-bfa0-0ad8e4a17561/image_3.jpg
+is_cover: false
+sort_order: 102
+status: linked_legacy
+created_at: 2026-07-26T00:31:07.222409+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: search_index   -   1 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 1] ---
+ref_type: business
+ref_id: heron-pointe-at-the-wharf
+entity_slug: heron-pointe-at-the-wharf
+title: Heron Pointe at the Wharf
+category: event_venue
+subtitle: Event Venue in Orange Beach, AL. Rated 4.8★ from 29 reviews.
+search_vector: '29':17C '4.8':15C 'al':13C 'beach':12C 'event':6B,8C 'heron':1A 'orang':11C 'point':2A 'rate':14C 'review':18C 'venu':7B,9C 'wharf':5A
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: heron-pointe-at-the-wharf

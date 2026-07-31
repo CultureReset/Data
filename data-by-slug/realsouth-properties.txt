@@ -1,0 +1,614 @@
+====================================================================================================
+SLUG: realsouth-properties
+NAME: REALSOUTH PROPERTIES
+INDUSTRY: property_management
+SUBTYPE: real_estate_agency
+TABLES WITH DATA: 19
+TOTAL ROWS: 53
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (4 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_offer  (1 rows)
+  entity_photos  (4 rows)
+  entity_tags  (9 rows)
+  entity_theme  (1 rows)
+  industry_property_management  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: realsouth-properties
+name: REALSOUTH PROPERTIES
+planner_category: local_service
+data_quality_score: 70
+issues: missing_summary|missing_lat_lng
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   4 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 4] ---
+id: 8769
+entity_slug: realsouth-properties
+intent_tag: best_for:local_information
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 4] ---
+id: 8770
+entity_slug: realsouth-properties
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 4] ---
+id: 8771
+entity_slug: realsouth-properties
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 4] ---
+id: 8772
+entity_slug: realsouth-properties
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: realsouth-properties
+name: REALSOUTH PROPERTIES
+is_active: t
+planner_category: local_service
+entity_type: service
+entity_subtype: real-estate
+review_count: 0
+website_url: http://www.realsouth.com/
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/realsouth-properties/photo_01.jpg
+voice_summary: REALSOUTH PROPERTIES is best for local information.
+planner_summary: REALSOUTH PROPERTIES is a local service listing in Gulf Coast Radar.
+best_for: local information
+not_best_for: nothing specific flagged
+search_keywords: real estate|properties|contact|alabama|gulf coast|Property Management|real-estate
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 2
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 9
+faq_count: 0
+data_quality_score: 70
+data_gaps: missing_summary|missing_lat_lng
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 8027
+entity_slug: realsouth-properties
+entity_name: REALSOUTH PROPERTIES
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/realsouth-properties/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 8028
+entity_slug: realsouth-properties
+entity_name: REALSOUTH PROPERTIES
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/realsouth-properties/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: eda58385-e4d1-417d-a3d8-9b0c0d019bde
+resource_type: service
+slug: realsouth-properties
+name: REALSOUTH PROPERTIES
+entity_slug: realsouth-properties
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/realsouth-properties/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/realsouth-properties/photo_02.jpg"
+]
+amenities: []
+faqs: []
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: f942058d7f115c8150926fbdd0b1d77b
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: eda58385-e4d1-417d-a3d8-9b0c0d019bde
+entity_slug: realsouth-properties
+slug: realsouth-properties
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/realsouth-properties/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/realsouth-properties/photo_02.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: a2a0cd16-0fe6-41fb-9f36-d0ecbb4ecc86
+slug: realsouth-properties
+name: REALSOUTH PROPERTIES
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: real_estate_agency
+subtitle: Contact Kent for Real Estate Services
+phone: 251-752-7664
+website_url: http://www.realsouth.com/
+menu_pin: 7097
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/realsouth-properties/photo_01.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T22:59:39.942759+00:00
+updated_at: 2026-06-03T22:59:39.942759+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+business_status: OPERATIONAL
+google_places_data: {}
+search_vector: 'properti':2A 'realsouth':1A
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: property_management
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: realsouth-properties
+name: REALSOUTH PROPERTIES
+industry_code: property_management
+is_parent: false
+score_of_7: 4
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: f9eec21c-23fb-4417-8038-c929d23d48ea
+entity_slug: realsouth-properties
+day_of_week: 1
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: abfed962-b222-4261-8b0b-7acc84416a71
+entity_slug: realsouth-properties
+day_of_week: 2
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: b6a1ab28-24fc-42aa-a145-04c4682f3d12
+entity_slug: realsouth-properties
+day_of_week: 3
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: ec9fa64f-a876-4dc8-8237-9f9417ee279c
+entity_slug: realsouth-properties
+day_of_week: 4
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: d6850e6b-53c4-4d05-bb2c-d172b59ee9c8
+entity_slug: realsouth-properties
+day_of_week: 5
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: d9ab3322-7d24-4c30-9ece-309d659e086e
+entity_slug: realsouth-properties
+day_of_week: 6
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 63a6c652-9386-4454-879d-caaccb6d5460
+entity_slug: realsouth-properties
+day_of_week: 0
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: realsouth-properties
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: eda58385-e4d1-417d-a3d8-9b0c0d019bde
+name: REALSOUTH PROPERTIES
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/realsouth-properties/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/realsouth-properties/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: realsouth-properties
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: eda58385-e4d1-417d-a3d8-9b0c0d019bde
+name: REALSOUTH PROPERTIES
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/realsouth-properties/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/realsouth-properties/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: 1767a384-59dd-4340-b235-203160c3302f
+entity_slug: realsouth-properties
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 062616e4-4fdc-4dbd-bc70-638fcd856e9c
+entity_slug: realsouth-properties
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: 326ca57a-eff9-45fa-8e2b-b72d9d4279c1
+entity_slug: realsouth-properties
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: 8951bd8f-5dab-4922-a622-836dc688e1ef
+entity_slug: realsouth-properties
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: aac00a63-e1cf-4c3a-9222-b1cf2628396a
+entity_slug: realsouth-properties
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: 8dae9a02-87c0-4d2b-82a7-250f0a537639
+entity_slug: realsouth-properties
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 053485e8-e515-4433-88c2-711b74897542
+entity_slug: realsouth-properties
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 5b396dd4-fea4-442e-bf22-57a4d2d759b5
+entity_slug: realsouth-properties
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: 91a1b94e-71ee-45fd-881d-88f2f67346a7
+entity_slug: realsouth-properties
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: ffff5b7e-db63-439b-aec2-829f7c460c0c
+entity_slug: realsouth-properties
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: f09e8c8a-0e4e-4c12-910f-8f9bb595aadf
+entity_slug: realsouth-properties
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: 2d44212e-3d43-4ebf-b113-da98a3d014d6
+entity_slug: realsouth-properties
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: e7fd7a10-a7c8-49a6-aca3-36bbcfc25d85
+entity_slug: realsouth-properties
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13984
+entity_slug: realsouth-properties
+name: REALSOUTH PROPERTIES
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: eda58385-e4d1-417d-a3d8-9b0c0d019bde
+
+####################################################################################################
+# TABLE: entity_photos   -   4 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 4] ---
+id: dc868e05-6fb2-4ca8-a514-23ea751c24dc
+entity_slug: realsouth-properties
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/realsouth-properties/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 4] ---
+id: d40f6b72-12b4-425f-8f45-da6834d1e684
+entity_slug: realsouth-properties
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/realsouth-properties/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 4] ---
+id: 7ec5ea67-0022-4faf-8534-3bdb428a478a
+entity_slug: realsouth-properties
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/realsouth-properties/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: eda58385-e4d1-417d-a3d8-9b0c0d019bde
+
+--- entity_photos [row 4 of 4] ---
+id: 0a2b4664-4ab8-4bf3-a288-972c7f6cf62d
+entity_slug: realsouth-properties
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/realsouth-properties/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: eda58385-e4d1-417d-a3d8-9b0c0d019bde
+
+####################################################################################################
+# TABLE: entity_tags   -   9 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 9] ---
+id: 7a929d70-354a-47cf-8af1-915ef682853b
+entity_slug: realsouth-properties
+tag_name: real estate
+
+--- entity_tags [row 2 of 9] ---
+id: 8fc51827-ebb0-4cf9-96fd-6f3b90be857f
+entity_slug: realsouth-properties
+tag_name: properties
+
+--- entity_tags [row 3 of 9] ---
+id: 697a855c-8ffc-4917-83c8-5e8b665db951
+entity_slug: realsouth-properties
+tag_name: contact
+
+--- entity_tags [row 4 of 9] ---
+id: 34f3b67d-43ee-467d-af8d-dda91ea5c3f5
+entity_slug: realsouth-properties
+tag_name: alabama
+
+--- entity_tags [row 5 of 9] ---
+id: cef9e2d3-3d7d-4917-a796-ca8499f02d0f
+entity_slug: realsouth-properties
+tag_name: gulf coast
+
+--- entity_tags [row 6 of 9] ---
+id: cadea79a-b7f2-47c7-8db3-ce17c19c3956
+entity_slug: realsouth-properties
+tag_name: Real Estate
+tag_category: category
+
+--- entity_tags [row 7 of 9] ---
+id: e0a90705-3d8f-4052-b1cb-a13668788e9c
+entity_slug: realsouth-properties
+tag_name: Property Management
+tag_category: category
+
+--- entity_tags [row 8 of 9] ---
+id: 2878f006-a90f-4364-93b6-eca4244a659f
+entity_slug: realsouth-properties
+tag_name: real-estate
+tag_category: industry
+
+--- entity_tags [row 9 of 9] ---
+id: 070696df-7494-4057-9171-694083166ef8
+entity_slug: realsouth-properties
+tag_name: real-estate
+tag_category: type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 210fa556-3470-4c97-a1be-74c3b58cfe30
+entity_slug: realsouth-properties
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_property_management   -   1 row(s)
+####################################################################################################
+
+--- industry_property_management [row 1 of 1] ---
+entity_slug: realsouth-properties
+managed_property_count: 0
+managed_unit_count: 0
+updated_at: 2026-07-21T16:19:28.491935+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: realsouth-properties
+entity_slug: realsouth-properties
+title: REALSOUTH PROPERTIES
+category: real_estate_agency
+search_vector: 'agenc':5B 'estat':4B 'properti':2A 'real':3B 'realsouth':1A
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 13984
+entity_slug: realsouth-properties
+title: REALSOUTH PROPERTIES
+category: rental
+search_vector: 'properti':2A 'realsouth':1A
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: realsouth-properties

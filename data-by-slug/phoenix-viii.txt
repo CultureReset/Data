@@ -1,0 +1,3467 @@
+====================================================================================================
+SLUG: phoenix-viii
+NAME: Phoenix VIII
+INDUSTRY: condo
+SUBTYPE: condominium_complex
+TABLES WITH DATA: 28
+TOTAL ROWS: 321
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (14 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (48 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_faqs  (13 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (2 rows)
+  entity_items_v  (2 rows)
+  entity_modules  (14 rows)
+  entity_offer  (1 rows)
+  entity_photos  (148 rows)
+  entity_reviews  (5 rows)
+  entity_section_items  (1 rows)
+  entity_section_items_metadata_backup  (1 rows)
+  entity_sections  (1 rows)
+  entity_sources  (1 rows)
+  entity_tags  (36 rows)
+  entity_theme  (2 rows)
+  faqs  (13 rows)
+  industry_condo  (1 rows)
+  recovery_import_log  (1 rows)
+  rental_units  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: phoenix-viii
+name: Phoenix VIII
+planner_category: food_drink
+data_quality_score: 60
+issues: missing_hours|missing_menu|missing_drink_menu|missing_lat_lng
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: true
+missing_drink_menu: true
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   14 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 14] ---
+id: 24142
+entity_slug: phoenix-viii
+intent_tag: best_for:families_with_kids
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 14] ---
+id: 24143
+entity_slug: phoenix-viii
+intent_tag: best_for:waterfront_or_scenic_meal
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 14] ---
+id: 24144
+entity_slug: phoenix-viii
+intent_tag: best_for:drinks_or_cocktails
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 14] ---
+id: 24145
+entity_slug: phoenix-viii
+intent_tag: experience:outdoor
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 14] ---
+id: 24146
+entity_slug: phoenix-viii
+intent_tag: experience:family_kids
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 14] ---
+id: 24147
+entity_slug: phoenix-viii
+intent_tag: experience:waterfront_scenic
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 14] ---
+id: 24148
+entity_slug: phoenix-viii
+intent_tag: experience:rainy_day
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 14] ---
+id: 24149
+entity_slug: phoenix-viii
+intent_tag: meal:drinks
+intent_category: meal_period
+confidence: 0.82
+evidence: Derived from meal flags/menu content.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 9 of 14] ---
+id: 24150
+entity_slug: phoenix-viii
+intent_tag: service:pool
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 10 of 14] ---
+id: 24151
+entity_slug: phoenix-viii
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 11 of 14] ---
+id: 24152
+entity_slug: phoenix-viii
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 12 of 14] ---
+id: 24153
+entity_slug: phoenix-viii
+intent_tag: missing:missing_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 13 of 14] ---
+id: 24154
+entity_slug: phoenix-viii
+intent_tag: missing:missing_drink_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 14 of 14] ---
+id: 24155
+entity_slug: phoenix-viii
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: phoenix-viii
+name: Phoenix VIII
+is_active: t
+planner_category: food_drink
+entity_type: condo
+entity_subtype: condo
+city: Orange Beach
+state: AL
+review_count: 0
+website_url: https://viewer.threshold360.com/?thresholdId=8490864-1285906721&preset=share
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_00.jpg
+voice_summary: Phoenix VIII in Orange Beach is best for families with kids, waterfront or scenic meal, drinks or cocktails. Experience tags: outdoor, family_kids, waterfront_scenic, rainy_day.
+planner_summary: Phoenix VIII is a beachfront condo property located in the heart of Orange Beach, offering direct access to the sugar-white sand and sweeping Gulf views. Each luxury condo faces the water, with expansive Gulf-front balconies and floor-to-ceiling windows overlooking the Gulf of Mexico and nearby Perdido Pass. Phoenix VIII features spacious 1-, 2-, and 3-bedroom vacation rentals designed to accommodate a variety of travel needs, from couples to families. Fully furnished interiors, open layouts, a
+best_for: families with kids|waterfront or scenic meal|drinks or cocktails
+not_best_for: quiet low-energy meal
+meal_periods: drinks
+experience_tags: outdoor|family_kids|waterfront_scenic|rainy_day
+service_tags: pool
+search_keywords: condo|Condos & Stays|Pool|3 Bedrooms|Outdoor pool|Sauna|Hot tub|Fitness center|Tennis court|Covered parking|Barbeque|Grill|Parking|Kiddie pool|Hot tubs|Pickleball court|Basketball|Ev chargers|Barbeque grills.|Beach access|Arcade|Restaurant|Beach chair|Elevator|Accessible|Washer and dryer|Wi-fi|drinks|outdoor|family_kids|waterfront_scenic|rainy_day
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: true
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 48
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 27
+faq_count: 13
+data_quality_score: 60
+data_gaps: missing_hours|missing_menu|missing_drink_menu|missing_lat_lng
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   48 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 48] ---
+id: 121
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_00.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 48] ---
+id: 122
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_01.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 48] ---
+id: 123
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_02.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 48] ---
+id: 124
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_03.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 48] ---
+id: 125
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_04.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 48] ---
+id: 126
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_05.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 48] ---
+id: 127
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_06.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 48] ---
+id: 128
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_07.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 48] ---
+id: 129
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_08.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 48] ---
+id: 130
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_09.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 11 of 48] ---
+id: 131
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_10.jpg
+is_cover: f
+sort_order: 10
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 12 of 48] ---
+id: 132
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_11.jpg
+is_cover: f
+sort_order: 11
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 13 of 48] ---
+id: 133
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_12.jpg
+is_cover: f
+sort_order: 12
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 14 of 48] ---
+id: 134
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_13.jpg
+is_cover: f
+sort_order: 13
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 15 of 48] ---
+id: 135
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_14.jpg
+is_cover: f
+sort_order: 14
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 16 of 48] ---
+id: 136
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_15.jpg
+is_cover: f
+sort_order: 15
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 17 of 48] ---
+id: 137
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_16.jpg
+is_cover: f
+sort_order: 16
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 18 of 48] ---
+id: 138
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_17.jpg
+is_cover: f
+sort_order: 17
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 19 of 48] ---
+id: 139
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_18.jpg
+is_cover: f
+sort_order: 18
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 20 of 48] ---
+id: 140
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_19.jpg
+is_cover: f
+sort_order: 19
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 21 of 48] ---
+id: 141
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_20.jpg
+is_cover: f
+sort_order: 20
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 22 of 48] ---
+id: 142
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_21.jpg
+is_cover: f
+sort_order: 21
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 23 of 48] ---
+id: 143
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_22.jpg
+is_cover: f
+sort_order: 22
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 24 of 48] ---
+id: 144
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_23.jpg
+is_cover: f
+sort_order: 23
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 25 of 48] ---
+id: 145
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_24.jpg
+is_cover: f
+sort_order: 24
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 26 of 48] ---
+id: 146
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_25.jpg
+is_cover: f
+sort_order: 25
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 27 of 48] ---
+id: 147
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_26.jpg
+is_cover: f
+sort_order: 26
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 28 of 48] ---
+id: 148
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_27.jpg
+is_cover: f
+sort_order: 27
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 29 of 48] ---
+id: 149
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_28.jpg
+is_cover: f
+sort_order: 28
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 30 of 48] ---
+id: 150
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_29.jpg
+is_cover: f
+sort_order: 29
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 31 of 48] ---
+id: 151
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_30.jpg
+is_cover: f
+sort_order: 30
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 32 of 48] ---
+id: 152
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_31.jpg
+is_cover: f
+sort_order: 31
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 33 of 48] ---
+id: 153
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_32.jpg
+is_cover: f
+sort_order: 32
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 34 of 48] ---
+id: 154
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_33.jpg
+is_cover: f
+sort_order: 33
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 35 of 48] ---
+id: 155
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_34.jpg
+is_cover: f
+sort_order: 34
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 36 of 48] ---
+id: 156
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_35.jpg
+is_cover: f
+sort_order: 35
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 37 of 48] ---
+id: 157
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_36.jpg
+is_cover: f
+sort_order: 36
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 38 of 48] ---
+id: 158
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_37.jpg
+is_cover: f
+sort_order: 37
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 39 of 48] ---
+id: 159
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_38.jpg
+is_cover: f
+sort_order: 38
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 40 of 48] ---
+id: 160
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_39.jpg
+is_cover: f
+sort_order: 39
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 41 of 48] ---
+id: 161
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_40.jpg
+is_cover: f
+sort_order: 40
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 42 of 48] ---
+id: 162
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_41.jpg
+is_cover: f
+sort_order: 41
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 43 of 48] ---
+id: 163
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_42.jpg
+is_cover: f
+sort_order: 42
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 44 of 48] ---
+id: 164
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_43.jpg
+is_cover: f
+sort_order: 43
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 45 of 48] ---
+id: 165
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_44.jpg
+is_cover: f
+sort_order: 44
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 46 of 48] ---
+id: 166
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_45.jpg
+is_cover: f
+sort_order: 45
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 47 of 48] ---
+id: 167
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_46.jpg
+is_cover: f
+sort_order: 46
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 48 of 48] ---
+id: 168
+entity_slug: phoenix-viii
+entity_name: Phoenix VIII
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_47.png
+is_cover: f
+sort_order: 47
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 83536c56-714b-46f8-a538-1f64d0e19d09
+resource_type: condo
+slug: phoenix-viii
+name: Phoenix VIII
+description: Phoenix VIII is a beachfront condo property located in the heart of Orange Beach, offering direct access to the sugar-white sand and sweeping Gulf views. Each luxury condo faces the water, with expansive Gulf-front balconies and floor-to-ceiling windows overlooking the Gulf of Mexico and nearby Perdido Pass.
+
+Phoenix VIII features spacious 1-, 2-, and 3-bedroom vacation rentals designed to accommodate a variety of travel needs, from couples to families. Fully furnished interiors, open layouts, a
+entity_slug: phoenix-viii
+bedrooms: 3
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_00.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_04.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_06.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_07.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_08.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_09.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_10.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_11.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_12.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_13.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_14.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_15.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_16.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_17.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_18.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_19.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_20.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_21.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_22.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_23.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_24.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_25.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_26.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_27.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_28.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_29.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_30.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_31.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_32.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_33.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_34.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_35.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_36.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_37.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_38.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_39.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_40.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_41.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_42.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_43.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_44.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_45.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_46.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_47.png"
+]
+amenities: []
+faqs: []
+city: Orange Beach
+state: AL
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 680d55a17e0cb6848651c1db949a7ba2
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 83536c56-714b-46f8-a538-1f64d0e19d09
+entity_slug: phoenix-viii
+slug: phoenix-viii
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_00.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_04.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_06.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_07.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_08.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_09.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_10.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_11.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_12.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_13.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_14.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_15.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_16.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_17.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_18.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_19.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_20.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_21.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_22.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_23.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_24.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_25.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_26.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_27.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_28.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_29.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_30.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_31.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_32.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_33.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_34.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_35.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_36.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_37.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_38.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_39.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_40.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_41.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_42.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_43.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_44.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_45.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_46.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_47.png"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: a556d3e7-b6da-4ef0-bb30-c04e2bf4097f
+slug: phoenix-viii
+name: Phoenix VIII
+is_active: true
+featured: false
+entity_type: condo
+entity_subtype: condominium_complex
+description: Phoenix VIII is a beachfront condo property located in the heart of Orange Beach, offering direct access to the sugar-white sand and sweeping Gulf views. Each luxury condo faces the water, with expansive Gulf-front balconies and floor-to-ceiling windows overlooking the Gulf of Mexico and nearby Perdido Pass.
+
+Phoenix VIII features spacious 1-, 2-, and 3-bedroom vacation rentals designed to accommodate a variety of travel needs, from couples to families. Fully furnished interiors, open layouts, a
+phone: +18009326760
+website_url: https://viewer.threshold360.com/?thresholdId=8490864-1285906721&preset=share
+menu_pin: 3013
+address_line_1: 27008 Perdido Beach Blvd
+city: Orange Beach
+state: AL
+zip: 36561
+rating: 4.4
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_00.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-14T03:14:42.985628+00:00
+updated_at: 2026-07-16T10:58:02.607758+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+bedrooms_min: 3
+bedrooms_max: 3
+pet_friendly: false
+pool: true
+parking: false
+business_status: OPERATIONAL
+primary_type: condo
+google_places_data: {}
+search_vector: 'beach':5 'condo':3 'orang':4 'phoenix':1A 'viii':2A
+bedrooms: 3
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: stay
+industry_code: condo
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: phoenix-viii
+name: Phoenix VIII
+industry_code: condo
+is_parent: false
+score_of_7: 4
+
+####################################################################################################
+# TABLE: entity_faqs   -   13 row(s)
+####################################################################################################
+
+--- entity_faqs [row 1 of 13] ---
+id: 478ef7e3-d0d2-43f9-8e91-1e87b2f123c4
+entity_slug: phoenix-viii
+question: What amenities are included in Phoenix 8 vacation rentals?
+answer: Phoenix 8 features several luxury amenities including: indoor and outdoor pools, kiddie pool, sauna, hot tubs, fitness center, tennis court, pickleball court, basketball, covered parking, EV chargers, and barbeque grills.
+category: general
+sort_order: 2
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 2 of 13] ---
+id: 2b129f52-2a00-4158-9ea2-d0854b28efc5
+entity_slug: phoenix-viii
+question: What types of units are available for rent at Phoenix VIII?
+answer: Phoenix VIII offers spacious 1-, 2-, and 3-bedroom units
+category: general
+sort_order: 3
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 3 of 13] ---
+id: 263da637-6420-4a93-8b1d-6a2646acd673
+entity_slug: phoenix-viii
+question: Where is Phoenix VIII located?
+answer: Phoenix VIII is located at 27008 Perdido Beach Blvd, Orange Beach, AL 36561 and is approximately 8 miles east of Hwy 59.
+category: general
+sort_order: 1
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 4 of 13] ---
+id: ab032e47-b7ec-4b0d-bfe2-f0bcaba8a123
+entity_slug: phoenix-viii
+question: What popular attractions are close to Phoenix VIII?
+answer: In the heart of Orange Beach, Phoenix VIII condos boast direct beach access and close proximity to endless shops, restaurants, and entertainment. Grab a bite at The Gulf or Cobalt, listen to live music at the world-famous Flora-Bama beach bar, or head out on the water with a fishing charter or dolphin cruise. Nearby Gulf State Park is a great place for fishing, hiking, and bike trails, The Wharf features tons of entertainment, and several arcades and amusement parks are just a short drive away. 
+category: general
+sort_order: 4
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 5 of 13] ---
+id: e3d2a424-1e39-43e7-97fb-f24789099767
+entity_slug: phoenix-viii
+question: What are the check-in and check-out times at Phoenix 8?
+answer: Check-in and check-out times vary by season. For more information, refer to our Check In and Check Out Times Pageand review your booking confirmation message.
+category: general
+sort_order: 5
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 6 of 13] ---
+id: a4a87327-4162-44cd-a205-6a26af4c6bc6
+entity_slug: phoenix-viii
+question: Do all Phoenix 8 condominiums have Gulf views?
+answer: Yes, all Phoenix 8 vacation rentals have Gulf views that you’ll enjoy from private balconies or through floor-to-ceiling windows.
+category: general
+sort_order: 6
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 7 of 13] ---
+id: 2a568540-2e5e-4094-b399-8c15015be05a
+entity_slug: phoenix-viii
+question: Is there beach access available at Phoenix VIII?
+answer: Yes, Phoenix VIII has direct beach access and offers beach chair rentals for guests.
+category: general
+sort_order: 7
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 8 of 13] ---
+id: 71595368-727c-4e26-8a05-c7ac8b1169ae
+entity_slug: phoenix-viii
+question: Is there a grocery store nearby Phoenix 8 where guests can purchase food, supplies and necessities?
+answer: Yes, there are several grocery stores located near Phoenix 8 in Orange Beach, including Publix, Walmart, and Winn-Dixie. Grocery delivery is offered at participating stores with partnering apps.
+category: general
+sort_order: 8
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 9 of 13] ---
+id: 10068dfe-4c77-4c1c-a789-bca0ce0fe244
+entity_slug: phoenix-viii
+question: Does Phoenix VIII have accessibility options?
+answer: : Phoenix VIII Orange Beach is equipped with accessibility features to ensure that guests can enjoy their stay. The resort has accessible entrances and public areas, including ramps and elevators. The units were also originally designed with accessibility in mind. Contact us at 1-800-211-7892 to discuss accommodations and options.
+category: general
+sort_order: 9
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 10 of 13] ---
+id: 5168535f-d912-4332-b399-9fb7b8cae474
+entity_slug: phoenix-viii
+question: Is Phoenix 8 a good choice for family vacations?
+answer: Yes, Phoenix 8 Orange Beach is very family-friendly. The luxury condos sleep up to 10 guests with fully-furnished rooms, well-equipped kitchens, and spacious layouts. Phoenix 8 also has tons of family-friendly amenities, including indoor and outdoor pools, a kiddie pool, tennis courts, basketball, and more. It’s easy to walk to restaurants, shops, and marinas, and grocery stores and endless entertainment are just a short drive away. Family fun awaits at Phoenix 8 Orange Beach!
+category: general
+sort_order: 10
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 11 of 13] ---
+id: 78b62922-466c-43bd-9f63-47f39ea3bd1d
+entity_slug: phoenix-viii
+question: Is there a washer and dryer in each unit at Phoenix VIII?
+answer: Yes, each unit at Phoenix VIII is equipped with a washer and dryer.
+category: general
+sort_order: 11
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 12 of 13] ---
+id: a3ad60d8-171d-4ecd-876f-afbd5fbb7446
+entity_slug: phoenix-viii
+question: Is there free Wi-Fi available at Phoenix 8?
+answer: Yes, Phoenix 8 offers complimentary Wi-Fi access for guests.
+category: general
+sort_order: 12
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 13 of 13] ---
+id: 10e3f970-f78f-47cb-8bf1-2539475d3bec
+entity_slug: phoenix-viii
+question: Why book a Phoenix VIII rental with Brett/Robinson?
+answer: By booking with Brett/Robinson Vacations you get the benefit of over 40 years of experience in the area. Brett/Robinson operates and maintains Phoenix VIII and we have an on-site staff available to ensure you have a superb stay at the beach. We focus on quality, cleanliness and functionality in all of our available units. Our dedicated on-site customer service staff is here to help with any needs you have during your stay. Also, our knowledgeable area specialists can assist you in planning your 
+category: general
+sort_order: 13
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: ec64738d-6e10-4a1e-bb6b-e4dc48b64d49
+entity_slug: phoenix-viii
+day_of_week: 0
+opens_at: 06:30:00
+closes_at: 23:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: a46c79c4-8668-4426-af2c-a34ca1f91e69
+entity_slug: phoenix-viii
+day_of_week: 1
+opens_at: 06:30:00
+closes_at: 23:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 38846f98-32ad-42c6-8667-e292da32691f
+entity_slug: phoenix-viii
+day_of_week: 2
+opens_at: 06:30:00
+closes_at: 23:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: f6485074-81cb-4dd5-a959-b986cf26ef2c
+entity_slug: phoenix-viii
+day_of_week: 3
+opens_at: 06:30:00
+closes_at: 23:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 23a2f7d2-48b5-44d2-a5ca-1a81aa727b79
+entity_slug: phoenix-viii
+day_of_week: 4
+opens_at: 06:30:00
+closes_at: 23:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 98ef8f4b-961b-4bde-85ba-b99af702666a
+entity_slug: phoenix-viii
+day_of_week: 5
+opens_at: 06:30:00
+closes_at: 23:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 6e8c0610-8f78-4553-a613-806ffce11ba8
+entity_slug: phoenix-viii
+day_of_week: 6
+opens_at: 06:30:00
+closes_at: 23:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 2] ---
+entity_slug: phoenix-viii
+source_table: bookable_resources
+item_type: condo
+section_name: Units
+item_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+name: Phoenix VIII
+description: Phoenix VIII is a beachfront condo property located in the heart of Orange Beach, offering direct access to the sugar-white sand and sweeping Gulf views. Each luxury condo faces the water, with expansive Gulf-front balconies and floor-to-ceiling windows overlooking the Gulf of Mexico and nearby Perdido Pass.
+
+Phoenix VIII features spacious 1-, 2-, and 3-bedroom vacation rentals designed to accommodate a variety of travel needs, from couples to families. Fully furnished interiors, open layouts, a
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "bedrooms": 3,
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_00.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_11.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_12.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_13.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_14.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_15.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_16.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_17.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_18.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_19.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_20.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_21.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_22.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_23.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_24.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_25.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_26.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_27.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_28.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_29.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_30.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_31.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_32.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_33.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_34.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_35.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_36.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_37.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_38.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_39.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_40.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_41.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_42.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_43.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_44.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_45.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_46.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_47.png"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "item_type_raw": "condo",
+  "resource_type": "condo",
+  "check_out_time": "11:00"
+}
+
+--- entity_items_norm_v [row 2 of 2] ---
+entity_slug: phoenix-viii
+source_table: entity_section_items
+item_type: rooms
+section_name: Units & Rates
+item_id: 91974b7b-37b6-4370-a7af-f1ff819d4731
+name: Phoenix VIII
+description: Phoenix VIII is a beachfront condo property located in the heart of Orange Beach, offering direct access to the sugar-white sand and sweeping Gulf views. Each luxury condo faces the water, with expansive Gulf-front balconies and floor-to-ceiling windows overlooking the Gulf of Mexico and nearby Perdido Pass.
+
+Phoenix VIII features spacious 1-, 2-, and 3-bedroom vacation rentals designed to accommodate a variety of travel needs, from couples to families. Fully furnished interiors, open layouts, a
+sort_order: 1
+active: true
+attributes: {
+  "icon": "🏠",
+  "bedrooms": 3,
+  "min_nights": 1,
+  "module_key": "rooms",
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "item_type_raw": "rooms",
+  "check_out_time": "11:00"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 2] ---
+entity_slug: phoenix-viii
+source_table: bookable_resources
+item_type: condo
+section_name: Units
+item_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+name: Phoenix VIII
+description: Phoenix VIII is a beachfront condo property located in the heart of Orange Beach, offering direct access to the sugar-white sand and sweeping Gulf views. Each luxury condo faces the water, with expansive Gulf-front balconies and floor-to-ceiling windows overlooking the Gulf of Mexico and nearby Perdido Pass.
+
+Phoenix VIII features spacious 1-, 2-, and 3-bedroom vacation rentals designed to accommodate a variety of travel needs, from couples to families. Fully furnished interiors, open layouts, a
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "bedrooms": 3,
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_00.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_11.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_12.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_13.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_14.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_15.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_16.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_17.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_18.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_19.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_20.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_21.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_22.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_23.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_24.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_25.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_26.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_27.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_28.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_29.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_30.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_31.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_32.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_33.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_34.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_35.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_36.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_37.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_38.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_39.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_40.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_41.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_42.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_43.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_44.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_45.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_46.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_47.png"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "resource_type": "condo",
+  "check_out_time": "11:00"
+}
+
+--- entity_items_v [row 2 of 2] ---
+entity_slug: phoenix-viii
+source_table: entity_section_items
+item_type: rooms
+section_name: Units & Rates
+item_id: 91974b7b-37b6-4370-a7af-f1ff819d4731
+name: Phoenix VIII
+description: Phoenix VIII is a beachfront condo property located in the heart of Orange Beach, offering direct access to the sugar-white sand and sweeping Gulf views. Each luxury condo faces the water, with expansive Gulf-front balconies and floor-to-ceiling windows overlooking the Gulf of Mexico and nearby Perdido Pass.
+
+Phoenix VIII features spacious 1-, 2-, and 3-bedroom vacation rentals designed to accommodate a variety of travel needs, from couples to families. Fully furnished interiors, open layouts, a
+sort_order: 1
+active: true
+attributes: {
+  "icon": "🏠",
+  "bedrooms": 3,
+  "min_nights": 1,
+  "module_key": "rooms",
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "check_out_time": "11:00"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   14 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 14] ---
+id: bb556837-7042-40b2-9592-594383f67601
+entity_slug: phoenix-viii
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 14] ---
+id: 1fe7745f-81a4-4365-aabf-f24e47f9dd66
+entity_slug: phoenix-viii
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 14] ---
+id: 28bcee87-3f51-4306-90a8-9e507c4bab7e
+entity_slug: phoenix-viii
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 14] ---
+id: 75f06473-69f5-4ca2-a50c-07b9fe664f14
+entity_slug: phoenix-viii
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 14] ---
+id: 59ab5d92-1d52-4fef-93af-0f174de2ca22
+entity_slug: phoenix-viii
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 14] ---
+id: b72070d0-95a0-4cce-8bf9-94f65c65f5df
+entity_slug: phoenix-viii
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 14] ---
+id: e5ed4d66-bf6b-4ba5-a7df-eb30612bbcd9
+entity_slug: phoenix-viii
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 14] ---
+id: f1a88583-808b-4e7b-aa96-5bed5cb06c0b
+entity_slug: phoenix-viii
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 14] ---
+id: d73d8d4a-536d-4df5-b0f5-a492f37ff452
+entity_slug: phoenix-viii
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 14] ---
+id: 5ebb48ed-3b4f-4b8d-b415-55a72802beb9
+entity_slug: phoenix-viii
+module_key: stay
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 14] ---
+id: 9575c4c1-52eb-4bdb-9ec8-74a9c55d0329
+entity_slug: phoenix-viii
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 14] ---
+id: 0edea708-0275-41a3-8f7d-01302df3e1c1
+entity_slug: phoenix-viii
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 14] ---
+id: bae723a6-36e3-4d0c-9681-14fd9823ee70
+entity_slug: phoenix-viii
+module_key: amenities
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 14 of 14] ---
+id: a4a19796-374b-47c0-9448-abd19876a7bb
+entity_slug: phoenix-viii
+module_key: rooms
+enabled: true
+sort_order: 2
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13944
+entity_slug: phoenix-viii
+name: Phoenix VIII
+description: Phoenix VIII is a beachfront condo property located in the heart of Orange Beach, offering direct access to the sugar-white sand and sweeping Gulf views. Each luxury condo faces the water, with expansive Gulf-front balconies and floor-to-ceiling windows overlooking the Gulf of Mexico and nearby Perdido Pass.
+
+Phoenix VIII features spacious 1-, 2-, and 3-bedroom vacation rentals designed to accommodate a variety of travel needs, from couples to families. Fully furnished interiors, open layouts, a
+offer_type: room
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+####################################################################################################
+# TABLE: entity_photos   -   148 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 148] ---
+id: a51e6473-62f9-42b8-b299-5ca83e76f9a1
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_18.jpg
+is_cover: false
+sort_order: 18
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 2 of 148] ---
+id: 964ad441-e802-4cb6-b7f2-f691f2e2db9e
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_01.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 3 of 148] ---
+id: b73394bd-6112-4feb-b7c1-45a7778238f5
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_20.jpg
+is_cover: false
+sort_order: 20
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 4 of 148] ---
+id: b311cc73-c149-4c52-8b67-5c51e4fc8479
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_11.jpg
+is_cover: false
+sort_order: 11
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 5 of 148] ---
+id: e571b53f-bc51-4dd1-92bd-065afa273e55
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-viii-vacation-rental-condominiums/photo_05.jpg
+is_cover: false
+sort_order: 4
+photo_type: complex
+
+--- entity_photos [row 6 of 148] ---
+id: 198d1d4d-f91e-484e-83be-69e306c9da61
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-viii-vacation-rental-condominiums/photo_06.jpg
+is_cover: false
+sort_order: 5
+photo_type: complex
+
+--- entity_photos [row 7 of 148] ---
+id: e2ca681e-4c15-4f88-b742-fb089e6140a9
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-viii-vacation-rental-condominiums/photo_10.jpg
+is_cover: false
+sort_order: 9
+photo_type: complex
+
+--- entity_photos [row 8 of 148] ---
+id: cccaa29c-e97c-41a1-b10b-c26b9b94d4d4
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-viii-vacation-rental-condominiums/photo_01.jpg
+is_cover: true
+sort_order: 0
+photo_type: complex
+
+--- entity_photos [row 9 of 148] ---
+id: 43f8e0fe-f975-432b-951f-d228b857f928
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-viii-vacation-rental-condominiums/photo_03.jpg
+is_cover: false
+sort_order: 2
+photo_type: complex
+
+--- entity_photos [row 10 of 148] ---
+id: 93a7ac79-43e7-43bc-adae-ccb384addce0
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-viii-vacation-rental-condominiums/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: complex
+
+--- entity_photos [row 11 of 148] ---
+id: 4983ae8f-e2cd-426b-9822-9a37a407e758
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-viii-vacation-rental-condominiums/photo_07.jpg
+is_cover: false
+sort_order: 6
+photo_type: complex
+
+--- entity_photos [row 12 of 148] ---
+id: 3c5be281-7fdb-41c1-a04b-a9e13b531e12
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-viii-vacation-rental-condominiums/photo_09.jpg
+is_cover: false
+sort_order: 8
+photo_type: complex
+
+--- entity_photos [row 13 of 148] ---
+id: bf4c95a3-461b-4302-87ba-35706765773a
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-viii-vacation-rental-condominiums/photo_08.jpg
+is_cover: false
+sort_order: 7
+photo_type: complex
+
+--- entity_photos [row 14 of 148] ---
+id: 56fdf4df-65f8-472a-b5d6-66774c6f9ab3
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-viii-vacation-rental-condominiums/photo_04.jpg
+is_cover: false
+sort_order: 3
+photo_type: complex
+
+--- entity_photos [row 15 of 148] ---
+id: 99b70909-6f57-4d17-bbdf-0c6beb416037
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_00.jpg
+is_cover: true
+sort_order: 0
+photo_type: complex
+
+--- entity_photos [row 16 of 148] ---
+id: 1aeb833d-3124-4338-8389-b2bf700b3fcb
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_01.jpg
+is_cover: false
+sort_order: 1
+photo_type: complex
+
+--- entity_photos [row 17 of 148] ---
+id: 14fa11fa-d903-4c73-be48-d8e02a1c2139
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_02.jpg
+is_cover: false
+sort_order: 2
+photo_type: complex
+
+--- entity_photos [row 18 of 148] ---
+id: 6d6a4098-f2e5-496b-bcd1-a39c7c30f430
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_03.jpg
+is_cover: false
+sort_order: 3
+photo_type: complex
+
+--- entity_photos [row 19 of 148] ---
+id: d78aff19-b928-48b8-ae2a-6ded1afb4fed
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_04.jpg
+is_cover: false
+sort_order: 4
+photo_type: complex
+
+--- entity_photos [row 20 of 148] ---
+id: ae1cbf59-6680-4cff-8082-ae3dbfc67465
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_05.jpg
+is_cover: false
+sort_order: 5
+photo_type: complex
+
+--- entity_photos [row 21 of 148] ---
+id: 115b28f0-763a-4f8d-be92-87e5252bf5f0
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_06.jpg
+is_cover: false
+sort_order: 6
+photo_type: complex
+
+--- entity_photos [row 22 of 148] ---
+id: be758d65-ef48-4b51-9c19-f1b25525807f
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_07.jpg
+is_cover: false
+sort_order: 7
+photo_type: complex
+
+--- entity_photos [row 23 of 148] ---
+id: 78cdd373-331b-4922-83e7-82c5669499d8
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_08.jpg
+is_cover: false
+sort_order: 8
+photo_type: complex
+
+--- entity_photos [row 24 of 148] ---
+id: 45ef6df1-adae-4ffd-b7a3-5c595d33147f
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_09.jpg
+is_cover: false
+sort_order: 9
+photo_type: complex
+
+--- entity_photos [row 25 of 148] ---
+id: 6fb708f5-ac13-4c38-bdfe-060d6c1a82b1
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_10.jpg
+is_cover: false
+sort_order: 10
+photo_type: complex
+
+--- entity_photos [row 26 of 148] ---
+id: 4b9f4580-eb08-4f6d-943d-71a77d811b8c
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_11.jpg
+is_cover: false
+sort_order: 11
+photo_type: complex
+
+--- entity_photos [row 27 of 148] ---
+id: 07b07abf-5e65-4ee4-8d6c-b58d615bb48a
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_12.jpg
+is_cover: false
+sort_order: 12
+photo_type: complex
+
+--- entity_photos [row 28 of 148] ---
+id: a9d56638-a128-4d01-80ce-99ae4469eabd
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_13.jpg
+is_cover: false
+sort_order: 13
+photo_type: complex
+
+--- entity_photos [row 29 of 148] ---
+id: f3d9c215-4a7c-4ab7-b065-578022b787eb
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_14.jpg
+is_cover: false
+sort_order: 14
+photo_type: complex
+
+--- entity_photos [row 30 of 148] ---
+id: 5c8b020d-862d-4cf5-a224-b8d3c91232c2
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_15.jpg
+is_cover: false
+sort_order: 15
+photo_type: complex
+
+--- entity_photos [row 31 of 148] ---
+id: 435895d9-9212-49a4-9eb3-032591ab16b8
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_16.jpg
+is_cover: false
+sort_order: 16
+photo_type: complex
+
+--- entity_photos [row 32 of 148] ---
+id: 0be614cd-bae0-45b7-a459-0300cd440475
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_17.jpg
+is_cover: false
+sort_order: 17
+photo_type: complex
+
+--- entity_photos [row 33 of 148] ---
+id: d1415efc-aa13-4061-af26-1ac75c0b6aa2
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_18.jpg
+is_cover: false
+sort_order: 18
+photo_type: complex
+
+--- entity_photos [row 34 of 148] ---
+id: 6bdf9478-3686-4d5f-b8a9-b526572e329f
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_19.jpg
+is_cover: false
+sort_order: 19
+photo_type: complex
+
+--- entity_photos [row 35 of 148] ---
+id: ae865672-fb0a-4a9a-b3df-69de90647f3d
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_20.jpg
+is_cover: false
+sort_order: 20
+photo_type: complex
+
+--- entity_photos [row 36 of 148] ---
+id: 3bb2e2fe-d204-4477-a1c5-78f339b30db8
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_21.jpg
+is_cover: false
+sort_order: 21
+photo_type: complex
+
+--- entity_photos [row 37 of 148] ---
+id: db2331aa-b988-488a-9d2a-db88d8a61b89
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_22.jpg
+is_cover: false
+sort_order: 22
+photo_type: complex
+
+--- entity_photos [row 38 of 148] ---
+id: f4c81d0a-ef13-4abf-9088-d9c265de8df8
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_23.jpg
+is_cover: false
+sort_order: 23
+photo_type: complex
+
+--- entity_photos [row 39 of 148] ---
+id: ce2b4190-a0d4-45d6-bde0-772ace1cafa5
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_24.jpg
+is_cover: false
+sort_order: 24
+photo_type: complex
+
+--- entity_photos [row 40 of 148] ---
+id: bf3ceaa6-53ea-4c2e-9c13-d10984c4dadb
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_25.jpg
+is_cover: false
+sort_order: 25
+photo_type: complex
+
+--- entity_photos [row 41 of 148] ---
+id: d55405b9-e524-4ddc-b3c1-936885879b40
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_26.jpg
+is_cover: false
+sort_order: 26
+photo_type: complex
+
+--- entity_photos [row 42 of 148] ---
+id: 8c0ab859-37c5-4712-8066-072b062dbf48
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_27.jpg
+is_cover: false
+sort_order: 27
+photo_type: complex
+
+--- entity_photos [row 43 of 148] ---
+id: 353f25aa-f3a9-49a1-9b1c-f2d6887981a6
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_28.jpg
+is_cover: false
+sort_order: 28
+photo_type: complex
+
+--- entity_photos [row 44 of 148] ---
+id: d29386ec-b22a-448a-b8d2-a034882d401c
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_29.jpg
+is_cover: false
+sort_order: 29
+photo_type: complex
+
+--- entity_photos [row 45 of 148] ---
+id: 67817aff-bae4-4570-b08f-086cd34c8a1d
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_30.jpg
+is_cover: false
+sort_order: 30
+photo_type: complex
+
+--- entity_photos [row 46 of 148] ---
+id: 490a73dd-2a89-48e5-afb4-59f3c48db6ca
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_31.jpg
+is_cover: false
+sort_order: 31
+photo_type: complex
+
+--- entity_photos [row 47 of 148] ---
+id: ef1de4c5-70b7-44d7-83a5-e43defea65bd
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_32.jpg
+is_cover: false
+sort_order: 32
+photo_type: complex
+
+--- entity_photos [row 48 of 148] ---
+id: 806c9bb5-a2a3-4551-85b6-e0c5d45b3b48
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_33.jpg
+is_cover: false
+sort_order: 33
+photo_type: complex
+
+--- entity_photos [row 49 of 148] ---
+id: 33ff2d78-ee26-42f6-b19b-b828466fef34
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_34.jpg
+is_cover: false
+sort_order: 34
+photo_type: complex
+
+--- entity_photos [row 50 of 148] ---
+id: 0ee51b02-175a-4ce2-b084-88bfbab9df7f
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_35.jpg
+is_cover: false
+sort_order: 35
+photo_type: complex
+
+--- entity_photos [row 51 of 148] ---
+id: 0d89f249-1ba5-43e8-9c2b-e3be9ecc0a27
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_36.jpg
+is_cover: false
+sort_order: 36
+photo_type: complex
+
+--- entity_photos [row 52 of 148] ---
+id: 821b5952-e39b-4630-83b7-9cd85e825243
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_37.jpg
+is_cover: false
+sort_order: 37
+photo_type: complex
+
+--- entity_photos [row 53 of 148] ---
+id: 6b172aa6-9b6b-4716-99d2-f957bf505e19
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_38.jpg
+is_cover: false
+sort_order: 38
+photo_type: complex
+
+--- entity_photos [row 54 of 148] ---
+id: 57835614-6f23-4869-874e-4c87722f147b
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_39.jpg
+is_cover: false
+sort_order: 39
+photo_type: complex
+
+--- entity_photos [row 55 of 148] ---
+id: 0f8e3697-24a8-4606-91d0-806c68188a81
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_40.jpg
+is_cover: false
+sort_order: 40
+photo_type: complex
+
+--- entity_photos [row 56 of 148] ---
+id: 93cb47ab-742b-4656-ac1e-0df99a334294
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_41.jpg
+is_cover: false
+sort_order: 41
+photo_type: complex
+
+--- entity_photos [row 57 of 148] ---
+id: 55b168dc-c953-43be-876b-2df58054b89a
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_42.jpg
+is_cover: false
+sort_order: 42
+photo_type: complex
+
+--- entity_photos [row 58 of 148] ---
+id: c9c6b802-73d6-4278-9e32-b57bb54d6f6f
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_43.jpg
+is_cover: false
+sort_order: 43
+photo_type: complex
+
+--- entity_photos [row 59 of 148] ---
+id: 3f40c8d0-2e12-467b-a4bc-bdd6979fd09a
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_44.jpg
+is_cover: false
+sort_order: 44
+photo_type: complex
+
+--- entity_photos [row 60 of 148] ---
+id: 3e820505-045c-498d-b92e-2f351af29e2b
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_45.jpg
+is_cover: false
+sort_order: 45
+photo_type: complex
+
+--- entity_photos [row 61 of 148] ---
+id: 0a4b6400-64b8-423d-8318-7dc79141b734
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_46.jpg
+is_cover: false
+sort_order: 46
+photo_type: complex
+
+--- entity_photos [row 62 of 148] ---
+id: 7e724d27-458e-4cce-9096-f0aee1b35733
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_47.png
+is_cover: false
+sort_order: 47
+photo_type: complex
+
+--- entity_photos [row 63 of 148] ---
+id: dda2e970-1d77-4c9a-bd30-2052a2fe2d2b
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_21.jpg
+is_cover: false
+sort_order: 21
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 64 of 148] ---
+id: 59b7e2c7-24d4-45f5-99bd-978d617ceb6d
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_47.png
+is_cover: false
+sort_order: 47
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 65 of 148] ---
+id: a0e30a96-8050-4102-9322-d036db8eb1c6
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_33.jpg
+is_cover: false
+sort_order: 33
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 66 of 148] ---
+id: aa2a7dc1-7cb7-4f66-b726-05f3d0065f1d
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_44.jpg
+is_cover: false
+sort_order: 44
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 67 of 148] ---
+id: 73838dc7-3a10-4bd2-8999-535f92d52104
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_39.jpg
+is_cover: false
+sort_order: 39
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 68 of 148] ---
+id: 568f2888-545e-4a15-8dde-6961afe1909d
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_40.jpg
+is_cover: false
+sort_order: 40
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 69 of 148] ---
+id: 1a8cb35b-7361-4e62-95be-a161abb9aed4
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_31.jpg
+is_cover: false
+sort_order: 31
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 70 of 148] ---
+id: d8193753-e995-44f3-9eef-9734eff3726f
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_27.jpg
+is_cover: false
+sort_order: 27
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 71 of 148] ---
+id: ea180982-c6d2-4de2-a522-2b51ad506cac
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_09.jpg
+is_cover: false
+sort_order: 9
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 72 of 148] ---
+id: 13f01be6-2fc1-47ac-aea7-4acdcd7b210d
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_07.jpg
+is_cover: false
+sort_order: 7
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 73 of 148] ---
+id: 73b5f8a9-d4b4-4a17-8349-3ad1c7b4096e
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_14.jpg
+is_cover: false
+sort_order: 14
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 74 of 148] ---
+id: dd37e568-dedc-4fd4-a382-085035aec7cd
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_04.jpg
+is_cover: false
+sort_order: 4
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 75 of 148] ---
+id: 3e7f08ff-137c-43a4-b4e6-8a48c212bfb8
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_43.jpg
+is_cover: false
+sort_order: 43
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 76 of 148] ---
+id: 00985829-847e-44d8-89ea-035a1c3de59e
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_45.jpg
+is_cover: false
+sort_order: 45
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 77 of 148] ---
+id: c4747e0b-2269-47ad-9150-a3b9c001f1d7
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_46.jpg
+is_cover: false
+sort_order: 46
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 78 of 148] ---
+id: 90c5658f-ade3-4a39-b1a7-1a3a9825d5f5
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_15.jpg
+is_cover: false
+sort_order: 15
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 79 of 148] ---
+id: 9de60285-4f7d-4f74-bcfb-0368d4f9b3a8
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_26.jpg
+is_cover: false
+sort_order: 26
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 80 of 148] ---
+id: 90523777-6383-491f-9c4c-28b29daeead2
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_06.jpg
+is_cover: false
+sort_order: 6
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 81 of 148] ---
+id: e1de8b15-d055-4450-973b-172ff90c6d5d
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_03.jpg
+is_cover: false
+sort_order: 3
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 82 of 148] ---
+id: ab932145-c0fd-4bef-89a2-54bb6b850e53
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_42.jpg
+is_cover: false
+sort_order: 42
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 83 of 148] ---
+id: eba515ff-97a0-4899-888b-89097c25dbe0
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_23.jpg
+is_cover: false
+sort_order: 23
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 84 of 148] ---
+id: cf375a38-4362-4da6-9904-971e356af797
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_29.jpg
+is_cover: false
+sort_order: 29
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 85 of 148] ---
+id: ab35a4cc-5bab-4b54-9aac-128834c64dc9
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_37.jpg
+is_cover: false
+sort_order: 37
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 86 of 148] ---
+id: e4ade43a-7a9c-4d6c-97df-590173567ac2
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_38.jpg
+is_cover: false
+sort_order: 38
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 87 of 148] ---
+id: e7a89584-ea6c-4c1e-83cc-950c47f7c0a7
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_05.jpg
+is_cover: false
+sort_order: 5
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 88 of 148] ---
+id: bee38f96-e4aa-4ed7-820d-9d37a49a225a
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_13.jpg
+is_cover: false
+sort_order: 13
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 89 of 148] ---
+id: 2ab44b46-71e9-4186-b269-d6bb3506a853
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_32.jpg
+is_cover: false
+sort_order: 32
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 90 of 148] ---
+id: f4fbca9b-5954-464e-a2bf-de8a616fda34
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_24.jpg
+is_cover: false
+sort_order: 24
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 91 of 148] ---
+id: 08d3070f-3b9c-4d8f-9146-a1d3df2455aa
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_16.jpg
+is_cover: false
+sort_order: 16
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 92 of 148] ---
+id: 402b865f-4223-4197-bb2f-ce6238c234f2
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_41.jpg
+is_cover: false
+sort_order: 41
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 93 of 148] ---
+id: b52f9e4e-03eb-4a87-b3b1-bdbfbb43d434
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_17.jpg
+is_cover: false
+sort_order: 17
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 94 of 148] ---
+id: 1c38c107-8535-4e66-9a4f-bbf6b3ede562
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_08.jpg
+is_cover: false
+sort_order: 8
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 95 of 148] ---
+id: b8f0f5b8-350e-4bd2-af55-fc05654e399c
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_19.jpg
+is_cover: false
+sort_order: 19
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 96 of 148] ---
+id: 6c620e7a-3675-4dda-a7ea-66f08691f73d
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_00.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 97 of 148] ---
+id: bcf45ada-f9d1-4fbe-ba82-0464c1791234
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_02.jpg
+is_cover: false
+sort_order: 2
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 98 of 148] ---
+id: 1b2c86c0-bbe2-4a43-a419-a5ef29fc8872
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_10.jpg
+is_cover: false
+sort_order: 10
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 99 of 148] ---
+id: 1237ff61-4459-49b5-bcaf-09ca866bbb5c
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_36.jpg
+is_cover: false
+sort_order: 36
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 100 of 148] ---
+id: 3f23e2c8-4539-4d07-ad0c-bd45bc469a00
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_28.jpg
+is_cover: false
+sort_order: 28
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 101 of 148] ---
+id: 43521eaa-4701-4724-ae07-6d15f667237f
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_12.jpg
+is_cover: false
+sort_order: 12
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 102 of 148] ---
+id: e4f4cf8d-8e2c-4297-9d82-17ec5c65004e
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_25.jpg
+is_cover: false
+sort_order: 25
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 103 of 148] ---
+id: b866657c-84a8-4e6d-a744-314cc47e5fe9
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_30.jpg
+is_cover: false
+sort_order: 30
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 104 of 148] ---
+id: fd56234b-1b42-4e5c-94b4-be63817dd0a2
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_34.jpg
+is_cover: false
+sort_order: 34
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 105 of 148] ---
+id: 93b18ed7-33a9-4fa5-88d8-46c1ea77f4f2
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_35.jpg
+is_cover: false
+sort_order: 35
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 106 of 148] ---
+id: 2edbebee-61e5-44c0-ae33-f87cf6a8079b
+entity_slug: phoenix-viii
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_22.jpg
+is_cover: false
+sort_order: 22
+photo_type: resource
+source_name: bookable_resource
+resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+
+--- entity_photos [row 107 of 148] ---
+id: d9a93908-f167-4c18-a143-17cbe971e48c
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/94c07554-fad7-43df-894d-bce8ee5eaa36
+is_cover: false
+sort_order: 400
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 108 of 148] ---
+id: eb2b1a85-d22d-451b-ba8b-db54ed0e4a2c
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/c200ec99-e9fc-4d14-be8e-5338c769f275
+is_cover: false
+sort_order: 401
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 109 of 148] ---
+id: 3e827bec-4b2b-41f3-83e1-627c4b5e6b8c
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/9548bc74-2ed7-4a85-8b32-3704ed49936a
+is_cover: false
+sort_order: 402
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 110 of 148] ---
+id: ea4ab04b-5089-4aca-9b58-3934d9f6d6a4
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/8a26815f-908d-4143-a859-e935928a2b91
+is_cover: false
+sort_order: 403
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 111 of 148] ---
+id: 8e7cb64d-7a49-4a92-9cd5-33c9f37f46c9
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/986408e2-a23e-412c-b25a-bc08a4caf149
+is_cover: false
+sort_order: 404
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 112 of 148] ---
+id: 1652f194-5fcd-4e78-bec6-84bb5359af2b
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/afff372f-9777-463f-b986-6ef227bf849d
+is_cover: false
+sort_order: 405
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 113 of 148] ---
+id: 67d1db13-1173-412b-9631-22e6443f8cff
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/3e683b35-37f9-48fd-b60b-d4c4ebe502ef
+is_cover: false
+sort_order: 406
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 114 of 148] ---
+id: 675c0f99-4ea4-42e1-96de-25acfb83a765
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/c5f02ddb-0420-4f5d-a620-48fb1663445a
+is_cover: false
+sort_order: 407
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 115 of 148] ---
+id: 0965b0bf-667e-46fe-9da0-4899f56bae2a
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/89c6e161-751e-4b53-88a6-6457379008ba
+is_cover: false
+sort_order: 408
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 116 of 148] ---
+id: 2a1683f7-53f5-4087-b73c-71677e36421c
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/3d9d70a8-caeb-4de1-88a3-052632a8ee7b
+is_cover: false
+sort_order: 409
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 117 of 148] ---
+id: cd5ef713-76f9-4ec8-9fbb-48f26fef8b4b
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/73c9db80-2d62-4dd7-9d51-3c190d914063
+is_cover: false
+sort_order: 410
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 118 of 148] ---
+id: 29e4d0fc-4ee8-43a1-a76a-d00881fabf8c
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/2d6e5950-88ee-4460-aeb7-340a06bc5f9e
+is_cover: false
+sort_order: 411
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 119 of 148] ---
+id: 3aadb9ef-ae7b-45a5-a0e8-8a205cdd6131
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/20c2cb9a-eb27-4d9b-b0ec-57e58ffb1312
+is_cover: false
+sort_order: 412
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 120 of 148] ---
+id: 0111a098-e34e-4b37-9b11-801bc0c574c6
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/d6471fae-102f-4dc3-b5ab-f985f0919269
+is_cover: false
+sort_order: 413
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 121 of 148] ---
+id: 95c8b4f3-7ef5-499c-bb7b-e0912e85eec1
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/5f626826-f8e5-47e6-8244-67add375abe4
+is_cover: false
+sort_order: 414
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 122 of 148] ---
+id: 2ef3e8bd-bd67-4608-8080-1e5785875ccf
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/4f0bb053-e87c-4047-a52f-c7815d800d42
+is_cover: false
+sort_order: 415
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 123 of 148] ---
+id: ad33fc91-9fdd-4a84-8432-a49e4b3e7816
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/104e9532-7500-42a6-a61b-affdbf6debc9
+is_cover: false
+sort_order: 416
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 124 of 148] ---
+id: 53ab5dca-6828-4012-ba32-ec48d160ed5e
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/0d8611fb-22dd-4eb4-9bd0-67bdac763482
+is_cover: false
+sort_order: 417
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 125 of 148] ---
+id: 67a75b93-8680-4340-9933-4e915d0f8961
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/1f394a88-216c-47af-be4b-873edb2376ac
+is_cover: false
+sort_order: 418
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 126 of 148] ---
+id: baac8074-da0e-4ced-93a0-8bb8a57abccd
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/5aa2e161-77ec-4afc-a9d3-e51d643683c5
+is_cover: false
+sort_order: 419
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 127 of 148] ---
+id: 93553f01-32a3-4e4f-a322-64fc1f730a97
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/507077f6-e93f-4f58-bc0e-c5fb611cd061
+is_cover: false
+sort_order: 420
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 128 of 148] ---
+id: 398c8c1b-a359-4066-9eaa-c6f82f2bf8bb
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/bd2787af-f83f-4211-86a5-e72a2999a0dc
+is_cover: false
+sort_order: 421
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 129 of 148] ---
+id: d58e24d3-a392-4cb7-9a14-5172fa2b2f91
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/f94ea1c4-81ea-40be-9279-79a2519cffee
+is_cover: false
+sort_order: 422
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 130 of 148] ---
+id: 13daf8b0-f3b8-49e6-a53b-c2cae4874867
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/2ab0c51f-02b4-4f58-93a0-f07aa06f9bc8
+is_cover: false
+sort_order: 423
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 131 of 148] ---
+id: c587742a-9589-495b-9f28-441cfbf39b73
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/2375708a-5941-47af-91aa-49a9f911e5de
+is_cover: false
+sort_order: 424
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 132 of 148] ---
+id: 4236a770-3c0b-4c47-9d70-02d9dcc2149e
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/fb69b00a-9a66-477f-a441-19e3dfef8f41
+is_cover: false
+sort_order: 425
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 133 of 148] ---
+id: d16f4dfb-9588-4007-9875-4040fa2a7d14
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/50498e8c-f9b9-4c13-bc67-37cd8c546676
+is_cover: false
+sort_order: 426
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 134 of 148] ---
+id: 00ae40a6-c885-4e52-9925-81b70ccd1525
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/5cc6a902-3393-4323-9dd0-e2f9046a6d9a
+is_cover: false
+sort_order: 427
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 135 of 148] ---
+id: fa02d1b6-c492-458e-8ef9-5a195c41a04e
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/8bfa4437-a815-4b80-bc86-1a9dcdc58466
+is_cover: false
+sort_order: 428
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 136 of 148] ---
+id: a68afe0d-e03d-4625-8020-3cc53e82e92f
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/f2ebb7bf-b346-412e-988d-823b96fc3958
+is_cover: false
+sort_order: 429
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 137 of 148] ---
+id: 14367242-13bd-4297-ae5b-70045e4bb8f6
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/1ad5e55f-160b-431a-9519-6badd10dc9d3
+is_cover: false
+sort_order: 430
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 138 of 148] ---
+id: 8db4f887-08c1-49c1-a3f1-f35bea0019f8
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/20ca67a6-20f8-4217-a7a7-de6eeee22489
+is_cover: false
+sort_order: 431
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 139 of 148] ---
+id: 6ef2acce-808f-4de2-bafa-2f8cd9e61e74
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/8517ead9-b968-419f-a550-4e342b7b1ba8
+is_cover: false
+sort_order: 432
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 140 of 148] ---
+id: 00573436-0e58-4e93-b53d-cbf62f009ac6
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/e9c1cff2-0c65-4921-97b2-b1555ed4795a
+is_cover: false
+sort_order: 433
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 141 of 148] ---
+id: 898bda6b-e56c-4991-962f-7199ef33e7b0
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/7051f98c-1679-4c9e-bde3-1b2cf7ff7f3a
+is_cover: false
+sort_order: 434
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 142 of 148] ---
+id: e9923e9e-7d14-425d-8484-2a557d1a6b9f
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/b1ad0d67-5047-497e-b279-b12c089959ae
+is_cover: false
+sort_order: 435
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 143 of 148] ---
+id: d0bdeb65-f80f-4ff0-9136-3376b9af4d0a
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/336d421d-0ae5-483e-aeff-ba3a231890b5
+is_cover: false
+sort_order: 436
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 144 of 148] ---
+id: 75c76171-9379-4c95-83b9-c604128c16e3
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/bf570a0f-566b-4604-9b3d-fa7e6f7615f0
+is_cover: false
+sort_order: 437
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 145 of 148] ---
+id: 75592de5-64e4-4fae-b6e4-7ec286e420f6
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/b319c057-f2b6-4420-8446-f274d97a25db
+is_cover: false
+sort_order: 438
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 146 of 148] ---
+id: fd228add-d688-4608-b264-d82c84126dbd
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/600x400/https://track-pm.s3.amazonaws.com/brett-robinson/image/1bbf5ef4-1aba-47eb-8a59-e1cb5e6ea3d1
+is_cover: false
+sort_order: 439
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 147 of 148] ---
+id: 6e2ec615-03d2-485d-b752-86d598e1e278
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/600x400/https://track-pm.s3.amazonaws.com/brett-robinson/image/a45fa902-f933-434e-b61a-fcda95517c9b
+is_cover: false
+sort_order: 440
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 148 of 148] ---
+id: 479fc467-5c1f-45fc-aa80-0b886c2f50f4
+entity_slug: phoenix-viii
+url: https://img.trackhs.com/600x400/https://track-pm.s3.amazonaws.com/brett-robinson/image/0a8b825d-f30a-4db4-97f5-bf16c101f752
+is_cover: false
+sort_order: 441
+photo_type: gallery
+source_name: extracted:condos_zip
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: ea9e3342-eb21-4f34-bbef-16400a874bcd
+entity_slug: phoenix-viii
+reviewer_name: Chez Massey
+rating: 4
+body: Great view. Great location. The hot tub is only large enough for 2 people, and is located inside. The basketball court is part of the parking lot. It’s hard to play with cars parked in the way. Phoenix VI-VII have much better courts. I would rent over there next time. Their pool is bigger, too. I’m happy with our accommodations. We stayed on the 10th floor is 81003.  The condo is clean. We were able to cook for the family. It’s very damp inside, but is humid on the beach. Lax security.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-05-30T16:38:35.341837+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: 5781ae98-be21-4e15-b350-a7f1e47720bf
+entity_slug: phoenix-viii
+reviewer_name: Dwight Garrison
+rating: 5
+body: We always use Brett Robinson rentals when staying at the beach. I have always had great service through them. Our room was great with a great view. The day before we were to leave they texted me while on the beach for a extra day and discount. In just a few minutes I called them back about it and the lady couldn't even find me in the system. Had to get my confirmation  number and then they tell me nothing is available. We would have loved to stay one more day. Overall it was a great trip.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-09-28T17:27:12.419157+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: b49f3b21-20a7-48d0-a096-c4c03dd82dca
+entity_slug: phoenix-viii
+reviewer_name: Francisco Mata
+rating: 5
+body: We just spent such a great time there !! Property well maintained , front desk lady so helpful .. and the view and beach are amazing!!  The location is great !! Can’t wait to come crack !
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-04-18T10:49:25.644809+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 3c604dd4-39af-48e8-a443-cbdcd25abbff
+entity_slug: phoenix-viii
+reviewer_name: Vicki Lee
+rating: 3
+body: While we like staying in the Phoenix buildings, and this is our 2nd year in 81206. It needs a major face-lift, though. Choice of TV channels and apps are disappointing. We arranged to cast xfinity this year, but since we couldn't use the unit wifi the TV is on as opposed to the building wifi, we couldn't do it.
+We came for a month, and there was no place to put dry goods in the kitchen like there was last year due to a lot of wine and martini glasses added. The bottom rack in the dishwasher is broken, and the couch and loveseat need cleaning. The front door has to be slammed hard to stay shut. The unit needs a lock with a code as opposed to physical keys; 2 was not enough the week we had guests.
+The guest bath is really tiny, and the dining area needs a smaller table.
+The view to the east from the balcony is completely blocked. We knew that and sacrificed, but that combined with the further deterioration of the unit is unacceptable. Wrong ice tray in fridge, so the ice spills all over, new kitchen cabinets, faucet, and flooring needed. We hoped for updates this year, but there were none. We spent more time looking for next year and found a much nicer unit for just a few dollars more.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-02-04T22:16:07.358197+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 37ebcc8c-1ef3-4ecc-b36c-a9f2d425f457
+entity_slug: phoenix-viii
+reviewer_name: Lorena Hendricks
+rating: 5
+body: Absolutely gorgeous view from the condo. Loved the decor inside the condo as well. The condo we stayed in had plenty of space and was clean. The woman at the front desk was cheery. We found the arrival and departure process to be quite easy. I hated to leave.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2019-05-14T05:54:55.768896+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_section_items   -   1 row(s)
+####################################################################################################
+
+--- entity_section_items [row 1 of 1] ---
+id: 91974b7b-37b6-4370-a7af-f1ff819d4731
+section_id: 08c758c3-4f29-4ccd-a9a6-9ea176433610
+entity_slug: phoenix-viii
+item_name: Phoenix VIII
+description: Phoenix VIII is a beachfront condo property located in the heart of Orange Beach, offering direct access to the sugar-white sand and sweeping Gulf views. Each luxury condo faces the water, with expansive Gulf-front balconies and floor-to-ceiling windows overlooking the Gulf of Mexico and nearby Perdido Pass.
+
+Phoenix VIII features spacious 1-, 2-, and 3-bedroom vacation rentals designed to accommodate a variety of travel needs, from couples to families. Fully furnished interiors, open layouts, a
+icon: 🏠
+metadata: {}
+sort_order: 1
+check_in_time: 16:00
+check_out_time: 11:00
+min_nights: 1
+cleaning_fee: 0
+bedrooms: 3
+
+####################################################################################################
+# TABLE: entity_section_items_metadata_backup   -   1 row(s)
+####################################################################################################
+
+--- entity_section_items_metadata_backup [row 1 of 1] ---
+id: 91974b7b-37b6-4370-a7af-f1ff819d4731
+entity_slug: phoenix-viii
+item_name: Phoenix VIII
+metadata: {
+  "bedrooms": 3,
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_00.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_11.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_12.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_13.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_14.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_15.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_16.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_17.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_18.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_19.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_20.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_21.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_22.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_23.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_24.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_25.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_26.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_27.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_28.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_29.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_30.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_31.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_32.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_33.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_34.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_35.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_36.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_37.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_38.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_39.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_40.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_41.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_42.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_43.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_44.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_45.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_46.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-viii/image_47.png"
+  ],
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "check_out_time": "11:00"
+}
+backed_up_at: 2026-07-16T09:49:37.166591+00:00
+
+####################################################################################################
+# TABLE: entity_sections   -   1 row(s)
+####################################################################################################
+
+--- entity_sections [row 1 of 1] ---
+id: 08c758c3-4f29-4ccd-a9a6-9ea176433610
+entity_slug: phoenix-viii
+section_type: rooms
+section_name: Units & Rates
+sort_order: 2
+module_key: rooms
+is_active: true
+
+####################################################################################################
+# TABLE: entity_sources   -   1 row(s)
+####################################################################################################
+
+--- entity_sources [row 1 of 1] ---
+id: fbb03557-e366-470b-87b5-895a1627d30c
+entity_slug: phoenix-viii
+source_system: condos_zip_brett_robinson
+observed_at: 2026-07-16T00:00:00+00:00
+confidence: medium
+note: Structured scrape of Brett-Robinson property page (condos_data1_3.zip)
+created_at: 2026-07-16T10:59:56.848474+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   36 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 36] ---
+id: 77779d8f-32c1-41f6-ad23-d47e141c7b2e
+entity_slug: phoenix-viii
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 2 of 36] ---
+id: c7656388-3deb-4b14-b522-d25037150086
+entity_slug: phoenix-viii
+tag_name: condo
+tag_category: type
+
+--- entity_tags [row 3 of 36] ---
+id: 6299d09f-44d1-4f7f-aa3e-0a42bdcaf606
+entity_slug: phoenix-viii
+tag_name: Condos & Stays
+tag_category: category
+
+--- entity_tags [row 4 of 36] ---
+id: 25cb273b-2852-40fa-b6ef-ddbc8daceb2a
+entity_slug: phoenix-viii
+tag_name: Pool
+tag_category: amenity
+
+--- entity_tags [row 5 of 36] ---
+id: 4c45a134-e3cf-4f72-94bf-1c1384d6450c
+entity_slug: phoenix-viii
+tag_name: 3 Bedrooms
+tag_category: amenity
+
+--- entity_tags [row 6 of 36] ---
+id: b111a7b3-98f7-47ed-8bb3-7eb01edb9e26
+entity_slug: phoenix-viii
+tag_name: Outdoor pool
+tag_category: amenity
+
+--- entity_tags [row 7 of 36] ---
+id: e09689d8-6ff8-4488-93df-b12795e8bb8d
+entity_slug: phoenix-viii
+tag_name: Sauna
+tag_category: amenity
+
+--- entity_tags [row 8 of 36] ---
+id: 351786f4-ccd3-42dd-b482-427133f61c56
+entity_slug: phoenix-viii
+tag_name: Hot tub
+tag_category: amenity
+
+--- entity_tags [row 9 of 36] ---
+id: 808823e6-7172-403c-a9f0-4f36a70f1aae
+entity_slug: phoenix-viii
+tag_name: Fitness center
+tag_category: amenity
+
+--- entity_tags [row 10 of 36] ---
+id: 6bd4ad2d-99a5-4dcd-9277-1a8578fac6c3
+entity_slug: phoenix-viii
+tag_name: Tennis court
+tag_category: amenity
+
+--- entity_tags [row 11 of 36] ---
+id: 86f7af58-0d68-4134-aec7-7f91e8d1e9fa
+entity_slug: phoenix-viii
+tag_name: Covered parking
+tag_category: amenity
+
+--- entity_tags [row 12 of 36] ---
+id: 86dc0fef-08db-46af-bb42-f3de4847582b
+entity_slug: phoenix-viii
+tag_name: Barbeque
+tag_category: amenity
+
+--- entity_tags [row 13 of 36] ---
+id: bc7e2ccc-2c00-46e3-8336-4d722aabf695
+entity_slug: phoenix-viii
+tag_name: Grill
+tag_category: amenity
+
+--- entity_tags [row 14 of 36] ---
+id: f3ba02fd-2eb1-47cd-9ace-361bbffb2be8
+entity_slug: phoenix-viii
+tag_name: Parking
+tag_category: amenity
+
+--- entity_tags [row 15 of 36] ---
+id: 59d3db13-7e17-4294-a579-7915ccf2d9a8
+entity_slug: phoenix-viii
+tag_name: Kiddie pool
+tag_category: amenity
+
+--- entity_tags [row 16 of 36] ---
+id: cfb58236-dab1-47d0-a2f8-d65464634511
+entity_slug: phoenix-viii
+tag_name: Hot tubs
+tag_category: amenity
+
+--- entity_tags [row 17 of 36] ---
+id: 86dc916d-fa6f-40a8-9b8e-40b4bc853515
+entity_slug: phoenix-viii
+tag_name: Pickleball court
+tag_category: amenity
+
+--- entity_tags [row 18 of 36] ---
+id: 1f48a705-281c-4348-9d50-5f087a9bff51
+entity_slug: phoenix-viii
+tag_name: Basketball
+tag_category: amenity
+
+--- entity_tags [row 19 of 36] ---
+id: f67926c8-e140-4dc9-a4ad-175190777740
+entity_slug: phoenix-viii
+tag_name: Ev chargers
+tag_category: amenity
+
+--- entity_tags [row 20 of 36] ---
+id: 7a15ca58-f9db-4d35-bc8f-f703c01c71cf
+entity_slug: phoenix-viii
+tag_name: Barbeque grills.
+tag_category: amenity
+
+--- entity_tags [row 21 of 36] ---
+id: 59fa5026-6a5d-48e9-b702-314e3334aa73
+entity_slug: phoenix-viii
+tag_name: Beach access
+tag_category: amenity
+
+--- entity_tags [row 22 of 36] ---
+id: 482172d0-ff53-4027-bcb6-be12359d2d01
+entity_slug: phoenix-viii
+tag_name: Arcade
+tag_category: amenity
+
+--- entity_tags [row 23 of 36] ---
+id: 385cdc87-6c60-41cf-bf6e-8a575783704c
+entity_slug: phoenix-viii
+tag_name: Restaurant
+tag_category: amenity
+
+--- entity_tags [row 24 of 36] ---
+id: 38b3c41e-af8e-42bf-8e19-d18c0b75b528
+entity_slug: phoenix-viii
+tag_name: Beach chair
+tag_category: amenity
+
+--- entity_tags [row 25 of 36] ---
+id: e8e5f56c-d56d-4aaf-a826-69977e80a15d
+entity_slug: phoenix-viii
+tag_name: Elevator
+tag_category: amenity
+
+--- entity_tags [row 26 of 36] ---
+id: 2a38547c-79e1-4ce3-ae25-f235e60d9139
+entity_slug: phoenix-viii
+tag_name: Accessible
+tag_category: amenity
+
+--- entity_tags [row 27 of 36] ---
+id: d01aecab-a2f0-4f2e-bb23-0d9ce10ed077
+entity_slug: phoenix-viii
+tag_name: Washer and dryer
+tag_category: amenity
+
+--- entity_tags [row 28 of 36] ---
+id: 1513a269-a489-4086-addd-f6cfc929ea43
+entity_slug: phoenix-viii
+tag_name: Wi-fi
+tag_category: amenity
+
+--- entity_tags [row 29 of 36] ---
+id: 64481f13-8d76-4926-817d-919738d0004b
+entity_slug: phoenix-viii
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 30 of 36] ---
+id: 43d010be-3a13-4aa2-9cb8-7458bd1ff604
+entity_slug: phoenix-viii
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 31 of 36] ---
+id: cfeba12e-0a77-4122-83ac-26df2a39effe
+entity_slug: phoenix-viii
+tag_name: real_estate_agency
+tag_category: google_type
+
+--- entity_tags [row 32 of 36] ---
+id: afa16b13-e51a-42cd-85a9-454f825c5f56
+entity_slug: phoenix-viii
+tag_name: travel_agency
+tag_category: google_type
+
+--- entity_tags [row 33 of 36] ---
+id: bf9deb78-1b89-47a8-ad39-f20ea0e2c6b0
+entity_slug: phoenix-viii
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 34 of 36] ---
+id: c2f4bc9a-7a53-4b34-8d58-349718b394f6
+entity_slug: phoenix-viii
+tag_name: real_estate_agency
+tag_category: google_type
+
+--- entity_tags [row 35 of 36] ---
+id: c5644d64-355f-472d-957a-33152c85c58a
+entity_slug: phoenix-viii
+tag_name: travel_agency
+tag_category: google_type
+
+--- entity_tags [row 36 of 36] ---
+id: b5801529-620c-4b14-afc2-c0ea6f45b336
+entity_slug: phoenix-viii
+tag_name: service
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   2 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 2] ---
+id: 63831355-e142-437d-81d8-273561137f89
+entity_slug: phoenix-viii
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+--- entity_theme [row 2 of 2] ---
+id: 70d532e7-581f-42c2-8fa3-a4bbff3ab3cd
+entity_slug: phoenix-viii
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: faqs   -   13 row(s)
+####################################################################################################
+
+--- faqs [row 1 of 13] ---
+id: 46a91fdf-ce61-490e-a549-11284e5a9d82
+entity_id: a556d3e7-b6da-4ef0-bb30-c04e2bf4097f
+question: What amenities are included in Phoenix 8 vacation rentals?
+answer: Phoenix 8 features several luxury amenities including: indoor and outdoor pools, kiddie pool, sauna, hot tubs, fitness center, tennis court, pickleball court, basketball, covered parking, EV chargers, and barbeque grills.
+created_at: 2026-06-14T04:02:41.339947
+sort_order: 2
+entity_slug: phoenix-viii
+category: general
+
+--- faqs [row 2 of 13] ---
+id: c71c605b-d756-4c1d-9345-caeca842961f
+entity_id: a556d3e7-b6da-4ef0-bb30-c04e2bf4097f
+question: What types of units are available for rent at Phoenix VIII?
+answer: Phoenix VIII offers spacious 1-, 2-, and 3-bedroom units
+created_at: 2026-06-14T04:02:41.339947
+sort_order: 3
+entity_slug: phoenix-viii
+category: general
+
+--- faqs [row 3 of 13] ---
+id: 9baaeb33-5ba5-4ed0-9038-9aec7ddfc933
+entity_id: a556d3e7-b6da-4ef0-bb30-c04e2bf4097f
+question: Where is Phoenix VIII located?
+answer: Phoenix VIII is located at 27008 Perdido Beach Blvd, Orange Beach, AL 36561 and is approximately 8 miles east of Hwy 59.
+created_at: 2026-06-14T04:02:41.339947
+sort_order: 1
+entity_slug: phoenix-viii
+category: general
+
+--- faqs [row 4 of 13] ---
+id: 88a25637-6392-413b-b08e-cf2ec8b64e94
+entity_id: a556d3e7-b6da-4ef0-bb30-c04e2bf4097f
+question: What popular attractions are close to Phoenix VIII?
+answer: In the heart of Orange Beach, Phoenix VIII condos boast direct beach access and close proximity to endless shops, restaurants, and entertainment. Grab a bite at The Gulf or Cobalt, listen to live music at the world-famous Flora-Bama beach bar, or head out on the water with a fishing charter or dolphin cruise. Nearby Gulf State Park is a great place for fishing, hiking, and bike trails, The Wharf features tons of entertainment, and several arcades and amusement parks are just a short drive away. 
+created_at: 2026-06-14T04:02:41.339947
+sort_order: 4
+entity_slug: phoenix-viii
+category: general
+
+--- faqs [row 5 of 13] ---
+id: ad571b01-7813-4011-9942-98d0b22f7161
+entity_id: a556d3e7-b6da-4ef0-bb30-c04e2bf4097f
+question: What are the check-in and check-out times at Phoenix 8?
+answer: Check-in and check-out times vary by season. For more information, refer to our Check In and Check Out Times Pageand review your booking confirmation message.
+created_at: 2026-06-14T04:02:41.339947
+sort_order: 5
+entity_slug: phoenix-viii
+category: general
+
+--- faqs [row 6 of 13] ---
+id: 21a87799-f7b6-40c0-a9d3-faa80210cc37
+entity_id: a556d3e7-b6da-4ef0-bb30-c04e2bf4097f
+question: Do all Phoenix 8 condominiums have Gulf views?
+answer: Yes, all Phoenix 8 vacation rentals have Gulf views that you’ll enjoy from private balconies or through floor-to-ceiling windows.
+created_at: 2026-06-14T04:02:41.339947
+sort_order: 6
+entity_slug: phoenix-viii
+category: general
+
+--- faqs [row 7 of 13] ---
+id: 03d7848b-31e6-438a-af1d-194c5f606034
+entity_id: a556d3e7-b6da-4ef0-bb30-c04e2bf4097f
+question: Is there beach access available at Phoenix VIII?
+answer: Yes, Phoenix VIII has direct beach access and offers beach chair rentals for guests.
+created_at: 2026-06-14T04:02:41.339947
+sort_order: 7
+entity_slug: phoenix-viii
+category: general
+
+--- faqs [row 8 of 13] ---
+id: dede53ee-4e1e-4a47-91c8-3821d096292c
+entity_id: a556d3e7-b6da-4ef0-bb30-c04e2bf4097f
+question: Is there a grocery store nearby Phoenix 8 where guests can purchase food, supplies and necessities?
+answer: Yes, there are several grocery stores located near Phoenix 8 in Orange Beach, including Publix, Walmart, and Winn-Dixie. Grocery delivery is offered at participating stores with partnering apps.
+created_at: 2026-06-14T04:02:41.339947
+sort_order: 8
+entity_slug: phoenix-viii
+category: general
+
+--- faqs [row 9 of 13] ---
+id: a8aee869-678e-4404-a2c7-07babf75b091
+entity_id: a556d3e7-b6da-4ef0-bb30-c04e2bf4097f
+question: Does Phoenix VIII have accessibility options?
+answer: : Phoenix VIII Orange Beach is equipped with accessibility features to ensure that guests can enjoy their stay. The resort has accessible entrances and public areas, including ramps and elevators. The units were also originally designed with accessibility in mind. Contact us at 1-800-211-7892 to discuss accommodations and options.
+created_at: 2026-06-14T04:02:41.339947
+sort_order: 9
+entity_slug: phoenix-viii
+category: general
+
+--- faqs [row 10 of 13] ---
+id: acebb0c4-7984-4d20-8ff8-41973643aab4
+entity_id: a556d3e7-b6da-4ef0-bb30-c04e2bf4097f
+question: Is Phoenix 8 a good choice for family vacations?
+answer: Yes, Phoenix 8 Orange Beach is very family-friendly. The luxury condos sleep up to 10 guests with fully-furnished rooms, well-equipped kitchens, and spacious layouts. Phoenix 8 also has tons of family-friendly amenities, including indoor and outdoor pools, a kiddie pool, tennis courts, basketball, and more. It’s easy to walk to restaurants, shops, and marinas, and grocery stores and endless entertainment are just a short drive away. Family fun awaits at Phoenix 8 Orange Beach!
+created_at: 2026-06-14T04:02:41.339947
+sort_order: 10
+entity_slug: phoenix-viii
+category: general
+
+--- faqs [row 11 of 13] ---
+id: ad98d90c-74b4-4726-9636-199fe66ce4b0
+entity_id: a556d3e7-b6da-4ef0-bb30-c04e2bf4097f
+question: Is there a washer and dryer in each unit at Phoenix VIII?
+answer: Yes, each unit at Phoenix VIII is equipped with a washer and dryer.
+created_at: 2026-06-14T04:02:41.339947
+sort_order: 11
+entity_slug: phoenix-viii
+category: general
+
+--- faqs [row 12 of 13] ---
+id: 2eee3ae1-910c-41f9-9386-0e4915aafabb
+entity_id: a556d3e7-b6da-4ef0-bb30-c04e2bf4097f
+question: Is there free Wi-Fi available at Phoenix 8?
+answer: Yes, Phoenix 8 offers complimentary Wi-Fi access for guests.
+created_at: 2026-06-14T04:02:41.339947
+sort_order: 12
+entity_slug: phoenix-viii
+category: general
+
+--- faqs [row 13 of 13] ---
+id: 20e6bbec-ebb9-419c-b8c6-e3e35336d760
+entity_id: a556d3e7-b6da-4ef0-bb30-c04e2bf4097f
+question: Why book a Phoenix VIII rental with Brett/Robinson?
+answer: By booking with Brett/Robinson Vacations you get the benefit of over 40 years of experience in the area. Brett/Robinson operates and maintains Phoenix VIII and we have an on-site staff available to ensure you have a superb stay at the beach. We focus on quality, cleanliness and functionality in all of our available units. Our dedicated on-site customer service staff is here to help with any needs you have during your stay. Also, our knowledgeable area specialists can assist you in planning your 
+created_at: 2026-06-14T04:02:41.339947
+sort_order: 13
+entity_slug: phoenix-viii
+category: general
+
+####################################################################################################
+# TABLE: industry_condo   -   1 row(s)
+####################################################################################################
+
+--- industry_condo [row 1 of 1] ---
+entity_slug: phoenix-viii
+listed_unit_count: 0
+bedrooms_min: 3
+bedrooms_max: 3
+has_pool: true
+pet_friendly: false
+updated_at: 2026-07-21T16:59:02.358415+00:00
+
+####################################################################################################
+# TABLE: recovery_import_log   -   1 row(s)
+####################################################################################################
+
+--- recovery_import_log [row 1 of 1] ---
+id: d01e5cf2-65f7-4a0e-8e3b-25ff87989693
+batch_id: draft-businesses-netnew-2026-07-19
+target_table: entity
+target_row_id: 04b5d46e-6d29-411f-8978-c51bd153b39d
+entity_slug: phoenix-viii
+source_db: may
+source_table: entity
+source_id: c0b8a200-6e19-481e-ac40-fbd7c15f3e34
+action: insert
+imported_at: 2026-07-19T20:33:24.034873+00:00
+
+####################################################################################################
+# TABLE: rental_units   -   1 row(s)
+####################################################################################################
+
+--- rental_units [row 1 of 1] ---
+id: 6ee40ea5-6093-44aa-a9ea-55cfad7fcc2d
+entity_slug: phoenix-viii
+slug: phoenix-viii
+name: Phoenix VIII
+bedrooms: 3
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+city: Orange Beach
+state: AL
+source_resource_id: 83536c56-714b-46f8-a538-1f64d0e19d09
+is_active: true
+created_at: 2026-07-23T00:06:23.937689+00:00
+updated_at: 2026-07-23T00:06:23.937689+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: phoenix-viii
+entity_slug: phoenix-viii
+title: Phoenix VIII
+category: condominium_complex
+subtitle: Phoenix VIII is a beachfront condo property located in the heart of Orange Beach, offering direct access to the sugar-white sand and sweeping Gulf views. Each luxury condo faces the water, with expansive Gulf-front balconies and floor-to-ceiling windows overlooking the Gulf of Mexico and nearby Perdido Pass.
+
+Phoenix VIII features spacious 1-, 2-, and 3-bedroom vacation rentals designed to accommodate a variety of travel needs, from couples to families. Fully furnished interiors, open layouts, a
+search_vector: '1':63C '2':64C '3':66C 'access':21C 'accommod':72C 'balconi':43C 'beach':18C 'beachfront':9C 'bedroom':67C 'ceil':48C 'complex':4B 'condo':10C,34C 'condominium':3B 'coupl':79C 'design':70C 'direct':20C 'expans':39C 'face':35C 'famili':81C 'featur':61C 'floor':46C 'floor-to-ceil':45C 'front':42C 'fulli':82C 'furnish':83C 'gulf':30C,41C,52C 'gulf-front':40C 'heart':15C 'interior':84C 'layout':86C 'locat':12C 'luxuri':33C 'mexico':54C 'nearbi':56C 'need':77C 'offer':19C 'open':85C 'orang':17C 'overlook':50C 'pass':58C 'perdido':57C 'phoenix':1A,5C,59C 'properti':11C 'rental':69C 'sand':27C 'spacious':62C 'sugar':25C 'sugar-whit':24C 'sweep':29C 'travel':76C 'vacat':68C 'varieti':74C 'view':31C 'viii':2A,6C,60C 'water':37C 'white':26C 'window':49C
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 13944
+entity_slug: phoenix-viii
+title: Phoenix VIII
+category: room
+subtitle: Phoenix VIII is a beachfront condo property located in the heart of Orange Beach, offering direct access to the sugar-white sand and sweeping Gulf views. Each luxury condo faces the water, with expansive Gulf-front balconies and floor-to-ceiling windows overlooking the Gulf of Mexico and nearby Perdido Pass.
+
+Phoenix VIII features spacious 1-, 2-, and 3-bedroom vacation rentals designed to accommodate a variety of travel needs, from couples to families. Fully furnished interiors, open layouts, a
+search_vector: '1':61C '2':62C '3':64C 'access':19C 'accommod':70C 'balconi':41C 'beach':16C 'beachfront':7C 'bedroom':65C 'ceil':46C 'condo':8C,32C 'coupl':77C 'design':68C 'direct':18C 'expans':37C 'face':33C 'famili':79C 'featur':59C 'floor':44C 'floor-to-ceil':43C 'front':40C 'fulli':80C 'furnish':81C 'gulf':28C,39C,50C 'gulf-front':38C 'heart':13C 'interior':82C 'layout':84C 'locat':10C 'luxuri':31C 'mexico':52C 'nearbi':54C 'need':75C 'offer':17C 'open':83C 'orang':15C 'overlook':48C 'pass':56C 'perdido':55C 'phoenix':1A,3C,57C 'properti':9C 'rental':67C 'sand':25C 'spacious':60C 'sugar':23C 'sugar-whit':22C 'sweep':27C 'travel':74C 'vacat':66C 'varieti':72C 'view':29C 'viii':2A,4C,58C 'water':35C 'white':24C 'window':47C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: phoenix-viii

@@ -1,0 +1,617 @@
+====================================================================================================
+SLUG: nma-skincare
+NAME: NMA Skincare
+INDUSTRY: personal_care
+SUBTYPE: beauty_salon
+TABLES WITH DATA: 19
+TOTAL ROWS: 54
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (4 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_offer  (1 rows)
+  entity_photos  (4 rows)
+  entity_tags  (10 rows)
+  entity_theme  (1 rows)
+  industry_personal_care  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: nma-skincare
+name: NMA Skincare
+planner_category: local_service
+data_quality_score: 70
+issues: missing_summary|missing_lat_lng
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   4 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 4] ---
+id: 8312
+entity_slug: nma-skincare
+intent_tag: best_for:local_information
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 4] ---
+id: 8313
+entity_slug: nma-skincare
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 4] ---
+id: 8314
+entity_slug: nma-skincare
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 4] ---
+id: 8315
+entity_slug: nma-skincare
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: nma-skincare
+name: NMA Skincare
+is_active: t
+planner_category: local_service
+entity_type: service
+entity_subtype: beauty-wellness
+review_count: 0
+website_url: http://nmaskincare.com/
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nma-skincare/photo_01.jpg
+voice_summary: NMA Skincare is best for local information.
+planner_summary: NMA Skincare is a local service listing in Gulf Coast Radar.
+best_for: local information
+not_best_for: nothing specific flagged
+search_keywords: skincare|beauty|wellness|cosmetics|skin-care-products|Beauty & Wellness|Health & Beauty|health-and-wellness|beauty-wellness
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 2
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 10
+faq_count: 0
+data_quality_score: 70
+data_gaps: missing_summary|missing_lat_lng
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 7356
+entity_slug: nma-skincare
+entity_name: NMA Skincare
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nma-skincare/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 7357
+entity_slug: nma-skincare
+entity_name: NMA Skincare
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nma-skincare/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: fe394c5c-8534-4aa5-9790-048ffee66e40
+resource_type: service
+slug: nma-skincare
+name: NMA Skincare
+entity_slug: nma-skincare
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nma-skincare/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nma-skincare/photo_02.jpg"
+]
+amenities: []
+faqs: []
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 2721ebc0ca8d86f1bee095a890327cfe
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: fe394c5c-8534-4aa5-9790-048ffee66e40
+entity_slug: nma-skincare
+slug: nma-skincare
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nma-skincare/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nma-skincare/photo_02.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 4bf269c9-3fe1-4eb1-82c1-b2e9717b4770
+slug: nma-skincare
+name: NMA Skincare
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: beauty_salon
+website_url: http://nmaskincare.com/
+menu_pin: 7397
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nma-skincare/photo_01.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T22:58:24.346187+00:00
+updated_at: 2026-06-03T22:58:24.346187+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+business_status: OPERATIONAL
+google_places_data: {}
+search_vector: 'nma':1A 'skincar':2A
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: personal_care
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: nma-skincare
+name: NMA Skincare
+industry_code: personal_care
+is_parent: false
+score_of_7: 3
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 0d6131d9-9f8a-4595-b2ab-028208a0d96e
+entity_slug: nma-skincare
+day_of_week: 1
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: de95704c-33ae-4c2b-8aba-0526ca68e26f
+entity_slug: nma-skincare
+day_of_week: 2
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 039b7bcf-805f-45b7-b821-d82fae129aa5
+entity_slug: nma-skincare
+day_of_week: 3
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 79db7979-1f92-47b0-a24e-6c83701277e0
+entity_slug: nma-skincare
+day_of_week: 4
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 1b525596-a52d-4a1c-ba91-f4e43a49597c
+entity_slug: nma-skincare
+day_of_week: 5
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 28d9e6b6-5f2b-49e3-aad4-9582879fc97f
+entity_slug: nma-skincare
+day_of_week: 6
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: ba32d3c6-0077-4f36-840d-dbaa468ec012
+entity_slug: nma-skincare
+day_of_week: 0
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: nma-skincare
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: fe394c5c-8534-4aa5-9790-048ffee66e40
+name: NMA Skincare
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nma-skincare/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nma-skincare/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: nma-skincare
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: fe394c5c-8534-4aa5-9790-048ffee66e40
+name: NMA Skincare
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nma-skincare/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nma-skincare/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: 2dfcb74a-e92b-427e-828f-1dcaf930c62a
+entity_slug: nma-skincare
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 35a0cf21-dec3-4dcd-8089-e9bcf2e0fd41
+entity_slug: nma-skincare
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: c998b549-9584-4e6a-8e91-3f692b0f669a
+entity_slug: nma-skincare
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: fbdfee1a-9459-4d7a-a46a-90bcb6f2f2ce
+entity_slug: nma-skincare
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: d0c3dde3-e2f1-4fc0-9934-76f1c1b078e1
+entity_slug: nma-skincare
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: 39893aab-f1e5-4d7f-9cff-e722e86a0326
+entity_slug: nma-skincare
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 229f4852-23d9-4181-9527-963d5a4a8d2a
+entity_slug: nma-skincare
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 8a1ec888-6b4a-41f4-b7e7-403e445c841a
+entity_slug: nma-skincare
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: 9d76b4af-89e0-4019-8de1-54bf2ebcb39b
+entity_slug: nma-skincare
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: a5c90bec-936b-4308-9e1d-75e4b39fe80e
+entity_slug: nma-skincare
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: f17b5043-ef69-43f7-a14f-87963329a200
+entity_slug: nma-skincare
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: 8db1da24-069b-421a-a437-2d428f82f713
+entity_slug: nma-skincare
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: adae75af-9662-45fe-890a-8260500bb8a5
+entity_slug: nma-skincare
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13841
+entity_slug: nma-skincare
+name: NMA Skincare
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: fe394c5c-8534-4aa5-9790-048ffee66e40
+
+####################################################################################################
+# TABLE: entity_photos   -   4 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 4] ---
+id: 41d4e8e8-db10-4425-95de-1175e868adf3
+entity_slug: nma-skincare
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nma-skincare/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 4] ---
+id: 9bec2bcc-d418-4c70-9983-67a4403cf862
+entity_slug: nma-skincare
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nma-skincare/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 4] ---
+id: d2f16358-124d-40d8-a328-c62e476d6475
+entity_slug: nma-skincare
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nma-skincare/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: fe394c5c-8534-4aa5-9790-048ffee66e40
+
+--- entity_photos [row 4 of 4] ---
+id: 8408033d-5cf1-4185-876e-87b944605ac0
+entity_slug: nma-skincare
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nma-skincare/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: fe394c5c-8534-4aa5-9790-048ffee66e40
+
+####################################################################################################
+# TABLE: entity_tags   -   10 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 10] ---
+id: 882d6e79-45ac-4c0f-bfd5-58178f721019
+entity_slug: nma-skincare
+tag_name: skincare
+
+--- entity_tags [row 2 of 10] ---
+id: 79bd271b-d576-477a-85db-7c41065c41c4
+entity_slug: nma-skincare
+tag_name: beauty
+
+--- entity_tags [row 3 of 10] ---
+id: b5881128-03ed-42c8-a96b-6fcf1eb4c6a1
+entity_slug: nma-skincare
+tag_name: wellness
+
+--- entity_tags [row 4 of 10] ---
+id: 21b3c15d-9a5e-42f6-a8f6-caa5f423b444
+entity_slug: nma-skincare
+tag_name: cosmetics
+
+--- entity_tags [row 5 of 10] ---
+id: 19ce28de-4bd7-4319-baca-a0fe39d582f1
+entity_slug: nma-skincare
+tag_name: skin-care-products
+
+--- entity_tags [row 6 of 10] ---
+id: 28c3b424-6720-452f-97cb-14474ccaf365
+entity_slug: nma-skincare
+tag_name: Beauty & Wellness
+tag_category: category
+
+--- entity_tags [row 7 of 10] ---
+id: 15ad768c-975f-46dc-9d17-0e733653b983
+entity_slug: nma-skincare
+tag_name: Skincare
+tag_category: category
+
+--- entity_tags [row 8 of 10] ---
+id: 671af1c4-775c-4cc8-8e22-edb77126c1c4
+entity_slug: nma-skincare
+tag_name: Health & Beauty
+tag_category: category
+
+--- entity_tags [row 9 of 10] ---
+id: 8e85bd89-dd6b-459a-a88d-e4ba6c92fcb2
+entity_slug: nma-skincare
+tag_name: health-and-wellness
+tag_category: industry
+
+--- entity_tags [row 10 of 10] ---
+id: 8b92be50-dbeb-4e78-b424-b710e8404b90
+entity_slug: nma-skincare
+tag_name: beauty-wellness
+tag_category: type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: db3a03a5-68fd-4fb0-b001-7c7acc7917a2
+entity_slug: nma-skincare
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_personal_care   -   1 row(s)
+####################################################################################################
+
+--- industry_personal_care [row 1 of 1] ---
+entity_slug: nma-skincare
+service_count: 0
+updated_at: 2026-07-21T16:19:28.491935+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: nma-skincare
+entity_slug: nma-skincare
+title: NMA Skincare
+category: beauty_salon
+search_vector: 'beauti':3B 'nma':1A 'salon':4B 'skincar':2A
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 13841
+entity_slug: nma-skincare
+title: NMA Skincare
+category: rental
+search_vector: 'nma':1A 'skincar':2A
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: nma-skincare

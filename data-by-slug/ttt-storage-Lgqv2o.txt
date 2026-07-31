@@ -1,0 +1,1388 @@
+====================================================================================================
+SLUG: ttt-storage-Lgqv2o
+NAME: TTT Storage
+INDUSTRY: trade_home_service
+SUBTYPE: storage
+TABLES WITH DATA: 23
+TOTAL ROWS: 93
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (4 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_attributes  (2 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_offer  (1 rows)
+  entity_photos  (8 rows)
+  entity_reviews  (5 rows)
+  entity_tags  (32 rows)
+  entity_theme  (1 rows)
+  industry_trade_home_service  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: ttt-storage-Lgqv2o
+name: TTT Storage
+planner_category: local_service
+data_quality_score: 80
+issues: missing_summary|missing_hours
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   4 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 4] ---
+id: 10828
+entity_slug: ttt-storage-Lgqv2o
+intent_tag: best_for:local_information
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 4] ---
+id: 10829
+entity_slug: ttt-storage-Lgqv2o
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 4] ---
+id: 10830
+entity_slug: ttt-storage-Lgqv2o
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 4] ---
+id: 10831
+entity_slug: ttt-storage-Lgqv2o
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: ttt-storage-Lgqv2o
+name: TTT Storage
+is_active: t
+planner_category: local_service
+entity_type: service
+entity_subtype: storage
+city: Foley
+state: AL
+address_line_1: 890 S Bay St
+latitude: 30.396514500000002
+longitude: -87.6790959
+rating: 4.9
+review_count: 9
+website_url: http://tttstorage.com/
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ttt-storage-Lgqv2o/photo_01.jpg
+voice_summary: TTT Storage in Foley is best for local information.
+planner_summary: TTT Storage in Foley is a local service listing in Gulf Coast Radar.
+best_for: local information
+not_best_for: nothing specific flagged
+search_keywords: storage|point_of_interest|establishment|acceptsDebitCards
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 2
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 32
+faq_count: 0
+data_quality_score: 80
+data_gaps: missing_summary|missing_hours
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 20059
+entity_slug: ttt-storage-Lgqv2o
+entity_name: TTT Storage
+city: Foley
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ttt-storage-Lgqv2o/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 20060
+entity_slug: ttt-storage-Lgqv2o
+entity_name: TTT Storage
+city: Foley
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ttt-storage-Lgqv2o/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: a15b0822-914d-457d-88e0-1aa8d922f97e
+resource_type: service
+slug: ttt-storage-Lgqv2o
+name: TTT Storage
+entity_slug: ttt-storage-Lgqv2o
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ttt-storage-Lgqv2o/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ttt-storage-Lgqv2o/photo_02.jpg"
+]
+amenities: []
+faqs: []
+address: 890 S Bay St
+city: Foley
+state: AL
+latitude: 30.396514500000002
+longitude: -87.6790959
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: e97ff24aa0671fe02871694be3acbbe7
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: a15b0822-914d-457d-88e0-1aa8d922f97e
+entity_slug: ttt-storage-Lgqv2o
+slug: ttt-storage-Lgqv2o
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ttt-storage-Lgqv2o/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ttt-storage-Lgqv2o/photo_02.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: df9657b3-7c44-4dae-b161-42d55c1d2814
+slug: ttt-storage-Lgqv2o
+name: TTT Storage
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: storage
+phone: (251) 200-4445
+website_url: http://tttstorage.com/
+menu_pin: 4883
+address_line_1: 890 S Bay St
+city: Foley
+state: AL
+zip: 36535
+latitude: 30.396514500000002
+longitude: -87.6790959
+rating: 4.9
+review_count: 9
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ttt-storage-Lgqv2o/photo_01.jpg
+good_for_kids: false
+created_at: 2026-06-03T05:34:46.570798+00:00
+updated_at: 2026-06-03T05:34:46.570798+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJ1W_mTeQPmogRbx0PvLgqv2o
+google_maps_uri: https://maps.google.com/?cid=7691913661489552751&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: storage
+formatted_address: 890 S Bay St, Foley, AL 36535, USA
+plus_code: 862J98WC+J9
+international_phone: +1 251-200-4445
+accepts_debit_cards: true
+accepts_cash_only: false
+google_places_data: {
+  "id": "ChIJ1W_mTeQPmogRbx0PvLgqv2o",
+  "types": [
+    "storage",
+    "point_of_interest",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJ1W_mTeQPmogRbx0PvLgqv2o/photos/AaVGc3kqxMMdVrezP2wdiXShp-wGfCsRV4P3xUHlKqheNLSdBuz5WQ-2XgUnRe5Sy2bFla1dEdsKIgIzRECfOFpZkPwwpYDYWm0ycu2-_F-Pt3D1KlYir2dthGLd9L9Q1MDExiIA3Xb9qms8AbS1ZxrAR6h9KW2OHoOa1GTU0pXH0cLbvB4CXQUzNgKBGqBgUxyse_LOFlTdOtiDgpjjma9P8CvAdNl_D085R_exgajY0T7FCOp1x8fGxlR7Zl6tDnM0OrgxggVJ6MEtb8bb4dlPMjAPJd2aYid7iPQxBJLCQ96iju50cKVtRX_EeefBBjP8YUbxmN7cawGTpLAxN_MD_YnYcBCI6u07hWoB02zieh84JetTgTlGqpVGKmOyZikF3_m22ywL9FIfr3tFsi1MU8GdcWTbXNwW-Ca1ymOFTzXAyWU",
+      "widthPx": 4789,
+      "heightPx": 3193,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDhyMC_zwE!2e10!4m2!3m1!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDhyMC_zwE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/107636921337118339954",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJ2ymy--MVWnND3E_VVanewlTvtAE-O53Zs-BAUjjX2aWIqGw=s100-p-k-no-mo",
+          "displayName": "TTT Storage"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJ1W_mTeQPmogRbx0PvLgqv2o/photos/AaVGc3nqZwhzwCHBMzrQGXZ3cmI7QtXkKSQEWLwudRs0DjhaqkE1Ajq3yZlNMjDeWjB7c8mPxgtNJTi5NdmGrUf1mk5NFRJ9kqT6Py8qzZ7AGZ9wkBh-k7t6A0elVpwPv_gQMwIKlgkuIHkj_G3usylA2xlIianQTHXUgYyt-TGiILOdQaOKNrrlijMbkrK-Z1CHBun2NukVW9UrvblnYcSJtECPvpKuH1jf25RtNeCFCHOOg51HCVkPJiwryrDFbgYyi8hh1bkXOgpzktje3RK_85CFGhscakD-nCKMne7bq8drFoQsR6Uf5PtVC7-qNjfjyqWvUP7qTIcoZC-q5R9KeN2pPNiNmc9k8Tb8SBQLSCJSBqBTHC1HJCsTxJkRKqUmNyAndnRZximyREwR7w5lUISrg033sDn3YLmd216WF6tw3g",
+      "widthPx": 3262,
+      "heightPx": 2447,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDhyKCwWA!2e10!4m2!3m1!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDhyKCwWA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/107636921337118339954",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJ2ymy--MVWnND3E_VVanewlTvtAE-O53Zs-BAUjjX2aWIqGw=s100-p-k-no-mo",
+          "displayName": "TTT Storage"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJ1W_mTeQPmogRbx0PvLgqv2o/photos/AaVGc3lVF7qWHnNBDbClHmrqZhxfErLGIgJD8647nPK6IQQS6M0lZFh_nKwheu4Uhq4Lcu_GWs89gPInNzNqzFJdfYPSj4X10wlGrEFmaY-S5ZO3jjSlSv19qMItSBu9RdyqEerHbdQNJh4r9cHdGakoWzq0-HUhnspFjjCLOZe5XBUX3rdf52O0cP27KytFOlrBm042hgiMWpqbAqEyYffZ38Da25t6Tq_l4dj_8Qvn8GGIEAIxKAdDJM2zHwLLOv5JoUG1npcI-NELi6Ej3DwlaRb2SobivDjx0SNOnVrP4g9-qUsBc2zFTKjDPV8r-XuDU2sNDq4E-XrpRhVkEZygnHT8uRwt0hnYhMbw_S9-UgfY7bJXNPDPayBXRDFaRsVSwk4FvyCMlB9nLJ5gVl9Mu8OvEboWt6aOfw0_Kg",
+      "widthPx": 4000,
+      "heightPx": 3000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIChp_s-!2e10!4m2!3m1!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIChp_s-&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106334840427739013334",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUFDGftn0TIKKKt1XCbS5D1E_s5vGQGt00-iYu4cbY0BC98PCMmbg=s100-p-k-no-mo",
+          "displayName": "Kevin Stewart"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJ1W_mTeQPmogRbx0PvLgqv2o/photos/AaVGc3mUktod-4i6TFoM3PNzq4OxXNioGPPqPe3PDTSksRsUna6UnCidQREct4YXEkElT6zPxfGCLZwYRZ-ljwaZ2Tub1P5uCMKttin1LEr_BFnOB-EZM7ohDtR5W0BKw7OkI6jjB4Xd-bBpO84cyDtt9U6klplBEGMsJSSrTSf4ySQU6dmMapp0jYCFcF5PUtV3cmBkG_2dgXzlnPpeOgb1NUdpeZmvB6eYz_Eoye8QbkGM9YuwIMyUm321z6rxp07wCwU0RBm35zS_J-H6B1xluZPcz4p4YhaINASTA5Mx_jajHCRi-FEQRZlIo7CURoPw1sMviUs3EHGZvf4e3cyFBSHCdCR8HYsbckaVkbSM9nbg6J6PQw_YpNjk79gDZ6AhfM0r3t7Tp7F5RrAArspuusnQK8pdZ4E3hR6TESRB9y6iJQ",
+      "widthPx": 4000,
+      "heightPx": 3000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIChp_vhcQ!2e10!4m2!3m1!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIChp_vhcQ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106334840427739013334",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUFDGftn0TIKKKt1XCbS5D1E_s5vGQGt00-iYu4cbY0BC98PCMmbg=s100-p-k-no-mo",
+          "displayName": "Kevin Stewart"
+        }
+      ]
+    }
+  ],
+  "rating": 4.9,
+  "reviews": [
+    {
+      "name": "places/ChIJ1W_mTeQPmogRbx0PvLgqv2o/reviews/ChZDSUhNMG9nS0VJQ0FnSURuck9LZ2FnEAE",
+      "text": {
+        "text": "Trevor was great to deal with. I told him I was reluctant to sign up for a space because ultimately I wanted to get a little closer to home. He assured me it truly is month to month and no hard feelings if I left after 1 month. I took him for his word and he held it. No issues letting him know I was leaving. Would definitely rent here again if I didn't have a closer option to home.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2024-10-03T21:57:04.435299Z",
+      "originalText": {
+        "text": "Trevor was great to deal with. I told him I was reluctant to sign up for a space because ultimately I wanted to get a little closer to home. He assured me it truly is month to month and no hard feelings if I left after 1 month. I took him for his word and he held it. No issues letting him know I was leaving. Would definitely rent here again if I didn't have a closer option to home.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURuck9LZ2FnEAE!2m1!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURuck9LZ2FnEAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/104613529935189573221/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKAkMIxI46UqoVpKYAGkIVy8XPciy-vP5ewnlTrWZ-feDGftg=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Ryan Merritt"
+      },
+      "relativePublishTimeDescription": "a year ago"
+    },
+    {
+      "name": "places/ChIJ1W_mTeQPmogRbx0PvLgqv2o/reviews/ChZDSUhNMG9nS0VJQ0FnSUNkMzR6ZUtBEAE",
+      "text": {
+        "text": "Very nice facility. No southern exposure.  Very protected. 50' deep.\nOur 44' fifth wheel  fit with room to spare. And has a electrical outlet there if needed. I would absolutely recommend this! Trevor is a great guy to work with!!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2024-02-19T18:28:42.238439Z",
+      "originalText": {
+        "text": "Very nice facility. No southern exposure.  Very protected. 50' deep.\nOur 44' fifth wheel  fit with room to spare. And has a electrical outlet there if needed. I would absolutely recommend this! Trevor is a great guy to work with!!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNkMzR6ZUtBEAE!2m1!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNkMzR6ZUtBEAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/105455816990253765690/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJ-SqlopG3kGcU-SWYcJ44z1T9_xVkwHL_UsMYfSSbN-Swhow=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Jerry Bois"
+      },
+      "relativePublishTimeDescription": "2 years ago"
+    },
+    {
+      "name": "places/ChIJ1W_mTeQPmogRbx0PvLgqv2o/reviews/ChZDSUhNMG9nS0VJQ0FnTUNBaW9XU0NBEAE",
+      "text": {
+        "text": "Great location. Trevor is fast to respond. Easy access getting in and out. Pin works 24/7 at entrance gate. 5 stars",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-01-30T19:52:30.324538Z",
+      "originalText": {
+        "text": "Great location. Trevor is fast to respond. Easy access getting in and out. Pin works 24/7 at entrance gate. 5 stars",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnTUNBaW9XU0NBEAE!2m1!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnTUNBaW9XU0NBEAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/103417642788106416561/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXEti2ZojYAgCG653XcaKUFo4Kiw-GGtXwg07tcW6bXb9IYfWXy=s128-c0x00000000-cc-rp-mo",
+        "displayName": "John Ryan W"
+      },
+      "relativePublishTimeDescription": "a year ago"
+    },
+    {
+      "name": "places/ChIJ1W_mTeQPmogRbx0PvLgqv2o/reviews/Ci9DQUlRQUNvZENodHljRjlvT25FdE5tMW1iazloT1hwck9YZHBTRFZvUVc4NVZsRRAB",
+      "text": {
+        "text": "Always responsive…keep our 42 foot fifth wheel dry and safe..",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-09-26T13:41:27.511660315Z",
+      "originalText": {
+        "text": "Always responsive…keep our 42 foot fifth wheel dry and safe..",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25FdE5tMW1iazloT1hwck9YZHBTRFZvUVc4NVZsRRAB!2m1!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT25FdE5tMW1iazloT1hwck9YZHBTRFZvUVc4NVZsRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/109232293300450855097/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLgzVVe9vRPPthadKUwQXHDUJWzz-Z4Chm3MD6q9FRZt_FBoA=s128-c0x00000000-cc-rp-mo",
+        "displayName": "William"
+      },
+      "relativePublishTimeDescription": "8 months ago"
+    },
+    {
+      "name": "places/ChIJ1W_mTeQPmogRbx0PvLgqv2o/reviews/Ci9DQUlRQUNvZENodHljRjlvT25GdWNqbFRNRlZYWlRaU1FtRk5kRm93U0RnMFpVRRAB",
+      "text": {
+        "text": "Excellent security and customer service. Good location near downtown Foley.",
+        "languageCode": "en"
+      },
+      "rating": 4,
+      "publishTime": "2025-09-10T17:04:53.682314254Z",
+      "originalText": {
+        "text": "Excellent security and customer service. Good location near downtown Foley.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25GdWNqbFRNRlZYWlRaU1FtRk5kRm93U0RnMFpVRRAB!2m1!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT25GdWNqbFRNRlZYWlRaU1FtRk5kRm93U0RnMFpVRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/105267370337514480642/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJbzQ1W4SOIEY682BshOwgo2SxdKoinAC6TM95gJWj4fB8uhQ=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Lucinda Taylor"
+      },
+      "relativePublishTimeDescription": "9 months ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.396514500000002,
+    "longitude": -87.6790959
+  },
+  "plusCode": {
+    "globalCode": "862J98WC+J9",
+    "compoundCode": "98WC+J9 Foley, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.395163169708503,
+      "longitude": -87.68048363029149
+    },
+    "high": {
+      "latitude": 30.3978611302915,
+      "longitude": -87.67778566970848
+    }
+  },
+  "websiteUri": "http://tttstorage.com/",
+  "displayName": {
+    "text": "TTT Storage",
+    "languageCode": "en"
+  },
+  "primaryType": "storage",
+  "googleMapsUri": "https://maps.google.com/?cid=7691913661489552751&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "paymentOptions": {
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=7691913661489552751&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "userRatingCount": 9,
+  "adrFormatAddress": "<span class=\"street-address\">890 S Bay St</span>, <span class=\"locality\">Foley</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36535</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "890 S Bay St, Foley, AL 36535, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "890",
+      "shortText": "890",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "South Bay Street",
+      "shortText": "S Bay St",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Foley",
+      "shortText": "Foley",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36535",
+      "shortText": "36535",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {},
+  "currentOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 0,
+          "minute": 0,
+          "truncated": true
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 59,
+          "truncated": true
+        }
+      }
+    ],
+    "weekdayDescriptions": [
+      "Monday: Open 24 hours",
+      "Tuesday: Open 24 hours",
+      "Wednesday: Open 24 hours",
+      "Thursday: Open 24 hours",
+      "Friday: Open 24 hours",
+      "Saturday: Open 24 hours",
+      "Sunday: Open 24 hours"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "RV Storage Facility",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "nationalPhoneNumber": "(251) 200-4445",
+  "regularOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 0,
+          "minute": 0
+        }
+      }
+    ],
+    "weekdayDescriptions": [
+      "Monday: Open 24 hours",
+      "Tuesday: Open 24 hours",
+      "Wednesday: Open 24 hours",
+      "Thursday: Open 24 hours",
+      "Friday: Open 24 hours",
+      "Saturday: Open 24 hours",
+      "Sunday: Open 24 hours"
+    ]
+  },
+  "shortFormattedAddress": "890 S Bay St, Foley",
+  "primaryTypeDisplayName": {
+    "text": "Storage",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-200-4445"
+}
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 890 S Bay St, Foley
+national_phone: (251) 200-4445
+search_vector: 'foley':4 'storag':2A,3 'ttt':1A
+primary_type_display: Storage
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=7691913661489552751&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {}
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: trade_home_service
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_attributes   -   2 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 2] ---
+id: fba0df6c-c383-4b5f-8f9a-3855f7a158b0
+entity_slug: ttt-storage-Lgqv2o
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 2 of 2] ---
+id: 19aa3185-5166-471d-be82-34e4d41c5e8c
+entity_slug: ttt-storage-Lgqv2o
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: ttt-storage-Lgqv2o
+name: TTT Storage
+industry_code: trade_home_service
+is_parent: false
+score_of_7: 6
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 0317ad1e-b02c-4af1-85e6-e884f3cf819d
+entity_slug: ttt-storage-Lgqv2o
+place_uri: https://maps.google.com/?cid=7691913661489552751&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 5448
+entity_slug: ttt-storage-Lgqv2o
+google_review_name: places/ChIJ1W_mTeQPmogRbx0PvLgqv2o/reviews/ChZDSUhNMG9nS0VJQ0FnSURuck9LZ2FnEAE
+rating: 5
+review_text: Trevor was great to deal with. I told him I was reluctant to sign up for a space because ultimately I wanted to get a little closer to home. He assured me it truly is month to month and no hard feelings if I left after 1 month. I took him for his word and he held it. No issues letting him know I was leaving. Would definitely rent here again if I didn't have a closer option to home.
+language_code: en
+author_name: Ryan Merritt
+author_profile_url: https://www.google.com/maps/contrib/104613529935189573221/reviews
+publish_time: 2024-10-03T21:57:04.435299+00:00
+relative_time: a year ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURuck9LZ2FnEAE!2m1!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 5449
+entity_slug: ttt-storage-Lgqv2o
+google_review_name: places/ChIJ1W_mTeQPmogRbx0PvLgqv2o/reviews/ChZDSUhNMG9nS0VJQ0FnSUNkMzR6ZUtBEAE
+rating: 5
+review_text: Very nice facility. No southern exposure.  Very protected. 50' deep.
+Our 44' fifth wheel  fit with room to spare. And has a electrical outlet there if needed. I would absolutely recommend this! Trevor is a great guy to work with!!
+language_code: en
+author_name: Jerry Bois
+author_profile_url: https://www.google.com/maps/contrib/105455816990253765690/reviews
+publish_time: 2024-02-19T18:28:42.238439+00:00
+relative_time: 2 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNkMzR6ZUtBEAE!2m1!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 5450
+entity_slug: ttt-storage-Lgqv2o
+google_review_name: places/ChIJ1W_mTeQPmogRbx0PvLgqv2o/reviews/ChZDSUhNMG9nS0VJQ0FnTUNBaW9XU0NBEAE
+rating: 5
+review_text: Great location. Trevor is fast to respond. Easy access getting in and out. Pin works 24/7 at entrance gate. 5 stars
+language_code: en
+author_name: John Ryan W
+author_profile_url: https://www.google.com/maps/contrib/103417642788106416561/reviews
+publish_time: 2025-01-30T19:52:30.324538+00:00
+relative_time: a year ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnTUNBaW9XU0NBEAE!2m1!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 5451
+entity_slug: ttt-storage-Lgqv2o
+google_review_name: places/ChIJ1W_mTeQPmogRbx0PvLgqv2o/reviews/Ci9DQUlRQUNvZENodHljRjlvT25FdE5tMW1iazloT1hwck9YZHBTRFZvUVc4NVZsRRAB
+rating: 5
+review_text: Always responsive…keep our 42 foot fifth wheel dry and safe..
+language_code: en
+author_name: William
+author_profile_url: https://www.google.com/maps/contrib/109232293300450855097/reviews
+publish_time: 2025-09-26T13:41:27.51166+00:00
+relative_time: 8 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25FdE5tMW1iazloT1hwck9YZHBTRFZvUVc4NVZsRRAB!2m1!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 5452
+entity_slug: ttt-storage-Lgqv2o
+google_review_name: places/ChIJ1W_mTeQPmogRbx0PvLgqv2o/reviews/Ci9DQUlRQUNvZENodHljRjlvT25GdWNqbFRNRlZYWlRaU1FtRk5kRm93U0RnMFpVRRAB
+rating: 4
+review_text: Excellent security and customer service. Good location near downtown Foley.
+language_code: en
+author_name: Lucinda Taylor
+author_profile_url: https://www.google.com/maps/contrib/105267370337514480642/reviews
+publish_time: 2025-09-10T17:04:53.682314+00:00
+relative_time: 9 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25GdWNqbFRNRlZYWlRaU1FtRk5kRm93U0RnMFpVRRAB!2m1!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 21de1b17-85bc-4e95-9773-b756bee238bc
+entity_slug: ttt-storage-Lgqv2o
+day_of_week: 0
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: c9a582a6-deea-4aa8-8167-01539c6f6c79
+entity_slug: ttt-storage-Lgqv2o
+day_of_week: 1
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 0aff93d7-abcc-43d7-860e-15cf0b3422a9
+entity_slug: ttt-storage-Lgqv2o
+day_of_week: 2
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 83e45b39-f3c8-48ed-b464-21bdfb7c36f9
+entity_slug: ttt-storage-Lgqv2o
+day_of_week: 3
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 8195c6d1-6f9d-4c7e-be4c-ec5f5a25d3ce
+entity_slug: ttt-storage-Lgqv2o
+day_of_week: 4
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 421ea34c-6c15-4220-bd49-fc7c8d760761
+entity_slug: ttt-storage-Lgqv2o
+day_of_week: 5
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: baecfc4a-3a46-4589-80d5-56af541fe841
+entity_slug: ttt-storage-Lgqv2o
+day_of_week: 6
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: ttt-storage-Lgqv2o
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: a15b0822-914d-457d-88e0-1aa8d922f97e
+name: TTT Storage
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ttt-storage-Lgqv2o/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ttt-storage-Lgqv2o/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: ttt-storage-Lgqv2o
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: a15b0822-914d-457d-88e0-1aa8d922f97e
+name: TTT Storage
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ttt-storage-Lgqv2o/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ttt-storage-Lgqv2o/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: b4319555-8666-461c-a878-be1c1fb3bb8d
+entity_slug: ttt-storage-Lgqv2o
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 767415d1-22c4-4d67-a30d-e883a3cc86be
+entity_slug: ttt-storage-Lgqv2o
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: 6b9eed47-a217-479c-8d3b-15e93a10a86a
+entity_slug: ttt-storage-Lgqv2o
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: 95a88774-39a0-4855-89bc-ae1237727eb7
+entity_slug: ttt-storage-Lgqv2o
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: 5f4f4e1a-65ad-47f2-b247-3604181f0a52
+entity_slug: ttt-storage-Lgqv2o
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: 6a897765-e370-440f-a6e6-6cb65bb03929
+entity_slug: ttt-storage-Lgqv2o
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 6f754ddc-a328-4dee-bdc6-d210e5b17ef2
+entity_slug: ttt-storage-Lgqv2o
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 3c6337e6-1eb1-4c97-807c-d61c9c8cb187
+entity_slug: ttt-storage-Lgqv2o
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: 16dc4ab6-d762-4e7b-b6c5-b84399fae5ce
+entity_slug: ttt-storage-Lgqv2o
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: 0539d7b3-5877-4ac8-b10f-f89e851ba384
+entity_slug: ttt-storage-Lgqv2o
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: 7b82ec22-eb25-473b-ae72-c72dc1015b30
+entity_slug: ttt-storage-Lgqv2o
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: 70f490a3-b938-4884-813f-93365a294670
+entity_slug: ttt-storage-Lgqv2o
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: 34962f6d-f7c2-4021-8a45-ef079fc585d7
+entity_slug: ttt-storage-Lgqv2o
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 14190
+entity_slug: ttt-storage-Lgqv2o
+name: TTT Storage
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: a15b0822-914d-457d-88e0-1aa8d922f97e
+
+####################################################################################################
+# TABLE: entity_photos   -   8 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 8] ---
+id: 4379eeb2-81fa-41d1-90ba-634b4b2a2b00
+entity_slug: ttt-storage-Lgqv2o
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ttt-storage-Lgqv2o/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 8] ---
+id: 5d942ff5-4982-4fe7-8857-0ade2fc480ae
+entity_slug: ttt-storage-Lgqv2o
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ttt-storage-Lgqv2o/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 8] ---
+id: 00423543-9f29-414a-9dda-42518b8336c6
+entity_slug: ttt-storage-Lgqv2o
+url: https://places.googleapis.com/v1/places/ChIJ1W_mTeQPmogRbx0PvLgqv2o/photos/AaVGc3kqxMMdVrezP2wdiXShp-wGfCsRV4P3xUHlKqheNLSdBuz5WQ-2XgUnRe5Sy2bFla1dEdsKIgIzRECfOFpZkPwwpYDYWm0ycu2-_F-Pt3D1KlYir2dthGLd9L9Q1MDExiIA3Xb9qms8AbS1ZxrAR6h9KW2OHoOa1GTU0pXH0cLbvB4CXQUzNgKBGqBgUxyse_LOFlTdOtiDgpjjma9P8CvAdNl_D085R_exgajY0T7FCOp1x8fGxlR7Zl6tDnM0OrgxggVJ6MEtb8bb4dlPMjAPJd2aYid7iPQxBJLCQ96iju50cKVtRX_EeefBBjP8YUbxmN7cawGTpLAxN_MD_YnYcBCI6u07hWoB02zieh84JetTgTlGqpVGKmOyZikF3_m22ywL9FIfr3tFsi1MU8GdcWTbXNwW-Ca1ymOFTzXAyWU/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ1W_mTeQPmogRbx0PvLgqv2o/photos/AaVGc3kqxMMdVrezP2wdiXShp-wGfCsRV4P3xUHlKqheNLSdBuz5WQ-2XgUnRe5Sy2bFla1dEdsKIgIzRECfOFpZkPwwpYDYWm0ycu2-_F-Pt3D1KlYir2dthGLd9L9Q1MDExiIA3Xb9qms8AbS1ZxrAR6h9KW2OHoOa1GTU0pXH0cLbvB4CXQUzNgKBGqBgUxyse_LOFlTdOtiDgpjjma9P8CvAdNl_D085R_exgajY0T7FCOp1x8fGxlR7Zl6tDnM0OrgxggVJ6MEtb8bb4dlPMjAPJd2aYid7iPQxBJLCQ96iju50cKVtRX_EeefBBjP8YUbxmN7cawGTpLAxN_MD_YnYcBCI6u07hWoB02zieh84JetTgTlGqpVGKmOyZikF3_m22ywL9FIfr3tFsi1MU8GdcWTbXNwW-Ca1ymOFTzXAyWU
+is_cover: false
+sort_order: 0
+caption: TTT Storage
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDhyMC_zwE!2e10!4m2!3m1!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f
+
+--- entity_photos [row 4 of 8] ---
+id: 98eac88b-1650-406a-b44f-e9b5d10ce517
+entity_slug: ttt-storage-Lgqv2o
+url: https://places.googleapis.com/v1/places/ChIJ1W_mTeQPmogRbx0PvLgqv2o/photos/AaVGc3nqZwhzwCHBMzrQGXZ3cmI7QtXkKSQEWLwudRs0DjhaqkE1Ajq3yZlNMjDeWjB7c8mPxgtNJTi5NdmGrUf1mk5NFRJ9kqT6Py8qzZ7AGZ9wkBh-k7t6A0elVpwPv_gQMwIKlgkuIHkj_G3usylA2xlIianQTHXUgYyt-TGiILOdQaOKNrrlijMbkrK-Z1CHBun2NukVW9UrvblnYcSJtECPvpKuH1jf25RtNeCFCHOOg51HCVkPJiwryrDFbgYyi8hh1bkXOgpzktje3RK_85CFGhscakD-nCKMne7bq8drFoQsR6Uf5PtVC7-qNjfjyqWvUP7qTIcoZC-q5R9KeN2pPNiNmc9k8Tb8SBQLSCJSBqBTHC1HJCsTxJkRKqUmNyAndnRZximyREwR7w5lUISrg033sDn3YLmd216WF6tw3g/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ1W_mTeQPmogRbx0PvLgqv2o/photos/AaVGc3nqZwhzwCHBMzrQGXZ3cmI7QtXkKSQEWLwudRs0DjhaqkE1Ajq3yZlNMjDeWjB7c8mPxgtNJTi5NdmGrUf1mk5NFRJ9kqT6Py8qzZ7AGZ9wkBh-k7t6A0elVpwPv_gQMwIKlgkuIHkj_G3usylA2xlIianQTHXUgYyt-TGiILOdQaOKNrrlijMbkrK-Z1CHBun2NukVW9UrvblnYcSJtECPvpKuH1jf25RtNeCFCHOOg51HCVkPJiwryrDFbgYyi8hh1bkXOgpzktje3RK_85CFGhscakD-nCKMne7bq8drFoQsR6Uf5PtVC7-qNjfjyqWvUP7qTIcoZC-q5R9KeN2pPNiNmc9k8Tb8SBQLSCJSBqBTHC1HJCsTxJkRKqUmNyAndnRZximyREwR7w5lUISrg033sDn3YLmd216WF6tw3g
+is_cover: false
+sort_order: 1
+caption: TTT Storage
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDhyKCwWA!2e10!4m2!3m1!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f
+
+--- entity_photos [row 5 of 8] ---
+id: 103fa5d2-5c82-4262-a716-bd2104fac0e5
+entity_slug: ttt-storage-Lgqv2o
+url: https://places.googleapis.com/v1/places/ChIJ1W_mTeQPmogRbx0PvLgqv2o/photos/AaVGc3lVF7qWHnNBDbClHmrqZhxfErLGIgJD8647nPK6IQQS6M0lZFh_nKwheu4Uhq4Lcu_GWs89gPInNzNqzFJdfYPSj4X10wlGrEFmaY-S5ZO3jjSlSv19qMItSBu9RdyqEerHbdQNJh4r9cHdGakoWzq0-HUhnspFjjCLOZe5XBUX3rdf52O0cP27KytFOlrBm042hgiMWpqbAqEyYffZ38Da25t6Tq_l4dj_8Qvn8GGIEAIxKAdDJM2zHwLLOv5JoUG1npcI-NELi6Ej3DwlaRb2SobivDjx0SNOnVrP4g9-qUsBc2zFTKjDPV8r-XuDU2sNDq4E-XrpRhVkEZygnHT8uRwt0hnYhMbw_S9-UgfY7bJXNPDPayBXRDFaRsVSwk4FvyCMlB9nLJ5gVl9Mu8OvEboWt6aOfw0_Kg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ1W_mTeQPmogRbx0PvLgqv2o/photos/AaVGc3lVF7qWHnNBDbClHmrqZhxfErLGIgJD8647nPK6IQQS6M0lZFh_nKwheu4Uhq4Lcu_GWs89gPInNzNqzFJdfYPSj4X10wlGrEFmaY-S5ZO3jjSlSv19qMItSBu9RdyqEerHbdQNJh4r9cHdGakoWzq0-HUhnspFjjCLOZe5XBUX3rdf52O0cP27KytFOlrBm042hgiMWpqbAqEyYffZ38Da25t6Tq_l4dj_8Qvn8GGIEAIxKAdDJM2zHwLLOv5JoUG1npcI-NELi6Ej3DwlaRb2SobivDjx0SNOnVrP4g9-qUsBc2zFTKjDPV8r-XuDU2sNDq4E-XrpRhVkEZygnHT8uRwt0hnYhMbw_S9-UgfY7bJXNPDPayBXRDFaRsVSwk4FvyCMlB9nLJ5gVl9Mu8OvEboWt6aOfw0_Kg
+is_cover: false
+sort_order: 2
+caption: Kevin Stewart
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIChp_s-!2e10!4m2!3m1!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f
+
+--- entity_photos [row 6 of 8] ---
+id: 238f8b7d-e150-4143-87dc-30cd43466693
+entity_slug: ttt-storage-Lgqv2o
+url: https://places.googleapis.com/v1/places/ChIJ1W_mTeQPmogRbx0PvLgqv2o/photos/AaVGc3mUktod-4i6TFoM3PNzq4OxXNioGPPqPe3PDTSksRsUna6UnCidQREct4YXEkElT6zPxfGCLZwYRZ-ljwaZ2Tub1P5uCMKttin1LEr_BFnOB-EZM7ohDtR5W0BKw7OkI6jjB4Xd-bBpO84cyDtt9U6klplBEGMsJSSrTSf4ySQU6dmMapp0jYCFcF5PUtV3cmBkG_2dgXzlnPpeOgb1NUdpeZmvB6eYz_Eoye8QbkGM9YuwIMyUm321z6rxp07wCwU0RBm35zS_J-H6B1xluZPcz4p4YhaINASTA5Mx_jajHCRi-FEQRZlIo7CURoPw1sMviUs3EHGZvf4e3cyFBSHCdCR8HYsbckaVkbSM9nbg6J6PQw_YpNjk79gDZ6AhfM0r3t7Tp7F5RrAArspuusnQK8pdZ4E3hR6TESRB9y6iJQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJ1W_mTeQPmogRbx0PvLgqv2o/photos/AaVGc3mUktod-4i6TFoM3PNzq4OxXNioGPPqPe3PDTSksRsUna6UnCidQREct4YXEkElT6zPxfGCLZwYRZ-ljwaZ2Tub1P5uCMKttin1LEr_BFnOB-EZM7ohDtR5W0BKw7OkI6jjB4Xd-bBpO84cyDtt9U6klplBEGMsJSSrTSf4ySQU6dmMapp0jYCFcF5PUtV3cmBkG_2dgXzlnPpeOgb1NUdpeZmvB6eYz_Eoye8QbkGM9YuwIMyUm321z6rxp07wCwU0RBm35zS_J-H6B1xluZPcz4p4YhaINASTA5Mx_jajHCRi-FEQRZlIo7CURoPw1sMviUs3EHGZvf4e3cyFBSHCdCR8HYsbckaVkbSM9nbg6J6PQw_YpNjk79gDZ6AhfM0r3t7Tp7F5RrAArspuusnQK8pdZ4E3hR6TESRB9y6iJQ
+is_cover: false
+sort_order: 3
+caption: Kevin Stewart
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIChp_vhcQ!2e10!4m2!3m1!1s0x889a0fe44de66fd5:0x6abf2ab8bc0f1d6f
+
+--- entity_photos [row 7 of 8] ---
+id: 58339e21-f970-4213-92d6-214ed5f3b9b3
+entity_slug: ttt-storage-Lgqv2o
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ttt-storage-Lgqv2o/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: a15b0822-914d-457d-88e0-1aa8d922f97e
+
+--- entity_photos [row 8 of 8] ---
+id: b5eb5708-2c81-4c22-8975-1a3205dd9fa0
+entity_slug: ttt-storage-Lgqv2o
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/ttt-storage-Lgqv2o/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: a15b0822-914d-457d-88e0-1aa8d922f97e
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: c5fc41b1-c441-4a5e-96b4-5b5447100487
+entity_slug: ttt-storage-Lgqv2o
+reviewer_name: Ryan Merritt
+rating: 5
+body: Trevor was great to deal with. I told him I was reluctant to sign up for a space because ultimately I wanted to get a little closer to home. He assured me it truly is month to month and no hard feelings if I left after 1 month. I took him for his word and he held it. No issues letting him know I was leaving. Would definitely rent here again if I didn't have a closer option to home.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2024-10-03T21:57:04.435299+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: ee5ca0c9-b669-4518-ab2e-a6ae4ce99554
+entity_slug: ttt-storage-Lgqv2o
+reviewer_name: Jerry Bois
+rating: 5
+body: Very nice facility. No southern exposure.  Very protected. 50' deep.
+Our 44' fifth wheel  fit with room to spare. And has a electrical outlet there if needed. I would absolutely recommend this! Trevor is a great guy to work with!!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2024-02-19T18:28:42.238439+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: 0ab4116c-3611-4e85-9fef-27befc8ecff4
+entity_slug: ttt-storage-Lgqv2o
+reviewer_name: John Ryan W
+rating: 5
+body: Great location. Trevor is fast to respond. Easy access getting in and out. Pin works 24/7 at entrance gate. 5 stars
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-01-30T19:52:30.324538+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 4ec1d809-fbf1-43c1-a5d2-642b2699d79d
+entity_slug: ttt-storage-Lgqv2o
+reviewer_name: William
+rating: 5
+body: Always responsive…keep our 42 foot fifth wheel dry and safe..
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-09-26T13:41:27.51166+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: b34d1a36-c2fd-4d6d-a773-d4b366a32595
+entity_slug: ttt-storage-Lgqv2o
+reviewer_name: Lucinda Taylor
+rating: 4
+body: Excellent security and customer service. Good location near downtown Foley.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-09-10T17:04:53.682314+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   32 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 32] ---
+id: 394c08e0-7139-4961-b3be-ff2120fa8b53
+entity_slug: ttt-storage-Lgqv2o
+tag_name: storage
+tag_category: google_type
+
+--- entity_tags [row 2 of 32] ---
+id: 8ca1a559-b010-46d0-8cd8-c27e036e1bbf
+entity_slug: ttt-storage-Lgqv2o
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 3 of 32] ---
+id: cfe81b28-3cac-4aa9-94a8-57436b6ec44a
+entity_slug: ttt-storage-Lgqv2o
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 4 of 32] ---
+id: db3c5758-5ba9-42e1-9ce8-45532bbddcad
+entity_slug: ttt-storage-Lgqv2o
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 5 of 32] ---
+id: 2129978d-1602-442f-b8e9-73bca22db7dd
+entity_slug: ttt-storage-Lgqv2o
+tag_name: storage
+tag_category: google_type
+
+--- entity_tags [row 6 of 32] ---
+id: 7eee3f71-3fc3-4bcb-a0be-1d817ce9af69
+entity_slug: ttt-storage-Lgqv2o
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 7 of 32] ---
+id: 7cdb6880-2ca4-4516-bc1c-fadb74ca11be
+entity_slug: ttt-storage-Lgqv2o
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 8 of 32] ---
+id: a966461b-fa47-49f3-bf7e-340d2c7a254d
+entity_slug: ttt-storage-Lgqv2o
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 9 of 32] ---
+id: bc876612-c0b3-47ac-86f6-440058d2caed
+entity_slug: ttt-storage-Lgqv2o
+tag_name: storage
+tag_category: google_type
+
+--- entity_tags [row 10 of 32] ---
+id: 79026fde-fe60-4158-b17f-f638b4af12aa
+entity_slug: ttt-storage-Lgqv2o
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 11 of 32] ---
+id: b7944078-aabf-4938-9193-909f75cff6e0
+entity_slug: ttt-storage-Lgqv2o
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 12 of 32] ---
+id: 3d57f4cf-de00-456e-bce3-6955603a0c94
+entity_slug: ttt-storage-Lgqv2o
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 13 of 32] ---
+id: fbde6df0-8b53-4ca6-80a6-61bead25f049
+entity_slug: ttt-storage-Lgqv2o
+tag_name: storage
+tag_category: google_type
+
+--- entity_tags [row 14 of 32] ---
+id: 34383267-10de-45a6-9b9e-b88ae56313c3
+entity_slug: ttt-storage-Lgqv2o
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 15 of 32] ---
+id: 0853dd7b-2dc3-4c4c-bd6d-cb710c00f8b2
+entity_slug: ttt-storage-Lgqv2o
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 16 of 32] ---
+id: 5eb00ea2-e24b-405d-ad23-ab79e19da276
+entity_slug: ttt-storage-Lgqv2o
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 17 of 32] ---
+id: e746cb9a-142f-4cd3-8e8c-8d6f7598736b
+entity_slug: ttt-storage-Lgqv2o
+tag_name: storage
+tag_category: google_type
+
+--- entity_tags [row 18 of 32] ---
+id: f4e0fb8d-ab33-4722-bdcb-e4e2bdf2e8ef
+entity_slug: ttt-storage-Lgqv2o
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 19 of 32] ---
+id: d858173c-e22d-4973-9143-7c0710391f75
+entity_slug: ttt-storage-Lgqv2o
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 20 of 32] ---
+id: 2afcb04c-e76c-42bd-ac83-028b7d776edb
+entity_slug: ttt-storage-Lgqv2o
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 21 of 32] ---
+id: d5e9c273-038b-4fa3-aeaf-4e55003a5440
+entity_slug: ttt-storage-Lgqv2o
+tag_name: storage
+tag_category: google_type
+
+--- entity_tags [row 22 of 32] ---
+id: d83b8afc-5f2c-41cd-864c-538811b65674
+entity_slug: ttt-storage-Lgqv2o
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 23 of 32] ---
+id: 12620720-7f09-4754-a133-1fb6ffe4869a
+entity_slug: ttt-storage-Lgqv2o
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 24 of 32] ---
+id: 67694692-b9ee-4142-bcfc-31938cdacd51
+entity_slug: ttt-storage-Lgqv2o
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 25 of 32] ---
+id: 062dd2eb-75ab-455c-a625-6d4f6d0b56c9
+entity_slug: ttt-storage-Lgqv2o
+tag_name: storage
+tag_category: google_type
+
+--- entity_tags [row 26 of 32] ---
+id: ab6ed5f5-6ab5-40f7-a92b-f562ddaa46c0
+entity_slug: ttt-storage-Lgqv2o
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 27 of 32] ---
+id: ca547079-3a4b-4697-8b2f-c0d6dea3e68c
+entity_slug: ttt-storage-Lgqv2o
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 28 of 32] ---
+id: b44103c0-59b6-441d-9943-9d752c4d944e
+entity_slug: ttt-storage-Lgqv2o
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 29 of 32] ---
+id: ca8a7ba2-e6f3-4a73-9693-bf033b0272f1
+entity_slug: ttt-storage-Lgqv2o
+tag_name: storage
+tag_category: google_type
+
+--- entity_tags [row 30 of 32] ---
+id: d444b3b6-b1ff-4a14-9ac3-39f28cc3748b
+entity_slug: ttt-storage-Lgqv2o
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 31 of 32] ---
+id: e9be29b4-cab5-4228-990c-fbf809b95a51
+entity_slug: ttt-storage-Lgqv2o
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 32 of 32] ---
+id: ce0f72d9-e30e-401c-8cc7-7985451b9832
+entity_slug: ttt-storage-Lgqv2o
+tag_name: acceptsDebitCards
+tag_category: payment
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 0c62d762-c20e-436f-9fab-16c88c2a21f7
+entity_slug: ttt-storage-Lgqv2o
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_trade_home_service   -   1 row(s)
+####################################################################################################
+
+--- industry_trade_home_service [row 1 of 1] ---
+entity_slug: ttt-storage-Lgqv2o
+service_count: 0
+updated_at: 2026-07-21T16:19:28.491935+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: offer
+ref_id: 14190
+entity_slug: ttt-storage-Lgqv2o
+title: TTT Storage
+category: rental
+search_vector: 'storag':2A 'ttt':1A
+
+--- search_index [row 2 of 2] ---
+ref_type: business
+ref_id: ttt-storage-Lgqv2o
+entity_slug: ttt-storage-Lgqv2o
+title: TTT Storage
+category: storage
+search_vector: 'storag':2A,3B 'ttt':1A
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: ttt-storage-Lgqv2o

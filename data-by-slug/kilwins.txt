@@ -1,0 +1,2361 @@
+====================================================================================================
+SLUG: kilwins
+NAME: Kilwins
+INDUSTRY: cafe_dessert
+SUBTYPE: confectionery
+PARENT: the-wharf
+TABLES WITH DATA: 27
+TOTAL ROWS: 177
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (11 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  ai_unified_search_items_full  (12 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  catalog_items  (11 rows)
+  catalog_section_days  (7 rows)
+  catalog_sections  (1 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (12 rows)
+  entity_items_v  (12 rows)
+  entity_offer  (12 rows)
+  entity_offer_section  (1 rows)
+  entity_photos  (5 rows)
+  entity_tags  (31 rows)
+  entity_theme  (1 rows)
+  industry_cafe_dessert  (1 rows)
+  menu_items  (11 rows)
+  menu_section_days  (7 rows)
+  menu_section_details  (1 rows)
+  menu_sections  (1 rows)
+  search_index  (24 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: kilwins
+name: Kilwins
+planner_category: food_drink
+data_quality_score: 75
+issues: missing_faqs|missing_lat_lng
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: true
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   11 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 11] ---
+id: 4881
+entity_slug: kilwins
+intent_tag: best_for:families_with_kids
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 11] ---
+id: 4882
+entity_slug: kilwins
+intent_tag: best_for:breakfast_or_brunch
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 11] ---
+id: 4883
+entity_slug: kilwins
+intent_tag: experience:family_kids
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 11] ---
+id: 4884
+entity_slug: kilwins
+intent_tag: meal:breakfast
+intent_category: meal_period
+confidence: 0.82
+evidence: Derived from meal flags/menu content.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 11] ---
+id: 4885
+entity_slug: kilwins
+intent_tag: meal:brunch
+intent_category: meal_period
+confidence: 0.82
+evidence: Derived from meal flags/menu content.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 11] ---
+id: 4886
+entity_slug: kilwins
+intent_tag: cuisine:breakfast_brunch
+intent_category: cuisine
+confidence: 0.82
+evidence: Derived from cuisine/menu/tags.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 11] ---
+id: 4887
+entity_slug: kilwins
+intent_tag: cuisine:coffee_sweets
+intent_category: cuisine
+confidence: 0.82
+evidence: Derived from cuisine/menu/tags.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 11] ---
+id: 4888
+entity_slug: kilwins
+intent_tag: has:menu
+intent_category: data_available
+confidence: 0.95
+evidence: Menu items exist.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 9 of 11] ---
+id: 4889
+entity_slug: kilwins
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 10 of 11] ---
+id: 4890
+entity_slug: kilwins
+intent_tag: missing:missing_faqs
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 11 of 11] ---
+id: 4891
+entity_slug: kilwins
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: kilwins
+name: Kilwins
+is_active: t
+planner_category: food_drink
+entity_type: service
+entity_subtype: confectionery
+review_count: 0
+website_url: https://kilwins.com
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/kilwins/photo_01.jpg
+voice_summary: Kilwins is best for families with kids, breakfast or brunch. It fits breakfast/brunch, coffee/sweets. Experience tags: family_kids.
+planner_summary: Experience Kilwins: handcrafted fudge, caramel apples, ice cream, and more. Since 1947, Kilwins has promised to make the best possible chocolates, fudge, and ice cream. Our made-in-store products like hand-crafted waffle cones, Mackinac Island Fudge, caramel apples, caramel corn, brittle, and dozens of Kilwins Heritage Chocolate-dipped treats continue the tradition of offering a feast for the senses. Discover Kilwins, where the magic of hand-crafted confections and Original Recipe Ice Cream meet the warmth of exceptional service.
+best_for: families with kids|breakfast or brunch
+not_best_for: nothing specific flagged
+meal_periods: breakfast|brunch
+cuisine_tags: breakfast/brunch|coffee/sweets
+experience_tags: family_kids
+search_keywords: chocolate|fudge|ice-cream|caramel-apples|confections|hand-crafted|sweet-treats|desserts|gift-shop|caramel-corn|brittle|chocolate-dipped|dubai-chocolate|Restaurants|Ice Cream|Sweets & Candy|Gift Shops|Casual Dining|Family Fun|Things To Do|food-and-drink|confectionery|breakfast/brunch|coffee/sweets|breakfast|brunch|family_kids
+has_menu: true
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 2
+menu_item_count: 12
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 23
+faq_count: 0
+data_quality_score: 75
+data_gaps: missing_faqs|missing_lat_lng
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 8003
+entity_slug: kilwins
+entity_name: Kilwins
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/kilwins/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 8004
+entity_slug: kilwins
+entity_name: Kilwins
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/kilwins/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: ai_unified_search_items_full   -   12 row(s)
+####################################################################################################
+
+--- ai_unified_search_items_full [row 1 of 12] ---
+id: 3858
+entity_slug: kilwins
+entity_name: Kilwins
+row_type: menu_item
+section_name: chocolate
+item_name: Kilwins Heritage Chocolate
+description: Premium heritage chocolate products
+item_type_tags: general
+meal_period_tags: all_day_or_unknown
+needs_price: true
+search_text: Kilwins |  | menu_item | chocolate | Kilwins Heritage Chocolate | Premium heritage chocolate products | general |  | all_day_or_unknown
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_unified_search_items_full [row 2 of 12] ---
+id: 3859
+entity_slug: kilwins
+entity_name: Kilwins
+row_type: menu_item
+section_name: chocolate
+item_name: Chocolate-on-the-Inside
+description: Specialty chocolate-on-the-inside treats
+item_type_tags: side
+meal_period_tags: all_day_or_unknown
+needs_price: true
+search_text: Kilwins |  | menu_item | chocolate | Chocolate-on-the-Inside | Specialty chocolate-on-the-inside treats | side |  | all_day_or_unknown
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_unified_search_items_full [row 3 of 12] ---
+id: 3860
+entity_slug: kilwins
+entity_name: Kilwins
+row_type: menu_item
+section_name: chocolate
+item_name: Chocolate-Dipped Treats
+description: Assorted chocolate-dipped items
+item_type_tags: shareable
+meal_period_tags: all_day_or_unknown
+needs_price: true
+search_text: Kilwins |  | menu_item | chocolate | Chocolate-Dipped Treats | Assorted chocolate-dipped items | shareable |  | all_day_or_unknown
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_unified_search_items_full [row 4 of 12] ---
+id: 3861
+entity_slug: kilwins
+entity_name: Kilwins
+row_type: menu_item
+section_name: chocolate
+item_name: Dubai Chocolate
+description: Specialty Dubai chocolate collection
+item_type_tags: general
+meal_period_tags: all_day_or_unknown
+needs_price: true
+search_text: Kilwins |  | menu_item | chocolate | Dubai Chocolate | Specialty Dubai chocolate collection | general |  | all_day_or_unknown
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_unified_search_items_full [row 5 of 12] ---
+id: 3862
+entity_slug: kilwins
+entity_name: Kilwins
+row_type: menu_item
+section_name: fudge
+item_name: Hand-Crafted Fudge
+description: Original recipe hand-crafted fudge
+item_type_tags: general
+meal_period_tags: all_day_or_unknown
+needs_price: true
+search_text: Kilwins |  | menu_item | fudge | Hand-Crafted Fudge | Original recipe hand-crafted fudge | general |  | all_day_or_unknown
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_unified_search_items_full [row 6 of 12] ---
+id: 3863
+entity_slug: kilwins
+entity_name: Kilwins
+row_type: menu_item
+section_name: fudge
+item_name: Mackinac Island Fudge
+description: Traditional Mackinac Island fudge
+item_type_tags: pasta
+meal_period_tags: all_day_or_unknown
+needs_price: true
+search_text: Kilwins |  | menu_item | fudge | Mackinac Island Fudge | Traditional Mackinac Island fudge | pasta |  | all_day_or_unknown
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_unified_search_items_full [row 7 of 12] ---
+id: 3864
+entity_slug: kilwins
+entity_name: Kilwins
+row_type: menu_item
+section_name: ice-cream
+item_name: Original Recipe Ice Cream
+description: Kilwins original recipe ice cream
+item_type_tags: general
+meal_period_tags: all_day_or_unknown
+needs_price: true
+search_text: Kilwins |  | menu_item | ice-cream | Original Recipe Ice Cream | Kilwins original recipe ice cream | general |  | all_day_or_unknown
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_unified_search_items_full [row 8 of 12] ---
+id: 3865
+entity_slug: kilwins
+entity_name: Kilwins
+row_type: menu_item
+section_name: ice-cream
+item_name: Ice Cream Cakes
+description: Custom ice cream cakes
+item_type_tags: dessert
+meal_period_tags: all_day_or_unknown
+needs_price: true
+search_text: Kilwins |  | menu_item | ice-cream | Ice Cream Cakes | Custom ice cream cakes | dessert |  | all_day_or_unknown
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_unified_search_items_full [row 9 of 12] ---
+id: 3866
+entity_slug: kilwins
+entity_name: Kilwins
+row_type: menu_item
+section_name: caramel
+item_name: Caramel Apples
+description: The perfect caramel apple
+item_type_tags: general
+meal_period_tags: all_day_or_unknown
+needs_price: true
+search_text: Kilwins |  | menu_item | caramel | Caramel Apples | The perfect caramel apple | general |  | all_day_or_unknown
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_unified_search_items_full [row 10 of 12] ---
+id: 3867
+entity_slug: kilwins
+entity_name: Kilwins
+row_type: menu_item
+section_name: caramel
+item_name: Caramel Corn
+description: Hand-crafted caramel corn
+item_type_tags: side
+meal_period_tags: all_day_or_unknown
+needs_price: true
+search_text: Kilwins |  | menu_item | caramel | Caramel Corn | Hand-crafted caramel corn | side |  | all_day_or_unknown
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_unified_search_items_full [row 11 of 12] ---
+id: 3868
+entity_slug: kilwins
+entity_name: Kilwins
+row_type: menu_item
+section_name: caramel
+item_name: Brittle
+description: Hand-crafted brittle
+item_type_tags: general
+meal_period_tags: all_day_or_unknown
+needs_price: true
+search_text: Kilwins |  | menu_item | caramel | Brittle | Hand-crafted brittle | general |  | all_day_or_unknown
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_unified_search_items_full [row 12 of 12] ---
+id: 3869
+entity_slug: kilwins
+entity_name: Kilwins
+row_type: menu_item
+section_name: other
+item_name: Hand-Crafted Waffle Cones
+description: Hand-crafted in-store waffle cones
+item_type_tags: breakfast
+meal_period_tags: breakfast
+needs_price: true
+search_text: Kilwins |  | menu_item | other | Hand-Crafted Waffle Cones | Hand-crafted in-store waffle cones | breakfast |  | breakfast
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 43615077-f1c0-4da4-a1b6-43d1609534a9
+resource_type: service
+slug: kilwins
+name: Kilwins
+description: Experience Kilwins: handcrafted fudge, caramel apples, ice cream, and more. Since 1947, Kilwins has promised to make the best possible chocolates, fudge, and ice cream. Our made-in-store products like hand-crafted waffle cones, Mackinac Island Fudge, caramel apples, caramel corn, brittle, and dozens of Kilwins Heritage Chocolate-dipped treats continue the tradition of offering a feast for the senses. Discover Kilwins, where the magic of hand-crafted confections and Original Recipe Ice Cream meet the warmth of exceptional service.
+entity_slug: kilwins
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/kilwins/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/kilwins/photo_02.jpg"
+]
+amenities: []
+faqs: []
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 1f8fa82021b418352951fe85d3819434
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 43615077-f1c0-4da4-a1b6-43d1609534a9
+entity_slug: kilwins
+slug: kilwins
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/kilwins/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/kilwins/photo_02.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: catalog_items   -   11 row(s)
+####################################################################################################
+
+--- catalog_items [row 1 of 11] ---
+id: abb0e186-a4a6-4d3a-b071-7c45c0d0ad36
+entity_slug: kilwins
+section_id: 456994bb-1a57-4fd2-8310-e035ab6ba7c5
+item_name: Chocolate-on-the-inside cones
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 4f6ace01-2e6a-476b-9ebb-69cd4ccd1257
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 2 of 11] ---
+id: 56aff1cb-944b-4f3b-b779-bec7dba1007b
+entity_slug: kilwins
+section_id: 456994bb-1a57-4fd2-8310-e035ab6ba7c5
+item_name: Caramel Apples
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 614e5a31-343c-4b4e-94f8-716c781ceb43
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 3 of 11] ---
+id: a6e6d288-1ae6-43c1-bb6d-5d5b8947ffc0
+entity_slug: kilwins
+section_id: 456994bb-1a57-4fd2-8310-e035ab6ba7c5
+item_name: Ice Cream
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: b2b162a7-9a69-4d56-b135-cfe52243e739
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 4 of 11] ---
+id: bd25dae9-5dd9-479c-9b45-ec727eb6cb6a
+entity_slug: kilwins
+section_id: 456994bb-1a57-4fd2-8310-e035ab6ba7c5
+item_name: Fudge
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 75a84c0b-30b2-4321-85f0-7a6cb9e0a86c
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 5 of 11] ---
+id: 93ae3c87-19b0-4c79-9ab6-254ee1679728
+entity_slug: kilwins
+section_id: 456994bb-1a57-4fd2-8310-e035ab6ba7c5
+item_name: Chocolates
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 0b57e21b-4da9-43cf-91d8-0499d79c6102
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 6 of 11] ---
+id: aa5196f6-b52f-4ef0-9c94-ec4fc4964e16
+entity_slug: kilwins
+section_id: 456994bb-1a57-4fd2-8310-e035ab6ba7c5
+item_name: Buy 2 Get 1 Free Fudge
+description: Official store confirms product categories; delivery source provides some public item prices.
+item_category: food
+price: 32.5
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: ff2df771-caf7-4b75-8426-234bc6c12623
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 7 of 11] ---
+id: 16806fb7-5067-4aeb-8296-026ef48898a3
+entity_slug: kilwins
+section_id: 456994bb-1a57-4fd2-8310-e035ab6ba7c5
+item_name: Small Ice Cream Dish
+description: Official store confirms product categories; delivery source provides some public item prices.
+item_category: food
+price: 7.99
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 9d2545dd-bb3f-4d7e-93e1-587d4af6ddb8
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 8 of 11] ---
+id: 25b28e45-bfc4-42aa-b720-9cbe6a18f369
+entity_slug: kilwins
+section_id: 456994bb-1a57-4fd2-8310-e035ab6ba7c5
+item_name: Hand-Packed Ice Cream Quart
+description: Official store confirms product categories; delivery source provides some public item prices.
+item_category: food
+price: 23.99
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 7ca769c2-00a9-4387-b2d9-751217dcb065
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 9 of 11] ---
+id: a4c4a172-3cc5-4a38-8d0d-1279ab4d2d97
+entity_slug: kilwins
+section_id: 456994bb-1a57-4fd2-8310-e035ab6ba7c5
+item_name: Custom Milkshake
+description: Official store confirms product categories; delivery source provides some public item prices.
+item_category: food
+price: 16.25
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: d5b5ae1c-bb3a-42d3-9052-22ecedc53f06
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 10 of 11] ---
+id: cac5dc94-515e-40d9-907a-0ba19ecee681
+entity_slug: kilwins
+section_id: 456994bb-1a57-4fd2-8310-e035ab6ba7c5
+item_name: Regular Ice Cream Waffle Bowl
+description: Official store confirms product categories; delivery source provides some public item prices.
+item_category: food
+price: 11.99
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 0a7e226e-2672-4b0a-a292-a8393eb08262
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 11 of 11] ---
+id: 03005c0b-416a-4425-a230-6e55f6e37615
+entity_slug: kilwins
+section_id: 456994bb-1a57-4fd2-8310-e035ab6ba7c5
+item_name: Regular Ice Cream Dish
+description: Official store confirms product categories; delivery source provides some public item prices.
+item_category: food
+price: 9.99
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 8472c8bd-7c4f-4431-82b9-335a2b5a9a2f
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+####################################################################################################
+# TABLE: catalog_section_days   -   7 row(s)
+####################################################################################################
+
+--- catalog_section_days [row 1 of 7] ---
+id: 915be341-9511-4df5-8e57-e60f847eee66
+section_id: 456994bb-1a57-4fd2-8310-e035ab6ba7c5
+entity_slug: kilwins
+day_of_week: Friday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 2 of 7] ---
+id: af70246e-7dbd-446b-a632-f6ad4a827417
+section_id: 456994bb-1a57-4fd2-8310-e035ab6ba7c5
+entity_slug: kilwins
+day_of_week: Monday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 3 of 7] ---
+id: fa7b06a2-fbe4-452a-bf6e-9c800f8229e9
+section_id: 456994bb-1a57-4fd2-8310-e035ab6ba7c5
+entity_slug: kilwins
+day_of_week: Saturday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 4 of 7] ---
+id: 68003202-5288-42b4-8388-fa767862bcf0
+section_id: 456994bb-1a57-4fd2-8310-e035ab6ba7c5
+entity_slug: kilwins
+day_of_week: Sunday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 5 of 7] ---
+id: 166306a8-cf4f-45ce-b8ee-e88d0c40e742
+section_id: 456994bb-1a57-4fd2-8310-e035ab6ba7c5
+entity_slug: kilwins
+day_of_week: Thursday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 6 of 7] ---
+id: ffd111c5-40a0-4639-8317-8eda98b128ce
+section_id: 456994bb-1a57-4fd2-8310-e035ab6ba7c5
+entity_slug: kilwins
+day_of_week: Tuesday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 7 of 7] ---
+id: 4f8517de-8c79-4fb0-be9e-6d4c0ced530a
+section_id: 456994bb-1a57-4fd2-8310-e035ab6ba7c5
+entity_slug: kilwins
+day_of_week: Wednesday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+####################################################################################################
+# TABLE: catalog_sections   -   1 row(s)
+####################################################################################################
+
+--- catalog_sections [row 1 of 1] ---
+id: 456994bb-1a57-4fd2-8310-e035ab6ba7c5
+entity_slug: kilwins
+section_name: Dessert / Candy
+section_category: food
+sort_order: 0
+is_active: true
+source_table: menu_sections
+source_id: 221cb408-2664-411f-887f-b87a49df0900
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 368bd25d-0726-457e-8e78-64a6b0126dfa
+slug: kilwins
+name: Kilwins
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: confectionery
+description: Experience Kilwins: handcrafted fudge, caramel apples, ice cream, and more. Since 1947, Kilwins has promised to make the best possible chocolates, fudge, and ice cream. Our made-in-store products like hand-crafted waffle cones, Mackinac Island Fudge, caramel apples, caramel corn, brittle, and dozens of Kilwins Heritage Chocolate-dipped treats continue the tradition of offering a feast for the senses. Discover Kilwins, where the magic of hand-crafted confections and Original Recipe Ice Cream meet the warmth of exceptional service.
+subtitle: Handcrafted fudge, caramel apples, ice cream, and more. Since 1947, we've made the finest chocolates and ice cream!
+phone: 251-981-3120
+website_url: https://kilwins.com
+menu_pin: 9457
+social_instagram: https://instagram.com/KilwinsFrame
+social_facebook: https://facebook.com/KilwinsFrame
+social_tiktok: https://tiktok.com/KilwinsFrame
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/kilwins/photo_01.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T22:57:18.327665+00:00
+updated_at: 2026-06-03T22:57:18.327665+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+business_status: OPERATIONAL
+formatted_address: 4751 Main St F113, Orange Beach, AL 36561
+google_places_data: {}
+search_vector: 'kilwin':1A
+parent_entity_slug: the-wharf
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: cafe_dessert
+is_parent: false
+depth: 1
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: kilwins
+name: Kilwins
+industry_code: cafe_dessert
+parent_entity_slug: the-wharf
+is_parent: false
+score_of_7: 5
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 1d18344c-c3c9-4c5f-9960-fb60ca01691f
+entity_slug: kilwins
+day_of_week: 1
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 3f00b74d-582f-48b1-b7d8-51d9f3ea93d0
+entity_slug: kilwins
+day_of_week: 2
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 017f0949-6706-49d4-9423-b43d255871ec
+entity_slug: kilwins
+day_of_week: 3
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 7b3813e1-8ba2-4a95-a583-4b6899a1b4cc
+entity_slug: kilwins
+day_of_week: 4
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: afd17002-25ac-4a2d-aa27-9d171fc94edd
+entity_slug: kilwins
+day_of_week: 5
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: fa1340c6-b6b8-4910-afe6-bf681152330d
+entity_slug: kilwins
+day_of_week: 6
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 30d6dd1d-097a-4fb0-865a-53d4aa15047f
+entity_slug: kilwins
+day_of_week: 0
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   12 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 12] ---
+entity_slug: kilwins
+source_table: menu_items
+item_type: food
+section_name: Dessert / Candy
+item_id: 4f6ace01-2e6a-476b-9ebb-69cd4ccd1257
+name: Chocolate-on-the-inside cones
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 2 of 12] ---
+entity_slug: kilwins
+source_table: menu_items
+item_type: food
+section_name: Dessert / Candy
+item_id: 614e5a31-343c-4b4e-94f8-716c781ceb43
+name: Caramel Apples
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 3 of 12] ---
+entity_slug: kilwins
+source_table: menu_items
+item_type: food
+section_name: Dessert / Candy
+item_id: b2b162a7-9a69-4d56-b135-cfe52243e739
+name: Ice Cream
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 4 of 12] ---
+entity_slug: kilwins
+source_table: menu_items
+item_type: food
+section_name: Dessert / Candy
+item_id: 75a84c0b-30b2-4321-85f0-7a6cb9e0a86c
+name: Fudge
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 5 of 12] ---
+entity_slug: kilwins
+source_table: menu_items
+item_type: food
+section_name: Dessert / Candy
+item_id: 0b57e21b-4da9-43cf-91d8-0499d79c6102
+name: Chocolates
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 6 of 12] ---
+entity_slug: kilwins
+source_table: menu_items
+item_type: food
+section_name: Dessert / Candy
+item_id: ff2df771-caf7-4b75-8426-234bc6c12623
+name: Buy 2 Get 1 Free Fudge
+description: Official store confirms product categories; delivery source provides some public item prices.
+price_from: 32.5
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 7 of 12] ---
+entity_slug: kilwins
+source_table: menu_items
+item_type: food
+section_name: Dessert / Candy
+item_id: 9d2545dd-bb3f-4d7e-93e1-587d4af6ddb8
+name: Small Ice Cream Dish
+description: Official store confirms product categories; delivery source provides some public item prices.
+price_from: 7.99
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 8 of 12] ---
+entity_slug: kilwins
+source_table: menu_items
+item_type: food
+section_name: Dessert / Candy
+item_id: 7ca769c2-00a9-4387-b2d9-751217dcb065
+name: Hand-Packed Ice Cream Quart
+description: Official store confirms product categories; delivery source provides some public item prices.
+price_from: 23.99
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 9 of 12] ---
+entity_slug: kilwins
+source_table: menu_items
+item_type: food
+section_name: Dessert / Candy
+item_id: d5b5ae1c-bb3a-42d3-9052-22ecedc53f06
+name: Custom Milkshake
+description: Official store confirms product categories; delivery source provides some public item prices.
+price_from: 16.25
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 10 of 12] ---
+entity_slug: kilwins
+source_table: menu_items
+item_type: food
+section_name: Dessert / Candy
+item_id: 0a7e226e-2672-4b0a-a292-a8393eb08262
+name: Regular Ice Cream Waffle Bowl
+description: Official store confirms product categories; delivery source provides some public item prices.
+price_from: 11.99
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 11 of 12] ---
+entity_slug: kilwins
+source_table: menu_items
+item_type: food
+section_name: Dessert / Candy
+item_id: 8472c8bd-7c4f-4431-82b9-335a2b5a9a2f
+name: Regular Ice Cream Dish
+description: Official store confirms product categories; delivery source provides some public item prices.
+price_from: 9.99
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 12 of 12] ---
+entity_slug: kilwins
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 43615077-f1c0-4da4-a1b6-43d1609534a9
+name: Kilwins
+description: Experience Kilwins: handcrafted fudge, caramel apples, ice cream, and more. Since 1947, Kilwins has promised to make the best possible chocolates, fudge, and ice cream. Our made-in-store products like hand-crafted waffle cones, Mackinac Island Fudge, caramel apples, caramel corn, brittle, and dozens of Kilwins Heritage Chocolate-dipped treats continue the tradition of offering a feast for the senses. Discover Kilwins, where the magic of hand-crafted confections and Original Recipe Ice Cream meet the warmth of exceptional service.
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/kilwins/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/kilwins/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   12 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 12] ---
+entity_slug: kilwins
+source_table: menu_items
+item_type: food
+section_name: Dessert / Candy
+item_id: 4f6ace01-2e6a-476b-9ebb-69cd4ccd1257
+name: Chocolate-on-the-inside cones
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 2 of 12] ---
+entity_slug: kilwins
+source_table: menu_items
+item_type: food
+section_name: Dessert / Candy
+item_id: 614e5a31-343c-4b4e-94f8-716c781ceb43
+name: Caramel Apples
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 3 of 12] ---
+entity_slug: kilwins
+source_table: menu_items
+item_type: food
+section_name: Dessert / Candy
+item_id: b2b162a7-9a69-4d56-b135-cfe52243e739
+name: Ice Cream
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 4 of 12] ---
+entity_slug: kilwins
+source_table: menu_items
+item_type: food
+section_name: Dessert / Candy
+item_id: 75a84c0b-30b2-4321-85f0-7a6cb9e0a86c
+name: Fudge
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 5 of 12] ---
+entity_slug: kilwins
+source_table: menu_items
+item_type: food
+section_name: Dessert / Candy
+item_id: 0b57e21b-4da9-43cf-91d8-0499d79c6102
+name: Chocolates
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 6 of 12] ---
+entity_slug: kilwins
+source_table: menu_items
+item_type: food
+section_name: Dessert / Candy
+item_id: ff2df771-caf7-4b75-8426-234bc6c12623
+name: Buy 2 Get 1 Free Fudge
+description: Official store confirms product categories; delivery source provides some public item prices.
+price_from: 32.5
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 7 of 12] ---
+entity_slug: kilwins
+source_table: menu_items
+item_type: food
+section_name: Dessert / Candy
+item_id: 9d2545dd-bb3f-4d7e-93e1-587d4af6ddb8
+name: Small Ice Cream Dish
+description: Official store confirms product categories; delivery source provides some public item prices.
+price_from: 7.99
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 8 of 12] ---
+entity_slug: kilwins
+source_table: menu_items
+item_type: food
+section_name: Dessert / Candy
+item_id: 7ca769c2-00a9-4387-b2d9-751217dcb065
+name: Hand-Packed Ice Cream Quart
+description: Official store confirms product categories; delivery source provides some public item prices.
+price_from: 23.99
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 9 of 12] ---
+entity_slug: kilwins
+source_table: menu_items
+item_type: food
+section_name: Dessert / Candy
+item_id: d5b5ae1c-bb3a-42d3-9052-22ecedc53f06
+name: Custom Milkshake
+description: Official store confirms product categories; delivery source provides some public item prices.
+price_from: 16.25
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 10 of 12] ---
+entity_slug: kilwins
+source_table: menu_items
+item_type: food
+section_name: Dessert / Candy
+item_id: 0a7e226e-2672-4b0a-a292-a8393eb08262
+name: Regular Ice Cream Waffle Bowl
+description: Official store confirms product categories; delivery source provides some public item prices.
+price_from: 11.99
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 11 of 12] ---
+entity_slug: kilwins
+source_table: menu_items
+item_type: food
+section_name: Dessert / Candy
+item_id: 8472c8bd-7c4f-4431-82b9-335a2b5a9a2f
+name: Regular Ice Cream Dish
+description: Official store confirms product categories; delivery source provides some public item prices.
+price_from: 9.99
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 12 of 12] ---
+entity_slug: kilwins
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 43615077-f1c0-4da4-a1b6-43d1609534a9
+name: Kilwins
+description: Experience Kilwins: handcrafted fudge, caramel apples, ice cream, and more. Since 1947, Kilwins has promised to make the best possible chocolates, fudge, and ice cream. Our made-in-store products like hand-crafted waffle cones, Mackinac Island Fudge, caramel apples, caramel corn, brittle, and dozens of Kilwins Heritage Chocolate-dipped treats continue the tradition of offering a feast for the senses. Discover Kilwins, where the magic of hand-crafted confections and Original Recipe Ice Cream meet the warmth of exceptional service.
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/kilwins/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/kilwins/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_offer   -   12 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 12] ---
+offer_id: 1250
+entity_slug: kilwins
+section_id: 608
+name: Chocolate-on-the-inside cones
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 4f6ace01-2e6a-476b-9ebb-69cd4ccd1257
+
+--- entity_offer [row 2 of 12] ---
+offer_id: 1390
+entity_slug: kilwins
+section_id: 608
+name: Caramel Apples
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 614e5a31-343c-4b4e-94f8-716c781ceb43
+
+--- entity_offer [row 3 of 12] ---
+offer_id: 1392
+entity_slug: kilwins
+section_id: 608
+name: Ice Cream
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: b2b162a7-9a69-4d56-b135-cfe52243e739
+
+--- entity_offer [row 4 of 12] ---
+offer_id: 1393
+entity_slug: kilwins
+section_id: 608
+name: Fudge
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 75a84c0b-30b2-4321-85f0-7a6cb9e0a86c
+
+--- entity_offer [row 5 of 12] ---
+offer_id: 1396
+entity_slug: kilwins
+section_id: 608
+name: Chocolates
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 0b57e21b-4da9-43cf-91d8-0499d79c6102
+
+--- entity_offer [row 6 of 12] ---
+offer_id: 1397
+entity_slug: kilwins
+section_id: 608
+name: Buy 2 Get 1 Free Fudge
+description: Official store confirms product categories; delivery source provides some public item prices.
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: ff2df771-caf7-4b75-8426-234bc6c12623
+
+--- entity_offer [row 7 of 12] ---
+offer_id: 1400
+entity_slug: kilwins
+section_id: 608
+name: Small Ice Cream Dish
+description: Official store confirms product categories; delivery source provides some public item prices.
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 9d2545dd-bb3f-4d7e-93e1-587d4af6ddb8
+
+--- entity_offer [row 8 of 12] ---
+offer_id: 1401
+entity_slug: kilwins
+section_id: 608
+name: Hand-Packed Ice Cream Quart
+description: Official store confirms product categories; delivery source provides some public item prices.
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 7ca769c2-00a9-4387-b2d9-751217dcb065
+
+--- entity_offer [row 9 of 12] ---
+offer_id: 1402
+entity_slug: kilwins
+section_id: 608
+name: Custom Milkshake
+description: Official store confirms product categories; delivery source provides some public item prices.
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: d5b5ae1c-bb3a-42d3-9052-22ecedc53f06
+
+--- entity_offer [row 10 of 12] ---
+offer_id: 1403
+entity_slug: kilwins
+section_id: 608
+name: Regular Ice Cream Waffle Bowl
+description: Official store confirms product categories; delivery source provides some public item prices.
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 0a7e226e-2672-4b0a-a292-a8393eb08262
+
+--- entity_offer [row 11 of 12] ---
+offer_id: 1404
+entity_slug: kilwins
+section_id: 608
+name: Regular Ice Cream Dish
+description: Official store confirms product categories; delivery source provides some public item prices.
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 8472c8bd-7c4f-4431-82b9-335a2b5a9a2f
+
+--- entity_offer [row 12 of 12] ---
+offer_id: 13736
+entity_slug: kilwins
+name: Kilwins
+description: Experience Kilwins: handcrafted fudge, caramel apples, ice cream, and more. Since 1947, Kilwins has promised to make the best possible chocolates, fudge, and ice cream. Our made-in-store products like hand-crafted waffle cones, Mackinac Island Fudge, caramel apples, caramel corn, brittle, and dozens of Kilwins Heritage Chocolate-dipped treats continue the tradition of offering a feast for the senses. Discover Kilwins, where the magic of hand-crafted confections and Original Recipe Ice Cream meet the warmth of exceptional service.
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 43615077-f1c0-4da4-a1b6-43d1609534a9
+
+####################################################################################################
+# TABLE: entity_offer_section   -   1 row(s)
+####################################################################################################
+
+--- entity_offer_section [row 1 of 1] ---
+section_id: 608
+entity_slug: kilwins
+name: Dessert / Candy
+section_type: menu
+sort_order: 0
+
+####################################################################################################
+# TABLE: entity_photos   -   5 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 5] ---
+id: 57828f6e-ba04-4f72-ba15-55ee61148090
+entity_slug: kilwins
+url: https://alwharf-assets.nyc3.digitaloceanspaces.com/images/merchant-full/_304x304_crop_center-center_none_ns/Kilwins-3.jpeg?v=1777641978
+is_cover: true
+sort_order: 0
+photo_type: gallery
+
+--- entity_photos [row 2 of 5] ---
+id: 53b6d644-73de-43e9-bc2f-ba0f0648265e
+entity_slug: kilwins
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/kilwins/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 3 of 5] ---
+id: bffe4262-0a4a-4e2b-b183-046ab4b4d8b8
+entity_slug: kilwins
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/kilwins/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 4 of 5] ---
+id: 84308798-e616-4550-8191-29b6a902bd13
+entity_slug: kilwins
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/kilwins/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: 43615077-f1c0-4da4-a1b6-43d1609534a9
+
+--- entity_photos [row 5 of 5] ---
+id: 6a0d1e5d-3552-4a3d-bfb6-4ad44b087a3f
+entity_slug: kilwins
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/kilwins/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 43615077-f1c0-4da4-a1b6-43d1609534a9
+
+####################################################################################################
+# TABLE: entity_tags   -   31 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 31] ---
+id: ff65d2c5-b4ba-48e0-8fb5-0492fd71bc1c
+entity_slug: kilwins
+tag_name: chocolate
+
+--- entity_tags [row 2 of 31] ---
+id: 21df2f07-3034-403b-8415-ae0acb423b40
+entity_slug: kilwins
+tag_name: fudge
+
+--- entity_tags [row 3 of 31] ---
+id: 4bdad88c-18a6-4e03-a12b-7ca0cd8c3e39
+entity_slug: kilwins
+tag_name: ice-cream
+
+--- entity_tags [row 4 of 31] ---
+id: 3257c633-8283-4726-a356-ae5752b55a44
+entity_slug: kilwins
+tag_name: caramel-apples
+
+--- entity_tags [row 5 of 31] ---
+id: e8cef498-0e12-4734-94c1-34e22d6ddedf
+entity_slug: kilwins
+tag_name: confections
+
+--- entity_tags [row 6 of 31] ---
+id: 8a822132-193c-424e-bac8-d89e7f8adecd
+entity_slug: kilwins
+tag_name: hand-crafted
+
+--- entity_tags [row 7 of 31] ---
+id: acb4950b-7680-440c-97d9-dc0a498f0f0e
+entity_slug: kilwins
+tag_name: sweet-treats
+
+--- entity_tags [row 8 of 31] ---
+id: c28fbf91-43f0-4a51-a27e-065f1f450ebc
+entity_slug: kilwins
+tag_name: desserts
+
+--- entity_tags [row 9 of 31] ---
+id: 699ce405-7ebd-4448-96a4-153d12012164
+entity_slug: kilwins
+tag_name: gift-shop
+
+--- entity_tags [row 10 of 31] ---
+id: ec3c2db8-92fd-47d3-af22-6ecfbef7efbd
+entity_slug: kilwins
+tag_name: caramel-corn
+
+--- entity_tags [row 11 of 31] ---
+id: 78f78992-57c1-4ee4-b8b4-078f1fa280de
+entity_slug: kilwins
+tag_name: brittle
+
+--- entity_tags [row 12 of 31] ---
+id: e6da4576-f749-442a-911e-ac002fa12f50
+entity_slug: kilwins
+tag_name: chocolate-dipped
+
+--- entity_tags [row 13 of 31] ---
+id: 339c33ca-c91f-4442-90f8-49dd8ae814a5
+entity_slug: kilwins
+tag_name: dubai-chocolate
+
+--- entity_tags [row 14 of 31] ---
+id: 7770fd94-4bab-43fd-bdd8-6ec46a35b950
+entity_slug: kilwins
+tag_name: Restaurants
+tag_category: category
+
+--- entity_tags [row 15 of 31] ---
+id: b49b163a-fd89-4fbe-94e7-f6fc704228eb
+entity_slug: kilwins
+tag_name: Desserts
+tag_category: category
+
+--- entity_tags [row 16 of 31] ---
+id: 9e357a77-86c3-4549-84a2-752826cd0b0d
+entity_slug: kilwins
+tag_name: Ice Cream
+tag_category: category
+
+--- entity_tags [row 17 of 31] ---
+id: f7b31399-bd36-4df9-b664-51807ae2b3f3
+entity_slug: kilwins
+tag_name: Sweets & Candy
+tag_category: category
+
+--- entity_tags [row 18 of 31] ---
+id: c999dbe4-4a45-4c37-b4f9-5e633b9310eb
+entity_slug: kilwins
+tag_name: Gift Shops
+tag_category: category
+
+--- entity_tags [row 19 of 31] ---
+id: 89307614-480e-4f7c-9f6f-cb9b66c99611
+entity_slug: kilwins
+tag_name: Casual Dining
+tag_category: category
+
+--- entity_tags [row 20 of 31] ---
+id: 3c6de98e-1124-4cc9-b767-8464dcbd354f
+entity_slug: kilwins
+tag_name: Family Fun
+tag_category: category
+
+--- entity_tags [row 21 of 31] ---
+id: 61aa2a01-0792-4448-ad84-dfb48c342edb
+entity_slug: kilwins
+tag_name: Things To Do
+tag_category: category
+
+--- entity_tags [row 22 of 31] ---
+id: f1cf8451-f730-4044-9d68-2ac81adb3a37
+entity_slug: kilwins
+tag_name: food-and-drink
+tag_category: industry
+
+--- entity_tags [row 23 of 31] ---
+id: 16a53bb8-7422-43eb-a854-c17e89860f3c
+entity_slug: kilwins
+tag_name: confectionery
+tag_category: type
+
+--- entity_tags [row 24 of 31] ---
+id: 14666bc4-6eee-49a1-b3ac-ff6522c244d0
+entity_slug: kilwins
+tag_name: ice cream
+tag_category: wharf
+
+--- entity_tags [row 25 of 31] ---
+id: 017c824b-1b22-4501-b48a-8936956e2530
+entity_slug: kilwins
+tag_name: dessert
+tag_category: wharf
+
+--- entity_tags [row 26 of 31] ---
+id: 80afc2ec-912b-4cbb-88f0-36fbbaa9331a
+entity_slug: kilwins
+tag_name: candy
+tag_category: wharf
+
+--- entity_tags [row 27 of 31] ---
+id: 6305eec0-ae0d-4330-ba0a-b8033ed8e22c
+entity_slug: kilwins
+tag_name: family friendly
+tag_category: wharf
+
+--- entity_tags [row 28 of 31] ---
+id: a575bb21-c047-4e98-a552-fbc638e0c8c3
+entity_slug: kilwins
+tag_name: Portside
+tag_category: wharf
+
+--- entity_tags [row 29 of 31] ---
+id: 34b3c3eb-2c48-43ca-a7d5-795a221bf11e
+entity_slug: kilwins
+tag_name: restaurants + eateries
+tag_category: wharf
+
+--- entity_tags [row 30 of 31] ---
+id: 8c2d8472-464d-4992-bc7c-39b95acc5f5a
+entity_slug: kilwins
+tag_name: the wharf
+tag_category: wharf
+
+--- entity_tags [row 31 of 31] ---
+id: e4de8a37-5831-4777-8e32-567e018231df
+entity_slug: kilwins
+tag_name: orange beach
+tag_category: wharf
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 6137de0f-3f51-419a-bef3-f9a605c30483
+entity_slug: kilwins
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_cafe_dessert   -   1 row(s)
+####################################################################################################
+
+--- industry_cafe_dessert [row 1 of 1] ---
+entity_slug: kilwins
+cafe_type: confectionery
+serves_breakfast: false
+has_seating: true
+good_for_kids: false
+takeout: false
+delivery: false
+price_low: 7.99
+price_high: 32.5
+updated_at: 2026-07-21T16:49:18.526829+00:00
+
+####################################################################################################
+# TABLE: menu_items   -   11 row(s)
+####################################################################################################
+
+--- menu_items [row 1 of 11] ---
+id: 4f6ace01-2e6a-476b-9ebb-69cd4ccd1257
+section_id: 221cb408-2664-411f-887f-b87a49df0900
+entity_slug: kilwins
+item_name: Chocolate-on-the-inside cones
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 2 of 11] ---
+id: 614e5a31-343c-4b4e-94f8-716c781ceb43
+section_id: 221cb408-2664-411f-887f-b87a49df0900
+entity_slug: kilwins
+item_name: Caramel Apples
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 3 of 11] ---
+id: b2b162a7-9a69-4d56-b135-cfe52243e739
+section_id: 221cb408-2664-411f-887f-b87a49df0900
+entity_slug: kilwins
+item_name: Ice Cream
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 4 of 11] ---
+id: 75a84c0b-30b2-4321-85f0-7a6cb9e0a86c
+section_id: 221cb408-2664-411f-887f-b87a49df0900
+entity_slug: kilwins
+item_name: Fudge
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 5 of 11] ---
+id: 0b57e21b-4da9-43cf-91d8-0499d79c6102
+section_id: 221cb408-2664-411f-887f-b87a49df0900
+entity_slug: kilwins
+item_name: Chocolates
+description: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 6 of 11] ---
+id: ff2df771-caf7-4b75-8426-234bc6c12623
+section_id: 221cb408-2664-411f-887f-b87a49df0900
+entity_slug: kilwins
+item_name: Buy 2 Get 1 Free Fudge
+description: Official store confirms product categories; delivery source provides some public item prices.
+price: 32.5
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 7 of 11] ---
+id: 9d2545dd-bb3f-4d7e-93e1-587d4af6ddb8
+section_id: 221cb408-2664-411f-887f-b87a49df0900
+entity_slug: kilwins
+item_name: Small Ice Cream Dish
+description: Official store confirms product categories; delivery source provides some public item prices.
+price: 7.99
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 8 of 11] ---
+id: 7ca769c2-00a9-4387-b2d9-751217dcb065
+section_id: 221cb408-2664-411f-887f-b87a49df0900
+entity_slug: kilwins
+item_name: Hand-Packed Ice Cream Quart
+description: Official store confirms product categories; delivery source provides some public item prices.
+price: 23.99
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 9 of 11] ---
+id: d5b5ae1c-bb3a-42d3-9052-22ecedc53f06
+section_id: 221cb408-2664-411f-887f-b87a49df0900
+entity_slug: kilwins
+item_name: Custom Milkshake
+description: Official store confirms product categories; delivery source provides some public item prices.
+price: 16.25
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 10 of 11] ---
+id: 0a7e226e-2672-4b0a-a292-a8393eb08262
+section_id: 221cb408-2664-411f-887f-b87a49df0900
+entity_slug: kilwins
+item_name: Regular Ice Cream Waffle Bowl
+description: Official store confirms product categories; delivery source provides some public item prices.
+price: 11.99
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 11 of 11] ---
+id: 8472c8bd-7c4f-4431-82b9-335a2b5a9a2f
+section_id: 221cb408-2664-411f-887f-b87a49df0900
+entity_slug: kilwins
+item_name: Regular Ice Cream Dish
+description: Official store confirms product categories; delivery source provides some public item prices.
+price: 9.99
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+####################################################################################################
+# TABLE: menu_section_days   -   7 row(s)
+####################################################################################################
+
+--- menu_section_days [row 1 of 7] ---
+id: bee744ed-91b8-4f40-8760-f01ef2779de2
+menu_section_id: 221cb408-2664-411f-887f-b87a49df0900
+entity_slug: kilwins
+day_of_week: Monday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 2 of 7] ---
+id: 105e1873-3173-4aa0-9b23-d300354e38e8
+menu_section_id: 221cb408-2664-411f-887f-b87a49df0900
+entity_slug: kilwins
+day_of_week: Tuesday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 3 of 7] ---
+id: 1fc024df-969f-4a27-84fc-3ee9fcc81379
+menu_section_id: 221cb408-2664-411f-887f-b87a49df0900
+entity_slug: kilwins
+day_of_week: Wednesday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 4 of 7] ---
+id: 49bd8bd4-3df6-413d-8a5c-af5ea75e75ca
+menu_section_id: 221cb408-2664-411f-887f-b87a49df0900
+entity_slug: kilwins
+day_of_week: Thursday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 5 of 7] ---
+id: 694435e6-7b5a-4042-9e76-41d9588d16eb
+menu_section_id: 221cb408-2664-411f-887f-b87a49df0900
+entity_slug: kilwins
+day_of_week: Friday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 6 of 7] ---
+id: 583b8d74-43c3-4325-bdc3-21c0b474bbd5
+menu_section_id: 221cb408-2664-411f-887f-b87a49df0900
+entity_slug: kilwins
+day_of_week: Saturday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 7 of 7] ---
+id: 38933f90-bda9-4c4b-a2ff-046289504300
+menu_section_id: 221cb408-2664-411f-887f-b87a49df0900
+entity_slug: kilwins
+day_of_week: Sunday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+####################################################################################################
+# TABLE: menu_section_details   -   1 row(s)
+####################################################################################################
+
+--- menu_section_details [row 1 of 1] ---
+id: 71466e13-0e5a-4388-ba7d-0c1d45b62100
+menu_section_id: 221cb408-2664-411f-887f-b87a49df0900
+entity_slug: kilwins
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+####################################################################################################
+# TABLE: menu_sections   -   1 row(s)
+####################################################################################################
+
+--- menu_sections [row 1 of 1] ---
+id: 221cb408-2664-411f-887f-b87a49df0900
+entity_slug: kilwins
+section_name: Dessert / Candy
+sort_order: 0
+days_of_week: [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday"
+]
+is_active: true
+metadata: {}
+
+####################################################################################################
+# TABLE: search_index   -   24 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 24] ---
+ref_type: offer
+ref_id: 1250
+entity_slug: kilwins
+title: Chocolate-on-the-inside cones
+category: menu_item
+subtitle: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+search_vector: 'categori':11C 'chocol':2A 'chocolate-on-the-insid':1A 'cone':6A 'confirm':9C 'insid':5A 'item':12C 'offici':7C 'page':19C 'price':13C,20C 'product':10C 'publish':15C,22C 'readabl':17C 'store':8C,18C
+
+--- search_index [row 2 of 24] ---
+ref_type: offer
+ref_id: 1390
+entity_slug: kilwins
+title: Caramel Apples
+category: menu_item
+subtitle: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+search_vector: 'appl':2A 'caramel':1A 'categori':7C 'confirm':5C 'item':8C 'offici':3C 'page':15C 'price':9C,16C 'product':6C 'publish':11C,18C 'readabl':13C 'store':4C,14C
+
+--- search_index [row 3 of 24] ---
+ref_type: offer
+ref_id: 1392
+entity_slug: kilwins
+title: Ice Cream
+category: menu_item
+subtitle: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+search_vector: 'categori':7C 'confirm':5C 'cream':2A 'ice':1A 'item':8C 'offici':3C 'page':15C 'price':9C,16C 'product':6C 'publish':11C,18C 'readabl':13C 'store':4C,14C
+
+--- search_index [row 4 of 24] ---
+ref_type: offer
+ref_id: 1393
+entity_slug: kilwins
+title: Fudge
+category: menu_item
+subtitle: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+search_vector: 'categori':6C 'confirm':4C 'fudg':1A 'item':7C 'offici':2C 'page':14C 'price':8C,15C 'product':5C 'publish':10C,17C 'readabl':12C 'store':3C,13C
+
+--- search_index [row 5 of 24] ---
+ref_type: offer
+ref_id: 1396
+entity_slug: kilwins
+title: Chocolates
+category: menu_item
+subtitle: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+search_vector: 'categori':6C 'chocol':1A 'confirm':4C 'item':7C 'offici':2C 'page':14C 'price':8C,15C 'product':5C 'publish':10C,17C 'readabl':12C 'store':3C,13C
+
+--- search_index [row 6 of 24] ---
+ref_type: offer
+ref_id: 1397
+entity_slug: kilwins
+title: Buy 2 Get 1 Free Fudge
+category: menu_item
+subtitle: Official store confirms product categories; delivery source provides some public item prices.
+search_vector: '1':4A '2':2A 'buy':1A 'categori':11C 'confirm':9C 'deliveri':12C 'free':5A 'fudg':6A 'get':3A 'item':17C 'offici':7C 'price':18C 'product':10C 'provid':14C 'public':16C 'sourc':13C 'store':8C
+
+--- search_index [row 7 of 24] ---
+ref_type: offer
+ref_id: 1400
+entity_slug: kilwins
+title: Small Ice Cream Dish
+category: menu_item
+subtitle: Official store confirms product categories; delivery source provides some public item prices.
+search_vector: 'categori':9C 'confirm':7C 'cream':3A 'deliveri':10C 'dish':4A 'ice':2A 'item':15C 'offici':5C 'price':16C 'product':8C 'provid':12C 'public':14C 'small':1A 'sourc':11C 'store':6C
+
+--- search_index [row 8 of 24] ---
+ref_type: offer
+ref_id: 1401
+entity_slug: kilwins
+title: Hand-Packed Ice Cream Quart
+category: menu_item
+subtitle: Official store confirms product categories; delivery source provides some public item prices.
+search_vector: 'categori':11C 'confirm':9C 'cream':5A 'deliveri':12C 'hand':2A 'hand-pack':1A 'ice':4A 'item':17C 'offici':7C 'pack':3A 'price':18C 'product':10C 'provid':14C 'public':16C 'quart':6A 'sourc':13C 'store':8C
+
+--- search_index [row 9 of 24] ---
+ref_type: offer
+ref_id: 1402
+entity_slug: kilwins
+title: Custom Milkshake
+category: menu_item
+subtitle: Official store confirms product categories; delivery source provides some public item prices.
+search_vector: 'categori':7C 'confirm':5C 'custom':1A 'deliveri':8C 'item':13C 'milkshak':2A 'offici':3C 'price':14C 'product':6C 'provid':10C 'public':12C 'sourc':9C 'store':4C
+
+--- search_index [row 10 of 24] ---
+ref_type: offer
+ref_id: 1403
+entity_slug: kilwins
+title: Regular Ice Cream Waffle Bowl
+category: menu_item
+subtitle: Official store confirms product categories; delivery source provides some public item prices.
+search_vector: 'bowl':5A 'categori':10C 'confirm':8C 'cream':3A 'deliveri':11C 'ice':2A 'item':16C 'offici':6C 'price':17C 'product':9C 'provid':13C 'public':15C 'regular':1A 'sourc':12C 'store':7C 'waffl':4A
+
+--- search_index [row 11 of 24] ---
+ref_type: offer
+ref_id: 1404
+entity_slug: kilwins
+title: Regular Ice Cream Dish
+category: menu_item
+subtitle: Official store confirms product categories; delivery source provides some public item prices.
+search_vector: 'categori':9C 'confirm':7C 'cream':3A 'deliveri':10C 'dish':4A 'ice':2A 'item':15C 'offici':5C 'price':16C 'product':8C 'provid':12C 'public':14C 'regular':1A 'sourc':11C 'store':6C
+
+--- search_index [row 12 of 24] ---
+ref_type: offer
+ref_id: 13736
+entity_slug: kilwins
+title: Kilwins
+category: rental
+subtitle: Experience Kilwins: handcrafted fudge, caramel apples, ice cream, and more. Since 1947, Kilwins has promised to make the best possible chocolates, fudge, and ice cream. Our made-in-store products like hand-crafted waffle cones, Mackinac Island Fudge, caramel apples, caramel corn, brittle, and dozens of Kilwins Heritage Chocolate-dipped treats continue the tradition of offering a feast for the senses. Discover Kilwins, where the magic of hand-crafted confections and Original Recipe Ice Cream meet the warmth of exceptional service.
+search_vector: '1947':13C 'appl':7C,43C 'best':20C 'brittl':46C 'caramel':6C,42C,44C 'chocol':22C,53C 'chocolate-dip':52C 'cone':38C 'confect':75C 'continu':56C 'corn':45C 'craft':36C,74C 'cream':9C,26C,80C 'dip':54C 'discov':66C 'dozen':48C 'except':85C 'experi':2C 'feast':62C 'fudg':5C,23C,41C 'hand':35C,73C 'hand-craft':34C,72C 'handcraft':4C 'heritag':51C 'ice':8C,25C,79C 'island':40C 'kilwin':1A,3C,14C,50C,67C 'like':33C 'mackinac':39C 'made':29C 'made-in-stor':28C 'magic':70C 'make':18C 'meet':81C 'offer':60C 'origin':77C 'possibl':21C 'product':32C 'promis':16C 'recip':78C 'sens':65C 'servic':86C 'sinc':12C 'store':31C 'tradit':58C 'treat':55C 'waffl':37C 'warmth':83C
+
+--- search_index [row 13 of 24] ---
+ref_type: business
+ref_id: kilwins
+entity_slug: kilwins
+title: Kilwins
+category: confectionery
+subtitle: Experience Kilwins: handcrafted fudge, caramel apples, ice cream, and more. Since 1947, Kilwins has promised to make the best possible chocolates, fudge, and ice cream. Our made-in-store products like hand-crafted waffle cones, Mackinac Island Fudge, caramel apples, caramel corn, brittle, and dozens of Kilwins Heritage Chocolate-dipped treats continue the tradition of offering a feast for the senses. Discover Kilwins, where the magic of hand-crafted confections and Original Recipe Ice Cream meet the warmth of exceptional service.
+search_vector: '1947':14C 'appl':8C,44C 'best':21C 'brittl':47C 'caramel':7C,43C,45C 'chocol':23C,54C 'chocolate-dip':53C 'cone':39C 'confect':76C 'confectioneri':2B 'continu':57C 'corn':46C 'craft':37C,75C 'cream':10C,27C,81C 'dip':55C 'discov':67C 'dozen':49C 'except':86C 'experi':3C 'feast':63C 'fudg':6C,24C,42C 'hand':36C,74C 'hand-craft':35C,73C 'handcraft':5C 'heritag':52C 'ice':9C,26C,80C 'island':41C 'kilwin':1A,4C,15C,51C,68C 'like':34C 'mackinac':40C 'made':30C 'made-in-stor':29C 'magic':71C 'make':19C 'meet':82C 'offer':61C 'origin':78C 'possibl':22C 'product':33C 'promis':17C 'recip':79C 'sens':66C 'servic':87C 'sinc':13C 'store':32C 'tradit':59C 'treat':56C 'waffl':38C 'warmth':84C
+
+--- search_index [row 14 of 24] ---
+ref_type: menu_item
+ref_id: 4f6ace01-2e6a-476b-9ebb-69cd4ccd1257
+entity_slug: kilwins
+title: Chocolate-on-the-inside cones
+category: menu
+subtitle: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+search_vector: 'categori':11C 'chocol':2A 'chocolate-on-the-insid':1A 'cone':6A 'confirm':9C 'insid':5A 'item':12C 'offici':7C 'page':19C 'price':13C,20C 'product':10C 'publish':15C,22C 'readabl':17C 'store':8C,18C
+
+--- search_index [row 15 of 24] ---
+ref_type: menu_item
+ref_id: 614e5a31-343c-4b4e-94f8-716c781ceb43
+entity_slug: kilwins
+title: Caramel Apples
+category: menu
+subtitle: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+search_vector: 'appl':2A 'caramel':1A 'categori':7C 'confirm':5C 'item':8C 'offici':3C 'page':15C 'price':9C,16C 'product':6C 'publish':11C,18C 'readabl':13C 'store':4C,14C
+
+--- search_index [row 16 of 24] ---
+ref_type: menu_item
+ref_id: b2b162a7-9a69-4d56-b135-cfe52243e739
+entity_slug: kilwins
+title: Ice Cream
+category: menu
+subtitle: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+search_vector: 'categori':7C 'confirm':5C 'cream':2A 'ice':1A 'item':8C 'offici':3C 'page':15C 'price':9C,16C 'product':6C 'publish':11C,18C 'readabl':13C 'store':4C,14C
+
+--- search_index [row 17 of 24] ---
+ref_type: menu_item
+ref_id: 75a84c0b-30b2-4321-85f0-7a6cb9e0a86c
+entity_slug: kilwins
+title: Fudge
+category: menu
+subtitle: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+search_vector: 'categori':6C 'confirm':4C 'fudg':1A 'item':7C 'offici':2C 'page':14C 'price':8C,15C 'product':5C 'publish':10C,17C 'readabl':12C 'store':3C,13C
+
+--- search_index [row 18 of 24] ---
+ref_type: menu_item
+ref_id: 0b57e21b-4da9-43cf-91d8-0499d79c6102
+entity_slug: kilwins
+title: Chocolates
+category: menu
+subtitle: Official store confirms product category; item price not published in readable store page. (Price: Not published)
+search_vector: 'categori':6C 'chocol':1A 'confirm':4C 'item':7C 'offici':2C 'page':14C 'price':8C,15C 'product':5C 'publish':10C,17C 'readabl':12C 'store':3C,13C
+
+--- search_index [row 19 of 24] ---
+ref_type: menu_item
+ref_id: ff2df771-caf7-4b75-8426-234bc6c12623
+entity_slug: kilwins
+title: Buy 2 Get 1 Free Fudge
+category: menu
+subtitle: Official store confirms product categories; delivery source provides some public item prices.
+price: 32.5
+search_vector: '1':4A '2':2A 'buy':1A 'categori':11C 'confirm':9C 'deliveri':12C 'free':5A 'fudg':6A 'get':3A 'item':17C 'offici':7C 'price':18C 'product':10C 'provid':14C 'public':16C 'sourc':13C 'store':8C
+
+--- search_index [row 20 of 24] ---
+ref_type: menu_item
+ref_id: 9d2545dd-bb3f-4d7e-93e1-587d4af6ddb8
+entity_slug: kilwins
+title: Small Ice Cream Dish
+category: menu
+subtitle: Official store confirms product categories; delivery source provides some public item prices.
+price: 7.99
+search_vector: 'categori':9C 'confirm':7C 'cream':3A 'deliveri':10C 'dish':4A 'ice':2A 'item':15C 'offici':5C 'price':16C 'product':8C 'provid':12C 'public':14C 'small':1A 'sourc':11C 'store':6C
+
+--- search_index [row 21 of 24] ---
+ref_type: menu_item
+ref_id: 7ca769c2-00a9-4387-b2d9-751217dcb065
+entity_slug: kilwins
+title: Hand-Packed Ice Cream Quart
+category: menu
+subtitle: Official store confirms product categories; delivery source provides some public item prices.
+price: 23.99
+search_vector: 'categori':11C 'confirm':9C 'cream':5A 'deliveri':12C 'hand':2A 'hand-pack':1A 'ice':4A 'item':17C 'offici':7C 'pack':3A 'price':18C 'product':10C 'provid':14C 'public':16C 'quart':6A 'sourc':13C 'store':8C
+
+--- search_index [row 22 of 24] ---
+ref_type: menu_item
+ref_id: d5b5ae1c-bb3a-42d3-9052-22ecedc53f06
+entity_slug: kilwins
+title: Custom Milkshake
+category: menu
+subtitle: Official store confirms product categories; delivery source provides some public item prices.
+price: 16.25
+search_vector: 'categori':7C 'confirm':5C 'custom':1A 'deliveri':8C 'item':13C 'milkshak':2A 'offici':3C 'price':14C 'product':6C 'provid':10C 'public':12C 'sourc':9C 'store':4C
+
+--- search_index [row 23 of 24] ---
+ref_type: menu_item
+ref_id: 0a7e226e-2672-4b0a-a292-a8393eb08262
+entity_slug: kilwins
+title: Regular Ice Cream Waffle Bowl
+category: menu
+subtitle: Official store confirms product categories; delivery source provides some public item prices.
+price: 11.99
+search_vector: 'bowl':5A 'categori':10C 'confirm':8C 'cream':3A 'deliveri':11C 'ice':2A 'item':16C 'offici':6C 'price':17C 'product':9C 'provid':13C 'public':15C 'regular':1A 'sourc':12C 'store':7C 'waffl':4A
+
+--- search_index [row 24 of 24] ---
+ref_type: menu_item
+ref_id: 8472c8bd-7c4f-4431-82b9-335a2b5a9a2f
+entity_slug: kilwins
+title: Regular Ice Cream Dish
+category: menu
+subtitle: Official store confirms product categories; delivery source provides some public item prices.
+price: 9.99
+search_vector: 'categori':9C 'confirm':7C 'cream':3A 'deliveri':10C 'dish':4A 'ice':2A 'item':15C 'offici':5C 'price':16C 'product':8C 'provid':12C 'public':14C 'regular':1A 'sourc':11C 'store':6C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: kilwins

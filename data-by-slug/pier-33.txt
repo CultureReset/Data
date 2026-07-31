@@ -1,0 +1,2305 @@
+====================================================================================================
+SLUG: pier-33
+NAME: Pier 33
+INDUSTRY: retail
+SUBTYPE: grocery_store
+TABLES WITH DATA: 23
+TOTAL ROWS: 117
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (9 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (6 rows)
+  entity  (1 rows)
+  entity_address_areas  (3 rows)
+  entity_attributes  (10 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (7 rows)
+  entity_modules  (10 rows)
+  entity_nearby_landmark_types  (15 rows)
+  entity_nearby_landmarks  (8 rows)
+  entity_photos  (16 rows)
+  entity_reviews  (5 rows)
+  entity_sources  (2 rows)
+  entity_tags  (9 rows)
+  entity_theme  (1 rows)
+  industry_retail  (1 rows)
+  legacy_photo_migration_queue  (3 rows)
+  search_index  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: pier-33
+name: Pier 33
+planner_category: food_drink
+data_quality_score: 85
+issues: missing_menu|missing_faqs
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: true
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: true
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   9 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 9] ---
+id: 26427
+entity_slug: pier-33
+intent_tag: best_for:seafood_craving
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 9] ---
+id: 26428
+entity_slug: pier-33
+intent_tag: experience:tourist_favorite
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 9] ---
+id: 26429
+entity_slug: pier-33
+intent_tag: cuisine:seafood
+intent_category: cuisine
+confidence: 0.82
+evidence: Derived from cuisine/menu/tags.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 9] ---
+id: 26430
+entity_slug: pier-33
+intent_tag: cuisine:coffee_sweets
+intent_category: cuisine
+confidence: 0.82
+evidence: Derived from cuisine/menu/tags.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 9] ---
+id: 26431
+entity_slug: pier-33
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 9] ---
+id: 26432
+entity_slug: pier-33
+intent_tag: service:parking
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 9] ---
+id: 26433
+entity_slug: pier-33
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 9] ---
+id: 26434
+entity_slug: pier-33
+intent_tag: missing:missing_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 9 of 9] ---
+id: 26435
+entity_slug: pier-33
+intent_tag: missing:missing_faqs
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: pier-33
+name: Pier 33
+is_active: t
+planner_category: food_drink
+entity_type: shopping
+entity_subtype: grocery_store
+city: Gulf Shores
+state: AL
+address_line_1: 900 W Beach Blvd
+latitude: 30.2461571
+longitude: -87.7038413
+rating: 4.3
+review_count: 257
+hero_image_url: /photos/pier-33/photo_01.jpg
+voice_summary: Pier 33 in Gulf Shores is best for seafood craving. It fits seafood, coffee/sweets. Experience tags: tourist_favorite.
+planner_summary: Local convenience store offering groceries, souvenirs, coffee drinks, and fishing tackle.
+best_for: seafood craving
+not_best_for: nothing specific flagged
+cuisine_tags: seafood|coffee/sweets
+experience_tags: tourist_favorite
+service_tags: accessibility|parking
+search_keywords: grocery_store|convenience_store|food_store|point_of_interest|food|store|establishment|seafood|coffee/sweets|tourist_favorite|accessibility|parking
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 6
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 7
+faq_count: 0
+data_quality_score: 85
+data_gaps: missing_menu|missing_faqs
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   6 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 6] ---
+id: 5302
+entity_slug: pier-33
+entity_name: Pier 33
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/pier-33/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 6] ---
+id: 12789
+entity_slug: pier-33
+entity_name: Pier 33
+city: Gulf Shores
+url: /photos/pier-33/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 6] ---
+id: 12790
+entity_slug: pier-33
+entity_name: Pier 33
+city: Gulf Shores
+url: /photos/pier-33/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 6] ---
+id: 12791
+entity_slug: pier-33
+entity_name: Pier 33
+city: Gulf Shores
+url: /photos/pier-33/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 6] ---
+id: 15020
+entity_slug: pier-33
+entity_name: Pier 33
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/pier-33/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 6] ---
+id: 15021
+entity_slug: pier-33
+entity_name: Pier 33
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/pier-33/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 1298fd0a-a306-4069-86c9-e4e44de9960d
+slug: pier-33
+name: Pier 33
+is_active: true
+featured: false
+entity_type: shopping
+entity_subtype: grocery_store
+description: Local convenience store offering groceries, souvenirs, coffee drinks, and fishing tackle.
+phone: (251) 948-6689
+menu_pin: 1177
+address_line_1: 900 W Beach Blvd
+city: Gulf Shores
+state: AL
+zip: 36542
+latitude: 30.2461571
+longitude: -87.7038413
+rating: 4.3
+review_count: 257
+hero_image_url: https://places.googleapis.com/v1/places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3nekU8eDXgvWP5D4yn4jFxMaDbNmdntClfo4ArfSvjXPzvwjk7JHaYcq8YcPfeq6hsN53jAu5NIa01Ngt9Jgl8Uq_hnB2r6NxGZLWNSo9FcYF3R5L2bgnGOaiTQCjySW7J4fNs2Oto1RHLsiSyQRywu5JRIzZSv15OP5r3D5BTJxR0yFNeaZWE5JJsKClb8sLv-m15JJHaVsQHAXSxlMR5m07B5zpTTngAGOaqo8fl9zCGCWnJ2deSpmBydqBIFcOU8qLalqqIXI_jDwOJwNYFFdxlm6cz1fehkCC3w-tb1UrT4heUY1JZvqrsLt3giaB2xmTkqHDuI5aHYqfLNJ7Np3ECkFAhOdVbFdnPSnntI9O4jzQqIUQ32Mu7f4yl7qhD0pzYA-FLJSxVyBZ3uc1mj1N13-zzj8RtbR4E_5o9WPQ/media?maxHeightPx=1600&maxWidthPx=1600
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T04:01:50.814778+00:00
+updated_at: 2026-06-03T04:01:50.814778+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJMc4RiU4bmogRP9PJPo1jvds
+google_maps_uri: https://maps.google.com/?cid=15833921323199484735&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: grocery_store
+formatted_address: 900 W Beach Blvd #200, Gulf Shores, AL 36542, USA
+plus_code: 862J67WW+FF
+international_phone: +1 251-948-6689
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+wheelchair_accessible_restroom: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+accepts_nfc: true
+accepts_cash_only: false
+parking_type: paid
+google_places_data: {
+  "id": "ChIJMc4RiU4bmogRP9PJPo1jvds",
+  "types": [
+    "grocery_store",
+    "convenience_store",
+    "food_store",
+    "food",
+    "point_of_interest",
+    "store",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3nekU8eDXgvWP5D4yn4jFxMaDbNmdntClfo4ArfSvjXPzvwjk7JHaYcq8YcPfeq6hsN53jAu5NIa01Ngt9Jgl8Uq_hnB2r6NxGZLWNSo9FcYF3R5L2bgnGOaiTQCjySW7J4fNs2Oto1RHLsiSyQRywu5JRIzZSv15OP5r3D5BTJxR0yFNeaZWE5JJsKClb8sLv-m15JJHaVsQHAXSxlMR5m07B5zpTTngAGOaqo8fl9zCGCWnJ2deSpmBydqBIFcOU8qLalqqIXI_jDwOJwNYFFdxlm6cz1fehkCC3w-tb1UrT4heUY1JZvqrsLt3giaB2xmTkqHDuI5aHYqfLNJ7Np3ECkFAhOdVbFdnPSnntI9O4jzQqIUQ32Mu7f4yl7qhD0pzYA-FLJSxVyBZ3uc1mj1N13-zzj8RtbR4E_5o9WPQ",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDE_KXZRw!2e10!4m2!3m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDE_KXZRw&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/113707729704758892291",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLjDmSGvp7vJu5edg6flx9iQNASyIaoyvXC4LHAGpOoS4YqXg=s100-p-k-no-mo",
+          "displayName": "Darrell Klein"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3lua-k5JpJlS6XO_YXQmKs4kJOFJeayiwO7MOpBju4_sevfbnXzqkW0quZQytpcy3YuWt1aWmvxMrLtCp0YXYMU2DGaunnCLb70a_nEUUAfeen1whhLKGfmnsEOihCbXiJcRehzg99vObRAHgsqVLzIZ4J3yLrk4fNQOeRwxOOPjFSY-8Te_GhgIBsTGyw739hXYAS-39R0MsLaCkO_8xSikCIk2YmTNpioOLYWMw1CqsTW4-AYrBwdBeSUaVdnwVPTZlY7sludpT0I2UXvYT-zOoMsO320RKv6j-hKZH0Ed6u5aZnhl_mDU4FrtMxi3r9PVQmtJQtzVMSs0zR9vyJiu41C5zJr5K5xFdMM8y4yuYXndG2ayj_Wxjyr4tXSEYJpyNyHVifkxhKSFxB9WsESGhZ0dKjUUOGMdxug6jh60w",
+      "widthPx": 3024,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICEo6P0JA!2e10!4m2!3m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICEo6P0JA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/111477189340826106452",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW-LudHsm5I6MzCwnP6FjyekOgTGjEsSYnucAOepw8ANxroBJ4=s100-p-k-no-mo",
+          "displayName": "Zach R."
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3meOeG3I0pw2L5KT3KNIbX-CHBupizI0U8k0VtMUdkOC02YBP1ozom6s7nLP6KdfzWq9nE3uYrNI6FRB6vVrE9x0ps6zMxx62VIuEqlN6tc0HnX97MF8BXpcaaeEMO97nUm2WzNlzxKI4hgNSyzR5KDuB24-FgYuk6Bqz22Z30d8Pyda0Fi5nttV-TrqiCOjUPwmSr0Ld7iZbDi3eiDlV0rIWtUjTKSDkZS7hedfJOm1ObiZ3PfAclQoGnfza1BKLvOFvUlXja91L1rXEBRt7m_ho3kVJyGIU1Ie8Us_mDz2UivXWwxjRSHEU18rF_RxovvrUHbEyCK8rSuX5jk_k91M3D__uz5ofLTvdjDI3CETraOFVUa576Le2Bsiug0mc767GD736lKp6hhlv64lNjvOVqyYJOV96UFJDeSmcI",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDh3sKVRA!2e10!4m2!3m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDh3sKVRA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/111845659244595572045",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXeOublBa8mhXzWbAkfgi8LQ4kB4KgXpPfUS2axLG68SQOnpqY=s100-p-k-no-mo",
+          "displayName": "Angela Radloff"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3kkF44Z1HfMmgeiWaNL669IjCA3f7Nn9F5ioYIrOUxNzvb6icP3B-vCp7sVEzbljgxbltwZUevg9AnRmMiXCNbO4B24qi4ynEwmgt-AUeym6-dxwU36Mi-MZ9H0MXWqQWpW2EkxoHLO8o26skEq4ldYEpG5M3dB5KifwUC3TtlKxZr4Dvuo2a-qp8Fnkfe4zsa3cdovL5n0v_uPT7eWn0EpkFHljfcj5apicKrxRq8UYlQbLo4KEBXfB0X70V5XPMLU0jvQiulYRLZ9m9Hz1nInkadKfO77IMfnQWvVyeFM3BLQyvTjOjyeFtsZnZoNp8N0RWeoCmki4FcaYWCpy3zGdpaAaMbiZK3QhH378bB-SLKlwTWhUtqQ39q5jV4KlNDRTpcvCULeR5hKaGkCv0B7r6AI-1-G3FjQOJ19YJbgIRs",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICEz7yPuAE!2e10!4m2!3m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICEz7yPuAE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/109087253358140287571",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocI-6cC9l-MKkYc8aocVg110VHbt4mOfYjrpZzrYB75kiA9Oo4b8=s100-p-k-no-mo",
+          "displayName": "Avery Allen"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3mPRntRtEBaUDs8QFyLoJDIOCZVbeS5gPIxhSPcq0Cv_vyhyfvqdaHq0_gAUjrpHBHTnD6QHGy6q8_q5hGa0TQnM9Ql_JZhBef2lC9eJb8WsbptfFBNpbY_er1hvPBF6K-rJmHUPBfENOfWMbyqYmIBHULWHt8QiOPfUh6Gtff0l33kYtoiEy6NbBfDm9CvV6s9lCeI-Ouen1gqHspG9ftCypKl04DEDcJTtvfEsO6g0FoLCVpEFL2DJer8tazG6e7D-gS812Jth4PbvLq173R25H9xB_ro1Hk63kJNEVazJEFjM9xrWZ_TZGcqe81KYdieEf_Nk-IV8VorR89hQRCIkvxGnARRbaS2l5bLl3MKi4xvVQj41iU7GYFgW52uv7aemwZVWfNFyGrQusXwOS8mQafG76ZOHMElN70C3ISKDg",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICxsM6dBQ!2e10!4m2!3m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICxsM6dBQ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/110532231270349335698",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXNo3C1IpUnLnHl3VYxrX6jOFhh00Ht9A6uMBT-97AvfSGuKgMflA=s100-p-k-no-mo",
+          "displayName": "Aaron Richey"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3nBhECa7_3JKMG9s1PeUM7ubM7ZjEIxAWlJxyfq23kK2GEJh5p67BapUSiFK93Arav6_Uhp7ese76r3fv13LeHlkZhxXkNmMw7Bg4u-vyBCZx-IwLekHIqF8lmKCBQHBSZrk-PSOx-7u2UfkR9dcraI3iOh9cKQ3xHTjfkT6tVQlJRPnGjwH3sIJ2GVPhr1qVacclygYqGv3I8cQnjgO2oEFQsTq9uCCtUkZXVuoiO5HznmfhMjAy16mvrE7IlH83oDxdBpyQW1IBMfuyrq0ai21iUJE3OUWCNmBHeDXJZfhKeQVlT9BAQq2k11wJz-AtsqcwQ7sQHbJXFYDfjEu0TlCG9ool4ZxUNEJZzXfbIpQbzKjlagLuOeug4tB_iNIpxKTNkBlxmMsE6qxfpMAJn3WD5UBCIaksFtjJ5BTrKcH83B",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICqpuKpxwE!2e10!4m2!3m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICqpuKpxwE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/102514944554484107021",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWWgVKi9e_z5Vev9Ni9JvKIf7MoQgA_n9YxOTYJk3bkntW7D2Dq=s100-p-k-no-mo",
+          "displayName": "Charles Jones"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3mY-yX8rbMAVfCHp2_A3NcQ6BoFiKirKij8bVRud2CN103LBzYQAOFNpzBOrdCCxRUVt2y-nWSt6kRmQ7jpOk-3PjF11bSlS1bKkOtddZ0F8vw2WoUV_RgNKMDLWsShllsB92m9QY5dT11zoyMHgF8_xw65roYNWW1DdfINmX4Tn8IONaLOTWW_Jq6y2at75eOh5t4UQZqjVQ1UJVt4AVHerW7GVpXLMARJsd9HJqMYqHm7M7gVisUfNRoRzvcULwFm4cMiW3MnsHl2D802O4BGE8qc0WlgkgRXDJ-pgh3Z6jiQEhwqO6wN9_Uygy5TvHz-Cang63ENZ3FT8keFYtpPfhbIHio-DRGJmR4MKpa2hKIJcw47FQTCifwN5gyF5ZmztRSm8BDJ9orod6ib5smxATXS9VFVx5-S3zNezk77s2Lf",
+      "widthPx": 3024,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICEo8X_vQE!2e10!4m2!3m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICEo8X_vQE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/111477189340826106452",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW-LudHsm5I6MzCwnP6FjyekOgTGjEsSYnucAOepw8ANxroBJ4=s100-p-k-no-mo",
+          "displayName": "Zach R."
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3nrbQtRxCgO6qlQrQh67KNGcAspQ1PfWg-VhAkxsp4zSXNdbweOREgKLf20on8fsCbKlcACbISze9jfDQU2KkfXkh9iRKlCUtC_sW1XN2xn9OTvzdRC1FBbUXqJshAVlw9c-G7IEwfkfbL56T0hGLMLIsKkmS7WDBxMoTLtV4QKUMWYZj72pbpPcq58-oS_JnJ7XvgT9L-pHWLeYc-ylSzfqOv67m0L7m9WG6nF6xYHk7VDs5g2-ds3I0I3FJU8LxJch4yxT3oW4JWUefvbLOuaSN9Wbi_rYUZ-qvsXM0QAdx01hUqV0kEG-fh0qmrIyvmR6qHWfeAtgzhwP1VFP4Egp_BbpEHU428tgia_V6NAwDwORo_d_7dohv5hNXfzZ0zK050nTfrLKy3vAUIzWaAA3dwoW485tf3zsH4QS4C_Vvg",
+      "widthPx": 3264,
+      "heightPx": 2448,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDGpJjJ7wE!2e10!4m2!3m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDGpJjJ7wE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/103096111354041944142",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVpuSsbCLgDeoAX2H4kjDf1IUOmtGKbSzAUL1MeNVR_BcGSH1t0vQ=s100-p-k-no-mo",
+          "displayName": "Stephanie Stockton"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3nZm_jPf7qDyAlhJTqaqnCKQQb-ZNK02L4R1vDG30z1oXHDArDhNiQc7hmrz5L8j5R4DIbU5pg3lT-tLOC4PqEktwQTuD-C4z0GwP0wJG1QAreKiDJq-Iimnh_6d66goQRWYzZ_N_LBfMJidL4VFbUURfdn1Ea7jDABTBmpqtX-vK3txOQAG8eJ4PaL2IAj57EkE0qY1VO6xCSN4zRRmDRkVVJlGV8s1Jhdo1btV8AzYHhNToPIbzF4CbbaWNgDED0DJRFkKSWFvRJCw4xQzCCIipigtihLC5AX7dff9I9XqKizo_tGstandaHFPSOmBsC8AKr7T7vXGfUQ02HDYm538d-irD1WiF0oMM-dkRBttMT3SLp23lUbhXlHtFla_5BFKqyXZRUfM5Sm_ImkKaSprhTbOPtKQraStfvDrdrKlw",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICEo72deg!2e10!4m2!3m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICEo72deg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/111477189340826106452",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW-LudHsm5I6MzCwnP6FjyekOgTGjEsSYnucAOepw8ANxroBJ4=s100-p-k-no-mo",
+          "displayName": "Zach R."
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3ktC7wBCtiR9npNOB54YzxORLiVLNSF5KMGIl47k5ho7qL1fLe6kKqv8kdsSK9C3QDGxb4vDKmEg2WEJboPIdmK0RI2RQtX9twFxhWqQ-jhIinnLbrgnd9SkskIuRX9SbfIoRS-HVGIKw1sWGXhVpDoO5zMV2T8uz76ktHuyn0237ZPOXwcv0AfAVQB3Wmey-Do9EfNXVuqac5oNgpX2qhNmSRmGJDme0IWtHnAaSwc5zuIhuCK1skzMxPdsMGjGoyiF0b6DvTexGyqXFhwZsltzFU3iVeAbsx4_ELmTT76xVXjjzhkZpO9-Dlz1I3vgtkeNlxwjEFZ9hZloME04Rm6eW_XixpvDcEUo-QUkZmypdfcimJnOsr2t6ZZfapkXEcvrX7sZyEtKS3Qec4kH91Q_lxFHxBsStsKqHpthhG5qY4WccoxHnLO6CJFU-2C",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDFCx8MDvydVXCeUUkBEGZ3!2e10!4m2!3m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDFCx8MDvydVXCeUUkBEGZ3&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/100127771166763263241",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJveqczAhLcVk_FLkLAhENL9a533XyreBjyteuJc-ysWbKvcw=s100-p-k-no-mo",
+          "displayName": "Harsimranjit Singh"
+        }
+      ]
+    }
+  ],
+  "rating": 4.3,
+  "reviews": [
+    {
+      "name": "places/ChIJMc4RiU4bmogRP9PJPo1jvds/reviews/Ci9DQUlRQUNvZENodHljRjlvT21ORFdHTk5hRU5sVEVZeGR6UkxSMkpOYmtWUVdVRRAB",
+      "text": {
+        "text": "Close to the condo and after reading the reviews I was happy with the service and selection! If you don’t like the price drive on! Way better than northern Michigan prices!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-01-01T21:02:41.048113753Z",
+      "originalText": {
+        "text": "Close to the condo and after reading the reviews I was happy with the service and selection! If you don’t like the price drive on! Way better than northern Michigan prices!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21ORFdHTk5hRU5sVEVZeGR6UkxSMkpOYmtWUVdVRRAB!2m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT21ORFdHTk5hRU5sVEVZeGR6UkxSMkpOYmtWUVdVRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/111994067062775517299/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLk8iwg0JiXeKxBL-mHs0d4Op_WOqqjDNaLX5sEfN_wocIzCA=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Ryan Donnelly"
+      },
+      "relativePublishTimeDescription": "5 months ago"
+    },
+    {
+      "name": "places/ChIJMc4RiU4bmogRP9PJPo1jvds/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tkcFoxQmFhMnhvYUY5MVIwbG9la0ZzVW1sU01tYxAB",
+      "text": {
+        "text": "Pier 33 is a super convenient stop with a little bit of everything packed into one place. It’s perfect for grabbing groceries, snacks, beach essentials, and last-minute items without driving far. The store has a classic coastal feel, is well organized for its size, and the staff is friendly and helpful. Great spot for locals and visitors alike.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-01-24T04:00:11.839663770Z",
+      "originalText": {
+        "text": "Pier 33 is a super convenient stop with a little bit of everything packed into one place. It’s perfect for grabbing groceries, snacks, beach essentials, and last-minute items without driving far. The store has a classic coastal feel, is well organized for its size, and the staff is friendly and helpful. Great spot for locals and visitors alike.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tkcFoxQmFhMnhvYUY5MVIwbG9la0ZzVW1sU01tYxAB!2m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2tkcFoxQmFhMnhvYUY5MVIwbG9la0ZzVW1sU01tYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/100416221025730720145/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKANGAqewUZ0wfU8F-83goLMe6cSGSagGH6ERJBvadGB_eykg=s128-c0x00000000-cc-rp-mo-ba5",
+        "displayName": "Tosha Ussery"
+      },
+      "relativePublishTimeDescription": "4 months ago"
+    },
+    {
+      "name": "places/ChIJMc4RiU4bmogRP9PJPo1jvds/reviews/ChZDSUhNMG9nS0VJQ0FnSUNxcHZ5MWN3EAE",
+      "text": {
+        "text": "Pier 33 will not disappoint! Everything you want, need, or just have to have all on one place. Great location that is nestled in Gulf Shores main drag this grocery store utilizes every square inch of space to provide the utmost In selection for every customer. Groceries, towels, sporting goods, games, dry goods, apparel, sweets, Ice cream, cakes, pies, bait, ice, meats, dairy, and even Icee's. Great customer service, made us all feel at home while we were shopping. Make sure you stop in an visit Pier 33.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2021-06-05T00:20:55.048546Z",
+      "originalText": {
+        "text": "Pier 33 will not disappoint! Everything you want, need, or just have to have all on one place. Great location that is nestled in Gulf Shores main drag this grocery store utilizes every square inch of space to provide the utmost In selection for every customer. Groceries, towels, sporting goods, games, dry goods, apparel, sweets, Ice cream, cakes, pies, bait, ice, meats, dairy, and even Icee's. Great customer service, made us all feel at home while we were shopping. Make sure you stop in an visit Pier 33.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNxcHZ5MWN3EAE!2m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNxcHZ5MWN3EAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/102514944554484107021/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWWgVKi9e_z5Vev9Ni9JvKIf7MoQgA_n9YxOTYJk3bkntW7D2Dq=s128-c0x00000000-cc-rp-mo-ba6",
+        "displayName": "Charles Jones"
+      },
+      "relativePublishTimeDescription": "5 years ago"
+    },
+    {
+      "name": "places/ChIJMc4RiU4bmogRP9PJPo1jvds/reviews/Ci9DQUlRQUNvZENodHljRjlvT2prNFNtdE5hVWxUVW1nNWVVVlBiSE0wZGxKaVZuYxAB",
+      "text": {
+        "text": "I would give zero stars if it would let me for Pier 33. I was just charged $6 for a medium Icee, and as I asked the man if the price was correct he quickly replied “I don’t care what you think.” Terrible customer service I will not be going back, even if I’m dying of dehydration. Go somewhere else.",
+        "languageCode": "en"
+      },
+      "rating": 1,
+      "publishTime": "2025-06-26T20:38:18.818039856Z",
+      "originalText": {
+        "text": "I would give zero stars if it would let me for Pier 33. I was just charged $6 for a medium Icee, and as I asked the man if the price was correct he quickly replied “I don’t care what you think.” Terrible customer service I will not be going back, even if I’m dying of dehydration. Go somewhere else.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2prNFNtdE5hVWxUVW1nNWVVVlBiSE0wZGxKaVZuYxAB!2m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2prNFNtdE5hVWxUVW1nNWVVVlBiSE0wZGxKaVZuYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/109781544904352241120/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIOhQHGz79VPdWSwV52eHy9ozfrZU62Sdjtw8OMbYKAEYlMyQ=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Laura Roberts"
+      },
+      "relativePublishTimeDescription": "11 months ago"
+    },
+    {
+      "name": "places/ChIJMc4RiU4bmogRP9PJPo1jvds/reviews/Ci9DQUlRQUNvZENodHljRjlvT25jNVlqRkNhRUpMTlZoU2IzSjFOM1IyTFRGR2QwRRAB",
+      "text": {
+        "text": "Stopped in for some coffee on the second floor- pretty good! Great selection of baked goods. Staff was very friendly",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-05-19T16:21:06.163808467Z",
+      "originalText": {
+        "text": "Stopped in for some coffee on the second floor- pretty good! Great selection of baked goods. Staff was very friendly",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25jNVlqRkNhRUpMTlZoU2IzSjFOM1IyTFRGR2QwRRAB!2m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT25jNVlqRkNhRUpMTlZoU2IzSjFOM1IyTFRGR2QwRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/106910183627728453323/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVK9fe3np-agIlL0C8vyO9CegX9R7lVMRZruH01zEQLcBN74O8=s128-c0x00000000-cc-rp-mo-ba3",
+        "displayName": "Gertrude Hemingpot"
+      },
+      "relativePublishTimeDescription": "3 weeks ago"
+    }
+  ],
+  "delivery": false,
+  "location": {
+    "latitude": 30.2461571,
+    "longitude": -87.7038413
+  },
+  "plusCode": {
+    "globalCode": "862J67WW+FF",
+    "compoundCode": "67WW+FF Gulf Shores, AL, USA"
+  },
+  "restroom": true,
+  "viewport": {
+    "low": {
+      "latitude": 30.244701119708505,
+      "longitude": -87.7051855802915
+    },
+    "high": {
+      "latitude": 30.2473990802915,
+      "longitude": -87.70248761970849
+    }
+  },
+  "displayName": {
+    "text": "Pier 33",
+    "languageCode": "en"
+  },
+  "primaryType": "grocery_store",
+  "googleMapsUri": "https://maps.google.com/?cid=15833921323199484735&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewSummary": {
+    "text": {
+      "text": "Visitors appreciate this store's extensive inventory, which includes groceries, snacks, beach essentials, and souvenirs, making it a convenient option for last-minute needs. The staff is noted for being friendly.\n\nSome reviews mention the prices can be high.",
+      "languageCode": "en-US"
+    },
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f!9m1!1b1",
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "flagContentUri": "https://www.google.com/local/content/rap/report?postId=5%401:CAIQACodChtyc19oOnJRU3ZBMmtFS3JQVDdXNjFhX00zMmc%7CCAIQACoqChtyc19oOnJRU3ZBMmtFS3JQVDdXNjFhX00zMmcSCwiW9LnQBhD42oM2&d=17924085&t=8"
+  },
+  "businessStatus": "OPERATIONAL",
+  "parkingOptions": {
+    "paidParkingLot": true
+  },
+  "paymentOptions": {
+    "acceptsNfc": true,
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=15833921323199484735&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shoppingcart_pinlet",
+  "userRatingCount": 257,
+  "adrFormatAddress": "<span class=\"street-address\">900 W Beach Blvd #200</span>, <span class=\"locality\">Gulf Shores</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36542-6302</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "900 W Beach Blvd #200, Gulf Shores, AL 36542, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "subpremise"
+      ],
+      "longText": "200",
+      "shortText": "200",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "900",
+      "shortText": "900",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "West Beach Boulevard",
+      "shortText": "W Beach Blvd",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Gulf Shores",
+      "shortText": "Gulf Shores",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36542",
+      "shortText": "36542",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "postal_code_suffix"
+      ],
+      "longText": "6302",
+      "shortText": "6302",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJywq0Zk4bmogRa5uQJjSU558",
+        "placeId": "ChIJywq0Zk4bmogRa5uQJjSU558",
+        "containment": "NEAR",
+        "displayName": {
+          "text": "Sea Glass Condominiums",
+          "languageCode": "en"
+        }
+      },
+      {
+        "name": "places/ChIJKaNse04bmogR8iW3zgYiLmU",
+        "placeId": "ChIJKaNse04bmogR8iW3zgYiLmU",
+        "containment": "NEAR",
+        "displayName": {
+          "text": "Oceania Condos",
+          "languageCode": "en"
+        }
+      },
+      {
+        "name": "places/ChIJ529BCE8bmogRLvPtMpUwzMw",
+        "placeId": "ChIJ529BCE8bmogRLvPtMpUwzMw",
+        "containment": "NEAR",
+        "displayName": {
+          "text": "Las Palmas Condos",
+          "languageCode": "en"
+        }
+      }
+    ],
+    "landmarks": [
+      {
+        "name": "places/ChIJvWiOTkwbmogRQ6mdKEMkhJU",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJvWiOTkwbmogRQ6mdKEMkhJU",
+        "displayName": {
+          "text": "Harbor House Condominium",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "DOWN_THE_ROAD",
+        "travelDistanceMeters": 158.35724,
+        "straightLineDistanceMeters": 65.90886
+      },
+      {
+        "name": "places/ChIJDch9_U4bmogRd4u2HTdlsfI",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "real_estate_agency",
+          "travel_agency"
+        ],
+        "placeId": "ChIJDch9_U4bmogRd4u2HTdlsfI",
+        "displayName": {
+          "text": "The Cove",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 212.49214,
+        "straightLineDistanceMeters": 114.68097
+      },
+      {
+        "name": "places/ChIJkQvrD6AbmogRuiif6lhXSBM",
+        "types": [
+          "cafe",
+          "establishment",
+          "food",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJkQvrD6AbmogRuiif6lhXSBM",
+        "displayName": {
+          "text": "West Beach Coffee House",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "BESIDE",
+        "travelDistanceMeters": 3.0518265,
+        "straightLineDistanceMeters": 17.164368
+      },
+      {
+        "name": "places/ChIJqRWzeE4bmogRiQUBv6sXEiU",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJqRWzeE4bmogRiQUBv6sXEiU",
+        "displayName": {
+          "text": "Island Royale Condominiums",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "DOWN_THE_ROAD",
+        "travelDistanceMeters": 108.95447,
+        "straightLineDistanceMeters": 145.96027
+      },
+      {
+        "name": "places/ChIJ-Vug_04bmogRRfXssfca_A8",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJ-Vug_04bmogRRfXssfca_A8",
+        "displayName": {
+          "text": "Las Palmas Condos",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "DOWN_THE_ROAD",
+        "travelDistanceMeters": 297.26398,
+        "straightLineDistanceMeters": 178.73024
+      }
+    ]
+  },
+  "generativeSummary": {
+    "overview": {
+      "text": "Local convenience store offering groceries, souvenirs, coffee drinks, and fishing tackle.",
+      "languageCode": "en-US"
+    },
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "overviewFlagContentUri": "https://www.google.com/local/content/rap/report?postId=CiUweDg4OWExYjRlODkxMWNlMzE6MHhkYmJkNjM4ZDNlYzlkMzNmMAI&d=17924085&t=12"
+  },
+  "currentOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 6,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 6,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 6,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 6,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 6,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 6,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 6,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 0
+        }
+      }
+    ],
+    "nextCloseTime": "2026-06-11T04:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 6:00 AM – 11:00 PM",
+      "Tuesday: 6:00 AM – 11:00 PM",
+      "Wednesday: 6:00 AM – 11:00 PM",
+      "Thursday: 6:00 AM – 11:00 PM",
+      "Friday: 6:00 AM – 11:00 PM",
+      "Saturday: 6:00 AM – 11:00 PM",
+      "Sunday: 6:00 AM – 11:00 PM"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Grocery Store",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#4B96F3",
+  "nationalPhoneNumber": "(251) 948-6689",
+  "regularOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 6,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "hour": 6,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 6,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 6,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 6,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 6,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 23,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 6,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 23,
+          "minute": 0
+        }
+      }
+    ],
+    "nextCloseTime": "2026-06-11T04:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 6:00 AM – 11:00 PM",
+      "Tuesday: 6:00 AM – 11:00 PM",
+      "Wednesday: 6:00 AM – 11:00 PM",
+      "Thursday: 6:00 AM – 11:00 PM",
+      "Friday: 6:00 AM – 11:00 PM",
+      "Saturday: 6:00 AM – 11:00 PM",
+      "Sunday: 6:00 AM – 11:00 PM"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true,
+    "wheelchairAccessibleRestroom": true
+  },
+  "shortFormattedAddress": "900 W Beach Blvd #200, Gulf Shores",
+  "primaryTypeDisplayName": {
+    "text": "Grocery Store",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-948-6689"
+}
+ai_overview: Local convenience store offering groceries, souvenirs, coffee drinks, and fishing tackle.
+ai_review_summary: Visitors appreciate this store's extensive inventory, which includes groceries, snacks, beach essentials, and souvenirs, making it a convenient option for last-minute needs. The staff is noted for being friendly.
+
+Some reviews mention the prices can be high.
+restroom: true
+paid_parking_lot: true
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #4B96F3
+short_formatted_address: 900 W Beach Blvd #200, Gulf Shores
+national_phone: (251) 948-6689
+search_vector: '33':2A 'appreci':15C 'beach':25C 'coffe':9B 'conveni':4B,32C 'drink':10B 'essenti':26C 'extens':19C 'fish':12B 'friend':45C 'groceri':7B,23C,54 'gulf':56 'high':53C 'includ':22C 'inventori':20C 'last':36C 'last-minut':35C 'local':3B 'make':29C 'mention':48C 'minut':37C 'need':38C 'note':42C 'offer':6B 'option':33C 'pier':1A 'price':50C 'review':47C 'shore':57 'snack':24C 'souvenir':8B,28C 'staff':40C 'store':5B,17C,55 'tackl':13B 'visitor':14C
+primary_type_display: Grocery Store
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=15833921323199484735&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJywq0Zk4bmogRa5uQJjSU558",
+      "placeId": "ChIJywq0Zk4bmogRa5uQJjSU558",
+      "containment": "NEAR",
+      "displayName": {
+        "text": "Sea Glass Condominiums",
+        "languageCode": "en"
+      }
+    },
+    {
+      "name": "places/ChIJKaNse04bmogR8iW3zgYiLmU",
+      "placeId": "ChIJKaNse04bmogR8iW3zgYiLmU",
+      "containment": "NEAR",
+      "displayName": {
+        "text": "Oceania Condos",
+        "languageCode": "en"
+      }
+    },
+    {
+      "name": "places/ChIJ529BCE8bmogRLvPtMpUwzMw",
+      "placeId": "ChIJ529BCE8bmogRLvPtMpUwzMw",
+      "containment": "NEAR",
+      "displayName": {
+        "text": "Las Palmas Condos",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJvWiOTkwbmogRQ6mdKEMkhJU",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJvWiOTkwbmogRQ6mdKEMkhJU",
+      "displayName": {
+        "text": "Harbor House Condominium",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "DOWN_THE_ROAD",
+      "travelDistanceMeters": 158.35724,
+      "straightLineDistanceMeters": 65.90886
+    },
+    {
+      "name": "places/ChIJDch9_U4bmogRd4u2HTdlsfI",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "real_estate_agency",
+        "travel_agency"
+      ],
+      "placeId": "ChIJDch9_U4bmogRd4u2HTdlsfI",
+      "displayName": {
+        "text": "The Cove",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 212.49214,
+      "straightLineDistanceMeters": 114.68097
+    },
+    {
+      "name": "places/ChIJkQvrD6AbmogRuiif6lhXSBM",
+      "types": [
+        "cafe",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJkQvrD6AbmogRuiif6lhXSBM",
+      "displayName": {
+        "text": "West Beach Coffee House",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "BESIDE",
+      "travelDistanceMeters": 3.0518265,
+      "straightLineDistanceMeters": 17.164368
+    },
+    {
+      "name": "places/ChIJqRWzeE4bmogRiQUBv6sXEiU",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJqRWzeE4bmogRiQUBv6sXEiU",
+      "displayName": {
+        "text": "Island Royale Condominiums",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "DOWN_THE_ROAD",
+      "travelDistanceMeters": 108.95447,
+      "straightLineDistanceMeters": 145.96027
+    },
+    {
+      "name": "places/ChIJ-Vug_04bmogRRfXssfca_A8",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJ-Vug_04bmogRRfXssfca_A8",
+      "displayName": {
+        "text": "Las Palmas Condos",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "DOWN_THE_ROAD",
+      "travelDistanceMeters": 297.26398,
+      "straightLineDistanceMeters": 178.73024
+    }
+  ]
+}
+source_url: https://www.gulfshores.com/things-to-do/shopping/
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url | hero_image_url v2-fix 2026-07-21: repointed to a photo confirmed to actually exist
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: generic
+generative_summary: Local convenience store offering groceries, souvenirs, coffee drinks, and fishing tackle.
+industry_code: retail
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   3 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 3] ---
+id: 04982088-3774-4049-9e12-e8d863631afb
+entity_slug: pier-33
+place_id: ChIJywq0Zk4bmogRa5uQJjSU558
+containment: NEAR
+display_name: Sea Glass Condominiums
+
+--- entity_address_areas [row 2 of 3] ---
+id: 723909aa-0a23-4d9d-b257-ff775c51ca33
+entity_slug: pier-33
+place_id: ChIJKaNse04bmogR8iW3zgYiLmU
+containment: NEAR
+display_name: Oceania Condos
+
+--- entity_address_areas [row 3 of 3] ---
+id: b047930c-812b-4d98-8453-5cfd78b34964
+entity_slug: pier-33
+place_id: ChIJ529BCE8bmogRLvPtMpUwzMw
+containment: NEAR
+display_name: Las Palmas Condos
+
+####################################################################################################
+# TABLE: entity_attributes   -   10 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 10] ---
+id: a68b42bb-1bc7-4c14-834c-618629100599
+entity_slug: pier-33
+category: service
+key: delivery
+label: Delivery
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 2 of 10] ---
+id: fed471ca-f089-4570-9a5c-05c489081f92
+entity_slug: pier-33
+category: amenity
+key: restroom
+label: Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 3 of 10] ---
+id: 11cf2684-485a-4f8b-b32f-cc68fc691eb0
+entity_slug: pier-33
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 4 of 10] ---
+id: d21ce5de-4b16-4776-b91f-6537cc3e9718
+entity_slug: pier-33
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 5 of 10] ---
+id: e84be122-1d60-40d1-a2de-eb6d7bd9f694
+entity_slug: pier-33
+category: accessibility
+key: access_wheelchairAccessibleRestroom
+label: Wheelchair Accessible Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 6 of 10] ---
+id: b108789a-02d5-419a-9403-2c01307ea51d
+entity_slug: pier-33
+category: parking
+key: parking_paidParkingLot
+label: Paid Parking Lot
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 7 of 10] ---
+id: e70985c6-b0b3-4a83-81d7-958e9d9b67a0
+entity_slug: pier-33
+category: payment
+key: pay_acceptsNfc
+label: Accepts Nfc
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 8 of 10] ---
+id: a2dbcab3-df31-4366-b762-1ce6947aa82d
+entity_slug: pier-33
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 9 of 10] ---
+id: 4d06d018-20dc-4adc-af61-bc0ccb069ada
+entity_slug: pier-33
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 10 of 10] ---
+id: 1bb68fc5-17bf-4843-b711-97344923066e
+entity_slug: pier-33
+category: payment
+key: pay_acceptsCreditCards
+label: Accepts Credit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: pier-33
+name: Pier 33
+industry_code: retail
+is_parent: false
+score_of_7: 5
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: fd961494-4f3e-4937-b932-c53c9901c583
+entity_slug: pier-33
+place_uri: https://maps.google.com/?cid=15833921323199484735&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 2809
+entity_slug: pier-33
+google_review_name: places/ChIJMc4RiU4bmogRP9PJPo1jvds/reviews/Ci9DQUlRQUNvZENodHljRjlvT21ORFdHTk5hRU5sVEVZeGR6UkxSMkpOYmtWUVdVRRAB
+rating: 5
+review_text: Close to the condo and after reading the reviews I was happy with the service and selection! If you don’t like the price drive on! Way better than northern Michigan prices!
+language_code: en
+author_name: Ryan Donnelly
+author_profile_url: https://www.google.com/maps/contrib/111994067062775517299/reviews
+publish_time: 2026-01-01T21:02:41.048114+00:00
+relative_time: 5 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21ORFdHTk5hRU5sVEVZeGR6UkxSMkpOYmtWUVdVRRAB!2m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 2810
+entity_slug: pier-33
+google_review_name: places/ChIJMc4RiU4bmogRP9PJPo1jvds/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tkcFoxQmFhMnhvYUY5MVIwbG9la0ZzVW1sU01tYxAB
+rating: 5
+review_text: Pier 33 is a super convenient stop with a little bit of everything packed into one place. It’s perfect for grabbing groceries, snacks, beach essentials, and last-minute items without driving far. The store has a classic coastal feel, is well organized for its size, and the staff is friendly and helpful. Great spot for locals and visitors alike.
+language_code: en
+author_name: Tosha Ussery
+author_profile_url: https://www.google.com/maps/contrib/100416221025730720145/reviews
+publish_time: 2026-01-24T04:00:11.839664+00:00
+relative_time: 4 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tkcFoxQmFhMnhvYUY5MVIwbG9la0ZzVW1sU01tYxAB!2m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 2811
+entity_slug: pier-33
+google_review_name: places/ChIJMc4RiU4bmogRP9PJPo1jvds/reviews/ChZDSUhNMG9nS0VJQ0FnSUNxcHZ5MWN3EAE
+rating: 5
+review_text: Pier 33 will not disappoint! Everything you want, need, or just have to have all on one place. Great location that is nestled in Gulf Shores main drag this grocery store utilizes every square inch of space to provide the utmost In selection for every customer. Groceries, towels, sporting goods, games, dry goods, apparel, sweets, Ice cream, cakes, pies, bait, ice, meats, dairy, and even Icee's. Great customer service, made us all feel at home while we were shopping. Make sure you stop in an visit Pier 33.
+language_code: en
+author_name: Charles Jones
+author_profile_url: https://www.google.com/maps/contrib/102514944554484107021/reviews
+publish_time: 2021-06-05T00:20:55.048546+00:00
+relative_time: 5 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNxcHZ5MWN3EAE!2m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 2812
+entity_slug: pier-33
+google_review_name: places/ChIJMc4RiU4bmogRP9PJPo1jvds/reviews/Ci9DQUlRQUNvZENodHljRjlvT2prNFNtdE5hVWxUVW1nNWVVVlBiSE0wZGxKaVZuYxAB
+rating: 1
+review_text: I would give zero stars if it would let me for Pier 33. I was just charged $6 for a medium Icee, and as I asked the man if the price was correct he quickly replied “I don’t care what you think.” Terrible customer service I will not be going back, even if I’m dying of dehydration. Go somewhere else.
+language_code: en
+author_name: Laura Roberts
+author_profile_url: https://www.google.com/maps/contrib/109781544904352241120/reviews
+publish_time: 2025-06-26T20:38:18.81804+00:00
+relative_time: 11 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2prNFNtdE5hVWxUVW1nNWVVVlBiSE0wZGxKaVZuYxAB!2m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 2813
+entity_slug: pier-33
+google_review_name: places/ChIJMc4RiU4bmogRP9PJPo1jvds/reviews/Ci9DQUlRQUNvZENodHljRjlvT25jNVlqRkNhRUpMTlZoU2IzSjFOM1IyTFRGR2QwRRAB
+rating: 5
+review_text: Stopped in for some coffee on the second floor- pretty good! Great selection of baked goods. Staff was very friendly
+language_code: en
+author_name: Gertrude Hemingpot
+author_profile_url: https://www.google.com/maps/contrib/106910183627728453323/reviews
+publish_time: 2026-05-19T16:21:06.163808+00:00
+relative_time: 3 weeks ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25jNVlqRkNhRUpMTlZoU2IzSjFOM1IyTFRGR2QwRRAB!2m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 3798d3a2-4514-4930-8b71-39f27132a3fd
+entity_slug: pier-33
+day_of_week: 0
+opens_at: 06:00:00
+closes_at: 23:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 0fb3ba33-43ae-42b7-bd9b-8e43729ce732
+entity_slug: pier-33
+day_of_week: 1
+opens_at: 06:00:00
+closes_at: 23:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 4e535135-eac2-44b5-beb2-7cbf4f97b1f0
+entity_slug: pier-33
+day_of_week: 2
+opens_at: 06:00:00
+closes_at: 23:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 25b40952-a215-406b-a284-b5784b01ca70
+entity_slug: pier-33
+day_of_week: 3
+opens_at: 06:00:00
+closes_at: 23:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 2c524fd7-4d8a-4881-90b6-bec41e9c6a47
+entity_slug: pier-33
+day_of_week: 4
+opens_at: 06:00:00
+closes_at: 23:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: fb4b71fb-2041-4a5e-abf1-09d9779d5501
+entity_slug: pier-33
+day_of_week: 5
+opens_at: 06:00:00
+closes_at: 23:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 958ef9f1-c3e0-4e7d-b90d-31fe7034061c
+entity_slug: pier-33
+day_of_week: 6
+opens_at: 06:00:00
+closes_at: 23:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_modules   -   10 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 10] ---
+id: 6c3d155f-e1a3-4b3e-a51c-20213d03100b
+entity_slug: pier-33
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 10] ---
+id: aee5d2cb-47bb-4294-b6a7-60c1688ebba6
+entity_slug: pier-33
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 10] ---
+id: 44c4e55f-fee5-487c-888c-b2648336dd78
+entity_slug: pier-33
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 10] ---
+id: f73b9489-f7e0-4090-bc34-54942937d6e1
+entity_slug: pier-33
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 10] ---
+id: 9bad00bd-1e93-4839-b98a-5054a35773f5
+entity_slug: pier-33
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 10] ---
+id: aa325c63-15ad-4ad1-badd-fc40728ad3b6
+entity_slug: pier-33
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 10] ---
+id: 6a1f8cfb-f367-489d-9222-e7ed84ef2398
+entity_slug: pier-33
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 10] ---
+id: c0452ce7-79d8-4fe8-bcfe-53d28faf64e0
+entity_slug: pier-33
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 10] ---
+id: 9b68cfe1-8deb-4291-838b-b757e6c18c47
+entity_slug: pier-33
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 10] ---
+id: 12872659-8029-43ba-8c9a-c9e7a7f716b6
+entity_slug: pier-33
+module_key: shop
+enabled: true
+sort_order: 10
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   15 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 15] ---
+id: 95fb53c4-5570-4148-8bdc-f9b27fd30796
+landmark_id: 743e68d6-f2ff-42d5-952e-d50c533ea426
+entity_slug: pier-33
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 15] ---
+id: 169a0d9a-072b-40e3-ab7b-33eb64880c38
+landmark_id: 743e68d6-f2ff-42d5-952e-d50c533ea426
+entity_slug: pier-33
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 15] ---
+id: 0dc484a6-2d79-4302-a221-83414dbdf99f
+landmark_id: 8f1c6492-f7f4-4ad8-a084-2ed9dad62116
+entity_slug: pier-33
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 15] ---
+id: 07c77072-ce12-446b-9b08-079315d50797
+landmark_id: 8f1c6492-f7f4-4ad8-a084-2ed9dad62116
+entity_slug: pier-33
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 15] ---
+id: a28d5b58-f150-418b-965d-6e4e01e04bba
+landmark_id: 8f1c6492-f7f4-4ad8-a084-2ed9dad62116
+entity_slug: pier-33
+landmark_type: real_estate_agency
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 15] ---
+id: 39268a05-dc42-4fb6-8bc0-8f6f90165825
+landmark_id: 8f1c6492-f7f4-4ad8-a084-2ed9dad62116
+entity_slug: pier-33
+landmark_type: travel_agency
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 15] ---
+id: bd09c342-4f62-4222-851e-60ab91512aa1
+landmark_id: acfa7b0d-d11e-4928-9f86-300526770c10
+entity_slug: pier-33
+landmark_type: cafe
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 15] ---
+id: 3674eb2b-2943-4e67-bf9f-9128ebe39368
+landmark_id: acfa7b0d-d11e-4928-9f86-300526770c10
+entity_slug: pier-33
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 15] ---
+id: 381ef1cd-0da9-479d-8a35-a67f9e5515e6
+landmark_id: acfa7b0d-d11e-4928-9f86-300526770c10
+entity_slug: pier-33
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 15] ---
+id: 2ca10583-cf6a-4d70-b107-b95f36b4b0a9
+landmark_id: acfa7b0d-d11e-4928-9f86-300526770c10
+entity_slug: pier-33
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 15] ---
+id: 2467c3ce-35ae-4005-8053-f274482c1578
+landmark_id: acfa7b0d-d11e-4928-9f86-300526770c10
+entity_slug: pier-33
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 15] ---
+id: c35a4865-1554-4008-836d-18d366974c32
+landmark_id: a078a101-4981-40eb-8d79-c1b921e2ed2c
+entity_slug: pier-33
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 15] ---
+id: 2e8cb8f1-5fed-4d29-9e89-62c5364a0b64
+landmark_id: a078a101-4981-40eb-8d79-c1b921e2ed2c
+entity_slug: pier-33
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 15] ---
+id: 75627846-289a-4d7c-920f-377f872c3f13
+landmark_id: 5fd44ae9-cc48-4a1a-b56b-50943450ca35
+entity_slug: pier-33
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 15] ---
+id: 17d70e09-ce16-4f95-bc5e-d46d33d8be9a
+landmark_id: 5fd44ae9-cc48-4a1a-b56b-50943450ca35
+entity_slug: pier-33
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   8 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 8] ---
+id: 743e68d6-f2ff-42d5-952e-d50c533ea426
+entity_slug: pier-33
+kind: landmark
+place_id: ChIJvWiOTkwbmogRQ6mdKEMkhJU
+name: Harbor House Condominium
+types: [
+  "establishment",
+  "point_of_interest"
+]
+spatial_relationship: DOWN_THE_ROAD
+travel_distance_meters: 158.35724
+straight_line_distance_meters: 65.90886
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 8] ---
+id: 8f1c6492-f7f4-4ad8-a084-2ed9dad62116
+entity_slug: pier-33
+kind: landmark
+place_id: ChIJDch9_U4bmogRd4u2HTdlsfI
+name: The Cove
+types: [
+  "establishment",
+  "point_of_interest",
+  "real_estate_agency",
+  "travel_agency"
+]
+travel_distance_meters: 212.49214
+straight_line_distance_meters: 114.68097
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 8] ---
+id: acfa7b0d-d11e-4928-9f86-300526770c10
+entity_slug: pier-33
+kind: landmark
+place_id: ChIJkQvrD6AbmogRuiif6lhXSBM
+name: West Beach Coffee House
+types: [
+  "cafe",
+  "establishment",
+  "food",
+  "point_of_interest",
+  "store"
+]
+spatial_relationship: BESIDE
+travel_distance_meters: 3.0518265
+straight_line_distance_meters: 17.164368
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 8] ---
+id: a078a101-4981-40eb-8d79-c1b921e2ed2c
+entity_slug: pier-33
+kind: landmark
+place_id: ChIJqRWzeE4bmogRiQUBv6sXEiU
+name: Island Royale Condominiums
+types: [
+  "establishment",
+  "point_of_interest"
+]
+spatial_relationship: DOWN_THE_ROAD
+travel_distance_meters: 108.95447
+straight_line_distance_meters: 145.96027
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 8] ---
+id: 5fd44ae9-cc48-4a1a-b56b-50943450ca35
+entity_slug: pier-33
+kind: landmark
+place_id: ChIJ-Vug_04bmogRRfXssfca_A8
+name: Las Palmas Condos
+types: [
+  "establishment",
+  "point_of_interest"
+]
+spatial_relationship: DOWN_THE_ROAD
+travel_distance_meters: 297.26398
+straight_line_distance_meters: 178.73024
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 6 of 8] ---
+id: 67cf3fd0-9b69-4e43-85e2-f0932f05601d
+entity_slug: pier-33
+kind: area
+place_id: ChIJywq0Zk4bmogRa5uQJjSU558
+name: Sea Glass Condominiums
+containment: NEAR
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 7 of 8] ---
+id: 259d3a1c-7f9f-4e58-92e0-233515d2fc4f
+entity_slug: pier-33
+kind: area
+place_id: ChIJKaNse04bmogR8iW3zgYiLmU
+name: Oceania Condos
+containment: NEAR
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 8 of 8] ---
+id: db29ccd7-e981-46b8-81eb-b0ffda8411fe
+entity_slug: pier-33
+kind: area
+place_id: ChIJ529BCE8bmogRLvPtMpUwzMw
+name: Las Palmas Condos
+containment: NEAR
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_photos   -   16 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 16] ---
+id: 2b4d0562-5232-4ed0-924c-52f3d3c170ac
+entity_slug: pier-33
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/pier-33/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 2 of 16] ---
+id: bf19759d-3c30-473d-8dcc-7be0f68c9031
+entity_slug: pier-33
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/pier-33/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 3 of 16] ---
+id: c92f73d8-c991-48f8-ad9e-45a1d8fbcbf8
+entity_slug: pier-33
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/pier-33/photo_03.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 4 of 16] ---
+id: 79156eaa-c0ac-481d-9ae5-c014636c9440
+entity_slug: pier-33
+url: https://places.googleapis.com/v1/places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3nekU8eDXgvWP5D4yn4jFxMaDbNmdntClfo4ArfSvjXPzvwjk7JHaYcq8YcPfeq6hsN53jAu5NIa01Ngt9Jgl8Uq_hnB2r6NxGZLWNSo9FcYF3R5L2bgnGOaiTQCjySW7J4fNs2Oto1RHLsiSyQRywu5JRIzZSv15OP5r3D5BTJxR0yFNeaZWE5JJsKClb8sLv-m15JJHaVsQHAXSxlMR5m07B5zpTTngAGOaqo8fl9zCGCWnJ2deSpmBydqBIFcOU8qLalqqIXI_jDwOJwNYFFdxlm6cz1fehkCC3w-tb1UrT4heUY1JZvqrsLt3giaB2xmTkqHDuI5aHYqfLNJ7Np3ECkFAhOdVbFdnPSnntI9O4jzQqIUQ32Mu7f4yl7qhD0pzYA-FLJSxVyBZ3uc1mj1N13-zzj8RtbR4E_5o9WPQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3nekU8eDXgvWP5D4yn4jFxMaDbNmdntClfo4ArfSvjXPzvwjk7JHaYcq8YcPfeq6hsN53jAu5NIa01Ngt9Jgl8Uq_hnB2r6NxGZLWNSo9FcYF3R5L2bgnGOaiTQCjySW7J4fNs2Oto1RHLsiSyQRywu5JRIzZSv15OP5r3D5BTJxR0yFNeaZWE5JJsKClb8sLv-m15JJHaVsQHAXSxlMR5m07B5zpTTngAGOaqo8fl9zCGCWnJ2deSpmBydqBIFcOU8qLalqqIXI_jDwOJwNYFFdxlm6cz1fehkCC3w-tb1UrT4heUY1JZvqrsLt3giaB2xmTkqHDuI5aHYqfLNJ7Np3ECkFAhOdVbFdnPSnntI9O4jzQqIUQ32Mu7f4yl7qhD0pzYA-FLJSxVyBZ3uc1mj1N13-zzj8RtbR4E_5o9WPQ
+is_cover: false
+sort_order: 0
+caption: Darrell Klein
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDE_KXZRw!2e10!4m2!3m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f
+
+--- entity_photos [row 5 of 16] ---
+id: 5f1ff947-f256-4509-87bb-34c8a8b2cc8e
+entity_slug: pier-33
+url: https://places.googleapis.com/v1/places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3lua-k5JpJlS6XO_YXQmKs4kJOFJeayiwO7MOpBju4_sevfbnXzqkW0quZQytpcy3YuWt1aWmvxMrLtCp0YXYMU2DGaunnCLb70a_nEUUAfeen1whhLKGfmnsEOihCbXiJcRehzg99vObRAHgsqVLzIZ4J3yLrk4fNQOeRwxOOPjFSY-8Te_GhgIBsTGyw739hXYAS-39R0MsLaCkO_8xSikCIk2YmTNpioOLYWMw1CqsTW4-AYrBwdBeSUaVdnwVPTZlY7sludpT0I2UXvYT-zOoMsO320RKv6j-hKZH0Ed6u5aZnhl_mDU4FrtMxi3r9PVQmtJQtzVMSs0zR9vyJiu41C5zJr5K5xFdMM8y4yuYXndG2ayj_Wxjyr4tXSEYJpyNyHVifkxhKSFxB9WsESGhZ0dKjUUOGMdxug6jh60w/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3lua-k5JpJlS6XO_YXQmKs4kJOFJeayiwO7MOpBju4_sevfbnXzqkW0quZQytpcy3YuWt1aWmvxMrLtCp0YXYMU2DGaunnCLb70a_nEUUAfeen1whhLKGfmnsEOihCbXiJcRehzg99vObRAHgsqVLzIZ4J3yLrk4fNQOeRwxOOPjFSY-8Te_GhgIBsTGyw739hXYAS-39R0MsLaCkO_8xSikCIk2YmTNpioOLYWMw1CqsTW4-AYrBwdBeSUaVdnwVPTZlY7sludpT0I2UXvYT-zOoMsO320RKv6j-hKZH0Ed6u5aZnhl_mDU4FrtMxi3r9PVQmtJQtzVMSs0zR9vyJiu41C5zJr5K5xFdMM8y4yuYXndG2ayj_Wxjyr4tXSEYJpyNyHVifkxhKSFxB9WsESGhZ0dKjUUOGMdxug6jh60w
+is_cover: false
+sort_order: 1
+caption: Zach R.
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICEo6P0JA!2e10!4m2!3m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f
+
+--- entity_photos [row 6 of 16] ---
+id: 62c944a8-566d-44de-916a-3c484daf7992
+entity_slug: pier-33
+url: https://places.googleapis.com/v1/places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3meOeG3I0pw2L5KT3KNIbX-CHBupizI0U8k0VtMUdkOC02YBP1ozom6s7nLP6KdfzWq9nE3uYrNI6FRB6vVrE9x0ps6zMxx62VIuEqlN6tc0HnX97MF8BXpcaaeEMO97nUm2WzNlzxKI4hgNSyzR5KDuB24-FgYuk6Bqz22Z30d8Pyda0Fi5nttV-TrqiCOjUPwmSr0Ld7iZbDi3eiDlV0rIWtUjTKSDkZS7hedfJOm1ObiZ3PfAclQoGnfza1BKLvOFvUlXja91L1rXEBRt7m_ho3kVJyGIU1Ie8Us_mDz2UivXWwxjRSHEU18rF_RxovvrUHbEyCK8rSuX5jk_k91M3D__uz5ofLTvdjDI3CETraOFVUa576Le2Bsiug0mc767GD736lKp6hhlv64lNjvOVqyYJOV96UFJDeSmcI/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3meOeG3I0pw2L5KT3KNIbX-CHBupizI0U8k0VtMUdkOC02YBP1ozom6s7nLP6KdfzWq9nE3uYrNI6FRB6vVrE9x0ps6zMxx62VIuEqlN6tc0HnX97MF8BXpcaaeEMO97nUm2WzNlzxKI4hgNSyzR5KDuB24-FgYuk6Bqz22Z30d8Pyda0Fi5nttV-TrqiCOjUPwmSr0Ld7iZbDi3eiDlV0rIWtUjTKSDkZS7hedfJOm1ObiZ3PfAclQoGnfza1BKLvOFvUlXja91L1rXEBRt7m_ho3kVJyGIU1Ie8Us_mDz2UivXWwxjRSHEU18rF_RxovvrUHbEyCK8rSuX5jk_k91M3D__uz5ofLTvdjDI3CETraOFVUa576Le2Bsiug0mc767GD736lKp6hhlv64lNjvOVqyYJOV96UFJDeSmcI
+is_cover: false
+sort_order: 2
+caption: Angela Radloff
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDh3sKVRA!2e10!4m2!3m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f
+
+--- entity_photos [row 7 of 16] ---
+id: 0f94081f-cf48-49d0-bce9-013ab45ea35b
+entity_slug: pier-33
+url: https://places.googleapis.com/v1/places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3kkF44Z1HfMmgeiWaNL669IjCA3f7Nn9F5ioYIrOUxNzvb6icP3B-vCp7sVEzbljgxbltwZUevg9AnRmMiXCNbO4B24qi4ynEwmgt-AUeym6-dxwU36Mi-MZ9H0MXWqQWpW2EkxoHLO8o26skEq4ldYEpG5M3dB5KifwUC3TtlKxZr4Dvuo2a-qp8Fnkfe4zsa3cdovL5n0v_uPT7eWn0EpkFHljfcj5apicKrxRq8UYlQbLo4KEBXfB0X70V5XPMLU0jvQiulYRLZ9m9Hz1nInkadKfO77IMfnQWvVyeFM3BLQyvTjOjyeFtsZnZoNp8N0RWeoCmki4FcaYWCpy3zGdpaAaMbiZK3QhH378bB-SLKlwTWhUtqQ39q5jV4KlNDRTpcvCULeR5hKaGkCv0B7r6AI-1-G3FjQOJ19YJbgIRs/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3kkF44Z1HfMmgeiWaNL669IjCA3f7Nn9F5ioYIrOUxNzvb6icP3B-vCp7sVEzbljgxbltwZUevg9AnRmMiXCNbO4B24qi4ynEwmgt-AUeym6-dxwU36Mi-MZ9H0MXWqQWpW2EkxoHLO8o26skEq4ldYEpG5M3dB5KifwUC3TtlKxZr4Dvuo2a-qp8Fnkfe4zsa3cdovL5n0v_uPT7eWn0EpkFHljfcj5apicKrxRq8UYlQbLo4KEBXfB0X70V5XPMLU0jvQiulYRLZ9m9Hz1nInkadKfO77IMfnQWvVyeFM3BLQyvTjOjyeFtsZnZoNp8N0RWeoCmki4FcaYWCpy3zGdpaAaMbiZK3QhH378bB-SLKlwTWhUtqQ39q5jV4KlNDRTpcvCULeR5hKaGkCv0B7r6AI-1-G3FjQOJ19YJbgIRs
+is_cover: false
+sort_order: 3
+caption: Avery Allen
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICEz7yPuAE!2e10!4m2!3m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f
+
+--- entity_photos [row 8 of 16] ---
+id: ddf6d320-94d9-4fbc-bef8-2858615c3205
+entity_slug: pier-33
+url: https://places.googleapis.com/v1/places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3mPRntRtEBaUDs8QFyLoJDIOCZVbeS5gPIxhSPcq0Cv_vyhyfvqdaHq0_gAUjrpHBHTnD6QHGy6q8_q5hGa0TQnM9Ql_JZhBef2lC9eJb8WsbptfFBNpbY_er1hvPBF6K-rJmHUPBfENOfWMbyqYmIBHULWHt8QiOPfUh6Gtff0l33kYtoiEy6NbBfDm9CvV6s9lCeI-Ouen1gqHspG9ftCypKl04DEDcJTtvfEsO6g0FoLCVpEFL2DJer8tazG6e7D-gS812Jth4PbvLq173R25H9xB_ro1Hk63kJNEVazJEFjM9xrWZ_TZGcqe81KYdieEf_Nk-IV8VorR89hQRCIkvxGnARRbaS2l5bLl3MKi4xvVQj41iU7GYFgW52uv7aemwZVWfNFyGrQusXwOS8mQafG76ZOHMElN70C3ISKDg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3mPRntRtEBaUDs8QFyLoJDIOCZVbeS5gPIxhSPcq0Cv_vyhyfvqdaHq0_gAUjrpHBHTnD6QHGy6q8_q5hGa0TQnM9Ql_JZhBef2lC9eJb8WsbptfFBNpbY_er1hvPBF6K-rJmHUPBfENOfWMbyqYmIBHULWHt8QiOPfUh6Gtff0l33kYtoiEy6NbBfDm9CvV6s9lCeI-Ouen1gqHspG9ftCypKl04DEDcJTtvfEsO6g0FoLCVpEFL2DJer8tazG6e7D-gS812Jth4PbvLq173R25H9xB_ro1Hk63kJNEVazJEFjM9xrWZ_TZGcqe81KYdieEf_Nk-IV8VorR89hQRCIkvxGnARRbaS2l5bLl3MKi4xvVQj41iU7GYFgW52uv7aemwZVWfNFyGrQusXwOS8mQafG76ZOHMElN70C3ISKDg
+is_cover: false
+sort_order: 4
+caption: Aaron Richey
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICxsM6dBQ!2e10!4m2!3m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f
+
+--- entity_photos [row 9 of 16] ---
+id: 48e4c1d3-3d36-40a9-84f1-71264024fd7c
+entity_slug: pier-33
+url: https://places.googleapis.com/v1/places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3nBhECa7_3JKMG9s1PeUM7ubM7ZjEIxAWlJxyfq23kK2GEJh5p67BapUSiFK93Arav6_Uhp7ese76r3fv13LeHlkZhxXkNmMw7Bg4u-vyBCZx-IwLekHIqF8lmKCBQHBSZrk-PSOx-7u2UfkR9dcraI3iOh9cKQ3xHTjfkT6tVQlJRPnGjwH3sIJ2GVPhr1qVacclygYqGv3I8cQnjgO2oEFQsTq9uCCtUkZXVuoiO5HznmfhMjAy16mvrE7IlH83oDxdBpyQW1IBMfuyrq0ai21iUJE3OUWCNmBHeDXJZfhKeQVlT9BAQq2k11wJz-AtsqcwQ7sQHbJXFYDfjEu0TlCG9ool4ZxUNEJZzXfbIpQbzKjlagLuOeug4tB_iNIpxKTNkBlxmMsE6qxfpMAJn3WD5UBCIaksFtjJ5BTrKcH83B/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3nBhECa7_3JKMG9s1PeUM7ubM7ZjEIxAWlJxyfq23kK2GEJh5p67BapUSiFK93Arav6_Uhp7ese76r3fv13LeHlkZhxXkNmMw7Bg4u-vyBCZx-IwLekHIqF8lmKCBQHBSZrk-PSOx-7u2UfkR9dcraI3iOh9cKQ3xHTjfkT6tVQlJRPnGjwH3sIJ2GVPhr1qVacclygYqGv3I8cQnjgO2oEFQsTq9uCCtUkZXVuoiO5HznmfhMjAy16mvrE7IlH83oDxdBpyQW1IBMfuyrq0ai21iUJE3OUWCNmBHeDXJZfhKeQVlT9BAQq2k11wJz-AtsqcwQ7sQHbJXFYDfjEu0TlCG9ool4ZxUNEJZzXfbIpQbzKjlagLuOeug4tB_iNIpxKTNkBlxmMsE6qxfpMAJn3WD5UBCIaksFtjJ5BTrKcH83B
+is_cover: false
+sort_order: 5
+caption: Charles Jones
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICqpuKpxwE!2e10!4m2!3m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f
+
+--- entity_photos [row 10 of 16] ---
+id: b664fa3b-895f-4bec-8401-6c0386a23bd5
+entity_slug: pier-33
+url: https://places.googleapis.com/v1/places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3mY-yX8rbMAVfCHp2_A3NcQ6BoFiKirKij8bVRud2CN103LBzYQAOFNpzBOrdCCxRUVt2y-nWSt6kRmQ7jpOk-3PjF11bSlS1bKkOtddZ0F8vw2WoUV_RgNKMDLWsShllsB92m9QY5dT11zoyMHgF8_xw65roYNWW1DdfINmX4Tn8IONaLOTWW_Jq6y2at75eOh5t4UQZqjVQ1UJVt4AVHerW7GVpXLMARJsd9HJqMYqHm7M7gVisUfNRoRzvcULwFm4cMiW3MnsHl2D802O4BGE8qc0WlgkgRXDJ-pgh3Z6jiQEhwqO6wN9_Uygy5TvHz-Cang63ENZ3FT8keFYtpPfhbIHio-DRGJmR4MKpa2hKIJcw47FQTCifwN5gyF5ZmztRSm8BDJ9orod6ib5smxATXS9VFVx5-S3zNezk77s2Lf/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3mY-yX8rbMAVfCHp2_A3NcQ6BoFiKirKij8bVRud2CN103LBzYQAOFNpzBOrdCCxRUVt2y-nWSt6kRmQ7jpOk-3PjF11bSlS1bKkOtddZ0F8vw2WoUV_RgNKMDLWsShllsB92m9QY5dT11zoyMHgF8_xw65roYNWW1DdfINmX4Tn8IONaLOTWW_Jq6y2at75eOh5t4UQZqjVQ1UJVt4AVHerW7GVpXLMARJsd9HJqMYqHm7M7gVisUfNRoRzvcULwFm4cMiW3MnsHl2D802O4BGE8qc0WlgkgRXDJ-pgh3Z6jiQEhwqO6wN9_Uygy5TvHz-Cang63ENZ3FT8keFYtpPfhbIHio-DRGJmR4MKpa2hKIJcw47FQTCifwN5gyF5ZmztRSm8BDJ9orod6ib5smxATXS9VFVx5-S3zNezk77s2Lf
+is_cover: false
+sort_order: 6
+caption: Zach R.
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICEo8X_vQE!2e10!4m2!3m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f
+
+--- entity_photos [row 11 of 16] ---
+id: 87822cb3-92e2-4857-8846-0eeafa821239
+entity_slug: pier-33
+url: https://places.googleapis.com/v1/places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3nrbQtRxCgO6qlQrQh67KNGcAspQ1PfWg-VhAkxsp4zSXNdbweOREgKLf20on8fsCbKlcACbISze9jfDQU2KkfXkh9iRKlCUtC_sW1XN2xn9OTvzdRC1FBbUXqJshAVlw9c-G7IEwfkfbL56T0hGLMLIsKkmS7WDBxMoTLtV4QKUMWYZj72pbpPcq58-oS_JnJ7XvgT9L-pHWLeYc-ylSzfqOv67m0L7m9WG6nF6xYHk7VDs5g2-ds3I0I3FJU8LxJch4yxT3oW4JWUefvbLOuaSN9Wbi_rYUZ-qvsXM0QAdx01hUqV0kEG-fh0qmrIyvmR6qHWfeAtgzhwP1VFP4Egp_BbpEHU428tgia_V6NAwDwORo_d_7dohv5hNXfzZ0zK050nTfrLKy3vAUIzWaAA3dwoW485tf3zsH4QS4C_Vvg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3nrbQtRxCgO6qlQrQh67KNGcAspQ1PfWg-VhAkxsp4zSXNdbweOREgKLf20on8fsCbKlcACbISze9jfDQU2KkfXkh9iRKlCUtC_sW1XN2xn9OTvzdRC1FBbUXqJshAVlw9c-G7IEwfkfbL56T0hGLMLIsKkmS7WDBxMoTLtV4QKUMWYZj72pbpPcq58-oS_JnJ7XvgT9L-pHWLeYc-ylSzfqOv67m0L7m9WG6nF6xYHk7VDs5g2-ds3I0I3FJU8LxJch4yxT3oW4JWUefvbLOuaSN9Wbi_rYUZ-qvsXM0QAdx01hUqV0kEG-fh0qmrIyvmR6qHWfeAtgzhwP1VFP4Egp_BbpEHU428tgia_V6NAwDwORo_d_7dohv5hNXfzZ0zK050nTfrLKy3vAUIzWaAA3dwoW485tf3zsH4QS4C_Vvg
+is_cover: false
+sort_order: 7
+caption: Stephanie Stockton
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDGpJjJ7wE!2e10!4m2!3m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f
+
+--- entity_photos [row 12 of 16] ---
+id: 14b951e1-df30-47b9-8d48-50ae3d3ee911
+entity_slug: pier-33
+url: https://places.googleapis.com/v1/places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3nZm_jPf7qDyAlhJTqaqnCKQQb-ZNK02L4R1vDG30z1oXHDArDhNiQc7hmrz5L8j5R4DIbU5pg3lT-tLOC4PqEktwQTuD-C4z0GwP0wJG1QAreKiDJq-Iimnh_6d66goQRWYzZ_N_LBfMJidL4VFbUURfdn1Ea7jDABTBmpqtX-vK3txOQAG8eJ4PaL2IAj57EkE0qY1VO6xCSN4zRRmDRkVVJlGV8s1Jhdo1btV8AzYHhNToPIbzF4CbbaWNgDED0DJRFkKSWFvRJCw4xQzCCIipigtihLC5AX7dff9I9XqKizo_tGstandaHFPSOmBsC8AKr7T7vXGfUQ02HDYm538d-irD1WiF0oMM-dkRBttMT3SLp23lUbhXlHtFla_5BFKqyXZRUfM5Sm_ImkKaSprhTbOPtKQraStfvDrdrKlw/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3nZm_jPf7qDyAlhJTqaqnCKQQb-ZNK02L4R1vDG30z1oXHDArDhNiQc7hmrz5L8j5R4DIbU5pg3lT-tLOC4PqEktwQTuD-C4z0GwP0wJG1QAreKiDJq-Iimnh_6d66goQRWYzZ_N_LBfMJidL4VFbUURfdn1Ea7jDABTBmpqtX-vK3txOQAG8eJ4PaL2IAj57EkE0qY1VO6xCSN4zRRmDRkVVJlGV8s1Jhdo1btV8AzYHhNToPIbzF4CbbaWNgDED0DJRFkKSWFvRJCw4xQzCCIipigtihLC5AX7dff9I9XqKizo_tGstandaHFPSOmBsC8AKr7T7vXGfUQ02HDYm538d-irD1WiF0oMM-dkRBttMT3SLp23lUbhXlHtFla_5BFKqyXZRUfM5Sm_ImkKaSprhTbOPtKQraStfvDrdrKlw
+is_cover: false
+sort_order: 8
+caption: Zach R.
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICEo72deg!2e10!4m2!3m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f
+
+--- entity_photos [row 13 of 16] ---
+id: d6f1c286-399e-46d7-8480-15cb1f992387
+entity_slug: pier-33
+url: https://places.googleapis.com/v1/places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3ktC7wBCtiR9npNOB54YzxORLiVLNSF5KMGIl47k5ho7qL1fLe6kKqv8kdsSK9C3QDGxb4vDKmEg2WEJboPIdmK0RI2RQtX9twFxhWqQ-jhIinnLbrgnd9SkskIuRX9SbfIoRS-HVGIKw1sWGXhVpDoO5zMV2T8uz76ktHuyn0237ZPOXwcv0AfAVQB3Wmey-Do9EfNXVuqac5oNgpX2qhNmSRmGJDme0IWtHnAaSwc5zuIhuCK1skzMxPdsMGjGoyiF0b6DvTexGyqXFhwZsltzFU3iVeAbsx4_ELmTT76xVXjjzhkZpO9-Dlz1I3vgtkeNlxwjEFZ9hZloME04Rm6eW_XixpvDcEUo-QUkZmypdfcimJnOsr2t6ZZfapkXEcvrX7sZyEtKS3Qec4kH91Q_lxFHxBsStsKqHpthhG5qY4WccoxHnLO6CJFU-2C/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJMc4RiU4bmogRP9PJPo1jvds/photos/AaVGc3ktC7wBCtiR9npNOB54YzxORLiVLNSF5KMGIl47k5ho7qL1fLe6kKqv8kdsSK9C3QDGxb4vDKmEg2WEJboPIdmK0RI2RQtX9twFxhWqQ-jhIinnLbrgnd9SkskIuRX9SbfIoRS-HVGIKw1sWGXhVpDoO5zMV2T8uz76ktHuyn0237ZPOXwcv0AfAVQB3Wmey-Do9EfNXVuqac5oNgpX2qhNmSRmGJDme0IWtHnAaSwc5zuIhuCK1skzMxPdsMGjGoyiF0b6DvTexGyqXFhwZsltzFU3iVeAbsx4_ELmTT76xVXjjzhkZpO9-Dlz1I3vgtkeNlxwjEFZ9hZloME04Rm6eW_XixpvDcEUo-QUkZmypdfcimJnOsr2t6ZZfapkXEcvrX7sZyEtKS3Qec4kH91Q_lxFHxBsStsKqHpthhG5qY4WccoxHnLO6CJFU-2C
+is_cover: false
+sort_order: 9
+caption: Harsimranjit Singh
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDFCx8MDvydVXCeUUkBEGZ3!2e10!4m2!3m1!1s0x889a1b4e8911ce31:0xdbbd638d3ec9d33f
+
+--- entity_photos [row 14 of 16] ---
+id: 043c303f-5e31-4032-842b-eb23f07382a8
+entity_slug: pier-33
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/6fe9ea8f-6243-4c64-b5ec-0eb9fd7ac022/image_3.jpg
+is_cover: false
+sort_order: 102
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 15 of 16] ---
+id: bd5a1788-ae66-4691-84a5-d53736fe3cf0
+entity_slug: pier-33
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/6fe9ea8f-6243-4c64-b5ec-0eb9fd7ac022/image_1.jpg
+is_cover: true
+sort_order: 100
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 16 of 16] ---
+id: 5c48779e-0acc-43f1-aaf1-d0c43c56b166
+entity_slug: pier-33
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/6fe9ea8f-6243-4c64-b5ec-0eb9fd7ac022/image_2.jpg
+is_cover: false
+sort_order: 101
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 74395121-a622-4423-884c-d2f7f5cb2815
+entity_slug: pier-33
+reviewer_name: Ryan Donnelly
+rating: 5
+body: Close to the condo and after reading the reviews I was happy with the service and selection! If you don’t like the price drive on! Way better than northern Michigan prices!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-01-01T21:02:41.048114+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: af9ee339-ad02-40c3-8b59-906876dcb3c5
+entity_slug: pier-33
+reviewer_name: Tosha Ussery
+rating: 5
+body: Pier 33 is a super convenient stop with a little bit of everything packed into one place. It’s perfect for grabbing groceries, snacks, beach essentials, and last-minute items without driving far. The store has a classic coastal feel, is well organized for its size, and the staff is friendly and helpful. Great spot for locals and visitors alike.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-01-24T04:00:11.839664+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: af87d6b8-132c-48ca-897e-2dfaf09970b8
+entity_slug: pier-33
+reviewer_name: Charles Jones
+rating: 5
+body: Pier 33 will not disappoint! Everything you want, need, or just have to have all on one place. Great location that is nestled in Gulf Shores main drag this grocery store utilizes every square inch of space to provide the utmost In selection for every customer. Groceries, towels, sporting goods, games, dry goods, apparel, sweets, Ice cream, cakes, pies, bait, ice, meats, dairy, and even Icee's. Great customer service, made us all feel at home while we were shopping. Make sure you stop in an visit Pier 33.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2021-06-05T00:20:55.048546+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 632c7649-ef55-4269-9577-297ea6a43b0e
+entity_slug: pier-33
+reviewer_name: Laura Roberts
+rating: 1
+body: I would give zero stars if it would let me for Pier 33. I was just charged $6 for a medium Icee, and as I asked the man if the price was correct he quickly replied “I don’t care what you think.” Terrible customer service I will not be going back, even if I’m dying of dehydration. Go somewhere else.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-06-26T20:38:18.81804+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 1e42acb1-cfd5-4f0b-8fda-4ed43eb5d023
+entity_slug: pier-33
+reviewer_name: Gertrude Hemingpot
+rating: 5
+body: Stopped in for some coffee on the second floor- pretty good! Great selection of baked goods. Staff was very friendly
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-05-19T16:21:06.163808+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_sources   -   2 row(s)
+####################################################################################################
+
+--- entity_sources [row 1 of 2] ---
+id: afb7151f-a745-42bc-9fab-121969fea501
+entity_slug: pier-33
+source_system: gulfshores_fishing_directory
+source_url: https://www.gulfshores.com/things-to-do/fishing/
+observed_at: 2026-07-16T00:00:00+00:00
+confidence: high
+note: Listed on GulfShores.com fishing directory
+created_at: 2026-07-16T10:52:15.170087+00:00
+
+--- entity_sources [row 2 of 2] ---
+id: 02db0996-8be8-4d0e-9d57-4a2bb61f6f3f
+entity_slug: pier-33
+source_system: gulfshores.com water-activities directory
+source_url: https://www.gulfshores.com/things-to-do/shopping/
+scope: directory-listing
+observed_at: 2026-07-16T11:22:12.863287+00:00
+confidence: high
+note: Shopping / Retail / Specialty
+created_at: 2026-07-16T11:22:12.863287+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   9 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 9] ---
+id: 2b857286-88fe-4409-b5c7-7ef9a6df1377
+entity_slug: pier-33
+tag_name: grocery_store
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 9] ---
+id: be94f0af-571d-41c8-99f2-22f6c0676bfb
+entity_slug: pier-33
+tag_name: convenience_store
+tag_category: google_type
+
+--- entity_tags [row 3 of 9] ---
+id: 8111315e-1df8-4f5f-98c6-c843b5a25c7e
+entity_slug: pier-33
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 4 of 9] ---
+id: 54cc9125-c35d-4306-a078-c914adacce7e
+entity_slug: pier-33
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 5 of 9] ---
+id: 02244816-362d-4274-abf0-ba77af8a81da
+entity_slug: pier-33
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 6 of 9] ---
+id: c7079b38-92bb-4cb5-a329-8b1d101a1196
+entity_slug: pier-33
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 7 of 9] ---
+id: f5341eb6-d5cc-4407-93f0-df5e2370e636
+entity_slug: pier-33
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 8 of 9] ---
+id: 416645a5-c34a-4016-9547-691571a9e548
+entity_slug: pier-33
+tag_name: Shopping / Retail / Specialty
+tag_category: things-to-do
+
+--- entity_tags [row 9 of 9] ---
+id: 53ffac47-0226-402e-89c6-5715435998d3
+entity_slug: pier-33
+tag_name: bait_tackle_retail
+tag_category: fishing
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 10b5b3df-985f-42af-b929-e62e80f3a113
+entity_slug: pier-33
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_retail   -   1 row(s)
+####################################################################################################
+
+--- industry_retail [row 1 of 1] ---
+entity_slug: pier-33
+product_count: 0
+delivery: false
+updated_at: 2026-07-20T03:17:43.35857+00:00
+
+####################################################################################################
+# TABLE: legacy_photo_migration_queue   -   3 row(s)
+####################################################################################################
+
+--- legacy_photo_migration_queue [row 1 of 3] ---
+id: 1326
+entity_slug: pier-33
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/6fe9ea8f-6243-4c64-b5ec-0eb9fd7ac022/image_3.jpg
+is_cover: false
+sort_order: 102
+status: linked_legacy
+created_at: 2026-07-26T00:31:07.222409+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 2 of 3] ---
+id: 1402
+entity_slug: pier-33
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/6fe9ea8f-6243-4c64-b5ec-0eb9fd7ac022/image_1.jpg
+is_cover: true
+sort_order: 100
+status: linked_legacy
+created_at: 2026-07-26T00:31:07.222409+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 3 of 3] ---
+id: 965
+entity_slug: pier-33
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/6fe9ea8f-6243-4c64-b5ec-0eb9fd7ac022/image_2.jpg
+is_cover: false
+sort_order: 101
+status: linked_legacy
+created_at: 2026-07-26T00:31:07.222409+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: search_index   -   1 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 1] ---
+ref_type: business
+ref_id: pier-33
+entity_slug: pier-33
+title: Pier 33
+category: grocery_store
+subtitle: Local convenience store offering groceries, souvenirs, coffee drinks, and fishing tackle.
+search_vector: '33':2A 'coffe':11C 'conveni':6C 'drink':12C 'fish':14C 'groceri':3B,9C 'local':5C 'offer':8C 'pier':1A 'souvenir':10C 'store':4B,7C 'tackl':15C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: pier-33

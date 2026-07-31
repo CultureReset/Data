@@ -1,0 +1,1828 @@
+====================================================================================================
+SLUG: utopia
+NAME: Utopia
+INDUSTRY: retail
+SUBTYPE: womens_clothing_store
+PARENT: the-wharf
+TABLES WITH DATA: 22
+TOTAL ROWS: 100
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (5 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (6 rows)
+  entity  (1 rows)
+  entity_address_areas  (1 rows)
+  entity_attributes  (7 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (7 rows)
+  entity_modules  (10 rows)
+  entity_nearby_landmark_types  (18 rows)
+  entity_nearby_landmarks  (6 rows)
+  entity_photos  (10 rows)
+  entity_reviews  (5 rows)
+  entity_tags  (8 rows)
+  entity_theme  (1 rows)
+  industry_retail  (1 rows)
+  legacy_photo_migration_queue  (3 rows)
+  search_index  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: utopia
+name: Utopia
+planner_category: shopping
+data_quality_score: 90
+issues: missing_summary
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   5 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 5] ---
+id: 19512
+entity_slug: utopia
+intent_tag: best_for:shopping
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 5] ---
+id: 19513
+entity_slug: utopia
+intent_tag: best_for:clothing_boutique
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 5] ---
+id: 19514
+entity_slug: utopia
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 5] ---
+id: 19515
+entity_slug: utopia
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 5] ---
+id: 19516
+entity_slug: utopia
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: utopia
+name: Utopia
+is_active: t
+planner_category: shopping
+entity_type: shopping
+entity_subtype: womens_clothing_store
+city: Orange Beach
+state: AL
+address_line_1: 4830 Main St
+latitude: 30.2944624
+longitude: -87.6286981
+rating: 4.5
+review_count: 21
+hero_image_url: /photos/utopia/photo_01.jpg
+voice_summary: Utopia in Orange Beach is best for shopping, clothing/boutique.
+planner_summary: Utopia in Orange Beach is a shopping listing in Gulf Coast Radar.
+best_for: shopping|clothing/boutique
+not_best_for: nothing specific flagged
+service_tags: accessibility
+search_keywords: womens_clothing_store|clothing_store|store|point_of_interest|establishment|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 6
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 5
+faq_count: 0
+data_quality_score: 90
+data_gaps: missing_summary
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   6 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 6] ---
+id: 7101
+entity_slug: utopia
+entity_name: Utopia
+city: Orange Beach
+url: /photos/utopia/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 6] ---
+id: 7102
+entity_slug: utopia
+entity_name: Utopia
+city: Orange Beach
+url: /photos/utopia/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 6] ---
+id: 7103
+entity_slug: utopia
+entity_name: Utopia
+city: Orange Beach
+url: /photos/utopia/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 6] ---
+id: 15479
+entity_slug: utopia
+entity_name: Utopia
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/utopia/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 6] ---
+id: 18508
+entity_slug: utopia
+entity_name: Utopia
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/utopia/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 6] ---
+id: 18514
+entity_slug: utopia
+entity_name: Utopia
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/utopia/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 4b5583d3-9aa6-4c01-917c-f9f281eec609
+slug: utopia
+name: Utopia
+is_active: true
+featured: false
+entity_type: shopping
+entity_subtype: womens_clothing_store
+phone: (251) 981-1116
+menu_pin: 7234
+address_line_1: 4830 Main St
+city: Orange Beach
+state: AL
+zip: 36561
+latitude: 30.2944624
+longitude: -87.6286981
+rating: 4.5
+review_count: 21
+hero_image_url: https://alwharf-assets.nyc3.digitaloceanspaces.com/images/merchant-full/_304x304_crop_center-center_none_ns/THE-WHARF-RAW-176-2.jpg?v=1777641994
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T04:02:49.649866+00:00
+updated_at: 2026-06-03T04:02:49.649866+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJq1knUdsFmogRqPqjD1j35HU
+google_maps_uri: https://maps.google.com/?cid=8495186754719185576&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: womens_clothing_store
+formatted_address: 4830 Main St, Orange Beach, AL 36561, USA
+plus_code: 862J79VC+QG
+international_phone: +1 251-981-1116
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+accepts_nfc: true
+accepts_cash_only: false
+google_places_data: {
+  "id": "ChIJq1knUdsFmogRqPqjD1j35HU",
+  "types": [
+    "womens_clothing_store",
+    "point_of_interest",
+    "clothing_store",
+    "store",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJq1knUdsFmogRqPqjD1j35HU/photos/AaVGc3l-DQx-5TCa4DQhiIRxkOyy-wueckfXrOMIwktsZHtBZXTMDzl-nuGD3bmdzvgqlR_BKYDJ7JDmjfWnbXD_Tak-TQcm1I6OTaiFBjr6dNCBJ1i-s7ZsTUCNEXnx4NucnFkCTPrKpnYZJPhs0UHaRbMuf_AR9w89Sqf4vWlr66PxfeNBcs-SpSAoccoS1AVXGxnO8j3m90-MB_LmujKGgd5rAIxf5RTGwNw7Zv1_W8u-jQZB-ipo18DwrSIyVvVMxzKse2W0t_U8zXH8KUmEtGDa_Kuw56Lkk0JUBfg8HDDHw-SPg2iizes8poHfJya5hQaDFmjbZzDbBVx7OZiZNuBDqv7SNm-CMP53_KRUpshj1Kk3sCEESoew06_F9CDy4-vDQ9KW5MChokhWwmBC81lxLi9e9QB89YaZXX_V41m5vQ",
+      "widthPx": 4800,
+      "heightPx": 3200,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC41tDFUw!2e10!4m2!3m1!1s0x889a05db512759ab:0x75e4f7580fa3faa8",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIC41tDFUw&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/112517284483202990412",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLW-5HhXpQNHESiAp-C5g3UvVUnrnru0NX-eEe3_xHzB5lWhQ=s100-p-k-no-mo",
+          "displayName": "Paul Kawka"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJq1knUdsFmogRqPqjD1j35HU/photos/AaVGc3no4IsyEWzt9MHMZJdZD5LmqIqD1eQzAAPvCS8zr_VFhHk2Qv309DK-yPqxKlYWD9-yQqNid1jQrKAUfHrqWzVdfuAmZb69K0j6myX_sX43Uv5ld3BRNbK-Idj2vtKqGEsM45O4tHkz-TelHKJT0rWTn2low70vwNL_7Ez1dhekJ0GRgtFMR5ge50TEC30QfPtZMMW-UmlYVowncvhP55dadDpbqpK_NIJQFKgS3eFaofj6091IpNnF8-9_OGG4dFJvRZU0vq4692-qzU_Ym-_AkkuhceMQsvyrw_ZX2tfeT_w0SZ6bzrBjbYq_Cat4nmGNlZWhOmh8EBM96cXf0YeM2H18pCU0xwrOtQH11KFFk_L2uZYEg5k8vkAxWW8dXPRUkrm-kmJ_DDwxGkzOemD8EIBhgZw7Ml18xPvfadC30w",
+      "widthPx": 3000,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICjte2yKg!2e10!4m2!3m1!1s0x889a05db512759ab:0x75e4f7580fa3faa8",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICjte2yKg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/111129627343982166174",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjV1iu_kMvf9pDQsGWUWwVj9asbNy1ajbgoPSRPRW3qBApnlTXvP=s100-p-k-no-mo",
+          "displayName": "Serge Cabau"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJq1knUdsFmogRqPqjD1j35HU/photos/AaVGc3kHeeJ-jinDn2kBhvPuTX6VE29XWTuOK_Q3ejSeRLMjF3Z8NjIFYRCFHdh5IH1kxMx873gId61D4zTRDlAUiWhKUxp77_bF8RfYtaZHawp1FSaOzgE_bHzt8SnQN573ravqqletWJfkxHRd_SuDxzFx1AB2EXWgVqV-W_zmk1AGgG6_WAcLKCgcHzr6gBnXSiAFBrZUXg_OY9KwLO0frkRp349tG2W9ZRODivmnhfzS2SKsQK3oNf1QlKxzdQvdvVKUrY9Fz-PHKga3z_RSSWGPr931N_CTjU-gvPEq6l9g9ZYeFPaGIioUH6o2s3XWXZy_zK7P8jUHS91AVd0bYWndFu03_9xq_7bz_qhzbhqOgzOxAn5UaXAAOWVkjKTAN5Z46KYSDVcRX8U_WkQFZ5xikSe9gXoG82gxQ4J4YDQvLA",
+      "widthPx": 4000,
+      "heightPx": 3000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICRlN2lJA!2e10!4m2!3m1!1s0x889a05db512759ab:0x75e4f7580fa3faa8",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICRlN2lJA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/113024880470712314761",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocK6zv0IhkrlIdq-jgC-JJoIBZg4ouj1Z-59aELgEa0KybEkWzcy=s100-p-k-no-mo",
+          "displayName": "Brad Baker"
+        }
+      ]
+    }
+  ],
+  "rating": 4.5,
+  "reviews": [
+    {
+      "name": "places/ChIJq1knUdsFmogRqPqjD1j35HU/reviews/Ci9DQUlRQUNvZENodHljRjlvT21GT1VqQkNiVTUzTUdoWVFUVk1UVE0xUm5Wc1QyYxAB",
+      "text": {
+        "text": "A rainy day at the beach sent us to The Wharf for shopping. That’s where we uncovered this gem of a boutique! An extremely friendly staff and an excellent selection of items greeted us. I loved the options of items in “game day” colors, and we were able to outfit my Senior daughter for both homecoming spirit days and the dance! The customer service is top notch!! Of note, even the people shopping there were super friendly and invested in my daughter’s dress try-ons. When we encountered them at another shop, they commented, “What did she choose? I hope it was the gold!” Indeed it was! Thank you so much to the staff of Utopia for going the extra mile to ensure my daughter had a perfect homecoming!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-10-21T20:46:32.261482573Z",
+      "originalText": {
+        "text": "A rainy day at the beach sent us to The Wharf for shopping. That’s where we uncovered this gem of a boutique! An extremely friendly staff and an excellent selection of items greeted us. I loved the options of items in “game day” colors, and we were able to outfit my Senior daughter for both homecoming spirit days and the dance! The customer service is top notch!! Of note, even the people shopping there were super friendly and invested in my daughter’s dress try-ons. When we encountered them at another shop, they commented, “What did she choose? I hope it was the gold!” Indeed it was! Thank you so much to the staff of Utopia for going the extra mile to ensure my daughter had a perfect homecoming!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21GT1VqQkNiVTUzTUdoWVFUVk1UVE0xUm5Wc1QyYxAB!2m1!1s0x889a05db512759ab:0x75e4f7580fa3faa8",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT21GT1VqQkNiVTUzTUdoWVFUVk1UVE0xUm5Wc1QyYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/103888596650001864082/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXohhxLn3bldX7qKNhjFB8YKu7gGaETlIMvSu-_OPnzGpW-deg=s128-c0x00000000-cc-rp-mo",
+        "displayName": "JMJones"
+      },
+      "relativePublishTimeDescription": "7 months ago"
+    },
+    {
+      "name": "places/ChIJq1knUdsFmogRqPqjD1j35HU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pKcU5sUXpSVEl5Y1d4clZsVlpUamMzU0ZVNFVFRRAB",
+      "text": {
+        "text": "Overpriced for the quality of the products. I bought a purse here less than 2 months ago and it is already falling apart.\n\nEdit: I am happy to provide further context. The brand of the bag is Comfyluxe. It is a small crossbody bag that cost $42. I would have considered this a reasonable price for a bag if it could have withstood regular use, but it is already falling apart at the seams with multiple holes and fraying all over it. This is why I believe the product is overpriced. Prices like this should reflect in the quality of the product. Unfortunately, this experience would not lead me to be a repeat customer. I understand this is a boutique, and the prices align with that. I wouldn’t say they are “reasonable prices,” just the higher prices you expect to see in a boutique. However, I would expect higher quality products that can last through normal use and wear to make these prices worth it.",
+        "languageCode": "en"
+      },
+      "rating": 1,
+      "publishTime": "2025-07-30T21:18:08.476668764Z",
+      "originalText": {
+        "text": "Overpriced for the quality of the products. I bought a purse here less than 2 months ago and it is already falling apart.\n\nEdit: I am happy to provide further context. The brand of the bag is Comfyluxe. It is a small crossbody bag that cost $42. I would have considered this a reasonable price for a bag if it could have withstood regular use, but it is already falling apart at the seams with multiple holes and fraying all over it. This is why I believe the product is overpriced. Prices like this should reflect in the quality of the product. Unfortunately, this experience would not lead me to be a repeat customer. I understand this is a boutique, and the prices align with that. I wouldn’t say they are “reasonable prices,” just the higher prices you expect to see in a boutique. However, I would expect higher quality products that can last through normal use and wear to make these prices worth it.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pKcU5sUXpSVEl5Y1d4clZsVlpUamMzU0ZVNFVFRRAB!2m1!1s0x889a05db512759ab:0x75e4f7580fa3faa8",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2pKcU5sUXpSVEl5Y1d4clZsVlpUamMzU0ZVNFVFRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/105513158840136642245/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUVHjM6V1Iw82AvWVNtia9_HGzTg42aDxb1Zt2OOhFz6L5doxiV=s128-c0x00000000-cc-rp-mo-ba2",
+        "displayName": "kj"
+      },
+      "relativePublishTimeDescription": "10 months ago"
+    },
+    {
+      "name": "places/ChIJq1knUdsFmogRqPqjD1j35HU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tSVmJEQlFXa3h6ZGxJNFZEWTRaWEkwWHpKZldXYxAB",
+      "text": {
+        "text": "Visited for the 1st time today and had a great experience.  I was happy to find that in addition to traditional sizes that they had an area with larger sizes. It means a lot when you’re still struggling with a postpartum body to find clothes that are still unique and cute vs an afterthought.  I left with a dress and two tops that I can’t wait to wear!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-06-28T03:08:34.283369317Z",
+      "originalText": {
+        "text": "Visited for the 1st time today and had a great experience.  I was happy to find that in addition to traditional sizes that they had an area with larger sizes. It means a lot when you’re still struggling with a postpartum body to find clothes that are still unique and cute vs an afterthought.  I left with a dress and two tops that I can’t wait to wear!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tSVmJEQlFXa3h6ZGxJNFZEWTRaWEkwWHpKZldXYxAB!2m1!1s0x889a05db512759ab:0x75e4f7580fa3faa8",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2tSVmJEQlFXa3h6ZGxJNFZEWTRaWEkwWHpKZldXYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/116886998420064212579/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKKaTsOERKkp_lRhtZxvK1mg8-e6Ir6YF2jhPJlpYpEmvKlIA=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Ella Hope"
+      },
+      "relativePublishTimeDescription": "11 months ago"
+    },
+    {
+      "name": "places/ChIJq1knUdsFmogRqPqjD1j35HU/reviews/ChdDSUhNMG9nS0VJQ0FnSUQ3d2JLejBBRRAB",
+      "text": {
+        "text": "Tracey was super helpful in finding some plus size options for me - boutiques rarely have anything larger than XL, so I was pleasantly surprised to find some variety in 1X/2X, even some that were XL but stretchy material + one size fits most dresses. Lots of cute options for anyone. Loved the atmosphere on a Saturday evening in the summer - doors open, playful dogs roaming around, music playing overheard; a truly enjoyable shopping experience! 🛍️",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2024-08-25T01:27:06.019322Z",
+      "originalText": {
+        "text": "Tracey was super helpful in finding some plus size options for me - boutiques rarely have anything larger than XL, so I was pleasantly surprised to find some variety in 1X/2X, even some that were XL but stretchy material + one size fits most dresses. Lots of cute options for anyone. Loved the atmosphere on a Saturday evening in the summer - doors open, playful dogs roaming around, music playing overheard; a truly enjoyable shopping experience! 🛍️",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUQ3d2JLejBBRRAB!2m1!1s0x889a05db512759ab:0x75e4f7580fa3faa8",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUQ3d2JLejBBRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/102761460446654480314/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUXGD92-cOpChQp1t2a3cn2QauJA6RyxwrR3c63iVacBA2TIjs=s128-c0x00000000-cc-rp-mo-ba3",
+        "displayName": "Autumn Nicholson"
+      },
+      "relativePublishTimeDescription": "a year ago"
+    },
+    {
+      "name": "places/ChIJq1knUdsFmogRqPqjD1j35HU/reviews/ChZDSUhNMG9nS0VJQ0FnSUNIdU1iWVhnEAE",
+      "text": {
+        "text": "My daughter and I went in the other day and found so many cute clothes 🫶 the staff was so nice and the store was beautiful! The new owners have done amazing things to this store . As another boutique in town we send customers to this place daily now !",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2024-09-01T00:25:36.599198Z",
+      "originalText": {
+        "text": "My daughter and I went in the other day and found so many cute clothes 🫶 the staff was so nice and the store was beautiful! The new owners have done amazing things to this store . As another boutique in town we send customers to this place daily now !",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNIdU1iWVhnEAE!2m1!1s0x889a05db512759ab:0x75e4f7580fa3faa8",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNIdU1iWVhnEAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/109850410753017595170/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKWbR7de4HJ6yQsOlm8nC6cwj47wTv3_oS35-iJ5RNOKCg5cg=s128-c0x00000000-cc-rp-mo-ba3",
+        "displayName": "ZAVROS’S Boutique"
+      },
+      "relativePublishTimeDescription": "a year ago"
+    }
+  ],
+  "delivery": false,
+  "location": {
+    "latitude": 30.2944624,
+    "longitude": -87.6286981
+  },
+  "plusCode": {
+    "globalCode": "862J79VC+QG",
+    "compoundCode": "79VC+QG Orange Beach, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.293079969708494,
+      "longitude": -87.6301244802915
+    },
+    "high": {
+      "latitude": 30.295777930291493,
+      "longitude": -87.6274265197085
+    }
+  },
+  "displayName": {
+    "text": "Utopia",
+    "languageCode": "en"
+  },
+  "primaryType": "womens_clothing_store",
+  "googleMapsUri": "https://maps.google.com/?cid=8495186754719185576&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "paymentOptions": {
+    "acceptsNfc": true,
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=8495186754719185576&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05db512759ab:0x75e4f7580fa3faa8!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05db512759ab:0x75e4f7580fa3faa8!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05db512759ab:0x75e4f7580fa3faa8!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05db512759ab:0x75e4f7580fa3faa8!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+  "userRatingCount": 21,
+  "adrFormatAddress": "<span class=\"street-address\">4830 Main St</span>, <span class=\"locality\">Orange Beach</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36561</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "4830 Main St, Orange Beach, AL 36561, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "4830",
+      "shortText": "4830",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Main Street",
+      "shortText": "Main St",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Orange Beach",
+      "shortText": "Orange Beach",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36561",
+      "shortText": "36561",
+      "languageCode": "en-US"
+    }
+  ],
+  "currentOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 12,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T15:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 10:00 AM – 9:00 PM",
+      "Tuesday: 10:00 AM – 9:00 PM",
+      "Wednesday: 10:00 AM – 9:00 PM",
+      "Thursday: 10:00 AM – 9:00 PM",
+      "Friday: 10:00 AM – 9:00 PM",
+      "Saturday: 10:00 AM – 9:00 PM",
+      "Sunday: 12:00 – 6:00 PM"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Women's Clothing Store",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#4B96F3",
+  "nationalPhoneNumber": "(251) 981-1116",
+  "regularOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 12,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 21,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T15:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 10:00 AM – 9:00 PM",
+      "Tuesday: 10:00 AM – 9:00 PM",
+      "Wednesday: 10:00 AM – 9:00 PM",
+      "Thursday: 10:00 AM – 9:00 PM",
+      "Friday: 10:00 AM – 9:00 PM",
+      "Saturday: 10:00 AM – 9:00 PM",
+      "Sunday: 12:00 – 6:00 PM"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true
+  },
+  "shortFormattedAddress": "4830 Main St, Orange Beach",
+  "primaryTypeDisplayName": {
+    "text": "Women's Clothing Store",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-981-1116"
+}
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #4B96F3
+short_formatted_address: 4830 Main St, Orange Beach
+national_phone: (251) 981-1116
+search_vector: 'beach':6 'cloth':3 'orang':5 'store':4 'utopia':1A 'women':2
+primary_type_display: Women's Clothing Store
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=8495186754719185576&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05db512759ab:0x75e4f7580fa3faa8!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05db512759ab:0x75e4f7580fa3faa8!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05db512759ab:0x75e4f7580fa3faa8!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05db512759ab:0x75e4f7580fa3faa8!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJ7T7Xq9wFmogRahIOl40NkO4",
+      "placeId": "ChIJ7T7Xq9wFmogRahIOl40NkO4",
+      "containment": "WITHIN",
+      "displayName": {
+        "text": "The Wharf",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJvfvStq0FmogRzhDmwHKhsDA",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant",
+        "shopping_mall",
+        "tourist_attraction"
+      ],
+      "placeId": "ChIJvfvStq0FmogRzhDmwHKhsDA",
+      "displayName": {
+        "text": "The Wharf",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "WITHIN",
+      "travelDistanceMeters": 333.2853,
+      "straightLineDistanceMeters": 149.06863
+    },
+    {
+      "name": "places/ChIJP3KjbsQFmogROsuRYtNn7qU",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJP3KjbsQFmogROsuRYtNn7qU",
+      "displayName": {
+        "text": "The Wharf Marina",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 44.85306,
+      "straightLineDistanceMeters": 60.94265
+    },
+    {
+      "name": "places/ChIJjUVMSMMFmogRb0-XfuWyIEY",
+      "types": [
+        "bar",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJjUVMSMMFmogRb0-XfuWyIEY",
+      "displayName": {
+        "text": "Ginny Lane Bar and Grill",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 120.37522,
+      "straightLineDistanceMeters": 60.94265
+    },
+    {
+      "name": "places/ChIJ04UGstwFmogRhGeIg7p_9bo",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "tourist_attraction"
+      ],
+      "placeId": "ChIJ04UGstwFmogRhGeIg7p_9bo",
+      "displayName": {
+        "text": "Breakout Games",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "DOWN_THE_ROAD",
+      "travelDistanceMeters": 86.64587,
+      "straightLineDistanceMeters": 87.93976
+    },
+    {
+      "name": "places/ChIJjUVMSMMFmogR6PCDJOYkPio",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJjUVMSMMFmogR6PCDJOYkPio",
+      "displayName": {
+        "text": "Wharf",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 62.32823,
+      "straightLineDistanceMeters": 68.881714
+    }
+  ]
+}
+parent_entity_slug: the-wharf
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url | hero_image_url v2-fix 2026-07-21: repointed to a photo confirmed to actually exist
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: generic
+industry_code: retail
+is_parent: false
+depth: 1
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   1 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 1] ---
+id: 0c6c3ae8-7d05-4857-9f68-90c7ce38e38e
+entity_slug: utopia
+place_id: ChIJ7T7Xq9wFmogRahIOl40NkO4
+containment: WITHIN
+display_name: The Wharf
+
+####################################################################################################
+# TABLE: entity_attributes   -   7 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 7] ---
+id: 94757633-82f6-4425-81e8-6797bc86dc69
+entity_slug: utopia
+category: service
+key: delivery
+label: Delivery
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 2 of 7] ---
+id: bdbb32a2-cb29-48c3-b186-79f03d5783bd
+entity_slug: utopia
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 3 of 7] ---
+id: dcec78c1-62ec-4201-9ae6-0f6e404d51c5
+entity_slug: utopia
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 4 of 7] ---
+id: ff452e91-194c-4048-803d-ea8611bce8b9
+entity_slug: utopia
+category: payment
+key: pay_acceptsNfc
+label: Accepts Nfc
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 5 of 7] ---
+id: b4c6ce8c-64f0-457e-b478-819ca0f790e4
+entity_slug: utopia
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 6 of 7] ---
+id: 2ba1677a-1112-406a-974f-1680ca56e5be
+entity_slug: utopia
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 7 of 7] ---
+id: dab78611-b9f9-4259-a8bf-7fa76575ca0f
+entity_slug: utopia
+category: payment
+key: pay_acceptsCreditCards
+label: Accepts Credit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: utopia
+name: Utopia
+industry_code: retail
+parent_entity_slug: the-wharf
+is_parent: false
+score_of_7: 5
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: becc002a-dae3-4ca1-a569-18e31e32cc59
+entity_slug: utopia
+place_uri: https://maps.google.com/?cid=8495186754719185576&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05db512759ab:0x75e4f7580fa3faa8!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05db512759ab:0x75e4f7580fa3faa8!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05db512759ab:0x75e4f7580fa3faa8!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05db512759ab:0x75e4f7580fa3faa8!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 5878
+entity_slug: utopia
+google_review_name: places/ChIJq1knUdsFmogRqPqjD1j35HU/reviews/Ci9DQUlRQUNvZENodHljRjlvT21GT1VqQkNiVTUzTUdoWVFUVk1UVE0xUm5Wc1QyYxAB
+rating: 5
+review_text: A rainy day at the beach sent us to The Wharf for shopping. That’s where we uncovered this gem of a boutique! An extremely friendly staff and an excellent selection of items greeted us. I loved the options of items in “game day” colors, and we were able to outfit my Senior daughter for both homecoming spirit days and the dance! The customer service is top notch!! Of note, even the people shopping there were super friendly and invested in my daughter’s dress try-ons. When we encountered them at another shop, they commented, “What did she choose? I hope it was the gold!” Indeed it was! Thank you so much to the staff of Utopia for going the extra mile to ensure my daughter had a perfect homecoming!
+language_code: en
+author_name: JMJones
+author_profile_url: https://www.google.com/maps/contrib/103888596650001864082/reviews
+publish_time: 2025-10-21T20:46:32.261483+00:00
+relative_time: 7 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21GT1VqQkNiVTUzTUdoWVFUVk1UVE0xUm5Wc1QyYxAB!2m1!1s0x889a05db512759ab:0x75e4f7580fa3faa8
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 5879
+entity_slug: utopia
+google_review_name: places/ChIJq1knUdsFmogRqPqjD1j35HU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pKcU5sUXpSVEl5Y1d4clZsVlpUamMzU0ZVNFVFRRAB
+rating: 1
+review_text: Overpriced for the quality of the products. I bought a purse here less than 2 months ago and it is already falling apart.
+
+Edit: I am happy to provide further context. The brand of the bag is Comfyluxe. It is a small crossbody bag that cost $42. I would have considered this a reasonable price for a bag if it could have withstood regular use, but it is already falling apart at the seams with multiple holes and fraying all over it. This is why I believe the product is overpriced. Prices like this should reflect in the quality of the product. Unfortunately, this experience would not lead me to be a repeat customer. I understand this is a boutique, and the prices align with that. I wouldn’t say they are “reasonable prices,” just the higher prices you expect to see in a boutique. However, I would expect higher quality products that can last through normal use and wear to make these prices worth it.
+language_code: en
+author_name: kj
+author_profile_url: https://www.google.com/maps/contrib/105513158840136642245/reviews
+publish_time: 2025-07-30T21:18:08.476669+00:00
+relative_time: 10 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pKcU5sUXpSVEl5Y1d4clZsVlpUamMzU0ZVNFVFRRAB!2m1!1s0x889a05db512759ab:0x75e4f7580fa3faa8
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 5880
+entity_slug: utopia
+google_review_name: places/ChIJq1knUdsFmogRqPqjD1j35HU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tSVmJEQlFXa3h6ZGxJNFZEWTRaWEkwWHpKZldXYxAB
+rating: 5
+review_text: Visited for the 1st time today and had a great experience.  I was happy to find that in addition to traditional sizes that they had an area with larger sizes. It means a lot when you’re still struggling with a postpartum body to find clothes that are still unique and cute vs an afterthought.  I left with a dress and two tops that I can’t wait to wear!
+language_code: en
+author_name: Ella Hope
+author_profile_url: https://www.google.com/maps/contrib/116886998420064212579/reviews
+publish_time: 2025-06-28T03:08:34.283369+00:00
+relative_time: 11 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tSVmJEQlFXa3h6ZGxJNFZEWTRaWEkwWHpKZldXYxAB!2m1!1s0x889a05db512759ab:0x75e4f7580fa3faa8
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 5881
+entity_slug: utopia
+google_review_name: places/ChIJq1knUdsFmogRqPqjD1j35HU/reviews/ChdDSUhNMG9nS0VJQ0FnSUQ3d2JLejBBRRAB
+rating: 5
+review_text: Tracey was super helpful in finding some plus size options for me - boutiques rarely have anything larger than XL, so I was pleasantly surprised to find some variety in 1X/2X, even some that were XL but stretchy material + one size fits most dresses. Lots of cute options for anyone. Loved the atmosphere on a Saturday evening in the summer - doors open, playful dogs roaming around, music playing overheard; a truly enjoyable shopping experience! 🛍️
+language_code: en
+author_name: Autumn Nicholson
+author_profile_url: https://www.google.com/maps/contrib/102761460446654480314/reviews
+publish_time: 2024-08-25T01:27:06.019322+00:00
+relative_time: a year ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUQ3d2JLejBBRRAB!2m1!1s0x889a05db512759ab:0x75e4f7580fa3faa8
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 5882
+entity_slug: utopia
+google_review_name: places/ChIJq1knUdsFmogRqPqjD1j35HU/reviews/ChZDSUhNMG9nS0VJQ0FnSUNIdU1iWVhnEAE
+rating: 5
+review_text: My daughter and I went in the other day and found so many cute clothes 🫶 the staff was so nice and the store was beautiful! The new owners have done amazing things to this store . As another boutique in town we send customers to this place daily now !
+language_code: en
+author_name: ZAVROS’S Boutique
+author_profile_url: https://www.google.com/maps/contrib/109850410753017595170/reviews
+publish_time: 2024-09-01T00:25:36.599198+00:00
+relative_time: a year ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNIdU1iWVhnEAE!2m1!1s0x889a05db512759ab:0x75e4f7580fa3faa8
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 5948ac1b-f670-4c4c-adff-1b4cc9b13e09
+entity_slug: utopia
+day_of_week: 0
+opens_at: 12:00:00
+closes_at: 18:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 40af4b49-af93-4102-9e93-200de6354173
+entity_slug: utopia
+day_of_week: 1
+opens_at: 10:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: eef28941-3e9c-4730-8005-2b211d9365fe
+entity_slug: utopia
+day_of_week: 2
+opens_at: 10:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: db139b3d-c66b-4f40-845a-fbbc0be22854
+entity_slug: utopia
+day_of_week: 3
+opens_at: 10:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 9898383d-55df-46e2-a5c3-974d490bb8dc
+entity_slug: utopia
+day_of_week: 4
+opens_at: 10:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: abaf8e61-90fe-4844-af74-3f0fd9617eb3
+entity_slug: utopia
+day_of_week: 5
+opens_at: 10:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 8a1c37b2-2c2d-482e-91e8-d009646f1f6a
+entity_slug: utopia
+day_of_week: 6
+opens_at: 10:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_modules   -   10 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 10] ---
+id: ac809c75-7419-4a3a-8a74-2bc7a680c914
+entity_slug: utopia
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 10] ---
+id: b3460453-2d0a-4d23-936a-7e1e86b9f01d
+entity_slug: utopia
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 10] ---
+id: 5be9d476-c181-4b2b-ba1e-14fa60abf863
+entity_slug: utopia
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 10] ---
+id: b67f64c1-45fb-4699-b8ce-907fa44501a5
+entity_slug: utopia
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 10] ---
+id: 9e78cc27-a39e-4fc6-94f0-7a159dcd3bf4
+entity_slug: utopia
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 10] ---
+id: 23acf617-73fd-41bb-8822-4f548af5c9b0
+entity_slug: utopia
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 10] ---
+id: 812628bc-38d2-4186-b595-d3f8f81efac2
+entity_slug: utopia
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 10] ---
+id: 247074aa-44d9-40b8-90c0-0339c121bc29
+entity_slug: utopia
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 10] ---
+id: 0cc591bf-3ad3-4d1c-8f92-d077b405fc68
+entity_slug: utopia
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 10] ---
+id: d20d90dd-439f-4dec-9dcd-c2184750b6c6
+entity_slug: utopia
+module_key: shop
+enabled: true
+sort_order: 10
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   18 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 18] ---
+id: 200b5a99-bdae-41d0-9077-4ddd565ddb86
+landmark_id: 6bb0d4aa-30b6-4b34-9bc1-3f7ef8fc8478
+entity_slug: utopia
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 18] ---
+id: 53226929-9639-460d-b1c0-6e07b2bc53e8
+landmark_id: 6bb0d4aa-30b6-4b34-9bc1-3f7ef8fc8478
+entity_slug: utopia
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 18] ---
+id: c431b348-df46-4cd6-8c01-1262b589521e
+landmark_id: 6bb0d4aa-30b6-4b34-9bc1-3f7ef8fc8478
+entity_slug: utopia
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 18] ---
+id: 05e68f63-c8a9-4063-8a13-e1b6064e70c5
+landmark_id: 6bb0d4aa-30b6-4b34-9bc1-3f7ef8fc8478
+entity_slug: utopia
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 18] ---
+id: cf5862f5-784e-459c-ace9-7055bf9f5406
+landmark_id: 6bb0d4aa-30b6-4b34-9bc1-3f7ef8fc8478
+entity_slug: utopia
+landmark_type: shopping_mall
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 18] ---
+id: 5868f6a0-a17d-4e83-9e1c-25f44cda8e2e
+landmark_id: 6bb0d4aa-30b6-4b34-9bc1-3f7ef8fc8478
+entity_slug: utopia
+landmark_type: tourist_attraction
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 18] ---
+id: b76de19b-2441-4bbc-873b-f624dd65d3ab
+landmark_id: f60c0d9d-6b8f-439a-b218-c3c59c5ce5fb
+entity_slug: utopia
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 18] ---
+id: 698b42ac-68cc-493b-a6ca-2186e4858bc6
+landmark_id: f60c0d9d-6b8f-439a-b218-c3c59c5ce5fb
+entity_slug: utopia
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 18] ---
+id: 468aa029-2d72-4765-aa84-c2dbc5247121
+landmark_id: 9a36f92f-78fb-46e7-8782-e16de48f1cc0
+entity_slug: utopia
+landmark_type: bar
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 18] ---
+id: f10bc944-37a6-4609-8c5c-d2a54d0a1d5d
+landmark_id: 9a36f92f-78fb-46e7-8782-e16de48f1cc0
+entity_slug: utopia
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 18] ---
+id: fc18609d-c3b4-4639-8853-68b6782a9f21
+landmark_id: 9a36f92f-78fb-46e7-8782-e16de48f1cc0
+entity_slug: utopia
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 18] ---
+id: 891f2355-db65-4c50-b9ae-eb4a611519a9
+landmark_id: 9a36f92f-78fb-46e7-8782-e16de48f1cc0
+entity_slug: utopia
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 18] ---
+id: 80d9f8c8-08e1-4553-9204-c88bcfb1abe6
+landmark_id: 9a36f92f-78fb-46e7-8782-e16de48f1cc0
+entity_slug: utopia
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 18] ---
+id: 7feb7ebb-b469-4519-84e0-6fdac09743e1
+landmark_id: a02f2c1b-64a5-4d6e-bd2b-b12106261cb7
+entity_slug: utopia
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 18] ---
+id: b249aaa9-6a8f-4f91-a1ba-0f847c7dd92b
+landmark_id: a02f2c1b-64a5-4d6e-bd2b-b12106261cb7
+entity_slug: utopia
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 18] ---
+id: c6f31ff7-dfb5-444b-ab56-80f01fcd111f
+landmark_id: a02f2c1b-64a5-4d6e-bd2b-b12106261cb7
+entity_slug: utopia
+landmark_type: tourist_attraction
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 18] ---
+id: ea60d49b-49b8-4703-bf33-4715496dcad9
+landmark_id: c2c48ebd-2c84-4568-bde4-df48034cdc9c
+entity_slug: utopia
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 18] ---
+id: eaffa83b-8e98-49a1-b899-a40f98b91011
+landmark_id: c2c48ebd-2c84-4568-bde4-df48034cdc9c
+entity_slug: utopia
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   6 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 6] ---
+id: 6bb0d4aa-30b6-4b34-9bc1-3f7ef8fc8478
+entity_slug: utopia
+kind: landmark
+place_id: ChIJvfvStq0FmogRzhDmwHKhsDA
+name: The Wharf
+types: [
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant",
+  "shopping_mall",
+  "tourist_attraction"
+]
+spatial_relationship: WITHIN
+travel_distance_meters: 333.2853
+straight_line_distance_meters: 149.06863
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 6] ---
+id: f60c0d9d-6b8f-439a-b218-c3c59c5ce5fb
+entity_slug: utopia
+kind: landmark
+place_id: ChIJP3KjbsQFmogROsuRYtNn7qU
+name: The Wharf Marina
+types: [
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 44.85306
+straight_line_distance_meters: 60.94265
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 6] ---
+id: 9a36f92f-78fb-46e7-8782-e16de48f1cc0
+entity_slug: utopia
+kind: landmark
+place_id: ChIJjUVMSMMFmogRb0-XfuWyIEY
+name: Ginny Lane Bar and Grill
+types: [
+  "bar",
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant"
+]
+travel_distance_meters: 120.37522
+straight_line_distance_meters: 60.94265
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 6] ---
+id: a02f2c1b-64a5-4d6e-bd2b-b12106261cb7
+entity_slug: utopia
+kind: landmark
+place_id: ChIJ04UGstwFmogRhGeIg7p_9bo
+name: Breakout Games
+types: [
+  "establishment",
+  "point_of_interest",
+  "tourist_attraction"
+]
+spatial_relationship: DOWN_THE_ROAD
+travel_distance_meters: 86.64587
+straight_line_distance_meters: 87.93976
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 6] ---
+id: c2c48ebd-2c84-4568-bde4-df48034cdc9c
+entity_slug: utopia
+kind: landmark
+place_id: ChIJjUVMSMMFmogR6PCDJOYkPio
+name: Wharf
+types: [
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 62.32823
+straight_line_distance_meters: 68.881714
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 6 of 6] ---
+id: a621bc98-1907-4f55-9082-e1d15c934089
+entity_slug: utopia
+kind: area
+place_id: ChIJ7T7Xq9wFmogRahIOl40NkO4
+name: The Wharf
+containment: WITHIN
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_photos   -   10 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 10] ---
+id: b8dabe3c-a0e9-4592-8e60-21810b8f775e
+entity_slug: utopia
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/utopia/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 2 of 10] ---
+id: 8989373e-b919-4328-aa50-6a72b4b76749
+entity_slug: utopia
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/utopia/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 3 of 10] ---
+id: 52d1ad15-9aa5-44ae-bbb4-511d5972ed3e
+entity_slug: utopia
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/utopia/photo_03.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 4 of 10] ---
+id: 7893572a-d28d-4d0d-8df1-f214d243ad57
+entity_slug: utopia
+url: https://alwharf-assets.nyc3.digitaloceanspaces.com/images/merchant-full/_304x304_crop_center-center_none_ns/THE-WHARF-RAW-176-2.jpg?v=1777641994
+is_cover: true
+sort_order: 0
+photo_type: gallery
+
+--- entity_photos [row 5 of 10] ---
+id: 0be15331-24f9-4256-b78a-de47045cb18f
+entity_slug: utopia
+url: https://places.googleapis.com/v1/places/ChIJq1knUdsFmogRqPqjD1j35HU/photos/AaVGc3l-DQx-5TCa4DQhiIRxkOyy-wueckfXrOMIwktsZHtBZXTMDzl-nuGD3bmdzvgqlR_BKYDJ7JDmjfWnbXD_Tak-TQcm1I6OTaiFBjr6dNCBJ1i-s7ZsTUCNEXnx4NucnFkCTPrKpnYZJPhs0UHaRbMuf_AR9w89Sqf4vWlr66PxfeNBcs-SpSAoccoS1AVXGxnO8j3m90-MB_LmujKGgd5rAIxf5RTGwNw7Zv1_W8u-jQZB-ipo18DwrSIyVvVMxzKse2W0t_U8zXH8KUmEtGDa_Kuw56Lkk0JUBfg8HDDHw-SPg2iizes8poHfJya5hQaDFmjbZzDbBVx7OZiZNuBDqv7SNm-CMP53_KRUpshj1Kk3sCEESoew06_F9CDy4-vDQ9KW5MChokhWwmBC81lxLi9e9QB89YaZXX_V41m5vQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJq1knUdsFmogRqPqjD1j35HU/photos/AaVGc3l-DQx-5TCa4DQhiIRxkOyy-wueckfXrOMIwktsZHtBZXTMDzl-nuGD3bmdzvgqlR_BKYDJ7JDmjfWnbXD_Tak-TQcm1I6OTaiFBjr6dNCBJ1i-s7ZsTUCNEXnx4NucnFkCTPrKpnYZJPhs0UHaRbMuf_AR9w89Sqf4vWlr66PxfeNBcs-SpSAoccoS1AVXGxnO8j3m90-MB_LmujKGgd5rAIxf5RTGwNw7Zv1_W8u-jQZB-ipo18DwrSIyVvVMxzKse2W0t_U8zXH8KUmEtGDa_Kuw56Lkk0JUBfg8HDDHw-SPg2iizes8poHfJya5hQaDFmjbZzDbBVx7OZiZNuBDqv7SNm-CMP53_KRUpshj1Kk3sCEESoew06_F9CDy4-vDQ9KW5MChokhWwmBC81lxLi9e9QB89YaZXX_V41m5vQ
+is_cover: false
+sort_order: 0
+caption: Paul Kawka
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC41tDFUw!2e10!4m2!3m1!1s0x889a05db512759ab:0x75e4f7580fa3faa8
+
+--- entity_photos [row 6 of 10] ---
+id: d897cdd4-068d-423e-8a12-ced5caa7d8d5
+entity_slug: utopia
+url: https://places.googleapis.com/v1/places/ChIJq1knUdsFmogRqPqjD1j35HU/photos/AaVGc3no4IsyEWzt9MHMZJdZD5LmqIqD1eQzAAPvCS8zr_VFhHk2Qv309DK-yPqxKlYWD9-yQqNid1jQrKAUfHrqWzVdfuAmZb69K0j6myX_sX43Uv5ld3BRNbK-Idj2vtKqGEsM45O4tHkz-TelHKJT0rWTn2low70vwNL_7Ez1dhekJ0GRgtFMR5ge50TEC30QfPtZMMW-UmlYVowncvhP55dadDpbqpK_NIJQFKgS3eFaofj6091IpNnF8-9_OGG4dFJvRZU0vq4692-qzU_Ym-_AkkuhceMQsvyrw_ZX2tfeT_w0SZ6bzrBjbYq_Cat4nmGNlZWhOmh8EBM96cXf0YeM2H18pCU0xwrOtQH11KFFk_L2uZYEg5k8vkAxWW8dXPRUkrm-kmJ_DDwxGkzOemD8EIBhgZw7Ml18xPvfadC30w/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJq1knUdsFmogRqPqjD1j35HU/photos/AaVGc3no4IsyEWzt9MHMZJdZD5LmqIqD1eQzAAPvCS8zr_VFhHk2Qv309DK-yPqxKlYWD9-yQqNid1jQrKAUfHrqWzVdfuAmZb69K0j6myX_sX43Uv5ld3BRNbK-Idj2vtKqGEsM45O4tHkz-TelHKJT0rWTn2low70vwNL_7Ez1dhekJ0GRgtFMR5ge50TEC30QfPtZMMW-UmlYVowncvhP55dadDpbqpK_NIJQFKgS3eFaofj6091IpNnF8-9_OGG4dFJvRZU0vq4692-qzU_Ym-_AkkuhceMQsvyrw_ZX2tfeT_w0SZ6bzrBjbYq_Cat4nmGNlZWhOmh8EBM96cXf0YeM2H18pCU0xwrOtQH11KFFk_L2uZYEg5k8vkAxWW8dXPRUkrm-kmJ_DDwxGkzOemD8EIBhgZw7Ml18xPvfadC30w
+is_cover: false
+sort_order: 1
+caption: Serge Cabau
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICjte2yKg!2e10!4m2!3m1!1s0x889a05db512759ab:0x75e4f7580fa3faa8
+
+--- entity_photos [row 7 of 10] ---
+id: 01e3b658-b39e-4927-b593-6f69bcb934a5
+entity_slug: utopia
+url: https://places.googleapis.com/v1/places/ChIJq1knUdsFmogRqPqjD1j35HU/photos/AaVGc3kHeeJ-jinDn2kBhvPuTX6VE29XWTuOK_Q3ejSeRLMjF3Z8NjIFYRCFHdh5IH1kxMx873gId61D4zTRDlAUiWhKUxp77_bF8RfYtaZHawp1FSaOzgE_bHzt8SnQN573ravqqletWJfkxHRd_SuDxzFx1AB2EXWgVqV-W_zmk1AGgG6_WAcLKCgcHzr6gBnXSiAFBrZUXg_OY9KwLO0frkRp349tG2W9ZRODivmnhfzS2SKsQK3oNf1QlKxzdQvdvVKUrY9Fz-PHKga3z_RSSWGPr931N_CTjU-gvPEq6l9g9ZYeFPaGIioUH6o2s3XWXZy_zK7P8jUHS91AVd0bYWndFu03_9xq_7bz_qhzbhqOgzOxAn5UaXAAOWVkjKTAN5Z46KYSDVcRX8U_WkQFZ5xikSe9gXoG82gxQ4J4YDQvLA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJq1knUdsFmogRqPqjD1j35HU/photos/AaVGc3kHeeJ-jinDn2kBhvPuTX6VE29XWTuOK_Q3ejSeRLMjF3Z8NjIFYRCFHdh5IH1kxMx873gId61D4zTRDlAUiWhKUxp77_bF8RfYtaZHawp1FSaOzgE_bHzt8SnQN573ravqqletWJfkxHRd_SuDxzFx1AB2EXWgVqV-W_zmk1AGgG6_WAcLKCgcHzr6gBnXSiAFBrZUXg_OY9KwLO0frkRp349tG2W9ZRODivmnhfzS2SKsQK3oNf1QlKxzdQvdvVKUrY9Fz-PHKga3z_RSSWGPr931N_CTjU-gvPEq6l9g9ZYeFPaGIioUH6o2s3XWXZy_zK7P8jUHS91AVd0bYWndFu03_9xq_7bz_qhzbhqOgzOxAn5UaXAAOWVkjKTAN5Z46KYSDVcRX8U_WkQFZ5xikSe9gXoG82gxQ4J4YDQvLA
+is_cover: false
+sort_order: 2
+caption: Brad Baker
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICRlN2lJA!2e10!4m2!3m1!1s0x889a05db512759ab:0x75e4f7580fa3faa8
+
+--- entity_photos [row 8 of 10] ---
+id: 707c1b6e-2133-4a3e-a988-c4add199b57a
+entity_slug: utopia
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/27c041ca-7a8b-45b7-b2e9-34634965de45/image_1.jpg
+is_cover: true
+sort_order: 100
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 9 of 10] ---
+id: 22d4a9d2-6f98-45b3-9410-8ac067beb327
+entity_slug: utopia
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/27c041ca-7a8b-45b7-b2e9-34634965de45/image_3.jpg
+is_cover: false
+sort_order: 102
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 10 of 10] ---
+id: 4bb78831-bb09-44ee-880c-d7438ffe0c16
+entity_slug: utopia
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/27c041ca-7a8b-45b7-b2e9-34634965de45/image_2.jpg
+is_cover: false
+sort_order: 101
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 0ffa904c-f0a1-4871-8be9-8bea46194309
+entity_slug: utopia
+reviewer_name: JMJones
+rating: 5
+body: A rainy day at the beach sent us to The Wharf for shopping. That’s where we uncovered this gem of a boutique! An extremely friendly staff and an excellent selection of items greeted us. I loved the options of items in “game day” colors, and we were able to outfit my Senior daughter for both homecoming spirit days and the dance! The customer service is top notch!! Of note, even the people shopping there were super friendly and invested in my daughter’s dress try-ons. When we encountered them at another shop, they commented, “What did she choose? I hope it was the gold!” Indeed it was! Thank you so much to the staff of Utopia for going the extra mile to ensure my daughter had a perfect homecoming!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-10-21T20:46:32.261483+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: 9d61f277-6ebf-444b-bcb4-f75d085ca2ad
+entity_slug: utopia
+reviewer_name: kj
+rating: 1
+body: Overpriced for the quality of the products. I bought a purse here less than 2 months ago and it is already falling apart.
+
+Edit: I am happy to provide further context. The brand of the bag is Comfyluxe. It is a small crossbody bag that cost $42. I would have considered this a reasonable price for a bag if it could have withstood regular use, but it is already falling apart at the seams with multiple holes and fraying all over it. This is why I believe the product is overpriced. Prices like this should reflect in the quality of the product. Unfortunately, this experience would not lead me to be a repeat customer. I understand this is a boutique, and the prices align with that. I wouldn’t say they are “reasonable prices,” just the higher prices you expect to see in a boutique. However, I would expect higher quality products that can last through normal use and wear to make these prices worth it.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-07-30T21:18:08.476669+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: 8248ab54-d9c9-41ba-b109-cf210dd20a91
+entity_slug: utopia
+reviewer_name: Ella Hope
+rating: 5
+body: Visited for the 1st time today and had a great experience.  I was happy to find that in addition to traditional sizes that they had an area with larger sizes. It means a lot when you’re still struggling with a postpartum body to find clothes that are still unique and cute vs an afterthought.  I left with a dress and two tops that I can’t wait to wear!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-06-28T03:08:34.283369+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 498c6d31-9283-46d2-9dc4-f8b34c7727cf
+entity_slug: utopia
+reviewer_name: Autumn Nicholson
+rating: 5
+body: Tracey was super helpful in finding some plus size options for me - boutiques rarely have anything larger than XL, so I was pleasantly surprised to find some variety in 1X/2X, even some that were XL but stretchy material + one size fits most dresses. Lots of cute options for anyone. Loved the atmosphere on a Saturday evening in the summer - doors open, playful dogs roaming around, music playing overheard; a truly enjoyable shopping experience! 🛍️
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2024-08-25T01:27:06.019322+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 17fb5ce6-56f9-487e-99a6-2a06c3272f66
+entity_slug: utopia
+reviewer_name: ZAVROS’S Boutique
+rating: 5
+body: My daughter and I went in the other day and found so many cute clothes 🫶 the staff was so nice and the store was beautiful! The new owners have done amazing things to this store . As another boutique in town we send customers to this place daily now !
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2024-09-01T00:25:36.599198+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   8 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 8] ---
+id: 1a192620-7471-40cc-a218-541904dd9dbe
+entity_slug: utopia
+tag_name: womens_clothing_store
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 8] ---
+id: 0a935fbc-28fd-4399-9510-712718ccc28d
+entity_slug: utopia
+tag_name: clothing_store
+tag_category: google_type
+
+--- entity_tags [row 3 of 8] ---
+id: fbe67ff8-87fe-49bb-a33e-3e7af5368ebd
+entity_slug: utopia
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 4 of 8] ---
+id: 98f08766-b1d9-4635-a8fb-5d8fd60d77b2
+entity_slug: utopia
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 5 of 8] ---
+id: d8ff9332-209d-4a9a-8d51-a071a5f51cab
+entity_slug: utopia
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 6 of 8] ---
+id: 04708a86-4174-4aba-9d95-4554caab222b
+entity_slug: utopia
+tag_name: retail
+tag_category: wharf
+
+--- entity_tags [row 7 of 8] ---
+id: 950393c7-562e-4b49-99d7-85aa48b8fc5d
+entity_slug: utopia
+tag_name: the wharf
+tag_category: wharf
+
+--- entity_tags [row 8 of 8] ---
+id: 077b9a25-a878-44aa-876d-5f94e097de01
+entity_slug: utopia
+tag_name: orange beach
+tag_category: wharf
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 109cb026-3588-4fc4-b1cb-f36b21bbc97d
+entity_slug: utopia
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_retail   -   1 row(s)
+####################################################################################################
+
+--- industry_retail [row 1 of 1] ---
+entity_slug: utopia
+product_count: 0
+delivery: false
+updated_at: 2026-07-20T03:17:43.35857+00:00
+
+####################################################################################################
+# TABLE: legacy_photo_migration_queue   -   3 row(s)
+####################################################################################################
+
+--- legacy_photo_migration_queue [row 1 of 3] ---
+id: 1421
+entity_slug: utopia
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/27c041ca-7a8b-45b7-b2e9-34634965de45/image_1.jpg
+is_cover: true
+sort_order: 100
+status: linked_legacy
+created_at: 2026-07-26T00:31:07.222409+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 2 of 3] ---
+id: 450
+entity_slug: utopia
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/27c041ca-7a8b-45b7-b2e9-34634965de45/image_3.jpg
+is_cover: false
+sort_order: 102
+status: linked_legacy
+created_at: 2026-07-26T00:31:07.222409+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 3 of 3] ---
+id: 410
+entity_slug: utopia
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/27c041ca-7a8b-45b7-b2e9-34634965de45/image_2.jpg
+is_cover: false
+sort_order: 101
+status: linked_legacy
+created_at: 2026-07-26T00:31:07.222409+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: search_index   -   1 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 1] ---
+ref_type: business
+ref_id: utopia
+entity_slug: utopia
+title: Utopia
+category: womens_clothing_store
+search_vector: 'cloth':3B 'store':4B 'utopia':1A 'women':2B
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: utopia

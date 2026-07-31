@@ -1,0 +1,622 @@
+====================================================================================================
+SLUG: nm-skincare
+NAME: NM Skincare
+INDUSTRY: personal_care
+SUBTYPE: spa
+TABLES WITH DATA: 19
+TOTAL ROWS: 55
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (4 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_offer  (1 rows)
+  entity_photos  (4 rows)
+  entity_tags  (11 rows)
+  entity_theme  (1 rows)
+  industry_personal_care  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: nm-skincare
+name: NM Skincare
+planner_category: local_service
+data_quality_score: 70
+issues: missing_summary|missing_lat_lng
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   4 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 4] ---
+id: 8308
+entity_slug: nm-skincare
+intent_tag: best_for:local_information
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 4] ---
+id: 8309
+entity_slug: nm-skincare
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 4] ---
+id: 8310
+entity_slug: nm-skincare
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 4] ---
+id: 8311
+entity_slug: nm-skincare
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: nm-skincare
+name: NM Skincare
+is_active: t
+planner_category: local_service
+entity_type: service
+entity_subtype: spa
+review_count: 0
+website_url: http://nmaskincare.com/
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nm-skincare/photo_01.jpg
+voice_summary: NM Skincare is best for local information.
+planner_summary: NM Skincare is a local service listing in Gulf Coast Radar.
+best_for: local information
+not_best_for: nothing specific flagged
+search_keywords: skincare|spa|wellness|beauty|facials|skin treatments|Spas|Beauty & Wellness|beauty-and-wellness
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 2
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 11
+faq_count: 0
+data_quality_score: 70
+data_gaps: missing_summary|missing_lat_lng
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 8228
+entity_slug: nm-skincare
+entity_name: NM Skincare
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nm-skincare/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 8229
+entity_slug: nm-skincare
+entity_name: NM Skincare
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nm-skincare/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: fed10f82-13ae-44ed-9ec8-14620baf38f5
+resource_type: service
+slug: nm-skincare
+name: NM Skincare
+entity_slug: nm-skincare
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nm-skincare/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nm-skincare/photo_02.jpg"
+]
+amenities: []
+faqs: []
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 1122f2128e3c11a6a8722c4b10334e1c
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: fed10f82-13ae-44ed-9ec8-14620baf38f5
+entity_slug: nm-skincare
+slug: nm-skincare
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nm-skincare/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nm-skincare/photo_02.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 469cb6a4-87a4-40d6-848c-dcdcc7261df9
+slug: nm-skincare
+name: NM Skincare
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: spa
+website_url: http://nmaskincare.com/
+menu_pin: 8801
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nm-skincare/photo_01.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T22:58:23.475518+00:00
+updated_at: 2026-06-03T22:58:23.475518+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+business_status: OPERATIONAL
+google_places_data: {}
+search_vector: 'nm':1A 'skincar':2A
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: personal_care
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: nm-skincare
+name: NM Skincare
+industry_code: personal_care
+is_parent: false
+score_of_7: 3
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: a49e2f1c-1a39-4846-ba6d-44d34279e407
+entity_slug: nm-skincare
+day_of_week: 1
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: fb13dc16-feb6-40e7-aeda-bf805df0d5a6
+entity_slug: nm-skincare
+day_of_week: 2
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 70e108b6-a58e-406d-9a51-e09ffbf99d50
+entity_slug: nm-skincare
+day_of_week: 3
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 37282ba3-875d-4f1a-bbdc-01496f9ef977
+entity_slug: nm-skincare
+day_of_week: 4
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 3a489757-b258-4ab1-bb41-c8ad2c0acd26
+entity_slug: nm-skincare
+day_of_week: 5
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 0532f804-aa91-4fbb-9ca3-a17058e34e41
+entity_slug: nm-skincare
+day_of_week: 6
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 12fb0348-7fee-48d3-89ee-886680d3350d
+entity_slug: nm-skincare
+day_of_week: 0
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: nm-skincare
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: fed10f82-13ae-44ed-9ec8-14620baf38f5
+name: NM Skincare
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nm-skincare/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nm-skincare/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: nm-skincare
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: fed10f82-13ae-44ed-9ec8-14620baf38f5
+name: NM Skincare
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nm-skincare/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nm-skincare/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: ba68c60f-402d-4e44-b21a-6a8c2ad14df3
+entity_slug: nm-skincare
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: c087c237-9004-4e28-9fc4-c063f3283541
+entity_slug: nm-skincare
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: 9cc1d560-6e7b-466b-9b99-2b2b59ff7849
+entity_slug: nm-skincare
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: 3c69d8bc-ff8c-41fd-b7b5-2641ee7f19a0
+entity_slug: nm-skincare
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: e014b4dc-26e0-46f2-902c-34de45d07752
+entity_slug: nm-skincare
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: 48485119-b326-42ff-a795-a20bfe2e7347
+entity_slug: nm-skincare
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: c656cbdd-cb6e-4d0f-80db-972d871fc64d
+entity_slug: nm-skincare
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 9269cb24-c4ff-49a7-9fa9-a6df5fca5d0f
+entity_slug: nm-skincare
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: a3571c49-6f9e-4b8d-80d4-7d0be4f2cc5b
+entity_slug: nm-skincare
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: 90cfa604-9145-4c2d-a065-09e184914760
+entity_slug: nm-skincare
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: 558cecaa-1834-4333-80cd-b7737733afb2
+entity_slug: nm-skincare
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: 9a834277-58d8-4b07-afc3-377210093e04
+entity_slug: nm-skincare
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: 4e00ccad-59a6-4a94-a4a5-ccbd931c5fca
+entity_slug: nm-skincare
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13840
+entity_slug: nm-skincare
+name: NM Skincare
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: fed10f82-13ae-44ed-9ec8-14620baf38f5
+
+####################################################################################################
+# TABLE: entity_photos   -   4 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 4] ---
+id: 3d0137ec-5f77-4d1c-b38d-424d2aa9f4a1
+entity_slug: nm-skincare
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nm-skincare/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 4] ---
+id: 69225c10-d5e4-46f9-ac69-b82ff8fc047d
+entity_slug: nm-skincare
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nm-skincare/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 4] ---
+id: f962f8ae-8232-43e3-8a81-cfc133b16f11
+entity_slug: nm-skincare
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nm-skincare/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: fed10f82-13ae-44ed-9ec8-14620baf38f5
+
+--- entity_photos [row 4 of 4] ---
+id: 47c9e6cb-d151-4324-b704-b20d7c63ff4c
+entity_slug: nm-skincare
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/nm-skincare/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: fed10f82-13ae-44ed-9ec8-14620baf38f5
+
+####################################################################################################
+# TABLE: entity_tags   -   11 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 11] ---
+id: 049b1f4d-1d4d-408c-9d94-e1c1c2e7c9c9
+entity_slug: nm-skincare
+tag_name: skincare
+
+--- entity_tags [row 2 of 11] ---
+id: c3dcfe5a-e8b4-404c-9998-3921af4fe77e
+entity_slug: nm-skincare
+tag_name: spa
+
+--- entity_tags [row 3 of 11] ---
+id: b05c3028-f3f8-4447-a031-d7ef890c6b1e
+entity_slug: nm-skincare
+tag_name: wellness
+
+--- entity_tags [row 4 of 11] ---
+id: d513ec03-6c23-4d71-a589-c76326820aab
+entity_slug: nm-skincare
+tag_name: beauty
+
+--- entity_tags [row 5 of 11] ---
+id: c68404e6-0c86-434b-8d8b-2992b58df3c1
+entity_slug: nm-skincare
+tag_name: facials
+
+--- entity_tags [row 6 of 11] ---
+id: 266e0ca6-f775-4577-8319-4894a2ccf9da
+entity_slug: nm-skincare
+tag_name: skin treatments
+
+--- entity_tags [row 7 of 11] ---
+id: 69b5ce90-9bfc-4a22-9c51-3a5c04b13524
+entity_slug: nm-skincare
+tag_name: Spas
+tag_category: category
+
+--- entity_tags [row 8 of 11] ---
+id: 3e619f40-1c6b-46ef-8c2c-1881cbe763f2
+entity_slug: nm-skincare
+tag_name: Beauty & Wellness
+tag_category: category
+
+--- entity_tags [row 9 of 11] ---
+id: c3eb2086-f4fa-46e5-a50c-4793200abc3e
+entity_slug: nm-skincare
+tag_name: Skincare
+tag_category: category
+
+--- entity_tags [row 10 of 11] ---
+id: d47a9594-0885-41fa-9ffb-5684d9e69f20
+entity_slug: nm-skincare
+tag_name: beauty-and-wellness
+tag_category: industry
+
+--- entity_tags [row 11 of 11] ---
+id: f57e1686-abdb-408e-b778-f5b175e55c1f
+entity_slug: nm-skincare
+tag_name: spa
+tag_category: type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 751db595-f0f0-4290-8bdf-9fcf23118c6e
+entity_slug: nm-skincare
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_personal_care   -   1 row(s)
+####################################################################################################
+
+--- industry_personal_care [row 1 of 1] ---
+entity_slug: nm-skincare
+service_count: 0
+updated_at: 2026-07-21T16:19:28.491935+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: nm-skincare
+entity_slug: nm-skincare
+title: NM Skincare
+category: spa
+search_vector: 'nm':1A 'skincar':2A 'spa':3B
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 13840
+entity_slug: nm-skincare
+title: NM Skincare
+category: rental
+search_vector: 'nm':1A 'skincar':2A
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: nm-skincare

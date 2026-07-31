@@ -1,0 +1,1447 @@
+====================================================================================================
+SLUG: renew-marine-detail
+NAME: Renew Marine Detail
+INDUSTRY: other
+TABLES WITH DATA: 21
+TOTAL ROWS: 66
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (4 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (3 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_attributes  (5 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (2 rows)
+  entity_hours  (6 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_offer  (1 rows)
+  entity_photos  (16 rows)
+  entity_reviews  (2 rows)
+  entity_tags  (2 rows)
+  entity_theme  (1 rows)
+  search_index  (2 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: renew-marine-detail
+name: Renew Marine Detail
+planner_category: local_service
+data_quality_score: 90
+issues: missing_summary
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   4 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 4] ---
+id: 720
+entity_slug: renew-marine-detail
+intent_tag: best_for:local_information
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 4] ---
+id: 721
+entity_slug: renew-marine-detail
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 4] ---
+id: 722
+entity_slug: renew-marine-detail
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 4] ---
+id: 723
+entity_slug: renew-marine-detail
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: renew-marine-detail
+name: Renew Marine Detail
+is_active: t
+planner_category: local_service
+entity_type: service
+city: Gulf Shores
+state: AL
+address_line_1: 6910 Crimson Ln
+latitude: 30.3224234
+longitude: -87.6719299
+rating: 5
+review_count: 2
+hero_image_url: /photos/renew-marine-detail/photo_01.jpg
+voice_summary: Renew Marine Detail in Gulf Shores is best for local information.
+planner_summary: Renew Marine Detail in Gulf Shores is a local service listing in Gulf Coast Radar.
+best_for: local information
+not_best_for: nothing specific flagged
+service_tags: accessibility
+search_keywords: point_of_interest|establishment|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 3
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 2
+faq_count: 0
+data_quality_score: 90
+data_gaps: missing_summary
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   3 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 3] ---
+id: 6039
+entity_slug: renew-marine-detail
+entity_name: Renew Marine Detail
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/renew-marine-detail/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 3] ---
+id: 14342
+entity_slug: renew-marine-detail
+entity_name: Renew Marine Detail
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/renew-marine-detail/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 3] ---
+id: 19087
+entity_slug: renew-marine-detail
+entity_name: Renew Marine Detail
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/renew-marine-detail/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 2d23f8e4-4c5e-484c-8225-a5bdb62ff97c
+resource_type: service
+slug: renew-marine-detail
+name: Renew Marine Detail
+entity_slug: renew-marine-detail
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/renew-marine-detail/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/renew-marine-detail/photo_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/renew-marine-detail/photo_02.jpg"
+]
+amenities: []
+faqs: []
+address: 6910 Crimson Ln
+city: Gulf Shores
+state: AL
+latitude: 30.3224234
+longitude: -87.6719299
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 4ca2f91d5f8f1d3db19cb9da6c6aa306
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 2d23f8e4-4c5e-484c-8225-a5bdb62ff97c
+entity_slug: renew-marine-detail
+slug: renew-marine-detail
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/renew-marine-detail/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/renew-marine-detail/photo_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/renew-marine-detail/photo_02.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 9ae895c3-f9b4-4787-9986-b2b0bbe999ae
+slug: renew-marine-detail
+name: Renew Marine Detail
+is_active: true
+featured: false
+entity_type: service
+phone: (205) 519-8211
+menu_pin: 6121
+address_line_1: 6910 Crimson Ln
+city: Gulf Shores
+state: AL
+zip: 36542
+latitude: 30.3224234
+longitude: -87.6719299
+rating: 5
+review_count: 2
+hero_image_url: https://places.googleapis.com/v1/places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3m-3pB-tLgRIJwZarGU-ewFI5-EsStGyfZIXC5WMvZG4U-qCIz5sg_s09nRO2W1LLHcC_kGJpscQnPtgVD7dZ0RG4Z2RK42AMkJT_ee-aQng7KaFUsRVkxXhog-V4U3DoAkDgCfLeAWsZDj-Gi04LOgKDs9eT40o1P4OC0KH6sFKciKa1Mnq9t-Smt77qJrtcmFkdM-7mq4jxllTi7I-uWd7HN4vGwK9fkM9pF6Gd64GN3Ae1cLFh6rHWThiTxIHjPsT9UyLOOlvuxuIl5_dyo0n83-t7V_YIFemePO3JKWW_fWzUIckjJ3DfIHzeAkNL2IrzKX6Pdgqkpo281r8cS5MnyXTKU1kLHnEq9NqGWF36bCZG7-DsgkG7239hHBpUDH2l09zbdW0Z3-EJ2eIbA4zhbD3ipsbEppk3QvGrKHsDsj/media?maxHeightPx=1600&maxWidthPx=1600
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-06T06:24:23.438459+00:00
+updated_at: 2026-06-06T06:24:23.438459+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJE6uFWcwFmogRG-Ir80Ewe-A
+google_maps_uri: https://maps.google.com/?cid=16175575546442015259&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+formatted_address: 6910 Crimson Ln, Gulf Shores, AL 36542, USA
+plus_code: 862J88CH+X6
+international_phone: +1 205-519-8211
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+accepts_cash_only: false
+google_places_data: {
+  "id": "ChIJE6uFWcwFmogRG-Ir80Ewe-A",
+  "types": [
+    "point_of_interest",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3m-3pB-tLgRIJwZarGU-ewFI5-EsStGyfZIXC5WMvZG4U-qCIz5sg_s09nRO2W1LLHcC_kGJpscQnPtgVD7dZ0RG4Z2RK42AMkJT_ee-aQng7KaFUsRVkxXhog-V4U3DoAkDgCfLeAWsZDj-Gi04LOgKDs9eT40o1P4OC0KH6sFKciKa1Mnq9t-Smt77qJrtcmFkdM-7mq4jxllTi7I-uWd7HN4vGwK9fkM9pF6Gd64GN3Ae1cLFh6rHWThiTxIHjPsT9UyLOOlvuxuIl5_dyo0n83-t7V_YIFemePO3JKWW_fWzUIckjJ3DfIHzeAkNL2IrzKX6Pdgqkpo281r8cS5MnyXTKU1kLHnEq9NqGWF36bCZG7-DsgkG7239hHBpUDH2l09zbdW0Z3-EJ2eIbA4zhbD3ipsbEppk3QvGrKHsDsj",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC6jMu95wE!2e10!4m2!3m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIC6jMu95wE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106178500902797743642",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXICHT585gax6EX4Uv4P0zX-NPMXs3BXA1LzZX7WYONQmaSoz0=s100-p-k-no-mo",
+          "displayName": "Renew Marine Detail"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3m2hkvHUuoFa2ZpFojxIXYQE-Zh2HoJURRojzdVdeKQUMbSWkZ66RNGr2Ib17zGnyA78WHzfknuDTr0TSUGfsq-Xx52aOyBDBAxlTExkE6sDVWF5nD6b5_-jaGCoNnKD75AlFCWWgSr9ivzCafNOG2u63JrdifRlUpEIDIyEfj6L6ZPH9vRKlZw93LH2sVQCj4rGUB9qRHsJQ3wmDrkjqwmR1Rq4nDSDDaYQpBCNj0UrfxvuYP8ZPnqn3hX68z7PyrPeK8CDuDahZSCStESDajTca0GlmdGpDKx-IEO_W9tgdiW1bkp6dMuBJ-LgXGZSJUSVcj079xQhWI9jATpH5Ez-lbcUjYubEc6FdpukRHb3Wihhn7-SOTBCW9JxcLbQ732836NdGxmH9sfbjA5h9Ov0h-JqbFDutW4EP1LB9zj_RA2",
+      "widthPx": 3024,
+      "heightPx": 2996,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8mejkwgE!2e10!4m2!3m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID8mejkwgE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106178500902797743642",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXICHT585gax6EX4Uv4P0zX-NPMXs3BXA1LzZX7WYONQmaSoz0=s100-p-k-no-mo",
+          "displayName": "Renew Marine Detail"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3nDs8OFYyZNgzMuYh2Ejsj_OZxJ2NpsmcUEFV9Vj1gJ3GnglwVOqQmbD-RGLLmureJbN6encJxuymUkVZDehr-leRXZuUAv-bUuI96wfGaw_x1d71wkAyeWsz7ssSw9hnCXzUPKNNEwjUIzxlO5_IK6ECdVdYMjEvlnvgchqw16skUx4cmX2ngTJOrBISbXMdgBGINlKoQ4MiORGdzhnNabv0NJr5Zgbyi5C8vPwCW459adXF6xpMnmrYnACBg1uGYcG6aEjq4gFuJ-PDUbIMuML8ODRXUEoWQN-gAsD76G6hXB7xImMSOXYpJtE50emIt_-wiAiOviJSN_ru5Sda2dkAwu4purNPkalAmnq2NvRlKxsrQXsH_LKHANfEsAFTwc3LZGUoqt_ZA6kE0xfRpnIEJMkC7WAN-bsQqNSA7mSg",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8meiQWA!2e10!4m2!3m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID8meiQWA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106178500902797743642",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXICHT585gax6EX4Uv4P0zX-NPMXs3BXA1LzZX7WYONQmaSoz0=s100-p-k-no-mo",
+          "displayName": "Renew Marine Detail"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3nPvyK3dkwNjZuBIH21tP5OqueZSZT8zO_LY2QJOWE9tX7KJwuYyF4O56vOoDqT62RrxCUoNFX-4CI5T4nmtGkA6Km87xKVQ4XTRTC8BGeRoLidJjz3VNTBopOiHdqL8q6njnaj89sfDGg9nV2TNVS2XmU13Jj6MHcnPezZLzgIg9TJxWTNxWU6srEQp233ghJjDaPhFiTh-G_2o4E4vXa_wwKRoGPXWRJbzDWSBkSpqMY744_qD6YZdnkL1CE1kw_xmk-pwaZbC3sbfHQ0Qnx0uWgl5pg-BXaqL9ylf2W2S18KvWQrdlBN_TWJJNc05VuMGutjCAB1eUhXVJ9eiBSB33nvD0ay8DLHhJX92mdu4j7SQ41q5ybZhs2hf7djd7VD-u9rTpjnpdAtY3hIw8RqtYPdYu45SymsjR42VcmAYQ",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8mei8ZQ!2e10!4m2!3m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID8mei8ZQ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106178500902797743642",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXICHT585gax6EX4Uv4P0zX-NPMXs3BXA1LzZX7WYONQmaSoz0=s100-p-k-no-mo",
+          "displayName": "Renew Marine Detail"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3njOndW1aTMMRGVanKDQtSMiKli8jiCxPkB45B2-DIGcMN8_jYFRA-YVysG9TuS8stekTYKeEpnjz0A53fcEKlJYWStIvWku_luqJ_-o2le8HRm02hDNObZEcoOpSmXyVNgjg3z6Rh54HIICn_xT-ZBLxAnjz4gEhMXg8y57Whd28lCGO0xKPe1Dy-HsmrcMWuXaOFwoxn2aDY_uMdnVg30Qhzfz3Y6-eyAT4j_L9Fw7KQki_EHyEnHJY4ZSQqm2-LGtLKnhhf-KpgDFdtXHoouo9YUv1KuF-QARntpfKbmjMbiQ6ILc5SHdnVSTtRoDNl__aSuJvU2Tjvkw5Zamv4r5HT6vhhL5Z23nl1vrAUKHOpPpxftJvdreaiUhkfxFNIVaHKPPvfvjBj4h8IT1Xdr0Ua9Zdii5M2UrU7iDew",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8meiyUw!2e10!4m2!3m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID8meiyUw&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106178500902797743642",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXICHT585gax6EX4Uv4P0zX-NPMXs3BXA1LzZX7WYONQmaSoz0=s100-p-k-no-mo",
+          "displayName": "Renew Marine Detail"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3m2c7sitnhSucHoG8mObl6Q1lVc2ge7JKpOnh78ajENxgnMiJz5ko3S4wphIwzHtJRl_I3bKLBapTWwB1t-uDqowi305nMn0_ARiAmEtV_xw_qNgALqeDJ0d1Te1ZjjR1A-wM6rk4d-95s_oVTh-HTqlrS7wIUHwVMgFasmGPRLFvTv0kwF_LE9p52K67qNeyXzQRDpP-likEIxF58D1JWB9w9zVj3ZhjlQWBGucay8DhrTcVzS02MA9sddb8MfKbo8zoi7QTqW5jfMRQCa_osA2tJ9aa4iGwbCqriY_AE1eSFdtxtfSLkxpKYTD_hE-ym0STo4tqmjyfWj5PyTXdjuefaZzzFvMSSkeqliaQuC4SBSFnUtES0SA-n0FEBRcPMMYzMS7beiNLH4zSw-vUZXx5W_HFxrHWyUe1CxJjucU0Mz",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8mejwpQE!2e10!4m2!3m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID8mejwpQE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106178500902797743642",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXICHT585gax6EX4Uv4P0zX-NPMXs3BXA1LzZX7WYONQmaSoz0=s100-p-k-no-mo",
+          "displayName": "Renew Marine Detail"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3lR1jGg0-OhTvU7pPC-TrtOcV3iqkC-H0Ap6dEDFf_7ZZUQBJrDOOcEvOBFUV3JFdNPS6vMtmkTpwtGnH5DGijpOg97WFguOeC1ajBedhZxBTX6P3U9BPWQK5EMIjlPxaEQAwG-S-W_arqYycM0B50Rw8youodAX6ChTvkdl3jwJ3JiH227rxK9oxiY_alZZaTNiAX3DJZ5XMaFDsqFNYNhK8rjbfxGNUdS3vyPofCUL3GuEs_ntSq-WCzE12DcUsMtZEVWYNJ6UJPtU89-9h3-l2Epd5kXmdbP_Woe8rj92xWdEp7WCL-FlATXBZQL8hFH52pNgwY-yaiBhAv1-3Iu-mJWpiGstsalwDYX5NMitb_aRrgdhIxsqAKhVOZBqZxZ1J-XIsju0yqtSPRB0tnNcI754pNQutTjPdtoHZqWlg",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8mejGCA!2e10!4m2!3m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID8mejGCA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106178500902797743642",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXICHT585gax6EX4Uv4P0zX-NPMXs3BXA1LzZX7WYONQmaSoz0=s100-p-k-no-mo",
+          "displayName": "Renew Marine Detail"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3kYel7BZlkBT1RgOyMwJUzxt75utOjn6rrN2gAw6dsBsdG-S9cuDS7DCDtm-KyYr0CbyHDokwjlGLlRAMcjvMISXHGRrmeneF-S3sW2LH0zIRVVe3qa0TWsuoJ5sUJ5emw1-cTEgo4DCKu_MDOqTMFCSzS-8qNVujlkxamlDJi-rAyBWL3DF28PZLeYD-XKJU49uEfTpRnNsXD5TU5uwNOBgNMzAc6q3CMwIny1ukWfiq9L6ezW4JdYIwmtH0UU-SH858wXtkRPB1zhyvLIpjNqr78GrWGrL1IDXYl4wlqo0Iat5U9kLzDMZXrdiZp5OuKkzSD0Wo8zTzBTgKkQu2awCrlcTQokxPrNnLRqdBIZGzXVhZMCKkLrxxPQHaBQ3IuGoNe6Sxu9stW6AzIuUp6rm2oiynkPmowdBiF1f3g4_w",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8mei8Pw!2e10!4m2!3m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID8mei8Pw&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106178500902797743642",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXICHT585gax6EX4Uv4P0zX-NPMXs3BXA1LzZX7WYONQmaSoz0=s100-p-k-no-mo",
+          "displayName": "Renew Marine Detail"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3nXbfBL2XKpB3NQTf1vpAhO7InlAiwSFAl8sSrbkBvasB0z6Tj37GXh8Op0VUFjkrDYmxaIb-mAI1AAKMh1Apkyutw2oQzSFUUz16frNx8Nol3JpJ5zI3To2xxaOTl0isNFtZvNSjaTQLjNdwUBIpYjYZIAfoAXS0Slvskq9vH280BZpv0toqnmgVqnlNft7TNy07pTXA3S_sEaouXFVsU5dv4EKFr2FwUMGGaDxOdy9r47PJULtJbFD95k1-8v_P3FOWbaSZ8gO1p-YFskfA2sPNYjwNUfd8Z-JVZ2HRFt0tvbh80rY7ZJkqiqXvDYF7a3w2Tdv6BTdr16VlIo0ZrkuNnH87WLuwSrXzblVogWsndIuSO9pwH7DvtaSKjj4N7BEJi8X8AXz42Z-wyCle9HOa0Fg26kCb80TfXJ07k",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8majjag!2e10!4m2!3m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID8majjag&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106178500902797743642",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXICHT585gax6EX4Uv4P0zX-NPMXs3BXA1LzZX7WYONQmaSoz0=s100-p-k-no-mo",
+          "displayName": "Renew Marine Detail"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3mrELma1BlI3pP7TuxHn-IHdXfcpnt7wRwXEQ3LUYwvF8ZzrMnu_ijcSszveqpbE4niPMVNOSIL4FO4Cnk-zn_7P3nsASp32oeN1WpmN6MakwUkrs7JG2x4ETFS-YM6TlDaFxQg--gao2FkiLyBi_6dehkEwnJ0-tIuoTlcLrDJbXR1Y_WgHojq--0dzEe_OSmmxk3MzGFpRyhJf5CNJuNUb-BiT_DIih-uucFoC1oiPXRb_qmgOFhQX4HtETtE9RAEa6INzW625ljmixPikSwwHSpcYLbxO10AD41Fz3kegKpRtNQHGQoor9xrqsmLTfojj7fK4S0oVh_pnW39_6rCFwin_eE00oNqbFKfxjjxWgjjs4_xyzA3MS4An_4hg6LVAcqUCPvYWvg1VigAL7iamS18az5pNzyEJBp5CYKSFQ",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8maiPSA!2e10!4m2!3m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID8maiPSA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106178500902797743642",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXICHT585gax6EX4Uv4P0zX-NPMXs3BXA1LzZX7WYONQmaSoz0=s100-p-k-no-mo",
+          "displayName": "Renew Marine Detail"
+        }
+      ]
+    }
+  ],
+  "rating": 5,
+  "reviews": [
+    {
+      "name": "places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/reviews/ChZDSUhNMG9nS0VJQ0FnSUR4d2FMbUx3EAE",
+      "text": {
+        "text": "Incredible work performed getting my black 2008 Searay back to shine and luster.  She looks like she did when she came off the showroom floor.  Thank you and I highly recommend!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2023-06-09T14:57:38.579133Z",
+      "originalText": {
+        "text": "Incredible work performed getting my black 2008 Searay back to shine and luster.  She looks like she did when she came off the showroom floor.  Thank you and I highly recommend!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUR4d2FMbUx3EAE!2m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUR4d2FMbUx3EAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/100366450938400595960/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXTK04494dp_hYqcyU90bBLLmizt19pxA8tRwowRH5n-6L3ktDL=s128-c0x00000000-cc-rp-mo",
+        "displayName": "brian dunn"
+      },
+      "relativePublishTimeDescription": "3 years ago"
+    },
+    {
+      "name": "places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/reviews/ChdDSUhNMG9nS0VJQ0FnSUN5bkpUZHdBRRAB",
+      "text": {
+        "text": "I called asking if they service RV’s and they were very busy with boats but were kind enough to give me a Reccomendation to an RV place. Thank you guys for this! I really appreciate the customer service.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2021-01-23T00:12:07.375729Z",
+      "originalText": {
+        "text": "I called asking if they service RV’s and they were very busy with boats but were kind enough to give me a Reccomendation to an RV place. Thank you guys for this! I really appreciate the customer service.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUN5bkpUZHdBRRAB!2m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUN5bkpUZHdBRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/108679350195783566560/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKUTKvVV-4Qo5UZcFKOtCctXeml5SCOc5d_-AubI3kBFthe-Q=s128-c0x00000000-cc-rp-mo-ba3",
+        "displayName": "Michael V"
+      },
+      "relativePublishTimeDescription": "5 years ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.3224234,
+    "longitude": -87.6719299
+  },
+  "plusCode": {
+    "globalCode": "862J88CH+X6",
+    "compoundCode": "88CH+X6 Gulf Shores, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.321074369708498,
+      "longitude": -87.6732423802915
+    },
+    "high": {
+      "latitude": 30.323772330291497,
+      "longitude": -87.67054441970848
+    }
+  },
+  "displayName": {
+    "text": "Renew Marine Detail",
+    "languageCode": "en"
+  },
+  "googleMapsUri": "https://maps.google.com/?cid=16175575546442015259&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "paymentOptions": {
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=16175575546442015259&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05cc5985ab13:0xe07b3041f32be21b!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05cc5985ab13:0xe07b3041f32be21b!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05cc5985ab13:0xe07b3041f32be21b!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "userRatingCount": 2,
+  "adrFormatAddress": "<span class=\"street-address\">6910 Crimson Ln</span>, <span class=\"locality\">Gulf Shores</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36542</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "6910 Crimson Ln, Gulf Shores, AL 36542, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "6910",
+      "shortText": "6910",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Crimson Lane",
+      "shortText": "Crimson Ln",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Gulf Shores",
+      "shortText": "Gulf Shores",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36542",
+      "shortText": "36542",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {},
+  "currentOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 12,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T14:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 9:00 AM – 5:00 PM",
+      "Tuesday: 9:00 AM – 5:00 PM",
+      "Wednesday: 9:00 AM – 5:00 PM",
+      "Thursday: 9:00 AM – 5:00 PM",
+      "Friday: 9:00 AM – 5:00 PM",
+      "Saturday: 9:00 AM – 12:00 PM",
+      "Sunday: Closed"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Car detailing service",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "nationalPhoneNumber": "(205) 519-8211",
+  "regularOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 1,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 12,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T14:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 9:00 AM – 5:00 PM",
+      "Tuesday: 9:00 AM – 5:00 PM",
+      "Wednesday: 9:00 AM – 5:00 PM",
+      "Thursday: 9:00 AM – 5:00 PM",
+      "Friday: 9:00 AM – 5:00 PM",
+      "Saturday: 9:00 AM – 12:00 PM",
+      "Sunday: Closed"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true
+  },
+  "shortFormattedAddress": "6910 Crimson Ln, Gulf Shores",
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 205-519-8211"
+}
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 6910 Crimson Ln, Gulf Shores
+national_phone: (205) 519-8211
+search_vector: 'detail':3A 'gulf':4 'marin':2A 'renew':1A 'shore':5
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=16175575546442015259&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05cc5985ab13:0xe07b3041f32be21b!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05cc5985ab13:0xe07b3041f32be21b!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05cc5985ab13:0xe07b3041f32be21b!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {}
+internal_notes: industry_code auto-bucketed to other 2026-07-21 - needs manual review | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url | hero_image_url v2-fix 2026-07-21: repointed to a photo confirmed to actually exist
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: other
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_attributes   -   5 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 5] ---
+id: c8fff17d-b6f4-4053-8280-bee07c2bdf2d
+entity_slug: renew-marine-detail
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 2 of 5] ---
+id: 505f150d-16e6-4bf9-9a78-bc02d6d89a72
+entity_slug: renew-marine-detail
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 3 of 5] ---
+id: 1117e20f-b220-45dd-90b1-dc64641541ad
+entity_slug: renew-marine-detail
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 4 of 5] ---
+id: ecf8723b-5f7a-45a7-a120-177254560d97
+entity_slug: renew-marine-detail
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 5 of 5] ---
+id: 1919a625-b0de-4227-9e8e-c93b50e636d9
+entity_slug: renew-marine-detail
+category: payment
+key: pay_acceptsCreditCards
+label: Accepts Credit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: renew-marine-detail
+name: Renew Marine Detail
+industry_code: other
+is_parent: false
+score_of_7: 6
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: f7acecb3-15be-48d2-8877-3ac42f10540c
+entity_slug: renew-marine-detail
+place_uri: https://maps.google.com/?cid=16175575546442015259&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05cc5985ab13:0xe07b3041f32be21b!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05cc5985ab13:0xe07b3041f32be21b!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05cc5985ab13:0xe07b3041f32be21b!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   2 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 2] ---
+review_id: 6246
+entity_slug: renew-marine-detail
+google_review_name: places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/reviews/ChZDSUhNMG9nS0VJQ0FnSUR4d2FMbUx3EAE
+rating: 5
+review_text: Incredible work performed getting my black 2008 Searay back to shine and luster.  She looks like she did when she came off the showroom floor.  Thank you and I highly recommend!
+language_code: en
+author_name: brian dunn
+author_profile_url: https://www.google.com/maps/contrib/100366450938400595960/reviews
+publish_time: 2023-06-09T14:57:38.579133+00:00
+relative_time: 3 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUR4d2FMbUx3EAE!2m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 2] ---
+review_id: 6247
+entity_slug: renew-marine-detail
+google_review_name: places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/reviews/ChdDSUhNMG9nS0VJQ0FnSUN5bkpUZHdBRRAB
+rating: 5
+review_text: I called asking if they service RV’s and they were very busy with boats but were kind enough to give me a Reccomendation to an RV place. Thank you guys for this! I really appreciate the customer service.
+language_code: en
+author_name: Michael V
+author_profile_url: https://www.google.com/maps/contrib/108679350195783566560/reviews
+publish_time: 2021-01-23T00:12:07.375729+00:00
+relative_time: 5 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUN5bkpUZHdBRRAB!2m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   6 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 6] ---
+id: 275c00e9-2397-467f-b93e-b3d380bb6224
+entity_slug: renew-marine-detail
+day_of_week: 1
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 6] ---
+id: be8c4c05-a0ec-49c9-b7da-573c83de3613
+entity_slug: renew-marine-detail
+day_of_week: 2
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 6] ---
+id: ec0c17ec-7f63-490e-9bc2-057e50530129
+entity_slug: renew-marine-detail
+day_of_week: 3
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 6] ---
+id: bece3a76-10c6-46bf-b92a-c84ba1def6d0
+entity_slug: renew-marine-detail
+day_of_week: 4
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 6] ---
+id: 1c9ac6ba-59e1-4c9b-8136-e54d10c7161f
+entity_slug: renew-marine-detail
+day_of_week: 5
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 6] ---
+id: d3d4cacd-98ea-4aa7-b868-39790e28e6d8
+entity_slug: renew-marine-detail
+day_of_week: 6
+opens_at: 09:00:00
+closes_at: 12:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: renew-marine-detail
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 2d23f8e4-4c5e-484c-8225-a5bdb62ff97c
+name: Renew Marine Detail
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/renew-marine-detail/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/renew-marine-detail/photo_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/renew-marine-detail/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: renew-marine-detail
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 2d23f8e4-4c5e-484c-8225-a5bdb62ff97c
+name: Renew Marine Detail
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/renew-marine-detail/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/renew-marine-detail/photo_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/renew-marine-detail/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: ec39d33e-e222-4e85-aa1d-f915a47fc3bd
+entity_slug: renew-marine-detail
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 921d180d-8441-489c-93d8-da7ad5395f36
+entity_slug: renew-marine-detail
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: 337b3b61-3761-4e1d-b1ea-2aaa06992ad7
+entity_slug: renew-marine-detail
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: 4c59a034-e1d2-4e78-823c-cec47473407c
+entity_slug: renew-marine-detail
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: 23980213-e4b3-4aca-a0b8-3e9050921444
+entity_slug: renew-marine-detail
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: 005a55e9-3018-4a9f-96ed-eb285d196fd5
+entity_slug: renew-marine-detail
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: b1705d50-4741-4f43-9db7-eac39c30e36b
+entity_slug: renew-marine-detail
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 222fbaee-d1e7-470a-8b53-ff55d9db6a76
+entity_slug: renew-marine-detail
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: 3325b08d-7d0e-4910-a817-cf5dfa29dbbc
+entity_slug: renew-marine-detail
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: dd3e8a83-b5de-463a-9cf5-5ef786e7debd
+entity_slug: renew-marine-detail
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: 76ade7a0-4e84-48ce-a103-3b964e9daf76
+entity_slug: renew-marine-detail
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: 221018a7-01e8-4452-b796-7c374257f80d
+entity_slug: renew-marine-detail
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: 4997e9bc-63df-4eda-98ed-3b4c61d92fb4
+entity_slug: renew-marine-detail
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13997
+entity_slug: renew-marine-detail
+name: Renew Marine Detail
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 2d23f8e4-4c5e-484c-8225-a5bdb62ff97c
+
+####################################################################################################
+# TABLE: entity_photos   -   16 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 16] ---
+id: c5ed705d-7375-47e8-bac1-bb8ebda53d4d
+entity_slug: renew-marine-detail
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/renew-marine-detail/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 16] ---
+id: 085ee4e5-de18-427f-93f8-cdb81a109fd5
+entity_slug: renew-marine-detail
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/renew-marine-detail/photo_03.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 3 of 16] ---
+id: 7b43af1d-9472-4f15-b6c4-0df7a8b3c70e
+entity_slug: renew-marine-detail
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/renew-marine-detail/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 4 of 16] ---
+id: 3cdec0d8-913e-4b3c-9f96-bd5415476cdc
+entity_slug: renew-marine-detail
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/renew-marine-detail/photo_02.jpg
+is_cover: false
+sort_order: 2
+photo_type: resource
+source_name: bookable_resource
+resource_id: 2d23f8e4-4c5e-484c-8225-a5bdb62ff97c
+
+--- entity_photos [row 5 of 16] ---
+id: 6780b61e-2468-4ced-a4ed-c9304521133f
+entity_slug: renew-marine-detail
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/renew-marine-detail/photo_03.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: 2d23f8e4-4c5e-484c-8225-a5bdb62ff97c
+
+--- entity_photos [row 6 of 16] ---
+id: 6e2dec1b-b8d5-4451-98c0-38455112574b
+entity_slug: renew-marine-detail
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/renew-marine-detail/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 2d23f8e4-4c5e-484c-8225-a5bdb62ff97c
+
+--- entity_photos [row 7 of 16] ---
+id: 5ed5f3d3-3f70-4728-a450-10b9d6c42128
+entity_slug: renew-marine-detail
+url: https://places.googleapis.com/v1/places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3m-3pB-tLgRIJwZarGU-ewFI5-EsStGyfZIXC5WMvZG4U-qCIz5sg_s09nRO2W1LLHcC_kGJpscQnPtgVD7dZ0RG4Z2RK42AMkJT_ee-aQng7KaFUsRVkxXhog-V4U3DoAkDgCfLeAWsZDj-Gi04LOgKDs9eT40o1P4OC0KH6sFKciKa1Mnq9t-Smt77qJrtcmFkdM-7mq4jxllTi7I-uWd7HN4vGwK9fkM9pF6Gd64GN3Ae1cLFh6rHWThiTxIHjPsT9UyLOOlvuxuIl5_dyo0n83-t7V_YIFemePO3JKWW_fWzUIckjJ3DfIHzeAkNL2IrzKX6Pdgqkpo281r8cS5MnyXTKU1kLHnEq9NqGWF36bCZG7-DsgkG7239hHBpUDH2l09zbdW0Z3-EJ2eIbA4zhbD3ipsbEppk3QvGrKHsDsj/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3m-3pB-tLgRIJwZarGU-ewFI5-EsStGyfZIXC5WMvZG4U-qCIz5sg_s09nRO2W1LLHcC_kGJpscQnPtgVD7dZ0RG4Z2RK42AMkJT_ee-aQng7KaFUsRVkxXhog-V4U3DoAkDgCfLeAWsZDj-Gi04LOgKDs9eT40o1P4OC0KH6sFKciKa1Mnq9t-Smt77qJrtcmFkdM-7mq4jxllTi7I-uWd7HN4vGwK9fkM9pF6Gd64GN3Ae1cLFh6rHWThiTxIHjPsT9UyLOOlvuxuIl5_dyo0n83-t7V_YIFemePO3JKWW_fWzUIckjJ3DfIHzeAkNL2IrzKX6Pdgqkpo281r8cS5MnyXTKU1kLHnEq9NqGWF36bCZG7-DsgkG7239hHBpUDH2l09zbdW0Z3-EJ2eIbA4zhbD3ipsbEppk3QvGrKHsDsj
+is_cover: false
+sort_order: 0
+caption: Renew Marine Detail
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC6jMu95wE!2e10!4m2!3m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b
+
+--- entity_photos [row 8 of 16] ---
+id: 56bf4c65-ae18-4f6a-be2c-5e954462c8cf
+entity_slug: renew-marine-detail
+url: https://places.googleapis.com/v1/places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3m2hkvHUuoFa2ZpFojxIXYQE-Zh2HoJURRojzdVdeKQUMbSWkZ66RNGr2Ib17zGnyA78WHzfknuDTr0TSUGfsq-Xx52aOyBDBAxlTExkE6sDVWF5nD6b5_-jaGCoNnKD75AlFCWWgSr9ivzCafNOG2u63JrdifRlUpEIDIyEfj6L6ZPH9vRKlZw93LH2sVQCj4rGUB9qRHsJQ3wmDrkjqwmR1Rq4nDSDDaYQpBCNj0UrfxvuYP8ZPnqn3hX68z7PyrPeK8CDuDahZSCStESDajTca0GlmdGpDKx-IEO_W9tgdiW1bkp6dMuBJ-LgXGZSJUSVcj079xQhWI9jATpH5Ez-lbcUjYubEc6FdpukRHb3Wihhn7-SOTBCW9JxcLbQ732836NdGxmH9sfbjA5h9Ov0h-JqbFDutW4EP1LB9zj_RA2/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3m2hkvHUuoFa2ZpFojxIXYQE-Zh2HoJURRojzdVdeKQUMbSWkZ66RNGr2Ib17zGnyA78WHzfknuDTr0TSUGfsq-Xx52aOyBDBAxlTExkE6sDVWF5nD6b5_-jaGCoNnKD75AlFCWWgSr9ivzCafNOG2u63JrdifRlUpEIDIyEfj6L6ZPH9vRKlZw93LH2sVQCj4rGUB9qRHsJQ3wmDrkjqwmR1Rq4nDSDDaYQpBCNj0UrfxvuYP8ZPnqn3hX68z7PyrPeK8CDuDahZSCStESDajTca0GlmdGpDKx-IEO_W9tgdiW1bkp6dMuBJ-LgXGZSJUSVcj079xQhWI9jATpH5Ez-lbcUjYubEc6FdpukRHb3Wihhn7-SOTBCW9JxcLbQ732836NdGxmH9sfbjA5h9Ov0h-JqbFDutW4EP1LB9zj_RA2
+is_cover: false
+sort_order: 1
+caption: Renew Marine Detail
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8mejkwgE!2e10!4m2!3m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b
+
+--- entity_photos [row 9 of 16] ---
+id: b5f503b6-c0c4-4095-ba1a-94b09d7e019d
+entity_slug: renew-marine-detail
+url: https://places.googleapis.com/v1/places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3nDs8OFYyZNgzMuYh2Ejsj_OZxJ2NpsmcUEFV9Vj1gJ3GnglwVOqQmbD-RGLLmureJbN6encJxuymUkVZDehr-leRXZuUAv-bUuI96wfGaw_x1d71wkAyeWsz7ssSw9hnCXzUPKNNEwjUIzxlO5_IK6ECdVdYMjEvlnvgchqw16skUx4cmX2ngTJOrBISbXMdgBGINlKoQ4MiORGdzhnNabv0NJr5Zgbyi5C8vPwCW459adXF6xpMnmrYnACBg1uGYcG6aEjq4gFuJ-PDUbIMuML8ODRXUEoWQN-gAsD76G6hXB7xImMSOXYpJtE50emIt_-wiAiOviJSN_ru5Sda2dkAwu4purNPkalAmnq2NvRlKxsrQXsH_LKHANfEsAFTwc3LZGUoqt_ZA6kE0xfRpnIEJMkC7WAN-bsQqNSA7mSg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3nDs8OFYyZNgzMuYh2Ejsj_OZxJ2NpsmcUEFV9Vj1gJ3GnglwVOqQmbD-RGLLmureJbN6encJxuymUkVZDehr-leRXZuUAv-bUuI96wfGaw_x1d71wkAyeWsz7ssSw9hnCXzUPKNNEwjUIzxlO5_IK6ECdVdYMjEvlnvgchqw16skUx4cmX2ngTJOrBISbXMdgBGINlKoQ4MiORGdzhnNabv0NJr5Zgbyi5C8vPwCW459adXF6xpMnmrYnACBg1uGYcG6aEjq4gFuJ-PDUbIMuML8ODRXUEoWQN-gAsD76G6hXB7xImMSOXYpJtE50emIt_-wiAiOviJSN_ru5Sda2dkAwu4purNPkalAmnq2NvRlKxsrQXsH_LKHANfEsAFTwc3LZGUoqt_ZA6kE0xfRpnIEJMkC7WAN-bsQqNSA7mSg
+is_cover: false
+sort_order: 2
+caption: Renew Marine Detail
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8meiQWA!2e10!4m2!3m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b
+
+--- entity_photos [row 10 of 16] ---
+id: 23f55c44-2acb-4f9a-8755-33f5d7bc5b2f
+entity_slug: renew-marine-detail
+url: https://places.googleapis.com/v1/places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3nPvyK3dkwNjZuBIH21tP5OqueZSZT8zO_LY2QJOWE9tX7KJwuYyF4O56vOoDqT62RrxCUoNFX-4CI5T4nmtGkA6Km87xKVQ4XTRTC8BGeRoLidJjz3VNTBopOiHdqL8q6njnaj89sfDGg9nV2TNVS2XmU13Jj6MHcnPezZLzgIg9TJxWTNxWU6srEQp233ghJjDaPhFiTh-G_2o4E4vXa_wwKRoGPXWRJbzDWSBkSpqMY744_qD6YZdnkL1CE1kw_xmk-pwaZbC3sbfHQ0Qnx0uWgl5pg-BXaqL9ylf2W2S18KvWQrdlBN_TWJJNc05VuMGutjCAB1eUhXVJ9eiBSB33nvD0ay8DLHhJX92mdu4j7SQ41q5ybZhs2hf7djd7VD-u9rTpjnpdAtY3hIw8RqtYPdYu45SymsjR42VcmAYQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3nPvyK3dkwNjZuBIH21tP5OqueZSZT8zO_LY2QJOWE9tX7KJwuYyF4O56vOoDqT62RrxCUoNFX-4CI5T4nmtGkA6Km87xKVQ4XTRTC8BGeRoLidJjz3VNTBopOiHdqL8q6njnaj89sfDGg9nV2TNVS2XmU13Jj6MHcnPezZLzgIg9TJxWTNxWU6srEQp233ghJjDaPhFiTh-G_2o4E4vXa_wwKRoGPXWRJbzDWSBkSpqMY744_qD6YZdnkL1CE1kw_xmk-pwaZbC3sbfHQ0Qnx0uWgl5pg-BXaqL9ylf2W2S18KvWQrdlBN_TWJJNc05VuMGutjCAB1eUhXVJ9eiBSB33nvD0ay8DLHhJX92mdu4j7SQ41q5ybZhs2hf7djd7VD-u9rTpjnpdAtY3hIw8RqtYPdYu45SymsjR42VcmAYQ
+is_cover: false
+sort_order: 3
+caption: Renew Marine Detail
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8mei8ZQ!2e10!4m2!3m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b
+
+--- entity_photos [row 11 of 16] ---
+id: 5b6f93f5-88ec-45e5-9ada-779bdf9d0831
+entity_slug: renew-marine-detail
+url: https://places.googleapis.com/v1/places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3njOndW1aTMMRGVanKDQtSMiKli8jiCxPkB45B2-DIGcMN8_jYFRA-YVysG9TuS8stekTYKeEpnjz0A53fcEKlJYWStIvWku_luqJ_-o2le8HRm02hDNObZEcoOpSmXyVNgjg3z6Rh54HIICn_xT-ZBLxAnjz4gEhMXg8y57Whd28lCGO0xKPe1Dy-HsmrcMWuXaOFwoxn2aDY_uMdnVg30Qhzfz3Y6-eyAT4j_L9Fw7KQki_EHyEnHJY4ZSQqm2-LGtLKnhhf-KpgDFdtXHoouo9YUv1KuF-QARntpfKbmjMbiQ6ILc5SHdnVSTtRoDNl__aSuJvU2Tjvkw5Zamv4r5HT6vhhL5Z23nl1vrAUKHOpPpxftJvdreaiUhkfxFNIVaHKPPvfvjBj4h8IT1Xdr0Ua9Zdii5M2UrU7iDew/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3njOndW1aTMMRGVanKDQtSMiKli8jiCxPkB45B2-DIGcMN8_jYFRA-YVysG9TuS8stekTYKeEpnjz0A53fcEKlJYWStIvWku_luqJ_-o2le8HRm02hDNObZEcoOpSmXyVNgjg3z6Rh54HIICn_xT-ZBLxAnjz4gEhMXg8y57Whd28lCGO0xKPe1Dy-HsmrcMWuXaOFwoxn2aDY_uMdnVg30Qhzfz3Y6-eyAT4j_L9Fw7KQki_EHyEnHJY4ZSQqm2-LGtLKnhhf-KpgDFdtXHoouo9YUv1KuF-QARntpfKbmjMbiQ6ILc5SHdnVSTtRoDNl__aSuJvU2Tjvkw5Zamv4r5HT6vhhL5Z23nl1vrAUKHOpPpxftJvdreaiUhkfxFNIVaHKPPvfvjBj4h8IT1Xdr0Ua9Zdii5M2UrU7iDew
+is_cover: false
+sort_order: 4
+caption: Renew Marine Detail
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8meiyUw!2e10!4m2!3m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b
+
+--- entity_photos [row 12 of 16] ---
+id: 7adf3846-9aa0-481c-a19e-bbf6c7b1254f
+entity_slug: renew-marine-detail
+url: https://places.googleapis.com/v1/places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3m2c7sitnhSucHoG8mObl6Q1lVc2ge7JKpOnh78ajENxgnMiJz5ko3S4wphIwzHtJRl_I3bKLBapTWwB1t-uDqowi305nMn0_ARiAmEtV_xw_qNgALqeDJ0d1Te1ZjjR1A-wM6rk4d-95s_oVTh-HTqlrS7wIUHwVMgFasmGPRLFvTv0kwF_LE9p52K67qNeyXzQRDpP-likEIxF58D1JWB9w9zVj3ZhjlQWBGucay8DhrTcVzS02MA9sddb8MfKbo8zoi7QTqW5jfMRQCa_osA2tJ9aa4iGwbCqriY_AE1eSFdtxtfSLkxpKYTD_hE-ym0STo4tqmjyfWj5PyTXdjuefaZzzFvMSSkeqliaQuC4SBSFnUtES0SA-n0FEBRcPMMYzMS7beiNLH4zSw-vUZXx5W_HFxrHWyUe1CxJjucU0Mz/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3m2c7sitnhSucHoG8mObl6Q1lVc2ge7JKpOnh78ajENxgnMiJz5ko3S4wphIwzHtJRl_I3bKLBapTWwB1t-uDqowi305nMn0_ARiAmEtV_xw_qNgALqeDJ0d1Te1ZjjR1A-wM6rk4d-95s_oVTh-HTqlrS7wIUHwVMgFasmGPRLFvTv0kwF_LE9p52K67qNeyXzQRDpP-likEIxF58D1JWB9w9zVj3ZhjlQWBGucay8DhrTcVzS02MA9sddb8MfKbo8zoi7QTqW5jfMRQCa_osA2tJ9aa4iGwbCqriY_AE1eSFdtxtfSLkxpKYTD_hE-ym0STo4tqmjyfWj5PyTXdjuefaZzzFvMSSkeqliaQuC4SBSFnUtES0SA-n0FEBRcPMMYzMS7beiNLH4zSw-vUZXx5W_HFxrHWyUe1CxJjucU0Mz
+is_cover: false
+sort_order: 5
+caption: Renew Marine Detail
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8mejwpQE!2e10!4m2!3m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b
+
+--- entity_photos [row 13 of 16] ---
+id: 0930bb0d-5532-41b1-a518-48b9ac3d5e2e
+entity_slug: renew-marine-detail
+url: https://places.googleapis.com/v1/places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3lR1jGg0-OhTvU7pPC-TrtOcV3iqkC-H0Ap6dEDFf_7ZZUQBJrDOOcEvOBFUV3JFdNPS6vMtmkTpwtGnH5DGijpOg97WFguOeC1ajBedhZxBTX6P3U9BPWQK5EMIjlPxaEQAwG-S-W_arqYycM0B50Rw8youodAX6ChTvkdl3jwJ3JiH227rxK9oxiY_alZZaTNiAX3DJZ5XMaFDsqFNYNhK8rjbfxGNUdS3vyPofCUL3GuEs_ntSq-WCzE12DcUsMtZEVWYNJ6UJPtU89-9h3-l2Epd5kXmdbP_Woe8rj92xWdEp7WCL-FlATXBZQL8hFH52pNgwY-yaiBhAv1-3Iu-mJWpiGstsalwDYX5NMitb_aRrgdhIxsqAKhVOZBqZxZ1J-XIsju0yqtSPRB0tnNcI754pNQutTjPdtoHZqWlg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3lR1jGg0-OhTvU7pPC-TrtOcV3iqkC-H0Ap6dEDFf_7ZZUQBJrDOOcEvOBFUV3JFdNPS6vMtmkTpwtGnH5DGijpOg97WFguOeC1ajBedhZxBTX6P3U9BPWQK5EMIjlPxaEQAwG-S-W_arqYycM0B50Rw8youodAX6ChTvkdl3jwJ3JiH227rxK9oxiY_alZZaTNiAX3DJZ5XMaFDsqFNYNhK8rjbfxGNUdS3vyPofCUL3GuEs_ntSq-WCzE12DcUsMtZEVWYNJ6UJPtU89-9h3-l2Epd5kXmdbP_Woe8rj92xWdEp7WCL-FlATXBZQL8hFH52pNgwY-yaiBhAv1-3Iu-mJWpiGstsalwDYX5NMitb_aRrgdhIxsqAKhVOZBqZxZ1J-XIsju0yqtSPRB0tnNcI754pNQutTjPdtoHZqWlg
+is_cover: false
+sort_order: 6
+caption: Renew Marine Detail
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8mejGCA!2e10!4m2!3m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b
+
+--- entity_photos [row 14 of 16] ---
+id: 2601c632-13f9-4f26-94f1-ef1552b828ce
+entity_slug: renew-marine-detail
+url: https://places.googleapis.com/v1/places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3kYel7BZlkBT1RgOyMwJUzxt75utOjn6rrN2gAw6dsBsdG-S9cuDS7DCDtm-KyYr0CbyHDokwjlGLlRAMcjvMISXHGRrmeneF-S3sW2LH0zIRVVe3qa0TWsuoJ5sUJ5emw1-cTEgo4DCKu_MDOqTMFCSzS-8qNVujlkxamlDJi-rAyBWL3DF28PZLeYD-XKJU49uEfTpRnNsXD5TU5uwNOBgNMzAc6q3CMwIny1ukWfiq9L6ezW4JdYIwmtH0UU-SH858wXtkRPB1zhyvLIpjNqr78GrWGrL1IDXYl4wlqo0Iat5U9kLzDMZXrdiZp5OuKkzSD0Wo8zTzBTgKkQu2awCrlcTQokxPrNnLRqdBIZGzXVhZMCKkLrxxPQHaBQ3IuGoNe6Sxu9stW6AzIuUp6rm2oiynkPmowdBiF1f3g4_w/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3kYel7BZlkBT1RgOyMwJUzxt75utOjn6rrN2gAw6dsBsdG-S9cuDS7DCDtm-KyYr0CbyHDokwjlGLlRAMcjvMISXHGRrmeneF-S3sW2LH0zIRVVe3qa0TWsuoJ5sUJ5emw1-cTEgo4DCKu_MDOqTMFCSzS-8qNVujlkxamlDJi-rAyBWL3DF28PZLeYD-XKJU49uEfTpRnNsXD5TU5uwNOBgNMzAc6q3CMwIny1ukWfiq9L6ezW4JdYIwmtH0UU-SH858wXtkRPB1zhyvLIpjNqr78GrWGrL1IDXYl4wlqo0Iat5U9kLzDMZXrdiZp5OuKkzSD0Wo8zTzBTgKkQu2awCrlcTQokxPrNnLRqdBIZGzXVhZMCKkLrxxPQHaBQ3IuGoNe6Sxu9stW6AzIuUp6rm2oiynkPmowdBiF1f3g4_w
+is_cover: false
+sort_order: 7
+caption: Renew Marine Detail
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8mei8Pw!2e10!4m2!3m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b
+
+--- entity_photos [row 15 of 16] ---
+id: 7659ccf3-9deb-4a61-80f4-35b153fafa8a
+entity_slug: renew-marine-detail
+url: https://places.googleapis.com/v1/places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3nXbfBL2XKpB3NQTf1vpAhO7InlAiwSFAl8sSrbkBvasB0z6Tj37GXh8Op0VUFjkrDYmxaIb-mAI1AAKMh1Apkyutw2oQzSFUUz16frNx8Nol3JpJ5zI3To2xxaOTl0isNFtZvNSjaTQLjNdwUBIpYjYZIAfoAXS0Slvskq9vH280BZpv0toqnmgVqnlNft7TNy07pTXA3S_sEaouXFVsU5dv4EKFr2FwUMGGaDxOdy9r47PJULtJbFD95k1-8v_P3FOWbaSZ8gO1p-YFskfA2sPNYjwNUfd8Z-JVZ2HRFt0tvbh80rY7ZJkqiqXvDYF7a3w2Tdv6BTdr16VlIo0ZrkuNnH87WLuwSrXzblVogWsndIuSO9pwH7DvtaSKjj4N7BEJi8X8AXz42Z-wyCle9HOa0Fg26kCb80TfXJ07k/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3nXbfBL2XKpB3NQTf1vpAhO7InlAiwSFAl8sSrbkBvasB0z6Tj37GXh8Op0VUFjkrDYmxaIb-mAI1AAKMh1Apkyutw2oQzSFUUz16frNx8Nol3JpJ5zI3To2xxaOTl0isNFtZvNSjaTQLjNdwUBIpYjYZIAfoAXS0Slvskq9vH280BZpv0toqnmgVqnlNft7TNy07pTXA3S_sEaouXFVsU5dv4EKFr2FwUMGGaDxOdy9r47PJULtJbFD95k1-8v_P3FOWbaSZ8gO1p-YFskfA2sPNYjwNUfd8Z-JVZ2HRFt0tvbh80rY7ZJkqiqXvDYF7a3w2Tdv6BTdr16VlIo0ZrkuNnH87WLuwSrXzblVogWsndIuSO9pwH7DvtaSKjj4N7BEJi8X8AXz42Z-wyCle9HOa0Fg26kCb80TfXJ07k
+is_cover: false
+sort_order: 8
+caption: Renew Marine Detail
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8majjag!2e10!4m2!3m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b
+
+--- entity_photos [row 16 of 16] ---
+id: aa11f6a4-d51b-4a50-934d-d2b8952aeab2
+entity_slug: renew-marine-detail
+url: https://places.googleapis.com/v1/places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3mrELma1BlI3pP7TuxHn-IHdXfcpnt7wRwXEQ3LUYwvF8ZzrMnu_ijcSszveqpbE4niPMVNOSIL4FO4Cnk-zn_7P3nsASp32oeN1WpmN6MakwUkrs7JG2x4ETFS-YM6TlDaFxQg--gao2FkiLyBi_6dehkEwnJ0-tIuoTlcLrDJbXR1Y_WgHojq--0dzEe_OSmmxk3MzGFpRyhJf5CNJuNUb-BiT_DIih-uucFoC1oiPXRb_qmgOFhQX4HtETtE9RAEa6INzW625ljmixPikSwwHSpcYLbxO10AD41Fz3kegKpRtNQHGQoor9xrqsmLTfojj7fK4S0oVh_pnW39_6rCFwin_eE00oNqbFKfxjjxWgjjs4_xyzA3MS4An_4hg6LVAcqUCPvYWvg1VigAL7iamS18az5pNzyEJBp5CYKSFQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJE6uFWcwFmogRG-Ir80Ewe-A/photos/AaVGc3mrELma1BlI3pP7TuxHn-IHdXfcpnt7wRwXEQ3LUYwvF8ZzrMnu_ijcSszveqpbE4niPMVNOSIL4FO4Cnk-zn_7P3nsASp32oeN1WpmN6MakwUkrs7JG2x4ETFS-YM6TlDaFxQg--gao2FkiLyBi_6dehkEwnJ0-tIuoTlcLrDJbXR1Y_WgHojq--0dzEe_OSmmxk3MzGFpRyhJf5CNJuNUb-BiT_DIih-uucFoC1oiPXRb_qmgOFhQX4HtETtE9RAEa6INzW625ljmixPikSwwHSpcYLbxO10AD41Fz3kegKpRtNQHGQoor9xrqsmLTfojj7fK4S0oVh_pnW39_6rCFwin_eE00oNqbFKfxjjxWgjjs4_xyzA3MS4An_4hg6LVAcqUCPvYWvg1VigAL7iamS18az5pNzyEJBp5CYKSFQ
+is_cover: false
+sort_order: 9
+caption: Renew Marine Detail
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID8maiPSA!2e10!4m2!3m1!1s0x889a05cc5985ab13:0xe07b3041f32be21b
+
+####################################################################################################
+# TABLE: entity_reviews   -   2 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 2] ---
+id: 0542aa57-9427-4a76-9ca4-06b2bb08ec4b
+entity_slug: renew-marine-detail
+reviewer_name: brian dunn
+rating: 5
+body: Incredible work performed getting my black 2008 Searay back to shine and luster.  She looks like she did when she came off the showroom floor.  Thank you and I highly recommend!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2023-06-09T14:57:38.579133+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 2] ---
+id: 886143b4-8e47-486a-a9ac-c13d57b06d27
+entity_slug: renew-marine-detail
+reviewer_name: Michael V
+rating: 5
+body: I called asking if they service RV’s and they were very busy with boats but were kind enough to give me a Reccomendation to an RV place. Thank you guys for this! I really appreciate the customer service.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2021-01-23T00:12:07.375729+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   2 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 2] ---
+id: 06a8c8b4-d2cc-4121-a648-7e2c84cd9abe
+entity_slug: renew-marine-detail
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 2 of 2] ---
+id: 8f5a147c-cdaa-49ac-8bcb-d5ac33bcf4b2
+entity_slug: renew-marine-detail
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: d3111f94-373e-429c-af31-b1d3e8627e5f
+entity_slug: renew-marine-detail
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: offer
+ref_id: 13997
+entity_slug: renew-marine-detail
+title: Renew Marine Detail
+category: rental
+search_vector: 'detail':3A 'marin':2A 'renew':1A
+
+--- search_index [row 2 of 2] ---
+ref_type: business
+ref_id: renew-marine-detail
+entity_slug: renew-marine-detail
+title: Renew Marine Detail
+category: service
+search_vector: 'detail':3A 'marin':2A 'renew':1A

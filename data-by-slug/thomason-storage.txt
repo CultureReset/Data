@@ -1,0 +1,1835 @@
+====================================================================================================
+SLUG: thomason-storage
+NAME: Thomason Storage
+INDUSTRY: trade_home_service
+SUBTYPE: storage
+TABLES WITH DATA: 27
+TOTAL ROWS: 98
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (4 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (4 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_attributes  (5 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (4 rows)
+  entity_hours  (6 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_nearby_landmark_types  (27 rows)
+  entity_nearby_landmarks  (5 rows)
+  entity_offer  (1 rows)
+  entity_photos  (6 rows)
+  entity_reviews  (4 rows)
+  entity_tags  (3 rows)
+  entity_theme  (1 rows)
+  industry_trade_home_service  (1 rows)
+  search_index  (2 rows)
+  service_menu  (1 rows)
+  trade_home_services  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: thomason-storage
+name: Thomason Storage
+planner_category: local_service
+data_quality_score: 90
+issues: missing_summary
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   4 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 4] ---
+id: 8881
+entity_slug: thomason-storage
+intent_tag: best_for:local_information
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 4] ---
+id: 8882
+entity_slug: thomason-storage
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 4] ---
+id: 8883
+entity_slug: thomason-storage
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 4] ---
+id: 8884
+entity_slug: thomason-storage
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: thomason-storage
+name: Thomason Storage
+is_active: t
+planner_category: local_service
+entity_type: service
+entity_subtype: storage
+city: Gulf Shores
+state: AL
+address_line_1: 3805 Gulf Shores Pkwy
+latitude: 30.301302800000002
+longitude: -87.6841061
+rating: 5
+review_count: 4
+hero_image_url: /photos/thomason-storage/photo_01.jpg
+voice_summary: Thomason Storage in Gulf Shores is best for local information.
+planner_summary: Thomason Storage in Gulf Shores is a local service listing in Gulf Coast Radar.
+best_for: local information
+not_best_for: nothing specific flagged
+service_tags: accessibility
+search_keywords: storage|point_of_interest|establishment|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 4
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 3
+faq_count: 0
+data_quality_score: 90
+data_gaps: missing_summary
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   4 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 4] ---
+id: 6808
+entity_slug: thomason-storage
+entity_name: Thomason Storage
+city: Gulf Shores
+url: /photos/thomason-storage/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 4] ---
+id: 6809
+entity_slug: thomason-storage
+entity_name: Thomason Storage
+city: Gulf Shores
+url: /photos/thomason-storage/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 4] ---
+id: 18350
+entity_slug: thomason-storage
+entity_name: Thomason Storage
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/thomason-storage/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 4] ---
+id: 26956
+entity_slug: thomason-storage
+entity_name: Thomason Storage
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/thomason-storage/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 9e243790-7926-45c4-b164-a9a5d6b8586e
+resource_type: service
+slug: thomason-storage
+name: Thomason Storage
+entity_slug: thomason-storage
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/thomason-storage/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/thomason-storage/photo_02.jpg",
+  "/photos/thomason-storage/photo_01.jpg",
+  "/photos/thomason-storage/photo_02.jpg"
+]
+amenities: []
+faqs: []
+address: 3805 Gulf Shores Pkwy
+city: Gulf Shores
+state: AL
+latitude: 30.301302800000002
+longitude: -87.6841061
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 791dc6728d3b98387cce7f11558749a5
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 9e243790-7926-45c4-b164-a9a5d6b8586e
+entity_slug: thomason-storage
+slug: thomason-storage
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/thomason-storage/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/thomason-storage/photo_02.jpg",
+  "/photos/thomason-storage/photo_01.jpg",
+  "/photos/thomason-storage/photo_02.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: bf64103e-d595-44b3-a1c0-32390975443b
+slug: thomason-storage
+name: Thomason Storage
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: storage
+phone: (251) 968-5611
+menu_pin: 7819
+address_line_1: 3805 Gulf Shores Pkwy
+city: Gulf Shores
+state: AL
+zip: 36542
+latitude: 30.301302800000002
+longitude: -87.6841061
+rating: 5
+review_count: 4
+hero_image_url: https://places.googleapis.com/v1/places/ChIJnf9SAkQFmogRiIFJ0GbIqmE/photos/Ab43m-ufvIv3s28ZwNVL0-AvAkQ3SE0tmZtGizIyNA5UPwvsKkmFh8Wjv5TK216VIe_shDzuwYCgWqw7pg4hNQlp4jDx2QxOSVnT_qOPJ-d80YGamef5_TqPGwhiFl1-sjgbGNWR4fTXeBwghQ630_hJ1y8u1Cq8Fe4odF2PItV07SdR0RYI5N4i8GfvjaAgY0o9v61O11diYg3AsAhi09G3-lSryyuxllyJq2ujrLoPV6jS7Ympc6NCzc8ZfEtj2Xc3KYIxJCs6EDIEY4uTFqmHxv0zUbL26FLaaEpwtQPHWG-iCRtoWSnY6DKafe8e8p7jG6x_pehzKVtkymaZza5jIvfTZ-kFAURJKprNBa6j9QsaOGlWESJPEjBSolkIURK3YIeag2C_o6sGrI_MfItJsBKK3Y2sa9W_NbHcJbH5flSp5g/media?maxHeightPx=1600&maxWidthPx=1600
+good_for_kids: false
+created_at: 2026-06-03T04:02:42.495894+00:00
+updated_at: 2026-06-03T04:02:42.495894+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJnf9SAkQFmogRiIFJ0GbIqmE
+google_maps_uri: https://maps.google.com/?cid=7037657711626518920&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: storage
+formatted_address: 3805 Gulf Shores Pkwy, Gulf Shores, AL 36542, USA
+plus_code: 862J8828+G9
+international_phone: +1 251-968-5611
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+accepts_cash_only: false
+google_places_data: {
+  "id": "ChIJnf9SAkQFmogRiIFJ0GbIqmE",
+  "types": [
+    "point_of_interest",
+    "storage",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJnf9SAkQFmogRiIFJ0GbIqmE/photos/Ab43m-ufvIv3s28ZwNVL0-AvAkQ3SE0tmZtGizIyNA5UPwvsKkmFh8Wjv5TK216VIe_shDzuwYCgWqw7pg4hNQlp4jDx2QxOSVnT_qOPJ-d80YGamef5_TqPGwhiFl1-sjgbGNWR4fTXeBwghQ630_hJ1y8u1Cq8Fe4odF2PItV07SdR0RYI5N4i8GfvjaAgY0o9v61O11diYg3AsAhi09G3-lSryyuxllyJq2ujrLoPV6jS7Ympc6NCzc8ZfEtj2Xc3KYIxJCs6EDIEY4uTFqmHxv0zUbL26FLaaEpwtQPHWG-iCRtoWSnY6DKafe8e8p7jG6x_pehzKVtkymaZza5jIvfTZ-kFAURJKprNBa6j9QsaOGlWESJPEjBSolkIURK3YIeag2C_o6sGrI_MfItJsBKK3Y2sa9W_NbHcJbH5flSp5g",
+      "widthPx": 1000,
+      "heightPx": 667,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC6tNzfVg!2e10!4m2!3m1!1s0x889a05440252ff9d:0x61aac866d0498188",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIC6tNzfVg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/115420871450416815681",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXnRZHDqB50vbUtZ_dNCoNc_y2GL3OAiUGnKNzMebzxyDt-XNw=s100-p-k-no-mo",
+          "displayName": "Thomason Storage"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJnf9SAkQFmogRiIFJ0GbIqmE/photos/Ab43m-txXJC3076mVCKHC7WivgtR-W0xP7253DGwsldu1NIQL7FUdLIAs5B4x6TUtKeiKEBfJjB7ali2Zvu5wNboGcKSSUFGGiA-nSTcbX21novx6_4Zqd49xdR0X_4chX5u6Sg6t62H2OKnUVo31IOebUzS8UJJ0QyUHQVHtK4IYdk6Ml_RikG2YnC0DPMuiT1MUAwXefjG_OlOyJ5F43dWjTtEQdB14Q3z6jJvz5blNMIptcsrji_Z0GVfntwErCYM5S950ZcKaM5xWZV_zDw0o13T_u4OeKWV5s55I_kqnG9N2ZdHfWpaAQIKQzWgA2_s2trLnQleZRQM9PBpVb2w8lktAFlit3oJ3RxUzvjOnHEzfVM1MUCVoPekYwohpfIDz0ART6moH_1EIOqrwaaGfdtGsQE_5F1rhgAVPl8tLCw0VSMF",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDX1dTZ_AE!2e10!4m2!3m1!1s0x889a05440252ff9d:0x61aac866d0498188",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDX1dTZ_AE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/111241547740482200067",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUyaD7inS7XG26g8n3wMapJwiavPoryiv7wWnyAy5JF0l7aeHz-Vg=s100-p-k-no-mo",
+          "displayName": "Mike Van Sickler"
+        }
+      ]
+    }
+  ],
+  "rating": 5,
+  "reviews": [
+    {
+      "name": "places/ChIJnf9SAkQFmogRiIFJ0GbIqmE/reviews/ChdDSUhNMG9nS0VJQ0FnSURRdGNmYmd3RRAB",
+      "text": {
+        "text": "Billy Thomason s the most honest and generous man I have ever known.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2018-07-07T13:26:10.008Z",
+      "originalText": {
+        "text": "Billy Thomason s the most honest and generous man I have ever known.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURRdGNmYmd3RRAB!2m1!1s0x889a05440252ff9d:0x61aac866d0498188",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURRdGNmYmd3RRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/100051757032786209772/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocK_q1EBcWsY1XGYHRbK8_MBBC_5dbvim95aIbyDhaQy0mPHcA=s128-c0x00000000-cc-rp-mo",
+        "displayName": "David Henderson"
+      },
+      "relativePublishTimeDescription": "7 years ago"
+    },
+    {
+      "name": "places/ChIJnf9SAkQFmogRiIFJ0GbIqmE/reviews/ChdDSUhNMG9nS0VJQ0FnSURzekplZTFBRRAB",
+      "text": {
+        "text": "Best place in the business!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2020-02-25T19:36:27.063203Z",
+      "originalText": {
+        "text": "Best place in the business!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURzekplZTFBRRAB!2m1!1s0x889a05440252ff9d:0x61aac866d0498188",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURzekplZTFBRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/115285208204822274355/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUYt0aCEh5FP7SVQxHA0yiZG2s0zDryZAM0qYNVTNjzITTGNBM=s128-c0x00000000-cc-rp-mo-ba5",
+        "displayName": "David Hensley"
+      },
+      "relativePublishTimeDescription": "6 years ago"
+    },
+    {
+      "name": "places/ChIJnf9SAkQFmogRiIFJ0GbIqmE/reviews/ChZDSUhNMG9nS0VJQ0FnSURYMWJUUU13EAE",
+      "rating": 5,
+      "publishTime": "2024-10-29T20:31:22.845844Z",
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURYMWJUUU13EAE!2m1!1s0x889a05440252ff9d:0x61aac866d0498188",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURYMWJUUU13EAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/111241547740482200067/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUyaD7inS7XG26g8n3wMapJwiavPoryiv7wWnyAy5JF0l7aeHz-Vg=s128-c0x00000000-cc-rp-mo-ba2",
+        "displayName": "Mike Van Sickler"
+      },
+      "relativePublishTimeDescription": "a year ago"
+    },
+    {
+      "name": "places/ChIJnf9SAkQFmogRiIFJ0GbIqmE/reviews/ChdDSUhNMG9nS0VJQ0FnSUM0LUphVGx3RRAB",
+      "rating": 5,
+      "publishTime": "2019-06-02T05:04:30.334562Z",
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUM0LUphVGx3RRAB!2m1!1s0x889a05440252ff9d:0x61aac866d0498188",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUM0LUphVGx3RRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/104382192387030091327/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUeSuL81t7TxEGuNHy5CccIPd1gcZ_pkRJ91TdOolQF47Q6ZEVM5w=s128-c0x00000000-cc-rp-mo-ba2",
+        "displayName": "Jim"
+      },
+      "relativePublishTimeDescription": "7 years ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.301302800000002,
+    "longitude": -87.6841061
+  },
+  "plusCode": {
+    "globalCode": "862J8828+G9",
+    "compoundCode": "8828+G9 Gulf Shores, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.299918769708498,
+      "longitude": -87.6851231302915
+    },
+    "high": {
+      "latitude": 30.302616730291497,
+      "longitude": -87.6824251697085
+    }
+  },
+  "displayName": {
+    "text": "Thomason Storage",
+    "languageCode": "en"
+  },
+  "primaryType": "storage",
+  "googleMapsUri": "https://maps.google.com/?cid=7037657711626518920&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "paymentOptions": {
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=7037657711626518920&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05440252ff9d:0x61aac866d0498188!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05440252ff9d:0x61aac866d0498188!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05440252ff9d:0x61aac866d0498188!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05440252ff9d:0x61aac866d0498188!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "userRatingCount": 4,
+  "adrFormatAddress": "<span class=\"street-address\">3805 Gulf Shores Pkwy</span>, <span class=\"locality\">Gulf Shores</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36542</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "3805 Gulf Shores Pkwy, Gulf Shores, AL 36542, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "3805",
+      "shortText": "3805",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Gulf Shores Parkway",
+      "shortText": "Gulf Shores Pkwy",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Gulf Shores",
+      "shortText": "Gulf Shores",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36542",
+      "shortText": "36542",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "landmarks": [
+      {
+        "name": "places/ChIJlXxkcgsFmogRDvfiVJMfXjk",
+        "types": [
+          "bakery",
+          "establishment",
+          "florist",
+          "food",
+          "grocery_or_supermarket",
+          "liquor_store",
+          "point_of_interest",
+          "store",
+          "supermarket"
+        ],
+        "placeId": "ChIJlXxkcgsFmogRDvfiVJMfXjk",
+        "displayName": {
+          "text": "Publix Super Market at Colonial Promenade at Craft Farms",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 436.058,
+        "straightLineDistanceMeters": 360.58878
+      },
+      {
+        "name": "places/ChIJq2pF1EYFmogRPR1AekAmMQE",
+        "types": [
+          "cafe",
+          "establishment",
+          "food",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJq2pF1EYFmogRPR1AekAmMQE",
+        "displayName": {
+          "text": "Starbucks Coffee Company",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 263.07562,
+        "straightLineDistanceMeters": 214.60495
+      },
+      {
+        "name": "places/ChIJf9zXqUYFmogRgQVBcQTqZ2k",
+        "types": [
+          "car_repair",
+          "establishment",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJf9zXqUYFmogRgQVBcQTqZ2k",
+        "displayName": {
+          "text": "Riviera Tire & Automotive",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "AROUND_THE_CORNER",
+        "travelDistanceMeters": 22.98367,
+        "straightLineDistanceMeters": 49.69902
+      },
+      {
+        "name": "places/ChIJGcIpAUQFmogRA6s7Y2EfNfE",
+        "types": [
+          "bar",
+          "establishment",
+          "food",
+          "meal_takeaway",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJGcIpAUQFmogRA6s7Y2EfNfE",
+        "displayName": {
+          "text": "LongHorn Steakhouse",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 272.14938,
+        "straightLineDistanceMeters": 233.53786
+      },
+      {
+        "name": "places/ChIJOdJUrEYFmogR34Tr6uUZbo0",
+        "types": [
+          "establishment",
+          "lodging",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJOdJUrEYFmogR34Tr6uUZbo0",
+        "displayName": {
+          "text": "Courtyard by Marriott Gulf Shores Craft Farms",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 326.5141,
+        "straightLineDistanceMeters": 259.9641
+      }
+    ]
+  },
+  "currentOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 1,
+          "date": {
+            "day": 8,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "date": {
+            "day": 8,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 16,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "date": {
+            "day": 9,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 9,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 16,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 16,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 16,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 5,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 5,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 16,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "date": {
+            "day": 6,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "date": {
+            "day": 6,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 16,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-05T14:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 9:00 AM – 4:00 PM",
+      "Tuesday: 9:00 AM – 4:00 PM",
+      "Wednesday: 9:00 AM – 4:00 PM",
+      "Thursday: 9:00 AM – 4:00 PM",
+      "Friday: 9:00 AM – 4:00 PM",
+      "Saturday: 9:00 AM – 4:00 PM",
+      "Sunday: Closed"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Automobile Storage Facility",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "nationalPhoneNumber": "(251) 968-5611",
+  "regularOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 1,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 16,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 16,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 16,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 16,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 16,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 16,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-05T14:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 9:00 AM – 4:00 PM",
+      "Tuesday: 9:00 AM – 4:00 PM",
+      "Wednesday: 9:00 AM – 4:00 PM",
+      "Thursday: 9:00 AM – 4:00 PM",
+      "Friday: 9:00 AM – 4:00 PM",
+      "Saturday: 9:00 AM – 4:00 PM",
+      "Sunday: Closed"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true
+  },
+  "shortFormattedAddress": "3805 Gulf Shores Pkwy, Gulf Shores",
+  "primaryTypeDisplayName": {
+    "text": "Storage",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-968-5611"
+}
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 3805 Gulf Shores Pkwy, Gulf Shores
+national_phone: (251) 968-5611
+search_vector: 'gulf':4 'shore':5 'storag':2A,3 'thomason':1A
+primary_type_display: Storage
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=7037657711626518920&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05440252ff9d:0x61aac866d0498188!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05440252ff9d:0x61aac866d0498188!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05440252ff9d:0x61aac866d0498188!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05440252ff9d:0x61aac866d0498188!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "landmarks": [
+    {
+      "name": "places/ChIJlXxkcgsFmogRDvfiVJMfXjk",
+      "types": [
+        "bakery",
+        "establishment",
+        "florist",
+        "food",
+        "grocery_or_supermarket",
+        "liquor_store",
+        "point_of_interest",
+        "store",
+        "supermarket"
+      ],
+      "placeId": "ChIJlXxkcgsFmogRDvfiVJMfXjk",
+      "displayName": {
+        "text": "Publix Super Market at Colonial Promenade at Craft Farms",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 436.058,
+      "straightLineDistanceMeters": 360.58878
+    },
+    {
+      "name": "places/ChIJq2pF1EYFmogRPR1AekAmMQE",
+      "types": [
+        "cafe",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJq2pF1EYFmogRPR1AekAmMQE",
+      "displayName": {
+        "text": "Starbucks Coffee Company",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 263.07562,
+      "straightLineDistanceMeters": 214.60495
+    },
+    {
+      "name": "places/ChIJf9zXqUYFmogRgQVBcQTqZ2k",
+      "types": [
+        "car_repair",
+        "establishment",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJf9zXqUYFmogRgQVBcQTqZ2k",
+      "displayName": {
+        "text": "Riviera Tire & Automotive",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "AROUND_THE_CORNER",
+      "travelDistanceMeters": 22.98367,
+      "straightLineDistanceMeters": 49.69902
+    },
+    {
+      "name": "places/ChIJGcIpAUQFmogRA6s7Y2EfNfE",
+      "types": [
+        "bar",
+        "establishment",
+        "food",
+        "meal_takeaway",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJGcIpAUQFmogRA6s7Y2EfNfE",
+      "displayName": {
+        "text": "LongHorn Steakhouse",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 272.14938,
+      "straightLineDistanceMeters": 233.53786
+    },
+    {
+      "name": "places/ChIJOdJUrEYFmogR34Tr6uUZbo0",
+      "types": [
+        "establishment",
+        "lodging",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJOdJUrEYFmogR34Tr6uUZbo0",
+      "displayName": {
+        "text": "Courtyard by Marriott Gulf Shores Craft Farms",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 326.5141,
+      "straightLineDistanceMeters": 259.9641
+    }
+  ]
+}
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url | hero_image_url v2-fix 2026-07-21: repointed to a photo confirmed to actually exist
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: trade_home_service
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_attributes   -   5 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 5] ---
+id: 0dd23846-c14e-4786-b203-393634c706d3
+entity_slug: thomason-storage
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 2 of 5] ---
+id: fa30da92-adf0-4844-9c3d-834d076f3004
+entity_slug: thomason-storage
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 3 of 5] ---
+id: d52d734c-2fb5-4e65-9f8b-a85f62f3dff3
+entity_slug: thomason-storage
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 4 of 5] ---
+id: 06ec2b5c-9314-4953-8849-4ad0d678440a
+entity_slug: thomason-storage
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 5 of 5] ---
+id: 0e9b371f-ffe4-42c6-bd86-69dbb14596b4
+entity_slug: thomason-storage
+category: payment
+key: pay_acceptsCreditCards
+label: Accepts Credit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: thomason-storage
+name: Thomason Storage
+industry_code: trade_home_service
+is_parent: false
+score_of_7: 6
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 043041bc-f3ca-4de9-888c-54b8589704a6
+entity_slug: thomason-storage
+place_uri: https://maps.google.com/?cid=7037657711626518920&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05440252ff9d:0x61aac866d0498188!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05440252ff9d:0x61aac866d0498188!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05440252ff9d:0x61aac866d0498188!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05440252ff9d:0x61aac866d0498188!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   4 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 4] ---
+review_id: 3830
+entity_slug: thomason-storage
+google_review_name: places/ChIJnf9SAkQFmogRiIFJ0GbIqmE/reviews/ChdDSUhNMG9nS0VJQ0FnSURRdGNmYmd3RRAB
+rating: 5
+review_text: Billy Thomason s the most honest and generous man I have ever known.
+language_code: en
+author_name: David Henderson
+author_profile_url: https://www.google.com/maps/contrib/100051757032786209772/reviews
+publish_time: 2018-07-07T13:26:10.008+00:00
+relative_time: 7 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURRdGNmYmd3RRAB!2m1!1s0x889a05440252ff9d:0x61aac866d0498188
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 4] ---
+review_id: 3831
+entity_slug: thomason-storage
+google_review_name: places/ChIJnf9SAkQFmogRiIFJ0GbIqmE/reviews/ChdDSUhNMG9nS0VJQ0FnSURzekplZTFBRRAB
+rating: 5
+review_text: Best place in the business!
+language_code: en
+author_name: David Hensley
+author_profile_url: https://www.google.com/maps/contrib/115285208204822274355/reviews
+publish_time: 2020-02-25T19:36:27.063203+00:00
+relative_time: 6 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURzekplZTFBRRAB!2m1!1s0x889a05440252ff9d:0x61aac866d0498188
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 4] ---
+review_id: 3832
+entity_slug: thomason-storage
+google_review_name: places/ChIJnf9SAkQFmogRiIFJ0GbIqmE/reviews/ChZDSUhNMG9nS0VJQ0FnSURYMWJUUU13EAE
+rating: 5
+author_name: Mike Van Sickler
+author_profile_url: https://www.google.com/maps/contrib/111241547740482200067/reviews
+publish_time: 2024-10-29T20:31:22.845844+00:00
+relative_time: a year ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURYMWJUUU13EAE!2m1!1s0x889a05440252ff9d:0x61aac866d0498188
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 4] ---
+review_id: 3833
+entity_slug: thomason-storage
+google_review_name: places/ChIJnf9SAkQFmogRiIFJ0GbIqmE/reviews/ChdDSUhNMG9nS0VJQ0FnSUM0LUphVGx3RRAB
+rating: 5
+author_name: Jim
+author_profile_url: https://www.google.com/maps/contrib/104382192387030091327/reviews
+publish_time: 2019-06-02T05:04:30.334562+00:00
+relative_time: 7 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUM0LUphVGx3RRAB!2m1!1s0x889a05440252ff9d:0x61aac866d0498188
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   6 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 6] ---
+id: 96a0a784-4c64-49f5-ac83-a95e4a4e18cb
+entity_slug: thomason-storage
+day_of_week: 1
+opens_at: 09:00:00
+closes_at: 16:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 6] ---
+id: 9c0abc96-356b-4f87-af05-c860b4315420
+entity_slug: thomason-storage
+day_of_week: 2
+opens_at: 09:00:00
+closes_at: 16:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 6] ---
+id: 4ed6a3e8-caee-455a-94c0-69c3fb14d92b
+entity_slug: thomason-storage
+day_of_week: 3
+opens_at: 09:00:00
+closes_at: 16:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 6] ---
+id: 03dda815-270f-4ff0-8355-9a4c82dd6661
+entity_slug: thomason-storage
+day_of_week: 4
+opens_at: 09:00:00
+closes_at: 16:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 6] ---
+id: 859ef220-b3a3-4e69-8055-92242d63cbbc
+entity_slug: thomason-storage
+day_of_week: 5
+opens_at: 09:00:00
+closes_at: 16:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 6] ---
+id: 85773f20-fc4b-4b04-bd71-e15808282101
+entity_slug: thomason-storage
+day_of_week: 6
+opens_at: 09:00:00
+closes_at: 16:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: thomason-storage
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 9e243790-7926-45c4-b164-a9a5d6b8586e
+name: Thomason Storage
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/thomason-storage/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/thomason-storage/photo_02.jpg",
+    "/photos/thomason-storage/photo_01.jpg",
+    "/photos/thomason-storage/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: thomason-storage
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 9e243790-7926-45c4-b164-a9a5d6b8586e
+name: Thomason Storage
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/thomason-storage/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/thomason-storage/photo_02.jpg",
+    "/photos/thomason-storage/photo_01.jpg",
+    "/photos/thomason-storage/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: bf2311f0-14d5-42e3-9762-22af3cdb7906
+entity_slug: thomason-storage
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: ca101ea0-7550-4b25-940b-06c5b7b6ab90
+entity_slug: thomason-storage
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: 46a85cfe-e95c-4cb0-9d62-6317cde89628
+entity_slug: thomason-storage
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: 6954512a-06e2-43b8-a9c9-fe1bfd2d9945
+entity_slug: thomason-storage
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: 546a22a0-e291-49f1-85c0-3a7bfa88acb6
+entity_slug: thomason-storage
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: 295b8bf8-52f3-4cb6-a73e-149944821a74
+entity_slug: thomason-storage
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: bace8c97-6f20-4e79-a6c6-636dc66c2643
+entity_slug: thomason-storage
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: d995a023-3793-4eee-a2c6-cc2291f62a35
+entity_slug: thomason-storage
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: e7f18f39-d5b3-401c-b760-495e43c507f8
+entity_slug: thomason-storage
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: 2773e16a-b9dd-4b3a-bc59-f5ab046c25d0
+entity_slug: thomason-storage
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: c46f01d8-24f3-439b-a406-9eb4e2e2d94a
+entity_slug: thomason-storage
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: 91972d40-8e2b-4b84-874c-b444c00cdddb
+entity_slug: thomason-storage
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: 6b0fd883-83d4-4d86-9421-8d7757fdfe0f
+entity_slug: thomason-storage
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   27 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 27] ---
+id: 3d8118eb-664e-457d-ad4f-d5e2dedd52bd
+landmark_id: cecf966a-4cfa-4135-80f5-6ed6d1709cc0
+entity_slug: thomason-storage
+landmark_type: bar
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 27] ---
+id: f37d3e21-bd25-4bc2-9353-42e91bf03dd8
+landmark_id: 8cef071c-1360-45bb-b610-eac77f73ea69
+entity_slug: thomason-storage
+landmark_type: bakery
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 27] ---
+id: da990815-1113-4691-ac84-f4adbec8e4b9
+landmark_id: 8cef071c-1360-45bb-b610-eac77f73ea69
+entity_slug: thomason-storage
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 27] ---
+id: 134d5b55-895c-43a8-9e50-dae3727d92d2
+landmark_id: 8cef071c-1360-45bb-b610-eac77f73ea69
+entity_slug: thomason-storage
+landmark_type: florist
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 27] ---
+id: 4d2d2bb0-4922-489b-98da-a2064abf39db
+landmark_id: 8cef071c-1360-45bb-b610-eac77f73ea69
+entity_slug: thomason-storage
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 27] ---
+id: 1f75b09a-9ffb-448e-b623-990f190d995c
+landmark_id: 8cef071c-1360-45bb-b610-eac77f73ea69
+entity_slug: thomason-storage
+landmark_type: grocery_or_supermarket
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 27] ---
+id: 3c038316-76bb-435b-b104-3b071cfc25e3
+landmark_id: 8cef071c-1360-45bb-b610-eac77f73ea69
+entity_slug: thomason-storage
+landmark_type: liquor_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 27] ---
+id: 4d5bb590-fd95-4a69-86bc-69d8d0baff53
+landmark_id: 8cef071c-1360-45bb-b610-eac77f73ea69
+entity_slug: thomason-storage
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 27] ---
+id: 200aa28a-a6e1-49d7-b9b6-b917d0ea7410
+landmark_id: 8cef071c-1360-45bb-b610-eac77f73ea69
+entity_slug: thomason-storage
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 27] ---
+id: 7e8b46f6-38b9-4a30-8c7f-31c81bb8b888
+landmark_id: 8cef071c-1360-45bb-b610-eac77f73ea69
+entity_slug: thomason-storage
+landmark_type: supermarket
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 27] ---
+id: 21f01a5e-2d70-48ac-81c7-48fcaee33439
+landmark_id: 41d47c17-67bb-442e-aaaf-626816b76301
+entity_slug: thomason-storage
+landmark_type: cafe
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 27] ---
+id: ba20409a-2ced-4fb3-808a-2888b8d0333d
+landmark_id: 41d47c17-67bb-442e-aaaf-626816b76301
+entity_slug: thomason-storage
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 27] ---
+id: 1830a34d-9a9b-423c-9a73-6e101f9b718a
+landmark_id: 41d47c17-67bb-442e-aaaf-626816b76301
+entity_slug: thomason-storage
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 27] ---
+id: 46244d6b-a5cf-4ccd-b68e-6593acdfa7e5
+landmark_id: 41d47c17-67bb-442e-aaaf-626816b76301
+entity_slug: thomason-storage
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 27] ---
+id: 7e3e4e99-f552-4bbb-ae5c-47a96740e1a8
+landmark_id: 41d47c17-67bb-442e-aaaf-626816b76301
+entity_slug: thomason-storage
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 27] ---
+id: d7e47fc1-a74d-40fe-b961-a5155c9cfece
+landmark_id: 7ef82d82-17d2-4a59-b6bc-ec569bc26796
+entity_slug: thomason-storage
+landmark_type: car_repair
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 27] ---
+id: d7db8690-72a6-46a2-a371-d571e4cdac15
+landmark_id: 7ef82d82-17d2-4a59-b6bc-ec569bc26796
+entity_slug: thomason-storage
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 27] ---
+id: 1b7ee7a3-c663-4ce9-afb4-978730c9869a
+landmark_id: 7ef82d82-17d2-4a59-b6bc-ec569bc26796
+entity_slug: thomason-storage
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 19 of 27] ---
+id: 98363503-1998-4fe3-b84b-f842e128be9e
+landmark_id: 7ef82d82-17d2-4a59-b6bc-ec569bc26796
+entity_slug: thomason-storage
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 20 of 27] ---
+id: 3da2f71c-b64d-4f73-8aca-8d08458d0e69
+landmark_id: cecf966a-4cfa-4135-80f5-6ed6d1709cc0
+entity_slug: thomason-storage
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 21 of 27] ---
+id: da95d7b1-21de-4e03-a944-6745a43a7df8
+landmark_id: cecf966a-4cfa-4135-80f5-6ed6d1709cc0
+entity_slug: thomason-storage
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 22 of 27] ---
+id: 53505455-255d-4a05-ace9-9df929804e76
+landmark_id: cecf966a-4cfa-4135-80f5-6ed6d1709cc0
+entity_slug: thomason-storage
+landmark_type: meal_takeaway
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 23 of 27] ---
+id: 71671271-1575-4122-81e1-3b4c235e7b91
+landmark_id: cecf966a-4cfa-4135-80f5-6ed6d1709cc0
+entity_slug: thomason-storage
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 24 of 27] ---
+id: 563e3946-cdd6-4dff-870a-83d140fc3e36
+landmark_id: cecf966a-4cfa-4135-80f5-6ed6d1709cc0
+entity_slug: thomason-storage
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 25 of 27] ---
+id: bcd0bb5e-2238-4e26-8956-9163a4a63d9a
+landmark_id: 9378f2a6-c206-443d-8361-4c45d4aeb850
+entity_slug: thomason-storage
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 26 of 27] ---
+id: fed00e12-74bc-4fdb-a846-69fa1284fe65
+landmark_id: 9378f2a6-c206-443d-8361-4c45d4aeb850
+entity_slug: thomason-storage
+landmark_type: lodging
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 27 of 27] ---
+id: 2453bf28-aaae-4b3b-a7bf-f271d25ee0ca
+landmark_id: 9378f2a6-c206-443d-8361-4c45d4aeb850
+entity_slug: thomason-storage
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   5 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 5] ---
+id: 8cef071c-1360-45bb-b610-eac77f73ea69
+entity_slug: thomason-storage
+kind: landmark
+place_id: ChIJlXxkcgsFmogRDvfiVJMfXjk
+name: Publix Super Market at Colonial Promenade at Craft Farms
+types: [
+  "bakery",
+  "establishment",
+  "florist",
+  "food",
+  "grocery_or_supermarket",
+  "liquor_store",
+  "point_of_interest",
+  "store",
+  "supermarket"
+]
+travel_distance_meters: 436.058
+straight_line_distance_meters: 360.58878
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 5] ---
+id: 41d47c17-67bb-442e-aaaf-626816b76301
+entity_slug: thomason-storage
+kind: landmark
+place_id: ChIJq2pF1EYFmogRPR1AekAmMQE
+name: Starbucks Coffee Company
+types: [
+  "cafe",
+  "establishment",
+  "food",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 263.07562
+straight_line_distance_meters: 214.60495
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 5] ---
+id: 7ef82d82-17d2-4a59-b6bc-ec569bc26796
+entity_slug: thomason-storage
+kind: landmark
+place_id: ChIJf9zXqUYFmogRgQVBcQTqZ2k
+name: Riviera Tire & Automotive
+types: [
+  "car_repair",
+  "establishment",
+  "point_of_interest",
+  "store"
+]
+spatial_relationship: AROUND_THE_CORNER
+travel_distance_meters: 22.98367
+straight_line_distance_meters: 49.69902
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 5] ---
+id: cecf966a-4cfa-4135-80f5-6ed6d1709cc0
+entity_slug: thomason-storage
+kind: landmark
+place_id: ChIJGcIpAUQFmogRA6s7Y2EfNfE
+name: LongHorn Steakhouse
+types: [
+  "bar",
+  "establishment",
+  "food",
+  "meal_takeaway",
+  "point_of_interest",
+  "restaurant"
+]
+travel_distance_meters: 272.14938
+straight_line_distance_meters: 233.53786
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 5] ---
+id: 9378f2a6-c206-443d-8361-4c45d4aeb850
+entity_slug: thomason-storage
+kind: landmark
+place_id: ChIJOdJUrEYFmogR34Tr6uUZbo0
+name: Courtyard by Marriott Gulf Shores Craft Farms
+types: [
+  "establishment",
+  "lodging",
+  "point_of_interest"
+]
+travel_distance_meters: 326.5141
+straight_line_distance_meters: 259.9641
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 14170
+entity_slug: thomason-storage
+name: Thomason Storage
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 9e243790-7926-45c4-b164-a9a5d6b8586e
+
+####################################################################################################
+# TABLE: entity_photos   -   6 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 6] ---
+id: 0f5f7d84-9227-4464-83cb-884a0db0a471
+entity_slug: thomason-storage
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/thomason-storage/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 6] ---
+id: 1788a56f-3f1b-4457-aa7e-3d58b85f2dbf
+entity_slug: thomason-storage
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/thomason-storage/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 6] ---
+id: a3635736-7e09-4fa3-80d9-726c9b5bcb77
+entity_slug: thomason-storage
+url: https://places.googleapis.com/v1/places/ChIJnf9SAkQFmogRiIFJ0GbIqmE/photos/Ab43m-ufvIv3s28ZwNVL0-AvAkQ3SE0tmZtGizIyNA5UPwvsKkmFh8Wjv5TK216VIe_shDzuwYCgWqw7pg4hNQlp4jDx2QxOSVnT_qOPJ-d80YGamef5_TqPGwhiFl1-sjgbGNWR4fTXeBwghQ630_hJ1y8u1Cq8Fe4odF2PItV07SdR0RYI5N4i8GfvjaAgY0o9v61O11diYg3AsAhi09G3-lSryyuxllyJq2ujrLoPV6jS7Ympc6NCzc8ZfEtj2Xc3KYIxJCs6EDIEY4uTFqmHxv0zUbL26FLaaEpwtQPHWG-iCRtoWSnY6DKafe8e8p7jG6x_pehzKVtkymaZza5jIvfTZ-kFAURJKprNBa6j9QsaOGlWESJPEjBSolkIURK3YIeag2C_o6sGrI_MfItJsBKK3Y2sa9W_NbHcJbH5flSp5g/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJnf9SAkQFmogRiIFJ0GbIqmE/photos/Ab43m-ufvIv3s28ZwNVL0-AvAkQ3SE0tmZtGizIyNA5UPwvsKkmFh8Wjv5TK216VIe_shDzuwYCgWqw7pg4hNQlp4jDx2QxOSVnT_qOPJ-d80YGamef5_TqPGwhiFl1-sjgbGNWR4fTXeBwghQ630_hJ1y8u1Cq8Fe4odF2PItV07SdR0RYI5N4i8GfvjaAgY0o9v61O11diYg3AsAhi09G3-lSryyuxllyJq2ujrLoPV6jS7Ympc6NCzc8ZfEtj2Xc3KYIxJCs6EDIEY4uTFqmHxv0zUbL26FLaaEpwtQPHWG-iCRtoWSnY6DKafe8e8p7jG6x_pehzKVtkymaZza5jIvfTZ-kFAURJKprNBa6j9QsaOGlWESJPEjBSolkIURK3YIeag2C_o6sGrI_MfItJsBKK3Y2sa9W_NbHcJbH5flSp5g
+is_cover: false
+sort_order: 0
+caption: Thomason Storage
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC6tNzfVg!2e10!4m2!3m1!1s0x889a05440252ff9d:0x61aac866d0498188
+
+--- entity_photos [row 4 of 6] ---
+id: 4c6e8f1c-d646-4f49-adf2-dcea07bea4ac
+entity_slug: thomason-storage
+url: https://places.googleapis.com/v1/places/ChIJnf9SAkQFmogRiIFJ0GbIqmE/photos/Ab43m-txXJC3076mVCKHC7WivgtR-W0xP7253DGwsldu1NIQL7FUdLIAs5B4x6TUtKeiKEBfJjB7ali2Zvu5wNboGcKSSUFGGiA-nSTcbX21novx6_4Zqd49xdR0X_4chX5u6Sg6t62H2OKnUVo31IOebUzS8UJJ0QyUHQVHtK4IYdk6Ml_RikG2YnC0DPMuiT1MUAwXefjG_OlOyJ5F43dWjTtEQdB14Q3z6jJvz5blNMIptcsrji_Z0GVfntwErCYM5S950ZcKaM5xWZV_zDw0o13T_u4OeKWV5s55I_kqnG9N2ZdHfWpaAQIKQzWgA2_s2trLnQleZRQM9PBpVb2w8lktAFlit3oJ3RxUzvjOnHEzfVM1MUCVoPekYwohpfIDz0ART6moH_1EIOqrwaaGfdtGsQE_5F1rhgAVPl8tLCw0VSMF/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJnf9SAkQFmogRiIFJ0GbIqmE/photos/Ab43m-txXJC3076mVCKHC7WivgtR-W0xP7253DGwsldu1NIQL7FUdLIAs5B4x6TUtKeiKEBfJjB7ali2Zvu5wNboGcKSSUFGGiA-nSTcbX21novx6_4Zqd49xdR0X_4chX5u6Sg6t62H2OKnUVo31IOebUzS8UJJ0QyUHQVHtK4IYdk6Ml_RikG2YnC0DPMuiT1MUAwXefjG_OlOyJ5F43dWjTtEQdB14Q3z6jJvz5blNMIptcsrji_Z0GVfntwErCYM5S950ZcKaM5xWZV_zDw0o13T_u4OeKWV5s55I_kqnG9N2ZdHfWpaAQIKQzWgA2_s2trLnQleZRQM9PBpVb2w8lktAFlit3oJ3RxUzvjOnHEzfVM1MUCVoPekYwohpfIDz0ART6moH_1EIOqrwaaGfdtGsQE_5F1rhgAVPl8tLCw0VSMF
+is_cover: false
+sort_order: 1
+caption: Mike Van Sickler
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDX1dTZ_AE!2e10!4m2!3m1!1s0x889a05440252ff9d:0x61aac866d0498188
+
+--- entity_photos [row 5 of 6] ---
+id: 8626ad9b-7f78-441b-861e-5a1d6bd6ab64
+entity_slug: thomason-storage
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/thomason-storage/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 9e243790-7926-45c4-b164-a9a5d6b8586e
+
+--- entity_photos [row 6 of 6] ---
+id: b2cdb74b-9643-4027-9eb8-90e83de91195
+entity_slug: thomason-storage
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/thomason-storage/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: 9e243790-7926-45c4-b164-a9a5d6b8586e
+
+####################################################################################################
+# TABLE: entity_reviews   -   4 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 4] ---
+id: 71708ee5-5977-40a5-87e0-7ff79841fab8
+entity_slug: thomason-storage
+reviewer_name: Mike Van Sickler
+rating: 5
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2024-10-29T20:31:22.845844+00:00
+updated_at: 2026-07-19T15:18:39.834104+00:00
+
+--- entity_reviews [row 2 of 4] ---
+id: e5dced37-2aa7-4216-880a-30528415f4ae
+entity_slug: thomason-storage
+reviewer_name: Jim
+rating: 5
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2019-06-02T05:04:30.334562+00:00
+updated_at: 2026-07-19T15:18:39.834104+00:00
+
+--- entity_reviews [row 3 of 4] ---
+id: 3f75d617-7582-4da8-8cf4-bf8b1d43c99c
+entity_slug: thomason-storage
+reviewer_name: David Henderson
+rating: 5
+body: Billy Thomason s the most honest and generous man I have ever known.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2018-07-07T13:26:10.008+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 4] ---
+id: 927a1b73-0b3d-4a5c-8623-03abdd205c48
+entity_slug: thomason-storage
+reviewer_name: David Hensley
+rating: 5
+body: Best place in the business!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2020-02-25T19:36:27.063203+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   3 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 3] ---
+id: c77fcc99-e25e-4574-a6f4-fb746d04c606
+entity_slug: thomason-storage
+tag_name: storage
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 3] ---
+id: d7eba499-2ac9-4d62-bfcc-5642f048ebf3
+entity_slug: thomason-storage
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 3 of 3] ---
+id: 94c4f618-f247-431a-bad7-b3a9a192c151
+entity_slug: thomason-storage
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: f2c4e5b8-76a3-4bbf-a730-c11324b9f261
+entity_slug: thomason-storage
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_trade_home_service   -   1 row(s)
+####################################################################################################
+
+--- industry_trade_home_service [row 1 of 1] ---
+entity_slug: thomason-storage
+service_count: 0
+updated_at: 2026-07-20T03:17:43.35857+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: thomason-storage
+entity_slug: thomason-storage
+title: Thomason Storage
+category: storage
+search_vector: 'storag':2A,3B 'thomason':1A
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 14170
+entity_slug: thomason-storage
+title: Thomason Storage
+category: rental
+search_vector: 'storag':2A 'thomason':1A
+
+####################################################################################################
+# TABLE: service_menu   -   1 row(s)
+####################################################################################################
+
+--- service_menu [row 1 of 1] ---
+id: ff94c5bb-84ba-4cd1-99ba-5dec521f8b22
+entity_slug: thomason-storage
+name: Thomason Storage
+sort_order: 0
+
+####################################################################################################
+# TABLE: trade_home_services   -   1 row(s)
+####################################################################################################
+
+--- trade_home_services [row 1 of 1] ---
+id: 3d3bc1e3-9cd1-4392-91ef-94399e6e5a43
+entity_slug: thomason-storage
+name: Thomason Storage
+sort_order: 0
+is_active: true
+created_at: 2026-07-24T08:30:32.961268+00:00
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: thomason-storage

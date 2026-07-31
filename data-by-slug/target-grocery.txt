@@ -1,0 +1,744 @@
+====================================================================================================
+SLUG: target-grocery
+NAME: Target Grocery
+INDUSTRY: retail
+SUBTYPE: grocery_store
+TABLES WITH DATA: 14
+TOTAL ROWS: 43
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (5 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (5 rows)
+  entity  (1 rows)
+  entity_attributes  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_hours  (7 rows)
+  entity_modules  (10 rows)
+  entity_tags  (7 rows)
+  entity_theme  (1 rows)
+  industry_retail  (1 rows)
+  search_index  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: target-grocery
+name: Target Grocery
+planner_category: shopping
+data_quality_score: 90
+issues: missing_summary
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   5 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 5] ---
+id: 15867
+entity_slug: target-grocery
+intent_tag: best_for:shopping
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 5] ---
+id: 15868
+entity_slug: target-grocery
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 5] ---
+id: 15869
+entity_slug: target-grocery
+intent_tag: service:parking
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 5] ---
+id: 15870
+entity_slug: target-grocery
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 5] ---
+id: 15871
+entity_slug: target-grocery
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: target-grocery
+name: Target Grocery
+is_active: t
+planner_category: shopping
+entity_type: shopping
+entity_subtype: grocery_store
+city: Gulf Shores
+state: AL
+address_line_1: 3820 Gulf Shores Pkwy
+latitude: 30.3039831
+longitude: -87.6800148
+rating: 4.5
+review_count: 61
+website_url: https://www.target.com/sl/gulf-shores/2154/grocery?utm_source=OGS&utm_medium=groceryList&utm_id=2154
+hero_image_url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfWZyidSz1VCy1mg-6UBkiRLBbgO6Oy4kbQELU_i7BMyVL2p9OvvguRzsS_wdv9F-b2gk6sx2jZNBF8G-BIKBSxUEYZ0c8S910Ow-k3zaUIumS1zNfO_-toD8NAJArvCjlmxprCN9ezc9aC9-EKKaXXP1Hahaw6iMqCWuJEErxISfy_Am6WGwm5LrDRzfhNNKZZ2jeo_-z2TWe8Xul5u41_UYTwQQqgEuavWH-4QLwzY0-EPdlUjUcWG357UiQdigH3mITV-j-yjf7wvJr13Po_7QKSEPRmTGaLg9J0iPM4UYlQN8oGJE3_YV_VxUw1zC03azKn1OhO8lrV4DakVfzZjvxpUK_do3nhThAvzBUaGIXpVm4QGpM7q6Om4-zSwZ84hj2XA-84XUaxvdUKNLb3PZBCuKHyF3jXRTa28QbjgPg&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+voice_summary: Target Grocery in Gulf Shores is best for shopping.
+planner_summary: Target Grocery in Gulf Shores is a shopping listing in Gulf Coast Radar.
+best_for: shopping
+not_best_for: nothing specific flagged
+service_tags: accessibility|parking
+search_keywords: grocery_store|supermarket|food_store|store|food|point_of_interest|establishment|accessibility|parking
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 5
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 7
+faq_count: 0
+data_quality_score: 90
+data_gaps: missing_summary
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   5 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 5] ---
+id: 22111
+entity_slug: target-grocery
+entity_name: Target Grocery
+city: Gulf Shores
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfWZyidSz1VCy1mg-6UBkiRLBbgO6Oy4kbQELU_i7BMyVL2p9OvvguRzsS_wdv9F-b2gk6sx2jZNBF8G-BIKBSxUEYZ0c8S910Ow-k3zaUIumS1zNfO_-toD8NAJArvCjlmxprCN9ezc9aC9-EKKaXXP1Hahaw6iMqCWuJEErxISfy_Am6WGwm5LrDRzfhNNKZZ2jeo_-z2TWe8Xul5u41_UYTwQQqgEuavWH-4QLwzY0-EPdlUjUcWG357UiQdigH3mITV-j-yjf7wvJr13Po_7QKSEPRmTGaLg9J0iPM4UYlQN8oGJE3_YV_VxUw1zC03azKn1OhO8lrV4DakVfzZjvxpUK_do3nhThAvzBUaGIXpVm4QGpM7q6Om4-zSwZ84hj2XA-84XUaxvdUKNLb3PZBCuKHyF3jXRTa28QbjgPg&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 5] ---
+id: 22228
+entity_slug: target-grocery
+entity_name: Target Grocery
+city: Gulf Shores
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfWUoLehgwkR_C_S9kkNAKfjJj_XjV-njKEttn2R-Js-_QoUbyMwUA5YpeAg30Evzk-icmtOxPXuvYJA4_nMpvNXyagSYKbYi1EeK6r0QcCpZI4X6moMyBUsKBR0qWtesHNVIebTdQKrQyhaF3xrnd-wjnmviBaVY_qWtnhVoefABJPS-d8DHJu-22HCcJAEeaS9w_UPj8qad4ORo3TsUg20lFoCzBKnmeeylFgP8GarFpGOmeLEETZQpJ81yAgusnyPW9Aw6-3e-NXoKee-iLQdziCwZ712U7NpMp_tG4bSfA&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 5] ---
+id: 22229
+entity_slug: target-grocery
+entity_name: Target Grocery
+city: Gulf Shores
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfXH6B6ZmKEfVO7vAtY-D5vY6FJcDZQvOpJwbbX1P2G04ozsBJ_FBfN64gEJtuFa0CR66DYSfI_FI7l2tuS7rxtuTCCXWHLcFD3OE0Lli6gid_5CEMpDFAywOuHc9zuhOfcc8zho7hSxr2Fa8kLFyxZKH7kgQNYltYnduubXRJpQML_lXVUDXHfpGcNFHkjm_51KD1iwKYT4wxSOmVkyBvu0TbTG_z5ZNFyyhahMexMKo25iTio7hlsjTaoXUthGAUzfpDLDWbty4_qgStGeErVDN8LhDZEKUPuqnWP6ToIz4CmtzmHGZ_-mG4wIJ947iZzxoPM1N5UyJp6Qm2wjOIcwYlOUEdoL8gW4Jwqd4E4R1pDJl0wMx9pQ-sBxSeXeckkXFkZSmzw94Mh-Zq-4Ku2W4XBoPgV8HWEzHAJrFd3lCdE&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 5] ---
+id: 22230
+entity_slug: target-grocery
+entity_name: Target Grocery
+city: Gulf Shores
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfWHTxB72MOG064cVDnqbYUULJbogN0HfzG6nZZXRBzW7sjI1d5zNHeDPMsrcANTWUrZPhRXwlR3HxmzHwSfk7GsjYYIBYW_H7ww_gAj1sBrjFZV8GzZJhmqu_JQBbAGFt3cXibQJtiqQ6Npy7CZton9Dz0SlbMTOz-hktnh9UHQ_b2UI2281oRNGNb5TeOAf4MG0XCiKbKieS9U12-dYORyxCz6G-QjeI1X2eBZ_r3Pft8WYEZMaQZs0sHriW4BPwHc3K9m34INooeGPDKIO1M2NwR2SqvdWqehakCvoPWVrkGJkSoXzRtSmtZVBmdnP06Q-xlHegJ6GUGNabMLzmTUwEAwtQROjgJYgOBT2_XQ_oilZmc9WXPhHhFLhbr0MCF6lWu6Y2YWKMlXWZJ0ZHyzTDJRSCp18MDlBT62SwxHsHA3&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 5] ---
+id: 22231
+entity_slug: target-grocery
+entity_name: Target Grocery
+city: Gulf Shores
+url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfWWAK-cDK-HZQjQEw9fDwJodpvPNqJLhEQXP-rAJ7E_ySwZW_DEXl5cayr96XQb8Ur2C2oaR4HRu57WKecgomv38XXc0Ts5YdA0SwqJJ320bMtO6TRelfxENaHKgBry0mThryk6nyu9AQHqrFM9qnb-kOD5eGJvOp_rQDg5vn6OW0blsfhdqoTTCOJWkFpb9rNX3r0d3Ao5V4xrTWdvGXZP6I0NCHupnTCQxUy4BWaR4DQofYyBAK2mxKvFxr1PW0Q9qz4WsDfMxdQXImfsmrMF9LLmZh2QD8aNzVqkipnsN_DIWI331I1Xgni15FOLVxbHNW9NT1YpyvT6e1txuJQxZ3ri64IdITk96F8wapPY4hdvfJuz3OL1zBQXJTHFiTYBEhM7GH1lW_w1lj6N8Ps8PIkM0QgjmjP5Z9tAKnMLOQ&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 18105207-2915-4920-88e0-8a931852506b
+slug: target-grocery
+name: Target Grocery
+is_active: true
+featured: false
+entity_type: shopping
+entity_subtype: grocery_store
+phone: (251) 967-7001
+website_url: https://www.target.com/sl/gulf-shores/2154/grocery?utm_source=OGS&utm_medium=groceryList&utm_id=2154
+menu_pin: 9512
+address_line_1: 3820 Gulf Shores Pkwy
+city: Gulf Shores
+state: AL
+zip: 36542
+latitude: 30.3039831
+longitude: -87.6800148
+rating: 4.5
+review_count: 61
+hero_image_url: https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=ATCDNfWZyidSz1VCy1mg-6UBkiRLBbgO6Oy4kbQELU_i7BMyVL2p9OvvguRzsS_wdv9F-b2gk6sx2jZNBF8G-BIKBSxUEYZ0c8S910Ow-k3zaUIumS1zNfO_-toD8NAJArvCjlmxprCN9ezc9aC9-EKKaXXP1Hahaw6iMqCWuJEErxISfy_Am6WGwm5LrDRzfhNNKZZ2jeo_-z2TWe8Xul5u41_UYTwQQqgEuavWH-4QLwzY0-EPdlUjUcWG357UiQdigH3mITV-j-yjf7wvJr13Po_7QKSEPRmTGaLg9J0iPM4UYlQN8oGJE3_YV_VxUw1zC03azKn1OhO8lrV4DakVfzZjvxpUK_do3nhThAvzBUaGIXpVm4QGpM7q6Om4-zSwZ84hj2XA-84XUaxvdUKNLb3PZBCuKHyF3jXRTa28QbjgPg&key=AIzaSyCckxbsKP9mQmQMWkRv6UUdLVaGTrHFxMo
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T04:02:30.925451+00:00
+updated_at: 2026-06-03T04:02:30.925451+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJrebi2eoFmogRMGOw6sLgiaU
+google_maps_uri: https://maps.google.com/?cid=11928312215833174832&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA
+business_status: OPERATIONAL
+primary_type: grocery_store
+formatted_address: 3820 Gulf Shores Pkwy, Gulf Shores, AL 36542, USA
+plus_code: 862J8839+HX
+international_phone: +1 251-967-7001
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+wheelchair_accessible_restroom: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+accepts_nfc: true
+parking_type: free
+google_places_data: {
+  "name": "Target Grocery",
+  "phone": "(251) 967-7001",
+  "types": [
+    "grocery_store",
+    "supermarket",
+    "food_store",
+    "store",
+    "food",
+    "point_of_interest",
+    "establishment"
+  ],
+  "rating": 4.5,
+  "parking": {
+    "freeParkingLot": true
+  },
+  "payment": {
+    "acceptsNfc": true,
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "website": "https://www.target.com/sl/gulf-shores/2154/grocery?utm_source=OGS&utm_medium=groceryList&utm_id=2154",
+  "delivery": true,
+  "place_id": "ChIJrebi2eoFmogRMGOw6sLgiaU",
+  "plus_code": {
+    "globalCode": "862J8839+HX",
+    "compoundCode": "8839+HX Gulf Shores, AL, USA"
+  },
+  "_query_used": "Target Grocery 3820 Gulf Shores Pkwy, Gulf Shores, AL 36542, USA",
+  "coordinates": {
+    "latitude": 30.3039831,
+    "longitude": -87.6800148
+  },
+  "_enriched_at": "2026-05-17T18:47:52.192Z",
+  "primary_type": "grocery_store",
+  "review_count": 61,
+  "accessibility": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true,
+    "wheelchairAccessibleRestroom": true
+  },
+  "regular_hours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 22,
+          "minute": 0
+        }
+      }
+    ],
+    "nextCloseTime": "2026-05-18T02:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 8:00 AM – 10:00 PM",
+      "Tuesday: 8:00 AM – 10:00 PM",
+      "Wednesday: 8:00 AM – 10:00 PM",
+      "Thursday: 8:00 AM – 10:00 PM",
+      "Friday: 8:00 AM – 10:00 PM",
+      "Saturday: 8:00 AM – 10:00 PM",
+      "Sunday: 8:00 AM – 9:00 PM"
+    ]
+  },
+  "short_address": "3820 Gulf Shores Pkwy, Gulf Shores",
+  "business_status": "OPERATIONAL",
+  "google_maps_uri": "https://maps.google.com/?cid=11928312215833174832&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+  "formatted_address": "3820 Gulf Shores Pkwy, Gulf Shores, AL 36542, USA",
+  "address_components": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "3820",
+      "shortText": "3820",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Gulf Shores Parkway",
+      "shortText": "Gulf Shores Pkwy",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Gulf Shores",
+      "shortText": "Gulf Shores",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36542",
+      "shortText": "36542",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code_suffix"
+      ],
+      "longText": "2819",
+      "shortText": "2819",
+      "languageCode": "en"
+    }
+  ],
+  "international_phone": "+1 251-967-7001",
+  "primary_type_display": "Grocery store"
+}
+search_vector: 'groceri':2A,3 'gulf':5 'shore':6 'store':4 'target':1A
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: generic
+industry_code: retail
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_attributes   -   1 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 1] ---
+id: d8e75847-2691-47d6-849c-dd13cb699f3f
+entity_slug: target-grocery
+category: service
+key: delivery
+label: Delivery
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: target-grocery
+name: Target Grocery
+industry_code: retail
+is_parent: false
+score_of_7: 4
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 0e421a41-2c89-48b2-8257-d17d080ec657
+entity_slug: target-grocery
+day_of_week: 0
+opens_at: 08:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 3545ecb0-666a-4d6b-a318-e7784f570cdc
+entity_slug: target-grocery
+day_of_week: 1
+opens_at: 08:00:00
+closes_at: 22:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 4f794ee7-ac69-4001-837a-bfd65acbb533
+entity_slug: target-grocery
+day_of_week: 2
+opens_at: 08:00:00
+closes_at: 22:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 6dbb8bfd-d0cd-4dc5-b185-55fb551682d3
+entity_slug: target-grocery
+day_of_week: 3
+opens_at: 08:00:00
+closes_at: 22:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 739581ce-ece7-4f91-8568-0945e19fa5c6
+entity_slug: target-grocery
+day_of_week: 4
+opens_at: 08:00:00
+closes_at: 22:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 5d7c2aea-ce7a-4b2b-b3cf-b47c5a1bc3e2
+entity_slug: target-grocery
+day_of_week: 5
+opens_at: 08:00:00
+closes_at: 22:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: a3a6cfb9-edb9-4b15-9a74-c2ebb8ecd7aa
+entity_slug: target-grocery
+day_of_week: 6
+opens_at: 08:00:00
+closes_at: 22:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_modules   -   10 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 10] ---
+id: 962d2560-2ec1-4714-a2e2-6c73fa8ed2f0
+entity_slug: target-grocery
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 10] ---
+id: 56cc34c7-a399-48c2-9ad7-af11d62d75ff
+entity_slug: target-grocery
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 10] ---
+id: 5cd9bcb4-f854-4695-9461-c8d65e743338
+entity_slug: target-grocery
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 10] ---
+id: d5a53938-c3ac-4a6a-b906-e408a7f0a73b
+entity_slug: target-grocery
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 10] ---
+id: afa2d589-8e71-4d62-ae23-aac4962496ba
+entity_slug: target-grocery
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 10] ---
+id: 17b0c9f5-c7f5-4610-b5a9-9facad07e64e
+entity_slug: target-grocery
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 10] ---
+id: d4915df4-f398-4bb9-ba86-3c7af177d647
+entity_slug: target-grocery
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 10] ---
+id: d247300b-f195-413b-9d80-fa73153e7524
+entity_slug: target-grocery
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 10] ---
+id: 4043c37a-046d-4156-bc00-4f041b2cf1d8
+entity_slug: target-grocery
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 10] ---
+id: 80ee46c0-4f4e-4218-82d5-2ec957bec424
+entity_slug: target-grocery
+module_key: shop
+enabled: true
+sort_order: 10
+
+####################################################################################################
+# TABLE: entity_tags   -   7 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 7] ---
+id: 03ab05b9-6218-4ba3-8f74-fe3371efce36
+entity_slug: target-grocery
+tag_name: grocery_store
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 7] ---
+id: cd406cc0-7a32-4b8b-a270-487ca32a218a
+entity_slug: target-grocery
+tag_name: supermarket
+tag_category: google_type
+
+--- entity_tags [row 3 of 7] ---
+id: a311b1b4-9647-450c-957f-b1b434da34f4
+entity_slug: target-grocery
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 4 of 7] ---
+id: 27787918-e4a5-4d38-8b2a-aa7b5a0a054f
+entity_slug: target-grocery
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 5 of 7] ---
+id: fd7d3d20-01f6-4f47-8be3-ad5942f4c53e
+entity_slug: target-grocery
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 6 of 7] ---
+id: 6889c3f4-77d1-4255-bc4c-a0ac19ae8b9f
+entity_slug: target-grocery
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 7 of 7] ---
+id: 0f81e839-020a-47e5-a118-4624eecebf5d
+entity_slug: target-grocery
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 0d862141-287e-40d5-9eef-5503bdc9263d
+entity_slug: target-grocery
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_retail   -   1 row(s)
+####################################################################################################
+
+--- industry_retail [row 1 of 1] ---
+entity_slug: target-grocery
+product_count: 0
+delivery: false
+updated_at: 2026-07-20T03:17:43.35857+00:00
+
+####################################################################################################
+# TABLE: search_index   -   1 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 1] ---
+ref_type: business
+ref_id: target-grocery
+entity_slug: target-grocery
+title: Target Grocery
+category: grocery_store
+search_vector: 'groceri':2A,3B 'store':4B 'target':1A
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: target-grocery

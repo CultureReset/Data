@@ -1,0 +1,933 @@
+====================================================================================================
+SLUG: bodenhamer-center
+NAME: Bodenhamer Center
+INDUSTRY: fitness_sports
+SUBTYPE: gym
+TABLES WITH DATA: 15
+TOTAL ROWS: 56
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (7 rows)
+  ai_entity_profiles_full  (1 rows)
+  entity  (1 rows)
+  entity_attributes  (5 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_modules  (14 rows)
+  entity_nearby_landmark_types  (12 rows)
+  entity_nearby_landmarks  (4 rows)
+  entity_tags  (5 rows)
+  entity_theme  (1 rows)
+  industry_fitness_sports  (1 rows)
+  search_index  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: bodenhamer-center
+name: Bodenhamer Center
+planner_category: things_to_do
+data_quality_score: 65
+issues: missing_summary|missing_photos|missing_hours|missing_contact_or_website
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: true
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   7 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 7] ---
+id: 1402
+entity_slug: bodenhamer-center
+intent_tag: best_for:things_to_do
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 7] ---
+id: 1403
+entity_slug: bodenhamer-center
+intent_tag: experience:sports_bar
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 7] ---
+id: 1404
+entity_slug: bodenhamer-center
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 7] ---
+id: 1405
+entity_slug: bodenhamer-center
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 7] ---
+id: 1406
+entity_slug: bodenhamer-center
+intent_tag: missing:missing_photos
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 7] ---
+id: 1407
+entity_slug: bodenhamer-center
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 7] ---
+id: 1408
+entity_slug: bodenhamer-center
+intent_tag: missing:missing_contact_or_website
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: bodenhamer-center
+name: Bodenhamer Center
+is_active: t
+planner_category: things_to_do
+entity_type: activity
+entity_subtype: gym
+city: Gulf Shores
+state: AL
+address_line_1: 19470 Oak Rd W
+latitude: 30.3105276
+longitude: -87.6922531
+review_count: 0
+voice_summary: Bodenhamer Center in Gulf Shores is best for things to do. Experience tags: sports_bar.
+planner_summary: Bodenhamer Center in Gulf Shores is a things to do listing in Gulf Coast Radar.
+best_for: things to do
+not_best_for: quiet low-energy meal
+experience_tags: sports_bar
+service_tags: accessibility
+search_keywords: gym|sports_activity_location|health|point_of_interest|establishment|sports_bar|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: false
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 0
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 5
+faq_count: 0
+data_quality_score: 65
+data_gaps: missing_summary|missing_photos|missing_hours|missing_contact_or_website
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: e40533e3-1d1f-4a1d-a3e2-922bbddf3dd8
+slug: bodenhamer-center
+name: Bodenhamer Center
+is_active: true
+featured: false
+entity_type: activity
+entity_subtype: gym
+description: Gym in Gulf Shores, AL.
+menu_pin: 6013
+address_line_1: 19470 Oak Rd W
+city: Gulf Shores
+state: AL
+zip: 36542
+latitude: 30.3105276
+longitude: -87.6922531
+review_count: 0
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-06T06:21:59.752535+00:00
+updated_at: 2026-07-03T16:21:47.586927+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJ3WjWJQAFmogR4mz3VDM_cA4
+google_maps_uri: https://maps.google.com/?cid=1040401003623967970&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: gym
+formatted_address: 19470 Oak Rd W, Gulf Shores, AL 36542, USA
+plus_code: 862J8865+63
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+wheelchair_accessible_restroom: true
+accepts_cash_only: false
+google_places_data: {
+  "id": "ChIJ3WjWJQAFmogR4mz3VDM_cA4",
+  "types": [
+    "gym",
+    "sports_activity_location",
+    "point_of_interest",
+    "health",
+    "establishment"
+  ],
+  "location": {
+    "latitude": 30.3105276,
+    "longitude": -87.6922531
+  },
+  "plusCode": {
+    "globalCode": "862J8865+63",
+    "compoundCode": "8865+63 Gulf Shores, AL, USA"
+  },
+  "restroom": true,
+  "viewport": {
+    "low": {
+      "latitude": 30.309269919708505,
+      "longitude": -87.69343603029151
+    },
+    "high": {
+      "latitude": 30.311967880291505,
+      "longitude": -87.69073806970849
+    }
+  },
+  "displayName": {
+    "text": "Bodenhamer Center",
+    "languageCode": "en"
+  },
+  "primaryType": "gym",
+  "googleMapsUri": "https://maps.google.com/?cid=1040401003623967970&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "paymentOptions": {
+    "acceptsCashOnly": false
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=1040401003623967970&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a050025d668dd:0xe703f3354f76ce2!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a050025d668dd:0xe703f3354f76ce2!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a050025d668dd:0xe703f3354f76ce2!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a050025d668dd:0xe703f3354f76ce2!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "adrFormatAddress": "<span class=\"street-address\">19470 Oak Rd W</span>, <span class=\"locality\">Gulf Shores</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36542-5607</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "19470 Oak Rd W, Gulf Shores, AL 36542, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "19470",
+      "shortText": "19470",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Oak Road West",
+      "shortText": "Oak Rd W",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Gulf Shores",
+      "shortText": "Gulf Shores",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36542",
+      "shortText": "36542",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "postal_code_suffix"
+      ],
+      "longText": "5607",
+      "shortText": "5607",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "landmarks": [
+      {
+        "name": "places/ChIJ4bga_VEFmogRP94On_H5Tu4",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "school",
+          "university"
+        ],
+        "placeId": "ChIJ4bga_VEFmogRP94On_H5Tu4",
+        "displayName": {
+          "text": "The University of South Alabama Gulf Coast Campus",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "BESIDE",
+        "travelDistanceMeters": 1.9557266,
+        "straightLineDistanceMeters": 30.618301
+      },
+      {
+        "name": "places/ChIJz31kBk4FmogRGoMXLuGyC3g",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJz31kBk4FmogRGoMXLuGyC3g",
+        "displayName": {
+          "text": "Gulf Shores Cultural Center",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 108.567215,
+        "straightLineDistanceMeters": 69.62177
+      },
+      {
+        "name": "places/ChIJ32Sm11EFmogRgWvgxF8rlb4",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "real_estate_agency"
+        ],
+        "placeId": "ChIJ32Sm11EFmogRgWvgxF8rlb4",
+        "displayName": {
+          "text": "Jasmine Trails",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 319.6161,
+        "straightLineDistanceMeters": 313.24905
+      },
+      {
+        "name": "places/ChIJf2unqjIFmogRcBf_kzKTNa4",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "real_estate_agency"
+        ],
+        "placeId": "ChIJf2unqjIFmogRcBf_kzKTNa4",
+        "displayName": {
+          "text": "Allier Gulf Shores",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 427.43222,
+        "straightLineDistanceMeters": 334.84293
+      }
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Gym",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true,
+    "wheelchairAccessibleRestroom": true
+  },
+  "shortFormattedAddress": "19470 Oak Rd W, Gulf Shores",
+  "primaryTypeDisplayName": {
+    "text": "Gym",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false
+}
+restroom: true
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 19470 Oak Rd W, Gulf Shores
+search_vector: 'bodenham':1A 'center':2A 'gulf':4 'gym':3 'shore':5
+primary_type_display: Gym
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=1040401003623967970&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a050025d668dd:0xe703f3354f76ce2!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a050025d668dd:0xe703f3354f76ce2!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a050025d668dd:0xe703f3354f76ce2!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a050025d668dd:0xe703f3354f76ce2!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "landmarks": [
+    {
+      "name": "places/ChIJ4bga_VEFmogRP94On_H5Tu4",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "school",
+        "university"
+      ],
+      "placeId": "ChIJ4bga_VEFmogRP94On_H5Tu4",
+      "displayName": {
+        "text": "The University of South Alabama Gulf Coast Campus",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "BESIDE",
+      "travelDistanceMeters": 1.9557266,
+      "straightLineDistanceMeters": 30.618301
+    },
+    {
+      "name": "places/ChIJz31kBk4FmogRGoMXLuGyC3g",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJz31kBk4FmogRGoMXLuGyC3g",
+      "displayName": {
+        "text": "Gulf Shores Cultural Center",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 108.567215,
+      "straightLineDistanceMeters": 69.62177
+    },
+    {
+      "name": "places/ChIJ32Sm11EFmogRgWvgxF8rlb4",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "real_estate_agency"
+      ],
+      "placeId": "ChIJ32Sm11EFmogRgWvgxF8rlb4",
+      "displayName": {
+        "text": "Jasmine Trails",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 319.6161,
+      "straightLineDistanceMeters": 313.24905
+    },
+    {
+      "name": "places/ChIJf2unqjIFmogRcBf_kzKTNa4",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "real_estate_agency"
+      ],
+      "placeId": "ChIJf2unqjIFmogRcBf_kzKTNa4",
+      "displayName": {
+        "text": "Allier Gulf Shores",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 427.43222,
+      "straightLineDistanceMeters": 334.84293
+    }
+  ]
+}
+internal_notes:  | NO WORKING PHOTO 2026-07-21: hero and all entity_photos point to missing storage files - needs real re-upload
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: fitness_sports
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_attributes   -   5 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 5] ---
+id: 43376ba9-735c-4f8e-8e9b-b4beee967fba
+entity_slug: bodenhamer-center
+category: amenity
+key: restroom
+label: Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 2 of 5] ---
+id: 1d9b1918-7017-4ff4-bc50-e0b6a26c4a24
+entity_slug: bodenhamer-center
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 3 of 5] ---
+id: 786f1f1f-ccd1-4d1d-89d3-ab89bf9e02e6
+entity_slug: bodenhamer-center
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 4 of 5] ---
+id: 829431de-7182-4e79-8f35-bdf2cd71a587
+entity_slug: bodenhamer-center
+category: accessibility
+key: access_wheelchairAccessibleRestroom
+label: Wheelchair Accessible Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 5 of 5] ---
+id: b31dcfc3-69ef-49df-8f70-9a2c27c2dcec
+entity_slug: bodenhamer-center
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: bodenhamer-center
+name: Bodenhamer Center
+industry_code: fitness_sports
+is_parent: false
+score_of_7: 2
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 8bed40e6-a31a-43b7-b90c-537326a594a5
+entity_slug: bodenhamer-center
+place_uri: https://maps.google.com/?cid=1040401003623967970&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a050025d668dd:0xe703f3354f76ce2!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a050025d668dd:0xe703f3354f76ce2!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a050025d668dd:0xe703f3354f76ce2!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a050025d668dd:0xe703f3354f76ce2!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_modules   -   14 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 14] ---
+id: 46a5762b-f3a3-4d7a-9d12-a012801d04be
+entity_slug: bodenhamer-center
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 14] ---
+id: 3457ee14-fc55-4057-9292-458d6c54eb3a
+entity_slug: bodenhamer-center
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 14] ---
+id: 1f884ad3-ffe4-4d12-92f8-66e7b50aebef
+entity_slug: bodenhamer-center
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 14] ---
+id: 3ef66fa6-dcae-49f5-a6b8-2a66a306bde6
+entity_slug: bodenhamer-center
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 14] ---
+id: ed05d866-358c-44f2-bff1-c4d0cc668cbb
+entity_slug: bodenhamer-center
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 14] ---
+id: c057c9cb-b914-41c9-9549-a6c08685e502
+entity_slug: bodenhamer-center
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 14] ---
+id: 9b9d43a9-3f11-4a67-83d4-63d9cf8c6402
+entity_slug: bodenhamer-center
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 14] ---
+id: 61d2b263-bcca-494e-925c-5f52238d2d06
+entity_slug: bodenhamer-center
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 14] ---
+id: 8450cd79-5d1e-4efd-8794-b379fcf6d53d
+entity_slug: bodenhamer-center
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 14] ---
+id: c7d69d61-dfea-41ae-8c53-d4a5387d9b86
+entity_slug: bodenhamer-center
+module_key: activity
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 14] ---
+id: 438ed243-05bc-45f3-b0b2-f13152996978
+entity_slug: bodenhamer-center
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 14] ---
+id: 27e4b781-ec7d-4122-84be-b5833c0243b0
+entity_slug: bodenhamer-center
+module_key: schedule
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 14] ---
+id: 77e32573-ed9f-494a-9631-adae83bf040a
+entity_slug: bodenhamer-center
+module_key: booking
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 14 of 14] ---
+id: f25f7ac7-6673-4232-89e2-6ef010ef0f49
+entity_slug: bodenhamer-center
+module_key: events
+enabled: true
+sort_order: 14
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   12 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 12] ---
+id: 33a9436b-a0b2-4272-8ced-dacfa7df2e0b
+landmark_id: 5508ada5-1b9d-41a3-b988-294bd275d74e
+entity_slug: bodenhamer-center
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 12] ---
+id: 6e31ac65-67b4-43f6-b354-1d34bd11bb6b
+landmark_id: 5508ada5-1b9d-41a3-b988-294bd275d74e
+entity_slug: bodenhamer-center
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 12] ---
+id: 4e3ebe52-19a4-4d72-808e-32d47af71ec2
+landmark_id: 5508ada5-1b9d-41a3-b988-294bd275d74e
+entity_slug: bodenhamer-center
+landmark_type: school
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 12] ---
+id: 98ca1e34-76eb-4c0a-ba31-de8daeabcda7
+landmark_id: 5508ada5-1b9d-41a3-b988-294bd275d74e
+entity_slug: bodenhamer-center
+landmark_type: university
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 12] ---
+id: 57e0a4fe-9451-4d03-a399-101184530183
+landmark_id: fbf6ebbf-70e3-4930-bbf8-f271ac57eece
+entity_slug: bodenhamer-center
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 12] ---
+id: c285c163-4cbd-4a76-9957-1e8e1b4d4940
+landmark_id: fbf6ebbf-70e3-4930-bbf8-f271ac57eece
+entity_slug: bodenhamer-center
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 12] ---
+id: da164847-5b09-46fe-b406-132676cfa9d7
+landmark_id: 8412e1e4-50c8-4736-9eda-10620df26c52
+entity_slug: bodenhamer-center
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 12] ---
+id: 825b3c12-9370-47f8-85f9-31fe154ce7d7
+landmark_id: 8412e1e4-50c8-4736-9eda-10620df26c52
+entity_slug: bodenhamer-center
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 12] ---
+id: 207dd7f1-f9d3-47ac-b7c2-36227ea9a553
+landmark_id: 8412e1e4-50c8-4736-9eda-10620df26c52
+entity_slug: bodenhamer-center
+landmark_type: real_estate_agency
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 12] ---
+id: 1aa1e16f-a7e0-45a2-a4cb-3fb36100549d
+landmark_id: f1c93635-5c8d-4fb2-addb-eb04ab4e3da8
+entity_slug: bodenhamer-center
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 12] ---
+id: bd34fb2a-7384-41b8-8530-84e64c13f300
+landmark_id: f1c93635-5c8d-4fb2-addb-eb04ab4e3da8
+entity_slug: bodenhamer-center
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 12] ---
+id: 53f59209-34a5-4b8a-b567-8c2e75d892f1
+landmark_id: f1c93635-5c8d-4fb2-addb-eb04ab4e3da8
+entity_slug: bodenhamer-center
+landmark_type: real_estate_agency
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   4 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 4] ---
+id: 5508ada5-1b9d-41a3-b988-294bd275d74e
+entity_slug: bodenhamer-center
+kind: landmark
+place_id: ChIJ4bga_VEFmogRP94On_H5Tu4
+name: The University of South Alabama Gulf Coast Campus
+types: [
+  "establishment",
+  "point_of_interest",
+  "school",
+  "university"
+]
+spatial_relationship: BESIDE
+travel_distance_meters: 1.9557266
+straight_line_distance_meters: 30.618301
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 4] ---
+id: fbf6ebbf-70e3-4930-bbf8-f271ac57eece
+entity_slug: bodenhamer-center
+kind: landmark
+place_id: ChIJz31kBk4FmogRGoMXLuGyC3g
+name: Gulf Shores Cultural Center
+types: [
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 108.567215
+straight_line_distance_meters: 69.62177
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 4] ---
+id: 8412e1e4-50c8-4736-9eda-10620df26c52
+entity_slug: bodenhamer-center
+kind: landmark
+place_id: ChIJ32Sm11EFmogRgWvgxF8rlb4
+name: Jasmine Trails
+types: [
+  "establishment",
+  "point_of_interest",
+  "real_estate_agency"
+]
+travel_distance_meters: 319.6161
+straight_line_distance_meters: 313.24905
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 4] ---
+id: f1c93635-5c8d-4fb2-addb-eb04ab4e3da8
+entity_slug: bodenhamer-center
+kind: landmark
+place_id: ChIJf2unqjIFmogRcBf_kzKTNa4
+name: Allier Gulf Shores
+types: [
+  "establishment",
+  "point_of_interest",
+  "real_estate_agency"
+]
+travel_distance_meters: 427.43222
+straight_line_distance_meters: 334.84293
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   5 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 5] ---
+id: d766b1e4-97cb-4f43-be4a-91e6759675a8
+entity_slug: bodenhamer-center
+tag_name: gym
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 5] ---
+id: 959943d6-0a01-43e9-96d0-65a6a6fd61e3
+entity_slug: bodenhamer-center
+tag_name: sports_activity_location
+tag_category: google_type
+
+--- entity_tags [row 3 of 5] ---
+id: f3ef5ab6-43c1-4199-b32f-1a95f2b03948
+entity_slug: bodenhamer-center
+tag_name: health
+tag_category: google_type
+
+--- entity_tags [row 4 of 5] ---
+id: 3eefac74-2713-4f77-8f03-5269ddca3695
+entity_slug: bodenhamer-center
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 5 of 5] ---
+id: 054595a0-2f29-4f1e-be0e-bc9622f93e14
+entity_slug: bodenhamer-center
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: bad7a39c-2a1c-4cdb-8368-7ca28f54f93a
+entity_slug: bodenhamer-center
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_fitness_sports   -   1 row(s)
+####################################################################################################
+
+--- industry_fitness_sports [row 1 of 1] ---
+entity_slug: bodenhamer-center
+offering_count: 0
+updated_at: 2026-07-20T03:17:43.35857+00:00
+
+####################################################################################################
+# TABLE: search_index   -   1 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 1] ---
+ref_type: business
+ref_id: bodenhamer-center
+entity_slug: bodenhamer-center
+title: Bodenhamer Center
+category: gym
+subtitle: Gym in Gulf Shores, AL.
+search_vector: 'al':8C 'bodenham':1A 'center':2A 'gulf':6C 'gym':3B,4C 'shore':7C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: bodenhamer-center

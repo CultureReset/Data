@@ -1,0 +1,499 @@
+====================================================================================================
+SLUG: lounge-only-rental
+NAME: Lounge Only Rental
+INDUSTRY: other
+TABLES WITH DATA: 15
+TOTAL ROWS: 36
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (5 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_offer  (1 rows)
+  entity_photos  (4 rows)
+  entity_theme  (1 rows)
+  search_index  (2 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: lounge-only-rental
+name: Lounge Only Rental
+planner_category: things_to_do
+data_quality_score: 55
+issues: missing_hours|missing_lat_lng|missing_contact_or_website
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   5 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 5] ---
+id: 21072
+entity_slug: lounge-only-rental
+intent_tag: best_for:things_to_do
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 5] ---
+id: 21073
+entity_slug: lounge-only-rental
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 5] ---
+id: 21074
+entity_slug: lounge-only-rental
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 5] ---
+id: 21075
+entity_slug: lounge-only-rental
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 5] ---
+id: 21076
+entity_slug: lounge-only-rental
+intent_tag: missing:missing_contact_or_website
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: lounge-only-rental
+name: Lounge Only Rental
+is_active: t
+planner_category: things_to_do
+entity_type: service
+state: AL
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lounge-only-rental/photo_01.jpg
+voice_summary: Lounge Only Rental is best for things to do.
+planner_summary: Private lounge rental without simulator bays.
+best_for: things to do
+not_best_for: nothing specific flagged
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 2
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 0
+faq_count: 0
+data_quality_score: 55
+data_gaps: missing_hours|missing_lat_lng|missing_contact_or_website
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 7598
+entity_slug: lounge-only-rental
+entity_name: Lounge Only Rental
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lounge-only-rental/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 7599
+entity_slug: lounge-only-rental
+entity_name: Lounge Only Rental
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lounge-only-rental/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 16b5aeea-f941-4209-b175-7a03641299bc
+resource_type: service
+slug: lounge-only-rental
+name: Lounge Only Rental
+description: Private lounge rental without simulator bays.
+entity_slug: lounge-only-rental
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lounge-only-rental/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lounge-only-rental/photo_02.jpg"
+]
+amenities: []
+faqs: []
+state: AL
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 93829e7780e891bb9fd4790bc1dc4682
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 16b5aeea-f941-4209-b175-7a03641299bc
+entity_slug: lounge-only-rental
+slug: lounge-only-rental
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lounge-only-rental/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lounge-only-rental/photo_02.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: b4a74c8e-59f0-469a-8204-25660f3d8752
+slug: lounge-only-rental
+name: Lounge Only Rental
+is_active: true
+featured: false
+entity_type: service
+description: Private lounge rental without simulator bays.
+menu_pin: 6208
+state: AL
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lounge-only-rental/photo_01.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T05:25:04.599458+00:00
+updated_at: 2026-06-03T05:25:04.599458+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+business_status: OPERATIONAL
+google_places_data: {}
+search_vector: 'loung':1A 'rental':3A
+internal_notes: industry_code auto-bucketed to other 2026-07-21 - needs manual review
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: other
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: lounge-only-rental
+name: Lounge Only Rental
+industry_code: other
+is_parent: false
+score_of_7: 2
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: lounge-only-rental
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 16b5aeea-f941-4209-b175-7a03641299bc
+name: Lounge Only Rental
+description: Private lounge rental without simulator bays.
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lounge-only-rental/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lounge-only-rental/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: lounge-only-rental
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 16b5aeea-f941-4209-b175-7a03641299bc
+name: Lounge Only Rental
+description: Private lounge rental without simulator bays.
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lounge-only-rental/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lounge-only-rental/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: 873dc74a-f97d-4af2-9651-76ee7f95ce3d
+entity_slug: lounge-only-rental
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: cf7f7758-2a93-431a-988e-856ca9ea35f8
+entity_slug: lounge-only-rental
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: d3244c0c-3466-4664-bae3-319b37b1bd6e
+entity_slug: lounge-only-rental
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: 45771915-2f15-4645-9209-a4d89adfd98d
+entity_slug: lounge-only-rental
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: 3976b965-b369-4111-8565-bf2d6853a925
+entity_slug: lounge-only-rental
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: 829edbaa-49d0-4e0d-9433-3e0c5bcfbb68
+entity_slug: lounge-only-rental
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: d7c2c65a-03c2-4bb0-a402-972a3f1d858d
+entity_slug: lounge-only-rental
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: e9213387-10c5-40ad-a5fc-596e586a9ea1
+entity_slug: lounge-only-rental
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: e1182b43-7168-4e13-aaa3-6ccca00fb0ac
+entity_slug: lounge-only-rental
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: 489b6d2e-8ddc-41a4-8816-fc6356bcf9a9
+entity_slug: lounge-only-rental
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: f4d99ed4-c8a1-4a58-a4ec-543ffff69d32
+entity_slug: lounge-only-rental
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: 1831be9e-2604-4386-83ed-19e739de66cc
+entity_slug: lounge-only-rental
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: 4e8542e8-cbf6-4f0e-acfc-0897181a1918
+entity_slug: lounge-only-rental
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13778
+entity_slug: lounge-only-rental
+name: Lounge Only Rental
+description: Private lounge rental without simulator bays.
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 16b5aeea-f941-4209-b175-7a03641299bc
+
+####################################################################################################
+# TABLE: entity_photos   -   4 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 4] ---
+id: d6814c41-ad95-4d45-8c39-537b56868cbb
+entity_slug: lounge-only-rental
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lounge-only-rental/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 4] ---
+id: 94860937-cefb-41a0-9e1c-b0cc5c43d8d8
+entity_slug: lounge-only-rental
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lounge-only-rental/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 4] ---
+id: 82c3ba22-cacd-4416-b518-d28c0931f660
+entity_slug: lounge-only-rental
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lounge-only-rental/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 16b5aeea-f941-4209-b175-7a03641299bc
+
+--- entity_photos [row 4 of 4] ---
+id: 2e1a450f-065c-44ad-b187-5f32e32fa843
+entity_slug: lounge-only-rental
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/lounge-only-rental/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: 16b5aeea-f941-4209-b175-7a03641299bc
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 680f5cd0-07dd-4ac3-a8fe-7a875e6a6e65
+entity_slug: lounge-only-rental
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: lounge-only-rental
+entity_slug: lounge-only-rental
+title: Lounge Only Rental
+category: service
+subtitle: Private lounge rental without simulator bays.
+search_vector: 'bay':9C 'loung':1A,5C 'privat':4C 'rental':3A,6C 'simul':8C 'without':7C
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 13778
+entity_slug: lounge-only-rental
+title: Lounge Only Rental
+category: rental
+subtitle: Private lounge rental without simulator bays.
+search_vector: 'bay':9C 'loung':1A,5C 'privat':4C 'rental':3A,6C 'simul':8C 'without':7C

@@ -1,0 +1,2756 @@
+====================================================================================================
+SLUG: phoenix-ix
+NAME: Phoenix IX
+INDUSTRY: condo
+SUBTYPE: condominium_complex
+TABLES WITH DATA: 31
+TOTAL ROWS: 257
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (12 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (29 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_amenities  (7 rows)
+  entity_completeness_v  (1 rows)
+  entity_faqs  (13 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (2 rows)
+  entity_items_v  (2 rows)
+  entity_modules  (14 rows)
+  entity_offer  (1 rows)
+  entity_photos  (92 rows)
+  entity_reviews  (5 rows)
+  entity_section_items  (1 rows)
+  entity_section_items_metadata_backup  (1 rows)
+  entity_sections  (1 rows)
+  entity_sources  (2 rows)
+  entity_tags  (37 rows)
+  entity_theme  (2 rows)
+  faqs  (13 rows)
+  industry_condo  (1 rows)
+  recovery_import_log  (1 rows)
+  rental_units  (1 rows)
+  search_index  (2 rows)
+  tourist_seen  (2 rows)
+  tourist_swipe_events  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: phoenix-ix
+name: Phoenix IX
+planner_category: food_drink
+data_quality_score: 60
+issues: missing_hours|missing_menu|missing_drink_menu|missing_lat_lng
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: true
+missing_drink_menu: true
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   12 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 12] ---
+id: 19438
+entity_slug: phoenix-ix
+intent_tag: best_for:waterfront_or_scenic_meal
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 12] ---
+id: 19439
+entity_slug: phoenix-ix
+intent_tag: best_for:drinks_or_cocktails
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 12] ---
+id: 19440
+entity_slug: phoenix-ix
+intent_tag: experience:outdoor
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 12] ---
+id: 19441
+entity_slug: phoenix-ix
+intent_tag: experience:waterfront_scenic
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 12] ---
+id: 19442
+entity_slug: phoenix-ix
+intent_tag: experience:rainy_day
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 12] ---
+id: 19443
+entity_slug: phoenix-ix
+intent_tag: meal:drinks
+intent_category: meal_period
+confidence: 0.82
+evidence: Derived from meal flags/menu content.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 12] ---
+id: 19444
+entity_slug: phoenix-ix
+intent_tag: service:pool
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 12] ---
+id: 19445
+entity_slug: phoenix-ix
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 9 of 12] ---
+id: 19446
+entity_slug: phoenix-ix
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 10 of 12] ---
+id: 19447
+entity_slug: phoenix-ix
+intent_tag: missing:missing_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 11 of 12] ---
+id: 19448
+entity_slug: phoenix-ix
+intent_tag: missing:missing_drink_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 12 of 12] ---
+id: 19449
+entity_slug: phoenix-ix
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: phoenix-ix
+name: Phoenix IX
+is_active: t
+planner_category: food_drink
+entity_type: condo
+entity_subtype: condo
+city: Orange Beach
+state: AL
+review_count: 0
+website_url: https://viewer.threshold360.com/?thresholdId=8490863-1502431106&preset=share
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_00.jpg
+voice_summary: Phoenix IX in Orange Beach is best for waterfront or scenic meal, drinks or cocktails. Experience tags: outdoor, waterfront_scenic, rainy_day.
+planner_summary: Phoenix IX is a beachfront condo located on the eastern end of Orange Beach near the Alabama–Florida border, offering a quieter stretch of sugar-white sand and convenient access to Orange Beach, Perdido Key, and nearby Gulf Shores. Positioned along miles of scenic shoreline, Phoenix IX provides a relaxed coastal setting with expansive views of both the Gulf of Mexico and the bay. The property features spacious 1-, 2-, and 3-bedroom vacation rentals, all designed to face the water and include pr
+best_for: waterfront or scenic meal|drinks or cocktails
+not_best_for: quiet low-energy meal
+meal_periods: drinks
+experience_tags: outdoor|waterfront_scenic|rainy_day
+service_tags: pool
+search_keywords: condo|Condos & Stays|Pool|3 Bedrooms|Hot tub|Fitness center|Tennis court|Covered parking|Barbeque|Grill|Gulf-front|Parking|Kiddie pool|Bay-view indoor pool|Pickleball court|Covered parking and barbeque grills.|Restaurant|Beach access|Beach chair|Elevator|Accessible|Outdoor pool|Sauna|Washer and dryer|Wi-fi|drinks|outdoor|waterfront_scenic|rainy_day
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: true
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 29
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 25
+faq_count: 13
+data_quality_score: 60
+data_gaps: missing_hours|missing_menu|missing_drink_menu|missing_lat_lng
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   29 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 29] ---
+id: 21779
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_00.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 29] ---
+id: 21780
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_01.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 29] ---
+id: 21781
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_02.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 29] ---
+id: 21782
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_03.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 29] ---
+id: 21783
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_04.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 29] ---
+id: 21784
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_05.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 29] ---
+id: 21785
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_06.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 29] ---
+id: 21786
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_07.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 29] ---
+id: 21787
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_08.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 29] ---
+id: 21788
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_09.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 11 of 29] ---
+id: 21789
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_10.jpg
+is_cover: f
+sort_order: 10
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 12 of 29] ---
+id: 21790
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_11.jpg
+is_cover: f
+sort_order: 11
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 13 of 29] ---
+id: 21791
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_12.jpg
+is_cover: f
+sort_order: 12
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 14 of 29] ---
+id: 21792
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_13.jpg
+is_cover: f
+sort_order: 13
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 15 of 29] ---
+id: 21793
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_14.jpg
+is_cover: f
+sort_order: 14
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 16 of 29] ---
+id: 21794
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_15.jpg
+is_cover: f
+sort_order: 15
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 17 of 29] ---
+id: 21795
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_16.jpg
+is_cover: f
+sort_order: 16
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 18 of 29] ---
+id: 21796
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_17.jpg
+is_cover: f
+sort_order: 17
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 19 of 29] ---
+id: 21797
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_18.jpg
+is_cover: f
+sort_order: 18
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 20 of 29] ---
+id: 21798
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_19.jpg
+is_cover: f
+sort_order: 19
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 21 of 29] ---
+id: 21799
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_20.jpg
+is_cover: f
+sort_order: 20
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 22 of 29] ---
+id: 21800
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_21.jpg
+is_cover: f
+sort_order: 21
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 23 of 29] ---
+id: 21801
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_22.jpg
+is_cover: f
+sort_order: 22
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 24 of 29] ---
+id: 21802
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_23.jpg
+is_cover: f
+sort_order: 23
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 25 of 29] ---
+id: 21803
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_24.jpg
+is_cover: f
+sort_order: 24
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 26 of 29] ---
+id: 21804
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_25.jpg
+is_cover: f
+sort_order: 25
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 27 of 29] ---
+id: 21805
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_26.jpg
+is_cover: f
+sort_order: 26
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 28 of 29] ---
+id: 21806
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_27.jpg
+is_cover: f
+sort_order: 27
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 29 of 29] ---
+id: 21807
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_28.png
+is_cover: f
+sort_order: 28
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 570aec5f-5627-4afa-a42f-9e456c685765
+resource_type: condo
+slug: phoenix-ix
+name: Phoenix IX
+description: Phoenix IX is a beachfront condo located on the eastern end of Orange Beach near the Alabama–Florida border, offering a quieter stretch of sugar-white sand and convenient access to Orange Beach, Perdido Key, and nearby Gulf Shores. Positioned along miles of scenic shoreline, Phoenix IX provides a relaxed coastal setting with expansive views of both the Gulf of Mexico and the bay.
+
+The property features spacious 1-, 2-, and 3-bedroom vacation rentals, all designed to face the water and include pr
+entity_slug: phoenix-ix
+bedrooms: 3
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_00.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_04.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_06.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_07.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_08.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_09.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_10.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_11.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_12.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_13.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_14.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_15.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_16.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_17.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_18.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_19.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_20.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_21.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_22.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_23.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_24.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_25.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_26.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_27.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_28.png"
+]
+amenities: []
+faqs: []
+city: Orange Beach
+state: AL
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: a1a6e57a9f5a5586c727448f83337df3
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 570aec5f-5627-4afa-a42f-9e456c685765
+entity_slug: phoenix-ix
+slug: phoenix-ix
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_00.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_04.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_06.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_07.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_08.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_09.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_10.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_11.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_12.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_13.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_14.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_15.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_16.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_17.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_18.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_19.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_20.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_21.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_22.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_23.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_24.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_25.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_26.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_27.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_28.png"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 2a232fea-6020-40de-ae23-67091840f793
+slug: phoenix-ix
+name: Phoenix IX
+is_active: true
+featured: false
+entity_type: condo
+entity_subtype: condominium_complex
+description: Phoenix IX is a beachfront condo located on the eastern end of Orange Beach near the Alabama–Florida border, offering a quieter stretch of sugar-white sand and convenient access to Orange Beach, Perdido Key, and nearby Gulf Shores. Positioned along miles of scenic shoreline, Phoenix IX provides a relaxed coastal setting with expansive views of both the Gulf of Mexico and the bay.
+
+The property features spacious 1-, 2-, and 3-bedroom vacation rentals, all designed to face the water and include pr
+phone: +18009326760
+website_url: https://viewer.threshold360.com/?thresholdId=8490863-1502431106&preset=share
+menu_pin: 1045
+address_line_1: 29488 Perdido Beach Boulevard
+city: Orange Beach
+state: AL
+zip: 36561
+rating: 4.6
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_00.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-14T03:12:32.536907+00:00
+updated_at: 2026-07-16T10:58:02.607758+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+bedrooms_min: 3
+bedrooms_max: 3
+pet_friendly: false
+pool: true
+parking: false
+business_status: OPERATIONAL
+primary_type: condo
+formatted_address: 29488 Perdido Beach Boulevard, Orange Beach, AL
+google_places_data: {}
+search_vector: 'beach':5 'condo':3 'ix':2A 'orang':4 'phoenix':1A
+bedrooms: 3
+source_url: https://www.liquidlifevacationrentals.com/resort/phoenix-ix
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: stay
+industry_code: condo
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_amenities   -   7 row(s)
+####################################################################################################
+
+--- entity_amenities [row 1 of 7] ---
+id: 25200110-421b-4446-8e71-10d2e229dd85
+entity_slug: phoenix-ix
+amenity: Grilling Area
+category: complex
+sort_order: 6
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 2 of 7] ---
+id: 56444012-e63d-4ec4-94fc-b95c17f562c9
+entity_slug: phoenix-ix
+amenity: Outdoor Pool
+category: complex
+sort_order: 1
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 3 of 7] ---
+id: 6816ef5d-5278-4c9f-8fa4-772fbc2dd32d
+entity_slug: phoenix-ix
+amenity: Indoor Tennis Court
+category: complex
+sort_order: 4
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 4 of 7] ---
+id: 855c7e28-24c1-4536-adb4-7144b8715c02
+entity_slug: phoenix-ix
+amenity: Indoor Heated Pool
+category: complex
+sort_order: 2
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 5 of 7] ---
+id: d0226bac-bcff-43c0-bdd1-0052b441492a
+entity_slug: phoenix-ix
+amenity: Hot Tub
+category: complex
+sort_order: 3
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 6 of 7] ---
+id: 740bfd26-e89f-4b23-88e2-6d07055b06ef
+entity_slug: phoenix-ix
+amenity: Fitness Center
+category: complex
+sort_order: 5
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 7 of 7] ---
+id: 7854a269-367a-4952-a2a8-a8eb781ad22d
+entity_slug: phoenix-ix
+amenity: Beach Access
+category: complex
+sort_order: 0
+created_at: 2026-07-07T16:59:52.25115
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: phoenix-ix
+name: Phoenix IX
+industry_code: condo
+is_parent: false
+score_of_7: 4
+
+####################################################################################################
+# TABLE: entity_faqs   -   13 row(s)
+####################################################################################################
+
+--- entity_faqs [row 1 of 13] ---
+id: fb68b98f-b5d2-47b9-8442-7d0252af4668
+entity_slug: phoenix-ix
+question: Where is Phoenix 9 located?
+answer: Phoenix 9 is located at 29488 Perdido Beach Blvd, Orange Beach, AL 36561 and is approximately 10 miles east of Hwy 59.
+category: general
+sort_order: 1
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 2 of 13] ---
+id: 39b4d3aa-687e-47a3-8903-1b229cabf717
+entity_slug: phoenix-ix
+question: What amenities are included in Phoenix IX vacation rentals?
+answer: Phoenix IX features several luxury amenities including: outdoor Gulf-front pool, kiddie pool, bay-view indoor pool, hot tub, fitness center, tennis court, pickleball court, covered parking and barbeque grills.
+category: general
+sort_order: 2
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 3 of 13] ---
+id: a11dd35a-4a91-490d-9d61-ade65aedb6b9
+entity_slug: phoenix-ix
+question: What types of units are available for rent at Phoenix 9?
+answer: Phoenix 9 offers spacious 1-, 2-, and 3- bedroom units, ranging in size from approximately 1,950 to 2,550 square feet.
+category: general
+sort_order: 3
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 4 of 13] ---
+id: a657f22a-97d9-45f1-80a5-c4a06a0fbafd
+entity_slug: phoenix-ix
+question: What popular attractions are close to Phoenix IX?
+answer: At Phoenix IX, you’ll have direct access to Orange Beach’s most popular attraction, the sugar-white sand and calm emerald-green waters of the Gulf. You can walk from your Phoenix IX condo to the world-famous Flora-Bama beach bar, Flora-Bama Yacht Club, and more. There are also marinas nearby with fishing charters, water sports, and dolphin tours and tons of shops, restaurants, and entertainment in nearby Perdido Key and Orange Beach. For history buffs, check out the Orange Beach Indian & Sea Mus
+category: general
+sort_order: 4
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 5 of 13] ---
+id: 7082c0f2-1b1f-4f92-89c2-bca619aff74b
+entity_slug: phoenix-ix
+question: What are the check-in and check-out times at Phoenix 9?
+answer: Check-in and check-out times vary by season. For more information, refer to our Check In and Check Out Times Pageand review your booking confirmation message.
+category: general
+sort_order: 5
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 6 of 13] ---
+id: 21db8616-cc6b-4916-ad43-b47f83e0925c
+entity_slug: phoenix-ix
+question: Do all Phoenix 9 rentals have Gulf views?
+answer: All Phoenix 9 units have private balconies and floor-to-ceiling windows showcasing views of the Gulf.
+category: general
+sort_order: 6
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 7 of 13] ---
+id: 759aba98-149b-427d-ab9e-5260703279ae
+entity_slug: phoenix-ix
+question: Is there beach access available at Phoenix IX?
+answer: Yes, at Phoenix IX, you’ll have direct beach access, and we also offer beach chair rentals for guests.
+category: general
+sort_order: 7
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 8 of 13] ---
+id: 35a4d00d-3acf-4553-9f50-4d0e265f3590
+entity_slug: phoenix-ix
+question: Is there a grocery store nearby Phoenix 9 where guests can purchase food, supplies and necessities?
+answer: Yes, there are several grocery stores located near Phoenix 9, including Publix, Walmart, and Winn-Dixie. Grocery delivery is offered at participating stores with partnering apps.
+category: general
+sort_order: 8
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 9 of 13] ---
+id: 5da75ba0-680f-48ae-acf5-63559e715bd9
+entity_slug: phoenix-ix
+question: Does Phoenix IX have accessibility options?
+answer: Phoenix IX is equipped with accessibility features to ensure that guests can enjoy their stay. The resort has accessible entrances and public areas, including ramps and elevators. The units were also originally designed with accessibility in mind. Contact us at 1-800-211-7892 to discuss accommodations and options.
+category: general
+sort_order: 9
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 10 of 13] ---
+id: 35eabbc3-1470-429e-9580-4194d799c2c0
+entity_slug: phoenix-ix
+question: Is Phoenix 9 a good choice for family vacations?
+answer: Yes, Phoenix 9 in Orange Beach is incredibly family-friendly! It has spacious, well-appointed units with open layouts perfect for families. Phoenix 9 also has tons of family-friendly amenities for children of all ages, like indoor and outdoor pools, a kiddie pool, a sauna, hot tubs, tennis and pickleball courts, barbeques, and more. Phoenix 9’s location is also perfect for families looking for a quiet spot close to all the fun attractions and activities in Orange Beach and Perdido Key. It’s even
+category: general
+sort_order: 10
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 11 of 13] ---
+id: 194648df-7839-409e-b24e-874fb20dfb86
+entity_slug: phoenix-ix
+question: Is there a washer and dryer in each unit at Phoenix IX?
+answer: Yes, each unit at Phoenix IX has an in-unit washer and dryer for your convenience.
+category: general
+sort_order: 11
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 12 of 13] ---
+id: d3032104-1166-4170-a9ad-12fa96cb061b
+entity_slug: phoenix-ix
+question: Is there free Wi-Fi available at Phoenix 9?
+answer: Yes, Phoenix 9 offers complimentary Wi-Fi access for guests.
+category: general
+sort_order: 12
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 13 of 13] ---
+id: f3ba1e26-20ff-4ba3-8685-e804e94e0a9a
+entity_slug: phoenix-ix
+question: Why book a Phoenix IX rental with Brett/Robinson?
+answer: By booking with Brett/Robinson Vacations you get the benefit of over 40 years of experience in the area. Brett/Robinson operates and maintains Phoenix IX and we have an on-site staff available to ensure you have a superb stay at the beach. We focus on quality, cleanliness and functionality in all of our available units. Our dedicated on-site customer service staff is here to help with any needs you have during your stay. Also, our knowledgeable area specialists can assist you in planning your it
+category: general
+sort_order: 13
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 4f817be8-68aa-4f47-9b05-f2c207c207ea
+entity_slug: phoenix-ix
+day_of_week: 5
+opens_at: 08:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 86fa3a44-1fb3-469d-a443-181256c77ce5
+entity_slug: phoenix-ix
+day_of_week: 6
+opens_at: 08:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: a60b99d6-ee8c-47d8-86d6-ac805d5a6a5b
+entity_slug: phoenix-ix
+day_of_week: 0
+opens_at: 08:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 36462352-974e-43ce-bee2-36cbc9eb8ca7
+entity_slug: phoenix-ix
+day_of_week: 1
+opens_at: 08:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: e138439a-abcf-4c67-94b0-6336ef76d3dd
+entity_slug: phoenix-ix
+day_of_week: 2
+opens_at: 08:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: d55d578d-37c3-4c38-a9e4-11cb8fad714d
+entity_slug: phoenix-ix
+day_of_week: 3
+opens_at: 08:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 2850fdb7-b3e7-4da3-bebf-3cad4b094cee
+entity_slug: phoenix-ix
+day_of_week: 4
+opens_at: 08:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 2] ---
+entity_slug: phoenix-ix
+source_table: bookable_resources
+item_type: condo
+section_name: Units
+item_id: 570aec5f-5627-4afa-a42f-9e456c685765
+name: Phoenix IX
+description: Phoenix IX is a beachfront condo located on the eastern end of Orange Beach near the Alabama–Florida border, offering a quieter stretch of sugar-white sand and convenient access to Orange Beach, Perdido Key, and nearby Gulf Shores. Positioned along miles of scenic shoreline, Phoenix IX provides a relaxed coastal setting with expansive views of both the Gulf of Mexico and the bay.
+
+The property features spacious 1-, 2-, and 3-bedroom vacation rentals, all designed to face the water and include pr
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "bedrooms": 3,
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_00.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_11.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_12.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_13.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_14.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_15.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_16.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_17.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_18.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_19.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_20.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_21.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_22.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_23.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_24.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_25.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_26.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_27.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_28.png"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "item_type_raw": "condo",
+  "resource_type": "condo",
+  "check_out_time": "11:00"
+}
+
+--- entity_items_norm_v [row 2 of 2] ---
+entity_slug: phoenix-ix
+source_table: entity_section_items
+item_type: rooms
+section_name: Units & Rates
+item_id: 13485f98-80b7-4985-902b-64b6962d65be
+name: Phoenix IX
+description: Phoenix IX is a beachfront condo located on the eastern end of Orange Beach near the Alabama–Florida border, offering a quieter stretch of sugar-white sand and convenient access to Orange Beach, Perdido Key, and nearby Gulf Shores. Positioned along miles of scenic shoreline, Phoenix IX provides a relaxed coastal setting with expansive views of both the Gulf of Mexico and the bay.
+
+The property features spacious 1-, 2-, and 3-bedroom vacation rentals, all designed to face the water and include pr
+sort_order: 1
+active: true
+attributes: {
+  "icon": "🏠",
+  "bedrooms": 3,
+  "min_nights": 1,
+  "module_key": "rooms",
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "item_type_raw": "rooms",
+  "check_out_time": "11:00"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 2] ---
+entity_slug: phoenix-ix
+source_table: bookable_resources
+item_type: condo
+section_name: Units
+item_id: 570aec5f-5627-4afa-a42f-9e456c685765
+name: Phoenix IX
+description: Phoenix IX is a beachfront condo located on the eastern end of Orange Beach near the Alabama–Florida border, offering a quieter stretch of sugar-white sand and convenient access to Orange Beach, Perdido Key, and nearby Gulf Shores. Positioned along miles of scenic shoreline, Phoenix IX provides a relaxed coastal setting with expansive views of both the Gulf of Mexico and the bay.
+
+The property features spacious 1-, 2-, and 3-bedroom vacation rentals, all designed to face the water and include pr
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "bedrooms": 3,
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_00.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_11.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_12.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_13.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_14.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_15.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_16.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_17.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_18.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_19.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_20.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_21.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_22.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_23.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_24.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_25.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_26.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_27.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_28.png"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "resource_type": "condo",
+  "check_out_time": "11:00"
+}
+
+--- entity_items_v [row 2 of 2] ---
+entity_slug: phoenix-ix
+source_table: entity_section_items
+item_type: rooms
+section_name: Units & Rates
+item_id: 13485f98-80b7-4985-902b-64b6962d65be
+name: Phoenix IX
+description: Phoenix IX is a beachfront condo located on the eastern end of Orange Beach near the Alabama–Florida border, offering a quieter stretch of sugar-white sand and convenient access to Orange Beach, Perdido Key, and nearby Gulf Shores. Positioned along miles of scenic shoreline, Phoenix IX provides a relaxed coastal setting with expansive views of both the Gulf of Mexico and the bay.
+
+The property features spacious 1-, 2-, and 3-bedroom vacation rentals, all designed to face the water and include pr
+sort_order: 1
+active: true
+attributes: {
+  "icon": "🏠",
+  "bedrooms": 3,
+  "min_nights": 1,
+  "module_key": "rooms",
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "check_out_time": "11:00"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   14 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 14] ---
+id: c128e647-0a5e-4517-bb70-0a495e80dc2d
+entity_slug: phoenix-ix
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 14] ---
+id: ff9a6927-9682-440d-b013-113899407d12
+entity_slug: phoenix-ix
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 14] ---
+id: 90976b33-aa04-4865-98da-c35b71c96bcc
+entity_slug: phoenix-ix
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 14] ---
+id: 0cba61f7-1636-407a-9708-70ea8e9ede47
+entity_slug: phoenix-ix
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 14] ---
+id: fac4d266-0b61-4a42-afc7-342bd66a9392
+entity_slug: phoenix-ix
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 14] ---
+id: 0974cdab-847e-45f9-968a-54b961bacaf6
+entity_slug: phoenix-ix
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 14] ---
+id: 29394062-84d1-4c40-a558-262ad039199a
+entity_slug: phoenix-ix
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 14] ---
+id: f60b24f7-782b-40e4-9680-fc5aca8ccdca
+entity_slug: phoenix-ix
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 14] ---
+id: 59cffe18-16a5-4e06-93e2-080483198d8b
+entity_slug: phoenix-ix
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 14] ---
+id: 70825318-b090-402a-adfd-b40494e0cf8c
+entity_slug: phoenix-ix
+module_key: stay
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 14] ---
+id: fb2f50e4-23b6-475b-a23e-ada0f766e9c4
+entity_slug: phoenix-ix
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 14] ---
+id: 70a1d613-7950-4ac8-afae-36b5c9c2dc37
+entity_slug: phoenix-ix
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 14] ---
+id: 4e66662b-3746-4dc2-b474-4e2d576aeba6
+entity_slug: phoenix-ix
+module_key: amenities
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 14 of 14] ---
+id: dd170962-fbcd-4206-9edd-cab872647f9e
+entity_slug: phoenix-ix
+module_key: rooms
+enabled: true
+sort_order: 2
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13935
+entity_slug: phoenix-ix
+name: Phoenix IX
+description: Phoenix IX is a beachfront condo located on the eastern end of Orange Beach near the Alabama–Florida border, offering a quieter stretch of sugar-white sand and convenient access to Orange Beach, Perdido Key, and nearby Gulf Shores. Positioned along miles of scenic shoreline, Phoenix IX provides a relaxed coastal setting with expansive views of both the Gulf of Mexico and the bay.
+
+The property features spacious 1-, 2-, and 3-bedroom vacation rentals, all designed to face the water and include pr
+offer_type: room
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+####################################################################################################
+# TABLE: entity_photos   -   92 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 92] ---
+id: 0ac19230-df3f-4f69-a54b-eb855b4966d0
+entity_slug: phoenix-ix
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/DJI_0033.jpg
+is_cover: true
+sort_order: 0
+photo_type: gallery
+
+--- entity_photos [row 2 of 92] ---
+id: e39454ce-78d4-46b7-ad07-b190bdcadd00
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_21.jpg
+is_cover: false
+sort_order: 21
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 3 of 92] ---
+id: ffff027d-5c84-4207-b243-fa0bb54e59ba
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_12.jpg
+is_cover: false
+sort_order: 12
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 4 of 92] ---
+id: 256aacc7-33cd-43b5-ba9f-154f58f8be4a
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_25.jpg
+is_cover: false
+sort_order: 25
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 5 of 92] ---
+id: a5d8fc00-eeea-45a8-bc66-a9084a9659b8
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-ix-vacation-rental-condominiums/photo_03.jpg
+is_cover: false
+sort_order: 2
+photo_type: complex
+
+--- entity_photos [row 6 of 92] ---
+id: eaac006c-5b76-4093-8a2d-c61aa68f4d8a
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-ix-vacation-rental-condominiums/photo_09.jpg
+is_cover: false
+sort_order: 8
+photo_type: complex
+
+--- entity_photos [row 7 of 92] ---
+id: f3b72bd7-5ae0-4a6c-92c9-93e363acb911
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-ix-vacation-rental-condominiums/photo_05.jpg
+is_cover: false
+sort_order: 4
+photo_type: complex
+
+--- entity_photos [row 8 of 92] ---
+id: b3163897-3d2d-49ba-ad3f-81bbe599336a
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-ix-vacation-rental-condominiums/photo_01.jpg
+is_cover: true
+sort_order: 0
+photo_type: complex
+
+--- entity_photos [row 9 of 92] ---
+id: 393eea66-e0b4-467c-a428-bd44965aadca
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-ix-vacation-rental-condominiums/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: complex
+
+--- entity_photos [row 10 of 92] ---
+id: bd3b5255-ae23-41f2-aa7c-480994fb3fbb
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-ix-vacation-rental-condominiums/photo_06.jpg
+is_cover: false
+sort_order: 5
+photo_type: complex
+
+--- entity_photos [row 11 of 92] ---
+id: 26dc751a-e732-4de5-a5a1-29a85dc7a566
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-ix-vacation-rental-condominiums/photo_07.jpg
+is_cover: false
+sort_order: 6
+photo_type: complex
+
+--- entity_photos [row 12 of 92] ---
+id: 3ea46ac5-dfd7-4c5e-8ed7-51fb9a64cbd2
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-ix-vacation-rental-condominiums/photo_08.jpg
+is_cover: false
+sort_order: 7
+photo_type: complex
+
+--- entity_photos [row 13 of 92] ---
+id: 6c66eb92-ef0f-41cc-8fca-d67329acb517
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-ix-vacation-rental-condominiums/photo_10.jpg
+is_cover: false
+sort_order: 9
+photo_type: complex
+
+--- entity_photos [row 14 of 92] ---
+id: 7fdd8030-901a-4e09-b49b-d462d6af7dbb
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-ix-vacation-rental-condominiums/photo_04.jpg
+is_cover: false
+sort_order: 3
+photo_type: complex
+
+--- entity_photos [row 15 of 92] ---
+id: e66145f8-ab5d-4e95-98f7-a48c3a6cf9ba
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_00.jpg
+is_cover: true
+sort_order: 0
+photo_type: complex
+
+--- entity_photos [row 16 of 92] ---
+id: 7d5fee83-da38-40a9-9b78-8fe9323dbe62
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_01.jpg
+is_cover: false
+sort_order: 1
+photo_type: complex
+
+--- entity_photos [row 17 of 92] ---
+id: 372d954d-1da8-4443-acd1-455ad9e62357
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_02.jpg
+is_cover: false
+sort_order: 2
+photo_type: complex
+
+--- entity_photos [row 18 of 92] ---
+id: a5785bc2-efbb-48f4-9024-32ee7090f9e3
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_03.jpg
+is_cover: false
+sort_order: 3
+photo_type: complex
+
+--- entity_photos [row 19 of 92] ---
+id: a73b5cd9-af4a-4a7b-adc8-9cfa0c9692d1
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_04.jpg
+is_cover: false
+sort_order: 4
+photo_type: complex
+
+--- entity_photos [row 20 of 92] ---
+id: 96c3a240-1e9d-4349-8d9d-0929e1c3ec04
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_05.jpg
+is_cover: false
+sort_order: 5
+photo_type: complex
+
+--- entity_photos [row 21 of 92] ---
+id: 3f5c86e5-4b9d-4daa-ba82-294eddde5331
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_06.jpg
+is_cover: false
+sort_order: 6
+photo_type: complex
+
+--- entity_photos [row 22 of 92] ---
+id: 1fade599-f79a-4d47-891b-21849f495755
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_07.jpg
+is_cover: false
+sort_order: 7
+photo_type: complex
+
+--- entity_photos [row 23 of 92] ---
+id: 96adc82c-9051-4ddb-b0c5-646b20b73b36
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_08.jpg
+is_cover: false
+sort_order: 8
+photo_type: complex
+
+--- entity_photos [row 24 of 92] ---
+id: 7b3c501e-90c2-4476-a0ea-ebb35472ec2d
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_09.jpg
+is_cover: false
+sort_order: 9
+photo_type: complex
+
+--- entity_photos [row 25 of 92] ---
+id: 778ddbd2-a8fc-42e6-87dc-c5506aa9e644
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_10.jpg
+is_cover: false
+sort_order: 10
+photo_type: complex
+
+--- entity_photos [row 26 of 92] ---
+id: d42e80a4-a477-4631-b207-7bdd8d3a10fe
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_11.jpg
+is_cover: false
+sort_order: 11
+photo_type: complex
+
+--- entity_photos [row 27 of 92] ---
+id: 59fb723c-9bdc-4ad9-8eca-4f25f758530f
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_12.jpg
+is_cover: false
+sort_order: 12
+photo_type: complex
+
+--- entity_photos [row 28 of 92] ---
+id: 0fbac4c0-6630-4aa4-abce-17082604a936
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_13.jpg
+is_cover: false
+sort_order: 13
+photo_type: complex
+
+--- entity_photos [row 29 of 92] ---
+id: 06a029b6-ad10-48f6-ab25-40d18156a423
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_14.jpg
+is_cover: false
+sort_order: 14
+photo_type: complex
+
+--- entity_photos [row 30 of 92] ---
+id: 97678333-a2fb-4e81-89cc-57b06d1eaece
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_15.jpg
+is_cover: false
+sort_order: 15
+photo_type: complex
+
+--- entity_photos [row 31 of 92] ---
+id: 0f161ccc-01b0-47ad-bdb5-be8efd74a730
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_16.jpg
+is_cover: false
+sort_order: 16
+photo_type: complex
+
+--- entity_photos [row 32 of 92] ---
+id: b9450cd7-517e-45e7-84ae-2d207635605d
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_17.jpg
+is_cover: false
+sort_order: 17
+photo_type: complex
+
+--- entity_photos [row 33 of 92] ---
+id: 37fa0923-e577-4d63-8326-d4139c5e47b8
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_18.jpg
+is_cover: false
+sort_order: 18
+photo_type: complex
+
+--- entity_photos [row 34 of 92] ---
+id: cfc92329-130f-4e28-aea7-873356e5d89d
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_19.jpg
+is_cover: false
+sort_order: 19
+photo_type: complex
+
+--- entity_photos [row 35 of 92] ---
+id: 8ce3202e-c57e-4d89-98d9-c61ad3a5088f
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_20.jpg
+is_cover: false
+sort_order: 20
+photo_type: complex
+
+--- entity_photos [row 36 of 92] ---
+id: ef7502b7-117b-4f90-ab3e-6ba0a0e770a6
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_21.jpg
+is_cover: false
+sort_order: 21
+photo_type: complex
+
+--- entity_photos [row 37 of 92] ---
+id: c5dcfcc0-8bd0-4a7f-b417-54c69cf4fe2f
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_22.jpg
+is_cover: false
+sort_order: 22
+photo_type: complex
+
+--- entity_photos [row 38 of 92] ---
+id: 198ea98b-9fc7-4186-955f-7068c61c6ff5
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_23.jpg
+is_cover: false
+sort_order: 23
+photo_type: complex
+
+--- entity_photos [row 39 of 92] ---
+id: 45aedec0-e97c-4c9d-bfdd-b7a9488ace57
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_24.jpg
+is_cover: false
+sort_order: 24
+photo_type: complex
+
+--- entity_photos [row 40 of 92] ---
+id: 67dd4ff1-f2db-4b26-94a9-e9ccb89d1a6f
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_25.jpg
+is_cover: false
+sort_order: 25
+photo_type: complex
+
+--- entity_photos [row 41 of 92] ---
+id: c2ef774b-1534-41af-8dbf-8cd87721fd75
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_26.jpg
+is_cover: false
+sort_order: 26
+photo_type: complex
+
+--- entity_photos [row 42 of 92] ---
+id: 58aae08a-d853-4c1f-95c3-e2f94255e182
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_27.jpg
+is_cover: false
+sort_order: 27
+photo_type: complex
+
+--- entity_photos [row 43 of 92] ---
+id: fdd55af5-3a11-4993-9fea-a42f04f5c629
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_28.png
+is_cover: false
+sort_order: 28
+photo_type: complex
+
+--- entity_photos [row 44 of 92] ---
+id: 2ccdfef7-96e7-42b8-9f55-aacf73ad20e8
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_28.png
+is_cover: false
+sort_order: 28
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 45 of 92] ---
+id: 9dcc7250-1aa3-448a-97f8-bce33fa6b77d
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_09.jpg
+is_cover: false
+sort_order: 9
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 46 of 92] ---
+id: 87e2d95e-f6f1-4394-8d57-8b716cd13ad1
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_10.jpg
+is_cover: false
+sort_order: 10
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 47 of 92] ---
+id: b39923b8-d92b-4d92-a108-3e38b97d09c5
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_16.jpg
+is_cover: false
+sort_order: 16
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 48 of 92] ---
+id: 61d68b00-80c3-42c3-80f6-5896186423be
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_03.jpg
+is_cover: false
+sort_order: 3
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 49 of 92] ---
+id: 870d4caa-03eb-415c-ad4a-6cfb8e780877
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_14.jpg
+is_cover: false
+sort_order: 14
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 50 of 92] ---
+id: a9f0fdc4-0563-4094-a041-5af69ba42341
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_06.jpg
+is_cover: false
+sort_order: 6
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 51 of 92] ---
+id: e74bb271-eea1-4400-bc3e-79decda98108
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_11.jpg
+is_cover: false
+sort_order: 11
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 52 of 92] ---
+id: 4328bc9b-d134-4011-8081-9530fbd77d9c
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_07.jpg
+is_cover: false
+sort_order: 7
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 53 of 92] ---
+id: b8057750-90ed-4047-8c60-18a1a111fdc1
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_15.jpg
+is_cover: false
+sort_order: 15
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 54 of 92] ---
+id: ebde2cad-3692-48dd-8ef8-fbe953bb624a
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_17.jpg
+is_cover: false
+sort_order: 17
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 55 of 92] ---
+id: c2254e50-0c7c-4658-a7da-181104cece1a
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_27.jpg
+is_cover: false
+sort_order: 27
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 56 of 92] ---
+id: 9c7ca510-b809-46db-b695-d6f7fa16fc4e
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_23.jpg
+is_cover: false
+sort_order: 23
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 57 of 92] ---
+id: 6e7e65cf-2b9f-4e34-914e-761f7341eadf
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_22.jpg
+is_cover: false
+sort_order: 22
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 58 of 92] ---
+id: 70be00ca-5951-4093-b8d7-a20f431d309d
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_01.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 59 of 92] ---
+id: 7d3c498c-37af-457d-8625-d7b1dc43517f
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_08.jpg
+is_cover: false
+sort_order: 8
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 60 of 92] ---
+id: c9555beb-953f-4970-968b-a24833c3e324
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_18.jpg
+is_cover: false
+sort_order: 18
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 61 of 92] ---
+id: 4fbc8538-aafb-4783-a53a-8091852e997b
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_00.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 62 of 92] ---
+id: 43d809db-48dc-43b6-a09c-a0daf5aeb5c4
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_24.jpg
+is_cover: false
+sort_order: 24
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 63 of 92] ---
+id: eecd1151-5fdb-424e-9481-4ce66070e84f
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_20.jpg
+is_cover: false
+sort_order: 20
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 64 of 92] ---
+id: f12a6b9e-b685-413b-9e21-5af88b0371c7
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_02.jpg
+is_cover: false
+sort_order: 2
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 65 of 92] ---
+id: 9c106d4b-0052-40f3-a9f2-70f877bf8976
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_26.jpg
+is_cover: false
+sort_order: 26
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 66 of 92] ---
+id: 00bbfcb1-0731-4618-adfe-fd1a75a38fc8
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_05.jpg
+is_cover: false
+sort_order: 5
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 67 of 92] ---
+id: f4d5fc1d-dcb0-4ee6-867f-e01dde6230ca
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_13.jpg
+is_cover: false
+sort_order: 13
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 68 of 92] ---
+id: 82be1326-0d25-4101-8648-fec6416cbb18
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_04.jpg
+is_cover: false
+sort_order: 4
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 69 of 92] ---
+id: 6d194b17-b22e-4e90-8c42-93029a043ef9
+entity_slug: phoenix-ix
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_19.jpg
+is_cover: false
+sort_order: 19
+photo_type: resource
+source_name: bookable_resource
+resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+
+--- entity_photos [row 70 of 92] ---
+id: fa6d3805-1f74-405f-ab79-562f8e641092
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/ebb85752-2422-4226-8dbb-07d83420fd16
+is_cover: false
+sort_order: 400
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 71 of 92] ---
+id: d3f9baa8-ef4a-4f2b-8461-e170964aff06
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/eef5cfe6-6016-4675-81e3-c231af8a3c6c
+is_cover: false
+sort_order: 401
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 72 of 92] ---
+id: cf98b0c6-226c-415b-9e50-db2acb21e08d
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/bcfc531f-eaff-49b3-b521-6c9d553db7a6
+is_cover: false
+sort_order: 402
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 73 of 92] ---
+id: 51e4774e-206b-4e3f-8f2d-e33182d12b64
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/04e2346a-5b8a-4f8f-b166-64dabebd7da5
+is_cover: false
+sort_order: 403
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 74 of 92] ---
+id: d01faa3d-ed11-47ee-859f-c8cdb84b7a21
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/11375c0a-c2ce-4231-ae4b-be16cdbab31b
+is_cover: false
+sort_order: 404
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 75 of 92] ---
+id: 954e57d6-1839-470e-8778-6b97e7f59a37
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/fcbbe78b-409a-47a2-a4c7-7eed3dfa255f
+is_cover: false
+sort_order: 405
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 76 of 92] ---
+id: 63914ea1-39cc-46c3-8d21-374ce67bed7e
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/576e5ba0-db05-4d8f-a25f-8da72c7dfa66
+is_cover: false
+sort_order: 406
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 77 of 92] ---
+id: 7ff57913-f586-4ba0-b28c-13af08aabc7a
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/3f1a9f51-de98-49fb-8b24-8bd132981fe1
+is_cover: false
+sort_order: 407
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 78 of 92] ---
+id: be2abbf2-3f32-43b3-be64-746480127b0f
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/ef855b9a-ef86-4d7c-9910-122995837a3f
+is_cover: false
+sort_order: 408
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 79 of 92] ---
+id: 885c59fb-976d-4a73-b79a-684ffbcb5950
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/90b74fe5-1650-4022-81f6-d0b2f8924b7a
+is_cover: false
+sort_order: 409
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 80 of 92] ---
+id: 85c34e98-b1c9-45b5-9562-04b726fffff2
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/c9a74f8c-35a1-4dec-a0ab-a7fe51639f7b
+is_cover: false
+sort_order: 410
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 81 of 92] ---
+id: 36c6d4e5-30ef-4155-9c45-de6724ae9f8c
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/feedd15f-f551-4607-a8ba-770ee6824fb5
+is_cover: false
+sort_order: 411
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 82 of 92] ---
+id: e2aef703-9bbe-42b4-ad83-3930aee34d23
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/060053f8-9573-43f1-8303-cfa16ba6a6cb
+is_cover: false
+sort_order: 412
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 83 of 92] ---
+id: 9a388bce-7cac-49ff-a8e8-b7ff0b1c6fc8
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/d55b771c-d0b4-408f-8d7d-84576ca20bbe
+is_cover: false
+sort_order: 413
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 84 of 92] ---
+id: 5dea554c-b9a0-49c7-a28f-79f638ccb419
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/8fcbc39b-643a-4398-a49f-b1b716de42d6
+is_cover: false
+sort_order: 414
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 85 of 92] ---
+id: c5de78b3-7a6a-40ea-b0a9-d552962c85fe
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/a8366c19-187c-489a-bae3-a383ee0ed505
+is_cover: false
+sort_order: 415
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 86 of 92] ---
+id: 956beaa6-f59a-424c-b86f-0165a2971ff4
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/3e08b020-7110-4c4e-9b23-fd19c4ab768e
+is_cover: false
+sort_order: 416
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 87 of 92] ---
+id: a279dafb-3704-4b6e-91fe-d885accc6698
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/11f6ca47-7983-43a8-8870-7c15c2f84c9f
+is_cover: false
+sort_order: 417
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 88 of 92] ---
+id: 64c64dea-3d0b-4c20-ba67-f948a4616897
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/d17ce006-ce67-4265-a007-471880d2074a
+is_cover: false
+sort_order: 418
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 89 of 92] ---
+id: 4bb4ac54-0d4c-4dc8-aadb-6b81f68a71aa
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/3b7f57ca-eb10-48b4-8d9f-14218a743e22
+is_cover: false
+sort_order: 419
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 90 of 92] ---
+id: 9c190f59-98f8-4a83-bfad-0b94614308f9
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/600x400/https://track-pm.s3.amazonaws.com/brett-robinson/image/9bf47c47-182f-47e3-8a9c-6fd0a37719d3
+is_cover: false
+sort_order: 420
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 91 of 92] ---
+id: dcdd2d65-0400-425c-b5fa-fd46386b58cf
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/600x400/https://track-pm.s3.amazonaws.com/brett-robinson/image/df2b5ed6-8e10-4bd9-9986-5eadea7427c1
+is_cover: false
+sort_order: 421
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 92 of 92] ---
+id: 8a5d13cb-cfb4-4244-8ea1-ed75235cc780
+entity_slug: phoenix-ix
+url: https://img.trackhs.com/600x400/https://track-pm.s3.amazonaws.com/brett-robinson/image/c81d8c9f-b35c-4b15-ac45-440dab5f84d1
+is_cover: false
+sort_order: 422
+photo_type: gallery
+source_name: extracted:condos_zip
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 221c1412-354b-4103-9956-d9be2fd00ddf
+entity_slug: phoenix-ix
+reviewer_name: Rachel Paradise-Wilson
+rating: 5
+body: Beautiful building!  Very well laid out.  Nice pool and commen areas.  Location was nice and quiet, but still within walking distance of the Floa-Bama!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-08-27T16:46:34.4716+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: 61b6ae34-358f-4c78-9f9d-9800be7a27c8
+entity_slug: phoenix-ix
+reviewer_name: Megan B
+rating: 5
+body: Very nice condos with great views and awesome location. Indoor pool and spa were great. Nice that parking is included and not extra.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2024-12-17T12:38:37.161522+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: d7ccf208-28dd-46e5-8f4a-2ea185c502c4
+entity_slug: phoenix-ix
+reviewer_name: Rhonda Miles
+rating: 5
+body: Beautiful views, onsite security and very clean. Loved the community grills and indoor pool area.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-12-12T00:45:09.364641+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: fabfec15-4e4f-4c34-974b-5e5d49fb7a52
+entity_slug: phoenix-ix
+reviewer_name: Danny Davis
+rating: 5
+body: My wife and I have stayed in Phoenix 3 for 3 yrs in a row. Never had a problem.  Room was cleaned and the view was awesome.  This yr  we stayed at Phoenix 9. Loved it the most, watched boats go out and in from the marina. Close to great fishing.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2023-06-12T16:41:30.375578+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 8cd99319-60f6-4673-b3b8-c6f40bd468b1
+entity_slug: phoenix-ix
+reviewer_name: Jeff Leonard
+rating: 5
+body: Always rent from Brett/Robinson. Clean rooms easy checking process. Never an issue. Rent from them every year.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-08-18T22:53:15.503539+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_section_items   -   1 row(s)
+####################################################################################################
+
+--- entity_section_items [row 1 of 1] ---
+id: 13485f98-80b7-4985-902b-64b6962d65be
+section_id: 12afb70a-b9d3-4fc9-b530-9fd8ff3d1fa7
+entity_slug: phoenix-ix
+item_name: Phoenix IX
+description: Phoenix IX is a beachfront condo located on the eastern end of Orange Beach near the Alabama–Florida border, offering a quieter stretch of sugar-white sand and convenient access to Orange Beach, Perdido Key, and nearby Gulf Shores. Positioned along miles of scenic shoreline, Phoenix IX provides a relaxed coastal setting with expansive views of both the Gulf of Mexico and the bay.
+
+The property features spacious 1-, 2-, and 3-bedroom vacation rentals, all designed to face the water and include pr
+icon: 🏠
+metadata: {}
+sort_order: 1
+check_in_time: 16:00
+check_out_time: 11:00
+min_nights: 1
+cleaning_fee: 0
+bedrooms: 3
+
+####################################################################################################
+# TABLE: entity_section_items_metadata_backup   -   1 row(s)
+####################################################################################################
+
+--- entity_section_items_metadata_backup [row 1 of 1] ---
+id: 13485f98-80b7-4985-902b-64b6962d65be
+entity_slug: phoenix-ix
+item_name: Phoenix IX
+metadata: {
+  "bedrooms": 3,
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_00.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_11.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_12.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_13.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_14.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_15.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_16.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_17.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_18.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_19.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_20.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_21.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_22.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_23.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_24.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_25.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_26.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_27.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-ix/image_28.png"
+  ],
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "check_out_time": "11:00"
+}
+backed_up_at: 2026-07-16T09:49:37.166591+00:00
+
+####################################################################################################
+# TABLE: entity_sections   -   1 row(s)
+####################################################################################################
+
+--- entity_sections [row 1 of 1] ---
+id: 12afb70a-b9d3-4fc9-b530-9fd8ff3d1fa7
+entity_slug: phoenix-ix
+section_type: rooms
+section_name: Units & Rates
+sort_order: 2
+module_key: rooms
+is_active: true
+
+####################################################################################################
+# TABLE: entity_sources   -   2 row(s)
+####################################################################################################
+
+--- entity_sources [row 1 of 2] ---
+id: d43260dd-643b-4c48-8aaf-a0b55377e0af
+entity_slug: phoenix-ix
+source_system: liquid_life
+source_url: https://www.liquidlifevacationrentals.com/resort/phoenix-ix
+scope: entity
+observed_at: 2026-07-16T00:00:00+00:00
+confidence: high
+created_at: 2026-07-16T10:58:22.481614+00:00
+
+--- entity_sources [row 2 of 2] ---
+id: 112816c5-b65d-4eec-b6e0-ddad642ce991
+entity_slug: phoenix-ix
+source_system: condos_zip_brett_robinson
+observed_at: 2026-07-16T00:00:00+00:00
+confidence: medium
+note: Structured scrape of Brett-Robinson property page (condos_data1_3.zip)
+created_at: 2026-07-16T10:59:56.848474+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   37 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 37] ---
+id: 20f8f567-8cd8-41c3-9849-2fcc6ec5441d
+entity_slug: phoenix-ix
+tag_name: condo
+tag_category: type
+
+--- entity_tags [row 2 of 37] ---
+id: 6974c513-8121-4234-a5b4-8ee0aedac2df
+entity_slug: phoenix-ix
+tag_name: Condos & Stays
+tag_category: category
+
+--- entity_tags [row 3 of 37] ---
+id: 988ca45f-d4bc-489d-933f-d7d5f889c722
+entity_slug: phoenix-ix
+tag_name: Pool
+tag_category: amenity
+
+--- entity_tags [row 4 of 37] ---
+id: cfff0735-40f1-4170-a446-44eb4530cbcb
+entity_slug: phoenix-ix
+tag_name: 3 Bedrooms
+tag_category: amenity
+
+--- entity_tags [row 5 of 37] ---
+id: abf19595-50f6-440e-8c13-d7553476bebe
+entity_slug: phoenix-ix
+tag_name: Hot tub
+tag_category: amenity
+
+--- entity_tags [row 6 of 37] ---
+id: ab1eaef1-6cfa-440c-b434-76fcfe8b3885
+entity_slug: phoenix-ix
+tag_name: Fitness center
+tag_category: amenity
+
+--- entity_tags [row 7 of 37] ---
+id: 70b1da22-7278-4eb4-bcb5-eda60d09cb6c
+entity_slug: phoenix-ix
+tag_name: Tennis court
+tag_category: amenity
+
+--- entity_tags [row 8 of 37] ---
+id: 3e95bef6-0b59-41b8-bf6a-82376e1fb68f
+entity_slug: phoenix-ix
+tag_name: Covered parking
+tag_category: amenity
+
+--- entity_tags [row 9 of 37] ---
+id: 031ebab2-0f20-4d74-9517-b4315afa1ff9
+entity_slug: phoenix-ix
+tag_name: Barbeque
+tag_category: amenity
+
+--- entity_tags [row 10 of 37] ---
+id: b1191d3a-8f89-49ab-9e06-21d5743e8b5f
+entity_slug: phoenix-ix
+tag_name: Grill
+tag_category: amenity
+
+--- entity_tags [row 11 of 37] ---
+id: f33c8393-b2f0-434b-91a2-1960e1b02de8
+entity_slug: phoenix-ix
+tag_name: Gulf-front
+tag_category: amenity
+
+--- entity_tags [row 12 of 37] ---
+id: 685f0d30-638f-4fe9-9632-7927828d341d
+entity_slug: phoenix-ix
+tag_name: Parking
+tag_category: amenity
+
+--- entity_tags [row 13 of 37] ---
+id: 99bb5349-b4ae-4792-8ecd-37116328c759
+entity_slug: phoenix-ix
+tag_name: Kiddie pool
+tag_category: amenity
+
+--- entity_tags [row 14 of 37] ---
+id: 0ace6aef-19c7-4918-a92d-9fc9332d1069
+entity_slug: phoenix-ix
+tag_name: Bay-view indoor pool
+tag_category: amenity
+
+--- entity_tags [row 15 of 37] ---
+id: cbffd26b-b98a-4313-bcf5-9724de3994cc
+entity_slug: phoenix-ix
+tag_name: Pickleball court
+tag_category: amenity
+
+--- entity_tags [row 16 of 37] ---
+id: 50c742fc-3d32-4882-8919-45a4147eb9f9
+entity_slug: phoenix-ix
+tag_name: Covered parking and barbeque grills.
+tag_category: amenity
+
+--- entity_tags [row 17 of 37] ---
+id: 92028dba-8236-44da-a44c-aad3c652e261
+entity_slug: phoenix-ix
+tag_name: Restaurant
+tag_category: amenity
+
+--- entity_tags [row 18 of 37] ---
+id: b9b2beb3-d8b0-4a80-b89e-0738a74fb06f
+entity_slug: phoenix-ix
+tag_name: Beach access
+tag_category: amenity
+
+--- entity_tags [row 19 of 37] ---
+id: 97cb91ce-c300-4d09-943b-c21e47c2e34b
+entity_slug: phoenix-ix
+tag_name: Beach chair
+tag_category: amenity
+
+--- entity_tags [row 20 of 37] ---
+id: de84be52-c70a-4eb4-92b0-44e9d7594c70
+entity_slug: phoenix-ix
+tag_name: Elevator
+tag_category: amenity
+
+--- entity_tags [row 21 of 37] ---
+id: da5ac72d-bdac-4e8e-818b-01ab90095a84
+entity_slug: phoenix-ix
+tag_name: Accessible
+tag_category: amenity
+
+--- entity_tags [row 22 of 37] ---
+id: f3ee505d-839b-4557-8ac9-c44adbb95ca6
+entity_slug: phoenix-ix
+tag_name: Outdoor pool
+tag_category: amenity
+
+--- entity_tags [row 23 of 37] ---
+id: dec0c686-a957-4dca-ab2b-d6cf321693d5
+entity_slug: phoenix-ix
+tag_name: Sauna
+tag_category: amenity
+
+--- entity_tags [row 24 of 37] ---
+id: 1c401c93-f2d8-48f1-8856-ff3ea4bd9da5
+entity_slug: phoenix-ix
+tag_name: Washer and dryer
+tag_category: amenity
+
+--- entity_tags [row 25 of 37] ---
+id: f7d75f6b-f8e3-4dcc-a46f-ebf6551883bc
+entity_slug: phoenix-ix
+tag_name: Wi-fi
+tag_category: amenity
+
+--- entity_tags [row 26 of 37] ---
+id: 977be660-a30a-4765-ba42-710abca733d4
+entity_slug: phoenix-ix
+tag_name: Grilling Area
+tag_category: amenity
+
+--- entity_tags [row 27 of 37] ---
+id: a0b1a95d-fb10-4f08-a901-4a685ebb0c0e
+entity_slug: phoenix-ix
+tag_name: Indoor Tennis Court
+tag_category: amenity
+
+--- entity_tags [row 28 of 37] ---
+id: 183e84bc-1ac0-4ca5-8b3a-ec52b01ab14a
+entity_slug: phoenix-ix
+tag_name: Indoor Heated Pool
+tag_category: amenity
+
+--- entity_tags [row 29 of 37] ---
+id: bafbab0f-89de-4fbb-a3e9-427b4fb5fa0c
+entity_slug: phoenix-ix
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 30 of 37] ---
+id: ba60d83c-954b-4a1f-9f5c-c7056e16b1f4
+entity_slug: phoenix-ix
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 31 of 37] ---
+id: 78cfa9f7-7295-406d-bd54-564765314e9e
+entity_slug: phoenix-ix
+tag_name: real_estate_agency
+tag_category: google_type
+
+--- entity_tags [row 32 of 37] ---
+id: 36c5e6a7-4863-4baf-8d3d-13ce3918e730
+entity_slug: phoenix-ix
+tag_name: travel_agency
+tag_category: google_type
+
+--- entity_tags [row 33 of 37] ---
+id: 6866eb02-8c02-4185-a52e-ca3d9a124353
+entity_slug: phoenix-ix
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 34 of 37] ---
+id: 2eb58a3a-5865-46a1-92cf-995d1a0f24d5
+entity_slug: phoenix-ix
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 35 of 37] ---
+id: de4976c7-9d70-4f33-b714-160615542f97
+entity_slug: phoenix-ix
+tag_name: real_estate_agency
+tag_category: google_type
+
+--- entity_tags [row 36 of 37] ---
+id: 685cb2c5-aaa2-4b83-8c4b-724a61e7eb1e
+entity_slug: phoenix-ix
+tag_name: travel_agency
+tag_category: google_type
+
+--- entity_tags [row 37 of 37] ---
+id: 486ae481-641f-4ee3-af15-592a98419a24
+entity_slug: phoenix-ix
+tag_name: service
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   2 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 2] ---
+id: 0af2297c-628e-4450-9d7f-1bf186a86089
+entity_slug: phoenix-ix
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+--- entity_theme [row 2 of 2] ---
+id: bb86913b-039b-4492-847f-c23a646ef265
+entity_slug: phoenix-ix
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: faqs   -   13 row(s)
+####################################################################################################
+
+--- faqs [row 1 of 13] ---
+id: 2fc76ca9-e9b8-46a4-afa0-0591ab79b707
+entity_id: 2a232fea-6020-40de-ae23-67091840f793
+question: Where is Phoenix 9 located?
+answer: Phoenix 9 is located at 29488 Perdido Beach Blvd, Orange Beach, AL 36561 and is approximately 10 miles east of Hwy 59.
+created_at: 2026-06-14T04:00:31.096828
+sort_order: 1
+entity_slug: phoenix-ix
+category: general
+
+--- faqs [row 2 of 13] ---
+id: 12379a60-9826-42b1-a032-7b32af3f3fd8
+entity_id: 2a232fea-6020-40de-ae23-67091840f793
+question: What amenities are included in Phoenix IX vacation rentals?
+answer: Phoenix IX features several luxury amenities including: outdoor Gulf-front pool, kiddie pool, bay-view indoor pool, hot tub, fitness center, tennis court, pickleball court, covered parking and barbeque grills.
+created_at: 2026-06-14T04:00:31.096828
+sort_order: 2
+entity_slug: phoenix-ix
+category: general
+
+--- faqs [row 3 of 13] ---
+id: 28ba56c0-7fa0-408e-9401-bbbd562ca126
+entity_id: 2a232fea-6020-40de-ae23-67091840f793
+question: What types of units are available for rent at Phoenix 9?
+answer: Phoenix 9 offers spacious 1-, 2-, and 3- bedroom units, ranging in size from approximately 1,950 to 2,550 square feet.
+created_at: 2026-06-14T04:00:31.096828
+sort_order: 3
+entity_slug: phoenix-ix
+category: general
+
+--- faqs [row 4 of 13] ---
+id: ce27c51c-0cff-4872-a203-d1be1bc26e89
+entity_id: 2a232fea-6020-40de-ae23-67091840f793
+question: What popular attractions are close to Phoenix IX?
+answer: At Phoenix IX, you’ll have direct access to Orange Beach’s most popular attraction, the sugar-white sand and calm emerald-green waters of the Gulf. You can walk from your Phoenix IX condo to the world-famous Flora-Bama beach bar, Flora-Bama Yacht Club, and more. There are also marinas nearby with fishing charters, water sports, and dolphin tours and tons of shops, restaurants, and entertainment in nearby Perdido Key and Orange Beach. For history buffs, check out the Orange Beach Indian & Sea Mus
+created_at: 2026-06-14T04:00:31.096828
+sort_order: 4
+entity_slug: phoenix-ix
+category: general
+
+--- faqs [row 5 of 13] ---
+id: 53227240-3c9a-41e3-a354-f14b1e5ce6fb
+entity_id: 2a232fea-6020-40de-ae23-67091840f793
+question: What are the check-in and check-out times at Phoenix 9?
+answer: Check-in and check-out times vary by season. For more information, refer to our Check In and Check Out Times Pageand review your booking confirmation message.
+created_at: 2026-06-14T04:00:31.096828
+sort_order: 5
+entity_slug: phoenix-ix
+category: general
+
+--- faqs [row 6 of 13] ---
+id: d5bb7e90-6f1b-44ea-b48e-e1672653c6ff
+entity_id: 2a232fea-6020-40de-ae23-67091840f793
+question: Do all Phoenix 9 rentals have Gulf views?
+answer: All Phoenix 9 units have private balconies and floor-to-ceiling windows showcasing views of the Gulf.
+created_at: 2026-06-14T04:00:31.096828
+sort_order: 6
+entity_slug: phoenix-ix
+category: general
+
+--- faqs [row 7 of 13] ---
+id: 70655723-02c6-4f6a-88cb-215e353fb272
+entity_id: 2a232fea-6020-40de-ae23-67091840f793
+question: Is there beach access available at Phoenix IX?
+answer: Yes, at Phoenix IX, you’ll have direct beach access, and we also offer beach chair rentals for guests.
+created_at: 2026-06-14T04:00:31.096828
+sort_order: 7
+entity_slug: phoenix-ix
+category: general
+
+--- faqs [row 8 of 13] ---
+id: 97d1b608-eab7-4a7a-9673-6fecb84e324b
+entity_id: 2a232fea-6020-40de-ae23-67091840f793
+question: Is there a grocery store nearby Phoenix 9 where guests can purchase food, supplies and necessities?
+answer: Yes, there are several grocery stores located near Phoenix 9, including Publix, Walmart, and Winn-Dixie. Grocery delivery is offered at participating stores with partnering apps.
+created_at: 2026-06-14T04:00:31.096828
+sort_order: 8
+entity_slug: phoenix-ix
+category: general
+
+--- faqs [row 9 of 13] ---
+id: d27491a9-071f-4e98-a0f2-18b3923d9aba
+entity_id: 2a232fea-6020-40de-ae23-67091840f793
+question: Does Phoenix IX have accessibility options?
+answer: Phoenix IX is equipped with accessibility features to ensure that guests can enjoy their stay. The resort has accessible entrances and public areas, including ramps and elevators. The units were also originally designed with accessibility in mind. Contact us at 1-800-211-7892 to discuss accommodations and options.
+created_at: 2026-06-14T04:00:31.096828
+sort_order: 9
+entity_slug: phoenix-ix
+category: general
+
+--- faqs [row 10 of 13] ---
+id: b90b787a-9f1d-49a4-a9c4-87e749057d28
+entity_id: 2a232fea-6020-40de-ae23-67091840f793
+question: Is Phoenix 9 a good choice for family vacations?
+answer: Yes, Phoenix 9 in Orange Beach is incredibly family-friendly! It has spacious, well-appointed units with open layouts perfect for families. Phoenix 9 also has tons of family-friendly amenities for children of all ages, like indoor and outdoor pools, a kiddie pool, a sauna, hot tubs, tennis and pickleball courts, barbeques, and more. Phoenix 9’s location is also perfect for families looking for a quiet spot close to all the fun attractions and activities in Orange Beach and Perdido Key. It’s even
+created_at: 2026-06-14T04:00:31.096828
+sort_order: 10
+entity_slug: phoenix-ix
+category: general
+
+--- faqs [row 11 of 13] ---
+id: ee1c98b6-3630-44a2-a70d-ad7a62e0a68d
+entity_id: 2a232fea-6020-40de-ae23-67091840f793
+question: Is there a washer and dryer in each unit at Phoenix IX?
+answer: Yes, each unit at Phoenix IX has an in-unit washer and dryer for your convenience.
+created_at: 2026-06-14T04:00:31.096828
+sort_order: 11
+entity_slug: phoenix-ix
+category: general
+
+--- faqs [row 12 of 13] ---
+id: 7bfcd6e4-43ed-4282-a76b-f82f95860130
+entity_id: 2a232fea-6020-40de-ae23-67091840f793
+question: Is there free Wi-Fi available at Phoenix 9?
+answer: Yes, Phoenix 9 offers complimentary Wi-Fi access for guests.
+created_at: 2026-06-14T04:00:31.096828
+sort_order: 12
+entity_slug: phoenix-ix
+category: general
+
+--- faqs [row 13 of 13] ---
+id: 411e0958-825a-4abf-8c24-ad828a80cb32
+entity_id: 2a232fea-6020-40de-ae23-67091840f793
+question: Why book a Phoenix IX rental with Brett/Robinson?
+answer: By booking with Brett/Robinson Vacations you get the benefit of over 40 years of experience in the area. Brett/Robinson operates and maintains Phoenix IX and we have an on-site staff available to ensure you have a superb stay at the beach. We focus on quality, cleanliness and functionality in all of our available units. Our dedicated on-site customer service staff is here to help with any needs you have during your stay. Also, our knowledgeable area specialists can assist you in planning your it
+created_at: 2026-06-14T04:00:31.096828
+sort_order: 13
+entity_slug: phoenix-ix
+category: general
+
+####################################################################################################
+# TABLE: industry_condo   -   1 row(s)
+####################################################################################################
+
+--- industry_condo [row 1 of 1] ---
+entity_slug: phoenix-ix
+listed_unit_count: 0
+bedrooms_min: 3
+bedrooms_max: 3
+has_pool: true
+pet_friendly: false
+updated_at: 2026-07-21T16:59:02.358415+00:00
+
+####################################################################################################
+# TABLE: recovery_import_log   -   1 row(s)
+####################################################################################################
+
+--- recovery_import_log [row 1 of 1] ---
+id: cbfe4838-b1af-49b5-bdcd-36223a25880b
+batch_id: draft-businesses-netnew-2026-07-19
+target_table: entity
+target_row_id: 18f2c362-0682-4f4f-bdef-6d9219b3b15d
+entity_slug: phoenix-ix
+source_db: may
+source_table: entity
+source_id: c473f500-7129-40fc-a236-1c1ee5ea51bb
+action: insert
+imported_at: 2026-07-19T20:33:24.034873+00:00
+
+####################################################################################################
+# TABLE: rental_units   -   1 row(s)
+####################################################################################################
+
+--- rental_units [row 1 of 1] ---
+id: 71d3b73c-5a20-4a71-8d69-2c83b483400e
+entity_slug: phoenix-ix
+slug: phoenix-ix
+name: Phoenix IX
+bedrooms: 3
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+city: Orange Beach
+state: AL
+source_resource_id: 570aec5f-5627-4afa-a42f-9e456c685765
+is_active: true
+created_at: 2026-07-23T00:06:23.937689+00:00
+updated_at: 2026-07-23T00:06:23.937689+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: phoenix-ix
+entity_slug: phoenix-ix
+title: Phoenix IX
+category: condominium_complex
+subtitle: Phoenix IX is a beachfront condo located on the eastern end of Orange Beach near the Alabama–Florida border, offering a quieter stretch of sugar-white sand and convenient access to Orange Beach, Perdido Key, and nearby Gulf Shores. Positioned along miles of scenic shoreline, Phoenix IX provides a relaxed coastal setting with expansive views of both the Gulf of Mexico and the bay.
+
+The property features spacious 1-, 2-, and 3-bedroom vacation rentals, all designed to face the water and include pr
+search_vector: '1':74C '2':75C '3':77C 'access':35C 'alabama':21C 'along':46C 'bay':69C 'beach':18C,38C 'beachfront':9C 'bedroom':78C 'border':23C 'coastal':56C 'complex':4B 'condo':10C 'condominium':3B 'conveni':34C 'design':82C 'eastern':14C 'end':15C 'expans':59C 'face':84C 'featur':72C 'florida':22C 'gulf':43C,64C 'includ':88C 'ix':2A,6C,52C 'key':40C 'locat':11C 'mexico':66C 'mile':47C 'near':19C 'nearbi':42C 'offer':24C 'orang':17C,37C 'perdido':39C 'phoenix':1A,5C,51C 'posit':45C 'pr':89C 'properti':71C 'provid':53C 'quieter':26C 'relax':55C 'rental':80C 'sand':32C 'scenic':49C 'set':57C 'shore':44C 'shorelin':50C 'spacious':73C 'stretch':27C 'sugar':30C 'sugar-whit':29C 'vacat':79C 'view':60C 'water':86C 'white':31C
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 13935
+entity_slug: phoenix-ix
+title: Phoenix IX
+category: room
+subtitle: Phoenix IX is a beachfront condo located on the eastern end of Orange Beach near the Alabama–Florida border, offering a quieter stretch of sugar-white sand and convenient access to Orange Beach, Perdido Key, and nearby Gulf Shores. Positioned along miles of scenic shoreline, Phoenix IX provides a relaxed coastal setting with expansive views of both the Gulf of Mexico and the bay.
+
+The property features spacious 1-, 2-, and 3-bedroom vacation rentals, all designed to face the water and include pr
+search_vector: '1':72C '2':73C '3':75C 'access':33C 'alabama':19C 'along':44C 'bay':67C 'beach':16C,36C 'beachfront':7C 'bedroom':76C 'border':21C 'coastal':54C 'condo':8C 'conveni':32C 'design':80C 'eastern':12C 'end':13C 'expans':57C 'face':82C 'featur':70C 'florida':20C 'gulf':41C,62C 'includ':86C 'ix':2A,4C,50C 'key':38C 'locat':9C 'mexico':64C 'mile':45C 'near':17C 'nearbi':40C 'offer':22C 'orang':15C,35C 'perdido':37C 'phoenix':1A,3C,49C 'posit':43C 'pr':87C 'properti':69C 'provid':51C 'quieter':24C 'relax':53C 'rental':78C 'sand':30C 'scenic':47C 'set':55C 'shore':42C 'shorelin':48C 'spacious':71C 'stretch':25C 'sugar':28C 'sugar-whit':27C 'vacat':77C 'view':58C 'water':84C 'white':29C
+
+####################################################################################################
+# TABLE: tourist_seen   -   2 row(s)
+####################################################################################################
+
+--- tourist_seen [row 1 of 2] ---
+id: 0d586a29-fe82-4058-9ecb-903d1e7a32af
+tourist_id: c0a3821f-e2ce-4fa6-b1a6-628a522d8e74
+entity_slug: phoenix-ix
+created_at: 2026-07-11T22:51:52.263308+00:00
+
+--- tourist_seen [row 2 of 2] ---
+id: bb6628b4-d837-4ca1-8438-4b19fd4e5e8c
+tourist_id: bd6663c0-1558-4dd0-b5f0-3900ed82fc00
+entity_slug: phoenix-ix
+created_at: 2026-07-11T23:35:06.162752+00:00
+
+####################################################################################################
+# TABLE: tourist_swipe_events   -   2 row(s)
+####################################################################################################
+
+--- tourist_swipe_events [row 1 of 2] ---
+id: afca0f19-9d13-4bda-a72d-3bcba88da799
+tourist_id: c0a3821f-e2ce-4fa6-b1a6-628a522d8e74
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+category: stay
+direction: like
+created_at: 2026-07-11T22:51:51.797866+00:00
+
+--- tourist_swipe_events [row 2 of 2] ---
+id: b53ee204-c7ee-4d31-aa8e-a2b077763e05
+tourist_id: bd6663c0-1558-4dd0-b5f0-3900ed82fc00
+entity_slug: phoenix-ix
+entity_name: Phoenix IX
+category: stay
+direction: nope
+created_at: 2026-07-11T23:35:05.854278+00:00
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: phoenix-ix

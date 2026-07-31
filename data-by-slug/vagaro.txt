@@ -1,0 +1,1006 @@
+====================================================================================================
+SLUG: vagaro
+NAME: Vagaro
+INDUSTRY: professional_service
+SUBTYPE: software
+TABLES WITH DATA: 19
+TOTAL ROWS: 98
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (8 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_good_for  (19 rows)
+  entity_highlights  (26 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_offer  (1 rows)
+  entity_photos  (4 rows)
+  entity_tags  (19 rows)
+  entity_theme  (1 rows)
+  industry_professional_service  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: vagaro
+name: Vagaro
+planner_category: food_drink
+data_quality_score: 75
+issues: missing_menu|missing_drink_menu|missing_faqs|missing_lat_lng
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: true
+missing_drink_menu: true
+missing_hours: false
+missing_photos: false
+missing_faqs: true
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   8 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 8] ---
+id: 5681
+entity_slug: vagaro
+intent_tag: best_for:drinks_or_cocktails
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 8] ---
+id: 5682
+entity_slug: vagaro
+intent_tag: meal:drinks
+intent_category: meal_period
+confidence: 0.82
+evidence: Derived from meal flags/menu content.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 8] ---
+id: 5683
+entity_slug: vagaro
+intent_tag: service:booking_available
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 8] ---
+id: 5684
+entity_slug: vagaro
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 8] ---
+id: 5685
+entity_slug: vagaro
+intent_tag: missing:missing_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 8] ---
+id: 5686
+entity_slug: vagaro
+intent_tag: missing:missing_drink_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 8] ---
+id: 5687
+entity_slug: vagaro
+intent_tag: missing:missing_faqs
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 8] ---
+id: 5688
+entity_slug: vagaro
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: vagaro
+name: Vagaro
+is_active: t
+planner_category: food_drink
+entity_type: service
+entity_subtype: software-platform
+city: Unknown
+state: CA
+address_line_1: Unknown
+review_count: 0
+website_url: https://www.vagaro.com
+voice_summary: Vagaro in Unknown is best for drinks or cocktails.
+planner_summary: With over 90,000 businesses relying on Vagaro every day, we're a pioneer in mobile app and desktop business management software. Our unique platform is crafted for solo entrepreneurs to growing enterprises, delivering innovation and practicality directly into the hands of businesses. Vagaro currently has more than 83,000 beauty, wellness, and fitness businesses in the USA, Canada, UK, and Australia, managing their daily activities in a secure and reliable system that takes care of all of their technology needs from Online Booking, Automated Email / Text / Push Notification confirmations and re
+best_for: drinks or cocktails
+not_best_for: quiet low-energy meal
+meal_periods: drinks
+service_tags: booking_available
+search_keywords: salon software|spa software|fitness software|appointment scheduling|online booking|POS system|payment processing|business management|beauty industry|wellness industry|Business Software|Salon Management|Point of Sale|business-software|software-platform|drinks|booking_available
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 2
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 19
+faq_count: 0
+data_quality_score: 75
+data_gaps: missing_menu|missing_drink_menu|missing_faqs|missing_lat_lng
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 17883
+entity_slug: vagaro
+entity_name: Vagaro
+city: Unknown
+url: https://vagaro.azureedge.net/static/assets/footer-hippa-complaince-verified.png
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 17884
+entity_slug: vagaro
+entity_name: Vagaro
+city: Unknown
+url: https://vagaro.azureedge.net/static-content/PublicImages/Images/covid-img.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 4cf6365b-9a9c-4115-ae61-1843ea09bf5f
+resource_type: service
+slug: vagaro
+name: Vagaro
+description: With over 90,000 businesses relying on Vagaro every day, we're a pioneer in mobile app and desktop business management software. Our unique platform is crafted for solo entrepreneurs to growing enterprises, delivering innovation and practicality directly into the hands of businesses. Vagaro currently has more than 83,000 beauty, wellness, and fitness businesses in the USA, Canada, UK, and Australia, managing their daily activities in a secure and reliable system that takes care of all of their technology needs from Online Booking, Automated Email / Text / Push Notification confirmations and reminders, Point of Sale, Payroll, Taxes, Inventory, Customer Relations, Employee Management, Email Marketing, Websites, and Social Marketing.
+entity_slug: vagaro
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://vagaro.azureedge.net/static/assets/footer-hippa-complaince-verified.png",
+  "https://vagaro.azureedge.net/static-content/PublicImages/Images/covid-img.jpg"
+]
+amenities: []
+faqs: []
+address: Unknown
+city: Unknown
+state: CA
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: be3ffc2d04252d5036bd58decb40161d
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 4cf6365b-9a9c-4115-ae61-1843ea09bf5f
+entity_slug: vagaro
+slug: vagaro
+photo_urls: [
+  "https://vagaro.azureedge.net/static/assets/footer-hippa-complaince-verified.png",
+  "https://vagaro.azureedge.net/static-content/PublicImages/Images/covid-img.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: c4a7c1c1-2a79-4dd5-b474-37044e2e342d
+slug: vagaro
+name: Vagaro
+is_active: false
+featured: false
+entity_type: service
+entity_subtype: software
+description: With over 90,000 businesses relying on Vagaro every day, we're a pioneer in mobile app and desktop business management software. Our unique platform is crafted for solo entrepreneurs to growing enterprises, delivering innovation and practicality directly into the hands of businesses. Vagaro currently has more than 83,000 beauty, wellness, and fitness businesses in the USA, Canada, UK, and Australia, managing their daily activities in a secure and reliable system that takes care of all of their technology needs from Online Booking, Automated Email / Text / Push Notification confirmations and reminders, Point of Sale, Payroll, Taxes, Inventory, Customer Relations, Employee Management, Email Marketing, Websites, and Social Marketing.
+subtitle: The #1 software & app for beauty, wellness, and fitness
+phone: (925) 718-0971
+website_url: https://www.vagaro.com
+menu_pin: 3979
+social_instagram: https://www.instagram.com/vagaropro
+social_facebook: https://www.facebook.com/vagaropro
+address_line_1: Unknown
+city: Unknown
+state: CA
+zip: Unknown
+review_count: 0
+hero_image_url: https://vagaro.azureedge.net/static/assets/footer-hippa-complaince-verified.png
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T23:02:16.748647+00:00
+updated_at: 2026-06-03T23:02:16.748647+00:00
+gallery_sections: []
+highlights: [
+  "Online Booking",
+  "Mobile App",
+  "Desktop Software",
+  "Calendar & Scheduling",
+  "Payment Processing",
+  "POS System",
+  "Email Marketing",
+  "Text Message Marketing",
+  "Push Notifications",
+  "Inventory Management",
+  "Payroll Management",
+  "Customer Relationship Management",
+  "HIPAA Compliant",
+  "EMR Software",
+  "Multi-location Support",
+  "Social Media Integration",
+  "Intake Forms",
+  "Digital Waivers",
+  "Loyalty Programs",
+  "Membership Management",
+  "Package Management",
+  "Gift Card Management",
+  "Analytics & Reporting",
+  "Website Builder",
+  "Branded App",
+  "Buy Now Pay Later"
+]
+good_for: [
+  "Salon Owners",
+  "Spa Owners",
+  "Fitness Studios",
+  "Personal Trainers",
+  "Yoga Instructors",
+  "Pilates Studios",
+  "Barber Shops",
+  "Nail Salons",
+  "Massage Therapists",
+  "Estheticians",
+  "Medical Spas",
+  "Dental Practices",
+  "Mental Health Practitioners",
+  "Independent Contractors",
+  "Booth Renters",
+  "Chiropractors",
+  "Physical Therapists",
+  "Nutritionists",
+  "Life Coaches"
+]
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+business_status: OPERATIONAL
+google_places_data: {}
+search_vector: 'unknown':2 'vagaro':1A
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: professional_service
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_good_for   -   19 row(s)
+####################################################################################################
+
+--- entity_good_for [row 1 of 19] ---
+id: 21e96eba-f487-48db-bfaa-5a98a8932aac
+entity_slug: vagaro
+audience: Salon Owners
+sort_order: 1
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 2 of 19] ---
+id: 3fabacea-f5de-492a-841e-10854d6403a1
+entity_slug: vagaro
+audience: Spa Owners
+sort_order: 2
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 3 of 19] ---
+id: f69f835d-acb4-4f3a-9673-5cf4f318b070
+entity_slug: vagaro
+audience: Fitness Studios
+sort_order: 3
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 4 of 19] ---
+id: 10e31cf0-1f07-4199-a2b8-1e49e6a8da30
+entity_slug: vagaro
+audience: Personal Trainers
+sort_order: 4
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 5 of 19] ---
+id: 4fcf4225-b290-4c77-a61d-8d44524b2d72
+entity_slug: vagaro
+audience: Yoga Instructors
+sort_order: 5
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 6 of 19] ---
+id: 538d1074-4716-4982-922f-a71db15ecc62
+entity_slug: vagaro
+audience: Pilates Studios
+sort_order: 6
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 7 of 19] ---
+id: 21aa9ed5-6294-4d6a-9e54-e796fa8e7e5b
+entity_slug: vagaro
+audience: Barber Shops
+sort_order: 7
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 8 of 19] ---
+id: 7c34cf97-5d71-4616-a1ce-88ea548b6e5a
+entity_slug: vagaro
+audience: Nail Salons
+sort_order: 8
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 9 of 19] ---
+id: 0587dde8-e59f-4a66-8f49-734e8d3b1580
+entity_slug: vagaro
+audience: Massage Therapists
+sort_order: 9
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 10 of 19] ---
+id: 0dc2d7e3-b0f3-42aa-ab20-b79e67cd61d7
+entity_slug: vagaro
+audience: Estheticians
+sort_order: 10
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 11 of 19] ---
+id: ab8b8bea-fa7e-46a1-a5d1-4c13c4e723d9
+entity_slug: vagaro
+audience: Medical Spas
+sort_order: 11
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 12 of 19] ---
+id: 52da604f-2323-427b-bb15-31b6c43a07e3
+entity_slug: vagaro
+audience: Dental Practices
+sort_order: 12
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 13 of 19] ---
+id: bd41827f-5ff5-495f-9fa8-bc29e93108da
+entity_slug: vagaro
+audience: Mental Health Practitioners
+sort_order: 13
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 14 of 19] ---
+id: be5f333e-9d41-4f73-ab82-eb8b78375ea7
+entity_slug: vagaro
+audience: Independent Contractors
+sort_order: 14
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 15 of 19] ---
+id: c7aa62ba-46f1-4eb4-8192-a327a89900fa
+entity_slug: vagaro
+audience: Booth Renters
+sort_order: 15
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 16 of 19] ---
+id: 7124685e-c1ae-4e0a-b6bb-958505c4d289
+entity_slug: vagaro
+audience: Chiropractors
+sort_order: 16
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 17 of 19] ---
+id: 776cf81f-2fb4-4bf9-99ea-fe9eb41d3b51
+entity_slug: vagaro
+audience: Physical Therapists
+sort_order: 17
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 18 of 19] ---
+id: 1fcac11b-726b-434f-9570-51b7baae0e59
+entity_slug: vagaro
+audience: Nutritionists
+sort_order: 18
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 19 of 19] ---
+id: 75260bb1-bb1f-411a-a25b-44aa00d367cd
+entity_slug: vagaro
+audience: Life Coaches
+sort_order: 19
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+####################################################################################################
+# TABLE: entity_highlights   -   26 row(s)
+####################################################################################################
+
+--- entity_highlights [row 1 of 26] ---
+id: 05a1ff40-776e-4219-ae86-79609153389c
+entity_slug: vagaro
+highlight: Online Booking
+sort_order: 1
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 2 of 26] ---
+id: 24e59ea3-b089-4f41-9cf5-4c5516be6f4d
+entity_slug: vagaro
+highlight: Mobile App
+sort_order: 2
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 3 of 26] ---
+id: d3a9ef3a-ffe9-4a04-b54f-efde690679a8
+entity_slug: vagaro
+highlight: Desktop Software
+sort_order: 3
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 4 of 26] ---
+id: a1aa14c6-3c1d-41ac-ac3a-9c3aadef6394
+entity_slug: vagaro
+highlight: Calendar & Scheduling
+sort_order: 4
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 5 of 26] ---
+id: 1a8fc8f1-724c-40e4-9d66-72fb763a116d
+entity_slug: vagaro
+highlight: Payment Processing
+sort_order: 5
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 6 of 26] ---
+id: f52517f3-2b3c-48fe-8ff5-4a49f967cfa4
+entity_slug: vagaro
+highlight: POS System
+sort_order: 6
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 7 of 26] ---
+id: c19b99e2-4798-493b-acae-a6a0312383cb
+entity_slug: vagaro
+highlight: Email Marketing
+sort_order: 7
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 8 of 26] ---
+id: 2757da18-e28e-40f9-9464-0fc07541b507
+entity_slug: vagaro
+highlight: Text Message Marketing
+sort_order: 8
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 9 of 26] ---
+id: 66dd19fe-b49a-4390-b44a-4ad747725811
+entity_slug: vagaro
+highlight: Push Notifications
+sort_order: 9
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 10 of 26] ---
+id: 2b1fcc48-a578-4267-8566-7f3f2e680199
+entity_slug: vagaro
+highlight: Inventory Management
+sort_order: 10
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 11 of 26] ---
+id: 85f9e0fa-8104-4aec-a5af-92e3b2a33665
+entity_slug: vagaro
+highlight: Payroll Management
+sort_order: 11
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 12 of 26] ---
+id: 26583965-2093-41f8-97df-8b85362cdbc6
+entity_slug: vagaro
+highlight: Customer Relationship Management
+sort_order: 12
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 13 of 26] ---
+id: 5b129983-97c5-433b-864c-17be5c399681
+entity_slug: vagaro
+highlight: HIPAA Compliant
+sort_order: 13
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 14 of 26] ---
+id: ae57ed13-21fd-4a3c-b02e-8a2943c2bc44
+entity_slug: vagaro
+highlight: EMR Software
+sort_order: 14
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 15 of 26] ---
+id: 85492984-f986-44e8-9ccf-2cb2beceb429
+entity_slug: vagaro
+highlight: Multi-location Support
+sort_order: 15
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 16 of 26] ---
+id: ccc4d1d6-1ecc-4376-8154-b73ff885773b
+entity_slug: vagaro
+highlight: Social Media Integration
+sort_order: 16
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 17 of 26] ---
+id: 21183d41-007d-475f-9b46-36104d7a1ff8
+entity_slug: vagaro
+highlight: Intake Forms
+sort_order: 17
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 18 of 26] ---
+id: 565d6360-be16-45f7-8d11-fbdd2f5aa4bf
+entity_slug: vagaro
+highlight: Digital Waivers
+sort_order: 18
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 19 of 26] ---
+id: 5f7f9d11-23c0-4e4b-892d-1f2b32c01b6b
+entity_slug: vagaro
+highlight: Loyalty Programs
+sort_order: 19
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 20 of 26] ---
+id: 6870e0c7-e62a-4b96-84bd-bffe68707274
+entity_slug: vagaro
+highlight: Membership Management
+sort_order: 20
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 21 of 26] ---
+id: 39ee0bd5-3f38-4cf4-b713-cbf6444dfadd
+entity_slug: vagaro
+highlight: Package Management
+sort_order: 21
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 22 of 26] ---
+id: a1fb147c-fd22-43f3-8165-0816ac717383
+entity_slug: vagaro
+highlight: Gift Card Management
+sort_order: 22
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 23 of 26] ---
+id: 61768e1a-43c1-4b35-825a-6d0f4ad1d951
+entity_slug: vagaro
+highlight: Analytics & Reporting
+sort_order: 23
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 24 of 26] ---
+id: 0d29e2a4-d3d1-4e7c-8fe4-69c857cf71f3
+entity_slug: vagaro
+highlight: Website Builder
+sort_order: 24
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 25 of 26] ---
+id: 7fcbd450-60fc-4113-ac9c-a7da86efb6ef
+entity_slug: vagaro
+highlight: Branded App
+sort_order: 25
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 26 of 26] ---
+id: 589a63ce-1abe-4e9f-8f2c-792e0ed9748c
+entity_slug: vagaro
+highlight: Buy Now Pay Later
+sort_order: 26
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: ce7ace5d-aee7-48a7-90bf-862b56a9cce7
+entity_slug: vagaro
+day_of_week: 1
+opens_at: 00:00:00
+closes_at: 19:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: fe72dace-6856-4246-9f60-630c8092367a
+entity_slug: vagaro
+day_of_week: 2
+opens_at: 00:00:00
+closes_at: 19:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: b7b667ac-130e-41b4-bde8-7643ad65a050
+entity_slug: vagaro
+day_of_week: 3
+opens_at: 00:00:00
+closes_at: 19:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 71dcd0e6-1891-4a8c-9cc1-cbeb2bdad638
+entity_slug: vagaro
+day_of_week: 4
+opens_at: 00:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 804f2a90-ebad-473b-945e-2884bc00fe41
+entity_slug: vagaro
+day_of_week: 5
+opens_at: 00:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 29b89b80-2c3a-4c33-9185-5c94f5be5dce
+entity_slug: vagaro
+day_of_week: 6
+opens_at: 08:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: a1e2236c-6e7d-4235-bf63-3be594033448
+entity_slug: vagaro
+day_of_week: 0
+opens_at: 08:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: vagaro
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 4cf6365b-9a9c-4115-ae61-1843ea09bf5f
+name: Vagaro
+description: With over 90,000 businesses relying on Vagaro every day, we're a pioneer in mobile app and desktop business management software. Our unique platform is crafted for solo entrepreneurs to growing enterprises, delivering innovation and practicality directly into the hands of businesses. Vagaro currently has more than 83,000 beauty, wellness, and fitness businesses in the USA, Canada, UK, and Australia, managing their daily activities in a secure and reliable system that takes care of all of their technology needs from Online Booking, Automated Email / Text / Push Notification confirmations and reminders, Point of Sale, Payroll, Taxes, Inventory, Customer Relations, Employee Management, Email Marketing, Websites, and Social Marketing.
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://vagaro.azureedge.net/static/assets/footer-hippa-complaince-verified.png",
+    "https://vagaro.azureedge.net/static-content/PublicImages/Images/covid-img.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: vagaro
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 4cf6365b-9a9c-4115-ae61-1843ea09bf5f
+name: Vagaro
+description: With over 90,000 businesses relying on Vagaro every day, we're a pioneer in mobile app and desktop business management software. Our unique platform is crafted for solo entrepreneurs to growing enterprises, delivering innovation and practicality directly into the hands of businesses. Vagaro currently has more than 83,000 beauty, wellness, and fitness businesses in the USA, Canada, UK, and Australia, managing their daily activities in a secure and reliable system that takes care of all of their technology needs from Online Booking, Automated Email / Text / Push Notification confirmations and reminders, Point of Sale, Payroll, Taxes, Inventory, Customer Relations, Employee Management, Email Marketing, Websites, and Social Marketing.
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://vagaro.azureedge.net/static/assets/footer-hippa-complaince-verified.png",
+    "https://vagaro.azureedge.net/static-content/PublicImages/Images/covid-img.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 14203
+entity_slug: vagaro
+name: Vagaro
+description: With over 90,000 businesses relying on Vagaro every day, we're a pioneer in mobile app and desktop business management software. Our unique platform is crafted for solo entrepreneurs to growing enterprises, delivering innovation and practicality directly into the hands of businesses. Vagaro currently has more than 83,000 beauty, wellness, and fitness businesses in the USA, Canada, UK, and Australia, managing their daily activities in a secure and reliable system that takes care of all of their technology needs from Online Booking, Automated Email / Text / Push Notification confirmations and reminders, Point of Sale, Payroll, Taxes, Inventory, Customer Relations, Employee Management, Email Marketing, Websites, and Social Marketing.
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 4cf6365b-9a9c-4115-ae61-1843ea09bf5f
+
+####################################################################################################
+# TABLE: entity_photos   -   4 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 4] ---
+id: fe416ba0-4510-48b4-bfb0-85f0f0cdcc17
+entity_slug: vagaro
+url: https://vagaro.azureedge.net/static/assets/footer-hippa-complaince-verified.png
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 4] ---
+id: 344898d8-f1a1-454d-84b6-4d0dbd577e99
+entity_slug: vagaro
+url: https://vagaro.azureedge.net/static-content/PublicImages/Images/covid-img.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 4] ---
+id: 6d42bfaf-2e05-4728-b0db-89c4c699076f
+entity_slug: vagaro
+url: https://vagaro.azureedge.net/static/assets/footer-hippa-complaince-verified.png
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 4cf6365b-9a9c-4115-ae61-1843ea09bf5f
+
+--- entity_photos [row 4 of 4] ---
+id: f5e1ad68-177b-4af9-bdf4-8c5ddaef56a1
+entity_slug: vagaro
+url: https://vagaro.azureedge.net/static-content/PublicImages/Images/covid-img.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: 4cf6365b-9a9c-4115-ae61-1843ea09bf5f
+
+####################################################################################################
+# TABLE: entity_tags   -   19 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 19] ---
+id: f5eeca74-a104-41dc-9ba3-84238ae4285d
+entity_slug: vagaro
+tag_name: salon software
+
+--- entity_tags [row 2 of 19] ---
+id: 49487978-91a2-4000-b62c-c49b0528be0b
+entity_slug: vagaro
+tag_name: spa software
+
+--- entity_tags [row 3 of 19] ---
+id: c6d76ec8-81d0-43db-85e6-1d4c8471eb78
+entity_slug: vagaro
+tag_name: fitness software
+
+--- entity_tags [row 4 of 19] ---
+id: 3795ad7e-7634-4837-a0ae-27991f7804b1
+entity_slug: vagaro
+tag_name: appointment scheduling
+
+--- entity_tags [row 5 of 19] ---
+id: 291f6be4-d08f-4bd2-a753-b770bcec014d
+entity_slug: vagaro
+tag_name: online booking
+
+--- entity_tags [row 6 of 19] ---
+id: 93c947c1-9186-4fca-b93e-ecd37efe2bbd
+entity_slug: vagaro
+tag_name: POS system
+
+--- entity_tags [row 7 of 19] ---
+id: c18161a7-6a9d-4545-a163-7ff8de70ca46
+entity_slug: vagaro
+tag_name: payment processing
+
+--- entity_tags [row 8 of 19] ---
+id: 524cb01e-28c1-4e6c-875c-9dacddf635bb
+entity_slug: vagaro
+tag_name: business management
+
+--- entity_tags [row 9 of 19] ---
+id: d0300b4f-1292-4134-946a-5e0438ebf953
+entity_slug: vagaro
+tag_name: beauty industry
+
+--- entity_tags [row 10 of 19] ---
+id: 0c1d58f2-8845-4919-8df2-816e5a7989dd
+entity_slug: vagaro
+tag_name: wellness industry
+
+--- entity_tags [row 11 of 19] ---
+id: a231611b-e54c-4dca-b903-3bdb04c703ee
+entity_slug: vagaro
+tag_name: Business Software
+tag_category: category
+
+--- entity_tags [row 12 of 19] ---
+id: 7e4fcaba-c3e0-4ed2-b0f8-ef7b0e151d8f
+entity_slug: vagaro
+tag_name: Salon Management
+tag_category: category
+
+--- entity_tags [row 13 of 19] ---
+id: 2466f476-9c9c-458b-bd40-559d81f1c963
+entity_slug: vagaro
+tag_name: Spa Software
+tag_category: category
+
+--- entity_tags [row 14 of 19] ---
+id: faeadb1b-774f-4ed4-b7d0-1bb528ae33bc
+entity_slug: vagaro
+tag_name: Fitness Software
+tag_category: category
+
+--- entity_tags [row 15 of 19] ---
+id: 5b243b25-94c1-4fa1-bb72-fa5fa0de4264
+entity_slug: vagaro
+tag_name: Point of Sale
+tag_category: category
+
+--- entity_tags [row 16 of 19] ---
+id: 605b5b32-ef98-4a01-a780-73cfcbfba39c
+entity_slug: vagaro
+tag_name: Appointment Scheduling
+tag_category: category
+
+--- entity_tags [row 17 of 19] ---
+id: a02ed871-926d-4516-8cb3-b4a54b440f82
+entity_slug: vagaro
+tag_name: Payment Processing
+tag_category: category
+
+--- entity_tags [row 18 of 19] ---
+id: 4353d62b-01a8-48db-bca4-d1e0f285fddf
+entity_slug: vagaro
+tag_name: business-software
+tag_category: industry
+
+--- entity_tags [row 19 of 19] ---
+id: 059e616e-7344-4c04-b817-c991cd60c229
+entity_slug: vagaro
+tag_name: software-platform
+tag_category: type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: e5f7d350-a75b-4338-8bf6-b0c391209725
+entity_slug: vagaro
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_professional_service   -   1 row(s)
+####################################################################################################
+
+--- industry_professional_service [row 1 of 1] ---
+entity_slug: vagaro
+service_count: 0
+updated_at: 2026-07-21T16:19:28.491935+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: vagaro
+entity_slug: vagaro
+title: Vagaro
+category: software
+subtitle: With over 90,000 businesses relying on Vagaro every day, we're a pioneer in mobile app and desktop business management software. Our unique platform is crafted for solo entrepreneurs to growing enterprises, delivering innovation and practicality directly into the hands of businesses. Vagaro currently has more than 83,000 beauty, wellness, and fitness businesses in the USA, Canada, UK, and Australia, managing their daily activities in a secure and reliable system that takes care of all of their technology needs from Online Booking, Automated Email / Text / Push Notification confirmations and reminders, Point of Sale, Payroll, Taxes, Inventory, Customer Relations, Employee Management, Email Marketing, Websites, and Social Marketing.
+search_vector: '000':6C,52C '83':51C '90':5C 'activ':68C 'app':19C 'australia':64C 'autom':87C 'beauti':53C 'book':86C 'busi':7C,22C,45C,57C 'canada':61C 'care':77C 'confirm':92C 'craft':29C 'current':47C 'custom':101C 'daili':67C 'day':12C 'deliv':36C 'desktop':21C 'direct':40C 'email':88C,105C 'employe':103C 'enterpris':35C 'entrepreneur':32C 'everi':11C 'fit':56C 'grow':34C 'hand':43C 'innov':37C 'inventori':100C 'manag':23C,65C,104C 'market':106C,110C 'mobil':18C 'need':83C 'notif':91C 'onlin':85C 'payrol':98C 'pioneer':16C 'platform':27C 'point':95C 'practic':39C 'push':90C 're':14C 'relat':102C 'reli':8C 'reliabl':73C 'remind':94C 'sale':97C 'secur':71C 'social':109C 'softwar':2B,24C 'solo':31C 'system':74C 'take':76C 'tax':99C 'technolog':82C 'text':89C 'uk':62C 'uniqu':26C 'usa':60C 'vagaro':1A,10C,46C 'websit':107C 'well':54C
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 14203
+entity_slug: vagaro
+title: Vagaro
+category: rental
+subtitle: With over 90,000 businesses relying on Vagaro every day, we're a pioneer in mobile app and desktop business management software. Our unique platform is crafted for solo entrepreneurs to growing enterprises, delivering innovation and practicality directly into the hands of businesses. Vagaro currently has more than 83,000 beauty, wellness, and fitness businesses in the USA, Canada, UK, and Australia, managing their daily activities in a secure and reliable system that takes care of all of their technology needs from Online Booking, Automated Email / Text / Push Notification confirmations and reminders, Point of Sale, Payroll, Taxes, Inventory, Customer Relations, Employee Management, Email Marketing, Websites, and Social Marketing.
+search_vector: '000':5C,51C '83':50C '90':4C 'activ':67C 'app':18C 'australia':63C 'autom':86C 'beauti':52C 'book':85C 'busi':6C,21C,44C,56C 'canada':60C 'care':76C 'confirm':91C 'craft':28C 'current':46C 'custom':100C 'daili':66C 'day':11C 'deliv':35C 'desktop':20C 'direct':39C 'email':87C,104C 'employe':102C 'enterpris':34C 'entrepreneur':31C 'everi':10C 'fit':55C 'grow':33C 'hand':42C 'innov':36C 'inventori':99C 'manag':22C,64C,103C 'market':105C,109C 'mobil':17C 'need':82C 'notif':90C 'onlin':84C 'payrol':97C 'pioneer':15C 'platform':26C 'point':94C 'practic':38C 'push':89C 're':13C 'relat':101C 'reli':7C 'reliabl':72C 'remind':93C 'sale':96C 'secur':70C 'social':108C 'softwar':23C 'solo':30C 'system':73C 'take':75C 'tax':98C 'technolog':81C 'text':88C 'uk':61C 'uniqu':25C 'usa':59C 'vagaro':1A,9C,45C 'websit':106C 'well':53C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: vagaro

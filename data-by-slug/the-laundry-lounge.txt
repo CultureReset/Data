@@ -1,0 +1,2475 @@
+====================================================================================================
+SLUG: the-laundry-lounge
+NAME: The Laundry Lounge
+INDUSTRY: trade_home_service
+SUBTYPE: laundry
+TABLES WITH DATA: 28
+TOTAL ROWS: 165
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (6 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (14 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_address_areas  (1 rows)
+  entity_attributes  (3 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_nearby_landmark_types  (30 rows)
+  entity_nearby_landmarks  (6 rows)
+  entity_offer  (1 rows)
+  entity_photos  (32 rows)
+  entity_reviews  (5 rows)
+  entity_tags  (26 rows)
+  entity_theme  (1 rows)
+  industry_trade_home_service  (1 rows)
+  search_index  (2 rows)
+  service_menu  (1 rows)
+  trade_home_services  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: the-laundry-lounge
+name: The Laundry Lounge
+planner_category: local_service
+data_quality_score: 80
+issues: missing_summary|missing_hours
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   6 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 6] ---
+id: 8943
+entity_slug: the-laundry-lounge
+intent_tag: best_for:local_information
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 6] ---
+id: 8944
+entity_slug: the-laundry-lounge
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 6] ---
+id: 8945
+entity_slug: the-laundry-lounge
+intent_tag: service:parking
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 6] ---
+id: 8946
+entity_slug: the-laundry-lounge
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 6] ---
+id: 8947
+entity_slug: the-laundry-lounge
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 6] ---
+id: 8948
+entity_slug: the-laundry-lounge
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: the-laundry-lounge
+name: The Laundry Lounge
+is_active: t
+planner_category: local_service
+entity_type: service
+entity_subtype: laundry
+city: Gulf Shores
+state: AL
+address_line_1: 1700 E 1st St
+latitude: 30.269760299999998
+longitude: -87.6852905
+rating: 4.9
+review_count: 96
+website_url: https://thelaundryloungegs.com/
+hero_image_url: /photos/the-laundry-lounge/photo_01.jpg
+voice_summary: The Laundry Lounge in Gulf Shores is best for local information.
+planner_summary: The Laundry Lounge in Gulf Shores is a local service listing in Gulf Coast Radar.
+best_for: local information
+not_best_for: nothing specific flagged
+service_tags: accessibility|parking
+search_keywords: laundry|point_of_interest|service|establishment|laundromat|laundry service|wash and fold|self-service laundry|commercial laundry|Gulf Shores|24/7 laundromat|dog wash|clean laundry|modern laundromat|state-of-the-art machines|pet laundry|Laundromats|Laundry Services|Pet Services|Cleaning Services|services|accessibility|parking
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 14
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 26
+faq_count: 0
+data_quality_score: 80
+data_gaps: missing_summary|missing_hours
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   14 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 14] ---
+id: 4038
+entity_slug: the-laundry-lounge
+entity_name: The Laundry Lounge
+city: Gulf Shores
+url: /photos/the-laundry-lounge/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 14] ---
+id: 4039
+entity_slug: the-laundry-lounge
+entity_name: The Laundry Lounge
+city: Gulf Shores
+url: /photos/the-laundry-lounge/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 14] ---
+id: 4040
+entity_slug: the-laundry-lounge
+entity_name: The Laundry Lounge
+city: Gulf Shores
+url: /photos/the-laundry-lounge/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 14] ---
+id: 4668
+entity_slug: the-laundry-lounge
+entity_name: The Laundry Lounge
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-laundry-lounge/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 14] ---
+id: 4979
+entity_slug: the-laundry-lounge
+entity_name: The Laundry Lounge
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-laundry-lounge/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 14] ---
+id: 14178
+entity_slug: the-laundry-lounge
+entity_name: The Laundry Lounge
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-laundry-lounge/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 14] ---
+id: 17618
+entity_slug: the-laundry-lounge
+entity_name: The Laundry Lounge
+city: Gulf Shores
+url: https://thelaundryloungegs.com/wp-content/uploads/2025/06/IMG_5579-scaled.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 14] ---
+id: 17619
+entity_slug: the-laundry-lounge
+entity_name: The Laundry Lounge
+city: Gulf Shores
+url: https://thelaundryloungegs.com/wp-content/uploads/2026/02/Best-of-baldwin2026-transparent-background-2-1024x1024.png
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 14] ---
+id: 17620
+entity_slug: the-laundry-lounge
+entity_name: The Laundry Lounge
+city: Gulf Shores
+url: https://thelaundryloungegs.com/wp-content/uploads/2025/06/laundromutt-ad-1024x858.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 14] ---
+id: 17621
+entity_slug: the-laundry-lounge
+entity_name: The Laundry Lounge
+city: Gulf Shores
+url: https://thelaundryloungegs.com/wp-content/uploads/2025/06/IMG_5652-scaled.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 11 of 14] ---
+id: 17622
+entity_slug: the-laundry-lounge
+entity_name: The Laundry Lounge
+city: Gulf Shores
+url: https://thelaundryloungegs.com/wp-content/uploads/2025/06/IMG_5667-scaled.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 12 of 14] ---
+id: 24955
+entity_slug: the-laundry-lounge
+entity_name: The Laundry Lounge
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/laundromat-gulf-shores/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 13 of 14] ---
+id: 24958
+entity_slug: the-laundry-lounge
+entity_name: The Laundry Lounge
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/laundromat-gulf-shores/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 14 of 14] ---
+id: 24961
+entity_slug: the-laundry-lounge
+entity_name: The Laundry Lounge
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/laundromat-gulf-shores/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: e206a60e-6e36-4011-aa89-591884eb7617
+resource_type: service
+slug: the-laundry-lounge
+name: The Laundry Lounge
+entity_slug: the-laundry-lounge
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://thelaundryloungegs.com/wp-content/uploads/2025/06/IMG_5579-scaled.jpg",
+  "https://thelaundryloungegs.com/wp-content/uploads/2026/02/Best-of-baldwin2026-transparent-background-2-1024x1024.png",
+  "https://thelaundryloungegs.com/wp-content/uploads/2025/06/laundromutt-ad-1024x858.jpg",
+  "https://thelaundryloungegs.com/wp-content/uploads/2025/06/IMG_5652-scaled.jpg",
+  "https://thelaundryloungegs.com/wp-content/uploads/2025/06/IMG_5667-scaled.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-laundry-lounge/photo_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/laundromat-gulf-shores/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/laundromat-gulf-shores/photo_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/laundromat-gulf-shores/photo_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-laundry-lounge/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-laundry-lounge/photo_03.jpg",
+  "/photos/the-laundry-lounge/photo_01.jpg",
+  "/photos/the-laundry-lounge/photo_02.jpg",
+  "/photos/the-laundry-lounge/photo_03.jpg"
+]
+amenities: []
+faqs: []
+address: 1700 E 1st St
+city: Gulf Shores
+state: AL
+latitude: 30.269760299999998
+longitude: -87.6852905
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 08040edeb158210cb875cadc34b82cfe
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: e206a60e-6e36-4011-aa89-591884eb7617
+entity_slug: the-laundry-lounge
+slug: the-laundry-lounge
+photo_urls: [
+  "https://thelaundryloungegs.com/wp-content/uploads/2025/06/IMG_5579-scaled.jpg",
+  "https://thelaundryloungegs.com/wp-content/uploads/2026/02/Best-of-baldwin2026-transparent-background-2-1024x1024.png",
+  "https://thelaundryloungegs.com/wp-content/uploads/2025/06/laundromutt-ad-1024x858.jpg",
+  "https://thelaundryloungegs.com/wp-content/uploads/2025/06/IMG_5652-scaled.jpg",
+  "https://thelaundryloungegs.com/wp-content/uploads/2025/06/IMG_5667-scaled.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-laundry-lounge/photo_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/laundromat-gulf-shores/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/laundromat-gulf-shores/photo_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/laundromat-gulf-shores/photo_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-laundry-lounge/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-laundry-lounge/photo_03.jpg",
+  "/photos/the-laundry-lounge/photo_01.jpg",
+  "/photos/the-laundry-lounge/photo_02.jpg",
+  "/photos/the-laundry-lounge/photo_03.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 7a91cd91-a978-4b99-9364-bae98a69bb7a
+slug: the-laundry-lounge
+name: The Laundry Lounge
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: laundry
+phone: (251) 256-6784
+website_url: https://thelaundryloungegs.com/
+menu_pin: 5127
+address_line_1: 1700 E 1st St
+city: Gulf Shores
+state: AL
+zip: 36542
+latitude: 30.269760299999998
+longitude: -87.6852905
+rating: 4.9
+review_count: 96
+hero_image_url: https://thelaundryloungegs.com/wp-content/uploads/2025/06/IMG_5579-scaled.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T04:00:17.958026+00:00
+updated_at: 2026-06-03T04:00:17.958026+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJyYPPgp0FmogRRfZbK2ub9bY
+google_maps_uri: https://maps.google.com/?cid=13183614368788248133&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: laundry
+formatted_address: 1700 E 1st St, Gulf Shores, AL 36542, USA
+plus_code: 862J7897+WV
+international_phone: +1 251-256-6784
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+parking_type: free
+google_places_data: {
+  "id": "ChIJyYPPgp0FmogRRfZbK2ub9bY",
+  "types": [
+    "laundry",
+    "service",
+    "point_of_interest",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3ncerHP5DLMwBfHCFHeTox4uM3qr5dZuGma15rOBVCwSORza7rni_5E-OQC92hBm5byk8dpzM3wzqQrAZCTWeUvuO7DkZbrfuCl1AwjF378Y0nFiLvZDdSd98xyeY9LL3OExzsPq_9ERihHAczUmkqHfFgVUHzV1UjlUbBjHZYjScAZKemH56PuvkbpCspZteCzt0StWqZ-4TfbvS1lNbU2v-W5mAq3MFnuSStXxuRC2obkhIU049nJkVuz3swuipSMRdFhIVdrUOd0nmhJwvn3Og0uNZQzf4QELhipiwHHmSmL7-G1facuPW2oRVhwjslPPqTKPmPL4remva8y6MtZp0KiFBwsArxTzS0HDo2rp7rS2YaQro5DfUuP2NKh6MK3PsItIgnbshF6RyKkIpLXXivJS_K9h0gtgSp1GKSjTNQ9s2ZMR3CVOq_UYZN4",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBiE-_8kxp1HdWQraEYz6Kk!2e10!4m2!3m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhBiE-_8kxp1HdWQraEYz6Kk&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/112225481943419292578",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVkH0OGu3ovNCesvBLbADBcPkoj5R2e51RYkuYI1L7IuaOuwcsw=s100-p-k-no-mo",
+          "displayName": "Shonda Boyer"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3kV1TZP717PTVhyqf2agq3Qnga90SfdjNQeMOaXLBwNiMmfb-DIym4pcIRnQagmPSokmruNI8tVhta3eJDfDCqgCQmCrxCAVQ2TkG6w_gwUb4qM-euxVpEIDifpg1YZPioQyzKR3-ZpKXF3nn2mRDtUPzTGYEucVFEs-h8YNEwN8Mgq5W7GGbFdVtjgZvtKAnsSgc9wcpg-l-F471R9TNKE8V8USfq32vROGxBvEoR8UJddRqagziZFIebBR0XmLctLMSBHxwbLrzC_M3r_iNfU_MUYsQi3wXCL5knHD6kECBExXLS6cRYSMBhhH65M1k8FYs_xgLREAFIOKi6r_FPKmy6zfHeS1Dw38qYAK5vLwC2m7JnuTSnIrv-hIKUVtxWa_NDHiiOX8-8vGSfd7ppQzy9KHv7w_L5qephqLpFM9mA9aYuVly7coTInc4hb",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBSi2oZVJihWfqqmqw5oFCR!2e10!4m2!3m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhBSi2oZVJihWfqqmqw5oFCR&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/117469241141419172677",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXORSHXg82L8Up94zFB_JqHcdnlgroKiKM-3nXd7yWwzRUbpXQ=s100-p-k-no-mo",
+          "displayName": "Jay McDonald"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3kd6ozSuRO3L-KzFBZkWycg0wJMctEsY_Onro7W7oeiZUfs0bkoSt0gHdq4ddpW6lQQVU482bdlI-P4E0X2x68g7fpLEwO-D7PC3RsvFmZHo42v8EQVRkTIeVil6ImeuIoJoMbfvu8z8snn_M9jtcHD-jb6a6DdScz1JoAAPe009_tZ6IMRm42DrkhM5kdC5-2T95cR4PrDcDvrXge3LTUgRwt_9EzQJSHc6VdFMbEHspkmSonSE5lODhqKw3AzxWTyp4scgwpRMqC5uI1QC-7YDrKx2gyMO5B5lDCaTXFXYokZnB-iAWDWuhFwHR5svsTe_EBjAQVnsxP9-1cUsL2iP0Uu1QigIuyuO_tnYs3POSFp_Ab7FTgO6qzmwIO_X4syfoaIHCxVgxcYlHntOtCcwxpYTylycenQlAikv3Z7EVjGbcicmWJzOeb1UwiC",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCgAzMMRzINuBRctaX2hLxc!2e10!4m2!3m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCgAzMMRzINuBRctaX2hLxc&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106016434591083521856",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWty5fSdmZ-3vxhXf77yeXSTo3SU3Cf_2GxYXR3p-v4fPSSRtc3Og=s100-p-k-no-mo",
+          "displayName": "Kelly Warhurst"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3lHDtI6zZ8ki6lebcvLz75cTwa8iIMCA2wFUitILQROW2AlZSgBf7yV5tPfXKlpq-vT3gNmQiq7r5EFVgvjBtFI8UeSu4tRRI8ci8IKwWogRcb_mw5-NKurd-vRe2BZTPBL3nM26kPLWq3DueYtn0PYIIK-ssmCZo29K4ayhtd3qucnP0sYG4Oo4rYfBvBH0pDKHlxlGJPgNhRCwXg2breMZ3_bCCS3T9o7g4ZObrTFHpkLUsXavrDxPP7PrOaW0aAO5oZuCsjMGIhTKgVb_E24qMnLZHg_3GwOolnoO3LbRfcBAk387Wl-JG5W4EG7_jRh2jwliLrXDJt74eB-HNBi1pQj8REhFg1xFaFkhhh9zlODaKVhO-y5zZPHdyFL6JUPvEIER9-da76AYScc3LNsEGKuMRF1XhrK8JipT8Ns3PWabxed7MCypNyxRBxT",
+      "widthPx": 3600,
+      "heightPx": 4800,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCYNq-ISdpnzEA--su6CHSa!2e10!4m2!3m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCYNq-ISdpnzEA--su6CHSa&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106016434591083521856",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWty5fSdmZ-3vxhXf77yeXSTo3SU3Cf_2GxYXR3p-v4fPSSRtc3Og=s100-p-k-no-mo",
+          "displayName": "Kelly Warhurst"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3mEs2VqA176blwJKOZt429cuQfBO_KLysS4uBHSApABfmX-gaWFmxJEdL57EB_LgLRHHBZKEyzmn583ZFU8ggEj0whN1-GDyWP7YkqrI1TnVdFzs3ydPaoqj-GUbVkS2eFzVdUg6G5QFyhdajMFYvniUZvveJOxKC2-FeKLG-6n5tAQ3lAyVIdeGw_N0LRm6ch9twxqQQemsCzRODzkRuyGT_9YJsTmkt6ABvzWfA7z35MN1bjuSmIDua674KHh2ReQJFUgQrmICGCWd_sQA4i8HK9ucxMXuWrUlJRtxEkLW79HZpt9m8OczUtRVJ9VeaDLXc7pCdfl80KgzwWs6V9peNPgI_Ulj9t2ckyzvfL6AJueVsCXCQ4yOIlxoDShcZiY-LGggTQHcIOSDgHP1rDoDYlv6Jx-YYMXkjWh_Vg9qZAdnbEnoN4pWqW-70MT",
+      "widthPx": 1536,
+      "heightPx": 1024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDvgImsMKJjpEUshz1gtQVO!2e10!4m2!3m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDvgImsMKJjpEUshz1gtQVO&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/108020994728529086057",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVLLeIFXupkAT4wMtZeMX7mDFt8hwWFmbJD3lKrJ-qlQd2gefQP=s100-p-k-no-mo",
+          "displayName": "The Laundry Lounge"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3mDlXWw4O99HqbehprqXsdYf3MkHHYg0guDw9FNKgxFCbUqj6caA8LOVZdzSFvgvFbq8_hEg-p2txIkO9qhlD8TgwRm6a_UC3nSqOUcgi3WQZifAGBIwKEatZKa_07Hnhq_IEo6D6cofcua81QDqdYXs2mYWzl3YoMNqzWLEcrGjsKqyvRP2QYmUcHrv797D0MTxlrU_TnHsBeWKIZo4pM3XPjePfqT2xiIBeGpNX-P4ZplYB6oNmMp2NkmYR2Ym17TNJ2Nqu_QPSuoi2mk8OJneLXo5mrlSTNPtSsB8Hu7-mNRq-f2-HTA6Y8OuZvK9eDBxSTWf2_7O92ZqXXmNtgRnaHChb8nWofS8g3HTMSd-Dmnt8m2k4N5_540EwmqFGCYMK-dQNd2UQFWOKi5cZkghT-z7Nf05GQKnQEM6-Ws7Iov",
+      "widthPx": 360,
+      "heightPx": 480,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEND1pJa5o87X_QE!2e10!4m2!3m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEND1pJa5o87X_QE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104584902911370907064",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJH4-gpOMKehQt5vT8Dz5oiPrQwBKLY8XHpps2nso7t-M0rxA=s100-p-k-no-mo",
+          "displayName": "d deco"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3m4XmWbqL2M50FFzTLs9dZsl4BeDFdqq4w6uzd7y68HWEwW9MounKYYlYrVxAoY2CdxEb-IfoxPMnh1Xf1Mw4wO2G7nAuAfDbaAaoKA0uzon8YuH4ux8SO4SDxzOToMnU1t1WnFHGkRCMjbxYLoy5cM7KTnbgPrmEVHk6ziduaWIdyrhcOrCOPxXcZNsGFyPn9ttENr3kadaaSYkuaPBPTtKF-NOz3k_GkTShyBcwjpfAyBAIhUC-R5fO8-oezfmWyO6mJw9ay4fEUvhLk79W617wPYMuyk-td-dB_NlybqIw1wtdto4yQvWFpGaCNi5SpRpDfCmaS_nbBetTx75XSkUpxl0BhK0zR8eFyQ0QhAy8IVsNR_rVOsN7xdxdsArVWgVXkKKzU6gCqLgXT1w1f4qGnCmBSEmvx1ZNcOwJ_e3JXdu8rBuzF9Y-2MCw",
+      "widthPx": 1024,
+      "heightPx": 1536,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBmwYYO7W68kqcznNnbZHVY!2e10!4m2!3m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhBmwYYO7W68kqcznNnbZHVY&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/108020994728529086057",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVLLeIFXupkAT4wMtZeMX7mDFt8hwWFmbJD3lKrJ-qlQd2gefQP=s100-p-k-no-mo",
+          "displayName": "The Laundry Lounge"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3nB8aoCHN7Fzlj6rQbHSenyBiBVr8RT6rXo-F_ugIeuVuF-G7_ZaMWdUxYRTQ4jWGZ0sxaE0Ez8m7OhjJugwztr1OqD5zw5z8dyh2A2rK60fnsBSkc8GTxEDxLpxlE8JOpJ8AwhTbko91Xr-Z-6W4bSgv7C0P72orK6-N_8gYfY7LceYDUE5PSBSeYupNk277g6qsueSRAp4qQY-HVuHvKCb_tO6d6bpmsKNT4qLQhFNCMbGmwSSh30QpgMfvJb0o2fUXpcUfyXs_VrISq5N14CLYH30sShvNbd8hiAShBDsQD8JoI-o7U7nqsjenEMVLnCIDFzmHe95WSnWA09zuEnoyWF_kWm1Erj6FQPFaQoMecl2vZUiHWxnx3wySuqsf5vvyxy2U17cAyPIc0-KlVg2G0eSPdoW9z9n7RiP8uN_0MOxN4FUEKoiUM-1w",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhATOcVDEIFvpSOzXgH9m9Py!2e10!4m2!3m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhATOcVDEIFvpSOzXgH9m9Py&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104028533686965017028",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWbCNNC1WG7Icz0QoGqMoX1Uq36zxJL9SMiIF1QtcNHW0H3BjE_=s100-p-k-no-mo",
+          "displayName": "Alyssa Kinnard"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3lVXHJt62njrdwhSDlY5LzGnRamUQPczMlf5JIsM360uIi32IZJ9VjhRQj30DJUNPlFm-RZ9d5yh-sgsSgVaBm-5gepX7QcKTsOpBaMTdPg1np6EQOaaSlI54VA11E14ZlHCKpJPG1n7lnzzh2JKyc3cf4L4phgBo3j64v9rGoBPhg20AzYzAw__w9DvbL6qNH93iPoFW1IyoH2NxFYZcL-ApXQ7vmQ02qdpqH1yxoxPgdoylB3D077vBvVnJupBSmt_CIEPVj_LcDs1w3bbqAWzSteSppoK2nqo7huwGAENVv83XMBXsDInleTyICDxdsRZfIkQD9-Rwt6swWNulQrE7GVuakF8OYvXxSOYCGZTLWCokq7e2lKJOMboGCHJNUhL01q6adfPsMNviXKNhwBiGrU3sme8sKf1vvtZgQLvPthnXSznRawXZx9WLUZ",
+      "widthPx": 3600,
+      "heightPx": 4800,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCULmf-61fK4O2bfZFfdwZ_!2e10!4m2!3m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCULmf-61fK4O2bfZFfdwZ_&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106016434591083521856",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWty5fSdmZ-3vxhXf77yeXSTo3SU3Cf_2GxYXR3p-v4fPSSRtc3Og=s100-p-k-no-mo",
+          "displayName": "Kelly Warhurst"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3kPJ3T5HpRE4-JaWqCP-i-zgKYi6IdVO0CqV5Q5mdovyR_ZRCveyZlDxIHUO62Pk--o87xKs6CD-h6EJ3H7yJniqRFUWkiB9I2riIyXkPt7zMGh0XS--xzSeMkha4zTyottdoEMoypTplIP5S_0pcb0wa0dhQzKXTtp-KNRHTynhE4k0PF_bd8NOr4Qevv7BZuj-XGZdN04WobOvyzRLLsXFERynfZRRpvGdSUwWnXqacaI7BWmnW0MxYVHDnzXLDlhWN6QFD9-eBn9oIgkGAQQSnFlGnz0r6VqKktAvmfl18sZRnbZJU7NCBv168DEP0GVAZb4NH8H2UzF8BO5Mfp9N98DmzyeHGCLu4Rs0XYoXlhmkJBZ3C9bIUbhAzOP4_3Xrxp6y_m3VUSPjbUQpiRc15AbAn2FJaXtIpmdlzCSYbtCZensj2qWdWpHtw",
+      "widthPx": 4000,
+      "heightPx": 2252,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCE7rKQ3xeiCbX0sr8QbBVd!2e10!4m2!3m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCE7rKQ3xeiCbX0sr8QbBVd&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/113708205470550774332",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWZbW6PKt2GLojnZYwIpHUbcUL7egEgZXgaT9_RReiTdvDUSaAEbg=s100-p-k-no-mo",
+          "displayName": "Matt Larson"
+        }
+      ]
+    }
+  ],
+  "rating": 4.9,
+  "reviews": [
+    {
+      "name": "places/ChIJyYPPgp0FmogRRfZbK2ub9bY/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xwTVdXOUpSVU5rVHpkUWFVMW1SbFZTVTBoclFYYxAB",
+      "text": {
+        "text": "The Laundry Lounge in Gulf Shores is hands down the best laundry experience I’ve ever had. The place is spotless, well-lit, and has plenty of high-quality machines that get the job done fast. The staff is friendly and helpful, making the whole process stress-free. I love the modern, comfortable lounge area—it actually makes doing laundry enjoyable. Whether you’re a local or visiting the area, this is the place to go for clean clothes and great service!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-08-15T02:11:21.923361987Z",
+      "originalText": {
+        "text": "The Laundry Lounge in Gulf Shores is hands down the best laundry experience I’ve ever had. The place is spotless, well-lit, and has plenty of high-quality machines that get the job done fast. The staff is friendly and helpful, making the whole process stress-free. I love the modern, comfortable lounge area—it actually makes doing laundry enjoyable. Whether you’re a local or visiting the area, this is the place to go for clean clothes and great service!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xwTVdXOUpSVU5rVHpkUWFVMW1SbFZTVTBoclFYYxAB!2m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2xwTVdXOUpSVU5rVHpkUWFVMW1SbFZTVTBoclFYYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/108710783481796422513/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjV79ab_du_EyF0-KUefkht9nsVEYcYddeYJUcbL-ldh9MOJulSL=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Andrew Hart"
+      },
+      "relativePublishTimeDescription": "9 months ago"
+    },
+    {
+      "name": "places/ChIJyYPPgp0FmogRRfZbK2ub9bY/reviews/Ci9DQUlRQUNvZENodHljRjlvT25NeVRsTkVTWEY2U1d0amVGVjJkWEJCVm5ocmFVRRAB",
+      "text": {
+        "text": "This is the nicest laundromat I’ve ever been in! So clean, and easy to use! Met one of the owners and he was crazy nice and helpful. I will definitely be coming back! The place we are staying has a laundromat, but the Laundry Lounge is so nice and convenient it will be my go to for doing laundry while in Gulf Shores!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-02-28T16:46:45.358997160Z",
+      "originalText": {
+        "text": "This is the nicest laundromat I’ve ever been in! So clean, and easy to use! Met one of the owners and he was crazy nice and helpful. I will definitely be coming back! The place we are staying has a laundromat, but the Laundry Lounge is so nice and convenient it will be my go to for doing laundry while in Gulf Shores!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25NeVRsTkVTWEY2U1d0amVGVjJkWEJCVm5ocmFVRRAB!2m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT25NeVRsTkVTWEY2U1d0amVGVjJkWEJCVm5ocmFVRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/103543337662779019719/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocI7UhhsLiup_nf4Gx1-1sl1_uOM4RKM9jQ4xRBsbriV6O0sPg=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Brian Curran"
+      },
+      "relativePublishTimeDescription": "3 months ago"
+    },
+    {
+      "name": "places/ChIJyYPPgp0FmogRRfZbK2ub9bY/reviews/Ci9DQUlRQUNvZENodHljRjlvT21SaFlVRmFWM3BOVEdNNFNHVkNZbVF6VW5kQldIYxAB",
+      "text": {
+        "text": "The Laundry Lounge - BEAUTIFUL new laundry mat in Gulf Shores on 1st street off 59.  So clean and the staff is so helpful.   All machines with their app take a credit card.  GENIUS 🤩🥳🤩",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-08-13T14:11:27.847806391Z",
+      "originalText": {
+        "text": "The Laundry Lounge - BEAUTIFUL new laundry mat in Gulf Shores on 1st street off 59.  So clean and the staff is so helpful.   All machines with their app take a credit card.  GENIUS 🤩🥳🤩",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21SaFlVRmFWM3BOVEdNNFNHVkNZbVF6VW5kQldIYxAB!2m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT21SaFlVRmFWM3BOVEdNNFNHVkNZbVF6VW5kQldIYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/108858753251380229582/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUn-YMijS-xL5O9Y91GB0DEHYGohBa14k4-1MYOatn9Dm3p1es=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Jill Lee"
+      },
+      "relativePublishTimeDescription": "10 months ago"
+    },
+    {
+      "name": "places/ChIJyYPPgp0FmogRRfZbK2ub9bY/reviews/ChZDSUhNMG9nS0VJV3c0NzZMZ3QzX0NBEAE",
+      "text": {
+        "text": "What an amazing addition to Gulf Shores!  The place is giant with brand new machines, has a lounge area if you are waiting, has an indoor dog washing station, vending machines for detergent and snacks, and free wifi!  Who knew a laundromat could be so nice!?",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-06-04T01:24:06.689806Z",
+      "originalText": {
+        "text": "What an amazing addition to Gulf Shores!  The place is giant with brand new machines, has a lounge area if you are waiting, has an indoor dog washing station, vending machines for detergent and snacks, and free wifi!  Who knew a laundromat could be so nice!?",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJV3c0NzZMZ3QzX0NBEAE!2m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJV3c0NzZMZ3QzX0NBEAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/104584902911370907064/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJH4-gpOMKehQt5vT8Dz5oiPrQwBKLY8XHpps2nso7t-M0rxA=s128-c0x00000000-cc-rp-mo",
+        "displayName": "d deco"
+      },
+      "relativePublishTimeDescription": "a year ago"
+    },
+    {
+      "name": "places/ChIJyYPPgp0FmogRRfZbK2ub9bY/reviews/Ci9DQUlRQUNvZENodHljRjlvT2kxMlVHUTFSRVYyY0MxUGNrRmFWMlZaUW0xYWJYYxAB",
+      "text": {
+        "text": "I can’t say enough good things about this laundromat! From the moment you walk in, you can tell it’s been cared for with pride. The place absolutely sparkles — spotless floors, shining machines, and not a speck of lint in sight! The atmosphere is so clean and comfortable that doing laundry actually feels relaxing instead of like a chore.\n\nThe machines work perfectly and are always well-maintained, and the seating area is clean, cozy, and thoughtfully arranged. But what really makes this place stand out is the staff. Every single person I’ve met here has been friendly, helpful, and genuinely welcoming. They go out of their way to make sure customers have what they need, and it shows that they truly care.\n\nIt’s rare to find a laundromat this clean, this comfortable, and this well-run. Five stars all the way — highly recommend to anyone who wants their laundry experience to be top-notch!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-10-11T15:32:25.326186700Z",
+      "originalText": {
+        "text": "I can’t say enough good things about this laundromat! From the moment you walk in, you can tell it’s been cared for with pride. The place absolutely sparkles — spotless floors, shining machines, and not a speck of lint in sight! The atmosphere is so clean and comfortable that doing laundry actually feels relaxing instead of like a chore.\n\nThe machines work perfectly and are always well-maintained, and the seating area is clean, cozy, and thoughtfully arranged. But what really makes this place stand out is the staff. Every single person I’ve met here has been friendly, helpful, and genuinely welcoming. They go out of their way to make sure customers have what they need, and it shows that they truly care.\n\nIt’s rare to find a laundromat this clean, this comfortable, and this well-run. Five stars all the way — highly recommend to anyone who wants their laundry experience to be top-notch!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2kxMlVHUTFSRVYyY0MxUGNrRmFWMlZaUW0xYWJYYxAB!2m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2kxMlVHUTFSRVYyY0MxUGNrRmFWMlZaUW0xYWJYYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/114837420955873668501/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXY09XjCIaiR2Lrj9joBi1Pi_hckgW0opVt2xEIR_o_tPYDcblJ8Q=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Paula Johnson"
+      },
+      "relativePublishTimeDescription": "8 months ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.269760299999998,
+    "longitude": -87.6852905
+  },
+  "plusCode": {
+    "globalCode": "862J7897+WV",
+    "compoundCode": "7897+WV Gulf Shores, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.268360269708502,
+      "longitude": -87.68678538029151
+    },
+    "high": {
+      "latitude": 30.2710582302915,
+      "longitude": -87.68408741970849
+    }
+  },
+  "websiteUri": "https://thelaundryloungegs.com/",
+  "displayName": {
+    "text": "The Laundry Lounge",
+    "languageCode": "en"
+  },
+  "primaryType": "laundry",
+  "googleMapsUri": "https://maps.google.com/?cid=13183614368788248133&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewSummary": {
+    "text": {
+      "text": "People say this laundromat offers brand new, state-of-the-art washing machines and dryers, including large-capacity machines suitable for rugs and comforters. They highlight the clean, comfortable, and stylish environment, as well as the convenient dog wash stations. They also like the friendly and helpful staff, and the free Wi-Fi.",
+      "languageCode": "en-US"
+    },
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645!9m1!1b1",
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "flagContentUri": "https://www.google.com/local/content/rap/report?postId=5%401:CAIQACodChtyc19oOmwzUDBsRGdDODl6WmNDQXZ4SnVpQXc%7CCAIQACorChtyc19oOmwzUDBsRGdDODl6WmNDQXZ4SnVpQXcSDAi_2OfEBhD44ZHwAg&d=17924085&t=8"
+  },
+  "businessStatus": "OPERATIONAL",
+  "parkingOptions": {
+    "freeParkingLot": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=13183614368788248133&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "userRatingCount": 96,
+  "adrFormatAddress": "<span class=\"street-address\">1700 E 1st St</span>, <span class=\"locality\">Gulf Shores</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36542</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "1700 E 1st St, Gulf Shores, AL 36542, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "1700",
+      "shortText": "1700",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "East 1st Street",
+      "shortText": "E 1st St",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Gulf Shores",
+      "shortText": "Gulf Shores",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36542",
+      "shortText": "36542",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJT0rBENoEmogRABiN5nSVXKI",
+        "placeId": "ChIJT0rBENoEmogRABiN5nSVXKI",
+        "containment": "OUTSKIRTS",
+        "displayName": {
+          "text": "Paradise Isle Shopping Center",
+          "languageCode": "en"
+        }
+      }
+    ],
+    "landmarks": [
+      {
+        "name": "places/ChIJg9iMWsUEmogRnM18WuWWINQ",
+        "types": [
+          "bakery",
+          "clothing_store",
+          "department_store",
+          "electronics_store",
+          "establishment",
+          "food",
+          "furniture_store",
+          "grocery_or_supermarket",
+          "hardware_store",
+          "home_goods_store",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJg9iMWsUEmogRnM18WuWWINQ",
+        "displayName": {
+          "text": "Walmart Supercenter",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 385.79315,
+        "straightLineDistanceMeters": 265.4411
+      },
+      {
+        "name": "places/ChIJU5YaANoEmogR3cXILeBEY54",
+        "types": [
+          "establishment",
+          "food",
+          "meal_delivery",
+          "meal_takeaway",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJU5YaANoEmogR3cXILeBEY54",
+        "displayName": {
+          "text": "Zaxbys Chicken Fingers & Buffalo Wings",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 202.58798,
+        "straightLineDistanceMeters": 188.60043
+      },
+      {
+        "name": "places/ChIJnWNljNsEmogRt_R0Vpn5s4I",
+        "types": [
+          "car_repair",
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJnWNljNsEmogRt_R0Vpn5s4I",
+        "displayName": {
+          "text": "Gulf Shores Service Center & 24/7 Towing",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 282.29602,
+        "straightLineDistanceMeters": 211.67264
+      },
+      {
+        "name": "places/ChIJ6czfv9AEmogRwba8XfJo1-g",
+        "types": [
+          "establishment",
+          "lodging",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJ6czfv9AEmogRwba8XfJo1-g",
+        "displayName": {
+          "text": "Hampton Inn Gulf Shores",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 281.3926,
+        "straightLineDistanceMeters": 344.32065
+      },
+      {
+        "name": "places/ChIJQUbS09kEmogRcsJIUkAcXJw",
+        "types": [
+          "cafe",
+          "establishment",
+          "food",
+          "point_of_interest",
+          "restaurant",
+          "store"
+        ],
+        "placeId": "ChIJQUbS09kEmogRcsJIUkAcXJw",
+        "displayName": {
+          "text": "McDonald's",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 454.63498,
+        "straightLineDistanceMeters": 359.15186
+      }
+    ]
+  },
+  "currentOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 0,
+          "minute": 0,
+          "truncated": true
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 59,
+          "truncated": true
+        }
+      }
+    ],
+    "weekdayDescriptions": [
+      "Monday: Open 24 hours",
+      "Tuesday: Open 24 hours",
+      "Wednesday: Open 24 hours",
+      "Thursday: Open 24 hours",
+      "Friday: Open 24 hours",
+      "Saturday: Open 24 hours",
+      "Sunday: Open 24 hours"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Laundromat",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "nationalPhoneNumber": "(251) 256-6784",
+  "regularOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 0,
+          "minute": 0
+        }
+      }
+    ],
+    "weekdayDescriptions": [
+      "Monday: Open 24 hours",
+      "Tuesday: Open 24 hours",
+      "Wednesday: Open 24 hours",
+      "Thursday: Open 24 hours",
+      "Friday: Open 24 hours",
+      "Saturday: Open 24 hours",
+      "Sunday: Open 24 hours"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true
+  },
+  "shortFormattedAddress": "1700 E 1st St, Gulf Shores",
+  "primaryTypeDisplayName": {
+    "text": "Laundry",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-256-6784"
+}
+ai_review_summary: People say this laundromat offers brand new, state-of-the-art washing machines and dryers, including large-capacity machines suitable for rugs and comforters. They highlight the clean, comfortable, and stylish environment, as well as the convenient dog wash stations. They also like the friendly and helpful staff, and the free Wi-Fi.
+free_parking_lot: true
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 1700 E 1st St, Gulf Shores
+national_phone: (251) 256-6784
+search_vector: 'also':47C 'art':15C 'brand':9C 'capac':23C 'clean':33C 'comfort':29C,34C 'conveni':42C 'dog':43C 'dryer':19C 'environ':37C 'fi':59C 'free':56C 'friend':50C 'gulf':61 'help':52C 'highlight':31C 'includ':20C 'larg':22C 'large-capac':21C 'laundri':2A,60 'laundromat':7C 'like':48C 'loung':3A 'machin':17C,24C 'new':10C 'offer':8C 'peopl':4C 'rug':27C 'say':5C 'shore':62 'staff':53C 'state':12C 'state-of-the-art':11C 'station':45C 'stylish':36C 'suitabl':25C 'wash':16C,44C 'well':39C 'wi':58C 'wi-fi':57C
+primary_type_display: Laundry
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=13183614368788248133&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJT0rBENoEmogRABiN5nSVXKI",
+      "placeId": "ChIJT0rBENoEmogRABiN5nSVXKI",
+      "containment": "OUTSKIRTS",
+      "displayName": {
+        "text": "Paradise Isle Shopping Center",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJg9iMWsUEmogRnM18WuWWINQ",
+      "types": [
+        "bakery",
+        "clothing_store",
+        "department_store",
+        "electronics_store",
+        "establishment",
+        "food",
+        "furniture_store",
+        "grocery_or_supermarket",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJg9iMWsUEmogRnM18WuWWINQ",
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 385.79315,
+      "straightLineDistanceMeters": 265.4411
+    },
+    {
+      "name": "places/ChIJU5YaANoEmogR3cXILeBEY54",
+      "types": [
+        "establishment",
+        "food",
+        "meal_delivery",
+        "meal_takeaway",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJU5YaANoEmogR3cXILeBEY54",
+      "displayName": {
+        "text": "Zaxbys Chicken Fingers & Buffalo Wings",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 202.58798,
+      "straightLineDistanceMeters": 188.60043
+    },
+    {
+      "name": "places/ChIJnWNljNsEmogRt_R0Vpn5s4I",
+      "types": [
+        "car_repair",
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJnWNljNsEmogRt_R0Vpn5s4I",
+      "displayName": {
+        "text": "Gulf Shores Service Center & 24/7 Towing",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 282.29602,
+      "straightLineDistanceMeters": 211.67264
+    },
+    {
+      "name": "places/ChIJ6czfv9AEmogRwba8XfJo1-g",
+      "types": [
+        "establishment",
+        "lodging",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJ6czfv9AEmogRwba8XfJo1-g",
+      "displayName": {
+        "text": "Hampton Inn Gulf Shores",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 281.3926,
+      "straightLineDistanceMeters": 344.32065
+    },
+    {
+      "name": "places/ChIJQUbS09kEmogRcsJIUkAcXJw",
+      "types": [
+        "cafe",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant",
+        "store"
+      ],
+      "placeId": "ChIJQUbS09kEmogRcsJIUkAcXJw",
+      "displayName": {
+        "text": "McDonald's",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 454.63498,
+      "straightLineDistanceMeters": 359.15186
+    }
+  ]
+}
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: trade_home_service
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   1 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 1] ---
+id: 7cc24ae8-5206-4212-a26f-c054c0cc0574
+entity_slug: the-laundry-lounge
+place_id: ChIJT0rBENoEmogRABiN5nSVXKI
+containment: OUTSKIRTS
+display_name: Paradise Isle Shopping Center
+
+####################################################################################################
+# TABLE: entity_attributes   -   3 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 3] ---
+id: 392f40a7-7126-45f5-90c9-8ee6d974b16c
+entity_slug: the-laundry-lounge
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 2 of 3] ---
+id: 1788005f-1d5a-45a1-a68f-d8a92aae6925
+entity_slug: the-laundry-lounge
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 3 of 3] ---
+id: 3d720040-155f-4d17-b7c5-10a121c65af1
+entity_slug: the-laundry-lounge
+category: parking
+key: parking_freeParkingLot
+label: Free Parking Lot
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: the-laundry-lounge
+name: The Laundry Lounge
+industry_code: trade_home_service
+is_parent: false
+score_of_7: 6
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 2062abcc-e929-4082-88c8-ccfef88ae2c2
+entity_slug: the-laundry-lounge
+place_uri: https://maps.google.com/?cid=13183614368788248133&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 1111
+entity_slug: the-laundry-lounge
+google_review_name: places/ChIJyYPPgp0FmogRRfZbK2ub9bY/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xwTVdXOUpSVU5rVHpkUWFVMW1SbFZTVTBoclFYYxAB
+rating: 5
+review_text: The Laundry Lounge in Gulf Shores is hands down the best laundry experience I’ve ever had. The place is spotless, well-lit, and has plenty of high-quality machines that get the job done fast. The staff is friendly and helpful, making the whole process stress-free. I love the modern, comfortable lounge area—it actually makes doing laundry enjoyable. Whether you’re a local or visiting the area, this is the place to go for clean clothes and great service!
+language_code: en
+author_name: Andrew Hart
+author_profile_url: https://www.google.com/maps/contrib/108710783481796422513/reviews
+publish_time: 2025-08-15T02:11:21.923362+00:00
+relative_time: 9 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xwTVdXOUpSVU5rVHpkUWFVMW1SbFZTVTBoclFYYxAB!2m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 1112
+entity_slug: the-laundry-lounge
+google_review_name: places/ChIJyYPPgp0FmogRRfZbK2ub9bY/reviews/Ci9DQUlRQUNvZENodHljRjlvT25NeVRsTkVTWEY2U1d0amVGVjJkWEJCVm5ocmFVRRAB
+rating: 5
+review_text: This is the nicest laundromat I’ve ever been in! So clean, and easy to use! Met one of the owners and he was crazy nice and helpful. I will definitely be coming back! The place we are staying has a laundromat, but the Laundry Lounge is so nice and convenient it will be my go to for doing laundry while in Gulf Shores!
+language_code: en
+author_name: Brian Curran
+author_profile_url: https://www.google.com/maps/contrib/103543337662779019719/reviews
+publish_time: 2026-02-28T16:46:45.358997+00:00
+relative_time: 3 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25NeVRsTkVTWEY2U1d0amVGVjJkWEJCVm5ocmFVRRAB!2m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 1113
+entity_slug: the-laundry-lounge
+google_review_name: places/ChIJyYPPgp0FmogRRfZbK2ub9bY/reviews/Ci9DQUlRQUNvZENodHljRjlvT21SaFlVRmFWM3BOVEdNNFNHVkNZbVF6VW5kQldIYxAB
+rating: 5
+review_text: The Laundry Lounge - BEAUTIFUL new laundry mat in Gulf Shores on 1st street off 59.  So clean and the staff is so helpful.   All machines with their app take a credit card.  GENIUS 🤩🥳🤩
+language_code: en
+author_name: Jill Lee
+author_profile_url: https://www.google.com/maps/contrib/108858753251380229582/reviews
+publish_time: 2025-08-13T14:11:27.847806+00:00
+relative_time: 10 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21SaFlVRmFWM3BOVEdNNFNHVkNZbVF6VW5kQldIYxAB!2m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 1114
+entity_slug: the-laundry-lounge
+google_review_name: places/ChIJyYPPgp0FmogRRfZbK2ub9bY/reviews/ChZDSUhNMG9nS0VJV3c0NzZMZ3QzX0NBEAE
+rating: 5
+review_text: What an amazing addition to Gulf Shores!  The place is giant with brand new machines, has a lounge area if you are waiting, has an indoor dog washing station, vending machines for detergent and snacks, and free wifi!  Who knew a laundromat could be so nice!?
+language_code: en
+author_name: d deco
+author_profile_url: https://www.google.com/maps/contrib/104584902911370907064/reviews
+publish_time: 2025-06-04T01:24:06.689806+00:00
+relative_time: a year ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJV3c0NzZMZ3QzX0NBEAE!2m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 1115
+entity_slug: the-laundry-lounge
+google_review_name: places/ChIJyYPPgp0FmogRRfZbK2ub9bY/reviews/Ci9DQUlRQUNvZENodHljRjlvT2kxMlVHUTFSRVYyY0MxUGNrRmFWMlZaUW0xYWJYYxAB
+rating: 5
+review_text: I can’t say enough good things about this laundromat! From the moment you walk in, you can tell it’s been cared for with pride. The place absolutely sparkles — spotless floors, shining machines, and not a speck of lint in sight! The atmosphere is so clean and comfortable that doing laundry actually feels relaxing instead of like a chore.
+
+The machines work perfectly and are always well-maintained, and the seating area is clean, cozy, and thoughtfully arranged. But what really makes this place stand out is the staff. Every single person I’ve met here has been friendly, helpful, and genuinely welcoming. They go out of their way to make sure customers have what they need, and it shows that they truly care.
+
+It’s rare to find a laundromat this clean, this comfortable, and this well-run. Five stars all the way — highly recommend to anyone who wants their laundry experience to be top-notch!
+language_code: en
+author_name: Paula Johnson
+author_profile_url: https://www.google.com/maps/contrib/114837420955873668501/reviews
+publish_time: 2025-10-11T15:32:25.326187+00:00
+relative_time: 8 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2kxMlVHUTFSRVYyY0MxUGNrRmFWMlZaUW0xYWJYYxAB!2m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: a975eedd-9b6d-4916-a53a-23635264b20a
+entity_slug: the-laundry-lounge
+day_of_week: 0
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: dc606fe9-ac89-44f6-a6e9-96f8ed6ea152
+entity_slug: the-laundry-lounge
+day_of_week: 1
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: cf86665c-99c6-490e-a071-17cd845a2cf5
+entity_slug: the-laundry-lounge
+day_of_week: 2
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: dae8ebdb-25d0-4520-8d20-d78b12bbb0a7
+entity_slug: the-laundry-lounge
+day_of_week: 3
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 9abc7213-243e-496f-b5b3-cf0c4db779b7
+entity_slug: the-laundry-lounge
+day_of_week: 4
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 21379b31-3333-4aa8-aa83-2b21a8dba855
+entity_slug: the-laundry-lounge
+day_of_week: 5
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 147370d0-70f6-4a46-aa62-e210dd7af5c7
+entity_slug: the-laundry-lounge
+day_of_week: 6
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: the-laundry-lounge
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: e206a60e-6e36-4011-aa89-591884eb7617
+name: The Laundry Lounge
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://thelaundryloungegs.com/wp-content/uploads/2025/06/IMG_5579-scaled.jpg",
+    "https://thelaundryloungegs.com/wp-content/uploads/2026/02/Best-of-baldwin2026-transparent-background-2-1024x1024.png",
+    "https://thelaundryloungegs.com/wp-content/uploads/2025/06/laundromutt-ad-1024x858.jpg",
+    "https://thelaundryloungegs.com/wp-content/uploads/2025/06/IMG_5652-scaled.jpg",
+    "https://thelaundryloungegs.com/wp-content/uploads/2025/06/IMG_5667-scaled.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-laundry-lounge/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/laundromat-gulf-shores/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/laundromat-gulf-shores/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/laundromat-gulf-shores/photo_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-laundry-lounge/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-laundry-lounge/photo_03.jpg",
+    "/photos/the-laundry-lounge/photo_01.jpg",
+    "/photos/the-laundry-lounge/photo_02.jpg",
+    "/photos/the-laundry-lounge/photo_03.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: the-laundry-lounge
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: e206a60e-6e36-4011-aa89-591884eb7617
+name: The Laundry Lounge
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://thelaundryloungegs.com/wp-content/uploads/2025/06/IMG_5579-scaled.jpg",
+    "https://thelaundryloungegs.com/wp-content/uploads/2026/02/Best-of-baldwin2026-transparent-background-2-1024x1024.png",
+    "https://thelaundryloungegs.com/wp-content/uploads/2025/06/laundromutt-ad-1024x858.jpg",
+    "https://thelaundryloungegs.com/wp-content/uploads/2025/06/IMG_5652-scaled.jpg",
+    "https://thelaundryloungegs.com/wp-content/uploads/2025/06/IMG_5667-scaled.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-laundry-lounge/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/laundromat-gulf-shores/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/laundromat-gulf-shores/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/laundromat-gulf-shores/photo_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-laundry-lounge/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-laundry-lounge/photo_03.jpg",
+    "/photos/the-laundry-lounge/photo_01.jpg",
+    "/photos/the-laundry-lounge/photo_02.jpg",
+    "/photos/the-laundry-lounge/photo_03.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: 8bd010df-b177-46de-a8cd-cdc83d7de6ca
+entity_slug: the-laundry-lounge
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 7a6f2d66-5b31-4fb7-86d6-05e28ab392c2
+entity_slug: the-laundry-lounge
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: b2103d6e-5cda-416f-b5d0-b7fd2783e1ec
+entity_slug: the-laundry-lounge
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: 6e6bb14e-8d5a-42fc-901e-72f28e2ada8c
+entity_slug: the-laundry-lounge
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: eb219564-21ab-4799-908b-1e65b92adc79
+entity_slug: the-laundry-lounge
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: 5f60c673-94a4-4857-8318-f2becd3bcacd
+entity_slug: the-laundry-lounge
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 22fb1283-f4a6-4000-82ff-c6fc6d784533
+entity_slug: the-laundry-lounge
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 58eb6166-28f7-4c39-8818-ae3bf2de2950
+entity_slug: the-laundry-lounge
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: 54e16818-d5d2-4673-b26c-ed56b9be83bc
+entity_slug: the-laundry-lounge
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: 924347ba-f3bf-430d-8558-2f02cd97c5b4
+entity_slug: the-laundry-lounge
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: 8927d4f4-a387-4f7d-b9e2-b9d02964030b
+entity_slug: the-laundry-lounge
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: 22b9e4c2-451c-4004-b5f9-26ef90691e23
+entity_slug: the-laundry-lounge
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: b101c060-f65b-469e-9ab6-8424816f32dc
+entity_slug: the-laundry-lounge
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   30 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 30] ---
+id: 1d260734-3d72-467c-89d2-e3a3bed4ede5
+landmark_id: 2758c260-98ee-4a47-9c5a-2c8697d689e6
+entity_slug: the-laundry-lounge
+landmark_type: bakery
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 30] ---
+id: 80af1749-775e-4721-beac-0d5e7c673bee
+landmark_id: 2758c260-98ee-4a47-9c5a-2c8697d689e6
+entity_slug: the-laundry-lounge
+landmark_type: clothing_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 30] ---
+id: 391cb2eb-415b-4c48-9525-59da857d342e
+landmark_id: 2758c260-98ee-4a47-9c5a-2c8697d689e6
+entity_slug: the-laundry-lounge
+landmark_type: department_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 30] ---
+id: a10bab1a-d97b-42fa-a466-126752a18b4e
+landmark_id: 2758c260-98ee-4a47-9c5a-2c8697d689e6
+entity_slug: the-laundry-lounge
+landmark_type: electronics_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 30] ---
+id: 007e7fea-c8ea-48d3-8429-baaac9601a4e
+landmark_id: 2758c260-98ee-4a47-9c5a-2c8697d689e6
+entity_slug: the-laundry-lounge
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 30] ---
+id: f4bf49e2-0c15-4ed6-b4cc-3bea87517909
+landmark_id: 2758c260-98ee-4a47-9c5a-2c8697d689e6
+entity_slug: the-laundry-lounge
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 30] ---
+id: f7a00438-26f4-43b1-8c57-14d09a12e5bd
+landmark_id: 2758c260-98ee-4a47-9c5a-2c8697d689e6
+entity_slug: the-laundry-lounge
+landmark_type: furniture_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 30] ---
+id: 04c44aad-d8da-4c05-9a0f-dba93b753a84
+landmark_id: 2758c260-98ee-4a47-9c5a-2c8697d689e6
+entity_slug: the-laundry-lounge
+landmark_type: grocery_or_supermarket
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 30] ---
+id: 5b495e48-ed64-47a2-9fd7-85b7b8d30450
+landmark_id: 2758c260-98ee-4a47-9c5a-2c8697d689e6
+entity_slug: the-laundry-lounge
+landmark_type: hardware_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 30] ---
+id: 6b980acd-764e-42f1-a85f-31e1d97b61eb
+landmark_id: 2758c260-98ee-4a47-9c5a-2c8697d689e6
+entity_slug: the-laundry-lounge
+landmark_type: home_goods_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 30] ---
+id: 36770884-098b-43a0-a3a7-434b8a134ce6
+landmark_id: 2758c260-98ee-4a47-9c5a-2c8697d689e6
+entity_slug: the-laundry-lounge
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 30] ---
+id: 370909df-31f6-43b9-827c-59f7e0da37fb
+landmark_id: 2758c260-98ee-4a47-9c5a-2c8697d689e6
+entity_slug: the-laundry-lounge
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 30] ---
+id: b082631f-f1a4-40f7-acf7-88042ea46b68
+landmark_id: bc24801c-108a-4f06-bcff-f10f8bcd87ec
+entity_slug: the-laundry-lounge
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 30] ---
+id: d0c2efba-a70b-45dd-babd-0df4a1ab4955
+landmark_id: bc24801c-108a-4f06-bcff-f10f8bcd87ec
+entity_slug: the-laundry-lounge
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 30] ---
+id: 4ec1e05b-33fb-46f0-bdf5-626791097c8d
+landmark_id: bc24801c-108a-4f06-bcff-f10f8bcd87ec
+entity_slug: the-laundry-lounge
+landmark_type: meal_delivery
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 30] ---
+id: 13c82465-bd8a-45f7-9fad-5ae6782b1a77
+landmark_id: bc24801c-108a-4f06-bcff-f10f8bcd87ec
+entity_slug: the-laundry-lounge
+landmark_type: meal_takeaway
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 30] ---
+id: 5fbbcd56-705e-415a-887a-fbe438384f62
+landmark_id: bc24801c-108a-4f06-bcff-f10f8bcd87ec
+entity_slug: the-laundry-lounge
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 30] ---
+id: adbc9661-3a1c-40bf-95ba-4f50e33ea04b
+landmark_id: bc24801c-108a-4f06-bcff-f10f8bcd87ec
+entity_slug: the-laundry-lounge
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 19 of 30] ---
+id: d71faa76-7fb7-40f7-8e14-5a57b9372550
+landmark_id: 4c84c7fb-89c8-4ea2-8fa5-cf60c287c8e6
+entity_slug: the-laundry-lounge
+landmark_type: car_repair
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 20 of 30] ---
+id: 926723b6-3dca-4a5d-a8c6-03691217b52d
+landmark_id: 4c84c7fb-89c8-4ea2-8fa5-cf60c287c8e6
+entity_slug: the-laundry-lounge
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 21 of 30] ---
+id: a21d0244-13f6-46dd-a156-db4375a6d67f
+landmark_id: 4c84c7fb-89c8-4ea2-8fa5-cf60c287c8e6
+entity_slug: the-laundry-lounge
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 22 of 30] ---
+id: 7ad3c488-2d62-4c6a-9678-ae6ea0e5f838
+landmark_id: c403b751-aef0-4ec8-8e06-8b9b4d418778
+entity_slug: the-laundry-lounge
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 23 of 30] ---
+id: d54b9cf1-0a97-4b80-b4af-fa316dc56e50
+landmark_id: c403b751-aef0-4ec8-8e06-8b9b4d418778
+entity_slug: the-laundry-lounge
+landmark_type: lodging
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 24 of 30] ---
+id: c789991c-6528-467c-abbe-2b71a15975fb
+landmark_id: c403b751-aef0-4ec8-8e06-8b9b4d418778
+entity_slug: the-laundry-lounge
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 25 of 30] ---
+id: f76258ff-c135-4e4e-9772-f38909508695
+landmark_id: f854468d-2928-46b6-af44-43066e3b2c63
+entity_slug: the-laundry-lounge
+landmark_type: cafe
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 26 of 30] ---
+id: f5305cb0-75a7-4d5d-a9a0-76d874833f63
+landmark_id: f854468d-2928-46b6-af44-43066e3b2c63
+entity_slug: the-laundry-lounge
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 27 of 30] ---
+id: ab53ad57-3133-451d-9d95-0650a07739a6
+landmark_id: f854468d-2928-46b6-af44-43066e3b2c63
+entity_slug: the-laundry-lounge
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 28 of 30] ---
+id: d01340f5-67a0-4ba8-afe4-5ea2bf17b960
+landmark_id: f854468d-2928-46b6-af44-43066e3b2c63
+entity_slug: the-laundry-lounge
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 29 of 30] ---
+id: 852e018e-26e7-42ee-a72d-0c7e6586eef6
+landmark_id: f854468d-2928-46b6-af44-43066e3b2c63
+entity_slug: the-laundry-lounge
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 30 of 30] ---
+id: d0941640-bde6-4745-a3de-77cb3ee55ab9
+landmark_id: f854468d-2928-46b6-af44-43066e3b2c63
+entity_slug: the-laundry-lounge
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   6 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 6] ---
+id: 2758c260-98ee-4a47-9c5a-2c8697d689e6
+entity_slug: the-laundry-lounge
+kind: landmark
+place_id: ChIJg9iMWsUEmogRnM18WuWWINQ
+name: Walmart Supercenter
+types: [
+  "bakery",
+  "clothing_store",
+  "department_store",
+  "electronics_store",
+  "establishment",
+  "food",
+  "furniture_store",
+  "grocery_or_supermarket",
+  "hardware_store",
+  "home_goods_store",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 385.79315
+straight_line_distance_meters: 265.4411
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 6] ---
+id: bc24801c-108a-4f06-bcff-f10f8bcd87ec
+entity_slug: the-laundry-lounge
+kind: landmark
+place_id: ChIJU5YaANoEmogR3cXILeBEY54
+name: Zaxbys Chicken Fingers & Buffalo Wings
+types: [
+  "establishment",
+  "food",
+  "meal_delivery",
+  "meal_takeaway",
+  "point_of_interest",
+  "restaurant"
+]
+travel_distance_meters: 202.58798
+straight_line_distance_meters: 188.60043
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 6] ---
+id: 4c84c7fb-89c8-4ea2-8fa5-cf60c287c8e6
+entity_slug: the-laundry-lounge
+kind: landmark
+place_id: ChIJnWNljNsEmogRt_R0Vpn5s4I
+name: Gulf Shores Service Center & 24/7 Towing
+types: [
+  "car_repair",
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 282.29602
+straight_line_distance_meters: 211.67264
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 6] ---
+id: c403b751-aef0-4ec8-8e06-8b9b4d418778
+entity_slug: the-laundry-lounge
+kind: landmark
+place_id: ChIJ6czfv9AEmogRwba8XfJo1-g
+name: Hampton Inn Gulf Shores
+types: [
+  "establishment",
+  "lodging",
+  "point_of_interest"
+]
+travel_distance_meters: 281.3926
+straight_line_distance_meters: 344.32065
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 6] ---
+id: f854468d-2928-46b6-af44-43066e3b2c63
+entity_slug: the-laundry-lounge
+kind: landmark
+place_id: ChIJQUbS09kEmogRcsJIUkAcXJw
+name: McDonald's
+types: [
+  "cafe",
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant",
+  "store"
+]
+travel_distance_meters: 454.63498
+straight_line_distance_meters: 359.15186
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 6 of 6] ---
+id: 02ce10e0-1426-4f74-a1a4-47756718ed66
+entity_slug: the-laundry-lounge
+kind: area
+place_id: ChIJT0rBENoEmogRABiN5nSVXKI
+name: Paradise Isle Shopping Center
+containment: OUTSKIRTS
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 14149
+entity_slug: the-laundry-lounge
+name: The Laundry Lounge
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: e206a60e-6e36-4011-aa89-591884eb7617
+
+####################################################################################################
+# TABLE: entity_photos   -   32 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 32] ---
+id: ef804f93-218f-47a5-b892-aba0478d0c04
+entity_slug: the-laundry-lounge
+url: https://thelaundryloungegs.com/wp-content/uploads/2025/06/IMG_5579-scaled.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 32] ---
+id: 0dc4f801-8e55-44b9-9fa8-3e9f658bb82d
+entity_slug: the-laundry-lounge
+url: https://thelaundryloungegs.com/wp-content/uploads/2026/02/Best-of-baldwin2026-transparent-background-2-1024x1024.png
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 32] ---
+id: 92010afe-c0f5-41e2-8630-3db0d6634b07
+entity_slug: the-laundry-lounge
+url: https://thelaundryloungegs.com/wp-content/uploads/2025/06/laundromutt-ad-1024x858.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 4 of 32] ---
+id: e132ffe8-f416-4037-bbc4-b7bb11221e76
+entity_slug: the-laundry-lounge
+url: https://thelaundryloungegs.com/wp-content/uploads/2025/06/IMG_5652-scaled.jpg
+is_cover: false
+sort_order: 3
+
+--- entity_photos [row 5 of 32] ---
+id: 9da6b92a-1e91-4be3-ae55-33b0d0939054
+entity_slug: the-laundry-lounge
+url: https://thelaundryloungegs.com/wp-content/uploads/2025/06/IMG_5667-scaled.jpg
+is_cover: false
+sort_order: 4
+
+--- entity_photos [row 6 of 32] ---
+id: 5262ed91-2c5f-4807-87d5-945b670f924e
+entity_slug: the-laundry-lounge
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-laundry-lounge/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 7 of 32] ---
+id: 4315462c-ae45-4c6b-b4ce-577f86aa7cea
+entity_slug: the-laundry-lounge
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-laundry-lounge/photo_03.jpg
+is_cover: false
+sort_order: 10
+photo_type: resource
+source_name: bookable_resource
+resource_id: e206a60e-6e36-4011-aa89-591884eb7617
+
+--- entity_photos [row 8 of 32] ---
+id: f3d8f29e-a189-48ea-90bc-cd0058188d0c
+entity_slug: the-laundry-lounge
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/laundromat-gulf-shores/photo_03.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 9 of 32] ---
+id: 5f78e161-642b-4eeb-bfb9-71f2efa36ee2
+entity_slug: the-laundry-lounge
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/laundromat-gulf-shores/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 10 of 32] ---
+id: a9ed84fc-b7dc-4a2f-bf3d-7b7568da5e27
+entity_slug: the-laundry-lounge
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/laundromat-gulf-shores/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 11 of 32] ---
+id: 53d4c292-bea6-4a92-8793-a065bd21f330
+entity_slug: the-laundry-lounge
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-laundry-lounge/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 12 of 32] ---
+id: 13c13248-8718-4acb-b67e-a0dd2f077990
+entity_slug: the-laundry-lounge
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-laundry-lounge/photo_03.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 13 of 32] ---
+id: 4bea6156-5b34-40dd-9ced-a4b3a35ba5c2
+entity_slug: the-laundry-lounge
+url: https://places.googleapis.com/v1/places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3ncerHP5DLMwBfHCFHeTox4uM3qr5dZuGma15rOBVCwSORza7rni_5E-OQC92hBm5byk8dpzM3wzqQrAZCTWeUvuO7DkZbrfuCl1AwjF378Y0nFiLvZDdSd98xyeY9LL3OExzsPq_9ERihHAczUmkqHfFgVUHzV1UjlUbBjHZYjScAZKemH56PuvkbpCspZteCzt0StWqZ-4TfbvS1lNbU2v-W5mAq3MFnuSStXxuRC2obkhIU049nJkVuz3swuipSMRdFhIVdrUOd0nmhJwvn3Og0uNZQzf4QELhipiwHHmSmL7-G1facuPW2oRVhwjslPPqTKPmPL4remva8y6MtZp0KiFBwsArxTzS0HDo2rp7rS2YaQro5DfUuP2NKh6MK3PsItIgnbshF6RyKkIpLXXivJS_K9h0gtgSp1GKSjTNQ9s2ZMR3CVOq_UYZN4/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3ncerHP5DLMwBfHCFHeTox4uM3qr5dZuGma15rOBVCwSORza7rni_5E-OQC92hBm5byk8dpzM3wzqQrAZCTWeUvuO7DkZbrfuCl1AwjF378Y0nFiLvZDdSd98xyeY9LL3OExzsPq_9ERihHAczUmkqHfFgVUHzV1UjlUbBjHZYjScAZKemH56PuvkbpCspZteCzt0StWqZ-4TfbvS1lNbU2v-W5mAq3MFnuSStXxuRC2obkhIU049nJkVuz3swuipSMRdFhIVdrUOd0nmhJwvn3Og0uNZQzf4QELhipiwHHmSmL7-G1facuPW2oRVhwjslPPqTKPmPL4remva8y6MtZp0KiFBwsArxTzS0HDo2rp7rS2YaQro5DfUuP2NKh6MK3PsItIgnbshF6RyKkIpLXXivJS_K9h0gtgSp1GKSjTNQ9s2ZMR3CVOq_UYZN4
+is_cover: false
+sort_order: 0
+caption: Shonda Boyer
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBiE-_8kxp1HdWQraEYz6Kk!2e10!4m2!3m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645
+
+--- entity_photos [row 14 of 32] ---
+id: 3900fcdf-dc69-4d8f-8aec-54da7efbd21e
+entity_slug: the-laundry-lounge
+url: https://places.googleapis.com/v1/places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3kV1TZP717PTVhyqf2agq3Qnga90SfdjNQeMOaXLBwNiMmfb-DIym4pcIRnQagmPSokmruNI8tVhta3eJDfDCqgCQmCrxCAVQ2TkG6w_gwUb4qM-euxVpEIDifpg1YZPioQyzKR3-ZpKXF3nn2mRDtUPzTGYEucVFEs-h8YNEwN8Mgq5W7GGbFdVtjgZvtKAnsSgc9wcpg-l-F471R9TNKE8V8USfq32vROGxBvEoR8UJddRqagziZFIebBR0XmLctLMSBHxwbLrzC_M3r_iNfU_MUYsQi3wXCL5knHD6kECBExXLS6cRYSMBhhH65M1k8FYs_xgLREAFIOKi6r_FPKmy6zfHeS1Dw38qYAK5vLwC2m7JnuTSnIrv-hIKUVtxWa_NDHiiOX8-8vGSfd7ppQzy9KHv7w_L5qephqLpFM9mA9aYuVly7coTInc4hb/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3kV1TZP717PTVhyqf2agq3Qnga90SfdjNQeMOaXLBwNiMmfb-DIym4pcIRnQagmPSokmruNI8tVhta3eJDfDCqgCQmCrxCAVQ2TkG6w_gwUb4qM-euxVpEIDifpg1YZPioQyzKR3-ZpKXF3nn2mRDtUPzTGYEucVFEs-h8YNEwN8Mgq5W7GGbFdVtjgZvtKAnsSgc9wcpg-l-F471R9TNKE8V8USfq32vROGxBvEoR8UJddRqagziZFIebBR0XmLctLMSBHxwbLrzC_M3r_iNfU_MUYsQi3wXCL5knHD6kECBExXLS6cRYSMBhhH65M1k8FYs_xgLREAFIOKi6r_FPKmy6zfHeS1Dw38qYAK5vLwC2m7JnuTSnIrv-hIKUVtxWa_NDHiiOX8-8vGSfd7ppQzy9KHv7w_L5qephqLpFM9mA9aYuVly7coTInc4hb
+is_cover: false
+sort_order: 1
+caption: Jay McDonald
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBSi2oZVJihWfqqmqw5oFCR!2e10!4m2!3m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645
+
+--- entity_photos [row 15 of 32] ---
+id: 8f1e3200-7d25-4f64-a504-a011aaca7d8d
+entity_slug: the-laundry-lounge
+url: https://places.googleapis.com/v1/places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3kd6ozSuRO3L-KzFBZkWycg0wJMctEsY_Onro7W7oeiZUfs0bkoSt0gHdq4ddpW6lQQVU482bdlI-P4E0X2x68g7fpLEwO-D7PC3RsvFmZHo42v8EQVRkTIeVil6ImeuIoJoMbfvu8z8snn_M9jtcHD-jb6a6DdScz1JoAAPe009_tZ6IMRm42DrkhM5kdC5-2T95cR4PrDcDvrXge3LTUgRwt_9EzQJSHc6VdFMbEHspkmSonSE5lODhqKw3AzxWTyp4scgwpRMqC5uI1QC-7YDrKx2gyMO5B5lDCaTXFXYokZnB-iAWDWuhFwHR5svsTe_EBjAQVnsxP9-1cUsL2iP0Uu1QigIuyuO_tnYs3POSFp_Ab7FTgO6qzmwIO_X4syfoaIHCxVgxcYlHntOtCcwxpYTylycenQlAikv3Z7EVjGbcicmWJzOeb1UwiC/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3kd6ozSuRO3L-KzFBZkWycg0wJMctEsY_Onro7W7oeiZUfs0bkoSt0gHdq4ddpW6lQQVU482bdlI-P4E0X2x68g7fpLEwO-D7PC3RsvFmZHo42v8EQVRkTIeVil6ImeuIoJoMbfvu8z8snn_M9jtcHD-jb6a6DdScz1JoAAPe009_tZ6IMRm42DrkhM5kdC5-2T95cR4PrDcDvrXge3LTUgRwt_9EzQJSHc6VdFMbEHspkmSonSE5lODhqKw3AzxWTyp4scgwpRMqC5uI1QC-7YDrKx2gyMO5B5lDCaTXFXYokZnB-iAWDWuhFwHR5svsTe_EBjAQVnsxP9-1cUsL2iP0Uu1QigIuyuO_tnYs3POSFp_Ab7FTgO6qzmwIO_X4syfoaIHCxVgxcYlHntOtCcwxpYTylycenQlAikv3Z7EVjGbcicmWJzOeb1UwiC
+is_cover: false
+sort_order: 2
+caption: Kelly Warhurst
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCgAzMMRzINuBRctaX2hLxc!2e10!4m2!3m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645
+
+--- entity_photos [row 16 of 32] ---
+id: 29168b40-1c35-413e-a999-6376b2d217dc
+entity_slug: the-laundry-lounge
+url: https://places.googleapis.com/v1/places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3lHDtI6zZ8ki6lebcvLz75cTwa8iIMCA2wFUitILQROW2AlZSgBf7yV5tPfXKlpq-vT3gNmQiq7r5EFVgvjBtFI8UeSu4tRRI8ci8IKwWogRcb_mw5-NKurd-vRe2BZTPBL3nM26kPLWq3DueYtn0PYIIK-ssmCZo29K4ayhtd3qucnP0sYG4Oo4rYfBvBH0pDKHlxlGJPgNhRCwXg2breMZ3_bCCS3T9o7g4ZObrTFHpkLUsXavrDxPP7PrOaW0aAO5oZuCsjMGIhTKgVb_E24qMnLZHg_3GwOolnoO3LbRfcBAk387Wl-JG5W4EG7_jRh2jwliLrXDJt74eB-HNBi1pQj8REhFg1xFaFkhhh9zlODaKVhO-y5zZPHdyFL6JUPvEIER9-da76AYScc3LNsEGKuMRF1XhrK8JipT8Ns3PWabxed7MCypNyxRBxT/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3lHDtI6zZ8ki6lebcvLz75cTwa8iIMCA2wFUitILQROW2AlZSgBf7yV5tPfXKlpq-vT3gNmQiq7r5EFVgvjBtFI8UeSu4tRRI8ci8IKwWogRcb_mw5-NKurd-vRe2BZTPBL3nM26kPLWq3DueYtn0PYIIK-ssmCZo29K4ayhtd3qucnP0sYG4Oo4rYfBvBH0pDKHlxlGJPgNhRCwXg2breMZ3_bCCS3T9o7g4ZObrTFHpkLUsXavrDxPP7PrOaW0aAO5oZuCsjMGIhTKgVb_E24qMnLZHg_3GwOolnoO3LbRfcBAk387Wl-JG5W4EG7_jRh2jwliLrXDJt74eB-HNBi1pQj8REhFg1xFaFkhhh9zlODaKVhO-y5zZPHdyFL6JUPvEIER9-da76AYScc3LNsEGKuMRF1XhrK8JipT8Ns3PWabxed7MCypNyxRBxT
+is_cover: false
+sort_order: 3
+caption: Kelly Warhurst
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCYNq-ISdpnzEA--su6CHSa!2e10!4m2!3m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645
+
+--- entity_photos [row 17 of 32] ---
+id: e1ff6d12-eed4-4cd5-8376-8f2be04bed57
+entity_slug: the-laundry-lounge
+url: https://places.googleapis.com/v1/places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3mEs2VqA176blwJKOZt429cuQfBO_KLysS4uBHSApABfmX-gaWFmxJEdL57EB_LgLRHHBZKEyzmn583ZFU8ggEj0whN1-GDyWP7YkqrI1TnVdFzs3ydPaoqj-GUbVkS2eFzVdUg6G5QFyhdajMFYvniUZvveJOxKC2-FeKLG-6n5tAQ3lAyVIdeGw_N0LRm6ch9twxqQQemsCzRODzkRuyGT_9YJsTmkt6ABvzWfA7z35MN1bjuSmIDua674KHh2ReQJFUgQrmICGCWd_sQA4i8HK9ucxMXuWrUlJRtxEkLW79HZpt9m8OczUtRVJ9VeaDLXc7pCdfl80KgzwWs6V9peNPgI_Ulj9t2ckyzvfL6AJueVsCXCQ4yOIlxoDShcZiY-LGggTQHcIOSDgHP1rDoDYlv6Jx-YYMXkjWh_Vg9qZAdnbEnoN4pWqW-70MT/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3mEs2VqA176blwJKOZt429cuQfBO_KLysS4uBHSApABfmX-gaWFmxJEdL57EB_LgLRHHBZKEyzmn583ZFU8ggEj0whN1-GDyWP7YkqrI1TnVdFzs3ydPaoqj-GUbVkS2eFzVdUg6G5QFyhdajMFYvniUZvveJOxKC2-FeKLG-6n5tAQ3lAyVIdeGw_N0LRm6ch9twxqQQemsCzRODzkRuyGT_9YJsTmkt6ABvzWfA7z35MN1bjuSmIDua674KHh2ReQJFUgQrmICGCWd_sQA4i8HK9ucxMXuWrUlJRtxEkLW79HZpt9m8OczUtRVJ9VeaDLXc7pCdfl80KgzwWs6V9peNPgI_Ulj9t2ckyzvfL6AJueVsCXCQ4yOIlxoDShcZiY-LGggTQHcIOSDgHP1rDoDYlv6Jx-YYMXkjWh_Vg9qZAdnbEnoN4pWqW-70MT
+is_cover: false
+sort_order: 4
+caption: The Laundry Lounge
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDvgImsMKJjpEUshz1gtQVO!2e10!4m2!3m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645
+
+--- entity_photos [row 18 of 32] ---
+id: 0da95efa-1e0e-44d7-8a25-624f9c468c10
+entity_slug: the-laundry-lounge
+url: https://places.googleapis.com/v1/places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3mDlXWw4O99HqbehprqXsdYf3MkHHYg0guDw9FNKgxFCbUqj6caA8LOVZdzSFvgvFbq8_hEg-p2txIkO9qhlD8TgwRm6a_UC3nSqOUcgi3WQZifAGBIwKEatZKa_07Hnhq_IEo6D6cofcua81QDqdYXs2mYWzl3YoMNqzWLEcrGjsKqyvRP2QYmUcHrv797D0MTxlrU_TnHsBeWKIZo4pM3XPjePfqT2xiIBeGpNX-P4ZplYB6oNmMp2NkmYR2Ym17TNJ2Nqu_QPSuoi2mk8OJneLXo5mrlSTNPtSsB8Hu7-mNRq-f2-HTA6Y8OuZvK9eDBxSTWf2_7O92ZqXXmNtgRnaHChb8nWofS8g3HTMSd-Dmnt8m2k4N5_540EwmqFGCYMK-dQNd2UQFWOKi5cZkghT-z7Nf05GQKnQEM6-Ws7Iov/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3mDlXWw4O99HqbehprqXsdYf3MkHHYg0guDw9FNKgxFCbUqj6caA8LOVZdzSFvgvFbq8_hEg-p2txIkO9qhlD8TgwRm6a_UC3nSqOUcgi3WQZifAGBIwKEatZKa_07Hnhq_IEo6D6cofcua81QDqdYXs2mYWzl3YoMNqzWLEcrGjsKqyvRP2QYmUcHrv797D0MTxlrU_TnHsBeWKIZo4pM3XPjePfqT2xiIBeGpNX-P4ZplYB6oNmMp2NkmYR2Ym17TNJ2Nqu_QPSuoi2mk8OJneLXo5mrlSTNPtSsB8Hu7-mNRq-f2-HTA6Y8OuZvK9eDBxSTWf2_7O92ZqXXmNtgRnaHChb8nWofS8g3HTMSd-Dmnt8m2k4N5_540EwmqFGCYMK-dQNd2UQFWOKi5cZkghT-z7Nf05GQKnQEM6-Ws7Iov
+is_cover: false
+sort_order: 5
+caption: d deco
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEND1pJa5o87X_QE!2e10!4m2!3m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645
+
+--- entity_photos [row 19 of 32] ---
+id: 0fe3a6b8-9e19-46c0-aece-3ebfccc8fe8f
+entity_slug: the-laundry-lounge
+url: https://places.googleapis.com/v1/places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3m4XmWbqL2M50FFzTLs9dZsl4BeDFdqq4w6uzd7y68HWEwW9MounKYYlYrVxAoY2CdxEb-IfoxPMnh1Xf1Mw4wO2G7nAuAfDbaAaoKA0uzon8YuH4ux8SO4SDxzOToMnU1t1WnFHGkRCMjbxYLoy5cM7KTnbgPrmEVHk6ziduaWIdyrhcOrCOPxXcZNsGFyPn9ttENr3kadaaSYkuaPBPTtKF-NOz3k_GkTShyBcwjpfAyBAIhUC-R5fO8-oezfmWyO6mJw9ay4fEUvhLk79W617wPYMuyk-td-dB_NlybqIw1wtdto4yQvWFpGaCNi5SpRpDfCmaS_nbBetTx75XSkUpxl0BhK0zR8eFyQ0QhAy8IVsNR_rVOsN7xdxdsArVWgVXkKKzU6gCqLgXT1w1f4qGnCmBSEmvx1ZNcOwJ_e3JXdu8rBuzF9Y-2MCw/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3m4XmWbqL2M50FFzTLs9dZsl4BeDFdqq4w6uzd7y68HWEwW9MounKYYlYrVxAoY2CdxEb-IfoxPMnh1Xf1Mw4wO2G7nAuAfDbaAaoKA0uzon8YuH4ux8SO4SDxzOToMnU1t1WnFHGkRCMjbxYLoy5cM7KTnbgPrmEVHk6ziduaWIdyrhcOrCOPxXcZNsGFyPn9ttENr3kadaaSYkuaPBPTtKF-NOz3k_GkTShyBcwjpfAyBAIhUC-R5fO8-oezfmWyO6mJw9ay4fEUvhLk79W617wPYMuyk-td-dB_NlybqIw1wtdto4yQvWFpGaCNi5SpRpDfCmaS_nbBetTx75XSkUpxl0BhK0zR8eFyQ0QhAy8IVsNR_rVOsN7xdxdsArVWgVXkKKzU6gCqLgXT1w1f4qGnCmBSEmvx1ZNcOwJ_e3JXdu8rBuzF9Y-2MCw
+is_cover: false
+sort_order: 6
+caption: The Laundry Lounge
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBmwYYO7W68kqcznNnbZHVY!2e10!4m2!3m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645
+
+--- entity_photos [row 20 of 32] ---
+id: a310d375-444e-46ce-a7fb-1be5175f6354
+entity_slug: the-laundry-lounge
+url: https://places.googleapis.com/v1/places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3nB8aoCHN7Fzlj6rQbHSenyBiBVr8RT6rXo-F_ugIeuVuF-G7_ZaMWdUxYRTQ4jWGZ0sxaE0Ez8m7OhjJugwztr1OqD5zw5z8dyh2A2rK60fnsBSkc8GTxEDxLpxlE8JOpJ8AwhTbko91Xr-Z-6W4bSgv7C0P72orK6-N_8gYfY7LceYDUE5PSBSeYupNk277g6qsueSRAp4qQY-HVuHvKCb_tO6d6bpmsKNT4qLQhFNCMbGmwSSh30QpgMfvJb0o2fUXpcUfyXs_VrISq5N14CLYH30sShvNbd8hiAShBDsQD8JoI-o7U7nqsjenEMVLnCIDFzmHe95WSnWA09zuEnoyWF_kWm1Erj6FQPFaQoMecl2vZUiHWxnx3wySuqsf5vvyxy2U17cAyPIc0-KlVg2G0eSPdoW9z9n7RiP8uN_0MOxN4FUEKoiUM-1w/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3nB8aoCHN7Fzlj6rQbHSenyBiBVr8RT6rXo-F_ugIeuVuF-G7_ZaMWdUxYRTQ4jWGZ0sxaE0Ez8m7OhjJugwztr1OqD5zw5z8dyh2A2rK60fnsBSkc8GTxEDxLpxlE8JOpJ8AwhTbko91Xr-Z-6W4bSgv7C0P72orK6-N_8gYfY7LceYDUE5PSBSeYupNk277g6qsueSRAp4qQY-HVuHvKCb_tO6d6bpmsKNT4qLQhFNCMbGmwSSh30QpgMfvJb0o2fUXpcUfyXs_VrISq5N14CLYH30sShvNbd8hiAShBDsQD8JoI-o7U7nqsjenEMVLnCIDFzmHe95WSnWA09zuEnoyWF_kWm1Erj6FQPFaQoMecl2vZUiHWxnx3wySuqsf5vvyxy2U17cAyPIc0-KlVg2G0eSPdoW9z9n7RiP8uN_0MOxN4FUEKoiUM-1w
+is_cover: false
+sort_order: 7
+caption: Alyssa Kinnard
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhATOcVDEIFvpSOzXgH9m9Py!2e10!4m2!3m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645
+
+--- entity_photos [row 21 of 32] ---
+id: 6b898e17-e655-448b-8c2d-587806a81f03
+entity_slug: the-laundry-lounge
+url: https://places.googleapis.com/v1/places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3lVXHJt62njrdwhSDlY5LzGnRamUQPczMlf5JIsM360uIi32IZJ9VjhRQj30DJUNPlFm-RZ9d5yh-sgsSgVaBm-5gepX7QcKTsOpBaMTdPg1np6EQOaaSlI54VA11E14ZlHCKpJPG1n7lnzzh2JKyc3cf4L4phgBo3j64v9rGoBPhg20AzYzAw__w9DvbL6qNH93iPoFW1IyoH2NxFYZcL-ApXQ7vmQ02qdpqH1yxoxPgdoylB3D077vBvVnJupBSmt_CIEPVj_LcDs1w3bbqAWzSteSppoK2nqo7huwGAENVv83XMBXsDInleTyICDxdsRZfIkQD9-Rwt6swWNulQrE7GVuakF8OYvXxSOYCGZTLWCokq7e2lKJOMboGCHJNUhL01q6adfPsMNviXKNhwBiGrU3sme8sKf1vvtZgQLvPthnXSznRawXZx9WLUZ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3lVXHJt62njrdwhSDlY5LzGnRamUQPczMlf5JIsM360uIi32IZJ9VjhRQj30DJUNPlFm-RZ9d5yh-sgsSgVaBm-5gepX7QcKTsOpBaMTdPg1np6EQOaaSlI54VA11E14ZlHCKpJPG1n7lnzzh2JKyc3cf4L4phgBo3j64v9rGoBPhg20AzYzAw__w9DvbL6qNH93iPoFW1IyoH2NxFYZcL-ApXQ7vmQ02qdpqH1yxoxPgdoylB3D077vBvVnJupBSmt_CIEPVj_LcDs1w3bbqAWzSteSppoK2nqo7huwGAENVv83XMBXsDInleTyICDxdsRZfIkQD9-Rwt6swWNulQrE7GVuakF8OYvXxSOYCGZTLWCokq7e2lKJOMboGCHJNUhL01q6adfPsMNviXKNhwBiGrU3sme8sKf1vvtZgQLvPthnXSznRawXZx9WLUZ
+is_cover: false
+sort_order: 8
+caption: Kelly Warhurst
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCULmf-61fK4O2bfZFfdwZ_!2e10!4m2!3m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645
+
+--- entity_photos [row 22 of 32] ---
+id: 264c935a-837d-4b45-8d99-33f38e1b28cd
+entity_slug: the-laundry-lounge
+url: https://places.googleapis.com/v1/places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3kPJ3T5HpRE4-JaWqCP-i-zgKYi6IdVO0CqV5Q5mdovyR_ZRCveyZlDxIHUO62Pk--o87xKs6CD-h6EJ3H7yJniqRFUWkiB9I2riIyXkPt7zMGh0XS--xzSeMkha4zTyottdoEMoypTplIP5S_0pcb0wa0dhQzKXTtp-KNRHTynhE4k0PF_bd8NOr4Qevv7BZuj-XGZdN04WobOvyzRLLsXFERynfZRRpvGdSUwWnXqacaI7BWmnW0MxYVHDnzXLDlhWN6QFD9-eBn9oIgkGAQQSnFlGnz0r6VqKktAvmfl18sZRnbZJU7NCBv168DEP0GVAZb4NH8H2UzF8BO5Mfp9N98DmzyeHGCLu4Rs0XYoXlhmkJBZ3C9bIUbhAzOP4_3Xrxp6y_m3VUSPjbUQpiRc15AbAn2FJaXtIpmdlzCSYbtCZensj2qWdWpHtw/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJyYPPgp0FmogRRfZbK2ub9bY/photos/AaVGc3kPJ3T5HpRE4-JaWqCP-i-zgKYi6IdVO0CqV5Q5mdovyR_ZRCveyZlDxIHUO62Pk--o87xKs6CD-h6EJ3H7yJniqRFUWkiB9I2riIyXkPt7zMGh0XS--xzSeMkha4zTyottdoEMoypTplIP5S_0pcb0wa0dhQzKXTtp-KNRHTynhE4k0PF_bd8NOr4Qevv7BZuj-XGZdN04WobOvyzRLLsXFERynfZRRpvGdSUwWnXqacaI7BWmnW0MxYVHDnzXLDlhWN6QFD9-eBn9oIgkGAQQSnFlGnz0r6VqKktAvmfl18sZRnbZJU7NCBv168DEP0GVAZb4NH8H2UzF8BO5Mfp9N98DmzyeHGCLu4Rs0XYoXlhmkJBZ3C9bIUbhAzOP4_3Xrxp6y_m3VUSPjbUQpiRc15AbAn2FJaXtIpmdlzCSYbtCZensj2qWdWpHtw
+is_cover: false
+sort_order: 9
+caption: Matt Larson
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCE7rKQ3xeiCbX0sr8QbBVd!2e10!4m2!3m1!1s0x889a059d82cf83c9:0xb6f59b6b2b5bf645
+
+--- entity_photos [row 23 of 32] ---
+id: 74261722-1d16-413a-ae1f-653f483290a7
+entity_slug: the-laundry-lounge
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/laundromat-gulf-shores/photo_03.jpg
+is_cover: false
+sort_order: 8
+photo_type: resource
+source_name: bookable_resource
+resource_id: e206a60e-6e36-4011-aa89-591884eb7617
+
+--- entity_photos [row 24 of 32] ---
+id: 524af1a2-4902-4e04-a47a-27506fbcb075
+entity_slug: the-laundry-lounge
+url: https://thelaundryloungegs.com/wp-content/uploads/2025/06/IMG_5667-scaled.jpg
+is_cover: false
+sort_order: 4
+photo_type: resource
+source_name: bookable_resource
+resource_id: e206a60e-6e36-4011-aa89-591884eb7617
+
+--- entity_photos [row 25 of 32] ---
+id: 162c8be9-553d-41c1-8f28-5087927560f4
+entity_slug: the-laundry-lounge
+url: https://thelaundryloungegs.com/wp-content/uploads/2025/06/laundromutt-ad-1024x858.jpg
+is_cover: false
+sort_order: 2
+photo_type: resource
+source_name: bookable_resource
+resource_id: e206a60e-6e36-4011-aa89-591884eb7617
+
+--- entity_photos [row 26 of 32] ---
+id: 9f8ef938-82f6-46bb-af4b-dcf00be5126a
+entity_slug: the-laundry-lounge
+url: https://thelaundryloungegs.com/wp-content/uploads/2025/06/IMG_5652-scaled.jpg
+is_cover: false
+sort_order: 3
+photo_type: resource
+source_name: bookable_resource
+resource_id: e206a60e-6e36-4011-aa89-591884eb7617
+
+--- entity_photos [row 27 of 32] ---
+id: fdb2801a-4c60-4c1b-8ef5-bafb1c01dbf1
+entity_slug: the-laundry-lounge
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/laundromat-gulf-shores/photo_01.jpg
+is_cover: false
+sort_order: 6
+photo_type: resource
+source_name: bookable_resource
+resource_id: e206a60e-6e36-4011-aa89-591884eb7617
+
+--- entity_photos [row 28 of 32] ---
+id: 1827d4a2-6e78-4a47-b41b-e1066c04f1fb
+entity_slug: the-laundry-lounge
+url: https://thelaundryloungegs.com/wp-content/uploads/2026/02/Best-of-baldwin2026-transparent-background-2-1024x1024.png
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: e206a60e-6e36-4011-aa89-591884eb7617
+
+--- entity_photos [row 29 of 32] ---
+id: 6e86fed5-9087-4d69-8154-7c7c804287f5
+entity_slug: the-laundry-lounge
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-laundry-lounge/photo_02.jpg
+is_cover: false
+sort_order: 5
+photo_type: resource
+source_name: bookable_resource
+resource_id: e206a60e-6e36-4011-aa89-591884eb7617
+
+--- entity_photos [row 30 of 32] ---
+id: 1fb29d48-6445-4ebf-8ce9-88af20e29027
+entity_slug: the-laundry-lounge
+url: https://thelaundryloungegs.com/wp-content/uploads/2025/06/IMG_5579-scaled.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: e206a60e-6e36-4011-aa89-591884eb7617
+
+--- entity_photos [row 31 of 32] ---
+id: f480aaf1-406b-4224-93f3-f8845109ba58
+entity_slug: the-laundry-lounge
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/the-laundry-lounge/photo_01.jpg
+is_cover: false
+sort_order: 9
+photo_type: resource
+source_name: bookable_resource
+resource_id: e206a60e-6e36-4011-aa89-591884eb7617
+
+--- entity_photos [row 32 of 32] ---
+id: d2191d46-1ba6-4918-a8d1-4355123564d9
+entity_slug: the-laundry-lounge
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/laundromat-gulf-shores/photo_02.jpg
+is_cover: false
+sort_order: 7
+photo_type: resource
+source_name: bookable_resource
+resource_id: e206a60e-6e36-4011-aa89-591884eb7617
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 2ae2a801-f5d9-4ce8-a415-e37f6e9045a3
+entity_slug: the-laundry-lounge
+reviewer_name: d deco
+rating: 5
+body: What an amazing addition to Gulf Shores!  The place is giant with brand new machines, has a lounge area if you are waiting, has an indoor dog washing station, vending machines for detergent and snacks, and free wifi!  Who knew a laundromat could be so nice!?
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-06-04T01:24:06.689806+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: 154381e7-6921-4403-991e-5868cf2ef1ed
+entity_slug: the-laundry-lounge
+reviewer_name: Andrew Hart
+rating: 5
+body: The Laundry Lounge in Gulf Shores is hands down the best laundry experience I’ve ever had. The place is spotless, well-lit, and has plenty of high-quality machines that get the job done fast. The staff is friendly and helpful, making the whole process stress-free. I love the modern, comfortable lounge area—it actually makes doing laundry enjoyable. Whether you’re a local or visiting the area, this is the place to go for clean clothes and great service!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-08-15T02:11:21.923362+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: db0dc184-92fc-45c6-bd2f-54de480ff5fd
+entity_slug: the-laundry-lounge
+reviewer_name: Brian Curran
+rating: 5
+body: This is the nicest laundromat I’ve ever been in! So clean, and easy to use! Met one of the owners and he was crazy nice and helpful. I will definitely be coming back! The place we are staying has a laundromat, but the Laundry Lounge is so nice and convenient it will be my go to for doing laundry while in Gulf Shores!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-02-28T16:46:45.358997+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: a82d2915-1187-44eb-a576-31d0c802973f
+entity_slug: the-laundry-lounge
+reviewer_name: Jill Lee
+rating: 5
+body: The Laundry Lounge - BEAUTIFUL new laundry mat in Gulf Shores on 1st street off 59.  So clean and the staff is so helpful.   All machines with their app take a credit card.  GENIUS 🤩🥳🤩
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-08-13T14:11:27.847806+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: b6f71a6b-d8ff-4e21-8238-7e75c1a61ec6
+entity_slug: the-laundry-lounge
+reviewer_name: Paula Johnson
+rating: 5
+body: I can’t say enough good things about this laundromat! From the moment you walk in, you can tell it’s been cared for with pride. The place absolutely sparkles — spotless floors, shining machines, and not a speck of lint in sight! The atmosphere is so clean and comfortable that doing laundry actually feels relaxing instead of like a chore.
+
+The machines work perfectly and are always well-maintained, and the seating area is clean, cozy, and thoughtfully arranged. But what really makes this place stand out is the staff. Every single person I’ve met here has been friendly, helpful, and genuinely welcoming. They go out of their way to make sure customers have what they need, and it shows that they truly care.
+
+It’s rare to find a laundromat this clean, this comfortable, and this well-run. Five stars all the way — highly recommend to anyone who wants their laundry experience to be top-notch!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-10-11T15:32:25.326187+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   26 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 26] ---
+id: 5d9258e9-c610-43a3-94b3-1247a2a76d45
+entity_slug: the-laundry-lounge
+tag_name: laundry
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 26] ---
+id: 5a6d199c-2468-4ef1-b6a8-8ed9d2cdafd6
+entity_slug: the-laundry-lounge
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 3 of 26] ---
+id: 3aeb524e-e522-47d4-9ec2-4dced2dc1c4e
+entity_slug: the-laundry-lounge
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 4 of 26] ---
+id: 0530d9a6-c832-454a-83be-ef12d722b2ae
+entity_slug: the-laundry-lounge
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 5 of 26] ---
+id: 8e7e9c4e-11e4-4c5c-85a4-e0bce310202c
+entity_slug: the-laundry-lounge
+tag_name: laundry
+tag_category: google_primary_type
+
+--- entity_tags [row 6 of 26] ---
+id: 2571197e-dbc5-44c6-9b41-c8941ec967fc
+entity_slug: the-laundry-lounge
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 7 of 26] ---
+id: 461f571d-d01d-4a5d-a557-ec7b8859e1cc
+entity_slug: the-laundry-lounge
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 8 of 26] ---
+id: 770a72ca-e28d-444e-9eab-a0a4c38c1ae9
+entity_slug: the-laundry-lounge
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 9 of 26] ---
+id: 429c6739-530b-451e-b295-62342e8f24da
+entity_slug: the-laundry-lounge
+tag_name: laundromat
+
+--- entity_tags [row 10 of 26] ---
+id: cfe7a7a6-dfa8-4024-a1d7-cf73bcd6edfe
+entity_slug: the-laundry-lounge
+tag_name: laundry service
+
+--- entity_tags [row 11 of 26] ---
+id: 87cc8f70-22b9-4e32-99df-1667e1909dec
+entity_slug: the-laundry-lounge
+tag_name: wash and fold
+
+--- entity_tags [row 12 of 26] ---
+id: a36183e4-604a-4d9c-97da-68ab11315e93
+entity_slug: the-laundry-lounge
+tag_name: self-service laundry
+
+--- entity_tags [row 13 of 26] ---
+id: c87d894b-745f-4bf1-9017-d2117ecffddf
+entity_slug: the-laundry-lounge
+tag_name: commercial laundry
+
+--- entity_tags [row 14 of 26] ---
+id: b91214fd-25e7-44dd-a363-1a7e086afa46
+entity_slug: the-laundry-lounge
+tag_name: Gulf Shores
+
+--- entity_tags [row 15 of 26] ---
+id: ab3e460f-cce8-4766-ba20-f18a7b1d00d4
+entity_slug: the-laundry-lounge
+tag_name: 24/7 laundromat
+
+--- entity_tags [row 16 of 26] ---
+id: 623878bf-dc95-41e6-a499-831894c1eee1
+entity_slug: the-laundry-lounge
+tag_name: dog wash
+
+--- entity_tags [row 17 of 26] ---
+id: 977ef919-89c7-4017-858b-3a81b034555e
+entity_slug: the-laundry-lounge
+tag_name: clean laundry
+
+--- entity_tags [row 18 of 26] ---
+id: 7f212603-5a9e-4af0-9124-046a599546a4
+entity_slug: the-laundry-lounge
+tag_name: modern laundromat
+
+--- entity_tags [row 19 of 26] ---
+id: 18bce948-e503-4fa4-a158-d8feb73d8ec4
+entity_slug: the-laundry-lounge
+tag_name: state-of-the-art machines
+
+--- entity_tags [row 20 of 26] ---
+id: 46ce8bb2-db17-46dc-a416-e2c3071a0408
+entity_slug: the-laundry-lounge
+tag_name: pet laundry
+
+--- entity_tags [row 21 of 26] ---
+id: 2f3df545-83a1-4a5b-b44c-10f5723413a6
+entity_slug: the-laundry-lounge
+tag_name: Laundromats
+tag_category: category
+
+--- entity_tags [row 22 of 26] ---
+id: 4ab9c26b-3395-4ab7-ac0d-e15ddd82dcd0
+entity_slug: the-laundry-lounge
+tag_name: Laundry Services
+tag_category: category
+
+--- entity_tags [row 23 of 26] ---
+id: 758f4b57-a891-4c1e-8efb-deda4f13c58d
+entity_slug: the-laundry-lounge
+tag_name: Pet Services
+tag_category: category
+
+--- entity_tags [row 24 of 26] ---
+id: 5247556a-91fe-4030-8bf0-1609722f0344
+entity_slug: the-laundry-lounge
+tag_name: Cleaning Services
+tag_category: category
+
+--- entity_tags [row 25 of 26] ---
+id: f7ced79a-a589-49ea-80f1-682353a5aa45
+entity_slug: the-laundry-lounge
+tag_name: services
+tag_category: industry
+
+--- entity_tags [row 26 of 26] ---
+id: 8afb891b-79ab-44b1-81d7-f82fc212cf6f
+entity_slug: the-laundry-lounge
+tag_name: laundromat
+tag_category: type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 648a6e6c-98ad-40cf-8804-fc32157e0daa
+entity_slug: the-laundry-lounge
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_trade_home_service   -   1 row(s)
+####################################################################################################
+
+--- industry_trade_home_service [row 1 of 1] ---
+entity_slug: the-laundry-lounge
+service_count: 0
+updated_at: 2026-07-20T03:17:43.35857+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: the-laundry-lounge
+entity_slug: the-laundry-lounge
+title: The Laundry Lounge
+category: laundry
+search_vector: 'laundri':2A,4B 'loung':3A
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 14149
+entity_slug: the-laundry-lounge
+title: The Laundry Lounge
+category: rental
+search_vector: 'laundri':2A 'loung':3A
+
+####################################################################################################
+# TABLE: service_menu   -   1 row(s)
+####################################################################################################
+
+--- service_menu [row 1 of 1] ---
+id: b79845ac-f742-4be0-90c5-be878a6c49ef
+entity_slug: the-laundry-lounge
+name: The Laundry Lounge
+sort_order: 0
+
+####################################################################################################
+# TABLE: trade_home_services   -   1 row(s)
+####################################################################################################
+
+--- trade_home_services [row 1 of 1] ---
+id: 0041f6e3-32c5-459e-97a7-507aeac5647d
+entity_slug: the-laundry-lounge
+name: The Laundry Lounge
+sort_order: 0
+is_active: true
+created_at: 2026-07-24T08:30:32.961268+00:00
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: the-laundry-lounge

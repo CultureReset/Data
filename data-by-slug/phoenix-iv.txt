@@ -1,0 +1,4845 @@
+====================================================================================================
+SLUG: phoenix-iv
+NAME: Phoenix IV
+INDUSTRY: condo
+SUBTYPE: condominium_complex
+TABLES WITH DATA: 29
+TOTAL ROWS: 469
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (12 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (50 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_amenities  (11 rows)
+  entity_completeness_v  (1 rows)
+  entity_faqs  (15 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (2 rows)
+  entity_items_v  (2 rows)
+  entity_modules  (14 rows)
+  entity_offer  (1 rows)
+  entity_photos  (228 rows)
+  entity_reviews  (5 rows)
+  entity_section_items  (1 rows)
+  entity_section_items_metadata_backup  (1 rows)
+  entity_sections  (1 rows)
+  entity_sources  (2 rows)
+  entity_tags  (38 rows)
+  entity_theme  (2 rows)
+  faqs  (15 rows)
+  industry_condo  (1 rows)
+  recovery_import_log  (51 rows)
+  rental_units  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: phoenix-iv
+name: Phoenix IV
+planner_category: food_drink
+data_quality_score: 60
+issues: missing_hours|missing_menu|missing_drink_menu|missing_lat_lng
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: true
+missing_drink_menu: true
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   12 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 12] ---
+id: 23947
+entity_slug: phoenix-iv
+intent_tag: best_for:waterfront_or_scenic_meal
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 12] ---
+id: 23948
+entity_slug: phoenix-iv
+intent_tag: best_for:drinks_or_cocktails
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 12] ---
+id: 23949
+entity_slug: phoenix-iv
+intent_tag: experience:outdoor
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 12] ---
+id: 23950
+entity_slug: phoenix-iv
+intent_tag: experience:waterfront_scenic
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 12] ---
+id: 23951
+entity_slug: phoenix-iv
+intent_tag: experience:groups_events
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 12] ---
+id: 23952
+entity_slug: phoenix-iv
+intent_tag: meal:drinks
+intent_category: meal_period
+confidence: 0.82
+evidence: Derived from meal flags/menu content.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 12] ---
+id: 23953
+entity_slug: phoenix-iv
+intent_tag: service:pool
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 12] ---
+id: 23954
+entity_slug: phoenix-iv
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 9 of 12] ---
+id: 23955
+entity_slug: phoenix-iv
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 10 of 12] ---
+id: 23956
+entity_slug: phoenix-iv
+intent_tag: missing:missing_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 11 of 12] ---
+id: 23957
+entity_slug: phoenix-iv
+intent_tag: missing:missing_drink_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 12 of 12] ---
+id: 23958
+entity_slug: phoenix-iv
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: phoenix-iv
+name: Phoenix IV
+is_active: t
+planner_category: food_drink
+entity_type: condo
+entity_subtype: condo
+city: Orange Beach
+state: AL
+review_count: 0
+website_url: https://viewer.threshold360.com/?thresholdId=8490997-1284701670&preset=share
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_00.jpg
+voice_summary: Phoenix IV in Orange Beach is best for waterfront or scenic meal, drinks or cocktails. Experience tags: outdoor, waterfront_scenic, groups_events.
+planner_summary: Phoenix IV offers spacious beachfront condos in Orange Beach with 1-, 2-, and 3-bedroom floor plans designed to accommodate up to ten guests. Each fully furnished condo features floor-to-ceiling windows, private balconies, and Gulf-front views that highlight the shoreline and natural light throughout the living space. Guests at Phoenix IV enjoy resort-style amenities and direct beach access while still having the comforts of home, making it an easy choice for couples, families, and groups. With
+best_for: waterfront or scenic meal|drinks or cocktails
+not_best_for: quiet low-energy meal
+meal_periods: drinks
+experience_tags: outdoor|waterfront_scenic|groups_events
+service_tags: pool
+search_keywords: condo|Condos & Stays|Pool|3 Bedrooms|Restaurant|Outdoor pool|Sauna|Hot tub|Fitness center|Tennis court|Barbeque|Grill|Parking|Kiddie pool|Hot tubs|Pickleball court|Basketball|Barbeque grills.|Beach access|Beach chair|Elevator|Accessible|Washer and dryer|Wi-fi|drinks|outdoor|waterfront_scenic|groups_events
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: true
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 50
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 24
+faq_count: 13
+data_quality_score: 60
+data_gaps: missing_hours|missing_menu|missing_drink_menu|missing_lat_lng
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   50 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 50] ---
+id: 21729
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_00.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 50] ---
+id: 21730
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_01.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 50] ---
+id: 21731
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_02.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 50] ---
+id: 21732
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_03.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 50] ---
+id: 21733
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_04.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 50] ---
+id: 21734
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_05.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 50] ---
+id: 21735
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_06.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 50] ---
+id: 21736
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_07.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 50] ---
+id: 21737
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_08.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 50] ---
+id: 21738
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_09.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 11 of 50] ---
+id: 21739
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_10.jpg
+is_cover: f
+sort_order: 10
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 12 of 50] ---
+id: 21740
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_11.jpg
+is_cover: f
+sort_order: 11
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 13 of 50] ---
+id: 21741
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_12.jpg
+is_cover: f
+sort_order: 12
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 14 of 50] ---
+id: 21742
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_13.jpg
+is_cover: f
+sort_order: 13
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 15 of 50] ---
+id: 21743
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_14.jpg
+is_cover: f
+sort_order: 14
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 16 of 50] ---
+id: 21744
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_15.jpg
+is_cover: f
+sort_order: 15
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 17 of 50] ---
+id: 21745
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_16.jpg
+is_cover: f
+sort_order: 16
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 18 of 50] ---
+id: 21746
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_17.jpg
+is_cover: f
+sort_order: 17
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 19 of 50] ---
+id: 21747
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_18.jpg
+is_cover: f
+sort_order: 18
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 20 of 50] ---
+id: 21748
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_19.jpg
+is_cover: f
+sort_order: 19
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 21 of 50] ---
+id: 21749
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_20.jpg
+is_cover: f
+sort_order: 20
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 22 of 50] ---
+id: 21750
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_21.jpg
+is_cover: f
+sort_order: 21
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 23 of 50] ---
+id: 21751
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_22.jpg
+is_cover: f
+sort_order: 22
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 24 of 50] ---
+id: 21752
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_23.jpg
+is_cover: f
+sort_order: 23
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 25 of 50] ---
+id: 21753
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_24.jpg
+is_cover: f
+sort_order: 24
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 26 of 50] ---
+id: 21754
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_25.jpg
+is_cover: f
+sort_order: 25
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 27 of 50] ---
+id: 21755
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_26.jpg
+is_cover: f
+sort_order: 26
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 28 of 50] ---
+id: 21756
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_27.jpg
+is_cover: f
+sort_order: 27
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 29 of 50] ---
+id: 21757
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_28.jpg
+is_cover: f
+sort_order: 28
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 30 of 50] ---
+id: 21758
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_29.jpg
+is_cover: f
+sort_order: 29
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 31 of 50] ---
+id: 21759
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_30.jpg
+is_cover: f
+sort_order: 30
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 32 of 50] ---
+id: 21760
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_31.jpg
+is_cover: f
+sort_order: 31
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 33 of 50] ---
+id: 21761
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_32.jpg
+is_cover: f
+sort_order: 32
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 34 of 50] ---
+id: 21762
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_33.jpg
+is_cover: f
+sort_order: 33
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 35 of 50] ---
+id: 21763
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_34.jpg
+is_cover: f
+sort_order: 34
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 36 of 50] ---
+id: 21764
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_35.jpg
+is_cover: f
+sort_order: 35
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 37 of 50] ---
+id: 21765
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_36.jpg
+is_cover: f
+sort_order: 36
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 38 of 50] ---
+id: 21766
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_37.jpg
+is_cover: f
+sort_order: 37
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 39 of 50] ---
+id: 21767
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_38.jpg
+is_cover: f
+sort_order: 38
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 40 of 50] ---
+id: 21768
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_39.jpg
+is_cover: f
+sort_order: 39
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 41 of 50] ---
+id: 21769
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_40.jpg
+is_cover: f
+sort_order: 40
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 42 of 50] ---
+id: 21770
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_41.jpg
+is_cover: f
+sort_order: 41
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 43 of 50] ---
+id: 21771
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_42.jpg
+is_cover: f
+sort_order: 42
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 44 of 50] ---
+id: 21772
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_43.jpg
+is_cover: f
+sort_order: 43
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 45 of 50] ---
+id: 21773
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_44.jpg
+is_cover: f
+sort_order: 44
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 46 of 50] ---
+id: 21774
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_45.jpg
+is_cover: f
+sort_order: 45
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 47 of 50] ---
+id: 21775
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_46.jpg
+is_cover: f
+sort_order: 46
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 48 of 50] ---
+id: 21776
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_47.jpg
+is_cover: f
+sort_order: 47
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 49 of 50] ---
+id: 21777
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_48.jpg
+is_cover: f
+sort_order: 48
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 50 of 50] ---
+id: 21778
+entity_slug: phoenix-iv
+entity_name: Phoenix IV
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_49.jpg
+is_cover: f
+sort_order: 49
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+resource_type: condo
+slug: phoenix-iv
+name: Phoenix IV
+description: Phoenix IV offers spacious beachfront condos in Orange Beach with 1-, 2-, and 3-bedroom floor plans designed to accommodate up to ten guests. Each fully furnished condo features floor-to-ceiling windows, private balconies, and Gulf-front views that highlight the shoreline and natural light throughout the living space.
+
+Guests at Phoenix IV enjoy resort-style amenities and direct beach access while still having the comforts of home, making it an easy choice for couples, families, and groups. With
+entity_slug: phoenix-iv
+bedrooms: 3
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_00.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_04.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_06.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_07.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_08.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_09.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_10.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_11.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_12.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_13.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_14.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_15.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_16.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_17.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_18.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_19.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_20.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_21.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_22.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_23.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_24.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_25.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_26.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_27.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_28.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_29.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_30.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_31.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_32.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_33.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_34.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_35.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_36.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_37.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_38.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_39.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_40.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_41.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_42.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_43.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_44.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_45.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_46.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_47.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_48.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_49.jpg"
+]
+amenities: []
+faqs: []
+city: Orange Beach
+state: AL
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: f5054bbd3a492585296fa6fb73d97c75
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+entity_slug: phoenix-iv
+slug: phoenix-iv
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_00.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_04.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_06.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_07.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_08.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_09.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_10.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_11.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_12.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_13.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_14.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_15.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_16.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_17.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_18.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_19.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_20.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_21.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_22.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_23.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_24.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_25.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_26.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_27.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_28.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_29.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_30.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_31.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_32.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_33.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_34.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_35.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_36.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_37.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_38.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_39.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_40.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_41.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_42.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_43.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_44.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_45.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_46.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_47.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_48.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_49.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 84ef3dc3-92d5-42c4-9617-02852060ff7b
+slug: phoenix-iv
+name: Phoenix IV
+is_active: true
+featured: false
+entity_type: condo
+entity_subtype: condominium_complex
+description: Phoenix IV offers spacious beachfront condos in Orange Beach with 1-, 2-, and 3-bedroom floor plans designed to accommodate up to ten guests. Each fully furnished condo features floor-to-ceiling windows, private balconies, and Gulf-front views that highlight the shoreline and natural light throughout the living space.
+
+Guests at Phoenix IV enjoy resort-style amenities and direct beach access while still having the comforts of home, making it an easy choice for couples, families, and groups. With
+phone: +18009326760
+website_url: https://viewer.threshold360.com/?thresholdId=8490997-1284701670&preset=share
+menu_pin: 6963
+address_line_1: 24250 Perdido Beach Blvd
+city: Orange Beach
+state: AL
+zip: 36561
+rating: 4.3
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_00.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-14T03:12:08.553351+00:00
+updated_at: 2026-07-16T10:58:02.607758+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+bedrooms_min: 3
+bedrooms_max: 3
+pet_friendly: false
+pool: true
+parking: false
+business_status: OPERATIONAL
+primary_type: condo
+formatted_address: 24250 Perdido Beach Blvd, Orange Beach, AL
+google_places_data: {}
+search_vector: 'beach':5 'condo':3 'iv':2A 'orang':4 'phoenix':1A
+bedrooms: 3
+source_url: https://www.liquidlifevacationrentals.com/resort/phoenix-iv
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: stay
+industry_code: condo
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_amenities   -   11 row(s)
+####################################################################################################
+
+--- entity_amenities [row 1 of 11] ---
+id: b2e3c8eb-07cc-47ec-b3b1-fdd712ae0983
+entity_slug: phoenix-iv
+amenity: Game Room
+category: complex
+sort_order: 8
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 2 of 11] ---
+id: d035cdd4-c111-4774-83f3-f807817527eb
+entity_slug: phoenix-iv
+amenity: Indoor Pool
+category: complex
+sort_order: 1
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 3 of 11] ---
+id: 2773ef80-06b0-4e66-8e2d-b5c16fcd7051
+entity_slug: phoenix-iv
+amenity: Racquetball Court
+category: complex
+sort_order: 10
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 4 of 11] ---
+id: b6b1f53c-2877-4ca5-baa9-b6d4d50aea5c
+entity_slug: phoenix-iv
+amenity: Hot Tub
+category: complex
+sort_order: 6
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 5 of 11] ---
+id: d171d801-3a8b-4906-b31a-c7946f6b5e05
+entity_slug: phoenix-iv
+amenity: Fitness Center
+category: complex
+sort_order: 7
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 6 of 11] ---
+id: 993c1d48-5040-4121-9114-d66a0c70c4e3
+entity_slug: phoenix-iv
+amenity: Beach Access
+category: complex
+sort_order: 0
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 7 of 11] ---
+id: 3b0af4da-8870-44cf-8b20-eaffc05ff3e4
+entity_slug: phoenix-iv
+amenity: Kiddie Pool
+category: complex
+sort_order: 3
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 8 of 11] ---
+id: fd2db29a-b0a6-4aa8-aafa-ca2bf37d55f0
+entity_slug: phoenix-iv
+amenity: Sauna
+category: complex
+sort_order: 4
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 9 of 11] ---
+id: 0d087b03-9f4f-4d20-a2f8-a4a810cd420c
+entity_slug: phoenix-iv
+amenity: Grilling Area
+category: complex
+sort_order: 5
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 10 of 11] ---
+id: e9dcda24-7d73-4594-97aa-1f256e4baad4
+entity_slug: phoenix-iv
+amenity: Tennis Courts
+category: complex
+sort_order: 9
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 11 of 11] ---
+id: ec4ddbfa-0c92-4428-957e-ff29d3ed846b
+entity_slug: phoenix-iv
+amenity: Outdoor Pool
+category: complex
+sort_order: 2
+created_at: 2026-07-07T16:59:52.25115
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: phoenix-iv
+name: Phoenix IV
+industry_code: condo
+is_parent: false
+score_of_7: 4
+
+####################################################################################################
+# TABLE: entity_faqs   -   15 row(s)
+####################################################################################################
+
+--- entity_faqs [row 1 of 15] ---
+id: 5cff818c-a5ae-4e5d-a845-45c47fbcdd91
+entity_slug: phoenix-iv
+question: What popular attractions are close to Phoenix IV?
+answer: At Phoenix IV, enjoy direct access to the sugar-white sand. You can walk to several restaurants, mini-golf, and marinas, and enjoy fishing, kayaking, and parasailing in the Gulf. Adventure Island and Gulf State Park are nearby.
+category: general
+sort_order: 0
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 2 of 15] ---
+id: dfbed209-02ad-48fa-9cdd-1f66d9528388
+entity_slug: phoenix-iv
+question: What are the check-in and check-out times at Phoenix 4?
+answer: Check-in and check-out times vary by season. Refer to your booking confirmation message for details.
+category: general
+sort_order: 1
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 3 of 15] ---
+id: 87e94cf0-2511-4e31-b040-d5e9ce8fb593
+entity_slug: phoenix-iv
+question: Where is Phoenix IV located?
+answer: Phoenix IV is located at 24250 Perdido Beach Blvd, Orange Beach, AL 36561 and is approximately 4.5 miles east of Hwy 59.
+category: general
+sort_order: 2
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 4 of 15] ---
+id: 7e241d26-233d-44ad-bd32-b07920f41516
+entity_slug: phoenix-iv
+question: What amenities are included in Phoenix 4 vacation rentals?
+answer: Phoenix 4 features indoor and outdoor pools, kiddie pool, sauna, hot tubs, fitness center, tennis court, pickleball court, basketball, parking, and barbeque grills.
+category: general
+sort_order: 3
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 5 of 15] ---
+id: 49957480-aa4e-4e32-90b2-d81d7a4c8b44
+entity_slug: phoenix-iv
+question: What types of units are available at Phoenix IV?
+answer: Phoenix IV offers spacious 1-, 2-, and 3-bedroom units.
+category: general
+sort_order: 4
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 6 of 15] ---
+id: bdb178cf-cdb5-4b94-9044-095a44ff0745
+entity_slug: phoenix-iv
+question: Do all Phoenix 4 condominiums have Gulf views?
+answer: Yes, all Phoenix 4 vacation rentals have floor-to-ceiling windows and private balconies overlooking the Gulf.
+category: general
+sort_order: 5
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 7 of 15] ---
+id: 8316f0e4-221a-41ae-a265-7bf81c2784a3
+entity_slug: phoenix-iv
+question: Is there beach access available at Phoenix IV?
+answer: Yes, Phoenix IV offers direct beach access and beach chair rentals for guests.
+category: general
+sort_order: 6
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 8 of 15] ---
+id: c5ec5404-dbb5-4917-aa49-3638140767d7
+entity_slug: phoenix-iv
+question: Is there a grocery store nearby Phoenix 4?
+answer: Yes, there are several grocery stores located near Phoenix 4 in Orange Beach, including Publix, Walmart, and Winn-Dixie.
+category: general
+sort_order: 7
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 9 of 15] ---
+id: f8ca54da-fb1b-49a4-9fb3-02e02c16a50c
+entity_slug: phoenix-iv
+question: Does Phoenix IV have accessibility options?
+answer: Phoenix IV is equipped with accessibility features including accessible entrances, public areas, ramps and elevators. Contact us at 1-800-211-7892.
+category: general
+sort_order: 8
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 10 of 15] ---
+id: 79c85d95-0a18-4aab-a048-42974a884166
+entity_slug: phoenix-iv
+question: Is Phoenix 4 a good choice for family vacations?
+answer: Yes, Phoenix 4 Orange Beach is a great choice for families, with fully-furnished 1-, 2-, and 3-bedroom units, direct beach access, indoor and outdoor pools, a kiddie pool, and tennis courts.
+category: general
+sort_order: 9
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 11 of 15] ---
+id: 93c2e016-0462-4636-a447-e6ed4af5258a
+entity_slug: phoenix-iv
+question: Is there a washer and dryer in each unit at Phoenix IV?
+answer: Yes, each unit at Phoenix IV is equipped with a washer and dryer.
+category: general
+sort_order: 10
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 12 of 15] ---
+id: d3966308-7ac0-443d-bdad-80f0cbee7c19
+entity_slug: phoenix-iv
+question: Is there free Wi-Fi available at Phoenix 4?
+answer: Yes, Phoenix 4 offers complimentary Wi-Fi access for guests.
+category: general
+sort_order: 11
+created_at: 2026-06-27T12:00:46.681541+00:00
+updated_at: 2026-06-27T12:00:46.681541+00:00
+
+--- entity_faqs [row 13 of 15] ---
+id: d9d1b6d4-c6e2-463e-a10a-51361406176e
+entity_slug: phoenix-iv
+question: What types of units are available for rent at Phoenix IV?
+answer: Phoenix IV offers spacious 1-, 2-, and 3-bedroom units
+category: general
+sort_order: 5
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 14 of 15] ---
+id: 550ddd8c-193b-4d5f-8f60-d684cc8c1ab5
+entity_slug: phoenix-iv
+question: Is there a grocery store nearby Phoenix 4 where guests can purchase food, supplies, and necessities?
+answer: Yes, there are several grocery stores located near Phoenix 4 in Orange Beach, including Publix, Walmart, and Winn-Dixie. Grocery delivery is offered at participating stores with partnering apps.
+category: general
+sort_order: 8
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 15 of 15] ---
+id: fa8efc7b-aab7-4d49-bc31-7be0bb6624fe
+entity_slug: phoenix-iv
+question: Why book a Phoenix IV rental with Brett/Robinson?
+answer: By booking with Brett/Robinson Vacations you get the benefit of over 40 years of experience in the area. Brett/Robinson operates and maintains Phoenix IV and we have an on-site staff available to ensure you have a superb stay at the beach. We focus on quality, cleanliness and functionality in all of our available units. Our dedicated on-site customer service staff is here to help with any needs you have during your stay. Also, our knowledgeable area specialists can assist you in planning your it
+category: general
+sort_order: 13
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 5a8106ba-1e71-4344-b135-aa22e4529f9d
+entity_slug: phoenix-iv
+day_of_week: 0
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 3e0de3b6-4139-421d-b584-41e1eb913c55
+entity_slug: phoenix-iv
+day_of_week: 1
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 6fdda6de-3f24-4ad1-8ca8-ce1db3c37779
+entity_slug: phoenix-iv
+day_of_week: 2
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 82096cec-3ac1-4ed6-8168-289fe75f1d99
+entity_slug: phoenix-iv
+day_of_week: 3
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 8ba52de8-5d49-425f-9dbf-9fb51eb68c90
+entity_slug: phoenix-iv
+day_of_week: 4
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 8ee97fc9-8d09-4046-ac8f-292f29892e0f
+entity_slug: phoenix-iv
+day_of_week: 5
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 1165c24d-df3d-42b4-b0d5-d241c461fcc3
+entity_slug: phoenix-iv
+day_of_week: 6
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 2] ---
+entity_slug: phoenix-iv
+source_table: bookable_resources
+item_type: condo
+section_name: Units
+item_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+name: Phoenix IV
+description: Phoenix IV offers spacious beachfront condos in Orange Beach with 1-, 2-, and 3-bedroom floor plans designed to accommodate up to ten guests. Each fully furnished condo features floor-to-ceiling windows, private balconies, and Gulf-front views that highlight the shoreline and natural light throughout the living space.
+
+Guests at Phoenix IV enjoy resort-style amenities and direct beach access while still having the comforts of home, making it an easy choice for couples, families, and groups. With
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "bedrooms": 3,
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_00.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_11.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_12.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_13.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_14.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_15.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_16.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_17.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_18.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_19.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_20.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_21.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_22.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_23.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_24.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_25.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_26.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_27.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_28.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_29.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_30.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_31.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_32.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_33.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_34.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_35.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_36.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_37.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_38.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_39.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_40.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_41.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_42.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_43.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_44.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_45.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_46.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_47.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_48.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_49.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "item_type_raw": "condo",
+  "resource_type": "condo",
+  "check_out_time": "11:00"
+}
+
+--- entity_items_norm_v [row 2 of 2] ---
+entity_slug: phoenix-iv
+source_table: entity_section_items
+item_type: rooms
+section_name: Units & Rates
+item_id: 9b82a2cb-7461-4cac-affa-bd5ff9a8f87f
+name: Phoenix IV
+description: Phoenix IV offers spacious beachfront condos in Orange Beach with 1-, 2-, and 3-bedroom floor plans designed to accommodate up to ten guests. Each fully furnished condo features floor-to-ceiling windows, private balconies, and Gulf-front views that highlight the shoreline and natural light throughout the living space.
+
+Guests at Phoenix IV enjoy resort-style amenities and direct beach access while still having the comforts of home, making it an easy choice for couples, families, and groups. With
+sort_order: 1
+active: true
+attributes: {
+  "icon": "🏠",
+  "bedrooms": 3,
+  "min_nights": 1,
+  "module_key": "rooms",
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "item_type_raw": "rooms",
+  "check_out_time": "11:00"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 2] ---
+entity_slug: phoenix-iv
+source_table: bookable_resources
+item_type: condo
+section_name: Units
+item_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+name: Phoenix IV
+description: Phoenix IV offers spacious beachfront condos in Orange Beach with 1-, 2-, and 3-bedroom floor plans designed to accommodate up to ten guests. Each fully furnished condo features floor-to-ceiling windows, private balconies, and Gulf-front views that highlight the shoreline and natural light throughout the living space.
+
+Guests at Phoenix IV enjoy resort-style amenities and direct beach access while still having the comforts of home, making it an easy choice for couples, families, and groups. With
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "bedrooms": 3,
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_00.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_11.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_12.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_13.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_14.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_15.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_16.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_17.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_18.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_19.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_20.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_21.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_22.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_23.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_24.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_25.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_26.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_27.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_28.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_29.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_30.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_31.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_32.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_33.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_34.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_35.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_36.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_37.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_38.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_39.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_40.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_41.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_42.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_43.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_44.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_45.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_46.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_47.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_48.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_49.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "resource_type": "condo",
+  "check_out_time": "11:00"
+}
+
+--- entity_items_v [row 2 of 2] ---
+entity_slug: phoenix-iv
+source_table: entity_section_items
+item_type: rooms
+section_name: Units & Rates
+item_id: 9b82a2cb-7461-4cac-affa-bd5ff9a8f87f
+name: Phoenix IV
+description: Phoenix IV offers spacious beachfront condos in Orange Beach with 1-, 2-, and 3-bedroom floor plans designed to accommodate up to ten guests. Each fully furnished condo features floor-to-ceiling windows, private balconies, and Gulf-front views that highlight the shoreline and natural light throughout the living space.
+
+Guests at Phoenix IV enjoy resort-style amenities and direct beach access while still having the comforts of home, making it an easy choice for couples, families, and groups. With
+sort_order: 1
+active: true
+attributes: {
+  "icon": "🏠",
+  "bedrooms": 3,
+  "min_nights": 1,
+  "module_key": "rooms",
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "check_out_time": "11:00"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   14 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 14] ---
+id: 338546b3-bf63-4a26-847e-8625b74a2034
+entity_slug: phoenix-iv
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 14] ---
+id: 9bf8304e-45b1-4972-a83e-c202cd70981c
+entity_slug: phoenix-iv
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 14] ---
+id: 2087fce2-8b6e-42db-9c5b-83acec511864
+entity_slug: phoenix-iv
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 14] ---
+id: e267b284-e5d9-4c0c-87c7-f60c71adfdae
+entity_slug: phoenix-iv
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 14] ---
+id: fda6f400-0e54-4a6c-8659-463e328fd2cf
+entity_slug: phoenix-iv
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 14] ---
+id: 8f727a98-88fe-43ef-a334-30cb2004285b
+entity_slug: phoenix-iv
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 14] ---
+id: 5bfe3076-a741-4404-a320-6211abc3a476
+entity_slug: phoenix-iv
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 14] ---
+id: 0a5b7013-0b03-49b6-8cab-57270324ee9a
+entity_slug: phoenix-iv
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 14] ---
+id: 4db4869a-7345-427d-a912-d3cb9ce03604
+entity_slug: phoenix-iv
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 14] ---
+id: 3cad2e80-c1c0-479a-b745-da82ad269f94
+entity_slug: phoenix-iv
+module_key: stay
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 14] ---
+id: b004ea16-c570-4919-b3f3-52c6b4b9939a
+entity_slug: phoenix-iv
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 14] ---
+id: fc99c1d5-28f2-4faf-b73b-5e8377159d42
+entity_slug: phoenix-iv
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 14] ---
+id: 4b264732-d4c5-4f94-a54c-7e270f9e40cd
+entity_slug: phoenix-iv
+module_key: amenities
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 14 of 14] ---
+id: 955cb8f7-72f0-4f8b-bc48-3dbd18e7a804
+entity_slug: phoenix-iv
+module_key: rooms
+enabled: true
+sort_order: 2
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13934
+entity_slug: phoenix-iv
+name: Phoenix IV
+description: Phoenix IV offers spacious beachfront condos in Orange Beach with 1-, 2-, and 3-bedroom floor plans designed to accommodate up to ten guests. Each fully furnished condo features floor-to-ceiling windows, private balconies, and Gulf-front views that highlight the shoreline and natural light throughout the living space.
+
+Guests at Phoenix IV enjoy resort-style amenities and direct beach access while still having the comforts of home, making it an easy choice for couples, families, and groups. With
+offer_type: room
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+####################################################################################################
+# TABLE: entity_photos   -   228 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 228] ---
+id: 42ef3592-3952-4942-89a7-0be1a0871044
+entity_slug: phoenix-iv
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A7078.jpg
+is_cover: true
+sort_order: 0
+photo_type: gallery
+
+--- entity_photos [row 2 of 228] ---
+id: 752f2e32-b45e-47bc-9971-78bb6065565b
+entity_slug: phoenix-iv
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A7089.jpg
+is_cover: false
+sort_order: 1
+photo_type: gallery
+
+--- entity_photos [row 3 of 228] ---
+id: c023275a-a3b1-4ed9-b602-ba6072584757
+entity_slug: phoenix-iv
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A7095.jpg
+is_cover: false
+sort_order: 2
+photo_type: gallery
+
+--- entity_photos [row 4 of 228] ---
+id: 940eed07-6b4a-4a49-ad3a-cfc84f4a3944
+entity_slug: phoenix-iv
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A7101.jpg
+is_cover: false
+sort_order: 3
+photo_type: gallery
+
+--- entity_photos [row 5 of 228] ---
+id: c639edea-6ac8-4c2a-8bf0-c95a3a36778d
+entity_slug: phoenix-iv
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A7107.jpg
+is_cover: false
+sort_order: 4
+photo_type: gallery
+
+--- entity_photos [row 6 of 228] ---
+id: 975a5833-c9fd-461d-ba29-585a2fe4b7b3
+entity_slug: phoenix-iv
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A7116.jpg
+is_cover: false
+sort_order: 5
+photo_type: gallery
+
+--- entity_photos [row 7 of 228] ---
+id: 80f29c9c-8747-4965-a3cb-9cad511f65a3
+entity_slug: phoenix-iv
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A7113.jpg
+is_cover: false
+sort_order: 6
+photo_type: gallery
+
+--- entity_photos [row 8 of 228] ---
+id: 9735c1ad-bd26-466a-92e4-5876f98ba4c0
+entity_slug: phoenix-iv
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A7117.jpg
+is_cover: false
+sort_order: 7
+photo_type: gallery
+
+--- entity_photos [row 9 of 228] ---
+id: 808242dd-6d91-43a7-896e-ae746ef6da53
+entity_slug: phoenix-iv
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A7120.jpg
+is_cover: false
+sort_order: 8
+photo_type: gallery
+
+--- entity_photos [row 10 of 228] ---
+id: 4397d541-deed-48e0-b982-1d5ce52c604e
+entity_slug: phoenix-iv
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A7126.jpg
+is_cover: false
+sort_order: 9
+photo_type: gallery
+
+--- entity_photos [row 11 of 228] ---
+id: 438345c3-32ab-41d9-8127-ec5ca3e1ba8a
+entity_slug: phoenix-iv
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A7143.jpg
+is_cover: false
+sort_order: 10
+photo_type: gallery
+
+--- entity_photos [row 12 of 228] ---
+id: 196b7296-58b7-48b1-939c-1adb208c1a3e
+entity_slug: phoenix-iv
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A7146.jpg
+is_cover: false
+sort_order: 11
+photo_type: gallery
+
+--- entity_photos [row 13 of 228] ---
+id: e8fbf886-918a-4f2f-843a-f18781aebcd7
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-iv-vacation-rental-condominiums/photo_01.jpg
+is_cover: true
+sort_order: 0
+photo_type: complex
+
+--- entity_photos [row 14 of 228] ---
+id: 32c2ce7b-a3e0-4a77-bc7e-c070382a62c1
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-iv-vacation-rental-condominiums/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: complex
+
+--- entity_photos [row 15 of 228] ---
+id: 4b5973e4-48bf-4cfe-9ed6-38fbd25c341b
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-iv-vacation-rental-condominiums/photo_04.jpg
+is_cover: false
+sort_order: 3
+photo_type: complex
+
+--- entity_photos [row 16 of 228] ---
+id: 680de9e5-df9e-4d00-888d-bade61242ed8
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-iv-vacation-rental-condominiums/photo_05.jpg
+is_cover: false
+sort_order: 4
+photo_type: complex
+
+--- entity_photos [row 17 of 228] ---
+id: ac3b1e08-aab0-492d-a4b1-39b7a8eff658
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-iv-vacation-rental-condominiums/photo_06.jpg
+is_cover: false
+sort_order: 5
+photo_type: complex
+
+--- entity_photos [row 18 of 228] ---
+id: ff724024-47dc-415b-a54a-9846bff80699
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-iv-vacation-rental-condominiums/photo_08.jpg
+is_cover: false
+sort_order: 7
+photo_type: complex
+
+--- entity_photos [row 19 of 228] ---
+id: 15414b95-a374-448e-9ef0-fbca6c1470ce
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-iv-vacation-rental-condominiums/photo_09.jpg
+is_cover: false
+sort_order: 8
+photo_type: complex
+
+--- entity_photos [row 20 of 228] ---
+id: 2365ff1f-3e9b-4b01-be52-d20c6e13b5ed
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-iv-vacation-rental-condominiums/photo_10.jpg
+is_cover: false
+sort_order: 9
+photo_type: complex
+
+--- entity_photos [row 21 of 228] ---
+id: fb01f7de-4cf5-4d76-aaf8-5a85dd96f9e0
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-iv-vacation-rental-condominiums/photo_03.jpg
+is_cover: false
+sort_order: 2
+photo_type: complex
+
+--- entity_photos [row 22 of 228] ---
+id: 812485f3-059d-450a-9b03-02869732fd3d
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-iv-vacation-rental-condominiums/photo_07.jpg
+is_cover: false
+sort_order: 6
+photo_type: complex
+
+--- entity_photos [row 23 of 228] ---
+id: efd21292-c9fb-4a1a-8e15-432f30afad23
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_00.jpg
+is_cover: true
+sort_order: 0
+photo_type: complex
+
+--- entity_photos [row 24 of 228] ---
+id: edc96a0b-8673-474f-9b08-02f800a1b522
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_01.jpg
+is_cover: false
+sort_order: 1
+photo_type: complex
+
+--- entity_photos [row 25 of 228] ---
+id: 8db44313-1f4a-458e-ba25-ccb21f56c252
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_02.jpg
+is_cover: false
+sort_order: 2
+photo_type: complex
+
+--- entity_photos [row 26 of 228] ---
+id: 8f4dc368-f07c-4753-9cd4-bfcbbea68fa9
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_03.jpg
+is_cover: false
+sort_order: 3
+photo_type: complex
+
+--- entity_photos [row 27 of 228] ---
+id: 99c1e8bb-888d-435a-a7f2-8d59f5b797d4
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_04.jpg
+is_cover: false
+sort_order: 4
+photo_type: complex
+
+--- entity_photos [row 28 of 228] ---
+id: 013e6fe3-48c2-47ef-95aa-923bf0dc6e56
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_05.jpg
+is_cover: false
+sort_order: 5
+photo_type: complex
+
+--- entity_photos [row 29 of 228] ---
+id: 4e5dbb40-24fd-4f9a-ade3-688cb20a3814
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_06.jpg
+is_cover: false
+sort_order: 6
+photo_type: complex
+
+--- entity_photos [row 30 of 228] ---
+id: 8c3deec6-e04b-4f7a-a325-0c1420c57ccf
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_07.jpg
+is_cover: false
+sort_order: 7
+photo_type: complex
+
+--- entity_photos [row 31 of 228] ---
+id: a5c7f619-5820-454c-b182-8881055b4b39
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_08.jpg
+is_cover: false
+sort_order: 8
+photo_type: complex
+
+--- entity_photos [row 32 of 228] ---
+id: b2b066bd-e80f-4ffd-b24e-7f77cdfb67d5
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_09.jpg
+is_cover: false
+sort_order: 9
+photo_type: complex
+
+--- entity_photos [row 33 of 228] ---
+id: 05fa5f90-7107-4080-aed3-9c4a19706906
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_10.jpg
+is_cover: false
+sort_order: 10
+photo_type: complex
+
+--- entity_photos [row 34 of 228] ---
+id: 0d894557-c545-49cb-9885-696f5715ab61
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_11.jpg
+is_cover: false
+sort_order: 11
+photo_type: complex
+
+--- entity_photos [row 35 of 228] ---
+id: cd0da987-c455-467f-8d32-b854b176fe14
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_12.jpg
+is_cover: false
+sort_order: 12
+photo_type: complex
+
+--- entity_photos [row 36 of 228] ---
+id: d370a43f-615a-4096-ab22-2a3bcd6f398f
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_13.jpg
+is_cover: false
+sort_order: 13
+photo_type: complex
+
+--- entity_photos [row 37 of 228] ---
+id: b96e7fac-09d8-4502-8d20-edc7901ff11a
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_14.jpg
+is_cover: false
+sort_order: 14
+photo_type: complex
+
+--- entity_photos [row 38 of 228] ---
+id: 13a0aaf5-7531-4de1-a4c9-107fd14318b6
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_15.jpg
+is_cover: false
+sort_order: 15
+photo_type: complex
+
+--- entity_photos [row 39 of 228] ---
+id: 04574100-36be-478b-b2a7-4304ace7b33d
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_16.jpg
+is_cover: false
+sort_order: 16
+photo_type: complex
+
+--- entity_photos [row 40 of 228] ---
+id: 8236d2d7-dd56-40a3-ab13-2429d986d546
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_17.jpg
+is_cover: false
+sort_order: 17
+photo_type: complex
+
+--- entity_photos [row 41 of 228] ---
+id: b99d954a-0e6e-4cb2-a619-734efbe6d197
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_18.jpg
+is_cover: false
+sort_order: 18
+photo_type: complex
+
+--- entity_photos [row 42 of 228] ---
+id: 625509cb-7309-4072-aedf-9e48ce4fd0bd
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_19.jpg
+is_cover: false
+sort_order: 19
+photo_type: complex
+
+--- entity_photos [row 43 of 228] ---
+id: ccac6e93-917b-4529-a4c1-bb2c6b96af78
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_20.jpg
+is_cover: false
+sort_order: 20
+photo_type: complex
+
+--- entity_photos [row 44 of 228] ---
+id: a8c56099-d084-478d-a9a2-c1e93c245d7a
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_21.jpg
+is_cover: false
+sort_order: 21
+photo_type: complex
+
+--- entity_photos [row 45 of 228] ---
+id: 815b1983-7623-4780-ae08-bde1725d8570
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_22.jpg
+is_cover: false
+sort_order: 22
+photo_type: complex
+
+--- entity_photos [row 46 of 228] ---
+id: c24a38b1-18e3-4863-91fa-29e0a97cfb55
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_23.jpg
+is_cover: false
+sort_order: 23
+photo_type: complex
+
+--- entity_photos [row 47 of 228] ---
+id: 3869dd21-78d2-4ae8-8127-4ce72644cc15
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_24.jpg
+is_cover: false
+sort_order: 24
+photo_type: complex
+
+--- entity_photos [row 48 of 228] ---
+id: 02815c33-f75f-4f02-a120-29595c5acf1b
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_25.jpg
+is_cover: false
+sort_order: 25
+photo_type: complex
+
+--- entity_photos [row 49 of 228] ---
+id: 6cae6f8a-977b-4f6a-aaa2-ea22d7eddb6d
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_26.jpg
+is_cover: false
+sort_order: 26
+photo_type: complex
+
+--- entity_photos [row 50 of 228] ---
+id: ac5278dd-920e-404a-9c0d-dfcf8d493188
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_27.jpg
+is_cover: false
+sort_order: 27
+photo_type: complex
+
+--- entity_photos [row 51 of 228] ---
+id: 1a1a0b64-aa48-4c8a-9c97-01e4f789e0cf
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_28.jpg
+is_cover: false
+sort_order: 28
+photo_type: complex
+
+--- entity_photos [row 52 of 228] ---
+id: a3574e02-84ed-4b2f-b658-3919993ca303
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_29.jpg
+is_cover: false
+sort_order: 29
+photo_type: complex
+
+--- entity_photos [row 53 of 228] ---
+id: 9daa7ec6-1312-47ed-90c9-ce981760c007
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_30.jpg
+is_cover: false
+sort_order: 30
+photo_type: complex
+
+--- entity_photos [row 54 of 228] ---
+id: e6272d69-4149-4606-a98d-059e0da3602a
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_31.jpg
+is_cover: false
+sort_order: 31
+photo_type: complex
+
+--- entity_photos [row 55 of 228] ---
+id: 021088d3-0700-40bd-bfab-97d77d168d94
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_32.jpg
+is_cover: false
+sort_order: 32
+photo_type: complex
+
+--- entity_photos [row 56 of 228] ---
+id: 2de3bd1a-3084-4cd3-baf8-cd76b1e53210
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_33.jpg
+is_cover: false
+sort_order: 33
+photo_type: complex
+
+--- entity_photos [row 57 of 228] ---
+id: 952d436e-9865-4f6d-8cfe-8d877fd7e90e
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_34.jpg
+is_cover: false
+sort_order: 34
+photo_type: complex
+
+--- entity_photos [row 58 of 228] ---
+id: 50d6f5c5-06f4-45e8-97c6-9fd5dfa3ddb5
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_35.jpg
+is_cover: false
+sort_order: 35
+photo_type: complex
+
+--- entity_photos [row 59 of 228] ---
+id: 108a8e29-61d0-4d34-b7a6-c5f043282e6f
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_36.jpg
+is_cover: false
+sort_order: 36
+photo_type: complex
+
+--- entity_photos [row 60 of 228] ---
+id: 168fe0c1-9a2f-463f-b7ef-b8723107cd44
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_37.jpg
+is_cover: false
+sort_order: 37
+photo_type: complex
+
+--- entity_photos [row 61 of 228] ---
+id: 9dd4882e-1750-434c-a244-bb7130394c89
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_38.jpg
+is_cover: false
+sort_order: 38
+photo_type: complex
+
+--- entity_photos [row 62 of 228] ---
+id: f10858c5-af10-4cf1-9c9f-2fbb597e19e6
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_39.jpg
+is_cover: false
+sort_order: 39
+photo_type: complex
+
+--- entity_photos [row 63 of 228] ---
+id: 1fac34f4-3465-42b7-8424-754f80e57303
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_40.jpg
+is_cover: false
+sort_order: 40
+photo_type: complex
+
+--- entity_photos [row 64 of 228] ---
+id: 8387e9b0-29b3-46a2-884b-ad06cbe85e21
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_41.jpg
+is_cover: false
+sort_order: 41
+photo_type: complex
+
+--- entity_photos [row 65 of 228] ---
+id: e673cc91-7031-4f69-8cb5-7c1567315db3
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_42.jpg
+is_cover: false
+sort_order: 42
+photo_type: complex
+
+--- entity_photos [row 66 of 228] ---
+id: 632e92ad-a232-4717-85e6-6f7407014c9c
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_43.jpg
+is_cover: false
+sort_order: 43
+photo_type: complex
+
+--- entity_photos [row 67 of 228] ---
+id: af22f134-182d-4dc4-91a9-911dca40a737
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_44.jpg
+is_cover: false
+sort_order: 44
+photo_type: complex
+
+--- entity_photos [row 68 of 228] ---
+id: 7c48b5f4-f98a-4e60-b039-2cc37e146735
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_45.jpg
+is_cover: false
+sort_order: 45
+photo_type: complex
+
+--- entity_photos [row 69 of 228] ---
+id: b78168a6-e4a3-4c8a-911c-25202cb63207
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_46.jpg
+is_cover: false
+sort_order: 46
+photo_type: complex
+
+--- entity_photos [row 70 of 228] ---
+id: 5c595c1f-d428-4894-98b4-cba8c5bee7e1
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_47.jpg
+is_cover: false
+sort_order: 47
+photo_type: complex
+
+--- entity_photos [row 71 of 228] ---
+id: df65b598-588a-4133-8eda-cd1547534bf1
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_48.jpg
+is_cover: false
+sort_order: 48
+photo_type: complex
+
+--- entity_photos [row 72 of 228] ---
+id: 24a0b6b9-df6a-4e4a-984d-d08b3838b165
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_49.jpg
+is_cover: false
+sort_order: 49
+photo_type: complex
+
+--- entity_photos [row 73 of 228] ---
+id: 404853ce-aba6-4f0a-9d7c-28ff52911ef4
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_17.jpg
+is_cover: false
+sort_order: 17
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 74 of 228] ---
+id: 6d679eec-aac0-4afd-991b-257ef664b029
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_49.jpg
+is_cover: false
+sort_order: 49
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 75 of 228] ---
+id: 34430129-831b-4411-b88b-c08e2b81803f
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_36.jpg
+is_cover: false
+sort_order: 36
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 76 of 228] ---
+id: b2b967e3-23da-4ccf-9bc9-8e9036c168e7
+entity_slug: phoenix-iv
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A7149.jpg
+is_cover: false
+sort_order: 313
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 77 of 228] ---
+id: c835a5f6-512f-47d4-823d-4b2797962c3a
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_23.jpg
+is_cover: false
+sort_order: 23
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 78 of 228] ---
+id: 41ba3d36-4e8d-40b3-a812-38c90c3ccc39
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_03.jpg
+is_cover: false
+sort_order: 3
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 79 of 228] ---
+id: 2d369571-7620-4a6e-8083-0e04a30e49cf
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_40.jpg
+is_cover: false
+sort_order: 40
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 80 of 228] ---
+id: 03792032-481e-4d20-ab99-cae44460395d
+entity_slug: phoenix-iv
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A7132.jpg
+is_cover: false
+sort_order: 318
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 81 of 228] ---
+id: fec43791-58b0-4406-b897-0e5fd2c3b515
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_09.jpg
+is_cover: false
+sort_order: 9
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 82 of 228] ---
+id: bd3f92ee-f1d4-46af-b34d-fb6f424813b3
+entity_slug: phoenix-iv
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A7135.jpg
+is_cover: false
+sort_order: 319
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 83 of 228] ---
+id: 8bfc3241-100d-42ab-9cde-66ee4dae11ac
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_22.jpg
+is_cover: false
+sort_order: 22
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 84 of 228] ---
+id: b9931e90-4f03-4955-92fa-cfa3c66788f1
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_01.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 85 of 228] ---
+id: 53144a64-2063-4b9c-b689-eaa8bc973d3b
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_06.jpg
+is_cover: false
+sort_order: 6
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 86 of 228] ---
+id: f06ec296-d1d6-46c6-af30-ca1c1302cd7b
+entity_slug: phoenix-iv
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A7129.jpg
+is_cover: false
+sort_order: 317
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 87 of 228] ---
+id: 41b4a527-b041-4fc2-a5ca-2ef1be3e136d
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_25.jpg
+is_cover: false
+sort_order: 25
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 88 of 228] ---
+id: 957872d3-532d-4370-94f0-00db8a444d51
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_41.jpg
+is_cover: false
+sort_order: 41
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 89 of 228] ---
+id: caf7d229-ca5d-4903-b608-de34db66cf57
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_13.jpg
+is_cover: false
+sort_order: 13
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 90 of 228] ---
+id: 7f9ae563-7bdc-4faa-8f06-92ebeccac445
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_30.jpg
+is_cover: false
+sort_order: 30
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 91 of 228] ---
+id: bfe43f67-7dd5-48d5-9b0f-d0f19282ec0e
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_45.jpg
+is_cover: false
+sort_order: 45
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 92 of 228] ---
+id: 32781b93-6834-446d-b2ca-023a119d1c52
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_02.jpg
+is_cover: false
+sort_order: 2
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 93 of 228] ---
+id: 80b80d87-0ba8-4e0f-8482-087adf858745
+entity_slug: phoenix-iv
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A7150.jpg
+is_cover: false
+sort_order: 314
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 94 of 228] ---
+id: cc630770-acce-4f8a-a264-78c5c92fb4dc
+entity_slug: phoenix-iv
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A7156.jpg
+is_cover: false
+sort_order: 316
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 95 of 228] ---
+id: a76411d4-3241-44d5-993d-c2fe681fabe2
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_21.jpg
+is_cover: false
+sort_order: 21
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 96 of 228] ---
+id: 4e0339a4-573f-4ebe-9e81-b8d74f1636c4
+entity_slug: phoenix-iv
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/0B1A7153.jpg
+is_cover: false
+sort_order: 315
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 97 of 228] ---
+id: 8f8c694f-b00c-4a7b-a49b-cb8ea393b7f7
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_43.jpg
+is_cover: false
+sort_order: 43
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 98 of 228] ---
+id: 44299b37-e8cd-4c86-ad81-88c0dde0c004
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_28.jpg
+is_cover: false
+sort_order: 28
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 99 of 228] ---
+id: 83b7a521-fad7-4477-9080-8bb2a666e189
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_27.jpg
+is_cover: false
+sort_order: 27
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 100 of 228] ---
+id: 0d5b0125-2b4d-4b3c-bfc7-551b4b794c09
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_47.jpg
+is_cover: false
+sort_order: 47
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 101 of 228] ---
+id: bcb7c388-8448-40b4-9929-d33b76433e3c
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_20.jpg
+is_cover: false
+sort_order: 20
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 102 of 228] ---
+id: 6dc62513-0c46-432c-87bc-74f6601ce479
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_32.jpg
+is_cover: false
+sort_order: 32
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 103 of 228] ---
+id: 7cfb8bb7-9d73-4669-baa0-58ea7993a38d
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_07.jpg
+is_cover: false
+sort_order: 7
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 104 of 228] ---
+id: 5df36025-7ada-4d25-8c32-8dac786b9641
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_08.jpg
+is_cover: false
+sort_order: 8
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 105 of 228] ---
+id: d6d4f1b0-7dba-4e33-ad3e-5acbc0edb74e
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_18.jpg
+is_cover: false
+sort_order: 18
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 106 of 228] ---
+id: 9db6ba9f-afbd-4d84-8a9b-43557ed8036f
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_46.jpg
+is_cover: false
+sort_order: 46
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 107 of 228] ---
+id: a9c48074-c058-4016-aa1c-d8e3221e364f
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_00.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 108 of 228] ---
+id: 499de665-a2d2-4447-b50c-e0c3aebe2f79
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_33.jpg
+is_cover: false
+sort_order: 33
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 109 of 228] ---
+id: 342e1f07-d858-4fa7-a0e6-cb5d0625c132
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_37.jpg
+is_cover: false
+sort_order: 37
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 110 of 228] ---
+id: 4fe9677f-005a-477a-a353-39769b538afd
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_39.jpg
+is_cover: false
+sort_order: 39
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 111 of 228] ---
+id: 0484a75a-240c-469b-b13a-0282abe4144f
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_38.jpg
+is_cover: false
+sort_order: 38
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 112 of 228] ---
+id: 79e679bf-b6a6-41e0-b2ab-3fe823eb4d4b
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_19.jpg
+is_cover: false
+sort_order: 19
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 113 of 228] ---
+id: 23af756b-15c5-4917-b388-1a4019f5ca84
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_48.jpg
+is_cover: false
+sort_order: 48
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 114 of 228] ---
+id: 8d53d85b-4e77-45ba-a386-c507b9365c66
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_15.jpg
+is_cover: false
+sort_order: 15
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 115 of 228] ---
+id: eb141766-15aa-4876-9fe7-4977b2e9921d
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_26.jpg
+is_cover: false
+sort_order: 26
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 116 of 228] ---
+id: 49441ae9-dc68-4130-80d1-e624842dddd9
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_11.jpg
+is_cover: false
+sort_order: 11
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 117 of 228] ---
+id: 6032333a-df73-4816-b57f-02bcb6e7b78d
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_10.jpg
+is_cover: false
+sort_order: 10
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 118 of 228] ---
+id: a7f58f90-d3ac-490e-a99f-c7371acb377d
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_42.jpg
+is_cover: false
+sort_order: 42
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 119 of 228] ---
+id: d54189ca-3806-4a1a-aca7-ff48cb515fcd
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_14.jpg
+is_cover: false
+sort_order: 14
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 120 of 228] ---
+id: 43418c83-086d-4a1e-bc13-8d037e2177e4
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_34.jpg
+is_cover: false
+sort_order: 34
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 121 of 228] ---
+id: a4004f60-5b75-4bb9-a981-02234e9ae1b9
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_05.jpg
+is_cover: false
+sort_order: 5
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 122 of 228] ---
+id: 23016a02-02e5-45fc-90f3-81ea29d28ecd
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_24.jpg
+is_cover: false
+sort_order: 24
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 123 of 228] ---
+id: b674f820-7c2c-4cc6-87f5-5ec2f09b6c96
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_12.jpg
+is_cover: false
+sort_order: 12
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 124 of 228] ---
+id: 7dab6c25-25a0-46ce-9e41-9c4c55f0c843
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_04.jpg
+is_cover: false
+sort_order: 4
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 125 of 228] ---
+id: 8114daab-10fa-47b2-8984-a63a8dc7fe74
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_44.jpg
+is_cover: false
+sort_order: 44
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 126 of 228] ---
+id: ce579a74-0af1-443e-9a00-8d4441ed445b
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_35.jpg
+is_cover: false
+sort_order: 35
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 127 of 228] ---
+id: 4b3b9d44-656a-4513-80c6-effc1b5bbc2f
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_16.jpg
+is_cover: false
+sort_order: 16
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 128 of 228] ---
+id: 40a090d5-0bf0-45ca-b539-90074ce32e81
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_31.jpg
+is_cover: false
+sort_order: 31
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 129 of 228] ---
+id: 48eb3bcc-97a8-4428-90da-6487a79e0f5a
+entity_slug: phoenix-iv
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_29.jpg
+is_cover: false
+sort_order: 29
+photo_type: resource
+source_name: bookable_resource
+resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+
+--- entity_photos [row 130 of 228] ---
+id: 5c3cdca7-d6ad-4288-a8aa-828239e0d10d
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/ae842413-17c4-4e78-9633-093a9fe84763
+is_cover: false
+sort_order: 400
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 131 of 228] ---
+id: 7a55dc98-33b2-4eb9-abc2-1a6f053a9b86
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/78c5882a-efa7-4737-8c2f-4d7a5b971bbd
+is_cover: false
+sort_order: 401
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 132 of 228] ---
+id: 1251dbaa-4704-4111-8092-bbbc0138597e
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/41a037af-15fc-4c77-b3d9-87ad53534d17
+is_cover: false
+sort_order: 402
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 133 of 228] ---
+id: d56445b5-7896-4a1b-bb8b-86eeeb82dca2
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/8db42386-f48f-4850-bfbd-fbbe2211af30
+is_cover: false
+sort_order: 403
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 134 of 228] ---
+id: ceff2d66-e3e8-4801-b1b9-b385540dddb8
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/96f2eded-773c-4405-9f6e-deb2b0a43d27
+is_cover: false
+sort_order: 404
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 135 of 228] ---
+id: 94133ff3-29d3-48c9-92a4-533f100b5e19
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/dd38d0f4-9b88-4e6a-a3bb-0d5958e0e9b4
+is_cover: false
+sort_order: 405
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 136 of 228] ---
+id: c3cdd082-f94c-4576-a554-89f79bd4aed4
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/8e362e5f-a21d-4155-83be-da64564677c0
+is_cover: false
+sort_order: 406
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 137 of 228] ---
+id: ec43d8b0-6199-4220-8b4b-e7a6e67296ec
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/12e13eee-648a-4a27-871b-d27128eba3b6
+is_cover: false
+sort_order: 407
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 138 of 228] ---
+id: 03edce09-1a00-45da-9340-de39b0732097
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/59eaa392-3d0a-496b-afac-6069f2bc126b
+is_cover: false
+sort_order: 408
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 139 of 228] ---
+id: f6f91c79-6d2c-4b06-a7ce-fafd724c2b6f
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/cd42eb94-55e7-4ac5-a4ee-49761c51867f
+is_cover: false
+sort_order: 409
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 140 of 228] ---
+id: 61fe7185-4ad1-4f90-b051-6ce4dbac5dc8
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/813c74de-63d9-44ee-ae38-a169ec100c9b
+is_cover: false
+sort_order: 410
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 141 of 228] ---
+id: c105f745-32f7-4aa2-b91b-ca0db1ada6fc
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/e5be4b0b-b5f9-42a8-9d4d-d22235809b05
+is_cover: false
+sort_order: 411
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 142 of 228] ---
+id: 21e2dbee-4ce0-4ef7-be64-c8bab4f627e9
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/edf5f06f-1872-4309-afec-a093da382261
+is_cover: false
+sort_order: 412
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 143 of 228] ---
+id: 6d64a392-6d10-4729-bb24-79592c70cd78
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/c6e20c43-3a68-4215-8459-47d351a278c6
+is_cover: false
+sort_order: 413
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 144 of 228] ---
+id: f994f20e-3dac-443a-a2d0-d3e2bc692c7f
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/0f3a9ab7-bb2c-4a8f-91ad-15e7b71195e8
+is_cover: false
+sort_order: 414
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 145 of 228] ---
+id: 960bd13f-d725-4761-8962-2cb3e5a18136
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/58b5076e-771c-4560-b71e-edead8af2e51
+is_cover: false
+sort_order: 415
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 146 of 228] ---
+id: 7aa5f4c9-391c-4dd8-98f7-e620d1285cf9
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/e7726a68-5265-49a4-adcb-74329ebba048
+is_cover: false
+sort_order: 416
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 147 of 228] ---
+id: e18b8a0d-0530-4f5a-8874-59ea889adb24
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/a210cad7-20a5-4803-ab06-80c5e7017902
+is_cover: false
+sort_order: 417
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 148 of 228] ---
+id: 4f98328b-88b1-4713-a0f8-1ca8dc714723
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/0b933194-b92c-4723-b151-2e718ac3439c
+is_cover: false
+sort_order: 418
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 149 of 228] ---
+id: d3ff4cca-009c-49db-bb1b-c5c405708ed8
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/a52ea4c0-148f-4623-85ad-5900d6001068
+is_cover: false
+sort_order: 419
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 150 of 228] ---
+id: 618c53aa-7a85-4ea9-a194-64d3180b7ab4
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/8488855c-ac76-4cbc-9ab7-f171a61bebed
+is_cover: false
+sort_order: 420
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 151 of 228] ---
+id: edc1ee85-7287-4434-abf0-466616df64b9
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/21a0efc3-939f-4d80-a3c7-bbb85d2564af
+is_cover: false
+sort_order: 421
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 152 of 228] ---
+id: 7d8072ab-41c7-4835-afea-b28bbf5a96f0
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/aff0b334-fea3-44d4-86bb-297185b49178
+is_cover: false
+sort_order: 422
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 153 of 228] ---
+id: 745b64e0-643f-427a-8d0f-f3f1322e9b0c
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/d74ef715-a23b-4da7-9f88-2102a71c5580
+is_cover: false
+sort_order: 423
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 154 of 228] ---
+id: 568402e7-e705-4777-afa3-721bb65ab384
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/05c8119f-2349-4702-bc34-40ccdfad47f7
+is_cover: false
+sort_order: 424
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 155 of 228] ---
+id: 9dc98929-b383-4973-ae70-91e01658b7e0
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/9315152f-7bd1-488c-bffd-8cfc3b0a2111
+is_cover: false
+sort_order: 425
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 156 of 228] ---
+id: 49036fb7-1565-4627-8e77-ce6dac5e4b88
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/b7c71123-aef9-4af8-ae49-b5e437fb93e2
+is_cover: false
+sort_order: 426
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 157 of 228] ---
+id: f4f78bd5-0909-4453-aff0-0c8411fe2069
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/6b3fe757-4e94-4cc1-b06f-7c197d395e6e
+is_cover: false
+sort_order: 427
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 158 of 228] ---
+id: d844ae94-d5bc-4aa7-ae85-43d499d88d84
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/129bfb5f-d6cd-4597-99b0-ffb63b56c9c1
+is_cover: false
+sort_order: 428
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 159 of 228] ---
+id: 55ef4e60-fb50-4b5b-9c0c-c87b27e291f4
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/08820d78-acac-4ad4-b127-ec857f703812
+is_cover: false
+sort_order: 429
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 160 of 228] ---
+id: 531f6657-3360-406f-9802-c6f21737b992
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/553bfefe-b03b-4a40-91cd-857108808373
+is_cover: false
+sort_order: 430
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 161 of 228] ---
+id: e8877137-76e9-49bb-bfa5-be81c9a986b6
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/7f828abc-db0f-476a-b48e-90db29bdf1e4
+is_cover: false
+sort_order: 431
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 162 of 228] ---
+id: 930b3881-df7c-4ee1-9f29-c6cdfe17fba4
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/96a077d5-96fc-4189-84c4-520b1e2b6e79
+is_cover: false
+sort_order: 432
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 163 of 228] ---
+id: 7fed57bf-597c-43f3-8644-b83503552f28
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/3bcee2b3-4989-4a76-8f6e-db10999d9932
+is_cover: false
+sort_order: 433
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 164 of 228] ---
+id: e6dddcb4-75d2-45ca-9d56-cd0ac68877a9
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/079b40d0-4d5c-46c9-b353-2f366750d900
+is_cover: false
+sort_order: 434
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 165 of 228] ---
+id: 3dbc5eda-cfb2-4f80-83e7-84cb69a72a0f
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/09729cec-0c85-43e6-b6b3-023120e0c1b9
+is_cover: false
+sort_order: 435
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 166 of 228] ---
+id: cf53a639-8754-484d-afc6-ef323ed71504
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/69160b9c-f683-4461-bff1-2af9aa32daeb
+is_cover: false
+sort_order: 436
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 167 of 228] ---
+id: 312c9d74-225a-4c4d-bc9a-9eaae5be98a9
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/6fca279d-97eb-44bf-b007-d6598ce4a3f7
+is_cover: false
+sort_order: 437
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 168 of 228] ---
+id: 88da9fd2-1d6e-4445-b689-eb930138d0f5
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/019c4716-4470-4265-867a-3cf7e5783279
+is_cover: false
+sort_order: 438
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 169 of 228] ---
+id: 80f58f6a-84e3-42ae-90e5-7fa9b8b60cd8
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/81f3c241-d0ac-4b45-abf4-13cbded4a759
+is_cover: false
+sort_order: 439
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 170 of 228] ---
+id: 295d9d41-1073-4612-882e-5b32536d9584
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/51e752a5-124c-48b3-a64c-150a97842b5b
+is_cover: false
+sort_order: 440
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 171 of 228] ---
+id: ca56a04e-6d14-477f-86ec-ecf95cb938bc
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/8dbc5c21-ffeb-4190-82ce-099280f43e64
+is_cover: false
+sort_order: 441
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 172 of 228] ---
+id: 0edca6dd-fcc4-4cdb-8ab0-89f75e1b2ff6
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/619af802-4e90-4d74-aba6-69a13d153b9a
+is_cover: false
+sort_order: 442
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 173 of 228] ---
+id: 29f98de3-dfcf-4524-8c91-8b51b74f3238
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/fad43455-743a-44f0-92e4-af464e713ec7
+is_cover: false
+sort_order: 443
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 174 of 228] ---
+id: acdaffa9-93aa-4728-99ea-e0bb55d25ac8
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/125a1644-788b-42b2-bbb7-3872ea2c5946
+is_cover: false
+sort_order: 444
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 175 of 228] ---
+id: 20a2ff38-a011-4715-9f6f-d70432b57759
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/3a6eb77c-e4bf-4d8d-9ffe-766e2194701c
+is_cover: false
+sort_order: 445
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 176 of 228] ---
+id: 8bf3e251-a026-43b7-85b7-b7ce822280df
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/600x400/https://track-pm.s3.amazonaws.com/brett-robinson/image/1467c475-7c25-419c-802b-25a452531ba1
+is_cover: false
+sort_order: 446
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 177 of 228] ---
+id: 2799b75a-af8c-406a-8d95-7e64ba307272
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/600x400/https://track-pm.s3.amazonaws.com/brett-robinson/image/ba6a49f4-8bc3-4543-9f4a-70312836ff84
+is_cover: false
+sort_order: 447
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 178 of 228] ---
+id: 86525eb8-4422-4df9-af3d-43f543dd77d8
+entity_slug: phoenix-iv
+url: https://img.trackhs.com/600x400/https://track-pm.s3.amazonaws.com/brett-robinson/image/ffaf6838-8896-4bf5-b270-6f75ffac5dc0
+is_cover: false
+sort_order: 448
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 179 of 228] ---
+id: aa1e353d-9274-4b68-9675-4634a29637d7
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139956617.4626.jpg
+sort_order: 0
+created_at: 2026-07-19T21:18:17.557408+00:00
+
+--- entity_photos [row 180 of 228] ---
+id: a5ba7f3e-5a3b-456b-952a-fa66540d50ef
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139955615.4148.jpg
+sort_order: 0
+created_at: 2026-07-19T21:18:17.557408+00:00
+
+--- entity_photos [row 181 of 228] ---
+id: e69c3ff5-5bfe-4718-8230-6a9e27cfa089
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139954379.3435.jpg
+sort_order: 0
+created_at: 2026-07-19T21:18:17.557408+00:00
+
+--- entity_photos [row 182 of 228] ---
+id: bcb830e5-19c8-4659-9a59-7f1df242f0a6
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139953300.5713.jpg
+sort_order: 0
+created_at: 2026-07-19T21:18:17.557408+00:00
+
+--- entity_photos [row 183 of 228] ---
+id: 9df8abeb-4383-4cb3-86df-03d2884ad566
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139951923.7195.jpg
+sort_order: 0
+created_at: 2026-07-19T21:18:17.557408+00:00
+
+--- entity_photos [row 184 of 228] ---
+id: 3d0edfc8-1b69-4caf-b06c-227aef3c5660
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139961341.4768.jpg
+sort_order: 0
+created_at: 2026-07-19T21:18:17.557408+00:00
+
+--- entity_photos [row 185 of 228] ---
+id: 4d07cdd2-9136-4f7e-bd3d-7734003f50c4
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139950591.868.jpg
+sort_order: 0
+created_at: 2026-07-19T21:18:17.557408+00:00
+
+--- entity_photos [row 186 of 228] ---
+id: 70774df8-f013-49c0-9bef-801ffc58f5b5
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139952740.7988.jpg
+sort_order: 0
+created_at: 2026-07-19T21:18:17.557408+00:00
+
+--- entity_photos [row 187 of 228] ---
+id: 196c4645-0fec-4984-9fad-e14410b1e956
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139960226.4795.jpg
+sort_order: 0
+created_at: 2026-07-19T21:18:17.557408+00:00
+
+--- entity_photos [row 188 of 228] ---
+id: d59f52d8-6596-4482-837b-7e7db21d95dc
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139961140.903.jpg
+sort_order: 0
+created_at: 2026-07-19T21:18:17.557408+00:00
+
+--- entity_photos [row 189 of 228] ---
+id: 81d4927f-a6d3-48d9-b869-3b25ce5ad270
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139953977.0054.jpg
+sort_order: 0
+created_at: 2026-07-19T21:18:17.557408+00:00
+
+--- entity_photos [row 190 of 228] ---
+id: 062fd706-4170-4242-b49a-6438d587592b
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139955159.6724.jpg
+sort_order: 0
+created_at: 2026-07-19T21:18:17.557408+00:00
+
+--- entity_photos [row 191 of 228] ---
+id: e90a1fa9-93cd-4569-8f1f-c1e54b4aa0e2
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139956288.2217.jpg
+sort_order: 0
+created_at: 2026-07-19T21:18:17.557408+00:00
+
+--- entity_photos [row 192 of 228] ---
+id: 93c33f5c-4fb0-4e02-b030-4127d6f2e931
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139953149.4019.jpg
+sort_order: 0
+created_at: 2026-07-19T21:18:17.557408+00:00
+
+--- entity_photos [row 193 of 228] ---
+id: 4726cd99-0c9b-4e2e-aedc-c56a2d12654d
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139951357.2036.jpg
+sort_order: 0
+created_at: 2026-07-19T21:18:17.557408+00:00
+
+--- entity_photos [row 194 of 228] ---
+id: 6056c335-a63d-4dd5-b4c4-b9412b6c7634
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139951717.7295.jpg
+sort_order: 0
+created_at: 2026-07-19T21:18:17.557408+00:00
+
+--- entity_photos [row 195 of 228] ---
+id: 34bd2648-e7ef-4e58-9ec2-c347f12fd24d
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139957220.1946.jpg
+sort_order: 0
+created_at: 2026-07-19T21:18:17.557408+00:00
+
+--- entity_photos [row 196 of 228] ---
+id: 5ddca664-d74a-4cf8-a360-830aebefee58
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139960891.9595.jpg
+sort_order: 0
+created_at: 2026-07-19T21:18:17.557408+00:00
+
+--- entity_photos [row 197 of 228] ---
+id: f5fffc91-f656-4e20-9251-df95fcdd68ac
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139960060.865.jpg
+sort_order: 0
+created_at: 2026-07-19T21:18:17.557408+00:00
+
+--- entity_photos [row 198 of 228] ---
+id: e3a64255-9426-4401-ae66-50cb2e27e74e
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139959089.29.jpg
+sort_order: 0
+created_at: 2026-07-19T21:18:17.557408+00:00
+
+--- entity_photos [row 199 of 228] ---
+id: 42e76048-ad5b-40d3-bf1f-00db046075af
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139958065.5933.jpg
+sort_order: 0
+created_at: 2026-07-19T21:18:17.557408+00:00
+
+--- entity_photos [row 200 of 228] ---
+id: a4ccb28a-6117-48a7-986c-d50e5c76a51b
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139957041.7554.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 201 of 228] ---
+id: 33f9fa3f-e0d5-40df-ae9a-53da82daf993
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139956134.4553.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 202 of 228] ---
+id: 0d8c5c1d-0663-415a-96f5-e6c81cff1c2d
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139955001.567.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 203 of 228] ---
+id: 2c04a4fd-d428-47d5-abf3-d8f477fad81f
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139953725.273.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 204 of 228] ---
+id: bcb47a5c-f5b4-4f1c-a7cd-5d65492648dd
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139952330.729.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 205 of 228] ---
+id: 6568268f-eb7e-4e9e-b214-94996463d01b
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139958329.9077.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 206 of 228] ---
+id: e0569eb9-7168-4f8a-abaa-fce8e78b0646
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139951128.2883.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 207 of 228] ---
+id: 216e8d13-ca7a-4bfb-b3ee-4e9f40912590
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139954175.7383.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 208 of 228] ---
+id: d9cd746f-399f-49a5-be62-903ae2dc2739
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139960737.9243.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 209 of 228] ---
+id: 7f33eb4d-6ebe-4cd9-9a8d-1b098da6928c
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139959711.8127.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 210 of 228] ---
+id: b933a29c-2fc9-40e0-bede-e97f84feb63c
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139958884.8513.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 211 of 228] ---
+id: 917e75dd-25a6-4076-9550-77d0c94e2531
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139957860.824.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 212 of 228] ---
+id: 82c0e8de-ef67-4135-a27d-6dd953f5d47d
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139956750.4631.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 213 of 228] ---
+id: 55d0d5f3-76bf-41d8-9cf6-17ecf23dd0c0
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139955812.121.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 214 of 228] ---
+id: d83cebb6-0bf9-4b3c-9e07-bf42644d4433
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139954791.9946.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 215 of 228] ---
+id: aae345a2-ed62-4aa0-ad59-92631967f810
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139953559.472.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 216 of 228] ---
+id: 4fb36a86-6c6a-44f2-86f3-60e01aee9430
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139952125.603.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 217 of 228] ---
+id: e272f917-9270-42fd-b6e5-28e2c746a970
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139959245.2844.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 218 of 228] ---
+id: 2012682e-42a4-4f24-b3b3-a7f7aa4fe942
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139955313.73.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 219 of 228] ---
+id: fd4e9152-18b9-4273-acfb-d9f3cbf932b5
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139956458.071.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 220 of 228] ---
+id: f40e65ed-c826-46be-9012-fb21705c95f4
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139957412.2366.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 221 of 228] ---
+id: 862692f5-36e6-48c0-b804-d0c1c276baf0
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139958466.5693.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 222 of 228] ---
+id: e39abc3e-3cf1-415b-bdc0-d3ce8994d60f
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139950898.6824.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 223 of 228] ---
+id: 24275b49-e44c-4663-9f78-0be9d3d61830
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139959393.7244.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 224 of 228] ---
+id: acef995b-048a-49d1-b047-158f847c9dba
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139960542.028.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 225 of 228] ---
+id: 9f1b3948-ace1-4aa0-9a82-f5fe531096a4
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139959543.828.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 226 of 228] ---
+id: ba75ee4c-1300-4328-828d-898b3c251312
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139960374.7397.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 227 of 228] ---
+id: 56c659b3-7276-4dbe-aba4-8a82a495f2be
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139958630.1394.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+--- entity_photos [row 228 of 228] ---
+id: f804aedf-8020-43c1-a767-c2775a47a283
+entity_slug: phoenix-iv
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/0138346f-351e-4a71-8ddd-2d64d1cd9ce1/0138346f-351e-4a71-8ddd-2d64d1cd9ce1_1779139957656.6926.jpg
+sort_order: 0
+created_at: 2026-07-19T21:24:07.021032+00:00
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 60224580-762c-40aa-a568-91b282e7f00b
+entity_slug: phoenix-iv
+reviewer_name: Kevin Turner
+rating: 4
+body: It pretty much had everything we needed for a short vacation trip. The less than perfect mark was simply because the kitchen utensils were slightly limited and this is one of the older units.  The beach access from this unit was remarkably easy and the location was perfect.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-02-22T01:06:32.845147+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: 6dab461a-c343-488b-af56-0deb4ddf4a95
+entity_slug: phoenix-iv
+reviewer_name: K Yager (Chefhusker)
+rating: 4
+body: Location: as good as it gets. Suite 4104, stunning view.
+Pleasant surprises: beds were incredibly comfortable, kitchen stocked with many pots, pans, and utensils. Countertops were very nice.
+Not-so-pleasant surprises: toilets were super short, no curved shower rods. Not a deal-breaker, but a bit odd considering the price.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2024-06-08T14:18:08.172987+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: b32506c7-c4cb-4560-b8a8-0aaa99488892
+entity_slug: phoenix-iv
+reviewer_name: Blake
+rating: 5
+body: We have always stayed on the bay, but we really enjoyed our time in the Phoenix 1 condo. Even though this was built in '85 it's still a great place for the entire family and better for the kids too. This condominium is clean, safe and secure and up to date with the latest commodities, yet not the most luxury. I would recommend staying here too if you don't have to have all the glamor and gold.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2017-07-31T23:05:05.961+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 2cbba1ab-9a88-490d-81db-2b221e1b1a1a
+entity_slug: phoenix-iv
+reviewer_name: Colene Belmont
+rating: 4
+body: The beach access was wonderful! We stayed up on the eleventh floor, and though the decor was a touch dated, everything functioned well. The washer and dryer were a bit loud, and the shower took a minute to figure out but the water pressure was amazing! The view was spectacular. Room 4113 afforded us a stunning and breathtaking view to wake up to, and we comfotably fit five people in. We had the capacity to reasonably sleep eight. The kitchen has some basic tools, which was pleasantly surprising. It was also pretty affordable! We will most definitely return.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2019-03-18T22:09:34.311798+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 49f87168-6ca6-4f2b-8160-cbb1ded284be
+entity_slug: phoenix-iv
+reviewer_name: Blain Cox
+rating: 5
+body: We stayed in room 4085 at the phoenix 4. We had a amazing time on this trip. It was amazing to have stuff that we needed already in the room. Everyone at the place was extremely helpful and nice. But what made our trip was the beach we had a blast the weather was planed to rain the whole trip and it only did at night. What a trip this place is for everyone. One other thing was the lady at the front gate thing. Every day when we would leave when we came back we just had to show the lady the pass and she started to dance it was amazing to see that she enjoyed her job. Thank you for everything and until next time have a great time.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2023-07-19T15:38:42.027512+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_section_items   -   1 row(s)
+####################################################################################################
+
+--- entity_section_items [row 1 of 1] ---
+id: 9b82a2cb-7461-4cac-affa-bd5ff9a8f87f
+section_id: 669d8ffb-ae58-4cb6-889c-1f083c94416f
+entity_slug: phoenix-iv
+item_name: Phoenix IV
+description: Phoenix IV offers spacious beachfront condos in Orange Beach with 1-, 2-, and 3-bedroom floor plans designed to accommodate up to ten guests. Each fully furnished condo features floor-to-ceiling windows, private balconies, and Gulf-front views that highlight the shoreline and natural light throughout the living space.
+
+Guests at Phoenix IV enjoy resort-style amenities and direct beach access while still having the comforts of home, making it an easy choice for couples, families, and groups. With
+icon: 🏠
+metadata: {}
+sort_order: 1
+check_in_time: 16:00
+check_out_time: 11:00
+min_nights: 1
+cleaning_fee: 0
+bedrooms: 3
+
+####################################################################################################
+# TABLE: entity_section_items_metadata_backup   -   1 row(s)
+####################################################################################################
+
+--- entity_section_items_metadata_backup [row 1 of 1] ---
+id: 9b82a2cb-7461-4cac-affa-bd5ff9a8f87f
+entity_slug: phoenix-iv
+item_name: Phoenix IV
+metadata: {
+  "bedrooms": 3,
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_00.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_11.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_12.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_13.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_14.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_15.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_16.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_17.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_18.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_19.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_20.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_21.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_22.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_23.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_24.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_25.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_26.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_27.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_28.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_29.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_30.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_31.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_32.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_33.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_34.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_35.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_36.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_37.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_38.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_39.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_40.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_41.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_42.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_43.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_44.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_45.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_46.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_47.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_48.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-iv/image_49.jpg"
+  ],
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "check_out_time": "11:00"
+}
+backed_up_at: 2026-07-16T09:49:37.166591+00:00
+
+####################################################################################################
+# TABLE: entity_sections   -   1 row(s)
+####################################################################################################
+
+--- entity_sections [row 1 of 1] ---
+id: 669d8ffb-ae58-4cb6-889c-1f083c94416f
+entity_slug: phoenix-iv
+section_type: rooms
+section_name: Units & Rates
+sort_order: 2
+module_key: rooms
+is_active: true
+
+####################################################################################################
+# TABLE: entity_sources   -   2 row(s)
+####################################################################################################
+
+--- entity_sources [row 1 of 2] ---
+id: 78aebe7f-0e78-4889-bf79-641f6afd7453
+entity_slug: phoenix-iv
+source_system: liquid_life
+source_url: https://www.liquidlifevacationrentals.com/resort/phoenix-iv
+scope: entity
+observed_at: 2026-07-16T00:00:00+00:00
+confidence: high
+created_at: 2026-07-16T10:58:22.481614+00:00
+
+--- entity_sources [row 2 of 2] ---
+id: c320c6fb-7e9e-41c4-b7c7-956c544da3a8
+entity_slug: phoenix-iv
+source_system: condos_zip_brett_robinson
+observed_at: 2026-07-16T00:00:00+00:00
+confidence: medium
+note: Structured scrape of Brett-Robinson property page (condos_data1_3.zip)
+created_at: 2026-07-16T10:59:56.848474+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   38 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 38] ---
+id: 91b158cb-75db-43f7-9940-4545f9350954
+entity_slug: phoenix-iv
+tag_name: condo
+tag_category: type
+
+--- entity_tags [row 2 of 38] ---
+id: 0ecb54d1-851a-4f15-8849-7a8848c1e904
+entity_slug: phoenix-iv
+tag_name: Condos & Stays
+tag_category: category
+
+--- entity_tags [row 3 of 38] ---
+id: 62d218ed-81e8-4567-93b4-c6333b926e9b
+entity_slug: phoenix-iv
+tag_name: Pool
+tag_category: amenity
+
+--- entity_tags [row 4 of 38] ---
+id: 29746bd2-338e-4563-8f3e-8d936b8b2b4c
+entity_slug: phoenix-iv
+tag_name: 3 Bedrooms
+tag_category: amenity
+
+--- entity_tags [row 5 of 38] ---
+id: 35a7300b-e01e-4d15-9237-f1188d26b368
+entity_slug: phoenix-iv
+tag_name: Restaurant
+tag_category: amenity
+
+--- entity_tags [row 6 of 38] ---
+id: aadcdfb6-e9ca-4d40-96ce-1a0f9923a06c
+entity_slug: phoenix-iv
+tag_name: Outdoor pool
+tag_category: amenity
+
+--- entity_tags [row 7 of 38] ---
+id: c3777be3-b17f-41b3-b6ae-56ce319307ee
+entity_slug: phoenix-iv
+tag_name: Sauna
+tag_category: amenity
+
+--- entity_tags [row 8 of 38] ---
+id: 624caf5b-3d69-4c06-aee7-77be166b9e15
+entity_slug: phoenix-iv
+tag_name: Hot tub
+tag_category: amenity
+
+--- entity_tags [row 9 of 38] ---
+id: 934ec411-aaf1-43d9-b098-9b2af08438f0
+entity_slug: phoenix-iv
+tag_name: Fitness center
+tag_category: amenity
+
+--- entity_tags [row 10 of 38] ---
+id: dd647876-1978-4370-9751-26571e6c4248
+entity_slug: phoenix-iv
+tag_name: Tennis court
+tag_category: amenity
+
+--- entity_tags [row 11 of 38] ---
+id: 43552fc8-367f-48d6-9250-bc1fad2c060c
+entity_slug: phoenix-iv
+tag_name: Barbeque
+tag_category: amenity
+
+--- entity_tags [row 12 of 38] ---
+id: c576984d-574a-4066-885f-43679e20ac3f
+entity_slug: phoenix-iv
+tag_name: Grill
+tag_category: amenity
+
+--- entity_tags [row 13 of 38] ---
+id: eb06d99b-b0d3-462e-ac4e-da9ef64a4142
+entity_slug: phoenix-iv
+tag_name: Parking
+tag_category: amenity
+
+--- entity_tags [row 14 of 38] ---
+id: a9f3e58a-747a-45e6-9c78-bf8e1c4ba974
+entity_slug: phoenix-iv
+tag_name: Kiddie pool
+tag_category: amenity
+
+--- entity_tags [row 15 of 38] ---
+id: 4c33d566-0e24-46fe-93f8-563134817e72
+entity_slug: phoenix-iv
+tag_name: Hot tubs
+tag_category: amenity
+
+--- entity_tags [row 16 of 38] ---
+id: cf450b89-613e-4388-9727-006606d3a4f9
+entity_slug: phoenix-iv
+tag_name: Pickleball court
+tag_category: amenity
+
+--- entity_tags [row 17 of 38] ---
+id: f80506b4-0bbf-44d3-8555-da754ee45463
+entity_slug: phoenix-iv
+tag_name: Basketball
+tag_category: amenity
+
+--- entity_tags [row 18 of 38] ---
+id: 4937f26b-16c8-479a-a753-53d990a312cb
+entity_slug: phoenix-iv
+tag_name: Barbeque grills.
+tag_category: amenity
+
+--- entity_tags [row 19 of 38] ---
+id: 24cce384-f259-4ec0-b6a0-9978398ca8fe
+entity_slug: phoenix-iv
+tag_name: Beach access
+tag_category: amenity
+
+--- entity_tags [row 20 of 38] ---
+id: 0e068276-5838-4ae0-8f33-d3da1721e051
+entity_slug: phoenix-iv
+tag_name: Beach chair
+tag_category: amenity
+
+--- entity_tags [row 21 of 38] ---
+id: c530e65e-12b2-4927-9dd0-3bdc0f6dddf7
+entity_slug: phoenix-iv
+tag_name: Elevator
+tag_category: amenity
+
+--- entity_tags [row 22 of 38] ---
+id: 727e7573-ba27-402a-a934-2b36bc1b5559
+entity_slug: phoenix-iv
+tag_name: Accessible
+tag_category: amenity
+
+--- entity_tags [row 23 of 38] ---
+id: a16bb510-9ca3-487c-9f4f-b804dc8633e7
+entity_slug: phoenix-iv
+tag_name: Washer and dryer
+tag_category: amenity
+
+--- entity_tags [row 24 of 38] ---
+id: 53c77fa9-21fe-4fa3-92d2-63f517e5c006
+entity_slug: phoenix-iv
+tag_name: Wi-fi
+tag_category: amenity
+
+--- entity_tags [row 25 of 38] ---
+id: 3763233e-6060-44f6-97a0-ec81132cfc53
+entity_slug: phoenix-iv
+tag_name: Game Room
+tag_category: amenity
+
+--- entity_tags [row 26 of 38] ---
+id: cee30b21-1189-41d2-848f-0f03e01ca2ce
+entity_slug: phoenix-iv
+tag_name: Indoor Pool
+tag_category: amenity
+
+--- entity_tags [row 27 of 38] ---
+id: c0de6ed6-277e-48e5-a584-b77c09305072
+entity_slug: phoenix-iv
+tag_name: Racquetball Court
+tag_category: amenity
+
+--- entity_tags [row 28 of 38] ---
+id: ce09547f-e2f5-4654-976f-d56e55650b6e
+entity_slug: phoenix-iv
+tag_name: Grilling Area
+tag_category: amenity
+
+--- entity_tags [row 29 of 38] ---
+id: 889cd5b5-0f44-4ad9-b11c-d42b2bf16d56
+entity_slug: phoenix-iv
+tag_name: Tennis Courts
+tag_category: amenity
+
+--- entity_tags [row 30 of 38] ---
+id: 18c2e890-00eb-41c0-ae8c-59216fdd184f
+entity_slug: phoenix-iv
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 31 of 38] ---
+id: 2948f24f-2fe5-45d5-8ecd-9fe2fbcdb54a
+entity_slug: phoenix-iv
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 32 of 38] ---
+id: 9b4b3caf-4530-4da4-ac4c-96b2c74ff886
+entity_slug: phoenix-iv
+tag_name: real_estate_agency
+tag_category: google_type
+
+--- entity_tags [row 33 of 38] ---
+id: 9cd09934-7c69-4757-a74e-c123c6a9bc88
+entity_slug: phoenix-iv
+tag_name: travel_agency
+tag_category: google_type
+
+--- entity_tags [row 34 of 38] ---
+id: c538f6c5-2e5e-4f60-a0f6-215a2ca8860d
+entity_slug: phoenix-iv
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 35 of 38] ---
+id: 5b6c9351-94c6-4f65-a506-63fac127d1fa
+entity_slug: phoenix-iv
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 36 of 38] ---
+id: 326c7901-fba2-416d-a9be-5e6722287b70
+entity_slug: phoenix-iv
+tag_name: real_estate_agency
+tag_category: google_type
+
+--- entity_tags [row 37 of 38] ---
+id: 64d8c691-4f30-49a7-b3d6-9434658ac6f9
+entity_slug: phoenix-iv
+tag_name: travel_agency
+tag_category: google_type
+
+--- entity_tags [row 38 of 38] ---
+id: f9570a05-be8f-4a49-8a01-b8233d1b28ac
+entity_slug: phoenix-iv
+tag_name: service
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   2 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 2] ---
+id: 9f2a1a5e-a39e-473e-8d36-e9bfafa2aeb4
+entity_slug: phoenix-iv
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+--- entity_theme [row 2 of 2] ---
+id: 96a7be77-f8cb-4436-9291-36901a071e51
+entity_slug: phoenix-iv
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: faqs   -   15 row(s)
+####################################################################################################
+
+--- faqs [row 1 of 15] ---
+id: 7c0f14b8-e804-401b-8e48-41b7efbf5a7f
+entity_id: 84ef3dc3-92d5-42c4-9617-02852060ff7b
+question: What types of units are available at Phoenix IV?
+answer: Phoenix IV offers spacious 1-, 2-, and 3-bedroom units.
+created_at: 2026-06-27T12:00:46.681541
+sort_order: 4
+entity_slug: phoenix-iv
+category: general
+
+--- faqs [row 2 of 15] ---
+id: 01379999-9109-438e-bbeb-7d1fb3cc00f1
+entity_id: 84ef3dc3-92d5-42c4-9617-02852060ff7b
+question: Is there a grocery store nearby Phoenix 4?
+answer: Yes, there are several grocery stores located near Phoenix 4 in Orange Beach, including Publix, Walmart, and Winn-Dixie.
+created_at: 2026-06-27T12:00:46.681541
+sort_order: 7
+entity_slug: phoenix-iv
+category: general
+
+--- faqs [row 3 of 15] ---
+id: 4d84250c-f88e-4441-a12e-be9c5eb43542
+entity_id: 84ef3dc3-92d5-42c4-9617-02852060ff7b
+question: What popular attractions are close to Phoenix IV?
+answer: At Phoenix IV, enjoy Orange Beach’s main attraction, the beach, with direct access to the sugar-white sand. You can walk to several restaurants, mini-golf, and marinas, where you can enjoy fishing, kayaking, and parasailing in the Gulf. Also nearby is Adventure Island with go-karts, bumper boats, and rides, and Gulf State Park for fishing, hiking, and bike trails. Love history and culture? There are several museums and historic sites to check out in the area, like the Orange Beach History Museum
+created_at: 2026-06-14T04:00:06.636568
+sort_order: 1
+entity_slug: phoenix-iv
+category: general
+
+--- faqs [row 4 of 15] ---
+id: 70b90667-65d7-4163-a10b-4ca9fce9f8a9
+entity_id: 84ef3dc3-92d5-42c4-9617-02852060ff7b
+question: What are the check-in and check-out times at Phoenix 4?
+answer: Check-in and check-out times vary by season. For more information, refer to our Check In and Check Out Times Page and review your booking confirmation message.
+created_at: 2026-06-14T04:00:06.636568
+sort_order: 2
+entity_slug: phoenix-iv
+category: general
+
+--- faqs [row 5 of 15] ---
+id: 66e5d624-1ede-496c-8817-6630e824a117
+entity_id: 84ef3dc3-92d5-42c4-9617-02852060ff7b
+question: Where is Phoenix IV located?
+answer: Phoenix IV is located at 24250 Perdido Beach Blvd, Orange Beach, AL 36561 and is approximately 4.5 miles east of Hwy 59.
+created_at: 2026-06-14T04:00:06.636568
+sort_order: 3
+entity_slug: phoenix-iv
+category: general
+
+--- faqs [row 6 of 15] ---
+id: 014a13b0-0800-43ae-bd54-add608783d2b
+entity_id: 84ef3dc3-92d5-42c4-9617-02852060ff7b
+question: What amenities are included in Phoenix 4 vacation rentals?
+answer: Phoenix 4 features several luxury amenities including: indoor and outdoor pools, kiddie pool, sauna, hot tubs, fitness center, tennis court, pickleball court, basketball, parking, and barbeque grills.
+created_at: 2026-06-14T04:00:06.636568
+sort_order: 4
+entity_slug: phoenix-iv
+category: general
+
+--- faqs [row 7 of 15] ---
+id: 21dab7f7-88a2-4be0-badb-e207b4953c09
+entity_id: 84ef3dc3-92d5-42c4-9617-02852060ff7b
+question: What types of units are available for rent at Phoenix IV?
+answer: Phoenix IV offers spacious 1-, 2-, and 3-bedroom units
+created_at: 2026-06-14T04:00:06.636568
+sort_order: 5
+entity_slug: phoenix-iv
+category: general
+
+--- faqs [row 8 of 15] ---
+id: 04b2422d-ce4a-4f31-b910-ba29f746296a
+entity_id: 84ef3dc3-92d5-42c4-9617-02852060ff7b
+question: Do all Phoenix 4 condominiums have Gulf views?
+answer: Yes, all Phoenix 4 vacation rentals have floor-to-ceiling windows and private balconies overlooking the Gulf.
+created_at: 2026-06-14T04:00:06.636568
+sort_order: 6
+entity_slug: phoenix-iv
+category: general
+
+--- faqs [row 9 of 15] ---
+id: adf44d24-b271-42eb-85e9-6171d059fbd2
+entity_id: 84ef3dc3-92d5-42c4-9617-02852060ff7b
+question: Is there beach access available at Phoenix IV?
+answer: Yes, Phoenix IV offers direct beach access and beach chair rentals for guests.
+created_at: 2026-06-14T04:00:06.636568
+sort_order: 7
+entity_slug: phoenix-iv
+category: general
+
+--- faqs [row 10 of 15] ---
+id: 745a873f-f1cd-40fe-88fd-8e4fc326a630
+entity_id: 84ef3dc3-92d5-42c4-9617-02852060ff7b
+question: Is there a grocery store nearby Phoenix 4 where guests can purchase food, supplies, and necessities?
+answer: Yes, there are several grocery stores located near Phoenix 4 in Orange Beach, including Publix, Walmart, and Winn-Dixie. Grocery delivery is offered at participating stores with partnering apps.
+created_at: 2026-06-14T04:00:06.636568
+sort_order: 8
+entity_slug: phoenix-iv
+category: general
+
+--- faqs [row 11 of 15] ---
+id: f7dadb06-47c7-4cc4-bc4a-b5e62d61ef72
+entity_id: 84ef3dc3-92d5-42c4-9617-02852060ff7b
+question: Does Phoenix IV have accessibility options?
+answer: Phoenix IV Orange Beach is equipped with accessibility features to ensure that guests can enjoy their stay. The resort has accessible entrances and public areas, including ramps and elevators. The units were also originally designed with accessibility in mind. Contact us at 1-800-211-7892 to discuss accommodations and options.
+created_at: 2026-06-14T04:00:06.636568
+sort_order: 9
+entity_slug: phoenix-iv
+category: general
+
+--- faqs [row 12 of 15] ---
+id: 8453723e-fedd-4abe-a632-2e518968c833
+entity_id: 84ef3dc3-92d5-42c4-9617-02852060ff7b
+question: Is Phoenix 4 a good choice for family vacations?
+answer: Yes, Phoenix 4 Orange Beach is a great choice for families. Families can spread out in fully-furnished 1-, 2-, and 3-bedroom units and enjoy direct beach access and tons of  family-friendly amenities, including indoor and outdoor pools, a kiddie pool, tennis courts, and more. With a family-friendly location, you can walk to several restaurants and take a short drive to endless nearby attractions and activities for all ages in both Orange Beach and Gulf Shores. With so much to do at Phoenix 4 and
+created_at: 2026-06-14T04:00:06.636568
+sort_order: 10
+entity_slug: phoenix-iv
+category: general
+
+--- faqs [row 13 of 15] ---
+id: b7a9b1d3-f67b-45f5-acab-e70f2e6321e7
+entity_id: 84ef3dc3-92d5-42c4-9617-02852060ff7b
+question: Is there a washer and dryer in each unit at Phoenix IV?
+answer: Yes, each unit at Phoenix IV is equipped with a washer and dryer.
+created_at: 2026-06-14T04:00:06.636568
+sort_order: 11
+entity_slug: phoenix-iv
+category: general
+
+--- faqs [row 14 of 15] ---
+id: 77244c6d-39f1-42c8-a4f6-94143690cef1
+entity_id: 84ef3dc3-92d5-42c4-9617-02852060ff7b
+question: Is there free Wi-Fi available at Phoenix 4?
+answer: Yes, Phoenix 4 offers complimentary Wi-Fi access for guests.
+created_at: 2026-06-14T04:00:06.636568
+sort_order: 12
+entity_slug: phoenix-iv
+category: general
+
+--- faqs [row 15 of 15] ---
+id: f8b31613-6333-499e-b988-16f68e3a579c
+entity_id: 84ef3dc3-92d5-42c4-9617-02852060ff7b
+question: Why book a Phoenix IV rental with Brett/Robinson?
+answer: By booking with Brett/Robinson Vacations you get the benefit of over 40 years of experience in the area. Brett/Robinson operates and maintains Phoenix IV and we have an on-site staff available to ensure you have a superb stay at the beach. We focus on quality, cleanliness and functionality in all of our available units. Our dedicated on-site customer service staff is here to help with any needs you have during your stay. Also, our knowledgeable area specialists can assist you in planning your it
+created_at: 2026-06-14T04:00:06.636568
+sort_order: 13
+entity_slug: phoenix-iv
+category: general
+
+####################################################################################################
+# TABLE: industry_condo   -   1 row(s)
+####################################################################################################
+
+--- industry_condo [row 1 of 1] ---
+entity_slug: phoenix-iv
+listed_unit_count: 0
+bedrooms_min: 3
+bedrooms_max: 3
+has_pool: true
+pet_friendly: false
+updated_at: 2026-07-21T16:59:02.358415+00:00
+
+####################################################################################################
+# TABLE: recovery_import_log   -   51 row(s)
+####################################################################################################
+
+--- recovery_import_log [row 1 of 51] ---
+id: 99c6a0e2-f38c-4796-a820-5d78582f26d3
+batch_id: draft-businesses-netnew-2026-07-19
+target_table: entity
+target_row_id: 679f6487-487f-4da6-bb78-cbc0614159d9
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity
+source_id: 0138346f-351e-4a71-8ddd-2d64d1cd9ce1
+action: insert
+imported_at: 2026-07-19T20:33:24.034873+00:00
+
+--- recovery_import_log [row 2 of 51] ---
+id: e1563f5b-e176-496a-b4c7-f96ccf5d767a
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: aa1e353d-9274-4b68-9675-4634a29637d7
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 92fddbae-95fe-465e-98a2-a88fb9ca9fed
+action: insert
+imported_at: 2026-07-19T21:18:17.557408+00:00
+
+--- recovery_import_log [row 3 of 51] ---
+id: 572b3d90-90dc-40a1-ac2b-34b857f2fa44
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: a5ba7f3e-5a3b-456b-952a-fa66540d50ef
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: c5c2f230-c946-4047-9d45-d4acd1b3c511
+action: insert
+imported_at: 2026-07-19T21:18:17.557408+00:00
+
+--- recovery_import_log [row 4 of 51] ---
+id: 8a4b0e8a-ac8d-404b-a3b9-4fb0ef064ec3
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: e69c3ff5-5bfe-4718-8230-6a9e27cfa089
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: fecda312-060d-449e-a541-f439a34d9312
+action: insert
+imported_at: 2026-07-19T21:18:17.557408+00:00
+
+--- recovery_import_log [row 5 of 51] ---
+id: d65bc1a2-23e4-4de7-aaa4-04d517bbb05c
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: bcb830e5-19c8-4659-9a59-7f1df242f0a6
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 84151d77-9b7a-4574-8bc0-7c7c3ea45142
+action: insert
+imported_at: 2026-07-19T21:18:17.557408+00:00
+
+--- recovery_import_log [row 6 of 51] ---
+id: f4eefab3-42ed-42f5-87a8-b5a7d279f5fd
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 9df8abeb-4383-4cb3-86df-03d2884ad566
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: b5d59d60-73cd-4760-aee7-46d6d2df3f14
+action: insert
+imported_at: 2026-07-19T21:18:17.557408+00:00
+
+--- recovery_import_log [row 7 of 51] ---
+id: 94623ac4-1347-4b40-b543-f4b2242bb053
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 3d0edfc8-1b69-4caf-b06c-227aef3c5660
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 2abc60f9-8535-4e40-96e9-b4b855c334fe
+action: insert
+imported_at: 2026-07-19T21:18:17.557408+00:00
+
+--- recovery_import_log [row 8 of 51] ---
+id: 109c941e-6403-4cf8-bbac-6ef587a1a881
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 4d07cdd2-9136-4f7e-bd3d-7734003f50c4
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: fdd4f655-1f8a-4931-99d8-36d3bf2d59d2
+action: insert
+imported_at: 2026-07-19T21:18:17.557408+00:00
+
+--- recovery_import_log [row 9 of 51] ---
+id: 260ee886-3139-4818-b3cc-8e566a2ac6df
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 70774df8-f013-49c0-9bef-801ffc58f5b5
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: d1359893-1be8-4433-8eb1-478ede665478
+action: insert
+imported_at: 2026-07-19T21:18:17.557408+00:00
+
+--- recovery_import_log [row 10 of 51] ---
+id: 8612c7d8-4801-4cd6-b9b8-b22fb3d52d7d
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 196c4645-0fec-4984-9fad-e14410b1e956
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 474c2cda-d962-4307-8fa5-4dd7acb53a4b
+action: insert
+imported_at: 2026-07-19T21:18:17.557408+00:00
+
+--- recovery_import_log [row 11 of 51] ---
+id: 67b46090-8f25-462c-8e59-74cea93f2e11
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: d59f52d8-6596-4482-837b-7e7db21d95dc
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 73d48dd0-d07b-402c-92b4-268d1eb014f8
+action: insert
+imported_at: 2026-07-19T21:18:17.557408+00:00
+
+--- recovery_import_log [row 12 of 51] ---
+id: 4c4f44a7-e005-4744-8071-4295ac6c61c6
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 81d4927f-a6d3-48d9-b869-3b25ce5ad270
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 2f410c23-14e0-4879-98f7-8bd9c09f3001
+action: insert
+imported_at: 2026-07-19T21:18:17.557408+00:00
+
+--- recovery_import_log [row 13 of 51] ---
+id: 9c8d40ae-8f2f-438d-b6d5-36e79b57c59a
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 062fd706-4170-4242-b49a-6438d587592b
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 77bac298-f2a2-4cd2-9f85-6d6aa8f7ab86
+action: insert
+imported_at: 2026-07-19T21:18:17.557408+00:00
+
+--- recovery_import_log [row 14 of 51] ---
+id: fcf763cd-b27e-4bee-876b-f7dd2cf01350
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: e90a1fa9-93cd-4569-8f1f-c1e54b4aa0e2
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 035b9311-1f9d-499f-8742-9ffdb6dca40e
+action: insert
+imported_at: 2026-07-19T21:18:17.557408+00:00
+
+--- recovery_import_log [row 15 of 51] ---
+id: 14c3b448-3521-4450-9e35-0c1f1121d4bd
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 93c33f5c-4fb0-4e02-b030-4127d6f2e931
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 6721645f-d681-4e66-ad09-f2d8e265d582
+action: insert
+imported_at: 2026-07-19T21:18:17.557408+00:00
+
+--- recovery_import_log [row 16 of 51] ---
+id: 8ee39d00-81ea-48e6-a1c4-439761e90709
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 4726cd99-0c9b-4e2e-aedc-c56a2d12654d
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 00a19aab-12ec-42da-a9aa-41cd27f4f2e3
+action: insert
+imported_at: 2026-07-19T21:18:17.557408+00:00
+
+--- recovery_import_log [row 17 of 51] ---
+id: 8f3415f0-484c-4a17-b2ae-f6fd5fda7361
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 6056c335-a63d-4dd5-b4c4-b9412b6c7634
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 3d77d554-8786-4209-86c2-926755ed97eb
+action: insert
+imported_at: 2026-07-19T21:18:17.557408+00:00
+
+--- recovery_import_log [row 18 of 51] ---
+id: bf388de4-dd70-4ba5-a46c-88b24900bdd6
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 34bd2648-e7ef-4e58-9ec2-c347f12fd24d
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: c318834f-8fd3-4db5-9942-9fcf722981dd
+action: insert
+imported_at: 2026-07-19T21:18:17.557408+00:00
+
+--- recovery_import_log [row 19 of 51] ---
+id: 134eecf8-ed69-4e99-bb6e-45471ce12d17
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 5ddca664-d74a-4cf8-a360-830aebefee58
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 5b2437b3-8a12-41de-893d-25b82cecab24
+action: insert
+imported_at: 2026-07-19T21:18:17.557408+00:00
+
+--- recovery_import_log [row 20 of 51] ---
+id: bfd1fa83-830d-47eb-aa75-4d1691a5538a
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: f5fffc91-f656-4e20-9251-df95fcdd68ac
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 9d572b48-6d59-425c-b0b3-892c28b96383
+action: insert
+imported_at: 2026-07-19T21:18:17.557408+00:00
+
+--- recovery_import_log [row 21 of 51] ---
+id: 8418e5e7-3bc3-467c-9dff-03aa1f88347b
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: e3a64255-9426-4401-ae66-50cb2e27e74e
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 8be44977-3036-4d14-ae91-3ce5bf7a0f01
+action: insert
+imported_at: 2026-07-19T21:18:17.557408+00:00
+
+--- recovery_import_log [row 22 of 51] ---
+id: ac17cc31-b870-4bb3-8ec8-afbfd02d0702
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 42e76048-ad5b-40d3-bf1f-00db046075af
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: c90a17b2-039f-4f68-a9d8-06c8b09bac19
+action: insert
+imported_at: 2026-07-19T21:18:17.557408+00:00
+
+--- recovery_import_log [row 23 of 51] ---
+id: 8a93ca25-26b1-4031-8863-c056cb3942d0
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: a4ccb28a-6117-48a7-986c-d50e5c76a51b
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 857a1648-a210-402b-ae28-518e99989e88
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 24 of 51] ---
+id: e44af2b2-edb0-4962-9890-352c42f30424
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 33f9fa3f-e0d5-40df-ae9a-53da82daf993
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 13ac75ff-d70d-4f79-9aa6-54d9fc7a9ee4
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 25 of 51] ---
+id: 95771cd7-cec1-4710-ab59-9fa2fa732b0e
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 0d8c5c1d-0663-415a-96f5-e6c81cff1c2d
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 78bcc406-8aeb-4ae6-b3e0-22b978326c26
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 26 of 51] ---
+id: 0ab8c1c6-e819-4b45-bacc-be97cfd24c36
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 2c04a4fd-d428-47d5-abf3-d8f477fad81f
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: b6fd881a-3a1a-46d0-970e-a56da5757597
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 27 of 51] ---
+id: e61beb70-4785-445f-832f-e27a7b3f9e01
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: bcb47a5c-f5b4-4f1c-a7cd-5d65492648dd
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 1acba278-d588-4779-bf9e-07192315ff6b
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 28 of 51] ---
+id: 12b38288-8025-4899-a9c3-477da27640cf
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 6568268f-eb7e-4e9e-b214-94996463d01b
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 4a23a08e-12c4-4e57-82ae-f1eb534cd570
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 29 of 51] ---
+id: 392e6306-d1ab-4961-ba93-d85b717a9d89
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: e0569eb9-7168-4f8a-abaa-fce8e78b0646
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: d9b6473c-0265-49c0-8999-4f6ffcf7548d
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 30 of 51] ---
+id: 263942f5-4f9a-4039-a27d-0b21713c92bb
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 216e8d13-ca7a-4bfb-b3ee-4e9f40912590
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 13bf347d-6455-48c4-a65b-d38da728cf87
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 31 of 51] ---
+id: 6b24a61e-a23a-43ee-ae35-2b1fa226bf7b
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: d9cd746f-399f-49a5-be62-903ae2dc2739
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 0876f517-9762-4ac2-893e-4ca98dfaaaff
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 32 of 51] ---
+id: 7a40d199-6dc2-44d4-ae11-9278592ea5cf
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 7f33eb4d-6ebe-4cd9-9a8d-1b098da6928c
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: cf9ca75f-d39e-4d6e-bd9a-97a7f9b68b0c
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 33 of 51] ---
+id: 6a156ce3-648f-43fc-8089-76fe76c40994
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: b933a29c-2fc9-40e0-bede-e97f84feb63c
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: cbc3530b-fc89-4d17-91dc-2b8bcd014e99
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 34 of 51] ---
+id: 71a4f2f6-f1ae-4e62-a50a-3c38b66484a0
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 917e75dd-25a6-4076-9550-77d0c94e2531
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 6ce6a696-60a0-4a8f-8ccd-6b7601d7871b
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 35 of 51] ---
+id: 0b84006a-250d-4543-820e-3200e12964fd
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 82c0e8de-ef67-4135-a27d-6dd953f5d47d
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 4c48429a-aca4-43eb-bee2-14effdbc38ab
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 36 of 51] ---
+id: f59ad91f-8081-40d6-8327-77a9980b64a9
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 55d0d5f3-76bf-41d8-9cf6-17ecf23dd0c0
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 2979147f-e984-43d8-bcdf-02d55d3550cc
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 37 of 51] ---
+id: c810dd9d-3620-4b2a-8daf-eec7e78db2f5
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: d83cebb6-0bf9-4b3c-9e07-bf42644d4433
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 5ad6efac-c3f5-40a0-b054-5d74dc78be90
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 38 of 51] ---
+id: 32ef0607-3856-443c-b5c9-ae3f3b1391da
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: aae345a2-ed62-4aa0-ad59-92631967f810
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 836035d3-f6a6-4891-a22c-7d2ae9855548
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 39 of 51] ---
+id: 2e036591-577e-4a96-9c78-f1cd97b3e723
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 4fb36a86-6c6a-44f2-86f3-60e01aee9430
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 443f9f07-ffc6-491b-ae80-061a96cbea1e
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 40 of 51] ---
+id: bba26ab0-1ceb-4659-b869-6a0d99572a1c
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: e272f917-9270-42fd-b6e5-28e2c746a970
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 1ed94719-2f97-46ac-a2cf-b3ef5bcfa18b
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 41 of 51] ---
+id: af8352e9-2993-419f-80ab-3cdeaed4dc67
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 2012682e-42a4-4f24-b3b3-a7f7aa4fe942
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: b547fa8d-6e8e-40f3-8f06-e58fd23d14dc
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 42 of 51] ---
+id: a5c07daa-8fe2-4633-8446-eae94e75a776
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: fd4e9152-18b9-4273-acfb-d9f3cbf932b5
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: d0f27229-e3ef-42d1-92db-e3450622a2b8
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 43 of 51] ---
+id: 42a6d9fb-1930-4a88-9bef-93ca2406ae24
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: f40e65ed-c826-46be-9012-fb21705c95f4
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 6dce7a52-3c6f-4aaa-892e-d84d6ffb15c7
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 44 of 51] ---
+id: 2fcc6e73-a277-40ec-8a08-f45d8ce32a6c
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 862692f5-36e6-48c0-b804-d0c1c276baf0
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: feddb87d-7d3b-4d57-a41e-ffdc664791e5
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 45 of 51] ---
+id: ff048927-01e0-490c-bb18-b2d56baa4c06
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: e39abc3e-3cf1-415b-bdc0-d3ce8994d60f
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: ae4ea534-3e83-42b9-8dc3-590c6e0c441b
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 46 of 51] ---
+id: 184eab1d-387b-4436-b6da-7332acdc04c6
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 24275b49-e44c-4663-9f78-0be9d3d61830
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 728fdb05-5a56-441e-8ffc-5c948eb9fb8e
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 47 of 51] ---
+id: e3c6d27e-bd5e-4ea5-8d0f-598223915464
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: acef995b-048a-49d1-b047-158f847c9dba
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: b9feedd5-e877-4600-9f34-85292fcd711b
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 48 of 51] ---
+id: 21057403-4f57-42bb-9ff2-2464d93fdd1c
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 9f1b3948-ace1-4aa0-9a82-f5fe531096a4
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 5a604e9d-f513-41a4-9ea8-a805fe14e03f
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 49 of 51] ---
+id: b6e00639-b2ba-4f64-9edc-6e4c3069e1e0
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: ba75ee4c-1300-4328-828d-898b3c251312
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: bbd35dc8-de92-4cfc-80a0-e308eb57b465
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 50 of 51] ---
+id: 053c59ef-c227-4a72-998a-23a45f4a6397
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: 56c659b3-7276-4dbe-aba4-8a82a495f2be
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 3c1ed14e-5170-44cd-a1d5-0e79a77f0160
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+--- recovery_import_log [row 51 of 51] ---
+id: 441546fe-bfb6-457b-96d6-3c0972ae8aee
+batch_id: draft-content-may-photos-2026-07-19
+target_table: entity_photos
+target_row_id: f804aedf-8020-43c1-a767-c2775a47a283
+entity_slug: phoenix-iv
+source_db: may
+source_table: entity_photos
+source_id: 3aa769ef-8def-48a7-988a-1aca4adba3db
+action: insert
+imported_at: 2026-07-19T21:24:07.021032+00:00
+
+####################################################################################################
+# TABLE: rental_units   -   1 row(s)
+####################################################################################################
+
+--- rental_units [row 1 of 1] ---
+id: 9d15547d-78c6-4b85-9cb5-dddaf7e1dfd9
+entity_slug: phoenix-iv
+slug: phoenix-iv
+name: Phoenix IV
+bedrooms: 3
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+city: Orange Beach
+state: AL
+source_resource_id: 8d3ea002-648e-4441-961e-25f08c04c5c3
+is_active: true
+created_at: 2026-07-23T00:06:23.937689+00:00
+updated_at: 2026-07-23T00:06:23.937689+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: phoenix-iv
+entity_slug: phoenix-iv
+title: Phoenix IV
+category: condominium_complex
+subtitle: Phoenix IV offers spacious beachfront condos in Orange Beach with 1-, 2-, and 3-bedroom floor plans designed to accommodate up to ten guests. Each fully furnished condo features floor-to-ceiling windows, private balconies, and Gulf-front views that highlight the shoreline and natural light throughout the living space.
+
+Guests at Phoenix IV enjoy resort-style amenities and direct beach access while still having the comforts of home, making it an easy choice for couples, families, and groups. With
+search_vector: '1':15C '2':16C '3':18C 'access':69C 'accommod':24C 'amen':65C 'balconi':40C 'beach':13C,68C 'beachfront':9C 'bedroom':19C 'ceil':37C 'choic':81C 'comfort':74C 'complex':4B 'condo':10C,32C 'condominium':3B 'coupl':83C 'design':22C 'direct':67C 'easi':80C 'enjoy':61C 'famili':84C 'featur':33C 'floor':20C,35C 'floor-to-ceil':34C 'front':44C 'fulli':30C 'furnish':31C 'group':86C 'guest':28C,57C 'gulf':43C 'gulf-front':42C 'highlight':47C 'home':76C 'iv':2A,6C,60C 'light':52C 'live':55C 'make':77C 'natur':51C 'offer':7C 'orang':12C 'phoenix':1A,5C,59C 'plan':21C 'privat':39C 'resort':63C 'resort-styl':62C 'shorelin':49C 'space':56C 'spacious':8C 'still':71C 'style':64C 'ten':27C 'throughout':53C 'view':45C 'window':38C
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 13934
+entity_slug: phoenix-iv
+title: Phoenix IV
+category: room
+subtitle: Phoenix IV offers spacious beachfront condos in Orange Beach with 1-, 2-, and 3-bedroom floor plans designed to accommodate up to ten guests. Each fully furnished condo features floor-to-ceiling windows, private balconies, and Gulf-front views that highlight the shoreline and natural light throughout the living space.
+
+Guests at Phoenix IV enjoy resort-style amenities and direct beach access while still having the comforts of home, making it an easy choice for couples, families, and groups. With
+search_vector: '1':13C '2':14C '3':16C 'access':67C 'accommod':22C 'amen':63C 'balconi':38C 'beach':11C,66C 'beachfront':7C 'bedroom':17C 'ceil':35C 'choic':79C 'comfort':72C 'condo':8C,30C 'coupl':81C 'design':20C 'direct':65C 'easi':78C 'enjoy':59C 'famili':82C 'featur':31C 'floor':18C,33C 'floor-to-ceil':32C 'front':42C 'fulli':28C 'furnish':29C 'group':84C 'guest':26C,55C 'gulf':41C 'gulf-front':40C 'highlight':45C 'home':74C 'iv':2A,4C,58C 'light':50C 'live':53C 'make':75C 'natur':49C 'offer':5C 'orang':10C 'phoenix':1A,3C,57C 'plan':19C 'privat':37C 'resort':61C 'resort-styl':60C 'shorelin':47C 'space':54C 'spacious':6C 'still':69C 'style':62C 'ten':25C 'throughout':51C 'view':43C 'window':36C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: phoenix-iv

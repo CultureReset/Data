@@ -1,0 +1,1263 @@
+====================================================================================================
+SLUG: thrifty-car-rentals
+NAME: Thrifty
+INDUSTRY: rental
+SUBTYPE: car_rental
+TABLES WITH DATA: 21
+TOTAL ROWS: 83
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (6 rows)
+  ai_entity_profiles_full  (1 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_address_areas  (1 rows)
+  entity_attributes  (5 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_nearby_landmark_types  (19 rows)
+  entity_nearby_landmarks  (6 rows)
+  entity_offer  (1 rows)
+  entity_tags  (18 rows)
+  entity_theme  (1 rows)
+  industry_rental  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: thrifty-car-rentals
+name: Thrifty
+planner_category: things_to_do
+data_quality_score: 80
+issues: missing_photos|missing_hours
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: true
+missing_faqs: false
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   6 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 6] ---
+id: 9043
+entity_slug: thrifty-car-rentals
+intent_tag: best_for:things_to_do
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 6] ---
+id: 9044
+entity_slug: thrifty-car-rentals
+intent_tag: service:takeout
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 6] ---
+id: 9045
+entity_slug: thrifty-car-rentals
+intent_tag: service:reservations
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 6] ---
+id: 9046
+entity_slug: thrifty-car-rentals
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 6] ---
+id: 9047
+entity_slug: thrifty-car-rentals
+intent_tag: missing:missing_photos
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 6] ---
+id: 9048
+entity_slug: thrifty-car-rentals
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: thrifty-car-rentals
+name: Thrifty
+is_active: t
+planner_category: things_to_do
+entity_type: service
+entity_subtype: car_rental
+city: Foley
+state: AL
+address_line_1: 8097 AL-59
+latitude: 30.342138799999997
+longitude: -87.683923
+review_count: 0
+website_url: https://www.thrifty.com/us/en/location
+voice_summary: Thrifty in Foley is best for things to do.
+planner_summary: Reserve a rental car online and save time and money! With great car rental deals, and convenient pickup and drop-off locations, you'll find the absolute best rental car for your money.
+best_for: things to do
+not_best_for: nothing specific flagged
+service_tags: takeout|reservations|accessibility
+search_keywords: car rental|vehicle rental|budget car rental|affordable rentals|car hire|rental cars|transportation|travel|Rentals|Car Rentals|Travel Services|automotive-rentals|car_rental|service|point_of_interest|establishment|takeout|reservations|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: false
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 0
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 18
+faq_count: 0
+data_quality_score: 80
+data_gaps: missing_photos|missing_hours
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 2a23b82e-faf6-4da5-9bf9-bd51636b5b6a
+resource_type: service
+slug: thrifty-car-rentals
+name: Thrifty
+description: Reserve a rental car online and save time and money! With great car rental deals, and convenient pickup and drop-off locations, you'll find the absolute best rental car for your money.
+entity_slug: thrifty-car-rentals
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: []
+amenities: []
+faqs: []
+address: 8097 AL-59
+city: Foley
+state: AL
+latitude: 30.342138799999997
+longitude: -87.683923
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 527145016d20d5134a0a7ab50b5e6d50
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 2a23b82e-faf6-4da5-9bf9-bd51636b5b6a
+entity_slug: thrifty-car-rentals
+slug: thrifty-car-rentals
+photo_urls: []
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 5ade313d-55a0-4ca4-8243-5f0485ed6ed6
+slug: thrifty-car-rentals
+name: Thrifty
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: car_rental
+description: Reserve a rental car online and save time and money! With great car rental deals, and convenient pickup and drop-off locations, you'll find the absolute best rental car for your money.
+subtitle: Deals on Car Rentals | Save with Thrifty
+phone: (251) 943-6466
+website_url: https://www.thrifty.com/us/en/location
+menu_pin: 1147
+address_line_1: 8097 AL-59
+city: Foley
+state: AL
+zip: 36535
+latitude: 30.342138799999997
+longitude: -87.683923
+review_count: 0
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T23:01:52.080875+00:00
+updated_at: 2026-06-03T23:01:52.080875+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJ__8_a-kPmogRlp9Y_ZaeFfs
+google_maps_uri: https://maps.google.com/?cid=18092541449363562390&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: car_rental
+formatted_address: 8097 AL-59, Foley, AL 36535, USA
+plus_code: 862J88R8+VC
+international_phone: +1 251-943-6466
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+accepts_cash_only: false
+google_places_data: {
+  "id": "ChIJ__8_a-kPmogRlp9Y_ZaeFfs",
+  "types": [
+    "car_rental",
+    "service",
+    "point_of_interest",
+    "establishment"
+  ],
+  "location": {
+    "latitude": 30.342138799999997,
+    "longitude": -87.683923
+  },
+  "plusCode": {
+    "globalCode": "862J88R8+VC",
+    "compoundCode": "88R8+VC Foley, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.340791719708495,
+      "longitude": -87.6851764302915
+    },
+    "high": {
+      "latitude": 30.343489680291494,
+      "longitude": -87.6824784697085
+    }
+  },
+  "websiteUri": "https://www.thrifty.com/us/en/location",
+  "displayName": {
+    "text": "Thrifty",
+    "languageCode": "en"
+  },
+  "primaryType": "car_rental",
+  "googleMapsUri": "https://maps.google.com/?cid=18092541449363562390&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "paymentOptions": {
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=18092541449363562390&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fe96b3fffff:0xfb159e96fd589f96!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0fe96b3fffff:0xfb159e96fd589f96!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0fe96b3fffff:0xfb159e96fd589f96!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fe96b3fffff:0xfb159e96fd589f96!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "adrFormatAddress": "<span class=\"street-address\">8097 AL-59</span>, <span class=\"locality\">Foley</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36535</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "8097 AL-59, Foley, AL 36535, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "8097",
+      "shortText": "8097",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Alabama 59",
+      "shortText": "AL-59",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Foley",
+      "shortText": "Foley",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36535",
+      "shortText": "36535",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJadcm4OgPmogRGlEF6S5Xk90",
+        "placeId": "ChIJadcm4OgPmogRGlEF6S5Xk90",
+        "containment": "NEAR",
+        "displayName": {
+          "text": "SmartStop Self Storage",
+          "languageCode": "en"
+        }
+      }
+    ],
+    "landmarks": [
+      {
+        "name": "places/ChIJKdcoa-kPmogRJfB1wzXwVG0",
+        "types": [
+          "car_rental",
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJKdcoa-kPmogRJfB1wzXwVG0",
+        "displayName": {
+          "text": "Hertz Car Rental - Foley - Highway 59",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "BESIDE",
+        "travelDistanceMeters": 28.174995,
+        "straightLineDistanceMeters": 11.336242
+      },
+      {
+        "name": "places/ChIJJ4nnEukPmogRvf6V3xsO3FI",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJJ4nnEukPmogRvf6V3xsO3FI",
+        "displayName": {
+          "text": "Boat Owners Warehouse",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 147.29102,
+        "straightLineDistanceMeters": 39.93835
+      },
+      {
+        "name": "places/ChIJoU9hD-kPmogRPSgCGWZ2B_g",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "storage"
+        ],
+        "placeId": "ChIJoU9hD-kPmogRPSgCGWZ2B_g",
+        "displayName": {
+          "text": "SmartStop Self Storage",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 174.51538,
+        "straightLineDistanceMeters": 81.4332
+      },
+      {
+        "name": "places/ChIJ2Ti00cMPmogRTqMrdJBgqTw",
+        "types": [
+          "establishment",
+          "furniture_store",
+          "home_goods_store",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJ2Ti00cMPmogRTqMrdJBgqTw",
+        "displayName": {
+          "text": "Old Time Pottery",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 463.46982,
+        "straightLineDistanceMeters": 371.37344
+      },
+      {
+        "name": "places/ChIJVXEBH0EFmogRY4QdZ95NTgY",
+        "types": [
+          "establishment",
+          "food",
+          "point_of_interest",
+          "restaurant",
+          "store"
+        ],
+        "placeId": "ChIJVXEBH0EFmogRY4QdZ95NTgY",
+        "displayName": {
+          "text": "Dairy Queen Grill & Chill",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 376.69055,
+        "straightLineDistanceMeters": 214.57523
+      }
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Car Rental Agency",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "nationalPhoneNumber": "(251) 943-6466",
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true
+  },
+  "shortFormattedAddress": "8097 AL-59 E, Foley",
+  "primaryTypeDisplayName": {
+    "text": "Car Rental Agency",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-943-6466"
+}
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 8097 AL-59 E, Foley
+national_phone: (251) 943-6466
+search_vector: 'car':2 'foley':4 'rental':3 'thrifti':1A
+primary_type_display: Car Rental Agency
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=18092541449363562390&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fe96b3fffff:0xfb159e96fd589f96!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0fe96b3fffff:0xfb159e96fd589f96!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0fe96b3fffff:0xfb159e96fd589f96!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fe96b3fffff:0xfb159e96fd589f96!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJadcm4OgPmogRGlEF6S5Xk90",
+      "placeId": "ChIJadcm4OgPmogRGlEF6S5Xk90",
+      "containment": "NEAR",
+      "displayName": {
+        "text": "SmartStop Self Storage",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJKdcoa-kPmogRJfB1wzXwVG0",
+      "types": [
+        "car_rental",
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJKdcoa-kPmogRJfB1wzXwVG0",
+      "displayName": {
+        "text": "Hertz Car Rental - Foley - Highway 59",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "BESIDE",
+      "travelDistanceMeters": 28.174995,
+      "straightLineDistanceMeters": 11.336242
+    },
+    {
+      "name": "places/ChIJJ4nnEukPmogRvf6V3xsO3FI",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJJ4nnEukPmogRvf6V3xsO3FI",
+      "displayName": {
+        "text": "Boat Owners Warehouse",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 147.29102,
+      "straightLineDistanceMeters": 39.93835
+    },
+    {
+      "name": "places/ChIJoU9hD-kPmogRPSgCGWZ2B_g",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "storage"
+      ],
+      "placeId": "ChIJoU9hD-kPmogRPSgCGWZ2B_g",
+      "displayName": {
+        "text": "SmartStop Self Storage",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 174.51538,
+      "straightLineDistanceMeters": 81.4332
+    },
+    {
+      "name": "places/ChIJ2Ti00cMPmogRTqMrdJBgqTw",
+      "types": [
+        "establishment",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJ2Ti00cMPmogRTqMrdJBgqTw",
+      "displayName": {
+        "text": "Old Time Pottery",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 463.46982,
+      "straightLineDistanceMeters": 371.37344
+    },
+    {
+      "name": "places/ChIJVXEBH0EFmogRY4QdZ95NTgY",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant",
+        "store"
+      ],
+      "placeId": "ChIJVXEBH0EFmogRY4QdZ95NTgY",
+      "displayName": {
+        "text": "Dairy Queen Grill & Chill",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 376.69055,
+      "straightLineDistanceMeters": 214.57523
+    }
+  ]
+}
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: rental
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   1 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 1] ---
+id: 174aa321-d538-49a5-9915-0f99a5280a40
+entity_slug: thrifty-car-rentals
+place_id: ChIJadcm4OgPmogRGlEF6S5Xk90
+containment: NEAR
+display_name: SmartStop Self Storage
+
+####################################################################################################
+# TABLE: entity_attributes   -   5 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 5] ---
+id: f032c0dc-a607-4b8e-b7e4-2c23f6cf4b6c
+entity_slug: thrifty-car-rentals
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 2 of 5] ---
+id: 66484776-81b0-4e30-8278-8d70edc3842c
+entity_slug: thrifty-car-rentals
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 3 of 5] ---
+id: 4cbb59f5-bdb1-43fb-9ce9-429ade6a4c15
+entity_slug: thrifty-car-rentals
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 4 of 5] ---
+id: 8a08950a-4e26-48f1-9fc9-26571bfc1e81
+entity_slug: thrifty-car-rentals
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 5 of 5] ---
+id: 777fab02-b9d7-44da-87ea-089c4228190b
+entity_slug: thrifty-car-rentals
+category: payment
+key: pay_acceptsCreditCards
+label: Accepts Credit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: thrifty-car-rentals
+name: Thrifty
+industry_code: rental
+is_parent: false
+score_of_7: 4
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 6a97fc95-0a38-48fd-bec8-400a09aa36f7
+entity_slug: thrifty-car-rentals
+place_uri: https://maps.google.com/?cid=18092541449363562390&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fe96b3fffff:0xfb159e96fd589f96!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a0fe96b3fffff:0xfb159e96fd589f96!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a0fe96b3fffff:0xfb159e96fd589f96!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a0fe96b3fffff:0xfb159e96fd589f96!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: thrifty-car-rentals
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 2a23b82e-faf6-4da5-9bf9-bd51636b5b6a
+name: Thrifty
+description: Reserve a rental car online and save time and money! With great car rental deals, and convenient pickup and drop-off locations, you'll find the absolute best rental car for your money.
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: thrifty-car-rentals
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 2a23b82e-faf6-4da5-9bf9-bd51636b5b6a
+name: Thrifty
+description: Reserve a rental car online and save time and money! With great car rental deals, and convenient pickup and drop-off locations, you'll find the absolute best rental car for your money.
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: c3ff02fb-eb64-47a4-9d7e-5c20866812de
+entity_slug: thrifty-car-rentals
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: e2817503-0a03-4b8e-b6a5-485de5a656c5
+entity_slug: thrifty-car-rentals
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: 674a669d-d7b0-47bb-8a53-e0ed37f64b53
+entity_slug: thrifty-car-rentals
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: 933c6ad9-451b-489e-9816-911d9dea5ea8
+entity_slug: thrifty-car-rentals
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: 3c02236e-158c-4fb8-92ad-98415e88f127
+entity_slug: thrifty-car-rentals
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: 829f1b65-ced6-4465-a696-adaef0de10bc
+entity_slug: thrifty-car-rentals
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 121fabc5-38a4-47c3-97b8-fb09eeee65d8
+entity_slug: thrifty-car-rentals
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: bc3d49bf-5434-4903-aaf5-8a0a632cb6e1
+entity_slug: thrifty-car-rentals
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: 3d0fdc59-2436-426f-97e9-d8a495d57078
+entity_slug: thrifty-car-rentals
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: 21dc5a2a-b126-46c8-893b-0903d9efb68e
+entity_slug: thrifty-car-rentals
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: e5460644-0e6f-4c7e-bc08-6efba303936d
+entity_slug: thrifty-car-rentals
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: a34b0afe-61f3-4385-8fe7-59dc64a7c6e6
+entity_slug: thrifty-car-rentals
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: d5ad712a-5142-4eb3-bab9-0724c9ad81b4
+entity_slug: thrifty-car-rentals
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   19 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 19] ---
+id: 4c001cc6-ed5f-447c-8965-816350255a75
+landmark_id: 91b5b20d-2965-4ec6-ae16-c500687f547d
+entity_slug: thrifty-car-rentals
+landmark_type: car_rental
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 19] ---
+id: e7df4baf-1191-4e5f-a5c1-c99186eded5b
+landmark_id: 91b5b20d-2965-4ec6-ae16-c500687f547d
+entity_slug: thrifty-car-rentals
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 19] ---
+id: cb211bae-a504-4f4c-86c0-8594dbeddd4d
+landmark_id: 91b5b20d-2965-4ec6-ae16-c500687f547d
+entity_slug: thrifty-car-rentals
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 19] ---
+id: 8adb92bd-33ce-43c7-b772-09f06a2727a5
+landmark_id: b9f81efd-c68e-497f-8e79-4012291a41cd
+entity_slug: thrifty-car-rentals
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 19] ---
+id: 401cdd23-7565-416f-9fa7-a40c2c624baf
+landmark_id: b9f81efd-c68e-497f-8e79-4012291a41cd
+entity_slug: thrifty-car-rentals
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 19] ---
+id: 94f37ea1-8c63-4e04-84b2-b2bac1ccfa7f
+landmark_id: b9f81efd-c68e-497f-8e79-4012291a41cd
+entity_slug: thrifty-car-rentals
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 19] ---
+id: 9806808e-e4f5-40ff-9de3-74105d063e23
+landmark_id: ba9f6842-8197-4554-9787-910b376b317c
+entity_slug: thrifty-car-rentals
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 19] ---
+id: 552aacb7-59a2-4797-acb0-a7ec1e129c1b
+landmark_id: ba9f6842-8197-4554-9787-910b376b317c
+entity_slug: thrifty-car-rentals
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 19] ---
+id: 2675a7e4-f52b-4787-9fd0-78f6e44e0881
+landmark_id: ba9f6842-8197-4554-9787-910b376b317c
+entity_slug: thrifty-car-rentals
+landmark_type: storage
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 19] ---
+id: de085e4f-3033-4291-b692-69d0bd13172a
+landmark_id: 0a33bbed-f462-41c7-a1c1-63d7ff1499bf
+entity_slug: thrifty-car-rentals
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 19] ---
+id: b1bf0cb0-6be4-43a9-8fa5-a41769c2ae3b
+landmark_id: 0a33bbed-f462-41c7-a1c1-63d7ff1499bf
+entity_slug: thrifty-car-rentals
+landmark_type: furniture_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 19] ---
+id: 2bb1c057-1179-4587-bb9f-47d1890f6cc9
+landmark_id: 0a33bbed-f462-41c7-a1c1-63d7ff1499bf
+entity_slug: thrifty-car-rentals
+landmark_type: home_goods_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 19] ---
+id: 0336d7da-b498-406c-9633-ea1c12c5a8d3
+landmark_id: 0a33bbed-f462-41c7-a1c1-63d7ff1499bf
+entity_slug: thrifty-car-rentals
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 19] ---
+id: 64edb85c-301a-4c81-8296-a45a26706dde
+landmark_id: 0a33bbed-f462-41c7-a1c1-63d7ff1499bf
+entity_slug: thrifty-car-rentals
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 19] ---
+id: aa658d03-95c7-4469-b534-4d6baaa5b72a
+landmark_id: a518959b-da9c-4d81-b57d-eefd594ceb15
+entity_slug: thrifty-car-rentals
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 19] ---
+id: 016fe3b8-068b-401a-a8bc-5a9116c3fcaa
+landmark_id: a518959b-da9c-4d81-b57d-eefd594ceb15
+entity_slug: thrifty-car-rentals
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 19] ---
+id: 8cf1611a-c15c-49ba-b26d-2880cb573459
+landmark_id: a518959b-da9c-4d81-b57d-eefd594ceb15
+entity_slug: thrifty-car-rentals
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 19] ---
+id: e8494506-89b6-4ff7-88a0-935f080b8598
+landmark_id: a518959b-da9c-4d81-b57d-eefd594ceb15
+entity_slug: thrifty-car-rentals
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 19 of 19] ---
+id: a445675f-c1c5-4df7-90f6-28e98337aa61
+landmark_id: a518959b-da9c-4d81-b57d-eefd594ceb15
+entity_slug: thrifty-car-rentals
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   6 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 6] ---
+id: 91b5b20d-2965-4ec6-ae16-c500687f547d
+entity_slug: thrifty-car-rentals
+kind: landmark
+place_id: ChIJKdcoa-kPmogRJfB1wzXwVG0
+name: Hertz Car Rental - Foley - Highway 59
+types: [
+  "car_rental",
+  "establishment",
+  "point_of_interest"
+]
+spatial_relationship: BESIDE
+travel_distance_meters: 28.174995
+straight_line_distance_meters: 11.336242
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 6] ---
+id: b9f81efd-c68e-497f-8e79-4012291a41cd
+entity_slug: thrifty-car-rentals
+kind: landmark
+place_id: ChIJJ4nnEukPmogRvf6V3xsO3FI
+name: Boat Owners Warehouse
+types: [
+  "establishment",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 147.29102
+straight_line_distance_meters: 39.93835
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 6] ---
+id: ba9f6842-8197-4554-9787-910b376b317c
+entity_slug: thrifty-car-rentals
+kind: landmark
+place_id: ChIJoU9hD-kPmogRPSgCGWZ2B_g
+name: SmartStop Self Storage
+types: [
+  "establishment",
+  "point_of_interest",
+  "storage"
+]
+travel_distance_meters: 174.51538
+straight_line_distance_meters: 81.4332
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 6] ---
+id: 0a33bbed-f462-41c7-a1c1-63d7ff1499bf
+entity_slug: thrifty-car-rentals
+kind: landmark
+place_id: ChIJ2Ti00cMPmogRTqMrdJBgqTw
+name: Old Time Pottery
+types: [
+  "establishment",
+  "furniture_store",
+  "home_goods_store",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 463.46982
+straight_line_distance_meters: 371.37344
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 6] ---
+id: a518959b-da9c-4d81-b57d-eefd594ceb15
+entity_slug: thrifty-car-rentals
+kind: landmark
+place_id: ChIJVXEBH0EFmogRY4QdZ95NTgY
+name: Dairy Queen Grill & Chill
+types: [
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant",
+  "store"
+]
+travel_distance_meters: 376.69055
+straight_line_distance_meters: 214.57523
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 6 of 6] ---
+id: 64ed2a91-1edd-4a8e-8416-a971762fd52d
+entity_slug: thrifty-car-rentals
+kind: area
+place_id: ChIJadcm4OgPmogRGlEF6S5Xk90
+name: SmartStop Self Storage
+containment: NEAR
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 14172
+entity_slug: thrifty-car-rentals
+name: Thrifty
+description: Reserve a rental car online and save time and money! With great car rental deals, and convenient pickup and drop-off locations, you'll find the absolute best rental car for your money.
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 2a23b82e-faf6-4da5-9bf9-bd51636b5b6a
+
+####################################################################################################
+# TABLE: entity_tags   -   18 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 18] ---
+id: 0cd8ea51-5022-402f-b420-56a7bf2306d3
+entity_slug: thrifty-car-rentals
+tag_name: car rental
+
+--- entity_tags [row 2 of 18] ---
+id: 56c81fc6-0047-4dc9-8a2a-8d1e15e565eb
+entity_slug: thrifty-car-rentals
+tag_name: vehicle rental
+
+--- entity_tags [row 3 of 18] ---
+id: 3724bed7-39e3-4b4e-b95a-6a40c26d0b77
+entity_slug: thrifty-car-rentals
+tag_name: budget car rental
+
+--- entity_tags [row 4 of 18] ---
+id: 9e8ca2cc-0fa2-458f-bbe7-7141f52ea891
+entity_slug: thrifty-car-rentals
+tag_name: affordable rentals
+
+--- entity_tags [row 5 of 18] ---
+id: d8f4a788-5fa5-45df-b821-578ecd927c0a
+entity_slug: thrifty-car-rentals
+tag_name: car hire
+
+--- entity_tags [row 6 of 18] ---
+id: 8a5b12ef-d65d-47d9-b9bb-f90e85f8a006
+entity_slug: thrifty-car-rentals
+tag_name: rental cars
+
+--- entity_tags [row 7 of 18] ---
+id: f6ee1d2c-97d1-4ebf-a19a-0d7a6b658e9b
+entity_slug: thrifty-car-rentals
+tag_name: transportation
+
+--- entity_tags [row 8 of 18] ---
+id: c488a51b-de81-461f-aac2-369c099d0de4
+entity_slug: thrifty-car-rentals
+tag_name: travel
+
+--- entity_tags [row 9 of 18] ---
+id: 4268c393-26fb-44db-9bf1-66614bd9d4d0
+entity_slug: thrifty-car-rentals
+tag_name: Rentals
+tag_category: category
+
+--- entity_tags [row 10 of 18] ---
+id: c339059e-edbb-42da-a353-32a95e7b2c91
+entity_slug: thrifty-car-rentals
+tag_name: Car Rentals
+tag_category: category
+
+--- entity_tags [row 11 of 18] ---
+id: b4488c68-0621-4124-ae71-5a9d4452fa0b
+entity_slug: thrifty-car-rentals
+tag_name: Transportation
+tag_category: category
+
+--- entity_tags [row 12 of 18] ---
+id: 3907e1a2-cbb7-417e-a392-b43751a1aaba
+entity_slug: thrifty-car-rentals
+tag_name: Travel Services
+tag_category: category
+
+--- entity_tags [row 13 of 18] ---
+id: c541de8d-b914-43ce-86ee-84c0baad90d1
+entity_slug: thrifty-car-rentals
+tag_name: automotive-rentals
+tag_category: industry
+
+--- entity_tags [row 14 of 18] ---
+id: 33f8c33d-a644-4942-b3c8-86723a58c187
+entity_slug: thrifty-car-rentals
+tag_name: rentals
+tag_category: type
+
+--- entity_tags [row 15 of 18] ---
+id: af01bfa9-596f-4910-8705-856cba193751
+entity_slug: thrifty-car-rentals
+tag_name: car_rental
+tag_category: google_primary_type
+
+--- entity_tags [row 16 of 18] ---
+id: c9d3a2ea-bcbb-4ac5-a8cf-0ab7db79e68d
+entity_slug: thrifty-car-rentals
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 17 of 18] ---
+id: c3dcc7b2-9e77-496e-a024-f99dafad201a
+entity_slug: thrifty-car-rentals
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 18 of 18] ---
+id: 36ed23db-ac94-42b3-8786-e928602b8333
+entity_slug: thrifty-car-rentals
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 271b573c-64e4-4796-8cda-5cb15c785526
+entity_slug: thrifty-car-rentals
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_rental   -   1 row(s)
+####################################################################################################
+
+--- industry_rental [row 1 of 1] ---
+entity_slug: thrifty-car-rentals
+rental_item_count: 0
+hourly_available: false
+half_day_available: false
+full_day_available: false
+weekly_available: false
+delivery_offered: false
+updated_at: 2026-07-21T16:19:28.491935+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: offer
+ref_id: 14172
+entity_slug: thrifty-car-rentals
+title: Thrifty
+category: rental
+subtitle: Reserve a rental car online and save time and money! With great car rental deals, and convenient pickup and drop-off locations, you'll find the absolute best rental car for your money.
+search_vector: 'absolut':29C 'best':30C 'car':5C,14C,32C 'conveni':18C 'deal':16C 'drop':22C 'drop-off':21C 'find':27C 'great':13C 'll':26C 'locat':24C 'money':11C,35C 'onlin':6C 'pickup':19C 'rental':4C,15C,31C 'reserv':2C 'save':8C 'thrifti':1A 'time':9C
+
+--- search_index [row 2 of 2] ---
+ref_type: business
+ref_id: thrifty-car-rentals
+entity_slug: thrifty-car-rentals
+title: Thrifty
+category: car_rental
+subtitle: Reserve a rental car online and save time and money! With great car rental deals, and convenient pickup and drop-off locations, you'll find the absolute best rental car for your money.
+search_vector: 'absolut':31C 'best':32C 'car':2B,7C,16C,34C 'conveni':20C 'deal':18C 'drop':24C 'drop-off':23C 'find':29C 'great':15C 'll':28C 'locat':26C 'money':13C,37C 'onlin':8C 'pickup':21C 'rental':3B,6C,17C,33C 'reserv':4C 'save':10C 'thrifti':1A 'time':11C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: thrifty-car-rentals

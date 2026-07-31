@@ -1,0 +1,993 @@
+====================================================================================================
+SLUG: murphy-usa
+NAME: Murphy USA
+INDUSTRY: food_beverage
+SUBTYPE: convenience_store
+TABLES WITH DATA: 13
+TOTAL ROWS: 112
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (9 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (13 rows)
+  entity  (1 rows)
+  entity_good_for  (5 rows)
+  entity_highlights  (9 rows)
+  entity_photos  (13 rows)
+  entity_tags  (56 rows)
+  entity_theme  (1 rows)
+  industry_food_beverage  (1 rows)
+  search_index  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: murphy-usa
+name: Murphy USA
+planner_category: food_drink
+data_quality_score: 75
+issues: missing_hours|missing_menu|missing_faqs
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: true
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: true
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   9 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 9] ---
+id: 18394
+entity_slug: murphy-usa
+intent_tag: best_for:families_with_kids
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 9] ---
+id: 18395
+entity_slug: murphy-usa
+intent_tag: experience:family_kids
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 9] ---
+id: 18396
+entity_slug: murphy-usa
+intent_tag: meal:lunch
+intent_category: meal_period
+confidence: 0.82
+evidence: Derived from meal flags/menu content.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 9] ---
+id: 18397
+entity_slug: murphy-usa
+intent_tag: cuisine:coffee_sweets
+intent_category: cuisine
+confidence: 0.82
+evidence: Derived from cuisine/menu/tags.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 9] ---
+id: 18398
+entity_slug: murphy-usa
+intent_tag: cuisine:american
+intent_category: cuisine
+confidence: 0.82
+evidence: Derived from cuisine/menu/tags.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 9] ---
+id: 18399
+entity_slug: murphy-usa
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 9] ---
+id: 18400
+entity_slug: murphy-usa
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 9] ---
+id: 18401
+entity_slug: murphy-usa
+intent_tag: missing:missing_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 9 of 9] ---
+id: 18402
+entity_slug: murphy-usa
+intent_tag: missing:missing_faqs
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: murphy-usa
+name: Murphy USA
+is_active: f
+planner_category: food_drink
+entity_type: shopping
+entity_subtype: convenience-store
+city: El Dorado
+state: AR
+address_line_1: 200 E. Peach Street
+latitude: 33.2143081
+longitude: -92.6623315
+rating: 2.6
+review_count: 0
+website_url: http://www.murphyusa.com/
+voice_summary: Murphy USA in El Dorado is best for families with kids. It fits coffee/sweets, american. Experience tags: family_kids.
+planner_summary: Since 1996, Murphy USA has been the place people go to save on the gas that fuels their lives. From the lowest prices on gas to exclusive deals on your family's favorite snacks and drinks, we're always going the extra mile to help you buy smarter and drive farther. Welcome to Murphy USA. Murphy USA is one of the largest independent retailers of gasoline products and convenience store merchandise with more than 1,700 locations in 27 states across the Southwest, Southeast, Midwest and Northeast United States.
+best_for: families with kids
+not_best_for: nothing specific flagged
+meal_periods: lunch
+cuisine_tags: coffee/sweets|american
+experience_tags: family_kids
+search_keywords: gas_station|wheelchairAccessibleEntrance|acceptsDebitCards|wheelchairAccessibleRestroom|acceptsCreditCards|gasoline|fuel|convenience store|gas station|snacks|drinks|rewards program|fuel savings|independent retailer|Murphy Drive Rewards|Convenience Stores|Gas Stations|Fuel Retailers|Retail|retail-fuel-and-convenience|convenience-store|point_of_interest|service|establishment|coffee/sweets|american|lunch|family_kids
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 13
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 56
+faq_count: 0
+data_quality_score: 75
+data_gaps: missing_hours|missing_menu|missing_faqs
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   13 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 13] ---
+id: 25991
+entity_slug: murphy-usa
+entity_name: Murphy USA
+city: El Dorado
+url: http://www.murphyusa.com/getmedia/f9b539e9-61a6-4b10-992f-6e0378c184c3/employee-image-narrower.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 13] ---
+id: 25990
+entity_slug: murphy-usa
+entity_name: Murphy USA
+city: El Dorado
+url: http://www.murphyusa.com/getmedia/f9fbcd46-4f0a-4f09-aedf-49e39dc362c6/storeimagescaled.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 13] ---
+id: 25992
+entity_slug: murphy-usa
+entity_name: Murphy USA
+city: El Dorado
+url: http://www.murphyusa.com/getmedia/63a55316-7ab0-4bc1-b919-b91a4ad1271b/MUSA-5706-Website-MDR-Asset-Update_730%e2%80%8a%c3%97%e2%80%8a515.png
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 13] ---
+id: 25993
+entity_slug: murphy-usa
+entity_name: Murphy USA
+city: El Dorado
+url: http://www.murphyusa.com/getattachment/MurphyUSA/About-Us/community/salvation-army.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 13] ---
+id: 25994
+entity_slug: murphy-usa
+entity_name: Murphy USA
+city: El Dorado
+url: http://www.murphyusa.com/getattachment/MurphyUSA/About-Us/community/needfund.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 13] ---
+id: 25995
+entity_slug: murphy-usa
+entity_name: Murphy USA
+city: El Dorado
+url: http://www.murphyusa.com/assets/images/our-fuels/CaOCDcyw.jpeg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 13] ---
+id: 25996
+entity_slug: murphy-usa
+entity_name: Murphy USA
+city: El Dorado
+url: http://www.murphyusa.com/assets/images/our-fuels/B31A1308-Shrank.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 13] ---
+id: 25997
+entity_slug: murphy-usa
+entity_name: Murphy USA
+city: El Dorado
+url: http://www.murphyusa.com/assets/images/our-fuels/QZ85dh4Q.jpeg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 13] ---
+id: 25998
+entity_slug: murphy-usa
+entity_name: Murphy USA
+city: El Dorado
+url: http://www.murphyusa.com/assets/images/our-fuels/AaXkHw5w.jpeg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 13] ---
+id: 25999
+entity_slug: murphy-usa
+entity_name: Murphy USA
+city: El Dorado
+url: http://www.murphyusa.com/assets/images/our-fuels/ulsd.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 11 of 13] ---
+id: 26000
+entity_slug: murphy-usa
+entity_name: Murphy USA
+city: El Dorado
+url: http://www.murphyusa.com/assets/images/our-fuels/biodiesel.jpg
+is_cover: f
+sort_order: 10
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 12 of 13] ---
+id: 26001
+entity_slug: murphy-usa
+entity_name: Murphy USA
+city: El Dorado
+url: http://www.murphyusa.com/assets/images/our-fuels/winterizeddiesel.jpg
+is_cover: f
+sort_order: 11
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 13 of 13] ---
+id: 26002
+entity_slug: murphy-usa
+entity_name: Murphy USA
+city: El Dorado
+url: http://www.murphyusa.com/assets/images/MUSA-6264-App-Phone-Image-Update_Center.png
+is_cover: f
+sort_order: 12
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 62f9256d-8840-438f-8ab8-a2134330d74c
+slug: murphy-usa
+name: Murphy USA
+is_active: false
+featured: false
+entity_type: shopping
+entity_subtype: convenience_store
+description: Since 1996, Murphy USA has been the place people go to save on the gas that fuels their lives. From the lowest prices on gas to exclusive deals on your family's favorite snacks and drinks, we're always going the extra mile to help you buy smarter and drive farther. Welcome to Murphy USA. Murphy USA is one of the largest independent retailers of gasoline products and convenience store merchandise with more than 1,700 locations in 27 states across the Southwest, Southeast, Midwest and Northeast United States.
+subtitle: Save on the gas that fuels your life
+phone: (1) 800 843 4298
+website_url: http://www.murphyusa.com/
+menu_pin: 4577
+social_instagram: https://www.instagram.com/murphyusa/
+social_facebook: https://www.facebook.com/MurphyUSA/
+address_line_1: 200 E. Peach Street
+city: El Dorado
+state: AR
+zip: 71730
+latitude: 33.2143081
+longitude: -92.6623315
+rating: 2.6
+review_count: 0
+hero_image_url: https://www.murphyusa.com/getmedia/f9fbcd46-4f0a-4f09-aedf-49e39dc362c6/storeimagescaled.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T22:58:17.063807+00:00
+updated_at: 2026-06-03T22:58:17.063807+00:00
+gallery_sections: []
+highlights: [
+  "Mobile app with savings",
+  "Free ATMs at select locations",
+  "Convenience store merchandise",
+  "Fuel rewards program",
+  "Coffee and fountain drinks",
+  "Made-to-order subs and sandwiches at QuickChek locations",
+  "Nearby Walmart locations",
+  "24-hour fuel quality monitoring",
+  "EPA approved filtration systems"
+]
+good_for: [
+  "Daily commuters",
+  "Road trippers",
+  "Families",
+  "Budget-conscious shoppers",
+  "Walmart shoppers"
+]
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+business_status: OPERATIONAL
+google_places_data: {}
+search_vector: 'dorado':4 'el':3 'murphi':1A 'usa':2A
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: generic
+industry_code: food_beverage
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_good_for   -   5 row(s)
+####################################################################################################
+
+--- entity_good_for [row 1 of 5] ---
+id: fe0a7838-5754-4b89-a81f-90188b2515ff
+entity_slug: murphy-usa
+audience: Daily commuters
+sort_order: 1
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 2 of 5] ---
+id: d08aa4d7-d3e8-494b-a2be-2bea5bc089c1
+entity_slug: murphy-usa
+audience: Road trippers
+sort_order: 2
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 3 of 5] ---
+id: 3cd87276-39bf-442f-99b4-399548e8760a
+entity_slug: murphy-usa
+audience: Families
+sort_order: 3
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 4 of 5] ---
+id: 629b48fb-06a9-4c97-8c4e-0cf99bdb620b
+entity_slug: murphy-usa
+audience: Budget-conscious shoppers
+sort_order: 4
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_good_for [row 5 of 5] ---
+id: da4774ea-f1fb-4710-8c2b-71d84150f0ca
+entity_slug: murphy-usa
+audience: Walmart shoppers
+sort_order: 5
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+####################################################################################################
+# TABLE: entity_highlights   -   9 row(s)
+####################################################################################################
+
+--- entity_highlights [row 1 of 9] ---
+id: e1528d67-98a0-444a-8e28-36a5573a443f
+entity_slug: murphy-usa
+highlight: Mobile app with savings
+sort_order: 1
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 2 of 9] ---
+id: 3676eca4-7576-4f40-a7ac-c2e4361d4447
+entity_slug: murphy-usa
+highlight: Free ATMs at select locations
+sort_order: 2
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 3 of 9] ---
+id: 075f8c26-bc08-43e3-b6a7-3a0747da5f2b
+entity_slug: murphy-usa
+highlight: Convenience store merchandise
+sort_order: 3
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 4 of 9] ---
+id: 95331a0e-cde3-447b-9908-1b386bd711d5
+entity_slug: murphy-usa
+highlight: Fuel rewards program
+sort_order: 4
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 5 of 9] ---
+id: 0b2280e8-af84-4d51-943e-11ef700bc14d
+entity_slug: murphy-usa
+highlight: Coffee and fountain drinks
+sort_order: 5
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 6 of 9] ---
+id: 8862e955-e6de-440d-8eb2-a13648ccdc2e
+entity_slug: murphy-usa
+highlight: Made-to-order subs and sandwiches at QuickChek locations
+sort_order: 6
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 7 of 9] ---
+id: 514dfd08-4c7e-4142-a5f3-8a5ade0622ba
+entity_slug: murphy-usa
+highlight: Nearby Walmart locations
+sort_order: 7
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 8 of 9] ---
+id: f93191cd-5d60-4cfd-ae09-b94ae9981229
+entity_slug: murphy-usa
+highlight: 24-hour fuel quality monitoring
+sort_order: 8
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+--- entity_highlights [row 9 of 9] ---
+id: a94ef345-c031-40a3-99d1-22f095dc263e
+entity_slug: murphy-usa
+highlight: EPA approved filtration systems
+sort_order: 9
+created_at: 2026-07-20T00:52:14.634971+00:00
+
+####################################################################################################
+# TABLE: entity_photos   -   13 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 13] ---
+id: 49470801-94bf-47fe-a5d2-feb31454acad
+entity_slug: murphy-usa
+url: https://www.murphyusa.com/assets/images/our-fuels/CaOCDcyw.jpeg
+is_cover: false
+sort_order: 5
+
+--- entity_photos [row 2 of 13] ---
+id: c41631dc-c8bd-43af-bd4e-58ac4f76b3ab
+entity_slug: murphy-usa
+url: https://www.murphyusa.com/getmedia/f9fbcd46-4f0a-4f09-aedf-49e39dc362c6/storeimagescaled.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 3 of 13] ---
+id: f7506efd-fad0-4032-8587-5fe38ea00907
+entity_slug: murphy-usa
+url: https://www.murphyusa.com/getmedia/f9b539e9-61a6-4b10-992f-6e0378c184c3/employee-image-narrower.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 4 of 13] ---
+id: 445e9c74-7d78-4cc0-9c49-b95e46e8b56e
+entity_slug: murphy-usa
+url: https://www.murphyusa.com/getmedia/63a55316-7ab0-4bc1-b919-b91a4ad1271b/MUSA-5706-Website-MDR-Asset-Update_730%e2%80%8a%c3%97%e2%80%8a515.png
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 5 of 13] ---
+id: 65e21040-639f-4c2d-a1b8-72db5f4102f5
+entity_slug: murphy-usa
+url: https://www.murphyusa.com/getattachment/MurphyUSA/About-Us/community/salvation-army.jpg
+is_cover: false
+sort_order: 3
+
+--- entity_photos [row 6 of 13] ---
+id: 6d8b8f44-d402-4974-bcbe-caa7da03c4d0
+entity_slug: murphy-usa
+url: https://www.murphyusa.com/getattachment/MurphyUSA/About-Us/community/needfund.jpg
+is_cover: false
+sort_order: 4
+
+--- entity_photos [row 7 of 13] ---
+id: 87969396-55d0-43f0-8bbf-93e2c530abc7
+entity_slug: murphy-usa
+url: https://www.murphyusa.com/assets/images/our-fuels/B31A1308-Shrank.jpg
+is_cover: false
+sort_order: 6
+
+--- entity_photos [row 8 of 13] ---
+id: 6e2f591a-0796-4a28-af01-1acb2095dc7b
+entity_slug: murphy-usa
+url: https://www.murphyusa.com/assets/images/our-fuels/QZ85dh4Q.jpeg
+is_cover: false
+sort_order: 7
+
+--- entity_photos [row 9 of 13] ---
+id: f6874e3a-0f20-4305-a36f-ae154cf1fac6
+entity_slug: murphy-usa
+url: https://www.murphyusa.com/assets/images/our-fuels/AaXkHw5w.jpeg
+is_cover: false
+sort_order: 8
+
+--- entity_photos [row 10 of 13] ---
+id: 46e7af2c-93fb-40cc-806e-d4a4c26812fb
+entity_slug: murphy-usa
+url: https://www.murphyusa.com/assets/images/our-fuels/ulsd.jpg
+is_cover: false
+sort_order: 9
+
+--- entity_photos [row 11 of 13] ---
+id: 7d2a57e7-5029-4885-99f2-5ac6fc90fda9
+entity_slug: murphy-usa
+url: https://www.murphyusa.com/assets/images/our-fuels/biodiesel.jpg
+is_cover: false
+sort_order: 10
+
+--- entity_photos [row 12 of 13] ---
+id: 143c1256-e65e-4d54-8d3b-f64313fb1a57
+entity_slug: murphy-usa
+url: https://www.murphyusa.com/assets/images/our-fuels/winterizeddiesel.jpg
+is_cover: false
+sort_order: 11
+
+--- entity_photos [row 13 of 13] ---
+id: 4341ba48-abb1-4119-9cc2-4c40cc3d6f55
+entity_slug: murphy-usa
+url: https://www.murphyusa.com/assets/images/MUSA-6264-App-Phone-Image-Update_Center.png
+is_cover: false
+sort_order: 12
+
+####################################################################################################
+# TABLE: entity_tags   -   56 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 56] ---
+id: 0e7ce69d-05c7-48ac-939c-cc7cae88806f
+entity_slug: murphy-usa
+tag_name: gas_station
+tag_category: google_type
+
+--- entity_tags [row 2 of 56] ---
+id: 91895879-f2a5-4ab1-89ed-d4126f7b2635
+entity_slug: murphy-usa
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 3 of 56] ---
+id: 4e748e00-9db9-474b-8da9-4136afce1529
+entity_slug: murphy-usa
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 4 of 56] ---
+id: 9f797d5f-8b31-43c5-af1f-942b5711275e
+entity_slug: murphy-usa
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 5 of 56] ---
+id: 5f0d6e70-ed61-4b4e-9ccf-826b0ec704cd
+entity_slug: murphy-usa
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 6 of 56] ---
+id: 6fe83503-75c0-4ba7-9e59-2e0e86d8950f
+entity_slug: murphy-usa
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 7 of 56] ---
+id: cc773753-f350-40fb-a646-8dbb599115f9
+entity_slug: murphy-usa
+tag_name: gas_station
+tag_category: google_type
+
+--- entity_tags [row 8 of 56] ---
+id: c576dcfa-d38d-43c2-b92b-fd825d912dbf
+entity_slug: murphy-usa
+tag_name: gasoline
+
+--- entity_tags [row 9 of 56] ---
+id: addc6056-5332-4375-bb9f-0b47507bcd9b
+entity_slug: murphy-usa
+tag_name: fuel
+
+--- entity_tags [row 10 of 56] ---
+id: 473614a9-c822-40ba-920f-2eb960d5048f
+entity_slug: murphy-usa
+tag_name: convenience store
+
+--- entity_tags [row 11 of 56] ---
+id: acb9d717-86be-4949-89d0-f0301a804368
+entity_slug: murphy-usa
+tag_name: gas station
+
+--- entity_tags [row 12 of 56] ---
+id: 9c4d5056-0c98-4d32-98e7-5b616f2e9f37
+entity_slug: murphy-usa
+tag_name: snacks
+
+--- entity_tags [row 13 of 56] ---
+id: 60cea3c4-dfcb-411a-9bbc-95d94bbd2b8e
+entity_slug: murphy-usa
+tag_name: drinks
+
+--- entity_tags [row 14 of 56] ---
+id: 1fef5c4d-e088-49ce-8434-7e217da29c23
+entity_slug: murphy-usa
+tag_name: rewards program
+
+--- entity_tags [row 15 of 56] ---
+id: 1ebaa6c4-e545-461c-a3d9-75c970e4738a
+entity_slug: murphy-usa
+tag_name: fuel savings
+
+--- entity_tags [row 16 of 56] ---
+id: f004a440-f15c-4a4d-8a89-3bfa7782deb1
+entity_slug: murphy-usa
+tag_name: independent retailer
+
+--- entity_tags [row 17 of 56] ---
+id: b22f1c2a-c464-4437-83b3-1c773a26d3bb
+entity_slug: murphy-usa
+tag_name: Murphy Drive Rewards
+
+--- entity_tags [row 18 of 56] ---
+id: fa4b6773-f5d4-4f00-a422-aac8bf27668c
+entity_slug: murphy-usa
+tag_name: Convenience Stores
+tag_category: category
+
+--- entity_tags [row 19 of 56] ---
+id: 5303f33b-7d42-496d-a41d-1b79245baa79
+entity_slug: murphy-usa
+tag_name: Gas Stations
+tag_category: category
+
+--- entity_tags [row 20 of 56] ---
+id: 2c20f240-5726-4168-93d7-4d0cb9ff35b3
+entity_slug: murphy-usa
+tag_name: Fuel Retailers
+tag_category: category
+
+--- entity_tags [row 21 of 56] ---
+id: 06d15ae7-e0ec-4b8e-9713-b6f1b3c5cb63
+entity_slug: murphy-usa
+tag_name: Retail
+tag_category: category
+
+--- entity_tags [row 22 of 56] ---
+id: 6833394b-77dd-43db-823e-f4b5c3df0cbe
+entity_slug: murphy-usa
+tag_name: retail-fuel-and-convenience
+tag_category: industry
+
+--- entity_tags [row 23 of 56] ---
+id: a809df90-5de9-44fc-b9a6-8e7fa38603d1
+entity_slug: murphy-usa
+tag_name: convenience-store
+tag_category: type
+
+--- entity_tags [row 24 of 56] ---
+id: f996faa7-7879-42ab-9792-6e368d3c5a5f
+entity_slug: murphy-usa
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 25 of 56] ---
+id: 38124698-7d13-4eae-8a34-b82723e89406
+entity_slug: murphy-usa
+tag_name: gas_station
+tag_category: google_type
+
+--- entity_tags [row 26 of 56] ---
+id: 8b01a0ee-bf9b-4d24-abb0-bf4696e5f63b
+entity_slug: murphy-usa
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 27 of 56] ---
+id: 7c5045b6-8d0a-4b74-ac18-7f554b50366e
+entity_slug: murphy-usa
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 28 of 56] ---
+id: 6c582a34-d640-49d6-b05b-3158cd811513
+entity_slug: murphy-usa
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 29 of 56] ---
+id: bcb328a0-eaf1-4dcf-b0ad-1dcc1d315bed
+entity_slug: murphy-usa
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 30 of 56] ---
+id: 9cff723b-4429-480d-8df3-104706ae3e01
+entity_slug: murphy-usa
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 31 of 56] ---
+id: b5f4f40e-5465-4935-8005-7b45c8081cc7
+entity_slug: murphy-usa
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 32 of 56] ---
+id: e7e13af5-ef52-4f1b-b331-ca89774ab7ba
+entity_slug: murphy-usa
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 33 of 56] ---
+id: 1a85fc4d-5fec-44b8-aa55-c8654ca1d5bb
+entity_slug: murphy-usa
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 34 of 56] ---
+id: b20b27c0-104c-440a-8704-0e0ad17870ce
+entity_slug: murphy-usa
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 35 of 56] ---
+id: 1bfad5af-123a-47d0-89a3-6a3db41463a5
+entity_slug: murphy-usa
+tag_name: gas_station
+tag_category: google_type
+
+--- entity_tags [row 36 of 56] ---
+id: deed3ea2-15d4-45e1-baab-c4a564a6d16e
+entity_slug: murphy-usa
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 37 of 56] ---
+id: dedf4d23-29a4-4f85-884e-df83dfe00a34
+entity_slug: murphy-usa
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 38 of 56] ---
+id: 03d811ad-08ea-4507-b577-215903173ecc
+entity_slug: murphy-usa
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 39 of 56] ---
+id: 52fa8191-0490-41db-958c-c678c1de4168
+entity_slug: murphy-usa
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 40 of 56] ---
+id: 0842bf25-3f5f-4edf-88c9-0359058de75f
+entity_slug: murphy-usa
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 41 of 56] ---
+id: 162d0ca2-067f-46b9-96e0-5a25b5e365fe
+entity_slug: murphy-usa
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 42 of 56] ---
+id: 65b1abba-81a9-40e0-a031-2ef0b1de0f9d
+entity_slug: murphy-usa
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 43 of 56] ---
+id: fc53be7b-5fda-4c82-95bc-749b486c762d
+entity_slug: murphy-usa
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 44 of 56] ---
+id: 81f2726b-3050-4958-a74e-44b5cd5125e2
+entity_slug: murphy-usa
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 45 of 56] ---
+id: 317dd13d-2523-4767-b903-6aefcefd4227
+entity_slug: murphy-usa
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 46 of 56] ---
+id: 4383bd1e-db5f-412a-8e87-62079f5a945b
+entity_slug: murphy-usa
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 47 of 56] ---
+id: b31c7fa4-7628-4285-8f02-1bef7bd6c4a9
+entity_slug: murphy-usa
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 48 of 56] ---
+id: 5a1b1021-931b-4b23-8133-66cc2202b6bd
+entity_slug: murphy-usa
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 49 of 56] ---
+id: 9305e5a6-873c-444a-94ef-911791f19827
+entity_slug: murphy-usa
+tag_name: gas_station
+tag_category: google_type
+
+--- entity_tags [row 50 of 56] ---
+id: c81327b8-c4a5-4493-bcdf-7a01fbb349eb
+entity_slug: murphy-usa
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 51 of 56] ---
+id: 377e45f5-b9c4-4b63-98dc-f6c847a8011d
+entity_slug: murphy-usa
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 52 of 56] ---
+id: d73dd31d-7f1a-41ee-89ec-3cedf6d7fd1b
+entity_slug: murphy-usa
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 53 of 56] ---
+id: 19ee2584-69d8-4625-89ab-effbf693bed2
+entity_slug: murphy-usa
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 54 of 56] ---
+id: 0dd1345a-1db4-4225-859a-4e4df9c9d3a2
+entity_slug: murphy-usa
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 55 of 56] ---
+id: 657ff452-a497-4c81-a5ec-5898933b4d3c
+entity_slug: murphy-usa
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 56 of 56] ---
+id: 9b05a6c7-564a-4277-a928-9f349aea0b74
+entity_slug: murphy-usa
+tag_name: acceptsCreditCards
+tag_category: payment
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 1df0abc8-685a-49f1-a821-e506bca3ef8b
+entity_slug: murphy-usa
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_food_beverage   -   1 row(s)
+####################################################################################################
+
+--- industry_food_beverage [row 1 of 1] ---
+entity_slug: murphy-usa
+menu_section_count: 0
+menu_item_count: 0
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+dine_in: true
+takeout: false
+delivery: false
+reservable: false
+outdoor_seating: false
+live_music: false
+good_for_kids: false
+good_for_groups: false
+has_happy_hour: false
+updated_at: 2026-07-21T16:19:16.291607+00:00
+
+####################################################################################################
+# TABLE: search_index   -   1 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 1] ---
+ref_type: business
+ref_id: murphy-usa
+entity_slug: murphy-usa
+title: Murphy USA
+category: convenience_store
+subtitle: Since 1996, Murphy USA has been the place people go to save on the gas that fuels their lives. From the lowest prices on gas to exclusive deals on your family's favorite snacks and drinks, we're always going the extra mile to help you buy smarter and drive farther. Welcome to Murphy USA. Murphy USA is one of the largest independent retailers of gasoline products and convenience store merchandise with more than 1,700 locations in 27 states across the Southwest, Southeast, Midwest and Northeast United States.
+search_vector: '1':79C '1996':6C '27':83C '700':80C 'across':85C 'alway':43C 'buy':51C 'conveni':3B,73C 'deal':32C 'drink':40C 'drive':54C 'exclus':31C 'extra':46C 'famili':35C 'farther':55C 'favorit':37C 'fuel':21C 'gas':19C,29C 'gasolin':70C 'go':14C,44C 'help':49C 'independ':67C 'largest':66C 'live':23C 'locat':81C 'lowest':26C 'merchandis':75C 'midwest':89C 'mile':47C 'murphi':1A,7C,58C,60C 'northeast':91C 'one':63C 'peopl':13C 'place':12C 'price':27C 'product':71C 're':42C 'retail':68C 'save':16C 'sinc':5C 'smarter':52C 'snack':38C 'southeast':88C 'southwest':87C 'state':84C,93C 'store':4B,74C 'unit':92C 'usa':2A,8C,59C,61C 'welcom':56C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: murphy-usa

@@ -1,0 +1,2076 @@
+====================================================================================================
+SLUG: pet-supermarket
+NAME: Pet Supermarket
+INDUSTRY: retail
+SUBTYPE: pet_store
+TABLES WITH DATA: 21
+TOTAL ROWS: 96
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (3 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  entity  (1 rows)
+  entity_address_areas  (2 rows)
+  entity_attributes  (8 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (7 rows)
+  entity_modules  (10 rows)
+  entity_nearby_landmark_types  (20 rows)
+  entity_nearby_landmarks  (7 rows)
+  entity_photos  (12 rows)
+  entity_reviews  (5 rows)
+  entity_tags  (6 rows)
+  entity_theme  (1 rows)
+  industry_retail  (1 rows)
+  search_index  (1 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: pet-supermarket
+name: Pet Supermarket
+planner_category: shopping
+data_quality_score: 100
+recommended_next_action: ready_for_ai
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: false
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   3 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 3] ---
+id: 6671
+entity_slug: pet-supermarket
+intent_tag: best_for:shopping
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 3] ---
+id: 6672
+entity_slug: pet-supermarket
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 3] ---
+id: 6673
+entity_slug: pet-supermarket
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: pet-supermarket
+name: Pet Supermarket
+is_active: t
+planner_category: shopping
+entity_type: shopping
+entity_subtype: pet_store
+city: Pensacola
+state: FL
+address_line_1: 6857 N 9th Ave
+latitude: 30.493615999999996
+longitude: -87.1926082
+rating: 4.4
+review_count: 614
+website_url: https://www.petsupermarket.com/storelocator/?storeId=177
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/pet-supermarket/photo_01.jpg
+voice_summary: Pet Supermarket in Pensacola is best for shopping.
+planner_summary: Organized pet store with a dog-wash station and friendly service.
+best_for: shopping
+not_best_for: nothing specific flagged
+service_tags: accessibility
+search_keywords: pet_store|pet_care|store|point_of_interest|service|establishment|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 2
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 6
+faq_count: 0
+data_quality_score: 100
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 20545
+entity_slug: pet-supermarket
+entity_name: Pet Supermarket
+city: Pensacola
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/pet-supermarket/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 20546
+entity_slug: pet-supermarket
+entity_name: Pet Supermarket
+city: Pensacola
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/pet-supermarket/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 162c0ec6-d575-4db7-a05b-5b8d59f069d2
+slug: pet-supermarket
+name: Pet Supermarket
+is_active: true
+featured: false
+entity_type: shopping
+entity_subtype: pet_store
+description: Organized pet store with a dog-wash station and friendly service.
+phone: (850) 477-8028
+website_url: https://www.petsupermarket.com/storelocator/?storeId=177
+menu_pin: 5882
+address_line_1: 6857 N 9th Ave
+city: Pensacola
+state: FL
+zip: 32504
+latitude: 30.493615999999996
+longitude: -87.1926082
+rating: 4.4
+review_count: 614
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/pet-supermarket/photo_01.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T04:01:47.411538+00:00
+updated_at: 2026-06-03T04:01:47.411538+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJjSvigiTAkIgRFXUlApbqpJU
+google_maps_uri: https://maps.google.com/?cid=10783001337833813269&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: pet_store
+formatted_address: 6857 N 9th Ave, Pensacola, FL 32504, USA
+plus_code: 862JFRV4+CX
+international_phone: +1 850-477-8028
+editorial_summary: Chain with brand-name pet supplies, including toys, food & products for health & nutrition.
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+accepts_nfc: true
+accepts_cash_only: false
+google_places_data: {
+  "id": "ChIJjSvigiTAkIgRFXUlApbqpJU",
+  "types": [
+    "pet_store",
+    "pet_care",
+    "service",
+    "store",
+    "point_of_interest",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3m3Iv9IPx9aEeAhLF9jPYugX78zye2wXVmVuS9y92kI6efwyxUE2ZGLDxlCPz4hEjsmX_sQtIlgYgIegum1HnP6szDra1vCBj1subRnDzQyoHVvKm9hfEcJSCsCzFpwvzcOoRCYKe9_YSHL4SkzKoZzr8oEobg1067cZDXTN3V97bTqLq55vWVJsrlqy4nc-sYod8DtnUlWW4uMUkf5e8Tj5X_2Wh3SFb5v7Fqb4ugAZt4U49yM4z31Cm3gF33Wpf9kkwXXIYMYaXwRvEmcUsWvKd2wdQAHcZe7d19M5lEhe5naZDw7558uzKz6HmnNGV_tIMsBBOW3tbMn5QkFtqLrDBH1DOvXbX-l3jl1sr8qjOV23PRZbIKWISTZIWvgWmgGrU3jtrMM8rgPtc0DgQW8PjPnE9-14B2xavifac9k8iD_",
+      "widthPx": 3120,
+      "heightPx": 4160,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICWq7rewAE!2e10!4m2!3m1!1s0x8890c02482e22b8d:0x95a4ea9602257515",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICWq7rewAE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/116361247650047085258",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVieU5rwLx_O7qvfHvQFLet2zvSCnqI1VdBd7_7aV_8pr2GP3WEUQ=s100-p-k-no-mo",
+          "displayName": "Jerminator"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3l5k3ioQoV-Jw9V_zl2aUa5aC6frWeOTV4-675YHgIdtFKDCorwjcBf1C7rnb_7r1bFYufayKy_pwrFs4ZTmIv58lmSsysWtzah81eYjt0QS4h-LJTLK15DhlRORHtJWMAjMavs602NsJWyJVfC_XO8nBRdxYsOBD8Qgg-ac4TO8KtUlNzPkxoYp5jCJ9NI_Jacx3Hw4TReyNWYboIfKgpMfHKUnntNzMLWj802TtgQwggoftCQqZMGoCMIu15X3uSZDNS0E9oYKpmHdJ_t5eHgLuLj6DZOUJ5uXXdXGDT2bo6QtkYKHiisQjDQ55OPm3-0wXngt7BKU4PvpPQzjgfzvE36Xbu8H_7NcD0ysp3L8IGMdEMDRuuuryxNd8agANmceMPQxmwL5L66NFSPmzERDLTBKZ0NQtroG9-CN1PbZA",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICOi52TTw!2e10!4m2!3m1!1s0x8890c02482e22b8d:0x95a4ea9602257515",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICOi52TTw&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/117356420254347065458",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVJz6PDFjXuwGas4yg2NFe6ySi_cZDWF0S1Ce6TJ6pYUykJH_XX=s100-p-k-no-mo",
+          "displayName": "Elizabeth Eubanks"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3nLRWhMxhigNNgRRa9-O9LV1lEbVRWYtRTwNCcZ6DkhqGUjmVSjBTZ6iGDBl8nrcamm7tt9wo-QfnjIEIKDo5QEqbQnJWhg_SwzrHrIm0f9C4hUwRSXHGoVnPEoZlE6lHgNuFdGphmq1_vRWKjwV7a7heQVKyTQdSL9L525L_eYNXEtXcFwImkXMPjs16y5UfiyYA0I6iLc8LyQA__o0yaywyVJBTY8I_LVWcTybUBuSdiL4ljnABT_EyoKRF5E7oFRjPpcHn6zE_tQgQBMtMFu3-RlyTcTM01uZNxH1jJcOpu25fajJ0cXHMNlzg1cpoAMSsDgLtlF4smQbzi9qQzzs_uZ_j68ELm5q2fl_ugu9WZ0LOOL9TMtdmEJWTURSCgUkLwJLDMeS2aEYmB2iq2Dlvk4F8QjEvoS2n5sXQj6_Q",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID25LbTQA!2e10!4m2!3m1!1s0x8890c02482e22b8d:0x95a4ea9602257515",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID25LbTQA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/117356420254347065458",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVJz6PDFjXuwGas4yg2NFe6ySi_cZDWF0S1Ce6TJ6pYUykJH_XX=s100-p-k-no-mo",
+          "displayName": "Elizabeth Eubanks"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3kD4eB-bTKsGatABWrv0_Iy_hzmL85Lh4gS6zJZM6Kleqla0MS51VbhlYcQfs32y1UzcR36aFzep5szuHN2FaTRed8SKdShb-9f_iM7xupUtimzJL11f9NuTswNhx_djNbrHlE_LQt7yzreqy9gXWhh2n2M9zkj2gUxbDD5j_95ayLPLUAiDAwsh1DvS4YN-FZp9LflH1jO3ipUG1EtB6GG1YQMGNzibozuLSaWSvigOXZE-qrfv12t_3kvuB01n5dyfbqrt_A49jpuGjspvQ074QTIDYDhllLf4nJ0HAQPKQ_6ohgkUQHi8pkQh5TKfYoQ0ZdCTcBcrAg4GraVzYtvV2G5Jqh7T7QLnBHkYzOZKu42siDrCrZ0qB10SmyS9-IKN0INSlczDccKtNigJvNOAFPGAYANlX9WYJRkAz8pfEk",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICa7cimjQE!2e10!4m2!3m1!1s0x8890c02482e22b8d:0x95a4ea9602257515",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICa7cimjQE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/112502198684125837119",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLuv054nF_XmYkFsJ2SfIt3nl9IXmC8LWyOPdTLUyMVsPV0bQ=s100-p-k-no-mo",
+          "displayName": "Celina C"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3lpE1Mmt2hNPD8nYIYprFIwLXXIIruDBlMyrg6voY7KRAXIQrauENcheqwZrCU4TsAlBkIyXjFYgmv93kVxUjHWAIAFQ78_T5E0NnY9bncEh04H8959ZkZbj23X-ObFoK8Ji7iH5ZbDVsqh9DzZIKg03GmAFl67_7Kd-A8bFjJdsOt5t2pS4jzcJcnouipZ7m05zwYAHvZmIi6hepM1bMLLAvRfeJVynmCLNAaG-0YJb_ia096t5JN3SLQH0EzM0pn4OL8V0ExtDSN0fzi1Lu_jjk6Jk0k_xpbi6GJgAw1y9F4yVtthOQSQlhsR7Oir9vUHrY8qB0_vfSGcewp-P0aXLJPTP-PY8LgUxMq9XcL3jrWJ49MRhUkRrXq8nIvoQiifCEc4Tv-3tlgf0WuUa2TpI2HRMJhJg7zmGs5tnD9CZQ",
+      "widthPx": 3000,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDRmOC_FQ!2e10!4m2!3m1!1s0x8890c02482e22b8d:0x95a4ea9602257515",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDRmOC_FQ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/111935668089572810449",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWokgGUmUEmDdF-0Qw021z7ugC0ePpBsZnP-IIRIC-uNHWU6lqpog=s100-p-k-no-mo",
+          "displayName": "Haley Workman"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3lHlje5ma7DYZzVZvXD81hmK2iBg0tmbHB_KgDv4xjnUgqy-5l1IcM3pXXXAl9a2lvYCKypkLsq_-__yJzn_M6vYt0AnZh0OI9SAbPehRfA54L7HUoSHiXa9ZSNglWYzY6i_VljPv3Zy2o5Txf9Wx2sQCwEkk9DEoGpbi4jnaRW4PkprhU4VBmXsMhdSBb9JQKz2qCRZIM9TzPP4aCR1UAUan6wBwwSbdv36fuEEe5AIFT-Iw5FuOINwphMQYX7dids1Mich8Hv_GLEWVql1SJfFNXuaBYEn8y4z_oFcP5oSljaY3hK2ZrqURenr0nddIpCKP0YqFnStpCSDM2_FdxaaNiRGOd34n0RZ0baq6eE0Uo6YGm-QUbTrivMURrbJiI-bOlYFNtLdscS75EtUkFNluUW5VSI9nvL9jfiNdWD3g",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDKmMn5KQ!2e10!4m2!3m1!1s0x8890c02482e22b8d:0x95a4ea9602257515",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDKmMn5KQ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/109038004288439845336",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVlR2xifDWi_U33ttiehoSMeB0trDyvT8D5bxpqgHdw_d80MaC_hA=s100-p-k-no-mo",
+          "displayName": "Liem Chau"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3kPv-qQ_Ad2tiv2xUNuvVkLHmkPOKO-WQ1ZNgkpa-OO0shfNvNCiUNKayDJrM7h9qYg1AZtFgyUkG3yMM7VCTNWLhhUOVQUY-jAvbdkqG_U1KHo1CZEgktGARnee1wdPm6KMRLvioc7cy6H3Cw0pCq7ukdwJlRDdKfbuJ3yJGPdm4cGtz8vsNYrHuq_PO0CBKc8fHvJqoTBKjgGhpum68qgi2CyFWni38POQSiWE8FlkWidY1xmZ048oJ9e0ruYhPhpVizh00mn0LRAkch4JUT76zGFFI2BeA_6mSS6OZS3_6-B1w2ZCyjvCB55bkcHOH4x2z1O8g5LBX2OBXfRfCvHaVYP49p1GTdJFdkZ2Wy-gVlq_UQLK-ySDwJIU0rPeByBPtla8SFFhJ-KZsNlEleuxMhlSWtUlU1XVAf8XlsguQ",
+      "widthPx": 1800,
+      "heightPx": 2663,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID6_fmoBg!2e10!4m2!3m1!1s0x8890c02482e22b8d:0x95a4ea9602257515",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgID6_fmoBg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/114139792983016994286",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVeXhq2AvpkedUfbhwXqNMALMsC_5HwlqU1Zt0mHtYu46m3mOM=s100-p-k-no-mo",
+          "displayName": "Jamie"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3nFpb7LQAyKJjJLa_-zrTHBQN3rG3aIjDGelyRHjeHH7ht76310x6ETT1jnbXywrpBfzPxll4mbzPbtXJTvDfz9256GFxxiA1eRixxfi0inQYSUDnfBZ_qBr_Li8CQPdRzp5Tbduw8i-VwtUDg75tme4EfeNTFIoO2k9qPfWUl7GWhOOPG_2wibb6DhtlDwR8SrFKrwfSYzG7zRiNYza7JR0nrU34AV4m07j4rydEtYDEtdthwGvsf6yWewMV8id1bTb6x4JknYAvTYb73QAsPlrjyiyqcNDi1xKbxCeUzxf_DDo5tq1aidsm2URZNmmA3GzL-LqKkqOqMY4fNiCUBB1chBReRLyRRGMMW2rnjFSDF506HtxHLC7Sm6D4Uuoe4-xP6aqjWY8hLtP4eMy4cgff0oQSRFdCYGVdMHzjFVGA",
+      "widthPx": 1125,
+      "heightPx": 1685,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC2pZDCRg!2e10!4m2!3m1!1s0x8890c02482e22b8d:0x95a4ea9602257515",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIC2pZDCRg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/112728947281600954000",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocITquNF_GraU0FqyeP3XQygSeP987m6GIjgpDdRpBCkT1aXxg=s100-p-k-no-mo",
+          "displayName": "Jericho"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3nSmvdnfa5Dsm_sot3lUCvVJHTytEVuL-9WPrMCibDpEM1wZTmoO5VpWePVtB3YbZK0w9bOakZxeKykQyxYHAsWQ8QV3vVTmIIoU1VlMgJNlbkbSus8d6ei09rPWNLSc6KGs-iQTs6hetpES4uqIuvhurcH3kheRHcKJYd9pxHcV43HGHdnF1yUYaKjuglVafqUzlgG0ETHm99u9AsRG74LwIIiWkilgJKKO212iuNm7yW03L-3UbxVI-pTQiy4qqjLzVmYlhOIzKi4PG6e2D99vl0t5j4RrzSe5BeFiI6ZUPtnHpjaVF_6zkXGSISyFQ4QpUL10sYvgVOqNNw7rcJFXnt8qfQvd60vAXf98z06hez3A22dX-1SqW0C_IEQIpX0zoVCXhtGtFZyPwfnsE5y-wp0hOr4IsjW7MQIBR0",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDewM7PSA!2e10!4m2!3m1!1s0x8890c02482e22b8d:0x95a4ea9602257515",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDewM7PSA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/101874691837257404581",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWWlkP2Yh-Ur3kAkncUgInS4GfCbuyowZKCdCQSe3qvuBBoZTxZ=s100-p-k-no-mo",
+          "displayName": "Debra Newberry"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3ld6_kADweOA73lGpbZWE8mpN4Ldu3i-vrSK_x3hN1cb08nO80gP6UD2z5gzwW_myykW65GzC5SqdZgczL77U792wJuzvfJByFWvptXFB-ROMQfMFIe5m7OVz7TfXtkzTBrfIiA7nZuOTBfx4qvJ8jlr_u9yF_gm7o9vx47sdu3O_tHePojZFC0o_a9kEc4qNzep0z2OZkFmZttzxyr2AqIIQGErd1u-8BST_B1kdZMsJzuFLBiRvtkghI3mwGYcH2vF5C4R_Dt82lUIdJnJErnJovM7exHgAM3Y5k96qJz68vRArLOSv-jYSzhO7vIEhNzS8QiXrIN6hrqElTXkFXaK-BeMxtw1gVcdOcMaqsupsAjpzD4i8cUAXLVWctNvcHLeywmlrwMlUISMyIjxTN6ruJI4R65r-30kEi4WwlYehmq9_BQC5SyX-wNtfEc",
+      "widthPx": 4000,
+      "heightPx": 3000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDBT3SwdGFSRovZCfAF00Qm!2e10!4m2!3m1!1s0x8890c02482e22b8d:0x95a4ea9602257515",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDBT3SwdGFSRovZCfAF00Qm&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/116701495186123367279",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX9vGDZBwWqOKAJvZrAqcIyBgf4wZP3SipJWz5wjMOYuVd7gWc=s100-p-k-no-mo",
+          "displayName": "Smitch Smitchell (BratPackMedia)"
+        }
+      ]
+    }
+  ],
+  "rating": 4.4,
+  "reviews": [
+    {
+      "name": "places/ChIJjSvigiTAkIgRFXUlApbqpJU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pOT2JrSlBOMkppTTIxMWQzbGtOM1pPYW1JdFNHYxAB",
+      "text": {
+        "text": "We had the best experience at this store! The store manager Kristin was absolutely amazing helped in every way possible from helping figure out everything we need, knowledge of the pet we adopted, to making it so convenient since we live in Alabama and traveled to get one particular pet. Everything she recommended we are so satisfied with and her employee that answered the phone to help answer a few more questions I thought about was awesome. They are polite, helpful, and very knowledgeable. I would 100% recommend this store and Kristin to everyone!!! Thank you so much my daughter adores her guinea pig you helped make a childhood wish come true for her I couldn't have did it without you!! We will be traveling the hour back just to shop here I think this was the best experience I have had with a pet store!!!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-01-10T03:15:39.909104583Z",
+      "originalText": {
+        "text": "We had the best experience at this store! The store manager Kristin was absolutely amazing helped in every way possible from helping figure out everything we need, knowledge of the pet we adopted, to making it so convenient since we live in Alabama and traveled to get one particular pet. Everything she recommended we are so satisfied with and her employee that answered the phone to help answer a few more questions I thought about was awesome. They are polite, helpful, and very knowledgeable. I would 100% recommend this store and Kristin to everyone!!! Thank you so much my daughter adores her guinea pig you helped make a childhood wish come true for her I couldn't have did it without you!! We will be traveling the hour back just to shop here I think this was the best experience I have had with a pet store!!!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pOT2JrSlBOMkppTTIxMWQzbGtOM1pPYW1JdFNHYxAB!2m1!1s0x8890c02482e22b8d:0x95a4ea9602257515",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2pOT2JrSlBOMkppTTIxMWQzbGtOM1pPYW1JdFNHYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/106409785054073625956/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLVupm_YlXXsthEWFTw0lEUZs4Zp_JmZfx3porp0AQZpy-wyw=s128-c0x00000000-cc-rp-mo",
+        "displayName": "katherine haynes"
+      },
+      "relativePublishTimeDescription": "5 months ago"
+    },
+    {
+      "name": "places/ChIJjSvigiTAkIgRFXUlApbqpJU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2prM1VHeE1SRkUzY1VWNWEwUkZhMDV4Wm5OWU5tYxAB",
+      "text": {
+        "text": "Best fish selection in Pensacola, hands down. MARTIN is amazing. Clean tanks, and they have an INCREDIBLE assortment of fish.\nI have numerous fish that people are shocked I found (and all of them were obtained here)\nHow often do you see African butterfly fish? Lol\nOr freshwater lobsters?\nPea puffers?\nI literally love stopping in to see what they have.\nStaff is also more knowledgeable/enjoyable than most other fish places. Petland is another favorite, the selection (and my man Martin) make this my fave.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-01-21T02:48:35.915136778Z",
+      "originalText": {
+        "text": "Best fish selection in Pensacola, hands down. MARTIN is amazing. Clean tanks, and they have an INCREDIBLE assortment of fish.\nI have numerous fish that people are shocked I found (and all of them were obtained here)\nHow often do you see African butterfly fish? Lol\nOr freshwater lobsters?\nPea puffers?\nI literally love stopping in to see what they have.\nStaff is also more knowledgeable/enjoyable than most other fish places. Petland is another favorite, the selection (and my man Martin) make this my fave.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2prM1VHeE1SRkUzY1VWNWEwUkZhMDV4Wm5OWU5tYxAB!2m1!1s0x8890c02482e22b8d:0x95a4ea9602257515",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2prM1VHeE1SRkUzY1VWNWEwUkZhMDV4Wm5OWU5tYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/112664263892390064343/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXQMmm-21_-Y1uYmkoxC-FW11-DEh4p3qhGVHx3XjEU5YREYXV5=s128-c0x00000000-cc-rp-mo-ba4",
+        "displayName": "Streamylc"
+      },
+      "relativePublishTimeDescription": "4 months ago"
+    },
+    {
+      "name": "places/ChIJjSvigiTAkIgRFXUlApbqpJU/reviews/Ci9DQUlRQUNvZENodHljRjlvT25CWFR6aHZlV0ZXYmxkc2RFVkxUVk0yTTJ4TVVXYxAB",
+      "text": {
+        "text": "The fish department was awful. There was a whole tank that was full of dead fish that were starting to grow some kind of fuzzy stuff on them. Another tank had goldfish snacking on the dead ones. The tanks were dirty and cleary not maintained. PUT MARTIN BACK ON THE FISH DEPARTMENT. He actually cares about the health of the fish!",
+        "languageCode": "en"
+      },
+      "rating": 1,
+      "publishTime": "2026-01-04T14:22:13.444456927Z",
+      "originalText": {
+        "text": "The fish department was awful. There was a whole tank that was full of dead fish that were starting to grow some kind of fuzzy stuff on them. Another tank had goldfish snacking on the dead ones. The tanks were dirty and cleary not maintained. PUT MARTIN BACK ON THE FISH DEPARTMENT. He actually cares about the health of the fish!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25CWFR6aHZlV0ZXYmxkc2RFVkxUVk0yTTJ4TVVXYxAB!2m1!1s0x8890c02482e22b8d:0x95a4ea9602257515",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT25CWFR6aHZlV0ZXYmxkc2RFVkxUVk0yTTJ4TVVXYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/108236802792395021615/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocK8AbX85TlYTnxOMt8J2-ChoEKnoC-ClH3ufzu2zGdb59llxg=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Bex Jennings"
+      },
+      "relativePublishTimeDescription": "5 months ago"
+    },
+    {
+      "name": "places/ChIJjSvigiTAkIgRFXUlApbqpJU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tJdE5sUkZVRXRPVW5RNFJXcDFTREptTVhSVlZHYxAB",
+      "text": {
+        "text": "Dog wash station is awesome. We love the variety of products you may use when sudsing up your furry best friend. Staff always happy to see your canine kiddos and provide excellent service. Treat you like family and it's a nice change of pace. Not to mention the dog wash facility inside the store is top notch. Includes specific needs shampoos and conditioners (oatmeal is great for doggos w dry skin!)towels, aprons, air dryer hoses and plenty of post wash drying/grooming area. Excellent selection of all the best brands of kibble, smart stylish accessories, toys and tasty bakery quality gourmet treats practically everywhere you look. One trip here youll forget all about where ever you used to shop with your furry family members!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-02-10T10:01:05.051711913Z",
+      "originalText": {
+        "text": "Dog wash station is awesome. We love the variety of products you may use when sudsing up your furry best friend. Staff always happy to see your canine kiddos and provide excellent service. Treat you like family and it's a nice change of pace. Not to mention the dog wash facility inside the store is top notch. Includes specific needs shampoos and conditioners (oatmeal is great for doggos w dry skin!)towels, aprons, air dryer hoses and plenty of post wash drying/grooming area. Excellent selection of all the best brands of kibble, smart stylish accessories, toys and tasty bakery quality gourmet treats practically everywhere you look. One trip here youll forget all about where ever you used to shop with your furry family members!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tJdE5sUkZVRXRPVW5RNFJXcDFTREptTVhSVlZHYxAB!2m1!1s0x8890c02482e22b8d:0x95a4ea9602257515",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2tJdE5sUkZVRXRPVW5RNFJXcDFTREptTVhSVlZHYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/117110411539616739847/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUZKk9BiSGYEZqajRwtnuqSaBLjCWTdKYpAOXTI1XQDJwVFMoqXwQ=s128-c0x00000000-cc-rp-mo-ba4",
+        "displayName": "craig wiliam"
+      },
+      "relativePublishTimeDescription": "4 months ago"
+    },
+    {
+      "name": "places/ChIJjSvigiTAkIgRFXUlApbqpJU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xsT1ZXaDNVMHBZTkRWNE5HdEJSR3BtYjAxT2VuYxAB",
+      "text": {
+        "text": "Several of the tank filters had a layer of dead fish on them. 😳",
+        "languageCode": "en"
+      },
+      "rating": 1,
+      "publishTime": "2026-01-18T19:47:20.637881180Z",
+      "originalText": {
+        "text": "Several of the tank filters had a layer of dead fish on them. 😳",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xsT1ZXaDNVMHBZTkRWNE5HdEJSR3BtYjAxT2VuYxAB!2m1!1s0x8890c02482e22b8d:0x95a4ea9602257515",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2xsT1ZXaDNVMHBZTkRWNE5HdEJSR3BtYjAxT2VuYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/106817635902085612370/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocL1ThinLC8M9OHkznGZIe56E1kn_xYUnVmH5cuIsGRF-NVxEA=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Chelsea Smith"
+      },
+      "relativePublishTimeDescription": "4 months ago"
+    }
+  ],
+  "delivery": false,
+  "location": {
+    "latitude": 30.493615999999996,
+    "longitude": -87.1926082
+  },
+  "plusCode": {
+    "globalCode": "862JFRV4+CX",
+    "compoundCode": "FRV4+CX Pensacola, FL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.4922979697085,
+      "longitude": -87.19390908029149
+    },
+    "high": {
+      "latitude": 30.4949959302915,
+      "longitude": -87.19121111970848
+    }
+  },
+  "priceLevel": "PRICE_LEVEL_MODERATE",
+  "websiteUri": "https://www.petsupermarket.com/storelocator/?storeId=177",
+  "displayName": {
+    "text": "Pet Supermarket",
+    "languageCode": "en"
+  },
+  "primaryType": "pet_store",
+  "googleMapsUri": "https://maps.google.com/?cid=10783001337833813269&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewSummary": {
+    "text": {
+      "text": "People say this pet store offers a wide selection of pet supplies, including unique fish and specialty dog food, and features a convenient self-service dog wash station. They also highlight the knowledgeable and helpful staff, who provide excellent service and advice.\n\nSome reviews mention the animal habitats can be poorly maintained.",
+      "languageCode": "en-US"
+    },
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x8890c02482e22b8d:0x95a4ea9602257515!9m1!1b1",
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "flagContentUri": "https://www.google.com/local/content/rap/report?postId=5%401:CAIQACodChtyc19oOmE0UERtR3VwMzBpVnVHS2gwQ0VReEE%7CCAIQACoqChtyc19oOmE0UERtR3VwMzBpVnVHS2gwQ0VReEESCwiW9LnQBhD42oM2&d=17924085&t=8"
+  },
+  "businessStatus": "OPERATIONAL",
+  "curbsidePickup": false,
+  "paymentOptions": {
+    "acceptsNfc": true,
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=10783001337833813269&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890c02482e22b8d:0x95a4ea9602257515!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x8890c02482e22b8d:0x95a4ea9602257515!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x8890c02482e22b8d:0x95a4ea9602257515!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890c02482e22b8d:0x95a4ea9602257515!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+  "userRatingCount": 614,
+  "adrFormatAddress": "<span class=\"street-address\">6857 N 9th Ave</span>, <span class=\"locality\">Pensacola</span>, <span class=\"region\">FL</span> <span class=\"postal-code\">32504</span>, <span class=\"country-name\">USA</span>",
+  "editorialSummary": {
+    "text": "Chain with brand-name pet supplies, including toys, food & products for health & nutrition.",
+    "languageCode": "en"
+  },
+  "formattedAddress": "6857 N 9th Ave, Pensacola, FL 32504, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "6857",
+      "shortText": "6857",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "North 9th Avenue",
+      "shortText": "N 9th Ave",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "neighborhood",
+        "political"
+      ],
+      "longText": "Northeast Pensacola",
+      "shortText": "Northeast Pensacola",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Pensacola",
+      "shortText": "Pensacola",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Escambia County",
+      "shortText": "Escambia County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Florida",
+      "shortText": "FL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "32504",
+      "shortText": "32504",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJRdGbkCjAkIgR3GfSZ85-Kro",
+        "placeId": "ChIJRdGbkCjAkIgR3GfSZ85-Kro",
+        "containment": "WITHIN",
+        "displayName": {
+          "text": "Belvedere Pensacola Heating & Air Conditioning Plaza",
+          "languageCode": "en"
+        }
+      },
+      {
+        "name": "places/ChIJHcho14PqkIgRqP3LiAIOawI",
+        "placeId": "ChIJHcho14PqkIgRqP3LiAIOawI",
+        "containment": "WITHIN",
+        "displayName": {
+          "text": "Northeast Pensacola",
+          "languageCode": "en"
+        }
+      }
+    ],
+    "landmarks": [
+      {
+        "name": "places/ChIJ1-CY9CjAkIgRhrTd9EftqBs",
+        "types": [
+          "establishment",
+          "furniture_store",
+          "home_goods_store",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJ1-CY9CjAkIgRhrTd9EftqBs",
+        "displayName": {
+          "text": "Ashley Store",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 31.057907,
+        "straightLineDistanceMeters": 53.351418
+      },
+      {
+        "name": "places/ChIJR3l9lijAkIgRHEnvau8Gblk",
+        "types": [
+          "establishment",
+          "food",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJR3l9lijAkIgRHEnvau8Gblk",
+        "displayName": {
+          "text": "Chow Tyme Grill & Buffet | Chinese",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "AROUND_THE_CORNER",
+        "travelDistanceMeters": 76.47768,
+        "straightLineDistanceMeters": 64.82809
+      },
+      {
+        "name": "places/ChIJSyNp8CjAkIgRMmx3BmkgP_k",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJSyNp8CjAkIgRMmx3BmkgP_k",
+        "displayName": {
+          "text": "Dollar Tree",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 73.63608,
+        "straightLineDistanceMeters": 70.869316
+      },
+      {
+        "name": "places/ChIJAdWclCjAkIgRKRzHYTBvdDs",
+        "types": [
+          "establishment",
+          "finance",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJAdWclCjAkIgRKRzHYTBvdDs",
+        "displayName": {
+          "text": "The UPS Store",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "BESIDE",
+        "travelDistanceMeters": 38.32692,
+        "straightLineDistanceMeters": 24.565456
+      },
+      {
+        "name": "places/ChIJ2SFcBxPBkIgRtWxGU2avy5w",
+        "types": [
+          "establishment",
+          "food",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJ2SFcBxPBkIgRtWxGU2avy5w",
+        "displayName": {
+          "text": "Burger King",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 58.7817,
+        "straightLineDistanceMeters": 59.076107
+      }
+    ]
+  },
+  "generativeSummary": {
+    "overview": {
+      "text": "Organized pet store with a dog-wash station and friendly service.",
+      "languageCode": "en-US"
+    },
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "overviewFlagContentUri": "https://www.google.com/local/content/rap/report?postId=CiUweDg4OTBjMDI0ODJlMjJiOGQ6MHg5NWE0ZWE5NjAyMjU3NTE1MAI&d=17924085&t=12"
+  },
+  "currentOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 19,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T14:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 9:00 AM – 8:00 PM",
+      "Tuesday: 9:00 AM – 8:00 PM",
+      "Wednesday: 9:00 AM – 8:00 PM",
+      "Thursday: 9:00 AM – 8:00 PM",
+      "Friday: 9:00 AM – 8:00 PM",
+      "Saturday: 9:00 AM – 8:00 PM",
+      "Sunday: 10:00 AM – 7:00 PM"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Pet Store",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#4B96F3",
+  "nationalPhoneNumber": "(850) 477-8028",
+  "regularOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "hour": 19,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 20,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T14:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 9:00 AM – 8:00 PM",
+      "Tuesday: 9:00 AM – 8:00 PM",
+      "Wednesday: 9:00 AM – 8:00 PM",
+      "Thursday: 9:00 AM – 8:00 PM",
+      "Friday: 9:00 AM – 8:00 PM",
+      "Saturday: 9:00 AM – 8:00 PM",
+      "Sunday: 10:00 AM – 7:00 PM"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true
+  },
+  "shortFormattedAddress": "6857 N 9th Ave, Pensacola",
+  "primaryTypeDisplayName": {
+    "text": "Pet Store",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 850-477-8028"
+}
+ai_overview: Organized pet store with a dog-wash station and friendly service.
+ai_review_summary: People say this pet store offers a wide selection of pet supplies, including unique fish and specialty dog food, and features a convenient self-service dog wash station. They also highlight the knowledgeable and helpful staff, who provide excellent service and advice.
+
+Some reviews mention the animal habitats can be poorly maintained.
+price_level: 2
+curbside_pickup: false
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #4B96F3
+short_formatted_address: 6857 N 9th Ave, Pensacola
+national_phone: (850) 477-8028
+search_vector: 'advic':71C 'also':59C 'anim':76C 'brand':18B 'brand-nam':17B 'chain':15B 'conveni':51C 'dog':9B,46C,55C 'dog-wash':8B 'excel':68C 'featur':49C 'fish':43C 'food':24B,47C 'friend':13B 'habitat':77C 'health':27B 'help':64C 'highlight':60C 'includ':22B,41C 'knowledg':62C 'maintain':81C 'mention':74C 'name':19B 'nutrit':28B 'offer':34C 'organ':3B 'pensacola':84 'peopl':29C 'pet':1A,4B,20B,32C,39C,82 'poor':80C 'product':25B 'provid':67C 'review':73C 'say':30C 'select':37C 'self':53C 'self-servic':52C 'servic':14B,54C,69C 'specialti':45C 'staff':65C 'station':11B,57C 'store':5B,33C,83 'supermarket':2A 'suppli':21B,40C 'toy':23B 'uniqu':42C 'wash':10B,56C 'wide':36C
+primary_type_display: Pet Store
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=10783001337833813269&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890c02482e22b8d:0x95a4ea9602257515!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x8890c02482e22b8d:0x95a4ea9602257515!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x8890c02482e22b8d:0x95a4ea9602257515!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890c02482e22b8d:0x95a4ea9602257515!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJRdGbkCjAkIgR3GfSZ85-Kro",
+      "placeId": "ChIJRdGbkCjAkIgR3GfSZ85-Kro",
+      "containment": "WITHIN",
+      "displayName": {
+        "text": "Belvedere Pensacola Heating & Air Conditioning Plaza",
+        "languageCode": "en"
+      }
+    },
+    {
+      "name": "places/ChIJHcho14PqkIgRqP3LiAIOawI",
+      "placeId": "ChIJHcho14PqkIgRqP3LiAIOawI",
+      "containment": "WITHIN",
+      "displayName": {
+        "text": "Northeast Pensacola",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJ1-CY9CjAkIgRhrTd9EftqBs",
+      "types": [
+        "establishment",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJ1-CY9CjAkIgRhrTd9EftqBs",
+      "displayName": {
+        "text": "Ashley Store",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 31.057907,
+      "straightLineDistanceMeters": 53.351418
+    },
+    {
+      "name": "places/ChIJR3l9lijAkIgRHEnvau8Gblk",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJR3l9lijAkIgRHEnvau8Gblk",
+      "displayName": {
+        "text": "Chow Tyme Grill & Buffet | Chinese",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "AROUND_THE_CORNER",
+      "travelDistanceMeters": 76.47768,
+      "straightLineDistanceMeters": 64.82809
+    },
+    {
+      "name": "places/ChIJSyNp8CjAkIgRMmx3BmkgP_k",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJSyNp8CjAkIgRMmx3BmkgP_k",
+      "displayName": {
+        "text": "Dollar Tree",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 73.63608,
+      "straightLineDistanceMeters": 70.869316
+    },
+    {
+      "name": "places/ChIJAdWclCjAkIgRKRzHYTBvdDs",
+      "types": [
+        "establishment",
+        "finance",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJAdWclCjAkIgRKRzHYTBvdDs",
+      "displayName": {
+        "text": "The UPS Store",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "BESIDE",
+      "travelDistanceMeters": 38.32692,
+      "straightLineDistanceMeters": 24.565456
+    },
+    {
+      "name": "places/ChIJ2SFcBxPBkIgRtWxGU2avy5w",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJ2SFcBxPBkIgRtWxGU2avy5w",
+      "displayName": {
+        "text": "Burger King",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 58.7817,
+      "straightLineDistanceMeters": 59.076107
+    }
+  ]
+}
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: generic
+generative_summary: Organized pet store with a dog-wash station and friendly service.
+industry_code: retail
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   2 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 2] ---
+id: ae5eaba2-ab16-4960-8e3b-e2e27d6d2221
+entity_slug: pet-supermarket
+place_id: ChIJRdGbkCjAkIgR3GfSZ85-Kro
+containment: WITHIN
+display_name: Belvedere Pensacola Heating & Air Conditioning Plaza
+
+--- entity_address_areas [row 2 of 2] ---
+id: 425387c4-f521-4a50-a7ae-3c781849ac3a
+entity_slug: pet-supermarket
+place_id: ChIJHcho14PqkIgRqP3LiAIOawI
+containment: WITHIN
+display_name: Northeast Pensacola
+
+####################################################################################################
+# TABLE: entity_attributes   -   8 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 8] ---
+id: 2fab0782-7821-4d29-8947-41025a7dc78e
+entity_slug: pet-supermarket
+category: service
+key: delivery
+label: Delivery
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 2 of 8] ---
+id: 9bd0e89e-bf90-4a2e-8ec8-842d709dd4d2
+entity_slug: pet-supermarket
+category: service
+key: curbside_pickup
+label: Curbside Pickup
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 3 of 8] ---
+id: edd66916-e427-4d79-ad14-c9ed872d8bab
+entity_slug: pet-supermarket
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 4 of 8] ---
+id: aeb0bf0a-7430-4997-a578-2208c6d217b1
+entity_slug: pet-supermarket
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 5 of 8] ---
+id: ccdc6f63-ea8a-447d-b216-a4132038db98
+entity_slug: pet-supermarket
+category: payment
+key: pay_acceptsNfc
+label: Accepts Nfc
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 6 of 8] ---
+id: 44a364c5-8816-46ad-9ccd-1dbb82e8e48a
+entity_slug: pet-supermarket
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 7 of 8] ---
+id: 37b1dbb3-1350-47aa-b0e1-5264d15ce48c
+entity_slug: pet-supermarket
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 8 of 8] ---
+id: 54d0b863-6ea6-4d83-b0c2-905c90e1e58d
+entity_slug: pet-supermarket
+category: payment
+key: pay_acceptsCreditCards
+label: Accepts Credit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: pet-supermarket
+name: Pet Supermarket
+industry_code: retail
+is_parent: false
+score_of_7: 5
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: c6662c91-7404-415d-b49a-c6a0d2cb47f7
+entity_slug: pet-supermarket
+place_uri: https://maps.google.com/?cid=10783001337833813269&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890c02482e22b8d:0x95a4ea9602257515!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x8890c02482e22b8d:0x95a4ea9602257515!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x8890c02482e22b8d:0x95a4ea9602257515!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x8890c02482e22b8d:0x95a4ea9602257515!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 9127
+entity_slug: pet-supermarket
+google_review_name: places/ChIJjSvigiTAkIgRFXUlApbqpJU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pOT2JrSlBOMkppTTIxMWQzbGtOM1pPYW1JdFNHYxAB
+rating: 5
+review_text: We had the best experience at this store! The store manager Kristin was absolutely amazing helped in every way possible from helping figure out everything we need, knowledge of the pet we adopted, to making it so convenient since we live in Alabama and traveled to get one particular pet. Everything she recommended we are so satisfied with and her employee that answered the phone to help answer a few more questions I thought about was awesome. They are polite, helpful, and very knowledgeable. I would 100% recommend this store and Kristin to everyone!!! Thank you so much my daughter adores her guinea pig you helped make a childhood wish come true for her I couldn't have did it without you!! We will be traveling the hour back just to shop here I think this was the best experience I have had with a pet store!!!
+language_code: en
+author_name: katherine haynes
+author_profile_url: https://www.google.com/maps/contrib/106409785054073625956/reviews
+publish_time: 2026-01-10T03:15:39.909105+00:00
+relative_time: 5 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pOT2JrSlBOMkppTTIxMWQzbGtOM1pPYW1JdFNHYxAB!2m1!1s0x8890c02482e22b8d:0x95a4ea9602257515
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 9128
+entity_slug: pet-supermarket
+google_review_name: places/ChIJjSvigiTAkIgRFXUlApbqpJU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2prM1VHeE1SRkUzY1VWNWEwUkZhMDV4Wm5OWU5tYxAB
+rating: 5
+review_text: Best fish selection in Pensacola, hands down. MARTIN is amazing. Clean tanks, and they have an INCREDIBLE assortment of fish.
+I have numerous fish that people are shocked I found (and all of them were obtained here)
+How often do you see African butterfly fish? Lol
+Or freshwater lobsters?
+Pea puffers?
+I literally love stopping in to see what they have.
+Staff is also more knowledgeable/enjoyable than most other fish places. Petland is another favorite, the selection (and my man Martin) make this my fave.
+language_code: en
+author_name: Streamylc
+author_profile_url: https://www.google.com/maps/contrib/112664263892390064343/reviews
+publish_time: 2026-01-21T02:48:35.915137+00:00
+relative_time: 4 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2prM1VHeE1SRkUzY1VWNWEwUkZhMDV4Wm5OWU5tYxAB!2m1!1s0x8890c02482e22b8d:0x95a4ea9602257515
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 9129
+entity_slug: pet-supermarket
+google_review_name: places/ChIJjSvigiTAkIgRFXUlApbqpJU/reviews/Ci9DQUlRQUNvZENodHljRjlvT25CWFR6aHZlV0ZXYmxkc2RFVkxUVk0yTTJ4TVVXYxAB
+rating: 1
+review_text: The fish department was awful. There was a whole tank that was full of dead fish that were starting to grow some kind of fuzzy stuff on them. Another tank had goldfish snacking on the dead ones. The tanks were dirty and cleary not maintained. PUT MARTIN BACK ON THE FISH DEPARTMENT. He actually cares about the health of the fish!
+language_code: en
+author_name: Bex Jennings
+author_profile_url: https://www.google.com/maps/contrib/108236802792395021615/reviews
+publish_time: 2026-01-04T14:22:13.444457+00:00
+relative_time: 5 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25CWFR6aHZlV0ZXYmxkc2RFVkxUVk0yTTJ4TVVXYxAB!2m1!1s0x8890c02482e22b8d:0x95a4ea9602257515
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 9130
+entity_slug: pet-supermarket
+google_review_name: places/ChIJjSvigiTAkIgRFXUlApbqpJU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2tJdE5sUkZVRXRPVW5RNFJXcDFTREptTVhSVlZHYxAB
+rating: 5
+review_text: Dog wash station is awesome. We love the variety of products you may use when sudsing up your furry best friend. Staff always happy to see your canine kiddos and provide excellent service. Treat you like family and it's a nice change of pace. Not to mention the dog wash facility inside the store is top notch. Includes specific needs shampoos and conditioners (oatmeal is great for doggos w dry skin!)towels, aprons, air dryer hoses and plenty of post wash drying/grooming area. Excellent selection of all the best brands of kibble, smart stylish accessories, toys and tasty bakery quality gourmet treats practically everywhere you look. One trip here youll forget all about where ever you used to shop with your furry family members!
+language_code: en
+author_name: craig wiliam
+author_profile_url: https://www.google.com/maps/contrib/117110411539616739847/reviews
+publish_time: 2026-02-10T10:01:05.051712+00:00
+relative_time: 4 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2tJdE5sUkZVRXRPVW5RNFJXcDFTREptTVhSVlZHYxAB!2m1!1s0x8890c02482e22b8d:0x95a4ea9602257515
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 9131
+entity_slug: pet-supermarket
+google_review_name: places/ChIJjSvigiTAkIgRFXUlApbqpJU/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xsT1ZXaDNVMHBZTkRWNE5HdEJSR3BtYjAxT2VuYxAB
+rating: 1
+review_text: Several of the tank filters had a layer of dead fish on them. 😳
+language_code: en
+author_name: Chelsea Smith
+author_profile_url: https://www.google.com/maps/contrib/106817635902085612370/reviews
+publish_time: 2026-01-18T19:47:20.637881+00:00
+relative_time: 4 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xsT1ZXaDNVMHBZTkRWNE5HdEJSR3BtYjAxT2VuYxAB!2m1!1s0x8890c02482e22b8d:0x95a4ea9602257515
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 14c556df-e7d7-4f8b-a0a8-05e6d9474fa0
+entity_slug: pet-supermarket
+day_of_week: 0
+opens_at: 10:00:00
+closes_at: 19:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 2d634110-3181-4375-9be3-5002e26e77a8
+entity_slug: pet-supermarket
+day_of_week: 1
+opens_at: 09:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 52774942-f894-4ec4-82ec-a15a79c6d8f0
+entity_slug: pet-supermarket
+day_of_week: 2
+opens_at: 09:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 439ab281-9815-442b-832b-c9fcafd7a411
+entity_slug: pet-supermarket
+day_of_week: 3
+opens_at: 09:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: cd56831d-f797-429c-8c53-dfb29f38ee20
+entity_slug: pet-supermarket
+day_of_week: 4
+opens_at: 09:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: c18f66ce-48ed-4fd8-bbd8-aa56a31e7cc0
+entity_slug: pet-supermarket
+day_of_week: 5
+opens_at: 09:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 51bb1ab6-0e53-46b1-9f34-4c547838d33e
+entity_slug: pet-supermarket
+day_of_week: 6
+opens_at: 09:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_modules   -   10 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 10] ---
+id: 16d32794-c9d4-4e41-b4e5-29e26dfddae3
+entity_slug: pet-supermarket
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 10] ---
+id: 9fde46bf-d3ad-40b7-8c95-ee512085fc2f
+entity_slug: pet-supermarket
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 10] ---
+id: 373d4ece-39ce-42bd-9e75-5983311e1021
+entity_slug: pet-supermarket
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 10] ---
+id: fd568c45-a143-483b-a5e0-4b37d6b9690a
+entity_slug: pet-supermarket
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 10] ---
+id: 83e5b349-5f94-471c-84bb-5cd15be9e3e1
+entity_slug: pet-supermarket
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 10] ---
+id: 1eaeca5d-8d48-4134-854a-5154e9dfd22a
+entity_slug: pet-supermarket
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 10] ---
+id: 6f4edeb7-8d00-4827-b099-769017fcba07
+entity_slug: pet-supermarket
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 10] ---
+id: 311803e0-984a-4abd-8b04-667a65ec3096
+entity_slug: pet-supermarket
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 10] ---
+id: 52799065-a7b0-4f48-90ed-40b327d3979d
+entity_slug: pet-supermarket
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 10] ---
+id: c61d0e23-b9b9-4b15-937e-1a3dffc2146c
+entity_slug: pet-supermarket
+module_key: shop
+enabled: true
+sort_order: 10
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   20 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 20] ---
+id: 50225953-2264-427a-89ff-f04a098ab3a3
+landmark_id: f34d3dde-3bd5-4a9b-b35f-92e890bf36a5
+entity_slug: pet-supermarket
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 20] ---
+id: c5c4fbf6-d1f6-4087-870c-d9eadcd60d32
+landmark_id: f34d3dde-3bd5-4a9b-b35f-92e890bf36a5
+entity_slug: pet-supermarket
+landmark_type: furniture_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 20] ---
+id: 01213830-2846-42de-acff-f100d33c160b
+landmark_id: f34d3dde-3bd5-4a9b-b35f-92e890bf36a5
+entity_slug: pet-supermarket
+landmark_type: home_goods_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 20] ---
+id: dd9eec82-d9a7-469c-baf9-c950492357ef
+landmark_id: f34d3dde-3bd5-4a9b-b35f-92e890bf36a5
+entity_slug: pet-supermarket
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 20] ---
+id: e9475ab5-9326-4178-98a9-701e36500634
+landmark_id: f34d3dde-3bd5-4a9b-b35f-92e890bf36a5
+entity_slug: pet-supermarket
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 20] ---
+id: 508675be-1557-4d07-bd36-57a5a211a133
+landmark_id: 24980dc0-69e7-4ead-a6a4-a5294f7ae7a2
+entity_slug: pet-supermarket
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 20] ---
+id: 3dc2b404-b675-4fe6-8d2c-5efb6a29f5a1
+landmark_id: 24980dc0-69e7-4ead-a6a4-a5294f7ae7a2
+entity_slug: pet-supermarket
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 20] ---
+id: 4e6c558c-094b-45be-bc54-ec12203f458f
+landmark_id: 24980dc0-69e7-4ead-a6a4-a5294f7ae7a2
+entity_slug: pet-supermarket
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 20] ---
+id: 29d32057-6d6d-4730-96a3-1243f284b531
+landmark_id: 24980dc0-69e7-4ead-a6a4-a5294f7ae7a2
+entity_slug: pet-supermarket
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 20] ---
+id: 1446c37f-0ac7-44fd-805c-6162599f5bff
+landmark_id: 9b150644-16c5-4008-9eb0-ec26d2767109
+entity_slug: pet-supermarket
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 20] ---
+id: 5935dc0e-c4aa-463a-82e3-52f06ebdb469
+landmark_id: 9b150644-16c5-4008-9eb0-ec26d2767109
+entity_slug: pet-supermarket
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 20] ---
+id: 03a573d8-d58c-4268-994e-a0281a9683a4
+landmark_id: 9b150644-16c5-4008-9eb0-ec26d2767109
+entity_slug: pet-supermarket
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 20] ---
+id: eddb55c6-b805-48b8-9fa1-f86d381d552d
+landmark_id: 9350da93-4ea9-46c0-b1ce-cfc582ff95c5
+entity_slug: pet-supermarket
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 20] ---
+id: 59aa466d-05e3-49d0-a84d-1f09b36fd701
+landmark_id: 9350da93-4ea9-46c0-b1ce-cfc582ff95c5
+entity_slug: pet-supermarket
+landmark_type: finance
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 20] ---
+id: a5ca0b6c-c0fc-43a2-bfde-0d0d917a8247
+landmark_id: 9350da93-4ea9-46c0-b1ce-cfc582ff95c5
+entity_slug: pet-supermarket
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 20] ---
+id: 31e8640d-e4d4-446e-9779-fe329aa941f9
+landmark_id: 9350da93-4ea9-46c0-b1ce-cfc582ff95c5
+entity_slug: pet-supermarket
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 20] ---
+id: 8b672a82-58c7-44bf-932b-931eeb3ab93a
+landmark_id: 30f48049-db2b-4dcc-af0c-58a58bf2f259
+entity_slug: pet-supermarket
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 20] ---
+id: 50ab40aa-dbeb-4a94-9caf-e8530fd97085
+landmark_id: 30f48049-db2b-4dcc-af0c-58a58bf2f259
+entity_slug: pet-supermarket
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 19 of 20] ---
+id: 1e8baa5b-4c89-45b0-8957-e71716459033
+landmark_id: 30f48049-db2b-4dcc-af0c-58a58bf2f259
+entity_slug: pet-supermarket
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 20 of 20] ---
+id: e851f10f-4e51-4851-93da-c657905c3fe7
+landmark_id: 30f48049-db2b-4dcc-af0c-58a58bf2f259
+entity_slug: pet-supermarket
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   7 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 7] ---
+id: f34d3dde-3bd5-4a9b-b35f-92e890bf36a5
+entity_slug: pet-supermarket
+kind: landmark
+place_id: ChIJ1-CY9CjAkIgRhrTd9EftqBs
+name: Ashley Store
+types: [
+  "establishment",
+  "furniture_store",
+  "home_goods_store",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 31.057907
+straight_line_distance_meters: 53.351418
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 7] ---
+id: 24980dc0-69e7-4ead-a6a4-a5294f7ae7a2
+entity_slug: pet-supermarket
+kind: landmark
+place_id: ChIJR3l9lijAkIgRHEnvau8Gblk
+name: Chow Tyme Grill & Buffet | Chinese
+types: [
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant"
+]
+spatial_relationship: AROUND_THE_CORNER
+travel_distance_meters: 76.47768
+straight_line_distance_meters: 64.82809
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 7] ---
+id: 9b150644-16c5-4008-9eb0-ec26d2767109
+entity_slug: pet-supermarket
+kind: landmark
+place_id: ChIJSyNp8CjAkIgRMmx3BmkgP_k
+name: Dollar Tree
+types: [
+  "establishment",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 73.63608
+straight_line_distance_meters: 70.869316
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 7] ---
+id: 9350da93-4ea9-46c0-b1ce-cfc582ff95c5
+entity_slug: pet-supermarket
+kind: landmark
+place_id: ChIJAdWclCjAkIgRKRzHYTBvdDs
+name: The UPS Store
+types: [
+  "establishment",
+  "finance",
+  "point_of_interest",
+  "store"
+]
+spatial_relationship: BESIDE
+travel_distance_meters: 38.32692
+straight_line_distance_meters: 24.565456
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 7] ---
+id: 30f48049-db2b-4dcc-af0c-58a58bf2f259
+entity_slug: pet-supermarket
+kind: landmark
+place_id: ChIJ2SFcBxPBkIgRtWxGU2avy5w
+name: Burger King
+types: [
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant"
+]
+travel_distance_meters: 58.7817
+straight_line_distance_meters: 59.076107
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 6 of 7] ---
+id: ae2e387a-4141-4d66-83ef-1714a682bbe2
+entity_slug: pet-supermarket
+kind: area
+place_id: ChIJRdGbkCjAkIgR3GfSZ85-Kro
+name: Belvedere Pensacola Heating & Air Conditioning Plaza
+containment: WITHIN
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 7 of 7] ---
+id: b674b453-4a1c-4240-a75a-b815d3ad648a
+entity_slug: pet-supermarket
+kind: area
+place_id: ChIJHcho14PqkIgRqP3LiAIOawI
+name: Northeast Pensacola
+containment: WITHIN
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_photos   -   12 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 12] ---
+id: 0349ebe1-6c95-4714-b528-c3982cbe7b93
+entity_slug: pet-supermarket
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/pet-supermarket/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 12] ---
+id: 0b4fddd8-cad8-4c3a-b4af-7bd76760ae0c
+entity_slug: pet-supermarket
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/pet-supermarket/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 12] ---
+id: baa263d9-63cb-4f80-a37f-4dc6598f8658
+entity_slug: pet-supermarket
+url: https://places.googleapis.com/v1/places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3m3Iv9IPx9aEeAhLF9jPYugX78zye2wXVmVuS9y92kI6efwyxUE2ZGLDxlCPz4hEjsmX_sQtIlgYgIegum1HnP6szDra1vCBj1subRnDzQyoHVvKm9hfEcJSCsCzFpwvzcOoRCYKe9_YSHL4SkzKoZzr8oEobg1067cZDXTN3V97bTqLq55vWVJsrlqy4nc-sYod8DtnUlWW4uMUkf5e8Tj5X_2Wh3SFb5v7Fqb4ugAZt4U49yM4z31Cm3gF33Wpf9kkwXXIYMYaXwRvEmcUsWvKd2wdQAHcZe7d19M5lEhe5naZDw7558uzKz6HmnNGV_tIMsBBOW3tbMn5QkFtqLrDBH1DOvXbX-l3jl1sr8qjOV23PRZbIKWISTZIWvgWmgGrU3jtrMM8rgPtc0DgQW8PjPnE9-14B2xavifac9k8iD_/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3m3Iv9IPx9aEeAhLF9jPYugX78zye2wXVmVuS9y92kI6efwyxUE2ZGLDxlCPz4hEjsmX_sQtIlgYgIegum1HnP6szDra1vCBj1subRnDzQyoHVvKm9hfEcJSCsCzFpwvzcOoRCYKe9_YSHL4SkzKoZzr8oEobg1067cZDXTN3V97bTqLq55vWVJsrlqy4nc-sYod8DtnUlWW4uMUkf5e8Tj5X_2Wh3SFb5v7Fqb4ugAZt4U49yM4z31Cm3gF33Wpf9kkwXXIYMYaXwRvEmcUsWvKd2wdQAHcZe7d19M5lEhe5naZDw7558uzKz6HmnNGV_tIMsBBOW3tbMn5QkFtqLrDBH1DOvXbX-l3jl1sr8qjOV23PRZbIKWISTZIWvgWmgGrU3jtrMM8rgPtc0DgQW8PjPnE9-14B2xavifac9k8iD_
+is_cover: false
+sort_order: 0
+caption: Jerminator
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICWq7rewAE!2e10!4m2!3m1!1s0x8890c02482e22b8d:0x95a4ea9602257515
+
+--- entity_photos [row 4 of 12] ---
+id: 53d9dc29-6676-43df-89b5-88fb46a6724b
+entity_slug: pet-supermarket
+url: https://places.googleapis.com/v1/places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3l5k3ioQoV-Jw9V_zl2aUa5aC6frWeOTV4-675YHgIdtFKDCorwjcBf1C7rnb_7r1bFYufayKy_pwrFs4ZTmIv58lmSsysWtzah81eYjt0QS4h-LJTLK15DhlRORHtJWMAjMavs602NsJWyJVfC_XO8nBRdxYsOBD8Qgg-ac4TO8KtUlNzPkxoYp5jCJ9NI_Jacx3Hw4TReyNWYboIfKgpMfHKUnntNzMLWj802TtgQwggoftCQqZMGoCMIu15X3uSZDNS0E9oYKpmHdJ_t5eHgLuLj6DZOUJ5uXXdXGDT2bo6QtkYKHiisQjDQ55OPm3-0wXngt7BKU4PvpPQzjgfzvE36Xbu8H_7NcD0ysp3L8IGMdEMDRuuuryxNd8agANmceMPQxmwL5L66NFSPmzERDLTBKZ0NQtroG9-CN1PbZA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3l5k3ioQoV-Jw9V_zl2aUa5aC6frWeOTV4-675YHgIdtFKDCorwjcBf1C7rnb_7r1bFYufayKy_pwrFs4ZTmIv58lmSsysWtzah81eYjt0QS4h-LJTLK15DhlRORHtJWMAjMavs602NsJWyJVfC_XO8nBRdxYsOBD8Qgg-ac4TO8KtUlNzPkxoYp5jCJ9NI_Jacx3Hw4TReyNWYboIfKgpMfHKUnntNzMLWj802TtgQwggoftCQqZMGoCMIu15X3uSZDNS0E9oYKpmHdJ_t5eHgLuLj6DZOUJ5uXXdXGDT2bo6QtkYKHiisQjDQ55OPm3-0wXngt7BKU4PvpPQzjgfzvE36Xbu8H_7NcD0ysp3L8IGMdEMDRuuuryxNd8agANmceMPQxmwL5L66NFSPmzERDLTBKZ0NQtroG9-CN1PbZA
+is_cover: false
+sort_order: 1
+caption: Elizabeth Eubanks
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICOi52TTw!2e10!4m2!3m1!1s0x8890c02482e22b8d:0x95a4ea9602257515
+
+--- entity_photos [row 5 of 12] ---
+id: cc9a923a-f801-4630-b34e-0959602b74b3
+entity_slug: pet-supermarket
+url: https://places.googleapis.com/v1/places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3nLRWhMxhigNNgRRa9-O9LV1lEbVRWYtRTwNCcZ6DkhqGUjmVSjBTZ6iGDBl8nrcamm7tt9wo-QfnjIEIKDo5QEqbQnJWhg_SwzrHrIm0f9C4hUwRSXHGoVnPEoZlE6lHgNuFdGphmq1_vRWKjwV7a7heQVKyTQdSL9L525L_eYNXEtXcFwImkXMPjs16y5UfiyYA0I6iLc8LyQA__o0yaywyVJBTY8I_LVWcTybUBuSdiL4ljnABT_EyoKRF5E7oFRjPpcHn6zE_tQgQBMtMFu3-RlyTcTM01uZNxH1jJcOpu25fajJ0cXHMNlzg1cpoAMSsDgLtlF4smQbzi9qQzzs_uZ_j68ELm5q2fl_ugu9WZ0LOOL9TMtdmEJWTURSCgUkLwJLDMeS2aEYmB2iq2Dlvk4F8QjEvoS2n5sXQj6_Q/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3nLRWhMxhigNNgRRa9-O9LV1lEbVRWYtRTwNCcZ6DkhqGUjmVSjBTZ6iGDBl8nrcamm7tt9wo-QfnjIEIKDo5QEqbQnJWhg_SwzrHrIm0f9C4hUwRSXHGoVnPEoZlE6lHgNuFdGphmq1_vRWKjwV7a7heQVKyTQdSL9L525L_eYNXEtXcFwImkXMPjs16y5UfiyYA0I6iLc8LyQA__o0yaywyVJBTY8I_LVWcTybUBuSdiL4ljnABT_EyoKRF5E7oFRjPpcHn6zE_tQgQBMtMFu3-RlyTcTM01uZNxH1jJcOpu25fajJ0cXHMNlzg1cpoAMSsDgLtlF4smQbzi9qQzzs_uZ_j68ELm5q2fl_ugu9WZ0LOOL9TMtdmEJWTURSCgUkLwJLDMeS2aEYmB2iq2Dlvk4F8QjEvoS2n5sXQj6_Q
+is_cover: false
+sort_order: 2
+caption: Elizabeth Eubanks
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID25LbTQA!2e10!4m2!3m1!1s0x8890c02482e22b8d:0x95a4ea9602257515
+
+--- entity_photos [row 6 of 12] ---
+id: 671f39c6-4fb9-4e3c-8874-a66a162d79d1
+entity_slug: pet-supermarket
+url: https://places.googleapis.com/v1/places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3kD4eB-bTKsGatABWrv0_Iy_hzmL85Lh4gS6zJZM6Kleqla0MS51VbhlYcQfs32y1UzcR36aFzep5szuHN2FaTRed8SKdShb-9f_iM7xupUtimzJL11f9NuTswNhx_djNbrHlE_LQt7yzreqy9gXWhh2n2M9zkj2gUxbDD5j_95ayLPLUAiDAwsh1DvS4YN-FZp9LflH1jO3ipUG1EtB6GG1YQMGNzibozuLSaWSvigOXZE-qrfv12t_3kvuB01n5dyfbqrt_A49jpuGjspvQ074QTIDYDhllLf4nJ0HAQPKQ_6ohgkUQHi8pkQh5TKfYoQ0ZdCTcBcrAg4GraVzYtvV2G5Jqh7T7QLnBHkYzOZKu42siDrCrZ0qB10SmyS9-IKN0INSlczDccKtNigJvNOAFPGAYANlX9WYJRkAz8pfEk/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3kD4eB-bTKsGatABWrv0_Iy_hzmL85Lh4gS6zJZM6Kleqla0MS51VbhlYcQfs32y1UzcR36aFzep5szuHN2FaTRed8SKdShb-9f_iM7xupUtimzJL11f9NuTswNhx_djNbrHlE_LQt7yzreqy9gXWhh2n2M9zkj2gUxbDD5j_95ayLPLUAiDAwsh1DvS4YN-FZp9LflH1jO3ipUG1EtB6GG1YQMGNzibozuLSaWSvigOXZE-qrfv12t_3kvuB01n5dyfbqrt_A49jpuGjspvQ074QTIDYDhllLf4nJ0HAQPKQ_6ohgkUQHi8pkQh5TKfYoQ0ZdCTcBcrAg4GraVzYtvV2G5Jqh7T7QLnBHkYzOZKu42siDrCrZ0qB10SmyS9-IKN0INSlczDccKtNigJvNOAFPGAYANlX9WYJRkAz8pfEk
+is_cover: false
+sort_order: 3
+caption: Celina C
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICa7cimjQE!2e10!4m2!3m1!1s0x8890c02482e22b8d:0x95a4ea9602257515
+
+--- entity_photos [row 7 of 12] ---
+id: 1af4d903-d1cb-4f51-bfc2-234ca7ff76fc
+entity_slug: pet-supermarket
+url: https://places.googleapis.com/v1/places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3lpE1Mmt2hNPD8nYIYprFIwLXXIIruDBlMyrg6voY7KRAXIQrauENcheqwZrCU4TsAlBkIyXjFYgmv93kVxUjHWAIAFQ78_T5E0NnY9bncEh04H8959ZkZbj23X-ObFoK8Ji7iH5ZbDVsqh9DzZIKg03GmAFl67_7Kd-A8bFjJdsOt5t2pS4jzcJcnouipZ7m05zwYAHvZmIi6hepM1bMLLAvRfeJVynmCLNAaG-0YJb_ia096t5JN3SLQH0EzM0pn4OL8V0ExtDSN0fzi1Lu_jjk6Jk0k_xpbi6GJgAw1y9F4yVtthOQSQlhsR7Oir9vUHrY8qB0_vfSGcewp-P0aXLJPTP-PY8LgUxMq9XcL3jrWJ49MRhUkRrXq8nIvoQiifCEc4Tv-3tlgf0WuUa2TpI2HRMJhJg7zmGs5tnD9CZQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3lpE1Mmt2hNPD8nYIYprFIwLXXIIruDBlMyrg6voY7KRAXIQrauENcheqwZrCU4TsAlBkIyXjFYgmv93kVxUjHWAIAFQ78_T5E0NnY9bncEh04H8959ZkZbj23X-ObFoK8Ji7iH5ZbDVsqh9DzZIKg03GmAFl67_7Kd-A8bFjJdsOt5t2pS4jzcJcnouipZ7m05zwYAHvZmIi6hepM1bMLLAvRfeJVynmCLNAaG-0YJb_ia096t5JN3SLQH0EzM0pn4OL8V0ExtDSN0fzi1Lu_jjk6Jk0k_xpbi6GJgAw1y9F4yVtthOQSQlhsR7Oir9vUHrY8qB0_vfSGcewp-P0aXLJPTP-PY8LgUxMq9XcL3jrWJ49MRhUkRrXq8nIvoQiifCEc4Tv-3tlgf0WuUa2TpI2HRMJhJg7zmGs5tnD9CZQ
+is_cover: false
+sort_order: 4
+caption: Haley Workman
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDRmOC_FQ!2e10!4m2!3m1!1s0x8890c02482e22b8d:0x95a4ea9602257515
+
+--- entity_photos [row 8 of 12] ---
+id: c01ad5cf-134c-45f7-997c-ef7c07650991
+entity_slug: pet-supermarket
+url: https://places.googleapis.com/v1/places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3lHlje5ma7DYZzVZvXD81hmK2iBg0tmbHB_KgDv4xjnUgqy-5l1IcM3pXXXAl9a2lvYCKypkLsq_-__yJzn_M6vYt0AnZh0OI9SAbPehRfA54L7HUoSHiXa9ZSNglWYzY6i_VljPv3Zy2o5Txf9Wx2sQCwEkk9DEoGpbi4jnaRW4PkprhU4VBmXsMhdSBb9JQKz2qCRZIM9TzPP4aCR1UAUan6wBwwSbdv36fuEEe5AIFT-Iw5FuOINwphMQYX7dids1Mich8Hv_GLEWVql1SJfFNXuaBYEn8y4z_oFcP5oSljaY3hK2ZrqURenr0nddIpCKP0YqFnStpCSDM2_FdxaaNiRGOd34n0RZ0baq6eE0Uo6YGm-QUbTrivMURrbJiI-bOlYFNtLdscS75EtUkFNluUW5VSI9nvL9jfiNdWD3g/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3lHlje5ma7DYZzVZvXD81hmK2iBg0tmbHB_KgDv4xjnUgqy-5l1IcM3pXXXAl9a2lvYCKypkLsq_-__yJzn_M6vYt0AnZh0OI9SAbPehRfA54L7HUoSHiXa9ZSNglWYzY6i_VljPv3Zy2o5Txf9Wx2sQCwEkk9DEoGpbi4jnaRW4PkprhU4VBmXsMhdSBb9JQKz2qCRZIM9TzPP4aCR1UAUan6wBwwSbdv36fuEEe5AIFT-Iw5FuOINwphMQYX7dids1Mich8Hv_GLEWVql1SJfFNXuaBYEn8y4z_oFcP5oSljaY3hK2ZrqURenr0nddIpCKP0YqFnStpCSDM2_FdxaaNiRGOd34n0RZ0baq6eE0Uo6YGm-QUbTrivMURrbJiI-bOlYFNtLdscS75EtUkFNluUW5VSI9nvL9jfiNdWD3g
+is_cover: false
+sort_order: 5
+caption: Liem Chau
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDKmMn5KQ!2e10!4m2!3m1!1s0x8890c02482e22b8d:0x95a4ea9602257515
+
+--- entity_photos [row 9 of 12] ---
+id: 3c76672e-a819-4a06-b546-690afbd7a9c3
+entity_slug: pet-supermarket
+url: https://places.googleapis.com/v1/places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3kPv-qQ_Ad2tiv2xUNuvVkLHmkPOKO-WQ1ZNgkpa-OO0shfNvNCiUNKayDJrM7h9qYg1AZtFgyUkG3yMM7VCTNWLhhUOVQUY-jAvbdkqG_U1KHo1CZEgktGARnee1wdPm6KMRLvioc7cy6H3Cw0pCq7ukdwJlRDdKfbuJ3yJGPdm4cGtz8vsNYrHuq_PO0CBKc8fHvJqoTBKjgGhpum68qgi2CyFWni38POQSiWE8FlkWidY1xmZ048oJ9e0ruYhPhpVizh00mn0LRAkch4JUT76zGFFI2BeA_6mSS6OZS3_6-B1w2ZCyjvCB55bkcHOH4x2z1O8g5LBX2OBXfRfCvHaVYP49p1GTdJFdkZ2Wy-gVlq_UQLK-ySDwJIU0rPeByBPtla8SFFhJ-KZsNlEleuxMhlSWtUlU1XVAf8XlsguQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3kPv-qQ_Ad2tiv2xUNuvVkLHmkPOKO-WQ1ZNgkpa-OO0shfNvNCiUNKayDJrM7h9qYg1AZtFgyUkG3yMM7VCTNWLhhUOVQUY-jAvbdkqG_U1KHo1CZEgktGARnee1wdPm6KMRLvioc7cy6H3Cw0pCq7ukdwJlRDdKfbuJ3yJGPdm4cGtz8vsNYrHuq_PO0CBKc8fHvJqoTBKjgGhpum68qgi2CyFWni38POQSiWE8FlkWidY1xmZ048oJ9e0ruYhPhpVizh00mn0LRAkch4JUT76zGFFI2BeA_6mSS6OZS3_6-B1w2ZCyjvCB55bkcHOH4x2z1O8g5LBX2OBXfRfCvHaVYP49p1GTdJFdkZ2Wy-gVlq_UQLK-ySDwJIU0rPeByBPtla8SFFhJ-KZsNlEleuxMhlSWtUlU1XVAf8XlsguQ
+is_cover: false
+sort_order: 6
+caption: Jamie
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgID6_fmoBg!2e10!4m2!3m1!1s0x8890c02482e22b8d:0x95a4ea9602257515
+
+--- entity_photos [row 10 of 12] ---
+id: dd011a87-6e4c-434d-9aa2-07db601b3756
+entity_slug: pet-supermarket
+url: https://places.googleapis.com/v1/places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3nFpb7LQAyKJjJLa_-zrTHBQN3rG3aIjDGelyRHjeHH7ht76310x6ETT1jnbXywrpBfzPxll4mbzPbtXJTvDfz9256GFxxiA1eRixxfi0inQYSUDnfBZ_qBr_Li8CQPdRzp5Tbduw8i-VwtUDg75tme4EfeNTFIoO2k9qPfWUl7GWhOOPG_2wibb6DhtlDwR8SrFKrwfSYzG7zRiNYza7JR0nrU34AV4m07j4rydEtYDEtdthwGvsf6yWewMV8id1bTb6x4JknYAvTYb73QAsPlrjyiyqcNDi1xKbxCeUzxf_DDo5tq1aidsm2URZNmmA3GzL-LqKkqOqMY4fNiCUBB1chBReRLyRRGMMW2rnjFSDF506HtxHLC7Sm6D4Uuoe4-xP6aqjWY8hLtP4eMy4cgff0oQSRFdCYGVdMHzjFVGA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3nFpb7LQAyKJjJLa_-zrTHBQN3rG3aIjDGelyRHjeHH7ht76310x6ETT1jnbXywrpBfzPxll4mbzPbtXJTvDfz9256GFxxiA1eRixxfi0inQYSUDnfBZ_qBr_Li8CQPdRzp5Tbduw8i-VwtUDg75tme4EfeNTFIoO2k9qPfWUl7GWhOOPG_2wibb6DhtlDwR8SrFKrwfSYzG7zRiNYza7JR0nrU34AV4m07j4rydEtYDEtdthwGvsf6yWewMV8id1bTb6x4JknYAvTYb73QAsPlrjyiyqcNDi1xKbxCeUzxf_DDo5tq1aidsm2URZNmmA3GzL-LqKkqOqMY4fNiCUBB1chBReRLyRRGMMW2rnjFSDF506HtxHLC7Sm6D4Uuoe4-xP6aqjWY8hLtP4eMy4cgff0oQSRFdCYGVdMHzjFVGA
+is_cover: false
+sort_order: 7
+caption: Jericho
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC2pZDCRg!2e10!4m2!3m1!1s0x8890c02482e22b8d:0x95a4ea9602257515
+
+--- entity_photos [row 11 of 12] ---
+id: 3b375313-259b-42ee-9cdc-25bb3c59fd57
+entity_slug: pet-supermarket
+url: https://places.googleapis.com/v1/places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3nSmvdnfa5Dsm_sot3lUCvVJHTytEVuL-9WPrMCibDpEM1wZTmoO5VpWePVtB3YbZK0w9bOakZxeKykQyxYHAsWQ8QV3vVTmIIoU1VlMgJNlbkbSus8d6ei09rPWNLSc6KGs-iQTs6hetpES4uqIuvhurcH3kheRHcKJYd9pxHcV43HGHdnF1yUYaKjuglVafqUzlgG0ETHm99u9AsRG74LwIIiWkilgJKKO212iuNm7yW03L-3UbxVI-pTQiy4qqjLzVmYlhOIzKi4PG6e2D99vl0t5j4RrzSe5BeFiI6ZUPtnHpjaVF_6zkXGSISyFQ4QpUL10sYvgVOqNNw7rcJFXnt8qfQvd60vAXf98z06hez3A22dX-1SqW0C_IEQIpX0zoVCXhtGtFZyPwfnsE5y-wp0hOr4IsjW7MQIBR0/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3nSmvdnfa5Dsm_sot3lUCvVJHTytEVuL-9WPrMCibDpEM1wZTmoO5VpWePVtB3YbZK0w9bOakZxeKykQyxYHAsWQ8QV3vVTmIIoU1VlMgJNlbkbSus8d6ei09rPWNLSc6KGs-iQTs6hetpES4uqIuvhurcH3kheRHcKJYd9pxHcV43HGHdnF1yUYaKjuglVafqUzlgG0ETHm99u9AsRG74LwIIiWkilgJKKO212iuNm7yW03L-3UbxVI-pTQiy4qqjLzVmYlhOIzKi4PG6e2D99vl0t5j4RrzSe5BeFiI6ZUPtnHpjaVF_6zkXGSISyFQ4QpUL10sYvgVOqNNw7rcJFXnt8qfQvd60vAXf98z06hez3A22dX-1SqW0C_IEQIpX0zoVCXhtGtFZyPwfnsE5y-wp0hOr4IsjW7MQIBR0
+is_cover: false
+sort_order: 8
+caption: Debra Newberry
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDewM7PSA!2e10!4m2!3m1!1s0x8890c02482e22b8d:0x95a4ea9602257515
+
+--- entity_photos [row 12 of 12] ---
+id: 275e3e06-e352-4759-9314-feb3d0ebf522
+entity_slug: pet-supermarket
+url: https://places.googleapis.com/v1/places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3ld6_kADweOA73lGpbZWE8mpN4Ldu3i-vrSK_x3hN1cb08nO80gP6UD2z5gzwW_myykW65GzC5SqdZgczL77U792wJuzvfJByFWvptXFB-ROMQfMFIe5m7OVz7TfXtkzTBrfIiA7nZuOTBfx4qvJ8jlr_u9yF_gm7o9vx47sdu3O_tHePojZFC0o_a9kEc4qNzep0z2OZkFmZttzxyr2AqIIQGErd1u-8BST_B1kdZMsJzuFLBiRvtkghI3mwGYcH2vF5C4R_Dt82lUIdJnJErnJovM7exHgAM3Y5k96qJz68vRArLOSv-jYSzhO7vIEhNzS8QiXrIN6hrqElTXkFXaK-BeMxtw1gVcdOcMaqsupsAjpzD4i8cUAXLVWctNvcHLeywmlrwMlUISMyIjxTN6ruJI4R65r-30kEi4WwlYehmq9_BQC5SyX-wNtfEc/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJjSvigiTAkIgRFXUlApbqpJU/photos/AaVGc3ld6_kADweOA73lGpbZWE8mpN4Ldu3i-vrSK_x3hN1cb08nO80gP6UD2z5gzwW_myykW65GzC5SqdZgczL77U792wJuzvfJByFWvptXFB-ROMQfMFIe5m7OVz7TfXtkzTBrfIiA7nZuOTBfx4qvJ8jlr_u9yF_gm7o9vx47sdu3O_tHePojZFC0o_a9kEc4qNzep0z2OZkFmZttzxyr2AqIIQGErd1u-8BST_B1kdZMsJzuFLBiRvtkghI3mwGYcH2vF5C4R_Dt82lUIdJnJErnJovM7exHgAM3Y5k96qJz68vRArLOSv-jYSzhO7vIEhNzS8QiXrIN6hrqElTXkFXaK-BeMxtw1gVcdOcMaqsupsAjpzD4i8cUAXLVWctNvcHLeywmlrwMlUISMyIjxTN6ruJI4R65r-30kEi4WwlYehmq9_BQC5SyX-wNtfEc
+is_cover: false
+sort_order: 9
+caption: Smitch Smitchell (BratPackMedia)
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDBT3SwdGFSRovZCfAF00Qm!2e10!4m2!3m1!1s0x8890c02482e22b8d:0x95a4ea9602257515
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: a5ea525c-343a-4fbb-948a-21465beefb4a
+entity_slug: pet-supermarket
+reviewer_name: katherine haynes
+rating: 5
+body: We had the best experience at this store! The store manager Kristin was absolutely amazing helped in every way possible from helping figure out everything we need, knowledge of the pet we adopted, to making it so convenient since we live in Alabama and traveled to get one particular pet. Everything she recommended we are so satisfied with and her employee that answered the phone to help answer a few more questions I thought about was awesome. They are polite, helpful, and very knowledgeable. I would 100% recommend this store and Kristin to everyone!!! Thank you so much my daughter adores her guinea pig you helped make a childhood wish come true for her I couldn't have did it without you!! We will be traveling the hour back just to shop here I think this was the best experience I have had with a pet store!!!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-01-10T03:15:39.909105+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: 5597052b-8357-4f23-99a5-25d2c9517308
+entity_slug: pet-supermarket
+reviewer_name: Streamylc
+rating: 5
+body: Best fish selection in Pensacola, hands down. MARTIN is amazing. Clean tanks, and they have an INCREDIBLE assortment of fish.
+I have numerous fish that people are shocked I found (and all of them were obtained here)
+How often do you see African butterfly fish? Lol
+Or freshwater lobsters?
+Pea puffers?
+I literally love stopping in to see what they have.
+Staff is also more knowledgeable/enjoyable than most other fish places. Petland is another favorite, the selection (and my man Martin) make this my fave.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-01-21T02:48:35.915137+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: 0f613b73-4264-44c4-872a-11a1271d1295
+entity_slug: pet-supermarket
+reviewer_name: Bex Jennings
+rating: 1
+body: The fish department was awful. There was a whole tank that was full of dead fish that were starting to grow some kind of fuzzy stuff on them. Another tank had goldfish snacking on the dead ones. The tanks were dirty and cleary not maintained. PUT MARTIN BACK ON THE FISH DEPARTMENT. He actually cares about the health of the fish!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-01-04T14:22:13.444457+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 7a858e19-3e3d-440b-bdc0-cbe32a3dd37d
+entity_slug: pet-supermarket
+reviewer_name: craig wiliam
+rating: 5
+body: Dog wash station is awesome. We love the variety of products you may use when sudsing up your furry best friend. Staff always happy to see your canine kiddos and provide excellent service. Treat you like family and it's a nice change of pace. Not to mention the dog wash facility inside the store is top notch. Includes specific needs shampoos and conditioners (oatmeal is great for doggos w dry skin!)towels, aprons, air dryer hoses and plenty of post wash drying/grooming area. Excellent selection of all the best brands of kibble, smart stylish accessories, toys and tasty bakery quality gourmet treats practically everywhere you look. One trip here youll forget all about where ever you used to shop with your furry family members!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-02-10T10:01:05.051712+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 2e786cba-25c5-4ffe-91f3-2ed72464fe8a
+entity_slug: pet-supermarket
+reviewer_name: Chelsea Smith
+rating: 1
+body: Several of the tank filters had a layer of dead fish on them. 😳
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-01-18T19:47:20.637881+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   6 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 6] ---
+id: 6fbc9b97-0967-4d22-8988-fd275edba080
+entity_slug: pet-supermarket
+tag_name: pet_store
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 6] ---
+id: 022c02f5-07f8-4549-b9da-bb62678db13d
+entity_slug: pet-supermarket
+tag_name: pet_care
+tag_category: google_type
+
+--- entity_tags [row 3 of 6] ---
+id: cf74630c-bd70-4891-9d1b-953d82c9f3ac
+entity_slug: pet-supermarket
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 4 of 6] ---
+id: 4e89a010-c0d1-4d8b-af61-ef7d793496c7
+entity_slug: pet-supermarket
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 5 of 6] ---
+id: 5ea9a26d-a8ae-411e-b0db-f4cf91a70702
+entity_slug: pet-supermarket
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 6 of 6] ---
+id: b211053d-22ba-4f92-a588-1e6eb52ee59f
+entity_slug: pet-supermarket
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: f591d9ca-729d-4729-8218-85998c0d067b
+entity_slug: pet-supermarket
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_retail   -   1 row(s)
+####################################################################################################
+
+--- industry_retail [row 1 of 1] ---
+entity_slug: pet-supermarket
+product_count: 0
+updated_at: 2026-07-21T16:19:28.491935+00:00
+
+####################################################################################################
+# TABLE: search_index   -   1 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 1] ---
+ref_type: business
+ref_id: pet-supermarket
+entity_slug: pet-supermarket
+title: Pet Supermarket
+category: pet_store
+subtitle: Organized pet store with a dog-wash station and friendly service.
+search_vector: 'dog':11C 'dog-wash':10C 'friend':15C 'organ':5C 'pet':1A,3B,6C 'servic':16C 'station':13C 'store':4B,7C 'supermarket':2A 'wash':12C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: pet-supermarket

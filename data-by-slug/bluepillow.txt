@@ -1,0 +1,649 @@
+====================================================================================================
+SLUG: bluepillow
+NAME: Bluepillow
+INDUSTRY: rental
+SUBTYPE: rentals
+TABLES WITH DATA: 19
+TOTAL ROWS: 57
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (3 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_offer  (1 rows)
+  entity_photos  (4 rows)
+  entity_tags  (14 rows)
+  entity_theme  (1 rows)
+  industry_rental  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: bluepillow
+name: Bluepillow
+planner_category: things_to_do
+data_quality_score: 90
+recommended_next_action: ready_for_ai
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: false
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   3 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 3] ---
+id: 18425
+entity_slug: bluepillow
+intent_tag: best_for:things_to_do
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 3] ---
+id: 18426
+entity_slug: bluepillow
+intent_tag: service:booking_available
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 3] ---
+id: 18427
+entity_slug: bluepillow
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: bluepillow
+name: Bluepillow
+is_active: t
+planner_category: things_to_do
+entity_type: service
+entity_subtype: rentals
+latitude: 30.23001
+longitude: -87.88942
+review_count: 0
+website_url: https://www.bluepillow.com
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bluepillow/photo_01.jpg
+voice_summary: Bluepillow is best for things to do.
+planner_summary: Bluepillow is the global vacation rental search engine for finding the best solution at the lowest price. Browse hundreds of thousands of vacation rental apartments, villas and cottages from around the world. All the accommodation in one place, easy to use with no hidden fees. We search the best offers to find you the right one. Choose where you would like to go, compare more than 10,000,000 vacation rental offers, and find your ideal solution and save on your stay. Publish your apartment or vacation home and earn more to help you achieve your goals. Register your property on Bluepillow and pa
+best_for: things to do
+not_best_for: nothing specific flagged
+service_tags: booking_available
+search_keywords: vacation rentals|holiday apartments|villas|cottages|vacation homes|accommodation booking|travel platform|short-term rentals|Rentals|Accommodation|Travel|travel-accommodation|booking_available
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 2
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 14
+faq_count: 0
+data_quality_score: 90
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 7815
+entity_slug: bluepillow
+entity_name: Bluepillow
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bluepillow/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 7816
+entity_slug: bluepillow
+entity_name: Bluepillow
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bluepillow/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 3d9b0920-a40d-4c0c-ba97-882652d3f9ef
+resource_type: service
+slug: bluepillow
+name: Bluepillow
+description: Bluepillow is the global vacation rental search engine for finding the best solution at the lowest price. Browse hundreds of thousands of vacation rental apartments, villas and cottages from around the world. All the accommodation in one place, easy to use with no hidden fees. We search the best offers to find you the right one. Choose where you would like to go, compare more than 10,000,000 vacation rental offers, and find your ideal solution and save on your stay. Publish your apartment or vacation home and earn more to help you achieve your goals. Register your property on Bluepillow and pay ZERO commissions.
+entity_slug: bluepillow
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bluepillow/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bluepillow/photo_02.jpg"
+]
+amenities: []
+faqs: []
+latitude: 30.23001
+longitude: -87.88942
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 681bc169b17353eff78fb104354fa11d
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 3d9b0920-a40d-4c0c-ba97-882652d3f9ef
+entity_slug: bluepillow
+slug: bluepillow
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bluepillow/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bluepillow/photo_02.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: bf4b7671-3f2b-4ef0-94b1-c60afc3f3f0c
+slug: bluepillow
+name: Bluepillow
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: rentals
+description: Bluepillow is the global vacation rental search engine for finding the best solution at the lowest price. Browse hundreds of thousands of vacation rental apartments, villas and cottages from around the world. All the accommodation in one place, easy to use with no hidden fees. We search the best offers to find you the right one. Choose where you would like to go, compare more than 10,000,000 vacation rental offers, and find your ideal solution and save on your stay. Publish your apartment or vacation home and earn more to help you achieve your goals. Register your property on Bluepillow and pay ZERO commissions.
+subtitle: The global vacation rental search engine for finding the best solution at the lowest price
+website_url: https://www.bluepillow.com
+menu_pin: 9867
+social_instagram: https://www.instagram.com/bluepillow.it
+social_facebook: https://www.facebook.com/bluepillowIT/
+latitude: 30.23001
+longitude: -87.88942
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bluepillow/photo_01.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T22:47:04.466699+00:00
+updated_at: 2026-06-03T22:47:04.466699+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+business_status: OPERATIONAL
+google_places_data: {}
+search_vector: 'bluepillow':1A
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: rental
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: bluepillow
+name: Bluepillow
+industry_code: rental
+is_parent: false
+score_of_7: 3
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: b3c5e7ef-526b-43f0-8d0c-554b1768e32b
+entity_slug: bluepillow
+day_of_week: 1
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: c0754bd4-1927-46af-b3f5-a03273f57a5f
+entity_slug: bluepillow
+day_of_week: 2
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 7dc258b5-86bd-43b2-a85e-aaedca519338
+entity_slug: bluepillow
+day_of_week: 3
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: c2ad190e-e780-4cda-8c1d-07e235a2d068
+entity_slug: bluepillow
+day_of_week: 4
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 41edb1a1-d231-4ac0-9b76-bd6201c5db31
+entity_slug: bluepillow
+day_of_week: 5
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 1ab9b325-d1ac-4645-aa12-d1e449dc1246
+entity_slug: bluepillow
+day_of_week: 6
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: e969b7ca-d651-43cc-8106-32165ce754c9
+entity_slug: bluepillow
+day_of_week: 0
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: bluepillow
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 3d9b0920-a40d-4c0c-ba97-882652d3f9ef
+name: Bluepillow
+description: Bluepillow is the global vacation rental search engine for finding the best solution at the lowest price. Browse hundreds of thousands of vacation rental apartments, villas and cottages from around the world. All the accommodation in one place, easy to use with no hidden fees. We search the best offers to find you the right one. Choose where you would like to go, compare more than 10,000,000 vacation rental offers, and find your ideal solution and save on your stay. Publish your apartment or vacation home and earn more to help you achieve your goals. Register your property on Bluepillow and pay ZERO commissions.
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bluepillow/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bluepillow/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: bluepillow
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 3d9b0920-a40d-4c0c-ba97-882652d3f9ef
+name: Bluepillow
+description: Bluepillow is the global vacation rental search engine for finding the best solution at the lowest price. Browse hundreds of thousands of vacation rental apartments, villas and cottages from around the world. All the accommodation in one place, easy to use with no hidden fees. We search the best offers to find you the right one. Choose where you would like to go, compare more than 10,000,000 vacation rental offers, and find your ideal solution and save on your stay. Publish your apartment or vacation home and earn more to help you achieve your goals. Register your property on Bluepillow and pay ZERO commissions.
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bluepillow/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bluepillow/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: 564772ea-29c4-4d5c-ae35-34b304da7300
+entity_slug: bluepillow
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 86c5310f-7fe3-476a-a78b-754dafc0f360
+entity_slug: bluepillow
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: 42eb3535-ec0a-4171-bf42-a6213e5d4185
+entity_slug: bluepillow
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: b67efc56-898a-44bd-ae2d-82659cb82f5f
+entity_slug: bluepillow
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: e149fd99-87c1-4eab-a30c-851ea64ce75c
+entity_slug: bluepillow
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: 6d4ce86d-335d-4649-ba38-9858c261398e
+entity_slug: bluepillow
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 281490ab-7356-4fcd-87bb-c99394656952
+entity_slug: bluepillow
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 930d88ff-a244-448b-9e83-a326a136f66c
+entity_slug: bluepillow
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: a230f6d8-9154-4460-bbd2-70b31a4210af
+entity_slug: bluepillow
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: 9e12c51e-22c1-494a-82ce-562b8bb283d5
+entity_slug: bluepillow
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: ed6f7afc-8e77-46fa-b049-33768e816b3f
+entity_slug: bluepillow
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: 48ad7bd3-4b2a-4bce-9d7f-18593b6a31af
+entity_slug: bluepillow
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: e434af0e-2ff8-4c18-9209-895758065600
+entity_slug: bluepillow
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13351
+entity_slug: bluepillow
+name: Bluepillow
+description: Bluepillow is the global vacation rental search engine for finding the best solution at the lowest price. Browse hundreds of thousands of vacation rental apartments, villas and cottages from around the world. All the accommodation in one place, easy to use with no hidden fees. We search the best offers to find you the right one. Choose where you would like to go, compare more than 10,000,000 vacation rental offers, and find your ideal solution and save on your stay. Publish your apartment or vacation home and earn more to help you achieve your goals. Register your property on Bluepillow and pay ZERO commissions.
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 3d9b0920-a40d-4c0c-ba97-882652d3f9ef
+
+####################################################################################################
+# TABLE: entity_photos   -   4 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 4] ---
+id: e82c0f2d-24d8-44fd-8f56-3edc258d5e4a
+entity_slug: bluepillow
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bluepillow/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 4] ---
+id: 81f57a4c-32ab-4847-bc23-f284b5160d2a
+entity_slug: bluepillow
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bluepillow/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 4] ---
+id: 82e19098-cacf-4328-b362-cc42ab2bdc08
+entity_slug: bluepillow
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bluepillow/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: 3d9b0920-a40d-4c0c-ba97-882652d3f9ef
+
+--- entity_photos [row 4 of 4] ---
+id: 262edb75-d94d-4fdf-8390-9f5c38680d0c
+entity_slug: bluepillow
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bluepillow/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 3d9b0920-a40d-4c0c-ba97-882652d3f9ef
+
+####################################################################################################
+# TABLE: entity_tags   -   14 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 14] ---
+id: 8af8869a-cf84-45a5-ad0f-76878aca97aa
+entity_slug: bluepillow
+tag_name: vacation rentals
+
+--- entity_tags [row 2 of 14] ---
+id: e3a29511-4510-4f4c-883c-e01cff135efe
+entity_slug: bluepillow
+tag_name: holiday apartments
+
+--- entity_tags [row 3 of 14] ---
+id: 75fb4cb3-50b5-4050-bafa-e6f04292b81f
+entity_slug: bluepillow
+tag_name: villas
+
+--- entity_tags [row 4 of 14] ---
+id: 3bf50a09-b021-4a1e-a261-a02bd1106368
+entity_slug: bluepillow
+tag_name: cottages
+
+--- entity_tags [row 5 of 14] ---
+id: 01b63f13-f059-4134-a23f-a3295b33f91d
+entity_slug: bluepillow
+tag_name: vacation homes
+
+--- entity_tags [row 6 of 14] ---
+id: 50e3132b-646b-4296-9d6e-0dc2429fe425
+entity_slug: bluepillow
+tag_name: accommodation booking
+
+--- entity_tags [row 7 of 14] ---
+id: ba02b723-fe5d-49f6-9a00-39a23e81fcd6
+entity_slug: bluepillow
+tag_name: travel platform
+
+--- entity_tags [row 8 of 14] ---
+id: 40c05433-4748-4e57-a943-22384f185108
+entity_slug: bluepillow
+tag_name: short-term rentals
+
+--- entity_tags [row 9 of 14] ---
+id: b26bf6ec-51ae-45e0-883d-b275a1432127
+entity_slug: bluepillow
+tag_name: Rentals
+tag_category: category
+
+--- entity_tags [row 10 of 14] ---
+id: 0f0570c3-77e4-4295-ad3c-c68e365670d5
+entity_slug: bluepillow
+tag_name: Vacation Rentals
+tag_category: category
+
+--- entity_tags [row 11 of 14] ---
+id: 10e02c49-2a03-45e1-8913-7068c392f110
+entity_slug: bluepillow
+tag_name: Accommodation
+tag_category: category
+
+--- entity_tags [row 12 of 14] ---
+id: 15cfbef0-534b-48bb-b0e5-27214fed0b15
+entity_slug: bluepillow
+tag_name: Travel
+tag_category: category
+
+--- entity_tags [row 13 of 14] ---
+id: b1ecbdf9-29b6-43d5-bc86-f854dfcb2d4f
+entity_slug: bluepillow
+tag_name: travel-accommodation
+tag_category: industry
+
+--- entity_tags [row 14 of 14] ---
+id: 3393a0ec-b07b-4023-b22a-78dcb960409a
+entity_slug: bluepillow
+tag_name: rentals
+tag_category: type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 7aa5dccb-6987-4d48-acae-3e4238f715e0
+entity_slug: bluepillow
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_rental   -   1 row(s)
+####################################################################################################
+
+--- industry_rental [row 1 of 1] ---
+entity_slug: bluepillow
+rental_item_count: 0
+hourly_available: false
+half_day_available: false
+full_day_available: false
+weekly_available: false
+delivery_offered: false
+updated_at: 2026-07-21T16:19:28.491935+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: bluepillow
+entity_slug: bluepillow
+title: Bluepillow
+category: rentals
+subtitle: Bluepillow is the global vacation rental search engine for finding the best solution at the lowest price. Browse hundreds of thousands of vacation rental apartments, villas and cottages from around the world. All the accommodation in one place, easy to use with no hidden fees. We search the best offers to find you the right one. Choose where you would like to go, compare more than 10,000,000 vacation rental offers, and find your ideal solution and save on your stay. Publish your apartment or vacation home and earn more to help you achieve your goals. Register your property on Bluepillow and pay ZERO commissions.
+search_vector: '000':70C,71C '10':69C 'accommod':37C 'achiev':97C 'apart':27C,87C 'around':32C 'best':14C,51C 'bluepillow':1A,3C,104C 'brows':20C 'choos':59C 'commiss':108C 'compar':66C 'cottag':30C 'earn':92C 'easi':41C 'engin':10C 'fee':47C 'find':12C,54C,76C 'global':6C 'go':65C 'goal':99C 'help':95C 'hidden':46C 'home':90C 'hundr':21C 'ideal':78C 'like':63C 'lowest':18C 'offer':52C,74C 'one':39C,58C 'pay':106C 'place':40C 'price':19C 'properti':102C 'publish':85C 'regist':100C 'rental':2B,8C,26C,73C 'right':57C 'save':81C 'search':9C,49C 'solut':15C,79C 'stay':84C 'thousand':23C 'use':43C 'vacat':7C,25C,72C,89C 'villa':28C 'world':34C 'would':62C 'zero':107C
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 13351
+entity_slug: bluepillow
+title: Bluepillow
+category: rental
+subtitle: Bluepillow is the global vacation rental search engine for finding the best solution at the lowest price. Browse hundreds of thousands of vacation rental apartments, villas and cottages from around the world. All the accommodation in one place, easy to use with no hidden fees. We search the best offers to find you the right one. Choose where you would like to go, compare more than 10,000,000 vacation rental offers, and find your ideal solution and save on your stay. Publish your apartment or vacation home and earn more to help you achieve your goals. Register your property on Bluepillow and pay ZERO commissions.
+search_vector: '000':69C,70C '10':68C 'accommod':36C 'achiev':96C 'apart':26C,86C 'around':31C 'best':13C,50C 'bluepillow':1A,2C,103C 'brows':19C 'choos':58C 'commiss':107C 'compar':65C 'cottag':29C 'earn':91C 'easi':40C 'engin':9C 'fee':46C 'find':11C,53C,75C 'global':5C 'go':64C 'goal':98C 'help':94C 'hidden':45C 'home':89C 'hundr':20C 'ideal':77C 'like':62C 'lowest':17C 'offer':51C,73C 'one':38C,57C 'pay':105C 'place':39C 'price':18C 'properti':101C 'publish':84C 'regist':99C 'rental':7C,25C,72C 'right':56C 'save':80C 'search':8C,48C 'solut':14C,78C 'stay':83C 'thousand':22C 'use':42C 'vacat':6C,24C,71C,88C 'villa':27C 'world':33C 'would':61C 'zero':106C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: bluepillow

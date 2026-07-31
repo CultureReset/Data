@@ -1,0 +1,3342 @@
+====================================================================================================
+SLUG: crush
+NAME: Crush
+INDUSTRY: retail
+SUBTYPE: liquor_store
+PARENT: the-wharf
+TABLES WITH DATA: 36
+TOTAL ROWS: 218
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (16 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (20 rows)
+  catalog_items  (2 rows)
+  catalog_section_days  (14 rows)
+  catalog_sections  (2 rows)
+  entity  (1 rows)
+  entity_address_areas  (1 rows)
+  entity_attributes  (21 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (2 rows)
+  entity_items_v  (2 rows)
+  entity_modules  (10 rows)
+  entity_nearby_landmark_types  (22 rows)
+  entity_nearby_landmarks  (6 rows)
+  entity_offer  (2 rows)
+  entity_offer_section  (2 rows)
+  entity_photos  (24 rows)
+  entity_reviews  (5 rows)
+  entity_sources  (1 rows)
+  entity_tags  (14 rows)
+  entity_theme  (1 rows)
+  industry_retail  (1 rows)
+  inventory_items  (2 rows)
+  legacy_photo_migration_queue  (3 rows)
+  menu_items  (2 rows)
+  menu_section_days  (14 rows)
+  menu_section_details  (2 rows)
+  menu_sections  (2 rows)
+  products  (2 rows)
+  search_index  (5 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: crush
+name: Crush
+planner_category: food_drink
+data_quality_score: 85
+issues: missing_menu|missing_drink_menu|missing_faqs
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: true
+missing_drink_menu: true
+missing_hours: false
+missing_photos: false
+missing_faqs: true
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   16 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 16] ---
+id: 14755
+entity_slug: crush
+intent_tag: best_for:live_music_or_entertainment
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 16] ---
+id: 14756
+entity_slug: crush
+intent_tag: best_for:drinks_or_cocktails
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 16] ---
+id: 14757
+entity_slug: crush
+intent_tag: best_for:takeout
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 16] ---
+id: 14758
+entity_slug: crush
+intent_tag: experience:outdoor
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 16] ---
+id: 14759
+entity_slug: crush
+intent_tag: experience:live_music
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 16] ---
+id: 14760
+entity_slug: crush
+intent_tag: meal:drinks
+intent_category: meal_period
+confidence: 0.82
+evidence: Derived from meal flags/menu content.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 16] ---
+id: 14761
+entity_slug: crush
+intent_tag: cuisine:italian_pizza
+intent_category: cuisine
+confidence: 0.82
+evidence: Derived from cuisine/menu/tags.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 16] ---
+id: 14762
+entity_slug: crush
+intent_tag: service:takeout
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 9 of 16] ---
+id: 14763
+entity_slug: crush
+intent_tag: service:beer
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 10 of 16] ---
+id: 14764
+entity_slug: crush
+intent_tag: service:wine
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 11 of 16] ---
+id: 14765
+entity_slug: crush
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 12 of 16] ---
+id: 14766
+entity_slug: crush
+intent_tag: service:parking
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 13 of 16] ---
+id: 14767
+entity_slug: crush
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 14 of 16] ---
+id: 14768
+entity_slug: crush
+intent_tag: missing:missing_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 15 of 16] ---
+id: 14769
+entity_slug: crush
+intent_tag: missing:missing_drink_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 16 of 16] ---
+id: 14770
+entity_slug: crush
+intent_tag: missing:missing_faqs
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: crush
+name: Crush
+is_active: t
+planner_category: food_drink
+entity_type: shopping
+entity_subtype: liquor_store
+city: Orange Beach
+state: AL
+address_line_1: 4851 Wharf Pkwy E
+latitude: 30.295012699999997
+longitude: -87.6287504
+rating: 4.1
+review_count: 94
+website_url: http://www.wecrushwine.com/
+hero_image_url: /photos/crush/photo_01.jpg
+voice_summary: Crush in Orange Beach is best for live music or entertainment, drinks or cocktails, takeout. It fits italian/pizza. Experience tags: outdoor, live_music.
+planner_summary: Bar featuring an array of wine selections alongside an assortment of pizzas and other food items.
+best_for: live music or entertainment|drinks or cocktails|takeout
+not_best_for: quiet low-energy meal
+meal_periods: drinks
+cuisine_tags: italian/pizza
+experience_tags: outdoor|live_music
+service_tags: takeout|beer|wine|accessibility|parking
+search_keywords: liquor_store|wine_bar|bar|restaurant|point_of_interest|food|store|establishment|italian/pizza|drinks|outdoor|live_music|takeout|beer|wine|accessibility|parking
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 20
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 8
+faq_count: 0
+data_quality_score: 85
+data_gaps: missing_menu|missing_drink_menu|missing_faqs
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   20 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 20] ---
+id: 2336
+entity_slug: crush
+entity_name: Crush
+city: Orange Beach
+url: /photos/crush/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 20] ---
+id: 2337
+entity_slug: crush
+entity_name: Crush
+city: Orange Beach
+url: /photos/crush/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 20] ---
+id: 2338
+entity_slug: crush
+entity_name: Crush
+city: Orange Beach
+url: /photos/crush/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 20] ---
+id: 2339
+entity_slug: crush
+entity_name: Crush
+city: Orange Beach
+url: /photos/crush/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 20] ---
+id: 2340
+entity_slug: crush
+entity_name: Crush
+city: Orange Beach
+url: /photos/crush/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 20] ---
+id: 2341
+entity_slug: crush
+entity_name: Crush
+city: Orange Beach
+url: /photos/crush/photo_06.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 20] ---
+id: 2342
+entity_slug: crush
+entity_name: Crush
+city: Orange Beach
+url: /photos/crush/photo_07.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 20] ---
+id: 2343
+entity_slug: crush
+entity_name: Crush
+city: Orange Beach
+url: /photos/crush/photo_08.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 20] ---
+id: 2344
+entity_slug: crush
+entity_name: Crush
+city: Orange Beach
+url: /photos/crush/photo_09.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 20] ---
+id: 2345
+entity_slug: crush
+entity_name: Crush
+city: Orange Beach
+url: /photos/crush/photo_10.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 11 of 20] ---
+id: 25095
+entity_slug: crush
+entity_name: Crush
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/crush/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 12 of 20] ---
+id: 25177
+entity_slug: crush
+entity_name: Crush
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/crush/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 13 of 20] ---
+id: 25222
+entity_slug: crush
+entity_name: Crush
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/crush/photo_10.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 14 of 20] ---
+id: 25223
+entity_slug: crush
+entity_name: Crush
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/crush/photo_09.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 15 of 20] ---
+id: 25224
+entity_slug: crush
+entity_name: Crush
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/crush/photo_06.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 16 of 20] ---
+id: 25225
+entity_slug: crush
+entity_name: Crush
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/crush/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 17 of 20] ---
+id: 25233
+entity_slug: crush
+entity_name: Crush
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/crush/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 18 of 20] ---
+id: 25235
+entity_slug: crush
+entity_name: Crush
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/crush/photo_08.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 19 of 20] ---
+id: 26052
+entity_slug: crush
+entity_name: Crush
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/crush/photo_07.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 20 of 20] ---
+id: 26057
+entity_slug: crush
+entity_name: Crush
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/crush/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: catalog_items   -   2 row(s)
+####################################################################################################
+
+--- catalog_items [row 1 of 2] ---
+id: 5e817532-eecf-4f7a-b07c-8c0fd34763d8
+entity_slug: crush
+section_id: 6810fc5d-107a-44e1-9356-bd5f05f71378
+item_name: Wine by the glass, retail wine by the bottle, and tapas
+description: Official site and Gulf Shores tourism confirm concept; item prices not published in readable sources found. (Price: Not published)
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: b745e852-8eb2-4492-ba25-35091db656ff
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 2 of 2] ---
+id: 494cf80f-2671-44b6-bdc2-318fee399078
+entity_slug: crush
+section_id: a74aad86-3841-4582-94b5-344aa883e24e
+item_name: Waterfront/outdoor/pet-friendly dining; wine shop and tapas
+description: Tourism listing detail. (Price: Not published)
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: ec89ca77-8e3a-4438-a6e2-2928edb6dcec
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+####################################################################################################
+# TABLE: catalog_section_days   -   14 row(s)
+####################################################################################################
+
+--- catalog_section_days [row 1 of 14] ---
+id: 1505e549-5476-4561-a480-085d01cec8bc
+section_id: 6810fc5d-107a-44e1-9356-bd5f05f71378
+entity_slug: crush
+day_of_week: Friday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 2 of 14] ---
+id: d9749cbd-09be-440c-998e-aecf9e979fb0
+section_id: 6810fc5d-107a-44e1-9356-bd5f05f71378
+entity_slug: crush
+day_of_week: Monday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 3 of 14] ---
+id: c0dc1969-be03-4543-b13d-2622e3157b89
+section_id: 6810fc5d-107a-44e1-9356-bd5f05f71378
+entity_slug: crush
+day_of_week: Saturday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 4 of 14] ---
+id: 60a37969-9b6f-4355-a000-097f6c1bd425
+section_id: 6810fc5d-107a-44e1-9356-bd5f05f71378
+entity_slug: crush
+day_of_week: Sunday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 5 of 14] ---
+id: eeb31c24-b996-4224-b7a0-d19c405f23cd
+section_id: 6810fc5d-107a-44e1-9356-bd5f05f71378
+entity_slug: crush
+day_of_week: Thursday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 6 of 14] ---
+id: 229a571c-8dce-463e-9dcb-100a73922e0f
+section_id: 6810fc5d-107a-44e1-9356-bd5f05f71378
+entity_slug: crush
+day_of_week: Tuesday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 7 of 14] ---
+id: 38e86391-52fc-49f1-afc6-3f6981c9a95f
+section_id: 6810fc5d-107a-44e1-9356-bd5f05f71378
+entity_slug: crush
+day_of_week: Wednesday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 8 of 14] ---
+id: 80193cdd-43c5-472e-a104-2c9e38d88de6
+section_id: a74aad86-3841-4582-94b5-344aa883e24e
+entity_slug: crush
+day_of_week: Friday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 9 of 14] ---
+id: afdcd750-2e1c-48cc-829a-b1d330b3bbbd
+section_id: a74aad86-3841-4582-94b5-344aa883e24e
+entity_slug: crush
+day_of_week: Monday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 10 of 14] ---
+id: f0e0943f-b786-452d-b8cb-f53e585e6a74
+section_id: a74aad86-3841-4582-94b5-344aa883e24e
+entity_slug: crush
+day_of_week: Saturday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 11 of 14] ---
+id: fbdf15df-218f-4235-bfea-7ea4adec3bea
+section_id: a74aad86-3841-4582-94b5-344aa883e24e
+entity_slug: crush
+day_of_week: Sunday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 12 of 14] ---
+id: 5fbff4e3-d093-49ca-a949-84ea4eefcdb9
+section_id: a74aad86-3841-4582-94b5-344aa883e24e
+entity_slug: crush
+day_of_week: Thursday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 13 of 14] ---
+id: 9a353e9d-05d6-4fce-8300-645a1adc77c0
+section_id: a74aad86-3841-4582-94b5-344aa883e24e
+entity_slug: crush
+day_of_week: Tuesday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 14 of 14] ---
+id: 8712e857-1ca4-4466-9024-d5542e0bd42b
+section_id: a74aad86-3841-4582-94b5-344aa883e24e
+entity_slug: crush
+day_of_week: Wednesday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+####################################################################################################
+# TABLE: catalog_sections   -   2 row(s)
+####################################################################################################
+
+--- catalog_sections [row 1 of 2] ---
+id: 6810fc5d-107a-44e1-9356-bd5f05f71378
+entity_slug: crush
+section_name: Concept
+section_category: food
+sort_order: 0
+is_active: true
+source_table: menu_sections
+source_id: 172afefd-018c-499a-b14d-f5fc27eb81e1
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_sections [row 2 of 2] ---
+id: a74aad86-3841-4582-94b5-344aa883e24e
+entity_slug: crush
+section_name: Amenities
+section_category: food
+sort_order: 1
+is_active: true
+source_table: menu_sections
+source_id: 04e0aa6d-f89f-4e29-88c8-6277f8965207
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: c0f8b9f1-0096-4c55-a21d-4b1ceb50074c
+slug: crush
+name: Crush
+is_active: true
+featured: false
+entity_type: shopping
+entity_subtype: liquor_store
+description: Bar featuring an array of wine selections alongside an assortment of pizzas and other food items.
+phone: (251) 981-2851
+website_url: http://www.wecrushwine.com/
+menu_pin: 5586
+address_line_1: 4851 Wharf Pkwy E
+city: Orange Beach
+state: AL
+zip: 36561
+latitude: 30.295012699999997
+longitude: -87.6287504
+rating: 4.1
+review_count: 94
+hero_image_url: https://alwharf-assets.nyc3.digitaloceanspaces.com/images/merchant-full/_304x304_crop_center-center_none_ns/91288909_545456689305707_6463414365839163392_n.jpg?v=1777641973
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: true
+live_music: true
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: true
+serves_wine: true
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T03:59:22.467658+00:00
+updated_at: 2026-06-03T03:59:22.467658+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJffk9NMMFmogRovPm2pTU7Ks
+google_maps_uri: https://maps.google.com/?cid=12388510410782208930&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: liquor_store
+formatted_address: 4851 Wharf Pkwy E #D128, Orange Beach, AL 36561, USA
+plus_code: 862J79WC+2F
+international_phone: +1 251-981-2851
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+wheelchair_accessible_restroom: true
+wheelchair_accessible_seating: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+accepts_nfc: true
+accepts_cash_only: false
+parking_type: free
+google_places_data: {
+  "id": "ChIJffk9NMMFmogRovPm2pTU7Ks",
+  "types": [
+    "wine_bar",
+    "liquor_store",
+    "bar",
+    "store",
+    "restaurant",
+    "food",
+    "point_of_interest",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3m6PWjjOMZtSSNp-nWj_YZSKswn_M8seytSSwV0Qde_TJwgdSerXu3noHrrFnsXngAR-lRlFVOywL6vdkR66gF_XeglNW1LLwUQanXwN3smP40HYFVsT3Wk6aU5EBsiGk06_Cny1n5f-QuiHwhZgZFlaS7HLnVMiGhlnxRrwvJm7U996BP7os-aJROr_0SSuAfL6u8SRutoPDE5s7hlzp6m1b-GFcNZ8V-8Y3lQfy38AcQglWYGOno5dZuIx5OHJjvMCEZc_uGXEDV6ZOhdqMHEBDS9bvF3-VtVRDMSuVUckVuVjsTf9g8HAUu7VxW2vGknuWx7Y8LHkB1EAm_BgP0PE3P0BbsQcBdV5vUXuYulyVa5SskDTgX_qFaAv-IBvhtH6yEMYoVjmcprCatAkwOIcCVw8y2sjo8yl2I21HMZrOGMO-Q40TdJmRkyXA",
+      "widthPx": 2695,
+      "heightPx": 3548,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCW2ds15fZRwK796dBBuJCJ!2e10!4m2!3m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCW2ds15fZRwK796dBBuJCJ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/107103366849372192572",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXR_EENtg0PH457E0FIW-rqviUmA2WVQ49DKV37SGv8kyW3NtxjCA=s100-p-k-no-mo",
+          "displayName": "Raquel Del Rosario Mendez (TieDyeRosie)"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3l4AqY-TrQV2z6-8qjBno6buTX0Nyqsp73M1rc637w6RVaL7BzinRT6BQM20WAUwNB_4JP8NtTkC3gqbZFuhVHQ3Cv1X7y9jo3Q2YZWc5ulLkIZRHIBZ76g6Fs1rsJs5qZ75D2qlNSIyNsT0jOMzhuV8w-wr5vN0lEC_JhNRA_j5eRCGQeNmDoip5PQOpyKnI4eFL59JSIOAkXbTAvVou5SNgmEvSxsSfKDjEXS7a7f3jvhKlIUZZYR4PouGZ39BxhReBLghlOj5Oq13pdjXclrr2OvHMxBI6Lbl5KtLYFmjv9EQGJyF_A8LOSbKJ7w_IDUnHf2NUUBvijM3dGdURJGxUvDxmIthnwpe-5VJqxOQTNmAbdnSAIYBturn8zhrbTUvzhghbODokWx_2lP-KUFmAWN4gxbK4Su3PE5w5tyPQ",
+      "widthPx": 720,
+      "heightPx": 960,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDaoafMOg!2e10!4m2!3m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDaoafMOg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/102849632781602045214",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW4752qvG5AIqtV8X5MaoDxsafMjwS0huhXpMk3A5PvrWr5S9Y=s100-p-k-no-mo",
+          "displayName": "Red Or White at The Wharf"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3k9HjBB6Z-8Af6OgGDvODthk5WeHEAy6WfvOkhb9BrVUhyi0rXksCoK4Q7YRh0hRNJXI4-debl-D4u5jbxkFYN-YqP9XdZbpcKPbYTlbCu54AAifSrLpXfLm0csD1MK5ylWDDDdj8lsyIYIRlO_kardtrr2qRFlqaGBev-9iqzRVXKp3IY3JLkUN_txs7jQztGHy87voWavmvWb4jYv0KnRdpnai9SJgfZmkRSZPzHuknSj5jJRonmys1AThYijMme7Has-uM_ajNxNx_7V9BkFj1UQ9LRJ_MvZ17NQvL_pMteMQLLwzJ7TvRGJQ7yB_QmLQCRQfU-qja5vHVScwqvfqBWt96-erFFf8YtjTjcmFOhfX8t15ErSiZrN564HIM9Q4nAb56zd_XgpXZHCldSUjaqsLrSV2XHvwIPCc_8mTu-nBfKzEZlJiSeZZtPN",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDIN8TNpBh4Jn73RoByyTWG!2e10!4m2!3m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDIN8TNpBh4Jn73RoByyTWG&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/107103366849372192572",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXR_EENtg0PH457E0FIW-rqviUmA2WVQ49DKV37SGv8kyW3NtxjCA=s100-p-k-no-mo",
+          "displayName": "Raquel Del Rosario Mendez (TieDyeRosie)"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3ndkSYyOHjiRctEF6YXQqbDd9PoBgePjs7BpQ1fklu7X2uSQ96FP5m_Hh4XCabKjCqFyqD0sjk2K8sPOz_8OLeZVKY55pNN9-Vth_gEU3rDL1gpFPqEDFgwttCOEJA-W-h9rhXRARlrEx0GUX4rHG7ReunuzGBDht7oAXT2OLv5LZjlJTwgTwHQjkqEXldofWmxYfVB_ImQeQEMW6lZwwSuBV8pkM1NdB9RVblLyXVlVzF8G69EXoBJDC0fHysYrjB0VvCLgpVlDSQmKwKNRE_E6vGVKXNMAGGpCvFLgQ7-ajksRPYHYupws0lG2slq2Rvz71ycBXix0e55AvImTsbeFwgMdiU2H2Fh4jivmZzd9i9aLLblQZzwdNHq9wuaUz12Sg7ldasqrcIiQwmZbDijTafKKDdAfW0awlBX5Z5I7dDe",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICso4PthwE!2e10!4m2!3m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICso4PthwE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/110989272233277879596",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVk6b4JKTJZQzWL1FrErcwmFQPmFHaYFvet1xmHN30AiC_ZvolR=s100-p-k-no-mo",
+          "displayName": "Steve Quantz"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3k11gQ3wyg9zfFaeW1rr6p4wXYTs5CbahgBl3Bi_1Ji5DWvAM3NHZz3VGGnwYMnTyf7jxeFY35caSp-Ag_d11m7El7hi5WNNZRNdu9EEte4_cDiV437PyciThaXtjrlZQx-XrfdNi04IeQFDZTzhv_keuLUXXUhfvdYPt1l4cfMkcVvH9y9CloD77nh6uEbz7QyckhMfW12HpmwcOwkWpM60GPWxSfU8SYIr7C1cW6ZhXKxSsY2jB_1VUXs7reyBnAjKO_zwF5APPrlZ7KjuzEJJzHkdrRL31mFVWseBbMmKbNUEMtYfcvo6v0C2tRvzNfSl78Xw7BqWqGpEdxGzgo5tIBD8y0Kd61Gi4HOMeBDiOXLZTjXo79ANFit2WPzQ4Qr4CUfNRilXAdmRy8Y6yuFQCG5SB82LBeOOc2iQSg",
+      "widthPx": 4000,
+      "heightPx": 3000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICelInHBw!2e10!4m2!3m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICelInHBw&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/109424699461259249479",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJ-P9-F6MAlXDAoqDFMJnuracIrpjUlF6WFn7zZ9C25xKelug=s100-p-k-no-mo",
+          "displayName": "ALD"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3mEyC_tV5QvJ3KXO3EQYIjZtnfLcaEDxvP04_2fGYcRPcPuanrztzIjRG8w5rJjSa5CRlC6Mdg4byiP-7sjTECrjnQTSgIuaZx3RDHenYk4tAa-PiQE1fzTe8oIeqijF3QGztTdQXFXlK6fL_KjuGm9_QPfrqtdHvlHz-CKzENAz1R3-0uxvPaGpyhte7za3yUjjUr-e8Lt4YxYME24BBvpC9Qv-ajM0YukuWxG5eSiJwSFKQshL3QQbvx7MLiy2YUDtdmjtga3YOBoJZrpXjVNX20P7MW5kYLg2QZ-T7d1SSc3XasqbSrQFevayXtyj1qdhQYEZ5joGUdfkQjhrulcfPdCqiBXUANeh8ZIwxV5g2YxAzVwXJuemdUILhmX7I_CLHDPy5p_NFOLKsdUuhncQd5LWSbMyHljXJD-bDqHnA",
+      "widthPx": 4032,
+      "heightPx": 2268,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICF-aOSMA!2e10!4m2!3m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICF-aOSMA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/108037607208761191057",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVr8WjST8hgml0nXubhiuTloDr1fbMpJ1fCYa8DPVqo28R9NlJpPw=s100-p-k-no-mo",
+          "displayName": "John"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3lq3-HDOIm75-1e2AiAZNAjzDZzBvfcmFo0QCsU3pw_heGm4iRtA_0ActbkYYHMU3Nt2egJzHJ-kH0G51Oism035rhxbK4I02gDgeP5Jp5bj8o3G7k9w9yz0Z7m2_vG54KwAfRgyE9EdY4fPuStYmlt90RzniUJHBvnwItCHMxGCCgtHwJm055UVCrjDqXek_nN-ynGoZ02jYEVeWY9aTJMGwRmvX4nMLNcu3KhBvTI0Ibq3sA9uGxi-m1jREJM1pZ3apnQMr0mxk4t_z9p1dFnYQRP3EjJPqwC0FMs35pSdiWX0Nmn0PnH7jjg7RmIQ4ztnTtGdgdgrNQnxicbhWeKMBCffxtCXPqYxEWKuNDWcGpHyzhr5VKBcopSuCvGsyXrh6wUjpcH-GKaPGQdd7Qzjh6vXkHN0K6xAOn3dgaHtg",
+      "widthPx": 4800,
+      "heightPx": 3902,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICso72MGg!2e10!4m2!3m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICso72MGg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/110989272233277879596",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVk6b4JKTJZQzWL1FrErcwmFQPmFHaYFvet1xmHN30AiC_ZvolR=s100-p-k-no-mo",
+          "displayName": "Steve Quantz"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3mPpK4rHxlB89fX60hXpq8oqCZl3qGdGqTfRnUQqeAHeyvSvHcHsOP5kkODfx9eWNQRaN_K6aT4e1FRw8OIJA_Yda9eKm6YeNdSe4Y0Kx7mkcTvqbe0T4yBKo1IvIs65907EyU8WGCeDFAtqWFw4FD8uAIaZoji7qpvCytp4ChdKPHDk0eNGE6mMK6TA1iE9H3rfdsRlmsHbXsIe3PW7raKFZFzrk-9_Amutcj0sXCQObi8UpckhFYYZmY4-3Q4YbufQmVGwBr5FEnaRqh-1e250Md7lRMOWF7Qp8Rw_RYLRFNDP39L2WwVpKOZP97ICqZw_YpzK5U6TFR15_6-1kfkYLBHL5e1y21MN5p32gZDrERH0Zk1Tl-GAbeA8kOnKci39mRvQnkeOvp1SGgBmLu2tHQQxT71njfep26DMeBF6q55LqJ0mTL0r1oyuf_i",
+      "widthPx": 3000,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhADyc5Uvzdb8Ge6fEAABXAz!2e10!4m2!3m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhADyc5Uvzdb8Ge6fEAABXAz&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/109976923095198962369",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXfGm-7ha7R3AIeFqT-2mOuDSavgAXsyxbZY469MYgfXAMQwvmG=s100-p-k-no-mo",
+          "displayName": "Ray Pinson"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3mt3hn2BygmXvb004gXQPvsyuXGN9uytGy4hsH4h7_1ykzUEF0eK1xm9rLZ2zNKIPu8v2FT2LbetXiBz_1k5qysQINhQQ66oWl9z2hBG99m_1rJbrmtXC_sREnCxyENxCesMZkd9kUK-JiX7k1QwBIki0rMZ8h4dgaVXKxyre_tsPb7_P1be4lFvnSaNlYPjwhS4z7vcHWWYfMT6WlUgDQAywPWraon63bwod4IwcfysfFFjI5ghv0nodbbwpNtZZkxi6M2i66Mg4ll3fqWS6UoNeEIrJ9HpkvFTyDO-zDNF1snH2_BFbd0XvJ_qwoi1OpMtn1x93f-xRfRSfB2OKD9xCaAwsLqR9fuM7zUK78bf7tNX9aHtMkSXgh4VwwRbIOJc2Q9TKDCWw2ngrSk7AYpydQ-L43-Q6lEzhV0NnVvdgQZ8_FlHS45iLKw_j02",
+      "widthPx": 3000,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhC0BWrjJ0W7TzRysBxZV-Rn!2e10!4m2!3m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhC0BWrjJ0W7TzRysBxZV-Rn&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/108644805051346688981",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUopJmfBPwweaapinluLScUPiLVWAmH_NnfRRgabTUNup5x6Jg=s100-p-k-no-mo",
+          "displayName": "H. Hays"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3ke2SnKko7kdMl7ZN4bwekqoyo615vi4HC1oByLYbgblt-McRORDqWFnRjhqfoDECWcK8qXbubJN_Omh0rPuWVIwpJNaZeSufmEYg6BbhuvuL5w8hCKdLTo0sRVZO8C7yCWQ9RV7QGU1VLJdA4c3l5XLL5JtsjYBCwFpDR7b4w8vinYsyaRwVp-3nXTnbnu3vKTo7UZw83NZ13k4L1OVsz-ikifSmsZA4vNCxqOy6N4A7l8KnMDyVSApvDzqJhbhYaKD7TJfBK8uz5kP4H7js_5CCexAWjtWswWYmAquHsBFMewjRchdMn5mL6avvFoUYmbBX-E39Y3bIwAmocry80myBjRW4vyc-j_38w7UdZMPJ_cIu86-oxKhef_S9pB4t6Yj_5HC9zT43FUyfIczr4Pg-aHAuVYMl9R42Eb4EUEtrhOJu_k3XIpx0ianiCI",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAySlCxRwd3pNQ5POHjcG1k!2e10!4m2!3m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAySlCxRwd3pNQ5POHjcG1k&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/107103366849372192572",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXR_EENtg0PH457E0FIW-rqviUmA2WVQ49DKV37SGv8kyW3NtxjCA=s100-p-k-no-mo",
+          "displayName": "Raquel Del Rosario Mendez (TieDyeRosie)"
+        }
+      ]
+    }
+  ],
+  "rating": 4.1,
+  "reviews": [
+    {
+      "name": "places/ChIJffk9NMMFmogRovPm2pTU7Ks/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xoblZtbFBWMUV3T1hvdFlWQTJUelZsVWxWTk5YYxAB",
+      "text": {
+        "text": "Came here for a drink after a craft class at Orange Beach Library and I’m so glad we popped in! We had their Rioja (and I bought a bottle to bring home) and shared the burrata — their food is AMAZING! I just wish they stayed open later on weekends!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-02-24T19:34:04.048543345Z",
+      "originalText": {
+        "text": "Came here for a drink after a craft class at Orange Beach Library and I’m so glad we popped in! We had their Rioja (and I bought a bottle to bring home) and shared the burrata — their food is AMAZING! I just wish they stayed open later on weekends!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xoblZtbFBWMUV3T1hvdFlWQTJUelZsVWxWTk5YYxAB!2m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2xoblZtbFBWMUV3T1hvdFlWQTJUelZsVWxWTk5YYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/112179267524181383032/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJn9uP7PpIkFDhlvx9u4uFeqDQ4bzShR978ihZTh3Vj28YdBA=s128-c0x00000000-cc-rp-mo-ba5",
+        "displayName": "Dana"
+      },
+      "relativePublishTimeDescription": "3 months ago"
+    },
+    {
+      "name": "places/ChIJffk9NMMFmogRovPm2pTU7Ks/reviews/Ci9DQUlRQUNvZENodHljRjlvT25RNGExbENUUzFNYmpGRmNHUkhRa1ZDV1U1SmNWRRAB",
+      "text": {
+        "text": "Great selection of wines. Beautiful wine bar. Tapas abound. Great Harbor view.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-02-27T03:57:16.871648085Z",
+      "originalText": {
+        "text": "Great selection of wines. Beautiful wine bar. Tapas abound. Great Harbor view.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25RNGExbENUUzFNYmpGRmNHUkhRa1ZDV1U1SmNWRRAB!2m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT25RNGExbENUUzFNYmpGRmNHUkhRa1ZDV1U1SmNWRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/108644805051346688981/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUopJmfBPwweaapinluLScUPiLVWAmH_NnfRRgabTUNup5x6Jg=s128-c0x00000000-cc-rp-mo-ba6",
+        "displayName": "H. Hays"
+      },
+      "relativePublishTimeDescription": "3 months ago"
+    },
+    {
+      "name": "places/ChIJffk9NMMFmogRovPm2pTU7Ks/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOd2NteE9WM2RLYjFweVlucDNkM1JQZEZKbVdsRRAB",
+      "text": {
+        "text": "Wine selection at the bar is average and priced correctly. We ordered the cheese plate and liked the selection but the ratio of cheese that needs bread or crackers to eat because of the softness of it was way off. We had to leave cheese on the plate or eat it plain with a fork. The service is very poor. The lighting of the Christmas tree was taking place right in front and these ladies kept commenting on how busy they were, like it was a surprise. Shame on management for not being prepared for a night with potential $$. We sat with empty glasses while the ladies walked past, one even eyed our plates and glasses and kept going. I had to flag her down. Did I mention there are only 15 seats at the bar, no mixed drinks and 2 bartenders?? We are locals and won’t be back.",
+        "languageCode": "en"
+      },
+      "rating": 3,
+      "publishTime": "2025-12-03T14:32:33.270756324Z",
+      "originalText": {
+        "text": "Wine selection at the bar is average and priced correctly. We ordered the cheese plate and liked the selection but the ratio of cheese that needs bread or crackers to eat because of the softness of it was way off. We had to leave cheese on the plate or eat it plain with a fork. The service is very poor. The lighting of the Christmas tree was taking place right in front and these ladies kept commenting on how busy they were, like it was a surprise. Shame on management for not being prepared for a night with potential $$. We sat with empty glasses while the ladies walked past, one even eyed our plates and glasses and kept going. I had to flag her down. Did I mention there are only 15 seats at the bar, no mixed drinks and 2 bartenders?? We are locals and won’t be back.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xOd2NteE9WM2RLYjFweVlucDNkM1JQZEZKbVdsRRAB!2m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2xOd2NteE9WM2RLYjFweVlucDNkM1JQZEZKbVdsRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/115290348145486495348/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVgF7Gtt0zOjaEtb_gDcZINVfnQDm_Vzyegrr8uiLbl4fj9Fm0=s128-c0x00000000-cc-rp-mo-ba5",
+        "displayName": "julie c"
+      },
+      "relativePublishTimeDescription": "6 months ago"
+    },
+    {
+      "name": "places/ChIJffk9NMMFmogRovPm2pTU7Ks/reviews/Ci9DQUlRQUNvZENodHljRjlvT21oamVFWmpUV0ZrZDA5Mk9VMTRkbXN6UnpKb1NXYxAB",
+      "text": {
+        "text": "This is a must see ! So many beautiful bottles",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-01-01T02:46:38.990757268Z",
+      "originalText": {
+        "text": "This is a must see ! So many beautiful bottles",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21oamVFWmpUV0ZrZDA5Mk9VMTRkbXN6UnpKb1NXYxAB!2m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT21oamVFWmpUV0ZrZDA5Mk9VMTRkbXN6UnpKb1NXYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/107103366849372192572/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXR_EENtg0PH457E0FIW-rqviUmA2WVQ49DKV37SGv8kyW3NtxjCA=s128-c0x00000000-cc-rp-mo-ba6",
+        "displayName": "Raquel Del Rosario Mendez (TieDyeRosie)"
+      },
+      "relativePublishTimeDescription": "5 months ago"
+    },
+    {
+      "name": "places/ChIJffk9NMMFmogRovPm2pTU7Ks/reviews/Ci9DQUlRQUNvZENodHljRjlvT2s5R04xZFJUazVvYlVsQlIyNUVTSEV6YzNjd1pGRRAB",
+      "text": {
+        "text": "Super yummy food! Great place to talk and eat with friends.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-06-14T04:39:37.757390316Z",
+      "originalText": {
+        "text": "Super yummy food! Great place to talk and eat with friends.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2s5R04xZFJUazVvYlVsQlIyNUVTSEV6YzNjd1pGRRAB!2m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2s5R04xZFJUazVvYlVsQlIyNUVTSEV6YzNjd1pGRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/103371367960561663849/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXH0267_JMfl3Ey0ZVmsXfruz10maAv-NQS5_m4NfXffbgMWaqriw=s128-c0x00000000-cc-rp-mo-ba4",
+        "displayName": "Natashia Lee"
+      },
+      "relativePublishTimeDescription": "12 months ago"
+    }
+  ],
+  "delivery": false,
+  "location": {
+    "latitude": 30.295012699999997,
+    "longitude": -87.6287504
+  },
+  "plusCode": {
+    "globalCode": "862J79WC+2F",
+    "compoundCode": "79WC+2F Orange Beach, AL, USA"
+  },
+  "restroom": true,
+  "viewport": {
+    "low": {
+      "latitude": 30.293538919708503,
+      "longitude": -87.6301746802915
+    },
+    "high": {
+      "latitude": 30.296236880291502,
+      "longitude": -87.6274767197085
+    }
+  },
+  "liveMusic": true,
+  "servesBeer": true,
+  "servesWine": true,
+  "websiteUri": "http://www.wecrushwine.com/",
+  "displayName": {
+    "text": "Crush",
+    "languageCode": "en"
+  },
+  "primaryType": "liquor_store",
+  "googleMapsUri": "https://maps.google.com/?cid=12388510410782208930&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "curbsidePickup": true,
+  "outdoorSeating": true,
+  "parkingOptions": {
+    "freeParkingLot": true,
+    "paidParkingLot": false,
+    "freeGarageParking": true,
+    "freeStreetParking": true,
+    "paidGarageParking": false,
+    "paidStreetParking": false
+  },
+  "paymentOptions": {
+    "acceptsNfc": true,
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=12388510410782208930&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05c3343df97d:0xabecd494dae6f3a2!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05c3343df97d:0xabecd494dae6f3a2!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05c3343df97d:0xabecd494dae6f3a2!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+  "servesCocktails": false,
+  "userRatingCount": 94,
+  "adrFormatAddress": "<span class=\"street-address\">4851 Wharf Pkwy E #D128</span>, <span class=\"locality\">Orange Beach</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36561</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "4851 Wharf Pkwy E #D128, Orange Beach, AL 36561, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "subpremise"
+      ],
+      "longText": "#D128",
+      "shortText": "#D128",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "4851",
+      "shortText": "4851",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Wharf Parkway East",
+      "shortText": "Wharf Pkwy E",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Orange Beach",
+      "shortText": "Orange Beach",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36561",
+      "shortText": "36561",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJ7T7Xq9wFmogRahIOl40NkO4",
+        "placeId": "ChIJ7T7Xq9wFmogRahIOl40NkO4",
+        "containment": "WITHIN",
+        "displayName": {
+          "text": "The Wharf",
+          "languageCode": "en"
+        }
+      }
+    ],
+    "landmarks": [
+      {
+        "name": "places/ChIJvfvStq0FmogRzhDmwHKhsDA",
+        "types": [
+          "establishment",
+          "food",
+          "point_of_interest",
+          "restaurant",
+          "shopping_mall",
+          "tourist_attraction"
+        ],
+        "placeId": "ChIJvfvStq0FmogRzhDmwHKhsDA",
+        "displayName": {
+          "text": "The Wharf",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "WITHIN",
+        "travelDistanceMeters": 331.676,
+        "straightLineDistanceMeters": 191.98308
+      },
+      {
+        "name": "places/ChIJjUVMSMMFmogRb0-XfuWyIEY",
+        "types": [
+          "bar",
+          "establishment",
+          "food",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJjUVMSMMFmogRb0-XfuWyIEY",
+        "displayName": {
+          "text": "Ginny Lane Bar and Grill",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 118.76591,
+        "straightLineDistanceMeters": 34.522564
+      },
+      {
+        "name": "places/ChIJP3KjbsQFmogROsuRYtNn7qU",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJP3KjbsQFmogROsuRYtNn7qU",
+        "displayName": {
+          "text": "The Wharf Marina",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 43.243748,
+        "straightLineDistanceMeters": 34.522564
+      },
+      {
+        "name": "places/ChIJjUVMSMMFmogR6PCDJOYkPio",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJjUVMSMMFmogR6PCDJOYkPio",
+        "displayName": {
+          "text": "Wharf",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "BESIDE",
+        "travelDistanceMeters": 14.269869,
+        "straightLineDistanceMeters": 30.109781
+      },
+      {
+        "name": "places/ChIJn9f8HN0FmogRioNaU4U3I0c",
+        "types": [
+          "atm",
+          "bar",
+          "establishment",
+          "finance",
+          "food",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJn9f8HN0FmogRioNaU4U3I0c",
+        "displayName": {
+          "text": "Island Time Daiquiris & Pizza at The Wharf",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "DOWN_THE_ROAD",
+        "travelDistanceMeters": 53.194637,
+        "straightLineDistanceMeters": 58.484623
+      }
+    ]
+  },
+  "generativeSummary": {
+    "overview": {
+      "text": "Bar featuring an array of wine selections alongside an assortment of pizzas and other food items.",
+      "languageCode": "en-US"
+    },
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "overviewFlagContentUri": "https://www.google.com/local/content/rap/report?postId=CiUweDg4OWEwNWMzMzQzZGY5N2Q6MHhhYmVjZDQ5NGRhZTZmM2EyMAI&d=17924085&t=12"
+  },
+  "currentOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 12,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T16:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 11:00 AM – 8:00 PM",
+      "Tuesday: 11:00 AM – 8:00 PM",
+      "Wednesday: 11:00 AM – 8:00 PM",
+      "Thursday: 11:00 AM – 8:00 PM",
+      "Friday: 11:00 AM – 9:00 PM",
+      "Saturday: 11:00 AM – 9:00 PM",
+      "Sunday: 12:00 – 6:00 PM"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Wine Store",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#4B96F3",
+  "nationalPhoneNumber": "(251) 981-2851",
+  "regularOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 12,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 20,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 21,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T16:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 11:00 AM – 8:00 PM",
+      "Tuesday: 11:00 AM – 8:00 PM",
+      "Wednesday: 11:00 AM – 8:00 PM",
+      "Thursday: 11:00 AM – 8:00 PM",
+      "Friday: 11:00 AM – 9:00 PM",
+      "Saturday: 11:00 AM – 9:00 PM",
+      "Sunday: 12:00 – 6:00 PM"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleSeating": true,
+    "wheelchairAccessibleEntrance": true,
+    "wheelchairAccessibleRestroom": true
+  },
+  "shortFormattedAddress": "4851 Wharf Pkwy E #D128, Orange Beach",
+  "primaryTypeDisplayName": {
+    "text": "Liquor Store",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-981-2851"
+}
+ai_overview: Bar featuring an array of wine selections alongside an assortment of pizzas and other food items.
+curbside_pickup: true
+restroom: true
+free_parking_lot: true
+paid_parking_lot: false
+free_street_parking: true
+paid_street_parking: false
+free_garage_parking: true
+paid_garage_parking: false
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #4B96F3
+short_formatted_address: 4851 Wharf Pkwy E #D128, Orange Beach
+national_phone: (251) 981-2851
+search_vector: 'alongsid':9B 'array':5B 'assort':11B 'bar':2B 'beach':21 'crush':1A 'featur':3B 'food':16B 'item':17B 'liquor':18 'orang':20 'pizza':13B 'select':8B 'store':19 'wine':7B
+primary_type_display: Liquor Store
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=12388510410782208930&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05c3343df97d:0xabecd494dae6f3a2!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05c3343df97d:0xabecd494dae6f3a2!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05c3343df97d:0xabecd494dae6f3a2!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJ7T7Xq9wFmogRahIOl40NkO4",
+      "placeId": "ChIJ7T7Xq9wFmogRahIOl40NkO4",
+      "containment": "WITHIN",
+      "displayName": {
+        "text": "The Wharf",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJvfvStq0FmogRzhDmwHKhsDA",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant",
+        "shopping_mall",
+        "tourist_attraction"
+      ],
+      "placeId": "ChIJvfvStq0FmogRzhDmwHKhsDA",
+      "displayName": {
+        "text": "The Wharf",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "WITHIN",
+      "travelDistanceMeters": 331.676,
+      "straightLineDistanceMeters": 191.98308
+    },
+    {
+      "name": "places/ChIJjUVMSMMFmogRb0-XfuWyIEY",
+      "types": [
+        "bar",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJjUVMSMMFmogRb0-XfuWyIEY",
+      "displayName": {
+        "text": "Ginny Lane Bar and Grill",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 118.76591,
+      "straightLineDistanceMeters": 34.522564
+    },
+    {
+      "name": "places/ChIJP3KjbsQFmogROsuRYtNn7qU",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJP3KjbsQFmogROsuRYtNn7qU",
+      "displayName": {
+        "text": "The Wharf Marina",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 43.243748,
+      "straightLineDistanceMeters": 34.522564
+    },
+    {
+      "name": "places/ChIJjUVMSMMFmogR6PCDJOYkPio",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJjUVMSMMFmogR6PCDJOYkPio",
+      "displayName": {
+        "text": "Wharf",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "BESIDE",
+      "travelDistanceMeters": 14.269869,
+      "straightLineDistanceMeters": 30.109781
+    },
+    {
+      "name": "places/ChIJn9f8HN0FmogRioNaU4U3I0c",
+      "types": [
+        "atm",
+        "bar",
+        "establishment",
+        "finance",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJn9f8HN0FmogRioNaU4U3I0c",
+      "displayName": {
+        "text": "Island Time Daiquiris & Pizza at The Wharf",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "DOWN_THE_ROAD",
+      "travelDistanceMeters": 53.194637,
+      "straightLineDistanceMeters": 58.484623
+    }
+  ]
+}
+parent_entity_slug: the-wharf
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: generic
+generative_summary: Bar featuring an array of wine selections alongside an assortment of pizzas and other food items.
+industry_code: retail
+is_parent: false
+depth: 1
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   1 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 1] ---
+id: ec9d833b-0b87-402b-a338-76c3e5830edd
+entity_slug: crush
+place_id: ChIJ7T7Xq9wFmogRahIOl40NkO4
+containment: WITHIN
+display_name: The Wharf
+
+####################################################################################################
+# TABLE: entity_attributes   -   21 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 21] ---
+id: 893683af-6b66-4980-badd-df692b3c9ab2
+entity_slug: crush
+category: dining
+key: serves_beer
+label: Serves Beer
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 2 of 21] ---
+id: f6af9066-b0e1-4aaf-9db6-fd2af6c489ad
+entity_slug: crush
+category: dining
+key: serves_wine
+label: Serves Wine
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 3 of 21] ---
+id: 4c9eea3b-1b94-472b-b1c5-563ae1048aa6
+entity_slug: crush
+category: dining
+key: serves_cocktails
+label: Serves Cocktails
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 4 of 21] ---
+id: 3fad9cd7-41a4-4b5e-9b07-1886dd548ddd
+entity_slug: crush
+category: service
+key: delivery
+label: Delivery
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 5 of 21] ---
+id: 6b8ba32f-a145-4a7b-9577-1d79cc74e0d9
+entity_slug: crush
+category: service
+key: curbside_pickup
+label: Curbside Pickup
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 6 of 21] ---
+id: 58f7ffec-8838-4dd7-a01f-8f0a61adb323
+entity_slug: crush
+category: amenity
+key: restroom
+label: Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 7 of 21] ---
+id: ea770211-7304-4f09-a38d-5be9636981da
+entity_slug: crush
+category: amenity
+key: live_music
+label: Live Music
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 8 of 21] ---
+id: 10297da6-33b3-4f4b-978a-112fae8d4d22
+entity_slug: crush
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 9 of 21] ---
+id: 59bdfcdf-3773-4832-a4e1-1e423fe7a0e7
+entity_slug: crush
+category: accessibility
+key: access_wheelchairAccessibleSeating
+label: Wheelchair Accessible Seating
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 10 of 21] ---
+id: ae972153-76ca-4f69-94e1-1ba3a56ecec3
+entity_slug: crush
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 11 of 21] ---
+id: b43a2678-c2c6-47dc-b0e3-19a72bd5c4e2
+entity_slug: crush
+category: accessibility
+key: access_wheelchairAccessibleRestroom
+label: Wheelchair Accessible Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 12 of 21] ---
+id: 95e79979-d058-4091-bd6a-327bfef5539d
+entity_slug: crush
+category: parking
+key: parking_freeParkingLot
+label: Free Parking Lot
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 13 of 21] ---
+id: 85ed0f6a-9c77-4e10-a91d-75eddf52257e
+entity_slug: crush
+category: parking
+key: parking_paidParkingLot
+label: Paid Parking Lot
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 14 of 21] ---
+id: e0e62228-970e-4fdc-acd0-c32af52c9637
+entity_slug: crush
+category: parking
+key: parking_freeGarageParking
+label: Free Garage Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 15 of 21] ---
+id: f70e072e-2040-4214-9198-0a098592ce43
+entity_slug: crush
+category: parking
+key: parking_freeStreetParking
+label: Free Street Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 16 of 21] ---
+id: cad04eaa-56b1-4d1c-a422-1555d28595ba
+entity_slug: crush
+category: parking
+key: parking_paidGarageParking
+label: Paid Garage Parking
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 17 of 21] ---
+id: 1ab65b6e-6b4d-40e7-9a7f-1e4ce6e9f5af
+entity_slug: crush
+category: parking
+key: parking_paidStreetParking
+label: Paid Street Parking
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 18 of 21] ---
+id: 7028099d-a6e4-4f35-a395-ca6aaaac3176
+entity_slug: crush
+category: payment
+key: pay_acceptsNfc
+label: Accepts Nfc
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 19 of 21] ---
+id: ee13eb38-e3ad-4fbc-8bbe-1fc46080a239
+entity_slug: crush
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 20 of 21] ---
+id: 53e0fe4b-0eac-420e-9d52-238e81429e43
+entity_slug: crush
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 21 of 21] ---
+id: a6b0a6e0-5f58-4e1c-bc09-9075cc040d91
+entity_slug: crush
+category: payment
+key: pay_acceptsCreditCards
+label: Accepts Credit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: crush
+name: Crush
+industry_code: retail
+parent_entity_slug: the-wharf
+is_parent: false
+score_of_7: 6
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 9df89b5d-a691-45af-8ce5-d11a9f74fc3e
+entity_slug: crush
+place_uri: https://maps.google.com/?cid=12388510410782208930&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05c3343df97d:0xabecd494dae6f3a2!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05c3343df97d:0xabecd494dae6f3a2!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05c3343df97d:0xabecd494dae6f3a2!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 10478
+entity_slug: crush
+google_review_name: places/ChIJffk9NMMFmogRovPm2pTU7Ks/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xoblZtbFBWMUV3T1hvdFlWQTJUelZsVWxWTk5YYxAB
+rating: 5
+review_text: Came here for a drink after a craft class at Orange Beach Library and I’m so glad we popped in! We had their Rioja (and I bought a bottle to bring home) and shared the burrata — their food is AMAZING! I just wish they stayed open later on weekends!
+language_code: en
+author_name: Dana
+author_profile_url: https://www.google.com/maps/contrib/112179267524181383032/reviews
+publish_time: 2026-02-24T19:34:04.048543+00:00
+relative_time: 3 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xoblZtbFBWMUV3T1hvdFlWQTJUelZsVWxWTk5YYxAB!2m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 10479
+entity_slug: crush
+google_review_name: places/ChIJffk9NMMFmogRovPm2pTU7Ks/reviews/Ci9DQUlRQUNvZENodHljRjlvT25RNGExbENUUzFNYmpGRmNHUkhRa1ZDV1U1SmNWRRAB
+rating: 5
+review_text: Great selection of wines. Beautiful wine bar. Tapas abound. Great Harbor view.
+language_code: en
+author_name: H. Hays
+author_profile_url: https://www.google.com/maps/contrib/108644805051346688981/reviews
+publish_time: 2026-02-27T03:57:16.871648+00:00
+relative_time: 3 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25RNGExbENUUzFNYmpGRmNHUkhRa1ZDV1U1SmNWRRAB!2m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 10480
+entity_slug: crush
+google_review_name: places/ChIJffk9NMMFmogRovPm2pTU7Ks/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xOd2NteE9WM2RLYjFweVlucDNkM1JQZEZKbVdsRRAB
+rating: 3
+review_text: Wine selection at the bar is average and priced correctly. We ordered the cheese plate and liked the selection but the ratio of cheese that needs bread or crackers to eat because of the softness of it was way off. We had to leave cheese on the plate or eat it plain with a fork. The service is very poor. The lighting of the Christmas tree was taking place right in front and these ladies kept commenting on how busy they were, like it was a surprise. Shame on management for not being prepared for a night with potential $$. We sat with empty glasses while the ladies walked past, one even eyed our plates and glasses and kept going. I had to flag her down. Did I mention there are only 15 seats at the bar, no mixed drinks and 2 bartenders?? We are locals and won’t be back.
+language_code: en
+author_name: julie c
+author_profile_url: https://www.google.com/maps/contrib/115290348145486495348/reviews
+publish_time: 2025-12-03T14:32:33.270756+00:00
+relative_time: 6 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xOd2NteE9WM2RLYjFweVlucDNkM1JQZEZKbVdsRRAB!2m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 10481
+entity_slug: crush
+google_review_name: places/ChIJffk9NMMFmogRovPm2pTU7Ks/reviews/Ci9DQUlRQUNvZENodHljRjlvT21oamVFWmpUV0ZrZDA5Mk9VMTRkbXN6UnpKb1NXYxAB
+rating: 5
+review_text: This is a must see ! So many beautiful bottles
+language_code: en
+author_name: Raquel Del Rosario Mendez (TieDyeRosie)
+author_profile_url: https://www.google.com/maps/contrib/107103366849372192572/reviews
+publish_time: 2026-01-01T02:46:38.990757+00:00
+relative_time: 5 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21oamVFWmpUV0ZrZDA5Mk9VMTRkbXN6UnpKb1NXYxAB!2m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 10482
+entity_slug: crush
+google_review_name: places/ChIJffk9NMMFmogRovPm2pTU7Ks/reviews/Ci9DQUlRQUNvZENodHljRjlvT2s5R04xZFJUazVvYlVsQlIyNUVTSEV6YzNjd1pGRRAB
+rating: 5
+review_text: Super yummy food! Great place to talk and eat with friends.
+language_code: en
+author_name: Natashia Lee
+author_profile_url: https://www.google.com/maps/contrib/103371367960561663849/reviews
+publish_time: 2025-06-14T04:39:37.75739+00:00
+relative_time: 12 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2s5R04xZFJUazVvYlVsQlIyNUVTSEV6YzNjd1pGRRAB!2m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 97881f84-3a5e-4ac5-beef-66df9d72686c
+entity_slug: crush
+day_of_week: 0
+opens_at: 12:00:00
+closes_at: 18:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 1afb320d-1aae-4619-9c39-6b780e9af13d
+entity_slug: crush
+day_of_week: 1
+opens_at: 11:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: a5233321-9137-477f-990f-b51d5e56f5ce
+entity_slug: crush
+day_of_week: 2
+opens_at: 11:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 3af8d7b6-4831-4922-b1e8-698adcccff23
+entity_slug: crush
+day_of_week: 3
+opens_at: 11:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: f9654c9b-23db-4e66-946f-700c10039907
+entity_slug: crush
+day_of_week: 4
+opens_at: 11:00:00
+closes_at: 20:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: b06b32c8-4198-4bf5-b62e-9e5f7587d460
+entity_slug: crush
+day_of_week: 5
+opens_at: 11:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: f3dd6195-588a-4479-b33b-3fed5fe1cb45
+entity_slug: crush
+day_of_week: 6
+opens_at: 11:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 2] ---
+entity_slug: crush
+source_table: menu_items
+item_type: food
+section_name: Concept
+item_id: b745e852-8eb2-4492-ba25-35091db656ff
+name: Wine by the glass, retail wine by the bottle, and tapas
+description: Official site and Gulf Shores tourism confirm concept; item prices not published in readable sources found. (Price: Not published)
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 2 of 2] ---
+entity_slug: crush
+source_table: menu_items
+item_type: food
+section_name: Amenities
+item_id: ec89ca77-8e3a-4438-a6e2-2928edb6dcec
+name: Waterfront/outdoor/pet-friendly dining; wine shop and tapas
+description: Tourism listing detail. (Price: Not published)
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 2] ---
+entity_slug: crush
+source_table: menu_items
+item_type: food
+section_name: Concept
+item_id: b745e852-8eb2-4492-ba25-35091db656ff
+name: Wine by the glass, retail wine by the bottle, and tapas
+description: Official site and Gulf Shores tourism confirm concept; item prices not published in readable sources found. (Price: Not published)
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 2 of 2] ---
+entity_slug: crush
+source_table: menu_items
+item_type: food
+section_name: Amenities
+item_id: ec89ca77-8e3a-4438-a6e2-2928edb6dcec
+name: Waterfront/outdoor/pet-friendly dining; wine shop and tapas
+description: Tourism listing detail. (Price: Not published)
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   10 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 10] ---
+id: 431257f0-8e2c-4a33-bf32-ebd9172ed267
+entity_slug: crush
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 2 of 10] ---
+id: 00e08a18-490a-4d4f-9416-b26664b64389
+entity_slug: crush
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 3 of 10] ---
+id: eac062a3-e725-4495-a33a-1c44fd49eb51
+entity_slug: crush
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 4 of 10] ---
+id: 0c17a887-69f1-4ff0-be7d-2f41c5f6e4a9
+entity_slug: crush
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 5 of 10] ---
+id: f39c393f-bb3e-4657-bff1-3e7312e15abf
+entity_slug: crush
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 6 of 10] ---
+id: a7e46e43-bb7f-4905-8997-d6e8edcb0fbf
+entity_slug: crush
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 7 of 10] ---
+id: c4be0070-8373-4147-9229-ef83196a1a20
+entity_slug: crush
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 8 of 10] ---
+id: 4c9eddf6-6d34-4350-975e-c2cb2ad620a6
+entity_slug: crush
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 9 of 10] ---
+id: 9c0cfa79-a33e-40fd-86b0-654d45f4f96b
+entity_slug: crush
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 10] ---
+id: fc0f66f2-493c-4ef7-9e20-d721ef9d166b
+entity_slug: crush
+module_key: shop
+enabled: true
+sort_order: 10
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   22 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 22] ---
+id: baaf4829-aee3-4ffc-9b02-7f574fef2240
+landmark_id: 420a9c8a-7ef0-44af-98a2-c6b7ff9dc2f3
+entity_slug: crush
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 22] ---
+id: 77e4dd76-4d64-4953-9c97-26104d128e26
+landmark_id: 420a9c8a-7ef0-44af-98a2-c6b7ff9dc2f3
+entity_slug: crush
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 22] ---
+id: 24f22aa6-03b7-41f8-b9ed-751b84978254
+landmark_id: 420a9c8a-7ef0-44af-98a2-c6b7ff9dc2f3
+entity_slug: crush
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 22] ---
+id: f87fa43b-153f-42aa-b87a-efeca16eed18
+landmark_id: 420a9c8a-7ef0-44af-98a2-c6b7ff9dc2f3
+entity_slug: crush
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 22] ---
+id: e60f2ec5-6db2-404a-bc5a-2efd8b2a3a02
+landmark_id: 420a9c8a-7ef0-44af-98a2-c6b7ff9dc2f3
+entity_slug: crush
+landmark_type: shopping_mall
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 22] ---
+id: 7fc3493c-2e61-4b1c-a715-805872432ddb
+landmark_id: 420a9c8a-7ef0-44af-98a2-c6b7ff9dc2f3
+entity_slug: crush
+landmark_type: tourist_attraction
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 22] ---
+id: 561c5ee8-4fa8-4e59-82a5-4ebadb856484
+landmark_id: 485df86b-9c52-4ff3-9410-f333d445e2d6
+entity_slug: crush
+landmark_type: bar
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 22] ---
+id: 8762ffa2-cc7d-4088-be30-765d66d5f418
+landmark_id: 485df86b-9c52-4ff3-9410-f333d445e2d6
+entity_slug: crush
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 22] ---
+id: 466e2aca-4119-4ef2-9a5d-15cd0542d040
+landmark_id: 485df86b-9c52-4ff3-9410-f333d445e2d6
+entity_slug: crush
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 22] ---
+id: 0f76649b-4ea5-40da-8d97-d9a442364c6b
+landmark_id: 485df86b-9c52-4ff3-9410-f333d445e2d6
+entity_slug: crush
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 22] ---
+id: 748158c1-da84-48a7-8e54-7f8aa7fb230a
+landmark_id: 485df86b-9c52-4ff3-9410-f333d445e2d6
+entity_slug: crush
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 22] ---
+id: 9dd277f2-85be-425a-a38c-1b260aeddcb8
+landmark_id: 34bcf238-a90d-4be5-aedc-58eec2f16a9f
+entity_slug: crush
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 22] ---
+id: 17bbee66-e24b-4d1e-b924-36bc26a89329
+landmark_id: 34bcf238-a90d-4be5-aedc-58eec2f16a9f
+entity_slug: crush
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 22] ---
+id: 7d484064-f8db-4d8d-80c7-a754916fdb66
+landmark_id: d75d5034-2104-4608-82e3-1311dec58dba
+entity_slug: crush
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 22] ---
+id: 82bcf681-1214-4bab-97cd-f09f3e7a8cda
+landmark_id: d75d5034-2104-4608-82e3-1311dec58dba
+entity_slug: crush
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 22] ---
+id: fc769660-a69a-40c2-85ab-876dbbd4591d
+landmark_id: 0887f837-3498-4627-a088-52a509eb2250
+entity_slug: crush
+landmark_type: atm
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 22] ---
+id: f87cf6ac-3772-4bd1-bcab-ef4c559d1b57
+landmark_id: 0887f837-3498-4627-a088-52a509eb2250
+entity_slug: crush
+landmark_type: bar
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 22] ---
+id: 979ed50d-13c4-4067-95ab-53bb0fdcf886
+landmark_id: 0887f837-3498-4627-a088-52a509eb2250
+entity_slug: crush
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 19 of 22] ---
+id: 0d7a06b0-316b-4526-926a-2d98a339a8f4
+landmark_id: 0887f837-3498-4627-a088-52a509eb2250
+entity_slug: crush
+landmark_type: finance
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 20 of 22] ---
+id: 18cf59dc-94ad-407a-abc6-70aef4d79757
+landmark_id: 0887f837-3498-4627-a088-52a509eb2250
+entity_slug: crush
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 21 of 22] ---
+id: 14b8ee04-56da-4bc0-9eb5-b1b2dd3f6ef5
+landmark_id: 0887f837-3498-4627-a088-52a509eb2250
+entity_slug: crush
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 22 of 22] ---
+id: b74a48c8-b4c5-40ae-9404-20d69aedf3ae
+landmark_id: 0887f837-3498-4627-a088-52a509eb2250
+entity_slug: crush
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   6 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 6] ---
+id: 420a9c8a-7ef0-44af-98a2-c6b7ff9dc2f3
+entity_slug: crush
+kind: landmark
+place_id: ChIJvfvStq0FmogRzhDmwHKhsDA
+name: The Wharf
+types: [
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant",
+  "shopping_mall",
+  "tourist_attraction"
+]
+spatial_relationship: WITHIN
+travel_distance_meters: 331.676
+straight_line_distance_meters: 191.98308
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 6] ---
+id: 485df86b-9c52-4ff3-9410-f333d445e2d6
+entity_slug: crush
+kind: landmark
+place_id: ChIJjUVMSMMFmogRb0-XfuWyIEY
+name: Ginny Lane Bar and Grill
+types: [
+  "bar",
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant"
+]
+travel_distance_meters: 118.76591
+straight_line_distance_meters: 34.522564
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 6] ---
+id: 34bcf238-a90d-4be5-aedc-58eec2f16a9f
+entity_slug: crush
+kind: landmark
+place_id: ChIJP3KjbsQFmogROsuRYtNn7qU
+name: The Wharf Marina
+types: [
+  "establishment",
+  "point_of_interest"
+]
+travel_distance_meters: 43.243748
+straight_line_distance_meters: 34.522564
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 6] ---
+id: d75d5034-2104-4608-82e3-1311dec58dba
+entity_slug: crush
+kind: landmark
+place_id: ChIJjUVMSMMFmogR6PCDJOYkPio
+name: Wharf
+types: [
+  "establishment",
+  "point_of_interest"
+]
+spatial_relationship: BESIDE
+travel_distance_meters: 14.269869
+straight_line_distance_meters: 30.109781
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 6] ---
+id: 0887f837-3498-4627-a088-52a509eb2250
+entity_slug: crush
+kind: landmark
+place_id: ChIJn9f8HN0FmogRioNaU4U3I0c
+name: Island Time Daiquiris & Pizza at The Wharf
+types: [
+  "atm",
+  "bar",
+  "establishment",
+  "finance",
+  "food",
+  "point_of_interest",
+  "restaurant"
+]
+spatial_relationship: DOWN_THE_ROAD
+travel_distance_meters: 53.194637
+straight_line_distance_meters: 58.484623
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 6 of 6] ---
+id: 62d20b00-f3f4-4ca5-afc6-71f7f220f1e4
+entity_slug: crush
+kind: area
+place_id: ChIJ7T7Xq9wFmogRahIOl40NkO4
+name: The Wharf
+containment: WITHIN
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   2 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 2] ---
+offer_id: 1705
+entity_slug: crush
+section_id: 1280
+name: Wine by the glass, retail wine by the bottle, and tapas
+description: Official site and Gulf Shores tourism confirm concept; item prices not published in readable sources found. (Price: Not published)
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: b745e852-8eb2-4492-ba25-35091db656ff
+
+--- entity_offer [row 2 of 2] ---
+offer_id: 1709
+entity_slug: crush
+section_id: 73
+name: Waterfront/outdoor/pet-friendly dining; wine shop and tapas
+description: Tourism listing detail. (Price: Not published)
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: ec89ca77-8e3a-4438-a6e2-2928edb6dcec
+
+####################################################################################################
+# TABLE: entity_offer_section   -   2 row(s)
+####################################################################################################
+
+--- entity_offer_section [row 1 of 2] ---
+section_id: 73
+entity_slug: crush
+name: Amenities
+section_type: menu
+sort_order: 1
+
+--- entity_offer_section [row 2 of 2] ---
+section_id: 1280
+entity_slug: crush
+name: Concept
+section_type: menu
+sort_order: 0
+
+####################################################################################################
+# TABLE: entity_photos   -   24 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 24] ---
+id: 96535361-340f-4e61-9091-56db49264cef
+entity_slug: crush
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/crush/photo_07.jpg
+is_cover: false
+sort_order: 6
+
+--- entity_photos [row 2 of 24] ---
+id: 94e9151d-c535-4f68-9b22-dd78fb9ba56d
+entity_slug: crush
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/crush/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 24] ---
+id: 8fe3ff9b-263d-4169-83c4-87da6ca9fc10
+entity_slug: crush
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/crush/photo_03.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 4 of 24] ---
+id: 54e3dfdd-34f4-49e1-87be-1706a24cf179
+entity_slug: crush
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/crush/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 5 of 24] ---
+id: 231c6590-0d2b-4081-8be4-fbf9b07bfe05
+entity_slug: crush
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/crush/photo_10.jpg
+is_cover: false
+sort_order: 9
+
+--- entity_photos [row 6 of 24] ---
+id: d4814bdb-dbac-4ae6-be69-4ee5f3eb24b6
+entity_slug: crush
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/crush/photo_09.jpg
+is_cover: false
+sort_order: 8
+
+--- entity_photos [row 7 of 24] ---
+id: 0e57ce3e-dcf3-4097-a411-098d320a4602
+entity_slug: crush
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/crush/photo_06.jpg
+is_cover: false
+sort_order: 5
+
+--- entity_photos [row 8 of 24] ---
+id: faf0de48-18a3-401b-9765-ba34e4577fa0
+entity_slug: crush
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/crush/photo_05.jpg
+is_cover: false
+sort_order: 4
+
+--- entity_photos [row 9 of 24] ---
+id: d01ed142-cf0e-4ab3-95d9-30db29546cc1
+entity_slug: crush
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/crush/photo_04.jpg
+is_cover: false
+sort_order: 3
+
+--- entity_photos [row 10 of 24] ---
+id: e2c06a00-94a3-4b93-b7c4-29191298c0d3
+entity_slug: crush
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/crush/photo_08.jpg
+is_cover: false
+sort_order: 7
+
+--- entity_photos [row 11 of 24] ---
+id: 6deecbfe-f856-4d1b-9e3c-c231eb5bfd27
+entity_slug: crush
+url: https://alwharf-assets.nyc3.digitaloceanspaces.com/images/merchant-full/_304x304_crop_center-center_none_ns/91288909_545456689305707_6463414365839163392_n.jpg?v=1777641973
+is_cover: true
+sort_order: 0
+photo_type: gallery
+
+--- entity_photos [row 12 of 24] ---
+id: fa5dda6c-e80e-4f42-ae33-20f8e4bb607d
+entity_slug: crush
+url: https://places.googleapis.com/v1/places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3m6PWjjOMZtSSNp-nWj_YZSKswn_M8seytSSwV0Qde_TJwgdSerXu3noHrrFnsXngAR-lRlFVOywL6vdkR66gF_XeglNW1LLwUQanXwN3smP40HYFVsT3Wk6aU5EBsiGk06_Cny1n5f-QuiHwhZgZFlaS7HLnVMiGhlnxRrwvJm7U996BP7os-aJROr_0SSuAfL6u8SRutoPDE5s7hlzp6m1b-GFcNZ8V-8Y3lQfy38AcQglWYGOno5dZuIx5OHJjvMCEZc_uGXEDV6ZOhdqMHEBDS9bvF3-VtVRDMSuVUckVuVjsTf9g8HAUu7VxW2vGknuWx7Y8LHkB1EAm_BgP0PE3P0BbsQcBdV5vUXuYulyVa5SskDTgX_qFaAv-IBvhtH6yEMYoVjmcprCatAkwOIcCVw8y2sjo8yl2I21HMZrOGMO-Q40TdJmRkyXA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3m6PWjjOMZtSSNp-nWj_YZSKswn_M8seytSSwV0Qde_TJwgdSerXu3noHrrFnsXngAR-lRlFVOywL6vdkR66gF_XeglNW1LLwUQanXwN3smP40HYFVsT3Wk6aU5EBsiGk06_Cny1n5f-QuiHwhZgZFlaS7HLnVMiGhlnxRrwvJm7U996BP7os-aJROr_0SSuAfL6u8SRutoPDE5s7hlzp6m1b-GFcNZ8V-8Y3lQfy38AcQglWYGOno5dZuIx5OHJjvMCEZc_uGXEDV6ZOhdqMHEBDS9bvF3-VtVRDMSuVUckVuVjsTf9g8HAUu7VxW2vGknuWx7Y8LHkB1EAm_BgP0PE3P0BbsQcBdV5vUXuYulyVa5SskDTgX_qFaAv-IBvhtH6yEMYoVjmcprCatAkwOIcCVw8y2sjo8yl2I21HMZrOGMO-Q40TdJmRkyXA
+is_cover: false
+sort_order: 0
+caption: Raquel Del Rosario Mendez (TieDyeRosie)
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCW2ds15fZRwK796dBBuJCJ!2e10!4m2!3m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2
+
+--- entity_photos [row 13 of 24] ---
+id: 6effc496-4f4a-4fe6-94d4-d17563402db0
+entity_slug: crush
+url: https://places.googleapis.com/v1/places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3l4AqY-TrQV2z6-8qjBno6buTX0Nyqsp73M1rc637w6RVaL7BzinRT6BQM20WAUwNB_4JP8NtTkC3gqbZFuhVHQ3Cv1X7y9jo3Q2YZWc5ulLkIZRHIBZ76g6Fs1rsJs5qZ75D2qlNSIyNsT0jOMzhuV8w-wr5vN0lEC_JhNRA_j5eRCGQeNmDoip5PQOpyKnI4eFL59JSIOAkXbTAvVou5SNgmEvSxsSfKDjEXS7a7f3jvhKlIUZZYR4PouGZ39BxhReBLghlOj5Oq13pdjXclrr2OvHMxBI6Lbl5KtLYFmjv9EQGJyF_A8LOSbKJ7w_IDUnHf2NUUBvijM3dGdURJGxUvDxmIthnwpe-5VJqxOQTNmAbdnSAIYBturn8zhrbTUvzhghbODokWx_2lP-KUFmAWN4gxbK4Su3PE5w5tyPQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3l4AqY-TrQV2z6-8qjBno6buTX0Nyqsp73M1rc637w6RVaL7BzinRT6BQM20WAUwNB_4JP8NtTkC3gqbZFuhVHQ3Cv1X7y9jo3Q2YZWc5ulLkIZRHIBZ76g6Fs1rsJs5qZ75D2qlNSIyNsT0jOMzhuV8w-wr5vN0lEC_JhNRA_j5eRCGQeNmDoip5PQOpyKnI4eFL59JSIOAkXbTAvVou5SNgmEvSxsSfKDjEXS7a7f3jvhKlIUZZYR4PouGZ39BxhReBLghlOj5Oq13pdjXclrr2OvHMxBI6Lbl5KtLYFmjv9EQGJyF_A8LOSbKJ7w_IDUnHf2NUUBvijM3dGdURJGxUvDxmIthnwpe-5VJqxOQTNmAbdnSAIYBturn8zhrbTUvzhghbODokWx_2lP-KUFmAWN4gxbK4Su3PE5w5tyPQ
+is_cover: false
+sort_order: 1
+caption: Red Or White at The Wharf
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDaoafMOg!2e10!4m2!3m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2
+
+--- entity_photos [row 14 of 24] ---
+id: aa0a001e-140d-4cf1-b048-4baf073e89db
+entity_slug: crush
+url: https://places.googleapis.com/v1/places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3k9HjBB6Z-8Af6OgGDvODthk5WeHEAy6WfvOkhb9BrVUhyi0rXksCoK4Q7YRh0hRNJXI4-debl-D4u5jbxkFYN-YqP9XdZbpcKPbYTlbCu54AAifSrLpXfLm0csD1MK5ylWDDDdj8lsyIYIRlO_kardtrr2qRFlqaGBev-9iqzRVXKp3IY3JLkUN_txs7jQztGHy87voWavmvWb4jYv0KnRdpnai9SJgfZmkRSZPzHuknSj5jJRonmys1AThYijMme7Has-uM_ajNxNx_7V9BkFj1UQ9LRJ_MvZ17NQvL_pMteMQLLwzJ7TvRGJQ7yB_QmLQCRQfU-qja5vHVScwqvfqBWt96-erFFf8YtjTjcmFOhfX8t15ErSiZrN564HIM9Q4nAb56zd_XgpXZHCldSUjaqsLrSV2XHvwIPCc_8mTu-nBfKzEZlJiSeZZtPN/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3k9HjBB6Z-8Af6OgGDvODthk5WeHEAy6WfvOkhb9BrVUhyi0rXksCoK4Q7YRh0hRNJXI4-debl-D4u5jbxkFYN-YqP9XdZbpcKPbYTlbCu54AAifSrLpXfLm0csD1MK5ylWDDDdj8lsyIYIRlO_kardtrr2qRFlqaGBev-9iqzRVXKp3IY3JLkUN_txs7jQztGHy87voWavmvWb4jYv0KnRdpnai9SJgfZmkRSZPzHuknSj5jJRonmys1AThYijMme7Has-uM_ajNxNx_7V9BkFj1UQ9LRJ_MvZ17NQvL_pMteMQLLwzJ7TvRGJQ7yB_QmLQCRQfU-qja5vHVScwqvfqBWt96-erFFf8YtjTjcmFOhfX8t15ErSiZrN564HIM9Q4nAb56zd_XgpXZHCldSUjaqsLrSV2XHvwIPCc_8mTu-nBfKzEZlJiSeZZtPN
+is_cover: false
+sort_order: 2
+caption: Raquel Del Rosario Mendez (TieDyeRosie)
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDIN8TNpBh4Jn73RoByyTWG!2e10!4m2!3m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2
+
+--- entity_photos [row 15 of 24] ---
+id: 18b19d62-efed-4710-96ec-c26949ca51a0
+entity_slug: crush
+url: https://places.googleapis.com/v1/places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3ndkSYyOHjiRctEF6YXQqbDd9PoBgePjs7BpQ1fklu7X2uSQ96FP5m_Hh4XCabKjCqFyqD0sjk2K8sPOz_8OLeZVKY55pNN9-Vth_gEU3rDL1gpFPqEDFgwttCOEJA-W-h9rhXRARlrEx0GUX4rHG7ReunuzGBDht7oAXT2OLv5LZjlJTwgTwHQjkqEXldofWmxYfVB_ImQeQEMW6lZwwSuBV8pkM1NdB9RVblLyXVlVzF8G69EXoBJDC0fHysYrjB0VvCLgpVlDSQmKwKNRE_E6vGVKXNMAGGpCvFLgQ7-ajksRPYHYupws0lG2slq2Rvz71ycBXix0e55AvImTsbeFwgMdiU2H2Fh4jivmZzd9i9aLLblQZzwdNHq9wuaUz12Sg7ldasqrcIiQwmZbDijTafKKDdAfW0awlBX5Z5I7dDe/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3ndkSYyOHjiRctEF6YXQqbDd9PoBgePjs7BpQ1fklu7X2uSQ96FP5m_Hh4XCabKjCqFyqD0sjk2K8sPOz_8OLeZVKY55pNN9-Vth_gEU3rDL1gpFPqEDFgwttCOEJA-W-h9rhXRARlrEx0GUX4rHG7ReunuzGBDht7oAXT2OLv5LZjlJTwgTwHQjkqEXldofWmxYfVB_ImQeQEMW6lZwwSuBV8pkM1NdB9RVblLyXVlVzF8G69EXoBJDC0fHysYrjB0VvCLgpVlDSQmKwKNRE_E6vGVKXNMAGGpCvFLgQ7-ajksRPYHYupws0lG2slq2Rvz71ycBXix0e55AvImTsbeFwgMdiU2H2Fh4jivmZzd9i9aLLblQZzwdNHq9wuaUz12Sg7ldasqrcIiQwmZbDijTafKKDdAfW0awlBX5Z5I7dDe
+is_cover: false
+sort_order: 3
+caption: Steve Quantz
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICso4PthwE!2e10!4m2!3m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2
+
+--- entity_photos [row 16 of 24] ---
+id: 0ec297ca-daf4-48f4-a3e8-ec9a796a9cf1
+entity_slug: crush
+url: https://places.googleapis.com/v1/places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3k11gQ3wyg9zfFaeW1rr6p4wXYTs5CbahgBl3Bi_1Ji5DWvAM3NHZz3VGGnwYMnTyf7jxeFY35caSp-Ag_d11m7El7hi5WNNZRNdu9EEte4_cDiV437PyciThaXtjrlZQx-XrfdNi04IeQFDZTzhv_keuLUXXUhfvdYPt1l4cfMkcVvH9y9CloD77nh6uEbz7QyckhMfW12HpmwcOwkWpM60GPWxSfU8SYIr7C1cW6ZhXKxSsY2jB_1VUXs7reyBnAjKO_zwF5APPrlZ7KjuzEJJzHkdrRL31mFVWseBbMmKbNUEMtYfcvo6v0C2tRvzNfSl78Xw7BqWqGpEdxGzgo5tIBD8y0Kd61Gi4HOMeBDiOXLZTjXo79ANFit2WPzQ4Qr4CUfNRilXAdmRy8Y6yuFQCG5SB82LBeOOc2iQSg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3k11gQ3wyg9zfFaeW1rr6p4wXYTs5CbahgBl3Bi_1Ji5DWvAM3NHZz3VGGnwYMnTyf7jxeFY35caSp-Ag_d11m7El7hi5WNNZRNdu9EEte4_cDiV437PyciThaXtjrlZQx-XrfdNi04IeQFDZTzhv_keuLUXXUhfvdYPt1l4cfMkcVvH9y9CloD77nh6uEbz7QyckhMfW12HpmwcOwkWpM60GPWxSfU8SYIr7C1cW6ZhXKxSsY2jB_1VUXs7reyBnAjKO_zwF5APPrlZ7KjuzEJJzHkdrRL31mFVWseBbMmKbNUEMtYfcvo6v0C2tRvzNfSl78Xw7BqWqGpEdxGzgo5tIBD8y0Kd61Gi4HOMeBDiOXLZTjXo79ANFit2WPzQ4Qr4CUfNRilXAdmRy8Y6yuFQCG5SB82LBeOOc2iQSg
+is_cover: false
+sort_order: 4
+caption: ALD
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICelInHBw!2e10!4m2!3m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2
+
+--- entity_photos [row 17 of 24] ---
+id: d9800e68-e74a-411b-a8d8-b66b7891e192
+entity_slug: crush
+url: https://places.googleapis.com/v1/places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3mEyC_tV5QvJ3KXO3EQYIjZtnfLcaEDxvP04_2fGYcRPcPuanrztzIjRG8w5rJjSa5CRlC6Mdg4byiP-7sjTECrjnQTSgIuaZx3RDHenYk4tAa-PiQE1fzTe8oIeqijF3QGztTdQXFXlK6fL_KjuGm9_QPfrqtdHvlHz-CKzENAz1R3-0uxvPaGpyhte7za3yUjjUr-e8Lt4YxYME24BBvpC9Qv-ajM0YukuWxG5eSiJwSFKQshL3QQbvx7MLiy2YUDtdmjtga3YOBoJZrpXjVNX20P7MW5kYLg2QZ-T7d1SSc3XasqbSrQFevayXtyj1qdhQYEZ5joGUdfkQjhrulcfPdCqiBXUANeh8ZIwxV5g2YxAzVwXJuemdUILhmX7I_CLHDPy5p_NFOLKsdUuhncQd5LWSbMyHljXJD-bDqHnA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3mEyC_tV5QvJ3KXO3EQYIjZtnfLcaEDxvP04_2fGYcRPcPuanrztzIjRG8w5rJjSa5CRlC6Mdg4byiP-7sjTECrjnQTSgIuaZx3RDHenYk4tAa-PiQE1fzTe8oIeqijF3QGztTdQXFXlK6fL_KjuGm9_QPfrqtdHvlHz-CKzENAz1R3-0uxvPaGpyhte7za3yUjjUr-e8Lt4YxYME24BBvpC9Qv-ajM0YukuWxG5eSiJwSFKQshL3QQbvx7MLiy2YUDtdmjtga3YOBoJZrpXjVNX20P7MW5kYLg2QZ-T7d1SSc3XasqbSrQFevayXtyj1qdhQYEZ5joGUdfkQjhrulcfPdCqiBXUANeh8ZIwxV5g2YxAzVwXJuemdUILhmX7I_CLHDPy5p_NFOLKsdUuhncQd5LWSbMyHljXJD-bDqHnA
+is_cover: false
+sort_order: 5
+caption: John
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICF-aOSMA!2e10!4m2!3m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2
+
+--- entity_photos [row 18 of 24] ---
+id: d817ad81-443b-41b5-b0b6-0e4fb4c75afd
+entity_slug: crush
+url: https://places.googleapis.com/v1/places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3lq3-HDOIm75-1e2AiAZNAjzDZzBvfcmFo0QCsU3pw_heGm4iRtA_0ActbkYYHMU3Nt2egJzHJ-kH0G51Oism035rhxbK4I02gDgeP5Jp5bj8o3G7k9w9yz0Z7m2_vG54KwAfRgyE9EdY4fPuStYmlt90RzniUJHBvnwItCHMxGCCgtHwJm055UVCrjDqXek_nN-ynGoZ02jYEVeWY9aTJMGwRmvX4nMLNcu3KhBvTI0Ibq3sA9uGxi-m1jREJM1pZ3apnQMr0mxk4t_z9p1dFnYQRP3EjJPqwC0FMs35pSdiWX0Nmn0PnH7jjg7RmIQ4ztnTtGdgdgrNQnxicbhWeKMBCffxtCXPqYxEWKuNDWcGpHyzhr5VKBcopSuCvGsyXrh6wUjpcH-GKaPGQdd7Qzjh6vXkHN0K6xAOn3dgaHtg/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3lq3-HDOIm75-1e2AiAZNAjzDZzBvfcmFo0QCsU3pw_heGm4iRtA_0ActbkYYHMU3Nt2egJzHJ-kH0G51Oism035rhxbK4I02gDgeP5Jp5bj8o3G7k9w9yz0Z7m2_vG54KwAfRgyE9EdY4fPuStYmlt90RzniUJHBvnwItCHMxGCCgtHwJm055UVCrjDqXek_nN-ynGoZ02jYEVeWY9aTJMGwRmvX4nMLNcu3KhBvTI0Ibq3sA9uGxi-m1jREJM1pZ3apnQMr0mxk4t_z9p1dFnYQRP3EjJPqwC0FMs35pSdiWX0Nmn0PnH7jjg7RmIQ4ztnTtGdgdgrNQnxicbhWeKMBCffxtCXPqYxEWKuNDWcGpHyzhr5VKBcopSuCvGsyXrh6wUjpcH-GKaPGQdd7Qzjh6vXkHN0K6xAOn3dgaHtg
+is_cover: false
+sort_order: 6
+caption: Steve Quantz
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICso72MGg!2e10!4m2!3m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2
+
+--- entity_photos [row 19 of 24] ---
+id: 15772ef6-1323-4273-8a31-c2e6a9d8172a
+entity_slug: crush
+url: https://places.googleapis.com/v1/places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3mPpK4rHxlB89fX60hXpq8oqCZl3qGdGqTfRnUQqeAHeyvSvHcHsOP5kkODfx9eWNQRaN_K6aT4e1FRw8OIJA_Yda9eKm6YeNdSe4Y0Kx7mkcTvqbe0T4yBKo1IvIs65907EyU8WGCeDFAtqWFw4FD8uAIaZoji7qpvCytp4ChdKPHDk0eNGE6mMK6TA1iE9H3rfdsRlmsHbXsIe3PW7raKFZFzrk-9_Amutcj0sXCQObi8UpckhFYYZmY4-3Q4YbufQmVGwBr5FEnaRqh-1e250Md7lRMOWF7Qp8Rw_RYLRFNDP39L2WwVpKOZP97ICqZw_YpzK5U6TFR15_6-1kfkYLBHL5e1y21MN5p32gZDrERH0Zk1Tl-GAbeA8kOnKci39mRvQnkeOvp1SGgBmLu2tHQQxT71njfep26DMeBF6q55LqJ0mTL0r1oyuf_i/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3mPpK4rHxlB89fX60hXpq8oqCZl3qGdGqTfRnUQqeAHeyvSvHcHsOP5kkODfx9eWNQRaN_K6aT4e1FRw8OIJA_Yda9eKm6YeNdSe4Y0Kx7mkcTvqbe0T4yBKo1IvIs65907EyU8WGCeDFAtqWFw4FD8uAIaZoji7qpvCytp4ChdKPHDk0eNGE6mMK6TA1iE9H3rfdsRlmsHbXsIe3PW7raKFZFzrk-9_Amutcj0sXCQObi8UpckhFYYZmY4-3Q4YbufQmVGwBr5FEnaRqh-1e250Md7lRMOWF7Qp8Rw_RYLRFNDP39L2WwVpKOZP97ICqZw_YpzK5U6TFR15_6-1kfkYLBHL5e1y21MN5p32gZDrERH0Zk1Tl-GAbeA8kOnKci39mRvQnkeOvp1SGgBmLu2tHQQxT71njfep26DMeBF6q55LqJ0mTL0r1oyuf_i
+is_cover: false
+sort_order: 7
+caption: Ray Pinson
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhADyc5Uvzdb8Ge6fEAABXAz!2e10!4m2!3m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2
+
+--- entity_photos [row 20 of 24] ---
+id: 6e5aaa28-6a04-42e1-827a-5949cb9f51ff
+entity_slug: crush
+url: https://places.googleapis.com/v1/places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3mt3hn2BygmXvb004gXQPvsyuXGN9uytGy4hsH4h7_1ykzUEF0eK1xm9rLZ2zNKIPu8v2FT2LbetXiBz_1k5qysQINhQQ66oWl9z2hBG99m_1rJbrmtXC_sREnCxyENxCesMZkd9kUK-JiX7k1QwBIki0rMZ8h4dgaVXKxyre_tsPb7_P1be4lFvnSaNlYPjwhS4z7vcHWWYfMT6WlUgDQAywPWraon63bwod4IwcfysfFFjI5ghv0nodbbwpNtZZkxi6M2i66Mg4ll3fqWS6UoNeEIrJ9HpkvFTyDO-zDNF1snH2_BFbd0XvJ_qwoi1OpMtn1x93f-xRfRSfB2OKD9xCaAwsLqR9fuM7zUK78bf7tNX9aHtMkSXgh4VwwRbIOJc2Q9TKDCWw2ngrSk7AYpydQ-L43-Q6lEzhV0NnVvdgQZ8_FlHS45iLKw_j02/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3mt3hn2BygmXvb004gXQPvsyuXGN9uytGy4hsH4h7_1ykzUEF0eK1xm9rLZ2zNKIPu8v2FT2LbetXiBz_1k5qysQINhQQ66oWl9z2hBG99m_1rJbrmtXC_sREnCxyENxCesMZkd9kUK-JiX7k1QwBIki0rMZ8h4dgaVXKxyre_tsPb7_P1be4lFvnSaNlYPjwhS4z7vcHWWYfMT6WlUgDQAywPWraon63bwod4IwcfysfFFjI5ghv0nodbbwpNtZZkxi6M2i66Mg4ll3fqWS6UoNeEIrJ9HpkvFTyDO-zDNF1snH2_BFbd0XvJ_qwoi1OpMtn1x93f-xRfRSfB2OKD9xCaAwsLqR9fuM7zUK78bf7tNX9aHtMkSXgh4VwwRbIOJc2Q9TKDCWw2ngrSk7AYpydQ-L43-Q6lEzhV0NnVvdgQZ8_FlHS45iLKw_j02
+is_cover: false
+sort_order: 8
+caption: H. Hays
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhC0BWrjJ0W7TzRysBxZV-Rn!2e10!4m2!3m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2
+
+--- entity_photos [row 21 of 24] ---
+id: bb1b408d-cff8-421c-aa9b-093d74dc2550
+entity_slug: crush
+url: https://places.googleapis.com/v1/places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3ke2SnKko7kdMl7ZN4bwekqoyo615vi4HC1oByLYbgblt-McRORDqWFnRjhqfoDECWcK8qXbubJN_Omh0rPuWVIwpJNaZeSufmEYg6BbhuvuL5w8hCKdLTo0sRVZO8C7yCWQ9RV7QGU1VLJdA4c3l5XLL5JtsjYBCwFpDR7b4w8vinYsyaRwVp-3nXTnbnu3vKTo7UZw83NZ13k4L1OVsz-ikifSmsZA4vNCxqOy6N4A7l8KnMDyVSApvDzqJhbhYaKD7TJfBK8uz5kP4H7js_5CCexAWjtWswWYmAquHsBFMewjRchdMn5mL6avvFoUYmbBX-E39Y3bIwAmocry80myBjRW4vyc-j_38w7UdZMPJ_cIu86-oxKhef_S9pB4t6Yj_5HC9zT43FUyfIczr4Pg-aHAuVYMl9R42Eb4EUEtrhOJu_k3XIpx0ianiCI/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJffk9NMMFmogRovPm2pTU7Ks/photos/AaVGc3ke2SnKko7kdMl7ZN4bwekqoyo615vi4HC1oByLYbgblt-McRORDqWFnRjhqfoDECWcK8qXbubJN_Omh0rPuWVIwpJNaZeSufmEYg6BbhuvuL5w8hCKdLTo0sRVZO8C7yCWQ9RV7QGU1VLJdA4c3l5XLL5JtsjYBCwFpDR7b4w8vinYsyaRwVp-3nXTnbnu3vKTo7UZw83NZ13k4L1OVsz-ikifSmsZA4vNCxqOy6N4A7l8KnMDyVSApvDzqJhbhYaKD7TJfBK8uz5kP4H7js_5CCexAWjtWswWYmAquHsBFMewjRchdMn5mL6avvFoUYmbBX-E39Y3bIwAmocry80myBjRW4vyc-j_38w7UdZMPJ_cIu86-oxKhef_S9pB4t6Yj_5HC9zT43FUyfIczr4Pg-aHAuVYMl9R42Eb4EUEtrhOJu_k3XIpx0ianiCI
+is_cover: false
+sort_order: 9
+caption: Raquel Del Rosario Mendez (TieDyeRosie)
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAySlCxRwd3pNQ5POHjcG1k!2e10!4m2!3m1!1s0x889a05c3343df97d:0xabecd494dae6f3a2
+
+--- entity_photos [row 22 of 24] ---
+id: ef219655-2375-45a0-9e0d-cd249c56eee8
+entity_slug: crush
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/55a0d3d5-1dde-46ba-8dd0-cf536597c7c1/image_1.jpg
+is_cover: true
+sort_order: 100
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 23 of 24] ---
+id: 2aac2556-fe8e-4e2a-99ea-ae09b38457e8
+entity_slug: crush
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/55a0d3d5-1dde-46ba-8dd0-cf536597c7c1/image_2.jpg
+is_cover: false
+sort_order: 101
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 24 of 24] ---
+id: 049f7ee6-75d4-47f3-a380-43fd8c3bdebd
+entity_slug: crush
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/55a0d3d5-1dde-46ba-8dd0-cf536597c7c1/image_3.jpg
+is_cover: false
+sort_order: 102
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: d07d35c5-243f-4064-bf22-027fad3fea02
+entity_slug: crush
+reviewer_name: Dana
+rating: 5
+body: Came here for a drink after a craft class at Orange Beach Library and I’m so glad we popped in! We had their Rioja (and I bought a bottle to bring home) and shared the burrata — their food is AMAZING! I just wish they stayed open later on weekends!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-02-24T19:34:04.048543+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: 61ea6469-42fa-427b-ba21-744bb48d3d79
+entity_slug: crush
+reviewer_name: H. Hays
+rating: 5
+body: Great selection of wines. Beautiful wine bar. Tapas abound. Great Harbor view.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-02-27T03:57:16.871648+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: 954f4c1f-dac8-4ae3-becd-224a1dfe90e3
+entity_slug: crush
+reviewer_name: julie c
+rating: 3
+body: Wine selection at the bar is average and priced correctly. We ordered the cheese plate and liked the selection but the ratio of cheese that needs bread or crackers to eat because of the softness of it was way off. We had to leave cheese on the plate or eat it plain with a fork. The service is very poor. The lighting of the Christmas tree was taking place right in front and these ladies kept commenting on how busy they were, like it was a surprise. Shame on management for not being prepared for a night with potential $$. We sat with empty glasses while the ladies walked past, one even eyed our plates and glasses and kept going. I had to flag her down. Did I mention there are only 15 seats at the bar, no mixed drinks and 2 bartenders?? We are locals and won’t be back.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-12-03T14:32:33.270756+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 2ac1e9d6-f220-43a5-9320-8d68c9369698
+entity_slug: crush
+reviewer_name: Raquel Del Rosario Mendez (TieDyeRosie)
+rating: 5
+body: This is a must see ! So many beautiful bottles
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-01-01T02:46:38.990757+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: c7415d98-1877-4b1a-9baf-8dd7e1c1a23e
+entity_slug: crush
+reviewer_name: Natashia Lee
+rating: 5
+body: Super yummy food! Great place to talk and eat with friends.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-06-14T04:39:37.75739+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_sources   -   1 row(s)
+####################################################################################################
+
+--- entity_sources [row 1 of 1] ---
+id: 52083c7a-1a64-4024-bdc9-8d9d2acf0bdf
+entity_slug: crush
+source_system: website_scrape_advanced
+source_url: http://www.wecrushwine.com/
+scope: profile
+confidence: high
+created_at: 2026-07-16T23:29:34.335105+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   14 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 14] ---
+id: 756efa8d-3a51-494e-b1a1-b46b700c09fc
+entity_slug: crush
+tag_name: liquor_store
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 14] ---
+id: 26c3d3bf-778e-4903-8286-a69aabf0a358
+entity_slug: crush
+tag_name: wine_bar
+tag_category: google_type
+
+--- entity_tags [row 3 of 14] ---
+id: 860193cf-178c-496c-b6a5-128ed73e1330
+entity_slug: crush
+tag_name: bar
+tag_category: google_type
+
+--- entity_tags [row 4 of 14] ---
+id: b904dc5e-0f4e-4e3a-99a6-5a92589b787a
+entity_slug: crush
+tag_name: restaurant
+tag_category: google_type
+
+--- entity_tags [row 5 of 14] ---
+id: 2d592559-831b-4b31-95fd-1fa4205388d7
+entity_slug: crush
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 6 of 14] ---
+id: 492a9d3d-3ff3-49cf-acd7-0fd96803c922
+entity_slug: crush
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 7 of 14] ---
+id: a1932dc3-17f8-46d8-8bb9-64c981a339b4
+entity_slug: crush
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 8 of 14] ---
+id: 9d3d7bec-6b51-469f-9761-113008904c02
+entity_slug: crush
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 9 of 14] ---
+id: cf073d78-526c-4e51-a54c-1aadd9a04f2f
+entity_slug: crush
+tag_name: wine
+tag_category: wharf
+
+--- entity_tags [row 10 of 14] ---
+id: 421f1b05-f144-4930-828b-0e9b2b9c3134
+entity_slug: crush
+tag_name: retail
+tag_category: wharf
+
+--- entity_tags [row 11 of 14] ---
+id: d7affd99-1614-46de-9c29-ea7ee6c6821f
+entity_slug: crush
+tag_name: restaurants + eateries
+tag_category: wharf
+
+--- entity_tags [row 12 of 14] ---
+id: 89231a18-a84f-4f17-9879-27e244ac22a0
+entity_slug: crush
+tag_name: bars + tasting rooms
+tag_category: wharf
+
+--- entity_tags [row 13 of 14] ---
+id: c53c3add-ff90-4e4e-96d7-876684764670
+entity_slug: crush
+tag_name: the wharf
+tag_category: wharf
+
+--- entity_tags [row 14 of 14] ---
+id: 9268390d-bb60-433c-8d21-4a3c738198a2
+entity_slug: crush
+tag_name: orange beach
+tag_category: wharf
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 5a69e19c-3923-436d-a6cf-aba3a2e3a9cf
+entity_slug: crush
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_retail   -   1 row(s)
+####################################################################################################
+
+--- industry_retail [row 1 of 1] ---
+entity_slug: crush
+product_count: 0
+curbside_pickup: true
+delivery: false
+updated_at: 2026-07-20T03:17:43.35857+00:00
+
+####################################################################################################
+# TABLE: inventory_items   -   2 row(s)
+####################################################################################################
+
+--- inventory_items [row 1 of 2] ---
+id: 9defcb4a-0cfe-44ac-9121-3fa696ae856b
+entity_slug: crush
+name: Waterfront/outdoor/pet-friendly dining; wine shop and tapas
+description: Tourism listing detail. (Price: Not published)
+active: true
+created_at: 2026-07-21T16:33:48.985181+00:00
+updated_at: 2026-07-21T16:33:48.985181+00:00
+
+--- inventory_items [row 2 of 2] ---
+id: 2fed45df-84b8-44c1-a2d4-5ac7407039dd
+entity_slug: crush
+name: Wine by the glass, retail wine by the bottle, and tapas
+description: Official site and Gulf Shores tourism confirm concept; item prices not published in readable sources found. (Price: Not published)
+active: true
+created_at: 2026-07-21T16:33:48.985181+00:00
+updated_at: 2026-07-21T16:33:48.985181+00:00
+
+####################################################################################################
+# TABLE: legacy_photo_migration_queue   -   3 row(s)
+####################################################################################################
+
+--- legacy_photo_migration_queue [row 1 of 3] ---
+id: 1575
+entity_slug: crush
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/55a0d3d5-1dde-46ba-8dd0-cf536597c7c1/image_1.jpg
+is_cover: true
+sort_order: 100
+status: linked_legacy
+created_at: 2026-07-26T00:31:07.222409+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 2 of 3] ---
+id: 1418
+entity_slug: crush
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/55a0d3d5-1dde-46ba-8dd0-cf536597c7c1/image_2.jpg
+is_cover: false
+sort_order: 101
+status: linked_legacy
+created_at: 2026-07-26T00:31:07.222409+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 3 of 3] ---
+id: 1330
+entity_slug: crush
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/55a0d3d5-1dde-46ba-8dd0-cf536597c7c1/image_3.jpg
+is_cover: false
+sort_order: 102
+status: linked_legacy
+created_at: 2026-07-26T00:31:07.222409+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: menu_items   -   2 row(s)
+####################################################################################################
+
+--- menu_items [row 1 of 2] ---
+id: b745e852-8eb2-4492-ba25-35091db656ff
+section_id: 172afefd-018c-499a-b14d-f5fc27eb81e1
+entity_slug: crush
+item_name: Wine by the glass, retail wine by the bottle, and tapas
+description: Official site and Gulf Shores tourism confirm concept; item prices not published in readable sources found. (Price: Not published)
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 2 of 2] ---
+id: ec89ca77-8e3a-4438-a6e2-2928edb6dcec
+section_id: 04e0aa6d-f89f-4e29-88c8-6277f8965207
+entity_slug: crush
+item_name: Waterfront/outdoor/pet-friendly dining; wine shop and tapas
+description: Tourism listing detail. (Price: Not published)
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+####################################################################################################
+# TABLE: menu_section_days   -   14 row(s)
+####################################################################################################
+
+--- menu_section_days [row 1 of 14] ---
+id: 8cad81a7-ebf5-4e33-b65c-460384fb6687
+menu_section_id: 172afefd-018c-499a-b14d-f5fc27eb81e1
+entity_slug: crush
+day_of_week: Monday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 2 of 14] ---
+id: 3078ead6-74ba-4ff5-bcce-f0923b8dd6fc
+menu_section_id: 172afefd-018c-499a-b14d-f5fc27eb81e1
+entity_slug: crush
+day_of_week: Tuesday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 3 of 14] ---
+id: b6258baa-0b5c-43d5-92fc-a3f79a302a9e
+menu_section_id: 172afefd-018c-499a-b14d-f5fc27eb81e1
+entity_slug: crush
+day_of_week: Wednesday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 4 of 14] ---
+id: 0cf7acc3-c358-4795-83b7-959ca337880a
+menu_section_id: 172afefd-018c-499a-b14d-f5fc27eb81e1
+entity_slug: crush
+day_of_week: Thursday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 5 of 14] ---
+id: ba13908d-27ea-47d5-926d-56dfdbee89e3
+menu_section_id: 172afefd-018c-499a-b14d-f5fc27eb81e1
+entity_slug: crush
+day_of_week: Friday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 6 of 14] ---
+id: 019d82ac-dd61-448a-8ad5-512bb2946f19
+menu_section_id: 172afefd-018c-499a-b14d-f5fc27eb81e1
+entity_slug: crush
+day_of_week: Saturday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 7 of 14] ---
+id: 968474e8-6904-4a02-8765-fb073e0b923d
+menu_section_id: 172afefd-018c-499a-b14d-f5fc27eb81e1
+entity_slug: crush
+day_of_week: Sunday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 8 of 14] ---
+id: f0cf840f-65de-4bc2-8e81-2a7e98b00c81
+menu_section_id: 04e0aa6d-f89f-4e29-88c8-6277f8965207
+entity_slug: crush
+day_of_week: Monday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 9 of 14] ---
+id: faeb6678-1488-4a14-b403-9cb0363cb896
+menu_section_id: 04e0aa6d-f89f-4e29-88c8-6277f8965207
+entity_slug: crush
+day_of_week: Tuesday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 10 of 14] ---
+id: d908c344-6c01-44a7-8556-78dd934c2bdc
+menu_section_id: 04e0aa6d-f89f-4e29-88c8-6277f8965207
+entity_slug: crush
+day_of_week: Wednesday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 11 of 14] ---
+id: 0f076679-2711-4d3e-b8d3-eb5791bc32b2
+menu_section_id: 04e0aa6d-f89f-4e29-88c8-6277f8965207
+entity_slug: crush
+day_of_week: Thursday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 12 of 14] ---
+id: 25f34a13-668e-498c-b6e3-b3d21986e90a
+menu_section_id: 04e0aa6d-f89f-4e29-88c8-6277f8965207
+entity_slug: crush
+day_of_week: Friday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 13 of 14] ---
+id: 7c8c1573-4743-4bf6-844c-de083fab62ed
+menu_section_id: 04e0aa6d-f89f-4e29-88c8-6277f8965207
+entity_slug: crush
+day_of_week: Saturday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 14 of 14] ---
+id: d2594447-dee2-461c-a6c4-bbc8abe16f86
+menu_section_id: 04e0aa6d-f89f-4e29-88c8-6277f8965207
+entity_slug: crush
+day_of_week: Sunday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+####################################################################################################
+# TABLE: menu_section_details   -   2 row(s)
+####################################################################################################
+
+--- menu_section_details [row 1 of 2] ---
+id: 2301c197-8cbd-49df-8feb-0c82390e1edf
+menu_section_id: 172afefd-018c-499a-b14d-f5fc27eb81e1
+entity_slug: crush
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- menu_section_details [row 2 of 2] ---
+id: 06cfc9c4-9415-4bc4-a394-6c88758336bc
+menu_section_id: 04e0aa6d-f89f-4e29-88c8-6277f8965207
+entity_slug: crush
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+####################################################################################################
+# TABLE: menu_sections   -   2 row(s)
+####################################################################################################
+
+--- menu_sections [row 1 of 2] ---
+id: 172afefd-018c-499a-b14d-f5fc27eb81e1
+entity_slug: crush
+section_name: Concept
+sort_order: 0
+days_of_week: [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday"
+]
+is_active: true
+metadata: {}
+
+--- menu_sections [row 2 of 2] ---
+id: 04e0aa6d-f89f-4e29-88c8-6277f8965207
+entity_slug: crush
+section_name: Amenities
+sort_order: 1
+days_of_week: [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday"
+]
+is_active: true
+metadata: {}
+
+####################################################################################################
+# TABLE: products   -   2 row(s)
+####################################################################################################
+
+--- products [row 1 of 2] ---
+id: 9d75ffbd-c865-47c4-bb6a-598c2ea4921d
+entity_slug: crush
+name: Wine by the glass, retail wine by the bottle, and tapas
+description: Official site and Gulf Shores tourism confirm concept; item prices not published in readable sources found. (Price: Not published)
+in_stock: true
+sort_order: 0
+
+--- products [row 2 of 2] ---
+id: 1029c642-4abc-4b15-af9b-cd67c314f3e0
+entity_slug: crush
+name: Waterfront/outdoor/pet-friendly dining; wine shop and tapas
+description: Tourism listing detail. (Price: Not published)
+in_stock: true
+sort_order: 0
+
+####################################################################################################
+# TABLE: search_index   -   5 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 5] ---
+ref_type: offer
+ref_id: 1705
+entity_slug: crush
+title: Wine by the glass, retail wine by the bottle, and tapas
+category: menu_item
+subtitle: Official site and Gulf Shores tourism confirm concept; item prices not published in readable sources found. (Price: Not published)
+search_vector: 'bottl':9A 'concept':19C 'confirm':18C 'found':27C 'glass':4A 'gulf':15C 'item':20C 'offici':12C 'price':21C,28C 'publish':23C,30C 'readabl':25C 'retail':5A 'shore':16C 'site':13C 'sourc':26C 'tapa':11A 'tourism':17C 'wine':1A,6A
+
+--- search_index [row 2 of 5] ---
+ref_type: offer
+ref_id: 1709
+entity_slug: crush
+title: Waterfront/outdoor/pet-friendly dining; wine shop and tapas
+category: menu_item
+subtitle: Tourism listing detail. (Price: Not published)
+search_vector: 'detail':9C 'dine':2A 'list':8C 'price':10C 'publish':12C 'shop':4A 'tapa':6A 'tourism':7C 'waterfront/outdoor/pet-friendly':1A 'wine':3A
+
+--- search_index [row 3 of 5] ---
+ref_type: menu_item
+ref_id: b745e852-8eb2-4492-ba25-35091db656ff
+entity_slug: crush
+title: Wine by the glass, retail wine by the bottle, and tapas
+category: menu
+subtitle: Official site and Gulf Shores tourism confirm concept; item prices not published in readable sources found. (Price: Not published)
+search_vector: 'bottl':9A 'concept':19C 'confirm':18C 'found':27C 'glass':4A 'gulf':15C 'item':20C 'offici':12C 'price':21C,28C 'publish':23C,30C 'readabl':25C 'retail':5A 'shore':16C 'site':13C 'sourc':26C 'tapa':11A 'tourism':17C 'wine':1A,6A
+
+--- search_index [row 4 of 5] ---
+ref_type: menu_item
+ref_id: ec89ca77-8e3a-4438-a6e2-2928edb6dcec
+entity_slug: crush
+title: Waterfront/outdoor/pet-friendly dining; wine shop and tapas
+category: menu
+subtitle: Tourism listing detail. (Price: Not published)
+search_vector: 'detail':9C 'dine':2A 'list':8C 'price':10C 'publish':12C 'shop':4A 'tapa':6A 'tourism':7C 'waterfront/outdoor/pet-friendly':1A 'wine':3A
+
+--- search_index [row 5 of 5] ---
+ref_type: business
+ref_id: crush
+entity_slug: crush
+title: Crush
+category: liquor_store
+subtitle: Bar featuring an array of wine selections alongside an assortment of pizzas and other food items.
+search_vector: 'alongsid':11C 'array':7C 'assort':13C 'bar':4C 'crush':1A 'featur':5C 'food':18C 'item':19C 'liquor':2B 'pizza':15C 'select':10C 'store':3B 'wine':9C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: crush

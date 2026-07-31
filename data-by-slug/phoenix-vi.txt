@@ -1,0 +1,3843 @@
+====================================================================================================
+SLUG: phoenix-vi
+NAME: Phoenix VI
+INDUSTRY: condo
+SUBTYPE: condominium_complex
+TABLES WITH DATA: 29
+TOTAL ROWS: 368
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (14 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (45 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_amenities  (11 rows)
+  entity_completeness_v  (1 rows)
+  entity_faqs  (13 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (2 rows)
+  entity_items_v  (2 rows)
+  entity_modules  (14 rows)
+  entity_offer  (1 rows)
+  entity_photos  (181 rows)
+  entity_reviews  (5 rows)
+  entity_section_items  (1 rows)
+  entity_section_items_metadata_backup  (1 rows)
+  entity_sections  (1 rows)
+  entity_sources  (2 rows)
+  entity_tags  (41 rows)
+  entity_theme  (2 rows)
+  faqs  (13 rows)
+  industry_condo  (1 rows)
+  recovery_import_log  (1 rows)
+  rental_units  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: phoenix-vi
+name: Phoenix VI
+planner_category: food_drink
+data_quality_score: 60
+issues: missing_hours|missing_menu|missing_drink_menu|missing_lat_lng
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: true
+missing_drink_menu: true
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   14 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 14] ---
+id: 19694
+entity_slug: phoenix-vi
+intent_tag: best_for:families_with_kids
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 14] ---
+id: 19695
+entity_slug: phoenix-vi
+intent_tag: best_for:waterfront_or_scenic_meal
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 14] ---
+id: 19696
+entity_slug: phoenix-vi
+intent_tag: best_for:drinks_or_cocktails
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 14] ---
+id: 19697
+entity_slug: phoenix-vi
+intent_tag: experience:outdoor
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 14] ---
+id: 19698
+entity_slug: phoenix-vi
+intent_tag: experience:family_kids
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 14] ---
+id: 19699
+entity_slug: phoenix-vi
+intent_tag: experience:waterfront_scenic
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 14] ---
+id: 19700
+entity_slug: phoenix-vi
+intent_tag: experience:rainy_day
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 14] ---
+id: 19701
+entity_slug: phoenix-vi
+intent_tag: meal:drinks
+intent_category: meal_period
+confidence: 0.82
+evidence: Derived from meal flags/menu content.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 9 of 14] ---
+id: 19702
+entity_slug: phoenix-vi
+intent_tag: service:pool
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 10 of 14] ---
+id: 19703
+entity_slug: phoenix-vi
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 11 of 14] ---
+id: 19704
+entity_slug: phoenix-vi
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 12 of 14] ---
+id: 19705
+entity_slug: phoenix-vi
+intent_tag: missing:missing_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 13 of 14] ---
+id: 19706
+entity_slug: phoenix-vi
+intent_tag: missing:missing_drink_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 14 of 14] ---
+id: 19707
+entity_slug: phoenix-vi
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: phoenix-vi
+name: Phoenix VI
+is_active: t
+planner_category: food_drink
+entity_type: condo
+entity_subtype: condo
+city: Orange Beach
+state: AL
+review_count: 0
+website_url: https://viewer.threshold360.com/?thresholdId=8490896-1284701638&preset=share
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_00.jpg
+voice_summary: Phoenix VI in Orange Beach is best for families with kids, waterfront or scenic meal, drinks or cocktails. Experience tags: outdoor, family_kids, waterfront_scenic, rainy_day.
+planner_summary: Phoenix VI is a beachfront condo property in Orange Beach offering Gulf views, direct beach access, and a wide range of family-friendly amenities. The property features fully furnished 1-, 2-, and 3-bedroom vacation rentals that accommodate up to 10 guests, with open layouts, full kitchens, floor-to-ceiling windows, and private balconies designed to showcase the Gulf. Guests staying at Phoenix VI enjoy resort-style amenities and a convenient beachfront location close to dining, shopping, and at
+best_for: families with kids|waterfront or scenic meal|drinks or cocktails
+not_best_for: quiet low-energy meal
+meal_periods: drinks
+experience_tags: outdoor|family_kids|waterfront_scenic|rainy_day
+service_tags: pool
+search_keywords: condo|Condos & Stays|Pool|3 Bedrooms|Outdoor pool|Sauna|Hot tub|Fitness center|Tennis court|Racquetball|Covered parking|Barbeque|Grill|Parking|Kiddie pool|Hot tubs|Racquetball court|Basketball|Ev chargers|Barbeque grills.|Arcade|Restaurant|Beach access|Beach chair|Elevator|Accessible|Washer and dryer|Wi-fi|drinks|outdoor|family_kids|waterfront_scenic|rainy_day
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: true
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 45
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 28
+faq_count: 13
+data_quality_score: 60
+data_gaps: missing_hours|missing_menu|missing_drink_menu|missing_lat_lng
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   45 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 45] ---
+id: 39
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_00.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 45] ---
+id: 40
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_01.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 45] ---
+id: 41
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_02.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 45] ---
+id: 42
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_03.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 45] ---
+id: 43
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_04.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 45] ---
+id: 44
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_05.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 45] ---
+id: 45
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_06.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 45] ---
+id: 46
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_07.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 45] ---
+id: 47
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_08.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 45] ---
+id: 48
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_09.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 11 of 45] ---
+id: 49
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_10.jpg
+is_cover: f
+sort_order: 10
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 12 of 45] ---
+id: 50
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_11.jpg
+is_cover: f
+sort_order: 11
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 13 of 45] ---
+id: 51
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_12.jpg
+is_cover: f
+sort_order: 12
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 14 of 45] ---
+id: 52
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_13.jpg
+is_cover: f
+sort_order: 13
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 15 of 45] ---
+id: 53
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_14.jpg
+is_cover: f
+sort_order: 14
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 16 of 45] ---
+id: 54
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_15.jpg
+is_cover: f
+sort_order: 15
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 17 of 45] ---
+id: 55
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_16.jpg
+is_cover: f
+sort_order: 16
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 18 of 45] ---
+id: 56
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_17.jpg
+is_cover: f
+sort_order: 17
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 19 of 45] ---
+id: 57
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_18.jpg
+is_cover: f
+sort_order: 18
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 20 of 45] ---
+id: 58
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_19.jpg
+is_cover: f
+sort_order: 19
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 21 of 45] ---
+id: 59
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_20.jpg
+is_cover: f
+sort_order: 20
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 22 of 45] ---
+id: 60
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_21.jpg
+is_cover: f
+sort_order: 21
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 23 of 45] ---
+id: 61
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_22.jpg
+is_cover: f
+sort_order: 22
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 24 of 45] ---
+id: 62
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_23.jpg
+is_cover: f
+sort_order: 23
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 25 of 45] ---
+id: 63
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_24.jpg
+is_cover: f
+sort_order: 24
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 26 of 45] ---
+id: 64
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_25.jpg
+is_cover: f
+sort_order: 25
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 27 of 45] ---
+id: 65
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_26.jpg
+is_cover: f
+sort_order: 26
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 28 of 45] ---
+id: 66
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_27.jpg
+is_cover: f
+sort_order: 27
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 29 of 45] ---
+id: 67
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_28.jpg
+is_cover: f
+sort_order: 28
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 30 of 45] ---
+id: 68
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_29.jpg
+is_cover: f
+sort_order: 29
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 31 of 45] ---
+id: 69
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_30.jpg
+is_cover: f
+sort_order: 30
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 32 of 45] ---
+id: 70
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_31.jpg
+is_cover: f
+sort_order: 31
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 33 of 45] ---
+id: 71
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_32.jpg
+is_cover: f
+sort_order: 32
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 34 of 45] ---
+id: 72
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_33.jpg
+is_cover: f
+sort_order: 33
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 35 of 45] ---
+id: 73
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_34.jpg
+is_cover: f
+sort_order: 34
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 36 of 45] ---
+id: 74
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_35.jpg
+is_cover: f
+sort_order: 35
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 37 of 45] ---
+id: 75
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_39.jpg
+is_cover: f
+sort_order: 36
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 38 of 45] ---
+id: 76
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_40.jpg
+is_cover: f
+sort_order: 37
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 39 of 45] ---
+id: 77
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_41.jpg
+is_cover: f
+sort_order: 38
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 40 of 45] ---
+id: 78
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_42.jpg
+is_cover: f
+sort_order: 39
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 41 of 45] ---
+id: 79
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_43.jpg
+is_cover: f
+sort_order: 40
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 42 of 45] ---
+id: 80
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_44.jpg
+is_cover: f
+sort_order: 41
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 43 of 45] ---
+id: 81
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_45.jpg
+is_cover: f
+sort_order: 42
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 44 of 45] ---
+id: 82
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_46.jpg
+is_cover: f
+sort_order: 43
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 45 of 45] ---
+id: 83
+entity_slug: phoenix-vi
+entity_name: Phoenix VI
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_47.png
+is_cover: f
+sort_order: 44
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+resource_type: condo
+slug: phoenix-vi
+name: Phoenix VI
+description: Phoenix VI is a beachfront condo property in Orange Beach offering Gulf views, direct beach access, and a wide range of family-friendly amenities. The property features fully furnished 1-, 2-, and 3-bedroom vacation rentals that accommodate up to 10 guests, with open layouts, full kitchens, floor-to-ceiling windows, and private balconies designed to showcase the Gulf.
+
+Guests staying at Phoenix VI enjoy resort-style amenities and a convenient beachfront location close to dining, shopping, and at
+entity_slug: phoenix-vi
+bedrooms: 3
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_00.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_04.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_06.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_07.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_08.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_09.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_10.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_11.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_12.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_13.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_14.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_15.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_16.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_17.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_18.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_19.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_20.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_21.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_22.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_23.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_24.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_25.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_26.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_27.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_28.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_29.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_30.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_31.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_32.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_33.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_34.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_35.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_39.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_40.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_41.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_42.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_43.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_44.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_45.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_46.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_47.png"
+]
+amenities: []
+faqs: []
+city: Orange Beach
+state: AL
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 8c7cfad67f95b9a34d94e7ed6f3e0721
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+entity_slug: phoenix-vi
+slug: phoenix-vi
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_00.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_03.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_04.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_06.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_07.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_08.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_09.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_10.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_11.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_12.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_13.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_14.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_15.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_16.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_17.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_18.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_19.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_20.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_21.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_22.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_23.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_24.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_25.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_26.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_27.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_28.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_29.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_30.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_31.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_32.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_33.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_34.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_35.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_39.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_40.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_41.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_42.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_43.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_44.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_45.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_46.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_47.png"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 6799469d-6bf1-4916-bd5f-99e3b49073ef
+slug: phoenix-vi
+name: Phoenix VI
+is_active: true
+featured: false
+entity_type: condo
+entity_subtype: condominium_complex
+description: Phoenix VI is a beachfront condo property in Orange Beach offering Gulf views, direct beach access, and a wide range of family-friendly amenities. The property features fully furnished 1-, 2-, and 3-bedroom vacation rentals that accommodate up to 10 guests, with open layouts, full kitchens, floor-to-ceiling windows, and private balconies designed to showcase the Gulf.
+
+Guests staying at Phoenix VI enjoy resort-style amenities and a convenient beachfront location close to dining, shopping, and at
+phone: +18009326760
+website_url: https://viewer.threshold360.com/?thresholdId=8490896-1284701638&preset=share
+menu_pin: 9940
+address_line_1: 26800 Perdido Beach Blvd
+city: Orange Beach
+state: AL
+zip: 36561
+rating: 4.4
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_00.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-14T03:13:56.708417+00:00
+updated_at: 2026-07-16T10:58:02.607758+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+bedrooms_min: 3
+bedrooms_max: 3
+pet_friendly: false
+pool: true
+parking: false
+business_status: OPERATIONAL
+primary_type: condo
+formatted_address: 26800 Perdido Beach Blvd, Orange Beach, AL
+google_places_data: {}
+search_vector: 'beach':5 'condo':3 'orang':4 'phoenix':1A 'vi':2A
+bedrooms: 3
+source_url: https://www.liquidlifevacationrentals.com/resort/phoenix-vi
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: stay
+industry_code: condo
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_amenities   -   11 row(s)
+####################################################################################################
+
+--- entity_amenities [row 1 of 11] ---
+id: dab80e06-c165-4531-91a7-99495a9aa6fe
+entity_slug: phoenix-vi
+amenity: Grilling Area
+category: complex
+sort_order: 8
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 2 of 11] ---
+id: 0799a73e-19b0-47dd-82f7-5b6a38f15126
+entity_slug: phoenix-vi
+amenity: Tennis Courts
+category: complex
+sort_order: 9
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 3 of 11] ---
+id: dcea0969-bc2d-4d32-a8ef-7f8e1a88b2c0
+entity_slug: phoenix-vi
+amenity: Outdoor Pool
+category: complex
+sort_order: 1
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 4 of 11] ---
+id: 1ae30280-6655-4e9f-82a4-45b3c3a381bd
+entity_slug: phoenix-vi
+amenity: Sauna
+category: complex
+sort_order: 6
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 5 of 11] ---
+id: 9a04d5ec-da2b-4f8e-a340-dd27c77a5ad9
+entity_slug: phoenix-vi
+amenity: Meeting Room
+category: complex
+sort_order: 7
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 6 of 11] ---
+id: 23454cc2-6ccf-4fa6-89c0-5c724523d364
+entity_slug: phoenix-vi
+amenity: Beach Access
+category: complex
+sort_order: 0
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 7 of 11] ---
+id: 9bdfc2c6-dc92-49be-af9e-6f124fc09adb
+entity_slug: phoenix-vi
+amenity: Kiddie Pool
+category: complex
+sort_order: 3
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 8 of 11] ---
+id: c0b7fa36-db6b-4151-9e7d-8280a7902d34
+entity_slug: phoenix-vi
+amenity: Hot Tubs
+category: complex
+sort_order: 5
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 9 of 11] ---
+id: 4802421e-992b-4297-a8d5-36f785b8f92c
+entity_slug: phoenix-vi
+amenity: Racquetball Court
+category: complex
+sort_order: 10
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 10 of 11] ---
+id: afb026eb-aee7-4af7-8f6f-c9d72624cd4a
+entity_slug: phoenix-vi
+amenity: Indoor Pool
+category: complex
+sort_order: 2
+created_at: 2026-07-07T16:59:52.25115
+
+--- entity_amenities [row 11 of 11] ---
+id: f36916d8-28d1-4237-a870-8f1f6a26fdfe
+entity_slug: phoenix-vi
+amenity: Fitness Center
+category: complex
+sort_order: 4
+created_at: 2026-07-07T16:59:52.25115
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: phoenix-vi
+name: Phoenix VI
+industry_code: condo
+is_parent: false
+score_of_7: 4
+
+####################################################################################################
+# TABLE: entity_faqs   -   13 row(s)
+####################################################################################################
+
+--- entity_faqs [row 1 of 13] ---
+id: 00a7472d-bff0-49c6-97d8-b3d62334fb50
+entity_slug: phoenix-vi
+question: Where is Phoenix VI located?
+answer: Phoenix VI is located at 26800 Perdido Beach Blvd, Orange Beach, AL 36561 and is approximately 7.5 miles east of Hwy 59.
+category: general
+sort_order: 1
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 2 of 13] ---
+id: 0257fee0-8110-4f3c-bc4f-afd84bb4ccc0
+entity_slug: phoenix-vi
+question: What amenities are included in Phoenix 6 vacation rentals?
+answer: Phoenix 6 features several luxury amenities including: indoor and outdoor pools, kiddie pool, sauna, hot tubs, fitness center, tennis court, racquetball court, basketball, covered parking, EV chargers, and barbeque grills.
+category: general
+sort_order: 2
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 3 of 13] ---
+id: 301791b8-1556-45a5-a8c7-0cf5ecec766b
+entity_slug: phoenix-vi
+question: What types of units are available for rent at Phoenix VI?
+answer: Phoenix VI offers spacious 1-, 2-, and 3-bedroom units.
+category: general
+sort_order: 3
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 4 of 13] ---
+id: 41495647-146a-4c58-85d6-1abc7de7324d
+entity_slug: phoenix-vi
+question: What popular attractions are close to Phoenix VI?
+answer: Orange Beach’s most popular attraction is just steps away from Phoenix VI – the beach! From your condo, you can walk to restaurants, ice cream, and marinas for fishing charters, dolphin cruises, and more. You’re also only a mile from Perdido Pass, The Gulf Orange Beach, and several other shops and restaurants. Nearby you’ll find arcades, amusement parks, shopping, dining, and more. At Gulf State Park, you can fish, hike, or bike on the trails, or you can enjoy a show at The Wharf’s amphitheater,
+category: general
+sort_order: 4
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 5 of 13] ---
+id: ec15b991-7aa5-4e9c-9d4c-90b6631143fc
+entity_slug: phoenix-vi
+question: What are the check-in and check-out times at Phoenix 6?
+answer: Check-in and check-out times vary by season. For more information, refer to our Check In and Check Out Times Pageand review your booking confirmation message.
+category: general
+sort_order: 5
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 6 of 13] ---
+id: 8450048d-ee2d-4e48-9541-6397bcbcae0f
+entity_slug: phoenix-vi
+question: Do all Phoenix 6 condominiums have Gulf views?
+answer: Yes, all Phoenix 6 vacation rentals have views of the sparkling Gulf from expansive private balconies.
+category: general
+sort_order: 6
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 7 of 13] ---
+id: dcacfea4-6c86-4dc7-a71e-de9766ea23e4
+entity_slug: phoenix-vi
+question: Is there beach access available at Phoenix VI?
+answer: Yes, Phoenix VI offers direct beach access and beach chair rentals for guests.
+category: general
+sort_order: 7
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 8 of 13] ---
+id: 0eb41c70-445b-4ab4-9fd2-1496324f7d54
+entity_slug: phoenix-vi
+question: Is there a grocery store nearby Phoenix 6 where guests can purchase food, supplies and necessities?
+answer: Yes, there are several grocery stores located near Phoenix 6 in Orange Beach, including Publix, Walmart, and Winn-Dixie. Grocery delivery is offered at participating stores with partnering apps.
+category: general
+sort_order: 8
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 9 of 13] ---
+id: 18f760d1-1e2a-4e15-bb94-46bdfc22609d
+entity_slug: phoenix-vi
+question: Does Phoenix VI have accessibility options?
+answer: Phoenix VI Orange Beach is equipped with accessibility features to ensure that guests can enjoy their stay. The resort has accessible entrances and public areas, including ramps and elevators. The units were also originally designed with accessibility in mind. Contact us at 1-800-211-7892 to discuss accommodations and options.
+category: general
+sort_order: 9
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 10 of 13] ---
+id: 1ad38ce3-f87b-415a-b6aa-0cb48ff4654a
+entity_slug: phoenix-vi
+question: Is Phoenix 6 a good choice for family vacations?
+answer: Yes, Phoenix 6 Orange Beach is incredibly family-friendly. When you stay in a fully-furnished Gulf-view 1-, 2-, or 3-bedroom unit, you don’t have to worry about a thing. You’ll have a fully-equipped kitchen, direct beach access, and tons of family-friendly amenities, including indoor and outdoor pools, a kiddie pool, tennis courts, basketball, and more. With the ability to walk to restaurants, ice cream, and marinas, it’s easy to enjoy Orange Beach. Plus, you can find Walmart, grocery stores, re
+category: general
+sort_order: 10
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 11 of 13] ---
+id: 3da270fc-d2b0-453f-ae5d-0a6a1e24cb5a
+entity_slug: phoenix-vi
+question: Is there a washer and dryer in each unit at Phoenix VI?
+answer: Yes, each unit at Phoenix VI is equipped with a washer and dryer.
+category: general
+sort_order: 11
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 12 of 13] ---
+id: 5e563d4a-1850-404c-81f9-e6739da82fb8
+entity_slug: phoenix-vi
+question: Is there free Wi-Fi available at Phoenix 6?
+answer: Yes, Phoenix 6 offers complimentary Wi-Fi access for guests.
+category: general
+sort_order: 12
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+--- entity_faqs [row 13 of 13] ---
+id: 099bcf96-f90e-4889-9cd1-a529fa2a9ea0
+entity_slug: phoenix-vi
+question: Why book a Phoenix VI rental with Brett/Robinson?
+answer: By booking with Brett/Robinson Vacations you get the benefit of over 40 years of experience in the area. Brett/Robinson operates and maintains Phoenix VI and we have an on-site staff available to ensure you have a superb stay at the beach. We focus on quality, cleanliness and functionality in all of our available units. Our dedicated on-site customer service staff is here to help with any needs you have during your stay. Also, our knowledgeable area specialists can assist you in planning your it
+category: general
+sort_order: 13
+created_at: 2026-06-29T10:35:10.350611+00:00
+updated_at: 2026-06-29T10:35:10.350611+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 7ed6bc64-96ef-492e-ac1d-00a8e6c6d08c
+entity_slug: phoenix-vi
+day_of_week: 0
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: e4837359-42a7-480d-a64c-8c34afde5b74
+entity_slug: phoenix-vi
+day_of_week: 1
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 27dfc515-cfae-46c6-b662-0523b5e38073
+entity_slug: phoenix-vi
+day_of_week: 2
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 47e0df37-07b7-44be-989c-b7e615e44907
+entity_slug: phoenix-vi
+day_of_week: 3
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 29a31d63-66b4-40a1-89a0-0e7d78179b27
+entity_slug: phoenix-vi
+day_of_week: 4
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 65861727-22d3-4940-b706-0e4ffe6f8385
+entity_slug: phoenix-vi
+day_of_week: 5
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 68f6b54a-931a-4aae-988f-6142b7d93fbf
+entity_slug: phoenix-vi
+day_of_week: 6
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 2] ---
+entity_slug: phoenix-vi
+source_table: bookable_resources
+item_type: condo
+section_name: Units
+item_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+name: Phoenix VI
+description: Phoenix VI is a beachfront condo property in Orange Beach offering Gulf views, direct beach access, and a wide range of family-friendly amenities. The property features fully furnished 1-, 2-, and 3-bedroom vacation rentals that accommodate up to 10 guests, with open layouts, full kitchens, floor-to-ceiling windows, and private balconies designed to showcase the Gulf.
+
+Guests staying at Phoenix VI enjoy resort-style amenities and a convenient beachfront location close to dining, shopping, and at
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "bedrooms": 3,
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_00.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_11.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_12.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_13.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_14.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_15.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_16.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_17.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_18.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_19.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_20.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_21.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_22.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_23.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_24.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_25.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_26.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_27.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_28.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_29.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_30.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_31.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_32.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_33.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_34.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_35.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_39.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_40.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_41.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_42.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_43.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_44.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_45.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_46.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_47.png"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "item_type_raw": "condo",
+  "resource_type": "condo",
+  "check_out_time": "11:00"
+}
+
+--- entity_items_norm_v [row 2 of 2] ---
+entity_slug: phoenix-vi
+source_table: entity_section_items
+item_type: rooms
+section_name: Units & Rates
+item_id: 734b5b43-63e5-4634-b9ba-0dac145690fe
+name: Phoenix VI
+description: Phoenix VI is a beachfront condo property in Orange Beach offering Gulf views, direct beach access, and a wide range of family-friendly amenities. The property features fully furnished 1-, 2-, and 3-bedroom vacation rentals that accommodate up to 10 guests, with open layouts, full kitchens, floor-to-ceiling windows, and private balconies designed to showcase the Gulf.
+
+Guests staying at Phoenix VI enjoy resort-style amenities and a convenient beachfront location close to dining, shopping, and at
+sort_order: 1
+active: true
+attributes: {
+  "icon": "🏠",
+  "bedrooms": 3,
+  "min_nights": 1,
+  "module_key": "rooms",
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "item_type_raw": "rooms",
+  "check_out_time": "11:00"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   2 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 2] ---
+entity_slug: phoenix-vi
+source_table: bookable_resources
+item_type: condo
+section_name: Units
+item_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+name: Phoenix VI
+description: Phoenix VI is a beachfront condo property in Orange Beach offering Gulf views, direct beach access, and a wide range of family-friendly amenities. The property features fully furnished 1-, 2-, and 3-bedroom vacation rentals that accommodate up to 10 guests, with open layouts, full kitchens, floor-to-ceiling windows, and private balconies designed to showcase the Gulf.
+
+Guests staying at Phoenix VI enjoy resort-style amenities and a convenient beachfront location close to dining, shopping, and at
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "bedrooms": 3,
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_00.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_11.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_12.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_13.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_14.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_15.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_16.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_17.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_18.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_19.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_20.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_21.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_22.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_23.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_24.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_25.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_26.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_27.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_28.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_29.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_30.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_31.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_32.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_33.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_34.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_35.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_39.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_40.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_41.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_42.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_43.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_44.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_45.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_46.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_47.png"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "resource_type": "condo",
+  "check_out_time": "11:00"
+}
+
+--- entity_items_v [row 2 of 2] ---
+entity_slug: phoenix-vi
+source_table: entity_section_items
+item_type: rooms
+section_name: Units & Rates
+item_id: 734b5b43-63e5-4634-b9ba-0dac145690fe
+name: Phoenix VI
+description: Phoenix VI is a beachfront condo property in Orange Beach offering Gulf views, direct beach access, and a wide range of family-friendly amenities. The property features fully furnished 1-, 2-, and 3-bedroom vacation rentals that accommodate up to 10 guests, with open layouts, full kitchens, floor-to-ceiling windows, and private balconies designed to showcase the Gulf.
+
+Guests staying at Phoenix VI enjoy resort-style amenities and a convenient beachfront location close to dining, shopping, and at
+sort_order: 1
+active: true
+attributes: {
+  "icon": "🏠",
+  "bedrooms": 3,
+  "min_nights": 1,
+  "module_key": "rooms",
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "check_out_time": "11:00"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   14 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 14] ---
+id: a1aebf06-1d14-45c0-a333-9db012774d75
+entity_slug: phoenix-vi
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 14] ---
+id: ea855026-5473-45bd-b305-b96bcc667592
+entity_slug: phoenix-vi
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 14] ---
+id: 8e98c0dd-c6c1-46d6-8bda-bf21c02928d5
+entity_slug: phoenix-vi
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 14] ---
+id: a650790b-19cc-4f97-afef-f5197ee22fc0
+entity_slug: phoenix-vi
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 14] ---
+id: fa04f233-bde9-43bd-b70a-0d1d53575831
+entity_slug: phoenix-vi
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 14] ---
+id: 1373bbed-3283-47ef-adc1-4cb9b16ea000
+entity_slug: phoenix-vi
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 14] ---
+id: 6a91a2f2-c553-4ab6-a378-09b6aa5ca79a
+entity_slug: phoenix-vi
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 14] ---
+id: bd7c5457-2fce-4035-ac26-ddbfe36e9839
+entity_slug: phoenix-vi
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 14] ---
+id: 482a1815-4804-490a-93b2-1ffca4c597d8
+entity_slug: phoenix-vi
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 14] ---
+id: be522e46-59b1-48db-b859-49b01d3260fd
+entity_slug: phoenix-vi
+module_key: stay
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 14] ---
+id: 7accf608-b0c1-4d88-adc4-25174b7f85ea
+entity_slug: phoenix-vi
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 14] ---
+id: 5849297c-31f5-4d4f-888e-290d922edd5b
+entity_slug: phoenix-vi
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 14] ---
+id: 1db1cc18-5bd9-46ac-a964-ba94a69cb009
+entity_slug: phoenix-vi
+module_key: amenities
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 14 of 14] ---
+id: f2a87ef8-8398-4244-9ed4-265373614f2b
+entity_slug: phoenix-vi
+module_key: rooms
+enabled: true
+sort_order: 2
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13942
+entity_slug: phoenix-vi
+name: Phoenix VI
+description: Phoenix VI is a beachfront condo property in Orange Beach offering Gulf views, direct beach access, and a wide range of family-friendly amenities. The property features fully furnished 1-, 2-, and 3-bedroom vacation rentals that accommodate up to 10 guests, with open layouts, full kitchens, floor-to-ceiling windows, and private balconies designed to showcase the Gulf.
+
+Guests staying at Phoenix VI enjoy resort-style amenities and a convenient beachfront location close to dining, shopping, and at
+offer_type: room
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+####################################################################################################
+# TABLE: entity_photos   -   181 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 181] ---
+id: 4f131da9-85c9-4dde-be2a-5310926ddcaf
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_43.jpg
+is_cover: false
+sort_order: 40
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 2 of 181] ---
+id: 01960404-4295-4f0c-b32e-741dd75833b2
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00322.jpg
+is_cover: true
+sort_order: 0
+photo_type: gallery
+
+--- entity_photos [row 3 of 181] ---
+id: ac598baf-19c9-4cd1-9987-9865ebaa8eec
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00327.jpg
+is_cover: false
+sort_order: 1
+photo_type: gallery
+
+--- entity_photos [row 4 of 181] ---
+id: 10a2580c-cdc3-45cb-ba03-c3d7de0fc742
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_00.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 5 of 181] ---
+id: 586f22d0-264c-4cb4-9575-194b4d69d945
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00332.jpg
+is_cover: false
+sort_order: 2
+photo_type: gallery
+
+--- entity_photos [row 6 of 181] ---
+id: efa16c7a-1fef-4316-8941-6673a681ae06
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00337.jpg
+is_cover: false
+sort_order: 3
+photo_type: gallery
+
+--- entity_photos [row 7 of 181] ---
+id: 9e07280c-304e-47c1-9b8b-95cad030e06a
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00342.jpg
+is_cover: false
+sort_order: 4
+photo_type: gallery
+
+--- entity_photos [row 8 of 181] ---
+id: 7c5a942b-9ae4-4ede-bfae-8f423314a071
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00347.jpg
+is_cover: false
+sort_order: 5
+photo_type: gallery
+
+--- entity_photos [row 9 of 181] ---
+id: 08886f25-03ae-4376-943b-40343656457c
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00352.jpg
+is_cover: false
+sort_order: 6
+photo_type: gallery
+
+--- entity_photos [row 10 of 181] ---
+id: aea7f5d5-2c81-42b6-a04f-b7ebbc91ef4b
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00387.jpg
+is_cover: false
+sort_order: 7
+photo_type: gallery
+
+--- entity_photos [row 11 of 181] ---
+id: f4de9c36-a996-4bf4-b8eb-31389fa8ac16
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00492.jpg
+is_cover: false
+sort_order: 8
+photo_type: gallery
+
+--- entity_photos [row 12 of 181] ---
+id: f87e859a-dad0-4f84-af74-dd30e931e2b3
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00407.jpg
+is_cover: false
+sort_order: 9
+photo_type: gallery
+
+--- entity_photos [row 13 of 181] ---
+id: 96beaea6-4df8-47e0-8924-4120e01fa2a4
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00412.jpg
+is_cover: false
+sort_order: 10
+photo_type: gallery
+
+--- entity_photos [row 14 of 181] ---
+id: 1a81f41d-3bf9-4f28-93de-09f43d1f83a3
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00417.jpg
+is_cover: false
+sort_order: 11
+photo_type: gallery
+
+--- entity_photos [row 15 of 181] ---
+id: 6620fad6-d132-4f1a-b67e-de01d8f5006f
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-vi-vacation-rental-condominiums/photo_01.jpg
+is_cover: true
+sort_order: 0
+photo_type: complex
+
+--- entity_photos [row 16 of 181] ---
+id: 7651339e-8524-42c7-ae3c-11773c284d5d
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-vi-vacation-rental-condominiums/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: complex
+
+--- entity_photos [row 17 of 181] ---
+id: 6fb5d2fb-eb29-4590-b1f7-fa5970401e73
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-vi-vacation-rental-condominiums/photo_03.jpg
+is_cover: false
+sort_order: 2
+photo_type: complex
+
+--- entity_photos [row 18 of 181] ---
+id: 3c74326b-2612-4c25-b138-9ce2ade7858b
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-vi-vacation-rental-condominiums/photo_04.jpg
+is_cover: false
+sort_order: 3
+photo_type: complex
+
+--- entity_photos [row 19 of 181] ---
+id: a3f2c07f-fff5-43f9-9be5-3051aea94049
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-vi-vacation-rental-condominiums/photo_05.jpg
+is_cover: false
+sort_order: 4
+photo_type: complex
+
+--- entity_photos [row 20 of 181] ---
+id: f22f6587-209e-4612-bc70-63d0ef834d8a
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-vi-vacation-rental-condominiums/photo_06.jpg
+is_cover: false
+sort_order: 5
+photo_type: complex
+
+--- entity_photos [row 21 of 181] ---
+id: 49d9dc6b-021a-45bc-9f80-90a65f1b1192
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-vi-vacation-rental-condominiums/photo_07.jpg
+is_cover: false
+sort_order: 6
+photo_type: complex
+
+--- entity_photos [row 22 of 181] ---
+id: 265eb348-0d9a-43de-879a-9876d38c5640
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-vi-vacation-rental-condominiums/photo_08.jpg
+is_cover: false
+sort_order: 7
+photo_type: complex
+
+--- entity_photos [row 23 of 181] ---
+id: 9542f0e1-c536-4837-9374-448a44fd1779
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-vi-vacation-rental-condominiums/photo_09.jpg
+is_cover: false
+sort_order: 8
+photo_type: complex
+
+--- entity_photos [row 24 of 181] ---
+id: f1bb94b5-1a3d-4ed5-91b2-81839d65ae1b
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/phoenix-vi-vacation-rental-condominiums/photo_10.jpg
+is_cover: false
+sort_order: 9
+photo_type: complex
+
+--- entity_photos [row 25 of 181] ---
+id: b928ea97-d130-42a1-8458-0b5d73e0a84c
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_00.jpg
+is_cover: true
+sort_order: 0
+photo_type: complex
+
+--- entity_photos [row 26 of 181] ---
+id: 173ce739-bb3a-4bc8-a5c7-19c1890fca3b
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_01.jpg
+is_cover: false
+sort_order: 1
+photo_type: complex
+
+--- entity_photos [row 27 of 181] ---
+id: 40c927a3-f8fb-40fb-b491-ae213ffe478e
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_02.jpg
+is_cover: false
+sort_order: 2
+photo_type: complex
+
+--- entity_photos [row 28 of 181] ---
+id: 82fdcaf2-3eea-4f66-b0fb-f7aae9e87b60
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_03.jpg
+is_cover: false
+sort_order: 3
+photo_type: complex
+
+--- entity_photos [row 29 of 181] ---
+id: 039162e4-941f-4fe5-8f95-7c1745cff51e
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_04.jpg
+is_cover: false
+sort_order: 4
+photo_type: complex
+
+--- entity_photos [row 30 of 181] ---
+id: bbce05b5-abb4-4598-98d1-cd27cd12aa85
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_05.jpg
+is_cover: false
+sort_order: 5
+photo_type: complex
+
+--- entity_photos [row 31 of 181] ---
+id: 3b291279-0ca8-44ef-92d0-23fb757a0ce4
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_06.jpg
+is_cover: false
+sort_order: 6
+photo_type: complex
+
+--- entity_photos [row 32 of 181] ---
+id: 045408c7-4ef2-4a1f-beae-86ebc095cd6b
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_07.jpg
+is_cover: false
+sort_order: 7
+photo_type: complex
+
+--- entity_photos [row 33 of 181] ---
+id: a1e66fd9-b04b-48d8-88a7-9de28a58fbaf
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_08.jpg
+is_cover: false
+sort_order: 8
+photo_type: complex
+
+--- entity_photos [row 34 of 181] ---
+id: 191f902e-b873-4c8f-b3fa-7aa9a7170898
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_09.jpg
+is_cover: false
+sort_order: 9
+photo_type: complex
+
+--- entity_photos [row 35 of 181] ---
+id: bd897f7c-5170-4c69-a991-0c19f90c3b2d
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_10.jpg
+is_cover: false
+sort_order: 10
+photo_type: complex
+
+--- entity_photos [row 36 of 181] ---
+id: e3b2b828-dd24-4b64-b328-3df507226ba0
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_11.jpg
+is_cover: false
+sort_order: 11
+photo_type: complex
+
+--- entity_photos [row 37 of 181] ---
+id: 5be733a6-5b87-4a8f-b110-2ba024b357a0
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_12.jpg
+is_cover: false
+sort_order: 12
+photo_type: complex
+
+--- entity_photos [row 38 of 181] ---
+id: 7bdc9546-7a5f-47f0-b69f-3fdc53efeb52
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_13.jpg
+is_cover: false
+sort_order: 13
+photo_type: complex
+
+--- entity_photos [row 39 of 181] ---
+id: 83525ec1-2cd0-45bf-9d74-5e1810c6505a
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_14.jpg
+is_cover: false
+sort_order: 14
+photo_type: complex
+
+--- entity_photos [row 40 of 181] ---
+id: 52b0cc8f-d937-4dfe-b3b3-f91885c1ab14
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_15.jpg
+is_cover: false
+sort_order: 15
+photo_type: complex
+
+--- entity_photos [row 41 of 181] ---
+id: f64d3597-68ab-4f5d-9b78-d081e5ac99fd
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_16.jpg
+is_cover: false
+sort_order: 16
+photo_type: complex
+
+--- entity_photos [row 42 of 181] ---
+id: f45bb7e4-78df-4c0d-af22-f5b163a807f8
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_17.jpg
+is_cover: false
+sort_order: 17
+photo_type: complex
+
+--- entity_photos [row 43 of 181] ---
+id: 99fbae80-5c15-486a-9cb4-d7b98adddc9e
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_18.jpg
+is_cover: false
+sort_order: 18
+photo_type: complex
+
+--- entity_photos [row 44 of 181] ---
+id: 1605cb5c-4c0e-4719-ba30-2d38880eebc2
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_19.jpg
+is_cover: false
+sort_order: 19
+photo_type: complex
+
+--- entity_photos [row 45 of 181] ---
+id: b040e146-9912-4e62-b669-a0fa23f887b1
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_20.jpg
+is_cover: false
+sort_order: 20
+photo_type: complex
+
+--- entity_photos [row 46 of 181] ---
+id: ad4abd78-1270-4ba2-b8fd-368175b0ce29
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_21.jpg
+is_cover: false
+sort_order: 21
+photo_type: complex
+
+--- entity_photos [row 47 of 181] ---
+id: 5381bbda-5f25-4897-b784-8368babbd6d3
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_22.jpg
+is_cover: false
+sort_order: 22
+photo_type: complex
+
+--- entity_photos [row 48 of 181] ---
+id: b012c991-f748-4488-aec5-02f79e33a6f5
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_23.jpg
+is_cover: false
+sort_order: 23
+photo_type: complex
+
+--- entity_photos [row 49 of 181] ---
+id: 33b0b597-4df4-4bf6-841c-357305c9c72b
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_24.jpg
+is_cover: false
+sort_order: 24
+photo_type: complex
+
+--- entity_photos [row 50 of 181] ---
+id: 10fb0aa1-3596-4f6c-a319-cbc9bfd4a6d4
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_25.jpg
+is_cover: false
+sort_order: 25
+photo_type: complex
+
+--- entity_photos [row 51 of 181] ---
+id: 7ba0b5e3-4ce9-459b-8dd5-215a81fe5734
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_26.jpg
+is_cover: false
+sort_order: 26
+photo_type: complex
+
+--- entity_photos [row 52 of 181] ---
+id: 72066019-9ded-4c70-ba33-80470873f4c3
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_27.jpg
+is_cover: false
+sort_order: 27
+photo_type: complex
+
+--- entity_photos [row 53 of 181] ---
+id: 11d1471d-5a50-41d5-a223-7cf3496106cc
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_28.jpg
+is_cover: false
+sort_order: 28
+photo_type: complex
+
+--- entity_photos [row 54 of 181] ---
+id: b182ce4f-ea13-45c1-a42e-f441a1834b90
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_29.jpg
+is_cover: false
+sort_order: 29
+photo_type: complex
+
+--- entity_photos [row 55 of 181] ---
+id: 234c27c1-b405-4250-8859-20e16d9f8b76
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_30.jpg
+is_cover: false
+sort_order: 30
+photo_type: complex
+
+--- entity_photos [row 56 of 181] ---
+id: 4b10fc21-45ab-4bda-b35c-b67dde0c8742
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_31.jpg
+is_cover: false
+sort_order: 31
+photo_type: complex
+
+--- entity_photos [row 57 of 181] ---
+id: 7002a556-d5e9-40cd-a73d-43fbcc46486f
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_32.jpg
+is_cover: false
+sort_order: 32
+photo_type: complex
+
+--- entity_photos [row 58 of 181] ---
+id: e6401a12-32c1-425d-8a1d-536a120dc879
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_33.jpg
+is_cover: false
+sort_order: 33
+photo_type: complex
+
+--- entity_photos [row 59 of 181] ---
+id: 124f133b-2ecf-4ee9-a450-1b9ca4febf46
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_34.jpg
+is_cover: false
+sort_order: 34
+photo_type: complex
+
+--- entity_photos [row 60 of 181] ---
+id: 4e2271c9-30e5-479a-a914-02f21eec24a4
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_35.jpg
+is_cover: false
+sort_order: 35
+photo_type: complex
+
+--- entity_photos [row 61 of 181] ---
+id: 7fda951b-7906-4f48-aa37-cb6355482c85
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_39.jpg
+is_cover: false
+sort_order: 36
+photo_type: complex
+
+--- entity_photos [row 62 of 181] ---
+id: 89c605c6-5f49-4093-b017-2e466f77765b
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_40.jpg
+is_cover: false
+sort_order: 37
+photo_type: complex
+
+--- entity_photos [row 63 of 181] ---
+id: a5fb5db7-8d0a-497a-94a1-72bdb6540138
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_41.jpg
+is_cover: false
+sort_order: 38
+photo_type: complex
+
+--- entity_photos [row 64 of 181] ---
+id: 3572d22b-2ce4-4c37-b410-1d7c1f758778
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_42.jpg
+is_cover: false
+sort_order: 39
+photo_type: complex
+
+--- entity_photos [row 65 of 181] ---
+id: 3859b578-a7f5-4c97-bfe4-b36f52196ff8
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_43.jpg
+is_cover: false
+sort_order: 40
+photo_type: complex
+
+--- entity_photos [row 66 of 181] ---
+id: 758742aa-4108-4a23-bc62-763beced0a92
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_44.jpg
+is_cover: false
+sort_order: 41
+photo_type: complex
+
+--- entity_photos [row 67 of 181] ---
+id: e4d87301-568e-486a-8894-1873a7e2e602
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_45.jpg
+is_cover: false
+sort_order: 42
+photo_type: complex
+
+--- entity_photos [row 68 of 181] ---
+id: 6b775760-fc42-4620-9643-1af2b7c37452
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_46.jpg
+is_cover: false
+sort_order: 43
+photo_type: complex
+
+--- entity_photos [row 69 of 181] ---
+id: 1c0bf9bf-f4fd-4e6c-97ba-3a4b40526e32
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_47.png
+is_cover: false
+sort_order: 44
+photo_type: complex
+
+--- entity_photos [row 70 of 181] ---
+id: 604b6446-06db-412e-83f2-b2f3ac7be387
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_32.jpg
+is_cover: false
+sort_order: 32
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 71 of 181] ---
+id: b6459f42-3687-4f08-aa78-459c581a6673
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00447.jpg
+is_cover: false
+sort_order: 335
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 72 of 181] ---
+id: 7104b7ce-5831-48bc-922a-74b35082cbfb
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_06.jpg
+is_cover: false
+sort_order: 6
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 73 of 181] ---
+id: b11265b6-3d44-4480-a551-43ee6ec2255f
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_47.png
+is_cover: false
+sort_order: 44
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 74 of 181] ---
+id: 62489b2d-d4bc-43d7-981f-4ac050f5ac33
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00477.jpg
+is_cover: false
+sort_order: 314
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 75 of 181] ---
+id: e6ca069e-4ab8-4efb-90a4-a924630233e5
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00457.jpg
+is_cover: false
+sort_order: 337
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 76 of 181] ---
+id: 0e4150b9-fb9a-412f-ab1d-5ec7e84b6be4
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00442.jpg
+is_cover: false
+sort_order: 334
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 77 of 181] ---
+id: 26aeafd4-15a4-4ddb-84ad-d12792f077d4
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00517.jpg
+is_cover: false
+sort_order: 330
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 78 of 181] ---
+id: 30d85ad4-a83e-4910-ac8c-18923d1449ca
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_42.jpg
+is_cover: false
+sort_order: 39
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 79 of 181] ---
+id: 335972c0-efdf-40ae-a28c-7d4e9b875dcc
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00392.jpg
+is_cover: false
+sort_order: 315
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 80 of 181] ---
+id: 63560d72-a4d9-4339-beae-80d208e8e63c
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_41.jpg
+is_cover: false
+sort_order: 38
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 81 of 181] ---
+id: 52dbf717-f1b7-4227-9d77-f902e73c11b6
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00427.jpg
+is_cover: false
+sort_order: 318
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 82 of 181] ---
+id: 6b6ceca7-9499-4b1d-b8fb-8410f83dac8f
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00512.jpg
+is_cover: false
+sort_order: 329
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 83 of 181] ---
+id: dbaa4dd3-cfa7-4039-a16c-bb7fce46ca8f
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00362.jpg
+is_cover: false
+sort_order: 332
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 84 of 181] ---
+id: 2087110a-0468-4ee7-8705-511b046568cb
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00504.jpg
+is_cover: false
+sort_order: 325
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 85 of 181] ---
+id: 0a5e446d-e9bd-451b-ac8e-686428b7212f
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_05.jpg
+is_cover: false
+sort_order: 5
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 86 of 181] ---
+id: 1adbae76-f2bc-43ad-a6a7-21cd0e955e99
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00462.jpg
+is_cover: false
+sort_order: 338
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 87 of 181] ---
+id: d0d66d4e-7e67-4dde-bcd8-2801430e7fc0
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00382.jpg
+is_cover: false
+sort_order: 323
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 88 of 181] ---
+id: f07da8a9-7383-4781-b1bd-b475cc7f1441
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_13.jpg
+is_cover: false
+sort_order: 13
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 89 of 181] ---
+id: 7aff3ed0-097c-4aa2-883c-26b00f19678a
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_15.jpg
+is_cover: false
+sort_order: 15
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 90 of 181] ---
+id: 97dd3935-0b74-469f-aae0-a88854056fe5
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00497.jpg
+is_cover: false
+sort_order: 324
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 91 of 181] ---
+id: 7b8f7271-94b6-4029-93a7-9eee89534192
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_26.jpg
+is_cover: false
+sort_order: 26
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 92 of 181] ---
+id: 8b4c3a4e-3287-4c2f-aa29-88958ad3e8a7
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00367.jpg
+is_cover: false
+sort_order: 327
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 93 of 181] ---
+id: 4b8b60db-ecaf-4a9f-92eb-f056493ac84f
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_35.jpg
+is_cover: false
+sort_order: 35
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 94 of 181] ---
+id: 9cd5a99f-f85b-479f-b1d8-9bd220d6dec0
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_46.jpg
+is_cover: false
+sort_order: 43
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 95 of 181] ---
+id: 8d02ff69-b776-48e5-a231-58e26cf7176b
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00487.jpg
+is_cover: false
+sort_order: 322
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 96 of 181] ---
+id: fc5daf21-984b-4fcf-ac12-8b7f00792c48
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00507.jpg
+is_cover: false
+sort_order: 328
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 97 of 181] ---
+id: 384a5463-41ab-4c20-bcaf-7b66b6cc06a7
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00397.jpg
+is_cover: false
+sort_order: 316
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 98 of 181] ---
+id: d9bd7cb6-58ea-4fc0-af25-931691d3805f
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00472.jpg
+is_cover: false
+sort_order: 320
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 99 of 181] ---
+id: 5ed9ee97-ad55-4b48-be9e-289d699d51f6
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_30.jpg
+is_cover: false
+sort_order: 30
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 100 of 181] ---
+id: 2140f183-e2ce-4848-951e-0d5c754784bc
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_31.jpg
+is_cover: false
+sort_order: 31
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 101 of 181] ---
+id: a0abc13e-2b3c-477f-8890-a7a1bec77a7d
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00482.jpg
+is_cover: false
+sort_order: 321
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 102 of 181] ---
+id: 3f88ed1d-8223-4549-b90b-78f2b5878160
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00422.jpg
+is_cover: false
+sort_order: 313
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 103 of 181] ---
+id: b3966d98-93a1-448e-8983-e2b88b79158a
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_08.jpg
+is_cover: false
+sort_order: 8
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 104 of 181] ---
+id: c188436e-1fe5-46eb-8281-3b51967fca00
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_04.jpg
+is_cover: false
+sort_order: 4
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 105 of 181] ---
+id: 0e513df5-da15-48e3-b27b-f1f6d14c6305
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_45.jpg
+is_cover: false
+sort_order: 42
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 106 of 181] ---
+id: e100eec5-e0ab-466d-96df-c67f70682e6f
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_29.jpg
+is_cover: false
+sort_order: 29
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 107 of 181] ---
+id: 58cb7021-57c0-41ab-b46c-966a56ea064b
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00432.jpg
+is_cover: false
+sort_order: 319
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 108 of 181] ---
+id: b27d70a3-ff56-4fba-b497-3c78772f178c
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00357.jpg
+is_cover: false
+sort_order: 331
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 109 of 181] ---
+id: c8c5e3ca-cadc-49dc-b46c-7d7c94540d85
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00402.jpg
+is_cover: false
+sort_order: 317
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 110 of 181] ---
+id: ac74a9d4-83d3-41c6-9a5b-1e59d68fbb96
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_24.jpg
+is_cover: false
+sort_order: 24
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 111 of 181] ---
+id: 75cf439b-1168-4bf6-9f30-c0082a9f74b4
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_19.jpg
+is_cover: false
+sort_order: 19
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 112 of 181] ---
+id: 1530f882-f209-4017-a0c0-5fc766de92c1
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_17.jpg
+is_cover: false
+sort_order: 17
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 113 of 181] ---
+id: ad0baa93-c750-4b3c-a581-5dd39a0d50f4
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_09.jpg
+is_cover: false
+sort_order: 9
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 114 of 181] ---
+id: f9d00942-1826-4c7f-9bbc-5afff00131f8
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_44.jpg
+is_cover: false
+sort_order: 41
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 115 of 181] ---
+id: beff5612-1f4e-4725-889b-9a5c38496bb4
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_33.jpg
+is_cover: false
+sort_order: 33
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 116 of 181] ---
+id: ac01154d-2460-4983-b738-b0d7aa963de2
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_28.jpg
+is_cover: false
+sort_order: 28
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 117 of 181] ---
+id: eabdd21f-1bb7-4075-8443-f02a72b393a9
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00377.jpg
+is_cover: false
+sort_order: 333
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 118 of 181] ---
+id: 998eb52c-91e9-469e-a25a-bf1789792123
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_12.jpg
+is_cover: false
+sort_order: 12
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 119 of 181] ---
+id: 70479cd4-f59f-4469-b19a-c994b7337369
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_22.jpg
+is_cover: false
+sort_order: 22
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 120 of 181] ---
+id: dbb298c6-9a8f-49f5-b635-99968c0104ca
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_40.jpg
+is_cover: false
+sort_order: 37
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 121 of 181] ---
+id: c050fc07-7b27-4897-ad9b-c62a5134c684
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_34.jpg
+is_cover: false
+sort_order: 34
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 122 of 181] ---
+id: 4f5ed2b0-9d70-44f5-a620-f354f85cf937
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_02.jpg
+is_cover: false
+sort_order: 2
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 123 of 181] ---
+id: 56494641-f16d-4fa4-92fa-51be5193b725
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_18.jpg
+is_cover: false
+sort_order: 18
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 124 of 181] ---
+id: 74fbc7fc-46c3-4ccf-b20a-1c6c934147df
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_11.jpg
+is_cover: false
+sort_order: 11
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 125 of 181] ---
+id: ed8eac80-3644-4f68-8e1d-e3a508eaddef
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_14.jpg
+is_cover: false
+sort_order: 14
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 126 of 181] ---
+id: e5cc1b79-c816-4e48-b9c1-7cab12b2f834
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_39.jpg
+is_cover: false
+sort_order: 36
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 127 of 181] ---
+id: d47f1c46-838c-418e-819f-6c12f4583217
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_25.jpg
+is_cover: false
+sort_order: 25
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 128 of 181] ---
+id: defa13d4-06a7-455a-ad47-1402c178b713
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_03.jpg
+is_cover: false
+sort_order: 3
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 129 of 181] ---
+id: aa24f5bb-3da2-46ed-8c89-1a6bb835cc70
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_10.jpg
+is_cover: false
+sort_order: 10
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 130 of 181] ---
+id: fcbeea88-c617-4152-ae8e-683223cd0f64
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_23.jpg
+is_cover: false
+sort_order: 23
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 131 of 181] ---
+id: ad13a9b6-5cbd-402b-b114-8b6a1da6bdc8
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_21.jpg
+is_cover: false
+sort_order: 21
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 132 of 181] ---
+id: 8f1f7ca9-6745-4873-9815-a82914c4585a
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_01.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 133 of 181] ---
+id: 269bc0a7-042a-4a1f-a75a-66e955199d25
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_20.jpg
+is_cover: false
+sort_order: 20
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 134 of 181] ---
+id: 53c35a63-7b56-4b8e-aac9-40226d82068c
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_16.jpg
+is_cover: false
+sort_order: 16
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 135 of 181] ---
+id: 1fb3858f-2dc9-4a49-a044-ee9638d2b7c0
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_07.jpg
+is_cover: false
+sort_order: 7
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 136 of 181] ---
+id: abac6fb7-8c55-4256-96c3-5f88da709c3c
+entity_slug: phoenix-vi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_27.jpg
+is_cover: false
+sort_order: 27
+photo_type: resource
+source_name: bookable_resource
+resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+
+--- entity_photos [row 137 of 181] ---
+id: efb5f8fa-4286-4c65-9e0e-4742d75d0660
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00372.jpg
+is_cover: false
+sort_order: 326
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 138 of 181] ---
+id: 9b2691b3-54f8-4ae9-a023-2c2f1f34036a
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00467.jpg
+is_cover: false
+sort_order: 339
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 139 of 181] ---
+id: f8ff2bfe-12a1-461d-a0bb-2b60bfc370eb
+entity_slug: phoenix-vi
+url: https://liquidlifevacationrentals.icnd-cdn.com/images/resorts/A__00452.jpg
+is_cover: false
+sort_order: 336
+photo_type: gallery
+source_name: extracted:liquid_life
+
+--- entity_photos [row 140 of 181] ---
+id: 4e01d5a7-3893-4a6c-a133-0e73680a1113
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/07663239-68d3-495f-abd7-e0cbd543223b
+is_cover: false
+sort_order: 400
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 141 of 181] ---
+id: ec9dbc30-9d36-4cae-b6b8-10a59cbbc7d7
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/619a241b-c7d8-4d23-acf7-cf06c8d4ac02
+is_cover: false
+sort_order: 401
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 142 of 181] ---
+id: 85ebe9b5-c7c6-48f4-8484-16a394270e3f
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/448568c9-a09b-4c52-8040-41612d1aa58d
+is_cover: false
+sort_order: 402
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 143 of 181] ---
+id: a379ae9a-1ccc-407f-9809-c5a57d32b1e4
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/fc3f207c-a7d1-4318-a350-55c319b5fe42
+is_cover: false
+sort_order: 403
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 144 of 181] ---
+id: 0ce56f4a-29b5-403a-847d-474f04714d45
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/641cfc1b-68ea-4114-bbae-0987c029a140
+is_cover: false
+sort_order: 404
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 145 of 181] ---
+id: 0ac96b92-e3fe-41b7-8ba1-98862486c782
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/0ffe53d9-e576-48bb-b8f4-9ecdca53a6a4
+is_cover: false
+sort_order: 405
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 146 of 181] ---
+id: aa24b8e9-6546-4258-bfb5-4ebccc3ba6c2
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/cdf04bdf-4e18-43b8-bce1-a5a596c4eef7
+is_cover: false
+sort_order: 406
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 147 of 181] ---
+id: a878691d-b22e-4b5c-93c5-078969b468bd
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/e6feacf9-d4ed-4f60-bcec-2ee54b387af0
+is_cover: false
+sort_order: 407
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 148 of 181] ---
+id: fa127e97-d7b5-4081-9a6d-ea958d993f80
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/e112b607-3af4-4150-941b-4ac3156c8b0d
+is_cover: false
+sort_order: 408
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 149 of 181] ---
+id: cfca4795-b5d4-4753-bc5d-5bf2e8aace14
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/3ea54b8c-9135-4666-a612-e6f33d3e31f3
+is_cover: false
+sort_order: 409
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 150 of 181] ---
+id: 32201328-bcb1-4ce7-98e0-86ca7b11264f
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/32c6d9e1-a016-495b-b449-fb66afcf4ba3
+is_cover: false
+sort_order: 410
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 151 of 181] ---
+id: 27e512fc-0f90-4731-9613-3007492fc73b
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/7831d15c-1a4c-4816-965c-dee535a83774
+is_cover: false
+sort_order: 411
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 152 of 181] ---
+id: c8091724-1194-4355-bdd0-2b4e61c81ff2
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/5183b7e0-c416-4d23-bca8-28c84744d51f
+is_cover: false
+sort_order: 412
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 153 of 181] ---
+id: cd31fba9-d5a5-4974-a26e-38f22f1c4208
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/00b986e2-ffaf-4963-af62-a431ae5a5e4e
+is_cover: false
+sort_order: 413
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 154 of 181] ---
+id: b77f4b92-b719-4246-b398-b5f250d4bdc5
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/37d9df9d-7474-45f0-bd71-ea4fcb498d23
+is_cover: false
+sort_order: 414
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 155 of 181] ---
+id: 21c5cbda-6e97-4822-bd3a-0e336ceed612
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/7f16f202-d09c-494a-9fb1-b6e74bca523c
+is_cover: false
+sort_order: 415
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 156 of 181] ---
+id: 5e3b5541-45d4-42e5-aa6f-294b94b5a4e6
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/e7d65f6f-9d32-42ec-98c5-3abf49c55425
+is_cover: false
+sort_order: 416
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 157 of 181] ---
+id: d27bce80-549b-41bd-bac7-b0a04fba6c67
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/c33a10e3-bd8f-429f-963c-0bc571be4109
+is_cover: false
+sort_order: 417
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 158 of 181] ---
+id: 9aa29d68-349b-489e-85d5-e7b04a1045c4
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/6a980c50-d49b-4640-9ad4-77b20321e357
+is_cover: false
+sort_order: 418
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 159 of 181] ---
+id: eb3d8ece-e27a-4e6a-836e-de85f88443f5
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/2deb0eed-4825-4763-9964-d1aa3d34ce85
+is_cover: false
+sort_order: 419
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 160 of 181] ---
+id: 205bf760-246d-47d6-a01d-e451c8f9c5b1
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/17908f37-95c0-41a2-ac8c-f74cb048be7c
+is_cover: false
+sort_order: 420
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 161 of 181] ---
+id: d2351e1a-8c27-4288-8845-acb7ce9f03b8
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/d7d33318-42ff-4e66-b950-fa8e1b221d8a
+is_cover: false
+sort_order: 421
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 162 of 181] ---
+id: 336c1fe7-5a48-4b9d-9b6f-80b8491dd979
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/467dc305-d25a-469b-b41b-d2804f2ba2bb
+is_cover: false
+sort_order: 422
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 163 of 181] ---
+id: 4c8dd67a-e012-40ed-b3d4-a31ec246d958
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/c3125a54-3c69-4275-b38e-d12e99621f9f
+is_cover: false
+sort_order: 423
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 164 of 181] ---
+id: baa314bd-b7a3-4cb5-ac33-1728f28e1aca
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/700a920f-a3e6-43b9-aba7-56153d62421a
+is_cover: false
+sort_order: 424
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 165 of 181] ---
+id: 20c8c93e-6784-4662-9852-17b849a2d8f4
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/bc86fc0f-3df2-49c6-b4c3-f4fdd5c63c24
+is_cover: false
+sort_order: 425
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 166 of 181] ---
+id: 10b8e38f-234e-4038-b87b-fc35f81ddc23
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/a9b09beb-fefe-4559-acd3-1a8df706aecd
+is_cover: false
+sort_order: 426
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 167 of 181] ---
+id: b425bd17-6eac-4088-ba6c-805e21c2a825
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/9f18ed12-6bcb-4979-92bc-a69bd3a7761a
+is_cover: false
+sort_order: 427
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 168 of 181] ---
+id: 77faae06-50b0-4014-a1d8-f26af2c5fca1
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/1e063e76-4f21-451e-8d09-21a0430be8f8
+is_cover: false
+sort_order: 428
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 169 of 181] ---
+id: f69bdea3-be8f-48bb-8e6e-6d418d747182
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/5945239c-ee2e-457e-9e9d-d2fd1fe99d1d
+is_cover: false
+sort_order: 429
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 170 of 181] ---
+id: 5e99da6c-8b8f-4e73-8425-68f1499604b7
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/9f7507d3-d698-402e-89fe-d851c33d12e0
+is_cover: false
+sort_order: 430
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 171 of 181] ---
+id: 536bb395-802c-4310-967b-c15290223a9b
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/8b29a7a3-ae42-4d4a-8ae4-28e1a057c93a
+is_cover: false
+sort_order: 431
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 172 of 181] ---
+id: 1aebf931-8579-45c4-a468-96ecef91b9f1
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/53e85c17-81e2-46bd-a55f-39d575754653
+is_cover: false
+sort_order: 432
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 173 of 181] ---
+id: b94252b2-bfd0-4dec-a8bb-715063e4a524
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/c1b77ebe-9e7f-4897-aecb-d89cbc37e4ab
+is_cover: false
+sort_order: 433
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 174 of 181] ---
+id: 54fdab83-cbc9-4cc6-b6f2-77b5c7e16eab
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/449f2a23-1cbe-462b-9cf3-9382f172aa03
+is_cover: false
+sort_order: 434
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 175 of 181] ---
+id: 259487b1-7a24-4130-888b-3e7383a36624
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/99a622b0-d596-469b-9061-6b168caae941
+is_cover: false
+sort_order: 435
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 176 of 181] ---
+id: 1e2f333a-4aac-4087-8e6c-992c3bac1db2
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/89dce6c2-97b0-4eed-ad20-6331279d50df
+is_cover: false
+sort_order: 436
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 177 of 181] ---
+id: 27606692-1e07-4f90-9a7c-61d1fbcc6726
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/512e5f2d-f755-47a7-9fee-2c5217dade1f
+is_cover: false
+sort_order: 437
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 178 of 181] ---
+id: 777364e5-27e3-46e7-b903-7c1ff14ef3ce
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/300/https://track-pm.s3.amazonaws.com/brett-robinson/image/a04845f7-8822-4ff9-91f3-07c2c65a452c
+is_cover: false
+sort_order: 438
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 179 of 181] ---
+id: f0bdc2bc-4132-4bc8-890f-e53944a0e358
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/600x400/https://track-pm.s3.amazonaws.com/brett-robinson/image/818d8228-a784-4bae-9d98-86cf0087bf1b
+is_cover: false
+sort_order: 439
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 180 of 181] ---
+id: 8561c7b6-b7d6-427d-bed8-57ad637bb02d
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/600x400/https://track-pm.s3.amazonaws.com/brett-robinson/image/92b36e9f-1987-4944-aeee-d95b26f81ef5
+is_cover: false
+sort_order: 440
+photo_type: gallery
+source_name: extracted:condos_zip
+
+--- entity_photos [row 181 of 181] ---
+id: df28d702-3fd0-4461-988e-d3f34f71b63a
+entity_slug: phoenix-vi
+url: https://img.trackhs.com/600x400/https://track-pm.s3.amazonaws.com/brett-robinson/image/86ec795c-5ec2-40e7-9005-02cbeac8a30d
+is_cover: false
+sort_order: 441
+photo_type: gallery
+source_name: extracted:condos_zip
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 6bcb0954-97c0-4517-add8-26f960765124
+entity_slug: phoenix-vi
+reviewer_name: Tiffany Brayboy (Typical Tiffany)
+rating: 5
+body: Property was maintained well, the free EV chargers were a pleasant surprise, the pool was huge, also the kiddie pool was gated to prevent the littles from escaping to the big pool. There were plenty of charcoal grills by the pool, there was always one available. Amazing sunset views! Overall pleased with our stay!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-07-19T20:29:32.884278+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: d6680d08-0fd2-45b8-beb6-6ba7cedca48c
+entity_slug: phoenix-vi
+reviewer_name: Renzo Stenzo
+rating: 4
+body: The Phoenix was a great place to vacation in Orange Beach. I’d definitely recommend to anyone looking for a great beach condo. Has a great view, pops are nice, and the beach access is also great. Rooms are spacious and very comfortable as well. The staff was also great. A+ as far as hotel and condo travel goes.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-04-21T03:18:51.125834+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: 93b3ac9a-e0e1-4ea7-b8b0-05b9effd57fa
+entity_slug: phoenix-vi
+reviewer_name: Sugar Laing
+rating: 5
+body: We stayed 5 nights on the 5th floor in an updated 3 bedroom unit. The view from the balcony was great. Excellent breeze coming off the gulf during June. The pools were nice and clean. Surprisingly not packed considering it was peak season. Employee interactions were fine. The condo itself was booked on airbnb and was clean and comfortable. No issues overall. We enjoyed our stay and would recommend.
+There is a baby pool for little ones. Multiple hot tubs inside.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2024-07-02T17:53:14.226972+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: dfb6d03a-0977-4985-95b6-b8ff13739006
+entity_slug: phoenix-vi
+reviewer_name: Daniel Lane
+rating: 4
+body: We had a fun vacation. Stayed 6 nights and had no issues. The room was clean and well furnished with decent room for our family of 4. We also had family staying in another unit on a different floor and it seemed to work well for them.
+
+We've stayed in a couple other condos in both orange beach and gulf shores and we found the parking here to be a little more crowded than we were used to. It wasn't a huge problem just a minor inconvenience. We also liked the layout of the condos a little better. The bathrooms and bedrooms were bigger and set up a little better for families with kids.
+
+It was easy to access the beach through the pool. The boardwalk is a little long but there isn't much they can do about that.
+
+Overall a good stay and would consider staying again.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2020-07-27T03:35:33.859841+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 121a3dcb-797e-4fd1-b8ec-465155d458df
+entity_slug: phoenix-vi
+reviewer_name: Jeffrey McDaniel
+rating: 5
+body: One of the better condos we have stated. Phoenix 6 has a big indoor pool with three hot tubs, a nice outdoor pool with a waterfall feature, racquetball court, and tennis courts. Also available is a sauna and a gym. The view from our condo was fantastic. We will come again.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2024-02-28T16:57:27.704928+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_section_items   -   1 row(s)
+####################################################################################################
+
+--- entity_section_items [row 1 of 1] ---
+id: 734b5b43-63e5-4634-b9ba-0dac145690fe
+section_id: 10e09b03-b315-4469-a9b8-947861f38fb7
+entity_slug: phoenix-vi
+item_name: Phoenix VI
+description: Phoenix VI is a beachfront condo property in Orange Beach offering Gulf views, direct beach access, and a wide range of family-friendly amenities. The property features fully furnished 1-, 2-, and 3-bedroom vacation rentals that accommodate up to 10 guests, with open layouts, full kitchens, floor-to-ceiling windows, and private balconies designed to showcase the Gulf.
+
+Guests staying at Phoenix VI enjoy resort-style amenities and a convenient beachfront location close to dining, shopping, and at
+icon: 🏠
+metadata: {}
+sort_order: 1
+check_in_time: 16:00
+check_out_time: 11:00
+min_nights: 1
+cleaning_fee: 0
+bedrooms: 3
+
+####################################################################################################
+# TABLE: entity_section_items_metadata_backup   -   1 row(s)
+####################################################################################################
+
+--- entity_section_items_metadata_backup [row 1 of 1] ---
+id: 734b5b43-63e5-4634-b9ba-0dac145690fe
+entity_slug: phoenix-vi
+item_name: Phoenix VI
+metadata: {
+  "bedrooms": 3,
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_00.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_03.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_06.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_07.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_08.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_09.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_10.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_11.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_12.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_13.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_14.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_15.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_16.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_17.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_18.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_19.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_20.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_21.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_22.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_23.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_24.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_25.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_26.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_27.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_28.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_29.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_30.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_31.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_32.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_33.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_34.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_35.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_39.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_40.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_41.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_42.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_43.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_44.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_45.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_46.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/condos/phoenix-vi/image_47.png"
+  ],
+  "cleaning_fee": 0,
+  "check_in_time": "16:00",
+  "check_out_time": "11:00"
+}
+backed_up_at: 2026-07-16T09:49:37.166591+00:00
+
+####################################################################################################
+# TABLE: entity_sections   -   1 row(s)
+####################################################################################################
+
+--- entity_sections [row 1 of 1] ---
+id: 10e09b03-b315-4469-a9b8-947861f38fb7
+entity_slug: phoenix-vi
+section_type: rooms
+section_name: Units & Rates
+sort_order: 2
+module_key: rooms
+is_active: true
+
+####################################################################################################
+# TABLE: entity_sources   -   2 row(s)
+####################################################################################################
+
+--- entity_sources [row 1 of 2] ---
+id: 2c28ab0a-bcf6-49de-97dd-78e42f019cc8
+entity_slug: phoenix-vi
+source_system: liquid_life
+source_url: https://www.liquidlifevacationrentals.com/resort/phoenix-vi
+scope: entity
+observed_at: 2026-07-16T00:00:00+00:00
+confidence: high
+created_at: 2026-07-16T10:58:22.481614+00:00
+
+--- entity_sources [row 2 of 2] ---
+id: 58c96530-ac5c-4b77-9ecd-e9d8bc2878e6
+entity_slug: phoenix-vi
+source_system: condos_zip_brett_robinson
+observed_at: 2026-07-16T00:00:00+00:00
+confidence: medium
+note: Structured scrape of Brett-Robinson property page (condos_data1_3.zip)
+created_at: 2026-07-16T10:59:56.848474+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   41 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 41] ---
+id: 1fba671e-b23e-45d1-b4eb-23cdabecf348
+entity_slug: phoenix-vi
+tag_name: condo
+tag_category: type
+
+--- entity_tags [row 2 of 41] ---
+id: b386adc8-d11c-48c0-9ba8-82b3e4fa61c2
+entity_slug: phoenix-vi
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 3 of 41] ---
+id: e88d5483-ac31-4ab5-b3b2-0d42cdf30700
+entity_slug: phoenix-vi
+tag_name: Condos & Stays
+tag_category: category
+
+--- entity_tags [row 4 of 41] ---
+id: 6e94bd13-a052-4199-bcfe-bd14f9543fbe
+entity_slug: phoenix-vi
+tag_name: Pool
+tag_category: amenity
+
+--- entity_tags [row 5 of 41] ---
+id: 505cbd54-cc1a-4b1d-87a0-acf10386ede8
+entity_slug: phoenix-vi
+tag_name: 3 Bedrooms
+tag_category: amenity
+
+--- entity_tags [row 6 of 41] ---
+id: 36297e02-f517-45e5-8686-45b2a73c4a25
+entity_slug: phoenix-vi
+tag_name: Outdoor pool
+tag_category: amenity
+
+--- entity_tags [row 7 of 41] ---
+id: 4fe1caf6-fa3c-41df-852e-84a3ce1fc4d0
+entity_slug: phoenix-vi
+tag_name: Sauna
+tag_category: amenity
+
+--- entity_tags [row 8 of 41] ---
+id: 61a4fafc-b1de-4475-91ac-b74a007aacf4
+entity_slug: phoenix-vi
+tag_name: Hot tub
+tag_category: amenity
+
+--- entity_tags [row 9 of 41] ---
+id: 5c2d1060-b79a-45b7-b8c9-d702b590872f
+entity_slug: phoenix-vi
+tag_name: Fitness center
+tag_category: amenity
+
+--- entity_tags [row 10 of 41] ---
+id: 2c453077-5611-4974-abdb-cc87c3c098db
+entity_slug: phoenix-vi
+tag_name: Tennis court
+tag_category: amenity
+
+--- entity_tags [row 11 of 41] ---
+id: eb847b11-d9d2-43f9-9ae4-14dd96860610
+entity_slug: phoenix-vi
+tag_name: Racquetball
+tag_category: amenity
+
+--- entity_tags [row 12 of 41] ---
+id: f5e0789d-e8f6-4542-b32f-108b498c7391
+entity_slug: phoenix-vi
+tag_name: Covered parking
+tag_category: amenity
+
+--- entity_tags [row 13 of 41] ---
+id: c27c91a5-02be-485a-bcfb-aef13b6cd5e6
+entity_slug: phoenix-vi
+tag_name: Barbeque
+tag_category: amenity
+
+--- entity_tags [row 14 of 41] ---
+id: 33c50e5e-b892-46b9-bbb9-3a6242febed3
+entity_slug: phoenix-vi
+tag_name: Grill
+tag_category: amenity
+
+--- entity_tags [row 15 of 41] ---
+id: bf1bec83-2b2b-497d-9360-dbcb5b4d8d1f
+entity_slug: phoenix-vi
+tag_name: Parking
+tag_category: amenity
+
+--- entity_tags [row 16 of 41] ---
+id: d3d073b4-4cbe-41ca-b076-b423fa08fed0
+entity_slug: phoenix-vi
+tag_name: Kiddie pool
+tag_category: amenity
+
+--- entity_tags [row 17 of 41] ---
+id: 5cc40237-ac39-4842-85ec-6524a86416bb
+entity_slug: phoenix-vi
+tag_name: Hot tubs
+tag_category: amenity
+
+--- entity_tags [row 18 of 41] ---
+id: b901919b-b178-445a-9512-49cdbd7cfb01
+entity_slug: phoenix-vi
+tag_name: Racquetball court
+tag_category: amenity
+
+--- entity_tags [row 19 of 41] ---
+id: caa2e850-a145-45fd-a68f-94fbe9529ff9
+entity_slug: phoenix-vi
+tag_name: Basketball
+tag_category: amenity
+
+--- entity_tags [row 20 of 41] ---
+id: 3edd0784-5981-4903-a450-1136dc66eaa4
+entity_slug: phoenix-vi
+tag_name: Ev chargers
+tag_category: amenity
+
+--- entity_tags [row 21 of 41] ---
+id: daa9185e-c2da-4cc8-9058-54d99b5a215e
+entity_slug: phoenix-vi
+tag_name: Barbeque grills.
+tag_category: amenity
+
+--- entity_tags [row 22 of 41] ---
+id: 59384e24-93fa-4cde-b4f1-a8a8b902ff6c
+entity_slug: phoenix-vi
+tag_name: Arcade
+tag_category: amenity
+
+--- entity_tags [row 23 of 41] ---
+id: 7467695b-8b9c-42f2-8273-fcb9f3cc35bd
+entity_slug: phoenix-vi
+tag_name: Restaurant
+tag_category: amenity
+
+--- entity_tags [row 24 of 41] ---
+id: 3394e0da-f560-49a4-9884-6a919b3e83c4
+entity_slug: phoenix-vi
+tag_name: Beach access
+tag_category: amenity
+
+--- entity_tags [row 25 of 41] ---
+id: 2f4f7938-d118-4f4a-b007-1e3b713d0c28
+entity_slug: phoenix-vi
+tag_name: Beach chair
+tag_category: amenity
+
+--- entity_tags [row 26 of 41] ---
+id: 19915337-d770-4d33-81d4-44c116fd1812
+entity_slug: phoenix-vi
+tag_name: Elevator
+tag_category: amenity
+
+--- entity_tags [row 27 of 41] ---
+id: 29bd73fd-1a6b-4610-be81-1f0cebcdb22d
+entity_slug: phoenix-vi
+tag_name: Accessible
+tag_category: amenity
+
+--- entity_tags [row 28 of 41] ---
+id: 359e07be-840a-4a1e-b447-98b8d5f4720c
+entity_slug: phoenix-vi
+tag_name: Washer and dryer
+tag_category: amenity
+
+--- entity_tags [row 29 of 41] ---
+id: 95a29973-9100-4570-8763-2cba9b65ac58
+entity_slug: phoenix-vi
+tag_name: Wi-fi
+tag_category: amenity
+
+--- entity_tags [row 30 of 41] ---
+id: 7de4a7a9-b55b-4362-9836-9bd79cf56bd0
+entity_slug: phoenix-vi
+tag_name: Grilling Area
+tag_category: amenity
+
+--- entity_tags [row 31 of 41] ---
+id: c2270647-1f8f-4d26-9766-ed86c242dc1a
+entity_slug: phoenix-vi
+tag_name: Tennis Courts
+tag_category: amenity
+
+--- entity_tags [row 32 of 41] ---
+id: 956b0402-ef83-4056-9910-0bf8791d18ef
+entity_slug: phoenix-vi
+tag_name: Meeting Room
+tag_category: amenity
+
+--- entity_tags [row 33 of 41] ---
+id: 314cee46-b93c-4298-9607-6ab63f153df1
+entity_slug: phoenix-vi
+tag_name: Indoor Pool
+tag_category: amenity
+
+--- entity_tags [row 34 of 41] ---
+id: e1c3f44d-2c3e-4901-ac1c-55c3712ed48e
+entity_slug: phoenix-vi
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 35 of 41] ---
+id: 4dbe45b4-3f3e-4189-a4fe-2a9536f19597
+entity_slug: phoenix-vi
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 36 of 41] ---
+id: 9bbf055a-3207-486b-b6db-6a548a69acca
+entity_slug: phoenix-vi
+tag_name: real_estate_agency
+tag_category: google_type
+
+--- entity_tags [row 37 of 41] ---
+id: bcc296b0-24ad-4bac-a9b9-6fc729553da2
+entity_slug: phoenix-vi
+tag_name: travel_agency
+tag_category: google_type
+
+--- entity_tags [row 38 of 41] ---
+id: 5d3da5db-38ba-4be3-b01d-a8a09d566f0b
+entity_slug: phoenix-vi
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 39 of 41] ---
+id: 6a69c5c8-546e-41f1-a60a-1743a8066c30
+entity_slug: phoenix-vi
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 40 of 41] ---
+id: fd5698b1-c5f6-49b0-a58e-015413c237d1
+entity_slug: phoenix-vi
+tag_name: real_estate_agency
+tag_category: google_type
+
+--- entity_tags [row 41 of 41] ---
+id: 06d203fc-7460-4bdc-ae7e-9a857e62d881
+entity_slug: phoenix-vi
+tag_name: travel_agency
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   2 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 2] ---
+id: 4672c2a6-bf28-4e65-9f62-7cb56f3f3462
+entity_slug: phoenix-vi
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+--- entity_theme [row 2 of 2] ---
+id: 8ceedfe5-8367-4a3b-bd6b-8351642e344a
+entity_slug: phoenix-vi
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: faqs   -   13 row(s)
+####################################################################################################
+
+--- faqs [row 1 of 13] ---
+id: fce1819a-96f5-4771-934a-845114bad8ac
+entity_id: 6799469d-6bf1-4916-bd5f-99e3b49073ef
+question: Where is Phoenix VI located?
+answer: Phoenix VI is located at 26800 Perdido Beach Blvd, Orange Beach, AL 36561 and is approximately 7.5 miles east of Hwy 59.
+created_at: 2026-06-14T04:02:00.465367
+sort_order: 1
+entity_slug: phoenix-vi
+category: general
+
+--- faqs [row 2 of 13] ---
+id: dd7e8c55-fab5-4bb3-97a3-58a1f09d462c
+entity_id: 6799469d-6bf1-4916-bd5f-99e3b49073ef
+question: What amenities are included in Phoenix 6 vacation rentals?
+answer: Phoenix 6 features several luxury amenities including: indoor and outdoor pools, kiddie pool, sauna, hot tubs, fitness center, tennis court, racquetball court, basketball, covered parking, EV chargers, and barbeque grills.
+created_at: 2026-06-14T04:02:00.465367
+sort_order: 2
+entity_slug: phoenix-vi
+category: general
+
+--- faqs [row 3 of 13] ---
+id: 366f3f1b-08fc-40da-b407-b4660a78d395
+entity_id: 6799469d-6bf1-4916-bd5f-99e3b49073ef
+question: What types of units are available for rent at Phoenix VI?
+answer: Phoenix VI offers spacious 1-, 2-, and 3-bedroom units.
+created_at: 2026-06-14T04:02:00.465367
+sort_order: 3
+entity_slug: phoenix-vi
+category: general
+
+--- faqs [row 4 of 13] ---
+id: 3c054739-7802-430d-939b-52deec547abc
+entity_id: 6799469d-6bf1-4916-bd5f-99e3b49073ef
+question: What popular attractions are close to Phoenix VI?
+answer: Orange Beach’s most popular attraction is just steps away from Phoenix VI – the beach! From your condo, you can walk to restaurants, ice cream, and marinas for fishing charters, dolphin cruises, and more. You’re also only a mile from Perdido Pass, The Gulf Orange Beach, and several other shops and restaurants. Nearby you’ll find arcades, amusement parks, shopping, dining, and more. At Gulf State Park, you can fish, hike, or bike on the trails, or you can enjoy a show at The Wharf’s amphitheater,
+created_at: 2026-06-14T04:02:00.465367
+sort_order: 4
+entity_slug: phoenix-vi
+category: general
+
+--- faqs [row 5 of 13] ---
+id: a1ea27ba-8746-47b5-9021-5e6140d75ff1
+entity_id: 6799469d-6bf1-4916-bd5f-99e3b49073ef
+question: What are the check-in and check-out times at Phoenix 6?
+answer: Check-in and check-out times vary by season. For more information, refer to our Check In and Check Out Times Pageand review your booking confirmation message.
+created_at: 2026-06-14T04:02:00.465367
+sort_order: 5
+entity_slug: phoenix-vi
+category: general
+
+--- faqs [row 6 of 13] ---
+id: 04b49636-efe3-495d-aa04-8ab123a60566
+entity_id: 6799469d-6bf1-4916-bd5f-99e3b49073ef
+question: Do all Phoenix 6 condominiums have Gulf views?
+answer: Yes, all Phoenix 6 vacation rentals have views of the sparkling Gulf from expansive private balconies.
+created_at: 2026-06-14T04:02:00.465367
+sort_order: 6
+entity_slug: phoenix-vi
+category: general
+
+--- faqs [row 7 of 13] ---
+id: 4f8bf4b3-b137-4660-adb9-ee43f313e095
+entity_id: 6799469d-6bf1-4916-bd5f-99e3b49073ef
+question: Is there beach access available at Phoenix VI?
+answer: Yes, Phoenix VI offers direct beach access and beach chair rentals for guests.
+created_at: 2026-06-14T04:02:00.465367
+sort_order: 7
+entity_slug: phoenix-vi
+category: general
+
+--- faqs [row 8 of 13] ---
+id: 55e6e6a7-efdb-464a-98de-b223ed4fb45f
+entity_id: 6799469d-6bf1-4916-bd5f-99e3b49073ef
+question: Is there a grocery store nearby Phoenix 6 where guests can purchase food, supplies and necessities?
+answer: Yes, there are several grocery stores located near Phoenix 6 in Orange Beach, including Publix, Walmart, and Winn-Dixie. Grocery delivery is offered at participating stores with partnering apps.
+created_at: 2026-06-14T04:02:00.465367
+sort_order: 8
+entity_slug: phoenix-vi
+category: general
+
+--- faqs [row 9 of 13] ---
+id: c3122fe8-6755-477f-a1a0-3cf33f5aaf2b
+entity_id: 6799469d-6bf1-4916-bd5f-99e3b49073ef
+question: Does Phoenix VI have accessibility options?
+answer: Phoenix VI Orange Beach is equipped with accessibility features to ensure that guests can enjoy their stay. The resort has accessible entrances and public areas, including ramps and elevators. The units were also originally designed with accessibility in mind. Contact us at 1-800-211-7892 to discuss accommodations and options.
+created_at: 2026-06-14T04:02:00.465367
+sort_order: 9
+entity_slug: phoenix-vi
+category: general
+
+--- faqs [row 10 of 13] ---
+id: ba8f8241-54f8-42ab-8828-c8729f56f3fd
+entity_id: 6799469d-6bf1-4916-bd5f-99e3b49073ef
+question: Is Phoenix 6 a good choice for family vacations?
+answer: Yes, Phoenix 6 Orange Beach is incredibly family-friendly. When you stay in a fully-furnished Gulf-view 1-, 2-, or 3-bedroom unit, you don’t have to worry about a thing. You’ll have a fully-equipped kitchen, direct beach access, and tons of family-friendly amenities, including indoor and outdoor pools, a kiddie pool, tennis courts, basketball, and more. With the ability to walk to restaurants, ice cream, and marinas, it’s easy to enjoy Orange Beach. Plus, you can find Walmart, grocery stores, re
+created_at: 2026-06-14T04:02:00.465367
+sort_order: 10
+entity_slug: phoenix-vi
+category: general
+
+--- faqs [row 11 of 13] ---
+id: c29f5830-c6a1-4536-8ba4-f67dc26f565e
+entity_id: 6799469d-6bf1-4916-bd5f-99e3b49073ef
+question: Is there a washer and dryer in each unit at Phoenix VI?
+answer: Yes, each unit at Phoenix VI is equipped with a washer and dryer.
+created_at: 2026-06-14T04:02:00.465367
+sort_order: 11
+entity_slug: phoenix-vi
+category: general
+
+--- faqs [row 12 of 13] ---
+id: d204ef7e-b053-4da3-94a2-4c00ad373e3e
+entity_id: 6799469d-6bf1-4916-bd5f-99e3b49073ef
+question: Is there free Wi-Fi available at Phoenix 6?
+answer: Yes, Phoenix 6 offers complimentary Wi-Fi access for guests.
+created_at: 2026-06-14T04:02:00.465367
+sort_order: 12
+entity_slug: phoenix-vi
+category: general
+
+--- faqs [row 13 of 13] ---
+id: 3bfc2129-1c4d-4cb2-9acc-c9c742baf17c
+entity_id: 6799469d-6bf1-4916-bd5f-99e3b49073ef
+question: Why book a Phoenix VI rental with Brett/Robinson?
+answer: By booking with Brett/Robinson Vacations you get the benefit of over 40 years of experience in the area. Brett/Robinson operates and maintains Phoenix VI and we have an on-site staff available to ensure you have a superb stay at the beach. We focus on quality, cleanliness and functionality in all of our available units. Our dedicated on-site customer service staff is here to help with any needs you have during your stay. Also, our knowledgeable area specialists can assist you in planning your it
+created_at: 2026-06-14T04:02:00.465367
+sort_order: 13
+entity_slug: phoenix-vi
+category: general
+
+####################################################################################################
+# TABLE: industry_condo   -   1 row(s)
+####################################################################################################
+
+--- industry_condo [row 1 of 1] ---
+entity_slug: phoenix-vi
+listed_unit_count: 0
+bedrooms_min: 3
+bedrooms_max: 3
+has_pool: true
+pet_friendly: false
+updated_at: 2026-07-21T16:59:02.358415+00:00
+
+####################################################################################################
+# TABLE: recovery_import_log   -   1 row(s)
+####################################################################################################
+
+--- recovery_import_log [row 1 of 1] ---
+id: 69188755-d89b-4626-8514-a55ad908737b
+batch_id: draft-businesses-netnew-2026-07-19
+target_table: entity
+target_row_id: 6161c875-d004-4831-a5ea-9d5ff7a49703
+entity_slug: phoenix-vi
+source_db: may
+source_table: entity
+source_id: f9aee97a-cde7-4132-866d-475d026ca52f
+action: insert
+imported_at: 2026-07-19T20:33:24.034873+00:00
+
+####################################################################################################
+# TABLE: rental_units   -   1 row(s)
+####################################################################################################
+
+--- rental_units [row 1 of 1] ---
+id: 539dc9a1-cc69-4e7b-b7c2-dcf713b9062e
+entity_slug: phoenix-vi
+slug: phoenix-vi
+name: Phoenix VI
+bedrooms: 3
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+check_in_time: 16:00
+check_out_time: 11:00
+city: Orange Beach
+state: AL
+source_resource_id: b79e2bf6-7fa7-4cb4-8cd3-f294b6434d01
+is_active: true
+created_at: 2026-07-23T00:06:23.937689+00:00
+updated_at: 2026-07-23T00:06:23.937689+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: phoenix-vi
+entity_slug: phoenix-vi
+title: Phoenix VI
+category: condominium_complex
+subtitle: Phoenix VI is a beachfront condo property in Orange Beach offering Gulf views, direct beach access, and a wide range of family-friendly amenities. The property features fully furnished 1-, 2-, and 3-bedroom vacation rentals that accommodate up to 10 guests, with open layouts, full kitchens, floor-to-ceiling windows, and private balconies designed to showcase the Gulf.
+
+Guests staying at Phoenix VI enjoy resort-style amenities and a convenient beachfront location close to dining, shopping, and at
+search_vector: '1':35C '10':46C '2':36C '3':38C 'access':20C 'accommod':43C 'amen':29C,75C 'balconi':60C 'beach':14C,19C 'beachfront':9C,79C 'bedroom':39C 'ceil':56C 'close':81C 'complex':4B 'condo':10C 'condominium':3B 'conveni':78C 'design':61C 'dine':83C 'direct':18C 'enjoy':71C 'famili':27C 'family-friend':26C 'featur':32C 'floor':54C 'floor-to-ceil':53C 'friend':28C 'full':51C 'fulli':33C 'furnish':34C 'guest':47C,66C 'gulf':16C,65C 'kitchen':52C 'layout':50C 'locat':80C 'offer':15C 'open':49C 'orang':13C 'phoenix':1A,5C,69C 'privat':59C 'properti':11C,31C 'rang':24C 'rental':41C 'resort':73C 'resort-styl':72C 'shop':84C 'showcas':63C 'stay':67C 'style':74C 'vacat':40C 'vi':2A,6C,70C 'view':17C 'wide':23C 'window':57C
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 13942
+entity_slug: phoenix-vi
+title: Phoenix VI
+category: room
+subtitle: Phoenix VI is a beachfront condo property in Orange Beach offering Gulf views, direct beach access, and a wide range of family-friendly amenities. The property features fully furnished 1-, 2-, and 3-bedroom vacation rentals that accommodate up to 10 guests, with open layouts, full kitchens, floor-to-ceiling windows, and private balconies designed to showcase the Gulf.
+
+Guests staying at Phoenix VI enjoy resort-style amenities and a convenient beachfront location close to dining, shopping, and at
+search_vector: '1':33C '10':44C '2':34C '3':36C 'access':18C 'accommod':41C 'amen':27C,73C 'balconi':58C 'beach':12C,17C 'beachfront':7C,77C 'bedroom':37C 'ceil':54C 'close':79C 'condo':8C 'conveni':76C 'design':59C 'dine':81C 'direct':16C 'enjoy':69C 'famili':25C 'family-friend':24C 'featur':30C 'floor':52C 'floor-to-ceil':51C 'friend':26C 'full':49C 'fulli':31C 'furnish':32C 'guest':45C,64C 'gulf':14C,63C 'kitchen':50C 'layout':48C 'locat':78C 'offer':13C 'open':47C 'orang':11C 'phoenix':1A,3C,67C 'privat':57C 'properti':9C,29C 'rang':22C 'rental':39C 'resort':71C 'resort-styl':70C 'shop':82C 'showcas':61C 'stay':65C 'style':72C 'vacat':38C 'vi':2A,4C,68C 'view':15C 'wide':21C 'window':55C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: phoenix-vi

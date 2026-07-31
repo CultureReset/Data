@@ -1,0 +1,4117 @@
+====================================================================================================
+SLUG: fruitful
+NAME: Fruitful
+INDUSTRY: food_beverage
+SUBTYPE: food
+TABLES WITH DATA: 34
+TOTAL ROWS: 249
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (6 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (6 rows)
+  catalog_items  (14 rows)
+  catalog_section_days  (14 rows)
+  catalog_sections  (2 rows)
+  entity  (1 rows)
+  entity_address_areas  (1 rows)
+  entity_attributes  (5 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (6 rows)
+  entity_items_norm_v  (14 rows)
+  entity_items_v  (14 rows)
+  entity_modules  (16 rows)
+  entity_nearby_landmark_types  (24 rows)
+  entity_nearby_landmarks  (6 rows)
+  entity_offer  (14 rows)
+  entity_offer_section  (2 rows)
+  entity_photos  (16 rows)
+  entity_reviews  (5 rows)
+  entity_sources  (3 rows)
+  entity_tags  (5 rows)
+  entity_theme  (1 rows)
+  industry_food_beverage  (1 rows)
+  legacy_photo_migration_queue  (2 rows)
+  menu_items  (14 rows)
+  menu_section_days  (14 rows)
+  menu_section_details  (2 rows)
+  menu_sections  (2 rows)
+  search_index  (29 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: fruitful
+name: Fruitful
+planner_category: food_drink
+data_quality_score: 75
+issues: missing_summary|missing_menu|missing_faqs
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: true
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: true
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   6 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 6] ---
+id: 11060
+entity_slug: fruitful
+intent_tag: best_for:casual_lunch_or_dinner
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 6] ---
+id: 11061
+entity_slug: fruitful
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 6] ---
+id: 11062
+entity_slug: fruitful
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 6] ---
+id: 11063
+entity_slug: fruitful
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 6] ---
+id: 11064
+entity_slug: fruitful
+intent_tag: missing:missing_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 6] ---
+id: 11065
+entity_slug: fruitful
+intent_tag: missing:missing_faqs
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: fruitful
+name: Fruitful
+is_active: t
+planner_category: food_drink
+entity_type: restaurant
+entity_subtype: food
+city: Gulf Shores
+state: AL
+address_line_1: 2200 E 2nd St
+latitude: 30.2750373
+longitude: -87.68244
+rating: 4.9
+review_count: 98
+website_url: https://www.fruitful-gulfshores.com/?fbclid=PAQ0xDSwLCw4dleHRuA2FlbQIxMQABpyiSMeHHx-ORJe6xrkCFOonjKFoye6SYtPbOM36m7rFQh3du9nYGK94FV9hi_aem_vQzh9sCAFMFqM9cJw-KBNA
+hero_image_url: /photos/fruitful/photo_01.jpg
+voice_summary: Fruitful in Gulf Shores is best for casual lunch or dinner.
+planner_summary: Fruitful in Gulf Shores is a food drink listing in Gulf Coast Radar.
+best_for: casual lunch or dinner
+not_best_for: nothing specific flagged
+service_tags: accessibility
+search_keywords: food|point_of_interest|establishment|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 6
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 3
+faq_count: 0
+data_quality_score: 75
+data_gaps: missing_summary|missing_menu|missing_faqs
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   6 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 6] ---
+id: 3164
+entity_slug: fruitful
+entity_name: Fruitful
+city: Gulf Shores
+url: /photos/fruitful/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 6] ---
+id: 3165
+entity_slug: fruitful
+entity_name: Fruitful
+city: Gulf Shores
+url: /photos/fruitful/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 6] ---
+id: 3166
+entity_slug: fruitful
+entity_name: Fruitful
+city: Gulf Shores
+url: /photos/fruitful/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 6] ---
+id: 9338
+entity_slug: fruitful
+entity_name: Fruitful
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/fruitful/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 6] ---
+id: 9339
+entity_slug: fruitful
+entity_name: Fruitful
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/fruitful/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 6] ---
+id: 9341
+entity_slug: fruitful
+entity_name: Fruitful
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/fruitful/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: catalog_items   -   14 row(s)
+####################################################################################################
+
+--- catalog_items [row 1 of 14] ---
+id: 142ac650-a6c7-45c4-ae23-42de86bd5039
+entity_slug: fruitful
+section_id: a8fb1a2d-6967-49c4-8608-c5e31c02189e
+item_name: Strawberry Banana Bliss
+description: Strawberry, Banana, Almond Milk, Honey
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: d9a974fd-9243-4314-bfc2-7fca033f36f1
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 2 of 14] ---
+id: 935c07b0-e368-469a-aeb0-0a77191767d1
+entity_slug: fruitful
+section_id: a8fb1a2d-6967-49c4-8608-c5e31c02189e
+item_name: Chocolate Peanut Butter Power
+description: Peanut Butter, Chocolate Protein Powder, Banana, Almond Milk
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 3df7a970-21b2-444d-b56e-6b12e09d9367
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 3 of 14] ---
+id: 0c481f8d-1609-406b-9db9-350ed155bcda
+entity_slug: fruitful
+section_id: a8fb1a2d-6967-49c4-8608-c5e31c02189e
+item_name: Green Glow
+description: Spinach, Mango, Pineapple, Banana, Almond Milk
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: a4151102-f2ae-4ca8-a1e2-ed60913552d5
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 4 of 14] ---
+id: a81a3db8-cac4-4dbb-b234-14aa189c03dc
+entity_slug: fruitful
+section_id: a8fb1a2d-6967-49c4-8608-c5e31c02189e
+item_name: Mango Pineapple
+description: Mango, Pineapple, Honey, Pineapple Juice
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: f9cb8427-6503-4523-97d5-6cfe9c007a69
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 5 of 14] ---
+id: 189b11ad-d29e-4b37-af5c-65457bfcca26
+entity_slug: fruitful
+section_id: a8fb1a2d-6967-49c4-8608-c5e31c02189e
+item_name: Berry Blast
+description: Blueberries, Strawberries, Raspberry, Blackberry, Banana, Almond Milk, Honey
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 527c1bbc-8d5a-4098-9b8c-1182b072abdf
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 6 of 14] ---
+id: e8acb19f-579f-4751-8eea-3f2a8322095a
+entity_slug: fruitful
+section_id: a8fb1a2d-6967-49c4-8608-c5e31c02189e
+item_name: Pina Colada
+description: Pineapple, Banana, Pineapple Juice, Coconut Milk
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 2d176ca8-5058-47b3-96da-eb5a7faf290c
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 7 of 14] ---
+id: abd91e67-d458-4692-8e72-754f92e20072
+entity_slug: fruitful
+section_id: ed8104cc-dd71-4bc3-ae4f-ea7c2dc081eb
+item_name: FAITHFULNESS
+description: Mango-Pineapple Base, Granola, Strawberry, Raspberry, Kiwi, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+item_category: food
+price: 8
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: d54f56cc-fbc8-4240-8d70-6f36bf0d34e4
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 8 of 14] ---
+id: f241810e-6470-4e02-b2a2-b9edea78847d
+entity_slug: fruitful
+section_id: ed8104cc-dd71-4bc3-ae4f-ea7c2dc081eb
+item_name: KINDNESS
+description: Acai, Granola, Strawberry, Banana, Blueberry, Nutella (Price: 8oz $8 / 16oz $14 / 24oz $18)
+item_category: food
+price: 8
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 2e1e1669-ae57-4a54-86eb-f13fc2410524
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 9 of 14] ---
+id: b3c709c4-e793-4c82-83c3-7c6d284a321b
+entity_slug: fruitful
+section_id: ed8104cc-dd71-4bc3-ae4f-ea7c2dc081eb
+item_name: GENTLENESS
+description: Blue Sorbet, Granola, Strawberry, Blueberry, Pineapple, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+item_category: food
+price: 8
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 629942be-ecb0-4bb4-8cf4-abea25426b45
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 10 of 14] ---
+id: e9db0beb-95a7-4038-a2ef-02f8a17a93f1
+entity_slug: fruitful
+section_id: ed8104cc-dd71-4bc3-ae4f-ea7c2dc081eb
+item_name: GOODNESS
+description: Matcha, Granola, Banana, Coconut, Kiwi, Blueberry, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+item_category: food
+price: 8
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 80588022-37ac-410b-ad25-b7411a212da7
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 11 of 14] ---
+id: e746cc39-dcc4-4567-9e74-ba4389aaf5b3
+entity_slug: fruitful
+section_id: ed8104cc-dd71-4bc3-ae4f-ea7c2dc081eb
+item_name: LOVE
+description: Acai, Granola, Raspberry, Strawberry, Kiwi, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+item_category: food
+price: 8
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 889c3ce4-7e12-48fa-92b9-b1e73a61fb5b
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 12 of 14] ---
+id: f939666a-3beb-41d1-a948-9c62ed1732df
+entity_slug: fruitful
+section_id: ed8104cc-dd71-4bc3-ae4f-ea7c2dc081eb
+item_name: JOY
+description: Coconut, Granola, Pineapple, Strawberry, Blueberry, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+item_category: food
+price: 8
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 8cea6f6c-a241-4552-9def-755135594535
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 13 of 14] ---
+id: 43aa8a8f-b632-4f31-9c56-9b6e0ce2bf67
+entity_slug: fruitful
+section_id: ed8104cc-dd71-4bc3-ae4f-ea7c2dc081eb
+item_name: PATIENCE
+description: Strawberry Base, Granola, Pineapple, Raspberry, Banana, Almond Butter (Price: 8oz $8 / 16oz $14 / 24oz $18)
+item_category: food
+price: 8
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 8dd8fc50-fb6f-46d8-b793-0aa514fa0a54
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 14 of 14] ---
+id: 1a151ed6-5cb1-4837-a6b9-6f2eed84556f
+entity_slug: fruitful
+section_id: ed8104cc-dd71-4bc3-ae4f-ea7c2dc081eb
+item_name: PEACE
+description: Passion Fruit, Granola, Mango, Almond Flakes, Kiwi, Strawberries, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+item_category: food
+price: 8
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: f95b2dc1-5cd6-4f18-a0b2-491aa7bbdc43
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+####################################################################################################
+# TABLE: catalog_section_days   -   14 row(s)
+####################################################################################################
+
+--- catalog_section_days [row 1 of 14] ---
+id: cf57387b-c587-4077-8148-dd39787d54b6
+section_id: a8fb1a2d-6967-49c4-8608-c5e31c02189e
+entity_slug: fruitful
+day_of_week: Friday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 2 of 14] ---
+id: ab5fd877-096a-483e-ba16-b1a8f1588d0f
+section_id: a8fb1a2d-6967-49c4-8608-c5e31c02189e
+entity_slug: fruitful
+day_of_week: Monday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 3 of 14] ---
+id: cc19538c-b954-4e2d-9800-fde4eac7230d
+section_id: a8fb1a2d-6967-49c4-8608-c5e31c02189e
+entity_slug: fruitful
+day_of_week: Saturday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 4 of 14] ---
+id: 4c253d83-3a04-445d-86e9-c736acf629e7
+section_id: a8fb1a2d-6967-49c4-8608-c5e31c02189e
+entity_slug: fruitful
+day_of_week: Sunday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 5 of 14] ---
+id: f57c66c8-f42b-4bdc-9d87-7bd248e9c0a7
+section_id: a8fb1a2d-6967-49c4-8608-c5e31c02189e
+entity_slug: fruitful
+day_of_week: Thursday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 6 of 14] ---
+id: d12c6d16-41fc-4779-aba6-0f019753f5e5
+section_id: a8fb1a2d-6967-49c4-8608-c5e31c02189e
+entity_slug: fruitful
+day_of_week: Tuesday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 7 of 14] ---
+id: 9c67bbb8-e43a-4939-abb7-111dbcf8a2eb
+section_id: a8fb1a2d-6967-49c4-8608-c5e31c02189e
+entity_slug: fruitful
+day_of_week: Wednesday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 8 of 14] ---
+id: 33727ecd-444a-4074-a1a4-5a2f592429fa
+section_id: ed8104cc-dd71-4bc3-ae4f-ea7c2dc081eb
+entity_slug: fruitful
+day_of_week: Friday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 9 of 14] ---
+id: a53484ef-d222-42d5-ade5-2a25098727c2
+section_id: ed8104cc-dd71-4bc3-ae4f-ea7c2dc081eb
+entity_slug: fruitful
+day_of_week: Monday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 10 of 14] ---
+id: 2d9fbcc5-a3bf-4f65-a7b4-65b09a3c81e5
+section_id: ed8104cc-dd71-4bc3-ae4f-ea7c2dc081eb
+entity_slug: fruitful
+day_of_week: Saturday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 11 of 14] ---
+id: e99f8704-ddde-48ac-8edc-7474e9b7ebf8
+section_id: ed8104cc-dd71-4bc3-ae4f-ea7c2dc081eb
+entity_slug: fruitful
+day_of_week: Sunday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 12 of 14] ---
+id: 8c2f64d0-bbf4-4686-87cb-3554c12c9c23
+section_id: ed8104cc-dd71-4bc3-ae4f-ea7c2dc081eb
+entity_slug: fruitful
+day_of_week: Thursday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 13 of 14] ---
+id: d944c147-1117-4958-aa2c-de69ff1f84b6
+section_id: ed8104cc-dd71-4bc3-ae4f-ea7c2dc081eb
+entity_slug: fruitful
+day_of_week: Tuesday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 14 of 14] ---
+id: bcac9c0d-53c1-4598-ac17-b3d70db60f8a
+section_id: ed8104cc-dd71-4bc3-ae4f-ea7c2dc081eb
+entity_slug: fruitful
+day_of_week: Wednesday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+####################################################################################################
+# TABLE: catalog_sections   -   2 row(s)
+####################################################################################################
+
+--- catalog_sections [row 1 of 2] ---
+id: ed8104cc-dd71-4bc3-ae4f-ea7c2dc081eb
+entity_slug: fruitful
+section_name: Acai Bowls
+section_category: food
+sort_order: 0
+is_active: true
+source_table: menu_sections
+source_id: 163f89de-1b08-4347-b4b1-c061e0f34075
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_sections [row 2 of 2] ---
+id: a8fb1a2d-6967-49c4-8608-c5e31c02189e
+entity_slug: fruitful
+section_name: Smoothies
+section_category: food
+sort_order: 1
+is_active: true
+source_table: menu_sections
+source_id: 60669aac-19ae-4a72-9f3d-3e04e9d88411
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 54c540b8-8521-437c-9bb4-bd7f03a8a0e4
+slug: fruitful
+name: Fruitful
+is_active: true
+featured: false
+entity_type: restaurant
+entity_subtype: food
+description: Food in Gulf Shores, AL. Rated 4.9★ from 98 reviews.
+website_url: https://www.fruitful-gulfshores.com/?fbclid=PAQ0xDSwLCw4dleHRuA2FlbQIxMQABpyiSMeHHx-ORJe6xrkCFOonjKFoye6SYtPbOM36m7rFQh3du9nYGK94FV9hi_aem_vQzh9sCAFMFqM9cJw-KBNA
+menu_pin: 7993
+address_line_1: 2200 E 2nd St
+city: Gulf Shores
+state: AL
+zip: 36542
+latitude: 30.2750373
+longitude: -87.68244
+rating: 4.9
+review_count: 98
+hero_image_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/0bdcb417-9cfc-4812-adee-4e76e87bcfb2/image_1.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T03:59:43.314376+00:00
+updated_at: 2026-07-03T16:21:47.586927+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJOcKkLUAFmogRcQHsvY2cn7s
+google_maps_uri: https://maps.google.com/?cid=13519696738980200817&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: food
+formatted_address: 2200 E 2nd St Ste H, Gulf Shores, AL 36542, USA
+plus_code: 862J78G9+22
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+accepts_credit_cards: true
+accepts_debit_cards: true
+accepts_cash_only: false
+google_places_data: {
+  "id": "ChIJOcKkLUAFmogRcQHsvY2cn7s",
+  "types": [
+    "food",
+    "point_of_interest",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3mzY7KNRHpUEQEigB2xQ5mnXkKgRpL_vnTP00u4ud4RFsYz3CyCRCYyZ9L9Qw4HR2KtyOGgAAiJOpcg8BpwdvaYwRDRdz5k0dwehPG0WCdFV6H8HeI4HFgNMeRCzA7iQya_wHQWQzzvjCvwd9D9i1LMTiZl-1YIAslmwtgyiYOmRQmc3WBB2VTR0vr3gkVWfFALkcENu-BsMmDM4wBzNQEqVJFfF_X1cFFw5S9lUawg3lpkEdrfKXPHQ86yb88EP03be-bp72d0VD6yJgDhnWWJb5d8j7sm0mu25Zeqp1sU4K1B5GCMQTo4MAxLDJlu-bZpHPO9OlKRuCktDBCZAhnvG_04ZlhG7U-29nEVpRAUgjXGs0mijXpfqyY_T5t5-ELMWjv0GNBS9Tzu2G-jwzW6UV9qiU1MFJRawL58Pa2k_WyIFzARPvBIeXm0JA",
+      "widthPx": 4624,
+      "heightPx": 3472,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDs7d3lV6_0k9J1bFTQqLyd!2e10!4m2!3m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDs7d3lV6_0k9J1bFTQqLyd&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/109996825633624301120",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUrRm6UHJ1KVs6X-WzHYiQNmuggcUjt1q9drhUcQrfBFh3auVhW=s100-p-k-no-mo",
+          "displayName": "Timothy Thomas"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3n5wC3pW5GEkMsGzAqUOrjCur63ND5vuXnsOgsTjShWhGPFsWOrDDyDmsG8XTXGcMjx3SSV1MDhOflTEA-DLYH99347t9gienUpeBFRzJkTgUnVYOHuwGK7QfKZsr77l67e4FgF8jEFE_7Qo0aTnSuqPTW9TbYb53vmyeHvmr-euX5OLauEvDGMbWAAkS5IpjAORbDqpy47RrriBtnQX86cbD0ZVhLSmF3NkXb2CN6eVg1efhif0cZEt6mJ5xEYuLX7QSFme16eLubc1xAKRcY3jLkQwaUGridfJrx9gNYZ-bD8OAHX2KyfNs3sckIoVWbG4CXbtDvzNErSafU2uqmiZoFyuZ-sfXGtSbx8DMGYev29Zah0minZvuIGcmMe_3H2hkhkPucKZEzI_s599dyxDx_fKQpW0qcsIDtpkvtNRzzFHGylCsjJSxseewHd",
+      "widthPx": 1848,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAetipY89QCSTuNV6r4GvQf!2e10!4m2!3m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAetipY89QCSTuNV6r4GvQf&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/109424699461259249479",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJ-P9-F6MAlXDAoqDFMJnuracIrpjUlF6WFn7zZ9C25xKelug=s100-p-k-no-mo",
+          "displayName": "ALD"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3nkiJVSJUecVFh0pwFxkS3K1VJyZ9jQbDxcTLp9bc41q_Tt958l4skg7maM6ziJVFeyKzJmLKbE_4Lk0hlc7RncJcGrp4yPIsJApa8tnx3qYoYCtW0Hwnw2Z9-RGoqc-SZq6kNaRzMsP1qChDRtg9UvqANIXGRCHAy5X-dj6sQtVE_bZhjn8yNK7BZfoL5ENBktPwKV9hx-vgOcMOfP6tt8KmGoCY_F149J4ZLdE9JD59_WQLS2gj_fDfJlCmkLkk_zGOOt330EfNEhWzTxigtLQlt5BB5XTsMD5pnSGXsiA0W9xHeFFhxNixojfmg_85YZphVswtHw9KVgXw4rOXu7-XMNKS8cL4cFRL6Nh1uHHquwVYtRXDUNSEeGCg_KwHpQbvhw1tDFJNBdauY6Zot0w4h-T1UtZNK93L5GSC5AIXdEkI19KsH-uga6hyUz",
+      "widthPx": 2160,
+      "heightPx": 3840,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhATWo1d-six7tfk-aJ1U96O!2e10!4m2!3m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhATWo1d-six7tfk-aJ1U96O&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104896454701995550969",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX3YpGIwRWQcQq4PQtXd6_7DyDFvwyg4OzxJ7rGsHJf4CaJW-Y7yg=s100-p-k-no-mo",
+          "displayName": "David Nilsen"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3kyHpcNBY7U0j3o_67nPhMr9SGx2fPloMrL0EeCs15Zf_Nvt-xafj8e6qj-5ibIQPvnI-d1OJ5bN4bLVXqv3w-jKdstvIxmsi0XVc9sQS7Vo391WmRoU-oCryIPp54zzCHSUAJky0odQsLIyJqw-t8i3wQ5_Mzxu8vbBR1-JhkaAAcFcOYuVFMXLYe1Z7J7Ssw0e7PSnIB92uSN2nqTpsB7JWxi6Q2ms_UpDhFqepW4658v7OELzdpSwo3SIliG6ZlEF27_ch5P-o9BeC02lMF1hpNcHmittZzat5-1u4WTG1QZWjrnMtyyoBVrMdfwrCrqH6uXS7MFOTaCgdxanKZ_rC8OIQH4t2sI8V8H98ZsbLNACzHwT4APl2QugdDqmXCcw1CCxWQV35dMGtbSkZLC6xSulCoFjO0mFtQW0o8xtLG8xsvHBqQLvUkXV1ej",
+      "widthPx": 2048,
+      "heightPx": 1365,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDdlkvdcMn9QMZM0O9d31nM!2e10!4m2!3m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDdlkvdcMn9QMZM0O9d31nM&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/117489276008597403918",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLlHMHKJH6oiwuXp9Z-nuR3n4KaeoeIwrot0lQyjBwbNu9xwg=s100-p-k-no-mo",
+          "displayName": "Fruitful"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3l_v0Ok-SW5zWZ9SzBijSp7wRs_zfjH51iLbWPVcaLPxzoGyCEKkvX5k_Xk2Wck3iP0TYLT5dOt26iDn-2dz-FKXUQYOf-K73QX3rNXKnLs8-EPVDV0DsP49yzipetuJQgb04dCPh28q6EfpzVnJS1xnNaSKbSn9KvjUZGAyzf9LqJ-tueeNbLJ2LtLKJrmgfbnKlFET5mlkDp0d_HWa1BeBoT8jM1M8qLghy4wf8Q8RxgK2YKL1iNkq47mT_UymS9RQcp-Z-BdUrJT_QQQIssOgcY9CumraBab2qvJ70CFyHamU1MEqG9QiZxTJehI_9sdP34H2En0QLHYinf34LN7KLk_9FGxteIR9LpOSbvRC8PixE9YAN1zcDsWxI0le9frmJ2_E2GlkEjQ3QshUsiYQxAagnlY51dOIEIoVc7Y5pdXd8EO8hjUlYewyONB",
+      "widthPx": 3600,
+      "heightPx": 4800,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCH813ldR6E_sOo0fIuztTF!2e10!4m2!3m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCH813ldR6E_sOo0fIuztTF&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/101057579303467324298",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWznp7On10epZI6Lv3uj25jWjj0xp-KlPTsWTzWztMNAfEdy2g=s100-p-k-no-mo",
+          "displayName": "chloe ford"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3kQGHmFkeRgeb_oyyjoQfxcRKeE-uAARAxRLE3jzQNgl_f7nzeHGMm5GUPX1AMrZYYPo1G6liaxlenEu-OgOk_AJRFx87KuzIvSv29qTbZMD0INJyRryeuIvVNwrTHn1H1j43C5ruYxL5YRcjqQXwWDsbJjr1lW6nF4vMAWJzMnYo1S_WN_c8rE2KwcuFwoGmRgUF8uD-jIvIKd9IQRiPiHZCVmkPCnDS5tpnjg1St-oRFJLmJ86wuszosuyPyqOF3wl6YLILTWXpqgopJfoQNwWXZjOSE1asp4tVoGYNmyEAYc8DU9njGs3gOceNVN4CMWQ3UgZnxOo05fK87D9leGWd5RWTGEsxEc_9iKs_vijAtoRvYhvIgjRJS10GSIKwbx1N0nAgUb2mzo0TgGBtxU1kC6XPuD3J85GsHMcaq-Qqpfu23OMwTJ3Fq6f6MW",
+      "widthPx": 1932,
+      "heightPx": 2576,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAYaQUG7Qo0VHG6AOHHdZ4d!2e10!4m2!3m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAYaQUG7Qo0VHG6AOHHdZ4d&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/102477416065481563817",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjU84FI47NIo_JG3E_k8dcU7jrVDMsJ4_WJqhZ2L2JDDUYZ4sYcC=s100-p-k-no-mo",
+          "displayName": "Bonnie Collins"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3lOpXpaE8HCiKi6eXaT2Vc5HP0LzMgioom3mQG6oAz7fEGF5JmaqZ94ShRlsSVZbMRh8rpOYRGPnh8HTCOoIjhS5oZ4-alNk3UgD0KRXD46gi5KUuMGgvX4Ty5dEFKPT-TmFVzozf5JXlN-uDdXckwhyA8NSjdKiSTevPr5niypd2mJIA_95UqfaeXZRuO-j-hXkdK3R0RGRRNvDuCBINOtREDza8YkjXTesmuQO-VBWM_CQgFnHP9UfCZ-Fw2QSVx_nRr8zxpi6fJvLOntwiOh1ZXL1XlmVVJN56T6iWp5y720xIpXnYmQqqR1RdwiVwgjuH2g_yZ7ECjWPc0gRlBjrvlPuVUBMZAtlU0AFcdZSbTGOsKnQhZGJE9B0lpAj2nEZxcRz_CG7MSSo6oDPVqAYj9DY5ADNYQ6fpNYtorhGjIfBECKMUHMLlx3tQ",
+      "widthPx": 3000,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhB28p_xsEt24Pp9qALq5vqV!2e10!4m2!3m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhB28p_xsEt24Pp9qALq5vqV&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/114376992760285331839",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocI41BmQfq98NlXl6Ib3x_JwkyRSD7WvznkTGdUzY2CavuHnzQ=s100-p-k-no-mo",
+          "displayName": "Randa Pelz"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3l8dnbo-FuTLEZq_R-b_OGscoW5qj5IfG3XXpvC9FyqsMLMhv5DSKCqGrKXVCBCQQ0K2wG65SCRcunV9xScZQWZsaAcJikJPzp3aOQQhfuDQ-mR-oWoOfY_X0NS4syQCWpwDzhvfy6b1OVPM3WQ2HPaAPz1Z6j8IcqBxwhp-dz5bxJA_BrV9Oi6hRi4awZCBegnys5tgGbtI0-YXguPym07DJ_aG_Oo5zKIlq_rjfTuSAxJ81j0V2cxR0nCIUXTYFGkYGigj0L0P2PZBp5FiVW65JZ8cFfswfdCOjHvnDy-F0-WkneIJ5W2Af_kumbQNGj5okt4bJCUtclpAVI_G7ucHEh50w75Q2OgittyEihjdqJc99T1z3JoE1S8F19eRYiMedfzz7mNR0aJIG6Ov_GfnhKW9KX2YlHMtlJ24EtNcqnBs4fWcGfObSXFyHAa",
+      "widthPx": 2048,
+      "heightPx": 1365,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhB3DLt_U2igghDMNez3lkT5!2e10!4m2!3m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhB3DLt_U2igghDMNez3lkT5&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/117489276008597403918",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLlHMHKJH6oiwuXp9Z-nuR3n4KaeoeIwrot0lQyjBwbNu9xwg=s100-p-k-no-mo",
+          "displayName": "Fruitful"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3kgcOaVPE_xoxjhttilFj7ilIV4-v_4FaJ5-Prw7c2mK-2hJAC-n6j3PrzATurv1FCriwPXjNIBxVfnYH9AOp4a6CjSDEhSppRg-mqiU9p2wyfMUSpRaJL1JzMaSgpG6ajFxehSMUq1gm5l9SzFpebdIZS9TBS-LTwC1Zj8MhKnQdqzl-Aa40gG63mVMYmY0QB6DCR0CPR6t8v3t2VzYGcxg0_mzD4I0S_otA4ZESsGDIXp9YJTEEEEpB9rxXT9JTclq2UCAqbsl-Icci83LiNLMM4YdyLWEyVKmXatIgS-4fcTdPi_VPKbeOe-EO-5Jzcp-RgFxHZjdd8DpnU0Er2qD_i1wtBI2ymkfNRnPsy6M5SF8lKRASVYBt7Qb-30BmaEYw3YLFLcvvExCfXj7O7qMuWa3_A-XXRZNpH5koL2-JoZI56gqhkepMi4GQ",
+      "widthPx": 3641,
+      "heightPx": 2427,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBnhSMaCM2yE-7yQ8u2STHg!2e10!4m2!3m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhBnhSMaCM2yE-7yQ8u2STHg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/117489276008597403918",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLlHMHKJH6oiwuXp9Z-nuR3n4KaeoeIwrot0lQyjBwbNu9xwg=s100-p-k-no-mo",
+          "displayName": "Fruitful"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3nAzZC-6HZCbnZMuZ2B6ZsI6n2a0vuvf90FC_EQC8MSvHjWuP2NzZcx1ofYfyTOhmwW0X8nIxRiejm38nuGJQv1eaAyE12RV2Dgblm51MnzCSdxvNNTwnjBGWUsEU3CiHc9xIq6U7d83VCWcDTa_HCKbC2tX6q0iRpUIDshfUG_QM0CNFpACRgAW8Lne1kiEIUj8bsFA5YXKkW_bmeAW1peJ7sBHmhL1neDOdLRFSsHK3Iq2u2jSu7av2RlJliQWAZ9TEXKh2wESlxNYuO7MNpMM0BUc7Xa3fWEDaaARELBpEWWhWtF85xWdZRKs4UoDezVzx6WB8ZgLzIEcTrAth-oT6jLTHr6YMVmLBSen8ZrTgLbg8myDMpm-UPg3xTcTeSGsXy2W38Yawwkx13aIJPNaUMWu15T1fA1KBWve5kSsf-3fHBrX_daIMf8lKfp",
+      "widthPx": 3600,
+      "heightPx": 4800,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBTxsDcJl1QaOFmSB_d9T44!2e10!4m2!3m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhBTxsDcJl1QaOFmSB_d9T44&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/112388688232841309865",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjV_moHeej9l0kQuOBJ7Zf7vb85f2N_WEJA0hvPM7961HdSf8o2-Vg=s100-p-k-no-mo",
+          "displayName": "Madalynn Owen"
+        }
+      ]
+    }
+  ],
+  "rating": 4.9,
+  "reviews": [
+    {
+      "name": "places/ChIJOcKkLUAFmogRcQHsvY2cn7s/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xSNFoyTmZTRmxrZFhVd2FGQXRVbVpYY2tKZmFVRRAB",
+      "text": {
+        "text": "Fruitful absolutely lives up to its name. I stopped in hoping for something fresh and light, and ended up finding one of the best açaí bowls I’ve had anywhere. The fruit tasted incredibly fresh, the granola had the perfect crunch, and the açaí itself was smooth without being overly sweet — you can tell they care about quality ingredients.\nWhat really stood out was the balance. Nothing felt thrown together just to look good for Instagram; it actually tasted as good as it looked. Portions were generous, and there were plenty of topping options without it becoming overwhelming.\nThe atmosphere was bright and welcoming, and the staff were friendly without being over the top. Service moved quickly, but I never felt rushed.\nIf you’re looking for something refreshing that doesn’t leave you feeling weighed down, Fruitful is an easy recommendation. Whether you’re grabbing a quick breakfast or a mid-day pick-me-up, it’s the kind of place you’ll find yourself wanting to come back to.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-02-17T01:03:13.776406835Z",
+      "originalText": {
+        "text": "Fruitful absolutely lives up to its name. I stopped in hoping for something fresh and light, and ended up finding one of the best açaí bowls I’ve had anywhere. The fruit tasted incredibly fresh, the granola had the perfect crunch, and the açaí itself was smooth without being overly sweet — you can tell they care about quality ingredients.\nWhat really stood out was the balance. Nothing felt thrown together just to look good for Instagram; it actually tasted as good as it looked. Portions were generous, and there were plenty of topping options without it becoming overwhelming.\nThe atmosphere was bright and welcoming, and the staff were friendly without being over the top. Service moved quickly, but I never felt rushed.\nIf you’re looking for something refreshing that doesn’t leave you feeling weighed down, Fruitful is an easy recommendation. Whether you’re grabbing a quick breakfast or a mid-day pick-me-up, it’s the kind of place you’ll find yourself wanting to come back to.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xSNFoyTmZTRmxrZFhVd2FGQXRVbVpYY2tKZmFVRRAB!2m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2xSNFoyTmZTRmxrZFhVd2FGQXRVbVpYY2tKZmFVRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/104896454701995550969/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX3YpGIwRWQcQq4PQtXd6_7DyDFvwyg4OzxJ7rGsHJf4CaJW-Y7yg=s128-c0x00000000-cc-rp-mo-ba6",
+        "displayName": "David Nilsen"
+      },
+      "relativePublishTimeDescription": "3 months ago"
+    },
+    {
+      "name": "places/ChIJOcKkLUAFmogRcQHsvY2cn7s/reviews/Ci9DQUlRQUNvZENodHljRjlvT21WbmNYQXhUbHByYURKVGRXUlZjbXBHTUhwRUxXYxAB",
+      "text": {
+        "text": "Very good bowls, but there was no menu or prices posted online. The menu in the store didn't have pricing either which felt....dishonest.\n\nAlso, be prepared to be blasted with religious music and decor which was off-putting.\n\nLocal kids just seem to come in and make themselves bowls for free too, which made me realize why the rest of us have to pay so much.",
+        "languageCode": "en"
+      },
+      "rating": 3,
+      "publishTime": "2026-03-31T17:28:52.523996571Z",
+      "originalText": {
+        "text": "Very good bowls, but there was no menu or prices posted online. The menu in the store didn't have pricing either which felt....dishonest.\n\nAlso, be prepared to be blasted with religious music and decor which was off-putting.\n\nLocal kids just seem to come in and make themselves bowls for free too, which made me realize why the rest of us have to pay so much.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21WbmNYQXhUbHByYURKVGRXUlZjbXBHTUhwRUxXYxAB!2m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT21WbmNYQXhUbHByYURKVGRXUlZjbXBHTUhwRUxXYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/109996825633624301120/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUrRm6UHJ1KVs6X-WzHYiQNmuggcUjt1q9drhUcQrfBFh3auVhW=s128-c0x00000000-cc-rp-mo-ba4",
+        "displayName": "Timothy Thomas"
+      },
+      "relativePublishTimeDescription": "2 months ago"
+    },
+    {
+      "name": "places/ChIJOcKkLUAFmogRcQHsvY2cn7s/reviews/Ci9DQUlRQUNvZENodHljRjlvT25odVRWbEJXVVIzYm0xalFtSjJRbXRQYlZGU2QyYxAB",
+      "text": {
+        "text": "Very upbeat and welcoming atmosphere.   The owner is effervescent with positivity.   The bowls are delicious and healthy too!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2026-03-02T16:56:09.925285905Z",
+      "originalText": {
+        "text": "Very upbeat and welcoming atmosphere.   The owner is effervescent with positivity.   The bowls are delicious and healthy too!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25odVRWbEJXVVIzYm0xalFtSjJRbXRQYlZGU2QyYxAB!2m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT25odVRWbEJXVVIzYm0xalFtSjJRbXRQYlZGU2QyYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/104915390786809422814/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLrHtdZ5p_5MR5tOPVUOTGpjADVT3YdeoNx4Yg1h_W-opOxwA=s128-c0x00000000-cc-rp-mo-ba2",
+        "displayName": "Joel Florian"
+      },
+      "relativePublishTimeDescription": "3 months ago"
+    },
+    {
+      "name": "places/ChIJOcKkLUAFmogRcQHsvY2cn7s/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xSR2R6ZHJiM1pFWjE4dGVERldWbDlaUlV3d1RrRRAB",
+      "text": {
+        "text": "Cutest Gulf Shores spot! We stopped by during our trip to Fort Morgan, and it's just a quick drive from our house. The decor and vibe is super sweet and encouraging. There is local art for sale and some other cute gift items. The coconut bowl with granola, fruit and Nutella was exactly what my daughter was craving. Definitely worth stopping in for some breakfast, easy lunch, or treat!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-07-21T13:29:13.855890988Z",
+      "originalText": {
+        "text": "Cutest Gulf Shores spot! We stopped by during our trip to Fort Morgan, and it's just a quick drive from our house. The decor and vibe is super sweet and encouraging. There is local art for sale and some other cute gift items. The coconut bowl with granola, fruit and Nutella was exactly what my daughter was craving. Definitely worth stopping in for some breakfast, easy lunch, or treat!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xSR2R6ZHJiM1pFWjE4dGVERldWbDlaUlV3d1RrRRAB!2m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2xSR2R6ZHJiM1pFWjE4dGVERldWbDlaUlV3d1RrRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/117146089106018996043/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocI0e9PBud8-Sv2Y8MB_nMq3LfXOioahjCewI5LV8DJqJlYfVmM=s128-c0x00000000-cc-rp-mo-ba2",
+        "displayName": "Danielle Farmer"
+      },
+      "relativePublishTimeDescription": "10 months ago"
+    },
+    {
+      "name": "places/ChIJOcKkLUAFmogRcQHsvY2cn7s/reviews/Ci9DQUlRQUNvZENodHljRjlvT2poUmFXczVVSE5vZGt4TVJIWkxWV2RWYkVWdE1sRRAB",
+      "text": {
+        "text": "The bowls are super reasonably priced and the staff was friendly. It was super cute space and the bowls were amazing, there were so many options, and I now crave one everyday. I got the gentleness and substituted the honey for nutella ( I was in the mood for chocolate). It was AMAZING!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-08-05T14:07:37.718161949Z",
+      "originalText": {
+        "text": "The bowls are super reasonably priced and the staff was friendly. It was super cute space and the bowls were amazing, there were so many options, and I now crave one everyday. I got the gentleness and substituted the honey for nutella ( I was in the mood for chocolate). It was AMAZING!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2poUmFXczVVSE5vZGt4TVJIWkxWV2RWYkVWdE1sRRAB!2m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2poUmFXczVVSE5vZGt4TVJIWkxWV2RWYkVWdE1sRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/103164274267384487256/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXv-HDWrbPwBazN81K-cnca1L225Q_PpqbwPTJrkd4cHOGBHYxX=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Kayliegh O'Toole"
+      },
+      "relativePublishTimeDescription": "10 months ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.2750373,
+    "longitude": -87.68244
+  },
+  "plusCode": {
+    "globalCode": "862J78G9+22",
+    "compoundCode": "78G9+22 Gulf Shores, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.2736278197085,
+      "longitude": -87.68381883029151
+    },
+    "high": {
+      "latitude": 30.2763257802915,
+      "longitude": -87.68112086970851
+    }
+  },
+  "websiteUri": "https://www.fruitful-gulfshores.com/?fbclid=PAQ0xDSwLCw4dleHRuA2FlbQIxMQABpyiSMeHHx-ORJe6xrkCFOonjKFoye6SYtPbOM36m7rFQh3du9nYGK94FV9hi_aem_vQzh9sCAFMFqM9cJw-KBNA",
+  "displayName": {
+    "text": "Fruitful",
+    "languageCode": "en"
+  },
+  "primaryType": "food",
+  "googleMapsUri": "https://maps.google.com/?cid=13519696738980200817&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "paymentOptions": {
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=13519696738980200817&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05402da4c239:0xbb9f9c8dbdec0171!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05402da4c239:0xbb9f9c8dbdec0171!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05402da4c239:0xbb9f9c8dbdec0171!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "userRatingCount": 98,
+  "adrFormatAddress": "<span class=\"street-address\">2200 E 2nd St Ste H</span>, <span class=\"locality\">Gulf Shores</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36542</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "2200 E 2nd St Ste H, Gulf Shores, AL 36542, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "subpremise"
+      ],
+      "longText": "Suite H",
+      "shortText": "Ste H",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "2200",
+      "shortText": "2200",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "East 2nd Street",
+      "shortText": "E 2nd St",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Gulf Shores",
+      "shortText": "Gulf Shores",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36542",
+      "shortText": "36542",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJTRD9S98EmogRgdzsGZysN4M",
+        "placeId": "ChIJTRD9S98EmogRgdzsGZysN4M",
+        "containment": "NEAR",
+        "displayName": {
+          "text": "Our Lady of the Gulf Catholic Church",
+          "languageCode": "en"
+        }
+      }
+    ],
+    "landmarks": [
+      {
+        "name": "places/ChIJSVWBtdgEmogReyyrFU5KWLY",
+        "types": [
+          "church",
+          "establishment",
+          "place_of_worship",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJSVWBtdgEmogReyyrFU5KWLY",
+        "displayName": {
+          "text": "Our Lady of the Gulf Catholic Church",
+          "languageCode": "en"
+        },
+        "straightLineDistanceMeters": 90.80182
+      },
+      {
+        "name": "places/ChIJkyJ6rSAFmogRD5lVndPjdgM",
+        "types": [
+          "establishment",
+          "food",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJkyJ6rSAFmogRD5lVndPjdgM",
+        "displayName": {
+          "text": "The ugly Diner",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "BESIDE",
+        "straightLineDistanceMeters": 3.56084
+      },
+      {
+        "name": "places/ChIJu5pMMt8EmogRZhZkp4iCBAc",
+        "types": [
+          "establishment",
+          "food",
+          "meal_delivery",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJu5pMMt8EmogRZhZkp4iCBAc",
+        "displayName": {
+          "text": "China Dragon",
+          "languageCode": "en"
+        },
+        "straightLineDistanceMeters": 33.70508
+      },
+      {
+        "name": "places/ChIJwU95Md8EmogRBXy_0zFJD6Q",
+        "types": [
+          "cafe",
+          "establishment",
+          "food",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJwU95Md8EmogRBXy_0zFJD6Q",
+        "displayName": {
+          "text": "Foam Coffee",
+          "languageCode": "en"
+        },
+        "straightLineDistanceMeters": 53.00504
+      },
+      {
+        "name": "places/ChIJhfGBztgEmogR4ACNk761oqw",
+        "types": [
+          "establishment",
+          "food",
+          "meal_takeaway",
+          "point_of_interest",
+          "restaurant",
+          "store"
+        ],
+        "placeId": "ChIJhfGBztgEmogR4ACNk761oqw",
+        "displayName": {
+          "text": "Amelia's Deli",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "BESIDE",
+        "straightLineDistanceMeters": 20.541327
+      }
+    ]
+  },
+  "currentOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 18,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T12:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 7:00 AM – 6:00 PM",
+      "Tuesday: 7:00 AM – 6:00 PM",
+      "Wednesday: 7:00 AM – 6:00 PM",
+      "Thursday: 7:00 AM – 6:00 PM",
+      "Friday: 7:00 AM – 6:00 PM",
+      "Saturday: 7:00 AM – 6:00 PM",
+      "Sunday: Closed"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Food Producer",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "regularOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 1,
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 18,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 7,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 18,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T12:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 7:00 AM – 6:00 PM",
+      "Tuesday: 7:00 AM – 6:00 PM",
+      "Wednesday: 7:00 AM – 6:00 PM",
+      "Thursday: 7:00 AM – 6:00 PM",
+      "Friday: 7:00 AM – 6:00 PM",
+      "Saturday: 7:00 AM – 6:00 PM",
+      "Sunday: Closed"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true
+  },
+  "shortFormattedAddress": "2200 E 2nd St Ste H, Gulf Shores",
+  "primaryTypeDisplayName": {
+    "text": "Food",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false
+}
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 2200 E 2nd St Ste H, Gulf Shores
+search_vector: 'food':2 'fruit':1A 'gulf':3 'shore':4
+primary_type_display: Food
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=13519696738980200817&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05402da4c239:0xbb9f9c8dbdec0171!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05402da4c239:0xbb9f9c8dbdec0171!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05402da4c239:0xbb9f9c8dbdec0171!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJTRD9S98EmogRgdzsGZysN4M",
+      "placeId": "ChIJTRD9S98EmogRgdzsGZysN4M",
+      "containment": "NEAR",
+      "displayName": {
+        "text": "Our Lady of the Gulf Catholic Church",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJSVWBtdgEmogReyyrFU5KWLY",
+      "types": [
+        "church",
+        "establishment",
+        "place_of_worship",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJSVWBtdgEmogReyyrFU5KWLY",
+      "displayName": {
+        "text": "Our Lady of the Gulf Catholic Church",
+        "languageCode": "en"
+      },
+      "straightLineDistanceMeters": 90.80182
+    },
+    {
+      "name": "places/ChIJkyJ6rSAFmogRD5lVndPjdgM",
+      "types": [
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJkyJ6rSAFmogRD5lVndPjdgM",
+      "displayName": {
+        "text": "The ugly Diner",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "BESIDE",
+      "straightLineDistanceMeters": 3.56084
+    },
+    {
+      "name": "places/ChIJu5pMMt8EmogRZhZkp4iCBAc",
+      "types": [
+        "establishment",
+        "food",
+        "meal_delivery",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJu5pMMt8EmogRZhZkp4iCBAc",
+      "displayName": {
+        "text": "China Dragon",
+        "languageCode": "en"
+      },
+      "straightLineDistanceMeters": 33.70508
+    },
+    {
+      "name": "places/ChIJwU95Md8EmogRBXy_0zFJD6Q",
+      "types": [
+        "cafe",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJwU95Md8EmogRBXy_0zFJD6Q",
+      "displayName": {
+        "text": "Foam Coffee",
+        "languageCode": "en"
+      },
+      "straightLineDistanceMeters": 53.00504
+    },
+    {
+      "name": "places/ChIJhfGBztgEmogR4ACNk761oqw",
+      "types": [
+        "establishment",
+        "food",
+        "meal_takeaway",
+        "point_of_interest",
+        "restaurant",
+        "store"
+      ],
+      "placeId": "ChIJhfGBztgEmogR4ACNk761oqw",
+      "displayName": {
+        "text": "Amelia's Deli",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "BESIDE",
+      "straightLineDistanceMeters": 20.541327
+    }
+  ]
+}
+source_url: https://www.gulfshores.com/things-to-do/shopping/
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url | hero_image_url v2-fix 2026-07-21: repointed to a photo confirmed to actually exist
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: menu
+industry_code: food_beverage
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   1 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 1] ---
+id: 18cac118-3485-453c-8c55-0d9911b2db06
+entity_slug: fruitful
+place_id: ChIJTRD9S98EmogRgdzsGZysN4M
+containment: NEAR
+display_name: Our Lady of the Gulf Catholic Church
+
+####################################################################################################
+# TABLE: entity_attributes   -   5 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 5] ---
+id: f59b7bc5-2b45-41ad-8790-9d0aeea12706
+entity_slug: fruitful
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 2 of 5] ---
+id: 5866165b-3fdf-44e5-9cc4-ddf8aed9b68d
+entity_slug: fruitful
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 3 of 5] ---
+id: 211e21b8-5f22-490c-b14f-c38b289acfb2
+entity_slug: fruitful
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 4 of 5] ---
+id: a48c96a9-b7c5-4ff4-a503-59c6ae80f78b
+entity_slug: fruitful
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 5 of 5] ---
+id: 7bdaa220-7740-447b-ab7a-1f36b70ea760
+entity_slug: fruitful
+category: payment
+key: pay_acceptsCreditCards
+label: Accepts Credit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: fruitful
+name: Fruitful
+industry_code: food_beverage
+is_parent: false
+score_of_7: 6
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 3c846b2f-dfd4-4674-a20a-4b31914000b5
+entity_slug: fruitful
+place_uri: https://maps.google.com/?cid=13519696738980200817&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05402da4c239:0xbb9f9c8dbdec0171!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a05402da4c239:0xbb9f9c8dbdec0171!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a05402da4c239:0xbb9f9c8dbdec0171!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 1532
+entity_slug: fruitful
+google_review_name: places/ChIJOcKkLUAFmogRcQHsvY2cn7s/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xSNFoyTmZTRmxrZFhVd2FGQXRVbVpYY2tKZmFVRRAB
+rating: 5
+review_text: Fruitful absolutely lives up to its name. I stopped in hoping for something fresh and light, and ended up finding one of the best açaí bowls I’ve had anywhere. The fruit tasted incredibly fresh, the granola had the perfect crunch, and the açaí itself was smooth without being overly sweet — you can tell they care about quality ingredients.
+What really stood out was the balance. Nothing felt thrown together just to look good for Instagram; it actually tasted as good as it looked. Portions were generous, and there were plenty of topping options without it becoming overwhelming.
+The atmosphere was bright and welcoming, and the staff were friendly without being over the top. Service moved quickly, but I never felt rushed.
+If you’re looking for something refreshing that doesn’t leave you feeling weighed down, Fruitful is an easy recommendation. Whether you’re grabbing a quick breakfast or a mid-day pick-me-up, it’s the kind of place you’ll find yourself wanting to come back to.
+language_code: en
+author_name: David Nilsen
+author_profile_url: https://www.google.com/maps/contrib/104896454701995550969/reviews
+publish_time: 2026-02-17T01:03:13.776407+00:00
+relative_time: 3 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xSNFoyTmZTRmxrZFhVd2FGQXRVbVpYY2tKZmFVRRAB!2m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 1533
+entity_slug: fruitful
+google_review_name: places/ChIJOcKkLUAFmogRcQHsvY2cn7s/reviews/Ci9DQUlRQUNvZENodHljRjlvT21WbmNYQXhUbHByYURKVGRXUlZjbXBHTUhwRUxXYxAB
+rating: 3
+review_text: Very good bowls, but there was no menu or prices posted online. The menu in the store didn't have pricing either which felt....dishonest.
+
+Also, be prepared to be blasted with religious music and decor which was off-putting.
+
+Local kids just seem to come in and make themselves bowls for free too, which made me realize why the rest of us have to pay so much.
+language_code: en
+author_name: Timothy Thomas
+author_profile_url: https://www.google.com/maps/contrib/109996825633624301120/reviews
+publish_time: 2026-03-31T17:28:52.523997+00:00
+relative_time: 2 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21WbmNYQXhUbHByYURKVGRXUlZjbXBHTUhwRUxXYxAB!2m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 1534
+entity_slug: fruitful
+google_review_name: places/ChIJOcKkLUAFmogRcQHsvY2cn7s/reviews/Ci9DQUlRQUNvZENodHljRjlvT25odVRWbEJXVVIzYm0xalFtSjJRbXRQYlZGU2QyYxAB
+rating: 5
+review_text: Very upbeat and welcoming atmosphere.   The owner is effervescent with positivity.   The bowls are delicious and healthy too!
+language_code: en
+author_name: Joel Florian
+author_profile_url: https://www.google.com/maps/contrib/104915390786809422814/reviews
+publish_time: 2026-03-02T16:56:09.925286+00:00
+relative_time: 3 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT25odVRWbEJXVVIzYm0xalFtSjJRbXRQYlZGU2QyYxAB!2m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 1535
+entity_slug: fruitful
+google_review_name: places/ChIJOcKkLUAFmogRcQHsvY2cn7s/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xSR2R6ZHJiM1pFWjE4dGVERldWbDlaUlV3d1RrRRAB
+rating: 5
+review_text: Cutest Gulf Shores spot! We stopped by during our trip to Fort Morgan, and it's just a quick drive from our house. The decor and vibe is super sweet and encouraging. There is local art for sale and some other cute gift items. The coconut bowl with granola, fruit and Nutella was exactly what my daughter was craving. Definitely worth stopping in for some breakfast, easy lunch, or treat!
+language_code: en
+author_name: Danielle Farmer
+author_profile_url: https://www.google.com/maps/contrib/117146089106018996043/reviews
+publish_time: 2025-07-21T13:29:13.855891+00:00
+relative_time: 10 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xSR2R6ZHJiM1pFWjE4dGVERldWbDlaUlV3d1RrRRAB!2m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 1536
+entity_slug: fruitful
+google_review_name: places/ChIJOcKkLUAFmogRcQHsvY2cn7s/reviews/Ci9DQUlRQUNvZENodHljRjlvT2poUmFXczVVSE5vZGt4TVJIWkxWV2RWYkVWdE1sRRAB
+rating: 5
+review_text: The bowls are super reasonably priced and the staff was friendly. It was super cute space and the bowls were amazing, there were so many options, and I now crave one everyday. I got the gentleness and substituted the honey for nutella ( I was in the mood for chocolate). It was AMAZING!
+language_code: en
+author_name: Kayliegh O'Toole
+author_profile_url: https://www.google.com/maps/contrib/103164274267384487256/reviews
+publish_time: 2025-08-05T14:07:37.718162+00:00
+relative_time: 10 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2poUmFXczVVSE5vZGt4TVJIWkxWV2RWYkVWdE1sRRAB!2m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   6 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 6] ---
+id: e396816a-44ab-4301-954a-9b1ee9a1e577
+entity_slug: fruitful
+day_of_week: 1
+opens_at: 07:00:00
+closes_at: 18:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 6] ---
+id: b8b8a6be-f5d8-4b09-a64c-3077ffedb99d
+entity_slug: fruitful
+day_of_week: 2
+opens_at: 07:00:00
+closes_at: 18:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 6] ---
+id: 5746421a-8b05-459b-932f-4e75c7c4d0ba
+entity_slug: fruitful
+day_of_week: 3
+opens_at: 07:00:00
+closes_at: 18:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 6] ---
+id: 511210bf-7f2f-4983-8f2f-68796a3b038e
+entity_slug: fruitful
+day_of_week: 4
+opens_at: 07:00:00
+closes_at: 18:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 6] ---
+id: 0c59bd67-6227-4e43-94f8-5cf48b3f4e3c
+entity_slug: fruitful
+day_of_week: 5
+opens_at: 07:00:00
+closes_at: 18:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 6] ---
+id: dba3e814-cecb-4c95-bc2d-7b47c870db87
+entity_slug: fruitful
+day_of_week: 6
+opens_at: 07:00:00
+closes_at: 18:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   14 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Smoothies
+item_id: d9a974fd-9243-4314-bfc2-7fca033f36f1
+name: Strawberry Banana Bliss
+description: Strawberry, Banana, Almond Milk, Honey
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 2 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Smoothies
+item_id: 3df7a970-21b2-444d-b56e-6b12e09d9367
+name: Chocolate Peanut Butter Power
+description: Peanut Butter, Chocolate Protein Powder, Banana, Almond Milk
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 3 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Smoothies
+item_id: a4151102-f2ae-4ca8-a1e2-ed60913552d5
+name: Green Glow
+description: Spinach, Mango, Pineapple, Banana, Almond Milk
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 4 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Smoothies
+item_id: f9cb8427-6503-4523-97d5-6cfe9c007a69
+name: Mango Pineapple
+description: Mango, Pineapple, Honey, Pineapple Juice
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 5 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Smoothies
+item_id: 527c1bbc-8d5a-4098-9b8c-1182b072abdf
+name: Berry Blast
+description: Blueberries, Strawberries, Raspberry, Blackberry, Banana, Almond Milk, Honey
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 6 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Smoothies
+item_id: 2d176ca8-5058-47b3-96da-eb5a7faf290c
+name: Pina Colada
+description: Pineapple, Banana, Pineapple Juice, Coconut Milk
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 7 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Acai Bowls
+item_id: d54f56cc-fbc8-4240-8d70-6f36bf0d34e4
+name: FAITHFULNESS
+description: Mango-Pineapple Base, Granola, Strawberry, Raspberry, Kiwi, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price_from: 8
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 8 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Acai Bowls
+item_id: 2e1e1669-ae57-4a54-86eb-f13fc2410524
+name: KINDNESS
+description: Acai, Granola, Strawberry, Banana, Blueberry, Nutella (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price_from: 8
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 9 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Acai Bowls
+item_id: 629942be-ecb0-4bb4-8cf4-abea25426b45
+name: GENTLENESS
+description: Blue Sorbet, Granola, Strawberry, Blueberry, Pineapple, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price_from: 8
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 10 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Acai Bowls
+item_id: 80588022-37ac-410b-ad25-b7411a212da7
+name: GOODNESS
+description: Matcha, Granola, Banana, Coconut, Kiwi, Blueberry, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price_from: 8
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 11 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Acai Bowls
+item_id: 889c3ce4-7e12-48fa-92b9-b1e73a61fb5b
+name: LOVE
+description: Acai, Granola, Raspberry, Strawberry, Kiwi, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price_from: 8
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 12 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Acai Bowls
+item_id: 8cea6f6c-a241-4552-9def-755135594535
+name: JOY
+description: Coconut, Granola, Pineapple, Strawberry, Blueberry, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price_from: 8
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 13 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Acai Bowls
+item_id: 8dd8fc50-fb6f-46d8-b793-0aa514fa0a54
+name: PATIENCE
+description: Strawberry Base, Granola, Pineapple, Raspberry, Banana, Almond Butter (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price_from: 8
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 14 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Acai Bowls
+item_id: f95b2dc1-5cd6-4f18-a0b2-491aa7bbdc43
+name: PEACE
+description: Passion Fruit, Granola, Mango, Almond Flakes, Kiwi, Strawberries, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price_from: 8
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   14 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Smoothies
+item_id: d9a974fd-9243-4314-bfc2-7fca033f36f1
+name: Strawberry Banana Bliss
+description: Strawberry, Banana, Almond Milk, Honey
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 2 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Smoothies
+item_id: 3df7a970-21b2-444d-b56e-6b12e09d9367
+name: Chocolate Peanut Butter Power
+description: Peanut Butter, Chocolate Protein Powder, Banana, Almond Milk
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 3 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Smoothies
+item_id: a4151102-f2ae-4ca8-a1e2-ed60913552d5
+name: Green Glow
+description: Spinach, Mango, Pineapple, Banana, Almond Milk
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 4 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Smoothies
+item_id: f9cb8427-6503-4523-97d5-6cfe9c007a69
+name: Mango Pineapple
+description: Mango, Pineapple, Honey, Pineapple Juice
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 5 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Smoothies
+item_id: 527c1bbc-8d5a-4098-9b8c-1182b072abdf
+name: Berry Blast
+description: Blueberries, Strawberries, Raspberry, Blackberry, Banana, Almond Milk, Honey
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 6 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Smoothies
+item_id: 2d176ca8-5058-47b3-96da-eb5a7faf290c
+name: Pina Colada
+description: Pineapple, Banana, Pineapple Juice, Coconut Milk
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 7 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Acai Bowls
+item_id: d54f56cc-fbc8-4240-8d70-6f36bf0d34e4
+name: FAITHFULNESS
+description: Mango-Pineapple Base, Granola, Strawberry, Raspberry, Kiwi, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price_from: 8
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 8 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Acai Bowls
+item_id: 2e1e1669-ae57-4a54-86eb-f13fc2410524
+name: KINDNESS
+description: Acai, Granola, Strawberry, Banana, Blueberry, Nutella (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price_from: 8
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 9 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Acai Bowls
+item_id: 629942be-ecb0-4bb4-8cf4-abea25426b45
+name: GENTLENESS
+description: Blue Sorbet, Granola, Strawberry, Blueberry, Pineapple, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price_from: 8
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 10 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Acai Bowls
+item_id: 80588022-37ac-410b-ad25-b7411a212da7
+name: GOODNESS
+description: Matcha, Granola, Banana, Coconut, Kiwi, Blueberry, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price_from: 8
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 11 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Acai Bowls
+item_id: 889c3ce4-7e12-48fa-92b9-b1e73a61fb5b
+name: LOVE
+description: Acai, Granola, Raspberry, Strawberry, Kiwi, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price_from: 8
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 12 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Acai Bowls
+item_id: 8cea6f6c-a241-4552-9def-755135594535
+name: JOY
+description: Coconut, Granola, Pineapple, Strawberry, Blueberry, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price_from: 8
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 13 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Acai Bowls
+item_id: 8dd8fc50-fb6f-46d8-b793-0aa514fa0a54
+name: PATIENCE
+description: Strawberry Base, Granola, Pineapple, Raspberry, Banana, Almond Butter (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price_from: 8
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 14 of 14] ---
+entity_slug: fruitful
+source_table: menu_items
+item_type: food
+section_name: Acai Bowls
+item_id: f95b2dc1-5cd6-4f18-a0b2-491aa7bbdc43
+name: PEACE
+description: Passion Fruit, Granola, Mango, Almond Flakes, Kiwi, Strawberries, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price_from: 8
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   16 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 16] ---
+id: c44ef405-6326-4535-bc6f-997d2f58ca52
+entity_slug: fruitful
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 2 of 16] ---
+id: 005ec0c8-1829-428c-9889-30ccc006a275
+entity_slug: fruitful
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 3 of 16] ---
+id: 8030cb33-d561-48c6-91cc-7b60b9704cf3
+entity_slug: fruitful
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 4 of 16] ---
+id: 8a8425e1-6838-49e4-831e-de8cd96cdcaa
+entity_slug: fruitful
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 5 of 16] ---
+id: e3d5e87b-37e0-4970-9e2b-c959f1f40077
+entity_slug: fruitful
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 6 of 16] ---
+id: 20bf5d86-6a19-4bf8-9959-5ba2ef1cd66a
+entity_slug: fruitful
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 7 of 16] ---
+id: 82f2b54b-5bf5-463d-b409-8e80df8d1e61
+entity_slug: fruitful
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 8 of 16] ---
+id: 583b41bf-7de3-4bb1-8086-47fe75a4fa09
+entity_slug: fruitful
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 9 of 16] ---
+id: a90d031d-5832-477b-9e9e-fff363f46f5f
+entity_slug: fruitful
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 16] ---
+id: b8d554c7-c0cd-4d13-a385-6187353e4d06
+entity_slug: fruitful
+module_key: menu
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 16] ---
+id: a2a198ad-4ea4-45dc-a2c2-60a0dc280374
+entity_slug: fruitful
+module_key: drinks
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 16] ---
+id: 31d76189-f7a3-4909-85bc-78bd9cbba6ac
+entity_slug: fruitful
+module_key: happy_hour
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 16] ---
+id: 86fa3388-e630-44ea-9dd2-e222d2db43d3
+entity_slug: fruitful
+module_key: specials
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 14 of 16] ---
+id: d4523528-2374-423f-82c5-daa73c69c4c7
+entity_slug: fruitful
+module_key: events
+enabled: true
+sort_order: 14
+
+--- entity_modules [row 15 of 16] ---
+id: ab180a52-ac31-48f8-8bb1-29709f942dd3
+entity_slug: fruitful
+module_key: loyalty
+enabled: true
+sort_order: 15
+
+--- entity_modules [row 16 of 16] ---
+id: 620f88f9-73d3-49ee-b1de-bc383890a447
+entity_slug: fruitful
+module_key: booking
+enabled: true
+sort_order: 16
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   24 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 24] ---
+id: 202a4e28-e349-4bca-b2a9-d91d75a91d8e
+landmark_id: 9f7f9b5c-580e-4130-a14b-28e6435a1d7c
+entity_slug: fruitful
+landmark_type: church
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 24] ---
+id: 2902412b-8fad-437b-a517-b158bb827e8d
+landmark_id: 9f7f9b5c-580e-4130-a14b-28e6435a1d7c
+entity_slug: fruitful
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 24] ---
+id: 7d158ed3-b774-4c72-b027-c47c758fe49d
+landmark_id: 9f7f9b5c-580e-4130-a14b-28e6435a1d7c
+entity_slug: fruitful
+landmark_type: place_of_worship
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 24] ---
+id: 53664f4b-9966-4e92-8ccc-fe8cfce6b8c8
+landmark_id: 9f7f9b5c-580e-4130-a14b-28e6435a1d7c
+entity_slug: fruitful
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 24] ---
+id: 6025112e-44da-40c2-bfe5-042568f94392
+landmark_id: bea6786a-7941-4d07-abb8-e91580b24599
+entity_slug: fruitful
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 24] ---
+id: 3231025a-4592-4338-8f76-710b3b8e5cfd
+landmark_id: bea6786a-7941-4d07-abb8-e91580b24599
+entity_slug: fruitful
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 24] ---
+id: 8a890242-2026-443a-8f52-cf7df40db2a8
+landmark_id: bea6786a-7941-4d07-abb8-e91580b24599
+entity_slug: fruitful
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 24] ---
+id: 52d4b735-340f-45da-90de-f8db1a4e142c
+landmark_id: bea6786a-7941-4d07-abb8-e91580b24599
+entity_slug: fruitful
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 24] ---
+id: 18159505-cbc0-47dc-8308-9837ec16d21b
+landmark_id: 4d3b57f1-831d-4b93-ac4f-c6dadc3cbda7
+entity_slug: fruitful
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 24] ---
+id: 923bb9b3-a8c8-4ad8-bc4b-743eaff55d05
+landmark_id: 4d3b57f1-831d-4b93-ac4f-c6dadc3cbda7
+entity_slug: fruitful
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 24] ---
+id: 67e2e71f-5d81-4f04-a3b3-ed98e94af4b5
+landmark_id: 4d3b57f1-831d-4b93-ac4f-c6dadc3cbda7
+entity_slug: fruitful
+landmark_type: meal_delivery
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 24] ---
+id: df7643bb-c73c-4d30-bc6d-47f9da4cf719
+landmark_id: 4d3b57f1-831d-4b93-ac4f-c6dadc3cbda7
+entity_slug: fruitful
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 24] ---
+id: f10b567a-fbcc-45b3-9552-8cb31e95a8ec
+landmark_id: 4d3b57f1-831d-4b93-ac4f-c6dadc3cbda7
+entity_slug: fruitful
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 24] ---
+id: b989c38c-50e8-4ffc-9dd5-362307fbf449
+landmark_id: 82bea659-5b60-4be4-92f7-c8b994e3d9a4
+entity_slug: fruitful
+landmark_type: cafe
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 24] ---
+id: 00581702-81ba-4614-874c-3ed5ba43bc7e
+landmark_id: 82bea659-5b60-4be4-92f7-c8b994e3d9a4
+entity_slug: fruitful
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 24] ---
+id: 1738be6a-f268-4f99-be0c-4e36e1c03b92
+landmark_id: 82bea659-5b60-4be4-92f7-c8b994e3d9a4
+entity_slug: fruitful
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 24] ---
+id: 2793c07f-1b4c-42dc-8d0d-bfe3a8b9351c
+landmark_id: 82bea659-5b60-4be4-92f7-c8b994e3d9a4
+entity_slug: fruitful
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 24] ---
+id: b99c7a72-539d-42fa-966a-269ffb8c656e
+landmark_id: 82bea659-5b60-4be4-92f7-c8b994e3d9a4
+entity_slug: fruitful
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 19 of 24] ---
+id: cc6a66ed-1a3a-4ad3-83bb-180dedc11fae
+landmark_id: 5dcc8a32-8de1-4c67-a968-b0511a527717
+entity_slug: fruitful
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 20 of 24] ---
+id: 234883c8-b237-44b3-9467-72b68f783a52
+landmark_id: 5dcc8a32-8de1-4c67-a968-b0511a527717
+entity_slug: fruitful
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 21 of 24] ---
+id: 438bbf7b-22dc-4da8-a993-cf62d602d88c
+landmark_id: 5dcc8a32-8de1-4c67-a968-b0511a527717
+entity_slug: fruitful
+landmark_type: meal_takeaway
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 22 of 24] ---
+id: 1d49bc06-a269-402d-bdfd-7cd08ded0094
+landmark_id: 5dcc8a32-8de1-4c67-a968-b0511a527717
+entity_slug: fruitful
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 23 of 24] ---
+id: 7876dde9-5e6c-4580-991d-950960d9acd2
+landmark_id: 5dcc8a32-8de1-4c67-a968-b0511a527717
+entity_slug: fruitful
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 24 of 24] ---
+id: d213c30c-4465-404b-acf9-f92d10a4a286
+landmark_id: 5dcc8a32-8de1-4c67-a968-b0511a527717
+entity_slug: fruitful
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   6 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 6] ---
+id: 9f7f9b5c-580e-4130-a14b-28e6435a1d7c
+entity_slug: fruitful
+kind: landmark
+place_id: ChIJSVWBtdgEmogReyyrFU5KWLY
+name: Our Lady of the Gulf Catholic Church
+types: [
+  "church",
+  "establishment",
+  "place_of_worship",
+  "point_of_interest"
+]
+straight_line_distance_meters: 90.80182
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 6] ---
+id: bea6786a-7941-4d07-abb8-e91580b24599
+entity_slug: fruitful
+kind: landmark
+place_id: ChIJkyJ6rSAFmogRD5lVndPjdgM
+name: The ugly Diner
+types: [
+  "establishment",
+  "food",
+  "point_of_interest",
+  "restaurant"
+]
+spatial_relationship: BESIDE
+straight_line_distance_meters: 3.56084
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 6] ---
+id: 4d3b57f1-831d-4b93-ac4f-c6dadc3cbda7
+entity_slug: fruitful
+kind: landmark
+place_id: ChIJu5pMMt8EmogRZhZkp4iCBAc
+name: China Dragon
+types: [
+  "establishment",
+  "food",
+  "meal_delivery",
+  "point_of_interest",
+  "restaurant"
+]
+straight_line_distance_meters: 33.70508
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 6] ---
+id: 82bea659-5b60-4be4-92f7-c8b994e3d9a4
+entity_slug: fruitful
+kind: landmark
+place_id: ChIJwU95Md8EmogRBXy_0zFJD6Q
+name: Foam Coffee
+types: [
+  "cafe",
+  "establishment",
+  "food",
+  "point_of_interest",
+  "store"
+]
+straight_line_distance_meters: 53.00504
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 6] ---
+id: 5dcc8a32-8de1-4c67-a968-b0511a527717
+entity_slug: fruitful
+kind: landmark
+place_id: ChIJhfGBztgEmogR4ACNk761oqw
+name: Amelia's Deli
+types: [
+  "establishment",
+  "food",
+  "meal_takeaway",
+  "point_of_interest",
+  "restaurant",
+  "store"
+]
+spatial_relationship: BESIDE
+straight_line_distance_meters: 20.541327
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 6 of 6] ---
+id: e2f6cb92-75ea-48d8-b551-124f27c5b3dd
+entity_slug: fruitful
+kind: area
+place_id: ChIJTRD9S98EmogRgdzsGZysN4M
+name: Our Lady of the Gulf Catholic Church
+containment: NEAR
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   14 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 14] ---
+offer_id: 2935
+entity_slug: fruitful
+section_id: 727
+name: Strawberry Banana Bliss
+description: Strawberry, Banana, Almond Milk, Honey
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: d9a974fd-9243-4314-bfc2-7fca033f36f1
+
+--- entity_offer [row 2 of 14] ---
+offer_id: 2936
+entity_slug: fruitful
+section_id: 727
+name: Chocolate Peanut Butter Power
+description: Peanut Butter, Chocolate Protein Powder, Banana, Almond Milk
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 3df7a970-21b2-444d-b56e-6b12e09d9367
+
+--- entity_offer [row 3 of 14] ---
+offer_id: 2937
+entity_slug: fruitful
+section_id: 727
+name: Green Glow
+description: Spinach, Mango, Pineapple, Banana, Almond Milk
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: a4151102-f2ae-4ca8-a1e2-ed60913552d5
+
+--- entity_offer [row 4 of 14] ---
+offer_id: 2938
+entity_slug: fruitful
+section_id: 727
+name: Mango Pineapple
+description: Mango, Pineapple, Honey, Pineapple Juice
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: f9cb8427-6503-4523-97d5-6cfe9c007a69
+
+--- entity_offer [row 5 of 14] ---
+offer_id: 2939
+entity_slug: fruitful
+section_id: 727
+name: Berry Blast
+description: Blueberries, Strawberries, Raspberry, Blackberry, Banana, Almond Milk, Honey
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 527c1bbc-8d5a-4098-9b8c-1182b072abdf
+
+--- entity_offer [row 6 of 14] ---
+offer_id: 2970
+entity_slug: fruitful
+section_id: 727
+name: Pina Colada
+description: Pineapple, Banana, Pineapple Juice, Coconut Milk
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 2d176ca8-5058-47b3-96da-eb5a7faf290c
+
+--- entity_offer [row 7 of 14] ---
+offer_id: 8178
+entity_slug: fruitful
+section_id: 1278
+name: FAITHFULNESS
+description: Mango-Pineapple Base, Granola, Strawberry, Raspberry, Kiwi, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: d54f56cc-fbc8-4240-8d70-6f36bf0d34e4
+
+--- entity_offer [row 8 of 14] ---
+offer_id: 8179
+entity_slug: fruitful
+section_id: 1278
+name: KINDNESS
+description: Acai, Granola, Strawberry, Banana, Blueberry, Nutella (Price: 8oz $8 / 16oz $14 / 24oz $18)
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 2e1e1669-ae57-4a54-86eb-f13fc2410524
+
+--- entity_offer [row 9 of 14] ---
+offer_id: 8180
+entity_slug: fruitful
+section_id: 1278
+name: GENTLENESS
+description: Blue Sorbet, Granola, Strawberry, Blueberry, Pineapple, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 629942be-ecb0-4bb4-8cf4-abea25426b45
+
+--- entity_offer [row 10 of 14] ---
+offer_id: 8181
+entity_slug: fruitful
+section_id: 1278
+name: GOODNESS
+description: Matcha, Granola, Banana, Coconut, Kiwi, Blueberry, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 80588022-37ac-410b-ad25-b7411a212da7
+
+--- entity_offer [row 11 of 14] ---
+offer_id: 8182
+entity_slug: fruitful
+section_id: 1278
+name: LOVE
+description: Acai, Granola, Raspberry, Strawberry, Kiwi, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 889c3ce4-7e12-48fa-92b9-b1e73a61fb5b
+
+--- entity_offer [row 12 of 14] ---
+offer_id: 8183
+entity_slug: fruitful
+section_id: 1278
+name: JOY
+description: Coconut, Granola, Pineapple, Strawberry, Blueberry, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 8cea6f6c-a241-4552-9def-755135594535
+
+--- entity_offer [row 13 of 14] ---
+offer_id: 8184
+entity_slug: fruitful
+section_id: 1278
+name: PATIENCE
+description: Strawberry Base, Granola, Pineapple, Raspberry, Banana, Almond Butter (Price: 8oz $8 / 16oz $14 / 24oz $18)
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 8dd8fc50-fb6f-46d8-b793-0aa514fa0a54
+
+--- entity_offer [row 14 of 14] ---
+offer_id: 8185
+entity_slug: fruitful
+section_id: 1278
+name: PEACE
+description: Passion Fruit, Granola, Mango, Almond Flakes, Kiwi, Strawberries, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: f95b2dc1-5cd6-4f18-a0b2-491aa7bbdc43
+
+####################################################################################################
+# TABLE: entity_offer_section   -   2 row(s)
+####################################################################################################
+
+--- entity_offer_section [row 1 of 2] ---
+section_id: 727
+entity_slug: fruitful
+name: Smoothies
+section_type: menu
+sort_order: 1
+
+--- entity_offer_section [row 2 of 2] ---
+section_id: 1278
+entity_slug: fruitful
+name: Acai Bowls
+section_type: menu
+sort_order: 0
+
+####################################################################################################
+# TABLE: entity_photos   -   16 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 16] ---
+id: 77b0fb3c-2712-4692-aaef-1b21df60c2c2
+entity_slug: fruitful
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/fruitful/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 16] ---
+id: 90ccd37d-f0ec-40b0-b2d0-455ac0d2aab4
+entity_slug: fruitful
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/fruitful/photo_03.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 3 of 16] ---
+id: 4686a9ac-8aa6-44b4-8784-18d5e61911e5
+entity_slug: fruitful
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/fruitful/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 4 of 16] ---
+id: 0e2247c3-43a7-4993-962e-831dd39972ce
+entity_slug: fruitful
+url: https://places.googleapis.com/v1/places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3mzY7KNRHpUEQEigB2xQ5mnXkKgRpL_vnTP00u4ud4RFsYz3CyCRCYyZ9L9Qw4HR2KtyOGgAAiJOpcg8BpwdvaYwRDRdz5k0dwehPG0WCdFV6H8HeI4HFgNMeRCzA7iQya_wHQWQzzvjCvwd9D9i1LMTiZl-1YIAslmwtgyiYOmRQmc3WBB2VTR0vr3gkVWfFALkcENu-BsMmDM4wBzNQEqVJFfF_X1cFFw5S9lUawg3lpkEdrfKXPHQ86yb88EP03be-bp72d0VD6yJgDhnWWJb5d8j7sm0mu25Zeqp1sU4K1B5GCMQTo4MAxLDJlu-bZpHPO9OlKRuCktDBCZAhnvG_04ZlhG7U-29nEVpRAUgjXGs0mijXpfqyY_T5t5-ELMWjv0GNBS9Tzu2G-jwzW6UV9qiU1MFJRawL58Pa2k_WyIFzARPvBIeXm0JA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3mzY7KNRHpUEQEigB2xQ5mnXkKgRpL_vnTP00u4ud4RFsYz3CyCRCYyZ9L9Qw4HR2KtyOGgAAiJOpcg8BpwdvaYwRDRdz5k0dwehPG0WCdFV6H8HeI4HFgNMeRCzA7iQya_wHQWQzzvjCvwd9D9i1LMTiZl-1YIAslmwtgyiYOmRQmc3WBB2VTR0vr3gkVWfFALkcENu-BsMmDM4wBzNQEqVJFfF_X1cFFw5S9lUawg3lpkEdrfKXPHQ86yb88EP03be-bp72d0VD6yJgDhnWWJb5d8j7sm0mu25Zeqp1sU4K1B5GCMQTo4MAxLDJlu-bZpHPO9OlKRuCktDBCZAhnvG_04ZlhG7U-29nEVpRAUgjXGs0mijXpfqyY_T5t5-ELMWjv0GNBS9Tzu2G-jwzW6UV9qiU1MFJRawL58Pa2k_WyIFzARPvBIeXm0JA
+is_cover: false
+sort_order: 0
+caption: Timothy Thomas
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDs7d3lV6_0k9J1bFTQqLyd!2e10!4m2!3m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171
+
+--- entity_photos [row 5 of 16] ---
+id: 07218600-bc57-4acd-ae18-841ea94c2026
+entity_slug: fruitful
+url: https://places.googleapis.com/v1/places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3n5wC3pW5GEkMsGzAqUOrjCur63ND5vuXnsOgsTjShWhGPFsWOrDDyDmsG8XTXGcMjx3SSV1MDhOflTEA-DLYH99347t9gienUpeBFRzJkTgUnVYOHuwGK7QfKZsr77l67e4FgF8jEFE_7Qo0aTnSuqPTW9TbYb53vmyeHvmr-euX5OLauEvDGMbWAAkS5IpjAORbDqpy47RrriBtnQX86cbD0ZVhLSmF3NkXb2CN6eVg1efhif0cZEt6mJ5xEYuLX7QSFme16eLubc1xAKRcY3jLkQwaUGridfJrx9gNYZ-bD8OAHX2KyfNs3sckIoVWbG4CXbtDvzNErSafU2uqmiZoFyuZ-sfXGtSbx8DMGYev29Zah0minZvuIGcmMe_3H2hkhkPucKZEzI_s599dyxDx_fKQpW0qcsIDtpkvtNRzzFHGylCsjJSxseewHd/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3n5wC3pW5GEkMsGzAqUOrjCur63ND5vuXnsOgsTjShWhGPFsWOrDDyDmsG8XTXGcMjx3SSV1MDhOflTEA-DLYH99347t9gienUpeBFRzJkTgUnVYOHuwGK7QfKZsr77l67e4FgF8jEFE_7Qo0aTnSuqPTW9TbYb53vmyeHvmr-euX5OLauEvDGMbWAAkS5IpjAORbDqpy47RrriBtnQX86cbD0ZVhLSmF3NkXb2CN6eVg1efhif0cZEt6mJ5xEYuLX7QSFme16eLubc1xAKRcY3jLkQwaUGridfJrx9gNYZ-bD8OAHX2KyfNs3sckIoVWbG4CXbtDvzNErSafU2uqmiZoFyuZ-sfXGtSbx8DMGYev29Zah0minZvuIGcmMe_3H2hkhkPucKZEzI_s599dyxDx_fKQpW0qcsIDtpkvtNRzzFHGylCsjJSxseewHd
+is_cover: false
+sort_order: 1
+caption: ALD
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAetipY89QCSTuNV6r4GvQf!2e10!4m2!3m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171
+
+--- entity_photos [row 6 of 16] ---
+id: c5d110cf-f2e7-4819-9487-e59c0da424e9
+entity_slug: fruitful
+url: https://places.googleapis.com/v1/places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3nkiJVSJUecVFh0pwFxkS3K1VJyZ9jQbDxcTLp9bc41q_Tt958l4skg7maM6ziJVFeyKzJmLKbE_4Lk0hlc7RncJcGrp4yPIsJApa8tnx3qYoYCtW0Hwnw2Z9-RGoqc-SZq6kNaRzMsP1qChDRtg9UvqANIXGRCHAy5X-dj6sQtVE_bZhjn8yNK7BZfoL5ENBktPwKV9hx-vgOcMOfP6tt8KmGoCY_F149J4ZLdE9JD59_WQLS2gj_fDfJlCmkLkk_zGOOt330EfNEhWzTxigtLQlt5BB5XTsMD5pnSGXsiA0W9xHeFFhxNixojfmg_85YZphVswtHw9KVgXw4rOXu7-XMNKS8cL4cFRL6Nh1uHHquwVYtRXDUNSEeGCg_KwHpQbvhw1tDFJNBdauY6Zot0w4h-T1UtZNK93L5GSC5AIXdEkI19KsH-uga6hyUz/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3nkiJVSJUecVFh0pwFxkS3K1VJyZ9jQbDxcTLp9bc41q_Tt958l4skg7maM6ziJVFeyKzJmLKbE_4Lk0hlc7RncJcGrp4yPIsJApa8tnx3qYoYCtW0Hwnw2Z9-RGoqc-SZq6kNaRzMsP1qChDRtg9UvqANIXGRCHAy5X-dj6sQtVE_bZhjn8yNK7BZfoL5ENBktPwKV9hx-vgOcMOfP6tt8KmGoCY_F149J4ZLdE9JD59_WQLS2gj_fDfJlCmkLkk_zGOOt330EfNEhWzTxigtLQlt5BB5XTsMD5pnSGXsiA0W9xHeFFhxNixojfmg_85YZphVswtHw9KVgXw4rOXu7-XMNKS8cL4cFRL6Nh1uHHquwVYtRXDUNSEeGCg_KwHpQbvhw1tDFJNBdauY6Zot0w4h-T1UtZNK93L5GSC5AIXdEkI19KsH-uga6hyUz
+is_cover: false
+sort_order: 2
+caption: David Nilsen
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhATWo1d-six7tfk-aJ1U96O!2e10!4m2!3m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171
+
+--- entity_photos [row 7 of 16] ---
+id: 0db79b8b-f260-45ce-b7ba-e7bd23eaf41b
+entity_slug: fruitful
+url: https://places.googleapis.com/v1/places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3kyHpcNBY7U0j3o_67nPhMr9SGx2fPloMrL0EeCs15Zf_Nvt-xafj8e6qj-5ibIQPvnI-d1OJ5bN4bLVXqv3w-jKdstvIxmsi0XVc9sQS7Vo391WmRoU-oCryIPp54zzCHSUAJky0odQsLIyJqw-t8i3wQ5_Mzxu8vbBR1-JhkaAAcFcOYuVFMXLYe1Z7J7Ssw0e7PSnIB92uSN2nqTpsB7JWxi6Q2ms_UpDhFqepW4658v7OELzdpSwo3SIliG6ZlEF27_ch5P-o9BeC02lMF1hpNcHmittZzat5-1u4WTG1QZWjrnMtyyoBVrMdfwrCrqH6uXS7MFOTaCgdxanKZ_rC8OIQH4t2sI8V8H98ZsbLNACzHwT4APl2QugdDqmXCcw1CCxWQV35dMGtbSkZLC6xSulCoFjO0mFtQW0o8xtLG8xsvHBqQLvUkXV1ej/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3kyHpcNBY7U0j3o_67nPhMr9SGx2fPloMrL0EeCs15Zf_Nvt-xafj8e6qj-5ibIQPvnI-d1OJ5bN4bLVXqv3w-jKdstvIxmsi0XVc9sQS7Vo391WmRoU-oCryIPp54zzCHSUAJky0odQsLIyJqw-t8i3wQ5_Mzxu8vbBR1-JhkaAAcFcOYuVFMXLYe1Z7J7Ssw0e7PSnIB92uSN2nqTpsB7JWxi6Q2ms_UpDhFqepW4658v7OELzdpSwo3SIliG6ZlEF27_ch5P-o9BeC02lMF1hpNcHmittZzat5-1u4WTG1QZWjrnMtyyoBVrMdfwrCrqH6uXS7MFOTaCgdxanKZ_rC8OIQH4t2sI8V8H98ZsbLNACzHwT4APl2QugdDqmXCcw1CCxWQV35dMGtbSkZLC6xSulCoFjO0mFtQW0o8xtLG8xsvHBqQLvUkXV1ej
+is_cover: false
+sort_order: 3
+caption: Fruitful
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDdlkvdcMn9QMZM0O9d31nM!2e10!4m2!3m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171
+
+--- entity_photos [row 8 of 16] ---
+id: d2389eb8-5633-44b9-bffe-a726a94b12af
+entity_slug: fruitful
+url: https://places.googleapis.com/v1/places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3l_v0Ok-SW5zWZ9SzBijSp7wRs_zfjH51iLbWPVcaLPxzoGyCEKkvX5k_Xk2Wck3iP0TYLT5dOt26iDn-2dz-FKXUQYOf-K73QX3rNXKnLs8-EPVDV0DsP49yzipetuJQgb04dCPh28q6EfpzVnJS1xnNaSKbSn9KvjUZGAyzf9LqJ-tueeNbLJ2LtLKJrmgfbnKlFET5mlkDp0d_HWa1BeBoT8jM1M8qLghy4wf8Q8RxgK2YKL1iNkq47mT_UymS9RQcp-Z-BdUrJT_QQQIssOgcY9CumraBab2qvJ70CFyHamU1MEqG9QiZxTJehI_9sdP34H2En0QLHYinf34LN7KLk_9FGxteIR9LpOSbvRC8PixE9YAN1zcDsWxI0le9frmJ2_E2GlkEjQ3QshUsiYQxAagnlY51dOIEIoVc7Y5pdXd8EO8hjUlYewyONB/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3l_v0Ok-SW5zWZ9SzBijSp7wRs_zfjH51iLbWPVcaLPxzoGyCEKkvX5k_Xk2Wck3iP0TYLT5dOt26iDn-2dz-FKXUQYOf-K73QX3rNXKnLs8-EPVDV0DsP49yzipetuJQgb04dCPh28q6EfpzVnJS1xnNaSKbSn9KvjUZGAyzf9LqJ-tueeNbLJ2LtLKJrmgfbnKlFET5mlkDp0d_HWa1BeBoT8jM1M8qLghy4wf8Q8RxgK2YKL1iNkq47mT_UymS9RQcp-Z-BdUrJT_QQQIssOgcY9CumraBab2qvJ70CFyHamU1MEqG9QiZxTJehI_9sdP34H2En0QLHYinf34LN7KLk_9FGxteIR9LpOSbvRC8PixE9YAN1zcDsWxI0le9frmJ2_E2GlkEjQ3QshUsiYQxAagnlY51dOIEIoVc7Y5pdXd8EO8hjUlYewyONB
+is_cover: false
+sort_order: 4
+caption: chloe ford
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCH813ldR6E_sOo0fIuztTF!2e10!4m2!3m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171
+
+--- entity_photos [row 9 of 16] ---
+id: a07a7130-d93f-4c39-a356-5bede1830f7f
+entity_slug: fruitful
+url: https://places.googleapis.com/v1/places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3kQGHmFkeRgeb_oyyjoQfxcRKeE-uAARAxRLE3jzQNgl_f7nzeHGMm5GUPX1AMrZYYPo1G6liaxlenEu-OgOk_AJRFx87KuzIvSv29qTbZMD0INJyRryeuIvVNwrTHn1H1j43C5ruYxL5YRcjqQXwWDsbJjr1lW6nF4vMAWJzMnYo1S_WN_c8rE2KwcuFwoGmRgUF8uD-jIvIKd9IQRiPiHZCVmkPCnDS5tpnjg1St-oRFJLmJ86wuszosuyPyqOF3wl6YLILTWXpqgopJfoQNwWXZjOSE1asp4tVoGYNmyEAYc8DU9njGs3gOceNVN4CMWQ3UgZnxOo05fK87D9leGWd5RWTGEsxEc_9iKs_vijAtoRvYhvIgjRJS10GSIKwbx1N0nAgUb2mzo0TgGBtxU1kC6XPuD3J85GsHMcaq-Qqpfu23OMwTJ3Fq6f6MW/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3kQGHmFkeRgeb_oyyjoQfxcRKeE-uAARAxRLE3jzQNgl_f7nzeHGMm5GUPX1AMrZYYPo1G6liaxlenEu-OgOk_AJRFx87KuzIvSv29qTbZMD0INJyRryeuIvVNwrTHn1H1j43C5ruYxL5YRcjqQXwWDsbJjr1lW6nF4vMAWJzMnYo1S_WN_c8rE2KwcuFwoGmRgUF8uD-jIvIKd9IQRiPiHZCVmkPCnDS5tpnjg1St-oRFJLmJ86wuszosuyPyqOF3wl6YLILTWXpqgopJfoQNwWXZjOSE1asp4tVoGYNmyEAYc8DU9njGs3gOceNVN4CMWQ3UgZnxOo05fK87D9leGWd5RWTGEsxEc_9iKs_vijAtoRvYhvIgjRJS10GSIKwbx1N0nAgUb2mzo0TgGBtxU1kC6XPuD3J85GsHMcaq-Qqpfu23OMwTJ3Fq6f6MW
+is_cover: false
+sort_order: 5
+caption: Bonnie Collins
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAYaQUG7Qo0VHG6AOHHdZ4d!2e10!4m2!3m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171
+
+--- entity_photos [row 10 of 16] ---
+id: 422ac003-8fb2-45a2-9359-139f4b29101a
+entity_slug: fruitful
+url: https://places.googleapis.com/v1/places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3lOpXpaE8HCiKi6eXaT2Vc5HP0LzMgioom3mQG6oAz7fEGF5JmaqZ94ShRlsSVZbMRh8rpOYRGPnh8HTCOoIjhS5oZ4-alNk3UgD0KRXD46gi5KUuMGgvX4Ty5dEFKPT-TmFVzozf5JXlN-uDdXckwhyA8NSjdKiSTevPr5niypd2mJIA_95UqfaeXZRuO-j-hXkdK3R0RGRRNvDuCBINOtREDza8YkjXTesmuQO-VBWM_CQgFnHP9UfCZ-Fw2QSVx_nRr8zxpi6fJvLOntwiOh1ZXL1XlmVVJN56T6iWp5y720xIpXnYmQqqR1RdwiVwgjuH2g_yZ7ECjWPc0gRlBjrvlPuVUBMZAtlU0AFcdZSbTGOsKnQhZGJE9B0lpAj2nEZxcRz_CG7MSSo6oDPVqAYj9DY5ADNYQ6fpNYtorhGjIfBECKMUHMLlx3tQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3lOpXpaE8HCiKi6eXaT2Vc5HP0LzMgioom3mQG6oAz7fEGF5JmaqZ94ShRlsSVZbMRh8rpOYRGPnh8HTCOoIjhS5oZ4-alNk3UgD0KRXD46gi5KUuMGgvX4Ty5dEFKPT-TmFVzozf5JXlN-uDdXckwhyA8NSjdKiSTevPr5niypd2mJIA_95UqfaeXZRuO-j-hXkdK3R0RGRRNvDuCBINOtREDza8YkjXTesmuQO-VBWM_CQgFnHP9UfCZ-Fw2QSVx_nRr8zxpi6fJvLOntwiOh1ZXL1XlmVVJN56T6iWp5y720xIpXnYmQqqR1RdwiVwgjuH2g_yZ7ECjWPc0gRlBjrvlPuVUBMZAtlU0AFcdZSbTGOsKnQhZGJE9B0lpAj2nEZxcRz_CG7MSSo6oDPVqAYj9DY5ADNYQ6fpNYtorhGjIfBECKMUHMLlx3tQ
+is_cover: false
+sort_order: 6
+caption: Randa Pelz
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhB28p_xsEt24Pp9qALq5vqV!2e10!4m2!3m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171
+
+--- entity_photos [row 11 of 16] ---
+id: d9a333af-9df3-47e8-abd4-cb066af51ec3
+entity_slug: fruitful
+url: https://places.googleapis.com/v1/places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3l8dnbo-FuTLEZq_R-b_OGscoW5qj5IfG3XXpvC9FyqsMLMhv5DSKCqGrKXVCBCQQ0K2wG65SCRcunV9xScZQWZsaAcJikJPzp3aOQQhfuDQ-mR-oWoOfY_X0NS4syQCWpwDzhvfy6b1OVPM3WQ2HPaAPz1Z6j8IcqBxwhp-dz5bxJA_BrV9Oi6hRi4awZCBegnys5tgGbtI0-YXguPym07DJ_aG_Oo5zKIlq_rjfTuSAxJ81j0V2cxR0nCIUXTYFGkYGigj0L0P2PZBp5FiVW65JZ8cFfswfdCOjHvnDy-F0-WkneIJ5W2Af_kumbQNGj5okt4bJCUtclpAVI_G7ucHEh50w75Q2OgittyEihjdqJc99T1z3JoE1S8F19eRYiMedfzz7mNR0aJIG6Ov_GfnhKW9KX2YlHMtlJ24EtNcqnBs4fWcGfObSXFyHAa/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3l8dnbo-FuTLEZq_R-b_OGscoW5qj5IfG3XXpvC9FyqsMLMhv5DSKCqGrKXVCBCQQ0K2wG65SCRcunV9xScZQWZsaAcJikJPzp3aOQQhfuDQ-mR-oWoOfY_X0NS4syQCWpwDzhvfy6b1OVPM3WQ2HPaAPz1Z6j8IcqBxwhp-dz5bxJA_BrV9Oi6hRi4awZCBegnys5tgGbtI0-YXguPym07DJ_aG_Oo5zKIlq_rjfTuSAxJ81j0V2cxR0nCIUXTYFGkYGigj0L0P2PZBp5FiVW65JZ8cFfswfdCOjHvnDy-F0-WkneIJ5W2Af_kumbQNGj5okt4bJCUtclpAVI_G7ucHEh50w75Q2OgittyEihjdqJc99T1z3JoE1S8F19eRYiMedfzz7mNR0aJIG6Ov_GfnhKW9KX2YlHMtlJ24EtNcqnBs4fWcGfObSXFyHAa
+is_cover: false
+sort_order: 7
+caption: Fruitful
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhB3DLt_U2igghDMNez3lkT5!2e10!4m2!3m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171
+
+--- entity_photos [row 12 of 16] ---
+id: eac91726-e409-4af2-b402-a4f4ab360500
+entity_slug: fruitful
+url: https://places.googleapis.com/v1/places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3kgcOaVPE_xoxjhttilFj7ilIV4-v_4FaJ5-Prw7c2mK-2hJAC-n6j3PrzATurv1FCriwPXjNIBxVfnYH9AOp4a6CjSDEhSppRg-mqiU9p2wyfMUSpRaJL1JzMaSgpG6ajFxehSMUq1gm5l9SzFpebdIZS9TBS-LTwC1Zj8MhKnQdqzl-Aa40gG63mVMYmY0QB6DCR0CPR6t8v3t2VzYGcxg0_mzD4I0S_otA4ZESsGDIXp9YJTEEEEpB9rxXT9JTclq2UCAqbsl-Icci83LiNLMM4YdyLWEyVKmXatIgS-4fcTdPi_VPKbeOe-EO-5Jzcp-RgFxHZjdd8DpnU0Er2qD_i1wtBI2ymkfNRnPsy6M5SF8lKRASVYBt7Qb-30BmaEYw3YLFLcvvExCfXj7O7qMuWa3_A-XXRZNpH5koL2-JoZI56gqhkepMi4GQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3kgcOaVPE_xoxjhttilFj7ilIV4-v_4FaJ5-Prw7c2mK-2hJAC-n6j3PrzATurv1FCriwPXjNIBxVfnYH9AOp4a6CjSDEhSppRg-mqiU9p2wyfMUSpRaJL1JzMaSgpG6ajFxehSMUq1gm5l9SzFpebdIZS9TBS-LTwC1Zj8MhKnQdqzl-Aa40gG63mVMYmY0QB6DCR0CPR6t8v3t2VzYGcxg0_mzD4I0S_otA4ZESsGDIXp9YJTEEEEpB9rxXT9JTclq2UCAqbsl-Icci83LiNLMM4YdyLWEyVKmXatIgS-4fcTdPi_VPKbeOe-EO-5Jzcp-RgFxHZjdd8DpnU0Er2qD_i1wtBI2ymkfNRnPsy6M5SF8lKRASVYBt7Qb-30BmaEYw3YLFLcvvExCfXj7O7qMuWa3_A-XXRZNpH5koL2-JoZI56gqhkepMi4GQ
+is_cover: false
+sort_order: 8
+caption: Fruitful
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBnhSMaCM2yE-7yQ8u2STHg!2e10!4m2!3m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171
+
+--- entity_photos [row 13 of 16] ---
+id: 09e52e45-fb3b-4936-824f-284d6bab42e8
+entity_slug: fruitful
+url: https://places.googleapis.com/v1/places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3nAzZC-6HZCbnZMuZ2B6ZsI6n2a0vuvf90FC_EQC8MSvHjWuP2NzZcx1ofYfyTOhmwW0X8nIxRiejm38nuGJQv1eaAyE12RV2Dgblm51MnzCSdxvNNTwnjBGWUsEU3CiHc9xIq6U7d83VCWcDTa_HCKbC2tX6q0iRpUIDshfUG_QM0CNFpACRgAW8Lne1kiEIUj8bsFA5YXKkW_bmeAW1peJ7sBHmhL1neDOdLRFSsHK3Iq2u2jSu7av2RlJliQWAZ9TEXKh2wESlxNYuO7MNpMM0BUc7Xa3fWEDaaARELBpEWWhWtF85xWdZRKs4UoDezVzx6WB8ZgLzIEcTrAth-oT6jLTHr6YMVmLBSen8ZrTgLbg8myDMpm-UPg3xTcTeSGsXy2W38Yawwkx13aIJPNaUMWu15T1fA1KBWve5kSsf-3fHBrX_daIMf8lKfp/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJOcKkLUAFmogRcQHsvY2cn7s/photos/AaVGc3nAzZC-6HZCbnZMuZ2B6ZsI6n2a0vuvf90FC_EQC8MSvHjWuP2NzZcx1ofYfyTOhmwW0X8nIxRiejm38nuGJQv1eaAyE12RV2Dgblm51MnzCSdxvNNTwnjBGWUsEU3CiHc9xIq6U7d83VCWcDTa_HCKbC2tX6q0iRpUIDshfUG_QM0CNFpACRgAW8Lne1kiEIUj8bsFA5YXKkW_bmeAW1peJ7sBHmhL1neDOdLRFSsHK3Iq2u2jSu7av2RlJliQWAZ9TEXKh2wESlxNYuO7MNpMM0BUc7Xa3fWEDaaARELBpEWWhWtF85xWdZRKs4UoDezVzx6WB8ZgLzIEcTrAth-oT6jLTHr6YMVmLBSen8ZrTgLbg8myDMpm-UPg3xTcTeSGsXy2W38Yawwkx13aIJPNaUMWu15T1fA1KBWve5kSsf-3fHBrX_daIMf8lKfp
+is_cover: false
+sort_order: 9
+caption: Madalynn Owen
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBTxsDcJl1QaOFmSB_d9T44!2e10!4m2!3m1!1s0x889a05402da4c239:0xbb9f9c8dbdec0171
+
+--- entity_photos [row 14 of 16] ---
+id: 750951c4-93c6-4087-829e-97606ff24135
+entity_slug: fruitful
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/0bdcb417-9cfc-4812-adee-4e76e87bcfb2/image_1.jpg
+is_cover: true
+sort_order: 0
+photo_type: hero
+source_name: legacy_businesses_table
+created_at: 2026-07-21T23:25:57.434852+00:00
+
+--- entity_photos [row 15 of 16] ---
+id: 26ff9371-37b8-4216-a7ff-e918fa33effc
+entity_slug: fruitful
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/0bdcb417-9cfc-4812-adee-4e76e87bcfb2/image_3.jpg
+is_cover: false
+sort_order: 102
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 16 of 16] ---
+id: b6574cb7-9058-4efb-94c3-f8c960832f1f
+entity_slug: fruitful
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/0bdcb417-9cfc-4812-adee-4e76e87bcfb2/image_2.jpg
+is_cover: false
+sort_order: 101
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: cbbdc28b-527a-47f2-aa9d-9004b7aaba91
+entity_slug: fruitful
+reviewer_name: David Nilsen
+rating: 5
+body: Fruitful absolutely lives up to its name. I stopped in hoping for something fresh and light, and ended up finding one of the best açaí bowls I’ve had anywhere. The fruit tasted incredibly fresh, the granola had the perfect crunch, and the açaí itself was smooth without being overly sweet — you can tell they care about quality ingredients.
+What really stood out was the balance. Nothing felt thrown together just to look good for Instagram; it actually tasted as good as it looked. Portions were generous, and there were plenty of topping options without it becoming overwhelming.
+The atmosphere was bright and welcoming, and the staff were friendly without being over the top. Service moved quickly, but I never felt rushed.
+If you’re looking for something refreshing that doesn’t leave you feeling weighed down, Fruitful is an easy recommendation. Whether you’re grabbing a quick breakfast or a mid-day pick-me-up, it’s the kind of place you’ll find yourself wanting to come back to.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-02-17T01:03:13.776407+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: f5dee14b-8cad-4a59-b9a7-4656ca276c6f
+entity_slug: fruitful
+reviewer_name: Timothy Thomas
+rating: 3
+body: Very good bowls, but there was no menu or prices posted online. The menu in the store didn't have pricing either which felt....dishonest.
+
+Also, be prepared to be blasted with religious music and decor which was off-putting.
+
+Local kids just seem to come in and make themselves bowls for free too, which made me realize why the rest of us have to pay so much.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-03-31T17:28:52.523997+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: ccebb4ce-bcbd-4f4e-b462-21fd06ec78d3
+entity_slug: fruitful
+reviewer_name: Joel Florian
+rating: 5
+body: Very upbeat and welcoming atmosphere.   The owner is effervescent with positivity.   The bowls are delicious and healthy too!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-03-02T16:56:09.925286+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 37069dc8-f81e-4902-a0bb-d3bd82ced6eb
+entity_slug: fruitful
+reviewer_name: Danielle Farmer
+rating: 5
+body: Cutest Gulf Shores spot! We stopped by during our trip to Fort Morgan, and it's just a quick drive from our house. The decor and vibe is super sweet and encouraging. There is local art for sale and some other cute gift items. The coconut bowl with granola, fruit and Nutella was exactly what my daughter was craving. Definitely worth stopping in for some breakfast, easy lunch, or treat!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-07-21T13:29:13.855891+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 079b8e86-9a63-4e8b-a411-08c6eb251739
+entity_slug: fruitful
+reviewer_name: Kayliegh O'Toole
+rating: 5
+body: The bowls are super reasonably priced and the staff was friendly. It was super cute space and the bowls were amazing, there were so many options, and I now crave one everyday. I got the gentleness and substituted the honey for nutella ( I was in the mood for chocolate). It was AMAZING!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-08-05T14:07:37.718162+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_sources   -   3 row(s)
+####################################################################################################
+
+--- entity_sources [row 1 of 3] ---
+id: 64ae3c95-592c-4939-bb68-1b91ef211e33
+entity_slug: fruitful
+source_system: gulfshores.com water-activities directory
+source_url: https://www.gulfshores.com/things-to-do/shopping/
+scope: directory-listing
+observed_at: 2026-07-16T11:22:12.863287+00:00
+confidence: high
+note: Shopping / Retail / Specialty
+created_at: 2026-07-16T11:22:12.863287+00:00
+
+--- entity_sources [row 2 of 3] ---
+id: e2913e4e-0aed-4839-8c83-e38bce014b5b
+entity_slug: fruitful
+source_system: gulfshores_deep_crawl
+source_url: https://www.fruitful-gulfshores.com/
+scope: deep-crawl-profile
+observed_at: 2026-07-16T11:37:03.957938+00:00
+confidence: high
+created_at: 2026-07-16T11:37:03.957938+00:00
+
+--- entity_sources [row 3 of 3] ---
+id: 542a52eb-be31-4848-902a-00c45cb70c6e
+entity_slug: fruitful
+source_system: gulfshores.com restaurant-dining directory
+source_url: https://www.gulfshores.com/restaurants/?page=1
+scope: directory-listing
+confidence: high
+note: All Restaurants
+created_at: 2026-07-16T12:32:02.549024+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   5 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 5] ---
+id: 65eb1f25-c2c2-44de-8a5c-e177637750f9
+entity_slug: fruitful
+tag_name: food
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 5] ---
+id: 0c5fd905-2090-49e7-827f-250d411eff18
+entity_slug: fruitful
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 3 of 5] ---
+id: 83724554-698a-4beb-89dc-5ab9442d6d3f
+entity_slug: fruitful
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 4 of 5] ---
+id: 97d38e32-c9e7-413f-8ab9-b0e736ab4615
+entity_slug: fruitful
+tag_name: All Restaurants
+tag_category: dining
+
+--- entity_tags [row 5 of 5] ---
+id: 3757faf5-c294-4ef2-9eb1-2e932f71c2c1
+entity_slug: fruitful
+tag_name: Shopping / Retail / Specialty
+tag_category: things-to-do
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: adb22a36-5c96-4d4e-8b02-f638b5bb3709
+entity_slug: fruitful
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_food_beverage   -   1 row(s)
+####################################################################################################
+
+--- industry_food_beverage [row 1 of 1] ---
+entity_slug: fruitful
+menu_section_count: 2
+menu_item_count: 14
+price_low: 8
+price_high: 8
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+dine_in: true
+takeout: false
+delivery: false
+reservable: false
+outdoor_seating: false
+live_music: false
+good_for_kids: false
+good_for_groups: false
+has_happy_hour: false
+updated_at: 2026-07-20T03:16:49.206863+00:00
+
+####################################################################################################
+# TABLE: legacy_photo_migration_queue   -   2 row(s)
+####################################################################################################
+
+--- legacy_photo_migration_queue [row 1 of 2] ---
+id: 177
+entity_slug: fruitful
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/0bdcb417-9cfc-4812-adee-4e76e87bcfb2/image_3.jpg
+is_cover: false
+sort_order: 102
+status: linked_legacy
+created_at: 2026-07-25T23:32:39.118198+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 2 of 2] ---
+id: 555
+entity_slug: fruitful
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/0bdcb417-9cfc-4812-adee-4e76e87bcfb2/image_2.jpg
+is_cover: false
+sort_order: 101
+status: linked_legacy
+created_at: 2026-07-26T00:31:07.222409+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: menu_items   -   14 row(s)
+####################################################################################################
+
+--- menu_items [row 1 of 14] ---
+id: d9a974fd-9243-4314-bfc2-7fca033f36f1
+section_id: 60669aac-19ae-4a72-9f3d-3e04e9d88411
+entity_slug: fruitful
+item_name: Strawberry Banana Bliss
+description: Strawberry, Banana, Almond Milk, Honey
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 2 of 14] ---
+id: 3df7a970-21b2-444d-b56e-6b12e09d9367
+section_id: 60669aac-19ae-4a72-9f3d-3e04e9d88411
+entity_slug: fruitful
+item_name: Chocolate Peanut Butter Power
+description: Peanut Butter, Chocolate Protein Powder, Banana, Almond Milk
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 3 of 14] ---
+id: a4151102-f2ae-4ca8-a1e2-ed60913552d5
+section_id: 60669aac-19ae-4a72-9f3d-3e04e9d88411
+entity_slug: fruitful
+item_name: Green Glow
+description: Spinach, Mango, Pineapple, Banana, Almond Milk
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 4 of 14] ---
+id: f9cb8427-6503-4523-97d5-6cfe9c007a69
+section_id: 60669aac-19ae-4a72-9f3d-3e04e9d88411
+entity_slug: fruitful
+item_name: Mango Pineapple
+description: Mango, Pineapple, Honey, Pineapple Juice
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 5 of 14] ---
+id: 527c1bbc-8d5a-4098-9b8c-1182b072abdf
+section_id: 60669aac-19ae-4a72-9f3d-3e04e9d88411
+entity_slug: fruitful
+item_name: Berry Blast
+description: Blueberries, Strawberries, Raspberry, Blackberry, Banana, Almond Milk, Honey
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 6 of 14] ---
+id: 2d176ca8-5058-47b3-96da-eb5a7faf290c
+section_id: 60669aac-19ae-4a72-9f3d-3e04e9d88411
+entity_slug: fruitful
+item_name: Pina Colada
+description: Pineapple, Banana, Pineapple Juice, Coconut Milk
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 7 of 14] ---
+id: d54f56cc-fbc8-4240-8d70-6f36bf0d34e4
+section_id: 163f89de-1b08-4347-b4b1-c061e0f34075
+entity_slug: fruitful
+item_name: FAITHFULNESS
+description: Mango-Pineapple Base, Granola, Strawberry, Raspberry, Kiwi, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price: 8
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 8 of 14] ---
+id: 2e1e1669-ae57-4a54-86eb-f13fc2410524
+section_id: 163f89de-1b08-4347-b4b1-c061e0f34075
+entity_slug: fruitful
+item_name: KINDNESS
+description: Acai, Granola, Strawberry, Banana, Blueberry, Nutella (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price: 8
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 9 of 14] ---
+id: 629942be-ecb0-4bb4-8cf4-abea25426b45
+section_id: 163f89de-1b08-4347-b4b1-c061e0f34075
+entity_slug: fruitful
+item_name: GENTLENESS
+description: Blue Sorbet, Granola, Strawberry, Blueberry, Pineapple, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price: 8
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 10 of 14] ---
+id: 80588022-37ac-410b-ad25-b7411a212da7
+section_id: 163f89de-1b08-4347-b4b1-c061e0f34075
+entity_slug: fruitful
+item_name: GOODNESS
+description: Matcha, Granola, Banana, Coconut, Kiwi, Blueberry, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price: 8
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 11 of 14] ---
+id: 889c3ce4-7e12-48fa-92b9-b1e73a61fb5b
+section_id: 163f89de-1b08-4347-b4b1-c061e0f34075
+entity_slug: fruitful
+item_name: LOVE
+description: Acai, Granola, Raspberry, Strawberry, Kiwi, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price: 8
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 12 of 14] ---
+id: 8cea6f6c-a241-4552-9def-755135594535
+section_id: 163f89de-1b08-4347-b4b1-c061e0f34075
+entity_slug: fruitful
+item_name: JOY
+description: Coconut, Granola, Pineapple, Strawberry, Blueberry, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price: 8
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 13 of 14] ---
+id: 8dd8fc50-fb6f-46d8-b793-0aa514fa0a54
+section_id: 163f89de-1b08-4347-b4b1-c061e0f34075
+entity_slug: fruitful
+item_name: PATIENCE
+description: Strawberry Base, Granola, Pineapple, Raspberry, Banana, Almond Butter (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price: 8
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 14 of 14] ---
+id: f95b2dc1-5cd6-4f18-a0b2-491aa7bbdc43
+section_id: 163f89de-1b08-4347-b4b1-c061e0f34075
+entity_slug: fruitful
+item_name: PEACE
+description: Passion Fruit, Granola, Mango, Almond Flakes, Kiwi, Strawberries, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price: 8
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+####################################################################################################
+# TABLE: menu_section_days   -   14 row(s)
+####################################################################################################
+
+--- menu_section_days [row 1 of 14] ---
+id: 4876c61d-7d3a-4a31-bd74-e7f14740f391
+menu_section_id: 163f89de-1b08-4347-b4b1-c061e0f34075
+entity_slug: fruitful
+day_of_week: Monday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 2 of 14] ---
+id: 71ebcdfd-21f8-45de-8c42-81eafeb89637
+menu_section_id: 163f89de-1b08-4347-b4b1-c061e0f34075
+entity_slug: fruitful
+day_of_week: Tuesday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 3 of 14] ---
+id: 027fbe33-a26a-4569-9c18-4f625b5cc65a
+menu_section_id: 163f89de-1b08-4347-b4b1-c061e0f34075
+entity_slug: fruitful
+day_of_week: Wednesday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 4 of 14] ---
+id: f2623e84-16f3-4303-8b65-89f3b4111f78
+menu_section_id: 163f89de-1b08-4347-b4b1-c061e0f34075
+entity_slug: fruitful
+day_of_week: Thursday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 5 of 14] ---
+id: ac26bc1e-d235-41d0-a1bc-3f0f785979d5
+menu_section_id: 163f89de-1b08-4347-b4b1-c061e0f34075
+entity_slug: fruitful
+day_of_week: Friday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 6 of 14] ---
+id: 9f866ed0-db84-4ca6-a7b2-f23f4b21143d
+menu_section_id: 163f89de-1b08-4347-b4b1-c061e0f34075
+entity_slug: fruitful
+day_of_week: Saturday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 7 of 14] ---
+id: 9646670b-8010-45d5-8853-e0dc8173d8bb
+menu_section_id: 163f89de-1b08-4347-b4b1-c061e0f34075
+entity_slug: fruitful
+day_of_week: Sunday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 8 of 14] ---
+id: b3ca120c-dfef-47ed-9942-68d1e23f6ef4
+menu_section_id: 60669aac-19ae-4a72-9f3d-3e04e9d88411
+entity_slug: fruitful
+day_of_week: Monday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 9 of 14] ---
+id: 4904cb6d-aacb-4bca-ace1-55c3fa9fd9e8
+menu_section_id: 60669aac-19ae-4a72-9f3d-3e04e9d88411
+entity_slug: fruitful
+day_of_week: Tuesday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 10 of 14] ---
+id: 1a193863-9f76-40d1-826d-5df69ebaa23e
+menu_section_id: 60669aac-19ae-4a72-9f3d-3e04e9d88411
+entity_slug: fruitful
+day_of_week: Wednesday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 11 of 14] ---
+id: 3b523f8f-3d07-4900-9631-184f82b8acce
+menu_section_id: 60669aac-19ae-4a72-9f3d-3e04e9d88411
+entity_slug: fruitful
+day_of_week: Thursday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 12 of 14] ---
+id: d32d773d-b4ff-4955-ac8d-ec87987f13e1
+menu_section_id: 60669aac-19ae-4a72-9f3d-3e04e9d88411
+entity_slug: fruitful
+day_of_week: Friday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 13 of 14] ---
+id: 7b383cbc-ae60-444a-a556-30145924e841
+menu_section_id: 60669aac-19ae-4a72-9f3d-3e04e9d88411
+entity_slug: fruitful
+day_of_week: Saturday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 14 of 14] ---
+id: 048882ad-d0ad-446f-b68f-cbfe94ebd6bb
+menu_section_id: 60669aac-19ae-4a72-9f3d-3e04e9d88411
+entity_slug: fruitful
+day_of_week: Sunday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+####################################################################################################
+# TABLE: menu_section_details   -   2 row(s)
+####################################################################################################
+
+--- menu_section_details [row 1 of 2] ---
+id: d746d84a-a309-4ffd-999c-e3535c2e7a47
+menu_section_id: 163f89de-1b08-4347-b4b1-c061e0f34075
+entity_slug: fruitful
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- menu_section_details [row 2 of 2] ---
+id: 99115598-9c71-4eee-8232-d7b90e440abf
+menu_section_id: 60669aac-19ae-4a72-9f3d-3e04e9d88411
+entity_slug: fruitful
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+####################################################################################################
+# TABLE: menu_sections   -   2 row(s)
+####################################################################################################
+
+--- menu_sections [row 1 of 2] ---
+id: 163f89de-1b08-4347-b4b1-c061e0f34075
+entity_slug: fruitful
+section_name: Acai Bowls
+sort_order: 0
+days_of_week: [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday"
+]
+is_active: true
+metadata: {}
+
+--- menu_sections [row 2 of 2] ---
+id: 60669aac-19ae-4a72-9f3d-3e04e9d88411
+entity_slug: fruitful
+section_name: Smoothies
+sort_order: 1
+days_of_week: [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday"
+]
+is_active: true
+metadata: {}
+
+####################################################################################################
+# TABLE: search_index   -   29 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 29] ---
+ref_type: offer
+ref_id: 2935
+entity_slug: fruitful
+title: Strawberry Banana Bliss
+category: menu_item
+subtitle: Strawberry, Banana, Almond Milk, Honey
+search_vector: 'almond':6C 'banana':2A,5C 'bliss':3A 'honey':8C 'milk':7C 'strawberri':1A,4C
+
+--- search_index [row 2 of 29] ---
+ref_type: offer
+ref_id: 2936
+entity_slug: fruitful
+title: Chocolate Peanut Butter Power
+category: menu_item
+subtitle: Peanut Butter, Chocolate Protein Powder, Banana, Almond Milk
+search_vector: 'almond':11C 'banana':10C 'butter':3A,6C 'chocol':1A,7C 'milk':12C 'peanut':2A,5C 'powder':9C 'power':4A 'protein':8C
+
+--- search_index [row 3 of 29] ---
+ref_type: offer
+ref_id: 2937
+entity_slug: fruitful
+title: Green Glow
+category: menu_item
+subtitle: Spinach, Mango, Pineapple, Banana, Almond Milk
+search_vector: 'almond':7C 'banana':6C 'glow':2A 'green':1A 'mango':4C 'milk':8C 'pineappl':5C 'spinach':3C
+
+--- search_index [row 4 of 29] ---
+ref_type: offer
+ref_id: 2938
+entity_slug: fruitful
+title: Mango Pineapple
+category: menu_item
+subtitle: Mango, Pineapple, Honey, Pineapple Juice
+search_vector: 'honey':5C 'juic':7C 'mango':1A,3C 'pineappl':2A,4C,6C
+
+--- search_index [row 5 of 29] ---
+ref_type: offer
+ref_id: 2939
+entity_slug: fruitful
+title: Berry Blast
+category: menu_item
+subtitle: Blueberries, Strawberries, Raspberry, Blackberry, Banana, Almond Milk, Honey
+search_vector: 'almond':8C 'banana':7C 'berri':1A 'blackberri':6C 'blast':2A 'blueberri':3C 'honey':10C 'milk':9C 'raspberri':5C 'strawberri':4C
+
+--- search_index [row 6 of 29] ---
+ref_type: offer
+ref_id: 2970
+entity_slug: fruitful
+title: Pina Colada
+category: menu_item
+subtitle: Pineapple, Banana, Pineapple Juice, Coconut Milk
+search_vector: 'banana':4C 'coconut':7C 'colada':2A 'juic':6C 'milk':8C 'pina':1A 'pineappl':3C,5C
+
+--- search_index [row 7 of 29] ---
+ref_type: offer
+ref_id: 8178
+entity_slug: fruitful
+title: FAITHFULNESS
+category: menu_item
+subtitle: Mango-Pineapple Base, Granola, Strawberry, Raspberry, Kiwi, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+search_vector: '14':15C '16oz':14C '18':17C '24oz':16C '8':13C '8oz':12C 'base':5C 'faith':1A 'granola':6C 'honey':10C 'kiwi':9C 'mango':3C 'mango-pineappl':2C 'pineappl':4C 'price':11C 'raspberri':8C 'strawberri':7C
+
+--- search_index [row 8 of 29] ---
+ref_type: offer
+ref_id: 8179
+entity_slug: fruitful
+title: KINDNESS
+category: menu_item
+subtitle: Acai, Granola, Strawberry, Banana, Blueberry, Nutella (Price: 8oz $8 / 16oz $14 / 24oz $18)
+search_vector: '14':12C '16oz':11C '18':14C '24oz':13C '8':10C '8oz':9C 'acai':2C 'banana':5C 'blueberri':6C 'granola':3C 'kind':1A 'nutella':7C 'price':8C 'strawberri':4C
+
+--- search_index [row 9 of 29] ---
+ref_type: offer
+ref_id: 8180
+entity_slug: fruitful
+title: GENTLENESS
+category: menu_item
+subtitle: Blue Sorbet, Granola, Strawberry, Blueberry, Pineapple, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+search_vector: '14':13C '16oz':12C '18':15C '24oz':14C '8':11C '8oz':10C 'blue':2C 'blueberri':6C 'gentl':1A 'granola':4C 'honey':8C 'pineappl':7C 'price':9C 'sorbet':3C 'strawberri':5C
+
+--- search_index [row 10 of 29] ---
+ref_type: offer
+ref_id: 8181
+entity_slug: fruitful
+title: GOODNESS
+category: menu_item
+subtitle: Matcha, Granola, Banana, Coconut, Kiwi, Blueberry, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+search_vector: '14':13C '16oz':12C '18':15C '24oz':14C '8':11C '8oz':10C 'banana':4C 'blueberri':7C 'coconut':5C 'good':1A 'granola':3C 'honey':8C 'kiwi':6C 'matcha':2C 'price':9C
+
+--- search_index [row 11 of 29] ---
+ref_type: offer
+ref_id: 8182
+entity_slug: fruitful
+title: LOVE
+category: menu_item
+subtitle: Acai, Granola, Raspberry, Strawberry, Kiwi, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+search_vector: '14':12C '16oz':11C '18':14C '24oz':13C '8':10C '8oz':9C 'acai':2C 'granola':3C 'honey':7C 'kiwi':6C 'love':1A 'price':8C 'raspberri':4C 'strawberri':5C
+
+--- search_index [row 12 of 29] ---
+ref_type: offer
+ref_id: 8183
+entity_slug: fruitful
+title: JOY
+category: menu_item
+subtitle: Coconut, Granola, Pineapple, Strawberry, Blueberry, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+search_vector: '14':12C '16oz':11C '18':14C '24oz':13C '8':10C '8oz':9C 'blueberri':6C 'coconut':2C 'granola':3C 'honey':7C 'joy':1A 'pineappl':4C 'price':8C 'strawberri':5C
+
+--- search_index [row 13 of 29] ---
+ref_type: offer
+ref_id: 8184
+entity_slug: fruitful
+title: PATIENCE
+category: menu_item
+subtitle: Strawberry Base, Granola, Pineapple, Raspberry, Banana, Almond Butter (Price: 8oz $8 / 16oz $14 / 24oz $18)
+search_vector: '14':14C '16oz':13C '18':16C '24oz':15C '8':12C '8oz':11C 'almond':8C 'banana':7C 'base':3C 'butter':9C 'granola':4C 'patienc':1A 'pineappl':5C 'price':10C 'raspberri':6C 'strawberri':2C
+
+--- search_index [row 14 of 29] ---
+ref_type: offer
+ref_id: 8185
+entity_slug: fruitful
+title: PEACE
+category: menu_item
+subtitle: Passion Fruit, Granola, Mango, Almond Flakes, Kiwi, Strawberries, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+search_vector: '14':15C '16oz':14C '18':17C '24oz':16C '8':13C '8oz':12C 'almond':6C 'flake':7C 'fruit':3C 'granola':4C 'honey':10C 'kiwi':8C 'mango':5C 'passion':2C 'peac':1A 'price':11C 'strawberri':9C
+
+--- search_index [row 15 of 29] ---
+ref_type: business
+ref_id: fruitful
+entity_slug: fruitful
+title: Fruitful
+category: food
+subtitle: Food in Gulf Shores, AL. Rated 4.9★ from 98 reviews.
+search_vector: '4.9':9C '98':11C 'al':7C 'food':2B,3C 'fruit':1A 'gulf':5C 'rate':8C 'review':12C 'shore':6C
+
+--- search_index [row 16 of 29] ---
+ref_type: menu_item
+ref_id: d9a974fd-9243-4314-bfc2-7fca033f36f1
+entity_slug: fruitful
+title: Strawberry Banana Bliss
+category: menu
+subtitle: Strawberry, Banana, Almond Milk, Honey
+search_vector: 'almond':6C 'banana':2A,5C 'bliss':3A 'honey':8C 'milk':7C 'strawberri':1A,4C
+
+--- search_index [row 17 of 29] ---
+ref_type: menu_item
+ref_id: 3df7a970-21b2-444d-b56e-6b12e09d9367
+entity_slug: fruitful
+title: Chocolate Peanut Butter Power
+category: menu
+subtitle: Peanut Butter, Chocolate Protein Powder, Banana, Almond Milk
+search_vector: 'almond':11C 'banana':10C 'butter':3A,6C 'chocol':1A,7C 'milk':12C 'peanut':2A,5C 'powder':9C 'power':4A 'protein':8C
+
+--- search_index [row 18 of 29] ---
+ref_type: menu_item
+ref_id: a4151102-f2ae-4ca8-a1e2-ed60913552d5
+entity_slug: fruitful
+title: Green Glow
+category: menu
+subtitle: Spinach, Mango, Pineapple, Banana, Almond Milk
+search_vector: 'almond':7C 'banana':6C 'glow':2A 'green':1A 'mango':4C 'milk':8C 'pineappl':5C 'spinach':3C
+
+--- search_index [row 19 of 29] ---
+ref_type: menu_item
+ref_id: f9cb8427-6503-4523-97d5-6cfe9c007a69
+entity_slug: fruitful
+title: Mango Pineapple
+category: menu
+subtitle: Mango, Pineapple, Honey, Pineapple Juice
+search_vector: 'honey':5C 'juic':7C 'mango':1A,3C 'pineappl':2A,4C,6C
+
+--- search_index [row 20 of 29] ---
+ref_type: menu_item
+ref_id: 527c1bbc-8d5a-4098-9b8c-1182b072abdf
+entity_slug: fruitful
+title: Berry Blast
+category: menu
+subtitle: Blueberries, Strawberries, Raspberry, Blackberry, Banana, Almond Milk, Honey
+search_vector: 'almond':8C 'banana':7C 'berri':1A 'blackberri':6C 'blast':2A 'blueberri':3C 'honey':10C 'milk':9C 'raspberri':5C 'strawberri':4C
+
+--- search_index [row 21 of 29] ---
+ref_type: menu_item
+ref_id: 2d176ca8-5058-47b3-96da-eb5a7faf290c
+entity_slug: fruitful
+title: Pina Colada
+category: menu
+subtitle: Pineapple, Banana, Pineapple Juice, Coconut Milk
+search_vector: 'banana':4C 'coconut':7C 'colada':2A 'juic':6C 'milk':8C 'pina':1A 'pineappl':3C,5C
+
+--- search_index [row 22 of 29] ---
+ref_type: menu_item
+ref_id: d54f56cc-fbc8-4240-8d70-6f36bf0d34e4
+entity_slug: fruitful
+title: FAITHFULNESS
+category: menu
+subtitle: Mango-Pineapple Base, Granola, Strawberry, Raspberry, Kiwi, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price: 8
+search_vector: '14':15C '16oz':14C '18':17C '24oz':16C '8':13C '8oz':12C 'base':5C 'faith':1A 'granola':6C 'honey':10C 'kiwi':9C 'mango':3C 'mango-pineappl':2C 'pineappl':4C 'price':11C 'raspberri':8C 'strawberri':7C
+
+--- search_index [row 23 of 29] ---
+ref_type: menu_item
+ref_id: 2e1e1669-ae57-4a54-86eb-f13fc2410524
+entity_slug: fruitful
+title: KINDNESS
+category: menu
+subtitle: Acai, Granola, Strawberry, Banana, Blueberry, Nutella (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price: 8
+search_vector: '14':12C '16oz':11C '18':14C '24oz':13C '8':10C '8oz':9C 'acai':2C 'banana':5C 'blueberri':6C 'granola':3C 'kind':1A 'nutella':7C 'price':8C 'strawberri':4C
+
+--- search_index [row 24 of 29] ---
+ref_type: menu_item
+ref_id: 629942be-ecb0-4bb4-8cf4-abea25426b45
+entity_slug: fruitful
+title: GENTLENESS
+category: menu
+subtitle: Blue Sorbet, Granola, Strawberry, Blueberry, Pineapple, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price: 8
+search_vector: '14':13C '16oz':12C '18':15C '24oz':14C '8':11C '8oz':10C 'blue':2C 'blueberri':6C 'gentl':1A 'granola':4C 'honey':8C 'pineappl':7C 'price':9C 'sorbet':3C 'strawberri':5C
+
+--- search_index [row 25 of 29] ---
+ref_type: menu_item
+ref_id: 80588022-37ac-410b-ad25-b7411a212da7
+entity_slug: fruitful
+title: GOODNESS
+category: menu
+subtitle: Matcha, Granola, Banana, Coconut, Kiwi, Blueberry, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price: 8
+search_vector: '14':13C '16oz':12C '18':15C '24oz':14C '8':11C '8oz':10C 'banana':4C 'blueberri':7C 'coconut':5C 'good':1A 'granola':3C 'honey':8C 'kiwi':6C 'matcha':2C 'price':9C
+
+--- search_index [row 26 of 29] ---
+ref_type: menu_item
+ref_id: 889c3ce4-7e12-48fa-92b9-b1e73a61fb5b
+entity_slug: fruitful
+title: LOVE
+category: menu
+subtitle: Acai, Granola, Raspberry, Strawberry, Kiwi, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price: 8
+search_vector: '14':12C '16oz':11C '18':14C '24oz':13C '8':10C '8oz':9C 'acai':2C 'granola':3C 'honey':7C 'kiwi':6C 'love':1A 'price':8C 'raspberri':4C 'strawberri':5C
+
+--- search_index [row 27 of 29] ---
+ref_type: menu_item
+ref_id: 8cea6f6c-a241-4552-9def-755135594535
+entity_slug: fruitful
+title: JOY
+category: menu
+subtitle: Coconut, Granola, Pineapple, Strawberry, Blueberry, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price: 8
+search_vector: '14':12C '16oz':11C '18':14C '24oz':13C '8':10C '8oz':9C 'blueberri':6C 'coconut':2C 'granola':3C 'honey':7C 'joy':1A 'pineappl':4C 'price':8C 'strawberri':5C
+
+--- search_index [row 28 of 29] ---
+ref_type: menu_item
+ref_id: 8dd8fc50-fb6f-46d8-b793-0aa514fa0a54
+entity_slug: fruitful
+title: PATIENCE
+category: menu
+subtitle: Strawberry Base, Granola, Pineapple, Raspberry, Banana, Almond Butter (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price: 8
+search_vector: '14':14C '16oz':13C '18':16C '24oz':15C '8':12C '8oz':11C 'almond':8C 'banana':7C 'base':3C 'butter':9C 'granola':4C 'patienc':1A 'pineappl':5C 'price':10C 'raspberri':6C 'strawberri':2C
+
+--- search_index [row 29 of 29] ---
+ref_type: menu_item
+ref_id: f95b2dc1-5cd6-4f18-a0b2-491aa7bbdc43
+entity_slug: fruitful
+title: PEACE
+category: menu
+subtitle: Passion Fruit, Granola, Mango, Almond Flakes, Kiwi, Strawberries, Honey (Price: 8oz $8 / 16oz $14 / 24oz $18)
+price: 8
+search_vector: '14':15C '16oz':14C '18':17C '24oz':16C '8':13C '8oz':12C 'almond':6C 'flake':7C 'fruit':3C 'granola':4C 'honey':10C 'kiwi':8C 'mango':5C 'passion':2C 'peac':1A 'price':11C 'strawberri':9C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: fruitful

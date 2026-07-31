@@ -1,0 +1,2758 @@
+====================================================================================================
+SLUG: enterprise-rent-a-car
+NAME: Enterprise Rent-A-Car
+INDUSTRY: rental
+SUBTYPE: car_rental
+TABLES WITH DATA: 25
+TOTAL ROWS: 229
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (3 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (10 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_address_areas  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_hours  (11 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_nearby_landmark_types  (17 rows)
+  entity_nearby_landmarks  (6 rows)
+  entity_offer  (1 rows)
+  entity_photos  (18 rows)
+  entity_tags  (130 rows)
+  entity_theme  (2 rows)
+  industry_rental  (1 rows)
+  legacy_photo_migration_queue  (3 rows)
+  recovery_import_log  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: enterprise-rent-a-car
+name: Enterprise Rent-A-Car
+planner_category: things_to_do
+data_quality_score: 100
+recommended_next_action: ready_for_ai
+missing_menu: false
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: false
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   3 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 3] ---
+id: 19911
+entity_slug: enterprise-rent-a-car
+intent_tag: best_for:outdoor_activity
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 3] ---
+id: 19912
+entity_slug: enterprise-rent-a-car
+intent_tag: service:takeout
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 3] ---
+id: 19913
+entity_slug: enterprise-rent-a-car
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: enterprise-rent-a-car
+name: Enterprise Rent-A-Car
+is_active: t
+planner_category: things_to_do
+entity_type: service
+entity_subtype: car_rental
+city: Gulf Shores
+state: AL
+address_line_1: 1155 Commerce Dr
+latitude: 30.2879451
+longitude: -87.6717822
+rating: 4.2
+review_count: 0
+website_url: https://www.enterprise.com/en/car-rental-locations/us/al/gulf-shores-international-airport-55kg.html?mcid=yext:245709
+hero_image_url: /photos/enterprise-rent-a-car/photo_01.jpg
+voice_summary: Enterprise Rent-A-Car in Gulf Shores is best for outdoor activity.
+planner_summary: Enterprise Rent-A-Car is part of the world's largest car rental provider, as measured by revenue, fleet, and employees. The Foley location at 3410 S McKenzie St offers convenient car rental services with a wide selection of vehicles including economy cars, full-size sedans, SUVs, minivans, and pickup trucks. Enterprise provides excellent customer service, competitive rates, and flexibility for all your transportation needs - whether you need a short-term rental, one-way rental, long-term rental, or specialty vehicle.
+best_for: outdoor activity
+not_best_for: nothing specific flagged
+service_tags: takeout
+search_keywords: car_rental|point_of_interest|service|establishment|wheelchairAccessibleParking|wheelchairAccessibleEntrance|acceptsNfc|acceptsDebitCards|acceptsCreditCards|takeout
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 10
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 130
+faq_count: 0
+data_quality_score: 100
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   10 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 10] ---
+id: 2820
+entity_slug: enterprise-rent-a-car
+entity_name: Enterprise Rent-A-Car
+city: Gulf Shores
+url: /photos/enterprise-rent-a-car/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 10] ---
+id: 2821
+entity_slug: enterprise-rent-a-car
+entity_name: Enterprise Rent-A-Car
+city: Gulf Shores
+url: /photos/enterprise-rent-a-car/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 10] ---
+id: 2822
+entity_slug: enterprise-rent-a-car
+entity_name: Enterprise Rent-A-Car
+city: Gulf Shores
+url: /photos/enterprise-rent-a-car/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 10] ---
+id: 2823
+entity_slug: enterprise-rent-a-car
+entity_name: Enterprise Rent-A-Car
+city: Gulf Shores
+url: /photos/enterprise-rent-a-car/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 10] ---
+id: 2824
+entity_slug: enterprise-rent-a-car
+entity_name: Enterprise Rent-A-Car
+city: Gulf Shores
+url: /photos/enterprise-rent-a-car/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 10] ---
+id: 8935
+entity_slug: enterprise-rent-a-car
+entity_name: Enterprise Rent-A-Car
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 10] ---
+id: 8938
+entity_slug: enterprise-rent-a-car
+entity_name: Enterprise Rent-A-Car
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 10] ---
+id: 8941
+entity_slug: enterprise-rent-a-car
+entity_name: Enterprise Rent-A-Car
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 10] ---
+id: 25078
+entity_slug: enterprise-rent-a-car
+entity_name: Enterprise Rent-A-Car
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 10] ---
+id: 25629
+entity_slug: enterprise-rent-a-car
+entity_name: Enterprise Rent-A-Car
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 2a3528ab-ebc7-4458-afd2-4493e1c60061
+resource_type: service
+slug: enterprise-rent-a-car
+name: Enterprise Rent-A-Car
+description: Enterprise Rent-A-Car is part of the world's largest car rental provider, as measured by revenue, fleet, and employees. The Foley location at 3410 S McKenzie St offers convenient car rental services with a wide selection of vehicles including economy cars, full-size sedans, SUVs, minivans, and pickup trucks. Enterprise provides excellent customer service, competitive rates, and flexibility for all your transportation needs - whether you need a short-term rental, one-way rental, long-term rental, or specialty vehicle.
+entity_slug: enterprise-rent-a-car
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_04.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_03.jpg",
+  "/photos/enterprise-rent-a-car/photo_01.jpg",
+  "/photos/enterprise-rent-a-car/photo_02.jpg",
+  "/photos/enterprise-rent-a-car/photo_03.jpg",
+  "/photos/enterprise-rent-a-car/photo_04.jpg",
+  "/photos/enterprise-rent-a-car/photo_05.jpg"
+]
+amenities: []
+faqs: []
+address: 1155 Commerce Dr
+city: Gulf Shores
+state: AL
+latitude: 30.2879451
+longitude: -87.6717822
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: a8c49011d1a6b031bcea2dba2b9c7903
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 2a3528ab-ebc7-4458-afd2-4493e1c60061
+entity_slug: enterprise-rent-a-car
+slug: enterprise-rent-a-car
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_02.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_04.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_05.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_03.jpg",
+  "/photos/enterprise-rent-a-car/photo_01.jpg",
+  "/photos/enterprise-rent-a-car/photo_02.jpg",
+  "/photos/enterprise-rent-a-car/photo_03.jpg",
+  "/photos/enterprise-rent-a-car/photo_04.jpg",
+  "/photos/enterprise-rent-a-car/photo_05.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: f71bdb2e-9214-466e-bc04-754ba97c4f09
+slug: enterprise-rent-a-car
+name: Enterprise Rent-A-Car
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: car_rental
+description: Enterprise Rent-A-Car is part of the world's largest car rental provider, as measured by revenue, fleet, and employees. The Foley location at 3410 S McKenzie St offers convenient car rental services with a wide selection of vehicles including economy cars, full-size sedans, SUVs, minivans, and pickup trucks. Enterprise provides excellent customer service, competitive rates, and flexibility for all your transportation needs - whether you need a short-term rental, one-way rental, long-term rental, or specialty vehicle.
+phone: (844) 351-0787
+website_url: https://www.enterprise.com/en/car-rental-locations/us/al/gulf-shores-international-airport-55kg.html?mcid=yext:245709
+menu_pin: 4484
+address_line_1: 1155 Commerce Dr
+city: Gulf Shores
+state: AL
+zip: 36542
+latitude: 30.2879451
+longitude: -87.6717822
+rating: 4.2
+review_count: 0
+hero_image_url: https://places.googleapis.com/v1/places/ChIJX3rSMVYFmogRs7aqdU0euxg/photos/AaVGc3m1pbTCWlTiPPek_UfFbyp23-4UI0yDG2rpUjU94j5h-SiseygLUsw7F9NBRJzBKVq9CLOG9nWxLPbWCR_f2YxzUMniR9Nlml_fWSZ4nJXpm2T-2dsiiwp_g0ucufecXXiLDggNMlToic1ZVeshOhHR0_US45X3oL7_urgkKrZN0TFFspXEDy8ahc81DZ388LqEDQeQOSUbo5uIRUNN5QVAsWbkXL21UPhUkYgM-kGHx4wzfpHsYB6ktinZulQmw7V9FRkBSDl9eE7enCm5GwlLcLCfYsVFRNTpUHYXFY0ROG3sWerco_4JCOOuCs_e7ThsYgEVkPCLzzKZR7JEr5aWOMhFTiibvyoqa57FIEycYpwP_8sR6h_CGeHEFWSW121ZhROrOaVR1UkwMINxRB4SzpswbwFAQRvNJoqXq-T1zdzTnWOBGU-w9kCfkIO1/media?maxHeightPx=1600&maxWidthPx=1600
+good_for_kids: false
+created_at: 2026-06-03T03:59:34.043867+00:00
+updated_at: 2026-06-03T03:59:34.043867+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJX3rSMVYFmogRs7aqdU0euxg
+google_maps_uri: https://maps.google.com/?cid=1782051395590600371&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: car_rental
+formatted_address: 1155 Commerce Dr, Gulf Shores, AL 36542, USA
+plus_code: 862J78QH+57
+international_phone: +1 844-351-0787
+google_places_data: {
+  "id": "ChIJX3rSMVYFmogRs7aqdU0euxg",
+  "types": [
+    "car_rental",
+    "point_of_interest",
+    "service",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJX3rSMVYFmogRs7aqdU0euxg/photos/AaVGc3m1pbTCWlTiPPek_UfFbyp23-4UI0yDG2rpUjU94j5h-SiseygLUsw7F9NBRJzBKVq9CLOG9nWxLPbWCR_f2YxzUMniR9Nlml_fWSZ4nJXpm2T-2dsiiwp_g0ucufecXXiLDggNMlToic1ZVeshOhHR0_US45X3oL7_urgkKrZN0TFFspXEDy8ahc81DZ388LqEDQeQOSUbo5uIRUNN5QVAsWbkXL21UPhUkYgM-kGHx4wzfpHsYB6ktinZulQmw7V9FRkBSDl9eE7enCm5GwlLcLCfYsVFRNTpUHYXFY0ROG3sWerco_4JCOOuCs_e7ThsYgEVkPCLzzKZR7JEr5aWOMhFTiibvyoqa57FIEycYpwP_8sR6h_CGeHEFWSW121ZhROrOaVR1UkwMINxRB4SzpswbwFAQRvNJoqXq-T1zdzTnWOBGU-w9kCfkIO1",
+      "widthPx": 1900,
+      "heightPx": 1900,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAHi7LIXk2NVktnsOJ5kdJs!2e10!4m2!3m1!1s0x889a055631d27a5f:0x18bb1e4d75aab6b3",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAHi7LIXk2NVktnsOJ5kdJs&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/115475211231065786772",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLeB1R5O7OFLhU2Z9EPF2uQ9vTxbOg_GD_uNTNjmxByum8obg=s100-p-k-no-mo",
+          "displayName": "Enterprise Rent-A-Car"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJX3rSMVYFmogRs7aqdU0euxg/photos/AaVGc3k6SK9kvHWIUp8ZoauclJ4camzZ-0EYAPX5JMmeJw2-1acrUp0-67CTWQ9yPvNv039iKIsOqOXTzimxdc9PvlwjcnVvizB3nF0UUtVPBf-wPKZUKyQkCv5dNfU4k1NYQjZjX62Usu6a6ovjLMQlCK2B84H3RNySZ_CeW3tZmr5Ya6-DfL-LAxNzP4hZLzWZpVP_FeW7QLd4-UwalrGZUy5oLcrtsZXbn47UwjT5xA2HtOoRq9LEIHgHMD-fLKs5WTLpmup7sm6N6XZtGvQmSXQt1KZUydZFl3ErzYy_tapTdjZtKKjPVzBxtFLCwOM-FY-dBrj2gC24g5B6lQsQflvbS-kTF25zePC0zpQzyFI3zsHURmZ7UtbUvyHeX6tVw7VhuRhvA1ZZLFoJMUKfh_VeXsCo3_pJwb52MwhKldqF5dQl1Ve16VQUhZqLIZWP",
+      "widthPx": 1900,
+      "heightPx": 1900,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhATWyoLeCRspgzztmLQhx2I!2e10!4m2!3m1!1s0x889a055631d27a5f:0x18bb1e4d75aab6b3",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhATWyoLeCRspgzztmLQhx2I&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/115475211231065786772",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLeB1R5O7OFLhU2Z9EPF2uQ9vTxbOg_GD_uNTNjmxByum8obg=s100-p-k-no-mo",
+          "displayName": "Enterprise Rent-A-Car"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJX3rSMVYFmogRs7aqdU0euxg/photos/AaVGc3k-1AWE2w9RWRt9cUvgvmQjDPqAR0OeQncagR46wP0OOQXXle6P-YwGUqjSLGIg6TKFHoVKRIrvCpB5QDW7lP5jZEgTicCcEJuGqOqpX5vKllyExqqEiHYZdsIcN16_NGBqPRJDE1HIxbiKi4mxiS4H-PIW5BQ9WVe6MwFhnsd6TF0Hl48Q5Spi4ikeNP6nSv6ZwLIeLoKsMfPXSsJODLcl-RQV_DYHiteQ_19iGgBuZrKfqytfBsnQE3SldrRobJw6kcQQ7cfrOW74SI82KBjZxXEvdV_x0k7WJZbsB1WaJwjfzDj2kcOWYS0261mqV9GNGa3VisXiQcLAv-BLpOY8O_96CsuL6Z8usU-3bqccjOxf3j0J5CEL3rF4dLDB0soSPGP6k2oB7Kr_Q5VBCAufmisJj79niGvnC2GwIwGBfdgPZcvMImJUx9e7raQH",
+      "widthPx": 1900,
+      "heightPx": 1900,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAOEBIuR0Xg5SYnGVGrIj8L!2e10!4m2!3m1!1s0x889a055631d27a5f:0x18bb1e4d75aab6b3",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAOEBIuR0Xg5SYnGVGrIj8L&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/115475211231065786772",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLeB1R5O7OFLhU2Z9EPF2uQ9vTxbOg_GD_uNTNjmxByum8obg=s100-p-k-no-mo",
+          "displayName": "Enterprise Rent-A-Car"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJX3rSMVYFmogRs7aqdU0euxg/photos/AaVGc3ksiwutUur4ntBUhiymido-eF19GpRIXYj4e-zvHy4Lo_Q8TQ6z0tdZXRTZN8DVo3Rt3dkR7JnWEEszmrPNmZPWZl5lVUCDcD2j8Ci0KI73I378XXzljvYBEPY05oYSLSFzSLUkmUsWxd8t-ctuTQY9lGA4-eYM5kpGCPegJl9Ows70Q2n82NCMUK6Q6ldvA5USNla1dBohRQyF6nb87InMlwPrrlF1Dt5Q1PYz9NzZfoa_j3RlmYPMXpkUggytrXFTiBDJIuxEUfoUD3QIC1ToMZU20tA4a8Qz8mWNLR1-_h3QouyxPjNfkiUbojqWVeQxvRBE_MtUcg0Ag_OGvdgV9xiBr2MLNXQ4e5iWmIpP6MGRJ3ci82wZLD5xd3kMqer9yM6xENAymKu8qDggSxYULMioO0sKbJmNv35zIZhaftaY4XDqWY7RJeeAIU42",
+      "widthPx": 525,
+      "heightPx": 525,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBwZS4IG8sogTcN_xqZP7IW!2e10!4m2!3m1!1s0x889a055631d27a5f:0x18bb1e4d75aab6b3",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhBwZS4IG8sogTcN_xqZP7IW&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/115475211231065786772",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLeB1R5O7OFLhU2Z9EPF2uQ9vTxbOg_GD_uNTNjmxByum8obg=s100-p-k-no-mo",
+          "displayName": "Enterprise Rent-A-Car"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJX3rSMVYFmogRs7aqdU0euxg/photos/AaVGc3meyj39gkWeelQY84mMDw1-w5lVT4QaqDCkiLjW8OsdEVyOWbn1BBL04Kt7WiCOjaONYQZNlfpj60XOKytZgQe8X2Wl4mZjWW3NVqOGWLGneL1hGgvNrBf0dClQ4VNK7aRkXI-5KyYtUjnkWOWxjbx1LPqPTvSNWqaHO_29FtyD6v-4dBqNdc-9Oy62Ixuo7Kxa31kkZGwi82iELM80Vr94iEQCe7bQaMJFU5U-4t7Yo6SuHmKmIvIyxZSqaQzejtoUUsgQwcE6BKaqXn-vW3eIO1O7VL4PFA8MLhNK9KlUS8GtfZnRWotTD_5waP8YS6BDs2dWtKcpRjN_OJZ9hsF-ZlqG56GPGNc_uKddavGb13gfMzslKsJuYaT6Z8dkxkVlxxkKb4pZyHw2vuIdTxxv5HWXuikOBit0wtzeVL3ZznoI4E4ymgVd6S_aHH8r",
+      "widthPx": 1900,
+      "heightPx": 1900,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDvAUlPcssfkXTUWJ5GcTpl!2e10!4m2!3m1!1s0x889a055631d27a5f:0x18bb1e4d75aab6b3",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhDvAUlPcssfkXTUWJ5GcTpl&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/115475211231065786772",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLeB1R5O7OFLhU2Z9EPF2uQ9vTxbOg_GD_uNTNjmxByum8obg=s100-p-k-no-mo",
+          "displayName": "Enterprise Rent-A-Car"
+        }
+      ]
+    }
+  ],
+  "location": {
+    "latitude": 30.2879451,
+    "longitude": -87.6717822
+  },
+  "plusCode": {
+    "globalCode": "862J78QH+57",
+    "compoundCode": "78QH+57 Gulf Shores, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.2861010197085,
+      "longitude": -87.6733383802915
+    },
+    "high": {
+      "latitude": 30.288798980291496,
+      "longitude": -87.67064041970849
+    }
+  },
+  "websiteUri": "https://www.enterprise.com/en/car-rental-locations/us/al/gulf-shores-international-airport-55kg.html?mcid=yext:245709",
+  "displayName": {
+    "text": "Enterprise Rent-A-Car",
+    "languageCode": "en"
+  },
+  "primaryType": "car_rental",
+  "googleMapsUri": "https://maps.google.com/?cid=1782051395590600371&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=1782051395590600371&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a055631d27a5f:0x18bb1e4d75aab6b3!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a055631d27a5f:0x18bb1e4d75aab6b3!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a055631d27a5f:0x18bb1e4d75aab6b3!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a055631d27a5f:0x18bb1e4d75aab6b3!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "adrFormatAddress": "<span class=\"street-address\">1155 Commerce Dr</span>, <span class=\"locality\">Gulf Shores</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36542</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "1155 Commerce Dr, Gulf Shores, AL 36542, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "1155",
+      "shortText": "1155",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Commerce Drive",
+      "shortText": "Commerce Dr",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Gulf Shores",
+      "shortText": "Gulf Shores",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36542",
+      "shortText": "36542",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJpZ0ldRAFmogRpxkNq2RSPMk",
+        "placeId": "ChIJpZ0ldRAFmogRpxkNq2RSPMk",
+        "containment": "WITHIN",
+        "displayName": {
+          "text": "Gulf Shores International Airport at Jack Edwards Field",
+          "languageCode": "en"
+        }
+      }
+    ],
+    "landmarks": [
+      {
+        "name": "places/ChIJpZ0ldRAFmogRrHOyBlafYbo",
+        "types": [
+          "airport",
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJpZ0ldRAFmogRrHOyBlafYbo",
+        "displayName": {
+          "text": "Gulf Shores International Airport at Jack Edwards Field",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "WITHIN",
+        "straightLineDistanceMeters": 82.879295
+      },
+      {
+        "name": "places/ChIJswZDc88EmogRDsF1CMVp8aY",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "real_estate_agency",
+          "travel_agency"
+        ],
+        "placeId": "ChIJswZDc88EmogRDsF1CMVp8aY",
+        "displayName": {
+          "text": "Gulf Shores Vacation Rentals, Inc",
+          "languageCode": "en"
+        },
+        "straightLineDistanceMeters": 334.30685
+      },
+      {
+        "name": "places/ChIJedeH2xsFmogRE3nYSZc5nKA",
+        "types": [
+          "establishment",
+          "general_contractor",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJedeH2xsFmogRE3nYSZc5nKA",
+        "displayName": {
+          "text": "Roberts Cooling, Heating, Plumbing & Electrical",
+          "languageCode": "en"
+        },
+        "straightLineDistanceMeters": 404.3083
+      },
+      {
+        "name": "places/ChIJ1XjB5c8EmogROq7a-VOIN4I",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "real_estate_agency",
+          "travel_agency"
+        ],
+        "placeId": "ChIJ1XjB5c8EmogROq7a-VOIN4I",
+        "displayName": {
+          "text": "Luna Beach Properties, LLC",
+          "languageCode": "en"
+        },
+        "straightLineDistanceMeters": 334.56534
+      },
+      {
+        "name": "places/ChIJN138SOAEmogRsyDI20lB0LE",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJN138SOAEmogRsyDI20lB0LE",
+        "displayName": {
+          "text": "Suncoast Beach Service, Inc.",
+          "languageCode": "en"
+        },
+        "straightLineDistanceMeters": 373.2579
+      }
+    ]
+  },
+  "currentOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 10
+        },
+        "close": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 10
+        }
+      },
+      {
+        "open": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 12,
+          "minute": 50
+        },
+        "close": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 14,
+          "minute": 50
+        }
+      },
+      {
+        "open": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 15,
+          "minute": 10
+        },
+        "close": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 10
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 15
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 25
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 25
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 15,
+          "minute": 10
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 17,
+          "minute": 10
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 30
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 12,
+          "minute": 50
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 14,
+          "minute": 30
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 15,
+          "minute": 10
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 10
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 12,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 10
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 20,
+          "minute": 30
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T14:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 11:00 AM – 9:15 PM",
+      "Tuesday: Closed",
+      "Wednesday: 9:25 – 11:25 AM, 3:10 – 5:10 PM",
+      "Thursday: 9:00 – 11:30 AM, 12:50 – 2:30 PM, 3:10 – 9:10 PM",
+      "Friday: 12:00 – 9:10 PM",
+      "Saturday: 10:00 AM – 8:30 PM",
+      "Sunday: 9:10 – 11:10 AM, 12:50 – 2:50 PM, 3:10 – 9:10 PM"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Car Rental Agency",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "nationalPhoneNumber": "(844) 351-0787",
+  "regularOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 9,
+          "minute": 10
+        },
+        "close": {
+          "day": 0,
+          "hour": 11,
+          "minute": 10
+        }
+      },
+      {
+        "open": {
+          "day": 0,
+          "hour": 12,
+          "minute": 50
+        },
+        "close": {
+          "day": 0,
+          "hour": 14,
+          "minute": 50
+        }
+      },
+      {
+        "open": {
+          "day": 0,
+          "hour": 15,
+          "minute": 10
+        },
+        "close": {
+          "day": 0,
+          "hour": 21,
+          "minute": 10
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 21,
+          "minute": 15
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 9,
+          "minute": 25
+        },
+        "close": {
+          "day": 3,
+          "hour": 11,
+          "minute": 25
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 15,
+          "minute": 10
+        },
+        "close": {
+          "day": 3,
+          "hour": 17,
+          "minute": 10
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 9,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 11,
+          "minute": 30
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 12,
+          "minute": 50
+        },
+        "close": {
+          "day": 4,
+          "hour": 14,
+          "minute": 30
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 15,
+          "minute": 10
+        },
+        "close": {
+          "day": 4,
+          "hour": 21,
+          "minute": 10
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 12,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 21,
+          "minute": 10
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 10,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 20,
+          "minute": 30
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T14:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 11:00 AM – 9:15 PM",
+      "Tuesday: Closed",
+      "Wednesday: 9:25 – 11:25 AM, 3:10 – 5:10 PM",
+      "Thursday: 9:00 – 11:30 AM, 12:50 – 2:30 PM, 3:10 – 9:10 PM",
+      "Friday: 12:00 – 9:10 PM",
+      "Saturday: 10:00 AM – 8:30 PM",
+      "Sunday: 9:10 – 11:10 AM, 12:50 – 2:50 PM, 3:10 – 9:10 PM"
+    ]
+  },
+  "shortFormattedAddress": "1155 Commerce Dr, Gulf Shores",
+  "primaryTypeDisplayName": {
+    "text": "Car Rental Agency",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 844-351-0787"
+}
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 1155 Commerce Dr, Gulf Shores
+national_phone: (844) 351-0787
+search_vector: 'car':5A,6 'enterpris':1A 'gulf':8 'rent':3A 'rent-a-car':2A 'rental':7 'shore':9
+primary_type_display: Car Rental Agency
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=1782051395590600371&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a055631d27a5f:0x18bb1e4d75aab6b3!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a055631d27a5f:0x18bb1e4d75aab6b3!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a055631d27a5f:0x18bb1e4d75aab6b3!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a055631d27a5f:0x18bb1e4d75aab6b3!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJpZ0ldRAFmogRpxkNq2RSPMk",
+      "placeId": "ChIJpZ0ldRAFmogRpxkNq2RSPMk",
+      "containment": "WITHIN",
+      "displayName": {
+        "text": "Gulf Shores International Airport at Jack Edwards Field",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJpZ0ldRAFmogRrHOyBlafYbo",
+      "types": [
+        "airport",
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJpZ0ldRAFmogRrHOyBlafYbo",
+      "displayName": {
+        "text": "Gulf Shores International Airport at Jack Edwards Field",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "WITHIN",
+      "straightLineDistanceMeters": 82.879295
+    },
+    {
+      "name": "places/ChIJswZDc88EmogRDsF1CMVp8aY",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "real_estate_agency",
+        "travel_agency"
+      ],
+      "placeId": "ChIJswZDc88EmogRDsF1CMVp8aY",
+      "displayName": {
+        "text": "Gulf Shores Vacation Rentals, Inc",
+        "languageCode": "en"
+      },
+      "straightLineDistanceMeters": 334.30685
+    },
+    {
+      "name": "places/ChIJedeH2xsFmogRE3nYSZc5nKA",
+      "types": [
+        "establishment",
+        "general_contractor",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJedeH2xsFmogRE3nYSZc5nKA",
+      "displayName": {
+        "text": "Roberts Cooling, Heating, Plumbing & Electrical",
+        "languageCode": "en"
+      },
+      "straightLineDistanceMeters": 404.3083
+    },
+    {
+      "name": "places/ChIJ1XjB5c8EmogROq7a-VOIN4I",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "real_estate_agency",
+        "travel_agency"
+      ],
+      "placeId": "ChIJ1XjB5c8EmogROq7a-VOIN4I",
+      "displayName": {
+        "text": "Luna Beach Properties, LLC",
+        "languageCode": "en"
+      },
+      "straightLineDistanceMeters": 334.56534
+    },
+    {
+      "name": "places/ChIJN138SOAEmogRsyDI20lB0LE",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJN138SOAEmogRsyDI20lB0LE",
+      "displayName": {
+        "text": "Suncoast Beach Service, Inc.",
+        "languageCode": "en"
+      },
+      "straightLineDistanceMeters": 373.2579
+    }
+  ]
+}
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url | hero_image_url v2-fix 2026-07-21: repointed to a photo confirmed to actually exist
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: rental
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   1 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 1] ---
+id: 2dca21f4-7355-458d-b2ad-28e4689a8c5b
+entity_slug: enterprise-rent-a-car
+place_id: ChIJpZ0ldRAFmogRpxkNq2RSPMk
+containment: WITHIN
+display_name: Gulf Shores International Airport at Jack Edwards Field
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: enterprise-rent-a-car
+name: Enterprise Rent-A-Car
+industry_code: rental
+is_parent: false
+score_of_7: 5
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 14698b6f-ab4b-4e36-b82e-64542490dc08
+entity_slug: enterprise-rent-a-car
+place_uri: https://maps.google.com/?cid=1782051395590600371&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a055631d27a5f:0x18bb1e4d75aab6b3!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a055631d27a5f:0x18bb1e4d75aab6b3!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a055631d27a5f:0x18bb1e4d75aab6b3!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a055631d27a5f:0x18bb1e4d75aab6b3!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   11 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 11] ---
+id: 2784f0f9-5041-4351-a873-562689780388
+entity_slug: enterprise-rent-a-car
+day_of_week: 0
+opens_at: 09:10:00
+closes_at: 11:10:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 11] ---
+id: 3f124e6c-7e7a-432d-942a-44e2cff435b7
+entity_slug: enterprise-rent-a-car
+day_of_week: 0
+opens_at: 12:50:00
+closes_at: 14:50:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 11] ---
+id: 6150cb28-f8e0-4a2f-9f1f-e60d626cb7bc
+entity_slug: enterprise-rent-a-car
+day_of_week: 0
+opens_at: 15:10:00
+closes_at: 21:10:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 11] ---
+id: 09596435-45a2-40d5-812e-d11d924145fc
+entity_slug: enterprise-rent-a-car
+day_of_week: 1
+opens_at: 11:00:00
+closes_at: 21:15:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 11] ---
+id: 49ed7682-f95f-4c4d-91ef-89d90d5f3273
+entity_slug: enterprise-rent-a-car
+day_of_week: 3
+opens_at: 09:25:00
+closes_at: 11:25:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 11] ---
+id: a614d405-c42e-4d6f-8bb9-ba0f2dcbf7e2
+entity_slug: enterprise-rent-a-car
+day_of_week: 3
+opens_at: 15:10:00
+closes_at: 17:10:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 11] ---
+id: 4941d761-2e57-4666-9dac-4b20991fff54
+entity_slug: enterprise-rent-a-car
+day_of_week: 4
+opens_at: 09:00:00
+closes_at: 11:30:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 8 of 11] ---
+id: 7ca55e77-b258-438e-9010-016d77c46b79
+entity_slug: enterprise-rent-a-car
+day_of_week: 4
+opens_at: 12:50:00
+closes_at: 14:30:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 9 of 11] ---
+id: 84298132-a574-4c6f-8dce-f2c51fc57e0d
+entity_slug: enterprise-rent-a-car
+day_of_week: 4
+opens_at: 15:10:00
+closes_at: 21:10:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 10 of 11] ---
+id: 378ced36-5809-4feb-a518-6aa1249955b0
+entity_slug: enterprise-rent-a-car
+day_of_week: 5
+opens_at: 12:00:00
+closes_at: 21:10:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 11 of 11] ---
+id: 9e53c2a2-34be-4303-8781-ee4ef6b1f030
+entity_slug: enterprise-rent-a-car
+day_of_week: 6
+opens_at: 10:00:00
+closes_at: 20:30:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: enterprise-rent-a-car
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 2a3528ab-ebc7-4458-afd2-4493e1c60061
+name: Enterprise Rent-A-Car
+description: Enterprise Rent-A-Car is part of the world's largest car rental provider, as measured by revenue, fleet, and employees. The Foley location at 3410 S McKenzie St offers convenient car rental services with a wide selection of vehicles including economy cars, full-size sedans, SUVs, minivans, and pickup trucks. Enterprise provides excellent customer service, competitive rates, and flexibility for all your transportation needs - whether you need a short-term rental, one-way rental, long-term rental, or specialty vehicle.
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_03.jpg",
+    "/photos/enterprise-rent-a-car/photo_01.jpg",
+    "/photos/enterprise-rent-a-car/photo_02.jpg",
+    "/photos/enterprise-rent-a-car/photo_03.jpg",
+    "/photos/enterprise-rent-a-car/photo_04.jpg",
+    "/photos/enterprise-rent-a-car/photo_05.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: enterprise-rent-a-car
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 2a3528ab-ebc7-4458-afd2-4493e1c60061
+name: Enterprise Rent-A-Car
+description: Enterprise Rent-A-Car is part of the world's largest car rental provider, as measured by revenue, fleet, and employees. The Foley location at 3410 S McKenzie St offers convenient car rental services with a wide selection of vehicles including economy cars, full-size sedans, SUVs, minivans, and pickup trucks. Enterprise provides excellent customer service, competitive rates, and flexibility for all your transportation needs - whether you need a short-term rental, one-way rental, long-term rental, or specialty vehicle.
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_02.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_04.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_05.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_03.jpg",
+    "/photos/enterprise-rent-a-car/photo_01.jpg",
+    "/photos/enterprise-rent-a-car/photo_02.jpg",
+    "/photos/enterprise-rent-a-car/photo_03.jpg",
+    "/photos/enterprise-rent-a-car/photo_04.jpg",
+    "/photos/enterprise-rent-a-car/photo_05.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: da3e428e-ea20-4b2b-b9f9-4f38cb012087
+entity_slug: enterprise-rent-a-car
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: f236ce09-f884-4523-ba90-dbe26ec4f3eb
+entity_slug: enterprise-rent-a-car
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: 27436a91-82d1-4713-824e-081cb822e557
+entity_slug: enterprise-rent-a-car
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: 01b23cb4-17fc-46f0-867a-7243d2ad8492
+entity_slug: enterprise-rent-a-car
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: 32c615da-0e12-423e-9383-63f4ad746c1f
+entity_slug: enterprise-rent-a-car
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: 9958e0d8-1ab4-44a7-9a67-fb831b774409
+entity_slug: enterprise-rent-a-car
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 7cdd0196-aa53-484c-9a34-6a2297ed3180
+entity_slug: enterprise-rent-a-car
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 08b067d9-74b7-4e7c-9929-5a3392a5833a
+entity_slug: enterprise-rent-a-car
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: 9e385a31-65d4-41b9-aa0d-cbd5b3f80518
+entity_slug: enterprise-rent-a-car
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: 89f1967c-f350-4555-a72c-2ca247958978
+entity_slug: enterprise-rent-a-car
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: 17d9fc17-42af-4d7d-8da3-cd605fd72edd
+entity_slug: enterprise-rent-a-car
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: 0ac86a5e-cb32-4e62-839b-01570dd23a7b
+entity_slug: enterprise-rent-a-car
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: 80f0e2b1-84f1-4259-a8ee-3a77f7ee8eb1
+entity_slug: enterprise-rent-a-car
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   17 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 17] ---
+id: 883a943d-e260-4787-a575-f65d88f8a064
+landmark_id: f4bc5de5-7d4b-4cae-a24a-2959315e0361
+entity_slug: enterprise-rent-a-car
+landmark_type: airport
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 17] ---
+id: 82a48d67-7f37-4906-872d-aa63d1c1dd39
+landmark_id: f4bc5de5-7d4b-4cae-a24a-2959315e0361
+entity_slug: enterprise-rent-a-car
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 17] ---
+id: 5ca3451d-8771-4e60-92a9-182518baa085
+landmark_id: f4bc5de5-7d4b-4cae-a24a-2959315e0361
+entity_slug: enterprise-rent-a-car
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 17] ---
+id: 7525f1c7-ad2e-4fc7-9f54-b30799514920
+landmark_id: 7785c753-e1aa-4b08-8065-9b32f8f678d6
+entity_slug: enterprise-rent-a-car
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 17] ---
+id: c56bca10-ab20-4d6f-a810-c81cf4afcbda
+landmark_id: 7785c753-e1aa-4b08-8065-9b32f8f678d6
+entity_slug: enterprise-rent-a-car
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 17] ---
+id: 338abd4e-37de-4cdd-a98b-d52022d8a6a3
+landmark_id: 7785c753-e1aa-4b08-8065-9b32f8f678d6
+entity_slug: enterprise-rent-a-car
+landmark_type: real_estate_agency
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 17] ---
+id: 62758814-50dd-40c5-88ba-a573912a0bee
+landmark_id: 7785c753-e1aa-4b08-8065-9b32f8f678d6
+entity_slug: enterprise-rent-a-car
+landmark_type: travel_agency
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 17] ---
+id: 6634743b-553c-4884-8e4e-5cd0bd5bdec5
+landmark_id: 3c7016d2-d305-4679-b02c-dc6162756f53
+entity_slug: enterprise-rent-a-car
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 17] ---
+id: 62412c55-2102-497b-bff4-42af1054550d
+landmark_id: 3c7016d2-d305-4679-b02c-dc6162756f53
+entity_slug: enterprise-rent-a-car
+landmark_type: general_contractor
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 17] ---
+id: 5d569f87-bc48-4533-b814-a43f5299f14f
+landmark_id: 3c7016d2-d305-4679-b02c-dc6162756f53
+entity_slug: enterprise-rent-a-car
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 17] ---
+id: 6c91751b-c72c-4dc9-a9f0-17c67c07c213
+landmark_id: 3c7016d2-d305-4679-b02c-dc6162756f53
+entity_slug: enterprise-rent-a-car
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 17] ---
+id: c9ae8f29-a8bc-44f0-8fdb-42188eae289b
+landmark_id: fda97e68-69d5-435e-8d58-795fc1677b85
+entity_slug: enterprise-rent-a-car
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 17] ---
+id: cfcce09d-84e7-44b3-90c5-3947b2e96b34
+landmark_id: fda97e68-69d5-435e-8d58-795fc1677b85
+entity_slug: enterprise-rent-a-car
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 17] ---
+id: 91b0a537-80ec-4358-8bb8-f39143cb4054
+landmark_id: fda97e68-69d5-435e-8d58-795fc1677b85
+entity_slug: enterprise-rent-a-car
+landmark_type: real_estate_agency
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 17] ---
+id: 033a7534-1297-4072-8994-e88031f5aebb
+landmark_id: fda97e68-69d5-435e-8d58-795fc1677b85
+entity_slug: enterprise-rent-a-car
+landmark_type: travel_agency
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 17] ---
+id: f73cdd12-3e14-4ba3-a2ee-e6d302247679
+landmark_id: 28d3b790-0523-4a5d-be09-381c71fd0137
+entity_slug: enterprise-rent-a-car
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 17] ---
+id: d597a8c9-2862-4a5d-83b7-dca21726b30b
+landmark_id: 28d3b790-0523-4a5d-be09-381c71fd0137
+entity_slug: enterprise-rent-a-car
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   6 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 6] ---
+id: f4bc5de5-7d4b-4cae-a24a-2959315e0361
+entity_slug: enterprise-rent-a-car
+kind: landmark
+place_id: ChIJpZ0ldRAFmogRrHOyBlafYbo
+name: Gulf Shores International Airport at Jack Edwards Field
+types: [
+  "airport",
+  "establishment",
+  "point_of_interest"
+]
+spatial_relationship: WITHIN
+straight_line_distance_meters: 82.879295
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 6] ---
+id: 7785c753-e1aa-4b08-8065-9b32f8f678d6
+entity_slug: enterprise-rent-a-car
+kind: landmark
+place_id: ChIJswZDc88EmogRDsF1CMVp8aY
+name: Gulf Shores Vacation Rentals, Inc
+types: [
+  "establishment",
+  "point_of_interest",
+  "real_estate_agency",
+  "travel_agency"
+]
+straight_line_distance_meters: 334.30685
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 6] ---
+id: 3c7016d2-d305-4679-b02c-dc6162756f53
+entity_slug: enterprise-rent-a-car
+kind: landmark
+place_id: ChIJedeH2xsFmogRE3nYSZc5nKA
+name: Roberts Cooling, Heating, Plumbing & Electrical
+types: [
+  "establishment",
+  "general_contractor",
+  "point_of_interest",
+  "store"
+]
+straight_line_distance_meters: 404.3083
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 6] ---
+id: fda97e68-69d5-435e-8d58-795fc1677b85
+entity_slug: enterprise-rent-a-car
+kind: landmark
+place_id: ChIJ1XjB5c8EmogROq7a-VOIN4I
+name: Luna Beach Properties, LLC
+types: [
+  "establishment",
+  "point_of_interest",
+  "real_estate_agency",
+  "travel_agency"
+]
+straight_line_distance_meters: 334.56534
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 6] ---
+id: 28d3b790-0523-4a5d-be09-381c71fd0137
+entity_slug: enterprise-rent-a-car
+kind: landmark
+place_id: ChIJN138SOAEmogRsyDI20lB0LE
+name: Suncoast Beach Service, Inc.
+types: [
+  "establishment",
+  "point_of_interest"
+]
+straight_line_distance_meters: 373.2579
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 6 of 6] ---
+id: 43dae86a-8993-4b10-9717-069944ec8194
+entity_slug: enterprise-rent-a-car
+kind: area
+place_id: ChIJpZ0ldRAFmogRpxkNq2RSPMk
+name: Gulf Shores International Airport at Jack Edwards Field
+containment: WITHIN
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13525
+entity_slug: enterprise-rent-a-car
+name: Enterprise Rent-A-Car
+description: Enterprise Rent-A-Car is part of the world's largest car rental provider, as measured by revenue, fleet, and employees. The Foley location at 3410 S McKenzie St offers convenient car rental services with a wide selection of vehicles including economy cars, full-size sedans, SUVs, minivans, and pickup trucks. Enterprise provides excellent customer service, competitive rates, and flexibility for all your transportation needs - whether you need a short-term rental, one-way rental, long-term rental, or specialty vehicle.
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 2a3528ab-ebc7-4458-afd2-4493e1c60061
+
+####################################################################################################
+# TABLE: entity_photos   -   18 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 18] ---
+id: 319d5542-0b35-4c7f-ad6f-3b00e9584a3f
+entity_slug: enterprise-rent-a-car
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_05.jpg
+is_cover: false
+sort_order: 4
+
+--- entity_photos [row 2 of 18] ---
+id: 36eeea8b-5b5e-4605-bee1-c361697b0167
+entity_slug: enterprise-rent-a-car
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_04.jpg
+is_cover: false
+sort_order: 3
+
+--- entity_photos [row 3 of 18] ---
+id: 34838afe-92e1-4703-b04a-c0641e572e6e
+entity_slug: enterprise-rent-a-car
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 4 of 18] ---
+id: e056c1d3-30be-445d-8e7b-6aabe96822e6
+entity_slug: enterprise-rent-a-car
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 5 of 18] ---
+id: f0b21ac4-1af8-4e74-b5a0-3f212f36d0c9
+entity_slug: enterprise-rent-a-car
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_03.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 6 of 18] ---
+id: d8475789-c452-4b3a-86d0-73311c97d30c
+entity_slug: enterprise-rent-a-car
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_02.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 2a3528ab-ebc7-4458-afd2-4493e1c60061
+
+--- entity_photos [row 7 of 18] ---
+id: 4ea44e04-20a6-47e9-9cc9-cf4b0cb40514
+entity_slug: enterprise-rent-a-car
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_05.jpg
+is_cover: false
+sort_order: 2
+photo_type: resource
+source_name: bookable_resource
+resource_id: 2a3528ab-ebc7-4458-afd2-4493e1c60061
+
+--- entity_photos [row 8 of 18] ---
+id: 5bd777a0-24ed-452c-91a3-82b46df0dc3f
+entity_slug: enterprise-rent-a-car
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_01.jpg
+is_cover: false
+sort_order: 3
+photo_type: resource
+source_name: bookable_resource
+resource_id: 2a3528ab-ebc7-4458-afd2-4493e1c60061
+
+--- entity_photos [row 9 of 18] ---
+id: 0fb575ca-bd1e-4efd-9132-ec6fa2f8d6c8
+entity_slug: enterprise-rent-a-car
+url: https://places.googleapis.com/v1/places/ChIJX3rSMVYFmogRs7aqdU0euxg/photos/AaVGc3m1pbTCWlTiPPek_UfFbyp23-4UI0yDG2rpUjU94j5h-SiseygLUsw7F9NBRJzBKVq9CLOG9nWxLPbWCR_f2YxzUMniR9Nlml_fWSZ4nJXpm2T-2dsiiwp_g0ucufecXXiLDggNMlToic1ZVeshOhHR0_US45X3oL7_urgkKrZN0TFFspXEDy8ahc81DZ388LqEDQeQOSUbo5uIRUNN5QVAsWbkXL21UPhUkYgM-kGHx4wzfpHsYB6ktinZulQmw7V9FRkBSDl9eE7enCm5GwlLcLCfYsVFRNTpUHYXFY0ROG3sWerco_4JCOOuCs_e7ThsYgEVkPCLzzKZR7JEr5aWOMhFTiibvyoqa57FIEycYpwP_8sR6h_CGeHEFWSW121ZhROrOaVR1UkwMINxRB4SzpswbwFAQRvNJoqXq-T1zdzTnWOBGU-w9kCfkIO1/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJX3rSMVYFmogRs7aqdU0euxg/photos/AaVGc3m1pbTCWlTiPPek_UfFbyp23-4UI0yDG2rpUjU94j5h-SiseygLUsw7F9NBRJzBKVq9CLOG9nWxLPbWCR_f2YxzUMniR9Nlml_fWSZ4nJXpm2T-2dsiiwp_g0ucufecXXiLDggNMlToic1ZVeshOhHR0_US45X3oL7_urgkKrZN0TFFspXEDy8ahc81DZ388LqEDQeQOSUbo5uIRUNN5QVAsWbkXL21UPhUkYgM-kGHx4wzfpHsYB6ktinZulQmw7V9FRkBSDl9eE7enCm5GwlLcLCfYsVFRNTpUHYXFY0ROG3sWerco_4JCOOuCs_e7ThsYgEVkPCLzzKZR7JEr5aWOMhFTiibvyoqa57FIEycYpwP_8sR6h_CGeHEFWSW121ZhROrOaVR1UkwMINxRB4SzpswbwFAQRvNJoqXq-T1zdzTnWOBGU-w9kCfkIO1
+is_cover: false
+sort_order: 0
+caption: Enterprise Rent-A-Car
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAHi7LIXk2NVktnsOJ5kdJs!2e10!4m2!3m1!1s0x889a055631d27a5f:0x18bb1e4d75aab6b3
+
+--- entity_photos [row 10 of 18] ---
+id: 661bc67d-65e6-4f84-b30e-9df89cc56205
+entity_slug: enterprise-rent-a-car
+url: https://places.googleapis.com/v1/places/ChIJX3rSMVYFmogRs7aqdU0euxg/photos/AaVGc3k6SK9kvHWIUp8ZoauclJ4camzZ-0EYAPX5JMmeJw2-1acrUp0-67CTWQ9yPvNv039iKIsOqOXTzimxdc9PvlwjcnVvizB3nF0UUtVPBf-wPKZUKyQkCv5dNfU4k1NYQjZjX62Usu6a6ovjLMQlCK2B84H3RNySZ_CeW3tZmr5Ya6-DfL-LAxNzP4hZLzWZpVP_FeW7QLd4-UwalrGZUy5oLcrtsZXbn47UwjT5xA2HtOoRq9LEIHgHMD-fLKs5WTLpmup7sm6N6XZtGvQmSXQt1KZUydZFl3ErzYy_tapTdjZtKKjPVzBxtFLCwOM-FY-dBrj2gC24g5B6lQsQflvbS-kTF25zePC0zpQzyFI3zsHURmZ7UtbUvyHeX6tVw7VhuRhvA1ZZLFoJMUKfh_VeXsCo3_pJwb52MwhKldqF5dQl1Ve16VQUhZqLIZWP/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJX3rSMVYFmogRs7aqdU0euxg/photos/AaVGc3k6SK9kvHWIUp8ZoauclJ4camzZ-0EYAPX5JMmeJw2-1acrUp0-67CTWQ9yPvNv039iKIsOqOXTzimxdc9PvlwjcnVvizB3nF0UUtVPBf-wPKZUKyQkCv5dNfU4k1NYQjZjX62Usu6a6ovjLMQlCK2B84H3RNySZ_CeW3tZmr5Ya6-DfL-LAxNzP4hZLzWZpVP_FeW7QLd4-UwalrGZUy5oLcrtsZXbn47UwjT5xA2HtOoRq9LEIHgHMD-fLKs5WTLpmup7sm6N6XZtGvQmSXQt1KZUydZFl3ErzYy_tapTdjZtKKjPVzBxtFLCwOM-FY-dBrj2gC24g5B6lQsQflvbS-kTF25zePC0zpQzyFI3zsHURmZ7UtbUvyHeX6tVw7VhuRhvA1ZZLFoJMUKfh_VeXsCo3_pJwb52MwhKldqF5dQl1Ve16VQUhZqLIZWP
+is_cover: false
+sort_order: 1
+caption: Enterprise Rent-A-Car
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhATWyoLeCRspgzztmLQhx2I!2e10!4m2!3m1!1s0x889a055631d27a5f:0x18bb1e4d75aab6b3
+
+--- entity_photos [row 11 of 18] ---
+id: cf695103-b24b-4149-b962-8b58806ef2a2
+entity_slug: enterprise-rent-a-car
+url: https://places.googleapis.com/v1/places/ChIJX3rSMVYFmogRs7aqdU0euxg/photos/AaVGc3k-1AWE2w9RWRt9cUvgvmQjDPqAR0OeQncagR46wP0OOQXXle6P-YwGUqjSLGIg6TKFHoVKRIrvCpB5QDW7lP5jZEgTicCcEJuGqOqpX5vKllyExqqEiHYZdsIcN16_NGBqPRJDE1HIxbiKi4mxiS4H-PIW5BQ9WVe6MwFhnsd6TF0Hl48Q5Spi4ikeNP6nSv6ZwLIeLoKsMfPXSsJODLcl-RQV_DYHiteQ_19iGgBuZrKfqytfBsnQE3SldrRobJw6kcQQ7cfrOW74SI82KBjZxXEvdV_x0k7WJZbsB1WaJwjfzDj2kcOWYS0261mqV9GNGa3VisXiQcLAv-BLpOY8O_96CsuL6Z8usU-3bqccjOxf3j0J5CEL3rF4dLDB0soSPGP6k2oB7Kr_Q5VBCAufmisJj79niGvnC2GwIwGBfdgPZcvMImJUx9e7raQH/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJX3rSMVYFmogRs7aqdU0euxg/photos/AaVGc3k-1AWE2w9RWRt9cUvgvmQjDPqAR0OeQncagR46wP0OOQXXle6P-YwGUqjSLGIg6TKFHoVKRIrvCpB5QDW7lP5jZEgTicCcEJuGqOqpX5vKllyExqqEiHYZdsIcN16_NGBqPRJDE1HIxbiKi4mxiS4H-PIW5BQ9WVe6MwFhnsd6TF0Hl48Q5Spi4ikeNP6nSv6ZwLIeLoKsMfPXSsJODLcl-RQV_DYHiteQ_19iGgBuZrKfqytfBsnQE3SldrRobJw6kcQQ7cfrOW74SI82KBjZxXEvdV_x0k7WJZbsB1WaJwjfzDj2kcOWYS0261mqV9GNGa3VisXiQcLAv-BLpOY8O_96CsuL6Z8usU-3bqccjOxf3j0J5CEL3rF4dLDB0soSPGP6k2oB7Kr_Q5VBCAufmisJj79niGvnC2GwIwGBfdgPZcvMImJUx9e7raQH
+is_cover: false
+sort_order: 2
+caption: Enterprise Rent-A-Car
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAOEBIuR0Xg5SYnGVGrIj8L!2e10!4m2!3m1!1s0x889a055631d27a5f:0x18bb1e4d75aab6b3
+
+--- entity_photos [row 12 of 18] ---
+id: 74f7e937-ff0b-4438-ab45-1e4bbe2f275d
+entity_slug: enterprise-rent-a-car
+url: https://places.googleapis.com/v1/places/ChIJX3rSMVYFmogRs7aqdU0euxg/photos/AaVGc3ksiwutUur4ntBUhiymido-eF19GpRIXYj4e-zvHy4Lo_Q8TQ6z0tdZXRTZN8DVo3Rt3dkR7JnWEEszmrPNmZPWZl5lVUCDcD2j8Ci0KI73I378XXzljvYBEPY05oYSLSFzSLUkmUsWxd8t-ctuTQY9lGA4-eYM5kpGCPegJl9Ows70Q2n82NCMUK6Q6ldvA5USNla1dBohRQyF6nb87InMlwPrrlF1Dt5Q1PYz9NzZfoa_j3RlmYPMXpkUggytrXFTiBDJIuxEUfoUD3QIC1ToMZU20tA4a8Qz8mWNLR1-_h3QouyxPjNfkiUbojqWVeQxvRBE_MtUcg0Ag_OGvdgV9xiBr2MLNXQ4e5iWmIpP6MGRJ3ci82wZLD5xd3kMqer9yM6xENAymKu8qDggSxYULMioO0sKbJmNv35zIZhaftaY4XDqWY7RJeeAIU42/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJX3rSMVYFmogRs7aqdU0euxg/photos/AaVGc3ksiwutUur4ntBUhiymido-eF19GpRIXYj4e-zvHy4Lo_Q8TQ6z0tdZXRTZN8DVo3Rt3dkR7JnWEEszmrPNmZPWZl5lVUCDcD2j8Ci0KI73I378XXzljvYBEPY05oYSLSFzSLUkmUsWxd8t-ctuTQY9lGA4-eYM5kpGCPegJl9Ows70Q2n82NCMUK6Q6ldvA5USNla1dBohRQyF6nb87InMlwPrrlF1Dt5Q1PYz9NzZfoa_j3RlmYPMXpkUggytrXFTiBDJIuxEUfoUD3QIC1ToMZU20tA4a8Qz8mWNLR1-_h3QouyxPjNfkiUbojqWVeQxvRBE_MtUcg0Ag_OGvdgV9xiBr2MLNXQ4e5iWmIpP6MGRJ3ci82wZLD5xd3kMqer9yM6xENAymKu8qDggSxYULMioO0sKbJmNv35zIZhaftaY4XDqWY7RJeeAIU42
+is_cover: false
+sort_order: 3
+caption: Enterprise Rent-A-Car
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBwZS4IG8sogTcN_xqZP7IW!2e10!4m2!3m1!1s0x889a055631d27a5f:0x18bb1e4d75aab6b3
+
+--- entity_photos [row 13 of 18] ---
+id: b02b1632-7659-4fb4-b3c5-536e2a64706c
+entity_slug: enterprise-rent-a-car
+url: https://places.googleapis.com/v1/places/ChIJX3rSMVYFmogRs7aqdU0euxg/photos/AaVGc3meyj39gkWeelQY84mMDw1-w5lVT4QaqDCkiLjW8OsdEVyOWbn1BBL04Kt7WiCOjaONYQZNlfpj60XOKytZgQe8X2Wl4mZjWW3NVqOGWLGneL1hGgvNrBf0dClQ4VNK7aRkXI-5KyYtUjnkWOWxjbx1LPqPTvSNWqaHO_29FtyD6v-4dBqNdc-9Oy62Ixuo7Kxa31kkZGwi82iELM80Vr94iEQCe7bQaMJFU5U-4t7Yo6SuHmKmIvIyxZSqaQzejtoUUsgQwcE6BKaqXn-vW3eIO1O7VL4PFA8MLhNK9KlUS8GtfZnRWotTD_5waP8YS6BDs2dWtKcpRjN_OJZ9hsF-ZlqG56GPGNc_uKddavGb13gfMzslKsJuYaT6Z8dkxkVlxxkKb4pZyHw2vuIdTxxv5HWXuikOBit0wtzeVL3ZznoI4E4ymgVd6S_aHH8r/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJX3rSMVYFmogRs7aqdU0euxg/photos/AaVGc3meyj39gkWeelQY84mMDw1-w5lVT4QaqDCkiLjW8OsdEVyOWbn1BBL04Kt7WiCOjaONYQZNlfpj60XOKytZgQe8X2Wl4mZjWW3NVqOGWLGneL1hGgvNrBf0dClQ4VNK7aRkXI-5KyYtUjnkWOWxjbx1LPqPTvSNWqaHO_29FtyD6v-4dBqNdc-9Oy62Ixuo7Kxa31kkZGwi82iELM80Vr94iEQCe7bQaMJFU5U-4t7Yo6SuHmKmIvIyxZSqaQzejtoUUsgQwcE6BKaqXn-vW3eIO1O7VL4PFA8MLhNK9KlUS8GtfZnRWotTD_5waP8YS6BDs2dWtKcpRjN_OJZ9hsF-ZlqG56GPGNc_uKddavGb13gfMzslKsJuYaT6Z8dkxkVlxxkKb4pZyHw2vuIdTxxv5HWXuikOBit0wtzeVL3ZznoI4E4ymgVd6S_aHH8r
+is_cover: false
+sort_order: 4
+caption: Enterprise Rent-A-Car
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhDvAUlPcssfkXTUWJ5GcTpl!2e10!4m2!3m1!1s0x889a055631d27a5f:0x18bb1e4d75aab6b3
+
+--- entity_photos [row 14 of 18] ---
+id: 63acb178-437a-41ce-93a6-2b52654aede5
+entity_slug: enterprise-rent-a-car
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_03.jpg
+is_cover: false
+sort_order: 4
+photo_type: resource
+source_name: bookable_resource
+resource_id: 2a3528ab-ebc7-4458-afd2-4493e1c60061
+
+--- entity_photos [row 15 of 18] ---
+id: 08cc1cbf-ced9-459d-a1df-6365980b4780
+entity_slug: enterprise-rent-a-car
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/enterprise-rent-a-car/photo_04.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: 2a3528ab-ebc7-4458-afd2-4493e1c60061
+
+--- entity_photos [row 16 of 18] ---
+id: b4cca4a9-7832-434f-8ecf-a6bb2c4e9d98
+entity_slug: enterprise-rent-a-car
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/f40b3f72-80bf-4655-b6cf-f6f037a3e5de/image_3.jpg
+is_cover: false
+sort_order: 102
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 17 of 18] ---
+id: 49163631-29b3-4e77-95bd-ddcc82875dec
+entity_slug: enterprise-rent-a-car
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/f40b3f72-80bf-4655-b6cf-f6f037a3e5de/image_2.jpg
+is_cover: false
+sort_order: 101
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 18 of 18] ---
+id: ad7cb188-dd31-461a-82ef-44c12c968dbb
+entity_slug: enterprise-rent-a-car
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/f40b3f72-80bf-4655-b6cf-f6f037a3e5de/image_1.jpg
+is_cover: true
+sort_order: 100
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   130 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 130] ---
+id: 84baed65-cece-4479-931b-4190a0550263
+entity_slug: enterprise-rent-a-car
+tag_name: car_rental
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 130] ---
+id: 61f9a0c1-e932-4e8f-a19d-353a6451a051
+entity_slug: enterprise-rent-a-car
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 3 of 130] ---
+id: 3a93fe10-8bcd-43c4-a781-2eec0775a882
+entity_slug: enterprise-rent-a-car
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 4 of 130] ---
+id: d9b1156c-33ba-4644-8102-85638aea90be
+entity_slug: enterprise-rent-a-car
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 5 of 130] ---
+id: 14bad104-e427-4804-a221-786a3d8ae471
+entity_slug: enterprise-rent-a-car
+tag_name: car_rental
+tag_category: google_type
+
+--- entity_tags [row 6 of 130] ---
+id: 3a09891a-f0ef-49e1-b922-08a7bee20cd3
+entity_slug: enterprise-rent-a-car
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 7 of 130] ---
+id: d1273a85-479d-4842-a5fc-dd7e616b6807
+entity_slug: enterprise-rent-a-car
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 8 of 130] ---
+id: 0bc75cfa-8a89-422e-a4a1-7453aae39050
+entity_slug: enterprise-rent-a-car
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 9 of 130] ---
+id: 7cad48d5-028a-4adf-aeb9-b9a1a1503f64
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 10 of 130] ---
+id: 368b3fea-a90f-4c4f-8d99-41733f9582f4
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 11 of 130] ---
+id: 2de80be2-7d40-4632-8e64-c0384d8df875
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 12 of 130] ---
+id: 043f70fe-496b-4555-862b-0118ad352b36
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 13 of 130] ---
+id: ff2ae0e7-75c7-423f-afc9-6d97a3106853
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 14 of 130] ---
+id: b3237751-18bf-4447-8a35-ce930eacf80c
+entity_slug: enterprise-rent-a-car
+tag_name: car_rental
+tag_category: google_type
+
+--- entity_tags [row 15 of 130] ---
+id: aa41c74c-6074-4869-93e0-62a22910f0b7
+entity_slug: enterprise-rent-a-car
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 16 of 130] ---
+id: 39d3b9a4-5da1-42de-8e5f-1c1f11bb0120
+entity_slug: enterprise-rent-a-car
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 17 of 130] ---
+id: 66355f9d-0c5d-4603-96a8-0db4f6659350
+entity_slug: enterprise-rent-a-car
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 18 of 130] ---
+id: fdd89898-add8-4008-836f-163045e0e661
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 19 of 130] ---
+id: d29a0643-023c-443e-9ded-a1721d0f7fb3
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 20 of 130] ---
+id: 1a4706b7-61ed-4800-916d-b749955b80d6
+entity_slug: enterprise-rent-a-car
+tag_name: car_rental
+tag_category: google_type
+
+--- entity_tags [row 21 of 130] ---
+id: 55b134d8-3db4-44f2-b582-19957ba0d2db
+entity_slug: enterprise-rent-a-car
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 22 of 130] ---
+id: c847bf27-4829-4826-a4a8-8d9dea39abe9
+entity_slug: enterprise-rent-a-car
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 23 of 130] ---
+id: 8feb7a44-975a-4a08-bb95-b85bf66cb1af
+entity_slug: enterprise-rent-a-car
+tag_name: car_rental
+tag_category: google_type
+
+--- entity_tags [row 24 of 130] ---
+id: 7a83f85e-e995-4ef2-a91a-02021b047154
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 25 of 130] ---
+id: 303e336b-ab89-4fdd-9350-b2d7416d4e3e
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 26 of 130] ---
+id: b7816936-38d0-4a3b-845d-aa47383203ae
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 27 of 130] ---
+id: 08044059-368a-435a-974d-029db7b9949e
+entity_slug: enterprise-rent-a-car
+tag_name: car_rental
+tag_category: google_type
+
+--- entity_tags [row 28 of 130] ---
+id: ae01c9f8-cef1-4316-b17f-16d9a3c37fb3
+entity_slug: enterprise-rent-a-car
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 29 of 130] ---
+id: 1e0d5f24-69a9-460f-a101-bfce9e892c0b
+entity_slug: enterprise-rent-a-car
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 30 of 130] ---
+id: c7deeb1c-5300-492a-8c1b-7f04b39b2acc
+entity_slug: enterprise-rent-a-car
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 31 of 130] ---
+id: 6f86d631-6ace-4a44-8da3-8b202a191d16
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 32 of 130] ---
+id: 5319cd9d-b6e3-4180-b4cf-56a2cc19e53f
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 33 of 130] ---
+id: 5768cd78-c50a-4792-bff8-ce37e7274e12
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 34 of 130] ---
+id: 82991d01-2f86-400c-97e6-bfb3450fcfd6
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 35 of 130] ---
+id: 2f6680e3-31b4-4c02-9773-c5d14e9b85f9
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 36 of 130] ---
+id: 42ebc98c-7e9c-43a2-a6be-64c5dcd7918e
+entity_slug: enterprise-rent-a-car
+tag_name: car_rental
+tag_category: google_type
+
+--- entity_tags [row 37 of 130] ---
+id: c2ef0484-420d-4445-98ed-589a50258ec7
+entity_slug: enterprise-rent-a-car
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 38 of 130] ---
+id: ec7c6dff-a6e9-47cd-8b51-0bc8704e60ea
+entity_slug: enterprise-rent-a-car
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 39 of 130] ---
+id: 17863bf1-8886-4599-b18b-13ea06cd6e2b
+entity_slug: enterprise-rent-a-car
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 40 of 130] ---
+id: 4e2513a9-aeb4-437a-b4ec-be5aa7de1b05
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 41 of 130] ---
+id: b16e0be9-e67a-4d26-bb81-ecc2e25594b1
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 42 of 130] ---
+id: c110e914-8b8e-479a-8b0b-4242fedd7641
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 43 of 130] ---
+id: c46dd18d-7b30-4772-afa7-0d462e09d897
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 44 of 130] ---
+id: bc0abe89-1011-4350-b135-52030ce20bde
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 45 of 130] ---
+id: 5b7506f0-58f9-49d5-ae70-75716f6479b0
+entity_slug: enterprise-rent-a-car
+tag_name: car_rental
+tag_category: google_type
+
+--- entity_tags [row 46 of 130] ---
+id: 6158c935-281b-40c8-af72-9a228ee69997
+entity_slug: enterprise-rent-a-car
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 47 of 130] ---
+id: 6adc1ded-23e8-488f-bbee-0e9d9f240326
+entity_slug: enterprise-rent-a-car
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 48 of 130] ---
+id: 08ec1855-5316-4f03-947c-05f4511eaa14
+entity_slug: enterprise-rent-a-car
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 49 of 130] ---
+id: f31553a3-4923-4b91-9e57-e501813033ba
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 50 of 130] ---
+id: 3c09a3fd-cb4d-41a3-8050-502085696125
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 51 of 130] ---
+id: 3bd0e293-d540-4e10-8bdd-dfd626afcfad
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 52 of 130] ---
+id: b2516d15-a99c-4ed5-805e-b04478a257d1
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 53 of 130] ---
+id: c075587c-3f3d-46d0-ae84-7f51720c276c
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 54 of 130] ---
+id: a859cd90-8f2d-464e-a17e-cb3ff375eab8
+entity_slug: enterprise-rent-a-car
+tag_name: car_rental
+tag_category: google_type
+
+--- entity_tags [row 55 of 130] ---
+id: 6f004ca5-92c2-4d3a-9bf3-c874dda1a127
+entity_slug: enterprise-rent-a-car
+tag_name: car_rental
+tag_category: google_type
+
+--- entity_tags [row 56 of 130] ---
+id: ec2e13c7-5c71-45fb-a471-b2101aca1082
+entity_slug: enterprise-rent-a-car
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 57 of 130] ---
+id: 569aee30-2bc3-4f34-9837-85c5e6e7135d
+entity_slug: enterprise-rent-a-car
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 58 of 130] ---
+id: fc03f1ae-f9d3-4d36-8700-43800bad1337
+entity_slug: enterprise-rent-a-car
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 59 of 130] ---
+id: b2e37e48-ef36-48df-b7c7-b96bcca69d8c
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 60 of 130] ---
+id: b82fa606-24ae-4ef5-84c2-b9e4ba651aa7
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 61 of 130] ---
+id: b5b7fb6e-9e05-4310-8b14-2655597bdec3
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 62 of 130] ---
+id: d15afb35-df9e-412f-950a-79621f348cc4
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 63 of 130] ---
+id: 1d3cf50d-294c-45cb-8b37-aa9de46f25d8
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 64 of 130] ---
+id: 80954dc5-c2b8-45da-b580-548888a06bb9
+entity_slug: enterprise-rent-a-car
+tag_name: car_rental
+tag_category: google_type
+
+--- entity_tags [row 65 of 130] ---
+id: f92f9bd7-e1c2-4637-b68f-ae63b9ce2830
+entity_slug: enterprise-rent-a-car
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 66 of 130] ---
+id: 244eeef3-4ea6-45f7-a48c-77772608bc53
+entity_slug: enterprise-rent-a-car
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 67 of 130] ---
+id: 43044fdc-729c-41cd-8370-ba8e071e095b
+entity_slug: enterprise-rent-a-car
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 68 of 130] ---
+id: eabd2a9a-1f29-4d45-91ed-53f682a7d529
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 69 of 130] ---
+id: db2891fc-618f-40c8-8596-1e6e40ef1360
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 70 of 130] ---
+id: 9d8df425-8cc4-4203-ad35-0d7bfa925b4d
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 71 of 130] ---
+id: 7f273599-7467-4427-9cd0-149d09451231
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 72 of 130] ---
+id: 3eb57cbe-a66c-45ed-9211-4b70572f5878
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 73 of 130] ---
+id: 75c56909-7621-4732-81bf-c712076b1af8
+entity_slug: enterprise-rent-a-car
+tag_name: car_rental
+tag_category: google_type
+
+--- entity_tags [row 74 of 130] ---
+id: d0a69861-2ab2-4cd2-b0af-edff1a2c729c
+entity_slug: enterprise-rent-a-car
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 75 of 130] ---
+id: 888daa9d-1a47-4f02-ac4f-a8f14457368a
+entity_slug: enterprise-rent-a-car
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 76 of 130] ---
+id: 07805dd9-db6c-4662-8794-4d68f781f5a3
+entity_slug: enterprise-rent-a-car
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 77 of 130] ---
+id: d9b84a71-7a37-4717-8825-adb8cd3eef92
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 78 of 130] ---
+id: 21036af6-6346-4296-bfcb-12e994efb988
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 79 of 130] ---
+id: e86f6a1d-240a-4685-91d1-32d010e8543d
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 80 of 130] ---
+id: aa2e6236-964f-464b-85f2-d7fd54cf6fff
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 81 of 130] ---
+id: f3de174a-e0f3-497e-a2b7-69095f359657
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 82 of 130] ---
+id: 4dcf2b6d-d911-4576-a71d-30b6a53d5884
+entity_slug: enterprise-rent-a-car
+tag_name: car_rental
+tag_category: google_type
+
+--- entity_tags [row 83 of 130] ---
+id: 8cfb5574-1302-4439-a17f-a97decea171b
+entity_slug: enterprise-rent-a-car
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 84 of 130] ---
+id: e7a55bfa-b604-4afb-8bb4-58f9da866228
+entity_slug: enterprise-rent-a-car
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 85 of 130] ---
+id: 9d51a54d-f590-42d3-8150-f82b24835b28
+entity_slug: enterprise-rent-a-car
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 86 of 130] ---
+id: 267eecdc-1c0d-47e1-ba4b-a1105ae24e66
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 87 of 130] ---
+id: a55bdf1d-5990-42d8-8a5d-e1d91162120c
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 88 of 130] ---
+id: 04ab1ba4-dcbd-4b9a-815e-6f38ef97ff93
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 89 of 130] ---
+id: 861901cd-6a0f-4d52-8bd2-7109e0e6e1d1
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 90 of 130] ---
+id: 8f0e3492-368b-490e-9ad6-bfed42120d59
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 91 of 130] ---
+id: 3e88eed8-52e9-4b30-bafe-c3d64f21db50
+entity_slug: enterprise-rent-a-car
+tag_name: car_rental
+tag_category: google_type
+
+--- entity_tags [row 92 of 130] ---
+id: 9465d82f-2281-4ce2-a1ae-40817c6dfc7c
+entity_slug: enterprise-rent-a-car
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 93 of 130] ---
+id: 7621fa65-1152-48ba-8b3b-f4c3891000d8
+entity_slug: enterprise-rent-a-car
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 94 of 130] ---
+id: d9031d2f-f43c-4607-b2a9-776c1ee70131
+entity_slug: enterprise-rent-a-car
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 95 of 130] ---
+id: 82323bc2-0f3e-4462-9bea-55d2936e1926
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 96 of 130] ---
+id: d946a03b-7b2a-44e5-953b-eb5d5b37339c
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 97 of 130] ---
+id: 061f2048-74e6-47da-b22d-f6a1d6a6e348
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 98 of 130] ---
+id: c61793a8-78fb-450c-94ab-ac3eecf4f498
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 99 of 130] ---
+id: 341ddeb5-0489-42a0-ac53-ad046cbf6168
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 100 of 130] ---
+id: 358554d1-974a-4db8-9631-28acd5daad14
+entity_slug: enterprise-rent-a-car
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 101 of 130] ---
+id: 28f214ed-44ff-4cab-ad9f-8604df31bc9f
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 102 of 130] ---
+id: 5f23555e-a789-432f-982f-19c300caacc0
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 103 of 130] ---
+id: c75d8270-bc95-4165-a3d9-167282fd4b07
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 104 of 130] ---
+id: c33dc951-7cd2-4aa8-8b34-e68c3c9b1e49
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 105 of 130] ---
+id: d090b1b3-c0c7-474c-ada4-97c532896567
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 106 of 130] ---
+id: c9357809-3cbc-46d4-ac25-0ee73bd0a12d
+entity_slug: enterprise-rent-a-car
+tag_name: car_rental
+tag_category: google_type
+
+--- entity_tags [row 107 of 130] ---
+id: e28c3dbd-db10-4015-82c3-db13600859bc
+entity_slug: enterprise-rent-a-car
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 108 of 130] ---
+id: 7a62a80c-4ea1-4128-bb47-4c2d291d1559
+entity_slug: enterprise-rent-a-car
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 109 of 130] ---
+id: a0fb0ae7-fd92-4f87-a32b-54675a427b30
+entity_slug: enterprise-rent-a-car
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 110 of 130] ---
+id: ffd59af9-fc37-4f7e-96f5-2f12376bb75f
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 111 of 130] ---
+id: d004acc7-a4d1-4e6e-8eca-0d4d0d79fcc4
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 112 of 130] ---
+id: 6bb4744c-0d3e-4a5c-8fb8-97b01c226700
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 113 of 130] ---
+id: 0d20a5b6-ce58-4778-b089-5a8923e104cc
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 114 of 130] ---
+id: 5e3675cb-a42f-44f2-94b1-f4e5df4f6109
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 115 of 130] ---
+id: d69e21e7-dc8b-4316-9527-8eb0344508e6
+entity_slug: enterprise-rent-a-car
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 116 of 130] ---
+id: 30330915-904b-4a24-9388-ca9ae3826fab
+entity_slug: enterprise-rent-a-car
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 117 of 130] ---
+id: 850705db-65dd-40f6-8500-d52c7929b36a
+entity_slug: enterprise-rent-a-car
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 118 of 130] ---
+id: 9f11cb27-f3d1-4d31-ab6a-da778826c17e
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 119 of 130] ---
+id: 067df198-bbd6-4a2a-a50a-02a73499173b
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 120 of 130] ---
+id: 07142146-22c3-424b-9460-bcd43d88f234
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 121 of 130] ---
+id: 738a159f-b5d3-4460-b2c2-db2eae665adb
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 122 of 130] ---
+id: 8bcc4b09-505d-478f-87d5-a65e1c82f134
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 123 of 130] ---
+id: 1e9a3814-74be-466a-9feb-24c228e37cf7
+entity_slug: enterprise-rent-a-car
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 124 of 130] ---
+id: 3e3beb41-6188-4fc3-9aaa-6dd58f460e3e
+entity_slug: enterprise-rent-a-car
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 125 of 130] ---
+id: a3ba1e04-cc9d-4c83-ae96-a44698614497
+entity_slug: enterprise-rent-a-car
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 126 of 130] ---
+id: fb678f84-3116-4dfa-9544-315bfb536bfd
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 127 of 130] ---
+id: 1e2f5499-7722-4d89-814b-8dccba47188f
+entity_slug: enterprise-rent-a-car
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 128 of 130] ---
+id: f5c80b5e-eac6-44ae-877c-2386309b840d
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 129 of 130] ---
+id: 86ceaf9b-bf40-426b-b81d-8287fc89f156
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 130 of 130] ---
+id: ee3a415d-9459-43b8-b421-90aada354ebc
+entity_slug: enterprise-rent-a-car
+tag_name: acceptsCreditCards
+tag_category: payment
+
+####################################################################################################
+# TABLE: entity_theme   -   2 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 2] ---
+id: 99196ff2-8065-421a-a59c-6a03b56f069c
+entity_slug: enterprise-rent-a-car
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+--- entity_theme [row 2 of 2] ---
+id: b223b8bc-e620-4fc9-a1f5-f0b6e4b09970
+entity_slug: enterprise-rent-a-car
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_rental   -   1 row(s)
+####################################################################################################
+
+--- industry_rental [row 1 of 1] ---
+entity_slug: enterprise-rent-a-car
+rental_item_count: 0
+hourly_available: false
+half_day_available: false
+full_day_available: false
+weekly_available: false
+delivery_offered: false
+updated_at: 2026-07-20T03:16:04.409339+00:00
+
+####################################################################################################
+# TABLE: legacy_photo_migration_queue   -   3 row(s)
+####################################################################################################
+
+--- legacy_photo_migration_queue [row 1 of 3] ---
+id: 2382
+entity_slug: enterprise-rent-a-car
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/f40b3f72-80bf-4655-b6cf-f6f037a3e5de/image_3.jpg
+is_cover: false
+sort_order: 102
+status: linked_legacy
+created_at: 2026-07-26T00:36:20.285499+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 2 of 3] ---
+id: 1957
+entity_slug: enterprise-rent-a-car
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/f40b3f72-80bf-4655-b6cf-f6f037a3e5de/image_2.jpg
+is_cover: false
+sort_order: 101
+status: linked_legacy
+created_at: 2026-07-26T00:36:20.285499+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 3 of 3] ---
+id: 1666
+entity_slug: enterprise-rent-a-car
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/f40b3f72-80bf-4655-b6cf-f6f037a3e5de/image_1.jpg
+is_cover: true
+sort_order: 100
+status: linked_legacy
+created_at: 2026-07-26T00:36:20.285499+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: recovery_import_log   -   1 row(s)
+####################################################################################################
+
+--- recovery_import_log [row 1 of 1] ---
+id: 2ae48fae-cf27-4416-a187-67b7e7853041
+batch_id: draft-businesses-netnew-2026-07-19
+target_table: entity
+target_row_id: d6a4920c-87e2-4ce9-be6e-c143cfcbb63c
+entity_slug: enterprise-rent-a-car
+source_db: may
+source_table: entity
+source_id: 41cb20e8-8089-4eea-abb0-74c078a78983
+action: insert
+imported_at: 2026-07-19T20:24:37.766838+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: offer
+ref_id: 13525
+entity_slug: enterprise-rent-a-car
+title: Enterprise Rent-A-Car
+category: rental
+subtitle: Enterprise Rent-A-Car is part of the world's largest car rental provider, as measured by revenue, fleet, and employees. The Foley location at 3410 S McKenzie St offers convenient car rental services with a wide selection of vehicles including economy cars, full-size sedans, SUVs, minivans, and pickup trucks. Enterprise provides excellent customer service, competitive rates, and flexibility for all your transportation needs - whether you need a short-term rental, one-way rental, long-term rental, or specialty vehicle.
+search_vector: '3410':32C 'car':5A,10C,18C,38C,49C 'competit':64C 'conveni':37C 'custom':62C 'economi':48C 'employe':27C 'enterpris':1A,6C,59C 'excel':61C 'fleet':25C 'flexibl':67C 'foley':29C 'full':51C 'full-siz':50C 'includ':47C 'largest':17C 'locat':30C 'long':86C 'long-term':85C 'mckenzi':34C 'measur':22C 'minivan':55C 'need':72C,75C 'offer':36C 'one':82C 'one-way':81C 'part':12C 'pickup':57C 'provid':20C,60C 'rate':65C 'rent':3A,8C 'rent-a-car':2A,7C 'rental':19C,39C,80C,84C,88C 'revenu':24C 'sedan':53C 'select':44C 'servic':40C,63C 'short':78C 'short-term':77C 'size':52C 'specialti':90C 'st':35C 'suv':54C 'term':79C,87C 'transport':71C 'truck':58C 'vehicl':46C,91C 'way':83C 'whether':73C 'wide':43C 'world':15C
+
+--- search_index [row 2 of 2] ---
+ref_type: business
+ref_id: enterprise-rent-a-car
+entity_slug: enterprise-rent-a-car
+title: Enterprise Rent-A-Car
+category: car_rental
+subtitle: Enterprise Rent-A-Car is part of the world's largest car rental provider, as measured by revenue, fleet, and employees. The Foley location at 3410 S McKenzie St offers convenient car rental services with a wide selection of vehicles including economy cars, full-size sedans, SUVs, minivans, and pickup trucks. Enterprise provides excellent customer service, competitive rates, and flexibility for all your transportation needs - whether you need a short-term rental, one-way rental, long-term rental, or specialty vehicle.
+search_vector: '3410':34C 'car':5A,6B,12C,20C,40C,51C 'competit':66C 'conveni':39C 'custom':64C 'economi':50C 'employe':29C 'enterpris':1A,8C,61C 'excel':63C 'fleet':27C 'flexibl':69C 'foley':31C 'full':53C 'full-siz':52C 'includ':49C 'largest':19C 'locat':32C 'long':88C 'long-term':87C 'mckenzi':36C 'measur':24C 'minivan':57C 'need':74C,77C 'offer':38C 'one':84C 'one-way':83C 'part':14C 'pickup':59C 'provid':22C,62C 'rate':67C 'rent':3A,10C 'rent-a-car':2A,9C 'rental':7B,21C,41C,82C,86C,90C 'revenu':26C 'sedan':55C 'select':46C 'servic':42C,65C 'short':80C 'short-term':79C 'size':54C 'specialti':92C 'st':37C 'suv':56C 'term':81C,89C 'transport':73C 'truck':60C 'vehicl':48C,93C 'way':85C 'whether':75C 'wide':45C 'world':17C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: enterprise-rent-a-car

@@ -1,0 +1,2507 @@
+====================================================================================================
+SLUG: wolf-bay
+NAME: Wolf Bay
+INDUSTRY: food_beverage
+SUBTYPE: seafood_restaurant
+TABLES WITH DATA: 16
+TOTAL ROWS: 268
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (9 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_hours  (7 rows)
+  entity_modules  (16 rows)
+  entity_offer  (99 rows)
+  entity_offer_section  (14 rows)
+  entity_photos  (2 rows)
+  entity_tags  (12 rows)
+  entity_theme  (1 rows)
+  industry_food_beverage  (1 rows)
+  search_index  (100 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: wolf-bay
+name: Wolf Bay
+planner_category: food_drink
+data_quality_score: 55
+issues: missing_summary|missing_menu|missing_faqs|missing_lat_lng
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: true
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: true
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   9 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 9] ---
+id: 7018
+entity_slug: wolf-bay
+intent_tag: best_for:waterfront_or_scenic_meal
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 9] ---
+id: 7019
+entity_slug: wolf-bay
+intent_tag: best_for:seafood_craving
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 9] ---
+id: 7020
+entity_slug: wolf-bay
+intent_tag: experience:waterfront_scenic
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 9] ---
+id: 7021
+entity_slug: wolf-bay
+intent_tag: cuisine:seafood
+intent_category: cuisine
+confidence: 0.82
+evidence: Derived from cuisine/menu/tags.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 9] ---
+id: 7022
+entity_slug: wolf-bay
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 9] ---
+id: 7023
+entity_slug: wolf-bay
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 9] ---
+id: 7024
+entity_slug: wolf-bay
+intent_tag: missing:missing_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 9] ---
+id: 7025
+entity_slug: wolf-bay
+intent_tag: missing:missing_faqs
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 9 of 9] ---
+id: 7026
+entity_slug: wolf-bay
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: wolf-bay
+name: Wolf Bay
+is_active: t
+planner_category: food_drink
+entity_type: restaurant
+entity_subtype: restaurant
+review_count: 0
+website_url: https://www.wolfbay.com
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/wolf-bay/photo_01.jpg
+voice_summary: Wolf Bay is best for waterfront or scenic meal, seafood craving. It fits seafood. Experience tags: waterfront_scenic.
+planner_summary: Wolf Bay is a food drink listing in Gulf Coast Radar.
+best_for: waterfront or scenic meal|seafood craving
+not_best_for: nothing specific flagged
+cuisine_tags: seafood
+experience_tags: waterfront_scenic
+search_keywords: seafood|casual dining|waterfront|gulf coast|restaurant|coastal cuisine|Restaurants|Waterfront Dining|food-and-drink|waterfront_scenic
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 2
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 12
+faq_count: 0
+data_quality_score: 55
+data_gaps: missing_summary|missing_menu|missing_faqs|missing_lat_lng
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 8093
+entity_slug: wolf-bay
+entity_name: Wolf Bay
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/wolf-bay/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 8094
+entity_slug: wolf-bay
+entity_name: Wolf Bay
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/wolf-bay/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 79f70a5a-893b-4ead-9156-c091e7968430
+slug: wolf-bay
+name: Wolf Bay
+is_active: true
+featured: false
+entity_type: restaurant
+entity_subtype: seafood_restaurant
+description: A Baldwin County seafood tradition since 1973. Wolf Bay is known for its fresh Gulf Coast seafood, signature seafood gumbo, stuffed shrimp, and Voted Best of Baldwin — with outdoor seating and nightly specials.
+phone: (251) 965-5129
+website_url: https://www.wolfbaylodge.com
+menu_pin: 4424
+address_line_1: 24131 Perdido Beach Blvd
+city: Orange Beach
+state: AL
+zip: 36561
+review_count: 0
+price_range: $$
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/wolf-bay/photo_01.jpg
+hh_description: ~12-3pm ("lunch happy hour," days not confirmed): $3 drafts/house wine/well drinks, $5 house margaritas, discounted apps, seasonal $8 cup/$10 bowl chili.
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: true
+live_music: true
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: true
+serves_wine: true
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: true
+created_at: 2026-06-03T23:02:32.106005+00:00
+updated_at: 2026-06-03T23:02:32.106005+00:00
+gallery_sections: []
+what_makes_it_different: Part of a small "Wolf Bay Restaurants" group (OB/GS/Foley locations).
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+business_status: OPERATIONAL
+google_places_data: {}
+ai_overview: Wolf Bay Restaurant has been a Gulf Coast family tradition since 1973, with recipes carried over from the original bait shop menu — including world-famous fried shrimp, seafood gumbo, crab stuffing, and stuffed whole flounder. The Orange Beach location on Perdido Beach Blvd offers both indoor and outdoor bar seating with live music, plus nightly dinner specials that rotate all week. A locals' favorite and consistent Voted Best of Baldwin winner.
+search_vector: '1973':14B 'bait':22B 'baldwin':73B 'bar':52B 'bay':2A,4B 'beach':41B,45B,76 'best':71B 'blvd':46B 'carri':17B 'coast':10B 'consist':69B 'crab':33B 'dinner':59B 'famili':11B 'famous':28B 'favorit':67B 'flounder':38B 'fri':29B 'gulf':9B 'gumbo':32B 'includ':25B 'indoor':49B 'live':55B 'local':66B 'locat':42B 'menu':24B 'music':56B 'night':58B 'offer':47B 'orang':40B,75 'origin':21B 'outdoor':51B 'perdido':44B 'plus':57B 'recip':16B 'restaur':5B 'rotat':62B 'seafood':31B 'seat':53B 'shop':23B 'shrimp':30B 'sinc':13B 'special':60B 'stuf':34B,36B 'tradit':12B 'vote':70B 'week':64B 'whole':37B 'winner':74B 'wolf':1A,3B 'world':27B 'world-fam':26B
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: menu
+industry_code: food_beverage
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: wolf-bay
+name: Wolf Bay
+industry_code: food_beverage
+is_parent: false
+score_of_7: 5
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 3385ee49-d451-45d3-be74-48639efe9dbf
+entity_slug: wolf-bay
+day_of_week: 1
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 39b6232e-7142-4de2-959a-88dda236c770
+entity_slug: wolf-bay
+day_of_week: 2
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: d5b5b7c5-ed62-4794-b170-dcb17466ddfa
+entity_slug: wolf-bay
+day_of_week: 3
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 348fcbcf-5a1a-455f-bbcb-aef94595229c
+entity_slug: wolf-bay
+day_of_week: 4
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: ad55f789-d13a-4e54-a97e-02f76bda4bb3
+entity_slug: wolf-bay
+day_of_week: 5
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 1f017cb2-335d-444d-b396-d9a71808a7cb
+entity_slug: wolf-bay
+day_of_week: 6
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: fad93b13-5528-4523-8e90-7dcd7e970c64
+entity_slug: wolf-bay
+day_of_week: 0
+opens_at: 09:00:00
+closes_at: 17:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_modules   -   16 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 16] ---
+id: 0719eece-188b-4771-b91f-d08a65b24d2e
+entity_slug: wolf-bay
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 16] ---
+id: 4004e10c-7c3c-4226-9352-e5cd78effa27
+entity_slug: wolf-bay
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 16] ---
+id: e4ac0e57-73a7-4fc0-989f-4758304873d9
+entity_slug: wolf-bay
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 16] ---
+id: 740d2b3d-3feb-4b59-b276-612a9f186eee
+entity_slug: wolf-bay
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 16] ---
+id: cffc54c4-0090-4f54-b73f-368dc494933c
+entity_slug: wolf-bay
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 16] ---
+id: 61505ea8-203a-498c-ad6f-1c0369e1f634
+entity_slug: wolf-bay
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 16] ---
+id: 097738ae-c59c-4420-b20f-89e47bfeb5f0
+entity_slug: wolf-bay
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 16] ---
+id: 6c5fc472-f32f-4186-8e32-2b41bcc9b747
+entity_slug: wolf-bay
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 16] ---
+id: d33ce6fc-1747-43ea-948c-7470b905008d
+entity_slug: wolf-bay
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 16] ---
+id: 9f9913ea-5898-45e9-b6f5-828215578496
+entity_slug: wolf-bay
+module_key: menu
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 16] ---
+id: 1e2bab8c-e3c6-4d61-999a-f408859e0bf6
+entity_slug: wolf-bay
+module_key: drinks
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 16] ---
+id: 5fe322ee-3ee9-4827-a3ee-36d9d3163dc2
+entity_slug: wolf-bay
+module_key: happy_hour
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 16] ---
+id: 5ea2a96f-4c8e-428a-aec6-6fd2eafc274a
+entity_slug: wolf-bay
+module_key: specials
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 14 of 16] ---
+id: 502691cd-354b-44a2-8672-d4b27c06966c
+entity_slug: wolf-bay
+module_key: events
+enabled: true
+sort_order: 14
+
+--- entity_modules [row 15 of 16] ---
+id: 0b86609c-b450-48f0-8db9-74df8024bab3
+entity_slug: wolf-bay
+module_key: loyalty
+enabled: true
+sort_order: 15
+
+--- entity_modules [row 16 of 16] ---
+id: c91d3dc2-175d-4f8c-8e23-2275d561dcee
+entity_slug: wolf-bay
+module_key: booking
+enabled: true
+sort_order: 16
+
+####################################################################################################
+# TABLE: entity_offer   -   99 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 99] ---
+offer_id: 15548
+entity_slug: wolf-bay
+section_id: 2356
+name: Choice of Fish
+offer_type: menu
+sort_order: 0
+is_available: true
+
+--- entity_offer [row 2 of 99] ---
+offer_id: 15549
+entity_slug: wolf-bay
+section_id: 2356
+name: Fried Oysters
+offer_type: menu
+sort_order: 1
+is_available: true
+
+--- entity_offer [row 3 of 99] ---
+offer_id: 15550
+entity_slug: wolf-bay
+section_id: 2356
+name: Gulf Shrimp
+offer_type: menu
+sort_order: 2
+is_available: true
+
+--- entity_offer [row 4 of 99] ---
+offer_id: 15551
+entity_slug: wolf-bay
+section_id: 2356
+name: Lobster Tail
+offer_type: menu
+sort_order: 3
+is_available: true
+
+--- entity_offer [row 5 of 99] ---
+offer_id: 15552
+entity_slug: wolf-bay
+section_id: 2356
+name: Sea Scallops
+offer_type: menu
+sort_order: 4
+is_available: true
+
+--- entity_offer [row 6 of 99] ---
+offer_id: 15553
+entity_slug: wolf-bay
+section_id: 2356
+name: Snow Crab Cluster
+offer_type: menu
+sort_order: 5
+is_available: true
+
+--- entity_offer [row 7 of 99] ---
+offer_id: 15554
+entity_slug: wolf-bay
+section_id: 2357
+name: Bacon Wrapped Jalapeños
+offer_type: menu
+sort_order: 0
+is_available: true
+
+--- entity_offer [row 8 of 99] ---
+offer_id: 15555
+entity_slug: wolf-bay
+section_id: 2357
+name: Bang Bang Shrimp
+offer_type: menu
+sort_order: 1
+is_available: true
+
+--- entity_offer [row 9 of 99] ---
+offer_id: 15556
+entity_slug: wolf-bay
+section_id: 2357
+name: Cajun Fried Pickle Chips
+offer_type: menu
+sort_order: 2
+is_available: true
+
+--- entity_offer [row 10 of 99] ---
+offer_id: 15557
+entity_slug: wolf-bay
+section_id: 2357
+name: Cha Cha's Crab Dip
+offer_type: menu
+sort_order: 3
+is_available: true
+
+--- entity_offer [row 11 of 99] ---
+offer_id: 15558
+entity_slug: wolf-bay
+section_id: 2357
+name: Coconut Shrimp
+description: Served with tropical marmalade
+offer_type: menu
+sort_order: 4
+is_available: true
+
+--- entity_offer [row 12 of 99] ---
+offer_id: 15559
+entity_slug: wolf-bay
+section_id: 2357
+name: Conecuh & Crawfish Tater Cakes
+offer_type: menu
+sort_order: 5
+is_available: true
+
+--- entity_offer [row 13 of 99] ---
+offer_id: 15560
+entity_slug: wolf-bay
+section_id: 2357
+name: Crab Stuffed Mushrooms
+offer_type: menu
+sort_order: 6
+is_available: true
+
+--- entity_offer [row 14 of 99] ---
+offer_id: 15561
+entity_slug: wolf-bay
+section_id: 2357
+name: Fried Crab Claws
+offer_type: menu
+sort_order: 7
+is_available: true
+
+--- entity_offer [row 15 of 99] ---
+offer_id: 15562
+entity_slug: wolf-bay
+section_id: 2357
+name: Fried Green Tomatoes
+offer_type: menu
+sort_order: 8
+is_available: true
+
+--- entity_offer [row 16 of 99] ---
+offer_id: 15563
+entity_slug: wolf-bay
+section_id: 2357
+name: Mornay Nachos
+offer_type: menu
+sort_order: 9
+is_available: true
+
+--- entity_offer [row 17 of 99] ---
+offer_id: 15564
+entity_slug: wolf-bay
+section_id: 2357
+name: Mozzarella Sticks
+description: Served with marinara
+offer_type: menu
+sort_order: 10
+is_available: true
+
+--- entity_offer [row 18 of 99] ---
+offer_id: 15565
+entity_slug: wolf-bay
+section_id: 2357
+name: Peel N' Eat Shrimp
+description: ½ lb
+offer_type: menu
+sort_order: 11
+is_available: true
+
+--- entity_offer [row 19 of 99] ---
+offer_id: 15566
+entity_slug: wolf-bay
+section_id: 2357
+name: Smoked Tuna Dip
+description: Served with fried pita points
+offer_type: menu
+sort_order: 12
+is_available: true
+
+--- entity_offer [row 20 of 99] ---
+offer_id: 15567
+entity_slug: wolf-bay
+section_id: 2357
+name: Turner Calamari
+offer_type: menu
+sort_order: 13
+is_available: true
+
+--- entity_offer [row 21 of 99] ---
+offer_id: 15568
+entity_slug: wolf-bay
+section_id: 2358
+name: Bread Pudding
+description: With warm whiskey sauce
+offer_type: menu
+sort_order: 0
+is_available: true
+
+--- entity_offer [row 22 of 99] ---
+offer_id: 15569
+entity_slug: wolf-bay
+section_id: 2358
+name: Cheesecake of the Day
+offer_type: menu
+sort_order: 1
+is_available: true
+
+--- entity_offer [row 23 of 99] ---
+offer_id: 15570
+entity_slug: wolf-bay
+section_id: 2358
+name: Coconut Cake
+offer_type: menu
+sort_order: 2
+is_available: true
+
+--- entity_offer [row 24 of 99] ---
+offer_id: 15571
+entity_slug: wolf-bay
+section_id: 2358
+name: Crème Brûlée
+offer_type: menu
+sort_order: 3
+is_available: true
+
+--- entity_offer [row 25 of 99] ---
+offer_id: 15572
+entity_slug: wolf-bay
+section_id: 2358
+name: Key Lime Pie
+offer_type: menu
+sort_order: 4
+is_available: true
+
+--- entity_offer [row 26 of 99] ---
+offer_id: 15573
+entity_slug: wolf-bay
+section_id: 2358
+name: Ooey Gooey Brownie
+offer_type: menu
+sort_order: 5
+is_available: true
+
+--- entity_offer [row 27 of 99] ---
+offer_id: 15574
+entity_slug: wolf-bay
+section_id: 2359
+name: Balsamic Chicken
+offer_type: menu
+sort_order: 0
+is_available: true
+
+--- entity_offer [row 28 of 99] ---
+offer_id: 15575
+entity_slug: wolf-bay
+section_id: 2359
+name: Chicken Tender Dinner
+description: Fried or grilled
+offer_type: menu
+sort_order: 1
+is_available: true
+
+--- entity_offer [row 29 of 99] ---
+offer_id: 15576
+entity_slug: wolf-bay
+section_id: 2359
+name: Filet (8oz Black Angus)
+offer_type: menu
+sort_order: 2
+is_available: true
+
+--- entity_offer [row 30 of 99] ---
+offer_id: 15577
+entity_slug: wolf-bay
+section_id: 2359
+name: Ribeye (14oz Black Angus)
+offer_type: menu
+sort_order: 3
+is_available: true
+
+--- entity_offer [row 31 of 99] ---
+offer_id: 15578
+entity_slug: wolf-bay
+section_id: 2360
+name: BBQ Cheddar Burger
+description: Mon-Fri 11am-3pm; includes side
+offer_type: menu
+sort_order: 0
+is_available: true
+
+--- entity_offer [row 32 of 99] ---
+offer_id: 15579
+entity_slug: wolf-bay
+section_id: 2360
+name: Bacon Brie Burger
+description: Mon-Fri 11am-3pm; includes side
+offer_type: menu
+sort_order: 1
+is_available: true
+
+--- entity_offer [row 33 of 99] ---
+offer_id: 15580
+entity_slug: wolf-bay
+section_id: 2360
+name: Balsamic Chicken (Lunch)
+description: Mon-Fri 11am-3pm; includes side
+offer_type: menu
+sort_order: 2
+is_available: true
+
+--- entity_offer [row 34 of 99] ---
+offer_id: 15581
+entity_slug: wolf-bay
+section_id: 2360
+name: Cajun Whitefish
+description: Mon-Fri 11am-3pm; includes side
+offer_type: menu
+sort_order: 3
+is_available: true
+
+--- entity_offer [row 35 of 99] ---
+offer_id: 15582
+entity_slug: wolf-bay
+section_id: 2360
+name: Chicken Parmesan
+description: Mon-Fri 11am-3pm; includes side
+offer_type: menu
+sort_order: 4
+is_available: true
+
+--- entity_offer [row 36 of 99] ---
+offer_id: 15583
+entity_slug: wolf-bay
+section_id: 2360
+name: Chicken Tenders
+description: Mon-Fri 11am-3pm; includes side
+offer_type: menu
+sort_order: 5
+is_available: true
+
+--- entity_offer [row 37 of 99] ---
+offer_id: 15584
+entity_slug: wolf-bay
+section_id: 2360
+name: Coastal Tacos
+description: Mon-Fri 11am-3pm; includes side
+offer_type: menu
+sort_order: 6
+is_available: true
+
+--- entity_offer [row 38 of 99] ---
+offer_id: 15585
+entity_slug: wolf-bay
+section_id: 2360
+name: Fried Chicken Sandwich
+description: Mon-Fri 11am-3pm; includes side
+offer_type: menu
+sort_order: 7
+is_available: true
+
+--- entity_offer [row 39 of 99] ---
+offer_id: 15586
+entity_slug: wolf-bay
+section_id: 2360
+name: Grilled Shrimp Kabobs
+description: Mon-Fri 11am-3pm; includes side
+offer_type: menu
+sort_order: 8
+is_available: true
+
+--- entity_offer [row 40 of 99] ---
+offer_id: 15587
+entity_slug: wolf-bay
+section_id: 2360
+name: Shrimp & Grits (Lunch)
+description: Mon-Fri 11am-3pm; includes side
+offer_type: menu
+sort_order: 9
+is_available: true
+
+--- entity_offer [row 41 of 99] ---
+offer_id: 15588
+entity_slug: wolf-bay
+section_id: 2360
+name: Small Mix
+description: Mon-Fri 11am-3pm; includes side
+offer_type: menu
+sort_order: 10
+is_available: true
+
+--- entity_offer [row 42 of 99] ---
+offer_id: 15589
+entity_slug: wolf-bay
+section_id: 2360
+name: Small Shrimp
+description: Mon-Fri 11am-3pm; includes side
+offer_type: menu
+sort_order: 11
+is_available: true
+
+--- entity_offer [row 43 of 99] ---
+offer_id: 15590
+entity_slug: wolf-bay
+section_id: 2360
+name: Wolf Bay Burger
+description: Mon-Fri 11am-3pm; includes side
+offer_type: menu
+sort_order: 12
+is_available: true
+
+--- entity_offer [row 44 of 99] ---
+offer_id: 15591
+entity_slug: wolf-bay
+section_id: 2361
+name: On the Half Shell (Half-Dozen/Dozen)
+description: Not available for takeout; includes side & garlic knot
+offer_type: menu
+sort_order: 0
+is_available: true
+
+--- entity_offer [row 45 of 99] ---
+offer_id: 15592
+entity_slug: wolf-bay
+section_id: 2361
+name: Parmesan Garlic (Half-Dozen/Dozen)
+description: Not available for takeout; includes side & garlic knot
+offer_type: menu
+sort_order: 1
+is_available: true
+
+--- entity_offer [row 46 of 99] ---
+offer_id: 15593
+entity_slug: wolf-bay
+section_id: 2361
+name: Pom Pom (Award-winning, Half-Dozen/Dozen)
+description: Not available for takeout; includes side & garlic knot
+offer_type: menu
+sort_order: 2
+is_available: true
+
+--- entity_offer [row 47 of 99] ---
+offer_id: 15594
+entity_slug: wolf-bay
+section_id: 2361
+name: Rockefeller (Half-Dozen/Dozen)
+description: Not available for takeout; includes side & garlic knot
+offer_type: menu
+sort_order: 3
+is_available: true
+
+--- entity_offer [row 48 of 99] ---
+offer_id: 15595
+entity_slug: wolf-bay
+section_id: 2362
+name: Baked Mac & Cheese
+description: Includes garlic knot
+offer_type: menu
+sort_order: 0
+is_available: true
+
+--- entity_offer [row 49 of 99] ---
+offer_id: 15596
+entity_slug: wolf-bay
+section_id: 2362
+name: Pasta Alfredo
+description: Includes garlic knot
+offer_type: menu
+sort_order: 1
+is_available: true
+
+--- entity_offer [row 50 of 99] ---
+offer_id: 15597
+entity_slug: wolf-bay
+section_id: 2362
+name: Shrimp Scampi
+description: Includes garlic knot
+offer_type: menu
+sort_order: 2
+is_available: true
+
+--- entity_offer [row 51 of 99] ---
+offer_id: 15598
+entity_slug: wolf-bay
+section_id: 2362
+name: Signature Shrimp & Grits
+description: Includes garlic knot
+offer_type: menu
+sort_order: 3
+is_available: true
+
+--- entity_offer [row 52 of 99] ---
+offer_id: 15599
+entity_slug: wolf-bay
+section_id: 2362
+name: Traditional Seafood Pasta
+description: Includes garlic knot
+offer_type: menu
+sort_order: 4
+is_available: true
+
+--- entity_offer [row 53 of 99] ---
+offer_id: 15600
+entity_slug: wolf-bay
+section_id: 2363
+name: Dinner Salad Bar (All-You-Can-Eat)
+description: Mon-Sat 3pm-close, all day Sun
+offer_type: menu
+sort_order: 0
+is_available: true
+
+--- entity_offer [row 54 of 99] ---
+offer_id: 15601
+entity_slug: wolf-bay
+section_id: 2363
+name: Dinner Salad Bar (One Trip)
+description: Mon-Sat 3pm-close, all day Sun
+offer_type: menu
+sort_order: 1
+is_available: true
+
+--- entity_offer [row 55 of 99] ---
+offer_id: 15602
+entity_slug: wolf-bay
+section_id: 2363
+name: Dinner Salad Bar (To-Go, per lb)
+description: Mon-Sat 3pm-close, all day Sun
+offer_type: menu
+sort_order: 2
+is_available: true
+
+--- entity_offer [row 56 of 99] ---
+offer_id: 15603
+entity_slug: wolf-bay
+section_id: 2363
+name: Lunch Salad Bar (All-You-Can-Eat)
+description: Mon-Sat 11am-3pm
+offer_type: menu
+sort_order: 3
+is_available: true
+
+--- entity_offer [row 57 of 99] ---
+offer_id: 15604
+entity_slug: wolf-bay
+section_id: 2363
+name: Lunch Salad Bar (One Trip)
+description: Mon-Sat 11am-3pm
+offer_type: menu
+sort_order: 4
+is_available: true
+
+--- entity_offer [row 58 of 99] ---
+offer_id: 15605
+entity_slug: wolf-bay
+section_id: 2363
+name: Lunch Salad Bar (To-Go, per lb)
+description: Mon-Sat 11am-3pm
+offer_type: menu
+sort_order: 5
+is_available: true
+
+--- entity_offer [row 59 of 99] ---
+offer_id: 15606
+entity_slug: wolf-bay
+section_id: 2364
+name: Grilled Mahi Sandwich
+description: Includes fries or fresh fruit
+offer_type: menu
+sort_order: 0
+is_available: true
+
+--- entity_offer [row 60 of 99] ---
+offer_id: 15607
+entity_slug: wolf-bay
+section_id: 2364
+name: Grilled Ribeye Hoagie
+description: Includes fries or fresh fruit
+offer_type: menu
+sort_order: 1
+is_available: true
+
+--- entity_offer [row 61 of 99] ---
+offer_id: 15608
+entity_slug: wolf-bay
+section_id: 2364
+name: Grouper Rueben
+description: Includes fries or fresh fruit
+offer_type: menu
+sort_order: 2
+is_available: true
+
+--- entity_offer [row 62 of 99] ---
+offer_id: 15609
+entity_slug: wolf-bay
+section_id: 2364
+name: Po' Boy
+description: Shrimp, whitefish, catfish, or oysters; includes fries or fresh fruit
+offer_type: menu
+sort_order: 3
+is_available: true
+
+--- entity_offer [row 63 of 99] ---
+offer_id: 15848
+entity_slug: wolf-bay
+section_id: 2401
+name: Captains Platter
+description: Includes side, two hushpuppies
+offer_type: menu
+sort_order: 0
+is_available: true
+
+--- entity_offer [row 64 of 99] ---
+offer_id: 15849
+entity_slug: wolf-bay
+section_id: 2401
+name: Catfish (Southern Fried)
+description: Includes side, two hushpuppies
+offer_type: menu
+sort_order: 1
+is_available: true
+
+--- entity_offer [row 65 of 99] ---
+offer_id: 15850
+entity_slug: wolf-bay
+section_id: 2401
+name: Choice of Three (Combo)
+description: Fried/grilled/broiled/blackened; choice of gulf shrimp, whitefish, fresh oysters, popcorn shrimp, stuffed crab
+offer_type: menu
+sort_order: 2
+is_available: true
+
+--- entity_offer [row 66 of 99] ---
+offer_id: 15851
+entity_slug: wolf-bay
+section_id: 2401
+name: Choice of Two (Combo)
+description: Fried/grilled/broiled/blackened; choice of gulf shrimp, whitefish, fresh oysters, popcorn shrimp, stuffed crab
+offer_type: menu
+sort_order: 3
+is_available: true
+
+--- entity_offer [row 67 of 99] ---
+offer_id: 15852
+entity_slug: wolf-bay
+section_id: 2401
+name: Coconut Shrimp (Dinner)
+description: Includes side, two hushpuppies
+offer_type: menu
+sort_order: 4
+is_available: true
+
+--- entity_offer [row 68 of 99] ---
+offer_id: 15853
+entity_slug: wolf-bay
+section_id: 2401
+name: Grouper
+description: Includes side, two hushpuppies
+offer_type: menu
+sort_order: 5
+is_available: true
+
+--- entity_offer [row 69 of 99] ---
+offer_id: 15854
+entity_slug: wolf-bay
+section_id: 2401
+name: Lump Crab Cake Dinner
+description: Includes side, two hushpuppies
+offer_type: menu
+sort_order: 6
+is_available: true
+
+--- entity_offer [row 70 of 99] ---
+offer_id: 15855
+entity_slug: wolf-bay
+section_id: 2401
+name: Mahi Mahi
+description: Includes side, two hushpuppies
+offer_type: menu
+sort_order: 7
+is_available: true
+
+--- entity_offer [row 71 of 99] ---
+offer_id: 15856
+entity_slug: wolf-bay
+section_id: 2401
+name: Peel N' Eat Shrimp (1 lb)
+description: Includes side, two hushpuppies
+offer_type: menu
+sort_order: 8
+is_available: true
+
+--- entity_offer [row 72 of 99] ---
+offer_id: 15857
+entity_slug: wolf-bay
+section_id: 2401
+name: Sea Scallops
+description: Includes side, two hushpuppies
+offer_type: menu
+sort_order: 9
+is_available: true
+
+--- entity_offer [row 73 of 99] ---
+offer_id: 15858
+entity_slug: wolf-bay
+section_id: 2401
+name: Snapper
+description: Includes side, two hushpuppies
+offer_type: menu
+sort_order: 10
+is_available: true
+
+--- entity_offer [row 74 of 99] ---
+offer_id: 15859
+entity_slug: wolf-bay
+section_id: 2401
+name: Snow Crab Legs (1 lb)
+description: Includes side, two hushpuppies
+offer_type: menu
+sort_order: 11
+is_available: true
+
+--- entity_offer [row 75 of 99] ---
+offer_id: 15860
+entity_slug: wolf-bay
+section_id: 2401
+name: Stuffed Shrimp (4 Gulf shrimp)
+description: Includes side, two hushpuppies
+offer_type: menu
+sort_order: 12
+is_available: true
+
+--- entity_offer [row 76 of 99] ---
+offer_id: 15861
+entity_slug: wolf-bay
+section_id: 2401
+name: Whole Gulf Flounder
+description: Includes side, two hushpuppies
+offer_type: menu
+sort_order: 13
+is_available: true
+
+--- entity_offer [row 77 of 99] ---
+offer_id: 15862
+entity_slug: wolf-bay
+section_id: 2401
+name: Wolf Bay Platter
+description: Includes side, two hushpuppies
+offer_type: menu
+sort_order: 14
+is_available: true
+
+--- entity_offer [row 78 of 99] ---
+offer_id: 15863
+entity_slug: wolf-bay
+section_id: 2402
+name: Chimichurri Shrimp Skewer
+offer_type: menu
+sort_order: 0
+is_available: true
+
+--- entity_offer [row 79 of 99] ---
+offer_id: 15864
+entity_slug: wolf-bay
+section_id: 2402
+name: Crab Stuffed
+offer_type: menu
+sort_order: 1
+is_available: true
+
+--- entity_offer [row 80 of 99] ---
+offer_id: 15865
+entity_slug: wolf-bay
+section_id: 2402
+name: Oscar Style
+offer_type: menu
+sort_order: 2
+is_available: true
+
+--- entity_offer [row 81 of 99] ---
+offer_id: 15866
+entity_slug: wolf-bay
+section_id: 2402
+name: Sautéed Mushrooms & Onions
+offer_type: menu
+sort_order: 3
+is_available: true
+
+--- entity_offer [row 82 of 99] ---
+offer_id: 15867
+entity_slug: wolf-bay
+section_id: 2403
+name: Baked Potato
+description: Loaded +$6
+offer_type: menu
+sort_order: 0
+is_available: true
+
+--- entity_offer [row 83 of 99] ---
+offer_id: 15868
+entity_slug: wolf-bay
+section_id: 2403
+name: Brussel Sprouts
+offer_type: menu
+sort_order: 1
+is_available: true
+
+--- entity_offer [row 84 of 99] ---
+offer_id: 15869
+entity_slug: wolf-bay
+section_id: 2403
+name: French Fries
+offer_type: menu
+sort_order: 2
+is_available: true
+
+--- entity_offer [row 85 of 99] ---
+offer_id: 15870
+entity_slug: wolf-bay
+section_id: 2403
+name: Hushpuppies
+offer_type: menu
+sort_order: 3
+is_available: true
+
+--- entity_offer [row 86 of 99] ---
+offer_id: 15871
+entity_slug: wolf-bay
+section_id: 2403
+name: Mashed Potatoes
+offer_type: menu
+sort_order: 4
+is_available: true
+
+--- entity_offer [row 87 of 99] ---
+offer_id: 15872
+entity_slug: wolf-bay
+section_id: 2403
+name: Rice Pilaf
+offer_type: menu
+sort_order: 5
+is_available: true
+
+--- entity_offer [row 88 of 99] ---
+offer_id: 15873
+entity_slug: wolf-bay
+section_id: 2403
+name: Seasonal Vegetables
+offer_type: menu
+sort_order: 6
+is_available: true
+
+--- entity_offer [row 89 of 99] ---
+offer_id: 15874
+entity_slug: wolf-bay
+section_id: 2403
+name: Smoked Gouda Grits
+offer_type: menu
+sort_order: 7
+is_available: true
+
+--- entity_offer [row 90 of 99] ---
+offer_id: 15875
+entity_slug: wolf-bay
+section_id: 2403
+name: Sweet Potato Fries
+offer_type: menu
+sort_order: 8
+is_available: true
+
+--- entity_offer [row 91 of 99] ---
+offer_id: 15876
+entity_slug: wolf-bay
+section_id: 2404
+name: Classic Caesar
+offer_type: menu
+sort_order: 0
+is_available: true
+
+--- entity_offer [row 92 of 99] ---
+offer_id: 15877
+entity_slug: wolf-bay
+section_id: 2404
+name: Iceberg Wedge
+offer_type: menu
+sort_order: 1
+is_available: true
+
+--- entity_offer [row 93 of 99] ---
+offer_id: 15878
+entity_slug: wolf-bay
+section_id: 2404
+name: Lobster Chowder (Bowl)
+description: Add grilled/blackened shrimp +$9, chicken +$6
+offer_type: menu
+sort_order: 2
+is_available: true
+
+--- entity_offer [row 94 of 99] ---
+offer_id: 15879
+entity_slug: wolf-bay
+section_id: 2404
+name: Lobster Chowder (Cup)
+description: Add grilled/blackened shrimp +$9, chicken +$6
+offer_type: menu
+sort_order: 3
+is_available: true
+
+--- entity_offer [row 95 of 99] ---
+offer_id: 15880
+entity_slug: wolf-bay
+section_id: 2404
+name: Seafood Gumbo (Bowl)
+description: Add grilled/blackened shrimp +$9, chicken +$6
+offer_type: menu
+sort_order: 4
+is_available: true
+
+--- entity_offer [row 96 of 99] ---
+offer_id: 15881
+entity_slug: wolf-bay
+section_id: 2404
+name: Seafood Gumbo (Cup)
+description: Add grilled/blackened shrimp +$9, chicken +$6
+offer_type: menu
+sort_order: 5
+is_available: true
+
+--- entity_offer [row 97 of 99] ---
+offer_id: 15882
+entity_slug: wolf-bay
+section_id: 2404
+name: Steak Salad
+offer_type: menu
+sort_order: 6
+is_available: true
+
+--- entity_offer [row 98 of 99] ---
+offer_id: 15883
+entity_slug: wolf-bay
+section_id: 2404
+name: Summer Salad
+offer_type: menu
+sort_order: 7
+is_available: true
+
+--- entity_offer [row 99 of 99] ---
+offer_id: 15884
+entity_slug: wolf-bay
+section_id: 2405
+name: You Hook 'Em, We Cook 'Em
+description: Fried/grilled/blackened with hushpuppies, fries, coleslaw (family style)
+offer_type: menu
+sort_order: 0
+is_available: true
+
+####################################################################################################
+# TABLE: entity_offer_section   -   14 row(s)
+####################################################################################################
+
+--- entity_offer_section [row 1 of 14] ---
+section_id: 2356
+entity_slug: wolf-bay
+name: Add-Ons
+section_type: menu
+sort_order: 0
+
+--- entity_offer_section [row 2 of 14] ---
+section_id: 2357
+entity_slug: wolf-bay
+name: Appetizers
+section_type: menu
+sort_order: 1
+
+--- entity_offer_section [row 3 of 14] ---
+section_id: 2358
+entity_slug: wolf-bay
+name: Desserts
+section_type: menu
+sort_order: 2
+
+--- entity_offer_section [row 4 of 14] ---
+section_id: 2359
+entity_slug: wolf-bay
+name: Land Lovers
+section_type: menu
+sort_order: 3
+
+--- entity_offer_section [row 5 of 14] ---
+section_id: 2360
+entity_slug: wolf-bay
+name: Lunch Menu
+section_type: menu
+sort_order: 4
+
+--- entity_offer_section [row 6 of 14] ---
+section_id: 2361
+entity_slug: wolf-bay
+name: Oysters
+section_type: menu
+sort_order: 5
+
+--- entity_offer_section [row 7 of 14] ---
+section_id: 2362
+entity_slug: wolf-bay
+name: Pasta & Grits
+section_type: menu
+sort_order: 6
+
+--- entity_offer_section [row 8 of 14] ---
+section_id: 2363
+entity_slug: wolf-bay
+name: Salad Bar
+section_type: menu
+sort_order: 7
+
+--- entity_offer_section [row 9 of 14] ---
+section_id: 2364
+entity_slug: wolf-bay
+name: Sandwiches
+section_type: menu
+sort_order: 8
+
+--- entity_offer_section [row 10 of 14] ---
+section_id: 2401
+entity_slug: wolf-bay
+name: Seafood Dinners
+section_type: menu
+sort_order: 0
+
+--- entity_offer_section [row 11 of 14] ---
+section_id: 2402
+entity_slug: wolf-bay
+name: Seafood Toppers
+section_type: menu
+sort_order: 1
+
+--- entity_offer_section [row 12 of 14] ---
+section_id: 2403
+entity_slug: wolf-bay
+name: Sides
+section_type: menu
+sort_order: 2
+
+--- entity_offer_section [row 13 of 14] ---
+section_id: 2404
+entity_slug: wolf-bay
+name: Soups & Salads
+section_type: menu
+sort_order: 3
+
+--- entity_offer_section [row 14 of 14] ---
+section_id: 2405
+entity_slug: wolf-bay
+name: You Hook 'Em We Cook 'Em
+section_type: menu
+sort_order: 4
+
+####################################################################################################
+# TABLE: entity_photos   -   2 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 2] ---
+id: 1022547e-9181-4971-be20-fee289256190
+entity_slug: wolf-bay
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/wolf-bay/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 2] ---
+id: b78d7d88-95a2-42fe-b209-bc270e1033b4
+entity_slug: wolf-bay
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/wolf-bay/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+####################################################################################################
+# TABLE: entity_tags   -   12 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 12] ---
+id: f6231dea-8109-4bb6-b7b5-ac3cce32a1c3
+entity_slug: wolf-bay
+tag_name: seafood
+
+--- entity_tags [row 2 of 12] ---
+id: d72c6313-9b25-4e6b-af2a-746e079f1260
+entity_slug: wolf-bay
+tag_name: casual dining
+
+--- entity_tags [row 3 of 12] ---
+id: 899f1c1b-fb0f-423e-9e27-d9a33461a8e4
+entity_slug: wolf-bay
+tag_name: waterfront
+
+--- entity_tags [row 4 of 12] ---
+id: d0732a3e-0ebb-412a-9791-7e9c59575f94
+entity_slug: wolf-bay
+tag_name: gulf coast
+
+--- entity_tags [row 5 of 12] ---
+id: 75b1fb2d-417c-47b7-9dc6-f12ba0c0d62c
+entity_slug: wolf-bay
+tag_name: restaurant
+
+--- entity_tags [row 6 of 12] ---
+id: a8ee3a44-7008-483d-80b9-08aaab2d4fb2
+entity_slug: wolf-bay
+tag_name: coastal cuisine
+
+--- entity_tags [row 7 of 12] ---
+id: 27691a0a-da2f-405b-b1df-e56e46635178
+entity_slug: wolf-bay
+tag_name: Restaurants
+tag_category: category
+
+--- entity_tags [row 8 of 12] ---
+id: 451b1ea9-60e6-41fa-bacf-8ddb1feaf7b8
+entity_slug: wolf-bay
+tag_name: Seafood
+tag_category: category
+
+--- entity_tags [row 9 of 12] ---
+id: 29483899-3380-4d8a-9aaa-9be5759efe03
+entity_slug: wolf-bay
+tag_name: Casual Dining
+tag_category: category
+
+--- entity_tags [row 10 of 12] ---
+id: 79b082c8-a05c-4000-b290-e55299c50a9b
+entity_slug: wolf-bay
+tag_name: Waterfront Dining
+tag_category: category
+
+--- entity_tags [row 11 of 12] ---
+id: d1bb5d5c-aa8c-4258-bda1-c5051e2d8e37
+entity_slug: wolf-bay
+tag_name: food-and-drink
+tag_category: industry
+
+--- entity_tags [row 12 of 12] ---
+id: 1b475289-bc65-4922-976f-0d048b0b75b7
+entity_slug: wolf-bay
+tag_name: restaurant
+tag_category: type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 6aafdad1-30f0-4b0b-8a12-6349c394e4aa
+entity_slug: wolf-bay
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_food_beverage   -   1 row(s)
+####################################################################################################
+
+--- industry_food_beverage [row 1 of 1] ---
+entity_slug: wolf-bay
+menu_section_count: 0
+menu_item_count: 0
+price_low: 5
+price_high: 45
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+serves_beer: true
+serves_wine: true
+serves_cocktails: false
+dine_in: true
+takeout: false
+delivery: false
+reservable: false
+outdoor_seating: true
+live_music: true
+good_for_kids: true
+good_for_groups: false
+has_happy_hour: false
+updated_at: 2026-07-21T16:49:18.526829+00:00
+
+####################################################################################################
+# TABLE: search_index   -   100 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 100] ---
+ref_type: business
+ref_id: wolf-bay
+entity_slug: wolf-bay
+title: Wolf Bay
+category: seafood_restaurant
+subtitle: A Baldwin County seafood tradition since 1973. Wolf Bay is known for its fresh Gulf Coast seafood, signature seafood gumbo, stuffed shrimp, and Voted Best of Baldwin — with outdoor seating and nightly specials.
+search_vector: '1973':11C 'baldwin':6C,31C 'bay':2A,13C 'best':29C 'coast':20C 'counti':7C 'fresh':18C 'gulf':19C 'gumbo':24C 'known':15C 'night':36C 'outdoor':33C 'restaur':4B 'seafood':3B,8C,21C,23C 'seat':34C 'shrimp':26C 'signatur':22C 'sinc':10C 'special':37C 'stuf':25C 'tradit':9C 'vote':28C 'wolf':1A,12C
+
+--- search_index [row 2 of 100] ---
+ref_type: offer
+ref_id: 15548
+entity_slug: wolf-bay
+title: Choice of Fish
+category: menu
+search_vector: 'choic':1A 'fish':3A
+
+--- search_index [row 3 of 100] ---
+ref_type: offer
+ref_id: 15549
+entity_slug: wolf-bay
+title: Fried Oysters
+category: menu
+search_vector: 'fri':1A 'oyster':2A
+
+--- search_index [row 4 of 100] ---
+ref_type: offer
+ref_id: 15550
+entity_slug: wolf-bay
+title: Gulf Shrimp
+category: menu
+search_vector: 'gulf':1A 'shrimp':2A
+
+--- search_index [row 5 of 100] ---
+ref_type: offer
+ref_id: 15551
+entity_slug: wolf-bay
+title: Lobster Tail
+category: menu
+search_vector: 'lobster':1A 'tail':2A
+
+--- search_index [row 6 of 100] ---
+ref_type: offer
+ref_id: 15552
+entity_slug: wolf-bay
+title: Sea Scallops
+category: menu
+search_vector: 'scallop':2A 'sea':1A
+
+--- search_index [row 7 of 100] ---
+ref_type: offer
+ref_id: 15553
+entity_slug: wolf-bay
+title: Snow Crab Cluster
+category: menu
+search_vector: 'cluster':3A 'crab':2A 'snow':1A
+
+--- search_index [row 8 of 100] ---
+ref_type: offer
+ref_id: 15554
+entity_slug: wolf-bay
+title: Bacon Wrapped Jalapeños
+category: menu
+search_vector: 'bacon':1A 'jalapeño':3A 'wrap':2A
+
+--- search_index [row 9 of 100] ---
+ref_type: offer
+ref_id: 15555
+entity_slug: wolf-bay
+title: Bang Bang Shrimp
+category: menu
+search_vector: 'bang':1A,2A 'shrimp':3A
+
+--- search_index [row 10 of 100] ---
+ref_type: offer
+ref_id: 15556
+entity_slug: wolf-bay
+title: Cajun Fried Pickle Chips
+category: menu
+search_vector: 'cajun':1A 'chip':4A 'fri':2A 'pickl':3A
+
+--- search_index [row 11 of 100] ---
+ref_type: offer
+ref_id: 15557
+entity_slug: wolf-bay
+title: Cha Cha's Crab Dip
+category: menu
+search_vector: 'cha':1A,2A 'crab':4A 'dip':5A
+
+--- search_index [row 12 of 100] ---
+ref_type: offer
+ref_id: 15558
+entity_slug: wolf-bay
+title: Coconut Shrimp
+category: menu
+subtitle: Served with tropical marmalade
+search_vector: 'coconut':1A 'marmalad':6C 'serv':3C 'shrimp':2A 'tropic':5C
+
+--- search_index [row 13 of 100] ---
+ref_type: offer
+ref_id: 15559
+entity_slug: wolf-bay
+title: Conecuh & Crawfish Tater Cakes
+category: menu
+search_vector: 'cake':4A 'conecuh':1A 'crawfish':2A 'tater':3A
+
+--- search_index [row 14 of 100] ---
+ref_type: offer
+ref_id: 15560
+entity_slug: wolf-bay
+title: Crab Stuffed Mushrooms
+category: menu
+search_vector: 'crab':1A 'mushroom':3A 'stuf':2A
+
+--- search_index [row 15 of 100] ---
+ref_type: offer
+ref_id: 15561
+entity_slug: wolf-bay
+title: Fried Crab Claws
+category: menu
+search_vector: 'claw':3A 'crab':2A 'fri':1A
+
+--- search_index [row 16 of 100] ---
+ref_type: offer
+ref_id: 15562
+entity_slug: wolf-bay
+title: Fried Green Tomatoes
+category: menu
+search_vector: 'fri':1A 'green':2A 'tomato':3A
+
+--- search_index [row 17 of 100] ---
+ref_type: offer
+ref_id: 15563
+entity_slug: wolf-bay
+title: Mornay Nachos
+category: menu
+search_vector: 'mornay':1A 'nacho':2A
+
+--- search_index [row 18 of 100] ---
+ref_type: offer
+ref_id: 15564
+entity_slug: wolf-bay
+title: Mozzarella Sticks
+category: menu
+subtitle: Served with marinara
+search_vector: 'marinara':5C 'mozzarella':1A 'serv':3C 'stick':2A
+
+--- search_index [row 19 of 100] ---
+ref_type: offer
+ref_id: 15565
+entity_slug: wolf-bay
+title: Peel N' Eat Shrimp
+category: menu
+subtitle: ½ lb
+search_vector: 'eat':3A 'lb':5C 'n':2A 'peel':1A 'shrimp':4A
+
+--- search_index [row 20 of 100] ---
+ref_type: offer
+ref_id: 15566
+entity_slug: wolf-bay
+title: Smoked Tuna Dip
+category: menu
+subtitle: Served with fried pita points
+search_vector: 'dip':3A 'fri':6C 'pita':7C 'point':8C 'serv':4C 'smoke':1A 'tuna':2A
+
+--- search_index [row 21 of 100] ---
+ref_type: offer
+ref_id: 15567
+entity_slug: wolf-bay
+title: Turner Calamari
+category: menu
+search_vector: 'calamari':2A 'turner':1A
+
+--- search_index [row 22 of 100] ---
+ref_type: offer
+ref_id: 15568
+entity_slug: wolf-bay
+title: Bread Pudding
+category: menu
+subtitle: With warm whiskey sauce
+search_vector: 'bread':1A 'pud':2A 'sauc':6C 'warm':4C 'whiskey':5C
+
+--- search_index [row 23 of 100] ---
+ref_type: offer
+ref_id: 15569
+entity_slug: wolf-bay
+title: Cheesecake of the Day
+category: menu
+search_vector: 'cheesecak':1A 'day':4A
+
+--- search_index [row 24 of 100] ---
+ref_type: offer
+ref_id: 15570
+entity_slug: wolf-bay
+title: Coconut Cake
+category: menu
+search_vector: 'cake':2A 'coconut':1A
+
+--- search_index [row 25 of 100] ---
+ref_type: offer
+ref_id: 15571
+entity_slug: wolf-bay
+title: Crème Brûlée
+category: menu
+search_vector: 'brûlée':2A 'crème':1A
+
+--- search_index [row 26 of 100] ---
+ref_type: offer
+ref_id: 15572
+entity_slug: wolf-bay
+title: Key Lime Pie
+category: menu
+search_vector: 'key':1A 'lime':2A 'pie':3A
+
+--- search_index [row 27 of 100] ---
+ref_type: offer
+ref_id: 15573
+entity_slug: wolf-bay
+title: Ooey Gooey Brownie
+category: menu
+search_vector: 'browni':3A 'gooey':2A 'ooey':1A
+
+--- search_index [row 28 of 100] ---
+ref_type: offer
+ref_id: 15574
+entity_slug: wolf-bay
+title: Balsamic Chicken
+category: menu
+search_vector: 'balsam':1A 'chicken':2A
+
+--- search_index [row 29 of 100] ---
+ref_type: offer
+ref_id: 15575
+entity_slug: wolf-bay
+title: Chicken Tender Dinner
+category: menu
+subtitle: Fried or grilled
+search_vector: 'chicken':1A 'dinner':3A 'fri':4C 'grill':6C 'tender':2A
+
+--- search_index [row 30 of 100] ---
+ref_type: offer
+ref_id: 15576
+entity_slug: wolf-bay
+title: Filet (8oz Black Angus)
+category: menu
+search_vector: '8oz':2A 'angus':4A 'black':3A 'filet':1A
+
+--- search_index [row 31 of 100] ---
+ref_type: offer
+ref_id: 15577
+entity_slug: wolf-bay
+title: Ribeye (14oz Black Angus)
+category: menu
+search_vector: '14oz':2A 'angus':4A 'black':3A 'ribey':1A
+
+--- search_index [row 32 of 100] ---
+ref_type: offer
+ref_id: 15578
+entity_slug: wolf-bay
+title: BBQ Cheddar Burger
+category: menu
+subtitle: Mon-Fri 11am-3pm; includes side
+search_vector: '11am':8C '11am-3pm':7C '3pm':9C 'bbq':1A 'burger':3A 'cheddar':2A 'fri':6C 'includ':10C 'mon':5C 'mon-fri':4C 'side':11C
+
+--- search_index [row 33 of 100] ---
+ref_type: offer
+ref_id: 15579
+entity_slug: wolf-bay
+title: Bacon Brie Burger
+category: menu
+subtitle: Mon-Fri 11am-3pm; includes side
+search_vector: '11am':8C '11am-3pm':7C '3pm':9C 'bacon':1A 'brie':2A 'burger':3A 'fri':6C 'includ':10C 'mon':5C 'mon-fri':4C 'side':11C
+
+--- search_index [row 34 of 100] ---
+ref_type: offer
+ref_id: 15580
+entity_slug: wolf-bay
+title: Balsamic Chicken (Lunch)
+category: menu
+subtitle: Mon-Fri 11am-3pm; includes side
+search_vector: '11am':8C '11am-3pm':7C '3pm':9C 'balsam':1A 'chicken':2A 'fri':6C 'includ':10C 'lunch':3A 'mon':5C 'mon-fri':4C 'side':11C
+
+--- search_index [row 35 of 100] ---
+ref_type: offer
+ref_id: 15581
+entity_slug: wolf-bay
+title: Cajun Whitefish
+category: menu
+subtitle: Mon-Fri 11am-3pm; includes side
+search_vector: '11am':7C '11am-3pm':6C '3pm':8C 'cajun':1A 'fri':5C 'includ':9C 'mon':4C 'mon-fri':3C 'side':10C 'whitefish':2A
+
+--- search_index [row 36 of 100] ---
+ref_type: offer
+ref_id: 15582
+entity_slug: wolf-bay
+title: Chicken Parmesan
+category: menu
+subtitle: Mon-Fri 11am-3pm; includes side
+search_vector: '11am':7C '11am-3pm':6C '3pm':8C 'chicken':1A 'fri':5C 'includ':9C 'mon':4C 'mon-fri':3C 'parmesan':2A 'side':10C
+
+--- search_index [row 37 of 100] ---
+ref_type: offer
+ref_id: 15583
+entity_slug: wolf-bay
+title: Chicken Tenders
+category: menu
+subtitle: Mon-Fri 11am-3pm; includes side
+search_vector: '11am':7C '11am-3pm':6C '3pm':8C 'chicken':1A 'fri':5C 'includ':9C 'mon':4C 'mon-fri':3C 'side':10C 'tender':2A
+
+--- search_index [row 38 of 100] ---
+ref_type: offer
+ref_id: 15584
+entity_slug: wolf-bay
+title: Coastal Tacos
+category: menu
+subtitle: Mon-Fri 11am-3pm; includes side
+search_vector: '11am':7C '11am-3pm':6C '3pm':8C 'coastal':1A 'fri':5C 'includ':9C 'mon':4C 'mon-fri':3C 'side':10C 'taco':2A
+
+--- search_index [row 39 of 100] ---
+ref_type: offer
+ref_id: 15585
+entity_slug: wolf-bay
+title: Fried Chicken Sandwich
+category: menu
+subtitle: Mon-Fri 11am-3pm; includes side
+search_vector: '11am':8C '11am-3pm':7C '3pm':9C 'chicken':2A 'fri':1A,6C 'includ':10C 'mon':5C 'mon-fri':4C 'sandwich':3A 'side':11C
+
+--- search_index [row 40 of 100] ---
+ref_type: offer
+ref_id: 15586
+entity_slug: wolf-bay
+title: Grilled Shrimp Kabobs
+category: menu
+subtitle: Mon-Fri 11am-3pm; includes side
+search_vector: '11am':8C '11am-3pm':7C '3pm':9C 'fri':6C 'grill':1A 'includ':10C 'kabob':3A 'mon':5C 'mon-fri':4C 'shrimp':2A 'side':11C
+
+--- search_index [row 41 of 100] ---
+ref_type: offer
+ref_id: 15587
+entity_slug: wolf-bay
+title: Shrimp & Grits (Lunch)
+category: menu
+subtitle: Mon-Fri 11am-3pm; includes side
+search_vector: '11am':8C '11am-3pm':7C '3pm':9C 'fri':6C 'grit':2A 'includ':10C 'lunch':3A 'mon':5C 'mon-fri':4C 'shrimp':1A 'side':11C
+
+--- search_index [row 42 of 100] ---
+ref_type: offer
+ref_id: 15588
+entity_slug: wolf-bay
+title: Small Mix
+category: menu
+subtitle: Mon-Fri 11am-3pm; includes side
+search_vector: '11am':7C '11am-3pm':6C '3pm':8C 'fri':5C 'includ':9C 'mix':2A 'mon':4C 'mon-fri':3C 'side':10C 'small':1A
+
+--- search_index [row 43 of 100] ---
+ref_type: offer
+ref_id: 15589
+entity_slug: wolf-bay
+title: Small Shrimp
+category: menu
+subtitle: Mon-Fri 11am-3pm; includes side
+search_vector: '11am':7C '11am-3pm':6C '3pm':8C 'fri':5C 'includ':9C 'mon':4C 'mon-fri':3C 'shrimp':2A 'side':10C 'small':1A
+
+--- search_index [row 44 of 100] ---
+ref_type: offer
+ref_id: 15590
+entity_slug: wolf-bay
+title: Wolf Bay Burger
+category: menu
+subtitle: Mon-Fri 11am-3pm; includes side
+search_vector: '11am':8C '11am-3pm':7C '3pm':9C 'bay':2A 'burger':3A 'fri':6C 'includ':10C 'mon':5C 'mon-fri':4C 'side':11C 'wolf':1A
+
+--- search_index [row 45 of 100] ---
+ref_type: offer
+ref_id: 15591
+entity_slug: wolf-bay
+title: On the Half Shell (Half-Dozen/Dozen)
+category: menu
+subtitle: Not available for takeout; includes side & garlic knot
+search_vector: '/dozen':8A 'avail':10C 'dozen':7A 'garlic':15C 'half':3A,6A 'half-dozen':5A 'includ':13C 'knot':16C 'shell':4A 'side':14C 'takeout':12C
+
+--- search_index [row 46 of 100] ---
+ref_type: offer
+ref_id: 15592
+entity_slug: wolf-bay
+title: Parmesan Garlic (Half-Dozen/Dozen)
+category: menu
+subtitle: Not available for takeout; includes side & garlic knot
+search_vector: '/dozen':6A 'avail':8C 'dozen':5A 'garlic':2A,13C 'half':4A 'half-dozen':3A 'includ':11C 'knot':14C 'parmesan':1A 'side':12C 'takeout':10C
+
+--- search_index [row 47 of 100] ---
+ref_type: offer
+ref_id: 15593
+entity_slug: wolf-bay
+title: Pom Pom (Award-winning, Half-Dozen/Dozen)
+category: menu
+subtitle: Not available for takeout; includes side & garlic knot
+search_vector: '/dozen':9A 'avail':11C 'award':4A 'award-win':3A 'dozen':8A 'garlic':16C 'half':7A 'half-dozen':6A 'includ':14C 'knot':17C 'pom':1A,2A 'side':15C 'takeout':13C 'win':5A
+
+--- search_index [row 48 of 100] ---
+ref_type: offer
+ref_id: 15594
+entity_slug: wolf-bay
+title: Rockefeller (Half-Dozen/Dozen)
+category: menu
+subtitle: Not available for takeout; includes side & garlic knot
+search_vector: '/dozen':5A 'avail':7C 'dozen':4A 'garlic':12C 'half':3A 'half-dozen':2A 'includ':10C 'knot':13C 'rockefel':1A 'side':11C 'takeout':9C
+
+--- search_index [row 49 of 100] ---
+ref_type: offer
+ref_id: 15595
+entity_slug: wolf-bay
+title: Baked Mac & Cheese
+category: menu
+subtitle: Includes garlic knot
+search_vector: 'bake':1A 'chees':3A 'garlic':5C 'includ':4C 'knot':6C 'mac':2A
+
+--- search_index [row 50 of 100] ---
+ref_type: offer
+ref_id: 15596
+entity_slug: wolf-bay
+title: Pasta Alfredo
+category: menu
+subtitle: Includes garlic knot
+search_vector: 'alfredo':2A 'garlic':4C 'includ':3C 'knot':5C 'pasta':1A
+
+--- search_index [row 51 of 100] ---
+ref_type: offer
+ref_id: 15597
+entity_slug: wolf-bay
+title: Shrimp Scampi
+category: menu
+subtitle: Includes garlic knot
+search_vector: 'garlic':4C 'includ':3C 'knot':5C 'scampi':2A 'shrimp':1A
+
+--- search_index [row 52 of 100] ---
+ref_type: offer
+ref_id: 15598
+entity_slug: wolf-bay
+title: Signature Shrimp & Grits
+category: menu
+subtitle: Includes garlic knot
+search_vector: 'garlic':5C 'grit':3A 'includ':4C 'knot':6C 'shrimp':2A 'signatur':1A
+
+--- search_index [row 53 of 100] ---
+ref_type: offer
+ref_id: 15599
+entity_slug: wolf-bay
+title: Traditional Seafood Pasta
+category: menu
+subtitle: Includes garlic knot
+search_vector: 'garlic':5C 'includ':4C 'knot':6C 'pasta':3A 'seafood':2A 'tradit':1A
+
+--- search_index [row 54 of 100] ---
+ref_type: offer
+ref_id: 15600
+entity_slug: wolf-bay
+title: Dinner Salad Bar (All-You-Can-Eat)
+category: menu
+subtitle: Mon-Sat 3pm-close, all day Sun
+search_vector: '3pm':13C '3pm-close':12C 'all-you-can-eat':4A 'bar':3A 'close':14C 'day':16C 'dinner':1A 'eat':8A 'mon':10C 'mon-sat':9C 'salad':2A 'sat':11C 'sun':17C
+
+--- search_index [row 55 of 100] ---
+ref_type: offer
+ref_id: 15601
+entity_slug: wolf-bay
+title: Dinner Salad Bar (One Trip)
+category: menu
+subtitle: Mon-Sat 3pm-close, all day Sun
+search_vector: '3pm':10C '3pm-close':9C 'bar':3A 'close':11C 'day':13C 'dinner':1A 'mon':7C 'mon-sat':6C 'one':4A 'salad':2A 'sat':8C 'sun':14C 'trip':5A
+
+--- search_index [row 56 of 100] ---
+ref_type: offer
+ref_id: 15602
+entity_slug: wolf-bay
+title: Dinner Salad Bar (To-Go, per lb)
+category: menu
+subtitle: Mon-Sat 3pm-close, all day Sun
+search_vector: '3pm':13C '3pm-close':12C 'bar':3A 'close':14C 'day':16C 'dinner':1A 'go':6A 'lb':8A 'mon':10C 'mon-sat':9C 'per':7A 'salad':2A 'sat':11C 'sun':17C 'to-go':4A
+
+--- search_index [row 57 of 100] ---
+ref_type: offer
+ref_id: 15603
+entity_slug: wolf-bay
+title: Lunch Salad Bar (All-You-Can-Eat)
+category: menu
+subtitle: Mon-Sat 11am-3pm
+search_vector: '11am':13C '11am-3pm':12C '3pm':14C 'all-you-can-eat':4A 'bar':3A 'eat':8A 'lunch':1A 'mon':10C 'mon-sat':9C 'salad':2A 'sat':11C
+
+--- search_index [row 58 of 100] ---
+ref_type: offer
+ref_id: 15604
+entity_slug: wolf-bay
+title: Lunch Salad Bar (One Trip)
+category: menu
+subtitle: Mon-Sat 11am-3pm
+search_vector: '11am':10C '11am-3pm':9C '3pm':11C 'bar':3A 'lunch':1A 'mon':7C 'mon-sat':6C 'one':4A 'salad':2A 'sat':8C 'trip':5A
+
+--- search_index [row 59 of 100] ---
+ref_type: offer
+ref_id: 15605
+entity_slug: wolf-bay
+title: Lunch Salad Bar (To-Go, per lb)
+category: menu
+subtitle: Mon-Sat 11am-3pm
+search_vector: '11am':13C '11am-3pm':12C '3pm':14C 'bar':3A 'go':6A 'lb':8A 'lunch':1A 'mon':10C 'mon-sat':9C 'per':7A 'salad':2A 'sat':11C 'to-go':4A
+
+--- search_index [row 60 of 100] ---
+ref_type: offer
+ref_id: 15606
+entity_slug: wolf-bay
+title: Grilled Mahi Sandwich
+category: menu
+subtitle: Includes fries or fresh fruit
+search_vector: 'fresh':7C 'fri':5C 'fruit':8C 'grill':1A 'includ':4C 'mahi':2A 'sandwich':3A
+
+--- search_index [row 61 of 100] ---
+ref_type: offer
+ref_id: 15607
+entity_slug: wolf-bay
+title: Grilled Ribeye Hoagie
+category: menu
+subtitle: Includes fries or fresh fruit
+search_vector: 'fresh':7C 'fri':5C 'fruit':8C 'grill':1A 'hoagi':3A 'includ':4C 'ribey':2A
+
+--- search_index [row 62 of 100] ---
+ref_type: offer
+ref_id: 15608
+entity_slug: wolf-bay
+title: Grouper Rueben
+category: menu
+subtitle: Includes fries or fresh fruit
+search_vector: 'fresh':6C 'fri':4C 'fruit':7C 'grouper':1A 'includ':3C 'rueben':2A
+
+--- search_index [row 63 of 100] ---
+ref_type: offer
+ref_id: 15609
+entity_slug: wolf-bay
+title: Po' Boy
+category: menu
+subtitle: Shrimp, whitefish, catfish, or oysters; includes fries or fresh fruit
+search_vector: 'boy':2A 'catfish':5C 'fresh':11C 'fri':9C 'fruit':12C 'includ':8C 'oyster':7C 'po':1A 'shrimp':3C 'whitefish':4C
+
+--- search_index [row 64 of 100] ---
+ref_type: offer
+ref_id: 15848
+entity_slug: wolf-bay
+title: Captains Platter
+category: menu
+subtitle: Includes side, two hushpuppies
+search_vector: 'captain':1A 'hushpuppi':6C 'includ':3C 'platter':2A 'side':4C 'two':5C
+
+--- search_index [row 65 of 100] ---
+ref_type: offer
+ref_id: 15849
+entity_slug: wolf-bay
+title: Catfish (Southern Fried)
+category: menu
+subtitle: Includes side, two hushpuppies
+search_vector: 'catfish':1A 'fri':3A 'hushpuppi':7C 'includ':4C 'side':5C 'southern':2A 'two':6C
+
+--- search_index [row 66 of 100] ---
+ref_type: offer
+ref_id: 15850
+entity_slug: wolf-bay
+title: Choice of Three (Combo)
+category: menu
+subtitle: Fried/grilled/broiled/blackened; choice of gulf shrimp, whitefish, fresh oysters, popcorn shrimp, stuffed crab
+search_vector: 'choic':1A,6C 'combo':4A 'crab':16C 'fresh':11C 'fried/grilled/broiled/blackened':5C 'gulf':8C 'oyster':12C 'popcorn':13C 'shrimp':9C,14C 'stuf':15C 'three':3A 'whitefish':10C
+
+--- search_index [row 67 of 100] ---
+ref_type: offer
+ref_id: 15851
+entity_slug: wolf-bay
+title: Choice of Two (Combo)
+category: menu
+subtitle: Fried/grilled/broiled/blackened; choice of gulf shrimp, whitefish, fresh oysters, popcorn shrimp, stuffed crab
+search_vector: 'choic':1A,6C 'combo':4A 'crab':16C 'fresh':11C 'fried/grilled/broiled/blackened':5C 'gulf':8C 'oyster':12C 'popcorn':13C 'shrimp':9C,14C 'stuf':15C 'two':3A 'whitefish':10C
+
+--- search_index [row 68 of 100] ---
+ref_type: offer
+ref_id: 15852
+entity_slug: wolf-bay
+title: Coconut Shrimp (Dinner)
+category: menu
+subtitle: Includes side, two hushpuppies
+search_vector: 'coconut':1A 'dinner':3A 'hushpuppi':7C 'includ':4C 'shrimp':2A 'side':5C 'two':6C
+
+--- search_index [row 69 of 100] ---
+ref_type: offer
+ref_id: 15853
+entity_slug: wolf-bay
+title: Grouper
+category: menu
+subtitle: Includes side, two hushpuppies
+search_vector: 'grouper':1A 'hushpuppi':5C 'includ':2C 'side':3C 'two':4C
+
+--- search_index [row 70 of 100] ---
+ref_type: offer
+ref_id: 15854
+entity_slug: wolf-bay
+title: Lump Crab Cake Dinner
+category: menu
+subtitle: Includes side, two hushpuppies
+search_vector: 'cake':3A 'crab':2A 'dinner':4A 'hushpuppi':8C 'includ':5C 'lump':1A 'side':6C 'two':7C
+
+--- search_index [row 71 of 100] ---
+ref_type: offer
+ref_id: 15855
+entity_slug: wolf-bay
+title: Mahi Mahi
+category: menu
+subtitle: Includes side, two hushpuppies
+search_vector: 'hushpuppi':6C 'includ':3C 'mahi':1A,2A 'side':4C 'two':5C
+
+--- search_index [row 72 of 100] ---
+ref_type: offer
+ref_id: 15856
+entity_slug: wolf-bay
+title: Peel N' Eat Shrimp (1 lb)
+category: menu
+subtitle: Includes side, two hushpuppies
+search_vector: '1':5A 'eat':3A 'hushpuppi':10C 'includ':7C 'lb':6A 'n':2A 'peel':1A 'shrimp':4A 'side':8C 'two':9C
+
+--- search_index [row 73 of 100] ---
+ref_type: offer
+ref_id: 15857
+entity_slug: wolf-bay
+title: Sea Scallops
+category: menu
+subtitle: Includes side, two hushpuppies
+search_vector: 'hushpuppi':6C 'includ':3C 'scallop':2A 'sea':1A 'side':4C 'two':5C
+
+--- search_index [row 74 of 100] ---
+ref_type: offer
+ref_id: 15858
+entity_slug: wolf-bay
+title: Snapper
+category: menu
+subtitle: Includes side, two hushpuppies
+search_vector: 'hushpuppi':5C 'includ':2C 'side':3C 'snapper':1A 'two':4C
+
+--- search_index [row 75 of 100] ---
+ref_type: offer
+ref_id: 15859
+entity_slug: wolf-bay
+title: Snow Crab Legs (1 lb)
+category: menu
+subtitle: Includes side, two hushpuppies
+search_vector: '1':4A 'crab':2A 'hushpuppi':9C 'includ':6C 'lb':5A 'leg':3A 'side':7C 'snow':1A 'two':8C
+
+--- search_index [row 76 of 100] ---
+ref_type: offer
+ref_id: 15860
+entity_slug: wolf-bay
+title: Stuffed Shrimp (4 Gulf shrimp)
+category: menu
+subtitle: Includes side, two hushpuppies
+search_vector: '4':3A 'gulf':4A 'hushpuppi':9C 'includ':6C 'shrimp':2A,5A 'side':7C 'stuf':1A 'two':8C
+
+--- search_index [row 77 of 100] ---
+ref_type: offer
+ref_id: 15861
+entity_slug: wolf-bay
+title: Whole Gulf Flounder
+category: menu
+subtitle: Includes side, two hushpuppies
+search_vector: 'flounder':3A 'gulf':2A 'hushpuppi':7C 'includ':4C 'side':5C 'two':6C 'whole':1A
+
+--- search_index [row 78 of 100] ---
+ref_type: offer
+ref_id: 15862
+entity_slug: wolf-bay
+title: Wolf Bay Platter
+category: menu
+subtitle: Includes side, two hushpuppies
+search_vector: 'bay':2A 'hushpuppi':7C 'includ':4C 'platter':3A 'side':5C 'two':6C 'wolf':1A
+
+--- search_index [row 79 of 100] ---
+ref_type: offer
+ref_id: 15863
+entity_slug: wolf-bay
+title: Chimichurri Shrimp Skewer
+category: menu
+search_vector: 'chimichurri':1A 'shrimp':2A 'skewer':3A
+
+--- search_index [row 80 of 100] ---
+ref_type: offer
+ref_id: 15864
+entity_slug: wolf-bay
+title: Crab Stuffed
+category: menu
+search_vector: 'crab':1A 'stuf':2A
+
+--- search_index [row 81 of 100] ---
+ref_type: offer
+ref_id: 15865
+entity_slug: wolf-bay
+title: Oscar Style
+category: menu
+search_vector: 'oscar':1A 'style':2A
+
+--- search_index [row 82 of 100] ---
+ref_type: offer
+ref_id: 15866
+entity_slug: wolf-bay
+title: Sautéed Mushrooms & Onions
+category: menu
+search_vector: 'mushroom':2A 'onion':3A 'sauté':1A
+
+--- search_index [row 83 of 100] ---
+ref_type: offer
+ref_id: 15867
+entity_slug: wolf-bay
+title: Baked Potato
+category: menu
+subtitle: Loaded +$6
+search_vector: '6':4C 'bake':1A 'load':3C 'potato':2A
+
+--- search_index [row 84 of 100] ---
+ref_type: offer
+ref_id: 15868
+entity_slug: wolf-bay
+title: Brussel Sprouts
+category: menu
+search_vector: 'brussel':1A 'sprout':2A
+
+--- search_index [row 85 of 100] ---
+ref_type: offer
+ref_id: 15869
+entity_slug: wolf-bay
+title: French Fries
+category: menu
+search_vector: 'french':1A 'fri':2A
+
+--- search_index [row 86 of 100] ---
+ref_type: offer
+ref_id: 15870
+entity_slug: wolf-bay
+title: Hushpuppies
+category: menu
+search_vector: 'hushpuppi':1A
+
+--- search_index [row 87 of 100] ---
+ref_type: offer
+ref_id: 15871
+entity_slug: wolf-bay
+title: Mashed Potatoes
+category: menu
+search_vector: 'mash':1A 'potato':2A
+
+--- search_index [row 88 of 100] ---
+ref_type: offer
+ref_id: 15872
+entity_slug: wolf-bay
+title: Rice Pilaf
+category: menu
+search_vector: 'pilaf':2A 'rice':1A
+
+--- search_index [row 89 of 100] ---
+ref_type: offer
+ref_id: 15873
+entity_slug: wolf-bay
+title: Seasonal Vegetables
+category: menu
+search_vector: 'season':1A 'veget':2A
+
+--- search_index [row 90 of 100] ---
+ref_type: offer
+ref_id: 15874
+entity_slug: wolf-bay
+title: Smoked Gouda Grits
+category: menu
+search_vector: 'gouda':2A 'grit':3A 'smoke':1A
+
+--- search_index [row 91 of 100] ---
+ref_type: offer
+ref_id: 15875
+entity_slug: wolf-bay
+title: Sweet Potato Fries
+category: menu
+search_vector: 'fri':3A 'potato':2A 'sweet':1A
+
+--- search_index [row 92 of 100] ---
+ref_type: offer
+ref_id: 15876
+entity_slug: wolf-bay
+title: Classic Caesar
+category: menu
+search_vector: 'caesar':2A 'classic':1A
+
+--- search_index [row 93 of 100] ---
+ref_type: offer
+ref_id: 15877
+entity_slug: wolf-bay
+title: Iceberg Wedge
+category: menu
+search_vector: 'iceberg':1A 'wedg':2A
+
+--- search_index [row 94 of 100] ---
+ref_type: offer
+ref_id: 15878
+entity_slug: wolf-bay
+title: Lobster Chowder (Bowl)
+category: menu
+subtitle: Add grilled/blackened shrimp +$9, chicken +$6
+search_vector: '6':9C '9':7C 'add':4C 'bowl':3A 'chicken':8C 'chowder':2A 'grilled/blackened':5C 'lobster':1A 'shrimp':6C
+
+--- search_index [row 95 of 100] ---
+ref_type: offer
+ref_id: 15879
+entity_slug: wolf-bay
+title: Lobster Chowder (Cup)
+category: menu
+subtitle: Add grilled/blackened shrimp +$9, chicken +$6
+search_vector: '6':9C '9':7C 'add':4C 'chicken':8C 'chowder':2A 'cup':3A 'grilled/blackened':5C 'lobster':1A 'shrimp':6C
+
+--- search_index [row 96 of 100] ---
+ref_type: offer
+ref_id: 15880
+entity_slug: wolf-bay
+title: Seafood Gumbo (Bowl)
+category: menu
+subtitle: Add grilled/blackened shrimp +$9, chicken +$6
+search_vector: '6':9C '9':7C 'add':4C 'bowl':3A 'chicken':8C 'grilled/blackened':5C 'gumbo':2A 'seafood':1A 'shrimp':6C
+
+--- search_index [row 97 of 100] ---
+ref_type: offer
+ref_id: 15881
+entity_slug: wolf-bay
+title: Seafood Gumbo (Cup)
+category: menu
+subtitle: Add grilled/blackened shrimp +$9, chicken +$6
+search_vector: '6':9C '9':7C 'add':4C 'chicken':8C 'cup':3A 'grilled/blackened':5C 'gumbo':2A 'seafood':1A 'shrimp':6C
+
+--- search_index [row 98 of 100] ---
+ref_type: offer
+ref_id: 15882
+entity_slug: wolf-bay
+title: Steak Salad
+category: menu
+search_vector: 'salad':2A 'steak':1A
+
+--- search_index [row 99 of 100] ---
+ref_type: offer
+ref_id: 15883
+entity_slug: wolf-bay
+title: Summer Salad
+category: menu
+search_vector: 'salad':2A 'summer':1A
+
+--- search_index [row 100 of 100] ---
+ref_type: offer
+ref_id: 15884
+entity_slug: wolf-bay
+title: You Hook 'Em, We Cook 'Em
+category: menu
+subtitle: Fried/grilled/blackened with hushpuppies, fries, coleslaw (family style)
+search_vector: 'coleslaw':11C 'cook':5A 'em':3A,6A 'famili':12C 'fri':10C 'fried/grilled/blackened':7C 'hook':2A 'hushpuppi':9C 'style':13C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: wolf-bay

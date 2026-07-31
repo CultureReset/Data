@@ -1,0 +1,440 @@
+====================================================================================================
+SLUG: test-restaurant
+NAME: Test Restaurant
+INDUSTRY: food_beverage
+TABLES WITH DATA: 16
+TOTAL ROWS: 30
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (10 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  ai_unified_search_items_full  (2 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_photos  (2 rows)
+  entity_specials  (1 rows)
+  entity_theme  (1 rows)
+  industry_food_beverage  (1 rows)
+  search_index  (1 rows)
+  tourist_saves  (1 rows)
+  tourist_seen  (2 rows)
+  tourist_swipe_events  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: test-restaurant
+name: Test Restaurant
+planner_category: food_drink
+data_quality_score: 40
+issues: missing_summary|missing_hours|missing_faqs|missing_lat_lng|missing_contact_or_website
+recommended_next_action: complete_profile
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: true
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   10 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 10] ---
+id: 20233
+entity_slug: test-restaurant
+intent_tag: best_for:drinks_or_cocktails
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 10] ---
+id: 20234
+entity_slug: test-restaurant
+intent_tag: meal:drinks
+intent_category: meal_period
+confidence: 0.82
+evidence: Derived from meal flags/menu content.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 10] ---
+id: 20235
+entity_slug: test-restaurant
+intent_tag: has:menu
+intent_category: data_available
+confidence: 0.95
+evidence: Menu items exist.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 10] ---
+id: 20236
+entity_slug: test-restaurant
+intent_tag: has:specials_or_happy_hour
+intent_category: data_available
+confidence: 0.95
+evidence: Specials or happy hour data exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 10] ---
+id: 20237
+entity_slug: test-restaurant
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 10] ---
+id: 20238
+entity_slug: test-restaurant
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 10] ---
+id: 20239
+entity_slug: test-restaurant
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 10] ---
+id: 20240
+entity_slug: test-restaurant
+intent_tag: missing:missing_faqs
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 9 of 10] ---
+id: 20241
+entity_slug: test-restaurant
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 10 of 10] ---
+id: 20242
+entity_slug: test-restaurant
+intent_tag: missing:missing_contact_or_website
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: test-restaurant
+name: Test Restaurant
+is_active: f
+planner_category: food_drink
+entity_type: restaurant
+state: AL
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/test-restaurant/photo_01.jpg
+voice_summary: Test Restaurant is best for drinks or cocktails.
+planner_summary: Test Restaurant is a food drink listing in Gulf Coast Radar.
+best_for: drinks or cocktails
+not_best_for: nothing specific flagged
+meal_periods: drinks
+search_keywords: drinks
+has_menu: true
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: true
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 2
+menu_item_count: 1
+drink_item_count: 0
+event_count: 0
+special_count: 1
+happy_hour_item_count: 0
+tag_count: 0
+faq_count: 0
+data_quality_score: 40
+data_gaps: missing_summary|missing_hours|missing_faqs|missing_lat_lng|missing_contact_or_website
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 7433
+entity_slug: test-restaurant
+entity_name: Test Restaurant
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/test-restaurant/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 7434
+entity_slug: test-restaurant
+entity_name: Test Restaurant
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/test-restaurant/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: ai_unified_search_items_full   -   2 row(s)
+####################################################################################################
+
+--- ai_unified_search_items_full [row 1 of 2] ---
+id: 2411
+entity_slug: test-restaurant
+entity_name: Test Restaurant
+row_type: menu_item
+section_name: Appetizers
+item_name: Calamari
+description: Fried squid
+price: 12.99
+item_type_tags: shareable
+planner_tags: fried
+meal_period_tags: all_day_or_unknown
+needs_price: false
+search_text: Test Restaurant |  | menu_item | Appetizers | Calamari | Fried squid | shareable | fried | all_day_or_unknown
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_unified_search_items_full [row 2 of 2] ---
+id: 7990
+entity_slug: test-restaurant
+entity_name: Test Restaurant
+row_type: special
+section_name: Special
+item_name: Happy Hour
+description: $2 off drinks
+price: 4-6pm daily
+item_type_tags: general
+planner_tags: deal_or_special
+meal_period_tags: all_day_or_unknown
+needs_price: false
+search_text: Test Restaurant |  | special | Special | Happy Hour | $2 off drinks | general | deal_or_special | all_day_or_unknown
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 154f3b83-8ac2-4ea0-a332-de233be5a995
+slug: test-restaurant
+name: Test Restaurant
+is_active: true
+featured: false
+entity_type: restaurant
+menu_pin: 1234
+state: AL
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/test-restaurant/photo_01.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-05-29T17:35:34.745658+00:00
+updated_at: 2026-05-30T19:25:38.54+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+business_status: OPERATIONAL
+google_places_data: {}
+search_vector: 'restaur':2A 'test':1A
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: menu
+industry_code: food_beverage
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: test-restaurant
+name: Test Restaurant
+industry_code: food_beverage
+is_parent: false
+score_of_7: 1
+
+####################################################################################################
+# TABLE: entity_photos   -   2 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 2] ---
+id: 22aa9e5b-3c2a-4557-9590-46a6631c57fb
+entity_slug: test-restaurant
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/test-restaurant/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 2] ---
+id: c57fa62c-0de4-42bf-a5bc-bb7b98ed584d
+entity_slug: test-restaurant
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/test-restaurant/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+####################################################################################################
+# TABLE: entity_specials   -   1 row(s)
+####################################################################################################
+
+--- entity_specials [row 1 of 1] ---
+id: 755eca39-ce7e-40b1-a71d-b94cf06e0357
+entity_slug: test-restaurant
+special_name: Happy Hour
+description: $2 off drinks
+discount_text: 4-6pm daily
+is_active: true
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: e19fa3f0-21cf-4962-afba-f3d64795325c
+entity_slug: test-restaurant
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_food_beverage   -   1 row(s)
+####################################################################################################
+
+--- industry_food_beverage [row 1 of 1] ---
+entity_slug: test-restaurant
+menu_section_count: 0
+menu_item_count: 0
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+dine_in: true
+takeout: false
+delivery: false
+reservable: false
+outdoor_seating: false
+live_music: false
+good_for_kids: false
+good_for_groups: false
+has_happy_hour: false
+updated_at: 2026-07-21T16:19:16.291607+00:00
+
+####################################################################################################
+# TABLE: search_index   -   1 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 1] ---
+ref_type: business
+ref_id: test-restaurant
+entity_slug: test-restaurant
+title: Test Restaurant
+category: restaurant
+search_vector: 'restaur':2A 'test':1A
+
+####################################################################################################
+# TABLE: tourist_saves   -   1 row(s)
+####################################################################################################
+
+--- tourist_saves [row 1 of 1] ---
+id: f51f1dbb-1303-4d2d-a6a7-191cab0ee392
+user_id: 0eae72e6-2535-424e-bd65-024879c35e40
+entity_id: 154f3b83-8ac2-4ea0-a332-de233be5a995
+entity_slug: test-restaurant
+business_name: Test Restaurant
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/test-restaurant/photo_01.jpg
+category: food
+saved_at: 2026-07-26T03:35:25.532712+00:00
+is_super_like: false
+
+####################################################################################################
+# TABLE: tourist_seen   -   2 row(s)
+####################################################################################################
+
+--- tourist_seen [row 1 of 2] ---
+id: e9cdafad-d922-4fdc-b4d2-52eea1e9fafa
+tourist_id: 73a5a5d3-25c2-42a3-be99-e4c916f56c72
+entity_slug: test-restaurant
+created_at: 2026-07-24T14:06:41.623465+00:00
+
+--- tourist_seen [row 2 of 2] ---
+id: 6fdacd16-8194-4adf-bd74-02af1f60672b
+tourist_id: 0eae72e6-2535-424e-bd65-024879c35e40
+entity_slug: test-restaurant
+created_at: 2026-07-26T03:35:32.363109+00:00
+
+####################################################################################################
+# TABLE: tourist_swipe_events   -   2 row(s)
+####################################################################################################
+
+--- tourist_swipe_events [row 1 of 2] ---
+id: 0d64668a-a264-4b5f-881a-14c5912e3fd2
+tourist_id: 0eae72e6-2535-424e-bd65-024879c35e40
+entity_slug: test-restaurant
+entity_name: Test Restaurant
+category: food
+direction: like
+created_at: 2026-07-26T03:35:32.079499+00:00
+
+--- tourist_swipe_events [row 2 of 2] ---
+id: f3d2ad5e-e3b6-4f01-baae-8993fae01d55
+tourist_id: 0eae72e6-2535-424e-bd65-024879c35e40
+entity_slug: test-restaurant
+entity_name: Test Restaurant
+category: food
+direction: nope
+created_at: 2026-07-24T14:06:41.251375+00:00
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: test-restaurant

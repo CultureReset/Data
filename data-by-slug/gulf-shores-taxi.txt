@@ -1,0 +1,1577 @@
+====================================================================================================
+SLUG: gulf-shores-taxi
+NAME: Gulf Shores Taxi
+INDUSTRY: transportation
+SUBTYPE: taxi_service
+TABLES WITH DATA: 25
+TOTAL ROWS: 92
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (4 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_nearby_landmark_types  (22 rows)
+  entity_nearby_landmarks  (5 rows)
+  entity_offer  (1 rows)
+  entity_photos  (3 rows)
+  entity_reviews  (5 rows)
+  entity_sources  (1 rows)
+  entity_tags  (10 rows)
+  entity_theme  (1 rows)
+  industry_transportation  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: gulf-shores-taxi
+name: Gulf Shores Taxi
+planner_category: local_service
+data_quality_score: 80
+issues: missing_summary|missing_hours
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: true
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   4 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 4] ---
+id: 25334
+entity_slug: gulf-shores-taxi
+intent_tag: best_for:local_information
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 4] ---
+id: 25335
+entity_slug: gulf-shores-taxi
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 4] ---
+id: 25336
+entity_slug: gulf-shores-taxi
+intent_tag: missing:missing_summary
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 4] ---
+id: 25337
+entity_slug: gulf-shores-taxi
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: gulf-shores-taxi
+name: Gulf Shores Taxi
+is_active: t
+planner_category: local_service
+entity_type: service
+entity_subtype: taxi_service
+city: Gulf Shores
+state: AL
+address_line_1: 1544 W 2nd St
+latitude: 30.266416900000003
+longitude: -87.69099399999999
+rating: 3.6
+review_count: 9
+website_url: http://www.yourgulfshorestaxi.com/
+hero_image_url: /photos/gulf-shores-taxi/photo_01.jpg
+voice_summary: Gulf Shores Taxi in Gulf Shores is best for local information.
+planner_summary: Gulf Shores Taxi in Gulf Shores is a local service listing in Gulf Coast Radar.
+best_for: local information
+not_best_for: nothing specific flagged
+search_keywords: taxi_service|transportation_service|point_of_interest|service|establishment
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 2
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 10
+faq_count: 0
+data_quality_score: 80
+data_gaps: missing_summary|missing_hours
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 3862
+entity_slug: gulf-shores-taxi
+entity_name: Gulf Shores Taxi
+city: Gulf Shores
+url: /photos/gulf-shores-taxi/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 9757
+entity_slug: gulf-shores-taxi
+entity_name: Gulf Shores Taxi
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/gulf-shores-taxi/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 6da84ae6-2fcd-4c48-9c32-9eb5500b3a06
+resource_type: service
+slug: gulf-shores-taxi
+name: Gulf Shores Taxi
+entity_slug: gulf-shores-taxi
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/gulf-shores-taxi/photo_01.jpg",
+  "/photos/gulf-shores-taxi/photo_01.jpg"
+]
+amenities: []
+faqs: []
+address: 1544 W 2nd St
+city: Gulf Shores
+state: AL
+latitude: 30.266416900000003
+longitude: -87.69099399999999
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 2b4075138e7374da44e720fe937dee45
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 6da84ae6-2fcd-4c48-9c32-9eb5500b3a06
+entity_slug: gulf-shores-taxi
+slug: gulf-shores-taxi
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/gulf-shores-taxi/photo_01.jpg",
+  "/photos/gulf-shores-taxi/photo_01.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 57c26f8e-d9f3-4a46-a010-64da1a063dab
+slug: gulf-shores-taxi
+name: Gulf Shores Taxi
+is_active: true
+featured: false
+entity_type: service
+entity_subtype: taxi_service
+phone: (251) 215-2794
+website_url: http://www.yourgulfshorestaxi.com/
+menu_pin: 5762
+address_line_1: 1544 W 2nd St
+city: Gulf Shores
+state: AL
+zip: 36542
+latitude: 30.266416900000003
+longitude: -87.69099399999999
+rating: 3.6
+review_count: 9
+hero_image_url: https://places.googleapis.com/v1/places/ChIJeezWCsrTLkYRe-dri4gVjIQ/photos/AaVGc3nWAAo3jd3hegMtGV0AwdY7cB_rJHzyS1lkI3FMBMea8ljaJ7z3fa4RMpbHFT0E8sAikKeOnhliuoU0V47KIjMMr7YSjWSfntI_nhAWSPgd6z_znl9sC4kfbRepTEAZaCESjn-GLbm0SS81r7wxzT8uurLIc7jPMZ5KOVULgwamJsXyNNWuf4NerwR-8GcsDOTWknUSvDKrLcWETloWnRQR67atIHwOV8U15OzLEEpv8DNPZBnertAiOhI14880yLWQwGpxwQEojR_65-4edDSwz8sus5Jl7nDcLjseFkDWC5Fm7LB2JLjNIvCv03BXHJqdon7r9J71V0key6_BhZyzjPzSbvg8pFPYXbdwbxFZjPdkx-dmBDJj8RxH6Kfx5qEXU50sbobeBtQrmX41F-fTwQoUDYmBquhPszVZDqBISNA/media?maxHeightPx=1600&maxWidthPx=1600
+good_for_kids: false
+created_at: 2026-06-03T04:01:12.378311+00:00
+updated_at: 2026-06-03T04:01:12.378311+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJeezWCsrTLkYRe-dri4gVjIQ
+google_maps_uri: https://maps.google.com/?cid=9551032585944819579&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: taxi_service
+formatted_address: 1544 W 2nd St Unit #103, Gulf Shores, AL 36542, USA
+plus_code: 862J7885+HJ
+international_phone: +1 251-215-2794
+google_places_data: {
+  "id": "ChIJeezWCsrTLkYRe-dri4gVjIQ",
+  "types": [
+    "taxi_service",
+    "point_of_interest",
+    "transportation_service",
+    "service",
+    "establishment"
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJeezWCsrTLkYRe-dri4gVjIQ/photos/AaVGc3nWAAo3jd3hegMtGV0AwdY7cB_rJHzyS1lkI3FMBMea8ljaJ7z3fa4RMpbHFT0E8sAikKeOnhliuoU0V47KIjMMr7YSjWSfntI_nhAWSPgd6z_znl9sC4kfbRepTEAZaCESjn-GLbm0SS81r7wxzT8uurLIc7jPMZ5KOVULgwamJsXyNNWuf4NerwR-8GcsDOTWknUSvDKrLcWETloWnRQR67atIHwOV8U15OzLEEpv8DNPZBnertAiOhI14880yLWQwGpxwQEojR_65-4edDSwz8sus5Jl7nDcLjseFkDWC5Fm7LB2JLjNIvCv03BXHJqdon7r9J71V0key6_BhZyzjPzSbvg8pFPYXbdwbxFZjPdkx-dmBDJj8RxH6Kfx5qEXU50sbobeBtQrmX41F-fTwQoUDYmBquhPszVZDqBISNA",
+      "widthPx": 680,
+      "heightPx": 540,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDq3NnqiQE!2e10!4m2!3m1!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDq3NnqiQE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/100952986310887046025",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWafWjpC1Lk-6PsBoSSbONw5dsv3YegbIas-L9M1T1i17JBeyA=s100-p-k-no-mo",
+          "displayName": "Gulf Shores Taxi"
+        }
+      ]
+    }
+  ],
+  "rating": 3.6,
+  "reviews": [
+    {
+      "name": "places/ChIJeezWCsrTLkYRe-dri4gVjIQ/reviews/ChZDSUhNMG9nS0VNN0psWnpscmZfZ1VREAE",
+      "text": {
+        "text": "We prearranged a taxi to the festival 3 days prior! Texted info and Mike confirmed. Day of at set time he never showed! Call to him and he said \" I just can't get over there!!\"  Not trustworthy!",
+        "languageCode": "en"
+      },
+      "rating": 1,
+      "publishTime": "2025-05-16T22:17:26.071109Z",
+      "originalText": {
+        "text": "We prearranged a taxi to the festival 3 days prior! Texted info and Mike confirmed. Day of at set time he never showed! Call to him and he said \" I just can't get over there!!\"  Not trustworthy!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VNN0psWnpscmZfZ1VREAE!2m1!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VNN0psWnpscmZfZ1VREAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/109018499898631927272/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocL-rjPsteaSELMXwAkk3e463aL5OBoupoh0f7PbDDchlKab_A=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Jannelle Buisker"
+      },
+      "relativePublishTimeDescription": "a year ago"
+    },
+    {
+      "name": "places/ChIJeezWCsrTLkYRe-dri4gVjIQ/reviews/ChZDSUhNMG9nS0VJQ0FnSUNPM08tUFJ3EAE",
+      "text": {
+        "text": "The guy was rude on the phone and said he could not help because I was not in Gulf shores when in fact I was! He didn’t even ask where I was to begin with. Then proceeded to say he couldn’t help because their business is in orange beach yet your company name is GULF SHORES TAXI! Make it make sense. I recommend finding an actual taxi business that are willing to accommodate your travels. If I could I would give them ZERO starts just alone on the customer service.",
+        "languageCode": "en"
+      },
+      "rating": 1,
+      "publishTime": "2022-06-04T14:20:29.576683Z",
+      "originalText": {
+        "text": "The guy was rude on the phone and said he could not help because I was not in Gulf shores when in fact I was! He didn’t even ask where I was to begin with. Then proceeded to say he couldn’t help because their business is in orange beach yet your company name is GULF SHORES TAXI! Make it make sense. I recommend finding an actual taxi business that are willing to accommodate your travels. If I could I would give them ZERO starts just alone on the customer service.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNPM08tUFJ3EAE!2m1!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNPM08tUFJ3EAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/110405978853549163503/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJQrn77HrE87RdZ0DM2NpEs1AwDa4IEDXNtmCyCXw9fW_2Saw=s128-c0x00000000-cc-rp-mo",
+        "displayName": "jessica hernandez"
+      },
+      "relativePublishTimeDescription": "4 years ago"
+    },
+    {
+      "name": "places/ChIJeezWCsrTLkYRe-dri4gVjIQ/reviews/ChZDSUhNMG9nS0VJQ0FnSUNhM3A2SERREAE",
+      "text": {
+        "text": "The man who picked up the phone was obviously harried because they were in the middle of a rush but that does not excuse his total lack of basic customer service. He hastily answered my questions about rates and timing but essentially tried bullying me into a decision bc I wanted 5 seconds to mull it over and then he hung up on me.\n\nIt's kind of comical to think back on now. This man couldn't keep it together for a 2 minute phone call. Anyway, probably best to take your business elsewhere.",
+        "languageCode": "en"
+      },
+      "rating": 1,
+      "publishTime": "2021-08-01T20:02:16.183876Z",
+      "originalText": {
+        "text": "The man who picked up the phone was obviously harried because they were in the middle of a rush but that does not excuse his total lack of basic customer service. He hastily answered my questions about rates and timing but essentially tried bullying me into a decision bc I wanted 5 seconds to mull it over and then he hung up on me.\n\nIt's kind of comical to think back on now. This man couldn't keep it together for a 2 minute phone call. Anyway, probably best to take your business elsewhere.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNhM3A2SERREAE!2m1!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNhM3A2SERREAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/115449927996668211927/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIxx1w3-a61se0TAsSyJ7353ESEBLBdh8pPUJ3arce1F7iRug=s128-c0x00000000-cc-rp-mo-ba3",
+        "displayName": "Tricia Pelkington"
+      },
+      "relativePublishTimeDescription": "4 years ago"
+    },
+    {
+      "name": "places/ChIJeezWCsrTLkYRe-dri4gVjIQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xoVmJGWnZObVV5YVVjMVdXeDJWSFEwUkZWM0xVRRAB",
+      "text": {
+        "text": "His service was excellent car very clean",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-07-03T04:29:08.868426809Z",
+      "originalText": {
+        "text": "His service was excellent car very clean",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xoVmJGWnZObVV5YVVjMVdXeDJWSFEwUkZWM0xVRRAB!2m1!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2xoVmJGWnZObVV5YVVjMVdXeDJWSFEwUkZWM0xVRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/107522463732639521713/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUp5WqIucxFCp2O-ZOU5eFbwIoXjvcvdAkpd8R4vv6-ietjwv05Cw=s128-c0x00000000-cc-rp-mo-ba5",
+        "displayName": "Violeta Rodriguez"
+      },
+      "relativePublishTimeDescription": "11 months ago"
+    },
+    {
+      "name": "places/ChIJeezWCsrTLkYRe-dri4gVjIQ/reviews/ChdDSUhNMG9nS0VJQ0FnSUNGNm9tbjZnRRAB",
+      "text": {
+        "text": "Best taxi in the area!! Prompt and friendly. They won't leave u hanging.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2023-10-27T22:31:25.618997Z",
+      "originalText": {
+        "text": "Best taxi in the area!! Prompt and friendly. They won't leave u hanging.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNGNm9tbjZnRRAB!2m1!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNGNm9tbjZnRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/111041085879245673465/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIwar0-XQStqpa3vCopyHvyzs-TQGv53nfXZVQ0DmrFD_varw=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Amy Smith"
+      },
+      "relativePublishTimeDescription": "2 years ago"
+    }
+  ],
+  "location": {
+    "latitude": 30.266416900000003,
+    "longitude": -87.69099399999999
+  },
+  "plusCode": {
+    "globalCode": "862J7885+HJ",
+    "compoundCode": "7885+HJ Gulf Shores, AL, USA"
+  },
+  "viewport": {
+    "low": {
+      "latitude": 30.265028269708502,
+      "longitude": -87.6923670302915
+    },
+    "high": {
+      "latitude": 30.2677262302915,
+      "longitude": -87.6896690697085
+    }
+  },
+  "websiteUri": "http://www.yourgulfshorestaxi.com/",
+  "displayName": {
+    "text": "Gulf Shores Taxi",
+    "languageCode": "en"
+  },
+  "primaryType": "taxi_service",
+  "googleMapsUri": "https://maps.google.com/?cid=9551032585944819579&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "businessStatus": "OPERATIONAL",
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=9551032585944819579&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "userRatingCount": 9,
+  "adrFormatAddress": "<span class=\"street-address\">1544 W 2nd St Unit #103</span>, <span class=\"locality\">Gulf Shores</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36542</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "1544 W 2nd St Unit #103, Gulf Shores, AL 36542, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "subpremise"
+      ],
+      "longText": "Unit #103",
+      "shortText": "Unit #103",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "1544",
+      "shortText": "1544",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "West 2nd Street",
+      "shortText": "W 2nd St",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Gulf Shores",
+      "shortText": "Gulf Shores",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36542",
+      "shortText": "36542",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "landmarks": [
+      {
+        "name": "places/ChIJK6jzK9AEmogRkWGir7x5yUA",
+        "types": [
+          "establishment",
+          "food",
+          "grocery_or_supermarket",
+          "liquor_store",
+          "point_of_interest",
+          "store",
+          "supermarket"
+        ],
+        "placeId": "ChIJK6jzK9AEmogRkWGir7x5yUA",
+        "displayName": {
+          "text": "Rouses Market",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 357.91776,
+        "straightLineDistanceMeters": 92.30824
+      },
+      {
+        "name": "places/ChIJT238K9AEmogRJyHb-s3AI4U",
+        "types": [
+          "establishment",
+          "food",
+          "meal_takeaway",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJT238K9AEmogRJyHb-s3AI4U",
+        "displayName": {
+          "text": "Subway",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 286.96045,
+        "straightLineDistanceMeters": 90.15891
+      },
+      {
+        "name": "places/ChIJd0pkK9AEmogRLin0bjmB77E",
+        "types": [
+          "establishment",
+          "finance",
+          "point_of_interest",
+          "store"
+        ],
+        "placeId": "ChIJd0pkK9AEmogRLin0bjmB77E",
+        "displayName": {
+          "text": "The UPS Store",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 380.41574,
+        "straightLineDistanceMeters": 142.23253
+      },
+      {
+        "name": "places/ChIJn2W8DNIEmogRNiKhhlDgFLg",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "real_estate_agency"
+        ],
+        "placeId": "ChIJn2W8DNIEmogRNiKhhlDgFLg",
+        "displayName": {
+          "text": "Summer Trace at Gulf Shores",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 359.71735,
+        "straightLineDistanceMeters": 307.53433
+      },
+      {
+        "name": "places/ChIJGb76Rc4EmogRb_3jYZMWRh8",
+        "types": [
+          "establishment",
+          "lodging",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJGb76Rc4EmogRb_3jYZMWRh8",
+        "displayName": {
+          "text": "Quality Inn Gulf Shores Airport",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 381.69308,
+        "straightLineDistanceMeters": 286.66214
+      }
+    ]
+  },
+  "currentOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 0,
+          "minute": 0,
+          "truncated": true
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 23,
+          "minute": 59,
+          "truncated": true
+        }
+      }
+    ],
+    "weekdayDescriptions": [
+      "Monday: Open 24 hours",
+      "Tuesday: Open 24 hours",
+      "Wednesday: Open 24 hours",
+      "Thursday: Open 24 hours",
+      "Friday: Open 24 hours",
+      "Saturday: Open 24 hours",
+      "Sunday: Open 24 hours"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Taxi Service",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#7B9EB0",
+  "nationalPhoneNumber": "(251) 215-2794",
+  "regularOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 0,
+          "minute": 0
+        }
+      }
+    ],
+    "weekdayDescriptions": [
+      "Monday: Open 24 hours",
+      "Tuesday: Open 24 hours",
+      "Wednesday: Open 24 hours",
+      "Thursday: Open 24 hours",
+      "Friday: Open 24 hours",
+      "Saturday: Open 24 hours",
+      "Sunday: Open 24 hours"
+    ]
+  },
+  "shortFormattedAddress": "1544 W 2nd St Unit #103, Gulf Shores",
+  "primaryTypeDisplayName": {
+    "text": "Taxi Service",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-215-2794"
+}
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #7B9EB0
+short_formatted_address: 1544 W 2nd St Unit #103, Gulf Shores
+national_phone: (251) 215-2794
+search_vector: 'gulf':1A,6 'servic':5 'shore':2A,7 'taxi':3A,4
+primary_type_display: Taxi Service
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=9551032585944819579&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "landmarks": [
+    {
+      "name": "places/ChIJK6jzK9AEmogRkWGir7x5yUA",
+      "types": [
+        "establishment",
+        "food",
+        "grocery_or_supermarket",
+        "liquor_store",
+        "point_of_interest",
+        "store",
+        "supermarket"
+      ],
+      "placeId": "ChIJK6jzK9AEmogRkWGir7x5yUA",
+      "displayName": {
+        "text": "Rouses Market",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 357.91776,
+      "straightLineDistanceMeters": 92.30824
+    },
+    {
+      "name": "places/ChIJT238K9AEmogRJyHb-s3AI4U",
+      "types": [
+        "establishment",
+        "food",
+        "meal_takeaway",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJT238K9AEmogRJyHb-s3AI4U",
+      "displayName": {
+        "text": "Subway",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 286.96045,
+      "straightLineDistanceMeters": 90.15891
+    },
+    {
+      "name": "places/ChIJd0pkK9AEmogRLin0bjmB77E",
+      "types": [
+        "establishment",
+        "finance",
+        "point_of_interest",
+        "store"
+      ],
+      "placeId": "ChIJd0pkK9AEmogRLin0bjmB77E",
+      "displayName": {
+        "text": "The UPS Store",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 380.41574,
+      "straightLineDistanceMeters": 142.23253
+    },
+    {
+      "name": "places/ChIJn2W8DNIEmogRNiKhhlDgFLg",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "real_estate_agency"
+      ],
+      "placeId": "ChIJn2W8DNIEmogRNiKhhlDgFLg",
+      "displayName": {
+        "text": "Summer Trace at Gulf Shores",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 359.71735,
+      "straightLineDistanceMeters": 307.53433
+    },
+    {
+      "name": "places/ChIJGb76Rc4EmogRb_3jYZMWRh8",
+      "types": [
+        "establishment",
+        "lodging",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJGb76Rc4EmogRb_3jYZMWRh8",
+      "displayName": {
+        "text": "Quality Inn Gulf Shores Airport",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 381.69308,
+      "straightLineDistanceMeters": 286.66214
+    }
+  ]
+}
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url | hero_image_url v2-fix 2026-07-21: repointed to a photo confirmed to actually exist
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: transportation
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: gulf-shores-taxi
+name: Gulf Shores Taxi
+industry_code: transportation
+is_parent: false
+score_of_7: 5
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 9c2a4df2-e492-4d12-ac32-920c16621fe1
+entity_slug: gulf-shores-taxi
+place_uri: https://maps.google.com/?cid=9551032585944819579&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 9508
+entity_slug: gulf-shores-taxi
+google_review_name: places/ChIJeezWCsrTLkYRe-dri4gVjIQ/reviews/Ci9DQUlRQUNvZENodHljRjlvT2xoVmJGWnZObVV5YVVjMVdXeDJWSFEwUkZWM0xVRRAB
+rating: 5
+review_text: His service was excellent car very clean
+language_code: en
+author_name: Violeta Rodriguez
+author_profile_url: https://www.google.com/maps/contrib/107522463732639521713/reviews
+publish_time: 2025-07-03T04:29:08.868427+00:00
+relative_time: 11 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xoVmJGWnZObVV5YVVjMVdXeDJWSFEwUkZWM0xVRRAB!2m1!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 9509
+entity_slug: gulf-shores-taxi
+google_review_name: places/ChIJeezWCsrTLkYRe-dri4gVjIQ/reviews/ChdDSUhNMG9nS0VJQ0FnSUNGNm9tbjZnRRAB
+rating: 5
+review_text: Best taxi in the area!! Prompt and friendly. They won't leave u hanging.
+language_code: en
+author_name: Amy Smith
+author_profile_url: https://www.google.com/maps/contrib/111041085879245673465/reviews
+publish_time: 2023-10-27T22:31:25.618997+00:00
+relative_time: 2 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNGNm9tbjZnRRAB!2m1!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 9505
+entity_slug: gulf-shores-taxi
+google_review_name: places/ChIJeezWCsrTLkYRe-dri4gVjIQ/reviews/ChZDSUhNMG9nS0VNN0psWnpscmZfZ1VREAE
+rating: 1
+review_text: We prearranged a taxi to the festival 3 days prior! Texted info and Mike confirmed. Day of at set time he never showed! Call to him and he said " I just can't get over there!!"  Not trustworthy!
+language_code: en
+author_name: Jannelle Buisker
+author_profile_url: https://www.google.com/maps/contrib/109018499898631927272/reviews
+publish_time: 2025-05-16T22:17:26.071109+00:00
+relative_time: a year ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VNN0psWnpscmZfZ1VREAE!2m1!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 9506
+entity_slug: gulf-shores-taxi
+google_review_name: places/ChIJeezWCsrTLkYRe-dri4gVjIQ/reviews/ChZDSUhNMG9nS0VJQ0FnSUNPM08tUFJ3EAE
+rating: 1
+review_text: The guy was rude on the phone and said he could not help because I was not in Gulf shores when in fact I was! He didn’t even ask where I was to begin with. Then proceeded to say he couldn’t help because their business is in orange beach yet your company name is GULF SHORES TAXI! Make it make sense. I recommend finding an actual taxi business that are willing to accommodate your travels. If I could I would give them ZERO starts just alone on the customer service.
+language_code: en
+author_name: jessica hernandez
+author_profile_url: https://www.google.com/maps/contrib/110405978853549163503/reviews
+publish_time: 2022-06-04T14:20:29.576683+00:00
+relative_time: 4 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNPM08tUFJ3EAE!2m1!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 9507
+entity_slug: gulf-shores-taxi
+google_review_name: places/ChIJeezWCsrTLkYRe-dri4gVjIQ/reviews/ChZDSUhNMG9nS0VJQ0FnSUNhM3A2SERREAE
+rating: 1
+review_text: The man who picked up the phone was obviously harried because they were in the middle of a rush but that does not excuse his total lack of basic customer service. He hastily answered my questions about rates and timing but essentially tried bullying me into a decision bc I wanted 5 seconds to mull it over and then he hung up on me.
+
+It's kind of comical to think back on now. This man couldn't keep it together for a 2 minute phone call. Anyway, probably best to take your business elsewhere.
+language_code: en
+author_name: Tricia Pelkington
+author_profile_url: https://www.google.com/maps/contrib/115449927996668211927/reviews
+publish_time: 2021-08-01T20:02:16.183876+00:00
+relative_time: 4 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNhM3A2SERREAE!2m1!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: c3075014-d9b1-4965-a971-843f6ee76bf1
+entity_slug: gulf-shores-taxi
+day_of_week: 0
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: d2276453-2942-4da5-82a4-4e7505e6abd2
+entity_slug: gulf-shores-taxi
+day_of_week: 1
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: c5a6ff47-7aab-488b-afad-3b2dbcbf267a
+entity_slug: gulf-shores-taxi
+day_of_week: 2
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 80f11812-dd5b-4547-b66a-505fea48cba8
+entity_slug: gulf-shores-taxi
+day_of_week: 3
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: 2e3c2897-8b7d-4f65-9e2f-0a397077a32d
+entity_slug: gulf-shores-taxi
+day_of_week: 4
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 077fde70-2e81-42a3-a3cd-9a6f2c00d0dc
+entity_slug: gulf-shores-taxi
+day_of_week: 5
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 33c4949e-b624-462a-bba9-5ac9d99e5eb7
+entity_slug: gulf-shores-taxi
+day_of_week: 6
+opens_at: 00:00:00
+closes_at: 23:59:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: gulf-shores-taxi
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 6da84ae6-2fcd-4c48-9c32-9eb5500b3a06
+name: Gulf Shores Taxi
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/gulf-shores-taxi/photo_01.jpg",
+    "/photos/gulf-shores-taxi/photo_01.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: gulf-shores-taxi
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 6da84ae6-2fcd-4c48-9c32-9eb5500b3a06
+name: Gulf Shores Taxi
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/gulf-shores-taxi/photo_01.jpg",
+    "/photos/gulf-shores-taxi/photo_01.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: 08e8ce7f-daa8-497d-ba7d-480f42421924
+entity_slug: gulf-shores-taxi
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 373e3d4c-aa60-48fe-b5ab-18e942811ae2
+entity_slug: gulf-shores-taxi
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: 873758c2-d8b0-4b4b-8fe7-a3f84f58f5eb
+entity_slug: gulf-shores-taxi
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: b04e08e2-01d6-4dcf-9685-95a8f4262043
+entity_slug: gulf-shores-taxi
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: f58b0ff5-10af-4545-9890-ca8776d82b7f
+entity_slug: gulf-shores-taxi
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: 4b35333b-b716-48f2-9c9a-43f1db1f1a0b
+entity_slug: gulf-shores-taxi
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 6ae809a4-6675-4fd9-98e4-6514887eaf39
+entity_slug: gulf-shores-taxi
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: 242013ed-e8d6-4634-9511-3ad785c1895b
+entity_slug: gulf-shores-taxi
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: e9f62d76-f3f6-4290-96c0-50b109ab7b8b
+entity_slug: gulf-shores-taxi
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: 8d01ebc6-245b-47eb-aff8-c0751f85b820
+entity_slug: gulf-shores-taxi
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: 3d590d7e-4577-4d08-83fb-e9eee0b16f78
+entity_slug: gulf-shores-taxi
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: e37a0757-1464-4e5d-aeeb-7b50dc8a1fd5
+entity_slug: gulf-shores-taxi
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: bd7043b2-01ca-4b3a-af33-bf2ff8c43a2b
+entity_slug: gulf-shores-taxi
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   22 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 22] ---
+id: d462e7fb-8f27-48c6-96ef-3287d03df0f2
+landmark_id: 3816fb46-d8a6-4ff8-b085-e5d8d9345313
+entity_slug: gulf-shores-taxi
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 22] ---
+id: db04c72f-981c-4d21-bc1e-ea521066955a
+landmark_id: 3816fb46-d8a6-4ff8-b085-e5d8d9345313
+entity_slug: gulf-shores-taxi
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 22] ---
+id: f0d868b4-744a-4e04-b224-d8953d918eef
+landmark_id: 3816fb46-d8a6-4ff8-b085-e5d8d9345313
+entity_slug: gulf-shores-taxi
+landmark_type: grocery_or_supermarket
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 22] ---
+id: 4e330cbb-6e97-4c98-b1b2-d6861bc2c971
+landmark_id: 3816fb46-d8a6-4ff8-b085-e5d8d9345313
+entity_slug: gulf-shores-taxi
+landmark_type: liquor_store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 22] ---
+id: 915d21c6-0cf5-4a48-9738-0a32079447be
+landmark_id: 3816fb46-d8a6-4ff8-b085-e5d8d9345313
+entity_slug: gulf-shores-taxi
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 22] ---
+id: 2ae82652-8139-4d2b-8fa8-df814dd7a2ec
+landmark_id: 3816fb46-d8a6-4ff8-b085-e5d8d9345313
+entity_slug: gulf-shores-taxi
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 22] ---
+id: dbabb514-f729-4de0-b6a2-b5139636f19b
+landmark_id: 3816fb46-d8a6-4ff8-b085-e5d8d9345313
+entity_slug: gulf-shores-taxi
+landmark_type: supermarket
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 22] ---
+id: 96d9b170-5f07-46f3-aae5-010b7828f1d1
+landmark_id: b24a745a-c8fa-4f1b-9ba1-6e05e4f10529
+entity_slug: gulf-shores-taxi
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 22] ---
+id: 0cb099ca-c85a-41ac-a63d-befdaadd1ca3
+landmark_id: b24a745a-c8fa-4f1b-9ba1-6e05e4f10529
+entity_slug: gulf-shores-taxi
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 22] ---
+id: ce660e15-774c-4d9c-a9ab-a9a27953f63d
+landmark_id: b24a745a-c8fa-4f1b-9ba1-6e05e4f10529
+entity_slug: gulf-shores-taxi
+landmark_type: meal_takeaway
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 22] ---
+id: c8b76bd3-6add-441e-bf04-fb39c2cc3b09
+landmark_id: b24a745a-c8fa-4f1b-9ba1-6e05e4f10529
+entity_slug: gulf-shores-taxi
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 22] ---
+id: e24d0aa6-2f90-409c-8ee5-d40f61cea71b
+landmark_id: b24a745a-c8fa-4f1b-9ba1-6e05e4f10529
+entity_slug: gulf-shores-taxi
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 22] ---
+id: dbd5ae0f-e669-4366-ba9f-cbbcb9a413a0
+landmark_id: 57c595cf-0b87-4dcd-84a1-639c3f91b841
+entity_slug: gulf-shores-taxi
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 22] ---
+id: 21e82360-8390-4c6f-bd71-60158be16570
+landmark_id: 57c595cf-0b87-4dcd-84a1-639c3f91b841
+entity_slug: gulf-shores-taxi
+landmark_type: finance
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 22] ---
+id: cb3f15f2-f2cb-44b5-a4bb-67edb9faf005
+landmark_id: 57c595cf-0b87-4dcd-84a1-639c3f91b841
+entity_slug: gulf-shores-taxi
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 22] ---
+id: eb0d97f4-6a19-4bbe-aff1-7e32daa59dbe
+landmark_id: 57c595cf-0b87-4dcd-84a1-639c3f91b841
+entity_slug: gulf-shores-taxi
+landmark_type: store
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 22] ---
+id: 6dfab17a-f673-4f21-9f3a-a42bec230ca5
+landmark_id: c6641005-e061-4241-94f8-1adeb07519ea
+entity_slug: gulf-shores-taxi
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 22] ---
+id: 2366708b-d56a-42d7-a145-98a4ee487dcc
+landmark_id: c6641005-e061-4241-94f8-1adeb07519ea
+entity_slug: gulf-shores-taxi
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 19 of 22] ---
+id: bfa4cc26-02fd-4ec4-b5f2-1c8ef3869b62
+landmark_id: c6641005-e061-4241-94f8-1adeb07519ea
+entity_slug: gulf-shores-taxi
+landmark_type: real_estate_agency
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 20 of 22] ---
+id: d5a00a43-528e-436f-a190-9007035cd8c2
+landmark_id: 06bbc46b-f8fd-4f45-82af-bc8f666c34ad
+entity_slug: gulf-shores-taxi
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 21 of 22] ---
+id: 16a515a2-6caf-43f0-b11a-7f0cabe88c73
+landmark_id: 06bbc46b-f8fd-4f45-82af-bc8f666c34ad
+entity_slug: gulf-shores-taxi
+landmark_type: lodging
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 22 of 22] ---
+id: 62fc4d46-2f76-4640-8d4f-a8ab433fcc49
+landmark_id: 06bbc46b-f8fd-4f45-82af-bc8f666c34ad
+entity_slug: gulf-shores-taxi
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   5 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 5] ---
+id: 3816fb46-d8a6-4ff8-b085-e5d8d9345313
+entity_slug: gulf-shores-taxi
+kind: landmark
+place_id: ChIJK6jzK9AEmogRkWGir7x5yUA
+name: Rouses Market
+types: [
+  "establishment",
+  "food",
+  "grocery_or_supermarket",
+  "liquor_store",
+  "point_of_interest",
+  "store",
+  "supermarket"
+]
+travel_distance_meters: 357.91776
+straight_line_distance_meters: 92.30824
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 5] ---
+id: b24a745a-c8fa-4f1b-9ba1-6e05e4f10529
+entity_slug: gulf-shores-taxi
+kind: landmark
+place_id: ChIJT238K9AEmogRJyHb-s3AI4U
+name: Subway
+types: [
+  "establishment",
+  "food",
+  "meal_takeaway",
+  "point_of_interest",
+  "restaurant"
+]
+travel_distance_meters: 286.96045
+straight_line_distance_meters: 90.15891
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 5] ---
+id: 57c595cf-0b87-4dcd-84a1-639c3f91b841
+entity_slug: gulf-shores-taxi
+kind: landmark
+place_id: ChIJd0pkK9AEmogRLin0bjmB77E
+name: The UPS Store
+types: [
+  "establishment",
+  "finance",
+  "point_of_interest",
+  "store"
+]
+travel_distance_meters: 380.41574
+straight_line_distance_meters: 142.23253
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 5] ---
+id: c6641005-e061-4241-94f8-1adeb07519ea
+entity_slug: gulf-shores-taxi
+kind: landmark
+place_id: ChIJn2W8DNIEmogRNiKhhlDgFLg
+name: Summer Trace at Gulf Shores
+types: [
+  "establishment",
+  "point_of_interest",
+  "real_estate_agency"
+]
+travel_distance_meters: 359.71735
+straight_line_distance_meters: 307.53433
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 5] ---
+id: 06bbc46b-f8fd-4f45-82af-bc8f666c34ad
+entity_slug: gulf-shores-taxi
+kind: landmark
+place_id: ChIJGb76Rc4EmogRb_3jYZMWRh8
+name: Quality Inn Gulf Shores Airport
+types: [
+  "establishment",
+  "lodging",
+  "point_of_interest"
+]
+travel_distance_meters: 381.69308
+straight_line_distance_meters: 286.66214
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13648
+entity_slug: gulf-shores-taxi
+name: Gulf Shores Taxi
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 6da84ae6-2fcd-4c48-9c32-9eb5500b3a06
+
+####################################################################################################
+# TABLE: entity_photos   -   3 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 3] ---
+id: 8d392776-7b37-4ac7-9643-93799627672f
+entity_slug: gulf-shores-taxi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/gulf-shores-taxi/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 3] ---
+id: b7df8cab-3ef6-4a6f-b0f5-694b50565a7b
+entity_slug: gulf-shores-taxi
+url: https://places.googleapis.com/v1/places/ChIJeezWCsrTLkYRe-dri4gVjIQ/photos/AaVGc3nWAAo3jd3hegMtGV0AwdY7cB_rJHzyS1lkI3FMBMea8ljaJ7z3fa4RMpbHFT0E8sAikKeOnhliuoU0V47KIjMMr7YSjWSfntI_nhAWSPgd6z_znl9sC4kfbRepTEAZaCESjn-GLbm0SS81r7wxzT8uurLIc7jPMZ5KOVULgwamJsXyNNWuf4NerwR-8GcsDOTWknUSvDKrLcWETloWnRQR67atIHwOV8U15OzLEEpv8DNPZBnertAiOhI14880yLWQwGpxwQEojR_65-4edDSwz8sus5Jl7nDcLjseFkDWC5Fm7LB2JLjNIvCv03BXHJqdon7r9J71V0key6_BhZyzjPzSbvg8pFPYXbdwbxFZjPdkx-dmBDJj8RxH6Kfx5qEXU50sbobeBtQrmX41F-fTwQoUDYmBquhPszVZDqBISNA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJeezWCsrTLkYRe-dri4gVjIQ/photos/AaVGc3nWAAo3jd3hegMtGV0AwdY7cB_rJHzyS1lkI3FMBMea8ljaJ7z3fa4RMpbHFT0E8sAikKeOnhliuoU0V47KIjMMr7YSjWSfntI_nhAWSPgd6z_znl9sC4kfbRepTEAZaCESjn-GLbm0SS81r7wxzT8uurLIc7jPMZ5KOVULgwamJsXyNNWuf4NerwR-8GcsDOTWknUSvDKrLcWETloWnRQR67atIHwOV8U15OzLEEpv8DNPZBnertAiOhI14880yLWQwGpxwQEojR_65-4edDSwz8sus5Jl7nDcLjseFkDWC5Fm7LB2JLjNIvCv03BXHJqdon7r9J71V0key6_BhZyzjPzSbvg8pFPYXbdwbxFZjPdkx-dmBDJj8RxH6Kfx5qEXU50sbobeBtQrmX41F-fTwQoUDYmBquhPszVZDqBISNA
+is_cover: false
+sort_order: 0
+caption: Gulf Shores Taxi
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDq3NnqiQE!2e10!4m2!3m1!1s0x462ed3ca0ad6ec79:0x848c15888b6be77b
+
+--- entity_photos [row 3 of 3] ---
+id: a8189072-9975-4a61-a1d7-20f3a34c5bb9
+entity_slug: gulf-shores-taxi
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/gulf-shores-taxi/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 6da84ae6-2fcd-4c48-9c32-9eb5500b3a06
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 7a3705ec-ca18-46ec-af8f-059e33a8e1a2
+entity_slug: gulf-shores-taxi
+reviewer_name: Jannelle Buisker
+rating: 1
+body: We prearranged a taxi to the festival 3 days prior! Texted info and Mike confirmed. Day of at set time he never showed! Call to him and he said " I just can't get over there!!"  Not trustworthy!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-05-16T22:17:26.071109+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: fa449868-3dd9-4534-a7ed-07c0e8c11cb0
+entity_slug: gulf-shores-taxi
+reviewer_name: jessica hernandez
+rating: 1
+body: The guy was rude on the phone and said he could not help because I was not in Gulf shores when in fact I was! He didn’t even ask where I was to begin with. Then proceeded to say he couldn’t help because their business is in orange beach yet your company name is GULF SHORES TAXI! Make it make sense. I recommend finding an actual taxi business that are willing to accommodate your travels. If I could I would give them ZERO starts just alone on the customer service.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2022-06-04T14:20:29.576683+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: fb429b16-51ba-45cc-8a02-5fa0440d7e8e
+entity_slug: gulf-shores-taxi
+reviewer_name: Tricia Pelkington
+rating: 1
+body: The man who picked up the phone was obviously harried because they were in the middle of a rush but that does not excuse his total lack of basic customer service. He hastily answered my questions about rates and timing but essentially tried bullying me into a decision bc I wanted 5 seconds to mull it over and then he hung up on me.
+
+It's kind of comical to think back on now. This man couldn't keep it together for a 2 minute phone call. Anyway, probably best to take your business elsewhere.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2021-08-01T20:02:16.183876+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 9861816d-975d-460b-a3d5-8ecd2f1f8fa3
+entity_slug: gulf-shores-taxi
+reviewer_name: Violeta Rodriguez
+rating: 5
+body: His service was excellent car very clean
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-07-03T04:29:08.868427+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: 89d5116c-baa3-454b-afe3-c83100b85b3e
+entity_slug: gulf-shores-taxi
+reviewer_name: Amy Smith
+rating: 5
+body: Best taxi in the area!! Prompt and friendly. They won't leave u hanging.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2023-10-27T22:31:25.618997+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_sources   -   1 row(s)
+####################################################################################################
+
+--- entity_sources [row 1 of 1] ---
+id: e7fcae08-35c6-4e5a-80e9-b9219310b92c
+entity_slug: gulf-shores-taxi
+source_system: website_scrape_advanced
+source_url: http://www.yourgulfshorestaxi.com/
+scope: profile
+confidence: high
+created_at: 2026-07-16T23:29:34.335105+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   10 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 10] ---
+id: 88196184-9e50-47b4-9aeb-bf8ccd9f3e53
+entity_slug: gulf-shores-taxi
+tag_name: taxi_service
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 10] ---
+id: d5aecbdb-9f78-4ea3-abed-c64bd43fbc2b
+entity_slug: gulf-shores-taxi
+tag_name: transportation_service
+tag_category: google_type
+
+--- entity_tags [row 3 of 10] ---
+id: fdb77a0d-347b-4222-9385-982000601091
+entity_slug: gulf-shores-taxi
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 4 of 10] ---
+id: 55e5430c-d1d1-4ae1-adbb-f05701c95fa1
+entity_slug: gulf-shores-taxi
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 5 of 10] ---
+id: cb26f989-8441-444f-8933-978dd42ae3fb
+entity_slug: gulf-shores-taxi
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 6 of 10] ---
+id: 99f1d9ce-c72c-4ca1-80a6-d6ca657ffecb
+entity_slug: gulf-shores-taxi
+tag_name: taxi_service
+tag_category: google_primary_type
+
+--- entity_tags [row 7 of 10] ---
+id: 507fc05a-525d-4809-b582-4fc756b936aa
+entity_slug: gulf-shores-taxi
+tag_name: transportation_service
+tag_category: google_type
+
+--- entity_tags [row 8 of 10] ---
+id: 46c7bf55-6f33-4dc0-93b3-d7586d9cb288
+entity_slug: gulf-shores-taxi
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 9 of 10] ---
+id: 4092981f-c297-4e1d-842a-d7c2fc4d6f9b
+entity_slug: gulf-shores-taxi
+tag_name: service
+tag_category: google_type
+
+--- entity_tags [row 10 of 10] ---
+id: 0b264f50-b5c4-40f6-89d2-173c44404ffa
+entity_slug: gulf-shores-taxi
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: b7d84161-3e87-4822-a78d-2f7f5e813c9c
+entity_slug: gulf-shores-taxi
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_transportation   -   1 row(s)
+####################################################################################################
+
+--- industry_transportation [row 1 of 1] ---
+entity_slug: gulf-shores-taxi
+service_count: 0
+updated_at: 2026-07-20T03:17:43.35857+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: offer
+ref_id: 13648
+entity_slug: gulf-shores-taxi
+title: Gulf Shores Taxi
+category: rental
+search_vector: 'gulf':1A 'shore':2A 'taxi':3A
+
+--- search_index [row 2 of 2] ---
+ref_type: business
+ref_id: gulf-shores-taxi
+entity_slug: gulf-shores-taxi
+title: Gulf Shores Taxi
+category: taxi_service
+search_vector: 'gulf':1A 'servic':5B 'shore':2A 'taxi':3A,4B
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: gulf-shores-taxi

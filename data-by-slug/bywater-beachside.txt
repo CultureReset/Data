@@ -1,0 +1,4647 @@
+====================================================================================================
+SLUG: bywater-beachside
+NAME: Bywater Beachside
+INDUSTRY: food_beverage
+SUBTYPE: bar_and_grill
+TABLES WITH DATA: 42
+TOTAL ROWS: 312
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_data_quality_audit  (1 rows)
+  ai_data_quality_issues  (5 rows)
+  ai_entity_intent_tags_full  (22 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_menu_item_tag_values  (39 rows)
+  ai_menu_item_tags  (10 rows)
+  ai_photo_index_full  (6 rows)
+  ai_planner_intent_tags  (7 rows)
+  ai_planner_profile_tags  (9 rows)
+  ai_planner_profiles  (1 rows)
+  ai_unified_search_items_full  (1 rows)
+  ai_voice_snippets  (3 rows)
+  catalog_items  (11 rows)
+  catalog_section_days  (14 rows)
+  catalog_sections  (2 rows)
+  entity  (1 rows)
+  entity_address_areas  (2 rows)
+  entity_attributes  (14 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (11 rows)
+  entity_items_v  (11 rows)
+  entity_modules  (16 rows)
+  entity_nearby_landmark_types  (7 rows)
+  entity_nearby_landmarks  (4 rows)
+  entity_offer  (11 rows)
+  entity_offer_section  (2 rows)
+  entity_photos  (17 rows)
+  entity_reviews  (5 rows)
+  entity_tags  (6 rows)
+  entity_theme  (1 rows)
+  industry_food_beverage  (1 rows)
+  legacy_photo_migration_queue  (3 rows)
+  menu_items  (11 rows)
+  menu_section_days  (14 rows)
+  menu_section_details  (2 rows)
+  menu_sections  (2 rows)
+  search_index  (23 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: bywater-beachside
+name: Bywater Beachside
+planner_category: food_drink
+data_quality_score: 90
+issues: missing_drink_menu|missing_faqs|missing_contact_or_website
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: true
+missing_hours: false
+missing_photos: false
+missing_faqs: true
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_data_quality_audit   -   1 row(s)
+####################################################################################################
+
+--- ai_data_quality_audit [row 1 of 1] ---
+entity_slug: bywater-beachside
+name: Bywater Beachside
+source_packages: gcr_batch1_restaurant_import
+food_item_count: 10
+drink_item_count: 0
+intent_tag_count: 7
+voice_snippet_count: 3
+issues: [
+  "missing_drink_menu",
+  "missing_hero_image",
+  "reservation_status_unclear",
+  "food_prices_missing:10",
+  "only_menu_highlights_available"
+]
+fix_status: planner_enriched_needs_source_confirmation
+updated_at: 2026-07-16T11:55:42.90569+00:00
+
+####################################################################################################
+# TABLE: ai_data_quality_issues   -   5 row(s)
+####################################################################################################
+
+--- ai_data_quality_issues [row 1 of 5] ---
+id: cdd21f9f-020a-4f94-8f6b-1429475290ed
+entity_slug: bywater-beachside
+issue: missing_drink_menu
+sort_order: 1
+
+--- ai_data_quality_issues [row 2 of 5] ---
+id: d5330dbe-c2cc-454d-b847-579385f99a8c
+entity_slug: bywater-beachside
+issue: missing_hero_image
+sort_order: 2
+
+--- ai_data_quality_issues [row 3 of 5] ---
+id: 7503ae37-c46e-4ecb-a2bc-fac22a6b2d6b
+entity_slug: bywater-beachside
+issue: reservation_status_unclear
+sort_order: 3
+
+--- ai_data_quality_issues [row 4 of 5] ---
+id: 5b090171-fd4d-4898-ac04-0183a5008bc0
+entity_slug: bywater-beachside
+issue: food_prices_missing:10
+sort_order: 4
+
+--- ai_data_quality_issues [row 5 of 5] ---
+id: 31cddd4d-db9a-4e9b-8233-eca97499e94c
+entity_slug: bywater-beachside
+issue: only_menu_highlights_available
+sort_order: 5
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   22 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 22] ---
+id: 23790
+entity_slug: bywater-beachside
+intent_tag: best_for:waterfront_or_scenic_meal
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 22] ---
+id: 23791
+entity_slug: bywater-beachside
+intent_tag: best_for:live_music_or_entertainment
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 22] ---
+id: 23792
+entity_slug: bywater-beachside
+intent_tag: best_for:seafood_craving
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 22] ---
+id: 23793
+entity_slug: bywater-beachside
+intent_tag: best_for:drinks_or_cocktails
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 22] ---
+id: 23794
+entity_slug: bywater-beachside
+intent_tag: experience:outdoor
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 22] ---
+id: 23795
+entity_slug: bywater-beachside
+intent_tag: experience:live_music
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 22] ---
+id: 23796
+entity_slug: bywater-beachside
+intent_tag: experience:waterfront_scenic
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 22] ---
+id: 23797
+entity_slug: bywater-beachside
+intent_tag: meal:lunch
+intent_category: meal_period
+confidence: 0.82
+evidence: Derived from meal flags/menu content.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 9 of 22] ---
+id: 23798
+entity_slug: bywater-beachside
+intent_tag: meal:dinner
+intent_category: meal_period
+confidence: 0.82
+evidence: Derived from meal flags/menu content.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 10 of 22] ---
+id: 23799
+entity_slug: bywater-beachside
+intent_tag: meal:drinks
+intent_category: meal_period
+confidence: 0.82
+evidence: Derived from meal flags/menu content.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 11 of 22] ---
+id: 23800
+entity_slug: bywater-beachside
+intent_tag: cuisine:seafood
+intent_category: cuisine
+confidence: 0.82
+evidence: Derived from cuisine/menu/tags.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 12 of 22] ---
+id: 23801
+entity_slug: bywater-beachside
+intent_tag: cuisine:breakfast_brunch
+intent_category: cuisine
+confidence: 0.82
+evidence: Derived from cuisine/menu/tags.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 13 of 22] ---
+id: 23802
+entity_slug: bywater-beachside
+intent_tag: cuisine:italian_pizza
+intent_category: cuisine
+confidence: 0.82
+evidence: Derived from cuisine/menu/tags.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 14 of 22] ---
+id: 23803
+entity_slug: bywater-beachside
+intent_tag: cuisine:burgers_bar_food
+intent_category: cuisine
+confidence: 0.82
+evidence: Derived from cuisine/menu/tags.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 15 of 22] ---
+id: 23804
+entity_slug: bywater-beachside
+intent_tag: service:reservations
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 16 of 22] ---
+id: 23805
+entity_slug: bywater-beachside
+intent_tag: service:beer
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 17 of 22] ---
+id: 23806
+entity_slug: bywater-beachside
+intent_tag: service:parking
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 18 of 22] ---
+id: 23807
+entity_slug: bywater-beachside
+intent_tag: has:menu
+intent_category: data_available
+confidence: 0.95
+evidence: Menu items exist.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 19 of 22] ---
+id: 23808
+entity_slug: bywater-beachside
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 20 of 22] ---
+id: 23809
+entity_slug: bywater-beachside
+intent_tag: missing:missing_drink_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 21 of 22] ---
+id: 23810
+entity_slug: bywater-beachside
+intent_tag: missing:missing_faqs
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 22 of 22] ---
+id: 23811
+entity_slug: bywater-beachside
+intent_tag: missing:missing_contact_or_website
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: bywater-beachside
+name: Bywater Beachside
+is_active: t
+planner_category: food_drink
+entity_type: restaurant
+entity_subtype: bar_and_grill
+city: Gulf Shores
+state: AL
+address_line_1: 20800 E Beach Blvd
+latitude: 30.2489082
+longitude: -87.66752559999999
+rating: 4.1
+review_count: 217
+hero_image_url: /photos/bywater-beachside/photo_01.jpg
+voice_summary: Bywater Beachside in Gulf Shores is best for waterfront or scenic meal, live music or entertainment, seafood craving, drinks or cocktails. It fits seafood, breakfast/brunch, italian/pizza. Experience tags: outdoor, live_music, waterfront_scenic.
+planner_summary: Casual beach bar and grill offering pizza, beer, and wine, plus karaoke on Fridays.
+best_for: waterfront or scenic meal|live music or entertainment|seafood craving|drinks or cocktails
+not_best_for: quiet low-energy meal
+meal_periods: lunch|dinner|drinks
+cuisine_tags: seafood|breakfast/brunch|italian/pizza|burgers/bar food
+experience_tags: outdoor|live_music|waterfront_scenic
+service_tags: reservations|beer|parking
+search_keywords: bar_and_grill|bar|restaurant|food|point_of_interest|establishment|seafood|breakfast/brunch|italian/pizza|burgers/bar food|lunch|dinner|drinks|outdoor|live_music|waterfront_scenic|reservations|beer|parking
+has_menu: true
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 6
+menu_item_count: 1
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 6
+faq_count: 0
+data_quality_score: 90
+data_gaps: missing_drink_menu|missing_faqs|missing_contact_or_website
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_menu_item_tag_values   -   39 row(s)
+####################################################################################################
+
+--- ai_menu_item_tag_values [row 1 of 39] ---
+id: 9e7d762c-96c9-44b5-915d-9c9fa65a2821
+source_tag_id: 772
+entity_slug: bywater-beachside
+item_name: Redneck Cuban
+tag_category: item_type
+tag_value: side
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 2 of 39] ---
+id: 1961f5e4-38a8-43d1-8c52-378b0111614c
+source_tag_id: 772
+entity_slug: bywater-beachside
+item_name: Redneck Cuban
+tag_category: meal_period
+tag_value: all-day/unknown
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 3 of 39] ---
+id: 5b163be3-84a5-4b15-90bb-30d23e047bee
+source_tag_id: 773
+entity_slug: bywater-beachside
+item_name: Beer
+tag_category: item_type
+tag_value: side
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 4 of 39] ---
+id: 7e839337-c381-4a5c-8bcb-e78ffcdf5846
+source_tag_id: 773
+entity_slug: bywater-beachside
+item_name: Beer
+tag_category: meal_period
+tag_value: all-day/unknown
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 5 of 39] ---
+id: d421ad27-413f-42c1-84cf-993acb72f279
+source_tag_id: 773
+entity_slug: bywater-beachside
+item_name: Beer
+tag_category: planner
+tag_value: alcohol-item
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 6 of 39] ---
+id: 0c0702ff-115e-425e-9c92-7942ac6f64ee
+source_tag_id: 774
+entity_slug: bywater-beachside
+item_name: Cuban Sandwich
+tag_category: item_type
+tag_value: sandwich/wrap
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 7 of 39] ---
+id: 5f8f026c-54be-42e2-9b9a-abba1ccd586f
+source_tag_id: 774
+entity_slug: bywater-beachside
+item_name: Cuban Sandwich
+tag_category: item_type
+tag_value: side
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 8 of 39] ---
+id: 68bfdb13-b2ed-4dcd-b1a9-b7a09ef39f72
+source_tag_id: 774
+entity_slug: bywater-beachside
+item_name: Cuban Sandwich
+tag_category: meal_period
+tag_value: lunch
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 9 of 39] ---
+id: 99fb3c93-cbce-43f9-a3e0-0f966b8d9e3c
+source_tag_id: 775
+entity_slug: bywater-beachside
+item_name: Pina Colada
+tag_category: item_type
+tag_value: side
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 10 of 39] ---
+id: f1268a0e-746b-48af-9599-da5c3b7eb7cf
+source_tag_id: 775
+entity_slug: bywater-beachside
+item_name: Pina Colada
+tag_category: meal_period
+tag_value: all-day/unknown
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 11 of 39] ---
+id: 9aeac0ea-b369-4108-8f72-06a3fe6de5be
+source_tag_id: 775
+entity_slug: bywater-beachside
+item_name: Pina Colada
+tag_category: planner
+tag_value: non-alcoholic
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 12 of 39] ---
+id: c763a40d-2dcc-4a9d-883d-e4eeaa77347c
+source_tag_id: 776
+entity_slug: bywater-beachside
+item_name: Tuna Dip
+tag_category: item_type
+tag_value: fish
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 13 of 39] ---
+id: 2a81f190-8125-4a42-8010-a30e03259c34
+source_tag_id: 776
+entity_slug: bywater-beachside
+item_name: Tuna Dip
+tag_category: item_type
+tag_value: side
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 14 of 39] ---
+id: 8161d97a-fe2f-4a9d-8ef0-369fd798c68c
+source_tag_id: 776
+entity_slug: bywater-beachside
+item_name: Tuna Dip
+tag_category: item_type
+tag_value: appetizer/shareable
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 15 of 39] ---
+id: 8fb016f3-5eb8-4e04-8928-ea4db227c29f
+source_tag_id: 776
+entity_slug: bywater-beachside
+item_name: Tuna Dip
+tag_category: meal_period
+tag_value: all-day/unknown
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 16 of 39] ---
+id: 27b82bc0-4c7c-40a6-b623-2a45e2a74664
+source_tag_id: 776
+entity_slug: bywater-beachside
+item_name: Tuna Dip
+tag_category: planner
+tag_value: seafood
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 17 of 39] ---
+id: 29a46eb8-7675-47a6-8fdf-26a4b7b3f602
+source_tag_id: 776
+entity_slug: bywater-beachside
+item_name: Tuna Dip
+tag_category: planner
+tag_value: item-search: seafood
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 18 of 39] ---
+id: 5219ff39-cc53-4956-85f6-e7691b62b3a3
+source_tag_id: 776
+entity_slug: bywater-beachside
+item_name: Tuna Dip
+tag_category: planner
+tag_value: non-alcoholic
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 19 of 39] ---
+id: b691c557-c978-42b1-9b4c-4526dd799fb8
+source_tag_id: 777
+entity_slug: bywater-beachside
+item_name: Chicken Wings
+tag_category: item_type
+tag_value: side
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 20 of 39] ---
+id: b89ad2ec-0132-4aa5-9e22-f37142832279
+source_tag_id: 777
+entity_slug: bywater-beachside
+item_name: Chicken Wings
+tag_category: item_type
+tag_value: chicken
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 21 of 39] ---
+id: 4411602a-2928-4fc5-9eb6-946b8334757c
+source_tag_id: 777
+entity_slug: bywater-beachside
+item_name: Chicken Wings
+tag_category: item_type
+tag_value: appetizer/shareable
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 22 of 39] ---
+id: 5263cafc-bb68-4e8b-b18e-687c0db2ed08
+source_tag_id: 777
+entity_slug: bywater-beachside
+item_name: Chicken Wings
+tag_category: meal_period
+tag_value: all-day/unknown
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 23 of 39] ---
+id: 7b0b6a53-42c8-479f-b290-260f1704fe91
+source_tag_id: 778
+entity_slug: bywater-beachside
+item_name: Pepperoni Pizza
+tag_category: item_type
+tag_value: pizza/flatbread
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 24 of 39] ---
+id: d25294c8-8335-4157-b60a-266054dc73cf
+source_tag_id: 778
+entity_slug: bywater-beachside
+item_name: Pepperoni Pizza
+tag_category: item_type
+tag_value: side
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 25 of 39] ---
+id: 83214f4e-8802-4eb1-bc60-ae2af4de0fa6
+source_tag_id: 778
+entity_slug: bywater-beachside
+item_name: Pepperoni Pizza
+tag_category: meal_period
+tag_value: all-day/unknown
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 26 of 39] ---
+id: cdb0bd55-74a9-4f50-af28-d7020df4dca4
+source_tag_id: 779
+entity_slug: bywater-beachside
+item_name: Road Kill Quesadilla
+tag_category: item_type
+tag_value: side
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 27 of 39] ---
+id: 50baa491-2ef9-4129-8878-5ddf4fbee0ab
+source_tag_id: 779
+entity_slug: bywater-beachside
+item_name: Road Kill Quesadilla
+tag_category: meal_period
+tag_value: all-day/unknown
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 28 of 39] ---
+id: c0c76bd9-6065-466d-ad82-9ab101226959
+source_tag_id: 780
+entity_slug: bywater-beachside
+item_name: Nachos w Cheese
+tag_category: item_type
+tag_value: side
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 29 of 39] ---
+id: 466adcdd-0320-484e-88ca-17edf2ff3206
+source_tag_id: 780
+entity_slug: bywater-beachside
+item_name: Nachos w Cheese
+tag_category: item_type
+tag_value: appetizer/shareable
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 30 of 39] ---
+id: fc309c9b-1238-4af9-9f37-502b2cd2348a
+source_tag_id: 780
+entity_slug: bywater-beachside
+item_name: Nachos w Cheese
+tag_category: meal_period
+tag_value: all-day/unknown
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 31 of 39] ---
+id: a76533d4-1c96-4456-90e9-9387e972b0cc
+source_tag_id: 781
+entity_slug: bywater-beachside
+item_name: Cajun Grilled Ahi Tuna Sandwich
+tag_category: item_type
+tag_value: fish
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 32 of 39] ---
+id: cb663495-b9fc-4ae3-a4d5-0e724a94cc0a
+source_tag_id: 781
+entity_slug: bywater-beachside
+item_name: Cajun Grilled Ahi Tuna Sandwich
+tag_category: item_type
+tag_value: sandwich/wrap
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 33 of 39] ---
+id: 7cf2b51f-40d5-4f58-9429-15f59f8f2f58
+source_tag_id: 781
+entity_slug: bywater-beachside
+item_name: Cajun Grilled Ahi Tuna Sandwich
+tag_category: item_type
+tag_value: side
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 34 of 39] ---
+id: d19e7313-ded9-413a-9650-0cb0fe87a2ea
+source_tag_id: 781
+entity_slug: bywater-beachside
+item_name: Cajun Grilled Ahi Tuna Sandwich
+tag_category: meal_period
+tag_value: lunch
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 35 of 39] ---
+id: cc285058-6136-4d3b-b9e8-a3dcbcc99b02
+source_tag_id: 781
+entity_slug: bywater-beachside
+item_name: Cajun Grilled Ahi Tuna Sandwich
+tag_category: planner
+tag_value: seafood
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 36 of 39] ---
+id: dfe95ccd-763b-4a0d-a203-4615439b1aed
+source_tag_id: 781
+entity_slug: bywater-beachside
+item_name: Cajun Grilled Ahi Tuna Sandwich
+tag_category: planner
+tag_value: item-search: seafood
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 37 of 39] ---
+id: 79f25187-9f7a-42af-948b-3292fd3791fb
+source_tag_id: 781
+entity_slug: bywater-beachside
+item_name: Cajun Grilled Ahi Tuna Sandwich
+tag_category: planner
+tag_value: spicy
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 38 of 39] ---
+id: db1ad10a-518c-4d29-967d-85d476ca10dd
+source_tag_id: 781
+entity_slug: bywater-beachside
+item_name: Cajun Grilled Ahi Tuna Sandwich
+tag_category: planner
+tag_value: grilled-or-blackened
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_menu_item_tag_values [row 39 of 39] ---
+id: ffca42db-027a-4633-b5b9-63333e5b71b8
+source_tag_id: 781
+entity_slug: bywater-beachside
+item_name: Cajun Grilled Ahi Tuna Sandwich
+tag_category: planner
+tag_value: non-alcoholic
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+####################################################################################################
+# TABLE: ai_menu_item_tags   -   10 row(s)
+####################################################################################################
+
+--- ai_menu_item_tags [row 1 of 10] ---
+id: 772
+entity_slug: bywater-beachside
+section_name: Menu Highlights
+item_name: Redneck Cuban
+item_type_tags: [
+  "side"
+]
+planner_tags: []
+meal_period_tags: [
+  "all-day/unknown"
+]
+needs_price: true
+search_phrase: Redneck Cuban at Bywater Beachside
+created_at: 2026-07-16T11:55:42.90569+00:00
+
+--- ai_menu_item_tags [row 2 of 10] ---
+id: 773
+entity_slug: bywater-beachside
+section_name: Menu Highlights
+item_name: Beer
+item_type_tags: [
+  "side"
+]
+planner_tags: [
+  "alcohol-item"
+]
+meal_period_tags: [
+  "all-day/unknown"
+]
+needs_price: true
+search_phrase: Beer at Bywater Beachside
+created_at: 2026-07-16T11:55:42.90569+00:00
+
+--- ai_menu_item_tags [row 3 of 10] ---
+id: 774
+entity_slug: bywater-beachside
+section_name: Menu Highlights
+item_name: Cuban Sandwich
+item_type_tags: [
+  "sandwich/wrap",
+  "side"
+]
+planner_tags: []
+meal_period_tags: [
+  "lunch"
+]
+needs_price: true
+search_phrase: Cuban Sandwich at Bywater Beachside
+created_at: 2026-07-16T11:55:42.90569+00:00
+
+--- ai_menu_item_tags [row 4 of 10] ---
+id: 775
+entity_slug: bywater-beachside
+section_name: Menu Highlights
+item_name: Pina Colada
+item_type_tags: [
+  "side"
+]
+planner_tags: [
+  "non-alcoholic"
+]
+meal_period_tags: [
+  "all-day/unknown"
+]
+needs_price: true
+search_phrase: Pina Colada at Bywater Beachside
+created_at: 2026-07-16T11:55:42.90569+00:00
+
+--- ai_menu_item_tags [row 5 of 10] ---
+id: 776
+entity_slug: bywater-beachside
+section_name: Menu Highlights
+item_name: Tuna Dip
+item_type_tags: [
+  "fish",
+  "side",
+  "appetizer/shareable"
+]
+planner_tags: [
+  "seafood",
+  "item-search: seafood",
+  "non-alcoholic"
+]
+meal_period_tags: [
+  "all-day/unknown"
+]
+needs_price: true
+search_phrase: Tuna Dip at Bywater Beachside
+created_at: 2026-07-16T11:55:42.90569+00:00
+
+--- ai_menu_item_tags [row 6 of 10] ---
+id: 777
+entity_slug: bywater-beachside
+section_name: Menu Highlights
+item_name: Chicken Wings
+item_type_tags: [
+  "side",
+  "chicken",
+  "appetizer/shareable"
+]
+planner_tags: []
+meal_period_tags: [
+  "all-day/unknown"
+]
+needs_price: true
+search_phrase: Chicken Wings at Bywater Beachside
+created_at: 2026-07-16T11:55:42.90569+00:00
+
+--- ai_menu_item_tags [row 7 of 10] ---
+id: 778
+entity_slug: bywater-beachside
+section_name: Menu Highlights
+item_name: Pepperoni Pizza
+item_type_tags: [
+  "pizza/flatbread",
+  "side"
+]
+planner_tags: []
+meal_period_tags: [
+  "all-day/unknown"
+]
+needs_price: true
+search_phrase: Pepperoni Pizza at Bywater Beachside
+created_at: 2026-07-16T11:55:42.90569+00:00
+
+--- ai_menu_item_tags [row 8 of 10] ---
+id: 779
+entity_slug: bywater-beachside
+section_name: Menu Highlights
+item_name: Road Kill Quesadilla
+item_type_tags: [
+  "side"
+]
+planner_tags: []
+meal_period_tags: [
+  "all-day/unknown"
+]
+needs_price: true
+search_phrase: Road Kill Quesadilla at Bywater Beachside
+created_at: 2026-07-16T11:55:42.90569+00:00
+
+--- ai_menu_item_tags [row 9 of 10] ---
+id: 780
+entity_slug: bywater-beachside
+section_name: Menu Highlights
+item_name: Nachos w Cheese
+item_type_tags: [
+  "side",
+  "appetizer/shareable"
+]
+planner_tags: []
+meal_period_tags: [
+  "all-day/unknown"
+]
+needs_price: true
+search_phrase: Nachos w Cheese at Bywater Beachside
+created_at: 2026-07-16T11:55:42.90569+00:00
+
+--- ai_menu_item_tags [row 10 of 10] ---
+id: 781
+entity_slug: bywater-beachside
+section_name: Menu Highlights
+item_name: Cajun Grilled Ahi Tuna Sandwich
+item_type_tags: [
+  "fish",
+  "sandwich/wrap",
+  "side"
+]
+planner_tags: [
+  "seafood",
+  "item-search: seafood",
+  "spicy",
+  "grilled-or-blackened",
+  "non-alcoholic"
+]
+meal_period_tags: [
+  "lunch"
+]
+needs_price: true
+search_phrase: Cajun Grilled Ahi Tuna Sandwich at Bywater Beachside
+created_at: 2026-07-16T11:55:42.90569+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   6 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 6] ---
+id: 4154
+entity_slug: bywater-beachside
+entity_name: Bywater Beachside
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bywater-beachside/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 6] ---
+id: 8340
+entity_slug: bywater-beachside
+entity_name: Bywater Beachside
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bywater-beachside/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 6] ---
+id: 23826
+entity_slug: bywater-beachside
+entity_name: Bywater Beachside
+city: Gulf Shores
+url: /photos/bywater-beachside/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 6] ---
+id: 23827
+entity_slug: bywater-beachside
+entity_name: Bywater Beachside
+city: Gulf Shores
+url: /photos/bywater-beachside/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 6] ---
+id: 23828
+entity_slug: bywater-beachside
+entity_name: Bywater Beachside
+city: Gulf Shores
+url: /photos/bywater-beachside/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 6] ---
+id: 25465
+entity_slug: bywater-beachside
+entity_name: Bywater Beachside
+city: Gulf Shores
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bywater-beachside/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: ai_planner_intent_tags   -   7 row(s)
+####################################################################################################
+
+--- ai_planner_intent_tags [row 1 of 7] ---
+id: 39
+entity_slug: bywater-beachside
+intent_tag: waterfront_or_scenic
+intent_category: planner
+confidence: 0.85
+evidence: Waterfront, beachside, bayfront, marina, or scenic view mentioned.
+created_at: 2026-07-16T11:55:42.90569+00:00
+
+--- ai_planner_intent_tags [row 2 of 7] ---
+id: 40
+entity_slug: bywater-beachside
+intent_tag: serves_alcohol
+intent_category: planner
+confidence: 0.85
+evidence: Cocktails, beer, wine, or bar mentioned.
+created_at: 2026-07-16T11:55:42.90569+00:00
+
+--- ai_planner_intent_tags [row 3 of 7] ---
+id: 41
+entity_slug: bywater-beachside
+intent_tag: best_for:waterfront_or_scenic_meal
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from profile, menu, tags, and event/menu data.
+created_at: 2026-07-16T11:55:42.90569+00:00
+
+--- ai_planner_intent_tags [row 4 of 7] ---
+id: 42
+entity_slug: bywater-beachside
+intent_tag: meal:lunch
+intent_category: meal_period
+confidence: 0.8
+evidence: Derived from menu sections, item names, hours, or profile text.
+created_at: 2026-07-16T11:55:42.90569+00:00
+
+--- ai_planner_intent_tags [row 5 of 7] ---
+id: 43
+entity_slug: bywater-beachside
+intent_tag: experience:waterfront_scenic
+intent_category: experience
+confidence: 0.8
+evidence: Derived from features, known-for text, or profile/event/menu content.
+created_at: 2026-07-16T11:55:42.90569+00:00
+
+--- ai_planner_intent_tags [row 6 of 7] ---
+id: 44
+entity_slug: bywater-beachside
+intent_tag: experience:bar_nightlife
+intent_category: experience
+confidence: 0.8
+evidence: Derived from features, known-for text, or profile/event/menu content.
+created_at: 2026-07-16T11:55:42.90569+00:00
+
+--- ai_planner_intent_tags [row 7 of 7] ---
+id: 45
+entity_slug: bywater-beachside
+intent_tag: experience:tourist_attraction
+intent_category: experience
+confidence: 0.8
+evidence: Derived from features, known-for text, or profile/event/menu content.
+created_at: 2026-07-16T11:55:42.90569+00:00
+
+####################################################################################################
+# TABLE: ai_planner_profile_tags   -   9 row(s)
+####################################################################################################
+
+--- ai_planner_profile_tags [row 1 of 9] ---
+id: 611ebe74-a0e8-45a6-a677-4cf3c1f0cddd
+entity_slug: bywater-beachside
+tag_category: best_for
+tag_value: waterfront or scenic meal
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_planner_profile_tags [row 2 of 9] ---
+id: ce9a14b5-9889-4a65-92fb-6f4c61123635
+entity_slug: bywater-beachside
+tag_category: not_best_for
+tag_value: nothing specific flagged
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_planner_profile_tags [row 3 of 9] ---
+id: 3304ceda-d97e-4898-b6a3-ad7985793280
+entity_slug: bywater-beachside
+tag_category: meal_period
+tag_value: lunch
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_planner_profile_tags [row 4 of 9] ---
+id: cd2907c0-fb7a-4980-a415-86f24f86276c
+entity_slug: bywater-beachside
+tag_category: cuisine
+tag_value: italian
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_planner_profile_tags [row 5 of 9] ---
+id: 8b9b3e9e-b179-4d4a-9651-a17d672507a2
+entity_slug: bywater-beachside
+tag_category: cuisine
+tag_value: burgers/bar food
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_planner_profile_tags [row 6 of 9] ---
+id: f89fd158-4577-4a6e-9551-81f0b0a489af
+entity_slug: bywater-beachside
+tag_category: cuisine
+tag_value: sushi/poke
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_planner_profile_tags [row 7 of 9] ---
+id: 9dc65452-098a-4526-9526-68fa176f43b3
+entity_slug: bywater-beachside
+tag_category: experience
+tag_value: waterfront/scenic
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_planner_profile_tags [row 8 of 9] ---
+id: 7629356a-f014-4e61-a4df-2b9e10a60a75
+entity_slug: bywater-beachside
+tag_category: experience
+tag_value: bar/nightlife
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- ai_planner_profile_tags [row 9 of 9] ---
+id: bc10a27a-cfb3-4112-9752-ff2b8b54db05
+entity_slug: bywater-beachside
+tag_category: experience
+tag_value: tourist attraction
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+####################################################################################################
+# TABLE: ai_planner_profiles   -   1 row(s)
+####################################################################################################
+
+--- ai_planner_profiles [row 1 of 1] ---
+entity_slug: bywater-beachside
+name: Bywater Beachside
+price_tier: not confirmed
+planner_summary: Bywater Beachside is a italian, burgers/bar food, sushi/poke option. Planner use: best for waterfront or scenic meal; not ideal for nothing specific flagged. Key experience tags: waterfront/scenic, bar/nightlife, tourist attraction.
+voice_summary: Bywater Beachside is a italian, burgers/bar food, sushi/poke spot that is best for waterfront or scenic meal. It also stands out for waterfront or scenic.
+best_for: [
+  "waterfront or scenic meal"
+]
+not_best_for: [
+  "nothing specific flagged"
+]
+meal_periods: [
+  "lunch"
+]
+cuisine_tags: [
+  "italian",
+  "burgers/bar food",
+  "sushi/poke"
+]
+experience_tags: [
+  "waterfront/scenic",
+  "bar/nightlife",
+  "tourist attraction"
+]
+reservation_notes: Reservation status not confirmed.
+family_friendly: false
+kids_menu: false
+waterfront: true
+outdoor_seating: false
+live_music: false
+late_night: false
+breakfast: false
+brunch: false
+lunch: true
+dinner: false
+alcohol: true
+happy_hour: false
+pet_friendly: false
+reservations_available: false
+takeout_available: false
+vegetarian_options: false
+data_quality_notes: Update menu_url only if desired; existing entity already present in database.
+updated_at: 2026-07-16T11:55:42.90569+00:00
+
+####################################################################################################
+# TABLE: ai_unified_search_items_full   -   1 row(s)
+####################################################################################################
+
+--- ai_unified_search_items_full [row 1 of 1] ---
+id: 2741
+entity_slug: bywater-beachside
+entity_name: Bywater Beachside
+city: Gulf Shores
+row_type: menu_item
+section_name: 4.7
+item_name: (6.9K)
+item_type_tags: general
+meal_period_tags: all_day_or_unknown
+needs_price: true
+search_text: Bywater Beachside | Gulf Shores | menu_item | 4.7 | (6.9K) |  | general |  | all_day_or_unknown
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: ai_voice_snippets   -   3 row(s)
+####################################################################################################
+
+--- ai_voice_snippets [row 1 of 3] ---
+id: 11
+entity_slug: bywater-beachside
+snippet_type: short_recommendation
+prompt_intent: Should I go here?
+voice_text: Bywater Beachside is a italian, burgers/bar food, sushi/poke spot that is best for waterfront or scenic meal. It also stands out for waterfront or scenic.
+created_at: 2026-07-16T11:55:42.90569+00:00
+
+--- ai_voice_snippets [row 2 of 3] ---
+id: 12
+entity_slug: bywater-beachside
+snippet_type: planner_answer
+prompt_intent: What is this place good for?
+voice_text: Bywater Beachside is best for waterfront or scenic meal. It is not ideal for nothing specific flagged.
+created_at: 2026-07-16T11:55:42.90569+00:00
+
+--- ai_voice_snippets [row 3 of 3] ---
+id: 13
+entity_slug: bywater-beachside
+snippet_type: scenic_answer
+prompt_intent: Is this waterfront or scenic?
+voice_text: Bywater Beachside has waterfront, beachside, marina, or scenic dining signals in the data.
+created_at: 2026-07-16T11:55:42.90569+00:00
+
+####################################################################################################
+# TABLE: catalog_items   -   11 row(s)
+####################################################################################################
+
+--- catalog_items [row 1 of 11] ---
+id: fa629227-ddef-4961-a35f-93e19b31b9d7
+entity_slug: bywater-beachside
+section_id: 752e2b2d-d14d-4fc5-986d-7711720d3855
+item_name: (6.9K)
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 36454bf5-33f3-4cc2-b4cf-45d5069d26af
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 2 of 11] ---
+id: 26438163-a7b9-427b-9c46-c06571302229
+entity_slug: bywater-beachside
+section_id: 5b4c7017-6b76-4c4e-b910-9fe07e56a113
+item_name: Redneck Cuban
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 524b0d7a-9197-43fa-b45b-c2215a6eb0b8
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 3 of 11] ---
+id: e45b3188-8edf-4626-a724-a568c53dedf6
+entity_slug: bywater-beachside
+section_id: 5b4c7017-6b76-4c4e-b910-9fe07e56a113
+item_name: Pina Colada
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 27ad1f77-5040-495f-a05e-c564b0eef9bc
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 4 of 11] ---
+id: f837bd9a-1d4e-4fe1-acd6-d0e247283c8e
+entity_slug: bywater-beachside
+section_id: 5b4c7017-6b76-4c4e-b910-9fe07e56a113
+item_name: Nachos w Cheese
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 695644d2-6cb0-4b76-a9d4-f21d2c15cb43
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 5 of 11] ---
+id: 775a0097-7199-4b0a-ad4b-437a5f9a79dc
+entity_slug: bywater-beachside
+section_id: 5b4c7017-6b76-4c4e-b910-9fe07e56a113
+item_name: Pepperoni Pizza
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 77b4272e-5dab-4c51-b92d-885751064bfd
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 6 of 11] ---
+id: 2e611751-cea4-4426-ae04-c514de6461a6
+entity_slug: bywater-beachside
+section_id: 5b4c7017-6b76-4c4e-b910-9fe07e56a113
+item_name: Tuna Dip
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 6e0acb62-594c-4830-8d15-2a6c312f433d
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 7 of 11] ---
+id: 1f142862-a55e-4094-919e-4512062c3931
+entity_slug: bywater-beachside
+section_id: 5b4c7017-6b76-4c4e-b910-9fe07e56a113
+item_name: Cuban Sandwich
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 6a10fe0a-323f-484e-923c-837bc15a292f
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 8 of 11] ---
+id: 1af37c7c-768d-432c-976f-e9132bbce543
+entity_slug: bywater-beachside
+section_id: 5b4c7017-6b76-4c4e-b910-9fe07e56a113
+item_name: Chicken Wings
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: fb1f779a-2540-444d-b312-d3ce8c870223
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 9 of 11] ---
+id: 040269fb-99cd-4ddd-8de8-70e01081b340
+entity_slug: bywater-beachside
+section_id: 5b4c7017-6b76-4c4e-b910-9fe07e56a113
+item_name: Beer
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 6cd7b116-7efb-4fbe-8f9a-590539c31fe9
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 10 of 11] ---
+id: 2749cf2c-a9d5-4175-9d17-b1a3c1afe8e0
+entity_slug: bywater-beachside
+section_id: 5b4c7017-6b76-4c4e-b910-9fe07e56a113
+item_name: Cajun Grilled Ahi Tuna Sandwich
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 75fa1336-6225-473a-b120-1ace4189259f
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+--- catalog_items [row 11 of 11] ---
+id: c6dcf13c-773b-4a48-b568-b6bc6e642b71
+entity_slug: bywater-beachside
+section_id: 5b4c7017-6b76-4c4e-b910-9fe07e56a113
+item_name: Road Kill Quesadilla
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 5c3db49f-5ca0-402f-b3a1-b680ce817ad4
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+####################################################################################################
+# TABLE: catalog_section_days   -   14 row(s)
+####################################################################################################
+
+--- catalog_section_days [row 1 of 14] ---
+id: f6680a7a-deff-4bbd-aa85-7fd5d2b288b6
+section_id: 5b4c7017-6b76-4c4e-b910-9fe07e56a113
+entity_slug: bywater-beachside
+day_of_week: Friday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 2 of 14] ---
+id: a2e4cba9-246e-4e70-8b1d-ede805c6276f
+section_id: 5b4c7017-6b76-4c4e-b910-9fe07e56a113
+entity_slug: bywater-beachside
+day_of_week: Monday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 3 of 14] ---
+id: 2cadc6fc-40c4-47b0-b364-2956b247899a
+section_id: 5b4c7017-6b76-4c4e-b910-9fe07e56a113
+entity_slug: bywater-beachside
+day_of_week: Saturday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 4 of 14] ---
+id: e0590417-99ec-4c62-80f7-89a919bf1679
+section_id: 5b4c7017-6b76-4c4e-b910-9fe07e56a113
+entity_slug: bywater-beachside
+day_of_week: Sunday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 5 of 14] ---
+id: 2ee43753-e07d-4ad4-9627-9cba4a4601b8
+section_id: 5b4c7017-6b76-4c4e-b910-9fe07e56a113
+entity_slug: bywater-beachside
+day_of_week: Thursday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 6 of 14] ---
+id: f2c5362b-0b7d-4895-96d0-b7ac1e5dae3e
+section_id: 5b4c7017-6b76-4c4e-b910-9fe07e56a113
+entity_slug: bywater-beachside
+day_of_week: Tuesday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 7 of 14] ---
+id: 96ea6607-0d8c-4bd3-bd38-2f05b4c54a40
+section_id: 5b4c7017-6b76-4c4e-b910-9fe07e56a113
+entity_slug: bywater-beachside
+day_of_week: Wednesday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 8 of 14] ---
+id: 401c968e-04fe-4b64-8fcb-a65d36627665
+section_id: 752e2b2d-d14d-4fc5-986d-7711720d3855
+entity_slug: bywater-beachside
+day_of_week: Friday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 9 of 14] ---
+id: 0d38c5f5-c491-419b-b5fb-297ee3c06765
+section_id: 752e2b2d-d14d-4fc5-986d-7711720d3855
+entity_slug: bywater-beachside
+day_of_week: Monday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 10 of 14] ---
+id: 21f59ec4-cd07-4320-a471-2e565b7a124b
+section_id: 752e2b2d-d14d-4fc5-986d-7711720d3855
+entity_slug: bywater-beachside
+day_of_week: Saturday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 11 of 14] ---
+id: cc5e538c-58cc-4dac-8523-beb84a362eb0
+section_id: 752e2b2d-d14d-4fc5-986d-7711720d3855
+entity_slug: bywater-beachside
+day_of_week: Sunday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 12 of 14] ---
+id: 5e62e97b-6348-4236-b4c6-be0ca5b44250
+section_id: 752e2b2d-d14d-4fc5-986d-7711720d3855
+entity_slug: bywater-beachside
+day_of_week: Thursday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 13 of 14] ---
+id: 19aaf3b6-b98d-42c9-b63f-d0e249a1b444
+section_id: 752e2b2d-d14d-4fc5-986d-7711720d3855
+entity_slug: bywater-beachside
+day_of_week: Tuesday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 14 of 14] ---
+id: 64a8946c-68e6-4d19-a9e7-692152afc108
+section_id: 752e2b2d-d14d-4fc5-986d-7711720d3855
+entity_slug: bywater-beachside
+day_of_week: Wednesday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+####################################################################################################
+# TABLE: catalog_sections   -   2 row(s)
+####################################################################################################
+
+--- catalog_sections [row 1 of 2] ---
+id: 752e2b2d-d14d-4fc5-986d-7711720d3855
+entity_slug: bywater-beachside
+section_name: 4.7
+section_category: food
+sort_order: 1
+is_active: true
+source_table: menu_sections
+source_id: d605d630-202f-4b34-a135-ddc3c8a61286
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_sections [row 2 of 2] ---
+id: 5b4c7017-6b76-4c4e-b910-9fe07e56a113
+entity_slug: bywater-beachside
+section_name: Menu Highlights
+section_category: food
+sort_order: 1
+is_active: true
+source_table: menu_sections
+source_id: 1c25c089-a45a-4487-a4bd-85c47bdff05f
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: dcbaf485-b475-44f7-aa64-541ff0fadefe
+slug: bywater-beachside
+name: Bywater Beachside
+is_active: true
+featured: false
+entity_type: restaurant
+entity_subtype: bar_and_grill
+description: Casual beach bar and grill offering pizza, beer, and wine, plus karaoke on Fridays.
+menu_pin: 3269
+address_line_1: 20800 E Beach Blvd
+city: Gulf Shores
+state: AL
+zip: 36542
+latitude: 30.2489082
+longitude: -87.66752559999999
+rating: 4.1
+review_count: 217
+hero_image_url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/6ea3e0ee-2d06-49c7-b3af-05bef0bb74ba/6ea3e0ee-2d06-49c7-b3af-05bef0bb74ba_1779139738631.183.jpg
+serves_lunch: true
+serves_dinner: true
+outdoor_seating: true
+live_music: true
+reservable: true
+dine_in: true
+delivery: false
+serves_beer: true
+good_for_kids: false
+created_at: 2026-06-03T03:49:07.634891+00:00
+updated_at: 2026-06-03T03:49:07.634891+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJa-E8Go0EmogR5tF19zUYle0
+google_maps_uri: https://maps.google.com/?cid=17119616178582835686&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: bar_and_grill
+formatted_address: 20800 E Beach Blvd, Gulf Shores, AL 36542, USA
+plus_code: 862J68XJ+HX
+accepts_debit_cards: true
+accepts_nfc: true
+accepts_cash_only: false
+parking_type: paid
+google_places_data: {
+  "id": "ChIJa-E8Go0EmogR5tF19zUYle0",
+  "types": [
+    "bar_and_grill",
+    "bar",
+    "restaurant",
+    "food",
+    "point_of_interest",
+    "establishment"
+  ],
+  "dineIn": true,
+  "photos": [
+    {
+      "name": "places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3mDUh003b1LANuG6xKPSCqgQkO_QTK_Qpi1KKVt_AxT6mAlosum3Bsmti9DsEkvucBY_okgnq6gRHTVohoLwDEOfMpliIXtIynogbZHlynqQ0prOYxU_LKPUSGuBKSOZ9AmoLsVTSQflc6WG3QiF7aVazeD3n9hUAjPVZ4k5oj9Ox7CV8noW4FDgHdOxfHrwh6VNmp_9TukB_QPQp3dNhjwW_6ZcujHlVlTL7GyE44ti2e2Il8f-JtzKamfA5GU08A1zRgaqaeTTD7EDi_B0y69Jf8tvHAmK5y-Ukv-EpAKdzFRNAWcIo9kAlmlyJeulU-yYAM50uqLxZqqJcnMzIU2kbFOeOP6pPGJ9a8AAZgQ5qvX644TRBVXiWDNqUYZbktOYZ2Q22Kv6cdekdmgvSoCoPn1lFBJ5zclAzX2eoNi4RM",
+      "widthPx": 4032,
+      "heightPx": 2268,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDOmJGC8QE!2e10!4m2!3m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDOmJGC8QE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/116687672216289862592",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIsnIzTMq5VqQPJGfVioiYv-BhcQ7FVFm5graMiPlSJZfLYRA=s100-p-k-no-mo",
+          "displayName": "John Helmers"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3nv3lAzvxqzw2jdyR6T67wZeTStFFIq83KHc_fzcPIxXNSsG0sdIzw-1t_e_V3JTt0K4peCa7ALpDgeQuJ4o7mRQEhsXd8B8u_dV6MxNTUuC1IPap_-VReYn3jCzTIEuYTsJt43VpM4ObQjhxtZ9GgqnHvf2dXrSr3k79MoAuMysNyRtpOrhKj5zfsYPjro2ESGMZ06LufR1MeXoUqlEyQL7cu3F69p0IpfNeTM8T5Fit80zL9vFdg9qYs7FF3winnb2MHrxSjIOvoqQ4M4OSSIEBBx-qOIQA9X-bpJVI2R5UkP02bxpebbnFNOtOeKDj2cmRcpZFSUKhQ6HuXFHG1ASCDtAbAl416b4qzc24OgXIEjYks3E5aUF0BDyY4Swnq1b7ECCw9jO9xQvc85ggIlMkpx7D9Hp9M_Hl3jk_nvRA",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICqzvLObg!2e10!4m2!3m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICqzvLObg&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/100660750723162067322",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUZBXcnyH2Be_Ne4IiInCavXmMyFsFmSyqzQSBEYiJe8YfabWg=s100-p-k-no-mo",
+          "displayName": "Bywater Beachside"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3lBr_543Dmx4HNGSy8qa4yh3os48OLV6cjJ3DFms4pQkYl60K_XKG8iszBbrJZAYBQzh3XjbxHFV0XS8MyBl8CxHFLbSwg4DQc5dzIJM8iND-i1wGa4MCSYlMWGlxkF-rCAUx3EIolEZH4_s81elk-Nw0VnzZVve4yNElQWXR9o7TInVVuzWUz8jzdPaUtGxeX0oKupqimAQ2ku6fX4btmpYqq_oR6wgqYpmyUmVN_E0RyDTtL3BSzaRVK9Y7AfcnZmOf-AQGlPr1EaP6IEiyQ0aQn158vc9o9NlPSw8HmjqKtqOswOJ_gNHKrASvJHTITYCwNbLvZx2ng_J1gEo3qCyKPZkYkvpLWFEachXPpYGkrKNr7mzJSkB9OJqVta6Yc6C29nYLqriT9s3z6gv4iyQujXh1e_TdQH5DmH8758XxMH8w4duhDTTDwwpTxV",
+      "widthPx": 4000,
+      "heightPx": 2252,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhACXuqGpXLTOD15e1-yn8m1!2e10!4m2!3m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhACXuqGpXLTOD15e1-yn8m1&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/103196358978878522301",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW4_4GGkdxxrBNHQyeByuiyko11sbBVTTEUNywlRq_aMOkV367hww=s100-p-k-no-mo",
+          "displayName": "Shannon (NOLA Gent)"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3mOn-bEDYJ9LzPO2Dd8JYRNKgLum8GflcYOoxu5TzQQEj2-2pDTfBwQakly7l9RfbT6LO0F-D38RKuZ1_latLDyG63jIj58hfZECUkCCGm0hJ9oJjYd8MZGkc3Ye69YF3zC22YiRarBSI9gg7pJ0qK8ShWzI93DkHXc09VBrUzcKUlIKj56sdByD1-2qdO8kNFinHW0ThR5ZERYyLa-srVFzqFNT8JfuvKk6DpUKxWYC73yWbTkPf6uQ6i8CLgCLu9_q8aOeoVxEtdfLI3lgA1gub__R0hYj2Rv-TwZZ-GQrJ5Bh5ZMokTwe8Ef-qxX34Y-arj-dqtP9cXYWQ3j5i8SRIQP01DwitmB6rdRcc1MJrvE6loWAMvfH6AgX7n1XtsH8kyUlE4Bduf9hbuMim16uubV0YRraKE7azfBk7_L6EanEs1WVUjF37aOF-rp",
+      "widthPx": 4032,
+      "heightPx": 1816,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhD5Wv4JXyChVrcP-e26VKlT!2e10!4m2!3m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhD5Wv4JXyChVrcP-e26VKlT&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/107874548471030265761",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWsXJigLeo1hodvXjtWPeNWilK8K5WO6hkBk2JiK_VfRs7GkWQ=s100-p-k-no-mo",
+          "displayName": "Kathy Bkool"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3kpm6FsJdXWkskEcGF6Tcd4v-Fo4FYOZxuhWW3AxIGqDRPQmf9bAjBkyaV9NMYka-gVV5vr7DY4BJEPqNNgRIzCFf2vshiTZnnWZbT9voEcpeP1r6X6ZAVwyiiE_4YOwg9Y-_FwFhhgyjVQ3D6NHz0ho2hSGQpFWMscTkp4fjcvj6IfoDPG3KYGg9oaINh62SvXeI7hzmqOdDah3YG6VFVx4ublU5MxHg_tGY6YT5UvJhGVko5KRf0xbB-QHYRbKf1MtLPF2LuOcN-YKpspbftaRBlLI6PkRDMewBbLPfI6SqHWDb8skzHmhU4MHUrlmiUM_lrqUIYAHxKbOOKvAKHIxa4-JCt8qJtsAvVHRxVTOeOeW_OODeqBd4pj5lJIILBU8_0A9I3WhpeiRUB_2ktikhLKKxQ0Ibtpapm6J9T8Rw",
+      "widthPx": 4000,
+      "heightPx": 3000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKELP2v-2m4pLZbA!2e10!4m2!3m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKELP2v-2m4pLZbA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/116735415743706403520",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKNDeQiTuxaPdUOQH6TJa1pc5K0FH2wLE5-_VG31bN251dwxQ=s100-p-k-no-mo",
+          "displayName": "Linda Thompson"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3nRpwmqCKjpqcKFDMI19IvxxHqDHamdpHhIHgrAAEyfLxQpnImd5xlvivHfR_DyrkfTnRcYxd0oLFZs3l0RJjAcmMRMEDTMHVEYEZMjoPv4s1zurw8YdVFfm-A8KT9ygJl_qJR5ISXQaQ6rJR0fyalE1KLdFMBcsxF-23nSQIEXIrJMBoovQdZ0e2NXbCGHwaqNtuco6p353x-VFRX4nsQVDL_-X8k_QJji-qYp0_13PWSIVkDRla-U5VNfOVyKFw-kt42254OiA8qU229JVBQL_7hNIoEZsoAaU0Dn77v9Hh7h5OZ90PtYuFLRw5OVVYVn-xrzfbwKeoUqITK3hayMHIlyh-yvD4itOqDJjBTfmQKYuOn4LmvGOavapb5a6zd7V5fJY47Fpqpj4wbtygbBMIRZTeGz_1ZZA1xRvCkCEZ4",
+      "widthPx": 3000,
+      "heightPx": 4000,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDZpq2tzgE!2e10!4m2!3m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDZpq2tzgE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/113627635170084622037",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjX-5gc5mM5aIxGXiEvHRC1eDz2zyjjet9JXxdjx4sc2jAfgh6Qa-A=s100-p-k-no-mo",
+          "displayName": "Jason Shell Creative Entertainment"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3kPFreNPw2UMQfLL5ZCIo57LXah4cC5pfBkEWookP3ydZIDWLUh14CRBXTg_vXbYvXRK0iq7IoH2moGOAwRCGjjvV7Q1D5Q9nYmhwpw0O3RK3xa88tu-Kw3s_fa27ZjX0wSENvOBJskPUxUfbqcm8Jbjk3gX90FkqFcZrwvqrkbYsnipKPFvNwX5C2o-w6O-kstUGgDwEdt91NVE29QAMX1XQSm-Qwm3OFEdxJO4gQtyBYM7MrMljRLOhUoJiMKlXuMvhxPSRS5bpFUPa69wqdpJ07ix1LTZf1wj1XkliO1A1iH1aKNFFstoNXrqLgO1cAW-rPmIEpc_-NRTWc0sp_3pClhfSD-3hA0VofCJWnF7zZ8-HebfIBVTorq8juQ1LU0NB5pXVFEQJqfMU6gtU3x9ZqicGsTRkj1EKNK5zfcrEt5Bw4UjzGToBLdbjNc",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBAu_atehE8hg-a-FxVzmSb!2e10!4m2!3m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhBAu_atehE8hg-a-FxVzmSb&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/106957318508696953276",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW8ehyHcAwHOgJK81oFq2RpM_KpA-hQ_FcWf419oGSYCJ5f6rrA9w=s100-p-k-no-mo",
+          "displayName": "Walter Williams"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3lnGTYwVLSll6MsUXWsTs7IB5vN1pBCetdD8j0DhhLj94Ooqc0o7aY4gyPVv9fSk4W7Q7PISAfqa9aO2Qyo7Z8AU8XusqL8YiNGI6QLQ0CmOs7uXVqjCttacoMxRYXe8Nehsq9_EkGcUAxpfnIBKBNlgHtfT_GvDsJBOiz_ftOW06XZ6ANriYjz8maSdQ476FmX-Zn5M0V9iCZqpGW9lYRwHCzMGgJRdIsb7mGY9ww9BFWgIXDRBYUkaQSHC1NXqfzh3NWWQ11U3Hpo1hVDvj_zfsY4RQ1KytqrTc7prs33XmZ8tzwP-7T8TwR3Ib8aCfaA-gDmGzY0U7mWEt2dcA-ByBmdCL3DmLA2CM4n09ra7YahrvW-2q2-J7PFtOE3F8qTXlNHTcUkCUP2YwSvSUPZ7jrmf9-HnIXsQ3k6hwI0sVFGZCI432k5mJ3zb4jN",
+      "widthPx": 4000,
+      "heightPx": 2252,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCgtsL3XT77wsZaJIqy3Q-A!2e10!4m2!3m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCgtsL3XT77wsZaJIqy3Q-A&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/103196358978878522301",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjW4_4GGkdxxrBNHQyeByuiyko11sbBVTTEUNywlRq_aMOkV367hww=s100-p-k-no-mo",
+          "displayName": "Shannon (NOLA Gent)"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3nzGt8PGveWGJw0rBGp8aHl4NtlLcz0lz99rBKFLTD2M8iXji4NSPxwjRRJx2yTX9kRPWhg2ofa0y5ysZ3S5JHbh0surS-1QOwe9nZZx_Thn4ivoExt5D3sbEb6fdWFuuGc6bAxnCHlEVr4JiZZDN2L_xvnQemuaQZHO_qnD_hTKS_fdMBgMQIGzeXcUFesP8g7YUesQtVqpESTj48_oKFrrriFomiJoCEkJQo-6T6-USUXbbp4KYuC-ObPOMMgj5LuQ5dui2VpCYEfYE9lKm5_dTrROEkPzX-xXQkHMyVPFzDqM8V2e18KYH4LsaQOj6hfHLo8QnNS7pN18N_ndKDRwPr5tjqd-KjIj7Zfyt_ZRd2JR5P_LTd9X4nD8lKr40-5QSpF82IhI7do717vsNQt2tF3p-gqWsy28qV_Nt-UZe-UBD2sDTEPBpHKFU4J",
+      "widthPx": 2448,
+      "heightPx": 3264,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAEVEIuDQgCba8R-HHCIo4_!2e10!4m2!3m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhAEVEIuDQgCba8R-HHCIo4_&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104306793420877645582",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUsp-hLC_7ppRW0eDNUeKGGQvw77AAP-Itfk3FSA1-Pl_9G_6Dp=s100-p-k-no-mo",
+          "displayName": "Daniel Latham"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3mWT4TIWi1ulIWU5eqljQbsG0QQPzjqIhq0dfQljET7wfguyh784vWLOs1pqvfLoYB26np-UNHDktZOohvkljL66R334yuKu3LVwylKicFGCap-UmOwYPXJRTzQJOOLrihMU0W-O1hqJ04OqDT7ZOfnCrHfh8j3JphxAu3-QBX0Ke-feRsmmKhI0hki96qiYNmw9F3rLd1Gh4bOcd6pDFzt_Z5zj2usUsHQIfKSQABkFh-wLB-6nynt268XUE8noW1ZcsZQiaDs2UJ9ZYurxTSva6vpzxwM0ilL90iL_P7RNoZ7uw3SmH9Itlx7CiVFPmWr-fDeQoLbgMpnVLofTszTeN455GU4lejZL7bEy4vdfIZ2gik18OXMXOhrF1xXC8oALW-n4JM54qlttgCgwWKYsSzKf2XZiIcZPR_-CeiwjkB7Me1d0gmZEDM6tqUm",
+      "widthPx": 3072,
+      "heightPx": 4080,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCCQWeFwu1qpOQA6QVflMbn!2e10!4m2!3m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhCCQWeFwu1qpOQA6QVflMbn&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104306793420877645582",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUsp-hLC_7ppRW0eDNUeKGGQvw77AAP-Itfk3FSA1-Pl_9G_6Dp=s100-p-k-no-mo",
+          "displayName": "Daniel Latham"
+        }
+      ]
+    }
+  ],
+  "rating": 4.1,
+  "reviews": [
+    {
+      "name": "places/ChIJa-E8Go0EmogR5tF19zUYle0/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pOTGNHSlhOVkl0TjJoRWR6TnZkak5rVm1oWlozYxAB",
+      "text": {
+        "text": "If you've been out all day or drunk as hell and are really really hungry it's edible. Nachos got that weird cheap frozen \"grilled\" chicken, canned jalapenos, and fake cheese. Ballpark style. Pizza about as good as chuck e cheese pizza or something similar. Street corn was good tho, tore that up",
+        "languageCode": "en"
+      },
+      "rating": 2,
+      "publishTime": "2025-08-17T20:22:33.234190726Z",
+      "originalText": {
+        "text": "If you've been out all day or drunk as hell and are really really hungry it's edible. Nachos got that weird cheap frozen \"grilled\" chicken, canned jalapenos, and fake cheese. Ballpark style. Pizza about as good as chuck e cheese pizza or something similar. Street corn was good tho, tore that up",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pOTGNHSlhOVkl0TjJoRWR6TnZkak5rVm1oWlozYxAB!2m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2pOTGNHSlhOVkl0TjJoRWR6TnZkak5rVm1oWlozYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/104306793420877645582/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUsp-hLC_7ppRW0eDNUeKGGQvw77AAP-Itfk3FSA1-Pl_9G_6Dp=s128-c0x00000000-cc-rp-mo-ba2",
+        "displayName": "Daniel Latham"
+      },
+      "relativePublishTimeDescription": "9 months ago"
+    },
+    {
+      "name": "places/ChIJa-E8Go0EmogR5tF19zUYle0/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCYWRreDRZVGxTZFRsSWFteG5YMkY2Tkc5RlptYxAB",
+      "text": {
+        "text": "It was convenient after ordering 2 margaritas for $43 bucks i figured we prolly need to eat somewhere else, margaritas was not much to write home about. All in all no reason for us to go back.",
+        "languageCode": "en"
+      },
+      "rating": 1,
+      "publishTime": "2026-05-23T23:33:59.682443898Z",
+      "originalText": {
+        "text": "It was convenient after ordering 2 margaritas for $43 bucks i figured we prolly need to eat somewhere else, margaritas was not much to write home about. All in all no reason for us to go back.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pCYWRreDRZVGxTZFRsSWFteG5YMkY2Tkc5RlptYxAB!2m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2pCYWRreDRZVGxTZFRsSWFteG5YMkY2Tkc5RlptYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/103807254076486391207/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJEfkugN1Sxe2IPcKAlSJl3Q0jrd9frT4OoGJYsMr1QFU7UOw=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Mitchell Reilly"
+      },
+      "relativePublishTimeDescription": "2 weeks ago"
+    },
+    {
+      "name": "places/ChIJa-E8Go0EmogR5tF19zUYle0/reviews/Ci9DQUlRQUNvZENodHljRjlvT2t0TGJGTnVWbEZ1VURSdlUwcEZPRFpDTVZaMVUzYxAB",
+      "text": {
+        "text": "Ron was absolutely amazing! He is the reason why we will be headed back there tomorrow. He recommended the fish and it was amazing.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2025-11-02T01:10:01.432708274Z",
+      "originalText": {
+        "text": "Ron was absolutely amazing! He is the reason why we will be headed back there tomorrow. He recommended the fish and it was amazing.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2t0TGJGTnVWbEZ1VURSdlUwcEZPRFpDTVZaMVUzYxAB!2m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=Ci9DQUlRQUNvZENodHljRjlvT2t0TGJGTnVWbEZ1VURSdlUwcEZPRFpDTVZaMVUzYxAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/118234800988704318853/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocINBEehrUeGhCEhLoNzKW3n272cEod_oU5MW6GeSl0Y2vfGdQ=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Morgan Biggins"
+      },
+      "relativePublishTimeDescription": "7 months ago"
+    },
+    {
+      "name": "places/ChIJa-E8Go0EmogR5tF19zUYle0/reviews/ChdDSUhNMG9nS0VJQ0FnSUNIOFludmh3RRAB",
+      "text": {
+        "text": "First and only time. Pizza was okay, burger was a premade frozen patty (not so much as salt on it) and the bywater nacho’s were mediocre at best (from the canned cheese, three different kinds of unseasoned meat and not so great chips). 4.6 out of 5 star reviews, how? Maybe we just ordered three wrong items. Disappointed.",
+        "languageCode": "en"
+      },
+      "rating": 2,
+      "publishTime": "2024-10-01T20:21:57.312584Z",
+      "originalText": {
+        "text": "First and only time. Pizza was okay, burger was a premade frozen patty (not so much as salt on it) and the bywater nacho’s were mediocre at best (from the canned cheese, three different kinds of unseasoned meat and not so great chips). 4.6 out of 5 star reviews, how? Maybe we just ordered three wrong items. Disappointed.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNIOFludmh3RRAB!2m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUNIOFludmh3RRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/100364283178401644225/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVbKA7AZRWoQhFqoZPn_8-6DWucZNdvyL1cYZ1AF5_Pm0gy47BF=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Jessica Partain"
+      },
+      "relativePublishTimeDescription": "a year ago"
+    },
+    {
+      "name": "places/ChIJa-E8Go0EmogR5tF19zUYle0/reviews/ChdDSUhNMG9nS0VJQ0FnSUMtek16aHlnRRAB",
+      "text": {
+        "text": "Stopped in for drinks and the scenery. Nice place, the view was nice overlooking the ocean.  It's a good walk be prepared when going here. You have to pay to walk the pier. Neat place to stop in and have a drink. If it's cool out make sure to have a long sleeve shirt, especially if the wind's blowing.",
+        "languageCode": "en"
+      },
+      "rating": 4,
+      "publishTime": "2022-10-28T18:20:01.635493Z",
+      "originalText": {
+        "text": "Stopped in for drinks and the scenery. Nice place, the view was nice overlooking the ocean.  It's a good walk be prepared when going here. You have to pay to walk the pier. Neat place to stop in and have a drink. If it's cool out make sure to have a long sleeve shirt, especially if the wind's blowing.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUMtek16aHlnRRAB!2m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUMtek16aHlnRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/109104170651562806938/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJAcDvWU4P8iHN364fljSlsbTTv3DL8cetN5yieQURQxwkIWaG3=s128-c0x00000000-cc-rp-mo-ba4",
+        "displayName": "Justin Cotten"
+      },
+      "relativePublishTimeDescription": "3 years ago"
+    }
+  ],
+  "delivery": false,
+  "location": {
+    "latitude": 30.2489082,
+    "longitude": -87.66752559999999
+  },
+  "plusCode": {
+    "globalCode": "862J68XJ+HX",
+    "compoundCode": "68XJ+HX Gulf Shores, AL, USA"
+  },
+  "restroom": true,
+  "viewport": {
+    "low": {
+      "latitude": 30.248162519708504,
+      "longitude": -87.6690435802915
+    },
+    "high": {
+      "latitude": 30.250860480291504,
+      "longitude": -87.6663456197085
+    }
+  },
+  "liveMusic": true,
+  "priceRange": {
+    "endPrice": {
+      "units": "20",
+      "currencyCode": "USD"
+    },
+    "startPrice": {
+      "units": "10",
+      "currencyCode": "USD"
+    }
+  },
+  "reservable": true,
+  "servesBeer": true,
+  "displayName": {
+    "text": "Bywater Beachside",
+    "languageCode": "en"
+  },
+  "primaryType": "bar_and_grill",
+  "servesLunch": true,
+  "servesDinner": true,
+  "googleMapsUri": "https://maps.google.com/?cid=17119616178582835686&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewSummary": {
+    "text": {
+      "text": "Diners like this restaurant's great views of the ocean and beach, as well as the good food, including burgers and the tuna dip. They also highlight the friendly staff and the enjoyable live music.\n\nSome reviews mention the food can be poorly made.",
+      "languageCode": "en-US"
+    },
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a048d1a3ce16b:0xed951835f775d1e6!9m1!1b1",
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "flagContentUri": "https://www.google.com/local/content/rap/report?postId=5%401:CAIQACodChtyc19oOkUzaDM3NzFMbm1lUjZsaEY2UWg2a2c%7CCAIQACoqChtyc19oOkUzaDM3NzFMbm1lUjZsaEY2UWg2a2cSCwiW9LnQBhD42oM2&d=17924085&t=8"
+  },
+  "businessStatus": "OPERATIONAL",
+  "curbsidePickup": false,
+  "outdoorSeating": true,
+  "parkingOptions": {
+    "paidParkingLot": true,
+    "paidStreetParking": true
+  },
+  "paymentOptions": {
+    "acceptsNfc": true,
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true
+  },
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=17119616178582835686&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a048d1a3ce16b:0xed951835f775d1e6!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a048d1a3ce16b:0xed951835f775d1e6!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a048d1a3ce16b:0xed951835f775d1e6!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+  "userRatingCount": 217,
+  "adrFormatAddress": "<span class=\"street-address\">20800 E Beach Blvd</span>, <span class=\"locality\">Gulf Shores</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36542</span>, <span class=\"country-name\">USA</span>",
+  "formattedAddress": "20800 E Beach Blvd, Gulf Shores, AL 36542, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "20800",
+      "shortText": "20800",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "East Beach Boulevard",
+      "shortText": "E Beach Blvd",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Gulf Shores",
+      "shortText": "Gulf Shores",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36542",
+      "shortText": "36542",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJO7HshI0EmogR7TiwTQ-RnMs",
+        "placeId": "ChIJO7HshI0EmogR7TiwTQ-RnMs",
+        "containment": "OUTSKIRTS",
+        "displayName": {
+          "text": "Parking lot",
+          "languageCode": "en"
+        }
+      },
+      {
+        "name": "places/ChIJAf8qlDAEmogR21mSG_IXY-s",
+        "placeId": "ChIJAf8qlDAEmogR21mSG_IXY-s",
+        "containment": "OUTSKIRTS",
+        "displayName": {
+          "text": "Gulf State Park",
+          "languageCode": "en"
+        }
+      }
+    ],
+    "landmarks": [
+      {
+        "name": "places/ChIJNea8h40EmogRpyRFDB5QQTI",
+        "types": [
+          "establishment",
+          "park",
+          "point_of_interest",
+          "tourist_attraction"
+        ],
+        "placeId": "ChIJNea8h40EmogRpyRFDB5QQTI",
+        "displayName": {
+          "text": "Gulf State Park Pier",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "AROUND_THE_CORNER",
+        "travelDistanceMeters": 20.153446,
+        "straightLineDistanceMeters": 36.64313
+      },
+      {
+        "name": "places/ChIJSw1M_fIFmogRfmrSw-gGYqE",
+        "types": [
+          "establishment",
+          "parking",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJSw1M_fIFmogRfmrSw-gGYqE",
+        "displayName": {
+          "text": "Gulf State Park Pier Parking Lot",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "AROUND_THE_CORNER",
+        "travelDistanceMeters": 58.282555,
+        "straightLineDistanceMeters": 48.05484
+      }
+    ]
+  },
+  "generativeSummary": {
+    "overview": {
+      "text": "Casual beach bar and grill offering pizza, beer, and wine, plus karaoke on Fridays.",
+      "languageCode": "en-US"
+    },
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "overviewFlagContentUri": "https://www.google.com/local/content/rap/report?postId=CiUweDg4OWEwNDhkMWEzY2UxNmI6MHhlZDk1MTgzNWY3NzVkMWU2MAI&d=17924085&t=12"
+  },
+  "currentOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 19,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 19,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 19,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 19,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 19,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 22,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T16:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 11:00 AM – 7:00 PM",
+      "Tuesday: 11:00 AM – 7:00 PM",
+      "Wednesday: 11:00 AM – 7:00 PM",
+      "Thursday: 11:00 AM – 7:00 PM",
+      "Friday: 11:00 AM – 10:00 PM",
+      "Saturday: 11:00 AM – 10:00 PM",
+      "Sunday: 11:00 AM – 7:00 PM"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Bar & Grill",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#FF9E67",
+  "regularOpeningHours": {
+    "openNow": false,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "hour": 19,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 19,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 19,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 19,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 19,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 22,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 11,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 22,
+          "minute": 0
+        }
+      }
+    ],
+    "nextOpenTime": "2026-06-11T16:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 11:00 AM – 7:00 PM",
+      "Tuesday: 11:00 AM – 7:00 PM",
+      "Wednesday: 11:00 AM – 7:00 PM",
+      "Thursday: 11:00 AM – 7:00 PM",
+      "Friday: 11:00 AM – 10:00 PM",
+      "Saturday: 11:00 AM – 10:00 PM",
+      "Sunday: 11:00 AM – 7:00 PM"
+    ]
+  },
+  "shortFormattedAddress": "20800 E Beach Blvd, Gulf Shores",
+  "primaryTypeDisplayName": {
+    "text": "Bar & Grill",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false
+}
+ai_overview: Casual beach bar and grill offering pizza, beer, and wine, plus karaoke on Fridays.
+ai_review_summary: Diners like this restaurant's great views of the ocean and beach, as well as the good food, including burgers and the tuna dip. They also highlight the friendly staff and the enjoyable live music.
+
+Some reviews mention the food can be poorly made.
+price_range_low: 10
+price_range_high: 20
+curbside_pickup: false
+restroom: true
+paid_parking_lot: true
+paid_street_parking: true
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #FF9E67
+short_formatted_address: 20800 E Beach Blvd, Gulf Shores
+search_vector: 'also':42C 'bar':5B,61 'beach':4B,28C 'beachsid':2A 'beer':10B 'burger':36C 'bywat':1A 'casual':3B 'diner':17C 'dip':40C 'enjoy':49C 'food':34C,56C 'friday':16B 'friend':45C 'good':33C 'great':22C 'grill':7B,63 'gulf':64 'highlight':43C 'includ':35C 'karaok':14B 'like':18C 'live':50C 'made':60C 'mention':54C 'music':51C 'ocean':26C 'offer':8B 'pizza':9B 'plus':13B 'poor':59C 'restaur':20C 'review':53C 'shore':65 'staff':46C 'tuna':39C 'view':23C 'well':30C 'wine':12B
+primary_type_display: Bar & Grill
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=17119616178582835686&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a048d1a3ce16b:0xed951835f775d1e6!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a048d1a3ce16b:0xed951835f775d1e6!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a048d1a3ce16b:0xed951835f775d1e6!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJO7HshI0EmogR7TiwTQ-RnMs",
+      "placeId": "ChIJO7HshI0EmogR7TiwTQ-RnMs",
+      "containment": "OUTSKIRTS",
+      "displayName": {
+        "text": "Parking lot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "name": "places/ChIJAf8qlDAEmogR21mSG_IXY-s",
+      "placeId": "ChIJAf8qlDAEmogR21mSG_IXY-s",
+      "containment": "OUTSKIRTS",
+      "displayName": {
+        "text": "Gulf State Park",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJNea8h40EmogRpyRFDB5QQTI",
+      "types": [
+        "establishment",
+        "park",
+        "point_of_interest",
+        "tourist_attraction"
+      ],
+      "placeId": "ChIJNea8h40EmogRpyRFDB5QQTI",
+      "displayName": {
+        "text": "Gulf State Park Pier",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "AROUND_THE_CORNER",
+      "travelDistanceMeters": 20.153446,
+      "straightLineDistanceMeters": 36.64313
+    },
+    {
+      "name": "places/ChIJSw1M_fIFmogRfmrSw-gGYqE",
+      "types": [
+        "establishment",
+        "parking",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJSw1M_fIFmogRfmrSw-gGYqE",
+      "displayName": {
+        "text": "Gulf State Park Pier Parking Lot",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "AROUND_THE_CORNER",
+      "travelDistanceMeters": 58.282555,
+      "straightLineDistanceMeters": 48.05484
+    }
+  ]
+}
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url | hero_image_url v2-fix 2026-07-21: repointed to a photo confirmed to actually exist
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: menu
+generative_summary: Casual beach bar and grill offering pizza, beer, and wine, plus karaoke on Fridays.
+industry_code: food_beverage
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   2 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 2] ---
+id: e16149f5-5d2c-4d8d-8b4d-734f976131da
+entity_slug: bywater-beachside
+place_id: ChIJO7HshI0EmogR7TiwTQ-RnMs
+containment: OUTSKIRTS
+display_name: Parking lot
+
+--- entity_address_areas [row 2 of 2] ---
+id: c401c27a-3874-408c-8980-ea03db056960
+entity_slug: bywater-beachside
+place_id: ChIJAf8qlDAEmogR21mSG_IXY-s
+containment: OUTSKIRTS
+display_name: Gulf State Park
+
+####################################################################################################
+# TABLE: entity_attributes   -   14 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 14] ---
+id: 66d7eabb-8550-4357-b77e-ee42da3e6537
+entity_slug: bywater-beachside
+category: dining
+key: serves_beer
+label: Serves Beer
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 2 of 14] ---
+id: 957ed8ea-736d-49de-ae72-601098595e76
+entity_slug: bywater-beachside
+category: dining
+key: serves_lunch
+label: Serves Lunch
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 3 of 14] ---
+id: a499a731-fc7f-406d-a776-c119bab786fe
+entity_slug: bywater-beachside
+category: dining
+key: serves_dinner
+label: Serves Dinner
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 4 of 14] ---
+id: 9b4d3d1d-3ed5-4bad-843c-4c47bcfcb7ca
+entity_slug: bywater-beachside
+category: service
+key: delivery
+label: Delivery
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 5 of 14] ---
+id: 4482b3d2-e9e9-44af-baa7-3780a7a4a615
+entity_slug: bywater-beachside
+category: service
+key: dine_in
+label: Dine In
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 6 of 14] ---
+id: a67aa267-351e-430f-a83e-611958053c97
+entity_slug: bywater-beachside
+category: service
+key: curbside_pickup
+label: Curbside Pickup
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 7 of 14] ---
+id: 5665f3f2-3a5c-4279-85ea-b9742a0ff4f5
+entity_slug: bywater-beachside
+category: service
+key: reservable
+label: Accepts Reservations
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 8 of 14] ---
+id: b880767a-8cca-44dd-ba20-f9b290ed8edd
+entity_slug: bywater-beachside
+category: amenity
+key: restroom
+label: Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 9 of 14] ---
+id: 250ef7db-54d1-403e-8451-7fe2f0791454
+entity_slug: bywater-beachside
+category: amenity
+key: live_music
+label: Live Music
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 10 of 14] ---
+id: 5ae8b1f6-84ef-478c-b17b-ad66db79b360
+entity_slug: bywater-beachside
+category: parking
+key: parking_paidParkingLot
+label: Paid Parking Lot
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 11 of 14] ---
+id: b176c143-0f1f-477f-8590-ffc09a0317bb
+entity_slug: bywater-beachside
+category: parking
+key: parking_paidStreetParking
+label: Paid Street Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 12 of 14] ---
+id: a57225c9-bbfa-4121-8d19-990b1a29f56f
+entity_slug: bywater-beachside
+category: payment
+key: pay_acceptsNfc
+label: Accepts Nfc
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 13 of 14] ---
+id: cc14ea16-498f-41eb-b874-b272d4afa106
+entity_slug: bywater-beachside
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 14 of 14] ---
+id: f1c892fc-c431-44ac-aecb-7a1870bcc6eb
+entity_slug: bywater-beachside
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: bywater-beachside
+name: Bywater Beachside
+industry_code: food_beverage
+is_parent: false
+score_of_7: 5
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 61a40c1c-5785-4701-a184-f401be9895a8
+entity_slug: bywater-beachside
+place_uri: https://maps.google.com/?cid=17119616178582835686&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a048d1a3ce16b:0xed951835f775d1e6!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a048d1a3ce16b:0xed951835f775d1e6!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a048d1a3ce16b:0xed951835f775d1e6!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 9958
+entity_slug: bywater-beachside
+google_review_name: places/ChIJa-E8Go0EmogR5tF19zUYle0/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pOTGNHSlhOVkl0TjJoRWR6TnZkak5rVm1oWlozYxAB
+rating: 2
+review_text: If you've been out all day or drunk as hell and are really really hungry it's edible. Nachos got that weird cheap frozen "grilled" chicken, canned jalapenos, and fake cheese. Ballpark style. Pizza about as good as chuck e cheese pizza or something similar. Street corn was good tho, tore that up
+language_code: en
+author_name: Daniel Latham
+author_profile_url: https://www.google.com/maps/contrib/104306793420877645582/reviews
+publish_time: 2025-08-17T20:22:33.234191+00:00
+relative_time: 9 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pOTGNHSlhOVkl0TjJoRWR6TnZkak5rVm1oWlozYxAB!2m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 9959
+entity_slug: bywater-beachside
+google_review_name: places/ChIJa-E8Go0EmogR5tF19zUYle0/reviews/Ci9DQUlRQUNvZENodHljRjlvT2pCYWRreDRZVGxTZFRsSWFteG5YMkY2Tkc5RlptYxAB
+rating: 1
+review_text: It was convenient after ordering 2 margaritas for $43 bucks i figured we prolly need to eat somewhere else, margaritas was not much to write home about. All in all no reason for us to go back.
+language_code: en
+author_name: Mitchell Reilly
+author_profile_url: https://www.google.com/maps/contrib/103807254076486391207/reviews
+publish_time: 2026-05-23T23:33:59.682444+00:00
+relative_time: 2 weeks ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2pCYWRreDRZVGxTZFRsSWFteG5YMkY2Tkc5RlptYxAB!2m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 9960
+entity_slug: bywater-beachside
+google_review_name: places/ChIJa-E8Go0EmogR5tF19zUYle0/reviews/Ci9DQUlRQUNvZENodHljRjlvT2t0TGJGTnVWbEZ1VURSdlUwcEZPRFpDTVZaMVUzYxAB
+rating: 5
+review_text: Ron was absolutely amazing! He is the reason why we will be headed back there tomorrow. He recommended the fish and it was amazing.
+language_code: en
+author_name: Morgan Biggins
+author_profile_url: https://www.google.com/maps/contrib/118234800988704318853/reviews
+publish_time: 2025-11-02T01:10:01.432708+00:00
+relative_time: 7 months ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2t0TGJGTnVWbEZ1VURSdlUwcEZPRFpDTVZaMVUzYxAB!2m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 9961
+entity_slug: bywater-beachside
+google_review_name: places/ChIJa-E8Go0EmogR5tF19zUYle0/reviews/ChdDSUhNMG9nS0VJQ0FnSUNIOFludmh3RRAB
+rating: 2
+review_text: First and only time. Pizza was okay, burger was a premade frozen patty (not so much as salt on it) and the bywater nacho’s were mediocre at best (from the canned cheese, three different kinds of unseasoned meat and not so great chips). 4.6 out of 5 star reviews, how? Maybe we just ordered three wrong items. Disappointed.
+language_code: en
+author_name: Jessica Partain
+author_profile_url: https://www.google.com/maps/contrib/100364283178401644225/reviews
+publish_time: 2024-10-01T20:21:57.312584+00:00
+relative_time: a year ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUNIOFludmh3RRAB!2m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 9962
+entity_slug: bywater-beachside
+google_review_name: places/ChIJa-E8Go0EmogR5tF19zUYle0/reviews/ChdDSUhNMG9nS0VJQ0FnSUMtek16aHlnRRAB
+rating: 4
+review_text: Stopped in for drinks and the scenery. Nice place, the view was nice overlooking the ocean.  It's a good walk be prepared when going here. You have to pay to walk the pier. Neat place to stop in and have a drink. If it's cool out make sure to have a long sleeve shirt, especially if the wind's blowing.
+language_code: en
+author_name: Justin Cotten
+author_profile_url: https://www.google.com/maps/contrib/109104170651562806938/reviews
+publish_time: 2022-10-28T18:20:01.635493+00:00
+relative_time: 3 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUMtek16aHlnRRAB!2m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 7b591312-d927-4f9e-9c9c-51c4ec6a6aa6
+entity_slug: bywater-beachside
+day_of_week: 0
+opens_at: 11:00:00
+closes_at: 19:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: ad7ff95e-c605-42ad-8c9b-19589c1b0f92
+entity_slug: bywater-beachside
+day_of_week: 1
+opens_at: 11:00:00
+closes_at: 19:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 49a9baea-82e0-4bd9-a6d8-606c57d74fb0
+entity_slug: bywater-beachside
+day_of_week: 2
+opens_at: 11:00:00
+closes_at: 19:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: db2f06f6-d1bf-420f-b2e3-8a2a27dc3341
+entity_slug: bywater-beachside
+day_of_week: 3
+opens_at: 11:00:00
+closes_at: 19:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: d65f21eb-2265-4e0f-95ca-62c31e6d5c0d
+entity_slug: bywater-beachside
+day_of_week: 4
+opens_at: 11:00:00
+closes_at: 19:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: cebf16e6-29e5-472d-ab07-d188bdb1f822
+entity_slug: bywater-beachside
+day_of_week: 5
+opens_at: 11:00:00
+closes_at: 22:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 50768c9b-d17e-42d3-b1d7-ff937ce4595a
+entity_slug: bywater-beachside
+day_of_week: 6
+opens_at: 11:00:00
+closes_at: 22:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   11 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 11] ---
+entity_slug: bywater-beachside
+source_table: menu_items
+item_type: food
+section_name: 4.7
+item_id: 36454bf5-33f3-4cc2-b4cf-45d5069d26af
+name: (6.9K)
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 2 of 11] ---
+entity_slug: bywater-beachside
+source_table: menu_items
+item_type: food
+section_name: Menu Highlights
+item_id: 524b0d7a-9197-43fa-b45b-c2215a6eb0b8
+name: Redneck Cuban
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 3 of 11] ---
+entity_slug: bywater-beachside
+source_table: menu_items
+item_type: food
+section_name: Menu Highlights
+item_id: 27ad1f77-5040-495f-a05e-c564b0eef9bc
+name: Pina Colada
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 4 of 11] ---
+entity_slug: bywater-beachside
+source_table: menu_items
+item_type: food
+section_name: Menu Highlights
+item_id: 695644d2-6cb0-4b76-a9d4-f21d2c15cb43
+name: Nachos w Cheese
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 5 of 11] ---
+entity_slug: bywater-beachside
+source_table: menu_items
+item_type: food
+section_name: Menu Highlights
+item_id: 77b4272e-5dab-4c51-b92d-885751064bfd
+name: Pepperoni Pizza
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 6 of 11] ---
+entity_slug: bywater-beachside
+source_table: menu_items
+item_type: food
+section_name: Menu Highlights
+item_id: 6e0acb62-594c-4830-8d15-2a6c312f433d
+name: Tuna Dip
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 7 of 11] ---
+entity_slug: bywater-beachside
+source_table: menu_items
+item_type: food
+section_name: Menu Highlights
+item_id: 6a10fe0a-323f-484e-923c-837bc15a292f
+name: Cuban Sandwich
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 8 of 11] ---
+entity_slug: bywater-beachside
+source_table: menu_items
+item_type: food
+section_name: Menu Highlights
+item_id: fb1f779a-2540-444d-b312-d3ce8c870223
+name: Chicken Wings
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 9 of 11] ---
+entity_slug: bywater-beachside
+source_table: menu_items
+item_type: food
+section_name: Menu Highlights
+item_id: 6cd7b116-7efb-4fbe-8f9a-590539c31fe9
+name: Beer
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 10 of 11] ---
+entity_slug: bywater-beachside
+source_table: menu_items
+item_type: food
+section_name: Menu Highlights
+item_id: 75fa1336-6225-473a-b120-1ace4189259f
+name: Cajun Grilled Ahi Tuna Sandwich
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_norm_v [row 11 of 11] ---
+entity_slug: bywater-beachside
+source_table: menu_items
+item_type: food
+section_name: Menu Highlights
+item_id: 5c3db49f-5ca0-402f-b3a1-b680ce817ad4
+name: Road Kill Quesadilla
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   11 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 11] ---
+entity_slug: bywater-beachside
+source_table: menu_items
+item_type: food
+section_name: 4.7
+item_id: 36454bf5-33f3-4cc2-b4cf-45d5069d26af
+name: (6.9K)
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 2 of 11] ---
+entity_slug: bywater-beachside
+source_table: menu_items
+item_type: food
+section_name: Menu Highlights
+item_id: 524b0d7a-9197-43fa-b45b-c2215a6eb0b8
+name: Redneck Cuban
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 3 of 11] ---
+entity_slug: bywater-beachside
+source_table: menu_items
+item_type: food
+section_name: Menu Highlights
+item_id: 27ad1f77-5040-495f-a05e-c564b0eef9bc
+name: Pina Colada
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 4 of 11] ---
+entity_slug: bywater-beachside
+source_table: menu_items
+item_type: food
+section_name: Menu Highlights
+item_id: 695644d2-6cb0-4b76-a9d4-f21d2c15cb43
+name: Nachos w Cheese
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 5 of 11] ---
+entity_slug: bywater-beachside
+source_table: menu_items
+item_type: food
+section_name: Menu Highlights
+item_id: 77b4272e-5dab-4c51-b92d-885751064bfd
+name: Pepperoni Pizza
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 6 of 11] ---
+entity_slug: bywater-beachside
+source_table: menu_items
+item_type: food
+section_name: Menu Highlights
+item_id: 6e0acb62-594c-4830-8d15-2a6c312f433d
+name: Tuna Dip
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 7 of 11] ---
+entity_slug: bywater-beachside
+source_table: menu_items
+item_type: food
+section_name: Menu Highlights
+item_id: 6a10fe0a-323f-484e-923c-837bc15a292f
+name: Cuban Sandwich
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 8 of 11] ---
+entity_slug: bywater-beachside
+source_table: menu_items
+item_type: food
+section_name: Menu Highlights
+item_id: fb1f779a-2540-444d-b312-d3ce8c870223
+name: Chicken Wings
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 9 of 11] ---
+entity_slug: bywater-beachside
+source_table: menu_items
+item_type: food
+section_name: Menu Highlights
+item_id: 6cd7b116-7efb-4fbe-8f9a-590539c31fe9
+name: Beer
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 10 of 11] ---
+entity_slug: bywater-beachside
+source_table: menu_items
+item_type: food
+section_name: Menu Highlights
+item_id: 75fa1336-6225-473a-b120-1ace4189259f
+name: Cajun Grilled Ahi Tuna Sandwich
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+--- entity_items_v [row 11 of 11] ---
+entity_slug: bywater-beachside
+source_table: menu_items
+item_type: food
+section_name: Menu Highlights
+item_id: 5c3db49f-5ca0-402f-b3a1-b680ce817ad4
+name: Road Kill Quesadilla
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   16 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 16] ---
+id: 60ec4fde-8469-4fe4-9239-a4d7bd68d924
+entity_slug: bywater-beachside
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 16] ---
+id: aaa57c36-bc84-4cf2-8cc8-e3e716d13a1d
+entity_slug: bywater-beachside
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 16] ---
+id: 0761967a-707d-41b9-b6ee-cbdb624b99b4
+entity_slug: bywater-beachside
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 16] ---
+id: 2ff67a02-05cc-4cfe-ab95-cd74ed411528
+entity_slug: bywater-beachside
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 16] ---
+id: b5f70257-c8f3-475a-8b04-5913f153b9bb
+entity_slug: bywater-beachside
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 16] ---
+id: 97b09092-d959-4715-85cf-227780c38bcb
+entity_slug: bywater-beachside
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 16] ---
+id: 393af74e-563a-4890-a645-0c3b5ad777a8
+entity_slug: bywater-beachside
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 16] ---
+id: d39ddeb1-3e32-4479-9c35-6943aec73fcb
+entity_slug: bywater-beachside
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 16] ---
+id: 30e3537a-6ae0-46a3-a831-abdef277ab3b
+entity_slug: bywater-beachside
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 16] ---
+id: 04496c41-8454-41fc-adf8-546ae3dc3dbe
+entity_slug: bywater-beachside
+module_key: menu
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 16] ---
+id: cd458d35-3c60-4334-943c-8b938ec2d773
+entity_slug: bywater-beachside
+module_key: drinks
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 16] ---
+id: 009c1078-643d-49a0-9fc6-d1b3206458cc
+entity_slug: bywater-beachside
+module_key: happy_hour
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 16] ---
+id: 53995019-c11a-4e42-86d2-02e7c96d5e83
+entity_slug: bywater-beachside
+module_key: specials
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 14 of 16] ---
+id: a714af3f-f45a-4ccd-8f81-6aa02734d386
+entity_slug: bywater-beachside
+module_key: events
+enabled: true
+sort_order: 14
+
+--- entity_modules [row 15 of 16] ---
+id: 1e1a0b5d-7b1f-434d-b374-d22436725520
+entity_slug: bywater-beachside
+module_key: loyalty
+enabled: true
+sort_order: 15
+
+--- entity_modules [row 16 of 16] ---
+id: 845506c7-3179-4adc-a77d-215241bd5eca
+entity_slug: bywater-beachside
+module_key: booking
+enabled: true
+sort_order: 16
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   7 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 7] ---
+id: ef78ef30-c0be-4ca8-bc27-b1d61c5a40d5
+landmark_id: 9363ee71-a84f-4e4c-9f71-344dc3c918f0
+entity_slug: bywater-beachside
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 7] ---
+id: 8721d964-7fbf-4dff-a7a3-3a9f9b9afcff
+landmark_id: 9363ee71-a84f-4e4c-9f71-344dc3c918f0
+entity_slug: bywater-beachside
+landmark_type: park
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 7] ---
+id: 9a0991be-77e5-413b-a51b-befcdf95ec47
+landmark_id: 9363ee71-a84f-4e4c-9f71-344dc3c918f0
+entity_slug: bywater-beachside
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 7] ---
+id: d3314ef1-8f56-4486-87a3-bf760933153d
+landmark_id: 9363ee71-a84f-4e4c-9f71-344dc3c918f0
+entity_slug: bywater-beachside
+landmark_type: tourist_attraction
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 7] ---
+id: 98dfea29-d0f4-453a-ac79-73b4bc307abd
+landmark_id: a85aaacd-bead-4184-93e5-3dc2c7e39605
+entity_slug: bywater-beachside
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 7] ---
+id: 205605fd-5496-4490-a7d5-6a3fb16551fc
+landmark_id: a85aaacd-bead-4184-93e5-3dc2c7e39605
+entity_slug: bywater-beachside
+landmark_type: parking
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 7] ---
+id: 90ac3ca8-af58-4635-9867-7e1788269ab7
+landmark_id: a85aaacd-bead-4184-93e5-3dc2c7e39605
+entity_slug: bywater-beachside
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   4 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 4] ---
+id: 9363ee71-a84f-4e4c-9f71-344dc3c918f0
+entity_slug: bywater-beachside
+kind: landmark
+place_id: ChIJNea8h40EmogRpyRFDB5QQTI
+name: Gulf State Park Pier
+types: [
+  "establishment",
+  "park",
+  "point_of_interest",
+  "tourist_attraction"
+]
+spatial_relationship: AROUND_THE_CORNER
+travel_distance_meters: 20.153446
+straight_line_distance_meters: 36.64313
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 4] ---
+id: a85aaacd-bead-4184-93e5-3dc2c7e39605
+entity_slug: bywater-beachside
+kind: landmark
+place_id: ChIJSw1M_fIFmogRfmrSw-gGYqE
+name: Gulf State Park Pier Parking Lot
+types: [
+  "establishment",
+  "parking",
+  "point_of_interest"
+]
+spatial_relationship: AROUND_THE_CORNER
+travel_distance_meters: 58.282555
+straight_line_distance_meters: 48.05484
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 4] ---
+id: c69bc685-a18d-48a4-b014-725925617f24
+entity_slug: bywater-beachside
+kind: area
+place_id: ChIJO7HshI0EmogR7TiwTQ-RnMs
+name: Parking lot
+containment: OUTSKIRTS
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 4] ---
+id: af1d5cdc-56a4-4268-8376-4d1835bb7311
+entity_slug: bywater-beachside
+kind: area
+place_id: ChIJAf8qlDAEmogR21mSG_IXY-s
+name: Gulf State Park
+containment: OUTSKIRTS
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   11 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 11] ---
+offer_id: 459
+entity_slug: bywater-beachside
+section_id: 24
+name: (6.9K)
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 36454bf5-33f3-4cc2-b4cf-45d5069d26af
+
+--- entity_offer [row 2 of 11] ---
+offer_id: 7762
+entity_slug: bywater-beachside
+section_id: 1056
+name: Redneck Cuban
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 524b0d7a-9197-43fa-b45b-c2215a6eb0b8
+
+--- entity_offer [row 3 of 11] ---
+offer_id: 7965
+entity_slug: bywater-beachside
+section_id: 1056
+name: Pina Colada
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 27ad1f77-5040-495f-a05e-c564b0eef9bc
+
+--- entity_offer [row 4 of 11] ---
+offer_id: 7971
+entity_slug: bywater-beachside
+section_id: 1056
+name: Nachos w Cheese
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 695644d2-6cb0-4b76-a9d4-f21d2c15cb43
+
+--- entity_offer [row 5 of 11] ---
+offer_id: 7980
+entity_slug: bywater-beachside
+section_id: 1056
+name: Pepperoni Pizza
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 77b4272e-5dab-4c51-b92d-885751064bfd
+
+--- entity_offer [row 6 of 11] ---
+offer_id: 8156
+entity_slug: bywater-beachside
+section_id: 1056
+name: Tuna Dip
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 6e0acb62-594c-4830-8d15-2a6c312f433d
+
+--- entity_offer [row 7 of 11] ---
+offer_id: 8163
+entity_slug: bywater-beachside
+section_id: 1056
+name: Cuban Sandwich
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 6a10fe0a-323f-484e-923c-837bc15a292f
+
+--- entity_offer [row 8 of 11] ---
+offer_id: 8170
+entity_slug: bywater-beachside
+section_id: 1056
+name: Chicken Wings
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: fb1f779a-2540-444d-b312-d3ce8c870223
+
+--- entity_offer [row 9 of 11] ---
+offer_id: 8172
+entity_slug: bywater-beachside
+section_id: 1056
+name: Beer
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 6cd7b116-7efb-4fbe-8f9a-590539c31fe9
+
+--- entity_offer [row 10 of 11] ---
+offer_id: 8189
+entity_slug: bywater-beachside
+section_id: 1056
+name: Cajun Grilled Ahi Tuna Sandwich
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 75fa1336-6225-473a-b120-1ace4189259f
+
+--- entity_offer [row 11 of 11] ---
+offer_id: 8197
+entity_slug: bywater-beachside
+section_id: 1056
+name: Road Kill Quesadilla
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 5c3db49f-5ca0-402f-b3a1-b680ce817ad4
+
+####################################################################################################
+# TABLE: entity_offer_section   -   2 row(s)
+####################################################################################################
+
+--- entity_offer_section [row 1 of 2] ---
+section_id: 24
+entity_slug: bywater-beachside
+name: 4.7
+section_type: menu
+sort_order: 1
+
+--- entity_offer_section [row 2 of 2] ---
+section_id: 1056
+entity_slug: bywater-beachside
+name: Menu Highlights
+section_type: menu
+sort_order: 1
+
+####################################################################################################
+# TABLE: entity_photos   -   17 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 17] ---
+id: 739b63be-c67b-4b9a-8e4a-94e8890e1979
+entity_slug: bywater-beachside
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bywater-beachside/photo_03.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 2 of 17] ---
+id: 340af05a-bf65-4916-9f93-f837e64ea075
+entity_slug: bywater-beachside
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bywater-beachside/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 17] ---
+id: 9215ca3e-f3f6-4e49-a934-b9edfb42b755
+entity_slug: bywater-beachside
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/bywater-beachside/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 4 of 17] ---
+id: 99271135-a2db-474f-a833-ec8215555dbc
+entity_slug: bywater-beachside
+url: https://places.googleapis.com/v1/places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3mDUh003b1LANuG6xKPSCqgQkO_QTK_Qpi1KKVt_AxT6mAlosum3Bsmti9DsEkvucBY_okgnq6gRHTVohoLwDEOfMpliIXtIynogbZHlynqQ0prOYxU_LKPUSGuBKSOZ9AmoLsVTSQflc6WG3QiF7aVazeD3n9hUAjPVZ4k5oj9Ox7CV8noW4FDgHdOxfHrwh6VNmp_9TukB_QPQp3dNhjwW_6ZcujHlVlTL7GyE44ti2e2Il8f-JtzKamfA5GU08A1zRgaqaeTTD7EDi_B0y69Jf8tvHAmK5y-Ukv-EpAKdzFRNAWcIo9kAlmlyJeulU-yYAM50uqLxZqqJcnMzIU2kbFOeOP6pPGJ9a8AAZgQ5qvX644TRBVXiWDNqUYZbktOYZ2Q22Kv6cdekdmgvSoCoPn1lFBJ5zclAzX2eoNi4RM/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3mDUh003b1LANuG6xKPSCqgQkO_QTK_Qpi1KKVt_AxT6mAlosum3Bsmti9DsEkvucBY_okgnq6gRHTVohoLwDEOfMpliIXtIynogbZHlynqQ0prOYxU_LKPUSGuBKSOZ9AmoLsVTSQflc6WG3QiF7aVazeD3n9hUAjPVZ4k5oj9Ox7CV8noW4FDgHdOxfHrwh6VNmp_9TukB_QPQp3dNhjwW_6ZcujHlVlTL7GyE44ti2e2Il8f-JtzKamfA5GU08A1zRgaqaeTTD7EDi_B0y69Jf8tvHAmK5y-Ukv-EpAKdzFRNAWcIo9kAlmlyJeulU-yYAM50uqLxZqqJcnMzIU2kbFOeOP6pPGJ9a8AAZgQ5qvX644TRBVXiWDNqUYZbktOYZ2Q22Kv6cdekdmgvSoCoPn1lFBJ5zclAzX2eoNi4RM
+is_cover: false
+sort_order: 0
+caption: John Helmers
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDOmJGC8QE!2e10!4m2!3m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6
+
+--- entity_photos [row 5 of 17] ---
+id: d453dff6-c3be-4bc8-a7f8-8f1259ef2e73
+entity_slug: bywater-beachside
+url: https://places.googleapis.com/v1/places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3nv3lAzvxqzw2jdyR6T67wZeTStFFIq83KHc_fzcPIxXNSsG0sdIzw-1t_e_V3JTt0K4peCa7ALpDgeQuJ4o7mRQEhsXd8B8u_dV6MxNTUuC1IPap_-VReYn3jCzTIEuYTsJt43VpM4ObQjhxtZ9GgqnHvf2dXrSr3k79MoAuMysNyRtpOrhKj5zfsYPjro2ESGMZ06LufR1MeXoUqlEyQL7cu3F69p0IpfNeTM8T5Fit80zL9vFdg9qYs7FF3winnb2MHrxSjIOvoqQ4M4OSSIEBBx-qOIQA9X-bpJVI2R5UkP02bxpebbnFNOtOeKDj2cmRcpZFSUKhQ6HuXFHG1ASCDtAbAl416b4qzc24OgXIEjYks3E5aUF0BDyY4Swnq1b7ECCw9jO9xQvc85ggIlMkpx7D9Hp9M_Hl3jk_nvRA/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3nv3lAzvxqzw2jdyR6T67wZeTStFFIq83KHc_fzcPIxXNSsG0sdIzw-1t_e_V3JTt0K4peCa7ALpDgeQuJ4o7mRQEhsXd8B8u_dV6MxNTUuC1IPap_-VReYn3jCzTIEuYTsJt43VpM4ObQjhxtZ9GgqnHvf2dXrSr3k79MoAuMysNyRtpOrhKj5zfsYPjro2ESGMZ06LufR1MeXoUqlEyQL7cu3F69p0IpfNeTM8T5Fit80zL9vFdg9qYs7FF3winnb2MHrxSjIOvoqQ4M4OSSIEBBx-qOIQA9X-bpJVI2R5UkP02bxpebbnFNOtOeKDj2cmRcpZFSUKhQ6HuXFHG1ASCDtAbAl416b4qzc24OgXIEjYks3E5aUF0BDyY4Swnq1b7ECCw9jO9xQvc85ggIlMkpx7D9Hp9M_Hl3jk_nvRA
+is_cover: false
+sort_order: 1
+caption: Bywater Beachside
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICqzvLObg!2e10!4m2!3m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6
+
+--- entity_photos [row 6 of 17] ---
+id: fd975c36-4265-4a24-9e42-b2e7224f597f
+entity_slug: bywater-beachside
+url: https://places.googleapis.com/v1/places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3lBr_543Dmx4HNGSy8qa4yh3os48OLV6cjJ3DFms4pQkYl60K_XKG8iszBbrJZAYBQzh3XjbxHFV0XS8MyBl8CxHFLbSwg4DQc5dzIJM8iND-i1wGa4MCSYlMWGlxkF-rCAUx3EIolEZH4_s81elk-Nw0VnzZVve4yNElQWXR9o7TInVVuzWUz8jzdPaUtGxeX0oKupqimAQ2ku6fX4btmpYqq_oR6wgqYpmyUmVN_E0RyDTtL3BSzaRVK9Y7AfcnZmOf-AQGlPr1EaP6IEiyQ0aQn158vc9o9NlPSw8HmjqKtqOswOJ_gNHKrASvJHTITYCwNbLvZx2ng_J1gEo3qCyKPZkYkvpLWFEachXPpYGkrKNr7mzJSkB9OJqVta6Yc6C29nYLqriT9s3z6gv4iyQujXh1e_TdQH5DmH8758XxMH8w4duhDTTDwwpTxV/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3lBr_543Dmx4HNGSy8qa4yh3os48OLV6cjJ3DFms4pQkYl60K_XKG8iszBbrJZAYBQzh3XjbxHFV0XS8MyBl8CxHFLbSwg4DQc5dzIJM8iND-i1wGa4MCSYlMWGlxkF-rCAUx3EIolEZH4_s81elk-Nw0VnzZVve4yNElQWXR9o7TInVVuzWUz8jzdPaUtGxeX0oKupqimAQ2ku6fX4btmpYqq_oR6wgqYpmyUmVN_E0RyDTtL3BSzaRVK9Y7AfcnZmOf-AQGlPr1EaP6IEiyQ0aQn158vc9o9NlPSw8HmjqKtqOswOJ_gNHKrASvJHTITYCwNbLvZx2ng_J1gEo3qCyKPZkYkvpLWFEachXPpYGkrKNr7mzJSkB9OJqVta6Yc6C29nYLqriT9s3z6gv4iyQujXh1e_TdQH5DmH8758XxMH8w4duhDTTDwwpTxV
+is_cover: false
+sort_order: 2
+caption: Shannon (NOLA Gent)
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhACXuqGpXLTOD15e1-yn8m1!2e10!4m2!3m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6
+
+--- entity_photos [row 7 of 17] ---
+id: 0b26d1b9-e97c-4ba3-bc55-38fb5c33de4b
+entity_slug: bywater-beachside
+url: https://places.googleapis.com/v1/places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3mOn-bEDYJ9LzPO2Dd8JYRNKgLum8GflcYOoxu5TzQQEj2-2pDTfBwQakly7l9RfbT6LO0F-D38RKuZ1_latLDyG63jIj58hfZECUkCCGm0hJ9oJjYd8MZGkc3Ye69YF3zC22YiRarBSI9gg7pJ0qK8ShWzI93DkHXc09VBrUzcKUlIKj56sdByD1-2qdO8kNFinHW0ThR5ZERYyLa-srVFzqFNT8JfuvKk6DpUKxWYC73yWbTkPf6uQ6i8CLgCLu9_q8aOeoVxEtdfLI3lgA1gub__R0hYj2Rv-TwZZ-GQrJ5Bh5ZMokTwe8Ef-qxX34Y-arj-dqtP9cXYWQ3j5i8SRIQP01DwitmB6rdRcc1MJrvE6loWAMvfH6AgX7n1XtsH8kyUlE4Bduf9hbuMim16uubV0YRraKE7azfBk7_L6EanEs1WVUjF37aOF-rp/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3mOn-bEDYJ9LzPO2Dd8JYRNKgLum8GflcYOoxu5TzQQEj2-2pDTfBwQakly7l9RfbT6LO0F-D38RKuZ1_latLDyG63jIj58hfZECUkCCGm0hJ9oJjYd8MZGkc3Ye69YF3zC22YiRarBSI9gg7pJ0qK8ShWzI93DkHXc09VBrUzcKUlIKj56sdByD1-2qdO8kNFinHW0ThR5ZERYyLa-srVFzqFNT8JfuvKk6DpUKxWYC73yWbTkPf6uQ6i8CLgCLu9_q8aOeoVxEtdfLI3lgA1gub__R0hYj2Rv-TwZZ-GQrJ5Bh5ZMokTwe8Ef-qxX34Y-arj-dqtP9cXYWQ3j5i8SRIQP01DwitmB6rdRcc1MJrvE6loWAMvfH6AgX7n1XtsH8kyUlE4Bduf9hbuMim16uubV0YRraKE7azfBk7_L6EanEs1WVUjF37aOF-rp
+is_cover: false
+sort_order: 3
+caption: Kathy Bkool
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhD5Wv4JXyChVrcP-e26VKlT!2e10!4m2!3m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6
+
+--- entity_photos [row 8 of 17] ---
+id: 2a82d940-d1ef-4b3e-9600-31e304f122f0
+entity_slug: bywater-beachside
+url: https://places.googleapis.com/v1/places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3kpm6FsJdXWkskEcGF6Tcd4v-Fo4FYOZxuhWW3AxIGqDRPQmf9bAjBkyaV9NMYka-gVV5vr7DY4BJEPqNNgRIzCFf2vshiTZnnWZbT9voEcpeP1r6X6ZAVwyiiE_4YOwg9Y-_FwFhhgyjVQ3D6NHz0ho2hSGQpFWMscTkp4fjcvj6IfoDPG3KYGg9oaINh62SvXeI7hzmqOdDah3YG6VFVx4ublU5MxHg_tGY6YT5UvJhGVko5KRf0xbB-QHYRbKf1MtLPF2LuOcN-YKpspbftaRBlLI6PkRDMewBbLPfI6SqHWDb8skzHmhU4MHUrlmiUM_lrqUIYAHxKbOOKvAKHIxa4-JCt8qJtsAvVHRxVTOeOeW_OODeqBd4pj5lJIILBU8_0A9I3WhpeiRUB_2ktikhLKKxQ0Ibtpapm6J9T8Rw/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3kpm6FsJdXWkskEcGF6Tcd4v-Fo4FYOZxuhWW3AxIGqDRPQmf9bAjBkyaV9NMYka-gVV5vr7DY4BJEPqNNgRIzCFf2vshiTZnnWZbT9voEcpeP1r6X6ZAVwyiiE_4YOwg9Y-_FwFhhgyjVQ3D6NHz0ho2hSGQpFWMscTkp4fjcvj6IfoDPG3KYGg9oaINh62SvXeI7hzmqOdDah3YG6VFVx4ublU5MxHg_tGY6YT5UvJhGVko5KRf0xbB-QHYRbKf1MtLPF2LuOcN-YKpspbftaRBlLI6PkRDMewBbLPfI6SqHWDb8skzHmhU4MHUrlmiUM_lrqUIYAHxKbOOKvAKHIxa4-JCt8qJtsAvVHRxVTOeOeW_OODeqBd4pj5lJIILBU8_0A9I3WhpeiRUB_2ktikhLKKxQ0Ibtpapm6J9T8Rw
+is_cover: false
+sort_order: 4
+caption: Linda Thompson
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKELP2v-2m4pLZbA!2e10!4m2!3m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6
+
+--- entity_photos [row 9 of 17] ---
+id: aaa51f63-c5bf-4cbb-95c1-0ab81c6570c6
+entity_slug: bywater-beachside
+url: https://places.googleapis.com/v1/places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3nRpwmqCKjpqcKFDMI19IvxxHqDHamdpHhIHgrAAEyfLxQpnImd5xlvivHfR_DyrkfTnRcYxd0oLFZs3l0RJjAcmMRMEDTMHVEYEZMjoPv4s1zurw8YdVFfm-A8KT9ygJl_qJR5ISXQaQ6rJR0fyalE1KLdFMBcsxF-23nSQIEXIrJMBoovQdZ0e2NXbCGHwaqNtuco6p353x-VFRX4nsQVDL_-X8k_QJji-qYp0_13PWSIVkDRla-U5VNfOVyKFw-kt42254OiA8qU229JVBQL_7hNIoEZsoAaU0Dn77v9Hh7h5OZ90PtYuFLRw5OVVYVn-xrzfbwKeoUqITK3hayMHIlyh-yvD4itOqDJjBTfmQKYuOn4LmvGOavapb5a6zd7V5fJY47Fpqpj4wbtygbBMIRZTeGz_1ZZA1xRvCkCEZ4/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3nRpwmqCKjpqcKFDMI19IvxxHqDHamdpHhIHgrAAEyfLxQpnImd5xlvivHfR_DyrkfTnRcYxd0oLFZs3l0RJjAcmMRMEDTMHVEYEZMjoPv4s1zurw8YdVFfm-A8KT9ygJl_qJR5ISXQaQ6rJR0fyalE1KLdFMBcsxF-23nSQIEXIrJMBoovQdZ0e2NXbCGHwaqNtuco6p353x-VFRX4nsQVDL_-X8k_QJji-qYp0_13PWSIVkDRla-U5VNfOVyKFw-kt42254OiA8qU229JVBQL_7hNIoEZsoAaU0Dn77v9Hh7h5OZ90PtYuFLRw5OVVYVn-xrzfbwKeoUqITK3hayMHIlyh-yvD4itOqDJjBTfmQKYuOn4LmvGOavapb5a6zd7V5fJY47Fpqpj4wbtygbBMIRZTeGz_1ZZA1xRvCkCEZ4
+is_cover: false
+sort_order: 5
+caption: Jason Shell Creative Entertainment
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDZpq2tzgE!2e10!4m2!3m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6
+
+--- entity_photos [row 10 of 17] ---
+id: 2a2469fe-6c0e-457c-b4c0-99c3d15a1155
+entity_slug: bywater-beachside
+url: https://places.googleapis.com/v1/places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3kPFreNPw2UMQfLL5ZCIo57LXah4cC5pfBkEWookP3ydZIDWLUh14CRBXTg_vXbYvXRK0iq7IoH2moGOAwRCGjjvV7Q1D5Q9nYmhwpw0O3RK3xa88tu-Kw3s_fa27ZjX0wSENvOBJskPUxUfbqcm8Jbjk3gX90FkqFcZrwvqrkbYsnipKPFvNwX5C2o-w6O-kstUGgDwEdt91NVE29QAMX1XQSm-Qwm3OFEdxJO4gQtyBYM7MrMljRLOhUoJiMKlXuMvhxPSRS5bpFUPa69wqdpJ07ix1LTZf1wj1XkliO1A1iH1aKNFFstoNXrqLgO1cAW-rPmIEpc_-NRTWc0sp_3pClhfSD-3hA0VofCJWnF7zZ8-HebfIBVTorq8juQ1LU0NB5pXVFEQJqfMU6gtU3x9ZqicGsTRkj1EKNK5zfcrEt5Bw4UjzGToBLdbjNc/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3kPFreNPw2UMQfLL5ZCIo57LXah4cC5pfBkEWookP3ydZIDWLUh14CRBXTg_vXbYvXRK0iq7IoH2moGOAwRCGjjvV7Q1D5Q9nYmhwpw0O3RK3xa88tu-Kw3s_fa27ZjX0wSENvOBJskPUxUfbqcm8Jbjk3gX90FkqFcZrwvqrkbYsnipKPFvNwX5C2o-w6O-kstUGgDwEdt91NVE29QAMX1XQSm-Qwm3OFEdxJO4gQtyBYM7MrMljRLOhUoJiMKlXuMvhxPSRS5bpFUPa69wqdpJ07ix1LTZf1wj1XkliO1A1iH1aKNFFstoNXrqLgO1cAW-rPmIEpc_-NRTWc0sp_3pClhfSD-3hA0VofCJWnF7zZ8-HebfIBVTorq8juQ1LU0NB5pXVFEQJqfMU6gtU3x9ZqicGsTRkj1EKNK5zfcrEt5Bw4UjzGToBLdbjNc
+is_cover: false
+sort_order: 6
+caption: Walter Williams
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhBAu_atehE8hg-a-FxVzmSb!2e10!4m2!3m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6
+
+--- entity_photos [row 11 of 17] ---
+id: 93c7f830-1e77-4599-8393-ed4325ab980e
+entity_slug: bywater-beachside
+url: https://places.googleapis.com/v1/places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3lnGTYwVLSll6MsUXWsTs7IB5vN1pBCetdD8j0DhhLj94Ooqc0o7aY4gyPVv9fSk4W7Q7PISAfqa9aO2Qyo7Z8AU8XusqL8YiNGI6QLQ0CmOs7uXVqjCttacoMxRYXe8Nehsq9_EkGcUAxpfnIBKBNlgHtfT_GvDsJBOiz_ftOW06XZ6ANriYjz8maSdQ476FmX-Zn5M0V9iCZqpGW9lYRwHCzMGgJRdIsb7mGY9ww9BFWgIXDRBYUkaQSHC1NXqfzh3NWWQ11U3Hpo1hVDvj_zfsY4RQ1KytqrTc7prs33XmZ8tzwP-7T8TwR3Ib8aCfaA-gDmGzY0U7mWEt2dcA-ByBmdCL3DmLA2CM4n09ra7YahrvW-2q2-J7PFtOE3F8qTXlNHTcUkCUP2YwSvSUPZ7jrmf9-HnIXsQ3k6hwI0sVFGZCI432k5mJ3zb4jN/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3lnGTYwVLSll6MsUXWsTs7IB5vN1pBCetdD8j0DhhLj94Ooqc0o7aY4gyPVv9fSk4W7Q7PISAfqa9aO2Qyo7Z8AU8XusqL8YiNGI6QLQ0CmOs7uXVqjCttacoMxRYXe8Nehsq9_EkGcUAxpfnIBKBNlgHtfT_GvDsJBOiz_ftOW06XZ6ANriYjz8maSdQ476FmX-Zn5M0V9iCZqpGW9lYRwHCzMGgJRdIsb7mGY9ww9BFWgIXDRBYUkaQSHC1NXqfzh3NWWQ11U3Hpo1hVDvj_zfsY4RQ1KytqrTc7prs33XmZ8tzwP-7T8TwR3Ib8aCfaA-gDmGzY0U7mWEt2dcA-ByBmdCL3DmLA2CM4n09ra7YahrvW-2q2-J7PFtOE3F8qTXlNHTcUkCUP2YwSvSUPZ7jrmf9-HnIXsQ3k6hwI0sVFGZCI432k5mJ3zb4jN
+is_cover: false
+sort_order: 7
+caption: Shannon (NOLA Gent)
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCgtsL3XT77wsZaJIqy3Q-A!2e10!4m2!3m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6
+
+--- entity_photos [row 12 of 17] ---
+id: efe86bbb-c8d5-4002-9b2c-371526b184dd
+entity_slug: bywater-beachside
+url: https://places.googleapis.com/v1/places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3nzGt8PGveWGJw0rBGp8aHl4NtlLcz0lz99rBKFLTD2M8iXji4NSPxwjRRJx2yTX9kRPWhg2ofa0y5ysZ3S5JHbh0surS-1QOwe9nZZx_Thn4ivoExt5D3sbEb6fdWFuuGc6bAxnCHlEVr4JiZZDN2L_xvnQemuaQZHO_qnD_hTKS_fdMBgMQIGzeXcUFesP8g7YUesQtVqpESTj48_oKFrrriFomiJoCEkJQo-6T6-USUXbbp4KYuC-ObPOMMgj5LuQ5dui2VpCYEfYE9lKm5_dTrROEkPzX-xXQkHMyVPFzDqM8V2e18KYH4LsaQOj6hfHLo8QnNS7pN18N_ndKDRwPr5tjqd-KjIj7Zfyt_ZRd2JR5P_LTd9X4nD8lKr40-5QSpF82IhI7do717vsNQt2tF3p-gqWsy28qV_Nt-UZe-UBD2sDTEPBpHKFU4J/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3nzGt8PGveWGJw0rBGp8aHl4NtlLcz0lz99rBKFLTD2M8iXji4NSPxwjRRJx2yTX9kRPWhg2ofa0y5ysZ3S5JHbh0surS-1QOwe9nZZx_Thn4ivoExt5D3sbEb6fdWFuuGc6bAxnCHlEVr4JiZZDN2L_xvnQemuaQZHO_qnD_hTKS_fdMBgMQIGzeXcUFesP8g7YUesQtVqpESTj48_oKFrrriFomiJoCEkJQo-6T6-USUXbbp4KYuC-ObPOMMgj5LuQ5dui2VpCYEfYE9lKm5_dTrROEkPzX-xXQkHMyVPFzDqM8V2e18KYH4LsaQOj6hfHLo8QnNS7pN18N_ndKDRwPr5tjqd-KjIj7Zfyt_ZRd2JR5P_LTd9X4nD8lKr40-5QSpF82IhI7do717vsNQt2tF3p-gqWsy28qV_Nt-UZe-UBD2sDTEPBpHKFU4J
+is_cover: false
+sort_order: 8
+caption: Daniel Latham
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhAEVEIuDQgCba8R-HHCIo4_!2e10!4m2!3m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6
+
+--- entity_photos [row 13 of 17] ---
+id: 8244f21d-4b97-45e2-b453-4a20b62509e7
+entity_slug: bywater-beachside
+url: https://places.googleapis.com/v1/places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3mWT4TIWi1ulIWU5eqljQbsG0QQPzjqIhq0dfQljET7wfguyh784vWLOs1pqvfLoYB26np-UNHDktZOohvkljL66R334yuKu3LVwylKicFGCap-UmOwYPXJRTzQJOOLrihMU0W-O1hqJ04OqDT7ZOfnCrHfh8j3JphxAu3-QBX0Ke-feRsmmKhI0hki96qiYNmw9F3rLd1Gh4bOcd6pDFzt_Z5zj2usUsHQIfKSQABkFh-wLB-6nynt268XUE8noW1ZcsZQiaDs2UJ9ZYurxTSva6vpzxwM0ilL90iL_P7RNoZ7uw3SmH9Itlx7CiVFPmWr-fDeQoLbgMpnVLofTszTeN455GU4lejZL7bEy4vdfIZ2gik18OXMXOhrF1xXC8oALW-n4JM54qlttgCgwWKYsSzKf2XZiIcZPR_-CeiwjkB7Me1d0gmZEDM6tqUm/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJa-E8Go0EmogR5tF19zUYle0/photos/AaVGc3mWT4TIWi1ulIWU5eqljQbsG0QQPzjqIhq0dfQljET7wfguyh784vWLOs1pqvfLoYB26np-UNHDktZOohvkljL66R334yuKu3LVwylKicFGCap-UmOwYPXJRTzQJOOLrihMU0W-O1hqJ04OqDT7ZOfnCrHfh8j3JphxAu3-QBX0Ke-feRsmmKhI0hki96qiYNmw9F3rLd1Gh4bOcd6pDFzt_Z5zj2usUsHQIfKSQABkFh-wLB-6nynt268XUE8noW1ZcsZQiaDs2UJ9ZYurxTSva6vpzxwM0ilL90iL_P7RNoZ7uw3SmH9Itlx7CiVFPmWr-fDeQoLbgMpnVLofTszTeN455GU4lejZL7bEy4vdfIZ2gik18OXMXOhrF1xXC8oALW-n4JM54qlttgCgwWKYsSzKf2XZiIcZPR_-CeiwjkB7Me1d0gmZEDM6tqUm
+is_cover: false
+sort_order: 9
+caption: Daniel Latham
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhCCQWeFwu1qpOQA6QVflMbn!2e10!4m2!3m1!1s0x889a048d1a3ce16b:0xed951835f775d1e6
+
+--- entity_photos [row 14 of 17] ---
+id: 3bb5ec19-cc3b-4ea5-8b26-0f96494f3e82
+entity_slug: bywater-beachside
+url: https://xbptmkpbiqzvxptjkfoi.supabase.co/storage/v1/object/public/entity-images/entity-images/6ea3e0ee-2d06-49c7-b3af-05bef0bb74ba/6ea3e0ee-2d06-49c7-b3af-05bef0bb74ba_1779139738631.183.jpg
+is_cover: true
+sort_order: 0
+photo_type: hero
+source_name: legacy_businesses_table
+created_at: 2026-07-21T23:25:57.434852+00:00
+
+--- entity_photos [row 15 of 17] ---
+id: 84a9dfdb-c9b1-4e40-a3cf-46f312be469e
+entity_slug: bywater-beachside
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/a15aa609-4510-4760-8a22-f7b878547972/image_3.jpg
+is_cover: false
+sort_order: 102
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 16 of 17] ---
+id: 1af42a34-491e-4aa0-834c-02b614e655a2
+entity_slug: bywater-beachside
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/a15aa609-4510-4760-8a22-f7b878547972/image_1.jpg
+is_cover: true
+sort_order: 100
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 17 of 17] ---
+id: 137ba78a-2645-4190-a3a7-7398259922b0
+entity_slug: bywater-beachside
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/a15aa609-4510-4760-8a22-f7b878547972/image_2.jpg
+is_cover: false
+sort_order: 101
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 7395d7b1-e6dd-4f34-b91b-38ea321f81a7
+entity_slug: bywater-beachside
+reviewer_name: Morgan Biggins
+rating: 5
+body: Ron was absolutely amazing! He is the reason why we will be headed back there tomorrow. He recommended the fish and it was amazing.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-11-02T01:10:01.432708+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: 1ef765a1-ab55-41fb-a173-a580dd84dd72
+entity_slug: bywater-beachside
+reviewer_name: Justin Cotten
+rating: 4
+body: Stopped in for drinks and the scenery. Nice place, the view was nice overlooking the ocean.  It's a good walk be prepared when going here. You have to pay to walk the pier. Neat place to stop in and have a drink. If it's cool out make sure to have a long sleeve shirt, especially if the wind's blowing.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2022-10-28T18:20:01.635493+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: d5582ad9-5330-4e13-893a-1fcacb506f5c
+entity_slug: bywater-beachside
+reviewer_name: Jessica Partain
+rating: 2
+body: First and only time. Pizza was okay, burger was a premade frozen patty (not so much as salt on it) and the bywater nacho’s were mediocre at best (from the canned cheese, three different kinds of unseasoned meat and not so great chips). 4.6 out of 5 star reviews, how? Maybe we just ordered three wrong items. Disappointed.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2024-10-01T20:21:57.312584+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 301281b4-ee63-4199-9baa-2c0c2d2b57f4
+entity_slug: bywater-beachside
+reviewer_name: Daniel Latham
+rating: 2
+body: If you've been out all day or drunk as hell and are really really hungry it's edible. Nachos got that weird cheap frozen "grilled" chicken, canned jalapenos, and fake cheese. Ballpark style. Pizza about as good as chuck e cheese pizza or something similar. Street corn was good tho, tore that up
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2025-08-17T20:22:33.234191+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: f6bce655-49d4-4095-881f-6ec5e794c0b6
+entity_slug: bywater-beachside
+reviewer_name: Mitchell Reilly
+rating: 1
+body: It was convenient after ordering 2 margaritas for $43 bucks i figured we prolly need to eat somewhere else, margaritas was not much to write home about. All in all no reason for us to go back.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2026-05-23T23:33:59.682444+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   6 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 6] ---
+id: 0051d29f-f624-4906-9a20-283422b5b469
+entity_slug: bywater-beachside
+tag_name: bar_and_grill
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 6] ---
+id: bd862758-63f1-48c6-9d00-8ae5fb317a85
+entity_slug: bywater-beachside
+tag_name: bar
+tag_category: google_type
+
+--- entity_tags [row 3 of 6] ---
+id: 6a0ca247-9b6a-4465-9879-340e471e6013
+entity_slug: bywater-beachside
+tag_name: restaurant
+tag_category: google_type
+
+--- entity_tags [row 4 of 6] ---
+id: e15c06c7-7c5e-42a8-880d-6de4033b8ff1
+entity_slug: bywater-beachside
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 5 of 6] ---
+id: f3aa8895-928e-4602-a9f6-a43d4c115df9
+entity_slug: bywater-beachside
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 6 of 6] ---
+id: 69e1a501-b158-4957-a6d3-5b8dddd9f8bb
+entity_slug: bywater-beachside
+tag_name: establishment
+tag_category: google_type
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 451c81e2-dde9-41ff-b731-d90b64d1104f
+entity_slug: bywater-beachside
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_food_beverage   -   1 row(s)
+####################################################################################################
+
+--- industry_food_beverage [row 1 of 1] ---
+entity_slug: bywater-beachside
+menu_section_count: 2
+menu_item_count: 11
+serves_lunch: true
+serves_dinner: true
+serves_beer: true
+dine_in: true
+delivery: false
+curbside_pickup: false
+reservable: true
+outdoor_seating: true
+live_music: true
+good_for_kids: false
+has_happy_hour: false
+updated_at: 2026-07-20T03:16:49.206863+00:00
+
+####################################################################################################
+# TABLE: legacy_photo_migration_queue   -   3 row(s)
+####################################################################################################
+
+--- legacy_photo_migration_queue [row 1 of 3] ---
+id: 183
+entity_slug: bywater-beachside
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/a15aa609-4510-4760-8a22-f7b878547972/image_3.jpg
+is_cover: false
+sort_order: 102
+status: linked_legacy
+created_at: 2026-07-25T23:32:39.118198+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 2 of 3] ---
+id: 130
+entity_slug: bywater-beachside
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/a15aa609-4510-4760-8a22-f7b878547972/image_1.jpg
+is_cover: true
+sort_order: 100
+status: linked_legacy
+created_at: 2026-07-25T23:32:39.118198+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 3 of 3] ---
+id: 213
+entity_slug: bywater-beachside
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/a15aa609-4510-4760-8a22-f7b878547972/image_2.jpg
+is_cover: false
+sort_order: 101
+status: linked_legacy
+created_at: 2026-07-25T23:32:39.118198+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: menu_items   -   11 row(s)
+####################################################################################################
+
+--- menu_items [row 1 of 11] ---
+id: 36454bf5-33f3-4cc2-b4cf-45d5069d26af
+section_id: d605d630-202f-4b34-a135-ddc3c8a61286
+entity_slug: bywater-beachside
+item_name: (6.9K)
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 2 of 11] ---
+id: 524b0d7a-9197-43fa-b45b-c2215a6eb0b8
+section_id: 1c25c089-a45a-4487-a4bd-85c47bdff05f
+entity_slug: bywater-beachside
+item_name: Redneck Cuban
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 3 of 11] ---
+id: 27ad1f77-5040-495f-a05e-c564b0eef9bc
+section_id: 1c25c089-a45a-4487-a4bd-85c47bdff05f
+entity_slug: bywater-beachside
+item_name: Pina Colada
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 4 of 11] ---
+id: 695644d2-6cb0-4b76-a9d4-f21d2c15cb43
+section_id: 1c25c089-a45a-4487-a4bd-85c47bdff05f
+entity_slug: bywater-beachside
+item_name: Nachos w Cheese
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 5 of 11] ---
+id: 77b4272e-5dab-4c51-b92d-885751064bfd
+section_id: 1c25c089-a45a-4487-a4bd-85c47bdff05f
+entity_slug: bywater-beachside
+item_name: Pepperoni Pizza
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 6 of 11] ---
+id: 6e0acb62-594c-4830-8d15-2a6c312f433d
+section_id: 1c25c089-a45a-4487-a4bd-85c47bdff05f
+entity_slug: bywater-beachside
+item_name: Tuna Dip
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 7 of 11] ---
+id: 6a10fe0a-323f-484e-923c-837bc15a292f
+section_id: 1c25c089-a45a-4487-a4bd-85c47bdff05f
+entity_slug: bywater-beachside
+item_name: Cuban Sandwich
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 8 of 11] ---
+id: fb1f779a-2540-444d-b312-d3ce8c870223
+section_id: 1c25c089-a45a-4487-a4bd-85c47bdff05f
+entity_slug: bywater-beachside
+item_name: Chicken Wings
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 9 of 11] ---
+id: 6cd7b116-7efb-4fbe-8f9a-590539c31fe9
+section_id: 1c25c089-a45a-4487-a4bd-85c47bdff05f
+entity_slug: bywater-beachside
+item_name: Beer
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 10 of 11] ---
+id: 75fa1336-6225-473a-b120-1ace4189259f
+section_id: 1c25c089-a45a-4487-a4bd-85c47bdff05f
+entity_slug: bywater-beachside
+item_name: Cajun Grilled Ahi Tuna Sandwich
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+--- menu_items [row 11 of 11] ---
+id: 5c3db49f-5ca0-402f-b3a1-b680ce817ad4
+section_id: 1c25c089-a45a-4487-a4bd-85c47bdff05f
+entity_slug: bywater-beachside
+item_name: Road Kill Quesadilla
+description: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+####################################################################################################
+# TABLE: menu_section_days   -   14 row(s)
+####################################################################################################
+
+--- menu_section_days [row 1 of 14] ---
+id: 2d344ce9-99b8-41fb-ab4f-0e6f7ae3b06b
+menu_section_id: d605d630-202f-4b34-a135-ddc3c8a61286
+entity_slug: bywater-beachside
+day_of_week: Monday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 2 of 14] ---
+id: 1f61bbbb-7a09-4b91-ad2f-dab665311a30
+menu_section_id: d605d630-202f-4b34-a135-ddc3c8a61286
+entity_slug: bywater-beachside
+day_of_week: Tuesday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 3 of 14] ---
+id: a99a6caa-e8f8-47f6-b157-944efd2fda36
+menu_section_id: d605d630-202f-4b34-a135-ddc3c8a61286
+entity_slug: bywater-beachside
+day_of_week: Wednesday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 4 of 14] ---
+id: ff8cda98-a526-40c8-ac5c-5c87be6984c3
+menu_section_id: d605d630-202f-4b34-a135-ddc3c8a61286
+entity_slug: bywater-beachside
+day_of_week: Thursday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 5 of 14] ---
+id: 204227e2-a65c-4531-9456-b9dd73a9da06
+menu_section_id: d605d630-202f-4b34-a135-ddc3c8a61286
+entity_slug: bywater-beachside
+day_of_week: Friday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 6 of 14] ---
+id: 1bfd7b24-7047-4ffe-84ae-f5e46c2195b4
+menu_section_id: d605d630-202f-4b34-a135-ddc3c8a61286
+entity_slug: bywater-beachside
+day_of_week: Saturday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 7 of 14] ---
+id: b875047c-4da9-463e-b563-3d78df027334
+menu_section_id: d605d630-202f-4b34-a135-ddc3c8a61286
+entity_slug: bywater-beachside
+day_of_week: Sunday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 8 of 14] ---
+id: 9476af0a-0464-4195-9a05-18bd8b9a3a09
+menu_section_id: 1c25c089-a45a-4487-a4bd-85c47bdff05f
+entity_slug: bywater-beachside
+day_of_week: Monday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 9 of 14] ---
+id: 7fc5b84c-c952-46f3-a986-6c1fc21436b5
+menu_section_id: 1c25c089-a45a-4487-a4bd-85c47bdff05f
+entity_slug: bywater-beachside
+day_of_week: Tuesday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 10 of 14] ---
+id: 051d85be-0074-496c-a62f-ed4a7de34d82
+menu_section_id: 1c25c089-a45a-4487-a4bd-85c47bdff05f
+entity_slug: bywater-beachside
+day_of_week: Wednesday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 11 of 14] ---
+id: daf31a7d-a200-4ab7-b808-05bc63078a86
+menu_section_id: 1c25c089-a45a-4487-a4bd-85c47bdff05f
+entity_slug: bywater-beachside
+day_of_week: Thursday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 12 of 14] ---
+id: a6b7863c-1527-445f-b7a1-a3c3cda5eb2c
+menu_section_id: 1c25c089-a45a-4487-a4bd-85c47bdff05f
+entity_slug: bywater-beachside
+day_of_week: Friday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 13 of 14] ---
+id: 74ca9c13-926e-48f3-b022-d748999f7d48
+menu_section_id: 1c25c089-a45a-4487-a4bd-85c47bdff05f
+entity_slug: bywater-beachside
+day_of_week: Saturday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 14 of 14] ---
+id: c19c3fd5-0cf6-49ef-ab48-f6d4783941bb
+menu_section_id: 1c25c089-a45a-4487-a4bd-85c47bdff05f
+entity_slug: bywater-beachside
+day_of_week: Sunday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+####################################################################################################
+# TABLE: menu_section_details   -   2 row(s)
+####################################################################################################
+
+--- menu_section_details [row 1 of 2] ---
+id: ed2e6bbd-79c0-4806-8d97-f6a130986751
+menu_section_id: d605d630-202f-4b34-a135-ddc3c8a61286
+entity_slug: bywater-beachside
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+--- menu_section_details [row 2 of 2] ---
+id: b09c2fa2-c0dc-40b5-82e8-fc4720bb638b
+menu_section_id: 1c25c089-a45a-4487-a4bd-85c47bdff05f
+entity_slug: bywater-beachside
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+####################################################################################################
+# TABLE: menu_sections   -   2 row(s)
+####################################################################################################
+
+--- menu_sections [row 1 of 2] ---
+id: d605d630-202f-4b34-a135-ddc3c8a61286
+entity_slug: bywater-beachside
+section_name: 4.7
+sort_order: 1
+days_of_week: [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday"
+]
+is_active: true
+metadata: {}
+
+--- menu_sections [row 2 of 2] ---
+id: 1c25c089-a45a-4487-a4bd-85c47bdff05f
+entity_slug: bywater-beachside
+section_name: Menu Highlights
+sort_order: 1
+days_of_week: [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday"
+]
+is_active: true
+metadata: {}
+
+####################################################################################################
+# TABLE: search_index   -   23 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 23] ---
+ref_type: offer
+ref_id: 459
+entity_slug: bywater-beachside
+title: (6.9K)
+category: menu_item
+search_vector: '6.9':1A 'k':2A
+
+--- search_index [row 2 of 23] ---
+ref_type: offer
+ref_id: 7762
+entity_slug: bywater-beachside
+title: Redneck Cuban
+category: menu_item
+subtitle: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+search_vector: 'cuban':2A 'file':14C 'googl':7C 'highlight':4C 'list':8C 'menu':3C 'price':9C 'provid':11C 'redneck':1A 'upload':6C,13C
+
+--- search_index [row 3 of 23] ---
+ref_type: offer
+ref_id: 7965
+entity_slug: bywater-beachside
+title: Pina Colada
+category: menu_item
+subtitle: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+search_vector: 'colada':2A 'file':14C 'googl':7C 'highlight':4C 'list':8C 'menu':3C 'pina':1A 'price':9C 'provid':11C 'upload':6C,13C
+
+--- search_index [row 4 of 23] ---
+ref_type: offer
+ref_id: 7971
+entity_slug: bywater-beachside
+title: Nachos w Cheese
+category: menu_item
+subtitle: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+search_vector: 'chees':3A 'file':15C 'googl':8C 'highlight':5C 'list':9C 'menu':4C 'nacho':1A 'price':10C 'provid':12C 'upload':7C,14C 'w':2A
+
+--- search_index [row 5 of 23] ---
+ref_type: offer
+ref_id: 7980
+entity_slug: bywater-beachside
+title: Pepperoni Pizza
+category: menu_item
+subtitle: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+search_vector: 'file':14C 'googl':7C 'highlight':4C 'list':8C 'menu':3C 'pepperoni':1A 'pizza':2A 'price':9C 'provid':11C 'upload':6C,13C
+
+--- search_index [row 6 of 23] ---
+ref_type: offer
+ref_id: 8156
+entity_slug: bywater-beachside
+title: Tuna Dip
+category: menu_item
+subtitle: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+search_vector: 'dip':2A 'file':14C 'googl':7C 'highlight':4C 'list':8C 'menu':3C 'price':9C 'provid':11C 'tuna':1A 'upload':6C,13C
+
+--- search_index [row 7 of 23] ---
+ref_type: offer
+ref_id: 8163
+entity_slug: bywater-beachside
+title: Cuban Sandwich
+category: menu_item
+subtitle: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+search_vector: 'cuban':1A 'file':14C 'googl':7C 'highlight':4C 'list':8C 'menu':3C 'price':9C 'provid':11C 'sandwich':2A 'upload':6C,13C
+
+--- search_index [row 8 of 23] ---
+ref_type: offer
+ref_id: 8170
+entity_slug: bywater-beachside
+title: Chicken Wings
+category: menu_item
+subtitle: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+search_vector: 'chicken':1A 'file':14C 'googl':7C 'highlight':4C 'list':8C 'menu':3C 'price':9C 'provid':11C 'upload':6C,13C 'wing':2A
+
+--- search_index [row 9 of 23] ---
+ref_type: offer
+ref_id: 8172
+entity_slug: bywater-beachside
+title: Beer
+category: menu_item
+subtitle: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+search_vector: 'beer':1A 'file':13C 'googl':6C 'highlight':3C 'list':7C 'menu':2C 'price':8C 'provid':10C 'upload':5C,12C
+
+--- search_index [row 10 of 23] ---
+ref_type: offer
+ref_id: 8189
+entity_slug: bywater-beachside
+title: Cajun Grilled Ahi Tuna Sandwich
+category: menu_item
+subtitle: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+search_vector: 'ahi':3A 'cajun':1A 'file':17C 'googl':10C 'grill':2A 'highlight':7C 'list':11C 'menu':6C 'price':12C 'provid':14C 'sandwich':5A 'tuna':4A 'upload':9C,16C
+
+--- search_index [row 11 of 23] ---
+ref_type: offer
+ref_id: 8197
+entity_slug: bywater-beachside
+title: Road Kill Quesadilla
+category: menu_item
+subtitle: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+search_vector: 'file':15C 'googl':8C 'highlight':5C 'kill':2A 'list':9C 'menu':4C 'price':10C 'provid':12C 'quesadilla':3A 'road':1A 'upload':7C,14C
+
+--- search_index [row 12 of 23] ---
+ref_type: menu_item
+ref_id: 36454bf5-33f3-4cc2-b4cf-45d5069d26af
+entity_slug: bywater-beachside
+title: (6.9K)
+category: menu
+search_vector: '6.9':1A 'k':2A
+
+--- search_index [row 13 of 23] ---
+ref_type: menu_item
+ref_id: 524b0d7a-9197-43fa-b45b-c2215a6eb0b8
+entity_slug: bywater-beachside
+title: Redneck Cuban
+category: menu
+subtitle: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+search_vector: 'cuban':2A 'file':14C 'googl':7C 'highlight':4C 'list':8C 'menu':3C 'price':9C 'provid':11C 'redneck':1A 'upload':6C,13C
+
+--- search_index [row 14 of 23] ---
+ref_type: menu_item
+ref_id: 27ad1f77-5040-495f-a05e-c564b0eef9bc
+entity_slug: bywater-beachside
+title: Pina Colada
+category: menu
+subtitle: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+search_vector: 'colada':2A 'file':14C 'googl':7C 'highlight':4C 'list':8C 'menu':3C 'pina':1A 'price':9C 'provid':11C 'upload':6C,13C
+
+--- search_index [row 15 of 23] ---
+ref_type: menu_item
+ref_id: 695644d2-6cb0-4b76-a9d4-f21d2c15cb43
+entity_slug: bywater-beachside
+title: Nachos w Cheese
+category: menu
+subtitle: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+search_vector: 'chees':3A 'file':15C 'googl':8C 'highlight':5C 'list':9C 'menu':4C 'nacho':1A 'price':10C 'provid':12C 'upload':7C,14C 'w':2A
+
+--- search_index [row 16 of 23] ---
+ref_type: menu_item
+ref_id: 77b4272e-5dab-4c51-b92d-885751064bfd
+entity_slug: bywater-beachside
+title: Pepperoni Pizza
+category: menu
+subtitle: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+search_vector: 'file':14C 'googl':7C 'highlight':4C 'list':8C 'menu':3C 'pepperoni':1A 'pizza':2A 'price':9C 'provid':11C 'upload':6C,13C
+
+--- search_index [row 17 of 23] ---
+ref_type: menu_item
+ref_id: 6e0acb62-594c-4830-8d15-2a6c312f433d
+entity_slug: bywater-beachside
+title: Tuna Dip
+category: menu
+subtitle: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+search_vector: 'dip':2A 'file':14C 'googl':7C 'highlight':4C 'list':8C 'menu':3C 'price':9C 'provid':11C 'tuna':1A 'upload':6C,13C
+
+--- search_index [row 18 of 23] ---
+ref_type: menu_item
+ref_id: 6a10fe0a-323f-484e-923c-837bc15a292f
+entity_slug: bywater-beachside
+title: Cuban Sandwich
+category: menu
+subtitle: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+search_vector: 'cuban':1A 'file':14C 'googl':7C 'highlight':4C 'list':8C 'menu':3C 'price':9C 'provid':11C 'sandwich':2A 'upload':6C,13C
+
+--- search_index [row 19 of 23] ---
+ref_type: menu_item
+ref_id: fb1f779a-2540-444d-b312-d3ce8c870223
+entity_slug: bywater-beachside
+title: Chicken Wings
+category: menu
+subtitle: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+search_vector: 'chicken':1A 'file':14C 'googl':7C 'highlight':4C 'list':8C 'menu':3C 'price':9C 'provid':11C 'upload':6C,13C 'wing':2A
+
+--- search_index [row 20 of 23] ---
+ref_type: menu_item
+ref_id: 6cd7b116-7efb-4fbe-8f9a-590539c31fe9
+entity_slug: bywater-beachside
+title: Beer
+category: menu
+subtitle: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+search_vector: 'beer':1A 'file':13C 'googl':6C 'highlight':3C 'list':7C 'menu':2C 'price':8C 'provid':10C 'upload':5C,12C
+
+--- search_index [row 21 of 23] ---
+ref_type: menu_item
+ref_id: 75fa1336-6225-473a-b120-1ace4189259f
+entity_slug: bywater-beachside
+title: Cajun Grilled Ahi Tuna Sandwich
+category: menu
+subtitle: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+search_vector: 'ahi':3A 'cajun':1A 'file':17C 'googl':10C 'grill':2A 'highlight':7C 'list':11C 'menu':6C 'price':12C 'provid':14C 'sandwich':5A 'tuna':4A 'upload':9C,16C
+
+--- search_index [row 22 of 23] ---
+ref_type: menu_item
+ref_id: 5c3db49f-5ca0-402f-b3a1-b680ce817ad4
+entity_slug: bywater-beachside
+title: Road Kill Quesadilla
+category: menu
+subtitle: Menu highlight from uploaded Google listing. Price not provided in uploaded file.
+search_vector: 'file':15C 'googl':8C 'highlight':5C 'kill':2A 'list':9C 'menu':4C 'price':10C 'provid':12C 'quesadilla':3A 'road':1A 'upload':7C,14C
+
+--- search_index [row 23 of 23] ---
+ref_type: business
+ref_id: bywater-beachside
+entity_slug: bywater-beachside
+title: Bywater Beachside
+category: bar_and_grill
+subtitle: Casual beach bar and grill offering pizza, beer, and wine, plus karaoke on Fridays.
+search_vector: 'bar':3B,8C 'beach':7C 'beachsid':2A 'beer':13C 'bywat':1A 'casual':6C 'friday':19C 'grill':5B,10C 'karaok':17C 'offer':11C 'pizza':12C 'plus':16C 'wine':15C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: bywater-beachside

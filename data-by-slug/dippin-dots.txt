@@ -1,0 +1,4657 @@
+====================================================================================================
+SLUG: dippin-dots
+NAME: Dippin' Dots
+INDUSTRY: cafe_dessert
+SUBTYPE: ice_cream_shop
+PARENT: the-wharf
+TABLES WITH DATA: 35
+TOTAL ROWS: 458
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (11 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (20 rows)
+  catalog_items  (1 rows)
+  catalog_section_days  (7 rows)
+  catalog_sections  (1 rows)
+  entity  (1 rows)
+  entity_address_areas  (3 rows)
+  entity_attributes  (17 rows)
+  entity_completeness_v  (1 rows)
+  entity_google_maps_links  (1 rows)
+  entity_google_reviews  (5 rows)
+  entity_hours  (7 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (16 rows)
+  entity_nearby_landmark_types  (18 rows)
+  entity_nearby_landmarks  (8 rows)
+  entity_offer  (1 rows)
+  entity_offer_section  (1 rows)
+  entity_photos  (24 rows)
+  entity_reviews  (5 rows)
+  entity_sources  (1 rows)
+  entity_tags  (285 rows)
+  entity_theme  (1 rows)
+  industry_cafe_dessert  (1 rows)
+  industry_food_beverage  (1 rows)
+  legacy_photo_migration_queue  (3 rows)
+  menu_items  (1 rows)
+  menu_section_days  (7 rows)
+  menu_section_details  (1 rows)
+  menu_sections  (1 rows)
+  search_index  (3 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: dippin-dots
+name: Dippin' Dots
+planner_category: food_drink
+data_quality_score: 85
+issues: missing_menu|missing_faqs
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: true
+missing_drink_menu: false
+missing_hours: false
+missing_photos: false
+missing_faqs: true
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   11 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 11] ---
+id: 15795
+entity_slug: dippin-dots
+intent_tag: best_for:families_with_kids
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 11] ---
+id: 15796
+entity_slug: dippin-dots
+intent_tag: best_for:takeout
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 11] ---
+id: 15797
+entity_slug: dippin-dots
+intent_tag: experience:outdoor
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 11] ---
+id: 15798
+entity_slug: dippin-dots
+intent_tag: experience:family_kids
+intent_category: experience
+confidence: 0.82
+evidence: Derived from feature flags/tags/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 11] ---
+id: 15799
+entity_slug: dippin-dots
+intent_tag: cuisine:coffee_sweets
+intent_category: cuisine
+confidence: 0.82
+evidence: Derived from cuisine/menu/tags.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 11] ---
+id: 15800
+entity_slug: dippin-dots
+intent_tag: service:takeout
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 7 of 11] ---
+id: 15801
+entity_slug: dippin-dots
+intent_tag: service:dessert
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 8 of 11] ---
+id: 15802
+entity_slug: dippin-dots
+intent_tag: service:accessibility
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 9 of 11] ---
+id: 15803
+entity_slug: dippin-dots
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 10 of 11] ---
+id: 15804
+entity_slug: dippin-dots
+intent_tag: missing:missing_menu
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 11 of 11] ---
+id: 15805
+entity_slug: dippin-dots
+intent_tag: missing:missing_faqs
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: dippin-dots
+name: Dippin' Dots
+is_active: t
+planner_category: food_drink
+entity_type: coffee
+entity_subtype: ice_cream_shop
+city: Orange Beach
+state: AL
+address_line_1: 22989 Perdido Beach Blvd
+latitude: 30.2582448
+longitude: -87.633219
+rating: 4.2
+review_count: 162
+website_url: https://www.dippindots.com/
+hero_image_url: /photos/dippin-dots/photo_01.jpg
+voice_summary: Dippin' Dots in Orange Beach is best for families with kids, takeout. It fits coffee/sweets. Experience tags: outdoor, family_kids.
+planner_summary: Dessert chain serving flavored ice cream, ice & frozen yogurt in the shape of little dots.
+best_for: families with kids|takeout
+not_best_for: nothing specific flagged
+cuisine_tags: coffee/sweets
+experience_tags: outdoor|family_kids
+service_tags: takeout|dessert|accessibility
+search_keywords: ice_cream_shop|dessert_shop|confectionery|food_store|store|point_of_interest|food|establishment|wheelchairAccessibleParking|wheelchairAccessibleEntrance|acceptsNfc|acceptsDebitCards|acceptsCreditCards|wheelchairAccessibleRestroom|coffee/sweets|outdoor|family_kids|takeout|dessert|accessibility
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: true
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: true
+photo_count: 20
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 278
+faq_count: 0
+data_quality_score: 85
+data_gaps: missing_menu|missing_faqs
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   20 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 20] ---
+id: 2526
+entity_slug: dippin-dots
+entity_name: Dippin' Dots
+city: Orange Beach
+url: /photos/dippin-dots/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 20] ---
+id: 2527
+entity_slug: dippin-dots
+entity_name: Dippin' Dots
+city: Orange Beach
+url: /photos/dippin-dots/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 3 of 20] ---
+id: 8348
+entity_slug: dippin-dots
+entity_name: Dippin' Dots
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dippin-dots/photo_08.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 4 of 20] ---
+id: 16174
+entity_slug: dippin-dots
+entity_name: Dippin' Dots
+city: Orange Beach
+url: /photos/dippin-dots/photo_08.jpg
+is_cover: f
+sort_order: 7
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 5 of 20] ---
+id: 16335
+entity_slug: dippin-dots
+entity_name: Dippin' Dots
+city: Orange Beach
+url: /photos/dippin-dots/photo_09.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 6 of 20] ---
+id: 17473
+entity_slug: dippin-dots
+entity_name: Dippin' Dots
+city: Orange Beach
+url: /photos/dippin-dots/photo_10.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 7 of 20] ---
+id: 17860
+entity_slug: dippin-dots
+entity_name: Dippin' Dots
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dippin-dots/photo_06.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 8 of 20] ---
+id: 25272
+entity_slug: dippin-dots
+entity_name: Dippin' Dots
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dippin-dots/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 9 of 20] ---
+id: 25280
+entity_slug: dippin-dots
+entity_name: Dippin' Dots
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dippin-dots/photo_09.jpg
+is_cover: f
+sort_order: 8
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 10 of 20] ---
+id: 25393
+entity_slug: dippin-dots
+entity_name: Dippin' Dots
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dippin-dots/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 11 of 20] ---
+id: 25477
+entity_slug: dippin-dots
+entity_name: Dippin' Dots
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dippin-dots/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 12 of 20] ---
+id: 25518
+entity_slug: dippin-dots
+entity_name: Dippin' Dots
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dippin-dots/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 13 of 20] ---
+id: 25530
+entity_slug: dippin-dots
+entity_name: Dippin' Dots
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dippin-dots/photo_10.jpg
+is_cover: f
+sort_order: 9
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 14 of 20] ---
+id: 25569
+entity_slug: dippin-dots
+entity_name: Dippin' Dots
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dippin-dots/photo_07.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 15 of 20] ---
+id: 25757
+entity_slug: dippin-dots
+entity_name: Dippin' Dots
+city: Orange Beach
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dippin-dots/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 16 of 20] ---
+id: 26116
+entity_slug: dippin-dots
+entity_name: Dippin' Dots
+city: Orange Beach
+url: /photos/dippin-dots/photo_03.jpg
+is_cover: f
+sort_order: 2
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 17 of 20] ---
+id: 26297
+entity_slug: dippin-dots
+entity_name: Dippin' Dots
+city: Orange Beach
+url: /photos/dippin-dots/photo_04.jpg
+is_cover: f
+sort_order: 3
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 18 of 20] ---
+id: 26369
+entity_slug: dippin-dots
+entity_name: Dippin' Dots
+city: Orange Beach
+url: /photos/dippin-dots/photo_05.jpg
+is_cover: f
+sort_order: 4
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 19 of 20] ---
+id: 26406
+entity_slug: dippin-dots
+entity_name: Dippin' Dots
+city: Orange Beach
+url: /photos/dippin-dots/photo_06.jpg
+is_cover: f
+sort_order: 5
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 20 of 20] ---
+id: 26908
+entity_slug: dippin-dots
+entity_name: Dippin' Dots
+city: Orange Beach
+url: /photos/dippin-dots/photo_07.jpg
+is_cover: f
+sort_order: 6
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: catalog_items   -   1 row(s)
+####################################################################################################
+
+--- catalog_items [row 1 of 1] ---
+id: f3b9c4ee-feb3-400b-9832-9af40f27e539
+entity_slug: dippin-dots
+section_id: 27c1f0d1-409d-445c-a616-533b5e06eb82
+item_name: Wharf directory lists Dippin’ Dots. Exact Wharf location prices not found in readable sources.
+description: No item-level menu price confirmed from public readable source for this row. (Price: Not published)
+item_category: food
+is_available: true
+is_featured: false
+is_on_tap: false
+sort_order: 0
+source_table: menu_items
+source_id: 499c1226-bdb3-4b92-aca6-f0587812199a
+created_at: 2026-07-25T05:28:26.839217+00:00
+updated_at: 2026-07-25T05:28:26.839217+00:00
+is_catch_of_day: false
+has_market_price: false
+
+####################################################################################################
+# TABLE: catalog_section_days   -   7 row(s)
+####################################################################################################
+
+--- catalog_section_days [row 1 of 7] ---
+id: be363b10-3fd5-427a-a534-62d2dbd2dc3a
+section_id: 27c1f0d1-409d-445c-a616-533b5e06eb82
+entity_slug: dippin-dots
+day_of_week: Friday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 2 of 7] ---
+id: ae791aa0-cb73-4486-b60f-468a71496953
+section_id: 27c1f0d1-409d-445c-a616-533b5e06eb82
+entity_slug: dippin-dots
+day_of_week: Monday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 3 of 7] ---
+id: a8ad0e13-ea70-4f4d-bba1-739b0fc76cde
+section_id: 27c1f0d1-409d-445c-a616-533b5e06eb82
+entity_slug: dippin-dots
+day_of_week: Saturday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 4 of 7] ---
+id: 38028735-8265-4059-8be5-e9fed04b4836
+section_id: 27c1f0d1-409d-445c-a616-533b5e06eb82
+entity_slug: dippin-dots
+day_of_week: Sunday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 5 of 7] ---
+id: ca50eeb7-aedd-4cea-9e3e-f013d2961f82
+section_id: 27c1f0d1-409d-445c-a616-533b5e06eb82
+entity_slug: dippin-dots
+day_of_week: Thursday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 6 of 7] ---
+id: 3ebabed2-63ab-48ec-848c-e9c3959ce990
+section_id: 27c1f0d1-409d-445c-a616-533b5e06eb82
+entity_slug: dippin-dots
+day_of_week: Tuesday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+--- catalog_section_days [row 7 of 7] ---
+id: 7e2a4b13-8851-4216-a5aa-3e5f9c15adf0
+section_id: 27c1f0d1-409d-445c-a616-533b5e06eb82
+entity_slug: dippin-dots
+day_of_week: Wednesday
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+####################################################################################################
+# TABLE: catalog_sections   -   1 row(s)
+####################################################################################################
+
+--- catalog_sections [row 1 of 1] ---
+id: 27c1f0d1-409d-445c-a616-533b5e06eb82
+entity_slug: dippin-dots
+section_name: Data Status
+section_category: food
+sort_order: 0
+is_active: true
+source_table: menu_sections
+source_id: 947a922c-8189-4ff3-bef9-baad51735cc5
+created_at: 2026-07-25T05:28:14.61959+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 83d7ad85-99b1-4986-a8eb-00a0eda4f351
+slug: dippin-dots
+name: Dippin' Dots
+is_active: true
+featured: false
+entity_type: coffee
+entity_subtype: ice_cream_shop
+description: Dessert chain serving flavored ice cream, ice & frozen yogurt in the shape of little dots.
+phone: (251) 284-2878
+website_url: https://www.dippindots.com/
+menu_pin: 4179
+address_line_1: 22989 Perdido Beach Blvd
+city: Orange Beach
+state: AL
+zip: 36561
+latitude: 30.2582448
+longitude: -87.633219
+rating: 4.2
+review_count: 162
+hero_image_url: https://alwharf-assets.nyc3.digitaloceanspaces.com/images/merchant-full/_304x304_crop_center-center_none_ns/DSC_0106.jpg?v=1777641975
+outdoor_seating: true
+live_music: false
+reservable: false
+dine_in: true
+takeout: true
+delivery: false
+good_for_kids: false
+created_at: 2026-06-03T03:59:27.206082+00:00
+updated_at: 2026-06-03T03:59:27.206082+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+google_place_id: ChIJK2gYAzwEmogRzDJsgwiyk_4
+google_maps_uri: https://maps.google.com/?cid=18344201456844550860&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+business_status: OPERATIONAL
+primary_type: ice_cream_shop
+formatted_address: 22989 Perdido Beach Blvd, Orange Beach, AL 36561, USA
+plus_code: 862J7958+7P
+international_phone: +1 251-284-2878
+editorial_summary: Dessert chain serving flavored ice cream, ice & frozen yogurt in the shape of little dots.
+wheelchair_accessible_entrance: true
+wheelchair_accessible_parking: true
+wheelchair_accessible_restroom: true
+accepts_credit_cards: false
+accepts_debit_cards: true
+accepts_cash_only: false
+google_places_data: {
+  "id": "ChIJK2gYAzwEmogRzDJsgwiyk_4",
+  "types": [
+    "ice_cream_shop",
+    "dessert_shop",
+    "confectionery",
+    "food_store",
+    "store",
+    "food",
+    "point_of_interest",
+    "establishment"
+  ],
+  "dineIn": true,
+  "photos": [
+    {
+      "name": "places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3nToPSC6_QSG1ukzHx0dWWui305hF8kMqmDmeEq1Yt2OcMZCCURJbTcG2g8ZqKKZVujxWcgHfB94FVlluQwvPFWyNwYuiWFoX7suFTi6N78ydQl44IDmV2GhfqefnMhOkr4B-bb5VOHCMyQ4y1rFM713WZeRY5Fa5m6Kq5cCcnS39-TyFmrreWReQCXmXV4j2nXnp4eZIDkBYeWyDWWlH1i6j_MjklWr8NOXJ56tFtvvPSP2o-17g1cDC_2Nf2s4pBQxVhq4nJpo1fdKVgKdNPSQjl4AByApN2gQxMtmEacWBs6cPcE6jFgunVi84OgglzsANeyCkjFKnTsz68jfAgELLdx7PwFMBtgN3grUCWEVZjI9XcgQiKEQPTzxsK7g2_wk_ElqifhonruszO9Q6ObPSSOVuAkdY4prflPSnPhhQ",
+      "widthPx": 3264,
+      "heightPx": 1836,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC63KOaOQ!2e10!4m2!3m1!1s0x889a043c0318682b:0xfe93b208836c32cc",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIC63KOaOQ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104621438870829809819",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWGvQ-C_lZMem7yspM_cJcUxxk997XVPUs3nJFcaZ_krP6T50ud=s100-p-k-no-mo",
+          "displayName": "Dippin' Dots"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3m8KTX_LKCwDs2KQ1zR5dn3yUhWj_Hd-PJ3m5Cncqhv1DNIZs3IOe_b80dpCUD904PDPJim9448QeSGdKh8uoRofI52xXbsUeZYGZmMRaeRAwm8REkMiSsyuhGIFRnBaJFKy4oxNOR5nFKjHbr1j__y9HkFAwb4Tt2zFpGlyA2DftnaS7tpe2YBitb7anwhGPKiG5uivK8bp7xDHqvBbwr1sWDaAoi_8tEQZt-4gMrEAnG7SsRQOPXY7ptfUHjr2ICt7KQRBa57L2vdF9ZToaLJ7OztaIT2nhqq-M62uQhX92dXN76VsSbhXTca1V3azudMSexABG3FLNBoSggyGWudQKMlEl4ymftVA3uKToEYy0tNDVDXbfwSoIQye7vpINBL3e_1t4teBBLTHMH2pqfZvnk-9EykXcME10NHIdccaw",
+      "widthPx": 4080,
+      "heightPx": 3072,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICJ--yJQQ!2e10!4m2!3m1!1s0x889a043c0318682b:0xfe93b208836c32cc",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgICJ--yJQQ&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/104362172365513090004",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUfQUgb8_Yaa-619gnQ3F0My-z9govJ-o5zoL8WajiIagAAnDlgQg=s100-p-k-no-mo",
+          "displayName": "Jim Hathaway"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3m_CP3p_GsLunGjk4t_mpQ773d2GhlenO2U3ZmvvX5nzxvVHrA-e0TaAjYuHPupYDuLljM26FbZBN8Otlq3gduAjUrN2qmOuy-aFOs705I5Eol8bRXVib2bbCehMBulsNRxhT89C5rmqsOiBgVc0CvXePd60c43p6I1BTNynDr7jB5XYpZnjSgCEHRMIIicUtNbqD5ysGQAbz8ocWGwogwljxcAG_McKUFPEv7yuQseDeAWfdVY-73jsvd_AuDJ27gvnXfN5zmzzQI-aqs1a7U8Y6Kc-5DBJJ9CtXvNqYDzqEMA9coahqRc2iUuUls_A7sImlF-ci4S5xfsbHgwjaiacO_Z1JWMRbpmaWPzMzrgZ_1VTOaynPhgSBUtIhIofRiV9CzePy05Va4pAEr-ZAFTpacisgSXJ93Qkv8mnwq9goZn",
+      "widthPx": 1816,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDxpLbD_AE!2e10!4m2!3m1!1s0x889a043c0318682b:0xfe93b208836c32cc",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDxpLbD_AE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/110596636456588182239",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVx9C_H_tINJ2Jq-cLpFHNNVpl0LU3jcnteSnJm36_ncdJUVhFT=s100-p-k-no-mo",
+          "displayName": "John Oliver"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3loBbsASiDGifsytO6SDVJHpdWPOJJA1_IVUmD84A70OxLocICkiJmaUeUK-PDNsmJwAwnmsu1gTkTkXIJ1bITZTUWTvhsom7XGwilS1ZOJjqESjTOW_EcvkDP6Y8JVMEqgNV88J0yEZmyyLWM9MiZ8JUCUPLar-DfjzQQSuO3FwHHxkBk4NtQ23ZrGl9rAzUBKcHoj-Z--nOHV_nMzo5G3CxWD8LKwXCdSjm3zgEm-3mXgvWptTFSkm0G9nruTRL55fyplnNhW7xjUGvgnwARnXJoBftHtB6bkKLJCjEa_fSXjFUXRLKuyqLzN8KkYdqA8zK5RnDxM-e7pxFBZTbq7VpRdGDtMglAT7SckH3Ny-RKIcETr5CGuhjQvCy6CijRQW7e2zBUqawb3Ouyu5ZsP9LvQGhM69a1DYToc3J7fjB7i",
+      "widthPx": 4160,
+      "heightPx": 3120,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC4vrfB4gE!2e10!4m2!3m1!1s0x889a043c0318682b:0xfe93b208836c32cc",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIC4vrfB4gE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/100546842847937432565",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUYT6SmjqW4kAfXsA12WWWowyLBLXoyoaxCbV_dsqYB7eBas6xi=s100-p-k-no-mo",
+          "displayName": "ron sharp"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3k3UNRyTTlkA7-MhDhNTCEYzLCqmD-u2yEQKYaCV9kuzmVjBEo2FqEirrafvwG-eWU6cBSMbqUdEzPcmLPb5JmPDQ6Ycz2ekNEfOOAbGsR9tdXFv2F0hAjwZs2fiS0suugYPuoOjOuKmJRD96SzgXM3fhf7b_H7jS4D2e35BYIWhPJsoam4pAzjq3lMTSPY62GrOypA5tEXne4RTE11QCfmSYEy4BCpjI0gaf7WafWhH0_IJlqd5QifqkKThzPCihvkoPCTjI02z9Hc9IKkbebPyg46DgcTWYYE11uQS6no8QFiT3K44pOZ0WTv1B8hCzUBALC9FBSgnC0xnDM05ntTjyBhEecNruWFmrzZVML1D7arxgwdinXwSIPV9bFNOFh66huTo0wARUHmwtHfuCANL4JV0yl062SJSwj9tCFY2A",
+      "widthPx": 1440,
+      "heightPx": 1920,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC4z7uobw!2e10!4m2!3m1!1s0x889a043c0318682b:0xfe93b208836c32cc",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIC4z7uobw&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/103357011483672562605",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLidCpKSezKZDkWfKYDKk31eR7Rn6GYTlEk2nQ6IzCsMCG-eeY=s100-p-k-no-mo",
+          "displayName": "Shaggy Miller"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3kdQCnxSj1ZIoI9Dtxsg8XaelMOCXb4_WLKLj2p9_l1zbyZ4A5AvOMDHLlp9XVXxDv2ERl8WNr9b7Xsgy663Ijr8-4pmnvFb4YE767YlMGUCE6eH0MxTug5iEiHgY_wdJB87HMW0urM_4a0ygOKfpni4rtz2hdKqUJr2c1VKCiEPPLKm6f_lexid_0Ab7GrqPDdwqiqFrhshyCptVLUtuGYjWzSJvcY2jBRSmJcctT3r1zox7eZQDyN_RdZ1cSM4-G6i8YdDYX7NZv5QO9CHjnGMc2wHy0icf2roEBIF1-c4kWuPG7ukjuoLqemjyA76d5MBFfSTT8nj6WjxgIKEpfmJDUbNzUKwFJW_5lodytLnH9MoNGcuMrqBRRoOe1_-k-KwRC78Ko7b_80tHwTfSqlepIQn-49W-ujY9oq4Kwa9g",
+      "widthPx": 3024,
+      "heightPx": 4032,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDazsmpZA!2e10!4m2!3m1!1s0x889a043c0318682b:0xfe93b208836c32cc",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDazsmpZA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/108893343682089378778",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXWbtk440EWDplz1irzLJSa47WMIQSafE7iuCvTM59oqlx6Uuo=s100-p-k-no-mo",
+          "displayName": "Alpha Sniper555"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3nOTCvap_1NZnS2opFYirqb6OW5OeqF4xPsSftIBTnCBenTsr-p91512Rluzqew8aeok_q1K6ICNuWcGhle8C7nlOn-red67Uy-R4zjkoV9MIbII-rC21-3ar3V-cJ7SkqqMYqBTqhGm1gyIGSQjKOhiKONTSsNB6Dl9pyEAOfoMiPe3qpMil6bz70rpeWc9i_k747d-tAYKEozLKOJub7WSt__jwkH5CFu3137fYc-_UU-at9ReKyDe1cH7Yz592Dqes4MdcmXYq8HAiF4WRY47P1oebEIHcKvMft1WE3TJ3As9tSUXGoDCmmmC4tmznefwNCcNhmDDOz0eXln_F0Z2PCgoftoD1JngBTW9fyLfckXJLRsn1V1zGg50itJHjEbniMRC81IWnqO_EIBBSF-zZv9GQ5JyUm_jpWqhKJMAaWr",
+      "widthPx": 3361,
+      "heightPx": 2523,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDEpfjW6QE!2e10!4m2!3m1!1s0x889a043c0318682b:0xfe93b208836c32cc",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIDEpfjW6QE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/103506803377280396744",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUEAjXdeS_8T2V9klnLScm_3-e6yMLNw1jbB0UCirwuBX33IJgk=s100-p-k-no-mo",
+          "displayName": "Alexander M. Ulm"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3kiYJagWe4XE1OYGMMO0-0SMdE-GbEWv3DMIbx-eMUX9tieHL7Hl3cU7b6JwXjLg-u1aSMgG_vALF7CVsFb1EVj-vkpaLZBKT9LWll4i-RzMFmLJw2r8sbcxriyPADFT4JmdHnL7JFIntKYHrzcJTrMpkV6T36ol7QYKEGoRTHoD9byxj-UkNvjiE4aJub59pkbBKti35NPIVevySoYlJ2N2wEP-M25R91FPxBr7IAh7fh1BQrecSSxg_-ZyzdNZRX1uMLJgYkBJAxurBe3mdSKMvGoYQruatZhH1r3g6WLgnpJFySGz1WHlqrtEbcSjMi5F28bwhOTc8HBydeEWs7T_v7e8tkNN-yXV26Lqlq7FOxwUMkUvrWeSlGLYwf70LjBOqPN6OkiCZeWyTcsS7c_GQdaTbUZf6H7LsH3O5CVJhmydgPxsDcdg7ItOhqD",
+      "widthPx": 1920,
+      "heightPx": 1440,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhADyddmqRKB_meupEcACzbp!2e10!4m2!3m1!1s0x889a043c0318682b:0xfe93b208836c32cc",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIABIhADyddmqRKB_meupEcACzbp&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/115462438933423821659",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjV6_8yJ_l5xCXmqGkEpPQGSbAEVGtHg8jxAMxVDyG81FjreHZxwfw=s100-p-k-no-mo",
+          "displayName": "Rob Hole"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3nsHPru-TJqFBlwo8ZkzfKV5JD5qqoDutmBG64CzWrUL-O6kR3zh4N1aAkUKsIyNCxYnAO_BiICTz1iUfpOHyxCSSuM1I_qL1t2mOC6T3mf_l86z_Bffyg1uvxwf5Ti9H5fSXjwi_aycmvrTQ2wEAmreSHpsifzAzrlsBT6HJGdm4ULXg8cHoJcxvOJsGrbAzPHFpvK15M8d05i7o8urAAjHw2vwFdjiAQV_wCsYJG_URcW1NVUwlW_pBjwettMWqWmfRJZEiTEXn2Z78A0L6v-752Pln9vQp2Ti13Rp3UiaBiwfrTLsw08qGB0P92c_cSGknYx8prjESOS1PYCb7Ar4ihIS5jKmFwfDyYh97ugc7FbDpGootdqtIR94FqztN8Qm3_MiUUXZ8kPY6PdU1P_GN-bE1y9MWgrUtBv9tLG0YY",
+      "widthPx": 1440,
+      "heightPx": 1920,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC4z7uo1wE!2e10!4m2!3m1!1s0x889a043c0318682b:0xfe93b208836c32cc",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIC4z7uo1wE&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/103357011483672562605",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLidCpKSezKZDkWfKYDKk31eR7Rn6GYTlEk2nQ6IzCsMCG-eeY=s100-p-k-no-mo",
+          "displayName": "Shaggy Miller"
+        }
+      ]
+    },
+    {
+      "name": "places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3kI6Ie1Ofq7EYyRKa5o7r3DYFOCNJdjpHQVF7D7agIO2jcB-zURXK0s9erMOHqQsEkp_IDHBh-hkCPrDnEkRWC9TXvMWxC9KXvObkFjJiKtJZtU3lW8afAGjRUaBzfKIweBl_Obr1v4oWI1dPT2p0YGCnwKG6PVMfzMkXdNn2022rBRQ6LT73zlENlM4e0oUIRSmTUXQUcDHVgwi7MDkzkvndiPQuMwLv_y1JVA3PjIE1WJzJAqq_nrk0unBJhjYuUxYLCQWKItWsZpfgXJpiri7eQrCtFLlQfuw7Fztc_wfeP-NKsneauAyMHDRGxDHd-9zg_PpvKHAyg8h5iVf3RRanix0yO0sp3fsMxZ1IPSlJa0euvhBjc22D7-yLuWRZU0jlbaFddiJPoyuXZWOlB1aG0QHdvL4LaRAZunj78",
+      "widthPx": 3264,
+      "heightPx": 1836,
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC4z7voBA!2e10!4m2!3m1!1s0x889a043c0318682b:0xfe93b208836c32cc",
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sCIHM0ogKEICAgIC4z7voBA&hl=en-US",
+      "authorAttributions": [
+        {
+          "uri": "https://maps.google.com/maps/contrib/103357011483672562605",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocLidCpKSezKZDkWfKYDKk31eR7Rn6GYTlEk2nQ6IzCsMCG-eeY=s100-p-k-no-mo",
+          "displayName": "Shaggy Miller"
+        }
+      ]
+    }
+  ],
+  "rating": 4.2,
+  "reviews": [
+    {
+      "name": "places/ChIJK2gYAzwEmogRzDJsgwiyk_4/reviews/ChZDSUhNMG9nS0VJQ0FnSUNBanZuT1FREAE",
+      "text": {
+        "text": "Our family of 6 had dinner and dessert here.  We had a great time.  The food was excellent.  Hand cut fries, the burgers were great.  The Rodeo burger with the fried cheese was superb.  The kids were pleased with the hot dog and grilled cheese.  The ice cream was a great value as well.  The staff was outstanding.  We were a bit concerned taking our large family in, but the staff were very attentive, firendly, and handled us great.  We will be back.",
+        "languageCode": "en"
+      },
+      "rating": 4,
+      "publishTime": "2015-06-19T15:30:54.332Z",
+      "originalText": {
+        "text": "Our family of 6 had dinner and dessert here.  We had a great time.  The food was excellent.  Hand cut fries, the burgers were great.  The Rodeo burger with the fried cheese was superb.  The kids were pleased with the hot dog and grilled cheese.  The ice cream was a great value as well.  The staff was outstanding.  We were a bit concerned taking our large family in, but the staff were very attentive, firendly, and handled us great.  We will be back.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNBanZuT1FREAE!2m1!1s0x889a043c0318682b:0xfe93b208836c32cc",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNBanZuT1FREAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/108543642493200169555/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUyh4UivZ8IgPyw2nNZZ_o5IJ31ZEDn2nHk_17T1jeYrwVTOQV0aA=s128-c0x00000000-cc-rp-mo-ba2",
+        "displayName": "Preston Albritton"
+      },
+      "relativePublishTimeDescription": "10 years ago"
+    },
+    {
+      "name": "places/ChIJK2gYAzwEmogRzDJsgwiyk_4/reviews/ChZDSUhNMG9nS0VJQ0FnSUNwLWFubEt3EAE",
+      "text": {
+        "text": "I can't really rate this place because I actually didn't get anything from them. I'm doing this because today (Sunday, August 6th at 5:32pm) I went there to get dip and dots. I was VERY disappointed when I realized they were closed. Online AND the sign on their door said their hours were 3pm-9pm on Sundays. So they should have been open, we drove a good distance out of our way just to get dip and dots but then NOT. So there's that.",
+        "languageCode": "en"
+      },
+      "rating": 4,
+      "publishTime": "2023-08-06T23:44:35.882842Z",
+      "originalText": {
+        "text": "I can't really rate this place because I actually didn't get anything from them. I'm doing this because today (Sunday, August 6th at 5:32pm) I went there to get dip and dots. I was VERY disappointed when I realized they were closed. Online AND the sign on their door said their hours were 3pm-9pm on Sundays. So they should have been open, we drove a good distance out of our way just to get dip and dots but then NOT. So there's that.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNwLWFubEt3EAE!2m1!1s0x889a043c0318682b:0xfe93b208836c32cc",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNwLWFubEt3EAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/109223394962181721214/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocIj8cJgcZIJPhf2uKS0kkTbgc0TksXw3sUst6Ll1HOKOfjdJQ=s128-c0x00000000-cc-rp-mo-ba4",
+        "displayName": "Jane Smith"
+      },
+      "relativePublishTimeDescription": "2 years ago"
+    },
+    {
+      "name": "places/ChIJK2gYAzwEmogRzDJsgwiyk_4/reviews/ChdDSUhNMG9nS0VJQ0FnSUN3bkkyWWhnRRAB",
+      "text": {
+        "text": "The dipping dots were amazing. They also serve traditional ice cream and have grill options too. The employee was very friendly and helpful. A great place. My wife and I will definitely go back.",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2017-10-28T17:30:01.703Z",
+      "originalText": {
+        "text": "The dipping dots were amazing. They also serve traditional ice cream and have grill options too. The employee was very friendly and helpful. A great place. My wife and I will definitely go back.",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUN3bkkyWWhnRRAB!2m1!1s0x889a043c0318682b:0xfe93b208836c32cc",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUN3bkkyWWhnRRAB&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/101631901267674836907/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJYhKV84uKtlZROMjUO_2EiHrNGNDeZRq9RVXB7j4-4MZ_NsA=s128-c0x00000000-cc-rp-mo-ba5",
+        "displayName": "Greg Ordal"
+      },
+      "relativePublishTimeDescription": "8 years ago"
+    },
+    {
+      "name": "places/ChIJK2gYAzwEmogRzDJsgwiyk_4/reviews/ChZDSUhNMG9nS0VJQ0FnSURRalByOEhBEAE",
+      "text": {
+        "text": "I, my fiancé and 3 children came in March 9th 2018 right at closing. The young ladies there welcomed us in and were very polite. Awesome customer service. I see the owner is responding to comments. We're from Auburn and just got out of a van from a 4 hour ride. She made some irritated kids \"and adults\" much happier!",
+        "languageCode": "en"
+      },
+      "rating": 5,
+      "publishTime": "2018-03-10T04:13:54.977Z",
+      "originalText": {
+        "text": "I, my fiancé and 3 children came in March 9th 2018 right at closing. The young ladies there welcomed us in and were very polite. Awesome customer service. I see the owner is responding to comments. We're from Auburn and just got out of a van from a 4 hour ride. She made some irritated kids \"and adults\" much happier!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURRalByOEhBEAE!2m1!1s0x889a043c0318682b:0xfe93b208836c32cc",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSURRalByOEhBEAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/118313256345670025063/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocJvcLQ82jFB25aNSIqf6lgYnFCeEPkkztk941_MCvQIg40Dlg=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Mike Smith"
+      },
+      "relativePublishTimeDescription": "8 years ago"
+    },
+    {
+      "name": "places/ChIJK2gYAzwEmogRzDJsgwiyk_4/reviews/ChZDSUhNMG9nS0VJQ0FnSUNRMk9PTWV3EAE",
+      "text": {
+        "text": "This place was absolutely horrible. The employees were the most unprofessional I’ve ever seen in a work place. Making degrading jabs at each other, loud, foolish and immature, not caring at all about the customers and serving them. It was so bad we left before buying ice cream. We got some for our kids and then as the employees kept at each other, my husband and I couldn’t handle it and we left not buying anything for ourselves. They were dirty in the way they handled utensils and food and we were so grossed out. I would never recommend this place!",
+        "languageCode": "en"
+      },
+      "rating": 1,
+      "publishTime": "2018-08-15T12:30:17.905Z",
+      "originalText": {
+        "text": "This place was absolutely horrible. The employees were the most unprofessional I’ve ever seen in a work place. Making degrading jabs at each other, loud, foolish and immature, not caring at all about the customers and serving them. It was so bad we left before buying ice cream. We got some for our kids and then as the employees kept at each other, my husband and I couldn’t handle it and we left not buying anything for ourselves. They were dirty in the way they handled utensils and food and we were so grossed out. I would never recommend this place!",
+        "languageCode": "en"
+      },
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNRMk9PTWV3EAE!2m1!1s0x889a043c0318682b:0xfe93b208836c32cc",
+      "flagContentUri": "https://www.google.com/local/content/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUNRMk9PTWV3EAE&d=17924085&t=1",
+      "authorAttribution": {
+        "uri": "https://www.google.com/maps/contrib/108257843922263153557/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWEod-m0uAfser-Q9AtNJdPd_gQ5op6xkm7AR0zDXD6XjoRd1o-=s128-c0x00000000-cc-rp-mo",
+        "displayName": "Anna Hochstetler"
+      },
+      "relativePublishTimeDescription": "7 years ago"
+    }
+  ],
+  "takeout": true,
+  "delivery": false,
+  "location": {
+    "latitude": 30.2582448,
+    "longitude": -87.633219
+  },
+  "plusCode": {
+    "globalCode": "862J7958+7P",
+    "compoundCode": "7958+7P Orange Beach, AL, USA"
+  },
+  "restroom": true,
+  "viewport": {
+    "low": {
+      "latitude": 30.256705669708495,
+      "longitude": -87.63443043029152
+    },
+    "high": {
+      "latitude": 30.259403630291494,
+      "longitude": -87.6317324697085
+    }
+  },
+  "liveMusic": false,
+  "priceLevel": "PRICE_LEVEL_MODERATE",
+  "reservable": false,
+  "websiteUri": "https://www.dippindots.com/",
+  "displayName": {
+    "text": "Dippin' Dots",
+    "languageCode": "en"
+  },
+  "primaryType": "ice_cream_shop",
+  "servesCoffee": false,
+  "googleMapsUri": "https://maps.google.com/?cid=18344201456844550860&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "servesDessert": true,
+  "businessStatus": "OPERATIONAL",
+  "curbsidePickup": false,
+  "outdoorSeating": true,
+  "paymentOptions": {
+    "acceptsCashOnly": false,
+    "acceptsDebitCards": true,
+    "acceptsCreditCards": false
+  },
+  "goodForChildren": true,
+  "googleMapsLinks": {
+    "placeUri": "https://maps.google.com/?cid=18344201456844550860&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a043c0318682b:0xfe93b208836c32cc!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a043c0318682b:0xfe93b208836c32cc!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a043c0318682b:0xfe93b208836c32cc!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a043c0318682b:0xfe93b208836c32cc!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+  },
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+  "userRatingCount": 162,
+  "adrFormatAddress": "<span class=\"street-address\">22989 Perdido Beach Blvd</span>, <span class=\"locality\">Orange Beach</span>, <span class=\"region\">AL</span> <span class=\"postal-code\">36561</span>, <span class=\"country-name\">USA</span>",
+  "editorialSummary": {
+    "text": "Dessert chain serving flavored ice cream, ice & frozen yogurt in the shape of little dots.",
+    "languageCode": "en"
+  },
+  "formattedAddress": "22989 Perdido Beach Blvd, Orange Beach, AL 36561, USA",
+  "utcOffsetMinutes": -300,
+  "addressComponents": [
+    {
+      "types": [
+        "street_number"
+      ],
+      "longText": "22989",
+      "shortText": "22989",
+      "languageCode": "en-US"
+    },
+    {
+      "types": [
+        "route"
+      ],
+      "longText": "Perdido Beach Boulevard",
+      "shortText": "Perdido Beach Blvd",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "locality",
+        "political"
+      ],
+      "longText": "Orange Beach",
+      "shortText": "Orange Beach",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "longText": "Baldwin County",
+      "shortText": "Baldwin County",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "longText": "Alabama",
+      "shortText": "AL",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "country",
+        "political"
+      ],
+      "longText": "United States",
+      "shortText": "US",
+      "languageCode": "en"
+    },
+    {
+      "types": [
+        "postal_code"
+      ],
+      "longText": "36561",
+      "shortText": "36561",
+      "languageCode": "en-US"
+    }
+  ],
+  "addressDescriptor": {
+    "areas": [
+      {
+        "name": "places/ChIJe0fgQjwEmogRyH5CSQbOvEw",
+        "placeId": "ChIJe0fgQjwEmogRyH5CSQbOvEw",
+        "containment": "NEAR",
+        "displayName": {
+          "text": "Sugar Beach Condominium Association",
+          "languageCode": "en"
+        }
+      },
+      {
+        "name": "places/ChIJ_Z7bgj4EmogR25dA7Uyt-RA",
+        "placeId": "ChIJ_Z7bgj4EmogR25dA7Uyt-RA",
+        "containment": "NEAR",
+        "displayName": {
+          "text": "Palm Beach Condominium Unit D51",
+          "languageCode": "en"
+        }
+      },
+      {
+        "name": "places/ChIJh3bDOzwEmogRfEbtT7OYJkU",
+        "placeId": "ChIJh3bDOzwEmogRfEbtT7OYJkU",
+        "containment": "NEAR",
+        "displayName": {
+          "text": "Phoenix Gulf Tower II",
+          "languageCode": "en"
+        }
+      }
+    ],
+    "landmarks": [
+      {
+        "name": "places/ChIJMyaJoD4EmogReEZGI9SM-Gc",
+        "types": [
+          "establishment",
+          "lodging",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJMyaJoD4EmogReEZGI9SM-Gc",
+        "displayName": {
+          "text": "Palm Beach Resort",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 146.97997,
+        "straightLineDistanceMeters": 126.80937
+      },
+      {
+        "name": "places/ChIJMXgSEjwEmogRLOE9Y6etur8",
+        "types": [
+          "establishment",
+          "food",
+          "gym",
+          "health",
+          "lodging",
+          "point_of_interest",
+          "restaurant"
+        ],
+        "placeId": "ChIJMXgSEjwEmogRLOE9Y6etur8",
+        "displayName": {
+          "text": "Hotel Indigo Orange Beach - Gulf Shores by IHG",
+          "languageCode": "en"
+        },
+        "travelDistanceMeters": 217.35913,
+        "straightLineDistanceMeters": 204.8904
+      },
+      {
+        "name": "places/ChIJw4h8oz4EmogRZK0wfeY_5Vo",
+        "types": [
+          "establishment",
+          "point_of_interest",
+          "tourist_attraction"
+        ],
+        "placeId": "ChIJw4h8oz4EmogRZK0wfeY_5Vo",
+        "displayName": {
+          "text": "Hugh S. Branyon Backcountry Trail - Rosemary Dunes Trailhead",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "AROUND_THE_CORNER",
+        "travelDistanceMeters": 189.21904,
+        "straightLineDistanceMeters": 107.73423
+      },
+      {
+        "name": "places/ChIJS_9BcjwEmogRcQXFolmXjQw",
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJS_9BcjwEmogRcQXFolmXjQw",
+        "displayName": {
+          "text": "Sugar Beach Condominium Association",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "DOWN_THE_ROAD",
+        "travelDistanceMeters": 125.22931,
+        "straightLineDistanceMeters": 109.45617
+      },
+      {
+        "name": "places/ChIJGXJHhjwEmogRx83gFnYvJkM",
+        "types": [
+          "establishment",
+          "lodging",
+          "point_of_interest"
+        ],
+        "placeId": "ChIJGXJHhjwEmogRx83gFnYvJkM",
+        "displayName": {
+          "text": "Hilton Garden Inn Orange Beach Beachfront",
+          "languageCode": "en"
+        },
+        "spatialRelationship": "AROUND_THE_CORNER",
+        "travelDistanceMeters": 306.91757,
+        "straightLineDistanceMeters": 219.6901
+      }
+    ]
+  },
+  "generativeSummary": {
+    "overview": {
+      "text": "Casual, trendy outpost offering multiple flavors of beaded frozen desserts.",
+      "languageCode": "en-US"
+    },
+    "disclosureText": {
+      "text": "Summarized with Gemini",
+      "languageCode": "en-US"
+    },
+    "overviewFlagContentUri": "https://www.google.com/local/content/rap/report?postId=CiUweDg4OWEwNDNjMDMxODY4MmI6MHhmZTkzYjIwODgzNmMzMmNjMAI&d=17924085&t=12"
+  },
+  "currentOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 15,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "date": {
+            "day": 14,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 15,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "date": {
+            "day": 15,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 15,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "date": {
+            "day": 16,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 15,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "date": {
+            "day": 10,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 15,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "date": {
+            "day": 11,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 15,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "date": {
+            "day": 12,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 15,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "date": {
+            "day": 13,
+            "year": 2026,
+            "month": 6
+          },
+          "hour": 21,
+          "minute": 0
+        }
+      }
+    ],
+    "nextCloseTime": "2026-06-11T02:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 3:00 – 9:00 PM",
+      "Tuesday: 3:00 – 9:00 PM",
+      "Wednesday: 3:00 – 9:00 PM",
+      "Thursday: 3:00 – 9:00 PM",
+      "Friday: 3:00 – 9:00 PM",
+      "Saturday: 3:00 – 9:00 PM",
+      "Sunday: 3:00 – 9:00 PM"
+    ]
+  },
+  "googleMapsTypeLabel": {
+    "text": "Ice Cream Shop",
+    "languageCode": "en-US"
+  },
+  "iconBackgroundColor": "#FF9E67",
+  "nationalPhoneNumber": "(251) 284-2878",
+  "regularOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 0,
+          "hour": 15,
+          "minute": 0
+        },
+        "close": {
+          "day": 0,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 1,
+          "hour": 15,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 15,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 15,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 15,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 15,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 21,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 6,
+          "hour": 15,
+          "minute": 0
+        },
+        "close": {
+          "day": 6,
+          "hour": 21,
+          "minute": 0
+        }
+      }
+    ],
+    "nextCloseTime": "2026-06-11T02:00:00Z",
+    "weekdayDescriptions": [
+      "Monday: 3:00 – 9:00 PM",
+      "Tuesday: 3:00 – 9:00 PM",
+      "Wednesday: 3:00 – 9:00 PM",
+      "Thursday: 3:00 – 9:00 PM",
+      "Friday: 3:00 – 9:00 PM",
+      "Saturday: 3:00 – 9:00 PM",
+      "Sunday: 3:00 – 9:00 PM"
+    ]
+  },
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true,
+    "wheelchairAccessibleRestroom": true
+  },
+  "servesVegetarianFood": false,
+  "shortFormattedAddress": "22989 Perdido Beach Blvd, Orange Beach",
+  "primaryTypeDisplayName": {
+    "text": "Ice Cream Shop",
+    "languageCode": "en-US"
+  },
+  "pureServiceAreaBusiness": false,
+  "internationalPhoneNumber": "+1 251-284-2878"
+}
+ai_overview: Casual, trendy outpost offering multiple flavors of beaded frozen desserts.
+price_level: 2
+curbside_pickup: false
+restroom: true
+good_for_children: true
+serves_coffee: false
+serves_dessert: true
+serves_vegetarian: false
+utc_offset_minutes: -300
+pure_service_area: false
+icon_background_color: #FF9E67
+short_formatted_address: 22989 Perdido Beach Blvd, Orange Beach
+national_phone: (251) 284-2878
+search_vector: 'beach':32 'bead':10B 'casual':3B 'chain':14B 'cream':18B,29 'dessert':12B,13B 'dippin':1A 'dot':2A,27B 'flavor':8B,16B 'frozen':11B,20B 'ice':17B,19B,28 'littl':26B 'multipl':7B 'offer':6B 'orang':31 'outpost':5B 'serv':15B 'shape':24B 'shop':30 'trendi':4B 'yogurt':21B
+primary_type_display: Ice Cream Shop
+google_maps_links: {
+  "placeUri": "https://maps.google.com/?cid=18344201456844550860&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a043c0318682b:0xfe93b208836c32cc!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a043c0318682b:0xfe93b208836c32cc!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a043c0318682b:0xfe93b208836c32cc!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA",
+  "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a043c0318682b:0xfe93b208836c32cc!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA"
+}
+address_descriptor: {
+  "areas": [
+    {
+      "name": "places/ChIJe0fgQjwEmogRyH5CSQbOvEw",
+      "placeId": "ChIJe0fgQjwEmogRyH5CSQbOvEw",
+      "containment": "NEAR",
+      "displayName": {
+        "text": "Sugar Beach Condominium Association",
+        "languageCode": "en"
+      }
+    },
+    {
+      "name": "places/ChIJ_Z7bgj4EmogR25dA7Uyt-RA",
+      "placeId": "ChIJ_Z7bgj4EmogR25dA7Uyt-RA",
+      "containment": "NEAR",
+      "displayName": {
+        "text": "Palm Beach Condominium Unit D51",
+        "languageCode": "en"
+      }
+    },
+    {
+      "name": "places/ChIJh3bDOzwEmogRfEbtT7OYJkU",
+      "placeId": "ChIJh3bDOzwEmogRfEbtT7OYJkU",
+      "containment": "NEAR",
+      "displayName": {
+        "text": "Phoenix Gulf Tower II",
+        "languageCode": "en"
+      }
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "places/ChIJMyaJoD4EmogReEZGI9SM-Gc",
+      "types": [
+        "establishment",
+        "lodging",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJMyaJoD4EmogReEZGI9SM-Gc",
+      "displayName": {
+        "text": "Palm Beach Resort",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 146.97997,
+      "straightLineDistanceMeters": 126.80937
+    },
+    {
+      "name": "places/ChIJMXgSEjwEmogRLOE9Y6etur8",
+      "types": [
+        "establishment",
+        "food",
+        "gym",
+        "health",
+        "lodging",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "placeId": "ChIJMXgSEjwEmogRLOE9Y6etur8",
+      "displayName": {
+        "text": "Hotel Indigo Orange Beach - Gulf Shores by IHG",
+        "languageCode": "en"
+      },
+      "travelDistanceMeters": 217.35913,
+      "straightLineDistanceMeters": 204.8904
+    },
+    {
+      "name": "places/ChIJw4h8oz4EmogRZK0wfeY_5Vo",
+      "types": [
+        "establishment",
+        "point_of_interest",
+        "tourist_attraction"
+      ],
+      "placeId": "ChIJw4h8oz4EmogRZK0wfeY_5Vo",
+      "displayName": {
+        "text": "Hugh S. Branyon Backcountry Trail - Rosemary Dunes Trailhead",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "AROUND_THE_CORNER",
+      "travelDistanceMeters": 189.21904,
+      "straightLineDistanceMeters": 107.73423
+    },
+    {
+      "name": "places/ChIJS_9BcjwEmogRcQXFolmXjQw",
+      "types": [
+        "establishment",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJS_9BcjwEmogRcQXFolmXjQw",
+      "displayName": {
+        "text": "Sugar Beach Condominium Association",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "DOWN_THE_ROAD",
+      "travelDistanceMeters": 125.22931,
+      "straightLineDistanceMeters": 109.45617
+    },
+    {
+      "name": "places/ChIJGXJHhjwEmogRx83gFnYvJkM",
+      "types": [
+        "establishment",
+        "lodging",
+        "point_of_interest"
+      ],
+      "placeId": "ChIJGXJHhjwEmogRx83gFnYvJkM",
+      "displayName": {
+        "text": "Hilton Garden Inn Orange Beach Beachfront",
+        "languageCode": "en"
+      },
+      "spatialRelationship": "AROUND_THE_CORNER",
+      "travelDistanceMeters": 306.91757,
+      "straightLineDistanceMeters": 219.6901
+    }
+  ]
+}
+parent_entity_slug: the-wharf
+internal_notes:  | hero_image_url repointed 2026-07-21: was a dead storage path, replaced with real entity_photos.url | hero_image_url v2-fix 2026-07-21: repointed to a photo confirmed to actually exist
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: menu
+generative_summary: Casual, trendy outpost offering multiple flavors of beaded frozen desserts.
+industry_code: cafe_dessert
+is_parent: false
+depth: 1
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_address_areas   -   3 row(s)
+####################################################################################################
+
+--- entity_address_areas [row 1 of 3] ---
+id: bc9cba7b-e1d3-426c-8214-9bf6eb5823b0
+entity_slug: dippin-dots
+place_id: ChIJe0fgQjwEmogRyH5CSQbOvEw
+containment: NEAR
+display_name: Sugar Beach Condominium Association
+
+--- entity_address_areas [row 2 of 3] ---
+id: bcd12f4c-636d-493f-8965-09ed8ef78581
+entity_slug: dippin-dots
+place_id: ChIJ_Z7bgj4EmogR25dA7Uyt-RA
+containment: NEAR
+display_name: Palm Beach Condominium Unit D51
+
+--- entity_address_areas [row 3 of 3] ---
+id: 7fd0fe0f-a47b-4e0e-bdfa-c6b1f50d20a9
+entity_slug: dippin-dots
+place_id: ChIJh3bDOzwEmogRfEbtT7OYJkU
+containment: NEAR
+display_name: Phoenix Gulf Tower II
+
+####################################################################################################
+# TABLE: entity_attributes   -   17 row(s)
+####################################################################################################
+
+--- entity_attributes [row 1 of 17] ---
+id: 9268dff9-b55d-4c83-98c4-4defb2fd1385
+entity_slug: dippin-dots
+category: dining
+key: serves_coffee
+label: Serves Coffee
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 2 of 17] ---
+id: cfccf363-5689-4b02-b625-f245fbaf4272
+entity_slug: dippin-dots
+category: dining
+key: serves_dessert
+label: Serves Dessert
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 3 of 17] ---
+id: f400e8c5-55b5-4df1-a344-81303415b4cf
+entity_slug: dippin-dots
+category: dining
+key: serves_vegetarian
+label: Serves Vegetarian Food
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 4 of 17] ---
+id: 26464639-a737-4213-a33b-dd4420a2af1b
+entity_slug: dippin-dots
+category: service
+key: delivery
+label: Delivery
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 5 of 17] ---
+id: 6e175be9-973d-41a1-a19b-20d4a0b09957
+entity_slug: dippin-dots
+category: service
+key: takeout
+label: Takeout
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 6 of 17] ---
+id: 2e610dc2-a3fc-4650-aa0f-25173d3f236a
+entity_slug: dippin-dots
+category: service
+key: dine_in
+label: Dine In
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 7 of 17] ---
+id: 7ae2b784-c151-4823-8fad-b1d479e89f2d
+entity_slug: dippin-dots
+category: service
+key: curbside_pickup
+label: Curbside Pickup
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 8 of 17] ---
+id: a8ed4d7d-0069-4770-8f9a-ec1e8b8c751f
+entity_slug: dippin-dots
+category: service
+key: reservable
+label: Accepts Reservations
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 9 of 17] ---
+id: 924bd3bc-8cb5-4684-900e-11eed4fcb421
+entity_slug: dippin-dots
+category: amenity
+key: restroom
+label: Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 10 of 17] ---
+id: 04706718-a8dc-4dc4-a33b-493bfb2a343a
+entity_slug: dippin-dots
+category: amenity
+key: live_music
+label: Live Music
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 11 of 17] ---
+id: 7c29ec05-f855-4fbd-8e76-2297b54ae3d7
+entity_slug: dippin-dots
+category: suitability
+key: good_for_children
+label: Good for Children
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:53:56.839431+00:00
+updated_at: 2026-07-16T09:53:56.839431+00:00
+
+--- entity_attributes [row 12 of 17] ---
+id: 6629b779-58e1-4539-94ff-dbd2564ccb63
+entity_slug: dippin-dots
+category: accessibility
+key: access_wheelchairAccessibleParking
+label: Wheelchair Accessible Parking
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 13 of 17] ---
+id: cebcc283-f8c0-4284-8723-bb8af1229be6
+entity_slug: dippin-dots
+category: accessibility
+key: access_wheelchairAccessibleEntrance
+label: Wheelchair Accessible Entrance
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 14 of 17] ---
+id: 82658a94-9c4c-4a88-8f43-d3b53dbed6dd
+entity_slug: dippin-dots
+category: accessibility
+key: access_wheelchairAccessibleRestroom
+label: Wheelchair Accessible Restroom
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 15 of 17] ---
+id: 094a7a28-1a82-448e-a6e7-df32e52a760c
+entity_slug: dippin-dots
+category: payment
+key: pay_acceptsCashOnly
+label: Accepts Cash Only
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 16 of 17] ---
+id: b25539ac-dc53-4d87-87fa-8230bb19fac5
+entity_slug: dippin-dots
+category: payment
+key: pay_acceptsDebitCards
+label: Accepts Debit Cards
+value: true
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+--- entity_attributes [row 17 of 17] ---
+id: a7e6538b-31cd-4a5b-a4e6-eb9f470c191d
+entity_slug: dippin-dots
+category: payment
+key: pay_acceptsCreditCards
+label: Accepts Credit Cards
+value: false
+value_type: boolean
+is_filterable: true
+sort_order: 0
+created_at: 2026-07-16T09:54:25.673766+00:00
+updated_at: 2026-07-16T09:54:25.673766+00:00
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: dippin-dots
+name: Dippin' Dots
+industry_code: cafe_dessert
+parent_entity_slug: the-wharf
+is_parent: false
+score_of_7: 6
+
+####################################################################################################
+# TABLE: entity_google_maps_links   -   1 row(s)
+####################################################################################################
+
+--- entity_google_maps_links [row 1 of 1] ---
+id: 33491a52-0582-4af9-af23-8f84dc125e15
+entity_slug: dippin-dots
+place_uri: https://maps.google.com/?cid=18344201456844550860&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+photos_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a043c0318682b:0xfe93b208836c32cc!10e5?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+reviews_uri: https://www.google.com/maps/place//data=!4m4!3m3!1s0x889a043c0318682b:0xfe93b208836c32cc!9m1!1b1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+directions_uri: https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x889a043c0318682b:0xfe93b208836c32cc!3e0?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+write_a_review_uri: https://www.google.com/maps/place//data=!4m3!3m2!1s0x889a043c0318682b:0xfe93b208836c32cc!12e1?g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYBCAA
+created_at: 2026-07-20T01:15:08.928292+00:00
+
+####################################################################################################
+# TABLE: entity_google_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_google_reviews [row 1 of 5] ---
+review_id: 10330
+entity_slug: dippin-dots
+google_review_name: places/ChIJK2gYAzwEmogRzDJsgwiyk_4/reviews/ChZDSUhNMG9nS0VJQ0FnSUNBanZuT1FREAE
+rating: 4
+review_text: Our family of 6 had dinner and dessert here.  We had a great time.  The food was excellent.  Hand cut fries, the burgers were great.  The Rodeo burger with the fried cheese was superb.  The kids were pleased with the hot dog and grilled cheese.  The ice cream was a great value as well.  The staff was outstanding.  We were a bit concerned taking our large family in, but the staff were very attentive, firendly, and handled us great.  We will be back.
+language_code: en
+author_name: Preston Albritton
+author_profile_url: https://www.google.com/maps/contrib/108543642493200169555/reviews
+publish_time: 2015-06-19T15:30:54.332+00:00
+relative_time: 10 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNBanZuT1FREAE!2m1!1s0x889a043c0318682b:0xfe93b208836c32cc
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 2 of 5] ---
+review_id: 10331
+entity_slug: dippin-dots
+google_review_name: places/ChIJK2gYAzwEmogRzDJsgwiyk_4/reviews/ChZDSUhNMG9nS0VJQ0FnSUNwLWFubEt3EAE
+rating: 4
+review_text: I can't really rate this place because I actually didn't get anything from them. I'm doing this because today (Sunday, August 6th at 5:32pm) I went there to get dip and dots. I was VERY disappointed when I realized they were closed. Online AND the sign on their door said their hours were 3pm-9pm on Sundays. So they should have been open, we drove a good distance out of our way just to get dip and dots but then NOT. So there's that.
+language_code: en
+author_name: Jane Smith
+author_profile_url: https://www.google.com/maps/contrib/109223394962181721214/reviews
+publish_time: 2023-08-06T23:44:35.882842+00:00
+relative_time: 2 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNwLWFubEt3EAE!2m1!1s0x889a043c0318682b:0xfe93b208836c32cc
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 3 of 5] ---
+review_id: 10332
+entity_slug: dippin-dots
+google_review_name: places/ChIJK2gYAzwEmogRzDJsgwiyk_4/reviews/ChdDSUhNMG9nS0VJQ0FnSUN3bkkyWWhnRRAB
+rating: 5
+review_text: The dipping dots were amazing. They also serve traditional ice cream and have grill options too. The employee was very friendly and helpful. A great place. My wife and I will definitely go back.
+language_code: en
+author_name: Greg Ordal
+author_profile_url: https://www.google.com/maps/contrib/101631901267674836907/reviews
+publish_time: 2017-10-28T17:30:01.703+00:00
+relative_time: 8 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUN3bkkyWWhnRRAB!2m1!1s0x889a043c0318682b:0xfe93b208836c32cc
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 4 of 5] ---
+review_id: 10333
+entity_slug: dippin-dots
+google_review_name: places/ChIJK2gYAzwEmogRzDJsgwiyk_4/reviews/ChZDSUhNMG9nS0VJQ0FnSURRalByOEhBEAE
+rating: 5
+review_text: I, my fiancé and 3 children came in March 9th 2018 right at closing. The young ladies there welcomed us in and were very polite. Awesome customer service. I see the owner is responding to comments. We're from Auburn and just got out of a van from a 4 hour ride. She made some irritated kids "and adults" much happier!
+language_code: en
+author_name: Mike Smith
+author_profile_url: https://www.google.com/maps/contrib/118313256345670025063/reviews
+publish_time: 2018-03-10T04:13:54.977+00:00
+relative_time: 8 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSURRalByOEhBEAE!2m1!1s0x889a043c0318682b:0xfe93b208836c32cc
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+--- entity_google_reviews [row 5 of 5] ---
+review_id: 10334
+entity_slug: dippin-dots
+google_review_name: places/ChIJK2gYAzwEmogRzDJsgwiyk_4/reviews/ChZDSUhNMG9nS0VJQ0FnSUNRMk9PTWV3EAE
+rating: 1
+review_text: This place was absolutely horrible. The employees were the most unprofessional I’ve ever seen in a work place. Making degrading jabs at each other, loud, foolish and immature, not caring at all about the customers and serving them. It was so bad we left before buying ice cream. We got some for our kids and then as the employees kept at each other, my husband and I couldn’t handle it and we left not buying anything for ourselves. They were dirty in the way they handled utensils and food and we were so grossed out. I would never recommend this place!
+language_code: en
+author_name: Anna Hochstetler
+author_profile_url: https://www.google.com/maps/contrib/108257843922263153557/reviews
+publish_time: 2018-08-15T12:30:17.905+00:00
+relative_time: 7 years ago
+google_maps_uri: https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUNRMk9PTWV3EAE!2m1!1s0x889a043c0318682b:0xfe93b208836c32cc
+source_type: google
+ingested_at: 2026-07-20T05:18:12.749585+00:00
+
+####################################################################################################
+# TABLE: entity_hours   -   7 row(s)
+####################################################################################################
+
+--- entity_hours [row 1 of 7] ---
+id: 32193d41-dcbd-45d2-8257-dfe1305dd4e1
+entity_slug: dippin-dots
+day_of_week: 0
+opens_at: 15:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 2 of 7] ---
+id: 115df6b9-2ada-4e68-acf7-4d0adb4573b4
+entity_slug: dippin-dots
+day_of_week: 1
+opens_at: 15:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 3 of 7] ---
+id: 28058488-a36c-4b6e-965d-d2e0664a3905
+entity_slug: dippin-dots
+day_of_week: 2
+opens_at: 15:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 4 of 7] ---
+id: 718f5673-2146-4982-80ff-6413509e8c92
+entity_slug: dippin-dots
+day_of_week: 3
+opens_at: 15:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 5 of 7] ---
+id: f32fa3f0-d917-4202-af27-0519ec042d79
+entity_slug: dippin-dots
+day_of_week: 4
+opens_at: 15:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 6 of 7] ---
+id: 8827a05b-66d0-4d44-8816-5e1fc2daae10
+entity_slug: dippin-dots
+day_of_week: 5
+opens_at: 15:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+--- entity_hours [row 7 of 7] ---
+id: 92d9e95f-bf19-4a9a-a8be-aa92ee290a02
+entity_slug: dippin-dots
+day_of_week: 6
+opens_at: 15:00:00
+closes_at: 21:00:00
+is_closed: false
+hours_type: regular
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: dippin-dots
+source_table: menu_items
+item_type: food
+section_name: Data Status
+item_id: 499c1226-bdb3-4b92-aca6-f0587812199a
+name: Wharf directory lists Dippin’ Dots. Exact Wharf location prices not found in readable sources.
+description: No item-level menu price confirmed from public readable source for this row. (Price: Not published)
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "item_type_raw": "food",
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: dippin-dots
+source_table: menu_items
+item_type: food
+section_name: Data Status
+item_id: 499c1226-bdb3-4b92-aca6-f0587812199a
+name: Wharf directory lists Dippin’ Dots. Exact Wharf location prices not found in readable sources.
+description: No item-level menu price confirmed from public readable source for this row. (Price: Not published)
+sort_order: 0
+active: true
+attributes: {
+  "is_featured": false,
+  "available_days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+  ],
+  "is_catch_of_day": false,
+  "has_market_price": false
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   16 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 16] ---
+id: bf26b2bb-d0eb-4497-a971-282052f94a8a
+entity_slug: dippin-dots
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 16] ---
+id: f5b78184-f78e-43ad-b1a5-cb75614a6b92
+entity_slug: dippin-dots
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 16] ---
+id: fcee0afe-207d-4eea-bad0-4a57ad5b2c85
+entity_slug: dippin-dots
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 16] ---
+id: a61380b7-a403-4a57-bf94-139486a942ba
+entity_slug: dippin-dots
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 16] ---
+id: 65a489e0-fa2a-4704-aac6-1151c909780f
+entity_slug: dippin-dots
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 16] ---
+id: 8b4665f6-2900-4619-8cce-2248d67b6423
+entity_slug: dippin-dots
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 16] ---
+id: 429ccb36-f5df-4e92-af5f-f204216a27f3
+entity_slug: dippin-dots
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 16] ---
+id: 5390fdee-21d9-4349-8e43-1125193a5e3c
+entity_slug: dippin-dots
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 16] ---
+id: baff3f6a-6da4-4335-ad6b-e6c30359d704
+entity_slug: dippin-dots
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 16] ---
+id: 90a87154-368e-4773-828b-49e1d22ea55b
+entity_slug: dippin-dots
+module_key: menu
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 16] ---
+id: 2311d5b1-fe11-473b-9e67-f586fff121fe
+entity_slug: dippin-dots
+module_key: drinks
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 16] ---
+id: ae082300-51db-416a-9094-a98dc38c9525
+entity_slug: dippin-dots
+module_key: happy_hour
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 16] ---
+id: 3e797f3e-71a5-40a5-8ea6-624219dc44eb
+entity_slug: dippin-dots
+module_key: specials
+enabled: true
+sort_order: 13
+
+--- entity_modules [row 14 of 16] ---
+id: efcb314f-f6fd-4de1-bcc9-6c7a356e96f1
+entity_slug: dippin-dots
+module_key: events
+enabled: true
+sort_order: 14
+
+--- entity_modules [row 15 of 16] ---
+id: 62ed4f85-c891-42ef-bbcc-472aa60d5a05
+entity_slug: dippin-dots
+module_key: loyalty
+enabled: true
+sort_order: 15
+
+--- entity_modules [row 16 of 16] ---
+id: e77e1e43-eb88-48b9-a31e-2a6d91585827
+entity_slug: dippin-dots
+module_key: booking
+enabled: true
+sort_order: 16
+
+####################################################################################################
+# TABLE: entity_nearby_landmark_types   -   18 row(s)
+####################################################################################################
+
+--- entity_nearby_landmark_types [row 1 of 18] ---
+id: 741165f5-cbef-4c57-87f9-775bea94f17a
+landmark_id: 11ffb3c2-69f5-441a-9c95-acd62a9f0ed3
+entity_slug: dippin-dots
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 2 of 18] ---
+id: 91823e9c-8921-479a-9cf4-04bd9cc0eb6f
+landmark_id: 11ffb3c2-69f5-441a-9c95-acd62a9f0ed3
+entity_slug: dippin-dots
+landmark_type: lodging
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 3 of 18] ---
+id: 7e55037d-ea57-4726-b571-e288324d465e
+landmark_id: 11ffb3c2-69f5-441a-9c95-acd62a9f0ed3
+entity_slug: dippin-dots
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 4 of 18] ---
+id: 89d575a4-f36a-4cdc-8576-52a545fe86a8
+landmark_id: 519d6709-4f64-456c-918d-98c02fa3356c
+entity_slug: dippin-dots
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 5 of 18] ---
+id: e0c09b31-2e3a-4ed5-9db7-2d1e0555087d
+landmark_id: 519d6709-4f64-456c-918d-98c02fa3356c
+entity_slug: dippin-dots
+landmark_type: food
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 6 of 18] ---
+id: 2078356b-5836-4abf-bc7a-a23671405054
+landmark_id: 519d6709-4f64-456c-918d-98c02fa3356c
+entity_slug: dippin-dots
+landmark_type: gym
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 7 of 18] ---
+id: 46f006db-0a61-4cea-8149-2a85b00d6dc2
+landmark_id: 519d6709-4f64-456c-918d-98c02fa3356c
+entity_slug: dippin-dots
+landmark_type: health
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 8 of 18] ---
+id: 3f0c3f0a-b960-4791-b02b-50d7d4fb4dc9
+landmark_id: 519d6709-4f64-456c-918d-98c02fa3356c
+entity_slug: dippin-dots
+landmark_type: lodging
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 9 of 18] ---
+id: 871e13d1-a464-4844-95b1-139179941ea6
+landmark_id: 519d6709-4f64-456c-918d-98c02fa3356c
+entity_slug: dippin-dots
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 10 of 18] ---
+id: de06e166-8bb9-4041-8bc3-2edb6eb20799
+landmark_id: 519d6709-4f64-456c-918d-98c02fa3356c
+entity_slug: dippin-dots
+landmark_type: restaurant
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 11 of 18] ---
+id: d5bdc389-5a48-4198-88da-ff0105821c37
+landmark_id: 76fe6b4d-d1e1-491d-b19a-8aec1b81baa5
+entity_slug: dippin-dots
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 12 of 18] ---
+id: cba07e8d-0695-45cb-a702-1ba4d85df9eb
+landmark_id: 76fe6b4d-d1e1-491d-b19a-8aec1b81baa5
+entity_slug: dippin-dots
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 13 of 18] ---
+id: 55341f06-6bb4-4583-9d19-d9c7a413db0c
+landmark_id: 76fe6b4d-d1e1-491d-b19a-8aec1b81baa5
+entity_slug: dippin-dots
+landmark_type: tourist_attraction
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 14 of 18] ---
+id: 8b6cbf73-ab31-4725-960c-bd0c56725808
+landmark_id: 0d5cdbaa-77ce-405f-aa6d-d3ef36447682
+entity_slug: dippin-dots
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 15 of 18] ---
+id: 9bbafbd5-54c4-4bfb-b8cb-ab2183d2defa
+landmark_id: 0d5cdbaa-77ce-405f-aa6d-d3ef36447682
+entity_slug: dippin-dots
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 16 of 18] ---
+id: e41dfafe-93fa-4588-8879-6c351c752cfe
+landmark_id: 9812f2ec-dd4e-47e2-b873-ad122c5d5dec
+entity_slug: dippin-dots
+landmark_type: establishment
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 17 of 18] ---
+id: 03a1265e-365e-45af-b90e-e6a0a5f9537c
+landmark_id: 9812f2ec-dd4e-47e2-b873-ad122c5d5dec
+entity_slug: dippin-dots
+landmark_type: lodging
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+--- entity_nearby_landmark_types [row 18 of 18] ---
+id: f06255e0-cbce-4ffe-8c46-ca70d2bf5d34
+landmark_id: 9812f2ec-dd4e-47e2-b873-ad122c5d5dec
+entity_slug: dippin-dots
+landmark_type: point_of_interest
+created_at: 2026-07-20T00:53:29.803927+00:00
+
+####################################################################################################
+# TABLE: entity_nearby_landmarks   -   8 row(s)
+####################################################################################################
+
+--- entity_nearby_landmarks [row 1 of 8] ---
+id: 11ffb3c2-69f5-441a-9c95-acd62a9f0ed3
+entity_slug: dippin-dots
+kind: landmark
+place_id: ChIJMyaJoD4EmogReEZGI9SM-Gc
+name: Palm Beach Resort
+types: [
+  "establishment",
+  "lodging",
+  "point_of_interest"
+]
+travel_distance_meters: 146.97997
+straight_line_distance_meters: 126.80937
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 2 of 8] ---
+id: 519d6709-4f64-456c-918d-98c02fa3356c
+entity_slug: dippin-dots
+kind: landmark
+place_id: ChIJMXgSEjwEmogRLOE9Y6etur8
+name: Hotel Indigo Orange Beach - Gulf Shores by IHG
+types: [
+  "establishment",
+  "food",
+  "gym",
+  "health",
+  "lodging",
+  "point_of_interest",
+  "restaurant"
+]
+travel_distance_meters: 217.35913
+straight_line_distance_meters: 204.8904
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 3 of 8] ---
+id: 76fe6b4d-d1e1-491d-b19a-8aec1b81baa5
+entity_slug: dippin-dots
+kind: landmark
+place_id: ChIJw4h8oz4EmogRZK0wfeY_5Vo
+name: Hugh S. Branyon Backcountry Trail - Rosemary Dunes Trailhead
+types: [
+  "establishment",
+  "point_of_interest",
+  "tourist_attraction"
+]
+spatial_relationship: AROUND_THE_CORNER
+travel_distance_meters: 189.21904
+straight_line_distance_meters: 107.73423
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 4 of 8] ---
+id: 0d5cdbaa-77ce-405f-aa6d-d3ef36447682
+entity_slug: dippin-dots
+kind: landmark
+place_id: ChIJS_9BcjwEmogRcQXFolmXjQw
+name: Sugar Beach Condominium Association
+types: [
+  "establishment",
+  "point_of_interest"
+]
+spatial_relationship: DOWN_THE_ROAD
+travel_distance_meters: 125.22931
+straight_line_distance_meters: 109.45617
+sort_order: 4
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 5 of 8] ---
+id: 9812f2ec-dd4e-47e2-b873-ad122c5d5dec
+entity_slug: dippin-dots
+kind: landmark
+place_id: ChIJGXJHhjwEmogRx83gFnYvJkM
+name: Hilton Garden Inn Orange Beach Beachfront
+types: [
+  "establishment",
+  "lodging",
+  "point_of_interest"
+]
+spatial_relationship: AROUND_THE_CORNER
+travel_distance_meters: 306.91757
+straight_line_distance_meters: 219.6901
+sort_order: 5
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 6 of 8] ---
+id: ec09fa43-dffb-4ca6-b9be-3bad1fc68e06
+entity_slug: dippin-dots
+kind: area
+place_id: ChIJe0fgQjwEmogRyH5CSQbOvEw
+name: Sugar Beach Condominium Association
+containment: NEAR
+sort_order: 1
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 7 of 8] ---
+id: 60582aed-d8ec-47fc-baff-05c6d1f180d4
+entity_slug: dippin-dots
+kind: area
+place_id: ChIJ_Z7bgj4EmogR25dA7Uyt-RA
+name: Palm Beach Condominium Unit D51
+containment: NEAR
+sort_order: 2
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+--- entity_nearby_landmarks [row 8 of 8] ---
+id: 20685b26-6630-4588-b37c-0f6e5f7d6ec6
+entity_slug: dippin-dots
+kind: area
+place_id: ChIJh3bDOzwEmogRfEbtT7OYJkU
+name: Phoenix Gulf Tower II
+containment: NEAR
+sort_order: 3
+source: address_descriptor_migration
+created_at: 2026-07-17T14:18:41.841746+00:00
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 1716
+entity_slug: dippin-dots
+section_id: 1783
+name: Wharf directory lists Dippin’ Dots. Exact Wharf location prices not found in readable sources.
+description: No item-level menu price confirmed from public readable source for this row. (Price: Not published)
+offer_type: menu_item
+sort_order: 0
+is_available: true
+legacy_source: menu_items
+legacy_id: 499c1226-bdb3-4b92-aca6-f0587812199a
+
+####################################################################################################
+# TABLE: entity_offer_section   -   1 row(s)
+####################################################################################################
+
+--- entity_offer_section [row 1 of 1] ---
+section_id: 1783
+entity_slug: dippin-dots
+name: Data Status
+section_type: menu
+sort_order: 0
+
+####################################################################################################
+# TABLE: entity_photos   -   24 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 24] ---
+id: 4d29d0b4-b0c7-45f0-b228-67e4df003531
+entity_slug: dippin-dots
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dippin-dots/photo_06.jpg
+is_cover: false
+sort_order: 5
+
+--- entity_photos [row 2 of 24] ---
+id: a017b027-df24-4c0c-99de-c26a273af9a5
+entity_slug: dippin-dots
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dippin-dots/photo_08.jpg
+is_cover: false
+sort_order: 7
+
+--- entity_photos [row 3 of 24] ---
+id: 5aa6ded0-31cc-463f-8cb5-abd8b14767c7
+entity_slug: dippin-dots
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dippin-dots/photo_04.jpg
+is_cover: false
+sort_order: 3
+
+--- entity_photos [row 4 of 24] ---
+id: e1ee79d7-329b-4540-a93b-b51555200576
+entity_slug: dippin-dots
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dippin-dots/photo_09.jpg
+is_cover: false
+sort_order: 8
+
+--- entity_photos [row 5 of 24] ---
+id: 50ea1c25-00ac-4360-8645-7bb84b8bbe47
+entity_slug: dippin-dots
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dippin-dots/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 6 of 24] ---
+id: 9c8ac69a-6b5d-4999-84d8-adeb162cf0f5
+entity_slug: dippin-dots
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dippin-dots/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 7 of 24] ---
+id: d11f3016-6e6d-41f6-85b5-bb52e68ecae7
+entity_slug: dippin-dots
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dippin-dots/photo_03.jpg
+is_cover: false
+sort_order: 2
+
+--- entity_photos [row 8 of 24] ---
+id: 0f8194be-f06b-438c-ba77-354ae7eef65d
+entity_slug: dippin-dots
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dippin-dots/photo_10.jpg
+is_cover: false
+sort_order: 9
+
+--- entity_photos [row 9 of 24] ---
+id: fff71117-f889-4e71-8868-aea150c30c74
+entity_slug: dippin-dots
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dippin-dots/photo_07.jpg
+is_cover: false
+sort_order: 6
+
+--- entity_photos [row 10 of 24] ---
+id: 558694c2-bffa-4fb6-b93d-beeef616e36f
+entity_slug: dippin-dots
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/dippin-dots/photo_05.jpg
+is_cover: false
+sort_order: 4
+
+--- entity_photos [row 11 of 24] ---
+id: c8dfca6c-4301-4b2b-a0f6-0e4f9813ce9d
+entity_slug: dippin-dots
+url: https://alwharf-assets.nyc3.digitaloceanspaces.com/images/merchant-full/_304x304_crop_center-center_none_ns/DSC_0106.jpg?v=1777641975
+is_cover: true
+sort_order: 0
+photo_type: gallery
+
+--- entity_photos [row 12 of 24] ---
+id: 3cdcc9d2-bff6-46d1-80eb-fe5439b50688
+entity_slug: dippin-dots
+url: https://places.googleapis.com/v1/places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3nToPSC6_QSG1ukzHx0dWWui305hF8kMqmDmeEq1Yt2OcMZCCURJbTcG2g8ZqKKZVujxWcgHfB94FVlluQwvPFWyNwYuiWFoX7suFTi6N78ydQl44IDmV2GhfqefnMhOkr4B-bb5VOHCMyQ4y1rFM713WZeRY5Fa5m6Kq5cCcnS39-TyFmrreWReQCXmXV4j2nXnp4eZIDkBYeWyDWWlH1i6j_MjklWr8NOXJ56tFtvvPSP2o-17g1cDC_2Nf2s4pBQxVhq4nJpo1fdKVgKdNPSQjl4AByApN2gQxMtmEacWBs6cPcE6jFgunVi84OgglzsANeyCkjFKnTsz68jfAgELLdx7PwFMBtgN3grUCWEVZjI9XcgQiKEQPTzxsK7g2_wk_ElqifhonruszO9Q6ObPSSOVuAkdY4prflPSnPhhQ/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3nToPSC6_QSG1ukzHx0dWWui305hF8kMqmDmeEq1Yt2OcMZCCURJbTcG2g8ZqKKZVujxWcgHfB94FVlluQwvPFWyNwYuiWFoX7suFTi6N78ydQl44IDmV2GhfqefnMhOkr4B-bb5VOHCMyQ4y1rFM713WZeRY5Fa5m6Kq5cCcnS39-TyFmrreWReQCXmXV4j2nXnp4eZIDkBYeWyDWWlH1i6j_MjklWr8NOXJ56tFtvvPSP2o-17g1cDC_2Nf2s4pBQxVhq4nJpo1fdKVgKdNPSQjl4AByApN2gQxMtmEacWBs6cPcE6jFgunVi84OgglzsANeyCkjFKnTsz68jfAgELLdx7PwFMBtgN3grUCWEVZjI9XcgQiKEQPTzxsK7g2_wk_ElqifhonruszO9Q6ObPSSOVuAkdY4prflPSnPhhQ
+is_cover: false
+sort_order: 0
+caption: Dippin' Dots
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC63KOaOQ!2e10!4m2!3m1!1s0x889a043c0318682b:0xfe93b208836c32cc
+
+--- entity_photos [row 13 of 24] ---
+id: 73c0fa71-8986-4373-8e43-a01bc22be044
+entity_slug: dippin-dots
+url: https://places.googleapis.com/v1/places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3m8KTX_LKCwDs2KQ1zR5dn3yUhWj_Hd-PJ3m5Cncqhv1DNIZs3IOe_b80dpCUD904PDPJim9448QeSGdKh8uoRofI52xXbsUeZYGZmMRaeRAwm8REkMiSsyuhGIFRnBaJFKy4oxNOR5nFKjHbr1j__y9HkFAwb4Tt2zFpGlyA2DftnaS7tpe2YBitb7anwhGPKiG5uivK8bp7xDHqvBbwr1sWDaAoi_8tEQZt-4gMrEAnG7SsRQOPXY7ptfUHjr2ICt7KQRBa57L2vdF9ZToaLJ7OztaIT2nhqq-M62uQhX92dXN76VsSbhXTca1V3azudMSexABG3FLNBoSggyGWudQKMlEl4ymftVA3uKToEYy0tNDVDXbfwSoIQye7vpINBL3e_1t4teBBLTHMH2pqfZvnk-9EykXcME10NHIdccaw/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3m8KTX_LKCwDs2KQ1zR5dn3yUhWj_Hd-PJ3m5Cncqhv1DNIZs3IOe_b80dpCUD904PDPJim9448QeSGdKh8uoRofI52xXbsUeZYGZmMRaeRAwm8REkMiSsyuhGIFRnBaJFKy4oxNOR5nFKjHbr1j__y9HkFAwb4Tt2zFpGlyA2DftnaS7tpe2YBitb7anwhGPKiG5uivK8bp7xDHqvBbwr1sWDaAoi_8tEQZt-4gMrEAnG7SsRQOPXY7ptfUHjr2ICt7KQRBa57L2vdF9ZToaLJ7OztaIT2nhqq-M62uQhX92dXN76VsSbhXTca1V3azudMSexABG3FLNBoSggyGWudQKMlEl4ymftVA3uKToEYy0tNDVDXbfwSoIQye7vpINBL3e_1t4teBBLTHMH2pqfZvnk-9EykXcME10NHIdccaw
+is_cover: false
+sort_order: 1
+caption: Jim Hathaway
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgICJ--yJQQ!2e10!4m2!3m1!1s0x889a043c0318682b:0xfe93b208836c32cc
+
+--- entity_photos [row 14 of 24] ---
+id: db1fb81e-9fd7-4f0c-a671-b787f1403b93
+entity_slug: dippin-dots
+url: https://places.googleapis.com/v1/places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3m_CP3p_GsLunGjk4t_mpQ773d2GhlenO2U3ZmvvX5nzxvVHrA-e0TaAjYuHPupYDuLljM26FbZBN8Otlq3gduAjUrN2qmOuy-aFOs705I5Eol8bRXVib2bbCehMBulsNRxhT89C5rmqsOiBgVc0CvXePd60c43p6I1BTNynDr7jB5XYpZnjSgCEHRMIIicUtNbqD5ysGQAbz8ocWGwogwljxcAG_McKUFPEv7yuQseDeAWfdVY-73jsvd_AuDJ27gvnXfN5zmzzQI-aqs1a7U8Y6Kc-5DBJJ9CtXvNqYDzqEMA9coahqRc2iUuUls_A7sImlF-ci4S5xfsbHgwjaiacO_Z1JWMRbpmaWPzMzrgZ_1VTOaynPhgSBUtIhIofRiV9CzePy05Va4pAEr-ZAFTpacisgSXJ93Qkv8mnwq9goZn/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3m_CP3p_GsLunGjk4t_mpQ773d2GhlenO2U3ZmvvX5nzxvVHrA-e0TaAjYuHPupYDuLljM26FbZBN8Otlq3gduAjUrN2qmOuy-aFOs705I5Eol8bRXVib2bbCehMBulsNRxhT89C5rmqsOiBgVc0CvXePd60c43p6I1BTNynDr7jB5XYpZnjSgCEHRMIIicUtNbqD5ysGQAbz8ocWGwogwljxcAG_McKUFPEv7yuQseDeAWfdVY-73jsvd_AuDJ27gvnXfN5zmzzQI-aqs1a7U8Y6Kc-5DBJJ9CtXvNqYDzqEMA9coahqRc2iUuUls_A7sImlF-ci4S5xfsbHgwjaiacO_Z1JWMRbpmaWPzMzrgZ_1VTOaynPhgSBUtIhIofRiV9CzePy05Va4pAEr-ZAFTpacisgSXJ93Qkv8mnwq9goZn
+is_cover: false
+sort_order: 2
+caption: John Oliver
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDxpLbD_AE!2e10!4m2!3m1!1s0x889a043c0318682b:0xfe93b208836c32cc
+
+--- entity_photos [row 15 of 24] ---
+id: 42a3aa9e-85dc-40ab-8f27-629922d9bff8
+entity_slug: dippin-dots
+url: https://places.googleapis.com/v1/places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3loBbsASiDGifsytO6SDVJHpdWPOJJA1_IVUmD84A70OxLocICkiJmaUeUK-PDNsmJwAwnmsu1gTkTkXIJ1bITZTUWTvhsom7XGwilS1ZOJjqESjTOW_EcvkDP6Y8JVMEqgNV88J0yEZmyyLWM9MiZ8JUCUPLar-DfjzQQSuO3FwHHxkBk4NtQ23ZrGl9rAzUBKcHoj-Z--nOHV_nMzo5G3CxWD8LKwXCdSjm3zgEm-3mXgvWptTFSkm0G9nruTRL55fyplnNhW7xjUGvgnwARnXJoBftHtB6bkKLJCjEa_fSXjFUXRLKuyqLzN8KkYdqA8zK5RnDxM-e7pxFBZTbq7VpRdGDtMglAT7SckH3Ny-RKIcETr5CGuhjQvCy6CijRQW7e2zBUqawb3Ouyu5ZsP9LvQGhM69a1DYToc3J7fjB7i/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3loBbsASiDGifsytO6SDVJHpdWPOJJA1_IVUmD84A70OxLocICkiJmaUeUK-PDNsmJwAwnmsu1gTkTkXIJ1bITZTUWTvhsom7XGwilS1ZOJjqESjTOW_EcvkDP6Y8JVMEqgNV88J0yEZmyyLWM9MiZ8JUCUPLar-DfjzQQSuO3FwHHxkBk4NtQ23ZrGl9rAzUBKcHoj-Z--nOHV_nMzo5G3CxWD8LKwXCdSjm3zgEm-3mXgvWptTFSkm0G9nruTRL55fyplnNhW7xjUGvgnwARnXJoBftHtB6bkKLJCjEa_fSXjFUXRLKuyqLzN8KkYdqA8zK5RnDxM-e7pxFBZTbq7VpRdGDtMglAT7SckH3Ny-RKIcETr5CGuhjQvCy6CijRQW7e2zBUqawb3Ouyu5ZsP9LvQGhM69a1DYToc3J7fjB7i
+is_cover: false
+sort_order: 3
+caption: ron sharp
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC4vrfB4gE!2e10!4m2!3m1!1s0x889a043c0318682b:0xfe93b208836c32cc
+
+--- entity_photos [row 16 of 24] ---
+id: 64f7c7ae-d3a1-4ee0-9c60-b00bcf2117f4
+entity_slug: dippin-dots
+url: https://places.googleapis.com/v1/places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3k3UNRyTTlkA7-MhDhNTCEYzLCqmD-u2yEQKYaCV9kuzmVjBEo2FqEirrafvwG-eWU6cBSMbqUdEzPcmLPb5JmPDQ6Ycz2ekNEfOOAbGsR9tdXFv2F0hAjwZs2fiS0suugYPuoOjOuKmJRD96SzgXM3fhf7b_H7jS4D2e35BYIWhPJsoam4pAzjq3lMTSPY62GrOypA5tEXne4RTE11QCfmSYEy4BCpjI0gaf7WafWhH0_IJlqd5QifqkKThzPCihvkoPCTjI02z9Hc9IKkbebPyg46DgcTWYYE11uQS6no8QFiT3K44pOZ0WTv1B8hCzUBALC9FBSgnC0xnDM05ntTjyBhEecNruWFmrzZVML1D7arxgwdinXwSIPV9bFNOFh66huTo0wARUHmwtHfuCANL4JV0yl062SJSwj9tCFY2A/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3k3UNRyTTlkA7-MhDhNTCEYzLCqmD-u2yEQKYaCV9kuzmVjBEo2FqEirrafvwG-eWU6cBSMbqUdEzPcmLPb5JmPDQ6Ycz2ekNEfOOAbGsR9tdXFv2F0hAjwZs2fiS0suugYPuoOjOuKmJRD96SzgXM3fhf7b_H7jS4D2e35BYIWhPJsoam4pAzjq3lMTSPY62GrOypA5tEXne4RTE11QCfmSYEy4BCpjI0gaf7WafWhH0_IJlqd5QifqkKThzPCihvkoPCTjI02z9Hc9IKkbebPyg46DgcTWYYE11uQS6no8QFiT3K44pOZ0WTv1B8hCzUBALC9FBSgnC0xnDM05ntTjyBhEecNruWFmrzZVML1D7arxgwdinXwSIPV9bFNOFh66huTo0wARUHmwtHfuCANL4JV0yl062SJSwj9tCFY2A
+is_cover: false
+sort_order: 4
+caption: Shaggy Miller
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC4z7uobw!2e10!4m2!3m1!1s0x889a043c0318682b:0xfe93b208836c32cc
+
+--- entity_photos [row 17 of 24] ---
+id: a2732791-a277-4c3d-aaf2-6463116e69cb
+entity_slug: dippin-dots
+url: https://places.googleapis.com/v1/places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3kdQCnxSj1ZIoI9Dtxsg8XaelMOCXb4_WLKLj2p9_l1zbyZ4A5AvOMDHLlp9XVXxDv2ERl8WNr9b7Xsgy663Ijr8-4pmnvFb4YE767YlMGUCE6eH0MxTug5iEiHgY_wdJB87HMW0urM_4a0ygOKfpni4rtz2hdKqUJr2c1VKCiEPPLKm6f_lexid_0Ab7GrqPDdwqiqFrhshyCptVLUtuGYjWzSJvcY2jBRSmJcctT3r1zox7eZQDyN_RdZ1cSM4-G6i8YdDYX7NZv5QO9CHjnGMc2wHy0icf2roEBIF1-c4kWuPG7ukjuoLqemjyA76d5MBFfSTT8nj6WjxgIKEpfmJDUbNzUKwFJW_5lodytLnH9MoNGcuMrqBRRoOe1_-k-KwRC78Ko7b_80tHwTfSqlepIQn-49W-ujY9oq4Kwa9g/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3kdQCnxSj1ZIoI9Dtxsg8XaelMOCXb4_WLKLj2p9_l1zbyZ4A5AvOMDHLlp9XVXxDv2ERl8WNr9b7Xsgy663Ijr8-4pmnvFb4YE767YlMGUCE6eH0MxTug5iEiHgY_wdJB87HMW0urM_4a0ygOKfpni4rtz2hdKqUJr2c1VKCiEPPLKm6f_lexid_0Ab7GrqPDdwqiqFrhshyCptVLUtuGYjWzSJvcY2jBRSmJcctT3r1zox7eZQDyN_RdZ1cSM4-G6i8YdDYX7NZv5QO9CHjnGMc2wHy0icf2roEBIF1-c4kWuPG7ukjuoLqemjyA76d5MBFfSTT8nj6WjxgIKEpfmJDUbNzUKwFJW_5lodytLnH9MoNGcuMrqBRRoOe1_-k-KwRC78Ko7b_80tHwTfSqlepIQn-49W-ujY9oq4Kwa9g
+is_cover: false
+sort_order: 5
+caption: Alpha Sniper555
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDazsmpZA!2e10!4m2!3m1!1s0x889a043c0318682b:0xfe93b208836c32cc
+
+--- entity_photos [row 18 of 24] ---
+id: 922f4916-824e-49e4-84b7-d77db6ebba06
+entity_slug: dippin-dots
+url: https://places.googleapis.com/v1/places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3nOTCvap_1NZnS2opFYirqb6OW5OeqF4xPsSftIBTnCBenTsr-p91512Rluzqew8aeok_q1K6ICNuWcGhle8C7nlOn-red67Uy-R4zjkoV9MIbII-rC21-3ar3V-cJ7SkqqMYqBTqhGm1gyIGSQjKOhiKONTSsNB6Dl9pyEAOfoMiPe3qpMil6bz70rpeWc9i_k747d-tAYKEozLKOJub7WSt__jwkH5CFu3137fYc-_UU-at9ReKyDe1cH7Yz592Dqes4MdcmXYq8HAiF4WRY47P1oebEIHcKvMft1WE3TJ3As9tSUXGoDCmmmC4tmznefwNCcNhmDDOz0eXln_F0Z2PCgoftoD1JngBTW9fyLfckXJLRsn1V1zGg50itJHjEbniMRC81IWnqO_EIBBSF-zZv9GQ5JyUm_jpWqhKJMAaWr/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3nOTCvap_1NZnS2opFYirqb6OW5OeqF4xPsSftIBTnCBenTsr-p91512Rluzqew8aeok_q1K6ICNuWcGhle8C7nlOn-red67Uy-R4zjkoV9MIbII-rC21-3ar3V-cJ7SkqqMYqBTqhGm1gyIGSQjKOhiKONTSsNB6Dl9pyEAOfoMiPe3qpMil6bz70rpeWc9i_k747d-tAYKEozLKOJub7WSt__jwkH5CFu3137fYc-_UU-at9ReKyDe1cH7Yz592Dqes4MdcmXYq8HAiF4WRY47P1oebEIHcKvMft1WE3TJ3As9tSUXGoDCmmmC4tmznefwNCcNhmDDOz0eXln_F0Z2PCgoftoD1JngBTW9fyLfckXJLRsn1V1zGg50itJHjEbniMRC81IWnqO_EIBBSF-zZv9GQ5JyUm_jpWqhKJMAaWr
+is_cover: false
+sort_order: 6
+caption: Alexander M. Ulm
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIDEpfjW6QE!2e10!4m2!3m1!1s0x889a043c0318682b:0xfe93b208836c32cc
+
+--- entity_photos [row 19 of 24] ---
+id: 9fbed2e4-1090-4baa-805c-5f0333953431
+entity_slug: dippin-dots
+url: https://places.googleapis.com/v1/places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3kiYJagWe4XE1OYGMMO0-0SMdE-GbEWv3DMIbx-eMUX9tieHL7Hl3cU7b6JwXjLg-u1aSMgG_vALF7CVsFb1EVj-vkpaLZBKT9LWll4i-RzMFmLJw2r8sbcxriyPADFT4JmdHnL7JFIntKYHrzcJTrMpkV6T36ol7QYKEGoRTHoD9byxj-UkNvjiE4aJub59pkbBKti35NPIVevySoYlJ2N2wEP-M25R91FPxBr7IAh7fh1BQrecSSxg_-ZyzdNZRX1uMLJgYkBJAxurBe3mdSKMvGoYQruatZhH1r3g6WLgnpJFySGz1WHlqrtEbcSjMi5F28bwhOTc8HBydeEWs7T_v7e8tkNN-yXV26Lqlq7FOxwUMkUvrWeSlGLYwf70LjBOqPN6OkiCZeWyTcsS7c_GQdaTbUZf6H7LsH3O5CVJhmydgPxsDcdg7ItOhqD/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3kiYJagWe4XE1OYGMMO0-0SMdE-GbEWv3DMIbx-eMUX9tieHL7Hl3cU7b6JwXjLg-u1aSMgG_vALF7CVsFb1EVj-vkpaLZBKT9LWll4i-RzMFmLJw2r8sbcxriyPADFT4JmdHnL7JFIntKYHrzcJTrMpkV6T36ol7QYKEGoRTHoD9byxj-UkNvjiE4aJub59pkbBKti35NPIVevySoYlJ2N2wEP-M25R91FPxBr7IAh7fh1BQrecSSxg_-ZyzdNZRX1uMLJgYkBJAxurBe3mdSKMvGoYQruatZhH1r3g6WLgnpJFySGz1WHlqrtEbcSjMi5F28bwhOTc8HBydeEWs7T_v7e8tkNN-yXV26Lqlq7FOxwUMkUvrWeSlGLYwf70LjBOqPN6OkiCZeWyTcsS7c_GQdaTbUZf6H7LsH3O5CVJhmydgPxsDcdg7ItOhqD
+is_cover: false
+sort_order: 7
+caption: Rob Hole
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIABIhADyddmqRKB_meupEcACzbp!2e10!4m2!3m1!1s0x889a043c0318682b:0xfe93b208836c32cc
+
+--- entity_photos [row 20 of 24] ---
+id: 6b6353da-0f6f-4056-bf89-100b6bac330b
+entity_slug: dippin-dots
+url: https://places.googleapis.com/v1/places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3nsHPru-TJqFBlwo8ZkzfKV5JD5qqoDutmBG64CzWrUL-O6kR3zh4N1aAkUKsIyNCxYnAO_BiICTz1iUfpOHyxCSSuM1I_qL1t2mOC6T3mf_l86z_Bffyg1uvxwf5Ti9H5fSXjwi_aycmvrTQ2wEAmreSHpsifzAzrlsBT6HJGdm4ULXg8cHoJcxvOJsGrbAzPHFpvK15M8d05i7o8urAAjHw2vwFdjiAQV_wCsYJG_URcW1NVUwlW_pBjwettMWqWmfRJZEiTEXn2Z78A0L6v-752Pln9vQp2Ti13Rp3UiaBiwfrTLsw08qGB0P92c_cSGknYx8prjESOS1PYCb7Ar4ihIS5jKmFwfDyYh97ugc7FbDpGootdqtIR94FqztN8Qm3_MiUUXZ8kPY6PdU1P_GN-bE1y9MWgrUtBv9tLG0YY/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3nsHPru-TJqFBlwo8ZkzfKV5JD5qqoDutmBG64CzWrUL-O6kR3zh4N1aAkUKsIyNCxYnAO_BiICTz1iUfpOHyxCSSuM1I_qL1t2mOC6T3mf_l86z_Bffyg1uvxwf5Ti9H5fSXjwi_aycmvrTQ2wEAmreSHpsifzAzrlsBT6HJGdm4ULXg8cHoJcxvOJsGrbAzPHFpvK15M8d05i7o8urAAjHw2vwFdjiAQV_wCsYJG_URcW1NVUwlW_pBjwettMWqWmfRJZEiTEXn2Z78A0L6v-752Pln9vQp2Ti13Rp3UiaBiwfrTLsw08qGB0P92c_cSGknYx8prjESOS1PYCb7Ar4ihIS5jKmFwfDyYh97ugc7FbDpGootdqtIR94FqztN8Qm3_MiUUXZ8kPY6PdU1P_GN-bE1y9MWgrUtBv9tLG0YY
+is_cover: false
+sort_order: 8
+caption: Shaggy Miller
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC4z7uo1wE!2e10!4m2!3m1!1s0x889a043c0318682b:0xfe93b208836c32cc
+
+--- entity_photos [row 21 of 24] ---
+id: f441332f-5168-4950-bd74-927543302238
+entity_slug: dippin-dots
+url: https://places.googleapis.com/v1/places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3kI6Ie1Ofq7EYyRKa5o7r3DYFOCNJdjpHQVF7D7agIO2jcB-zURXK0s9erMOHqQsEkp_IDHBh-hkCPrDnEkRWC9TXvMWxC9KXvObkFjJiKtJZtU3lW8afAGjRUaBzfKIweBl_Obr1v4oWI1dPT2p0YGCnwKG6PVMfzMkXdNn2022rBRQ6LT73zlENlM4e0oUIRSmTUXQUcDHVgwi7MDkzkvndiPQuMwLv_y1JVA3PjIE1WJzJAqq_nrk0unBJhjYuUxYLCQWKItWsZpfgXJpiri7eQrCtFLlQfuw7Fztc_wfeP-NKsneauAyMHDRGxDHd-9zg_PpvKHAyg8h5iVf3RRanix0yO0sp3fsMxZ1IPSlJa0euvhBjc22D7-yLuWRZU0jlbaFddiJPoyuXZWOlB1aG0QHdvL4LaRAZunj78/media?maxHeightPx=1600&maxWidthPx=1600
+image_path: places/ChIJK2gYAzwEmogRzDJsgwiyk_4/photos/AaVGc3kI6Ie1Ofq7EYyRKa5o7r3DYFOCNJdjpHQVF7D7agIO2jcB-zURXK0s9erMOHqQsEkp_IDHBh-hkCPrDnEkRWC9TXvMWxC9KXvObkFjJiKtJZtU3lW8afAGjRUaBzfKIweBl_Obr1v4oWI1dPT2p0YGCnwKG6PVMfzMkXdNn2022rBRQ6LT73zlENlM4e0oUIRSmTUXQUcDHVgwi7MDkzkvndiPQuMwLv_y1JVA3PjIE1WJzJAqq_nrk0unBJhjYuUxYLCQWKItWsZpfgXJpiri7eQrCtFLlQfuw7Fztc_wfeP-NKsneauAyMHDRGxDHd-9zg_PpvKHAyg8h5iVf3RRanix0yO0sp3fsMxZ1IPSlJa0euvhBjc22D7-yLuWRZU0jlbaFddiJPoyuXZWOlB1aG0QHdvL4LaRAZunj78
+is_cover: false
+sort_order: 9
+caption: Shaggy Miller
+photo_type: google
+source_name: google_places
+source_page_url: https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sCIHM0ogKEICAgIC4z7voBA!2e10!4m2!3m1!1s0x889a043c0318682b:0xfe93b208836c32cc
+
+--- entity_photos [row 22 of 24] ---
+id: 3ef28f5b-acc2-4109-a991-0142cee1b8eb
+entity_slug: dippin-dots
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/1b9aaada-0201-4512-9ca6-6d5a1e9a3e98/image_1.jpg
+is_cover: true
+sort_order: 100
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 23 of 24] ---
+id: a517f349-d574-4d1e-958c-a10afabcfa8e
+entity_slug: dippin-dots
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/1b9aaada-0201-4512-9ca6-6d5a1e9a3e98/image_2.jpg
+is_cover: false
+sort_order: 101
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+--- entity_photos [row 24 of 24] ---
+id: fb5d547f-8e04-449f-b3cf-98511bf2f972
+entity_slug: dippin-dots
+url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/1b9aaada-0201-4512-9ca6-6d5a1e9a3e98/image_3.jpg
+is_cover: false
+sort_order: 102
+photo_type: legacy_hotlink
+created_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: entity_reviews   -   5 row(s)
+####################################################################################################
+
+--- entity_reviews [row 1 of 5] ---
+id: 4c2efd20-1559-4987-9726-2a3ffcbaa807
+entity_slug: dippin-dots
+reviewer_name: Preston Albritton
+rating: 4
+body: Our family of 6 had dinner and dessert here.  We had a great time.  The food was excellent.  Hand cut fries, the burgers were great.  The Rodeo burger with the fried cheese was superb.  The kids were pleased with the hot dog and grilled cheese.  The ice cream was a great value as well.  The staff was outstanding.  We were a bit concerned taking our large family in, but the staff were very attentive, firendly, and handled us great.  We will be back.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2015-06-19T15:30:54.332+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 2 of 5] ---
+id: 91e1fb1c-c35e-4e7b-8bf4-51a635e925cd
+entity_slug: dippin-dots
+reviewer_name: Jane Smith
+rating: 4
+body: I can't really rate this place because I actually didn't get anything from them. I'm doing this because today (Sunday, August 6th at 5:32pm) I went there to get dip and dots. I was VERY disappointed when I realized they were closed. Online AND the sign on their door said their hours were 3pm-9pm on Sundays. So they should have been open, we drove a good distance out of our way just to get dip and dots but then NOT. So there's that.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2023-08-06T23:44:35.882842+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 3 of 5] ---
+id: b05d2d49-ea56-4bd7-8196-b519c75d2a68
+entity_slug: dippin-dots
+reviewer_name: Greg Ordal
+rating: 5
+body: The dipping dots were amazing. They also serve traditional ice cream and have grill options too. The employee was very friendly and helpful. A great place. My wife and I will definitely go back.
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2017-10-28T17:30:01.703+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 4 of 5] ---
+id: 783d12c4-a75d-4849-a90d-45acd3ed1ebb
+entity_slug: dippin-dots
+reviewer_name: Mike Smith
+rating: 5
+body: I, my fiancé and 3 children came in March 9th 2018 right at closing. The young ladies there welcomed us in and were very polite. Awesome customer service. I see the owner is responding to comments. We're from Auburn and just got out of a van from a 4 hour ride. She made some irritated kids "and adults" much happier!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2018-03-10T04:13:54.977+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+--- entity_reviews [row 5 of 5] ---
+id: f2e6ad50-5931-4cc7-bde4-8d8dc6e9e4b6
+entity_slug: dippin-dots
+reviewer_name: Anna Hochstetler
+rating: 1
+body: This place was absolutely horrible. The employees were the most unprofessional I’ve ever seen in a work place. Making degrading jabs at each other, loud, foolish and immature, not caring at all about the customers and serving them. It was so bad we left before buying ice cream. We got some for our kids and then as the employees kept at each other, my husband and I couldn’t handle it and we left not buying anything for ourselves. They were dirty in the way they handled utensils and food and we were so grossed out. I would never recommend this place!
+verified_purchase: false
+helpful_count: 0
+approved: true
+created_at: 2018-08-15T12:30:17.905+00:00
+updated_at: 2026-06-30T13:52:51.804126+00:00
+
+####################################################################################################
+# TABLE: entity_sources   -   1 row(s)
+####################################################################################################
+
+--- entity_sources [row 1 of 1] ---
+id: 41862207-76c1-490a-a603-3bbe83f441b5
+entity_slug: dippin-dots
+source_system: gulfshores.com restaurant-dining directory
+source_url: https://www.gulfshores.com/restaurants/dessert/
+scope: directory-listing
+confidence: high
+note: Dessert
+created_at: 2026-07-16T12:32:02.549024+00:00
+
+####################################################################################################
+# TABLE: entity_tags   -   285 row(s)
+####################################################################################################
+
+--- entity_tags [row 1 of 285] ---
+id: 069cc3fb-65c5-4d8d-8ba2-e24e12240607
+entity_slug: dippin-dots
+tag_name: ice_cream_shop
+tag_category: google_primary_type
+
+--- entity_tags [row 2 of 285] ---
+id: 604e8fae-2c5d-49e4-ad58-335c26076507
+entity_slug: dippin-dots
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 3 of 285] ---
+id: ba3b5d36-8182-4a5f-bfa1-69b93956dc99
+entity_slug: dippin-dots
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 4 of 285] ---
+id: de15a1a1-c44f-4823-a813-b5b1d1a3ceff
+entity_slug: dippin-dots
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 5 of 285] ---
+id: 88b6137c-c8f0-4c63-b1e5-a6c0371f92d1
+entity_slug: dippin-dots
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 6 of 285] ---
+id: 394dd34a-7f74-44cd-96e3-e504c955c98e
+entity_slug: dippin-dots
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 7 of 285] ---
+id: e4ddf8d2-5101-4ecc-8607-a7b18e45839d
+entity_slug: dippin-dots
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 8 of 285] ---
+id: 4e27ea85-3a1d-4ab6-a6d2-6b0827a69306
+entity_slug: dippin-dots
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 9 of 285] ---
+id: 6827a6e7-b6cd-417f-bd37-ec9fcb0ce9d3
+entity_slug: dippin-dots
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 10 of 285] ---
+id: 6887c957-dd08-4535-9733-5d3c9bcd3eb4
+entity_slug: dippin-dots
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 11 of 285] ---
+id: 50a04185-0e7c-4bdd-9040-ab3d04429068
+entity_slug: dippin-dots
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 12 of 285] ---
+id: 810e65d7-89e0-4779-8134-bf433dca8216
+entity_slug: dippin-dots
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 13 of 285] ---
+id: aa98a537-1b91-47fa-8b57-301cea63c7a9
+entity_slug: dippin-dots
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 14 of 285] ---
+id: 68c6a553-a3b6-498f-af56-3da8a4338340
+entity_slug: dippin-dots
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 15 of 285] ---
+id: 12fa6e04-ccc7-4930-a164-ff5abf6afd80
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 16 of 285] ---
+id: f487c110-b21a-465c-856c-08004a9b7d52
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 17 of 285] ---
+id: eca5cea1-9156-490b-95f5-d481d07c5db8
+entity_slug: dippin-dots
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 18 of 285] ---
+id: e77a5c4c-2dd5-4542-984d-f0b6ffb8c8ad
+entity_slug: dippin-dots
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 19 of 285] ---
+id: 28b01ec0-b31d-4121-8392-5e090e0d2c35
+entity_slug: dippin-dots
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 20 of 285] ---
+id: 13357838-90f2-4884-869b-c16a69c98799
+entity_slug: dippin-dots
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 21 of 285] ---
+id: 4fc56fa5-fe7e-40bc-9948-e19475d0470a
+entity_slug: dippin-dots
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 22 of 285] ---
+id: 0ee7de99-9478-483c-a859-ab50b786c846
+entity_slug: dippin-dots
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 23 of 285] ---
+id: 38523f3d-fff5-4fa8-ae8c-efcc56d19995
+entity_slug: dippin-dots
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 24 of 285] ---
+id: 0f0392c8-03cb-426b-a310-8b4b860e558d
+entity_slug: dippin-dots
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 25 of 285] ---
+id: 1e5eaef0-018e-4133-9535-13c60dc43cdc
+entity_slug: dippin-dots
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 26 of 285] ---
+id: 6e52782f-52af-47ac-bcdc-fa46a2183d97
+entity_slug: dippin-dots
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 27 of 285] ---
+id: ca9b432a-fb24-433e-8541-4f5d3130eb2c
+entity_slug: dippin-dots
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 28 of 285] ---
+id: 08a0731c-9ef4-4715-a193-10d0129be3aa
+entity_slug: dippin-dots
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 29 of 285] ---
+id: 756a4a3d-db65-4a71-a242-6805705b723f
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 30 of 285] ---
+id: 3a04a6dc-d9ac-4537-95d2-4f3106595dd8
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 31 of 285] ---
+id: 16a144fb-09fc-4c40-8268-cc98fdf0dd94
+entity_slug: dippin-dots
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 32 of 285] ---
+id: 53d7a9cf-9c1d-4820-ab34-154a00e94b89
+entity_slug: dippin-dots
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 33 of 285] ---
+id: 456c7f9e-14a2-46c6-81b0-53be91ab80e7
+entity_slug: dippin-dots
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 34 of 285] ---
+id: 57fecca1-9558-4de5-9365-d062c302f2e3
+entity_slug: dippin-dots
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 35 of 285] ---
+id: 59a92109-a6f5-4c5f-a4d8-eecae0ac4d0d
+entity_slug: dippin-dots
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 36 of 285] ---
+id: e530bea8-ef97-4e7b-bda4-ea3205a01933
+entity_slug: dippin-dots
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 37 of 285] ---
+id: 7b384acd-47e1-42d9-a4c1-a5d296362394
+entity_slug: dippin-dots
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 38 of 285] ---
+id: 87bc06a8-a183-4f3a-a26e-e106f3a49ead
+entity_slug: dippin-dots
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 39 of 285] ---
+id: 1b3cc2e7-f305-44e3-9497-b4f8db61e77c
+entity_slug: dippin-dots
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 40 of 285] ---
+id: a6f14e6d-477b-46fa-8780-e958dfb98663
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 41 of 285] ---
+id: 0d4f5b51-994d-4a98-9f85-eea84c928b34
+entity_slug: dippin-dots
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 42 of 285] ---
+id: 8c9f0702-0f19-411f-bcc5-ec4b5a3b87bd
+entity_slug: dippin-dots
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 43 of 285] ---
+id: 4d8e5921-79cc-4a3b-9376-3e53bb16d89a
+entity_slug: dippin-dots
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 44 of 285] ---
+id: fafa4f4b-e11e-460b-a6b0-895b4a66e432
+entity_slug: dippin-dots
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 45 of 285] ---
+id: b068f7ea-1697-424d-a44e-9e587e5cb632
+entity_slug: dippin-dots
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 46 of 285] ---
+id: d52b24d5-95ca-4c1b-80e9-83be4d77657e
+entity_slug: dippin-dots
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 47 of 285] ---
+id: 8dd0486d-6963-4931-a7ba-3b83679d42f3
+entity_slug: dippin-dots
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 48 of 285] ---
+id: a2bdd1cd-6d8a-4780-a254-986d21fb3fda
+entity_slug: dippin-dots
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 49 of 285] ---
+id: dbee4e26-62cf-4029-a12c-5f035b8f497b
+entity_slug: dippin-dots
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 50 of 285] ---
+id: fbf3fafd-954f-4ac1-956e-4f2c4f4a7ca7
+entity_slug: dippin-dots
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 51 of 285] ---
+id: 0d4d7e41-e47c-4557-b882-11dd3d212e73
+entity_slug: dippin-dots
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 52 of 285] ---
+id: 9354f2db-73a9-48d5-a4ac-9986c1e43594
+entity_slug: dippin-dots
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 53 of 285] ---
+id: d3d01809-d6b2-4bb5-8930-9770946beb43
+entity_slug: dippin-dots
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 54 of 285] ---
+id: 59813e96-bbf1-4578-854e-5e2b6cc78c25
+entity_slug: dippin-dots
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 55 of 285] ---
+id: c54cccc3-1a2e-457f-8d04-1bcb41e768f3
+entity_slug: dippin-dots
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 56 of 285] ---
+id: f6b1ad49-274f-4cf0-9432-60ac757f5f1c
+entity_slug: dippin-dots
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 57 of 285] ---
+id: ffd88949-8088-43af-a8c7-bcbb0f0acd1b
+entity_slug: dippin-dots
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 58 of 285] ---
+id: 3d19d0b3-7a2b-478c-8a95-d07d02934220
+entity_slug: dippin-dots
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 59 of 285] ---
+id: 6fed1bab-2b12-4d12-a2d4-4538759f25fb
+entity_slug: dippin-dots
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 60 of 285] ---
+id: bd26069c-b69e-4922-82cb-95a561608ac5
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 61 of 285] ---
+id: cd78438f-caf9-46f2-9f24-2e5844d4e8f4
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 62 of 285] ---
+id: c118596a-304a-41a0-ab24-12ac0e035ba6
+entity_slug: dippin-dots
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 63 of 285] ---
+id: 6d7d8004-4cda-47e3-a7b6-2273b71d3449
+entity_slug: dippin-dots
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 64 of 285] ---
+id: 9acb0dea-fd08-4f5b-9e2e-44bf35c8768d
+entity_slug: dippin-dots
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 65 of 285] ---
+id: 7a74ffd0-876f-40d1-97e3-0029d47aea1d
+entity_slug: dippin-dots
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 66 of 285] ---
+id: 450e0f68-e86d-43a0-952c-d0d793d087a4
+entity_slug: dippin-dots
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 67 of 285] ---
+id: 7e6ac37b-d8c6-4551-badf-fe98cfb0bb9b
+entity_slug: dippin-dots
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 68 of 285] ---
+id: 8c2bb6e6-1760-43c3-bcf7-6ef388759776
+entity_slug: dippin-dots
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 69 of 285] ---
+id: 84f096b2-0ee7-4360-9379-bec0d56e84b0
+entity_slug: dippin-dots
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 70 of 285] ---
+id: f8cc40cc-21b7-45f3-b464-ce2a9205bd48
+entity_slug: dippin-dots
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 71 of 285] ---
+id: 617d7af4-565b-482e-99eb-131f030cd5d3
+entity_slug: dippin-dots
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 72 of 285] ---
+id: 7ffe6ca9-06ac-48ce-ae23-5b219b644070
+entity_slug: dippin-dots
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 73 of 285] ---
+id: 5ad06064-473e-4767-b8a1-4953c58c1004
+entity_slug: dippin-dots
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 74 of 285] ---
+id: c3e04a5e-ff5d-4bc8-86dd-4496f3a763b3
+entity_slug: dippin-dots
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 75 of 285] ---
+id: 11c3bb45-3434-40e2-88c5-5d89681df121
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 76 of 285] ---
+id: 8a725307-6b70-407c-ad96-eed9b95be8dd
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 77 of 285] ---
+id: 0af26dc8-556f-4e27-8e35-927f7900a05a
+entity_slug: dippin-dots
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 78 of 285] ---
+id: 7e7a4e04-1160-4b4d-9197-8591196eb1ef
+entity_slug: dippin-dots
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 79 of 285] ---
+id: a243472e-6f01-48c8-990c-725c49ade6f8
+entity_slug: dippin-dots
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 80 of 285] ---
+id: 67e67390-5544-4012-ae5f-cd715c9fec30
+entity_slug: dippin-dots
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 81 of 285] ---
+id: 489a3b44-45d4-4c70-be9a-f1ab85029fca
+entity_slug: dippin-dots
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 82 of 285] ---
+id: 1939d5fa-8af8-42bf-a945-7c82039ecfd5
+entity_slug: dippin-dots
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 83 of 285] ---
+id: 062ce1c5-93cd-4c1f-ae9f-19b3d5218c1b
+entity_slug: dippin-dots
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 84 of 285] ---
+id: f1877537-15f9-4292-8cdc-89c08f4e7fd2
+entity_slug: dippin-dots
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 85 of 285] ---
+id: 64bbb86f-df46-4ca4-8b93-067bbf69f596
+entity_slug: dippin-dots
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 86 of 285] ---
+id: e5c981fd-2835-422a-a865-5c44b5546112
+entity_slug: dippin-dots
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 87 of 285] ---
+id: e3b5a338-953a-48ba-bcb2-82751e1756b9
+entity_slug: dippin-dots
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 88 of 285] ---
+id: 8b68087a-d9b5-4043-a68f-12daf1f1836d
+entity_slug: dippin-dots
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 89 of 285] ---
+id: c90e7fd3-a734-4bac-9204-9e54558c4e24
+entity_slug: dippin-dots
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 90 of 285] ---
+id: ec297107-a86a-4ec5-a2d9-e5801708acff
+entity_slug: dippin-dots
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 91 of 285] ---
+id: 4a2f2f0b-ac06-476a-893a-bc8194549af7
+entity_slug: dippin-dots
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 92 of 285] ---
+id: 60e9f77e-8f1e-4f48-bd2c-5102395737b5
+entity_slug: dippin-dots
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 93 of 285] ---
+id: af161bfc-c74f-489e-85e2-943cf6f932df
+entity_slug: dippin-dots
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 94 of 285] ---
+id: 0a089b7d-7a98-434a-a08b-8dd123cf6971
+entity_slug: dippin-dots
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 95 of 285] ---
+id: c22a87d3-a7f8-41a4-9c53-e3a851c3c6ea
+entity_slug: dippin-dots
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 96 of 285] ---
+id: bfbfa5c6-4e2d-4aaf-954e-2a1c5392cdb4
+entity_slug: dippin-dots
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 97 of 285] ---
+id: f34bcb79-480c-4c41-9717-13d5820e7f7a
+entity_slug: dippin-dots
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 98 of 285] ---
+id: ba3c9ea7-85ae-47c3-82b9-673a5185609b
+entity_slug: dippin-dots
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 99 of 285] ---
+id: bde3f90d-0f4a-4ba8-9549-150c0faa264d
+entity_slug: dippin-dots
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 100 of 285] ---
+id: 7e34d987-9855-4ff7-8b1f-236423a798c7
+entity_slug: dippin-dots
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 101 of 285] ---
+id: 6d1e7c5b-0188-4735-91b8-cacc6234c9f3
+entity_slug: dippin-dots
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 102 of 285] ---
+id: cbcc3209-463a-47e9-b5bb-292fdac8650f
+entity_slug: dippin-dots
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 103 of 285] ---
+id: f5cd4bcb-3484-4474-868c-468a98f001a6
+entity_slug: dippin-dots
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 104 of 285] ---
+id: fe5aaa7a-1fbb-43da-b159-51c12d6585ac
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 105 of 285] ---
+id: a97ca566-0e58-46f0-a9ea-433cf78038c6
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 106 of 285] ---
+id: 95fc5cc2-453f-4613-b474-7b6f730ac5c4
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 107 of 285] ---
+id: 8a271a07-6da1-4ed6-954c-ffefe466c073
+entity_slug: dippin-dots
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 108 of 285] ---
+id: 038874d1-442d-408f-b4b2-6a724f9e5c4e
+entity_slug: dippin-dots
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 109 of 285] ---
+id: f027e655-66e3-46b8-980d-dabdb5d9b9c7
+entity_slug: dippin-dots
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 110 of 285] ---
+id: 8556a6d9-4b58-42c1-9489-9f23bf51179a
+entity_slug: dippin-dots
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 111 of 285] ---
+id: 54b3eec3-f5f7-4b48-b24b-408dfad25448
+entity_slug: dippin-dots
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 112 of 285] ---
+id: d3027805-8504-41d4-82dc-814f0f5b287c
+entity_slug: dippin-dots
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 113 of 285] ---
+id: f07a8fe2-e8ac-45c5-9158-13c73bf0b4de
+entity_slug: dippin-dots
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 114 of 285] ---
+id: eb9561f9-03dc-4f9f-a938-5eb48107062e
+entity_slug: dippin-dots
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 115 of 285] ---
+id: 49f6a648-90a3-4148-a6bf-0fc0418472cb
+entity_slug: dippin-dots
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 116 of 285] ---
+id: 9b7d553e-3693-43cc-bfcf-f6461bc34f01
+entity_slug: dippin-dots
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 117 of 285] ---
+id: 94432cad-9b77-428b-9570-d0173f67e9f5
+entity_slug: dippin-dots
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 118 of 285] ---
+id: 50e4103e-a335-4a92-a3e1-856bac23e463
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 119 of 285] ---
+id: 1da37d74-1293-454d-a2f5-7e16b176a140
+entity_slug: dippin-dots
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 120 of 285] ---
+id: 5f9b515e-a93c-4267-a72e-313af78e03c1
+entity_slug: dippin-dots
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 121 of 285] ---
+id: dc9cb168-ecea-4fde-abdb-3222657f807a
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 122 of 285] ---
+id: fb5b9230-ee34-42f1-ba03-1fc021952c18
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 123 of 285] ---
+id: a11d818d-7f1f-48ff-95f4-068439df5e4a
+entity_slug: dippin-dots
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 124 of 285] ---
+id: 4f1faef7-577f-4ea4-9a4a-aeaeaa4425b8
+entity_slug: dippin-dots
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 125 of 285] ---
+id: 1358c2ae-ec27-4ead-9468-b37fd7cc5ce4
+entity_slug: dippin-dots
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 126 of 285] ---
+id: 156417b5-8763-415d-a458-b3f430401126
+entity_slug: dippin-dots
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 127 of 285] ---
+id: ddf1b894-4ea2-4804-a71f-8f6769cb4cba
+entity_slug: dippin-dots
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 128 of 285] ---
+id: 4b3c4e0a-dac3-4027-a1f5-3d3ce61d3253
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 129 of 285] ---
+id: e1afa5dd-3426-4352-bd07-c9f3becc4e42
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 130 of 285] ---
+id: 9076e528-98dc-491a-bd95-759fafc57e52
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 131 of 285] ---
+id: 4bc1fb29-a0a6-4698-9812-d31225e98bc2
+entity_slug: dippin-dots
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 132 of 285] ---
+id: 3eb4232f-4cd6-49ad-89a8-33f3e7a359d5
+entity_slug: dippin-dots
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 133 of 285] ---
+id: a834c84f-bf53-4acf-b78a-9e2cf250e71c
+entity_slug: dippin-dots
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 134 of 285] ---
+id: f13e017c-2fd2-4173-93d6-abe43f391a72
+entity_slug: dippin-dots
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 135 of 285] ---
+id: 97540c36-7cf2-49f4-af85-474ef00a7e6f
+entity_slug: dippin-dots
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 136 of 285] ---
+id: cecb361a-8a24-467f-aa93-f1445baf1916
+entity_slug: dippin-dots
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 137 of 285] ---
+id: 0fc70469-e95b-4589-99c7-a1ecd8b32fb4
+entity_slug: dippin-dots
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 138 of 285] ---
+id: 1e850363-1893-4574-ab00-fd64945b440b
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 139 of 285] ---
+id: 4d8190bb-972b-4fa2-b753-c8bd5d633e1f
+entity_slug: dippin-dots
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 140 of 285] ---
+id: 1acdb236-3273-46b9-a80d-37b067774b90
+entity_slug: dippin-dots
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 141 of 285] ---
+id: 34dcce6a-a221-41f2-a130-f3295bfea283
+entity_slug: dippin-dots
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 142 of 285] ---
+id: 3d054abc-7f52-401a-bf99-0bfaccccfe3d
+entity_slug: dippin-dots
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 143 of 285] ---
+id: 230351ac-5a0d-4db3-a4f0-56566e8fdc56
+entity_slug: dippin-dots
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 144 of 285] ---
+id: 44cfef03-8a9e-4dc6-933b-181185749c27
+entity_slug: dippin-dots
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 145 of 285] ---
+id: 70aa3aa3-2a5e-451c-bc0e-da1134cbc503
+entity_slug: dippin-dots
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 146 of 285] ---
+id: 6afc1ae4-51a0-4ddf-9378-06ef25fa5c3e
+entity_slug: dippin-dots
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 147 of 285] ---
+id: dafcb720-cb8c-431e-a386-ee768e886f45
+entity_slug: dippin-dots
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 148 of 285] ---
+id: f2106379-fb7f-4918-8782-97e0bc527412
+entity_slug: dippin-dots
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 149 of 285] ---
+id: 4308959d-d9da-4435-9f89-8f4ab5ca592b
+entity_slug: dippin-dots
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 150 of 285] ---
+id: dbba79a5-5303-4040-b27a-421f8733fd65
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 151 of 285] ---
+id: 49eb7d51-447f-4beb-84da-2b4f79dbae66
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 152 of 285] ---
+id: a12d06df-9e6b-4810-b70c-b1032a5da8c7
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 153 of 285] ---
+id: 6e57ed79-1364-422c-bbbb-e7a06c5b0b7b
+entity_slug: dippin-dots
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 154 of 285] ---
+id: 8fab6278-71df-4237-b79c-c847e8f0178c
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 155 of 285] ---
+id: 31f7399f-2786-4163-8460-2f20b68c3a26
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 156 of 285] ---
+id: d0a2d2c9-cd07-4efe-a76c-3108afbf6962
+entity_slug: dippin-dots
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 157 of 285] ---
+id: 8246890a-2be5-452f-b178-8388288d9656
+entity_slug: dippin-dots
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 158 of 285] ---
+id: 9d432182-5ea5-48b7-9971-816db59b8772
+entity_slug: dippin-dots
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 159 of 285] ---
+id: b01a0f3a-83b4-4500-91ea-62f3409aa1ff
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 160 of 285] ---
+id: 52579142-98b5-4979-a17c-85871bebe27e
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 161 of 285] ---
+id: 56751ad1-1a53-4d59-8618-0678b50b24a3
+entity_slug: dippin-dots
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 162 of 285] ---
+id: 711412da-3e01-4e17-af44-db8f2a4abec3
+entity_slug: dippin-dots
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 163 of 285] ---
+id: 44b79b9c-63ce-4b0e-80c4-643a71518ba6
+entity_slug: dippin-dots
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 164 of 285] ---
+id: c5e03ddd-7946-437d-8ef1-7c9483343856
+entity_slug: dippin-dots
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 165 of 285] ---
+id: 1fb4acfa-30c5-47df-8828-cc3e9b578d51
+entity_slug: dippin-dots
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 166 of 285] ---
+id: 6dd3657f-698b-49e0-ade7-4b1781cef990
+entity_slug: dippin-dots
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 167 of 285] ---
+id: a2fce13f-2ff7-49fe-8d46-b7806ec38bde
+entity_slug: dippin-dots
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 168 of 285] ---
+id: b242748e-9e50-4d81-909f-81e61ab4b2c0
+entity_slug: dippin-dots
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 169 of 285] ---
+id: 9bbc3279-baa2-48d2-9bf0-6e4f12e9dd46
+entity_slug: dippin-dots
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 170 of 285] ---
+id: 8af0cb8c-3784-401b-ba69-e06f11dd503c
+entity_slug: dippin-dots
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 171 of 285] ---
+id: dd5fb23e-3640-4d0b-b929-dd8fb9e1c5dc
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 172 of 285] ---
+id: c3c4eb6d-2fd6-4460-86a3-8d0f064a6d33
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 173 of 285] ---
+id: 13846dfc-081f-4406-bc8e-fc1b1978f289
+entity_slug: dippin-dots
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 174 of 285] ---
+id: 84a0d6c3-2e7b-4ea5-9711-b31df0d7cde8
+entity_slug: dippin-dots
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 175 of 285] ---
+id: b40af65f-19f3-43d9-b518-408a85e83b21
+entity_slug: dippin-dots
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 176 of 285] ---
+id: 35fba572-e7e5-4711-b261-98c93f80e5e9
+entity_slug: dippin-dots
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 177 of 285] ---
+id: e7ccbd05-e26d-4a35-a5b9-cbe280c72b5e
+entity_slug: dippin-dots
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 178 of 285] ---
+id: ad08c031-34f5-4f47-ba48-d22a0c645c51
+entity_slug: dippin-dots
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 179 of 285] ---
+id: 0ec01a5c-1579-4648-824a-53ffd9da8795
+entity_slug: dippin-dots
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 180 of 285] ---
+id: baba8468-82d9-4b22-abb4-c969afbfd850
+entity_slug: dippin-dots
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 181 of 285] ---
+id: 70f0e026-2549-4429-aa22-0ccf34ea99a5
+entity_slug: dippin-dots
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 182 of 285] ---
+id: 6b0fae0c-aa0c-4953-8c92-7dfa26dadfda
+entity_slug: dippin-dots
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 183 of 285] ---
+id: e03b86dd-ebd3-40d0-b468-9d92b334e01e
+entity_slug: dippin-dots
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 184 of 285] ---
+id: 5aff9988-edb5-42fc-a85a-3cc75c45523c
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 185 of 285] ---
+id: 6241a51f-f84a-46dd-8ea2-bd2a77fcf7e3
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 186 of 285] ---
+id: 4cb391fe-5f6e-4649-9c96-4cf8c08de362
+entity_slug: dippin-dots
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 187 of 285] ---
+id: 4ab89748-5030-402c-b747-9517a854444e
+entity_slug: dippin-dots
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 188 of 285] ---
+id: 0692a3da-754a-4eff-8ca1-4aa123510e50
+entity_slug: dippin-dots
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 189 of 285] ---
+id: 3fd75c75-0ac6-4303-91a1-cf5a56c72ccd
+entity_slug: dippin-dots
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 190 of 285] ---
+id: 1a5a2f88-f662-4247-b3d4-8874d7b744a1
+entity_slug: dippin-dots
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 191 of 285] ---
+id: 42bb595e-7a6e-4a36-a6a2-42feda15f7fa
+entity_slug: dippin-dots
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 192 of 285] ---
+id: f2168cd6-26f8-4eef-b642-2a5ada0ef75e
+entity_slug: dippin-dots
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 193 of 285] ---
+id: d2317527-22b3-4f00-9cdc-4ee00c48d8df
+entity_slug: dippin-dots
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 194 of 285] ---
+id: 8e87fafb-946c-4cc5-9286-b5fbc7a5f340
+entity_slug: dippin-dots
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 195 of 285] ---
+id: d01d33ff-feda-4d13-bc29-1888613f7409
+entity_slug: dippin-dots
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 196 of 285] ---
+id: 2a64bdd4-4586-41c5-ba0d-fe4c17500848
+entity_slug: dippin-dots
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 197 of 285] ---
+id: 965cf306-3906-4bd1-bb26-6bd7e684b460
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 198 of 285] ---
+id: a86b429d-9c3f-47e0-b780-832eccaf3232
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 199 of 285] ---
+id: af381f28-238f-458c-82b7-8027ef813573
+entity_slug: dippin-dots
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 200 of 285] ---
+id: 7ebc13f7-f7e3-4a2f-9265-ba45671dbb58
+entity_slug: dippin-dots
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 201 of 285] ---
+id: 6c42369e-3082-431e-9cc9-326814adf8c5
+entity_slug: dippin-dots
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 202 of 285] ---
+id: cd5f6f98-fb2c-477a-9548-4aaa7b2ec4f2
+entity_slug: dippin-dots
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 203 of 285] ---
+id: 58216ed9-50c6-4269-9e52-bd237e19747a
+entity_slug: dippin-dots
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 204 of 285] ---
+id: 7780a9f7-ccd3-4f81-9cc5-26b5a7dd0828
+entity_slug: dippin-dots
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 205 of 285] ---
+id: 6b95f9e6-a6ba-444f-8103-c506292fe031
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 206 of 285] ---
+id: f8569660-0eaa-4e82-a047-6ebb584947ca
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 207 of 285] ---
+id: 8a36b75d-5a4d-4cd0-8bae-1b6e6bc5818c
+entity_slug: dippin-dots
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 208 of 285] ---
+id: 56caf234-f3e4-4057-b2af-03261caa13a4
+entity_slug: dippin-dots
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 209 of 285] ---
+id: 2e5d61d6-f73e-4861-af0e-8c737688f73d
+entity_slug: dippin-dots
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 210 of 285] ---
+id: 979e8c94-321e-4fee-be33-be74b1dff6e3
+entity_slug: dippin-dots
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 211 of 285] ---
+id: 7bc82ecc-bdd5-446b-884f-6f7c20f38acd
+entity_slug: dippin-dots
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 212 of 285] ---
+id: e024b9d1-944a-47ec-85e4-f206ce0904af
+entity_slug: dippin-dots
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 213 of 285] ---
+id: d20fc906-4f8a-46b4-accb-b156cde310bb
+entity_slug: dippin-dots
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 214 of 285] ---
+id: fc064ec8-c2d3-4dc0-9e92-131015dcd6b3
+entity_slug: dippin-dots
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 215 of 285] ---
+id: e748638b-981d-4f31-960c-e17e25d846fb
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 216 of 285] ---
+id: 3065ce9f-14e7-41fc-ba01-b374eeef708d
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 217 of 285] ---
+id: d713515c-0a6f-4753-b97f-c7994ea050bc
+entity_slug: dippin-dots
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 218 of 285] ---
+id: 0a45666b-024e-480d-9272-3bf8aef1d876
+entity_slug: dippin-dots
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 219 of 285] ---
+id: 6694b71d-b9ff-4010-a753-02ff18716556
+entity_slug: dippin-dots
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 220 of 285] ---
+id: 62b64af2-dec3-4243-8d56-e0bcb2e76195
+entity_slug: dippin-dots
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 221 of 285] ---
+id: e50e1c4a-4555-4170-8909-17a837c4ab20
+entity_slug: dippin-dots
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 222 of 285] ---
+id: f7132c7d-2b13-472e-932a-4dc5d2ed071f
+entity_slug: dippin-dots
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 223 of 285] ---
+id: bc9534c4-d1be-4ad5-9db9-24a932ea5eef
+entity_slug: dippin-dots
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 224 of 285] ---
+id: b2ff4e36-b0a9-41a3-a6f7-221c55646160
+entity_slug: dippin-dots
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 225 of 285] ---
+id: d74454a7-6bc8-4da4-b88d-ac75cb5df077
+entity_slug: dippin-dots
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 226 of 285] ---
+id: 046856ff-fe5a-4e0a-8e4d-8c6f4ed993f6
+entity_slug: dippin-dots
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 227 of 285] ---
+id: 25dd8e18-7937-4d51-8e56-b43664ed60aa
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 228 of 285] ---
+id: 74118e51-49c6-4ce4-ba17-2551231f5e6a
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 229 of 285] ---
+id: 02a6adcd-11bd-4861-a90d-7f9521c389d4
+entity_slug: dippin-dots
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 230 of 285] ---
+id: 2dc1a435-16d9-4d9d-905d-cd74ddc41154
+entity_slug: dippin-dots
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 231 of 285] ---
+id: 7f10bac7-e57b-42ec-bd86-8e9bcb90371b
+entity_slug: dippin-dots
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 232 of 285] ---
+id: b7993b22-47fc-4ba0-8fd4-c72ec98d9c8c
+entity_slug: dippin-dots
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 233 of 285] ---
+id: 62b65857-a024-4c24-8eed-ac35de4b2acc
+entity_slug: dippin-dots
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 234 of 285] ---
+id: 68042b6b-df7e-4bf9-9d69-44b87d57481d
+entity_slug: dippin-dots
+tag_name: ice_cream_shop
+tag_category: google_type
+
+--- entity_tags [row 235 of 285] ---
+id: df4add7c-a403-45ee-835b-ab477265f6c7
+entity_slug: dippin-dots
+tag_name: dessert_shop
+tag_category: google_type
+
+--- entity_tags [row 236 of 285] ---
+id: f1424350-0827-4932-ac55-a85e4bbf8675
+entity_slug: dippin-dots
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 237 of 285] ---
+id: 8dd817c6-6522-4f20-885a-06a9e83762a8
+entity_slug: dippin-dots
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 238 of 285] ---
+id: d84464f4-fb3b-4c15-b425-31829bd6b444
+entity_slug: dippin-dots
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 239 of 285] ---
+id: b6bb2b88-dfdd-4f5c-bc5f-6f823facb9f8
+entity_slug: dippin-dots
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 240 of 285] ---
+id: e4601c5a-d22c-44d5-96e3-fc1144712a54
+entity_slug: dippin-dots
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 241 of 285] ---
+id: 92071cdc-b046-4874-9bb4-e5717862941f
+entity_slug: dippin-dots
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 242 of 285] ---
+id: 074bff62-bb40-4902-b231-017a88cfb26c
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 243 of 285] ---
+id: f76cc34a-c576-4f31-83f0-63e6a3068f23
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 244 of 285] ---
+id: b57e91ab-8414-4d5d-bcde-123cd1306c63
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 245 of 285] ---
+id: f9e7bd0b-9db3-49e3-95b9-ef7a1cb08d1b
+entity_slug: dippin-dots
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 246 of 285] ---
+id: 5641b4a3-385a-40e7-8d38-8823abe923ae
+entity_slug: dippin-dots
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 247 of 285] ---
+id: 5e11d4cf-106f-46e7-ae1d-0a5c48b31ac2
+entity_slug: dippin-dots
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 248 of 285] ---
+id: f7879f21-7127-4587-b322-bb22b53a08b8
+entity_slug: dippin-dots
+tag_name: confectionery
+tag_category: google_type
+
+--- entity_tags [row 249 of 285] ---
+id: 81b0ead4-7202-42c0-9af2-f91e1f3b5afd
+entity_slug: dippin-dots
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 250 of 285] ---
+id: 2473d2ed-7377-491a-aebb-2d169b9b6a2c
+entity_slug: dippin-dots
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 251 of 285] ---
+id: 3fb99f52-0744-4199-b8fd-8e075aeeadeb
+entity_slug: dippin-dots
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 252 of 285] ---
+id: 6daf2534-cd69-4c34-84a9-dee475641582
+entity_slug: dippin-dots
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 253 of 285] ---
+id: 4d318385-b8ce-4d0d-8dff-6625bf556b35
+entity_slug: dippin-dots
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 254 of 285] ---
+id: ef22e8e2-6c08-41a3-a82d-b148e163b17f
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 255 of 285] ---
+id: 4b8ddea6-2ad2-46e3-86dc-93bcd2f6aff8
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 256 of 285] ---
+id: d8c1189c-dfcb-44d6-a667-5dbc2ed34caf
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 257 of 285] ---
+id: 27948dea-336a-44ac-adde-5df09ec2c244
+entity_slug: dippin-dots
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 258 of 285] ---
+id: d95decfe-425f-4de5-9d79-3f11f9bec564
+entity_slug: dippin-dots
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 259 of 285] ---
+id: 10a4fec0-8a57-417d-a00f-128e9cfb6bb5
+entity_slug: dippin-dots
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 260 of 285] ---
+id: 0e134839-cb58-46f3-904b-d025854d392b
+entity_slug: dippin-dots
+tag_name: food_store
+tag_category: google_type
+
+--- entity_tags [row 261 of 285] ---
+id: ceb37866-1b1a-4829-b234-ae1a7c039746
+entity_slug: dippin-dots
+tag_name: store
+tag_category: google_type
+
+--- entity_tags [row 262 of 285] ---
+id: 1f04d24b-7baf-4ea1-b2d3-5dc46c5bc716
+entity_slug: dippin-dots
+tag_name: food
+tag_category: google_type
+
+--- entity_tags [row 263 of 285] ---
+id: 563d5394-a1a5-4e44-8df9-769bcea85015
+entity_slug: dippin-dots
+tag_name: point_of_interest
+tag_category: google_type
+
+--- entity_tags [row 264 of 285] ---
+id: 51203fb5-2b07-482e-ab68-793a4dd19865
+entity_slug: dippin-dots
+tag_name: establishment
+tag_category: google_type
+
+--- entity_tags [row 265 of 285] ---
+id: d5634c4d-22c8-4697-8bb3-2a3edf5b6f7e
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 266 of 285] ---
+id: 1c943332-4b3c-47fb-a919-d7b330a98160
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 267 of 285] ---
+id: 1d96040c-1a76-42f6-b7f0-65dc35ca73f5
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 268 of 285] ---
+id: 4c36ca4e-c8c3-4251-b7e3-f6433f40931f
+entity_slug: dippin-dots
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 269 of 285] ---
+id: c0951815-3945-4096-932f-c764aa2b2e00
+entity_slug: dippin-dots
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 270 of 285] ---
+id: b95d9068-e36b-446b-8e23-4b7c821d3078
+entity_slug: dippin-dots
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 271 of 285] ---
+id: a9fa40d2-9f14-46eb-b3bd-95e6f5afcd65
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleParking
+tag_category: accessibility
+
+--- entity_tags [row 272 of 285] ---
+id: 18b6df80-b6a5-4053-b873-8564e4b0cfbc
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleEntrance
+tag_category: accessibility
+
+--- entity_tags [row 273 of 285] ---
+id: 7a2fe70a-17a7-4daa-ae10-2933de25fee5
+entity_slug: dippin-dots
+tag_name: wheelchairAccessibleRestroom
+tag_category: accessibility
+
+--- entity_tags [row 274 of 285] ---
+id: 18581e05-eb3e-4193-9a2a-a6600466e829
+entity_slug: dippin-dots
+tag_name: acceptsNfc
+tag_category: payment
+
+--- entity_tags [row 275 of 285] ---
+id: e0a7fc27-701d-42ee-960a-062995163e1d
+entity_slug: dippin-dots
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 276 of 285] ---
+id: a664b31d-fc8e-4358-96c5-32a8a0ddb14e
+entity_slug: dippin-dots
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 277 of 285] ---
+id: b31ef8fe-5dad-4d67-9d49-e5ddf3112b49
+entity_slug: dippin-dots
+tag_name: acceptsDebitCards
+tag_category: payment
+
+--- entity_tags [row 278 of 285] ---
+id: 343b7043-d592-44f3-9b76-302e0dbbd48d
+entity_slug: dippin-dots
+tag_name: acceptsCreditCards
+tag_category: payment
+
+--- entity_tags [row 279 of 285] ---
+id: 0bb11c77-5838-4c08-89a8-8dde808305d7
+entity_slug: dippin-dots
+tag_name: dessert
+tag_category: wharf
+
+--- entity_tags [row 280 of 285] ---
+id: 16ba3ac1-839d-4ec1-bbab-87ff1f135ee4
+entity_slug: dippin-dots
+tag_name: ice cream
+tag_category: wharf
+
+--- entity_tags [row 281 of 285] ---
+id: 0d80f197-aae9-4605-9dd3-17a3aa8f2c10
+entity_slug: dippin-dots
+tag_name: kids
+tag_category: wharf
+
+--- entity_tags [row 282 of 285] ---
+id: a39965d0-7f28-425b-a98f-bd23e2941791
+entity_slug: dippin-dots
+tag_name: snack
+tag_category: wharf
+
+--- entity_tags [row 283 of 285] ---
+id: 2fa0c7c6-011e-4fd6-9fa5-62e0f47e0962
+entity_slug: dippin-dots
+tag_name: restaurants + eateries
+tag_category: wharf
+
+--- entity_tags [row 284 of 285] ---
+id: 6ba368f5-0786-4d6d-8e2d-d8808ed33815
+entity_slug: dippin-dots
+tag_name: the wharf
+tag_category: wharf
+
+--- entity_tags [row 285 of 285] ---
+id: 3f7b8a60-3987-4d98-ab4b-7a89993003fb
+entity_slug: dippin-dots
+tag_name: orange beach
+tag_category: wharf
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: de6ea520-f0f6-45d7-9a11-d375c7c849ee
+entity_slug: dippin-dots
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_cafe_dessert   -   1 row(s)
+####################################################################################################
+
+--- industry_cafe_dessert [row 1 of 1] ---
+entity_slug: dippin-dots
+cafe_type: ice_cream_shop
+serves_coffee: false
+serves_dessert: true
+has_seating: true
+good_for_kids: true
+takeout: true
+delivery: false
+updated_at: 2026-07-21T16:19:16.291607+00:00
+
+####################################################################################################
+# TABLE: industry_food_beverage   -   1 row(s)
+####################################################################################################
+
+--- industry_food_beverage [row 1 of 1] ---
+entity_slug: dippin-dots
+menu_section_count: 1
+menu_item_count: 1
+price_level: 2
+serves_coffee: false
+serves_dessert: true
+serves_vegetarian: false
+dine_in: true
+takeout: true
+delivery: false
+curbside_pickup: false
+reservable: false
+outdoor_seating: true
+live_music: false
+good_for_kids: false
+has_happy_hour: false
+updated_at: 2026-07-20T03:16:49.206863+00:00
+
+####################################################################################################
+# TABLE: legacy_photo_migration_queue   -   3 row(s)
+####################################################################################################
+
+--- legacy_photo_migration_queue [row 1 of 3] ---
+id: 1258
+entity_slug: dippin-dots
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/1b9aaada-0201-4512-9ca6-6d5a1e9a3e98/image_1.jpg
+is_cover: true
+sort_order: 100
+status: linked_legacy
+created_at: 2026-07-26T00:31:07.222409+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 2 of 3] ---
+id: 797
+entity_slug: dippin-dots
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/1b9aaada-0201-4512-9ca6-6d5a1e9a3e98/image_2.jpg
+is_cover: false
+sort_order: 101
+status: linked_legacy
+created_at: 2026-07-26T00:31:07.222409+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+--- legacy_photo_migration_queue [row 3 of 3] ---
+id: 1102
+entity_slug: dippin-dots
+source_url: https://adpnhipmdefutkzzltbs.supabase.co/storage/v1/object/public/entity-images/1b9aaada-0201-4512-9ca6-6d5a1e9a3e98/image_3.jpg
+is_cover: false
+sort_order: 102
+status: linked_legacy
+created_at: 2026-07-26T00:31:07.222409+00:00
+processed_at: 2026-07-26T01:09:56.27417+00:00
+
+####################################################################################################
+# TABLE: menu_items   -   1 row(s)
+####################################################################################################
+
+--- menu_items [row 1 of 1] ---
+id: 499c1226-bdb3-4b92-aca6-f0587812199a
+section_id: 947a922c-8189-4ff3-bef9-baad51735cc5
+entity_slug: dippin-dots
+item_name: Wharf directory lists Dippin’ Dots. Exact Wharf location prices not found in readable sources.
+description: No item-level menu price confirmed from public readable source for this row. (Price: Not published)
+is_available: true
+is_featured: false
+is_catch_of_day: false
+is_on_tap: false
+has_market_price: false
+sort_order: 0
+metadata: {}
+
+####################################################################################################
+# TABLE: menu_section_days   -   7 row(s)
+####################################################################################################
+
+--- menu_section_days [row 1 of 7] ---
+id: 0a934067-3c19-4fe3-acbb-e361d2c8e46a
+menu_section_id: 947a922c-8189-4ff3-bef9-baad51735cc5
+entity_slug: dippin-dots
+day_of_week: Monday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 2 of 7] ---
+id: 6e888156-4e6c-4386-980f-2bd2c5c0d7f2
+menu_section_id: 947a922c-8189-4ff3-bef9-baad51735cc5
+entity_slug: dippin-dots
+day_of_week: Tuesday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 3 of 7] ---
+id: ce8d1a0c-ea45-4870-a3bd-d0c13b8d2f71
+menu_section_id: 947a922c-8189-4ff3-bef9-baad51735cc5
+entity_slug: dippin-dots
+day_of_week: Wednesday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 4 of 7] ---
+id: 48322cd4-fd7d-4556-9f1c-3871e50325b9
+menu_section_id: 947a922c-8189-4ff3-bef9-baad51735cc5
+entity_slug: dippin-dots
+day_of_week: Thursday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 5 of 7] ---
+id: d603eafb-a760-4a32-ae41-1151cef1ffe4
+menu_section_id: 947a922c-8189-4ff3-bef9-baad51735cc5
+entity_slug: dippin-dots
+day_of_week: Friday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 6 of 7] ---
+id: b4a0801e-1565-499a-8066-a31fe3d6c7cf
+menu_section_id: 947a922c-8189-4ff3-bef9-baad51735cc5
+entity_slug: dippin-dots
+day_of_week: Saturday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+--- menu_section_days [row 7 of 7] ---
+id: 72424316-a812-469d-8c5f-7c51ffe9f2fe
+menu_section_id: 947a922c-8189-4ff3-bef9-baad51735cc5
+entity_slug: dippin-dots
+day_of_week: Sunday
+created_at: 2026-07-20T00:52:56.259841+00:00
+
+####################################################################################################
+# TABLE: menu_section_details   -   1 row(s)
+####################################################################################################
+
+--- menu_section_details [row 1 of 1] ---
+id: 0c177878-ec72-4f0f-9eaa-255d0ca1de5b
+menu_section_id: 947a922c-8189-4ff3-bef9-baad51735cc5
+entity_slug: dippin-dots
+created_at: 2026-07-20T01:10:15.617428+00:00
+
+####################################################################################################
+# TABLE: menu_sections   -   1 row(s)
+####################################################################################################
+
+--- menu_sections [row 1 of 1] ---
+id: 947a922c-8189-4ff3-bef9-baad51735cc5
+entity_slug: dippin-dots
+section_name: Data Status
+sort_order: 0
+days_of_week: [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday"
+]
+is_active: true
+metadata: {}
+
+####################################################################################################
+# TABLE: search_index   -   3 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 3] ---
+ref_type: offer
+ref_id: 1716
+entity_slug: dippin-dots
+title: Wharf directory lists Dippin’ Dots. Exact Wharf location prices not found in readable sources.
+category: menu_item
+subtitle: No item-level menu price confirmed from public readable source for this row. (Price: Not published)
+search_vector: 'confirm':21C 'dippin':4A 'directori':2A 'dot':5A 'exact':6A 'found':11A 'item':17C 'item-level':16C 'level':18C 'list':3A 'locat':8A 'menu':19C 'price':9A,20C,29C 'public':23C 'publish':31C 'readabl':13A,24C 'row':28C 'sourc':14A,25C 'wharf':1A,7A
+
+--- search_index [row 2 of 3] ---
+ref_type: menu_item
+ref_id: 499c1226-bdb3-4b92-aca6-f0587812199a
+entity_slug: dippin-dots
+title: Wharf directory lists Dippin’ Dots. Exact Wharf location prices not found in readable sources.
+category: menu
+subtitle: No item-level menu price confirmed from public readable source for this row. (Price: Not published)
+search_vector: 'confirm':21C 'dippin':4A 'directori':2A 'dot':5A 'exact':6A 'found':11A 'item':17C 'item-level':16C 'level':18C 'list':3A 'locat':8A 'menu':19C 'price':9A,20C,29C 'public':23C 'publish':31C 'readabl':13A,24C 'row':28C 'sourc':14A,25C 'wharf':1A,7A
+
+--- search_index [row 3 of 3] ---
+ref_type: business
+ref_id: dippin-dots
+entity_slug: dippin-dots
+title: Dippin' Dots
+category: ice_cream_shop
+subtitle: Dessert chain serving flavored ice cream, ice & frozen yogurt in the shape of little dots.
+search_vector: 'chain':7C 'cream':4B,11C 'dessert':6C 'dippin':1A 'dot':2A,20C 'flavor':9C 'frozen':13C 'ice':3B,10C,12C 'littl':19C 'serv':8C 'shape':17C 'shop':5B 'yogurt':14C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: dippin-dots

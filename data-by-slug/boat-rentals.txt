@@ -1,0 +1,547 @@
+====================================================================================================
+SLUG: boat-rentals
+NAME: Boat Rentals
+INDUSTRY: rental
+TABLES WITH DATA: 18
+TOTAL ROWS: 40
+====================================================================================================
+
+TABLE INDEX:
+  ai_data_completeness_audit_full  (1 rows)
+  ai_entity_intent_tags_full  (6 rows)
+  ai_entity_profiles_full  (1 rows)
+  ai_photo_index_full  (2 rows)
+  bookable_resources  (1 rows)
+  bookable_resources_json_backup  (1 rows)
+  entity  (1 rows)
+  entity_completeness_v  (1 rows)
+  entity_items_norm_v  (1 rows)
+  entity_items_v  (1 rows)
+  entity_modules  (13 rows)
+  entity_offer  (1 rows)
+  entity_photos  (4 rows)
+  entity_sources  (1 rows)
+  entity_theme  (1 rows)
+  industry_rental  (1 rows)
+  search_index  (2 rows)
+  v_industry_facts_slugs  (1 rows)
+
+
+####################################################################################################
+# TABLE: ai_data_completeness_audit_full   -   1 row(s)
+####################################################################################################
+
+--- ai_data_completeness_audit_full [row 1 of 1] ---
+entity_slug: boat-rentals
+name: Boat Rentals
+planner_category: things_to_do
+data_quality_score: 55
+issues: missing_hours|missing_lat_lng|missing_contact_or_website
+recommended_next_action: add_missing_ai_content_fields
+missing_menu: false
+missing_drink_menu: false
+missing_hours: true
+missing_photos: false
+missing_faqs: false
+missing_summary: false
+possible_duplicate_child: false
+updated_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_intent_tags_full   -   6 row(s)
+####################################################################################################
+
+--- ai_entity_intent_tags_full [row 1 of 6] ---
+id: 21002
+entity_slug: boat-rentals
+intent_tag: best_for:water_activity
+intent_category: best_for
+confidence: 0.8
+evidence: Derived from entity fields/tags/menu/events.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 2 of 6] ---
+id: 21003
+entity_slug: boat-rentals
+intent_tag: service:water_activity
+intent_category: service
+confidence: 0.8
+evidence: Derived from flags/URLs/text.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 3 of 6] ---
+id: 21004
+entity_slug: boat-rentals
+intent_tag: has:photos
+intent_category: data_available
+confidence: 0.95
+evidence: Photos or hero image exists.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 4 of 6] ---
+id: 21005
+entity_slug: boat-rentals
+intent_tag: missing:missing_hours
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 5 of 6] ---
+id: 21006
+entity_slug: boat-rentals
+intent_tag: missing:missing_lat_lng
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+--- ai_entity_intent_tags_full [row 6 of 6] ---
+id: 21007
+entity_slug: boat-rentals
+intent_tag: missing:missing_contact_or_website
+intent_category: data_gap
+confidence: 0.9
+evidence: Completeness audit flag.
+created_at: 2026-07-16T11:54:45.070426+00:00
+
+####################################################################################################
+# TABLE: ai_entity_profiles_full   -   1 row(s)
+####################################################################################################
+
+--- ai_entity_profiles_full [row 1 of 1] ---
+entity_slug: boat-rentals
+name: Boat Rentals
+is_active: t
+planner_category: things_to_do
+entity_type: service
+state: AL
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/boat-rentals/photo_01.jpg
+voice_summary: Boat Rentals is best for water activity.
+planner_summary: Boat rental options available through Southern Rose
+best_for: water activity
+not_best_for: nothing specific flagged
+service_tags: water_activity
+search_keywords: water_activity
+has_menu: false
+has_drinks: false
+has_events: false
+has_specials_or_happy_hour: false
+has_photos: true
+has_hours: false
+has_faqs: false
+has_booking_or_order_url: false
+has_geo: false
+photo_count: 2
+menu_item_count: 0
+drink_item_count: 0
+event_count: 0
+special_count: 0
+happy_hour_item_count: 0
+tag_count: 0
+faq_count: 0
+data_quality_score: 55
+data_gaps: missing_hours|missing_lat_lng|missing_contact_or_website
+source: public.entity + related public GCR tables
+updated_at: 2026-07-16T11:54:29.297359+00:00
+
+####################################################################################################
+# TABLE: ai_photo_index_full   -   2 row(s)
+####################################################################################################
+
+--- ai_photo_index_full [row 1 of 2] ---
+id: 7596
+entity_slug: boat-rentals
+entity_name: Boat Rentals
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/boat-rentals/photo_01.jpg
+is_cover: t
+sort_order: 0
+photo_use: cover
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+--- ai_photo_index_full [row 2 of 2] ---
+id: 7597
+entity_slug: boat-rentals
+entity_name: Boat Rentals
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/boat-rentals/photo_02.jpg
+is_cover: f
+sort_order: 1
+photo_use: gallery
+created_at: 2026-07-16T11:55:05.640285+00:00
+
+####################################################################################################
+# TABLE: bookable_resources   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources [row 1 of 1] ---
+id: 6fb15bea-ddb0-442a-8e04-8ea1782229cb
+resource_type: service
+slug: boat-rentals
+name: Boat Rentals
+description: Boat rental options available through Southern Rose
+entity_slug: boat-rentals
+cleaning_fee: 0
+service_fee: 0
+min_nights: 1
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/boat-rentals/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/boat-rentals/photo_02.jpg"
+]
+amenities: []
+faqs: []
+state: AL
+is_active: true
+created_at: 2026-06-27T07:00:00.764789+00:00
+updated_at: 2026-06-27T07:00:00.764789+00:00
+ical_export_token: 2bc51f39c7ca3dd759478d2ff510e929
+
+####################################################################################################
+# TABLE: bookable_resources_json_backup   -   1 row(s)
+####################################################################################################
+
+--- bookable_resources_json_backup [row 1 of 1] ---
+id: 6fb15bea-ddb0-442a-8e04-8ea1782229cb
+entity_slug: boat-rentals
+slug: boat-rentals
+photo_urls: [
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/boat-rentals/photo_01.jpg",
+  "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/boat-rentals/photo_02.jpg"
+]
+amenities: []
+faqs: []
+backed_up_at: 2026-07-16T10:08:28.739325+00:00
+
+####################################################################################################
+# TABLE: entity   -   1 row(s)
+####################################################################################################
+
+--- entity [row 1 of 1] ---
+id: 0bc9755e-8d34-4f43-ac18-15c361d41a22
+slug: boat-rentals
+name: Boat Rentals
+is_active: true
+featured: false
+entity_type: service
+description: Boat rental options available through Southern Rose
+menu_pin: 3754
+state: AL
+review_count: 0
+hero_image_url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/boat-rentals/photo_01.jpg
+serves_breakfast: false
+serves_brunch: false
+serves_lunch: false
+serves_dinner: false
+outdoor_seating: false
+live_music: false
+reservable: false
+dine_in: true
+takeout: false
+delivery: false
+serves_beer: false
+serves_wine: false
+serves_cocktails: false
+good_for_groups: false
+good_for_kids: false
+created_at: 2026-06-03T05:25:03.958828+00:00
+updated_at: 2026-06-03T05:25:03.958828+00:00
+gallery_sections: []
+rotating_sections: []
+theme: {}
+also_appears_on: []
+pet_friendly: false
+pool: false
+parking: false
+business_status: OPERATIONAL
+google_places_data: {}
+search_vector: 'boat':1A 'rental':2A
+menu_pin_fail_count: 0
+waiver_required: false
+offers_transportation: false
+display_template: booking
+industry_code: rental
+is_parent: false
+depth: 0
+show_in_listings: true
+
+####################################################################################################
+# TABLE: entity_completeness_v   -   1 row(s)
+####################################################################################################
+
+--- entity_completeness_v [row 1 of 1] ---
+entity_slug: boat-rentals
+name: Boat Rentals
+industry_code: rental
+is_parent: false
+score_of_7: 2
+
+####################################################################################################
+# TABLE: entity_items_norm_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_norm_v [row 1 of 1] ---
+entity_slug: boat-rentals
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 6fb15bea-ddb0-442a-8e04-8ea1782229cb
+name: Boat Rentals
+description: Boat rental options available through Southern Rose
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/boat-rentals/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/boat-rentals/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "item_type_raw": "service",
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_items_v   -   1 row(s)
+####################################################################################################
+
+--- entity_items_v [row 1 of 1] ---
+entity_slug: boat-rentals
+source_table: bookable_resources
+item_type: service
+section_name: Units
+item_id: 6fb15bea-ddb0-442a-8e04-8ea1782229cb
+name: Boat Rentals
+description: Boat rental options available through Southern Rose
+price_label: per night
+sort_order: 0
+active: true
+attributes: {
+  "faqs": [],
+  "amenities": [],
+  "min_nights": 1,
+  "photo_urls": [
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/boat-rentals/photo_01.jpg",
+    "https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/boat-rentals/photo_02.jpg"
+  ],
+  "service_fee": 0,
+  "cleaning_fee": 0,
+  "resource_type": "service"
+}
+
+####################################################################################################
+# TABLE: entity_modules   -   13 row(s)
+####################################################################################################
+
+--- entity_modules [row 1 of 13] ---
+id: 78288e11-a145-43d2-b7d1-b81e64215068
+entity_slug: boat-rentals
+module_key: core
+enabled: true
+sort_order: 0
+
+--- entity_modules [row 2 of 13] ---
+id: 9f9b47b3-a8a3-48e0-be36-bd31b43541fd
+entity_slug: boat-rentals
+module_key: gallery
+enabled: true
+sort_order: 1
+
+--- entity_modules [row 3 of 13] ---
+id: e1fa6ae4-5d4a-4fd5-a2f7-c872dbe812c4
+entity_slug: boat-rentals
+module_key: reviews
+enabled: true
+sort_order: 2
+
+--- entity_modules [row 4 of 13] ---
+id: cb87eb70-8e39-46a3-8e10-28742829f120
+entity_slug: boat-rentals
+module_key: faqs
+enabled: true
+sort_order: 3
+
+--- entity_modules [row 5 of 13] ---
+id: 585f04b8-0493-4d4d-bb75-13432f8ac374
+entity_slug: boat-rentals
+module_key: hours
+enabled: true
+sort_order: 4
+
+--- entity_modules [row 6 of 13] ---
+id: b1a67fa1-211f-46d1-b6f3-8f1016af143e
+entity_slug: boat-rentals
+module_key: team
+enabled: true
+sort_order: 5
+
+--- entity_modules [row 7 of 13] ---
+id: 761e2a02-5dba-4ba0-b97e-1a25c23a66fc
+entity_slug: boat-rentals
+module_key: policies
+enabled: true
+sort_order: 6
+
+--- entity_modules [row 8 of 13] ---
+id: e93c0b6a-4704-439a-aa9e-a0dbd79fd588
+entity_slug: boat-rentals
+module_key: blog
+enabled: true
+sort_order: 7
+
+--- entity_modules [row 9 of 13] ---
+id: 13267670-b121-462b-80c8-5c6f4063faf6
+entity_slug: boat-rentals
+module_key: announcements
+enabled: true
+sort_order: 8
+
+--- entity_modules [row 10 of 13] ---
+id: 5290fe7a-f8e2-4fff-8e61-88d6ddd1a076
+entity_slug: boat-rentals
+module_key: services
+enabled: true
+sort_order: 10
+
+--- entity_modules [row 11 of 13] ---
+id: 59b3c2e9-2a28-45bd-afe7-57e7e7efa1d2
+entity_slug: boat-rentals
+module_key: pricing
+enabled: true
+sort_order: 11
+
+--- entity_modules [row 12 of 13] ---
+id: f6d4198d-785f-434e-a0a8-94cc10727790
+entity_slug: boat-rentals
+module_key: booking
+enabled: true
+sort_order: 12
+
+--- entity_modules [row 13 of 13] ---
+id: ea846c6a-9e8f-40a7-aaf4-76cd6fde1148
+entity_slug: boat-rentals
+module_key: schedule
+enabled: true
+sort_order: 13
+
+####################################################################################################
+# TABLE: entity_offer   -   1 row(s)
+####################################################################################################
+
+--- entity_offer [row 1 of 1] ---
+offer_id: 13355
+entity_slug: boat-rentals
+name: Boat Rentals
+description: Boat rental options available through Southern Rose
+offer_type: rental
+sort_order: 0
+is_available: true
+legacy_source: bookable_resources
+legacy_id: 6fb15bea-ddb0-442a-8e04-8ea1782229cb
+
+####################################################################################################
+# TABLE: entity_photos   -   4 row(s)
+####################################################################################################
+
+--- entity_photos [row 1 of 4] ---
+id: 6a5d7b63-8f04-4d9b-a001-b1e38c8a7df6
+entity_slug: boat-rentals
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/boat-rentals/photo_01.jpg
+is_cover: true
+sort_order: 0
+
+--- entity_photos [row 2 of 4] ---
+id: 1c51da7e-aa4c-4dae-a08b-d56d3a5eb18e
+entity_slug: boat-rentals
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/boat-rentals/photo_02.jpg
+is_cover: false
+sort_order: 1
+
+--- entity_photos [row 3 of 4] ---
+id: 3f2d17a3-0f29-4c87-96f7-6dbcfd83f137
+entity_slug: boat-rentals
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/boat-rentals/photo_02.jpg
+is_cover: false
+sort_order: 1
+photo_type: resource
+source_name: bookable_resource
+resource_id: 6fb15bea-ddb0-442a-8e04-8ea1782229cb
+
+--- entity_photos [row 4 of 4] ---
+id: c6ab7e9c-18d5-4d38-a2ce-f7d376650b74
+entity_slug: boat-rentals
+url: https://mkepugvdlktfsossumox.supabase.co/storage/v1/object/public/entity-photos/boat-rentals/photo_01.jpg
+is_cover: false
+sort_order: 0
+photo_type: resource
+source_name: bookable_resource
+resource_id: 6fb15bea-ddb0-442a-8e04-8ea1782229cb
+
+####################################################################################################
+# TABLE: entity_sources   -   1 row(s)
+####################################################################################################
+
+--- entity_sources [row 1 of 1] ---
+id: dd2b117d-95cd-456e-b8cf-ecd6d7dddef9
+entity_slug: boat-rentals
+source_system: gcr_things_to_do_master
+scope: listing
+observed_at: 2026-07-16T13:27:57.036524+00:00
+confidence: medium
+note: Matched to GCR Things-To-Do master export by normalized business name
+created_at: 2026-07-16T13:27:57.036524+00:00
+
+####################################################################################################
+# TABLE: entity_theme   -   1 row(s)
+####################################################################################################
+
+--- entity_theme [row 1 of 1] ---
+id: 6a2a93d0-3db8-4dda-ab10-8347959218d4
+entity_slug: boat-rentals
+created_at: 2026-07-20T01:03:11.420847+00:00
+
+####################################################################################################
+# TABLE: industry_rental   -   1 row(s)
+####################################################################################################
+
+--- industry_rental [row 1 of 1] ---
+entity_slug: boat-rentals
+rental_item_count: 0
+hourly_available: false
+half_day_available: false
+full_day_available: false
+weekly_available: false
+delivery_offered: false
+updated_at: 2026-07-21T16:19:28.491935+00:00
+
+####################################################################################################
+# TABLE: search_index   -   2 row(s)
+####################################################################################################
+
+--- search_index [row 1 of 2] ---
+ref_type: business
+ref_id: boat-rentals
+entity_slug: boat-rentals
+title: Boat Rentals
+category: service
+subtitle: Boat rental options available through Southern Rose
+search_vector: 'avail':6C 'boat':1A,3C 'option':5C 'rental':2A,4C 'rose':9C 'southern':8C
+
+--- search_index [row 2 of 2] ---
+ref_type: offer
+ref_id: 13355
+entity_slug: boat-rentals
+title: Boat Rentals
+category: rental
+subtitle: Boat rental options available through Southern Rose
+search_vector: 'avail':6C 'boat':1A,3C 'option':5C 'rental':2A,4C 'rose':9C 'southern':8C
+
+####################################################################################################
+# TABLE: v_industry_facts_slugs   -   1 row(s)
+####################################################################################################
+
+--- v_industry_facts_slugs [row 1 of 1] ---
+entity_slug: boat-rentals
