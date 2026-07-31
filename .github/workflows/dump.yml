@@ -1,0 +1,85 @@
+name: Full Database Dump
+
+# Read-only export of every table attached to every slug, one file per business.
+# Run from the Actions tab -> Full Database Dump -> Run workflow.
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/dump.yml'
+      - 'dump.js'
+
+jobs:
+  dump:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Resolve Supabase credentials
+        env:
+          SECRET_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          if [ -n "$SECRET_KEY" ]; then
+            echo "Using SUPABASE_SERVICE_KEY repo secret"
+            echo "SUPABASE_SERVICE_KEY=$SECRET_KEY" >> $GITHUB_ENV
+          else
+            echo "No repo secret set - falling back to the key in public gcr-unified"
+            curl -sSfL https://raw.githubusercontent.com/CultureReset/gcr-unified/master/dump-entire-db.mjs -o /tmp/src.mjs || \
+            curl -sSfL https://raw.githubusercontent.com/CultureReset/gcr-unified/main/dump-entire-db.mjs -o /tmp/src.mjs
+            K=$(grep -oE "SUPABASE_SERVICE_KEY *= *'[^']+'" /tmp/src.mjs | sed -E "s/.*'([^']+)'.*/\\1/")
+            if [ -z "$K" ]; then echo "::error::Could not find a key. Set the SUPABASE_SERVICE_KEY secret."; exit 1; fi
+            echo "::add-mask::$K"
+            echo "SUPABASE_SERVICE_KEY=$K" >> $GITHUB_ENV
+          fi
+
+      - name: Run the dump
+        env:
+          SUPABASE_URL: https://mkepugvdlktfsossumox.supabase.co
+        run: node dump.js
+
+      - name: Commit results
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data-by-slug INDEX-all-businesses.csv table-stats.csv FAILED-tables.txt 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "Nothing changed"
+          else
+            git commit -m "Database dump: one file per slug [skip ci]"
+            git push origin HEAD:main
+          fi
+
+      - name: Also upload as a downloadable zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: gcr-data-dump
+          path: |
+            data-by-slug/
+            INDEX-all-businesses.csv
+            table-stats.csv
+            FAILED-tables.txt
+          retention-days: 90
+          if-no-files-found: warn
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## GCR Database Dump" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Business files written: **$(ls data-by-slug 2>/dev/null | wc -l)**" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Browse them in the repo under \`data-by-slug/\`" >> $GITHUB_STEP_SUMMARY
+          if [ -s FAILED-tables.txt ]; then
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### Tables that could not be read" >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+            head -50 FAILED-tables.txt >> $GITHUB_STEP_SUMMARY
+            echo '```' >> $GITHUB_STEP_SUMMARY
+          fi
