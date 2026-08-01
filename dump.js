@@ -1,12 +1,12 @@
 #!/usr/bin/env node
-// Read-only CyberCheck database export, split across four folders.
+// Read-only CyberCheck database export, split into folders of no more than 1,000 slugs.
 const fs = require('fs');
 const path = require('path');
 
 const URL_ = process.env.SUPABASE_URL || 'https://mkepugvdlktfsossumox.supabase.co';
 const KEY = process.env.SUPABASE_SERVICE_KEY;
 const PAGE = 1000;
-const BATCH_COUNT = 4;
+const MAX_SLUGS_PER_FOLDER = 1000;
 const BATCH_ROOT = 'data-by-slug-batches';
 
 if (!KEY) {
@@ -90,13 +90,14 @@ function csv(value) {
   }
 
   const entries = [...bySlug.entries()].sort(([a], [b]) => a.localeCompare(b));
-  const batchSize = Math.ceil(entries.length / BATCH_COUNT);
+  const batchSize = MAX_SLUGS_PER_FOLDER;
+  const batchCount = Math.ceil(entries.length / batchSize);
   const indexRows = [];
   const batchManifest = [];
   const BAR = '='.repeat(100);
   const HASH = '#'.repeat(100);
 
-  for (let batchIndex = 0; batchIndex < BATCH_COUNT; batchIndex += 1) {
+  for (let batchIndex = 0; batchIndex < batchCount; batchIndex += 1) {
     const start = batchIndex * batchSize;
     const end = Math.min(start + batchSize, entries.length);
     const folderName = `batch-${String(batchIndex + 1).padStart(2, '0')}`;
@@ -115,7 +116,7 @@ function csv(value) {
         entity.industry_code ? 'INDUSTRY: ' + entity.industry_code : null,
         entity.entity_subtype ? 'SUBTYPE: ' + entity.entity_subtype : null,
         entity.parent_entity_slug ? 'PARENT: ' + entity.parent_entity_slug : null,
-        'BATCH: ' + (batchIndex + 1) + ' of ' + BATCH_COUNT,
+        'BATCH: ' + (batchIndex + 1) + ' of ' + batchCount,
         'TABLES WITH DATA: ' + names.length,
         'TOTAL ROWS: ' + totalRows,
         BAR,
@@ -177,8 +178,8 @@ function csv(value) {
 
   console.log('\nDONE');
   console.log('businesses written: ' + entries.length);
-  console.log('batch size: ' + batchSize);
-  console.log('folders: ' + BATCH_COUNT);
+  console.log('maximum slugs per folder: ' + batchSize);
+  console.log('folders: ' + batchCount);
   console.log('tables scanned: ' + tables.length);
   console.log('tables failed: ' + failed.length);
 })();
