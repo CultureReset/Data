@@ -1,179 +1,184 @@
 #!/usr/bin/env node
-// ============================================================================
-// GCR / CyberCheck - FULL DATABASE EXPORT, ONE FILE PER SLUG
-// ============================================================================
-// For every business slug, writes a file containing EVERY table attached to it,
-// EVERY column, EVERY value, and EVERY JSON blob expanded in full.
-//
-// READ-ONLY. GET requests only. Nothing is written to the database.
-//
-// Credentials: SUPABASE_URL + SUPABASE_SERVICE_KEY env vars.
-// Node 18+ (built-in fetch). No dependencies.
-// ============================================================================
-
+// Read-only CyberCheck database export, split across four folders.
 const fs = require('fs');
 const path = require('path');
 
 const URL_ = process.env.SUPABASE_URL || 'https://mkepugvdlktfsossumox.supabase.co';
-const KEY = process.env.SUPABASE_SERVICE_KEY || process.env.SUPABASE_ANON_KEY;
+const KEY = process.env.SUPABASE_SERVICE_KEY;
+const PAGE = 1000;
+const BATCH_COUNT = 4;
+const BATCH_ROOT = 'data-by-slug-batches';
 
 if (!KEY) {
   console.error('ERROR: SUPABASE_SERVICE_KEY is not set.');
   process.exit(1);
 }
 
-const SLUGDIR = 'data-by-slug';
-fs.mkdirSync(SLUGDIR, { recursive: true });
-
 const H = { apikey: KEY, Authorization: 'Bearer ' + KEY };
 
 async function getJSON(url) {
-  const r = await fetch(url, { headers: H });
-  if (!r.ok) throw new Error(r.status + ' ' + r.statusText);
-  return r.json();
+  const response = await fetch(url, { headers: H });
+  if (!response.ok) throw new Error(response.status + ' ' + response.statusText);
+  return response.json();
 }
 
 async function fetchAll(table) {
   const rows = [];
-  const PAGE = 1000;
   for (let from = 0; ; from += PAGE) {
-    const r = await fetch(URL_ + '/rest/v1/' + encodeURIComponent(table) + '?select=*', {
-      headers: Object.assign({}, H, { Range: from + '-' + (from + PAGE - 1) }),
+    const response = await fetch(URL_ + '/rest/v1/' + encodeURIComponent(table) + '?select=*', {
+      headers: { ...H, Range: from + '-' + (from + PAGE - 1) },
     });
-    if (!r.ok) throw new Error(r.status + ' ' + (await r.text()).slice(0, 150));
-    const batch = await r.json();
-    if (!Array.isArray(batch)) throw new Error('unexpected response');
-    rows.push.apply(rows, batch);
+    if (!response.ok) throw new Error(response.status + ' ' + (await response.text()).slice(0, 200));
+    const batch = await response.json();
+    if (!Array.isArray(batch)) throw new Error('Unexpected response for ' + table);
+    rows.push(...batch);
     if (batch.length < PAGE) break;
   }
   return rows;
 }
 
+function safeName(value) {
+  return String(value).replace(/[^a-zA-Z0-9._-]/g, '_').slice(0, 180);
+}
+
+function csv(value) {
+  return '"' + String(value ?? '').replace(/"/g, '""') + '"';
+}
+
 (async () => {
-  console.log('Discovering tables...');
+  fs.rmSync(BATCH_ROOT, { recursive: true, force: true });
+  fs.mkdirSync(BATCH_ROOT, { recursive: true });
+
   const spec = await getJSON(URL_ + '/rest/v1/');
-  const defs = spec.definitions || (spec.components && spec.components.schemas) || {};
-  const allTables = Object.keys(defs);
-  console.log('  ' + allTables.length + ' tables exposed');
+  const definitions = spec.definitions || (spec.components && spec.components.schemas) || {};
+  const allTables = Object.keys(definitions);
 
-  const slugCol = {};
-  for (const t of allTables) {
-    const props = Object.keys((defs[t] && defs[t].properties) || {});
-    if (props.indexOf('entity_slug') !== -1) slugCol[t] = 'entity_slug';
-    else if (t === 'entity' && props.indexOf('slug') !== -1) slugCol[t] = 'slug';
+  const slugColumn = {};
+  for (const table of allTables) {
+    const properties = Object.keys((definitions[table] && definitions[table].properties) || {});
+    if (properties.includes('entity_slug')) slugColumn[table] = 'entity_slug';
+    else if (table === 'entity' && properties.includes('slug')) slugColumn[table] = 'slug';
   }
-  const tables = Object.keys(slugCol).sort();
-  console.log('  ' + tables.length + ' tables carry a slug\n');
 
+  const tables = Object.keys(slugColumn).sort();
   const bySlug = new Map();
   const tableStats = [];
   const failed = [];
 
-  for (const t of tables) {
-    process.stdout.write('  ' + t + ' ... ');
-    let rows;
+  for (const table of tables) {
+    process.stdout.write(table + ' ... ');
     try {
-      rows = await fetchAll(t);
-    } catch (e) {
-      console.log('FAILED (' + String(e.message).slice(0, 70) + ')');
-      failed.push(t + '\t' + String(e.message).slice(0, 200));
-      continue;
+      const rows = await fetchAll(table);
+      const column = slugColumn[table];
+      const distinctSlugs = new Set();
+      let attached = 0;
+      for (const row of rows) {
+        const slug = row[column];
+        if (!slug) continue;
+        attached += 1;
+        distinctSlugs.add(slug);
+        if (!bySlug.has(slug)) bySlug.set(slug, {});
+        const tableMap = bySlug.get(slug);
+        (tableMap[table] ||= []).push(row);
+      }
+      tableStats.push({ table, rows: rows.length, attached, slugs: distinctSlugs.size });
+      console.log(rows.length + ' rows');
+    } catch (error) {
+      failed.push(table + '\t' + String(error.message).slice(0, 300));
+      console.log('FAILED');
     }
-    const col = slugCol[t];
-    let attached = 0;
-    const seen = new Set();
-    for (const row of rows) {
-      const s = row[col];
-      if (!s) continue;
-      attached++; seen.add(s);
-      if (!bySlug.has(s)) bySlug.set(s, {});
-      const b = bySlug.get(s);
-      if (!b[t]) b[t] = [];
-      b[t].push(row);
-    }
-    tableStats.push({ table: t, rows: rows.length, attached: attached, slugs: seen.size });
-    console.log(rows.length + ' rows (' + attached + ' slug-attached)');
   }
 
-  console.log('\nWriting ' + bySlug.size + ' business files...');
-  const BAR = new Array(101).join('=');
-  const HASH = new Array(101).join('#');
-  const index = [];
+  const entries = [...bySlug.entries()].sort(([a], [b]) => a.localeCompare(b));
+  const batchSize = Math.ceil(entries.length / BATCH_COUNT);
+  const indexRows = [];
+  const batchManifest = [];
+  const BAR = '='.repeat(100);
+  const HASH = '#'.repeat(100);
 
-  const entries = Array.from(bySlug.entries()).sort(function (a, b) { return a[0] < b[0] ? -1 : 1; });
+  for (let batchIndex = 0; batchIndex < BATCH_COUNT; batchIndex += 1) {
+    const start = batchIndex * batchSize;
+    const end = Math.min(start + batchSize, entries.length);
+    const folderName = `batch-${String(batchIndex + 1).padStart(2, '0')}`;
+    const folder = path.join(BATCH_ROOT, folderName);
+    fs.mkdirSync(folder, { recursive: true });
 
-  for (const pair of entries) {
-    const slug = pair[0], tblMap = pair[1];
-    const names = Object.keys(tblMap).sort();
-    const ent = (tblMap['entity'] && tblMap['entity'][0]) || {};
-    let totalRows = 0;
-    for (const n of names) totalRows += tblMap[n].length;
+    for (let globalIndex = start; globalIndex < end; globalIndex += 1) {
+      const [slug, tableMap] = entries[globalIndex];
+      const names = Object.keys(tableMap).sort();
+      const entity = (tableMap.entity && tableMap.entity[0]) || {};
+      const totalRows = names.reduce((sum, name) => sum + tableMap[name].length, 0);
+      const output = [
+        BAR,
+        'SLUG: ' + slug,
+        entity.name ? 'NAME: ' + entity.name : null,
+        entity.industry_code ? 'INDUSTRY: ' + entity.industry_code : null,
+        entity.entity_subtype ? 'SUBTYPE: ' + entity.entity_subtype : null,
+        entity.parent_entity_slug ? 'PARENT: ' + entity.parent_entity_slug : null,
+        'BATCH: ' + (batchIndex + 1) + ' of ' + BATCH_COUNT,
+        'TABLES WITH DATA: ' + names.length,
+        'TOTAL ROWS: ' + totalRows,
+        BAR,
+        '',
+        'TABLE INDEX:',
+        ...names.map(name => '  ' + name + '  (' + tableMap[name].length + ' rows)'),
+      ].filter(value => value !== null);
 
-    const out = [];
-    out.push(BAR);
-    out.push('SLUG: ' + slug);
-    if (ent.name) out.push('NAME: ' + ent.name);
-    if (ent.industry_code) out.push('INDUSTRY: ' + ent.industry_code);
-    if (ent.entity_subtype) out.push('SUBTYPE: ' + ent.entity_subtype);
-    if (ent.parent_entity_slug) out.push('PARENT: ' + ent.parent_entity_slug);
-    if (ent.address) out.push('ADDRESS: ' + ent.address);
-    out.push('TABLES WITH DATA: ' + names.length);
-    out.push('TOTAL ROWS: ' + totalRows);
-    out.push(BAR);
-    out.push('');
-    out.push('TABLE INDEX:');
-    for (const n of names) out.push('  ' + n + '  (' + tblMap[n].length + ' rows)');
-    out.push('');
-
-    for (const n of names) {
-      const rows = tblMap[n];
-      out.push('');
-      out.push(HASH);
-      out.push('# TABLE: ' + n + '   -   ' + rows.length + ' row(s)');
-      out.push(HASH);
-      for (let i = 0; i < rows.length; i++) {
-        out.push('');
-        out.push('--- ' + n + ' [row ' + (i + 1) + ' of ' + rows.length + '] ---');
-        const row = rows[i];
-        for (const k of Object.keys(row)) {
-          const v = row[k];
-          if (v === null || v === undefined || v === '') continue;
-          const val = (typeof v === 'object') ? JSON.stringify(v, null, 2) : String(v);
-          out.push(k + ': ' + val);
-        }
+      for (const name of names) {
+        const rows = tableMap[name];
+        output.push('', HASH, '# TABLE: ' + name + '   -   ' + rows.length + ' row(s)', HASH);
+        rows.forEach((row, rowIndex) => {
+          output.push('', '--- ' + name + ' [row ' + (rowIndex + 1) + ' of ' + rows.length + '] ---');
+          for (const key of Object.keys(row)) {
+            const value = row[key];
+            if (value === null || value === undefined || value === '') continue;
+            output.push(key + ': ' + (typeof value === 'object' ? JSON.stringify(value, null, 2) : String(value)));
+          }
+        });
       }
+
+      fs.writeFileSync(path.join(folder, safeName(slug) + '.txt'), output.join('\n'));
+      indexRows.push({
+        slug,
+        name: entity.name || '',
+        industry: entity.industry_code || '',
+        subtype: entity.entity_subtype || '',
+        parent: entity.parent_entity_slug || '',
+        batch: batchIndex + 1,
+        folder: folderName,
+        tables: names.length,
+        rows: totalRows,
+        table_list: names.join(' '),
+      });
     }
 
-    const safe = String(slug).replace(/[^a-zA-Z0-9._-]/g, '_').slice(0, 180);
-    fs.writeFileSync(path.join(SLUGDIR, safe + '.txt'), out.join('\n'));
-    index.push({
-      slug: slug, name: ent.name || '', industry: ent.industry_code || '',
-      subtype: ent.entity_subtype || '', parent: ent.parent_entity_slug || '',
-      tables: names.length, rows: totalRows, table_list: names.join(' '),
+    batchManifest.push({
+      batch: batchIndex + 1,
+      folder: folderName,
+      first_slug: entries[start] ? entries[start][0] : '',
+      last_slug: entries[end - 1] ? entries[end - 1][0] : '',
+      slug_count: Math.max(0, end - start),
     });
   }
 
-  const esc = function (v) { return '"' + String(v).replace(/"/g, '""') + '"'; };
-
   fs.writeFileSync('INDEX-all-businesses.csv',
-    'slug,name,industry,subtype,parent,table_count,row_count,tables\n' +
-    index.sort(function (a, b) { return b.rows - a.rows; }).map(function (r) {
-      return [r.slug, r.name, r.industry, r.subtype, r.parent, r.tables, r.rows, r.table_list].map(esc).join(',');
-    }).join('\n'));
+    'slug,name,industry,subtype,parent,batch,folder,table_count,row_count,tables\n' +
+    indexRows.map(row => [row.slug,row.name,row.industry,row.subtype,row.parent,row.batch,row.folder,row.tables,row.rows,row.table_list].map(csv).join(',')).join('\n'));
+
+  fs.writeFileSync('BATCH-MANIFEST.csv',
+    'batch,folder,first_slug,last_slug,slug_count\n' +
+    batchManifest.map(row => [row.batch,row.folder,row.first_slug,row.last_slug,row.slug_count].map(csv).join(',')).join('\n'));
 
   fs.writeFileSync('table-stats.csv',
     'table,total_rows,slug_attached_rows,distinct_slugs\n' +
-    tableStats.sort(function (a, b) { return b.rows - a.rows; }).map(function (t) {
-      return t.table + ',' + t.rows + ',' + t.attached + ',' + t.slugs;
-    }).join('\n'));
+    tableStats.sort((a,b) => b.rows-a.rows).map(row => [row.table,row.rows,row.attached,row.slugs].join(',')).join('\n'));
 
-  fs.writeFileSync('FAILED-tables.txt', failed.length
-    ? 'Tables that could not be read:\n\n' + failed.join('\n')
-    : '');
+  fs.writeFileSync('FAILED-tables.txt', failed.length ? 'Tables that could not be read:\n\n' + failed.join('\n') : '');
 
   console.log('\nDONE');
-  console.log('  businesses written : ' + bySlug.size);
-  console.log('  tables scanned     : ' + tables.length);
-  console.log('  tables failed      : ' + failed.length);
-  console.log('  total rows pulled  : ' + tableStats.reduce(function (a, t) { return a + t.rows; }, 0));
+  console.log('businesses written: ' + entries.length);
+  console.log('batch size: ' + batchSize);
+  console.log('folders: ' + BATCH_COUNT);
+  console.log('tables scanned: ' + tables.length);
+  console.log('tables failed: ' + failed.length);
 })();
