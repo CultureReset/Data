@@ -1,40 +1,53 @@
-# GCR / CyberCheck — Full Database Export
+# Data
 
-Read-only export of the GCR database (Supabase project `cyber check`), one file per business slug.
+Snapshot export of the CyberCheck / Gulf Coast Radar business database, one text file per business, plus summary spreadsheets.
 
-**Nothing here writes to the database.** The dump makes GET requests only.
+## What it is
 
-## How to run it
+A data folder, not an application. It holds a read-only export of the production Supabase project (the one named "cyber check") saved as plain files so the contents can be browsed and analysed without touching the database. Each business listing (restaurants, rentals, charters, and so on) gets one file showing every table row attached to its slug, and a few CSVs and notes summarise what data exists and what is missing.
 
-Actions tab → **Full Database Dump** → **Run workflow**.
+## How it works
 
-It takes about two minutes and commits the results back to this repo.
+- `data-by-slug/<slug>.txt`: 4,476 files, one per business, each with an index of tables followed by every row. Committed output of an earlier run.
+- `INDEX-all-businesses.csv`: one row per business (4,475 rows): slug, name, industry, subtype, batch, folder, table count, row count, table names.
+- `table-stats.csv`: 309 tables with total rows, slug-attached rows and distinct slugs.
+- `industry-table-matrix.csv` and `subtype-table-matrix.csv`: which tables each industry or subtype uses.
+- `GAP-ANALYSIS.md` and `INDUSTRY-TABLE-REQUIREMENTS.md`: written analysis of tables that have data, tables that are empty, and what each industry should have. `scripts/build-must-have-inventory.mjs` is the script behind the inventory.
+- `FAILED-tables.txt`: tables the last run could not read. It lists `entity`, which hit a statement timeout, so entity data may be incomplete in some files.
+- `dump.js`: Node script that pages through every table with read-only GET requests to the Supabase REST API and writes files grouped into folders of at most 1,000 slugs under `data-by-slug-batches/` (the committed snapshot uses the flat `data-by-slug/` layout instead).
+- `.github/workflows/dump.yml`: manual "Full Database Dump" workflow that runs `node dump.js` and commits results back to `main`.
 
-## What you get
+## Run it
 
+Reading needs nothing: open any file in `data-by-slug/` or the CSVs.
+
+Regenerating needs Node 18+ (global `fetch`) and network access to the database:
+
+```bash
+export SUPABASE_URL=...            # optional, dump.js has a default project URL
+export SUPABASE_SERVICE_KEY=...    # required, a key that can read every table
+node dump.js
 ```
-data-by-slug/<slug>.txt      ONE FILE PER BUSINESS — every table attached to that
-                             slug, every column, every value, every JSON blob in
-                             full. Nothing truncated.
-INDEX-all-businesses.csv     all 4,067 businesses + which tables each one uses
-table-stats.csv              per table: total rows, slug-attached rows, distinct slugs
-FAILED-tables.txt            anything the key couldn't read (so gaps are visible)
+
+The workflow reads the same two names, `SUPABASE_URL` and `SUPABASE_SERVICE_KEY`. Nothing in this repo writes to the database.
+
+## Status
+
+Asset dump: a large one-off export with the tooling to regenerate it, not something a running system reads.
+
+## Where it fits
+
+```mermaid
+flowchart LR
+    db[("Supabase project<br/>cyber check")] -- "read-only GET (dump.js)" --> dump["Data<br/>dump.js / dump.yml"]
+    dump --> files["data-by-slug/*.txt"]
+    dump --> csv["INDEX, table-stats,<br/>matrix CSVs"]
+    csv --> notes["GAP-ANALYSIS.md<br/>INDUSTRY-TABLE-REQUIREMENTS.md"]
+    api["gcr-api-clean /<br/>cybercheck-api-database"] --> db
 ```
 
-Open `data-by-slug/tacky-jacks-orange-beach.txt` and you see literally everything
-the database holds for that business, table by table.
+## Related repos
 
-## Credentials
-
-The workflow looks for a repo secret named `SUPABASE_SERVICE_KEY`
-(Settings → Secrets and variables → Actions → New repository secret).
-
-If that secret isn't set, it falls back to reading the key out of the public
-`gcr-unified` repo, where it is currently hardcoded.
-
-> **SECURITY:** that service_role key is committed in plaintext in the **public**
-> repos `gcr-unified` and `gcr-unified-v2` (`dump-entire-db.mjs` line 5, and
-> `export-supabase-complete.mjs`). A service_role key bypasses all row-level
-> security — anyone who finds it has full read AND write access to the entire
-> database. Rotate it in the Supabase dashboard (Project Settings → API), remove
-> it from those files, and store it here as the `SUPABASE_SERVICE_KEY` secret.
+- gcr-api-clean and cybercheck-api-database: serve the same database this repo exports.
+- gar-profiles-, trip-swipe-live and other front ends show the same businesses that appear in the slug files.
+- gcr-unified and gcr-unified-v2: earlier repos with similar export scripts.
