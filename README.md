@@ -29,12 +29,4 @@ the database holds for that business, table by table.
 The workflow looks for a repo secret named `SUPABASE_SERVICE_KEY`
 (Settings → Secrets and variables → Actions → New repository secret).
 
-If that secret isn't set, it falls back to reading the key out of the public
-`gcr-unified` repo, where it is currently hardcoded.
-
-> **SECURITY:** that service_role key is committed in plaintext in the **public**
-> repos `gcr-unified` and `gcr-unified-v2` (`dump-entire-db.mjs` line 5, and
-> `export-supabase-complete.mjs`). A service_role key bypasses all row-level
-> security — anyone who finds it has full read AND write access to the entire
-> database. Rotate it in the Supabase dashboard (Project Settings → API), remove
-> it from those files, and store it here as the `SUPABASE_SERVICE_KEY` secret.
+Set that secret before running. The workflow's fallback for a missing secret should be removed.
